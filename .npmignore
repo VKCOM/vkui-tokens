@@ -1,0 +1,12 @@
+
+*.ts
+!*.d.ts
+
+.yarnclean
+.DS_Store
+.idea
+yarn-error.log
+.gitlab-ci.yml
+.editorconfig
+tsconfig.json
+tslint.json
