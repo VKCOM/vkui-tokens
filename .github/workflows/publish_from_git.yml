@@ -13,10 +13,6 @@ jobs:
           node-version: 14
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - name: logs
-        run: echo $NODE_AUTH_TOKEN && cat .npmrc
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
       - name: Publishing release
         run: npm run publish:dist
         env:
