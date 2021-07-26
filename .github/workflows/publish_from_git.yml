@@ -14,6 +14,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - run: echo "$NPMJS_PUBLISH_TOKEN"
+      - run: cat .npmrc
       - name: Publishing release
         run: npm run publish:dist
         env:
