@@ -13,6 +13,7 @@ jobs:
           node-version: 14
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
+      - run: echo "$NPMJS_PUBLISH_TOKEN"
       - name: Publishing release
         run: npm run publish:dist
         env:
