@@ -9,7 +9,7 @@
     "build:local": "npm run build && npm run clear:dist",
     "prepublishOnly": "echo 'ПРЕДУПРЕЖДЕНИЕ: Публиковать из root этот пакет нельзя: выполните команду \\033[1;32m\"npm run publish:dist\"' && exit 1",
     "prepublish:dist": "npm run clear:src && npm run build",
-    "publish:dist": "npm run prepublish:dist && cd dist && npm publish",
+    "publish:dist": "npm run prepublish:dist && cd dist && npm publish --access=public",
     "build:script": "ts-node -r tsconfig-paths/register src/build/index.ts",
     "lint": "TIMING=1 eslint ./src --ext .ts",
     "lint:fix": "npm run lint -- --fix",
