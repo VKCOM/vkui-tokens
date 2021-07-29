@@ -20,6 +20,7 @@ import {
 import {Font} from '@/interfaces/general/typography';
 
 export interface LocalParadigmColorsDescriptionStruct {
+	colorButtonContrast: ColorDescription;
 	colorBgThumbnail: ColorDescription;
 	colorRating: ColorDescription;
 	colorIconAccent: ColorDescription;

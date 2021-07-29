@@ -210,15 +210,16 @@ export const lightTheme: ThemeDescription = {
 			fontWeight: fontWeightAccent2,
 		},
 	},
+	// todo поменять местами fontSize, когда откажемся от auto
 	fontText: {
 		regular: {
-			fontSize: 15,
+			fontSize: 16,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 		},
 		compact: {
-			fontSize: 16,
+			fontSize: 15,
 		},
 	},
 	fontSubhead: {
@@ -304,16 +305,18 @@ export const lightTheme: ThemeDescription = {
 
 	// Размеры
 	sizeSelectIconPadding: {
-		regular: 6,
-		compact: 7,
+		regular: 7,
+		compact: 6,
 	},
+	// todo поменять местами, когда откажемся от auto
 	sizePopupBasePadding: {
-		regular: 32,
-		compact: 20,
+		regular: 20,
+		compact: 32,
 	},
+	// todo поменять местами, когда откажемся от auto
 	sizePopupHeaderPadding: {
-		regular: 24,
-		compact: 16,
+		regular: 16,
+		compact: 24,
 	},
 	sizeBorderRadius: {
 		regular: 4,

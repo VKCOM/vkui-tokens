@@ -46,6 +46,11 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorAlert: '#c1341b',
 		colorBgPlaceholder: '#ffffff',
 		colorBgPromo: '#EBEEF5',
+		colorButtonContrast: {
+			normal: 'rgba(255, 255, 255, 1)',
+			hover: 'rgba(255, 255, 255, 0.8)',
+			active: 'rgba(255, 255, 255, 0.6)',
+		},
 		colorTrueBlack: '#000000',
 		colorTrueWhite: '#ffffff',
 	},
@@ -53,56 +58,56 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	breakpoints: {
 		touch: {
 			breakpoint: 0,
-			adaptiveValue: 'compact',
+			adaptiveValue: 'regular',
 		},
 		desktopS: {
 			breakpoint: 768,
-			adaptiveValue: 'regular',
+			adaptiveValue: 'compact',
 		},
 	},
 
 	// Типографика
 	fontH0: {
 		regular: {
-			fontSize: 44,
-			lineHeight: 52,
+			fontSize: 28,
+			lineHeight: 32,
 			fontFamily: paradigmLightBase.fontFamilyAccent,
 			fontWeight: paradigmLightBase.fontWeightAccent3,
 		},
 		compact: {
-			fontSize: 28,
-			lineHeight: 32,
+			fontSize: 44,
+			lineHeight: 52,
 		},
 	},
 	fontH1: {
 		regular: {
-			fontSize: 32,
-			lineHeight: 36,
+			fontSize: 24,
+			lineHeight: 28,
 			fontFamily: paradigmLightBase.fontFamilyAccent,
 			fontWeight: paradigmLightBase.fontWeightAccent3,
 		},
 		compact: {
-			fontSize: 24,
-			lineHeight: 28,
+			fontSize: 32,
+			lineHeight: 36,
 		},
 	},
 	fontH2: {
 		regular: {
-			fontSize: 28,
-			lineHeight: 32,
+			fontSize: 20,
+			lineHeight: 26,
 			fontFamily: paradigmLightBase.fontFamilyAccent,
 			fontWeight: paradigmLightBase.fontWeightAccent3,
 		},
 		compact: {
-			fontSize: 20,
-			lineHeight: 26,
+			fontSize: 28,
+			lineHeight: 32,
 		},
 	},
 
 	// Отступы
 	sizeBasePadding: {
-		regular: x5,
-		compact: x4,
+		regular: x4,
+		compact: x5,
 	},
 	sizeBorderWidthTab: {
 		regular: x05,
@@ -117,8 +122,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: x2,
 	},
 	sizeControlButtonWidthMin: {
-		regular: 104,
-		compact: 130,
+		regular: 130,
+		compact: 104,
 	},
 	sizePromoButtonClose: {
 		regular: x8,
@@ -133,8 +138,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: x4,
 	},
 	sizeFieldWidthMin: {
-		regular: 380,
-		compact: 328,
+		regular: 328,
+		compact: 380,
 	},
 	sizeLabelWidth: {
 		regular: 184,
@@ -161,12 +166,12 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: x2,
 	},
 	sizeIconMorePadding: {
-		regular: x2,
-		compact: x3,
+		regular: x3,
+		compact: x2,
 	},
 	sizeButtonIconPadding: {
-		regular: x5,
-		compact: x4,
+		regular: x4,
+		compact: x5,
 	},
 	sizeDivPadding: {
 		regular: x1,
@@ -203,7 +208,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	},
 	sizeFieldHorizontalMargin: {
 		regular: x5,
-		compact: x4,
 	},
 	sizeFieldVerticalMargin: {
 		regular: x6,
@@ -212,8 +216,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: x8,
 	},
 	sizeIconMargin: {
-		regular: x2,
-		compact: x3,
+		regular: x3,
+		compact: x2,
 	},
 	sizeChoiceMargin: {
 		regular: x2,
@@ -234,8 +238,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: x1,
 	},
 	sizePopupMargin: {
-		regular: x6,
-		compact: x2,
+		regular: x2,
+		compact: x6,
 	},
 	sizeHeaderIcon: {
 		regular: x5,
@@ -282,5 +286,10 @@ export const octaviusDarkTheme: ParadigmThemeDescription = {
 		colorBgThumbnail: '#1F1F1F',
 		colorBgPlaceholder: '#000000',
 		colorBgPromo: '#303030',
+		colorButtonContrast: {
+			normal: 'rgba(255, 255, 255, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.2)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
 	},
 };
