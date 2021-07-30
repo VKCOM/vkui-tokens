@@ -269,9 +269,17 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: 48,
 		compact: 40,
 	},
+	sizeButtonLargeHeight: {
+		regular: 48,
+		compact: 48,
+	},
 	sizeButtonMediumHeight: {
 		regular: 48,
 		compact: 40,
+	},
+	sizeButtonSmallHeight: {
+		regular: 32,
+		compact: 32,
 	},
 
 	// остальное
