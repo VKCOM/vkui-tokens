@@ -130,11 +130,16 @@ export interface ParadigmBorders {
 	typeBorderPosition: Property.BorderStyle;
 }
 
+// todo удалить и заменить на контекстные токены в проектах
 export interface ParadigmLocalFonts {
 	// большие шрифты
 	fontH0: Font;
 	fontH1: Font;
 	fontH2: Font;
+	fontH3: Font;
+	fontH4: Font;
+	fontH5: Font;
+	fontH6: Font;
 }
 
 export interface ParadigmHelpers {

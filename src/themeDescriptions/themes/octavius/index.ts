@@ -67,6 +67,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	},
 
 	// Типографика
+	// todo удалить и заменить на контекстные токены в проектах
 	fontH0: {
 		regular: {
 			fontSize: 28,
@@ -79,6 +80,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lineHeight: 52,
 		},
 	},
+	// todo удалить и заменить на контекстные токены в проектах
 	fontH1: {
 		regular: {
 			fontSize: 24,
@@ -91,6 +93,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lineHeight: 36,
 		},
 	},
+	// todo удалить и заменить на контекстные токены в проектах
 	fontH2: {
 		regular: {
 			fontSize: 20,
@@ -101,6 +104,42 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		compact: {
 			fontSize: 28,
 			lineHeight: 32,
+		},
+	},
+	// todo удалить и заменить на контекстные токены в проектах
+	fontH3: {
+		regular: {
+			...paradigmLightBase.fontTitle3.regular,
+		},
+		compact: {
+			...paradigmLightBase.fontTitle1.regular,
+		},
+	},
+	// todo удалить и заменить на контекстные токены в проектах
+	fontH4: {
+		regular: {
+			...paradigmLightBase.fontHeadline.regular,
+		},
+		compact: {
+			...paradigmLightBase.fontTitle2.regular,
+		},
+	},
+	// todo удалить и заменить на контекстные токены в проектах
+	fontH5: {
+		regular: {
+			...paradigmLightBase.fontHeadline.regular,
+		},
+		compact: {
+			...paradigmLightBase.fontTitle3.regular,
+		},
+	},
+	// todo удалить и заменить на контекстные токены в проектах
+	fontH6: {
+		regular: {
+			...paradigmLightBase.fontHeadline.regular,
+		},
+		compact: {
+			...paradigmLightBase.fontHeadline.regular,
 		},
 	},
 
