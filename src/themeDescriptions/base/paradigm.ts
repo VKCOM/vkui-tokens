@@ -125,7 +125,7 @@ export const darkColors: ColorsDescription = {
 		colorTextLinkAlternate: '#0667FF',
 		colorTrackBackground: '#434445',
 		colorTrackBuffer: '#83AAEA',
-		colorBackgroundModal: '#151515',
+		colorBackgroundModal: '#303030',
 		colorImagePlaceholder: 'rgba(255, 255, 255, 0.8)',
 		colorImagePlaceholderOpaque: '#393A3B',
 		colorSearchFieldBackground: '#393A3B',
