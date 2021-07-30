@@ -10,6 +10,7 @@ import {mycomTheme} from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
 	octaviusTheme,
+	octaviusVKTheme,
 } from '@/themeDescriptions/themes/octavius';
 import {
 	octaviusCompactDarkTheme,
@@ -38,6 +39,7 @@ export const themes = [
 	octaviusDarkTheme,
 	octaviusCompactTheme,
 	octaviusCompactDarkTheme,
+	octaviusVKTheme,
 	calendarTheme,
 	calendarDarkTheme,
 	callsTheme,
