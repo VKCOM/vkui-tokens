@@ -264,6 +264,16 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: 228,
 	},
 
+	// размеры
+	sizeFieldHeight: {
+		regular: 48,
+		compact: 40,
+	},
+	sizeButtonMediumHeight: {
+		regular: 48,
+		compact: 40,
+	},
+
 	// остальное
 	toneValueOverlay: 0.48,
 	toneValueViewer: 0.88,
