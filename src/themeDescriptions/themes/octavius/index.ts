@@ -352,5 +352,10 @@ export const octaviusDarkTheme: ParadigmThemeDescription = {
 			hover: 'rgba(255, 255, 255, 0.2)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
+		colorBackgroundSecondary: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
 	},
 };
