@@ -320,6 +320,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		regular: 32,
 		compact: 32,
 	},
+	sizeButtonPaddingHorizontal: {
+		regular: 20,
+		compact: 16,
+	},
 
 	// остальное
 	toneValueOverlay: 0.48,
