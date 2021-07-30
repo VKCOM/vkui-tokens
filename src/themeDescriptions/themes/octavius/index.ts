@@ -5,7 +5,6 @@ import {
 	darkTheme as paradigmDarkBase,
 	lightTheme as paradigmLightBase,
 } from '@/themeDescriptions/base/paradigm';
-import {lightColors as vkColors} from '@/themeDescriptions/base/vk';
 import {helpers} from '@/themeDescriptions/common';
 
 const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
@@ -358,14 +357,5 @@ export const octaviusDarkTheme: ParadigmThemeDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
-	},
-};
-
-export const octaviusVKTheme: ParadigmThemeDescription = {
-	...octaviusTheme,
-	themeName: 'octaviusVK',
-	colors: {
-		...octaviusTheme.colors,
-		...vkColors.colors,
 	},
 };
