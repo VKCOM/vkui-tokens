@@ -211,15 +211,13 @@ export const lightTheme: ThemeDescription = {
 		},
 	},
 	// todo поменять местами fontSize, когда откажемся от auto
+	// todo fontSize в мобильном виде должен быть 16
 	fontText: {
 		regular: {
-			fontSize: 16,
+			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
-		},
-		compact: {
-			fontSize: 15,
 		},
 	},
 	fontSubhead: {
