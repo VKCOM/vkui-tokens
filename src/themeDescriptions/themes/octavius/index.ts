@@ -2,7 +2,8 @@ import {getRGBA} from '@/build/helpers/cssHelpers';
 import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
-	darkTheme as paradigmDarkBase, darkThemeElevation,
+	darkTheme as paradigmDarkBase,
+	darkThemeElevation,
 	lightTheme as paradigmLightBase,
 } from '@/themeDescriptions/base/paradigm';
 import {helpers} from '@/themeDescriptions/common';
