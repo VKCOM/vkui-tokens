@@ -358,4 +358,8 @@ export const octaviusDarkTheme: ParadigmThemeDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 	},
+	elevation1: '0 2px 0 0 rgba(0, 0, 0, 0.04)',
+	elevation2: '0 4px 48px 0 rgba(0, 0, 0, 0.72)',
+	elevation3: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
+	elevation4: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
 };
