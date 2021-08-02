@@ -1,4 +1,5 @@
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
+import {Elevation} from '@/interfaces/general/elevation';
 
 const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Helvetica, Arial, sans-serif';
@@ -423,8 +424,16 @@ export const lightTheme: ThemeDescription = {
 	opacityDisable: 0.48,
 };
 
+export const darkThemeElevation: Elevation = {
+	elevation1: '0 2px 0 0 rgba(0, 0, 0, 0.04)',
+	elevation2: '0 4px 48px 0 rgba(0, 0, 0, 0.72)',
+	elevation3: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
+	elevation4: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
+}
+
 export const darkTheme: ThemeDescription = {
 	...lightTheme,
 	themeName: 'paradigmBaseDark',
 	...darkColors,
+	...darkThemeElevation,
 };

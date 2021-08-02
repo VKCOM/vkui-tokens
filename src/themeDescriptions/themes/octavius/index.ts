@@ -2,7 +2,7 @@ import {getRGBA} from '@/build/helpers/cssHelpers';
 import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
-	darkTheme as paradigmDarkBase,
+	darkTheme as paradigmDarkBase, darkThemeElevation,
 	lightTheme as paradigmLightBase,
 } from '@/themeDescriptions/base/paradigm';
 import {helpers} from '@/themeDescriptions/common';
@@ -339,6 +339,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 export const octaviusDarkTheme: ParadigmThemeDescription = {
 	...octaviusTheme,
+	...darkThemeElevation,
 	themeName: 'octaviusDark',
 	colorsScheme: 'dark',
 	colors: {
@@ -358,8 +359,4 @@ export const octaviusDarkTheme: ParadigmThemeDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 	},
-	elevation1: '0 2px 0 0 rgba(0, 0, 0, 0.04)',
-	elevation2: '0 4px 48px 0 rgba(0, 0, 0, 0.72)',
-	elevation3: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
-	elevation4: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
 };
