@@ -2,10 +2,8 @@ import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
 import {lightColors as vkColors} from '@/themeDescriptions/base/vk';
 import {octaviusTheme} from '@/themeDescriptions/themes/octavius';
 
-const fontFamilyAccent =
-	'VKSansDisplay, "TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';
-const fontFamilyBase =
-	'VKSansText, -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
+const fontFamilyBase = 'VKSansText, Helvetica, Arial, sans-serif';
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 500;
 const fontWeightBase1 = 400;
