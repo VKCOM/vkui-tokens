@@ -8,5 +8,6 @@ export const octaviusVKTheme: ParadigmThemeDescription = {
 	colors: {
 		...octaviusTheme.colors,
 		...vkColors.colors,
+		colorBackgroundSecondary: 'rgba(0, 28, 61, 0.05)',
 	},
 };
