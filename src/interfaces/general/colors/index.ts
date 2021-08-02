@@ -18,6 +18,7 @@ export type ColorDescription = Property.Color | ColorWithStates;
  */
 export interface ColorsDescriptionStruct {
 	colorBackgroundAccent: ColorDescription;
+	colorBackgroundAccentAlternative: ColorDescription;
 	colorIconAccent: ColorDescription;
 	colorTextAccent: ColorDescription;
 	colorStrokeAccent: ColorDescription;

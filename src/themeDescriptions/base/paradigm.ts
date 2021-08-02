@@ -14,6 +14,7 @@ export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
 		colorBackgroundAccent: '#005FF9',
+		colorBackgroundAccentAlternative: '#FF9E00',
 		colorIconAccent: '#005FF9',
 		colorTextAccent: '#005FF9',
 		colorStrokeAccent: '#005FF9',
@@ -92,6 +93,7 @@ export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
 		colorBackgroundAccent: '#2775FC',
+		colorBackgroundAccentAlternative: '#FF9E00',
 		colorIconAccent: '#3C82FD',
 		colorTextAccent: '#3C82FD',
 		colorStrokeAccent: '#3C82FD',

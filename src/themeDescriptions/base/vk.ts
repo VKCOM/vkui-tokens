@@ -15,6 +15,7 @@ export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
 		colorBackgroundAccent: '#3F8AE0',
+		colorBackgroundAccentAlternative: '#FF9E00',
 		colorIconAccent: '#3F8AE0',
 		colorTextAccent: '#3F8AE0',
 		colorStrokeAccent: '#3F8AE0',
