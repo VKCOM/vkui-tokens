@@ -29,7 +29,7 @@ export const lightColors: ColorsDescription = {
 		colorCounterProminentText: '#FFFFFF',
 		colorCounterMutedBackground: '#C4C6CC',
 		colorCounterMutedText: '#FFFFFF',
-		colorBackgroundWarning: '#FFFCE0',
+		colorBackgroundWarning: '#FFF1AD',
 		colorBackgroundNegative: '#ED0A34',
 		colorTextNegative: '#ED0A34',
 		colorIconNegative: '#ED0A34',
