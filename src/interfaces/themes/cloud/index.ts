@@ -1,9 +1,9 @@
 import {
-	ThemeOctavius,
-	ThemeOctaviusCssVars,
-	ThemeOctaviusDescription,
-} from '@/interfaces/themes/octavius';
+	ThemeParadigmBase,
+	ThemeParadigmBaseCssVars,
+	ThemeParadigmBaseDescription,
+} from '@/interfaces/themes/paradigmBase';
 
-export interface ThemeCloud extends ThemeOctavius {}
-export interface ThemeCloudDescription extends ThemeOctaviusDescription {}
-export interface ThemeCloudCssVars extends ThemeOctaviusCssVars {}
+export interface ThemeCloud extends ThemeParadigmBase {}
+export interface ThemeCloudDescription extends ThemeParadigmBaseDescription {}
+export interface ThemeCloudCssVars extends ThemeParadigmBaseCssVars {}

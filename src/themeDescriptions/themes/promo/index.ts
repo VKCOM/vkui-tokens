@@ -1,6 +1,6 @@
 import {ThemePromoDescription} from '@/interfaces/themes/promo';
 
-import {octaviusTheme} from '../octavius';
+import {lightTheme} from '../../base/paradigm';
 
 const fontWeight = 300;
 
@@ -71,7 +71,7 @@ const fontSize11 = {
 };
 
 export const promoTheme: ThemePromoDescription = {
-	...octaviusTheme,
+	...lightTheme,
 	themeName: 'promo',
 
 	breakpoints: {
