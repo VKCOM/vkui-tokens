@@ -2,8 +2,8 @@ import {Property} from 'csstype';
 
 import {ThemeCallsDescription} from '@/interfaces/themes/calls';
 
+import {darkTheme} from '../../base/paradigm';
 import {fontSizes} from '../../common';
-import {octaviusDarkTheme} from '../octavius';
 
 export const fontFamily: Property.FontFamily =
 	'MailSans, Helvetica, Arial, sans-serif';
@@ -45,11 +45,11 @@ const fontText = {
 };
 
 export const callsTheme: ThemeCallsDescription = {
-	...octaviusDarkTheme,
+	...darkTheme,
 	themeName: 'calls',
 
 	colors: {
-		...octaviusDarkTheme.colors,
+		...darkTheme.colors,
 		colorTextPrimary: '#ffffff',
 	},
 

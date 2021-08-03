@@ -2,9 +2,9 @@ import {ThemeCssVars} from '@/interfaces/general';
 import {Adaptive} from '@/interfaces/general/tools';
 import {Font} from '@/interfaces/general/typography';
 import {
-	ThemeOctavius,
-	ThemeOctaviusDescription,
-} from '@/interfaces/themes/octavius';
+	ThemeParadigmBase,
+	ThemeParadigmBaseDescription,
+} from '@/interfaces/themes/paradigmBase';
 
 export interface ThemeCalendarOverValues {
 	fontEventM: Adaptive<Font>;
@@ -15,9 +15,9 @@ export interface ThemeCalendarOverValues {
 	fontBodyAndroid: Adaptive<Font>;
 }
 
-export interface ThemeCalendar extends ThemeOctavius, ThemeCalendarOverValues {}
+export interface ThemeCalendar extends ThemeParadigmBase, ThemeCalendarOverValues {}
 export interface ThemeCalendarDescription
-	extends ThemeOctaviusDescription,
+	extends ThemeParadigmBaseDescription,
 		ThemeCalendarOverValues {}
 
 export interface ThemeCalendarCssVars

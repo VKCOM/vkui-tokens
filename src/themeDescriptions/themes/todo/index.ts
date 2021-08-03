@@ -1,12 +1,12 @@
 import {ThemeTodoDescription} from '@/interfaces/themes/todo';
 
+import {lightTheme} from '../../base/paradigm';
 import {helpers} from '../../common/helpers';
-import {octaviusTheme} from '../octavius';
 
 const {x12, x10} = helpers;
 
 export const todoTheme: ThemeTodoDescription = {
-	...octaviusTheme,
+	...lightTheme,
 	themeName: 'todo',
 
 	sizeFieldHeight: {

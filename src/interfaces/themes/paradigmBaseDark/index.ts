@@ -1,6 +1,10 @@
-import {Theme, ThemeCssVars, ThemeDescription} from '@/interfaces/general';
+import {
+	ParadigmTheme,
+	ParadigmThemeCssVars,
+	ParadigmThemeDescription,
+} from '@/interfaces/namespaces/paradigm';
 
-export interface ThemeParadigmBaseDark extends Theme {}
-export interface ThemeParadigmBaseDarkDescription extends ThemeDescription {}
-
-export interface ThemeParadigmBaseDarkCssVars extends ThemeCssVars {}
+export interface ThemeParadigmBaseDarkDescription
+	extends ParadigmThemeDescription {}
+export interface ThemeParadigmBaseDark extends ParadigmTheme {}
+export interface ThemeParadigmBaseDarkCssVars extends ParadigmThemeCssVars {}

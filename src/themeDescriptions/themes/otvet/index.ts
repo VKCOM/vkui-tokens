@@ -2,13 +2,13 @@ import {ThemeOtvetDescription} from '@/interfaces/themes/otvet';
 import {ThemeOtvetDarkDescription} from '@/interfaces/themes/otvetDark';
 
 import {flatifyTheme} from '../../../build/helpers/flatifyTheme';
+import {darkTheme, lightTheme} from '../../base/paradigm';
 import {fontSizes, helpers} from '../../common';
-import {octaviusDarkTheme, octaviusTheme} from '../octavius';
 
 const {x05, x3, x4, x5, x10} = helpers;
 const {fontSize4, fontSize5, fontSize6, fontSize7, fontSize8} = fontSizes;
 
-const octaviusThemeRegular = flatifyTheme(octaviusTheme);
+const octaviusThemeRegular = flatifyTheme(lightTheme);
 
 export const otvetTheme: ThemeOtvetDescription = {
 	...octaviusThemeRegular,
@@ -89,7 +89,7 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 	colorsScheme: 'dark',
 	colors: {
 		...otvetTheme.colors,
-		...octaviusDarkTheme.colors,
+		...darkTheme.colors,
 
 		colorBackgroundContent: {
 			normal: '#191919',

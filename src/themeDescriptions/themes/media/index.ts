@@ -2,7 +2,7 @@ import {replacePropDeep} from '@/build/helpers/replacePropDeep';
 import {ThemeMediaDescription} from '@/interfaces/themes/media';
 import {fontSizes, helpers, projectColors} from '@/themeDescriptions/common';
 
-import {octaviusTheme} from '../octavius';
+import {lightTheme} from '../../base/paradigm';
 
 const fontFamily = 'Roboto, Arial, sans-serif';
 // const fontFamilySlab = 'Roboto Slab, Arial, serif';
@@ -25,7 +25,7 @@ const touch = replacePropDeep(fontSizes, {
 	fontWeight: 400,
 });
 
-const replacedFamilyOctavius = replacePropDeep(octaviusTheme, {
+const replacedFamilyOctavius = replacePropDeep(lightTheme, {
 	fontFamily,
 	fontWeight: 300,
 });

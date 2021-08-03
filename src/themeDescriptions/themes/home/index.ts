@@ -2,9 +2,9 @@ import {flatifyTheme} from '@/build/helpers/flatifyTheme';
 import {ThemeHomeDescription} from '@/interfaces/themes/home';
 import {ThemeHomeDarkDescription} from '@/interfaces/themes/homeDark';
 
-import {octaviusDarkTheme, octaviusTheme} from '../octavius';
+import {darkTheme, lightTheme} from '../../base/paradigm';
 
-const octaviusThemeRegular = flatifyTheme(octaviusTheme);
+const octaviusThemeRegular = flatifyTheme(lightTheme);
 
 export const homeTheme: ThemeHomeDescription = {
 	...octaviusThemeRegular,
@@ -26,6 +26,6 @@ export const homeDarkTheme: ThemeHomeDarkDescription = {
 	themeName: 'homeDark',
 	colors: {
 		...homeTheme.colors,
-		...octaviusDarkTheme.colors,
+		...darkTheme.colors,
 	},
 };
