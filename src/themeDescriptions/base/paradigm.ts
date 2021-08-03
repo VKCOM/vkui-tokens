@@ -137,7 +137,7 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.16)',
 		colorSeparatorSecondary: '#393A3B',
 		colorSeparatorPrimary: '#434445',
-		colorTextLink: '#0667FF',
+		colorTextLink: '#589BFF',
 		colorTextMuted: '#D9DADD',
 		colorTextPrimary: '#D9DADD',
 		colorTextSecondary: '#9C9DA2',

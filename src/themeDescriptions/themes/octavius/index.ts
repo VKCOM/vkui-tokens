@@ -16,7 +16,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	themeName: 'octavius',
 	colors: {
 		...paradigmLightBase.colors,
-		colorBgThumbnail: '#00103d',
+		colorBgThumbnail: 'rgba(0, 16, 61, 0.08)',
 		colorRating: '#ffd400',
 		colorBgContrast: '#2C2D2E',
 		colorSocialVk: '#2787F5',
