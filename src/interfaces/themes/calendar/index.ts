@@ -15,7 +15,9 @@ export interface ThemeCalendarOverValues {
 	fontBodyAndroid: Adaptive<Font>;
 }
 
-export interface ThemeCalendar extends ThemeParadigmBase, ThemeCalendarOverValues {}
+export interface ThemeCalendar
+	extends ThemeParadigmBase,
+		ThemeCalendarOverValues {}
 export interface ThemeCalendarDescription
 	extends ThemeParadigmBaseDescription,
 		ThemeCalendarOverValues {}
