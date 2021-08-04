@@ -1,5 +1,6 @@
 import {stripIndent} from 'common-tags';
 
+import {getAllButSizes} from '@/build/helpers/getAllButSizes';
 import {getOnlyColors} from '@/build/helpers/getOnlyColors';
 import {unCamelcasify} from '@/build/helpers/unCamelcasify';
 import {PixelifyTheme} from '@/interfaces/general';
@@ -26,7 +27,8 @@ export type CompileStylesMode =
 	| 'onlyVariables'
 	| 'onlyColors'
 	| 'withAdaptiveGroups'
-	| 'onlyAdaptiveGroups';
+	| 'onlyAdaptiveGroups'
+	| 'noSizes';
 
 /**
  * Компиллирует строку со стилями (в разных форматах), на основе темы
@@ -57,8 +59,14 @@ export const compileStyles = <PT = PixelifyTheme>(
 	let variables = '';
 	let groupTokens = '';
 
-	if (mode === 'onlyColors') {
-		theme = getOnlyColors(theme);
+	switch (mode) {
+		case 'onlyColors':
+			theme = getOnlyColors(theme);
+			break;
+
+		case 'noSizes':
+			theme = getAllButSizes(theme);
+			break;
 	}
 
 	Object.keys(theme).forEach((key) => {
