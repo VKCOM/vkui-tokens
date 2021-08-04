@@ -119,9 +119,6 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderBackground: '#FFFFFF',
 		octaviusColorHeaderButtonText: octaviusTheme.colors.colorTextPrimary,
 		octaviusColorHeaderIcon: octaviusTheme.colors.colorIconPrimary,
-
-		octaviusColorSidebarItemIconPrimary:
-			octaviusDarkTheme.colors.colorIconPrimary,
 	},
 
 	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',
