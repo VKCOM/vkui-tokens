@@ -43,12 +43,33 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorBgPromo: ColorDescription;
 	colorTrueBlack: ColorDescription;
 	colorTrueWhite: ColorDescription;
+
+	// Фон страницы (отличается от colorBackground)
+	octaviusColorBackground: ColorDescription;
+
+	// Токены синей шапки
+	octaviusColorHeaderBackground: ColorDescription;
+	octaviusColorHeaderButtonText: ColorDescription;
+	octaviusColorHeaderIcon: ColorDescription;
+	octaviusColorHeaderSearchBackground: ColorDescription;
+
+	// Токены сайдбара
+	octaviusColorSidebarItemBackground: ColorDescription;
+	octaviusColorSidebarItemIconPrimary: ColorDescription;
+	octaviusColorSidebarCounterBackground: ColorDescription;
+	octaviusColorSidebarCounterText: ColorDescription;
+
+	// Токены портального меню
+	octaviusColorPortalMenuBackground: ColorDescription;
 }
 
 export interface ThemeOctaviusDescription extends ParadigmThemeDescription {
 	colors: LocalOctaviusColorsDescriptionStruct &
 		LocalParadigmColorsDescriptionStruct &
 		ColorsDescriptionStruct;
+
+	octaviusShadowLetterList: string;
+	octaviusElevationHeader: string;
 }
 export interface ThemeOctavius extends ParadigmTheme {}
 export interface ThemeOctaviusCssVars extends ParadigmThemeCssVars {}

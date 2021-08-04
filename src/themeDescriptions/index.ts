@@ -9,6 +9,7 @@ import {mediaTheme} from '@/themeDescriptions/themes/media';
 import {mycomTheme} from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
+	octaviusWhiteTheme,
 	octaviusTheme,
 } from '@/themeDescriptions/themes/octavius';
 import {
@@ -42,6 +43,7 @@ export const themes = [
 	octaviusVKTheme,
 	calendarTheme,
 	calendarDarkTheme,
+	octaviusWhiteTheme,
 	callsTheme,
 	homeTheme,
 	homeDarkTheme,

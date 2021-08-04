@@ -43,7 +43,27 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorBgPromo: '#EBEEF5',
 		colorTrueBlack: '#000000',
 		colorTrueWhite: '#ffffff',
+
+		octaviusColorBackground: lightTheme.colors.colorBackground,
+		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
+		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
+		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
+		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
+
+		octaviusColorSidebarCounterBackground:
+			lightTheme.colors.colorTransparent,
+
+		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
+		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
+
+		octaviusColorHeaderSearchBackground:
+			lightTheme.colors.colorBackgroundModal,
+
+		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
 	},
+
+	octaviusShadowLetterList: 'none',
+	octaviusElevationHeader: 'none',
 };
 
 export const octaviusDarkTheme: ThemeOctaviusDescription = {
@@ -57,5 +77,43 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		colorBgThumbnail: '#1F1F1F',
 		colorBgPlaceholder: '#000000',
 		colorBgPromo: '#303030',
+
+		octaviusColorPortalMenuBackground: '#19191A',
+		octaviusColorSidebarItemBackground: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.08)',
+			active: 'rgba(255, 255, 255, 0.12)',
+		},
+
+		octaviusColorBackground: darkTheme.colors.colorBackground,
+		octaviusColorHeaderBackground: darkTheme.colors.colorBackgroundAccent,
+		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
+		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
+		octaviusColorSidebarItemIconPrimary: darkTheme.colors.colorIconPrimary,
+
+		octaviusColorSidebarCounterBackground:
+			darkTheme.colors.colorTransparent,
+
+		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
+
+		octaviusColorHeaderSearchBackground:
+			lightTheme.colors.colorBackgroundModal,
 	},
+};
+
+export const octaviusWhiteTheme: ThemeOctaviusDescription = {
+	...octaviusTheme,
+	themeName: 'octaviusWhite',
+	colors: {
+		...octaviusTheme.colors,
+
+		octaviusColorHeaderBackground: '#FFFFFF',
+		octaviusColorHeaderButtonText: octaviusTheme.colors.colorTextPrimary,
+		octaviusColorHeaderIcon: octaviusTheme.colors.colorIconPrimary,
+
+		octaviusColorSidebarItemIconPrimary:
+			octaviusDarkTheme.colors.colorIconPrimary,
+	},
+
+	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',
 };

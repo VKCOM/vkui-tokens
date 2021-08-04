@@ -1,4 +1,5 @@
 import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
+import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {lightColors as vkColors} from '@/themeDescriptions/base/vk';
 import {octaviusTheme} from '@/themeDescriptions/themes/octavius';
 
@@ -9,7 +10,7 @@ const fontWeightAccent3 = 500;
 const fontWeightBase1 = 400;
 
 // TODO: Придумать более изящный способ наследования
-const octaviusVKThemeBase: ParadigmThemeDescription = {
+const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	...octaviusTheme,
 	themeName: 'octaviusVK',
 
@@ -18,7 +19,20 @@ const octaviusVKThemeBase: ParadigmThemeDescription = {
 		...octaviusTheme.colors,
 		...vkColors.colors,
 		colorBackgroundSecondary: 'rgba(0, 28, 61, 0.05)',
+
+		octaviusColorBackground: '#EDEEF0',
+		octaviusColorHeaderBackground: '#FFFFFF',
+		octaviusColorHeaderButtonText: '#000000',
+		octaviusColorHeaderButtonIcon: '#3F8AE0',
+		octaviusColorSidebarItemIconPrimary: '#3F8AE0',
+		octaviusColorSidebarCounterBackground: '#AEB7C2',
+		octaviusColorSidebarCounterText: '#FFFFFF',
+		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
 	},
+
+	octaviusShadowLetterList:
+		'0px 0px 0px 1px #DCE1E5, 0px 1px 0px 0px #D3D9DE',
+	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.13)',
 
 	// Типографика
 	// Размеры такие же, как в теме octavius, а вот fontFamily другой
