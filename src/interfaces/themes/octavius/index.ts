@@ -1,13 +1,19 @@
+import {ThemeCssVars} from '@/interfaces/general';
 import {
 	ColorDescription,
 	ColorsDescriptionStruct,
+	ColorWithStates,
 } from '@/interfaces/general/colors';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
-	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
+
+export interface ThemeOctaviusOverValues {
+	octaviusShadowLetterList: string;
+	octaviusElevationHeader: string;
+}
 
 export interface LocalOctaviusColorsDescriptionStruct {
 	colorBgThumbnail: ColorDescription;
@@ -63,13 +69,21 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorPortalMenuBackground: ColorDescription;
 }
 
-export interface ThemeOctaviusDescription extends ParadigmThemeDescription {
+export type OctaviusLocalColors = {
+	[key in keyof LocalOctaviusColorsDescriptionStruct]: ColorWithStates;
+};
+
+export interface ThemeOctaviusDescription
+	extends ParadigmThemeDescription,
+		ThemeOctaviusOverValues {
 	colors: LocalOctaviusColorsDescriptionStruct &
 		LocalParadigmColorsDescriptionStruct &
 		ColorsDescriptionStruct;
-
-	octaviusShadowLetterList: string;
-	octaviusElevationHeader: string;
 }
-export interface ThemeOctavius extends ParadigmTheme {}
-export interface ThemeOctaviusCssVars extends ParadigmThemeCssVars {}
+export interface ThemeOctavius
+	extends ParadigmTheme,
+		ThemeOctaviusOverValues,
+		OctaviusLocalColors {}
+
+export interface ThemeOctaviusCssVars
+	extends ThemeCssVars<ThemeOctavius, 'breakpoints'> {}

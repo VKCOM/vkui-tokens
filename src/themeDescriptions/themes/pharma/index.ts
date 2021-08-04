@@ -58,7 +58,7 @@ export const pharmaTheme: ThemePharmaDescription = {
 		colorIconAccent: projectColors.colorPrimaryPharma,
 		colorBackgroundAccent: projectColors.colorPrimaryPharma,
 		colorStrokeAccent: projectColors.colorPrimaryPharma,
-		colorSale: themeWithFontFamily.colors.colorPaletteRed2,
+		colorSale: '#eb1981',
 	},
 	sizeSelectIconPadding: {
 		regular: 7,
