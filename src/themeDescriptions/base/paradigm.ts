@@ -110,7 +110,7 @@ export const darkColors: ColorsDescription = {
 		colorCounterProminentText: '#151515',
 		colorCounterMutedBackground: '#8D8E94',
 		colorCounterMutedText: '#151515',
-		colorBackgroundWarning: 'rgba(255, 212, 100, 0.16)',
+		colorBackgroundWarning: '#6C4E00',
 		colorBackgroundNegative: '#ED0A34',
 		colorTextNegative: '#ED0A34',
 		colorIconNegative: '#ED0A34',
