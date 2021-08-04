@@ -23,7 +23,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorBackground: '#EDEEF0',
 		octaviusColorHeaderBackground: '#FFFFFF',
 		octaviusColorHeaderButtonText: '#000000',
-		octaviusColorHeaderButtonIcon: '#3F8AE0',
+		octaviusColorHeaderIcon: '#3F8AE0',
 		octaviusColorSidebarItemIconPrimary: '#3F8AE0',
 		octaviusColorSidebarCounterBackground: '#AEB7C2',
 		octaviusColorSidebarCounterText: '#FFFFFF',
