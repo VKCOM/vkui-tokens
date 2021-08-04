@@ -20,7 +20,13 @@ import {
 	isGroupToken,
 } from './helpers/tokenRecognition';
 
-export const serviceKeys = ['breakpoints', 'prefix', 'themeName', 'themeType'];
+export const serviceKeys = [
+	'breakpoints',
+	'prefix',
+	'themeName',
+	'themeType',
+	'themeBase',
+];
 
 export type CompileStylesMode =
 	| 'default'
@@ -65,7 +71,7 @@ export const compileStyles = <PT = PixelifyTheme>(
 			break;
 
 		case 'noSizes':
-			theme = getAllButSizes(theme);
+			theme = getAllButSizes(theme, (theme as any).themeBase);
 			break;
 	}
 

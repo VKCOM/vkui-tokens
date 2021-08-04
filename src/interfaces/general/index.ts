@@ -30,6 +30,8 @@ export interface ColorsFinal extends Colors, ColorsScheme {}
 
 export interface SpecialTokens {
 	themeName: string;
+	// Базовая тема, от которой наследуемся
+	themeBase?: string;
 	prefix?: string;
 }
 

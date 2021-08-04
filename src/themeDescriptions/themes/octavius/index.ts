@@ -9,6 +9,7 @@ import {
 export const octaviusTheme: ThemeOctaviusDescription = {
 	...lightTheme,
 	themeName: 'octavius',
+	themeBase: 'octavius',
 	colors: {
 		...lightTheme.colors,
 		colorBgThumbnail: 'rgba(0, 16, 61, 0.08)',
