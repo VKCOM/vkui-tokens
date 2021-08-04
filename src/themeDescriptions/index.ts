@@ -9,8 +9,8 @@ import {mediaTheme} from '@/themeDescriptions/themes/media';
 import {mycomTheme} from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
-	octaviusWhiteTheme,
 	octaviusTheme,
+	octaviusWhiteTheme,
 } from '@/themeDescriptions/themes/octavius';
 import {
 	octaviusCompactDarkTheme,
