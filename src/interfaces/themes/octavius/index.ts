@@ -13,6 +13,13 @@ import {
 export interface ThemeOctaviusOverValues {
 	octaviusShadowLetterList: string;
 	octaviusElevationHeader: string;
+
+	// Кастомные шрифты
+	octaviusFontFamilyDefault: string;
+	octaviusFontFamilyMailSans: string;
+	octaviusFontFamilyGlobal: string;
+	octaviusFontFamilyMac: string;
+	octaviusFontFamilyDisplay: string;
 }
 
 export interface LocalOctaviusColorsDescriptionStruct {

@@ -1,4 +1,3 @@
-import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {lightColors as vkColors} from '@/themeDescriptions/base/vk';
 import {octaviusTheme} from '@/themeDescriptions/themes/octavius';
@@ -202,7 +201,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 };
 
-export const octaviusVKTheme: ParadigmThemeDescription = {
+export const octaviusVKTheme: ThemeOctaviusDescription = {
 	...octaviusVKThemeBase,
 	// todo удалить и заменить на контекстные токены в проектах
 	fontH3: {
@@ -240,4 +239,10 @@ export const octaviusVKTheme: ParadigmThemeDescription = {
 			...octaviusVKThemeBase.fontHeadline.regular,
 		},
 	},
+
+	octaviusFontFamilyDefault: fontFamilyBase,
+	octaviusFontFamilyMailSans: fontFamilyAccent,
+	octaviusFontFamilyGlobal: fontFamilyBase,
+	octaviusFontFamilyMac: fontFamilyBase,
+	octaviusFontFamilyDisplay: fontFamilyAccent,
 };

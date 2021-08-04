@@ -64,6 +64,15 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 	octaviusShadowLetterList: 'none',
 	octaviusElevationHeader: 'none',
+
+	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
+
+	octaviusFontFamilyMailSans:
+		'MailSans, HelveticaNeue, Helvetica, Arial, sans-serif',
+
+	octaviusFontFamilyGlobal: 'Arial, Tahoma, Verdana, sans-serif',
+	octaviusFontFamilyMac: 'Helvetica, Arial, Tahoma, Verdana, sans-serif',
+	octaviusFontFamilyDisplay: 'inherit',
 };
 
 export const octaviusDarkTheme: ThemeOctaviusDescription = {
