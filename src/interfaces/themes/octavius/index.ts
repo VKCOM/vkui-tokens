@@ -74,6 +74,16 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены портального меню
 	octaviusColorPortalMenuBackground: ColorDescription;
+
+	// Категории письма
+	octaviusColorIconUnread: ColorDescription;
+	octaviusColorIconFavorite: ColorDescription;
+	octaviusColorIconOrder: ColorDescription;
+	octaviusColorIconFinance: ColorDescription;
+	octaviusColorIconRegistration: ColorDescription;
+	octaviusColorIconTravel: ColorDescription;
+	octaviusColorIconEvent: ColorDescription;
+	octaviusColorIconFees: ColorDescription;
 }
 
 export type OctaviusLocalColors = {

@@ -61,6 +61,15 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundModal,
 
 		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
+
+		octaviusColorIconUnread: '#005FF9',
+		octaviusColorIconFavorite: '#fc2c38',
+		octaviusColorIconOrder: '#ff54aa',
+		octaviusColorIconFinance: '#2fc885',
+		octaviusColorIconRegistration: '#ff9e00',
+		octaviusColorIconTravel: '#ba34fc',
+		octaviusColorIconEvent: '#09a6fa',
+		octaviusColorIconFees: '#e60000',
 	},
 
 	octaviusShadowLetterList: 'none',
@@ -108,6 +117,15 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderSearchBackground:
 			lightTheme.colors.colorBackgroundModal,
+
+		octaviusColorIconUnread: '#0C7CFF',
+		octaviusColorIconFavorite: '#FF4550',
+		octaviusColorIconOrder: '#F94CA3',
+		octaviusColorIconFinance: '#24C780',
+		octaviusColorIconRegistration: '#FF9C37',
+		octaviusColorIconTravel: '#C15DF3',
+		octaviusColorIconEvent: '#3BBAFE',
+		octaviusColorIconFees: '#EE3C3C',
 	},
 };
 
