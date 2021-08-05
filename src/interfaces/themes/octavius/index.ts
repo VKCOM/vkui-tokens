@@ -4,6 +4,7 @@ import {
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
+import {Adaptive} from '@/interfaces/general/tools';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
@@ -22,6 +23,21 @@ export interface ThemeOctaviusOverValues {
 	octaviusFontFamilyMac: string;
 	octaviusFontFamilyDisplay: string;
 }
+
+export interface ThemeOctaviusLocalSizes {
+	octaviusSizeHeadlineHeight: number;
+	octaviusSizeLayoutWidthMin: number;
+	octaviusSizeLayoutWidthMax: number;
+	octaviusSizeSidebarPaddingTop: number;
+	octaviusSizeSidebarWidgetsHeightMin: number;
+	octaviusSizeSidebarWidgetsHeightCompactMin: number;
+}
+
+type ThemeOctaviusAdaptiveTokens = {
+	[key in keyof ThemeOctaviusLocalSizes]: Adaptive<
+		ThemeOctaviusLocalSizes[key]
+	>;
+};
 
 export interface LocalOctaviusColorsDescriptionStruct {
 	colorBgThumbnail: ColorDescription;
@@ -98,7 +114,8 @@ export type OctaviusLocalColors = {
 
 export interface ThemeOctaviusDescription
 	extends ParadigmThemeDescription,
-		ThemeOctaviusOverValues {
+		ThemeOctaviusOverValues,
+		ThemeOctaviusAdaptiveTokens {
 	colors: LocalOctaviusColorsDescriptionStruct &
 		LocalParadigmColorsDescriptionStruct &
 		ColorsDescriptionStruct;
@@ -106,7 +123,8 @@ export interface ThemeOctaviusDescription
 export interface ThemeOctavius
 	extends ParadigmTheme,
 		ThemeOctaviusOverValues,
-		OctaviusLocalColors {}
+		OctaviusLocalColors,
+		ThemeOctaviusAdaptiveTokens {}
 
 export interface ThemeOctaviusCssVars
 	extends ThemeCssVars<ThemeOctavius, 'breakpoints'> {}

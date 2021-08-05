@@ -95,6 +95,25 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusFontFamilyGlobal: 'Arial, Tahoma, Verdana, sans-serif',
 	octaviusFontFamilyMac: 'Helvetica, Arial, Tahoma, Verdana, sans-serif',
 	octaviusFontFamilyDisplay: 'inherit',
+
+	octaviusSizeHeadlineHeight: {
+		regular: 36,
+	},
+	octaviusSizeLayoutWidthMin: {
+		regular: 2150,
+	},
+	octaviusSizeLayoutWidthMax: {
+		regular: 761,
+	},
+	octaviusSizeSidebarPaddingTop: {
+		regular: 12,
+	},
+	octaviusSizeSidebarWidgetsHeightMin: {
+		regular: 64,
+	},
+	octaviusSizeSidebarWidgetsHeightCompactMin: {
+		regular: 104,
+	},
 };
 
 export const octaviusDarkTheme: ThemeOctaviusDescription = {
