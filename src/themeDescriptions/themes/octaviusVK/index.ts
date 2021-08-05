@@ -27,6 +27,11 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorSidebarCounterBackground: '#AEB7C2',
 		octaviusColorSidebarCounterText: '#FFFFFF',
 		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
+
+		octaviusColorDatasetBackground:
+			octaviusTheme.colors.colorBackgroundContent,
+		octaviusColorTextBackgroundContrast:
+			octaviusTheme.colors.colorTextPrimary,
 	},
 
 	octaviusShadowLetterList:

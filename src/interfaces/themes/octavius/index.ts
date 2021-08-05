@@ -13,6 +13,7 @@ import {
 export interface ThemeOctaviusOverValues {
 	octaviusShadowLetterList: string;
 	octaviusElevationHeader: string;
+	octaviusShadowTextBackgroundContrast: string;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -84,6 +85,11 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconTravel: ColorDescription;
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
+
+	// Другие стили
+	octaviusColorListLetterBackground: ColorDescription;
+	octaviusColorDatasetBackground: ColorDescription;
+	octaviusColorTextBackgroundContrast: ColorDescription;
 }
 
 export type OctaviusLocalColors = {

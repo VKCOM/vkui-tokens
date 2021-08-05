@@ -70,9 +70,21 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconTravel: '#ba34fc',
 		octaviusColorIconEvent: '#09a6fa',
 		octaviusColorIconFees: '#e60000',
+
+		octaviusColorListLetterBackground: {
+			normal: '#ffffff',
+			hover: '#f5f5f7',
+			active: '#ebecef',
+		},
+
+		octaviusColorDatasetBackground:
+			lightTheme.colors.colorBackgroundContent,
+
+		octaviusColorTextBackgroundContrast: '#333333',
 	},
 
 	octaviusShadowLetterList: 'none',
+	octaviusShadowTextBackgroundContrast: 'none',
 	octaviusElevationHeader: 'none',
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
@@ -126,6 +138,12 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconTravel: '#C15DF3',
 		octaviusColorIconEvent: '#3BBAFE',
 		octaviusColorIconFees: '#EE3C3C',
+
+		octaviusColorListLetterBackground:
+			darkTheme.colors.colorBackgroundContent,
+
+		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
+		octaviusColorTextBackgroundContrast: darkTheme.colors.colorTextPrimary,
 	},
 };
 
