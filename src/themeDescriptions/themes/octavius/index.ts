@@ -99,10 +99,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusSizeHeadlineHeight: {
 		regular: 36,
 	},
-	octaviusSizeLayoutWidthMin: {
+	octaviusSizeLayoutWidthMax: {
 		regular: 2150,
 	},
-	octaviusSizeLayoutWidthMax: {
+	octaviusSizeLayoutWidthMin: {
 		regular: 761,
 	},
 	octaviusSizeSidebarPaddingTop: {
