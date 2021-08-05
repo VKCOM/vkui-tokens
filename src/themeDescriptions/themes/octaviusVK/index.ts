@@ -18,6 +18,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		...octaviusTheme.colors,
 		...vkColors.colors,
 		colorBackgroundSecondary: 'rgba(0, 28, 61, 0.05)',
+		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 
 		octaviusColorBackground: '#EDEEF0',
 		octaviusColorHeaderBackground: '#FFFFFF',

@@ -22,6 +22,7 @@ import {Font} from '@/interfaces/general/typography';
 export interface LocalParadigmColorsDescriptionStruct {
 	colorButtonContrast: ColorDescription;
 	colorRating: ColorDescription;
+	colorThumbErrorBackground: ColorDescription;
 }
 
 export type ParadigmLocalColors = {

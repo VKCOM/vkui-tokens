@@ -442,6 +442,7 @@ export const lightTheme: ParadigmThemeDescription = {
 			hover: 'rgba(255, 255, 255, 0.8)',
 			active: 'rgba(255, 255, 255, 0.6)',
 		},
+		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
 	},
 
 	breakpoints: {
@@ -736,5 +737,6 @@ export const darkTheme: ParadigmThemeDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
+		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
 	},
 };
