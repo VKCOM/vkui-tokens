@@ -86,6 +86,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
 	octaviusColorHeaderSearchBackground: ColorDescription;
+	octaviusColorHeaderSearchBackgroundCollapsed: ColorDescription;
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 
 	// Токены сайдбара

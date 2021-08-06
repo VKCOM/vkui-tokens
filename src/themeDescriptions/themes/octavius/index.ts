@@ -56,6 +56,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderSearchBackground:
 			lightTheme.colors.colorBackgroundModal,
+		octaviusColorHeaderSearchBackgroundCollapsed:
+			lightTheme.colors.colorBackgroundModal,
 
 		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
 
@@ -148,6 +150,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
 
 		octaviusColorHeaderSearchBackground: '#1F1F1F',
+		octaviusColorHeaderSearchBackgroundCollapsed:
+			darkTheme.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackground:
 			darkTheme.colors.colorBackgroundModal,
 
@@ -186,6 +190,7 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderIcon: octaviusTheme.colors.colorIconPrimary,
 
 		octaviusColorHeaderSearchBackground: '#f0f1f3',
+		octaviusColorHeaderSearchBackgroundCollapsed: '#f0f1f3',
 	},
 
 	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',
