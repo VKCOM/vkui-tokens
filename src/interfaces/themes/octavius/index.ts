@@ -81,7 +81,12 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
+	octaviusColorHeaderTextSecondary: ColorDescription;
+
+	// Поиск
+	octaviusColorHeaderSearchIcon: ColorDescription;
 	octaviusColorHeaderSearchBackground: ColorDescription;
+	octaviusColorHeaderSearchChipBackground: ColorDescription;
 
 	// Токены сайдбара
 	octaviusColorSidebarItemBackground: ColorDescription;

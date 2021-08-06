@@ -46,19 +46,25 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorTrueWhite: '#ffffff',
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,
+
 		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
 		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
 		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderTextSecondary: '#93969b',
+		octaviusColorHeaderSearchIcon: '#b6b8be',
+		octaviusColorHeaderSearchChipBackground: '#ffffff',
+
+		octaviusColorHeaderSearchBackground:
+			lightTheme.colors.colorBackgroundModal,
+
+		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
+
 		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
 
 		octaviusColorSidebarCounterBackground:
 			lightTheme.colors.colorTransparent,
 
 		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
-		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
-
-		octaviusColorHeaderSearchBackground:
-			lightTheme.colors.colorBackgroundModal,
 
 		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
 
@@ -136,18 +142,21 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		},
 
 		octaviusColorBackground: darkTheme.colors.colorBackground,
+
 		octaviusColorHeaderBackground: darkTheme.colors.colorBackgroundAccent,
 		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
 		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
+
+		octaviusColorHeaderSearchBackground: '#1F1F1F',
+		octaviusColorHeaderSearchChipBackground:
+			darkTheme.colors.colorBackgroundModal,
+
 		octaviusColorSidebarItemIconPrimary: darkTheme.colors.colorIconPrimary,
 
 		octaviusColorSidebarCounterBackground:
 			darkTheme.colors.colorTransparent,
 
 		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
-
-		octaviusColorHeaderSearchBackground:
-			lightTheme.colors.colorBackgroundModal,
 
 		octaviusColorIconUnread: '#0C7CFF',
 		octaviusColorIconFavorite: '#FF4550',
@@ -175,6 +184,8 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderBackground: '#FFFFFF',
 		octaviusColorHeaderButtonText: octaviusTheme.colors.colorTextPrimary,
 		octaviusColorHeaderIcon: octaviusTheme.colors.colorIconPrimary,
+
+		octaviusColorHeaderSearchBackground: '#f0f1f3',
 	},
 
 	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',

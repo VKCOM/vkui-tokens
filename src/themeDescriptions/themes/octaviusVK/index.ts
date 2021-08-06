@@ -21,13 +21,27 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 
 		octaviusColorBackground: '#EDEEF0',
+		octaviusColorIconUnread: vkColors.colors.colorAccentBlue,
+		octaviusColorIconFavorite: vkColors.colors.colorAccentRed,
+		octaviusColorIconOrder: '#ff51ab',
+		octaviusColorIconFinance: '#22c983',
+		octaviusColorIconRegistration: '#ffa000',
+		octaviusColorIconTravel: '#bd19ff',
+		octaviusColorIconEvent: '#07a3fc',
+		octaviusColorIconFees: '#e70101',
+
 		octaviusColorHeaderBackground: '#FFFFFF',
 		octaviusColorHeaderButtonText: '#000000',
 		octaviusColorHeaderIcon: '#3F8AE0',
+		octaviusColorHeaderTextSecondary: vkColors.colors.colorTextSecondary,
+
+		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
+		octaviusColorHeaderSearchChipBackground: '#FFFFFF',
+		octaviusColorHeaderSearchIcon: '#8d949d',
+
 		octaviusColorSidebarItemIconPrimary: '#3F8AE0',
 		octaviusColorSidebarCounterBackground: '#AEB7C2',
 		octaviusColorSidebarCounterText: '#FFFFFF',
-		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
 
 		octaviusColorDatasetBackground:
 			octaviusTheme.colors.colorBackgroundContent,
