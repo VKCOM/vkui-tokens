@@ -82,6 +82,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderButtonText: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
+	octaviusColorHeaderProgress: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;

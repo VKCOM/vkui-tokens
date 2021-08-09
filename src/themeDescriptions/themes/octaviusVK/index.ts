@@ -34,6 +34,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorHeaderButtonText: '#000000',
 		octaviusColorHeaderIcon: '#3F8AE0',
 		octaviusColorHeaderTextSecondary: vkColors.colors.colorTextSecondary,
+		octaviusColorHeaderProgress: vkColors.colors.colorBackgroundAccent,
 
 		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
 		octaviusColorHeaderSearchChipBackground: '#FFFFFF',
