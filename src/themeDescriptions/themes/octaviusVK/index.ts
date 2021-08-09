@@ -37,6 +37,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorHeaderProgress: vkColors.colors.colorBackgroundAccent,
 
 		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
+		octaviusColorHeaderSearchBackgroundCollapsed: 'rgba(0, 16, 61, 0.07)',
 		octaviusColorHeaderSearchChipBackground: '#FFFFFF',
 		octaviusColorHeaderSearchIcon: '#8d949d',
 
