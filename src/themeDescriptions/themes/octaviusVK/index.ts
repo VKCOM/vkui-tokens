@@ -21,7 +21,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 
 		octaviusColorBackground: '#EDEEF0',
-		octaviusColorIconUnread: vkColors.colors.colorAccentBlue,
+		octaviusColorIconUnread: vkColors.colors.colorIconAccent,
 		octaviusColorIconFavorite: vkColors.colors.colorAccentRed,
 		octaviusColorIconOrder: '#ff51ab',
 		octaviusColorIconFinance: '#22c983',
@@ -32,7 +32,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderBackground: '#FFFFFF',
 		octaviusColorHeaderButtonText: '#000000',
-		octaviusColorHeaderIcon: '#3F8AE0',
+		octaviusColorHeaderIcon: vkColors.colors.colorIconAccent,
 		octaviusColorHeaderTextSecondary: vkColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkColors.colors.colorBackgroundAccent,
 
@@ -41,7 +41,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchChipBackground: '#FFFFFF',
 		octaviusColorHeaderSearchIcon: '#b6b8be',
 
-		octaviusColorSidebarItemIconPrimary: '#3F8AE0',
+		octaviusColorSidebarItemIconPrimary: vkColors.colors.colorIconAccent,
 		octaviusColorSidebarCounterBackground: '#AEB7C2',
 		octaviusColorSidebarCounterText: '#FFFFFF',
 
@@ -51,9 +51,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			octaviusTheme.colors.colorTextPrimary,
 	},
 
-	octaviusShadowLetterList:
-		'0px 0px 0px 1px #DCE1E5, 0px 1px 0px 0px #D3D9DE',
-	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.13)',
+	octaviusShadowLetterList: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
+	octaviusElevationHeader: '0px 0px 0px 1px #E7E8EC',
 
 	// Типографика
 	// Размеры такие же, как в теме octavius, а вот fontFamily другой

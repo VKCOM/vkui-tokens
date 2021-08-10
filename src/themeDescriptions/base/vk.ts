@@ -14,7 +14,7 @@ const fontWeightBase3 = 600;
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
-		colorBackgroundAccent: '#3F8AE0',
+		colorBackgroundAccent: '#4986CC',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorIconAccent: '#3F8AE0',
 		colorTextAccent: '#3F8AE0',
