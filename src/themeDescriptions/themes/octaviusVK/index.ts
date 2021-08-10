@@ -60,6 +60,9 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemIconPrimary: vkColors.colors.colorIconAccent,
 		octaviusColorSidebarCounterBackground: '#AEB7C2',
 		octaviusColorSidebarCounterText: '#FFFFFF',
+		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
+
+		octaviusColorContentScrollbar: '#C4C8CC',
 
 		octaviusColorDatasetBackground:
 			octaviusTheme.colors.colorBackgroundContent,

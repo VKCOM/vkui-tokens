@@ -76,8 +76,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorTransparent,
 
 		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
-
 		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
+		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
+
+		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.16)',
 
 		octaviusColorIconUnread: '#005FF9',
 		octaviusColorIconFavorite: '#fc2c38',
@@ -177,6 +179,9 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			darkTheme.colors.colorTransparent,
 
 		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
+		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.04)',
+
+		octaviusColorContentScrollbar: 'rgba(255, 255, 255, 0.04)',
 
 		octaviusColorIconUnread: '#0C7CFF',
 		octaviusColorIconFavorite: '#FF4550',
