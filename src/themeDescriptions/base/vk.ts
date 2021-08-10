@@ -106,6 +106,7 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 24,
 			lineHeight: 28,
+			letterSpacing: '-0.48px',
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
@@ -114,6 +115,7 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 20,
 			lineHeight: 24,
+			letterSpacing: '-0.4px',
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
@@ -122,6 +124,7 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 17,
 			lineHeight: 24,
+			letterSpacing: '-0.22px',
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
@@ -130,27 +133,30 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
+			letterSpacing: '-0.16px',
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent2,
-			letterSpacing: '0.1px',
 		},
 	},
 	fontText: {
 		regular: {
 			fontSize: 15,
 			lineHeight: 20,
+			letterSpacing: '-0.1px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 		},
 		compact: {
 			fontSize: 16,
 			lineHeight: 20,
+			letterSpacing: '-0.16px',
 		},
 	},
 	fontSubhead: {
 		regular: {
 			fontSize: 14,
 			lineHeight: 18,
+			letterSpacing: '-0.06px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 		},
@@ -159,6 +165,7 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 13,
 			lineHeight: 16,
+			letterSpacing: '0px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 		},
@@ -167,16 +174,17 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 13,
 			lineHeight: 16,
+			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
-			letterSpacing: '0.3px',
 		},
 	},
 	fontCaption1: {
 		regular: {
 			fontSize: 12,
 			lineHeight: 14,
+			letterSpacing: '0.06px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 		},
@@ -185,16 +193,17 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 12,
 			lineHeight: 14,
+			letterSpacing: '0.2px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
-			letterSpacing: '0.2px',
 		},
 	},
 	fontCaption2: {
 		regular: {
 			fontSize: 11,
 			lineHeight: 14,
+			letterSpacing: '0.11px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 		},
@@ -203,16 +212,17 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 11,
 			lineHeight: 14,
+			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
-			letterSpacing: '0.3px',
 		},
 	},
 	fontCaption3: {
 		regular: {
 			fontSize: 9,
 			lineHeight: 12,
+			letterSpacing: '0.18px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 		},
@@ -221,10 +231,10 @@ export const lightTheme: ThemeDescription = {
 		regular: {
 			fontSize: 9,
 			lineHeight: 12,
+			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
-			letterSpacing: '0.3px',
 		},
 	},
 
