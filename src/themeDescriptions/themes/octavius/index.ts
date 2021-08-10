@@ -60,6 +60,11 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderSearchBackground: '#ffffff',
 		octaviusColorHeaderSearchBackgroundCollapsed: '#ffffff',
+
+		octaviusColorHeaderSearchText: lightTheme.colors.colorTextPrimary,
+		octaviusColorHeaderSearchTextCollapsed:
+			lightTheme.colors.colorTextSecondary,
+
 		octaviusColorHeaderProgress:
 			lightTheme.colors.colorBackgroundAccentAlternative,
 
@@ -162,6 +167,9 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			darkTheme.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
 		octaviusColorHeaderSearchChipBorderEditable: 'rgba(255, 255, 255, .48)',
+		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,
+		octaviusColorHeaderSearchTextCollapsed:
+			darkTheme.colors.colorTextSecondary,
 
 		octaviusColorSidebarItemIconPrimary: darkTheme.colors.colorIconPrimary,
 

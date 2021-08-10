@@ -40,6 +40,9 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchBackgroundCollapsed: 'rgba(0, 16, 61, 0.07)',
 		octaviusColorHeaderSearchChipBackground: '#FFFFFF',
 		octaviusColorHeaderSearchIcon: '#b6b8be',
+		octaviusColorHeaderSearchText: vkColors.colors.colorTextPrimary,
+		octaviusColorHeaderSearchTextCollapsed:
+			vkColors.colors.colorTextSecondary,
 
 		octaviusColorSidebarItemIconPrimary: vkColors.colors.colorIconAccent,
 		octaviusColorSidebarCounterBackground: '#AEB7C2',

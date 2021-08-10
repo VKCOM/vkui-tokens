@@ -88,6 +88,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchIcon: ColorDescription;
 	octaviusColorHeaderSearchBackground: ColorDescription;
 	octaviusColorHeaderSearchBackgroundCollapsed: ColorDescription;
+	octaviusColorHeaderSearchText: ColorDescription;
+	octaviusColorHeaderSearchTextCollapsed: ColorDescription;
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
 	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
