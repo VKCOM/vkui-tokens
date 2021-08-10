@@ -68,7 +68,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 
 	octaviusElevationCard: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
-	octaviusElevationHeader: '0px 0px 0px 1px #E7E8EC',
+	octaviusElevationHeader: '0px 1px 0px 0px #E7E8EC',
 
 	// Типографика
 	// Размеры такие же, как в теме octavius, а вот fontFamily другой
