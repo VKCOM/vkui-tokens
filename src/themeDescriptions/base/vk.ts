@@ -245,7 +245,7 @@ export const lightTheme: ThemeDescription = {
 		regular: 16,
 	},
 	sizeBorderRadius: {
-		regular: 4,
+		regular: 8,
 	},
 	sizeCheckBorderRadius: {
 		regular: 4,
