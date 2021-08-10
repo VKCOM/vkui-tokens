@@ -16,7 +16,8 @@ export interface Sizes {
 	sizeButtonLargeHeight: number;
 	sizeButtonMediumHeight: number;
 	sizeCheckbox: number;
-	sizeArrow: number;
+	sizeArrowHeight: number;
+	sizeArrowWidth: number;
 	sizeArrowPromo: number;
 	sizePopupSmall: number;
 	sizePopupMedium: number;
