@@ -1,5 +1,8 @@
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
-import {lightColors as vkColors} from '@/themeDescriptions/base/vk';
+import {
+	lightColors as vkColors,
+	lightTheme as vkTheme,
+} from '@/themeDescriptions/base/vk';
 import {octaviusTheme} from '@/themeDescriptions/themes/octavius';
 
 const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
@@ -12,6 +15,7 @@ const fontWeightBase1 = 400;
 const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	...octaviusTheme,
 	themeName: 'octaviusVK',
+	sizeBorderRadius: vkTheme.sizeBorderRadius,
 
 	// Цвета
 	colors: {
