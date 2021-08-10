@@ -285,11 +285,8 @@ export const lightTheme: ThemeDescription = {
 	sizeCheckbox: {
 		regular: 16,
 	},
-	sizeArrowHeight: {
+	sizeArrow: {
 		regular: 8,
-	},
-	sizeArrowWidth: {
-		regular: 12,
 	},
 	sizeArrowPromo: {
 		regular: 40,

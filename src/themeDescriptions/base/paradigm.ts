@@ -352,11 +352,8 @@ export const lightThemeBase: ThemeDescription = {
 	sizeCheckbox: {
 		regular: 16,
 	},
-	sizeArrowHeight: {
+	sizeArrow: {
 		regular: 8,
-	},
-	sizeArrowWidth: {
-		regular: 12,
 	},
 	sizeArrowPromo: {
 		regular: 40,
@@ -537,6 +534,12 @@ export const lightTheme: ParadigmThemeDescription = {
 	},
 
 	// Отступы
+	sizeArrowHeight: {
+		regular: 8,
+	},
+	sizeArrowWidth: {
+		regular: 12,
+	},
 	sizeBasePadding: {
 		regular: x4,
 		compact: x5,

@@ -32,6 +32,8 @@ export type ParadigmLocalColors = {
 // кажется, половина переменных тут вообще не нужны или не используются
 // @todo перевьюить их с Зубановым
 export interface ParadigmLocalSizes {
+	sizeArrowHeight: number;
+	sizeArrowWidth: number;
 	sizeBasePadding: number;
 	sizeBorderWidthTab: number;
 	sizeBorderWidthBar: number;
