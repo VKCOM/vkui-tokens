@@ -32,8 +32,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderBackground: {
 			normal: 'transparent',
-			hover: '#f3f5f7',
-			active: '#eceff1',
+			hover: '#f5f6f8',
+			active: '#eff1f3',
 		},
 		octaviusColorHeaderButtonText: '#000000',
 		octaviusColorHeaderIcon: vkColors.colors.colorIconAccent,
@@ -50,8 +50,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemBackground: {
 			normal: 'transparent',
-			hover: '#e1e3e7',
-			active: '#dcdfe3',
+			hover: 'rgba(174, 183, 194, 0.12)',
+			active: 'rgba(174, 183, 194, 0.2)',
 		},
 		octaviusColorSidebarItemIconPrimary: vkColors.colors.colorIconAccent,
 		octaviusColorSidebarCounterBackground: '#AEB7C2',
