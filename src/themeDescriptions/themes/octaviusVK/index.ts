@@ -31,7 +31,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorIconFees: '#e70101',
 
 		octaviusColorHeaderBackground: {
-			normal: 'transparent',
+			normal: '#ffffff',
 			hover: '#f5f6f8',
 			active: '#eff1f3',
 		},
