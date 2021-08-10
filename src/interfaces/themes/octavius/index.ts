@@ -12,7 +12,7 @@ import {
 } from '@/interfaces/namespaces/paradigm';
 
 export interface ThemeOctaviusOverValues {
-	octaviusShadowLetterList: string;
+	octaviusElevationCard: string;
 	octaviusElevationHeader: string;
 	octaviusShadowTextBackgroundContrast: string;
 

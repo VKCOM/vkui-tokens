@@ -95,7 +95,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorTextBackgroundContrast: '#333333',
 	},
 
-	octaviusShadowLetterList: 'none',
+	octaviusElevationCard: 'none',
 	octaviusShadowTextBackgroundContrast: 'none',
 	octaviusElevationHeader: 'none',
 

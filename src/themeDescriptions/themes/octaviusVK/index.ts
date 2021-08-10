@@ -51,7 +51,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			octaviusTheme.colors.colorTextPrimary,
 	},
 
-	octaviusShadowLetterList: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
+	octaviusElevationCard: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
 	octaviusElevationHeader: '0px 0px 0px 1px #E7E8EC',
 
 	// Типографика
