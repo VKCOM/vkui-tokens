@@ -99,9 +99,13 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
+	octaviusColorSidebarScrollbar: ColorDescription;
 
 	// Токены портального меню
 	octaviusColorPortalMenuBackground: ColorDescription;
+
+	// Контент страницы
+	octaviusColorContentScrollbar: ColorDescription;
 
 	// Категории письма
 	octaviusColorIconUnread: ColorDescription;
