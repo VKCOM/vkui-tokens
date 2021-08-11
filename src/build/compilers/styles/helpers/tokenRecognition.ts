@@ -7,7 +7,7 @@ import {
 	ViewportsTuple,
 } from '@/interfaces/general/tools/viewports';
 
-const stringKeys = ['themeName'];
+const stringKeys = ['themeName', 'themeNameBase'];
 
 export function isString(token: any, key: string): token is string {
 	return typeof token === 'string' && stringKeys.includes(key);

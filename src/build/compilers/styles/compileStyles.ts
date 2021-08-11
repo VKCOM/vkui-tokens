@@ -23,7 +23,7 @@ import {
 	isString,
 } from './helpers/tokenRecognition';
 
-export const serviceKeys = ['breakpoints', 'prefix', 'themeType', 'themeBase'];
+export const serviceKeys = ['breakpoints', 'prefix', 'themeType'];
 
 export type CompileStylesMode =
 	| 'default'
@@ -68,7 +68,7 @@ export const compileStyles = <PT = PixelifyTheme>(
 			break;
 
 		case 'noSizes':
-			theme = getAllButSizes(theme, (theme as any).themeBase);
+			theme = getAllButSizes(theme, (theme as any).themeNameBase);
 			break;
 	}
 
