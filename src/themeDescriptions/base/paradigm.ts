@@ -496,42 +496,6 @@ export const lightTheme: ParadigmThemeDescription = {
 			lineHeight: 32,
 		},
 	},
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH3: {
-		regular: {
-			...lightThemeBase.fontTitle3.regular,
-		},
-		compact: {
-			...lightThemeBase.fontTitle1.regular,
-		},
-	},
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH4: {
-		regular: {
-			...lightThemeBase.fontHeadline.regular,
-		},
-		compact: {
-			...lightThemeBase.fontTitle2.regular,
-		},
-	},
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH5: {
-		regular: {
-			...lightThemeBase.fontHeadline.regular,
-		},
-		compact: {
-			...lightThemeBase.fontTitle3.regular,
-		},
-	},
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH6: {
-		regular: {
-			...lightThemeBase.fontHeadline.regular,
-		},
-		compact: {
-			...lightThemeBase.fontHeadline.regular,
-		},
-	},
 
 	// Отступы
 	sizeArrowHeight: {

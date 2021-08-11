@@ -256,42 +256,6 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 export const octaviusVKTheme: ThemeOctaviusDescription = {
 	...octaviusVKThemeBase,
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH3: {
-		regular: {
-			...octaviusVKThemeBase.fontTitle3.regular,
-		},
-		compact: {
-			...octaviusVKThemeBase.fontTitle1.regular,
-		},
-	},
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH4: {
-		regular: {
-			...octaviusVKThemeBase.fontHeadline.regular,
-		},
-		compact: {
-			...octaviusVKThemeBase.fontTitle2.regular,
-		},
-	},
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH5: {
-		regular: {
-			...octaviusVKThemeBase.fontHeadline.regular,
-		},
-		compact: {
-			...octaviusVKThemeBase.fontTitle3.regular,
-		},
-	},
-	// todo удалить и заменить на контекстные токены в проектах
-	fontH6: {
-		regular: {
-			...octaviusVKThemeBase.fontHeadline.regular,
-		},
-		compact: {
-			...octaviusVKThemeBase.fontHeadline.regular,
-		},
-	},
 
 	octaviusFontFamilyDefault: fontFamilyBase,
 	octaviusFontFamilyMailSans: fontFamilyAccent,
