@@ -1,3 +1,5 @@
+import 'css.escape';
+
 import {stripIndent} from 'common-tags';
 
 import {getAllButSizes} from '@/build/helpers/getAllButSizes';
@@ -18,15 +20,10 @@ import {
 	isColor,
 	isCustomMediaToken,
 	isGroupToken,
+	isString,
 } from './helpers/tokenRecognition';
 
-export const serviceKeys = [
-	'breakpoints',
-	'prefix',
-	'themeName',
-	'themeType',
-	'themeBase',
-];
+export const serviceKeys = ['breakpoints', 'prefix', 'themeType', 'themeBase'];
 
 export type CompileStylesMode =
 	| 'default'
@@ -82,6 +79,15 @@ export const compileStyles = <PT = PixelifyTheme>(
 		}
 
 		const token = theme[key];
+
+		// если переменная — строка (например, имя темы)
+		if (isString(token, key)) {
+			variables += getVariableStatement(
+				getDeclaration(key, prefix),
+				`'${CSS.escape(token)}'`,
+			);
+			return;
+		}
 
 		// если переменная — цвет
 		if (isColor(token)) {
