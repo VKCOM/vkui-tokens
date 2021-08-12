@@ -46,7 +46,11 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
 		octaviusColorHeaderSearchBackgroundCollapsed: 'rgba(0, 16, 61, 0.07)',
-		octaviusColorHeaderSearchChipBackground: '#FFFFFF',
+		octaviusColorHeaderSearchChipBackground: {
+			normal: '#FFFFFF',
+			hover: 'rgba(255, 255, 255, 0.64)',
+			active: 'rgba(255, 255, 255, 0.4)',
+		},
 		octaviusColorHeaderSearchIcon: '#b6b8be',
 		octaviusColorHeaderSearchText: vkColors.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:

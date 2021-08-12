@@ -212,7 +212,11 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderSearchBackground: '#f0f1f3',
 		octaviusColorHeaderSearchBackgroundCollapsed: '#f0f1f3',
-		octaviusColorHeaderSearchChipBackground: '#ffffff',
+		octaviusColorHeaderSearchChipBackground: {
+			normal: '#FFFFFF',
+			hover: 'rgba(255, 255, 255, 0.64)',
+			active: 'rgba(255, 255, 255, 0.4)',
+		},
 		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
 		octaviusColorHeaderSearchChipBorderEditable: '#FFFFFF',
 	},
