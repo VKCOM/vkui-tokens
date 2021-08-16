@@ -117,9 +117,12 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
 
-	// Другие стили
+	// Стили списка писем
 	octaviusColorListLetterBackground: ColorDescription;
+	octaviusColorListLetterSeparator: ColorDescription;
 	octaviusColorDatasetBackground: ColorDescription;
+
+	// Другие стили
 	octaviusColorTextBackgroundContrast: ColorDescription;
 }
 

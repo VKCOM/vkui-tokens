@@ -70,6 +70,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 		octaviusColorDatasetBackground:
 			octaviusTheme.colors.colorBackgroundContent,
+		octaviusColorListLetterSeparator: vkColors.colors.colorSeparatorPrimary,
 		octaviusColorTextBackgroundContrast:
 			octaviusTheme.colors.colorTextPrimary,
 	},
