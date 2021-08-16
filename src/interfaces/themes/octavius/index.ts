@@ -15,6 +15,8 @@ export interface ThemeOctaviusOverValues {
 	octaviusElevationCard: string;
 	octaviusElevationHeader: string;
 	octaviusShadowTextBackgroundContrast: string;
+	octaviusPositionBackground: string;
+	octaviusOverlayImageBackground: string;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -74,8 +76,13 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorTrueBlack: ColorDescription;
 	colorTrueWhite: ColorDescription;
 
+	// Application colors
+	octaviusColorApplicationText: ColorDescription;
+	octaviusColorApplicationTextSecondary: ColorDescription;
+
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
+	octaviusOverlayColorBackground: ColorDescription;
 
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
@@ -116,6 +123,11 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconTravel: ColorDescription;
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
+
+	// list
+	octaviusColorListBackground: ColorDescription;
+	octaviusColorListText: ColorDescription;
+	octaviusColorListIcon: ColorDescription;
 
 	// Другие стили
 	octaviusColorListLetterBackground: ColorDescription;

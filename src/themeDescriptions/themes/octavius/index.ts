@@ -45,7 +45,11 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorTrueBlack: '#000000',
 		colorTrueWhite: '#ffffff',
 
+		octaviusColorApplicationText: '#333333',
+		octaviusColorApplicationTextSecondary: '#93969B',
+
 		octaviusColorBackground: lightTheme.colors.colorBackground,
+		octaviusOverlayColorBackground: 'transparent',
 
 		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
 		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
@@ -90,6 +94,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconEvent: '#09a6fa',
 		octaviusColorIconFees: '#e60000',
 
+		octaviusColorListBackground: '#ffffff',
+		octaviusColorListText: '#333333',
+		octaviusColorListIcon: '#333333',
+
 		octaviusColorListLetterBackground: {
 			normal: '#ffffff',
 			hover: '#f5f5f7',
@@ -105,6 +113,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusElevationCard: 'none',
 	octaviusShadowTextBackgroundContrast: 'none',
 	octaviusElevationHeader: 'none',
+	octaviusPositionBackground: '50% 0',
+	octaviusOverlayImageBackground: 'none',
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
