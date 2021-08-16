@@ -114,6 +114,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusFontFamilyGlobal: 'Arial, Tahoma, Verdana, sans-serif',
 	octaviusFontFamilyMac: 'Helvetica, Arial, Tahoma, Verdana, sans-serif',
 	octaviusFontFamilyDisplay: 'inherit',
+	octaviusLetterSpacingText: lightTheme.fontText.regular.letterSpacing,
+	octaviusLetterSpacingDisplay: lightTheme.fontH0.regular.letterSpacing,
 
 	octaviusSizeHeadlineHeight: {
 		regular: 36,

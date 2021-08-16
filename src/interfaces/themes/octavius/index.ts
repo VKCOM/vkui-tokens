@@ -5,6 +5,7 @@ import {
 	ColorWithStates,
 } from '@/interfaces/general/colors';
 import {Adaptive} from '@/interfaces/general/tools';
+import type {Font} from '@/interfaces/general/typography';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
@@ -22,6 +23,9 @@ export interface ThemeOctaviusOverValues {
 	octaviusFontFamilyGlobal: string;
 	octaviusFontFamilyMac: string;
 	octaviusFontFamilyDisplay: string;
+
+	octaviusLetterSpacingDisplay: Required<Font>['letterSpacing'];
+	octaviusLetterSpacingText: Required<Font>['letterSpacing'];
 }
 
 export interface ThemeOctaviusLocalSizes {

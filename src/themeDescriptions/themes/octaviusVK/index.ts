@@ -16,6 +16,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	...octaviusTheme,
 	themeName: 'octaviusVK',
 	sizeBorderRadius: vkTheme.sizeBorderRadius,
+	octaviusLetterSpacingText: vkTheme.fontText.regular.letterSpacing,
+	octaviusLetterSpacingDisplay: vkTheme.fontTitle1.regular.letterSpacing,
 
 	// Цвета
 	colors: {
