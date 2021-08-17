@@ -45,14 +45,23 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorTrueBlack: '#000000',
 		colorTrueWhite: '#ffffff',
 
-		octaviusColorApplicationText: '#333333',
-		octaviusColorApplicationTextSecondary: '#93969B',
+		octaviusColorText: '#333333',
+		octaviusIconColor: '#333333',
+
+		octaviusColorButtonText: '#333333',
+		octaviusIconButtonColor: '#333333',
+		octaviusColorButtonTextSecondary: '#93969B',
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,
-		octaviusOverlayColorBackground: 'transparent',
+		octaviusColorOverlayBackground: 'transparent',
 
 		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
 		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
+		octaviusColorHeaderButtonBackground: {
+			normal: 'transparent',
+			hover: getRGBA('#00103D', 0.12),
+			active: getRGBA('#00103D', 0.24),
+		},
 		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
 		octaviusColorHeaderTextSecondary: '#93969b',
 		octaviusColorHeaderSearchIcon: '#b6b8be',
@@ -74,6 +83,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
 
+		octaviusColorSidebarBackground: '#ffffff',
 		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
 
 		octaviusColorSidebarCounterBackground:
@@ -82,6 +92,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
 		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
 		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarNavItemIcon: '#333333',
+		octaviusColorSidebarNavItemText: '#333333',
+		octaviusColorSidebarNavItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarComposeButtonBackground: '#ffffff',
 
 		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.16)',
 
@@ -108,13 +122,17 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorTextBackgroundContrast: '#333333',
+		octaviusColorBadgeBackground: 'rgba(0, 16, 61, 0.08)',
 	},
 
 	octaviusElevationCard: 'none',
 	octaviusShadowTextBackgroundContrast: 'none',
 	octaviusElevationHeader: 'none',
 	octaviusPositionBackground: '50% 0',
-	octaviusOverlayImageBackground: 'none',
+	octaviusImageOverlayBackground: 'none',
+
+	octaviusShadowSidebarNavItemText: 'none',
+	octaviusFilterSidebarNavItemIcon: 'none',
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 

@@ -15,8 +15,12 @@ export interface ThemeOctaviusOverValues {
 	octaviusElevationCard: string;
 	octaviusElevationHeader: string;
 	octaviusShadowTextBackgroundContrast: string;
+
 	octaviusPositionBackground: string;
-	octaviusOverlayImageBackground: string;
+	octaviusImageOverlayBackground: string;
+
+	octaviusShadowSidebarNavItemText: string;
+	octaviusFilterSidebarNavItemIcon: string;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -76,17 +80,23 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorTrueBlack: ColorDescription;
 	colorTrueWhite: ColorDescription;
 
-	// Application colors
-	octaviusColorApplicationText: ColorDescription;
-	octaviusColorApplicationTextSecondary: ColorDescription;
+	// Токены страницы
+	octaviusColorText: ColorDescription;
+	octaviusIconColor: ColorDescription;
+
+	// Токены кнопки
+	octaviusColorButtonText: ColorDescription;
+	octaviusIconButtonColor: ColorDescription;
+	octaviusColorButtonTextSecondary: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
-	octaviusOverlayColorBackground: ColorDescription;
+	octaviusColorOverlayBackground: ColorDescription;
 
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
+	octaviusColorHeaderButtonBackground: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
@@ -102,11 +112,16 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
 
 	// Токены сайдбара
+	octaviusColorSidebarBackground: ColorDescription;
 	octaviusColorSidebarItemBackground: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
 	octaviusColorSidebarScrollbar: ColorDescription;
+	octaviusColorSidebarNavItemIcon: ColorDescription;
+	octaviusColorSidebarNavItemText: ColorDescription;
+	octaviusColorSidebarNavItemButtonBackground: ColorDescription;
+	octaviusColorSidebarComposeButtonBackground: ColorDescription;
 
 	// Токены портального меню
 	octaviusColorPortalMenuBackground: ColorDescription;
@@ -124,7 +139,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
 
-	// list
+	// Токены списка
 	octaviusColorListBackground: ColorDescription;
 	octaviusColorListText: ColorDescription;
 	octaviusColorListIcon: ColorDescription;
@@ -133,6 +148,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorDatasetBackground: ColorDescription;
 	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusColorBadgeBackground: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
