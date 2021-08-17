@@ -99,6 +99,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.16)',
 
+		octaviusColorThreadFooterBackground: '#ebecef',
+
 		octaviusColorIconUnread: '#005FF9',
 		octaviusColorIconFavorite: '#fc2c38',
 		octaviusColorIconOrder: '#ff54aa',
@@ -122,6 +124,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorTextBackgroundContrast: '#333333',
+		octaviusIconBackgroundContrastColor: '#333333',
 		octaviusColorBadgeBackground: 'rgba(0, 16, 61, 0.08)',
 	},
 

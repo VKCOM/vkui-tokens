@@ -129,6 +129,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Контент страницы
 	octaviusColorContentScrollbar: ColorDescription;
 
+	// Токены письма
+	octaviusColorThreadFooterBackground: ColorDescription;
+
 	// Категории письма
 	octaviusColorIconUnread: ColorDescription;
 	octaviusColorIconFavorite: ColorDescription;
@@ -148,6 +151,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorDatasetBackground: ColorDescription;
 	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusIconBackgroundContrastColor: ColorDescription;
 	octaviusColorBadgeBackground: ColorDescription;
 }
 
