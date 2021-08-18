@@ -95,6 +95,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarNavItemIcon: '#333333',
 		octaviusColorSidebarNavItemText: '#333333',
 		octaviusColorSidebarNavItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarShortNavItemButtonBackground:
+			'rgba(0, 16, 61, 0.08)',
 		octaviusColorSidebarComposeButtonBackground: '#ffffff',
 
 		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.16)',
