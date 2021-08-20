@@ -49,7 +49,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIcon: '#333333',
 
 		octaviusColorButtonText: '#333333',
-		octaviusButtonColor: '#333333',
+		octaviusColorButtonIcon: '#333333',
 		octaviusColorButtonTextSecondary: '#93969B',
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,

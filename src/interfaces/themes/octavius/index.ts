@@ -86,7 +86,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
-	octaviusButtonColor: ColorDescription;
+	octaviusColorButtonIcon: ColorDescription;
 	octaviusColorButtonTextSecondary: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
