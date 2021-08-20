@@ -150,7 +150,10 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Другие стили
 	octaviusColorListLetterBackground: ColorDescription;
+	octaviusColorListLetterSeparator: ColorDescription;
 	octaviusColorDatasetBackground: ColorDescription;
+
+	// Другие стили
 	octaviusColorTextBackgroundContrast: ColorDescription;
 	octaviusIconBackgroundContrastColor: ColorDescription;
 	octaviusColorBadgeBackground: ColorDescription;

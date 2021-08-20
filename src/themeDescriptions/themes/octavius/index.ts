@@ -121,6 +121,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			hover: '#f5f5f7',
 			active: '#ebecef',
 		},
+		octaviusColorListLetterSeparator:
+			lightTheme.colors.colorSeparatorPrimary,
 
 		octaviusColorDatasetBackground:
 			lightTheme.colors.colorBackgroundContent,
@@ -227,6 +229,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorListLetterBackground:
 			darkTheme.colors.colorBackgroundContent,
+		octaviusColorListLetterSeparator:
+			darkTheme.colors.colorSeparatorPrimaryAlpha,
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorTextBackgroundContrast: darkTheme.colors.colorTextPrimary,
