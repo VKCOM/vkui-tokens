@@ -46,10 +46,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorTrueWhite: '#ffffff',
 
 		octaviusColorText: '#333333',
-		octaviusIconColor: '#333333',
+		octaviusColorIcon: '#333333',
 
 		octaviusColorButtonText: '#333333',
-		octaviusIconButtonColor: '#333333',
+		octaviusButtonColor: '#333333',
 		octaviusColorButtonTextSecondary: '#93969B',
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,
