@@ -122,7 +122,10 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarNavItemText: ColorDescription;
 	octaviusColorSidebarNavItemButtonBackground: ColorDescription;
 	octaviusColorSidebarShortNavItemButtonBackground: ColorDescription;
+
 	octaviusColorSidebarComposeButtonBackground: ColorDescription;
+	octaviusColorSidebarComposeButtonText: ColorDescription;
+	octaviusColorSidebarComposeButtonIcon: ColorDescription
 
 	// Токены портального меню
 	octaviusColorPortalMenuBackground: ColorDescription;
