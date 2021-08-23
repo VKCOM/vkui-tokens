@@ -156,7 +156,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListText: ColorDescription;
 	octaviusColorListIcon: ColorDescription;
 
-	// Другие стили
+	// Токены списка писем
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparator: ColorDescription;
 	octaviusColorDatasetBackground: ColorDescription;
@@ -165,6 +165,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorTextBackgroundContrast: ColorDescription;
 	octaviusIconBackgroundContrastColor: ColorDescription;
 	octaviusColorBadgeBackground: ColorDescription;
+	octaviusColorMetaThreadImageColor: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
