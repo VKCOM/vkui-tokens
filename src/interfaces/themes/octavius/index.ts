@@ -112,6 +112,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
 	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
+	octaviusColorSearchSuggestBackground: ColorDescription;
+	octaviusColorSearchSuggestText: ColorDescription;
+	octaviusColorSearchSuggestIcon: ColorDescription;
 
 	// Токены сайдбара
 	octaviusColorSidebarBackground: ColorDescription;

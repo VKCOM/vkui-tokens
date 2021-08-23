@@ -79,6 +79,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchText: lightTheme.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:
 			lightTheme.colors.colorTextSecondary,
+		octaviusColorSearchSuggestBackground: '#333333',
+		octaviusColorSearchSuggestText: '#333333',
+		octaviusColorSearchSuggestIcon: 'rgb(255, 255, 255)',
 
 		octaviusColorHeaderProgress:
 			lightTheme.colors.colorBackgroundAccentAlternative,
