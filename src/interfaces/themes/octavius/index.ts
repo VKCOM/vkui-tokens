@@ -90,6 +90,11 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorButtonIcon: ColorDescription;
 	octaviusColorButtonIconBright: ColorDescription;
 	octaviusColorButtonTextSecondary: ColorDescription;
+	octaviusColorButtonIconSecondary: ColorDescription;
+	octaviusColorButtonBackgroundPure: ColorDescription;
+
+	// Токены whiteline
+	octaviusColorWhiteLineBackground: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
@@ -160,12 +165,15 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparator: ColorDescription;
 	octaviusColorDatasetBackground: ColorDescription;
+	octaviusColorListLetterAdvBackground: ColorDescription;
 
 	// Другие стили
 	octaviusColorTextBackgroundContrast: ColorDescription;
 	octaviusIconBackgroundContrastColor: ColorDescription;
 	octaviusColorBadgeBackground: ColorDescription;
 	octaviusColorMetaThreadImageColor: ColorDescription;
+	octaviusColorBorderSolid: ColorDescription;
+	octaviusColorPanelTextSelectedEmpty: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
