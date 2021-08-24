@@ -294,6 +294,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			darkTheme.colors.colorBackgroundContent,
 		octaviusColorListLetterSeparator:
 			darkTheme.colors.colorSeparatorPrimaryAlpha,
+		octaviusColorListLetterAdvBackground: '#151515',
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorTextBackgroundContrast: darkTheme.colors.colorTextPrimary,
