@@ -27,8 +27,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 
 		octaviusColorBackground: '#EDEEF0',
-    octaviusColorBackgroundAccentToned: toneOpacity(
-			vkColors.colors.colorBackgroundAccent,
+		octaviusColorBackgroundAccentToned: toneOpacity(
+			vkLightColors.colors.colorBackgroundAccent,
 			0.12,
 		),
 		octaviusColorIconUnread: vkLightColors.colors.colorIconAccent,
