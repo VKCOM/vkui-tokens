@@ -292,6 +292,11 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		colorThumbErrorBackground: vkDarkColors.colors.colorImagePlaceholder,
 
 		octaviusColorBackground: vkDarkColors.colors.colorBackground,
+		octaviusColorBackgroundAccentToned: toneOpacity(
+			vkDarkColors.colors.colorBackgroundAccent,
+			0.12,
+		),
+
 		octaviusColorIconUnread: vkDarkColors.colors.colorIconAccent,
 		octaviusColorIconFavorite: vkDarkColors.colors.colorAccentRed,
 
