@@ -46,6 +46,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorTrueWhite: '#ffffff',
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,
+		octaviusColorBackgroundAccentToned: getRGBA(lightTheme.colors.colorBackgroundAccent, 0.12),
 
 		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
 		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
