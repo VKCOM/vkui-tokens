@@ -1,51 +1,46 @@
 import {replacePropDeep} from '@/build/helpers/replacePropDeep';
 import {ThemeMediaDescription} from '@/interfaces/themes/media';
-import {fontSizes, helpers, projectColors} from '@/themeDescriptions/common';
+import {helpers, projectColors} from '@/themeDescriptions/common';
 
 import {lightTheme} from '../../base/paradigm';
 
-const fontFamily = 'Roboto, Arial, sans-serif';
-// const fontFamilySlab = 'Roboto Slab, Arial, serif';
-const fontFamilyTouch = 'Helvetica, Arial, sans-serif';
 const {x0, x05, x2, x3, x4, x5, x6, x8, x10, x12} = helpers;
 
-const {
-	fontSize1,
-	fontSize2,
-	fontSize3,
-	fontSize4,
-	fontSize5,
-	fontSize6,
-	fontSize7,
-	fontSize8,
-} = replacePropDeep(fontSizes, {fontFamily, fontWeight: 300});
+const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
+const fontFamilyArticle = 'Georgia, serif';
+const fontFamilyBase = 'Helvetica, Arial, sans-serif';
 
-const touch = replacePropDeep(fontSizes, {
-	fontFamily: fontFamilyTouch,
-	fontWeight: 400,
-});
+const fontWeightAccent1 = 400;
+const fontWeightAccent2 = 500;
+const fontWeightAccent3 = 600;
+const fontWeightBase1 = 400;
+const fontWeightBase2 = 700;
+const fontWeightBase3 = 700;
+const fontWeightArticle1 = 400;
+const fontWeightArticle2 = 700;
 
 const replacedFamilyOctavius = replacePropDeep(lightTheme, {
-	fontFamily,
-	fontWeight: 300,
+	fontFamily: fontFamilyBase,
+	fontWeight: fontWeightBase1,
 });
-
-const fontText = {
-	compactX: {
-		...fontSize4,
-	},
-	compact: {
-		...fontSize4,
-	},
-	regular: {
-		...fontSize3,
-	},
-};
 
 export const mediaTheme: ThemeMediaDescription = {
 	...replacedFamilyOctavius,
 	themeName: 'media',
 	prefix: 'vkui',
+	fontFamilyAccent,
+	fontFamilyArticle,
+	fontFamilyBase,
+
+	fontWeightAccent1,
+	fontWeightAccent2,
+	fontWeightAccent3,
+	fontWeightBase1,
+	fontWeightBase2,
+	fontWeightBase3,
+	fontWeightArticle1,
+	fontWeightArticle2,
+
 	colors: {
 		...replacedFamilyOctavius.colors,
 		...projectColors,
@@ -67,10 +62,6 @@ export const mediaTheme: ThemeMediaDescription = {
 		desktopM: {
 			adaptiveValue: 'large',
 			breakpoint: 1260,
-		},
-		desktopL: {
-			adaptiveValue: 'largeX',
-			breakpoint: 1346,
 		},
 	},
 
@@ -109,267 +100,89 @@ export const mediaTheme: ThemeMediaDescription = {
 	 * ТИПОГРАФИКА
 	 */
 
-	fontH0: {
-		compactX: {
-			...touch.fontSize7,
-			fontWeight: 700,
-			marginBottom: x5,
-		},
-		compact: {
-			...fontSize7,
-			fontWeight: 700,
-			marginBottom: x5,
-		},
-		regular: {
-			...fontSize7,
-			fontWeight: 700,
-			marginBottom: x4,
-		},
-		large: {
-			...fontSize8,
-			fontWeight: 700,
-			marginBottom: x5,
-		},
-		largeX: {
-			...fontSize8,
-			fontWeight: 700,
-			marginBottom: x5,
-		},
-	},
-
 	fontH1: {
-		compactX: {
-			...touch.fontSize6,
-			fontWeight: 700,
-			marginBottom: x4,
+		regular: {
+			fontSize: 36,
+			lineHeight: 44,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
 		},
 		compact: {
-			...fontSize6,
-			fontWeight: 700,
-			marginBottom: x4,
-		},
-		regular: {
-			...fontSize6,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		large: {
-			...fontSize7,
-			fontWeight: 700,
-			marginBottom: x4,
-		},
-		largeX: {
-			...fontSize7,
-			fontWeight: 700,
-			marginBottom: x4,
+			fontSize: 28,
+			lineHeight: 36,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
 		},
 	},
-
 	fontH2: {
-		compactX: {
-			...touch.fontSize5,
-			fontWeight: 700,
-			marginBottom: x3,
+		regular: {
+			fontSize: 28,
+			lineHeight: 34,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
 		},
 		compact: {
-			...fontSize5,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		regular: {
-			...fontSize5,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
-		large: {
-			...fontSize6,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		largeX: {
-			...fontSize6,
-			fontWeight: 700,
-			marginBottom: x3,
+			fontSize: 24,
+			lineHeight: 32,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
 		},
 	},
-
-	fontTitle1: {
-		compactX: {
-			...touch.fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		compact: {
-			...fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
+	fontH3: {
 		regular: {
-			...fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		large: {
-			...fontSize5,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		largeX: {
-			...fontSize5,
-			fontWeight: 700,
-			marginBottom: x3,
+			fontSize: 20,
+			lineHeight: 26,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
 		},
 	},
-
-	fontTitle2: {
-		compactX: {
-			...touch.fontSize3,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		compact: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
+	fontH4: {
 		regular: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
-		large: {
-			...fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		largeX: {
-			...fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
+			fontSize: 15,
+			lineHeight: 22,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
 		},
 	},
-
-	fontTitle3: {
-		compactX: {
-			...touch.fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
-		compact: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
+	fontLead: {
 		regular: {
-			...fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		large: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
-		largeX: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
+			fontSize: 19,
+			lineHeight: 30,
+			fontFamily: fontFamilyArticle,
+			fontWeight: fontWeightArticle1,
+			fontStyle: 'italic',
 		},
 	},
-
-	fontHeadline: {
-		compactX: {
-			...touch.fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
-		compact: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
+	fontArticleBody: {
 		regular: {
-			...fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
-		},
-		large: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
-		},
-		largeX: {
-			...fontSize3,
-			fontWeight: 700,
-			marginBottom: x2,
+			fontSize: 18,
+			lineHeight: 28,
+			fontFamily: fontFamilyArticle,
+			fontWeight: fontWeightArticle1,
 		},
 	},
-
-	fontText,
-
-	fontArticle: {
+	fontSpecificText: {
 		regular: {
-			...fontSize4,
+			fontSize: 18,
+			lineHeight: 28,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
-
-	fontFootnote: {
-		compactX: {
-			...touch.fontSize2,
-		},
+	fontSpecificFootnote: {
 		regular: {
-			...fontSize2,
+			fontSize: 14,
+			lineHeight: 22,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
-
-	fontCaption2Caps: {
-		compactX: {
-			...touch.fontSize1,
-			fontWeight: 700,
-			letterSpacing: '1px',
-			textTransform: 'uppercase',
-		},
-		compact: {
-			...fontSize1,
-			fontWeight: 700,
-			letterSpacing: '1px',
-			textTransform: 'uppercase',
-		},
+	fontSpecificButton: {
 		regular: {
-			...fontSize1,
-			fontWeight: 700,
-			letterSpacing: '1px',
-			textTransform: 'uppercase',
-		},
-		large: {
-			...fontSize1,
-			fontWeight: 700,
-			letterSpacing: '1px',
-			textTransform: 'uppercase',
-		},
-		largeX: {
-			...fontSize1,
-			fontWeight: 700,
-			letterSpacing: '1px',
-			textTransform: 'uppercase',
-		},
-	},
-
-	fontCaption2: {
-		compactX: {
-			...touch.fontSize1,
-		},
-		compact: {
-			...fontSize1,
-		},
-		regular: {
-			...fontSize1,
-		},
-		large: {
-			...fontSize1,
-		},
-		largeX: {
-			...fontSize1,
+			fontSize: 16,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
 		},
 	},
 
@@ -405,60 +218,45 @@ export const mediaTheme: ThemeMediaDescription = {
 
 	gridContent: {
 		compactX: '100%',
-		compact: '100%',
-		regular: 940,
+		compact: 580,
+		regular: 880,
 		large: 1180,
-		largeX: 1300,
 	},
 	gridColumnX2: {
 		compactX: '100%',
-		compact: 340,
-		regular: 460,
+		compact: 280,
+		regular: 430,
 		large: 580,
-		largeX: 640,
 	},
 	gridColumnX3: {
 		compactX: '100%',
-		compact: 220,
-		regular: 300,
+		compact: 180,
+		regular: 280,
 		large: 380,
-		largeX: 420,
 	},
 	gridColumnX4: {
 		compactX: '100%',
-		compact: 160,
-		regular: 220,
+		compact: 130,
+		regular: 205,
 		large: 280,
-		largeX: 310,
 	},
 	gridColumnX6: {
 		compactX: '100%',
-		compact: 100,
-		regular: 140,
+		compact: 80,
+		regular: 130,
 		large: 180,
-		largeX: 200,
 	},
 	gridLayoutArticle: {
 		compactX: '100%',
 		compact: '100%',
-		regular: 640,
-		large: 860,
-		largeX: 940,
+		regular: 540,
+		large: 540,
 	},
 	gridLayoutBanner: {
 		compactX: '100%',
 		compact: 280,
 		regular: 280,
-		large: 280,
-		largeX: 280,
-	},
-
-	gridLayoutArticleMargin: {
-		compactX: 0,
-		compact: 0,
-		regular: 0,
-		large: 100,
-		largeX: 100,
+		large: 560,
 	},
 
 	/**
