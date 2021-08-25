@@ -1,3 +1,4 @@
+import {toneOpacity} from '@/build/helpers/cssHelpers';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
 	darkColors as vkDarkColors,
@@ -26,6 +27,10 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 
 		octaviusColorBackground: '#EDEEF0',
+    octaviusColorBackgroundAccentToned: toneOpacity(
+			vkColors.colors.colorBackgroundAccent,
+			0.12,
+		),
 		octaviusColorIconUnread: vkLightColors.colors.colorIconAccent,
 		octaviusColorIconFavorite: vkLightColors.colors.colorAccentRed,
 		octaviusColorIconOrder: '#ff51ab',

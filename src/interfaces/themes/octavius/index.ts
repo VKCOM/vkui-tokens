@@ -124,6 +124,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Другие стили
 	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusColorBackgroundAccentToned: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
