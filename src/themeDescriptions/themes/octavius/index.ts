@@ -161,6 +161,10 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		},
 
 		octaviusColorBackground: darkTheme.colors.colorBackground,
+		octaviusColorBackgroundAccentToned: toneOpacity(
+			darkTheme.colors.colorBackgroundAccent,
+			0.12,
+		),
 
 		octaviusColorHeaderBackground: darkTheme.colors.colorBackgroundAccent,
 		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
