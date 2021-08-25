@@ -16,7 +16,10 @@ import {
 	octaviusCompactDarkTheme,
 	octaviusCompactTheme,
 } from '@/themeDescriptions/themes/octaviusCompact';
-import {octaviusVKTheme} from '@/themeDescriptions/themes/octaviusVK';
+import {
+	octaviusVKDarkTheme,
+	octaviusVKTheme,
+} from '@/themeDescriptions/themes/octaviusVK';
 import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
 import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
 import {promoTheme} from '@/themeDescriptions/themes/promo';
@@ -41,6 +44,7 @@ export const themes = [
 	octaviusCompactTheme,
 	octaviusCompactDarkTheme,
 	octaviusVKTheme,
+	octaviusVKDarkTheme,
 	calendarTheme,
 	calendarDarkTheme,
 	octaviusWhiteTheme,
