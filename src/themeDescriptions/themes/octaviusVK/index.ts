@@ -286,6 +286,7 @@ export const octaviusVKTheme: ThemeOctaviusDescription = {
 export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 	...octaviusVKTheme,
 	themeName: 'octaviusVKDark',
+	colorsScheme: 'dark',
 	colors: {
 		...octaviusVKTheme.colors,
 		...vkDarkColors.colors,
@@ -295,6 +296,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.04)',
 			active: 'rgba(255, 255, 255, 0.08)',
+		},
+
+		colorBackgroundSecondary: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
 		},
 
 		octaviusColorBackground: vkDarkColors.colors.colorBackground,
