@@ -291,6 +291,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		...vkDarkColors.colors,
 		colorThumbErrorBackground: vkDarkColors.colors.colorImagePlaceholder,
 
+		colorTransparent: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.04)',
+			active: 'rgba(255, 255, 255, 0.08)',
+		},
+
 		octaviusColorBackground: vkDarkColors.colors.colorBackground,
 		octaviusColorBackgroundAccentToned: toneOpacity(
 			vkDarkColors.colors.colorBackgroundAccent,
