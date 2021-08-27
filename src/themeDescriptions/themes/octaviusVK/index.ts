@@ -349,4 +349,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorTextBackgroundContrast:
 			vkDarkColors.colors.colorTextPrimary,
 	},
+
+	octaviusElevationCard: 'none',
+	octaviusElevationHeader: 'none',
 };
