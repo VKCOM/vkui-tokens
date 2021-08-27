@@ -25,6 +25,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		...vkLightColors.colors,
 		colorBackgroundSecondary: 'rgba(0, 28, 61, 0.05)',
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
+		colorBackgroundAccentAlternative:
+			vkLightColors.colors.colorBackgroundAccent,
 
 		octaviusColorBackground: '#EDEEF0',
 		octaviusColorBackgroundAccentToned: toneOpacity(
@@ -303,6 +305,9 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
+
+		colorBackgroundAccentAlternative:
+			vkDarkColors.colors.colorBackgroundAccent,
 
 		octaviusColorBackground: vkDarkColors.colors.colorBackground,
 		octaviusColorBackgroundAccentToned: toneOpacity(
