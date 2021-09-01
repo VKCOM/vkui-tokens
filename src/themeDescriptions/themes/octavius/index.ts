@@ -149,6 +149,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorMetaThreadImageColor: '#ffffff',
 		octaviusColorBorderSolid: '#E0E2E8',
 		octaviusColorPanelTextSelectedEmpty: 'transparent',
+		octaviusColorOctopusText: '#005bd1',
 	},
 
 	octaviusElevationCard: 'none',
@@ -159,6 +160,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 	octaviusShadowSidebarNavItemText: 'none',
 	octaviusFilterSidebarNavItemIcon: 'none',
+	octaviusTextDecorationOctopusLink: 'none',
+	octaviusTextDecorationOctopusLinkHover: 'underline',
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
@@ -298,7 +301,11 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorTextBackgroundContrast: darkTheme.colors.colorTextPrimary,
+		octaviusColorOctopusText: '#E7E8EA',
 	},
+
+	octaviusTextDecorationOctopusLink: 'underline',
+	octaviusTextDecorationOctopusLinkHover: 'none',
 };
 
 export const octaviusWhiteTheme: ThemeOctaviusDescription = {

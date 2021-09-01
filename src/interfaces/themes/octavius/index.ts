@@ -21,6 +21,8 @@ export interface ThemeOctaviusOverValues {
 
 	octaviusShadowSidebarNavItemText: string;
 	octaviusFilterSidebarNavItemIcon: string;
+	octaviusTextDecorationOctopusLink: string;
+	octaviusTextDecorationOctopusLinkHover: string;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -174,6 +176,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorMetaThreadImageColor: ColorDescription;
 	octaviusColorBorderSolid: ColorDescription;
 	octaviusColorPanelTextSelectedEmpty: ColorDescription;
+	octaviusColorOctopusText: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
