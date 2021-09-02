@@ -109,6 +109,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
+	octaviusColorHeaderFilterText: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
@@ -137,7 +138,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	octaviusColorSidebarComposeButtonBackground: ColorDescription;
 	octaviusColorSidebarComposeButtonText: ColorDescription;
-	octaviusColorSidebarComposeButtonIcon: ColorDescription
+	octaviusColorSidebarComposeButtonIcon: ColorDescription;
 
 	// Токены портального меню
 	octaviusColorPortalMenuBackground: ColorDescription;
@@ -177,6 +178,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorBorderSolid: ColorDescription;
 	octaviusColorPanelTextSelectedEmpty: ColorDescription;
 	octaviusColorOctopusText: ColorDescription;
+	octaviusColorPanelBackgroundSelected: ColorDescription;
 }
 
 export type OctaviusLocalColors = {

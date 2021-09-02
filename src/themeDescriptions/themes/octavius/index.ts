@@ -87,6 +87,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchText: lightTheme.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:
 			lightTheme.colors.colorTextSecondary,
+		octaviusColorHeaderFilterText: 'rgba(255, 255, 255, .48)',
 		octaviusColorSearchSuggestBackground: 'rgb(255, 255, 255)',
 		octaviusColorSearchSuggestText: '#333333',
 		octaviusColorSearchSuggestIcon: '#333333',
@@ -150,6 +151,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorBorderSolid: '#E0E2E8',
 		octaviusColorPanelTextSelectedEmpty: 'transparent',
 		octaviusColorOctopusText: '#005bd1',
+		octaviusColorPanelBackgroundSelected: '#F3F3F5',
 	},
 
 	octaviusElevationCard: 'none',
