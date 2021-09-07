@@ -1,31 +1,26 @@
-import {flatifyTheme} from '@/build/helpers/flatifyTheme';
 import {ThemeHomeDescription} from '@/interfaces/themes/home';
 import {ThemeHomeDarkDescription} from '@/interfaces/themes/homeDark';
+import {darkTheme, lightTheme} from '@/themeDescriptions/base/paradigm';
 
-import {darkTheme, lightTheme} from '../../base/paradigm';
-
-const octaviusThemeRegular = flatifyTheme(lightTheme);
+const breakpoints = {
+	desktopS: {
+		breakpoint: 0,
+		adaptiveValue: 'regular',
+	},
+};
 
 export const homeTheme: ThemeHomeDescription = {
-	...octaviusThemeRegular,
+	...lightTheme,
 	themeName: 'home',
-	breakpoints: {
-		desktopS: {
-			breakpoint: 0,
-			adaptiveValue: 'regular',
-		},
-	},
-	elevation4: '0 0 48px 0 rgba(0, 11, 41, 0.2)',
-	portalFontFamily: 'MailSans, Helvetica, Arial, sans-serif',
-	portalFontWeight: 400,
-	portalFontWeightBold: 600,
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+	// @ts-ignore
+	breakpoints,
 };
 
 export const homeDarkTheme: ThemeHomeDarkDescription = {
-	...homeTheme,
+	...darkTheme,
 	themeName: 'homeDark',
-	colors: {
-		...homeTheme.colors,
-		...darkTheme.colors,
-	},
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+	// @ts-ignore
+	breakpoints,
 };
