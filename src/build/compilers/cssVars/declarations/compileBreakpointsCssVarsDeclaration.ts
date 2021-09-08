@@ -71,52 +71,46 @@ ${getVarString({valuesObject: adaptiveValues.auto, prefix: '\t\t'})}
 				adaptivityState as keyof Adaptive<any>,
 			);
 
-			if (usedViewport) {
-				mediaValues += stripIndent`
-				@media ${customMedia[`width${capitalize(usedViewport)}`]} {
-					:root, .vkui--force-auto {
-						${stripIndents(
-							isRegular
-								? regularValues
-								: getVarString({
-										valuesObject,
-										prefix: '',
-										callback: (name) => {
-											if (isRegular) {
-												return;
-											}
-
-											const regularName = name.replace(
-												new RegExp(
-													`${adaptivityState}$`,
-												),
-												'regular',
-											);
-											const regularValue =
-												adaptiveValues.regular[
-													regularName
-												];
-											if (regularValue) {
-												regularValues += `${regularName}: ${regularValue};\n`;
-											}
-										},
-								  }),
-						)}
-					}
-				}
-
-				.vkui--force-${convertCamelToSnake(usedViewport)} {
+			mediaValues += stripIndent`
+			@media ${customMedia[`width${capitalize(usedViewport)}`]} {
+				:root, .vkui--force-auto {
 					${stripIndents(
 						isRegular
 							? regularValues
 							: getVarString({
 									valuesObject,
 									prefix: '',
+									callback: (name) => {
+										if (isRegular) {
+											return;
+										}
+
+										const regularName = name.replace(
+											new RegExp(`${adaptivityState}$`),
+											'regular',
+										);
+										const regularValue =
+											adaptiveValues.regular[regularName];
+										if (regularValue) {
+											regularValues += `${regularName}: ${regularValue};\n`;
+										}
+									},
 							  }),
 					)}
 				}
-				`;
 			}
+
+			.vkui--force-${convertCamelToSnake(usedViewport)} {
+				${stripIndents(
+					isRegular
+						? regularValues
+						: getVarString({
+								valuesObject,
+								prefix: '',
+						  }),
+				)}
+			}
+			`;
 
 			mediaValues += '\n\n';
 		});

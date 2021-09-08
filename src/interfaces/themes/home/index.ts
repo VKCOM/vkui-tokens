@@ -1,20 +1,39 @@
 import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '@/interfaces/general/colors';
+import {
+	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
 
-export interface HomeUniqTokens {}
+export interface LocalHomeColorsDescriptionStruct {
+	homeColorSocialVk: ColorDescription;
+	homeColorSocialOk: ColorDescription;
+	homeColorSocialFb: ColorDescription;
+	homeColorFilinFailPrimary: ColorDescription;
+	homeColorFilinFailSecondary: ColorDescription;
+}
 
-type HomeViewports = ['desktopS'];
+export type LocalHomeColors = {
+	[key in keyof LocalHomeColorsDescriptionStruct]: ColorWithStates;
+};
+
+type HomeViewports = ['touch', 'desktopS'];
 
 export interface ThemeHome
 	extends ParadigmTheme<HomeViewports>,
-		HomeUniqTokens {}
+		LocalHomeColors {}
 
 export interface ThemeHomeDescription
-	extends ParadigmThemeDescription<HomeViewports>,
-		HomeUniqTokens {}
+	extends ParadigmThemeDescription<HomeViewports> {
+	colors: LocalHomeColorsDescriptionStruct &
+		LocalParadigmColorsDescriptionStruct &
+		ColorsDescriptionStruct;
+}
 
 // Интерфейс ниже не используем в коде, но нужен для сборки
 export interface ThemeHomeCssVars
