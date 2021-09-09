@@ -6,17 +6,6 @@ import {
 import {ThemeHomeDarkDescription} from '@/interfaces/themes/homeDark';
 import {darkTheme, lightTheme} from '@/themeDescriptions/base/paradigm';
 
-const breakpoints = {
-	desktopS: {
-		breakpoint: 0,
-		adaptiveValue: 'compact',
-	},
-	touch: {
-		breakpoint: 0,
-		adaptiveValue: 'regular',
-	},
-};
-
 const localHomeColors: LocalHomeColorsDescriptionStruct = {
 	homeColorSocialVk: '#2787F5',
 	homeColorSocialOk: '#EE8208',
@@ -40,9 +29,6 @@ const elevations = {
 export const homeTheme: ThemeHomeDescription = {
 	...lightTheme,
 	themeName: 'home',
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore
-	breakpoints,
 	...elevations,
 	...localHomeOverValues,
 	colors: {
@@ -54,9 +40,6 @@ export const homeTheme: ThemeHomeDescription = {
 export const homeDarkTheme: ThemeHomeDarkDescription = {
 	...darkTheme,
 	themeName: 'homeDark',
-	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-	// @ts-ignore
-	breakpoints,
 	...elevations,
 	...localHomeOverValues,
 	colors: {
