@@ -26,12 +26,15 @@ const localHomeColors: LocalHomeColorsDescriptionStruct = {
 };
 
 const localHomeOverValues: ThemeHomeOverValues = {
-	homeElevation1: '0px 4px 12px rgba(18, 25, 43, 0.12)',
-	homeElevation2: '0px 4px 20px rgba(18, 25, 43, 0.2)',
-	homeElevation3: '0px 16px 48px rgba(18, 25, 43, 0.28)',
 	homeFontFamilyDefault: 'Helvetica, Arial, sans-serif',
 	homeFontWeightNormal: '400',
 	homeFontWeightBold: '700',
+};
+
+const elevations = {
+	elevation1: '0px 4px 12px rgba(18, 25, 43, 0.12)',
+	elevation2: '0px 4px 20px rgba(18, 25, 43, 0.2)',
+	elevation3: '0px 16px 48px rgba(18, 25, 43, 0.28)',
 };
 
 export const homeTheme: ThemeHomeDescription = {
@@ -40,6 +43,7 @@ export const homeTheme: ThemeHomeDescription = {
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore
 	breakpoints,
+	...elevations,
 	...localHomeOverValues,
 	colors: {
 		...lightTheme.colors,
@@ -53,6 +57,7 @@ export const homeDarkTheme: ThemeHomeDarkDescription = {
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore
 	breakpoints,
+	...elevations,
 	...localHomeOverValues,
 	colors: {
 		...darkTheme.colors,

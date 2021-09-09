@@ -23,9 +23,6 @@ export type LocalHomeColors = {
 };
 
 export interface ThemeHomeOverValues {
-	homeElevation1: string;
-	homeElevation2: string;
-	homeElevation3: string;
 	homeFontFamilyDefault: string;
 	homeFontWeightNormal: string;
 	homeFontWeightBold: string;
