@@ -19,6 +19,11 @@ export const octaviusCompactTheme: ThemeOctaviusCompactDescription = {
 		regular: 32,
 	},
 
+	sizeButtonMediumHeight: {
+		compact: 48,
+		regular: 32,
+	},
+
 	sizeControlButtonWidthMin: {
 		compact: 130,
 		regular: 104,

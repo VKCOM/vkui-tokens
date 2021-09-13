@@ -22,4 +22,10 @@ describe('convertCamelToSnake', () => {
 			'hello_world_my_friend',
 		);
 	});
+
+	it('should convert special case 1', () => {
+		expect(convertCamelToSnake('octaviusShadowLetterList')).toBe(
+			'octavius_shadow_letter_list',
+		);
+	});
 });

@@ -1,22 +1,18 @@
-import {getRGBA} from '@/build/helpers/cssHelpers';
-import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
+import {getRGBA, toneOpacity} from '@/build/helpers/cssHelpers';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
-	darkTheme as paradigmDarkBase,
-	lightTheme as paradigmLightBase,
+	darkTheme,
+	darkThemeElevation,
+	lightTheme,
 } from '@/themeDescriptions/base/paradigm';
-import {helpers} from '@/themeDescriptions/common';
-
-const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
 
 export const octaviusTheme: ThemeOctaviusDescription = {
-	...paradigmLightBase,
-	...helpers,
+	...lightTheme,
 	themeName: 'octavius',
+	themeNameBase: 'octavius',
 	colors: {
-		...paradigmLightBase.colors,
-		colorBgThumbnail: '#00103d',
-		colorRating: '#ffd400',
+		...lightTheme.colors,
+		colorBgThumbnail: 'rgba(0, 16, 61, 0.08)',
 		colorBgContrast: '#2C2D2E',
 		colorSocialVk: '#2787F5',
 		colorSocialOk: '#ee8208',
@@ -48,239 +44,194 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorBgPromo: '#EBEEF5',
 		colorTrueBlack: '#000000',
 		colorTrueWhite: '#ffffff',
+
+		octaviusColorBackground: lightTheme.colors.colorBackground,
+		octaviusColorBackgroundAccentToned: toneOpacity(
+			lightTheme.colors.colorBackgroundAccent,
+			0.12,
+		),
+
+		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
+		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
+		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderTextSecondary: '#93969b',
+		octaviusColorHeaderSearchIcon: '#b6b8be',
+		octaviusColorHeaderSearchChipBackground:
+			lightTheme.colors.colorBackgroundSecondary,
+		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
+		octaviusColorHeaderSearchChipBorderEditable:
+			lightTheme.colors.colorFieldBorder,
+
+		octaviusColorHeaderSearchBackground: '#ffffff',
+		octaviusColorHeaderSearchBackgroundCollapsed: '#ffffff',
+
+		octaviusColorHeaderSearchText: lightTheme.colors.colorTextPrimary,
+		octaviusColorHeaderSearchTextCollapsed:
+			lightTheme.colors.colorTextSecondary,
+
+		octaviusColorHeaderProgress:
+			lightTheme.colors.colorBackgroundAccentAlternative,
+
+		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
+
+		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
+
+		octaviusColorSidebarCounterBackground:
+			lightTheme.colors.colorTransparent,
+
+		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
+		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
+
+		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.16)',
+
+		octaviusColorIconUnread: '#005FF9',
+		octaviusColorIconFavorite: '#fc2c38',
+		octaviusColorIconOrder: '#ff54aa',
+		octaviusColorIconFinance: '#2fc885',
+		octaviusColorIconRegistration: '#ff9e00',
+		octaviusColorIconTravel: '#ba34fc',
+		octaviusColorIconEvent: '#09a6fa',
+		octaviusColorIconFees: '#e60000',
+
+		octaviusColorListLetterBackground: {
+			normal: '#ffffff',
+			hover: '#f5f5f7',
+			active: '#ebecef',
+		},
+		octaviusColorListLetterSeparator:
+			lightTheme.colors.colorSeparatorPrimary,
+
+		octaviusColorDatasetBackground:
+			lightTheme.colors.colorBackgroundContent,
+
+		octaviusColorTextBackgroundContrast: '#333333',
 	},
 
-	breakpoints: {
-		touch: {
-			breakpoint: 0,
-			adaptiveValue: 'compact',
-		},
-		desktopS: {
-			breakpoint: 768,
-			adaptiveValue: 'regular',
-		},
-	},
+	octaviusElevationCard: 'none',
+	octaviusShadowTextBackgroundContrast: 'none',
+	octaviusElevationHeader: 'none',
 
-	// Типографика
-	fontH0: {
-		regular: {
-			fontSize: 44,
-			lineHeight: 52,
-			fontFamily: paradigmLightBase.fontFamilyAccent,
-			fontWeight: paradigmLightBase.fontWeightAccent3,
-		},
-		compact: {
-			fontSize: 28,
-			lineHeight: 32,
-		},
-	},
-	fontH1: {
-		regular: {
-			fontSize: 32,
-			lineHeight: 36,
-			fontFamily: paradigmLightBase.fontFamilyAccent,
-			fontWeight: paradigmLightBase.fontWeightAccent3,
-		},
-		compact: {
-			fontSize: 24,
-			lineHeight: 28,
-		},
-	},
-	fontH2: {
-		regular: {
-			fontSize: 28,
-			lineHeight: 32,
-			fontFamily: paradigmLightBase.fontFamilyAccent,
-			fontWeight: paradigmLightBase.fontWeightAccent3,
-		},
-		compact: {
-			fontSize: 20,
-			lineHeight: 26,
-		},
-	},
+	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
-	// Отступы
-	sizeBasePadding: {
-		regular: x5,
-		compact: x4,
+	octaviusFontFamilyMailSans:
+		'MailSans, HelveticaNeue, Helvetica, Arial, sans-serif',
+
+	octaviusFontFamilyGlobal: 'Arial, Tahoma, Verdana, sans-serif',
+	octaviusFontFamilyMac: 'Helvetica, Arial, Tahoma, Verdana, sans-serif',
+	octaviusFontFamilyDisplay: 'inherit',
+
+	octaviusSizeHeadlineHeight: {
+		regular: 36,
 	},
-	sizeBorderWidthTab: {
-		regular: x05,
+	octaviusSizeLayoutWidthMax: {
+		regular: 2150,
 	},
-	sizeBorderWidthBar: {
-		regular: x1,
+	octaviusSizeLayoutWidthMin: {
+		regular: 761,
 	},
-	sizeBorderWidthAccent: {
-		regular: x2,
+	octaviusSizeSidebarPaddingTop: {
+		regular: 12,
 	},
-	sizeBorderWidthAccentSecondary: {
-		regular: x2,
+	octaviusSizeSidebarWidgetsHeightMin: {
+		regular: 64,
 	},
-	sizeControlButtonWidthMin: {
+	octaviusSizeSidebarWidgetsHeightCompactMin: {
 		regular: 104,
-		compact: 130,
 	},
-	sizePromoButtonClose: {
-		regular: x8,
-	},
-	sizeButtonSliderHeight: {
-		regular: x6,
-	},
-	sizeButtonSliderWidth: {
-		regular: x3,
-	},
-	sizeButtonSliderWidthPointer: {
-		regular: x4,
-	},
-	sizeFieldWidthMin: {
-		regular: 380,
-		compact: 328,
-	},
-	sizeLabelWidth: {
-		regular: 184,
-	},
-	sizeProgress: {
-		regular: x1,
-	},
-	sizeProgressScroll: {
-		regular: x3,
-	},
-	sizeDotBullet: {
-		regular: x1,
-	},
-	sizeDotIndicate: {
-		regular: x2,
-	},
-	sizeDotClickable: {
-		regular: x3,
-	},
-	sizeVerticalPadding: {
-		regular: 0,
-	},
-	sizeButtonMorePadding: {
-		regular: x2,
-	},
-	sizeIconMorePadding: {
-		regular: x2,
-		compact: x3,
-	},
-	sizeButtonIconPadding: {
-		regular: x5,
-		compact: x4,
-	},
-	sizeDivPadding: {
-		regular: x1,
-	},
-	sizeMenuPadding: {
-		regular: x2,
-	},
-	sizeTagPadding: {
-		regular: x2,
-	},
-	sizeTabPadding: {
-		regular: x4,
-	},
-	sizeTableHorizontalPadding: {
-		regular: x4,
-	},
-	sizeTableVerticalPadding: {
-		regular: x4,
-	},
-	sizeSliceTopPadding: {
-		regular: x10,
-	},
-	sizeSliceBottomPadding: {
-		regular: 60,
-	},
-	sizeBaseMargin: {
-		regular: x3,
-	},
-	sizeLabelVerticalMargin: {
-		regular: x1,
-	},
-	sizeTipMargin: {
-		regular: x1,
-	},
-	sizeFieldHorizontalMargin: {
-		regular: x5,
-		compact: x4,
-	},
-	sizeFieldVerticalMargin: {
-		regular: x6,
-	},
-	sizeFieldSetMargin: {
-		regular: x8,
-	},
-	sizeIconMargin: {
-		regular: x2,
-		compact: x3,
-	},
-	sizeChoiceMargin: {
-		regular: x2,
-	},
-	sizeMenuMargin: {
-		regular: x05,
-	},
-	sizeTagMargin: {
-		regular: x2,
-	},
-	sizeTabMargin: {
-		regular: x2,
-	},
-	sizeBulletMargin: {
-		regular: x3,
-	},
-	sizeAttributeMargin: {
-		regular: x1,
-	},
-	sizePopupMargin: {
-		regular: x6,
-		compact: x2,
-	},
-	sizeHeaderIcon: {
-		regular: x5,
-	},
-	sizeWysiwygIcon: {
-		regular: x4 - x05,
-	},
-
-	sizeIllustrationS: {
-		regular: 48,
-	},
-	sizeIllustrationXM: {
-		regular: 72,
-	},
-	sizeIllustrationM: {
-		regular: 96,
-	},
-	sizeIllustrationL: {
-		regular: 144,
-	},
-	sizeIllustrationXXL: {
-		regular: 228,
-	},
-
-	// остальное
-	toneValueOverlay: 0.48,
-	toneValueViewer: 0.88,
-	toneValueToolbar: 0.24,
-	toneValueHover: 0.04,
-	toneValueActive: 0.08,
-	toneValueFocus: 0.08,
-
-	typeBorderButton: 'solid',
-	typeBorderPosition: 'inset',
 };
 
-export const octaviusDarkTheme: ParadigmThemeDescription = {
+export const octaviusDarkTheme: ThemeOctaviusDescription = {
 	...octaviusTheme,
+	...darkTheme,
+	...darkThemeElevation,
 	themeName: 'octaviusDark',
-	colorsScheme: 'dark',
 	colors: {
 		...octaviusTheme.colors,
-		...paradigmDarkBase.colors,
+		...darkTheme.colors,
 		colorBgThumbnail: '#1F1F1F',
 		colorBgPlaceholder: '#000000',
 		colorBgPromo: '#303030',
+
+		octaviusColorPortalMenuBackground: '#19191A',
+		octaviusColorSidebarItemBackground: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.08)',
+			active: 'rgba(255, 255, 255, 0.12)',
+		},
+
+		octaviusColorBackground: darkTheme.colors.colorBackground,
+		octaviusColorBackgroundAccentToned: toneOpacity(
+			darkTheme.colors.colorBackgroundAccent,
+			0.12,
+		),
+
+		octaviusColorHeaderBackground: darkTheme.colors.colorBackgroundAccent,
+		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
+		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderProgress:
+			darkTheme.colors.colorBackgroundAccentAlternative,
+
+		octaviusColorHeaderSearchBackground: '#1F1F1F',
+		octaviusColorHeaderSearchBackgroundCollapsed:
+			darkTheme.colors.colorBackgroundModal,
+		octaviusColorHeaderSearchChipBackground:
+			darkTheme.colors.colorBackgroundModal,
+		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
+		octaviusColorHeaderSearchChipBorderEditable: 'rgba(255, 255, 255, .48)',
+		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,
+		octaviusColorHeaderSearchTextCollapsed:
+			darkTheme.colors.colorTextSecondary,
+
+		octaviusColorSidebarItemIconPrimary: darkTheme.colors.colorIconPrimary,
+
+		octaviusColorSidebarCounterBackground:
+			darkTheme.colors.colorTransparent,
+
+		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
+		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.04)',
+
+		octaviusColorContentScrollbar: 'rgba(255, 255, 255, 0.04)',
+
+		octaviusColorIconUnread: '#0C7CFF',
+		octaviusColorIconFavorite: '#FF4550',
+		octaviusColorIconOrder: '#F94CA3',
+		octaviusColorIconFinance: '#24C780',
+		octaviusColorIconRegistration: '#FF9C37',
+		octaviusColorIconTravel: '#C15DF3',
+		octaviusColorIconEvent: '#3BBAFE',
+		octaviusColorIconFees: '#EE3C3C',
+
+		octaviusColorListLetterBackground:
+			darkTheme.colors.colorBackgroundContent,
+		octaviusColorListLetterSeparator:
+			darkTheme.colors.colorSeparatorPrimaryAlpha,
+
+		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
+		octaviusColorTextBackgroundContrast: darkTheme.colors.colorTextPrimary,
 	},
+};
+
+export const octaviusWhiteTheme: ThemeOctaviusDescription = {
+	...octaviusTheme,
+	themeName: 'octaviusWhite',
+	colors: {
+		...octaviusTheme.colors,
+
+		octaviusColorHeaderBackground: '#FFFFFF',
+		octaviusColorHeaderButtonText: octaviusTheme.colors.colorTextPrimary,
+		octaviusColorHeaderIcon: octaviusTheme.colors.colorIconPrimary,
+
+		octaviusColorHeaderSearchBackground: '#f0f1f3',
+		octaviusColorHeaderSearchBackgroundCollapsed: '#f0f1f3',
+		octaviusColorHeaderSearchChipBackground: {
+			normal: '#FFFFFF',
+			hover: 'rgba(255, 255, 255, 0.64)',
+			active: 'rgba(255, 255, 255, 0.4)',
+		},
+		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
+		octaviusColorHeaderSearchChipBorderEditable: '#FFFFFF',
+	},
+
+	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',
 };

@@ -516,6 +516,94 @@ const testData: TestVars[] = [
 			`,
 		},
 	},
+	{
+		name: 'should compile onlyColors',
+		mode: 'onlyColors',
+		descriptionTheme: {
+			sizeBasePadding: {
+				regular: 20,
+			},
+			colorBackground: {
+				normal: '#FFF',
+				hover: '#AAA',
+				active: '#CCC',
+			},
+		},
+		result: {
+			css: stripIndent`
+				:root {
+					--vkui--color_background: #FFF;
+					--vkui--color_background--hover: #AAA;
+					--vkui--color_background--active: #CCC;
+				}
+			`,
+			scss: stripIndent`
+				$color-background: #FFF;
+				$color-background--hover: #AAA;
+				$color-background--active: #CCC;
+			`,
+			pcss: stripIndent`
+				:root {
+					--color-background: #FFF;
+					--color-background--hover: #AAA;
+					--color-background--active: #CCC;
+				}`,
+			less: stripIndent`
+				@color-background: #FFF;
+				@color-background--hover: #AAA;
+				@color-background--active: #CCC;
+			`,
+			styl: stripIndent`
+				$color-background = #FFF;
+				$color-background--hover = #AAA;
+				$color-background--active = #CCC;
+			`,
+		},
+	},
+	{
+		name: 'should compile noSizes',
+		mode: 'noSizes',
+		descriptionTheme: {
+			sizeBasePadding: {
+				regular: 20,
+			},
+			colorBackground: {
+				normal: '#FFF',
+				hover: '#AAA',
+				active: '#CCC',
+			},
+		},
+		result: {
+			css: stripIndent`
+				:root {
+					--vkui--color_background: #FFF;
+					--vkui--color_background--hover: #AAA;
+					--vkui--color_background--active: #CCC;
+				}
+			`,
+			scss: stripIndent`
+				$color-background: #FFF;
+				$color-background--hover: #AAA;
+				$color-background--active: #CCC;
+			`,
+			pcss: stripIndent`
+				:root {
+					--color-background: #FFF;
+					--color-background--hover: #AAA;
+					--color-background--active: #CCC;
+				}`,
+			less: stripIndent`
+				@color-background: #FFF;
+				@color-background--hover: #AAA;
+				@color-background--active: #CCC;
+			`,
+			styl: stripIndent`
+				$color-background = #FFF;
+				$color-background--hover = #AAA;
+				$color-background--active = #CCC;
+			`,
+		},
+	},
 ];
 
 describe('compileStyles', () => {

@@ -7,6 +7,12 @@ import {
 	ViewportsTuple,
 } from '@/interfaces/general/tools/viewports';
 
+const stringKeys = ['themeName', 'themeNameBase'];
+
+export function isString(token: any, key: string): token is string {
+	return typeof token === 'string' && stringKeys.includes(key);
+}
+
 export function isColor(token: any): token is ColorWithStates {
 	if (typeof token !== 'object') {
 		return false;

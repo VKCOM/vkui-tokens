@@ -1,5 +1,8 @@
+import 'css.escape';
+
 import {stripIndent} from 'common-tags';
 
+import {getAllButSizes} from '@/build/helpers/getAllButSizes';
 import {getOnlyColors} from '@/build/helpers/getOnlyColors';
 import {unCamelcasify} from '@/build/helpers/unCamelcasify';
 import {PixelifyTheme} from '@/interfaces/general';
@@ -17,16 +20,18 @@ import {
 	isColor,
 	isCustomMediaToken,
 	isGroupToken,
+	isString,
 } from './helpers/tokenRecognition';
 
-export const serviceKeys = ['breakpoints', 'prefix', 'themeName', 'themeType'];
+export const serviceKeys = ['breakpoints', 'prefix', 'themeType'];
 
 export type CompileStylesMode =
 	| 'default'
 	| 'onlyVariables'
 	| 'onlyColors'
 	| 'withAdaptiveGroups'
-	| 'onlyAdaptiveGroups';
+	| 'onlyAdaptiveGroups'
+	| 'noSizes';
 
 /**
  * Компиллирует строку со стилями (в разных форматах), на основе темы
@@ -57,8 +62,14 @@ export const compileStyles = <PT = PixelifyTheme>(
 	let variables = '';
 	let groupTokens = '';
 
-	if (mode === 'onlyColors') {
-		theme = getOnlyColors(theme);
+	switch (mode) {
+		case 'onlyColors':
+			theme = getOnlyColors(theme);
+			break;
+
+		case 'noSizes':
+			theme = getAllButSizes(theme, (theme as any).themeNameBase);
+			break;
 	}
 
 	Object.keys(theme).forEach((key) => {
@@ -68,6 +79,15 @@ export const compileStyles = <PT = PixelifyTheme>(
 		}
 
 		const token = theme[key];
+
+		// если переменная — строка (например, имя темы)
+		if (isString(token, key)) {
+			variables += getVariableStatement(
+				getDeclaration(key, prefix),
+				`'${CSS.escape(token)}'`,
+			);
+			return;
+		}
 
 		// если переменная — цвет
 		if (isColor(token)) {

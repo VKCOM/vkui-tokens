@@ -1,31 +1,49 @@
-import {flatifyTheme} from '@/build/helpers/flatifyTheme';
-import {ThemeHomeDescription} from '@/interfaces/themes/home';
+import {
+	LocalHomeColorsDescriptionStruct,
+	ThemeHomeDescription,
+	ThemeHomeOverValues,
+} from '@/interfaces/themes/home';
 import {ThemeHomeDarkDescription} from '@/interfaces/themes/homeDark';
+import {darkTheme, lightTheme} from '@/themeDescriptions/base/paradigm';
 
-import {octaviusDarkTheme, octaviusTheme} from '../octavius';
+const localHomeColors: LocalHomeColorsDescriptionStruct = {
+	homeColorSocialVk: '#2787F5',
+	homeColorSocialOk: '#EE8208',
+	homeColorSocialFb: '#0561AF',
+	homeColorFilinFailPrimary: '#333333',
+	homeColorFilinFailSecondary: '#C7C7C7',
+};
 
-const octaviusThemeRegular = flatifyTheme(octaviusTheme);
+const localHomeOverValues: ThemeHomeOverValues = {
+	homeFontFamilyDefault: 'Helvetica, Arial, sans-serif',
+	homeFontWeightNormal: '400',
+	homeFontWeightBold: '700',
+};
+
+const elevations = {
+	elevation1: '0px 4px 12px rgba(18, 25, 43, 0.12)',
+	elevation2: '0px 4px 20px rgba(18, 25, 43, 0.2)',
+	elevation3: '0px 16px 48px rgba(18, 25, 43, 0.28)',
+};
 
 export const homeTheme: ThemeHomeDescription = {
-	...octaviusThemeRegular,
+	...lightTheme,
 	themeName: 'home',
-	breakpoints: {
-		desktopS: {
-			breakpoint: 0,
-			adaptiveValue: 'regular',
-		},
+	...elevations,
+	...localHomeOverValues,
+	colors: {
+		...lightTheme.colors,
+		...localHomeColors,
 	},
-	elevation4: '0 0 48px 0 rgba(0, 11, 41, 0.2)',
-	portalFontFamily: 'MailSans, Helvetica, Arial, sans-serif',
-	portalFontWeight: 400,
-	portalFontWeightBold: 600,
 };
 
 export const homeDarkTheme: ThemeHomeDarkDescription = {
-	...homeTheme,
+	...darkTheme,
 	themeName: 'homeDark',
+	...elevations,
+	...localHomeOverValues,
 	colors: {
-		...homeTheme.colors,
-		...octaviusDarkTheme.colors,
+		...darkTheme.colors,
+		...localHomeColors,
 	},
 };

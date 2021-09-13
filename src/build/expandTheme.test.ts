@@ -115,9 +115,9 @@ describe('expandTheme', () => {
 					value: 'var(--vkui--colors_scheme, light)',
 				},
 				someNewRandomToken: {
-					name: '--vkui--some_ne_wrandom_token',
+					name: '--vkui--some_new_random_token',
 					originalValue: '3',
-					value: 'var(--vkui--some_ne_wrandom_token, 3)',
+					value: 'var(--vkui--some_new_random_token, 3)',
 				},
 				themeType: 'cssVarsWide',
 			});
@@ -155,8 +155,8 @@ describe('expandTheme', () => {
 					value: 'var(--vkui--colors_scheme, light)',
 				},
 				someNewRandomToken: {
-					name: '--vkui--some_ne_wrandom_token',
-					value: 'var(--vkui--some_ne_wrandom_token, 3)',
+					name: '--vkui--some_new_random_token',
+					value: 'var(--vkui--some_new_random_token, 3)',
 				},
 				themeType: 'cssVars',
 			});

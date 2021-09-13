@@ -3,8 +3,8 @@ import {Property} from 'csstype';
 import {Font} from '@/interfaces/general/typography';
 import {ThemeCloudDescription} from '@/interfaces/themes/cloud';
 
+import {lightTheme} from '../../base/paradigm';
 import {helpers} from '../../common';
-import {octaviusTheme} from '../octavius';
 
 const {x2, x4, x5} = helpers;
 
@@ -21,7 +21,7 @@ const {
 	fontWeightBase1,
 	fontWeightAccent1,
 	fontWeightAccent2,
-} = octaviusTheme;
+} = lightTheme;
 
 const fontAccentBoldAtributes: FontAccentAtributes = {
 	fontFamily: fontFamilyAccent,
@@ -97,7 +97,7 @@ const fontText = {
 };
 
 export const cloudTheme: ThemeCloudDescription = {
-	...octaviusTheme,
+	...lightTheme,
 
 	themeName: 'cloud',
 

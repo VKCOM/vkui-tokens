@@ -161,13 +161,33 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 		in: 'src/themeDescriptions/base',
 		out: 'themeDescriptions/base',
 	},
+	{
+		in: 'src/themeDescriptions/base/paradigm.ts',
+		out: 'themeDescriptions/base/paradigm.ts',
+	},
 ].forEach((fileName) => {
 	const outFileName = fileName.out ?? fileName.in;
 	console.log(`${fileName.in} -> dist/${outFileName}`);
 	const fileSourcePath = path.resolve(ROOT_DIR, fileName.in);
-	const fileDistPath = path.resolve(DIST_PATH, outFileName);
+	const fileDestPath = path.resolve(DIST_PATH, outFileName);
+	const fileSourceStat = fs.statSync(fileSourcePath);
 
-	fs.copySync(fileSourcePath, fileDistPath);
+	if (fileSourceStat.isFile()) {
+		// В файлах нужно заменить некоторые пути импортов
+
+		const contentSource = fs.readFileSync(fileSourcePath, 'utf-8');
+
+		const contentDest = contentSource.replace(
+			/@\/themeDescriptions\/common/g,
+			`@/utils/common`,
+		);
+
+		fs.writeFileSync(fileDestPath, contentDest);
+	} else {
+		// Всё остальное копируем как есть
+
+		fs.copySync(fileSourcePath, fileDestPath);
+	}
 });
 
 console.log('успешно\n');

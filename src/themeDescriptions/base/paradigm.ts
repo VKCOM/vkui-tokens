@@ -1,4 +1,7 @@
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
+import {Elevation} from '@/interfaces/general/elevation';
+import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
+import {helpers} from '@/themeDescriptions/common';
 
 const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Helvetica, Arial, sans-serif';
@@ -13,6 +16,7 @@ export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
 		colorBackgroundAccent: '#005FF9',
+		colorBackgroundAccentAlternative: '#FF9E00',
 		colorIconAccent: '#005FF9',
 		colorTextAccent: '#005FF9',
 		colorStrokeAccent: '#005FF9',
@@ -27,7 +31,7 @@ export const lightColors: ColorsDescription = {
 		colorCounterProminentText: '#FFFFFF',
 		colorCounterMutedBackground: '#C4C6CC',
 		colorCounterMutedText: '#FFFFFF',
-		colorBackgroundWarning: '#FFFCE0',
+		colorBackgroundWarning: '#FFF1AD',
 		colorBackgroundNegative: '#ED0A34',
 		colorTextNegative: '#ED0A34',
 		colorIconNegative: '#ED0A34',
@@ -91,6 +95,7 @@ export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
 		colorBackgroundAccent: '#2775FC',
+		colorBackgroundAccentAlternative: '#FF9E00',
 		colorIconAccent: '#3C82FD',
 		colorTextAccent: '#3C82FD',
 		colorStrokeAccent: '#3C82FD',
@@ -98,19 +103,19 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundContent: '#232324',
 		colorBackgroundSecondary: '#2A2A2B',
 		colorBackgroundTertiary: '#252525',
-		colorBackground: '#151515',
+		colorBackground: '#19191A',
 		colorCounterAccentBackground: '#2775FC',
 		colorCounterAccentText: '#151515',
 		colorCounterProminentBackground: '#ED0A34',
 		colorCounterProminentText: '#151515',
 		colorCounterMutedBackground: '#8D8E94',
 		colorCounterMutedText: '#151515',
-		colorBackgroundWarning: 'rgba(255, 212, 100, 0.16)',
+		colorBackgroundWarning: '#6C4E00',
 		colorBackgroundNegative: '#ED0A34',
 		colorTextNegative: '#ED0A34',
 		colorIconNegative: '#ED0A34',
 		colorStrokeNegative: '#ED0A34',
-		colorHeaderBackground: '#151515',
+		colorHeaderBackground: '#232324',
 		colorPanelHeaderIcon: '#3C82FD',
 		colorIconPrimary: '#D9DADD',
 		colorIconMedium: '#B0B1B6',
@@ -125,21 +130,21 @@ export const darkColors: ColorsDescription = {
 		colorTextLinkAlternate: '#0667FF',
 		colorTrackBackground: '#434445',
 		colorTrackBuffer: '#83AAEA',
-		colorBackgroundModal: '#151515',
+		colorBackgroundModal: '#303030',
 		colorImagePlaceholder: 'rgba(255, 255, 255, 0.8)',
 		colorImagePlaceholderOpaque: '#393A3B',
 		colorSearchFieldBackground: '#393A3B',
 		colorFieldBorder: 'rgba(255, 255, 255, 0.16)',
 		colorCheckboxBorder: 'rgba(255, 255, 255, 0.16)',
-		colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.16)',
-		colorSeparatorSecondary: '#393A3B',
-		colorSeparatorPrimary: '#434445',
-		colorTextLink: '#0667FF',
-		colorTextMuted: '#D9DADD',
-		colorTextPrimary: '#D9DADD',
-		colorTextSecondary: '#9C9DA2',
+		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.4)',
+		colorSeparatorSecondary: '#181818',
+		colorSeparatorPrimary: '#151516',
+		colorTextLink: '#589BFF',
+		colorTextMuted: '#E7E8EA',
+		colorTextPrimary: '#E7E8EA',
+		colorTextSecondary: '#8C8E94',
 		colorTextSubhead: '#BFC1C5',
-		colorTextTertiary: '#88898F',
+		colorTextTertiary: '#74767A',
 		colorWriteBarIcon: '#3C82FD',
 		colorAccentBlue: '#2775FC',
 		colorAccentGray: '#9C9DA2',
@@ -165,7 +170,7 @@ export const darkColors: ColorsDescription = {
 	},
 };
 
-export const lightTheme: ThemeDescription = {
+export const lightThemeBase: ThemeDescription = {
 	themeName: 'paradigmBase',
 	...lightColors,
 
@@ -210,15 +215,14 @@ export const lightTheme: ThemeDescription = {
 			fontWeight: fontWeightAccent2,
 		},
 	},
+	// todo поменять местами fontSize, когда откажемся от auto
+	// todo fontSize в мобильном виде должен быть 16
 	fontText: {
 		regular: {
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
 			fontWeight: fontWeightBase1,
-		},
-		compact: {
-			fontSize: 16,
 		},
 	},
 	fontSubhead: {
@@ -304,16 +308,18 @@ export const lightTheme: ThemeDescription = {
 
 	// Размеры
 	sizeSelectIconPadding: {
-		regular: 6,
-		compact: 7,
+		regular: 7,
+		compact: 6,
 	},
+	// todo поменять местами, когда откажемся от auto
 	sizePopupBasePadding: {
-		regular: 32,
-		compact: 20,
+		regular: 20,
+		compact: 32,
 	},
+	// todo поменять местами, когда откажемся от auto
 	sizePopupHeaderPadding: {
-		regular: 24,
-		compact: 16,
+		regular: 16,
+		compact: 24,
 	},
 	sizeBorderRadius: {
 		regular: 4,
@@ -328,20 +334,20 @@ export const lightTheme: ThemeDescription = {
 		regular: 20,
 	},
 	sizeFieldHeight: {
-		regular: 44,
-		compact: 36,
+		regular: 48,
+		compact: 40,
 	},
 	sizeButtonLargeHeight: {
-		regular: 44,
-		compact: 36,
+		regular: 48,
+		compact: 48,
 	},
 	sizeButtonMediumHeight: {
-		regular: 36,
-		compact: 32,
+		regular: 48,
+		compact: 40,
 	},
 	sizeButtonSmallHeight: {
-		regular: 30,
-		compact: 26,
+		regular: 32,
+		compact: 32,
 	},
 	sizeCheckbox: {
 		regular: 16,
@@ -365,7 +371,8 @@ export const lightTheme: ThemeDescription = {
 		regular: 12,
 	},
 	sizeButtonPaddingHorizontal: {
-		regular: 12,
+		regular: 20,
+		compact: 16,
 	},
 	sizeLabelHorizontalMargin: {
 		regular: 16,
@@ -422,8 +429,284 @@ export const lightTheme: ThemeDescription = {
 	opacityDisable: 0.48,
 };
 
-export const darkTheme: ThemeDescription = {
-	...lightTheme,
+const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
+
+export const lightTheme: ParadigmThemeDescription = {
+	...lightThemeBase,
+	...helpers,
+	colors: {
+		...lightThemeBase.colors,
+		colorRating: '#ffd400',
+		colorButtonContrast: {
+			normal: 'rgba(255, 255, 255, 1)',
+			hover: 'rgba(255, 255, 255, 0.8)',
+			active: 'rgba(255, 255, 255, 0.6)',
+		},
+		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
+	},
+
+	breakpoints: {
+		touch: {
+			breakpoint: 0,
+			adaptiveValue: 'regular',
+		},
+		desktopS: {
+			breakpoint: 768,
+			adaptiveValue: 'compact',
+		},
+	},
+
+	// Типографика
+	// todo удалить и заменить на контекстные токены в проектах
+	fontH0: {
+		regular: {
+			fontSize: 28,
+			lineHeight: 32,
+			fontFamily: lightThemeBase.fontFamilyAccent,
+			fontWeight: lightThemeBase.fontWeightAccent3,
+		},
+		compact: {
+			fontSize: 44,
+			lineHeight: 52,
+		},
+	},
+	// todo удалить и заменить на контекстные токены в проектах
+	fontH1: {
+		regular: {
+			fontSize: 24,
+			lineHeight: 28,
+			fontFamily: lightThemeBase.fontFamilyAccent,
+			fontWeight: lightThemeBase.fontWeightAccent3,
+		},
+		compact: {
+			fontSize: 32,
+			lineHeight: 36,
+		},
+	},
+	// todo удалить и заменить на контекстные токены в проектах
+	fontH2: {
+		regular: {
+			fontSize: 20,
+			lineHeight: 26,
+			fontFamily: lightThemeBase.fontFamilyAccent,
+			fontWeight: lightThemeBase.fontWeightAccent3,
+		},
+		compact: {
+			fontSize: 28,
+			lineHeight: 32,
+		},
+	},
+
+	// Отступы
+	sizeArrowHeight: {
+		regular: 8,
+	},
+	sizeArrowWidth: {
+		regular: 12,
+	},
+	sizeBasePadding: {
+		regular: x4,
+		compact: x5,
+	},
+	sizeBorderWidthTab: {
+		regular: x05,
+	},
+	sizeBorderWidthBar: {
+		regular: x1,
+	},
+	sizeBorderWidthAccent: {
+		regular: x2,
+	},
+	sizeBorderWidthAccentSecondary: {
+		regular: x2,
+	},
+	sizeControlButtonWidthMin: {
+		regular: 130,
+		compact: 104,
+	},
+	sizePromoButtonClose: {
+		regular: x8,
+	},
+	sizeButtonSliderHeight: {
+		regular: x6,
+	},
+	sizeButtonSliderWidth: {
+		regular: x3,
+	},
+	sizeButtonSliderWidthPointer: {
+		regular: x4,
+	},
+	sizeFieldWidthMin: {
+		regular: 328,
+		compact: 380,
+	},
+	sizeLabelWidth: {
+		regular: 184,
+	},
+	sizeProgress: {
+		regular: x1,
+	},
+	sizeProgressScroll: {
+		regular: x3,
+	},
+	sizeDotBullet: {
+		regular: x1,
+	},
+	sizeDotIndicate: {
+		regular: x2,
+	},
+	sizeDotClickable: {
+		regular: x3,
+	},
+	sizeVerticalPadding: {
+		regular: 0,
+	},
+	sizeButtonMorePadding: {
+		regular: x2,
+	},
+	sizeIconMorePadding: {
+		regular: x3,
+		compact: x2,
+	},
+	sizeButtonIconPadding: {
+		regular: x4,
+		compact: x5,
+	},
+	sizeDivPadding: {
+		regular: x1,
+	},
+	sizeMenuPadding: {
+		regular: x2,
+	},
+	sizeTagPadding: {
+		regular: x2,
+	},
+	sizeTabPadding: {
+		regular: x4,
+	},
+	sizeTableHorizontalPadding: {
+		regular: x4,
+	},
+	sizeTableVerticalPadding: {
+		regular: x4,
+	},
+	sizeSliceTopPadding: {
+		regular: x10,
+	},
+	sizeSliceBottomPadding: {
+		regular: 60,
+	},
+	sizeBaseMargin: {
+		regular: x3,
+	},
+	sizeLabelVerticalMargin: {
+		regular: x1,
+	},
+	sizeTipMargin: {
+		regular: x1,
+	},
+	sizeFieldHorizontalMargin: {
+		regular: x5,
+	},
+	sizeFieldVerticalMargin: {
+		regular: x6,
+	},
+	sizeFieldSetMargin: {
+		regular: x8,
+	},
+	sizeIconMargin: {
+		regular: x3,
+		compact: x2,
+	},
+	sizeChoiceMargin: {
+		regular: x2,
+	},
+	sizeMenuMargin: {
+		regular: x05,
+	},
+	sizeTagMargin: {
+		regular: x2,
+	},
+	sizeTabMargin: {
+		regular: x2,
+	},
+	sizeBulletMargin: {
+		regular: x3,
+	},
+	sizeAttributeMargin: {
+		regular: x1,
+	},
+	sizePopupMargin: {
+		regular: x2,
+		compact: x6,
+	},
+	sizeHeaderIcon: {
+		regular: x5,
+	},
+	sizeWysiwygIcon: {
+		regular: x4 - x05,
+	},
+
+	sizeIllustrationS: {
+		regular: 48,
+	},
+	sizeIllustrationXM: {
+		regular: 72,
+	},
+	sizeIllustrationM: {
+		regular: 96,
+	},
+	sizeIllustrationL: {
+		regular: 144,
+	},
+	sizeIllustrationXXL: {
+		regular: 228,
+	},
+
+	// остальное
+	toneValueOverlay: 0.48,
+	toneValueViewer: 0.88,
+	toneValueToolbar: 0.24,
+	toneValueHover: 0.04,
+	toneValueActive: 0.08,
+	toneValueFocus: 0.08,
+
+	typeBorderButton: 'solid',
+	typeBorderPosition: 'inset',
+};
+
+export const darkThemeElevation: Elevation = {
+	elevation1: '0 2px 0 0 rgba(0, 0, 0, 0.04)',
+	elevation2: '0 4px 48px 0 rgba(0, 0, 0, 0.72)',
+	elevation3: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
+	elevation4: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
+};
+
+export const darkThemeBase: ThemeDescription = {
+	...lightThemeBase,
 	themeName: 'paradigmBaseDark',
 	...darkColors,
+	...darkThemeElevation,
+};
+
+export const darkTheme: ParadigmThemeDescription = {
+	...lightTheme,
+	...darkThemeBase,
+	...darkThemeElevation,
+	colorsScheme: 'dark',
+	colors: {
+		...lightTheme.colors,
+		...darkThemeBase.colors,
+		colorButtonContrast: {
+			normal: 'rgba(255, 255, 255, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.2)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
+		colorBackgroundSecondary: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
+		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
+	},
 };
