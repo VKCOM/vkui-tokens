@@ -303,6 +303,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorTextBackgroundContrast: darkTheme.colors.colorTextPrimary,
+		octaviusColorBorderSolid: 'transparent',
 		octaviusColorOctopusText: '#E7E8EA',
 	},
 
@@ -329,6 +330,7 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		},
 		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
 		octaviusColorHeaderSearchChipBorderEditable: '#FFFFFF',
+		octaviusColorHeaderButtonBackground: '#FFFFFF',
 	},
 
 	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',
