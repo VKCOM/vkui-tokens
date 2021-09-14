@@ -217,7 +217,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
-		octaviusColorBackground: darkTheme.colors.colorBackground,
+		octaviusColorBackground: '#000000',
 		octaviusColorBackgroundAccentToned: toneOpacity(
 			darkTheme.colors.colorBackgroundAccent,
 			0.12,
@@ -230,7 +230,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderProgress:
 			darkTheme.colors.colorBackgroundAccentAlternative,
 
-		octaviusColorHeaderSearchBackground: '#303030',
+		octaviusColorHeaderSearchBackground: '#1F1F1F',
 		octaviusColorHeaderSearchBackgroundCollapsed:
 			darkTheme.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackground:
