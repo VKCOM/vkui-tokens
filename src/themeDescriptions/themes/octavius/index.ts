@@ -1,4 +1,4 @@
-import {getRGBA} from '@/build/helpers/cssHelpers';
+import {getRGBA, toneOpacity} from '@/build/helpers/cssHelpers';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
 	darkTheme,
@@ -63,6 +63,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorWhiteLineBackground: '#ffffff',
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,
+		octaviusColorBackgroundAccentToned: toneOpacity(
+			lightTheme.colors.colorBackgroundAccent,
+			0.12,
+		),
 		octaviusColorOverlayBackground: 'transparent',
 
 		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
@@ -213,7 +217,11 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
-		octaviusColorBackground: '#000000',
+		octaviusColorBackground: darkTheme.colors.colorBackground,
+		octaviusColorBackgroundAccentToned: toneOpacity(
+			darkTheme.colors.colorBackgroundAccent,
+			0.12,
+		),
 		octaviusColorWhiteLineBackground: '#161616',
 
 		octaviusColorHeaderBackground: '#161616',

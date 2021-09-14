@@ -115,7 +115,7 @@ export const darkColors: ColorsDescription = {
 		colorTextNegative: '#ED0A34',
 		colorIconNegative: '#ED0A34',
 		colorStrokeNegative: '#ED0A34',
-		colorHeaderBackground: '#19191A',
+		colorHeaderBackground: '#232324',
 		colorPanelHeaderIcon: '#3C82FD',
 		colorIconPrimary: '#D9DADD',
 		colorIconMedium: '#B0B1B6',

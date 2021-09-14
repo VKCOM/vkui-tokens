@@ -172,6 +172,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Другие стили
 	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusColorBackgroundAccentToned: ColorDescription;
 	octaviusIconBackgroundContrastColor: ColorDescription;
 	octaviusColorBadgeBackground: ColorDescription;
 	octaviusColorMetaThreadImageColor: ColorDescription;
