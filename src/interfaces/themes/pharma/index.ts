@@ -6,13 +6,11 @@ import {
 	ThemeMediaDescription,
 } from '@/interfaces/themes/media';
 
-export interface ThemePharma
-	extends Omit<ThemeMedia, 'fontFamily' | 'gridLayoutArticleMargin'> {
+export interface ThemePharma extends ThemeMedia {
 	colorSale: ColorWithStates;
 }
 
-export interface ThemePharmaDescription
-	extends Omit<ThemeMediaDescription, 'fontFamily'> {
+export interface ThemePharmaDescription extends ThemeMediaDescription {
 	colors: ThemeMediaDescription['colors'] & {colorSale: ColorDescription};
 }
 

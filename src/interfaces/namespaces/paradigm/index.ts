@@ -20,40 +20,9 @@ import {
 import {Font} from '@/interfaces/general/typography';
 
 export interface LocalParadigmColorsDescriptionStruct {
-	colorBgThumbnail: ColorDescription;
+	colorButtonContrast: ColorDescription;
 	colorRating: ColorDescription;
-	colorIconAccent: ColorDescription;
-	colorBgContrast: ColorDescription;
-	colorSocialVk: ColorDescription;
-	colorSocialOk: ColorDescription;
-	colorSocialMir: ColorDescription;
-	colorSocialFb: ColorDescription;
-	colorSocialTwitter: ColorDescription;
-	colorSocialDribbble: ColorDescription;
-	colorSocialBehance: ColorDescription;
-	colorPaletteRed1: ColorDescription;
-	colorPaletteRed2: ColorDescription;
-	colorPaletteRed3: ColorDescription;
-	colorPaletteOrange1: ColorDescription;
-	colorPaletteOrange2: ColorDescription;
-	colorPaletteYellow1: ColorDescription;
-	colorPaletteGreen1: ColorDescription;
-	colorPaletteGreen2: ColorDescription;
-	colorPaletteGreen3: ColorDescription;
-	colorPaletteGreen4: ColorDescription;
-	colorPaletteGreen5: ColorDescription;
-	colorPaletteGreen6: ColorDescription;
-	colorPaletteBlue1: ColorDescription;
-	colorPaletteBlue2: ColorDescription;
-	colorPaletteBlue3: ColorDescription;
-	colorPaletteBlue4: ColorDescription;
-	colorPaletteViolet1: ColorDescription;
-	colorPaletteViolet2: ColorDescription;
-	colorAlert: ColorDescription;
-	colorBgPlaceholder: ColorDescription;
-	colorBgPromo: ColorDescription;
-	colorTrueBlack: ColorDescription;
-	colorTrueWhite: ColorDescription;
+	colorThumbErrorBackground: ColorDescription;
 }
 
 export type ParadigmLocalColors = {
@@ -63,6 +32,8 @@ export type ParadigmLocalColors = {
 // кажется, половина переменных тут вообще не нужны или не используются
 // @todo перевьюить их с Зубановым
 export interface ParadigmLocalSizes {
+	sizeArrowHeight: number;
+	sizeArrowWidth: number;
 	sizeBasePadding: number;
 	sizeBorderWidthTab: number;
 	sizeBorderWidthBar: number;
@@ -129,6 +100,7 @@ export interface ParadigmBorders {
 	typeBorderPosition: Property.BorderStyle;
 }
 
+// todo удалить и заменить на контекстные токены в проектах
 export interface ParadigmLocalFonts {
 	// большие шрифты
 	fontH0: Font;

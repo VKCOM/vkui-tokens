@@ -3,8 +3,8 @@ import {Property} from 'csstype';
 import {ThemeCalendarDescription} from '@/interfaces/themes/calendar';
 import {ThemeCalendarDarkDescription} from '@/interfaces/themes/calendarDark';
 
+import {darkTheme, lightTheme} from '../../base/paradigm';
 import {fontSizes, helpers} from '../../common';
-import {octaviusDarkTheme, octaviusTheme} from '../octavius';
 
 const {x2, x3, x4, x5, sizeBase} = helpers;
 
@@ -56,12 +56,12 @@ const fontText = {
 };
 
 export const calendarTheme: ThemeCalendarDescription = {
-	...octaviusTheme,
+	...lightTheme,
 
 	themeName: 'calendar',
 
 	colors: {
-		...octaviusTheme.colors,
+		...lightTheme.colors,
 		colorTextSecondary: '#93969B',
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
@@ -231,7 +231,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 	colorsScheme: 'dark',
 	colors: {
 		...calendarTheme.colors,
-		...octaviusDarkTheme.colors,
+		...darkTheme.colors,
 		colorTextPrimary: 'rgba(255, 255, 255, 0.9)',
 		colorTextSecondary: 'rgba(255, 255, 255, 0.5)',
 		colorIconPrimary: '#B4B4B4',

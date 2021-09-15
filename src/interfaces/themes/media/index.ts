@@ -1,3 +1,5 @@
+import {Property} from 'csstype';
+
 import {ColorDescription, ColorWithStates} from '@/interfaces/general/colors';
 import {Adaptive} from '@/interfaces/general/tools';
 import {Font} from '@/interfaces/general/typography';
@@ -7,13 +9,7 @@ import {
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
 
-export type MediaViewportsTuple = [
-	'touch',
-	'tablet',
-	'desktopS',
-	'desktopM',
-	'desktopL',
-];
+export type MediaViewportsTuple = ['touch', 'tablet', 'desktopS', 'desktopM'];
 
 interface ProjectColors {
 	colorPrimaryAuto: ColorWithStates;
@@ -40,7 +36,18 @@ type ProjectColorsDescriptions = {
 };
 
 interface MediaUniqTokens {
-	fontArticle: Adaptive<Font>;
+	fontFamilyArticle: Property.FontFamily;
+	fontWeightArticle1: Property.FontWeight;
+	fontWeightArticle2: Property.FontWeight;
+	fontH1: Adaptive<Font>;
+	fontH2: Adaptive<Font>;
+	fontH3: Adaptive<Font>;
+	fontH4: Adaptive<Font>;
+	fontLead: Adaptive<Font>;
+	fontArticleBody: Adaptive<Font>;
+	fontSpecificText: Adaptive<Font>;
+	fontSpecificFootnote: Adaptive<Font>;
+	fontSpecificButton: Adaptive<Font>;
 	gridContent: Adaptive<number | string>;
 	gridColumnX2: Adaptive<string | number>;
 	gridColumnX3: Adaptive<string | number>;
@@ -48,7 +55,6 @@ interface MediaUniqTokens {
 	gridColumnX6: Adaptive<string | number>;
 	gridLayoutArticle: Adaptive<string | number>;
 	gridLayoutBanner: Adaptive<string | number>;
-	gridLayoutArticleMargin: Adaptive<number>;
 }
 
 export interface ThemeMedia

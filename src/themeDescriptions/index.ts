@@ -10,11 +10,16 @@ import {mycomTheme} from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
 	octaviusTheme,
+	octaviusWhiteTheme,
 } from '@/themeDescriptions/themes/octavius';
 import {
 	octaviusCompactDarkTheme,
 	octaviusCompactTheme,
 } from '@/themeDescriptions/themes/octaviusCompact';
+import {
+	octaviusVKDarkTheme,
+	octaviusVKTheme,
+} from '@/themeDescriptions/themes/octaviusVK';
 import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
 import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
 import {promoTheme} from '@/themeDescriptions/themes/promo';
@@ -38,8 +43,11 @@ export const themes = [
 	octaviusDarkTheme,
 	octaviusCompactTheme,
 	octaviusCompactDarkTheme,
+	octaviusVKTheme,
+	octaviusVKDarkTheme,
 	calendarTheme,
 	calendarDarkTheme,
+	octaviusWhiteTheme,
 	callsTheme,
 	homeTheme,
 	homeDarkTheme,
