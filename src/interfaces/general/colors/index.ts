@@ -18,15 +18,21 @@ export type ColorDescription = Property.Color | ColorWithStates;
  */
 export interface ColorsDescriptionStruct {
 	colorBackgroundAccent: ColorDescription;
+	colorBackgroundAccentThemed: ColorDescription;
 	colorBackgroundAccentAlternative: ColorDescription;
 	colorIconAccent: ColorDescription;
 	colorTextAccent: ColorDescription;
+	colorTextAccentThemed: ColorDescription;
 	colorStrokeAccent: ColorDescription;
+	colorStrokeAccentThemed: ColorDescription;
+	colorStrokeContrast: ColorDescription;
 	colorActionSheetText: ColorDescription;
 	colorBackgroundContent: ColorDescription;
 	colorBackgroundSecondary: ColorDescription;
+	colorBackgroundSecondaryAlpha: ColorDescription;
 	colorBackgroundTertiary: ColorDescription;
 	colorBackground: ColorDescription;
+	colorBackgroundContrast: ColorDescription;
 	colorCounterAccentBackground: ColorDescription;
 	colorCounterAccentText: ColorDescription;
 	colorCounterProminentBackground: ColorDescription;
@@ -41,6 +47,7 @@ export interface ColorsDescriptionStruct {
 	colorHeaderBackground: ColorDescription;
 	colorPanelHeaderIcon: ColorDescription;
 	colorIconPrimary: ColorDescription;
+	colorIconPrimaryInvariably: ColorDescription;
 	colorIconMedium: ColorDescription;
 	colorIconMediumAlpha: ColorDescription;
 	colorIconSecondary: ColorDescription;
@@ -58,13 +65,14 @@ export interface ColorsDescriptionStruct {
 	colorImagePlaceholderOpaque: ColorDescription;
 	colorSearchFieldBackground: ColorDescription;
 	colorFieldBorder: ColorDescription;
-	colorCheckboxBorder: ColorDescription;
 	colorSeparatorPrimaryAlpha: ColorDescription;
 	colorSeparatorSecondary: ColorDescription;
 	colorSeparatorPrimary: ColorDescription;
 	colorTextLink: ColorDescription;
+	colorTextLinkThemed: ColorDescription;
 	colorTextMuted: ColorDescription;
 	colorTextPrimary: ColorDescription;
+	colorTextPrimaryInvariably: ColorDescription;
 	colorTextSecondary: ColorDescription;
 	colorTextSubhead: ColorDescription;
 	colorTextTertiary: ColorDescription;
@@ -81,8 +89,13 @@ export interface ColorsDescriptionStruct {
 	colorAccentSecondary: ColorDescription;
 	colorTextLinkVisited: ColorDescription;
 	colorTextContrast: ColorDescription;
+	// цвет, который на тёмной теме становится тёмным
+	// нужен для текста на primary accent кнопках
+	colorTextContrastThemed: ColorDescription;
 	colorIconContrast: ColorDescription;
-	colorLinkContrast: ColorDescription;
+	// цвет, который на тёмной теме становится тёмным
+	// нужен для иконок на primary accent кнопках
+	colorIconContrastThemed: ColorDescription;
 	colorBackgroundPositive: ColorDescription;
 	colorIconPositive: ColorDescription;
 	colorTextPositive: ColorDescription;
@@ -90,6 +103,8 @@ export interface ColorsDescriptionStruct {
 	colorAvatarOverlay: ColorDescription;
 	colorOverlayPrimary: ColorDescription;
 	colorTransparent: ColorDescription;
+	colorSceletonFrom: ColorDescription;
+	colorSceletonTo: ColorDescription;
 }
 
 export type Colors = {

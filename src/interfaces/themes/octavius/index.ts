@@ -97,6 +97,10 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены сайдбара
 	octaviusColorSidebarItemBackground: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
+	// нехватает
+	// octaviusColorSidebarItemIconSecondary
+	// octaviusColorSidebarItemTextPrimary
+	// octaviusColorSidebarItemTextSecondary
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
 	octaviusColorSidebarScrollbar: ColorDescription;
