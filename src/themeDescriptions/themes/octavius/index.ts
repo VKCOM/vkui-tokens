@@ -58,9 +58,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchIcon: '#b6b8be',
 		octaviusColorHeaderSearchChipBackground:
 			lightTheme.colors.colorBackgroundSecondary,
-		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
-		octaviusColorHeaderSearchChipBorderEditable:
-			lightTheme.colors.colorFieldBorder,
 
 		octaviusColorHeaderSearchBackground: '#ffffff',
 		octaviusColorHeaderSearchBackgroundCollapsed: '#ffffff',
@@ -177,8 +174,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			darkTheme.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackground:
 			darkTheme.colors.colorBackgroundModal,
-		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
-		octaviusColorHeaderSearchChipBorderEditable: 'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:
 			darkTheme.colors.colorTextSecondary,
@@ -229,8 +224,6 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.64)',
 			active: 'rgba(255, 255, 255, 0.4)',
 		},
-		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
-		octaviusColorHeaderSearchChipBorderEditable: '#FFFFFF',
 	},
 
 	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',
