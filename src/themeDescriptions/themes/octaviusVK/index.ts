@@ -309,6 +309,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		colorBackgroundAccentAlternative:
 			vkDarkColors.colors.colorBackgroundAccent,
 
+		colorButtonContrast: {
+			normal: 'rgba(255, 255, 255, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.2)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
+
 		octaviusColorBackground: vkDarkColors.colors.colorBackground,
 		octaviusColorBackgroundAccentToned: toneOpacity(
 			vkDarkColors.colors.colorBackgroundAccent,
