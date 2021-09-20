@@ -165,10 +165,5 @@ export const compileStyles = <PT = PixelifyTheme>(
 
 	result += `\n\n${groupTokens}`;
 
-	if (result.includes('null')) {
-		console.error('found NULL result');
-		process.exit(-1);
-	}
-
 	return stripIndent(result);
 };
