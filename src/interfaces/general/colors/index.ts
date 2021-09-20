@@ -62,7 +62,7 @@ export interface ColorsDescriptionStruct {
 	colorTrackBuffer: ColorDescription;
 	colorBackgroundModal: ColorDescription;
 	colorImagePlaceholder: ColorDescription;
-	colorImagePlaceholderOpaque: ColorDescription;
+	colorImagePlaceholderAlpha: ColorDescription;
 	colorSearchFieldBackground: ColorDescription;
 	colorFieldBorder: ColorDescription;
 	colorSeparatorPrimaryAlpha: ColorDescription;
