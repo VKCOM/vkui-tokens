@@ -54,9 +54,9 @@ export interface ColorsDescriptionStruct {
 	colorIconSecondaryAlpha: ColorDescription;
 	colorIconTertiary: ColorDescription;
 	colorIconTertiaryAlpha: ColorDescription;
-	colorImageBorder: ColorDescription;
+	colorImageBorderAlpha: ColorDescription;
 	colorWriteBarInputBackground: ColorDescription;
-	colorWriteBarInputBorder: ColorDescription;
+	colorWriteBarInputBorderAlpha: ColorDescription;
 	colorTextLinkAlternate: ColorDescription;
 	colorTrackBackground: ColorDescription;
 	colorTrackBuffer: ColorDescription;
@@ -64,7 +64,7 @@ export interface ColorsDescriptionStruct {
 	colorImagePlaceholder: ColorDescription;
 	colorImagePlaceholderAlpha: ColorDescription;
 	colorSearchFieldBackground: ColorDescription;
-	colorFieldBorder: ColorDescription;
+	colorFieldBorderAlpha: ColorDescription;
 	colorSeparatorPrimaryAlpha: ColorDescription;
 	colorSeparatorSecondary: ColorDescription;
 	colorSeparatorPrimary: ColorDescription;
