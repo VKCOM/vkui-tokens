@@ -14,6 +14,11 @@ import {
 export interface ThemeOctaviusOverValues {
 	octaviusElevationCard: string;
 	octaviusElevationHeader: string;
+
+	/**
+	 * Тень текста подписи под картинкой пустого состояния папки на некоторых
+	 * темах с фоном-картинкой
+	 */
 	octaviusShadowTextBackgroundContrast: string;
 
 	// Кастомные шрифты
@@ -120,9 +125,18 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Стили списка писем
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparator: ColorDescription;
+
+	/**
+	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
+	 * полупрозрачный.
+	 */
 	octaviusColorDatasetBackground: ColorDescription;
 
 	// Другие стили
+	/**
+	 * Цвет текста подписи под картинкой пустого состояния.
+	 * @see octaviusShadowTextBackgroundContrast
+	 */
 	octaviusColorTextBackgroundContrast: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
 }
