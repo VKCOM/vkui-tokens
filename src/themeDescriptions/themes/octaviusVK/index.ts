@@ -381,6 +381,10 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 
+		octaviusColorSearchSuggestBackground: '#2D2D2E',
+		octaviusColorSearchSuggestText: '#E1E3E6',
+		octaviusColorSearchSuggestIcon: '#E1E3E6',
+
 		octaviusColorWhiteLineBackground: '#161616',
 		octaviusColorBorderSolid: 'transparent',
 		octaviusColorSidebarNavItemIcon: '#e1e3e6',
