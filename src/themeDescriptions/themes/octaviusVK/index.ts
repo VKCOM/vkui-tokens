@@ -87,7 +87,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			hover: '#F5F6F8',
 			active: '#EFF1F3',
 		},
-		octaviusColorTextBackgroundContrast:
+		octaviusColorEmptyStateText:
 			octaviusTheme.colors.colorTextPrimary,
 	},
 
@@ -364,7 +364,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: '#2B2B2C',
 			active: '#353535',
 		},
-		octaviusColorTextBackgroundContrast:
+		octaviusColorEmptyStateText:
 			vkDarkColors.colors.colorTextPrimary,
 	},
 

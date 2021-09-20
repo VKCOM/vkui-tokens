@@ -57,7 +57,6 @@ export interface ColorsDescriptionStruct {
 	colorImageBorderAlpha: ColorDescription;
 	colorWriteBarInputBackground: ColorDescription;
 	colorWriteBarInputBorderAlpha: ColorDescription;
-	colorTextLinkAlternate: ColorDescription;
 	colorTrackBackground: ColorDescription;
 	colorTrackBuffer: ColorDescription;
 	colorBackgroundModal: ColorDescription;

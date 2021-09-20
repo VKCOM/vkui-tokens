@@ -102,7 +102,7 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
-		colorFieldBorder: {
+		colorFieldBorderAlpha: {
 			normal: 'transparent',
 			hover: 'transparent',
 			active: 'transparent',

@@ -10,11 +10,14 @@ import {
 	ParadigmTheme,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
+import {Property} from 'csstype';
 
 export interface ThemeOctaviusOverValues {
-	octaviusElevationCard: string;
-	octaviusElevationHeader: string;
-	octaviusShadowTextBackgroundContrast: string;
+	octaviusShadowSidebarItemText: Property.BoxShadow;
+	octaviusShadowSidebarItemIcon: Property.BoxShadow;
+	octaviusElevationCard: Property.BoxShadow;
+	octaviusElevationHeader: Property.BoxShadow;
+	octaviusShadowEmptyStateText: Property.BoxShadow;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -40,7 +43,8 @@ type ThemeOctaviusAdaptiveTokens = {
 };
 
 export interface LocalOctaviusColorsDescriptionStruct {
-	colorBgThumbnail: ColorDescription;
+	colorBackgroundThumbnail: ColorDescription;
+	colorBackgroundThumbnailAlpha: ColorDescription;
 	colorIconAccent: ColorDescription;
 	colorBgContrast: ColorDescription;
 	colorSocialVk: ColorDescription;
@@ -71,8 +75,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorAlert: ColorDescription;
 	colorBgPlaceholder: ColorDescription;
 	colorBgPromo: ColorDescription;
-	colorTrueBlack: ColorDescription;
-	colorTrueWhite: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
@@ -80,6 +82,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
+	octaviusColorHeaderButtonBackground: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
@@ -96,11 +99,15 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены сайдбара
 	octaviusColorSidebarItemBackground: ColorDescription;
+	octaviusColorSidebarItemIconActive: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
-	// нехватает
-	// octaviusColorSidebarItemIconSecondary
-	// octaviusColorSidebarItemTextPrimary
-	// octaviusColorSidebarItemTextSecondary
+	octaviusColorSidebarItemIconSecondary: ColorDescription;
+	octaviusColorSidebarItemTextActive: ColorDescription;
+	octaviusColorSidebarItemTextPrimary: ColorDescription;
+	octaviusColorSidebarItemTextSecondary: ColorDescription;
+	octaviusColorSidebarButtonIcon: ColorDescription;
+	octaviusColorSidebarButtonText: ColorDescription;
+	octaviusColorSidebarButtonBackground: ColorDescription;
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
 	octaviusColorSidebarScrollbar: ColorDescription;
@@ -125,9 +132,12 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparator: ColorDescription;
 	octaviusColorDatasetBackground: ColorDescription;
+	octaviusColorListTextUnread: ColorDescription;
+	octaviusColorListTextPrimary: ColorDescription;
+	octaviusColorListIconPrimary: ColorDescription;
 
 	// Другие стили
-	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
 }
 
