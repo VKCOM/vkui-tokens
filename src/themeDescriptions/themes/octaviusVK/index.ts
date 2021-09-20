@@ -67,8 +67,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemBackground: {
 			normal: 'transparent',
-			hover: 'rgba(174, 183, 194, 0.12)',
-			active: 'rgba(174, 183, 194, 0.2)',
+			hover: 'rgba(0, 16, 61, 0.04)',
+			active: 'rgba(0, 16, 61, 0.08)',
 		},
 		octaviusColorSidebarItemIconPrimary:
 			vkLightColors.colors.colorIconAccent,
@@ -84,11 +84,14 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorSeparatorPrimary,
 		octaviusColorListLetterBackground: {
 			normal: '#ffffff',
-			hover: '#F5F6F8',
-			active: '#EFF1F3',
+			hover: '#E4E5E9',
+			active: '#DADCE2',
 		},
 		octaviusColorTextBackgroundContrast:
 			octaviusTheme.colors.colorTextPrimary,
+
+		octaviusColorSidebarNavItemIcon: '#3F8AE0',
+		octaviusColorOctopusText: '#4986cc',
 	},
 
 	octaviusElevationCard: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
@@ -309,7 +312,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		colorBackgroundAccentAlternative:
 			vkDarkColors.colors.colorBackgroundAccent,
 
-		octaviusColorBackground: vkDarkColors.colors.colorBackground,
+		octaviusColorBackground: '#000000',
 		octaviusColorBackgroundAccentToned: toneOpacity(
 			vkDarkColors.colors.colorBackgroundAccent,
 			0.12,
@@ -319,7 +322,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconFavorite: vkDarkColors.colors.colorAccentRed,
 
 		octaviusColorHeaderBackground: {
-			normal: '#19191A',
+			normal: '#161616',
 			hover: '#2B2B2C',
 			active: '#353535',
 		},
@@ -366,6 +369,22 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		},
 		octaviusColorTextBackgroundContrast:
 			vkDarkColors.colors.colorTextPrimary,
+
+		octaviusColorHeaderButtonBackground: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
+		octaviusColorHeaderSearchChipBorderEditable: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
+
+		octaviusColorWhiteLineBackground: '#161616',
+		octaviusColorBorderSolid: 'transparent',
+		octaviusColorSidebarNavItemIcon: '#e1e3e6',
+		octaviusColorSidebarNavItemText: '#e1e3e6',
 	},
 
 	octaviusElevationCard: 'none',
