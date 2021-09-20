@@ -200,4 +200,8 @@ fs.writeFileSync(
 	JSON.stringify(packageJsonObject, null, '  '),
 	'utf-8',
 );
+
+console.log('копируем корректный .npmrc');
+fs.copySync(`${ROOT_DIR}/.npmrc`, `${DIST_PATH}/.npmrc`);
+
 console.log('успешно\n');
