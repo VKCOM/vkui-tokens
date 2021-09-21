@@ -325,6 +325,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: '#2B2B2C',
 			active: '#353535',
 		},
+
+		octaviusColorPortalMenuBackground: 'rgb(31, 31, 31)',
 		octaviusColorHeaderButtonText: vkDarkColors.colors.colorTextPrimary,
 		octaviusColorHeaderIcon: vkDarkColors.colors.colorIconAccent,
 		octaviusColorHeaderTextSecondary:

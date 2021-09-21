@@ -19,8 +19,8 @@ export interface ThemeOctaviusOverValues {
 	octaviusPositionBackground: string;
 	octaviusImageOverlayBackground: string;
 
-	octaviusShadowSidebarNavItemText: string;
-	octaviusFilterSidebarNavItemIcon: string;
+	octaviusTextShadowSidebarItemText: string;
+	octaviusFilterSidebarItemIcon: string;
 	octaviusTextDecorationOctopusLink: string;
 	octaviusTextDecorationOctopusLinkHover: string;
 
@@ -119,7 +119,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
 
 	// Токены сайдбара
-	octaviusColorSidebarBackground: ColorDescription;
 	octaviusColorSidebarItemBackground: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
 	octaviusColorSidebarCounterBackground: ColorDescription;

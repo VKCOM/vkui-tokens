@@ -96,7 +96,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
 
-		octaviusColorSidebarBackground: '#ffffff',
 		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
 
 		octaviusColorSidebarCounterBackground:
@@ -154,8 +153,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusPositionBackground: '50% 0',
 	octaviusImageOverlayBackground: 'none',
 
-	octaviusShadowSidebarNavItemText: 'none',
-	octaviusFilterSidebarNavItemIcon: 'none',
+	octaviusTextShadowSidebarItemText: 'none',
+	octaviusFilterSidebarItemIcon: 'none',
 	octaviusTextDecorationOctopusLink: 'none',
 	octaviusTextDecorationOctopusLinkHover: 'underline',
 
@@ -234,7 +233,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchTextCollapsed:
 			darkTheme.colors.colorTextSecondary,
 
-		octaviusColorSidebarBackground: '#303030',
 		octaviusColorSidebarItemIconPrimary: '#E7E8EA',
 
 		octaviusColorSidebarNavItemIcon: '#ffffff',
