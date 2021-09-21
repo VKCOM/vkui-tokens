@@ -21,8 +21,6 @@ export interface ThemeOctaviusOverValues {
 
 	octaviusTextShadowSidebarItemText: string;
 	octaviusFilterSidebarItemIcon: string;
-	octaviusTextDecorationOctopusLink: string;
-	octaviusTextDecorationOctopusLinkHover: string;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -139,7 +137,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorContentScrollbar: ColorDescription;
 
 	// Токены письма
-	octaviusColorThreadFooterBackground: ColorDescription;
+	octaviusColorBackgroundSecondary: ColorDescription;
 
 	// Категории письма
 	octaviusColorIconUnread: ColorDescription;
@@ -160,12 +158,12 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Другие стили
 	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
-	octaviusIconBackgroundContrastColor: ColorDescription;
 	octaviusColorBadgeBackground: ColorDescription;
 	octaviusColorMetaThreadImageColor: ColorDescription;
 	octaviusColorBorderSolid: ColorDescription;
-	octaviusColorOctopusText: ColorDescription;
+	octaviusColorEmptyStateTextLink: ColorDescription;
 	octaviusColorPanelBackgroundSelected: ColorDescription;
+	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
 }
 
 export type OctaviusLocalColors = {

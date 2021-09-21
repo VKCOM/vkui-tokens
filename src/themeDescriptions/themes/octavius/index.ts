@@ -113,7 +113,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.16)',
 
-		octaviusColorThreadFooterBackground: '#ebecef',
+		octaviusColorBackgroundSecondary: '#ebecef',
 
 		octaviusColorIconUnread: '#005FF9',
 		octaviusColorIconFavorite: '#fc2c38',
@@ -137,12 +137,17 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorEmptyStateText: '#333333',
-		octaviusIconBackgroundContrastColor: '#333333',
 		octaviusColorBadgeBackground: 'rgba(0, 16, 61, 0.08)',
 		octaviusColorMetaThreadImageColor: '#ffffff',
 		octaviusColorBorderSolid: '#E0E2E8',
-		octaviusColorOctopusText: '#005bd1',
+		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorPanelBackgroundSelected: '#F3F3F5',
+
+		octaviusTextDecorationEmptyStateTextLink: {
+			normal: 'none',
+			hover: 'underline',
+			active: 'underline',
+		},
 	},
 
 	octaviusElevationCard: 'none',
@@ -153,8 +158,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 	octaviusTextShadowSidebarItemText: 'none',
 	octaviusFilterSidebarItemIcon: 'none',
-	octaviusTextDecorationOctopusLink: 'none',
-	octaviusTextDecorationOctopusLinkHover: 'underline',
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
@@ -236,8 +239,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemIcon: '#ffffff',
 		octaviusColorSidebarItemText: '#ffffff',
 
-		octaviusIconBackgroundContrastColor: '#ffffff',
-
 		octaviusColorHeaderButtonBackground: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.16)',
@@ -258,8 +259,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
 		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.12)',
 		octaviusColorSidebarItemButtonBackground: {
-			normal: 'rgba(255, 255, 255, 0.16)',
-			hover: 'rgba(255, 255, 255, 0.24)',
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
@@ -276,7 +277,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorBadgeBackground: 'rgba(255, 255, 255, 0.08)',
 
-		octaviusColorThreadFooterBackground: '#303030',
+		octaviusColorBackgroundSecondary: '#303030',
 
 		octaviusColorMetaThreadImageColor: 'transparent',
 
@@ -289,11 +290,14 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,
 		octaviusColorBorderSolid: 'transparent',
-		octaviusColorOctopusText: '#E7E8EA',
-	},
+		octaviusColorEmptyStateTextLink: '#E7E8EA',
 
-	octaviusTextDecorationOctopusLink: 'underline',
-	octaviusTextDecorationOctopusLinkHover: 'none',
+		octaviusTextDecorationEmptyStateTextLink: {
+			normal: 'underline',
+			hover: 'none',
+			active: 'none',
+		},
+	},
 };
 
 export const octaviusWhiteTheme: ThemeOctaviusDescription = {

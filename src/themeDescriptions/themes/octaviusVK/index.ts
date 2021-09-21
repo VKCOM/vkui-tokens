@@ -90,7 +90,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorEmptyStateText: octaviusTheme.colors.colorTextPrimary,
 
 		octaviusColorSidebarItemIcon: '#3F8AE0',
-		octaviusColorOctopusText: '#4986cc',
+		octaviusColorEmptyStateTextLink: '#4986cc',
 	},
 
 	octaviusElevationCard: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
@@ -384,6 +384,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorBorderSolid: 'transparent',
 		octaviusColorSidebarItemIcon: '#e1e3e6',
 		octaviusColorSidebarItemText: '#e1e3e6',
+
+		octaviusColorBackgroundSecondary: '#2D2D2E',
 	},
 
 	octaviusElevationCard: 'none',
