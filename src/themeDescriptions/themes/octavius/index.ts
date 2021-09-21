@@ -104,11 +104,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
 		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
 		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
-		octaviusColorSidebarNavItemIcon: '#333333',
-		octaviusColorSidebarNavItemText: '#333333',
-		octaviusColorSidebarNavItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
-		octaviusColorSidebarShortNavItemButtonBackground:
-			'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarItemIcon: '#333333',
+		octaviusColorSidebarItemText: '#333333',
+		octaviusColorSidebarItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
 		octaviusColorSidebarComposeButtonBackground: '#ffffff',
 		octaviusColorSidebarComposeButtonText: '#2c2d2e',
 		octaviusColorSidebarComposeButtonIcon: '#2c2d2e',
@@ -235,8 +233,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemIconPrimary: '#E7E8EA',
 
-		octaviusColorSidebarNavItemIcon: '#ffffff',
-		octaviusColorSidebarNavItemText: '#ffffff',
+		octaviusColorSidebarItemIcon: '#ffffff',
+		octaviusColorSidebarItemText: '#ffffff',
 
 		octaviusIconBackgroundContrastColor: '#ffffff',
 
@@ -259,7 +257,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
 		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.12)',
-		octaviusColorSidebarNavItemButtonBackground: {
+		octaviusColorSidebarItemButtonBackground: {
 			normal: 'rgba(255, 255, 255, 0.16)',
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.24)',

@@ -124,10 +124,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
 	octaviusColorSidebarScrollbar: ColorDescription;
-	octaviusColorSidebarNavItemIcon: ColorDescription;
-	octaviusColorSidebarNavItemText: ColorDescription;
-	octaviusColorSidebarNavItemButtonBackground: ColorDescription;
-	octaviusColorSidebarShortNavItemButtonBackground: ColorDescription;
+	octaviusColorSidebarItemIcon: ColorDescription;
+	octaviusColorSidebarItemText: ColorDescription;
+	octaviusColorSidebarItemButtonBackground: ColorDescription;
 
 	octaviusColorSidebarComposeButtonBackground: ColorDescription;
 	octaviusColorSidebarComposeButtonText: ColorDescription;

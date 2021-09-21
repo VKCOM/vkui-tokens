@@ -89,7 +89,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		},
 		octaviusColorEmptyStateText: octaviusTheme.colors.colorTextPrimary,
 
-		octaviusColorSidebarNavItemIcon: '#3F8AE0',
+		octaviusColorSidebarItemIcon: '#3F8AE0',
 		octaviusColorOctopusText: '#4986cc',
 	},
 
@@ -382,8 +382,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		},
 
 		octaviusColorBorderSolid: 'transparent',
-		octaviusColorSidebarNavItemIcon: '#e1e3e6',
-		octaviusColorSidebarNavItemText: '#e1e3e6',
+		octaviusColorSidebarItemIcon: '#e1e3e6',
+		octaviusColorSidebarItemText: '#e1e3e6',
 	},
 
 	octaviusElevationCard: 'none',
