@@ -95,9 +95,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorButtonIconSecondary: ColorDescription;
 	octaviusColorButtonBackgroundPure: ColorDescription;
 
-	// Токены whiteline
-	octaviusColorWhiteLineBackground: ColorDescription;
-
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
 	octaviusColorOverlayBackground: ColorDescription;

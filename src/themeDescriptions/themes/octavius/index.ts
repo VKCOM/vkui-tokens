@@ -60,8 +60,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			active: 'rgba(0, 16, 61, 0.08)',
 		},
 
-		octaviusColorWhiteLineBackground: '#ffffff',
-
 		octaviusColorBackground: lightTheme.colors.colorBackground,
 		octaviusColorBackgroundAccentToned: toneOpacity(
 			lightTheme.colors.colorBackgroundAccent,
@@ -215,7 +213,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			darkTheme.colors.colorBackgroundAccent,
 			0.12,
 		),
-		octaviusColorWhiteLineBackground: '#161616',
 
 		octaviusColorHeaderBackground: '#161616',
 		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
