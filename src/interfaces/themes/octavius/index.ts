@@ -14,7 +14,7 @@ import {
 export interface ThemeOctaviusOverValues {
 	octaviusElevationCard: string;
 	octaviusElevationHeader: string;
-	octaviusShadowTextBackgroundContrast: string;
+	octaviusTextShadowEmptyStateText: string;
 
 	octaviusPositionBackground: string;
 	octaviusImageOverlayBackground: string;
@@ -160,13 +160,12 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterAdvBackground: ColorDescription;
 
 	// Другие стили
-	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
 	octaviusIconBackgroundContrastColor: ColorDescription;
 	octaviusColorBadgeBackground: ColorDescription;
 	octaviusColorMetaThreadImageColor: ColorDescription;
 	octaviusColorBorderSolid: ColorDescription;
-	octaviusColorPanelTextSelectedEmpty: ColorDescription;
 	octaviusColorOctopusText: ColorDescription;
 	octaviusColorPanelBackgroundSelected: ColorDescription;
 }

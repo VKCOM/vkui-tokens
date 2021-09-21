@@ -139,18 +139,17 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorDatasetBackground:
 			lightTheme.colors.colorBackgroundContent,
 
-		octaviusColorTextBackgroundContrast: '#333333',
+		octaviusColorEmptyStateText: '#333333',
 		octaviusIconBackgroundContrastColor: '#333333',
 		octaviusColorBadgeBackground: 'rgba(0, 16, 61, 0.08)',
 		octaviusColorMetaThreadImageColor: '#ffffff',
 		octaviusColorBorderSolid: '#E0E2E8',
-		octaviusColorPanelTextSelectedEmpty: 'transparent',
 		octaviusColorOctopusText: '#005bd1',
 		octaviusColorPanelBackgroundSelected: '#F3F3F5',
 	},
 
 	octaviusElevationCard: 'none',
-	octaviusShadowTextBackgroundContrast: 'none',
+	octaviusTextShadowEmptyStateText: 'none',
 	octaviusElevationHeader: 'none',
 	octaviusPositionBackground: '50% 0',
 	octaviusImageOverlayBackground: 'none',
@@ -292,7 +291,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorListLetterAdvBackground: '#151515',
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
-		octaviusColorTextBackgroundContrast: darkTheme.colors.colorTextPrimary,
+		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,
 		octaviusColorBorderSolid: 'transparent',
 		octaviusColorOctopusText: '#E7E8EA',
 	},
