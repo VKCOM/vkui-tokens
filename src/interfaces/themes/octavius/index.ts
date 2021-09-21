@@ -120,9 +120,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
 	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
-	octaviusColorSearchSuggestBackground: ColorDescription;
-	octaviusColorSearchSuggestText: ColorDescription;
-	octaviusColorSearchSuggestIcon: ColorDescription;
 
 	// Токены сайдбара
 	octaviusColorSidebarBackground: ColorDescription;
@@ -158,11 +155,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconTravel: ColorDescription;
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
-
-	// Токены списка
-	octaviusColorListBackground: ColorDescription;
-	octaviusColorListText: ColorDescription;
-	octaviusColorListIcon: ColorDescription;
 
 	// Токены списка писем
 	octaviusColorListLetterBackground: ColorDescription;

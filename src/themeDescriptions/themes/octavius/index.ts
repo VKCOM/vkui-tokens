@@ -92,9 +92,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchTextCollapsed:
 			lightTheme.colors.colorTextSecondary,
 		octaviusColorHeaderFilterText: 'rgba(255, 255, 255, .48)',
-		octaviusColorSearchSuggestBackground: 'rgb(255, 255, 255)',
-		octaviusColorSearchSuggestText: '#333333',
-		octaviusColorSearchSuggestIcon: '#333333',
 
 		octaviusColorHeaderProgress:
 			lightTheme.colors.colorBackgroundAccentAlternative,
@@ -131,10 +128,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconTravel: '#ba34fc',
 		octaviusColorIconEvent: '#09a6fa',
 		octaviusColorIconFees: '#e60000',
-
-		octaviusColorListBackground: '#ffffff',
-		octaviusColorListText: '#333333',
-		octaviusColorListIcon: '#333333',
 
 		octaviusColorListLetterBackground: {
 			normal: '#ffffff',
@@ -251,10 +244,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarNavItemIcon: '#ffffff',
 		octaviusColorSidebarNavItemText: '#ffffff',
 
-		octaviusColorListBackground: '#303030',
-		octaviusColorListIcon: '#E7E8EA',
-		octaviusColorListText: '#E7E8EA',
-
 		octaviusIconBackgroundContrastColor: '#ffffff',
 
 		octaviusColorHeaderButtonBackground: {
@@ -296,10 +285,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorBadgeBackground: 'rgba(255, 255, 255, 0.08)',
 
 		octaviusColorThreadFooterBackground: '#303030',
-
-		octaviusColorSearchSuggestBackground: 'rgb(48, 48, 48)',
-		octaviusColorSearchSuggestText: 'rgb(231, 232, 234)',
-		octaviusColorSearchSuggestIcon: 'rgb(231, 232, 234)',
 
 		octaviusColorMetaThreadImageColor: 'transparent',
 
