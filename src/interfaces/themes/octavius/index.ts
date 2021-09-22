@@ -161,7 +161,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Другие стили
 	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
-	octaviusColorMetaThreadImageBackground: ColorDescription;
 	octaviusColorLayoutBorder: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
 	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;

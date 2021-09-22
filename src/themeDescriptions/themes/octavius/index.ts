@@ -140,7 +140,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorEmptyStateText: '#333333',
-		octaviusColorMetaThreadImageBackground: '#ffffff',
 		octaviusColorLayoutBorder: '#E0E2E8',
 		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorLetterPreviewBackgroundPrimary: '#F9F9FA',
@@ -281,8 +280,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconFees: '#EE3C3C',
 
 		octaviusColorBackgroundSecondary: '#303030',
-
-		octaviusColorMetaThreadImageBackground: 'transparent',
 
 		octaviusColorListLetterBackground:
 			darkTheme.colors.colorBackgroundContent,

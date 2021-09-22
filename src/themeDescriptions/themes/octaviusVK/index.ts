@@ -53,6 +53,11 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkLightColors.colors.colorBackgroundAccent,
 
+		octaviusColorSidebarItemTextActive:
+			vkLightColors.colors.colorTextPrimary,
+		octaviusColorSidebarItemIconActive:
+			vkLightColors.colors.colorIconPrimary,
+
 		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
 		octaviusColorHeaderSearchBackgroundCollapsed: 'rgba(0, 16, 61, 0.07)',
 		octaviusColorHeaderSearchChipBackground: {
@@ -348,13 +353,13 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemBackground: {
 			normal: 'transparent',
-			hover: 'rgba(255, 255, 255, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 		octaviusColorSidebarItemIconPrimary:
 			vkDarkColors.colors.colorIconAccent,
 		octaviusColorSidebarCounterBackground: '#000000',
-		octaviusColorSidebarCounterText: vkDarkColors.colors.colorTextSecondary,
+		octaviusColorSidebarCounterText: '#e1e3e6',
 		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.12)',
 
 		octaviusColorContentScrollbar: 'rgba(255, 255, 255, 0.2)',
@@ -369,6 +374,14 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: '#353535',
 		},
 		octaviusColorEmptyStateText: vkDarkColors.colors.colorTextPrimary,
+
+		octaviusColorSidebarItemTextActive:
+			vkDarkColors.colors.colorTextPrimary,
+		octaviusColorSidebarItemIconActive:
+			vkDarkColors.colors.colorIconPrimary,
+
+		octaviusColorButtonText: '#E7E8EA',
+		octaviusColorButtonIcon: '#E7E8EA',
 
 		octaviusColorHeaderButtonBackground: {
 			normal: 'transparent',
