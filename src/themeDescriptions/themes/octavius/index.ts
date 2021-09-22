@@ -48,13 +48,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorText: '#333333',
 		octaviusColorIcon: '#333333',
 
-		octaviusColorButtonText: '#333333',
-		octaviusColorButtonTextBright: '#333333',
-		octaviusColorButtonIcon: '#333333',
-		octaviusColorButtonIconBright: '#333333',
-		octaviusColorButtonTextSecondary: '#93969B',
-		octaviusColorButtonIconSecondary: '#B6B8BE',
-		octaviusColorButtonBackgroundPure: {
+		octaviusColorButton2Text: '#333333',
+		octaviusColorButton2Icon: '#333333',
+
+		octaviusColorButton2Background: {
 			normal: 'transparent',
 			hover: 'rgba(0, 16, 61, 0.04)',
 			active: 'rgba(0, 16, 61, 0.08)',
@@ -249,9 +246,9 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 
-		octaviusColorButtonText: '#E7E8EA',
-		octaviusColorButtonIcon: '#E7E8EA',
-		octaviusColorButtonBackgroundPure: {
+		octaviusColorButton2Text: '#E7E8EA',
+		octaviusColorButton2Icon: '#E7E8EA',
+		octaviusColorButton2Background: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.04)',
 			active: 'rgba(255, 255, 255, 0.08)',
