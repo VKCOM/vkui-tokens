@@ -124,6 +124,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarScrollbar: ColorDescription;
 	octaviusColorSidebarItemIcon: ColorDescription;
 	octaviusColorSidebarItemText: ColorDescription;
+	octaviusColorSidebarItemIconActive: ColorDescription;
+	octaviusColorSidebarItemTextActive: ColorDescription;
 	octaviusColorSidebarItemButtonBackground: ColorDescription;
 
 	octaviusColorSidebarComposeButtonBackground: ColorDescription;
@@ -138,6 +140,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены письма
 	octaviusColorBackgroundSecondary: ColorDescription;
+	octaviusColorLetterListTextUnread: ColorDescription;
 
 	// Категории письма
 	octaviusColorIconUnread: ColorDescription;
@@ -158,9 +161,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Другие стили
 	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
-	octaviusColorBadgeBackground: ColorDescription;
-	octaviusColorMetaThreadImageColor: ColorDescription;
-	octaviusColorBorderSolid: ColorDescription;
+	octaviusColorMetaThreadImageBackground: ColorDescription;
+	octaviusColorLayoutBorder: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
 	octaviusColorPanelBackgroundSelected: ColorDescription;
 	octaviusTextDecorationEmptyStateTextLink: ColorDescription;

@@ -381,7 +381,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 
-		octaviusColorBorderSolid: 'transparent',
+		octaviusColorLayoutBorder: 'transparent',
 		octaviusColorSidebarItemIcon: '#e1e3e6',
 		octaviusColorSidebarItemText: '#e1e3e6',
 

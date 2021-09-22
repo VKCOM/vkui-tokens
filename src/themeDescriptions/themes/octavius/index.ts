@@ -106,6 +106,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
 		octaviusColorSidebarItemIcon: '#333333',
 		octaviusColorSidebarItemText: '#333333',
+		octaviusColorSidebarItemTextActive: lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarItemIconActive: lightTheme.colors.colorIconPrimary,
 		octaviusColorSidebarItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
 		octaviusColorSidebarComposeButtonBackground: '#ffffff',
 		octaviusColorSidebarComposeButtonText: '#2c2d2e',
@@ -132,14 +134,14 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorListLetterSeparator:
 			lightTheme.colors.colorSeparatorPrimary,
 		octaviusColorListLetterAdvBackground: '#F0F5FF',
+		octaviusColorLetterListTextUnread: '#2c2d2e',
 
 		octaviusColorDatasetBackground:
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorEmptyStateText: '#333333',
-		octaviusColorBadgeBackground: 'rgba(0, 16, 61, 0.08)',
-		octaviusColorMetaThreadImageColor: '#ffffff',
-		octaviusColorBorderSolid: '#E0E2E8',
+		octaviusColorMetaThreadImageBackground: '#ffffff',
+		octaviusColorLayoutBorder: '#E0E2E8',
 		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorPanelBackgroundSelected: '#F3F3F5',
 
@@ -236,8 +238,10 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemIconPrimary: '#E7E8EA',
 
-		octaviusColorSidebarItemIcon: '#ffffff',
-		octaviusColorSidebarItemText: '#ffffff',
+		octaviusColorSidebarItemIcon: '#E7E8EA',
+		octaviusColorSidebarItemText: '#E7E8EA',
+		octaviusColorSidebarItemTextActive: '#ffffff',
+		octaviusColorSidebarItemIconActive: '#ffffff',
 
 		octaviusColorHeaderButtonBackground: {
 			normal: 'transparent',
@@ -275,11 +279,9 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconEvent: '#3BBAFE',
 		octaviusColorIconFees: '#EE3C3C',
 
-		octaviusColorBadgeBackground: 'rgba(255, 255, 255, 0.08)',
-
 		octaviusColorBackgroundSecondary: '#303030',
 
-		octaviusColorMetaThreadImageColor: 'transparent',
+		octaviusColorMetaThreadImageBackground: 'transparent',
 
 		octaviusColorListLetterBackground:
 			darkTheme.colors.colorBackgroundContent,
@@ -289,8 +291,9 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,
-		octaviusColorBorderSolid: 'transparent',
+		octaviusColorLayoutBorder: 'transparent',
 		octaviusColorEmptyStateTextLink: '#E7E8EA',
+		octaviusColorLetterListTextUnread: '#e7e8ea',
 
 		octaviusTextDecorationEmptyStateTextLink: {
 			normal: 'underline',
