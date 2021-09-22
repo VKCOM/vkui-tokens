@@ -94,6 +94,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
 
 		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarItemIconSecondary:
+			lightTheme.colors.colorIconSecondary,
+		octaviusColorSidebarItemTextSecondary:
+			lightTheme.colors.colorTextSecondary,
 
 		octaviusColorSidebarCounterBackground:
 			lightTheme.colors.colorTransparent,
@@ -239,6 +243,10 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemText: '#E7E8EA',
 		octaviusColorSidebarItemTextActive: '#ffffff',
 		octaviusColorSidebarItemIconActive: '#ffffff',
+		octaviusColorSidebarItemTextSecondary:
+			darkTheme.colors.colorTextSecondary,
+		octaviusColorSidebarItemIconSecondary:
+			darkTheme.colors.colorIconSecondary,
 
 		octaviusColorHeaderButtonBackground: {
 			normal: 'transparent',

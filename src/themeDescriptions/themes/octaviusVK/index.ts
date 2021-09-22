@@ -57,6 +57,10 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorTextPrimary,
 		octaviusColorSidebarItemIconActive:
 			vkLightColors.colors.colorIconPrimary,
+		octaviusColorSidebarItemTextSecondary:
+			vkLightColors.colors.colorTextSecondary,
+		octaviusColorSidebarItemIconSecondary:
+			vkLightColors.colors.colorIconSecondary,
 
 		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
 		octaviusColorHeaderSearchBackgroundCollapsed: 'rgba(0, 16, 61, 0.07)',
@@ -393,6 +397,11 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
+
+		octaviusColorSidebarItemTextSecondary:
+			vkDarkColors.colors.colorTextSecondary,
+		octaviusColorSidebarItemIconSecondary:
+			vkDarkColors.colors.colorIconSecondary,
 
 		octaviusColorLayoutBorder: 'transparent',
 		octaviusColorSidebarItemIcon: '#e1e3e6',

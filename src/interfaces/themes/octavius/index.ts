@@ -122,6 +122,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarItemText: ColorDescription;
 	octaviusColorSidebarItemIconActive: ColorDescription;
 	octaviusColorSidebarItemTextActive: ColorDescription;
+	octaviusColorSidebarItemTextSecondary: ColorDescription;
+	octaviusColorSidebarItemIconSecondary: ColorDescription;
 	octaviusColorSidebarItemButtonBackground: ColorDescription;
 
 	octaviusColorSidebarComposeButtonBackground: ColorDescription;
