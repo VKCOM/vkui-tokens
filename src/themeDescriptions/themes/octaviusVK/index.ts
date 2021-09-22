@@ -304,6 +304,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		...octaviusVKTheme.colors,
 		...vkDarkColors.colors,
 		colorThumbErrorBackground: vkDarkColors.colors.colorImagePlaceholder,
+		colorBgThumbnail: 'rgba(255, 255, 255, 0.08)',
 
 		colorTransparent: {
 			normal: 'transparent',
