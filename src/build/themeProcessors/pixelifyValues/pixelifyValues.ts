@@ -1,6 +1,6 @@
 import {PixelifyTheme, Theme} from '@/interfaces/general';
 
-const numericCSSProperties = new Set(['breakpoints', 'fontWeight']);
+const numericCSSProperties = /^(breakpoints$|fontWeight)/i;
 
 /**
  * Процессор, который превращает численные значения переменных в строковые
@@ -12,7 +12,7 @@ export function pixelifyValues<T = Theme>(sourceTheme: T): PixelifyTheme<T> {
 	);
 
 	Object.entries(theme).forEach(([key, value]) => {
-		if (numericCSSProperties.has(key)) {
+		if (numericCSSProperties.test(key)) {
 			return;
 		}
 

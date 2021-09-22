@@ -148,9 +148,11 @@ function writeCssVarsSourceFile<PT = PixelifyTheme>(
 						'css',
 						theme,
 						'withAdaptiveGroups',
-				  )}\n\n${compileBreakpointsCssVarsDeclaration(
-						cssWarsTheme as any,
-				  )}`
+				  )}\n\n${
+						compileBreakpointsCssVarsDeclaration(
+							cssWarsTheme as any,
+						) ?? ''
+				  }`
 				: compileStyles<PT>('css', theme, mode);
 
 		fs.writeFileSync(filePath, content);

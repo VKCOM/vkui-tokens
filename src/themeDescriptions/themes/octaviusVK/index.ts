@@ -311,6 +311,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.08)',
 		},
 
+		colorButtonContrast: {
+			normal: 'rgba(255, 255, 255, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.2)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
+
 		colorBackgroundSecondary: {
 			normal: 'rgba(255, 255, 255, 0.08)',
 			hover: 'rgba(255, 255, 255, 0.16)',
@@ -350,6 +356,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.12)',
 			active: 'rgba(255, 255, 255, 0.16)',
 		},
+		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
+		octaviusColorHeaderSearchChipBorderEditable: 'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchIcon: vkDarkColors.colors.colorIconSecondary,
 		octaviusColorHeaderSearchText: vkDarkColors.colors.colorTextSecondary,
 		octaviusColorHeaderSearchTextCollapsed:

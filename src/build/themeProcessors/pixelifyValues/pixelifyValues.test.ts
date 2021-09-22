@@ -98,5 +98,11 @@ describe('pixelifyValues', () => {
 				pixelifyValues(theme) as Partial<PixelifyTheme>,
 			).toStrictEqual(pixelifyTheme);
 		});
+
+		it('should correctly pixelify custom fontWeight tokens', () => {
+			expect(pixelifyValues({fontWeightAccent1: 700})).toEqual({
+				fontWeightAccent1: 700,
+			});
+		});
 	});
 });

@@ -124,6 +124,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 [
 	{in: '.npmignore'},
 	{in: '.gitignore'},
+	{in: '.npmrc'},
 	{in: 'CHANGELOG.md'},
 	{in: 'README.md'},
 	{
@@ -200,4 +201,5 @@ fs.writeFileSync(
 	JSON.stringify(packageJsonObject, null, '  '),
 	'utf-8',
 );
+
 console.log('успешно\n');
