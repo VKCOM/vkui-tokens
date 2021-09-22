@@ -400,11 +400,6 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
-		octaviusColorHeaderSearchChipBorderEditable: {
-			normal: 'transparent',
-			hover: 'rgba(255, 255, 255, 0.16)',
-			active: 'rgba(255, 255, 255, 0.2)',
-		},
 
 		octaviusColorSidebarItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,
