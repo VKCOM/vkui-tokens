@@ -411,6 +411,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemIcon: '#e1e3e6',
 		octaviusColorSidebarItemText: '#e1e3e6',
 
+		octaviusColorLetterListTextUnread: '#ffffff',
+
 		octaviusColorBackgroundSecondary: '#2D2D2E',
 	},
 
