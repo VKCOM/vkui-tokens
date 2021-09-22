@@ -164,7 +164,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorMetaThreadImageBackground: ColorDescription;
 	octaviusColorLayoutBorder: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
-	octaviusColorPanelBackgroundSelected: ColorDescription;
+	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
+	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
 	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
 }
 
