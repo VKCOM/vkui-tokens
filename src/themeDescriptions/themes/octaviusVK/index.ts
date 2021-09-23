@@ -393,8 +393,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemIconActive:
 			vkDarkColors.colors.colorIconPrimary,
 
-		octaviusColorButton2Text: '#E7E8EA',
-		octaviusColorButton2Icon: '#E7E8EA',
+		octaviusColorButtonText: '#E7E8EA',
+		octaviusColorButtonIcon: '#E7E8EA',
 
 		octaviusColorHeaderButtonBackground: {
 			normal: 'transparent',
@@ -412,8 +412,6 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemText: '#e1e3e6',
 
 		octaviusColorLetterListTextUnread: '#ffffff',
-
-		octaviusColorBackgroundSecondary: '#2D2D2E',
 	},
 
 	octaviusElevationCard: 'none',

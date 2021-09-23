@@ -80,14 +80,10 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorTrueBlack: ColorDescription;
 	colorTrueWhite: ColorDescription;
 
-	// Токены страницы
-	octaviusColorText: ColorDescription;
-	octaviusColorIcon: ColorDescription;
-
 	// Токены кнопки
-	octaviusColorButton2Text: ColorDescription;
-	octaviusColorButton2Icon: ColorDescription;
-	octaviusColorButton2Background: ColorDescription;
+	octaviusColorButtonText: ColorDescription;
+	octaviusColorButtonIcon: ColorDescription;
+	octaviusColorButtonBackground: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
@@ -137,7 +133,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorContentScrollbar: ColorDescription;
 
 	// Токены письма
-	octaviusColorBackgroundSecondary: ColorDescription;
 	octaviusColorLetterListTextUnread: ColorDescription;
 
 	// Категории письма
