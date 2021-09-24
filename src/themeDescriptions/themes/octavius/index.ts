@@ -234,11 +234,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchChipBackground:
 			darkTheme.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
-		octaviusColorHeaderSearchChipBorderEditable: {
-			normal: 'rgba(255, 255, 255, .48)',
-			hover: 'rgba(255, 255, 255, 0.16)',
-			active: 'rgba(255, 255, 255, 0.2)',
-		},
+		octaviusColorHeaderSearchChipBorderEditable: 'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:
 			darkTheme.colors.colorTextSecondary,
