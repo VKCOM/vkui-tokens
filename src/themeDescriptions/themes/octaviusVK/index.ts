@@ -425,8 +425,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondary:
-			vkDarkColors.colors.colorIconSecondary,
+		octaviusColorSidebarItemIconSecondary: '#3F8AE0',
 		octaviusColorSidebarShortItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,
 		octaviusColorSidebarShortItemIconSecondary:
