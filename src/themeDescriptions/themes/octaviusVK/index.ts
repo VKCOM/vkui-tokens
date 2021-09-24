@@ -383,7 +383,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 		octaviusColorSidebarItemIconPrimary:
-			vkDarkColors.colors.colorIconAccent,
+			vkDarkColors.colors.colorIconPrimary,
 		octaviusColorSidebarCounterBackground: '#000000',
 		octaviusColorSidebarCounterText: '#e1e3e6',
 		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.12)',
