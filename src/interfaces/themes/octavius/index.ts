@@ -22,6 +22,11 @@ export interface ThemeOctaviusOverValues {
 	octaviusTextShadowSidebarItemText: string;
 	octaviusFilterSidebarItemIcon: string;
 
+	/**
+	 * Нужен для тем у которых есть неадаптивный фон
+	 */
+	octaviusImageBackground: string;
+
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
 	octaviusFontFamilyMailSans: string;
@@ -121,6 +126,13 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarItemTextSecondary: ColorDescription;
 	octaviusColorSidebarItemIconSecondary: ColorDescription;
 	octaviusColorSidebarItemButtonBackground: ColorDescription;
+
+	octaviusColorSidebarShortItemIcon: ColorDescription;
+	octaviusColorSidebarShortItemText: ColorDescription;
+	octaviusColorSidebarShortItemIconActive: ColorDescription;
+	octaviusColorSidebarShortItemTextActive: ColorDescription;
+	octaviusColorSidebarShortItemTextSecondary: ColorDescription;
+	octaviusColorSidebarShortItemIconSecondary: ColorDescription;
 
 	octaviusColorSidebarComposeButtonBackground: ColorDescription;
 	octaviusColorSidebarComposeButtonText: ColorDescription;

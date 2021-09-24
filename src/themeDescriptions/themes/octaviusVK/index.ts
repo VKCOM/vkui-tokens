@@ -53,6 +53,12 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkLightColors.colors.colorBackgroundAccent,
 
+		octaviusColorSidebarItemText: '#333333',
+		octaviusColorSidebarItemIcon: '#3F8AE0',
+		octaviusColorSidebarShortItemText: '#333333',
+		octaviusColorSidebarShortItemIcon:
+			vkLightColors.colors.colorIconPrimary,
+
 		octaviusColorSidebarItemTextActive:
 			vkLightColors.colors.colorTextPrimary,
 		octaviusColorSidebarItemIconActive:
@@ -60,6 +66,15 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemTextSecondary:
 			vkLightColors.colors.colorTextSecondary,
 		octaviusColorSidebarItemIconSecondary:
+			vkLightColors.colors.colorIconSecondary,
+
+		octaviusColorSidebarShortItemTextActive:
+			vkLightColors.colors.colorTextPrimary,
+		octaviusColorSidebarShortItemIconActive:
+			vkLightColors.colors.colorIconPrimary,
+		octaviusColorSidebarShortItemTextSecondary:
+			vkLightColors.colors.colorTextSecondary,
+		octaviusColorSidebarShortItemIconSecondary:
 			vkLightColors.colors.colorIconSecondary,
 
 		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
@@ -97,8 +112,6 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			active: '#DADCE2',
 		},
 		octaviusColorEmptyStateText: octaviusTheme.colors.colorTextPrimary,
-
-		octaviusColorSidebarItemIcon: '#3F8AE0',
 		octaviusColorEmptyStateTextLink: '#4986cc',
 	},
 
@@ -388,9 +401,17 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		},
 		octaviusColorEmptyStateText: vkDarkColors.colors.colorTextPrimary,
 
-		octaviusColorSidebarItemTextActive:
+		octaviusColorSidebarItemText: vkDarkColors.colors.colorIconPrimary,
+		octaviusColorSidebarItemIcon: vkDarkColors.colors.colorTextPrimary,
+		octaviusColorSidebarShortItemText: vkDarkColors.colors.colorIconPrimary,
+		octaviusColorSidebarShortItemIcon: vkDarkColors.colors.colorTextPrimary,
+
+		octaviusColorSidebarItemTextActive: '#ffffff',
+		octaviusColorSidebarItemIconActive: '#ffffff',
+
+		octaviusColorSidebarShortItemTextActive:
 			vkDarkColors.colors.colorTextPrimary,
-		octaviusColorSidebarItemIconActive:
+		octaviusColorSidebarShortItemIconActive:
 			vkDarkColors.colors.colorIconPrimary,
 
 		octaviusColorButtonText: '#E7E8EA',
@@ -406,10 +427,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			vkDarkColors.colors.colorTextSecondary,
 		octaviusColorSidebarItemIconSecondary:
 			vkDarkColors.colors.colorIconSecondary,
+		octaviusColorSidebarShortItemTextSecondary:
+			vkDarkColors.colors.colorTextSecondary,
+		octaviusColorSidebarShortItemIconSecondary:
+			vkDarkColors.colors.colorIconSecondary,
 
 		octaviusColorLayoutBorder: 'transparent',
-		octaviusColorSidebarItemIcon: '#e1e3e6',
-		octaviusColorSidebarItemText: '#e1e3e6',
 
 		octaviusColorLetterListTextUnread: '#ffffff',
 	},

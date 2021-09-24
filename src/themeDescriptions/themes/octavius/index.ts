@@ -90,15 +90,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
 
-		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
-		octaviusColorSidebarItemIconSecondary:
-			lightTheme.colors.colorIconSecondary,
-		octaviusColorSidebarItemTextSecondary:
-			lightTheme.colors.colorTextSecondary,
-
 		octaviusColorSidebarCounterBackground:
 			lightTheme.colors.colorTransparent,
-
 		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
 		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
 		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
@@ -107,6 +100,23 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemTextActive: lightTheme.colors.colorTextPrimary,
 		octaviusColorSidebarItemIconActive: lightTheme.colors.colorIconPrimary,
 		octaviusColorSidebarItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarItemIconSecondary:
+			lightTheme.colors.colorIconSecondary,
+		octaviusColorSidebarItemTextSecondary:
+			lightTheme.colors.colorTextSecondary,
+
+		octaviusColorSidebarShortItemIcon: '#333333',
+		octaviusColorSidebarShortItemText: '#333333',
+		octaviusColorSidebarShortItemTextActive:
+			lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarShortItemIconActive:
+			lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarShortItemIconSecondary:
+			lightTheme.colors.colorIconSecondary,
+		octaviusColorSidebarShortItemTextSecondary:
+			lightTheme.colors.colorTextSecondary,
+
 		octaviusColorSidebarComposeButtonBackground: '#ffffff',
 		octaviusColorSidebarComposeButtonText: '#2c2d2e',
 		octaviusColorSidebarComposeButtonIcon: '#2c2d2e',
@@ -156,6 +166,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 	octaviusTextShadowSidebarItemText: 'none',
 	octaviusFilterSidebarItemIcon: 'none',
+	octaviusImageBackground: 'none',
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
@@ -241,6 +252,15 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemTextSecondary:
 			darkTheme.colors.colorTextSecondary,
 		octaviusColorSidebarItemIconSecondary:
+			darkTheme.colors.colorIconSecondary,
+
+		octaviusColorSidebarShortItemIcon: '#E7E8EA',
+		octaviusColorSidebarShortItemText: '#E7E8EA',
+		octaviusColorSidebarShortItemTextActive: '#ffffff',
+		octaviusColorSidebarShortItemIconActive: '#ffffff',
+		octaviusColorSidebarShortItemTextSecondary:
+			darkTheme.colors.colorTextSecondary,
+		octaviusColorSidebarShortItemIconSecondary:
 			darkTheme.colors.colorIconSecondary,
 
 		octaviusColorHeaderButtonBackground: {
