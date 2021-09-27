@@ -65,7 +65,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorIconPrimary,
 		octaviusColorSidebarItemTextSecondary:
 			vkLightColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondary: '#3F8AE0',
+		octaviusColorSidebarItemIconSecondary: 'rgba(63 138 224, 0.64)',
 
 		octaviusColorSidebarShortItemTextActive:
 			vkLightColors.colors.colorTextPrimary,
