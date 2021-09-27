@@ -279,7 +279,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
 		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.12)',
 		octaviusColorSidebarItemButtonBackground: {
-			normal: 'transparent',
+			normal: 'rgba(255, 255, 255, 0.08)',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},

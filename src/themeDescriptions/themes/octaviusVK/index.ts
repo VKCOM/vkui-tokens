@@ -377,6 +377,13 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
+
+		octaviusColorSidebarItemButtonBackground: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
+
 		octaviusColorSidebarItemIconPrimary:
 			vkDarkColors.colors.colorIconPrimary,
 		octaviusColorSidebarCounterBackground: '#000000',
