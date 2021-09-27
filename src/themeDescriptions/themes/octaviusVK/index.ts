@@ -330,11 +330,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
-		colorBackgroundSecondary: {
-			normal: 'rgba(255, 255, 255, 0.08)',
-			hover: 'rgba(255, 255, 255, 0.16)',
-			active: 'rgba(255, 255, 255, 0.2)',
-		},
+		colorBackgroundSecondary: '#2D2D2E',
 
 		colorBackgroundAccentAlternative:
 			vkDarkColors.colors.colorBackgroundAccent,
