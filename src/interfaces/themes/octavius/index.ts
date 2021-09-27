@@ -14,12 +14,18 @@ import {
 export interface ThemeOctaviusOverValues {
 	octaviusElevationCard: string;
 	octaviusElevationHeader: string;
+	octaviusTextShadowEmptyStateText: string;
+
+	octaviusPositionBackground: string;
+	octaviusImageOverlayBackground: string;
+
+	octaviusTextShadowSidebarItemText: string;
+	octaviusFilterSidebarItemIcon: string;
 
 	/**
-	 * Тень текста подписи под картинкой пустого состояния папки на некоторых
-	 * темах с фоном-картинкой
+	 * Нужен для тем у которых есть неадаптивный фон
 	 */
-	octaviusShadowTextBackgroundContrast: string;
+	octaviusImageBackground: string;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -79,15 +85,23 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorTrueBlack: ColorDescription;
 	colorTrueWhite: ColorDescription;
 
+	// Токены кнопки
+	octaviusColorButtonText: ColorDescription;
+	octaviusColorButtonIcon: ColorDescription;
+	octaviusColorButtonBackground: ColorDescription;
+
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
+	octaviusColorOverlayBackground: ColorDescription;
 
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
+	octaviusColorHeaderButtonBackground: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
+	octaviusColorHeaderFilterText: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
@@ -105,12 +119,33 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
 	octaviusColorSidebarScrollbar: ColorDescription;
+	octaviusColorSidebarItemIcon: ColorDescription;
+	octaviusColorSidebarItemText: ColorDescription;
+	octaviusColorSidebarItemIconActive: ColorDescription;
+	octaviusColorSidebarItemTextActive: ColorDescription;
+	octaviusColorSidebarItemTextSecondary: ColorDescription;
+	octaviusColorSidebarItemIconSecondary: ColorDescription;
+	octaviusColorSidebarItemButtonBackground: ColorDescription;
+
+	octaviusColorSidebarShortItemIcon: ColorDescription;
+	octaviusColorSidebarShortItemText: ColorDescription;
+	octaviusColorSidebarShortItemIconActive: ColorDescription;
+	octaviusColorSidebarShortItemTextActive: ColorDescription;
+	octaviusColorSidebarShortItemTextSecondary: ColorDescription;
+	octaviusColorSidebarShortItemIconSecondary: ColorDescription;
+
+	octaviusColorSidebarComposeButtonBackground: ColorDescription;
+	octaviusColorSidebarComposeButtonText: ColorDescription;
+	octaviusColorSidebarComposeButtonIcon: ColorDescription;
 
 	// Токены портального меню
 	octaviusColorPortalMenuBackground: ColorDescription;
 
 	// Контент страницы
 	octaviusColorContentScrollbar: ColorDescription;
+
+	// Токены письма
+	octaviusColorLetterListTextUnread: ColorDescription;
 
 	// Категории письма
 	octaviusColorIconUnread: ColorDescription;
@@ -122,7 +157,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
 
-	// Стили списка писем
+	// Токены списка писем
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparator: ColorDescription;
 
@@ -131,14 +166,16 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	 * полупрозрачный.
 	 */
 	octaviusColorDatasetBackground: ColorDescription;
+	octaviusColorListLetterAdvBackground: ColorDescription;
 
 	// Другие стили
-	/**
-	 * Цвет текста подписи под картинкой пустого состояния.
-	 * @see octaviusShadowTextBackgroundContrast
-	 */
-	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
+	octaviusColorLayoutBorder: ColorDescription;
+	octaviusColorEmptyStateTextLink: ColorDescription;
+	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
+	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
+	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
