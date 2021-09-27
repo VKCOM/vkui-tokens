@@ -65,8 +65,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorIconPrimary,
 		octaviusColorSidebarItemTextSecondary:
 			vkLightColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondary:
-			vkLightColors.colors.colorIconSecondary,
+		octaviusColorSidebarItemIconSecondary: '#3F8AE0',
 
 		octaviusColorSidebarShortItemTextActive:
 			vkLightColors.colors.colorTextPrimary,
@@ -425,7 +424,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondary: '#3F8AE0',
+		octaviusColorSidebarItemIconSecondary:
+			vkDarkColors.colors.colorIconSecondary,
 		octaviusColorSidebarShortItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,
 		octaviusColorSidebarShortItemIconSecondary:
