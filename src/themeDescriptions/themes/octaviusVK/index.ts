@@ -23,7 +23,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	colors: {
 		...octaviusTheme.colors,
 		...vkLightColors.colors,
-		colorBackgroundSecondary: 'rgba(0, 28, 61, 0.05)',
+		colorBackgroundSecondary: '#ebecef',
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 		colorBackgroundAccentAlternative:
 			vkLightColors.colors.colorBackgroundAccent,
