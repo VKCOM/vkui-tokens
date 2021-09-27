@@ -1,6 +1,6 @@
 {
-  "name": "@sarafa2n/vkui-tokens",
-  "version": "4.0.0-themes.43",
+  "name": "@vkontakte/vkui-tokens",
+  "version": "4.0.0-rc.50",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
   "main": "utils/descriptions.js",
@@ -22,7 +22,7 @@
     "clear:dist": "find dist -regex '.*[^d]\\.ts' -delete",
     "open:coverage": "open .coverage/index.html"
   },
-  "repository": "https://github.com/Sarafa2n/vkui-tokens.git",
+  "repository": "https://github.com/VKCOM/vkui-tokens.git",
   "dependencies": {
     "csstype": "3.0.8"
   },
