@@ -24,6 +24,11 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		...octaviusTheme.colors,
 		...vkLightColors.colors,
 		colorBackgroundSecondary: '#ebecef',
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(0, 28, 61, 0.05)',
+			hover: 'rgba(0, 28, 61, 0.09)',
+			active: 'rgba(0, 28, 61, 0.13)',
+		},
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 		colorBackgroundAccentAlternative:
 			vkLightColors.colors.colorBackgroundAccent,
@@ -331,6 +336,11 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		},
 
 		colorBackgroundSecondary: '#2D2D2E',
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
 
 		colorBackgroundAccentAlternative:
 			vkDarkColors.colors.colorBackgroundAccent,

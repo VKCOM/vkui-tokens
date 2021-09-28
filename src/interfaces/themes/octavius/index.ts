@@ -84,6 +84,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorBgPromo: ColorDescription;
 	colorTrueBlack: ColorDescription;
 	colorTrueWhite: ColorDescription;
+	colorBackgroundSecondaryAlpha: ColorDescription;
 
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;

@@ -44,6 +44,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorBgPromo: '#EBEEF5',
 		colorTrueBlack: '#000000',
 		colorTrueWhite: '#ffffff',
+		colorBackgroundSecondary: '#ebecef',
+		colorBackgroundSecondaryAlpha: '#F0F1F3',
 
 		octaviusColorButtonText: '#333333',
 		octaviusColorButtonIcon: '#333333',
@@ -208,6 +210,12 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		colorBgThumbnail: 'rgba(255, 255, 255, 0.08)',
 		colorBgPlaceholder: '#000000',
 		colorBgPromo: '#303030',
+		colorBackgroundSecondary: '#303030',
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
 
 		octaviusColorPortalMenuBackground: '#19191A',
 		octaviusColorSidebarItemBackground: {
