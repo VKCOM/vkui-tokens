@@ -23,7 +23,12 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	colors: {
 		...octaviusTheme.colors,
 		...vkLightColors.colors,
-		colorBackgroundSecondary: '#ebecef',
+		octaviusColorThreadFooterBackground: '#ebecef',
+		colorBackgroundSecondary: {
+			normal: 'rgba(0, 28, 61, 0.05)',
+			hover: 'rgba(0, 28, 61, 0.09)',
+			active: 'rgba(0, 28, 61, 0.13)',
+		},
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 		colorBackgroundAccentAlternative:
 			vkLightColors.colors.colorBackgroundAccent,
@@ -116,6 +121,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 
 	octaviusElevationCard: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
 	octaviusElevationHeader: '0px 1px 0px 0px #E7E8EC',
+	octaviusColorLetterAttachListBackground:
+		'linear-gradient(270deg,#fff 22.77%,rgba(255,255,255,0) 104.46%)',
 
 	// Типографика
 	// Размеры такие же, как в теме octavius, а вот fontFamily другой
@@ -330,7 +337,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
-		colorBackgroundSecondary: '#2D2D2E',
+		octaviusColorThreadFooterBackground: '#2D2D2E',
+		colorBackgroundSecondary: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
 
 		colorBackgroundAccentAlternative:
 			vkDarkColors.colors.colorBackgroundAccent,
@@ -437,8 +449,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorLayoutBorder: 'transparent',
 
 		octaviusColorLetterListTextUnread: '#ffffff',
+		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
+		octaviusColorLetterPreviewBackgroundSecondary: '#0F0F0F',
 	},
 
 	octaviusElevationCard: 'none',
 	octaviusElevationHeader: 'none',
+	octaviusColorLetterAttachListBackground:
+		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',
 };

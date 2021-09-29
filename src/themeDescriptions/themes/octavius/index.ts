@@ -44,6 +44,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorBgPromo: '#EBEEF5',
 		colorTrueBlack: '#000000',
 		colorTrueWhite: '#ffffff',
+		octaviusColorThreadFooterBackground: '#ebecef',
+		colorBackgroundSecondary: '#F0F1F3',
 
 		octaviusColorButtonText: '#333333',
 		octaviusColorButtonIcon: '#333333',
@@ -177,6 +179,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusFontFamilyMac: 'Helvetica, Arial, Tahoma, Verdana, sans-serif',
 	octaviusFontFamilyDisplay: 'inherit',
 
+	octaviusColorLetterAttachListBackground:
+		'linear-gradient(270deg,#fff 22.77%,rgba(255,255,255,0) 104.46%)',
+
 	octaviusSizeHeadlineHeight: {
 		regular: 36,
 	},
@@ -208,6 +213,12 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		colorBgThumbnail: 'rgba(255, 255, 255, 0.08)',
 		colorBgPlaceholder: '#000000',
 		colorBgPromo: '#303030',
+		octaviusColorThreadFooterBackground: '#303030',
+		colorBackgroundSecondary: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
 
 		octaviusColorPortalMenuBackground: '#19191A',
 		octaviusColorSidebarItemBackground: {
@@ -315,6 +326,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			active: 'none',
 		},
 	},
+	octaviusColorLetterAttachListBackground:
+		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',
 };
 
 export const octaviusWhiteTheme: ThemeOctaviusDescription = {
