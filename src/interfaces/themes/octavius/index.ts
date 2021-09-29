@@ -21,6 +21,10 @@ export interface ThemeOctaviusOverValues {
 
 	octaviusTextShadowSidebarItemText: string;
 	octaviusFilterSidebarItemIcon: string;
+	/**
+	 * Нужен для градиента у кнопки раскрытия аттачей в письме
+	 */
+	octaviusColorLetterAttachListBackground: string;
 
 	/**
 	 * Нужен для тем у которых есть неадаптивный фон
@@ -84,7 +88,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorBgPromo: ColorDescription;
 	colorTrueBlack: ColorDescription;
 	colorTrueWhite: ColorDescription;
-	colorBackgroundSecondaryAlpha: ColorDescription;
 
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
@@ -147,6 +150,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены письма
 	octaviusColorLetterListTextUnread: ColorDescription;
+
+	// TODO: убрать когда появится colorBackgroundSecondaryAlpha
+	octaviusColorThreadFooterBackground: ColorDescription;
 
 	// Категории письма
 	octaviusColorIconUnread: ColorDescription;
