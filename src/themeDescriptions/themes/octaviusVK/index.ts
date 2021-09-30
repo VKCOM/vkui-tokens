@@ -430,6 +430,11 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorButtonText: '#E7E8EA',
 		octaviusColorButtonIcon: '#E7E8EA',
+		octaviusColorButtonBackground: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.04)',
+			active: 'rgba(255, 255, 255, 0.08)',
+		},
 
 		octaviusColorHeaderButtonBackground: {
 			normal: 'transparent',

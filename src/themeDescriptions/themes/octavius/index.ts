@@ -256,10 +256,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemText: '#E7E8EA',
 		octaviusColorSidebarItemTextActive: '#ffffff',
 		octaviusColorSidebarItemIconActive: '#ffffff',
-		octaviusColorSidebarItemTextSecondary:
-			darkTheme.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondary:
-			darkTheme.colors.colorIconSecondary,
+		octaviusColorSidebarItemTextSecondary: 'rgba(231, 232, 234, 0.64)',
+		octaviusColorSidebarItemIconSecondary: 'rgba(231, 232, 234, 0.64)',
 
 		octaviusColorSidebarShortItemIcon: '#E7E8EA',
 		octaviusColorSidebarShortItemText: '#E7E8EA',
