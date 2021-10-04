@@ -103,10 +103,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemIconActive: lightTheme.colors.colorIconPrimary,
 		octaviusColorSidebarItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
 		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
-		octaviusColorSidebarItemIconSecondary:
-			lightTheme.colors.colorIconSecondary,
-		octaviusColorSidebarItemTextSecondary:
-			lightTheme.colors.colorTextSecondary,
+		octaviusColorSidebarItemIconSecondary: 'rgba(51, 51, 51, 0.64)',
+		octaviusColorSidebarItemTextSecondary: 'rgba(51, 51, 51, 0.64)',
 
 		octaviusColorSidebarShortItemIcon: '#333333',
 		octaviusColorSidebarShortItemText: '#333333',
@@ -152,6 +150,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorLetterPreviewBackgroundPrimary: '#F9F9FA',
 		octaviusColorLetterPreviewBackgroundSecondary: '#F3F3F5',
+		octaviusColorNotificationBorder: '#ffffff',
 
 		octaviusTextDecorationEmptyStateTextLink: {
 			normal: 'none',
@@ -317,6 +316,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
 		octaviusColorLetterPreviewBackgroundSecondary: '#0F0F0F',
+		octaviusColorNotificationBorder: '#000000',
 
 		octaviusTextDecorationEmptyStateTextLink: {
 			normal: 'underline',
