@@ -183,6 +183,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
 	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
 	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
+	octaviusColorNotificationBorder: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
