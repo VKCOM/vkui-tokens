@@ -1,9 +1,7 @@
-import {
-	ColorDescription,
-} from '@/interfaces/general/colors';
+import {ColorDescription} from '@/interfaces/general/colors';
 
 export interface LocalMailAppColorsDescriptionStruct {
-    mailappColorAndroidFrameFocus: ColorDescription;
+	mailappColorAndroidFrameFocus: ColorDescription;
 	mailappColorAndroidPopupShadowAmbient: ColorDescription;
 	mailappColorAndroidPopupShadowSpot: ColorDescription;
 	mailappColorAndroidRipple: ColorDescription;
