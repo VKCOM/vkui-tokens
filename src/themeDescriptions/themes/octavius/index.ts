@@ -345,6 +345,7 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.64)',
 			active: 'rgba(255, 255, 255, 0.4)',
 		},
+		octaviusColorHeaderFilterText: '#919399',
 		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
 		octaviusColorHeaderSearchChipBorderEditable: '#FFFFFF',
 		octaviusColorHeaderButtonBackground: '#FFFFFF',
