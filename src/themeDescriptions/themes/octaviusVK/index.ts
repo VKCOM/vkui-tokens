@@ -57,6 +57,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorHeaderTextSecondary:
 			vkLightColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkLightColors.colors.colorBackgroundAccent,
+		octaviusColorHeaderFilterText: '#818C99',
 
 		octaviusColorSidebarItemText: '#333333',
 		octaviusColorSidebarItemIcon: '#3F8AE0',
@@ -383,6 +384,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchText: vkDarkColors.colors.colorTextSecondary,
 		octaviusColorHeaderSearchTextCollapsed:
 			vkDarkColors.colors.colorTextSecondary,
+		octaviusColorHeaderFilterText: 'rgba(255, 255, 255, 0.48)',
 
 		octaviusColorSidebarItemBackground: {
 			normal: 'transparent',
@@ -456,6 +458,13 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
 		octaviusColorLetterPreviewBackgroundSecondary: '#0F0F0F',
+
+		octaviusColorEmptyStateTextLink: '#E7E8EA',
+		octaviusTextDecorationEmptyStateTextLink: {
+			normal: 'underline',
+			hover: 'none',
+			active: 'none',
+		},
 	},
 
 	octaviusElevationCard: 'none',
