@@ -10,16 +10,18 @@ import {
 	ParadigmTheme,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
+import {Property} from 'csstype';
 
 export interface ThemeOctaviusOverValues {
-	octaviusElevationCard: string;
-	octaviusElevationHeader: string;
-
-	/**
+	octaviusShadowSidebarItemText: Property.BoxShadow;
+	octaviusShadowSidebarItemIcon: Property.BoxShadow;
+	octaviusElevationCard: Property.BoxShadow;
+	octaviusElevationHeader: Property.BoxShadow;
+  /**
 	 * Тень текста подписи под картинкой пустого состояния папки на некоторых
 	 * темах с фоном-картинкой
 	 */
-	octaviusShadowTextBackgroundContrast: string;
+	octaviusShadowEmptyStateText: Property.BoxShadow;
 
 	// Кастомные шрифты
 	octaviusFontFamilyDefault: string;
@@ -45,7 +47,8 @@ type ThemeOctaviusAdaptiveTokens = {
 };
 
 export interface LocalOctaviusColorsDescriptionStruct {
-	colorBgThumbnail: ColorDescription;
+	colorBackgroundThumbnail: ColorDescription;
+	colorBackgroundThumbnailAlpha: ColorDescription;
 	colorIconAccent: ColorDescription;
 	colorBgContrast: ColorDescription;
 	colorSocialVk: ColorDescription;
@@ -76,8 +79,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorAlert: ColorDescription;
 	colorBgPlaceholder: ColorDescription;
 	colorBgPromo: ColorDescription;
-	colorTrueBlack: ColorDescription;
-	colorTrueWhite: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
@@ -85,6 +86,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
+	octaviusColorHeaderButtonBackground: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
@@ -101,7 +103,15 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены сайдбара
 	octaviusColorSidebarItemBackground: ColorDescription;
+	octaviusColorSidebarItemIconActive: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
+	octaviusColorSidebarItemIconSecondary: ColorDescription;
+	octaviusColorSidebarItemTextActive: ColorDescription;
+	octaviusColorSidebarItemTextPrimary: ColorDescription;
+	octaviusColorSidebarItemTextSecondary: ColorDescription;
+	octaviusColorSidebarButtonIcon: ColorDescription;
+	octaviusColorSidebarButtonText: ColorDescription;
+	octaviusColorSidebarButtonBackground: ColorDescription;
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
 	octaviusColorSidebarScrollbar: ColorDescription;
@@ -131,13 +141,16 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	 * полупрозрачный.
 	 */
 	octaviusColorDatasetBackground: ColorDescription;
+	octaviusColorListTextUnread: ColorDescription;
+	octaviusColorListTextPrimary: ColorDescription;
+	octaviusColorListIconPrimary: ColorDescription;
 
 	// Другие стили
-	/**
+  /**
 	 * Цвет текста подписи под картинкой пустого состояния.
 	 * @see octaviusShadowTextBackgroundContrast
 	 */
-	octaviusColorTextBackgroundContrast: ColorDescription;
+	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentToned: ColorDescription;
 }
 

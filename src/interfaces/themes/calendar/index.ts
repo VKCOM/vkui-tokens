@@ -22,7 +22,6 @@ export interface ThemeCalendarOverValues {
 }
 
 export interface LocalCalendarColorDescriptionStruct {
-	colorBgThumbnail: ColorDescription;
 }
 
 export type CalendarLocalColors = {
