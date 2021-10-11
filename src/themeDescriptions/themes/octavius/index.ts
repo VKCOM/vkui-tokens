@@ -81,10 +81,12 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemIconActive: lightTheme.colors.colorIconPrimary,
 		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
-		octaviusColorSidebarItemIconSecondary: lightTheme.colors.colorIconSecondary,
+		octaviusColorSidebarItemIconSecondary:
+			lightTheme.colors.colorIconSecondary,
 		octaviusColorSidebarItemTextActive: lightTheme.colors.colorTextPrimary,
 		octaviusColorSidebarItemTextPrimary: lightTheme.colors.colorTextPrimary,
-		octaviusColorSidebarItemTextSecondary: lightTheme.colors.colorTextSecondary,
+		octaviusColorSidebarItemTextSecondary:
+			lightTheme.colors.colorTextSecondary,
 		octaviusColorSidebarButtonIcon: lightTheme.colors.colorIconPrimary,
 		octaviusColorSidebarButtonText: lightTheme.colors.colorTextPrimary,
 		octaviusColorSidebarButtonBackground: '#FFFFFF',
@@ -112,6 +114,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			hover: '#f5f5f7',
 			active: '#ebecef',
 		},
+		octaviusColorListTextUnread: lightTheme.colors.colorTextPrimary,
+		octaviusColorListTextPrimary: lightTheme.colors.colorTextPrimary,
+		octaviusColorListIconPrimary: lightTheme.colors.colorIconPrimary,
 		octaviusColorListLetterSeparator:
 			lightTheme.colors.colorSeparatorPrimary,
 
@@ -196,10 +201,12 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemIconActive: '#FFFFFF',
 		octaviusColorSidebarItemIconPrimary: darkTheme.colors.colorIconPrimary,
-		octaviusColorSidebarItemIconSecondary: darkTheme.colors.colorIconSecondary,
+		octaviusColorSidebarItemIconSecondary:
+			darkTheme.colors.colorIconSecondary,
 		octaviusColorSidebarItemTextActive: '#FFFFFF',
 		octaviusColorSidebarItemTextPrimary: darkTheme.colors.colorTextPrimary,
-		octaviusColorSidebarItemTextSecondary: darkTheme.colors.colorTextSecondary,
+		octaviusColorSidebarItemTextSecondary:
+			darkTheme.colors.colorTextSecondary,
 		octaviusColorSidebarButtonIcon: lightTheme.colors.colorIconPrimary,
 		octaviusColorSidebarButtonText: lightTheme.colors.colorTextPrimary,
 		octaviusColorSidebarButtonBackground: '#FFFFFF',
