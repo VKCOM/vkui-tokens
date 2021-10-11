@@ -454,6 +454,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			vkDarkColors.colors.colorIconSecondary,
 
 		octaviusColorLayoutBorder: 'transparent',
+		octaviusColorLayoutLetterBorder: 'rgba(0, 0, 0, 0.4)',
 
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
