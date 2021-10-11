@@ -87,8 +87,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			hover: '#F5F6F8',
 			active: '#EFF1F3',
 		},
-		octaviusColorEmptyStateText:
-			octaviusTheme.colors.colorTextPrimary,
+		octaviusColorEmptyStateText: octaviusTheme.colors.colorTextPrimary,
 	},
 
 	octaviusElevationCard: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
@@ -372,8 +371,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: '#2B2B2C',
 			active: '#353535',
 		},
-		octaviusColorEmptyStateText:
-			vkDarkColors.colors.colorTextPrimary,
+		octaviusColorEmptyStateText: vkDarkColors.colors.colorTextPrimary,
 	},
 
 	octaviusElevationCard: 'none',

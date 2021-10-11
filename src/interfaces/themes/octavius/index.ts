@@ -1,3 +1,5 @@
+import {Property} from 'csstype';
+
 import {ThemeCssVars} from '@/interfaces/general';
 import {
 	ColorDescription,
@@ -10,14 +12,13 @@ import {
 	ParadigmTheme,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
-import {Property} from 'csstype';
 
 export interface ThemeOctaviusOverValues {
 	octaviusShadowSidebarItemText: Property.BoxShadow;
 	octaviusShadowSidebarItemIcon: Property.BoxShadow;
 	octaviusElevationCard: Property.BoxShadow;
 	octaviusElevationHeader: Property.BoxShadow;
-  /**
+	/**
 	 * Тень текста подписи под картинкой пустого состояния папки на некоторых
 	 * темах с фоном-картинкой
 	 */
@@ -146,7 +147,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListIconPrimary: ColorDescription;
 
 	// Другие стили
-  /**
+	/**
 	 * Цвет текста подписи под картинкой пустого состояния.
 	 * @see octaviusShadowTextBackgroundContrast
 	 */
