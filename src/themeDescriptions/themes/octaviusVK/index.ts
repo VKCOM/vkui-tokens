@@ -34,7 +34,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorBackgroundAccent,
 
 		octaviusColorBackground: '#EDEEF0',
-		octaviusColorBackgroundAccentToned: toneOpacity(
+		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
 			vkLightColors.colors.colorBackgroundAccent,
 			0.12,
 		),
@@ -57,7 +57,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorHeaderTextSecondary:
 			vkLightColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkLightColors.colors.colorBackgroundAccent,
-		octaviusColorHeaderFilterText: '#818C99',
+		octaviusColorHeaderFilterTextAlpha: '#818C99',
 
 		octaviusColorSidebarItemText: '#333333',
 		octaviusColorSidebarItemIcon: '#3F8AE0',
@@ -69,9 +69,9 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorTextPrimary,
 		octaviusColorSidebarItemIconActive:
 			vkLightColors.colors.colorIconPrimary,
-		octaviusColorSidebarItemTextSecondary:
+		octaviusColorSidebarItemTextSecondaryAlpha:
 			vkLightColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondary: 'rgba(63, 138, 224, 0.64)',
+		octaviusColorSidebarItemIconSecondaryAlpha: 'rgba(63, 138, 224, 0.64)',
 
 		octaviusColorSidebarShortItemTextActive:
 			vkLightColors.colors.colorTextPrimary,
@@ -103,9 +103,9 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorIconAccent,
 		octaviusColorSidebarCounterBackground: '#AEB7C2',
 		octaviusColorSidebarCounterText: '#FFFFFF',
-		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarScrollbarAlpha: 'rgba(0, 16, 61, 0.08)',
 
-		octaviusColorContentScrollbar: '#C4C8CC',
+		octaviusColorContentScrollbarAlpha: '#C4C8CC',
 
 		octaviusColorDatasetBackground:
 			octaviusTheme.colors.colorBackgroundContent,
@@ -349,7 +349,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			vkDarkColors.colors.colorBackgroundAccent,
 
 		octaviusColorBackground: '#000000',
-		octaviusColorBackgroundAccentToned: toneOpacity(
+		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
 			vkDarkColors.colors.colorBackgroundAccent,
 			0.12,
 		),
@@ -379,12 +379,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.16)',
 		},
 		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
-		octaviusColorHeaderSearchChipBorderEditable: 'rgba(255, 255, 255, .48)',
+		octaviusColorHeaderSearchChipBorderEditableAlpha: 'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchIcon: vkDarkColors.colors.colorIconSecondary,
 		octaviusColorHeaderSearchText: vkDarkColors.colors.colorTextSecondary,
 		octaviusColorHeaderSearchTextCollapsed:
 			vkDarkColors.colors.colorTextSecondary,
-		octaviusColorHeaderFilterText: 'rgba(255, 255, 255, 0.48)',
+		octaviusColorHeaderFilterTextAlpha: 'rgba(255, 255, 255, 0.48)',
 
 		octaviusColorSidebarItemBackground: {
 			normal: 'transparent',
@@ -392,7 +392,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 
-		octaviusColorSidebarItemButtonBackground: {
+		octaviusColorSidebarItemButtonBackgroundAlpha: {
 			normal: 'rgba(255, 255, 255, 0.08)',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.24)',
@@ -402,9 +402,9 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			vkDarkColors.colors.colorIconPrimary,
 		octaviusColorSidebarCounterBackground: '#000000',
 		octaviusColorSidebarCounterText: '#e1e3e6',
-		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorSidebarScrollbarAlpha: 'rgba(255, 255, 255, 0.12)',
 
-		octaviusColorContentScrollbar: 'rgba(255, 255, 255, 0.2)',
+		octaviusColorContentScrollbarAlpha: 'rgba(255, 255, 255, 0.2)',
 
 		octaviusColorDatasetBackground:
 			vkDarkColors.colors.colorBackgroundContent,
@@ -444,9 +444,9 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 
-		octaviusColorSidebarItemTextSecondary:
+		octaviusColorSidebarItemTextSecondaryAlpha:
 			vkDarkColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondary:
+		octaviusColorSidebarItemIconSecondaryAlpha:
 			vkDarkColors.colors.colorIconSecondary,
 		octaviusColorSidebarShortItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,

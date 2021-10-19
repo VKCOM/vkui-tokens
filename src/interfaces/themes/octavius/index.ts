@@ -113,7 +113,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
-	octaviusColorHeaderFilterText: ColorDescription;
+	octaviusColorHeaderFilterTextAlpha: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
@@ -123,25 +123,25 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchTextCollapsed: ColorDescription;
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
-	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
+	octaviusColorHeaderSearchChipBorderEditableAlpha: ColorDescription;
 
 	// Токены сайдбара
 	octaviusColorSidebarItemBackground: ColorDescription;
 	octaviusColorSidebarItemIconActive: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
-	octaviusColorSidebarItemIconSecondary: ColorDescription;
+	octaviusColorSidebarItemIconSecondaryAlpha: ColorDescription;
 	octaviusColorSidebarItemTextActive: ColorDescription;
 	octaviusColorSidebarItemTextPrimary: ColorDescription;
-	octaviusColorSidebarItemTextSecondary: ColorDescription;
+	octaviusColorSidebarItemTextSecondaryAlpha: ColorDescription;
 	octaviusColorSidebarButtonIcon: ColorDescription;
 	octaviusColorSidebarButtonText: ColorDescription;
 	octaviusColorSidebarButtonBackground: ColorDescription;
 	octaviusColorSidebarCounterBackground: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
-	octaviusColorSidebarScrollbar: ColorDescription;
+	octaviusColorSidebarScrollbarAlpha: ColorDescription;
 	octaviusColorSidebarItemIcon: ColorDescription;
 	octaviusColorSidebarItemText: ColorDescription;
-	octaviusColorSidebarItemButtonBackground: ColorDescription;
+	octaviusColorSidebarItemButtonBackgroundAlpha: ColorDescription;
 
 	octaviusColorSidebarShortItemIcon: ColorDescription;
 	octaviusColorSidebarShortItemText: ColorDescription;
@@ -158,7 +158,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorPortalMenuBackground: ColorDescription;
 
 	// Контент страницы
-	octaviusColorContentScrollbar: ColorDescription;
+	octaviusColorContentScrollbarAlpha: ColorDescription;
 
 	// Токены письма
 	octaviusColorLetterListTextUnread: ColorDescription;
@@ -196,7 +196,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	 * @see octaviusShadowTextBackgroundContrast
 	 */
 	octaviusColorEmptyStateText: ColorDescription;
-	octaviusColorBackgroundAccentToned: ColorDescription;
+	octaviusColorBackgroundAccentTonedAlpha: ColorDescription;
 	octaviusColorLayoutBorder: ColorDescription;
 	octaviusColorLayoutLetterBorder: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
