@@ -99,8 +99,8 @@ export interface ColorsDescriptionStruct {
 	colorIconPositive: ColorDescription;
 	colorTextPositive: ColorDescription;
 	colorStrokePositive: ColorDescription;
-	colorAvatarOverlay: ColorDescription;
-	colorOverlayPrimary: ColorDescription;
+	colorAvatarOverlayAlpha: ColorDescription;
+	colorOverlayPrimaryAlpha: ColorDescription;
 	colorTransparent: ColorDescription;
 	colorSceletonFrom: ColorDescription;
 	colorSceletonTo: ColorDescription;

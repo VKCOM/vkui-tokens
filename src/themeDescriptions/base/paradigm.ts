@@ -97,8 +97,8 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundPositive: '#0DC268',
 		colorIconPositive: '#0DC268',
 		colorStrokePositive: '#0DC268',
-		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
-		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
+		colorAvatarOverlayAlpha: 'rgba(145, 147, 153, 0.48)',
+		colorOverlayPrimaryAlpha: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
 		colorSceletonFrom: 'transparent',
 		colorSceletonTo: 'transparent',
@@ -190,8 +190,8 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundPositive: '#0DC268',
 		colorIconPositive: '#0DC268',
 		colorStrokePositive: '#0DC268',
-		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
-		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
+		colorAvatarOverlayAlpha: 'rgba(176, 178, 182, 0.48)',
+		colorOverlayPrimaryAlpha: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
 		colorSceletonFrom: 'transparent',
 		colorSceletonTo: 'transparent',
@@ -465,12 +465,12 @@ export const lightTheme: ParadigmThemeDescription = {
 	colors: {
 		...lightThemeBase.colors,
 		colorRating: '#ffd400',
-		colorButtonContrast: {
+		colorButtonContrastAlpha: {
 			normal: 'rgba(255, 255, 255, 1)',
 			hover: 'rgba(255, 255, 255, 0.8)',
 			active: 'rgba(255, 255, 255, 0.6)',
 		},
-		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
+		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
 	},
 
 	breakpoints: {
@@ -725,11 +725,11 @@ export const darkTheme: ParadigmThemeDescription = {
 	colors: {
 		...lightTheme.colors,
 		...darkThemeBase.colors,
-		colorButtonContrast: {
+		colorButtonContrastAlpha: {
 			normal: 'rgba(255, 255, 255, 0.12)',
 			hover: 'rgba(255, 255, 255, 0.2)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
-		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
+		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
 	},
 };

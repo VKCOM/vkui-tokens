@@ -29,7 +29,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			hover: 'rgba(0, 28, 61, 0.09)',
 			active: 'rgba(0, 28, 61, 0.13)',
 		},
-		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
+		colorThumbErrorBackgroundAlpha: `rgba(230, 70, 70, 0.12)`,
 		colorBackgroundAccentAlternative:
 			vkLightColors.colors.colorBackgroundAccent,
 
@@ -323,7 +323,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 	colors: {
 		...octaviusVKTheme.colors,
 		...vkDarkColors.colors,
-		colorThumbErrorBackground: vkDarkColors.colors.colorImagePlaceholder,
+		colorThumbErrorBackgroundAlpha: vkDarkColors.colors.colorImagePlaceholder,
 		colorBackgroundThumbnailAlpha: 'rgba(255, 255, 255, 0.08)',
 
 		colorTransparent: {
@@ -332,7 +332,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.08)',
 		},
 
-		colorButtonContrast: {
+		colorButtonContrastAlpha: {
 			normal: 'rgba(255, 255, 255, 0.12)',
 			hover: 'rgba(255, 255, 255, 0.2)',
 			active: 'rgba(255, 255, 255, 0.24)',
