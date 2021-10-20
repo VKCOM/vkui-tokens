@@ -6,9 +6,9 @@ import {lightTheme} from '../../base/paradigm';
 
 const {x0, x05, x2, x3, x4, x5, x6, x8, x10, x12} = helpers;
 
-const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
+const fontFamilyAccent = 'MailSans, Inter, Helvetica, Arial, sans-serif';
 const fontFamilyArticle = 'Georgia, serif';
-const fontFamilyBase = 'Helvetica, Arial, sans-serif';
+const fontFamilyBase = 'Inter, Helvetica, Arial, sans-serif';
 
 const fontWeightAccent1 = 400;
 const fontWeightAccent2 = 500;
@@ -100,10 +100,71 @@ export const mediaTheme: ThemeMediaDescription = {
 	 * ТИПОГРАФИКА
 	 */
 
+	fontH0: {
+		regular: {
+			...replacedFamilyOctavius.fontH0.regular,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+		compact: {
+			...replacedFamilyOctavius.fontH0.compact,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+	},
+	fontTitle1: {
+		regular: {
+			...replacedFamilyOctavius.fontTitle1.regular,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+		compact: {
+			...replacedFamilyOctavius.fontTitle1.compact,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+	},
+	fontTitle2: {
+		regular: {
+			...replacedFamilyOctavius.fontTitle2.regular,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+		compact: {
+			...replacedFamilyOctavius.fontTitle2.compact,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+	},
+	fontTitle3: {
+		regular: {
+			...replacedFamilyOctavius.fontTitle3.regular,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+		compact: {
+			...replacedFamilyOctavius.fontTitle3.compact,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+	},
+	fontSubhead: {
+		regular: {
+			...replacedFamilyOctavius.fontSubhead.regular,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+		compact: {
+			...replacedFamilyOctavius.fontSubhead.compact,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
+		},
+	},
+
 	fontH1: {
 		regular: {
 			fontSize: 36,
-			lineHeight: 44,
+			lineHeight: 48,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent2,
 		},
