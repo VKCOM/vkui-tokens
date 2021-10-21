@@ -29,6 +29,13 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			hover: 'rgba(0, 28, 61, 0.09)',
 			active: 'rgba(0, 28, 61, 0.13)',
 		},
+
+		colorBackgroundContent: {
+			normal: '#ffffff',
+			hover: '#E4E5E9',
+			active: '#DADCE2',
+		},
+
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 		colorBackgroundAccentAlternative:
 			vkLightColors.colors.colorBackgroundAccent,
@@ -339,6 +346,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.04)',
 			active: 'rgba(255, 255, 255, 0.08)',
+		},
+
+		colorBackgroundContent: {
+			normal: '#19191A',
+			hover: '#2B2B2C',
+			active: '#353535',
 		},
 
 		colorButtonContrast: {
