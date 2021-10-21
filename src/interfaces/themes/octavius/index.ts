@@ -164,6 +164,16 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
 
+	// Категории письма в sidebar
+	octaviusColorSidebarIconUnread: ColorDescription;
+	octaviusColorSidebarIconFavorite: ColorDescription;
+	octaviusColorSidebarIconOrder: ColorDescription;
+	octaviusColorSidebarIconFinance: ColorDescription;
+	octaviusColorSidebarIconRegistration: ColorDescription;
+	octaviusColorSidebarIconTravel: ColorDescription;
+	octaviusColorSidebarIconEvent: ColorDescription;
+	octaviusColorSidebarIconFees: ColorDescription;
+
 	// Токены списка писем
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparator: ColorDescription;

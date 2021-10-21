@@ -132,6 +132,15 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconEvent: '#09a6fa',
 		octaviusColorIconFees: '#e60000',
 
+		octaviusColorSidebarIconUnread: '#005FF9',
+		octaviusColorSidebarIconFavorite: '#fc2c38',
+		octaviusColorSidebarIconOrder: '#ff54aa',
+		octaviusColorSidebarIconFinance: '#2fc885',
+		octaviusColorSidebarIconRegistration: '#ff9e00',
+		octaviusColorSidebarIconTravel: '#ba34fc',
+		octaviusColorSidebarIconEvent: '#09a6fa',
+		octaviusColorSidebarIconFees: '#e60000',
+
 		octaviusColorListLetterBackground: {
 			normal: '#ffffff',
 			hover: '#f5f5f7',
@@ -303,6 +312,15 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconTravel: '#C15DF3',
 		octaviusColorIconEvent: '#3BBAFE',
 		octaviusColorIconFees: '#EE3C3C',
+
+		octaviusColorSidebarIconUnread: '#0C7CFF',
+		octaviusColorSidebarIconFavorite: '#FF4550',
+		octaviusColorSidebarIconOrder: '#F94CA3',
+		octaviusColorSidebarIconFinance: '#24C780',
+		octaviusColorSidebarIconRegistration: '#FF9C37',
+		octaviusColorSidebarIconTravel: '#C15DF3',
+		octaviusColorSidebarIconEvent: '#3BBAFE',
+		octaviusColorSidebarIconFees: '#EE3C3C',
 
 		octaviusColorListLetterBackground:
 			darkTheme.colors.colorBackgroundContent,

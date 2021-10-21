@@ -47,6 +47,15 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorIconEvent: '#07a3fc',
 		octaviusColorIconFees: '#e70101',
 
+		octaviusColorSidebarIconUnread: vkLightColors.colors.colorIconAccent,
+		octaviusColorSidebarIconFavorite: vkLightColors.colors.colorAccentRed,
+		octaviusColorSidebarIconOrder: '#ff51ab',
+		octaviusColorSidebarIconFinance: '#22c983',
+		octaviusColorSidebarIconRegistration: '#ffa000',
+		octaviusColorSidebarIconTravel: '#bd19ff',
+		octaviusColorSidebarIconEvent: '#07a3fc',
+		octaviusColorSidebarIconFees: '#e70101',
+
 		octaviusColorHeaderBackground: {
 			normal: '#ffffff',
 			hover: '#f5f6f8',
