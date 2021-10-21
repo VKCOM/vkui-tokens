@@ -36,7 +36,7 @@ export function checkAlphaMismatch(
 	emit: (message: string) => void,
 ): void {
 	if (/color/i.test(token) && isColorDescription(value)) {
-		const isAlphaName = /Alpha/i.test(token);
+		const isAlphaName = /Alpha|Overlay/i.test(token);
 		const isAlphaValue = isAlphaColor(value);
 
 		if (isAlphaName !== isAlphaValue) {
