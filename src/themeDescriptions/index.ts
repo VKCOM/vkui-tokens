@@ -5,7 +5,7 @@ import {
 import {callsTheme} from '@/themeDescriptions/themes/calls';
 import {cloudTheme} from '@/themeDescriptions/themes/cloud';
 import {homeDarkTheme, homeTheme} from '@/themeDescriptions/themes/home';
-import {mediaTheme} from '@/themeDescriptions/themes/media';
+import {mediaDarkTheme, mediaTheme} from '@/themeDescriptions/themes/media';
 import {mycomTheme} from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
@@ -58,6 +58,7 @@ export const themes = [
 
 	// темы наследуемые от медиа темы (парадигм)
 	mediaTheme,
+	mediaDarkTheme,
 	mycomTheme,
 	pharmaTheme,
 

@@ -2,7 +2,7 @@ import {replacePropDeep} from '@/build/helpers/replacePropDeep';
 import {ThemeMediaDescription} from '@/interfaces/themes/media';
 import {helpers, projectColors} from '@/themeDescriptions/common';
 
-import {lightTheme} from '../../base/paradigm';
+import {darkTheme, lightTheme} from '../../base/paradigm';
 
 const {x0, x05, x2, x3, x4, x5, x6, x8, x10, x12} = helpers;
 
@@ -363,5 +363,14 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 	sizeBadgeXL: {
 		regular: 56,
+	},
+};
+
+export const mediaDarkTheme: ThemeMediaDescription = {
+	...mediaTheme,
+	themeName: 'mediaDark',
+	colors: {
+		...mediaTheme.colors,
+		...darkTheme.colors,
 	},
 };
