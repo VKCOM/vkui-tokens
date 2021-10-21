@@ -369,6 +369,7 @@ export const mediaTheme: ThemeMediaDescription = {
 export const mediaDarkTheme: ThemeMediaDescription = {
 	...mediaTheme,
 	themeName: 'mediaDark',
+	colorsScheme: 'dark',
 	colors: {
 		...mediaTheme.colors,
 		...darkTheme.colors,
