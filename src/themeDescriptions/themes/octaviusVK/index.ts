@@ -339,7 +339,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 	colors: {
 		...octaviusVKTheme.colors,
 		...vkDarkColors.colors,
-		colorThumbErrorBackgroundAlpha: vkDarkColors.colors.colorImagePlaceholder,
+		colorThumbErrorBackgroundAlpha:
+			vkDarkColors.colors.colorImagePlaceholder,
 		colorBackgroundThumbnailAlpha: 'rgba(255, 255, 255, 0.08)',
 
 		colorTransparent: {
@@ -401,7 +402,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.16)',
 		},
 		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
-		octaviusColorHeaderSearchChipBorderEditableAlpha: 'rgba(255, 255, 255, .48)',
+		octaviusColorHeaderSearchChipBorderEditableAlpha:
+			'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchIcon: vkDarkColors.colors.colorIconSecondary,
 		octaviusColorHeaderSearchText: vkDarkColors.colors.colorTextSecondary,
 		octaviusColorHeaderSearchTextCollapsed:
