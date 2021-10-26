@@ -475,7 +475,7 @@ export const lightTheme: ParadigmThemeDescription = {
 			(theme) => theme.colors.colorBackgroundContent,
 			(theme) => theme.colors.colorButtonContrastAlpha,
 		),
-		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
+		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
 	},
 
 	breakpoints: {
@@ -735,6 +735,6 @@ export const darkTheme: ParadigmThemeDescription = {
 			hover: 'rgba(255, 255, 255, 0.2)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
-		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
+		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
 	},
 };

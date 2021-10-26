@@ -23,7 +23,7 @@ export interface LocalParadigmColorsDescriptionStruct {
 	colorButtonContrast: ColorDescription;
 	colorButtonContrastAlpha: ColorDescription;
 	colorRating: ColorDescription;
-	colorThumbErrorBackground: ColorDescription;
+	colorThumbErrorBackgroundAlpha: ColorDescription;
 }
 
 export type ParadigmLocalColors = {
