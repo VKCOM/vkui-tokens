@@ -12,13 +12,13 @@ import {
 export function overlayColors<
 	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
 >(
-	foreground: ColorDescription<T>,
 	background: ColorDescription<T>,
+	foreground: ColorDescription<T>,
 	state: 'normal' | 'hover' | 'active' | 'auto' = 'normal',
 ): ColorDescriptionCallable<T> {
-	return (colorScheme: Partial<ColorsDescription<T>>) => {
-		const bgColor = expandColor(background, colorScheme);
-		const fgColor = expandColor(foreground, colorScheme);
+	return (theme: Partial<ColorsDescription<T>>) => {
+		const bgColor = expandColor(background, theme);
+		const fgColor = expandColor(foreground, theme);
 
 		const fgColorParsed = {
 			normal: color(fgColor.normal),

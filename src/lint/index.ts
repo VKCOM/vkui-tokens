@@ -1,24 +1,35 @@
+import {
+	isColorDescriptionCallable,
+	isColorDescriptionStatic,
+} from '@/build/helpers/cssHelpers';
+import {expandColor} from '@/build/themeProcessors/expandColors/expandColors';
+import {ColorsDescription} from '@/interfaces/general';
 import {checkAllRules} from '@/lint/rules';
 import {themes} from '@/themeDescriptions';
 
 function lintThemeObject(
-	theme: Record<string, unknown>,
+	object: Record<string, unknown>,
+	theme: ColorsDescription,
 	emit: (message: string) => void,
 ): void {
-	const tokens = Object.keys(theme);
+	const tokens = Object.keys(object);
 
 	for (const token of tokens) {
-		const tokenValue = theme[token];
+		const tokenValue = object[token];
 
 		if (tokenValue && typeof tokenValue === 'object') {
-			lintThemeObject(tokenValue as any, (message) =>
+			lintThemeObject(tokenValue as any, theme, (message) =>
 				emit(`${token}.${message}`),
 			);
 		}
 
-		checkAllRules(token, tokenValue, (message) =>
-			emit(`${token} error: ${message}`),
-		);
+		const childEmit = (message) => emit(`${token} error: ${message}`);
+
+		if (isColorDescriptionCallable(tokenValue)) {
+			checkAllRules(token, expandColor(tokenValue, theme), childEmit);
+		} else if (isColorDescriptionStatic(tokenValue)) {
+			checkAllRules(token, tokenValue, childEmit);
+		}
 	}
 }
 
@@ -26,7 +37,7 @@ export function lint(): string[] {
 	const messages: string[] = [];
 
 	for (const theme of themes) {
-		lintThemeObject(theme as any, (message) =>
+		lintThemeObject(theme as any, theme, (message) =>
 			messages.push(`${theme.themeName}: ${message}`),
 		);
 	}

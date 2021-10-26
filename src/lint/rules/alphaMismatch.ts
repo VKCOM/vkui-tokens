@@ -4,7 +4,10 @@ import {
 	isColorWithStates,
 } from '@/build/helpers/cssHelpers';
 import {expandColor} from '@/build/themeProcessors/expandColors/expandColors';
-import {ColorDescription} from '@/interfaces/general/colors';
+import {
+	ColorDescription,
+	ColorDescriptionStatic,
+} from '@/interfaces/general/colors';
 
 function isAlphaColor(color: ColorDescription): boolean {
 	if (isColorWithStates(color)) {
@@ -24,7 +27,7 @@ function isAlphaColor(color: ColorDescription): boolean {
 
 export function checkAlphaMismatch(
 	token: string,
-	value: unknown,
+	value: ColorDescriptionStatic,
 	emit: (message: string) => void,
 ): void {
 	if (!/color/i.test(token)) {

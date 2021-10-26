@@ -55,15 +55,15 @@ export function expandColor<
 	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
 >(
 	color: ColorDescription<T>,
-	colorScheme: Partial<ColorsDescription<T>>,
+	theme: Partial<ColorsDescription<T>>,
 ): ColorWithStates {
-	color = expandCallableColor(color, colorScheme);
+	color = expandCallableColor(color, theme);
 
 	if (isColorWithStates(color)) {
 		return color;
 	}
 
-	const colorState = colorStateMap[colorScheme.colorsScheme];
+	const colorState = colorStateMap[theme.colorsScheme];
 
 	return getColorWithStates({
 		colorArg: color,
