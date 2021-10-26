@@ -24,7 +24,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		...octaviusTheme.colors,
 		...vkLightColors.colors,
 		octaviusColorThreadFooterBackground: '#ebecef',
-		colorBackgroundSecondary: {
+		colorBackgroundSecondaryAlpha: {
 			normal: 'rgba(0, 28, 61, 0.05)',
 			hover: 'rgba(0, 28, 61, 0.09)',
 			active: 'rgba(0, 28, 61, 0.13)',
@@ -341,14 +341,14 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.08)',
 		},
 
-		colorButtonContrast: {
+		colorButtonContrastAlpha: {
 			normal: 'rgba(255, 255, 255, 0.12)',
 			hover: 'rgba(255, 255, 255, 0.2)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
 		octaviusColorThreadFooterBackground: '#2D2D2E',
-		colorBackgroundSecondary: {
+		colorBackgroundSecondaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.08)',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
