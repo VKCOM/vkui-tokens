@@ -99,8 +99,8 @@ export const lightColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
-		colorSceletonFrom: 'transparent',
-		colorSceletonTo: 'transparent',
+		colorSkeletonFromAlpha: 'transparent',
+		colorSkeletonToAlpha: 'transparent',
 	},
 };
 
@@ -194,8 +194,8 @@ export const darkColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
-		colorSceletonFrom: 'transparent',
-		colorSceletonTo: 'transparent',
+		colorSkeletonFromAlpha: 'transparent',
+		colorSkeletonToAlpha: 'transparent',
 	},
 };
 
