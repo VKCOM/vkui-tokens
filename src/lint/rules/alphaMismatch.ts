@@ -1,18 +1,10 @@
-import {ColorDescription, ColorWithStates} from '@/interfaces/general/colors';
-
-function isColorWithStates(value: unknown): value is ColorWithStates {
-	return (
-		value &&
-		typeof value === 'object' &&
-		typeof value['normal'] === 'string' &&
-		typeof value['hover'] === 'string' &&
-		typeof value['active'] === 'string'
-	);
-}
-
-function isColorDescription(value: unknown): value is ColorDescription {
-	return typeof value === 'string' || isColorWithStates(value);
-}
+import {
+	isColorDescriptionCallable,
+	isColorDescriptionStatic,
+	isColorWithStates,
+} from '@/build/helpers/cssHelpers';
+import {expandColor} from '@/build/themeProcessors/expandColors/expandColors';
+import {ColorDescription} from '@/interfaces/general/colors';
 
 function isAlphaColor(color: ColorDescription): boolean {
 	if (isColorWithStates(color)) {
@@ -35,7 +27,21 @@ export function checkAlphaMismatch(
 	value: unknown,
 	emit: (message: string) => void,
 ): void {
-	if (/color/i.test(token) && isColorDescription(value)) {
+	if (!/color/i.test(token)) {
+		return;
+	}
+
+	if (isColorDescriptionCallable(value)) {
+		const darkColor = expandColor(value, {colorsScheme: 'dark'});
+		const lightColor = expandColor(value, {colorsScheme: 'light'});
+
+		checkAlphaMismatch(token, darkColor, emit);
+		checkAlphaMismatch(token, lightColor, emit);
+
+		return;
+	}
+
+	if (isColorDescriptionStatic(value)) {
 		const isAlphaName = /Alpha|Overlay/i.test(token);
 		const isAlphaValue = isAlphaColor(value);
 

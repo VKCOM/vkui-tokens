@@ -1,3 +1,4 @@
+import {overlayColors} from '@/build/themeProcessors/expandColors/overlayColors';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 import {Elevation} from '@/interfaces/general/elevation';
 import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
@@ -465,11 +466,15 @@ export const lightTheme: ParadigmThemeDescription = {
 	colors: {
 		...lightThemeBase.colors,
 		colorRating: '#ffd400',
-		colorButtonContrast: {
+		colorButtonContrastAlpha: {
 			normal: 'rgba(255, 255, 255, 1)',
 			hover: 'rgba(255, 255, 255, 0.8)',
 			active: 'rgba(255, 255, 255, 0.6)',
 		},
+		colorButtonContrast: overlayColors<ParadigmThemeDescription['colors']>(
+			(theme) => theme.colors.colorBackgroundContent,
+			(theme) => theme.colors.colorButtonContrastAlpha,
+		),
 		colorThumbErrorBackground: 'rgba(237, 10, 52, 0.12)',
 	},
 
