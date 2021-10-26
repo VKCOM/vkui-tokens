@@ -19,7 +19,7 @@ function isAlphaColor(color: ColorDescription): boolean {
 	}
 
 	if (typeof color === 'string') {
-		return /^rgba\(/i.test(color);
+		return /(^rgba|^transparent$)\(/i.test(color);
 	}
 
 	return false;
