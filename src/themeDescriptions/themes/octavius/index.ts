@@ -71,8 +71,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
 		octaviusColorHeaderButtonBackground: {
 			normal: 'transparent',
-			hover: getRGBA('#00103D', 0.12),
-			active: getRGBA('#00103D', 0.24),
+			hover: toneOpacity('#00103D', 0.12),
+			active: toneOpacity('#00103D', 0.24),
 		},
 		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
 		octaviusColorHeaderTextSecondary: '#93969b',

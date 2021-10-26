@@ -1,4 +1,5 @@
 import {
+	ColorDescription,
 	ColorDescriptionCallable,
 	ColorDescriptionStatic,
 	ColorWithStates,
@@ -36,17 +37,36 @@ export function isColorDescriptionStatic(
 	return typeof value === 'string' || isColorWithStates(value);
 }
 
-export function getRGBA(color: string, opacity: number): string {
-	return `rgba(${hexToRgb(color)}, ${opacity})`;
-}
-
-export function toneOpacity(
-	color: string | ColorWithStates,
+/**
+ * @deprecated
+ * use toneOpacity
+ * TODO: remove
+ */
+export function getRGBA(
+	color: ColorDescription,
 	opacity: number,
-): string {
-	if (typeof color === 'string') {
-		return getRGBA(color, opacity);
+): ColorDescription {
+	if (isColorDescriptionStatic(color)) {
+		if (isColorWithStates(color)) {
+			return `rgba(${hexToRgb(color.normal)}, ${opacity})`;
+		}
+
+		return `rgba(${hexToRgb(color)}, ${opacity})`;
 	}
 
-	return getRGBA(color.normal, opacity);
+	return (theme) => {
+		return getRGBA(color(theme), opacity);
+	};
+}
+
+export function toneOpacity(color: string, opacity: number): string;
+export function toneOpacity(
+	color: ColorDescription,
+	opacity: number,
+): ColorDescription;
+export function toneOpacity(
+	color: ColorDescription,
+	opacity: number,
+): ColorDescription {
+	return getRGBA(color, opacity);
 }
