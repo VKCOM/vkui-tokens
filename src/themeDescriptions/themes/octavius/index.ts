@@ -234,11 +234,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		colorBgPlaceholder: '#000000',
 		colorBgPromo: '#303030',
 		octaviusColorThreadFooterBackground: '#303030',
-		colorBackgroundSecondary: {
-			normal: 'rgba(255, 255, 255, 0.08)',
-			hover: 'rgba(255, 255, 255, 0.16)',
-			active: 'rgba(255, 255, 255, 0.2)',
-		},
 
 		octaviusColorPortalMenuBackground: '#19191A',
 		octaviusColorSidebarItemBackground: {
