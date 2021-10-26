@@ -19,7 +19,7 @@ function isAlphaColor(color: ColorDescription): boolean {
 	}
 
 	if (typeof color === 'string') {
-		return /(^rgba|^transparent$)\(/i.test(color);
+		return color === 'transparent' || /^rgba\(/i.test(color);
 	}
 
 	return false;
@@ -45,7 +45,7 @@ export function checkAlphaMismatch(
 	}
 
 	if (isColorDescriptionStatic(value)) {
-		const isAlphaName = /Alpha|Overlay/i.test(token);
+		const isAlphaName = /Alpha|Overlay|Transparent/i.test(token);
 		const isAlphaValue = isAlphaColor(value);
 
 		if (isAlphaName !== isAlphaValue) {
