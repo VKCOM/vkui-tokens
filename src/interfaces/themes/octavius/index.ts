@@ -100,7 +100,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
-	octaviusColorButtonBackground: ColorDescription;
+	octaviusColorButtonBackgroundAlpha: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
@@ -109,11 +109,11 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
-	octaviusColorHeaderButtonBackground: ColorDescription;
+	octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
-	octaviusColorHeaderFilterText: ColorDescription;
+	octaviusColorHeaderFilterTextAlpha: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
@@ -123,25 +123,25 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchTextCollapsed: ColorDescription;
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
-	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
+	octaviusColorHeaderSearchChipBorderEditableAlpha: ColorDescription;
 
 	// Токены сайдбара
-	octaviusColorSidebarItemBackground: ColorDescription;
+	octaviusColorSidebarItemBackgroundAlpha: ColorDescription;
 	octaviusColorSidebarItemIconActive: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
-	octaviusColorSidebarItemIconSecondary: ColorDescription;
+	octaviusColorSidebarItemIconSecondaryAlpha: ColorDescription;
 	octaviusColorSidebarItemTextActive: ColorDescription;
 	octaviusColorSidebarItemTextPrimary: ColorDescription;
-	octaviusColorSidebarItemTextSecondary: ColorDescription;
+	octaviusColorSidebarItemTextSecondaryAlpha: ColorDescription;
 	octaviusColorSidebarButtonIcon: ColorDescription;
 	octaviusColorSidebarButtonText: ColorDescription;
 	octaviusColorSidebarButtonBackground: ColorDescription;
-	octaviusColorSidebarCounterBackground: ColorDescription;
+	octaviusColorSidebarCounterBackgroundAlpha: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
-	octaviusColorSidebarScrollbar: ColorDescription;
+	octaviusColorSidebarScrollbarAlpha: ColorDescription;
 	octaviusColorSidebarItemIcon: ColorDescription;
 	octaviusColorSidebarItemText: ColorDescription;
-	octaviusColorSidebarItemButtonBackground: ColorDescription;
+	octaviusColorSidebarItemButtonBackgroundAlpha: ColorDescription;
 
 	octaviusColorSidebarShortItemIcon: ColorDescription;
 	octaviusColorSidebarShortItemText: ColorDescription;
@@ -158,7 +158,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorPortalMenuBackground: ColorDescription;
 
 	// Контент страницы
-	octaviusColorContentScrollbar: ColorDescription;
+	octaviusColorContentScrollbarAlpha: ColorDescription;
 
 	// Токены письма
 	octaviusColorLetterListTextUnread: ColorDescription;
@@ -206,7 +206,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	 * @see octaviusShadowTextBackgroundContrast
 	 */
 	octaviusColorEmptyStateText: ColorDescription;
-	octaviusColorBackgroundAccentToned: ColorDescription;
+	octaviusColorBackgroundAccentTonedAlpha: ColorDescription;
 	octaviusColorLayoutBorder: ColorDescription;
 	octaviusColorLayoutLetterBorder: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
