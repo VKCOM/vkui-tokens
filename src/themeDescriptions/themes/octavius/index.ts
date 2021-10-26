@@ -46,8 +46,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorPaletteViolet1: '#6c00ff',
 		colorPaletteViolet2: '#ae73ff',
 		colorAlert: '#c1341b',
-		colorBgPlaceholder: '#ffffff',
-		colorBgPromo: '#EBEEF5',
+		octaviusColorPlaceholderBackground: '#ffffff',
+		octaviusColorPromoBackground: '#EBEEF5',
 		octaviusColorThreadFooterBackground: '#ebecef',
 		colorBackgroundSecondary: '#F0F1F3',
 
@@ -232,8 +232,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		...darkTheme.colors,
 		colorBackgroundThumbnail: '#1F1F1F',
 		colorBackgroundThumbnailAlpha: 'rgba(255, 255, 255, 0.08)',
-		colorBgPlaceholder: '#000000',
-		colorBgPromo: '#303030',
+		octaviusColorPlaceholderBackground: '#000000',
+		octaviusColorPromoBackground: '#303030',
 		octaviusColorThreadFooterBackground: '#303030',
 
 		octaviusColorPortalMenuBackground: '#19191A',
