@@ -94,8 +94,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorPaletteViolet1: ColorDescription;
 	colorPaletteViolet2: ColorDescription;
 	colorAlert: ColorDescription;
-	colorBgPlaceholder: ColorDescription;
-	colorBgPromo: ColorDescription;
 
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
@@ -214,6 +212,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
 	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
 	octaviusColorNotificationBorder: ColorDescription;
+	octaviusColorPlaceholderBackgroundAlpha: ColorDescription;
+	octaviusColorPromoBackgroundAlpha: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
