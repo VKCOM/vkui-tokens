@@ -730,7 +730,7 @@ export const darkTheme: ParadigmThemeDescription = {
 	colors: {
 		...lightTheme.colors,
 		...darkThemeBase.colors,
-		colorButtonContrast: {
+		colorButtonContrastAlpha: {
 			normal: 'rgba(255, 255, 255, 0.12)',
 			hover: 'rgba(255, 255, 255, 0.2)',
 			active: 'rgba(255, 255, 255, 0.24)',
