@@ -1,15 +1,7 @@
-import {
-	isColorDescriptionCallable,
-	isColorDescriptionStatic,
-	isColorWithStates,
-} from '@/build/helpers/cssHelpers';
-import {expandColor} from '@/build/themeProcessors/expandColors/expandColors';
-import {
-	ColorDescription,
-	ColorDescriptionStatic,
-} from '@/interfaces/general/colors';
+import {isColorWithStates} from '@/build/helpers/cssHelpers';
+import {ColorDescriptionStatic} from '@/interfaces/general/colors';
 
-function isAlphaColor(color: ColorDescription): boolean {
+function isAlphaColor(color: ColorDescriptionStatic): boolean {
 	if (isColorWithStates(color)) {
 		return (
 			isAlphaColor(color.normal) &&
@@ -18,11 +10,7 @@ function isAlphaColor(color: ColorDescription): boolean {
 		);
 	}
 
-	if (typeof color === 'string') {
-		return color === 'transparent' || /^rgba\(/i.test(color);
-	}
-
-	return false;
+	return color === 'transparent' || /^rgba\(/i.test(color);
 }
 
 export function checkAlphaMismatch(
@@ -34,26 +22,14 @@ export function checkAlphaMismatch(
 		return;
 	}
 
-	if (isColorDescriptionCallable(value)) {
-		const darkColor = expandColor(value, {colorsScheme: 'dark'});
-		const lightColor = expandColor(value, {colorsScheme: 'light'});
+	const isAlphaName = /Alpha|Overlay|Transparent/i.test(token);
+	const isAlphaValue = isAlphaColor(value);
 
-		checkAlphaMismatch(token, darkColor, emit);
-		checkAlphaMismatch(token, lightColor, emit);
-
-		return;
-	}
-
-	if (isColorDescriptionStatic(value)) {
-		const isAlphaName = /Alpha|Overlay|Transparent/i.test(token);
-		const isAlphaValue = isAlphaColor(value);
-
-		if (isAlphaName !== isAlphaValue) {
-			emit(
-				`Color token type mismatch: ${
-					isAlphaName ? 'alpha' : 'opaque'
-				} token name but ${isAlphaValue ? 'alpha' : 'opaque'} value`,
-			);
-		}
+	if (isAlphaName !== isAlphaValue) {
+		emit(
+			`Color token type mismatch: ${
+				isAlphaName ? 'alpha' : 'opaque'
+			} token name but ${isAlphaValue ? 'alpha' : 'opaque'} value`,
+		);
 	}
 }
