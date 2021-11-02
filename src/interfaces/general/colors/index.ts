@@ -48,12 +48,7 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundTertiary: ColorDescription;
 	colorBackground: ColorDescription;
 	colorBackgroundContrast: ColorDescription;
-	colorCounterAccentBackground: ColorDescription;
-	colorCounterAccentText: ColorDescription;
-	colorCounterProminentBackground: ColorDescription;
-	colorCounterProminentText: ColorDescription;
-	colorCounterMutedBackground: ColorDescription;
-	colorCounterMutedText: ColorDescription;
+	colorBackgroundContrastSecondaryAlpha: ColorDescription;
 	colorBackgroundWarning: ColorDescription;
 	colorBackgroundNegative: ColorDescription;
 	colorIconNegative: ColorDescription;
