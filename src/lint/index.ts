@@ -33,10 +33,10 @@ function lintThemeObject(
 	}
 }
 
-export function lint(): string[] {
+export function lint(themeList: any = themes): string[] {
 	const messages: string[] = [];
 
-	for (const theme of themes) {
+	for (const theme of themeList) {
 		lintThemeObject(theme as any, theme, (message) =>
 			messages.push(`${theme.themeName}: ${message}`),
 		);
