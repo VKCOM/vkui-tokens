@@ -127,10 +127,10 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorSidebarItemBackgroundAlpha: ColorDescription;
 	octaviusColorSidebarItemIconActive: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
-	octaviusColorSidebarItemIconSecondaryAlpha: ColorDescription;
+	octaviusColorSidebarItemIconSecondary: ColorDescription;
 	octaviusColorSidebarItemTextActive: ColorDescription;
 	octaviusColorSidebarItemTextPrimary: ColorDescription;
-	octaviusColorSidebarItemTextSecondaryAlpha: ColorDescription;
+	octaviusColorSidebarItemTextSecondary: ColorDescription;
 	octaviusColorSidebarButtonIcon: ColorDescription;
 	octaviusColorSidebarButtonText: ColorDescription;
 	octaviusColorSidebarButtonBackground: ColorDescription;

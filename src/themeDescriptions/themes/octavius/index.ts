@@ -169,8 +169,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorEmptyStateText: '#333333',
-		octaviusColorLayoutBorderAlpha: lightTheme.colors.colorSeparatorPrimaryAlpha,
-		octaviusColorLayoutLetterBorderAlpha: lightTheme.colors.colorSeparatorPrimaryAlpha,
+		octaviusColorLayoutBorderAlpha:
+			lightTheme.colors.colorSeparatorPrimaryAlpha,
+		octaviusColorLayoutLetterBorderAlpha:
+			lightTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorLetterPreviewBackgroundPrimary: '#F9F9FA',
 		octaviusColorLetterPreviewBackgroundSecondary: '#F3F3F5',
@@ -378,9 +380,11 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.64)',
 			active: 'rgba(255, 255, 255, 0.4)',
 		},
-		octaviusColorHeaderFilterTextAlpha: lightColors.colors.colorIconMediumAlpha,
+		octaviusColorHeaderFilterTextAlpha:
+			lightColors.colors.colorIconMediumAlpha,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
-		octaviusColorHeaderSearchChipBorderEditableAlpha: lightTheme.colors.colorFieldBorderAlpha,
+		octaviusColorHeaderSearchChipBorderEditableAlpha:
+			lightTheme.colors.colorFieldBorderAlpha,
 		octaviusColorHeaderButtonBackgroundAlpha: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.64)',
