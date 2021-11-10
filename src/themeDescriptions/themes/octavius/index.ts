@@ -3,6 +3,7 @@ import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
 	darkTheme,
 	darkThemeElevation,
+	lightColors,
 	lightTheme,
 } from '@/themeDescriptions/base/paradigm';
 
@@ -31,18 +32,18 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorPaletteRed2: '#eb1981',
 		colorPaletteRed3: '#ff71bb',
 		colorPaletteOrange1: '#ff8b2e',
-		colorPaletteOrange2Alpha: getRGBA('#FF9E00', 0.12),
+		colorPaletteOrange1Alpha: getRGBA('#FF9E00', 0.12),
 		colorPaletteYellow1: '#ffc311',
 		colorPaletteGreen1: '#aee113',
 		colorPaletteGreen2: '#59c354',
 		colorPaletteGreen3: '#37eb94',
 		colorPaletteGreen4: '#00b1b3',
-		colorPaletteGreen5Alpha: getRGBA('#5CBA38', 0.12),
-		colorPaletteGreen6Alpha: getRGBA('#00E6B4', 0.08),
+		colorPaletteGreen1Alpha: getRGBA('#5CBA38', 0.12),
+		colorPaletteGreen2Alpha: getRGBA('#00E6B4', 0.08),
 		colorPaletteBlue1: '#2951ff',
 		colorPaletteBlue2: '#00abf2',
 		colorPaletteBlue3: '#26dfdf',
-		colorPaletteBlue4Alpha: getRGBA('#005FF9', 0.12),
+		colorPaletteBlue1Alpha: getRGBA('#005FF9', 0.12),
 		colorPaletteViolet1: '#6c00ff',
 		colorPaletteViolet2: '#ae73ff',
 		colorAlert: '#c1341b',
@@ -113,8 +114,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemIcon: '#333333',
 		octaviusColorSidebarItemText: '#333333',
 		octaviusColorSidebarItemButtonBackgroundAlpha: 'rgba(0, 16, 61, 0.08)',
-		octaviusColorSidebarItemIconSecondaryAlpha: 'rgba(51, 51, 51, 0.64)',
-		octaviusColorSidebarItemTextSecondaryAlpha: 'rgba(51, 51, 51, 0.64)',
+		octaviusColorSidebarItemIconSecondary: '#87898F',
+		octaviusColorSidebarItemTextSecondary: '#87898F',
 
 		octaviusColorSidebarShortItemIcon: '#333333',
 		octaviusColorSidebarShortItemText: '#333333',
@@ -159,8 +160,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorListTextUnread: lightTheme.colors.colorTextPrimary,
 		octaviusColorListTextPrimary: lightTheme.colors.colorTextPrimary,
 		octaviusColorListIconPrimary: lightTheme.colors.colorIconPrimary,
-		octaviusColorListLetterSeparator:
-			lightTheme.colors.colorSeparatorPrimary,
+		octaviusColorListLetterSeparatorAlpha:
+			lightTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterAdvBackground: '#F0F5FF',
 		octaviusColorLetterListTextUnread: '#2c2d2e',
 
@@ -168,8 +169,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorEmptyStateText: '#333333',
-		octaviusColorLayoutBorder: '#E0E2E8',
-		octaviusColorLayoutLetterBorder: '#E0E2E8',
+		octaviusColorLayoutBorderAlpha: lightTheme.colors.colorSeparatorPrimaryAlpha,
+		octaviusColorLayoutLetterBorderAlpha: lightTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorLetterPreviewBackgroundPrimary: '#F9F9FA',
 		octaviusColorLetterPreviewBackgroundSecondary: '#F3F3F5',
@@ -273,8 +274,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemText: '#E7E8EA',
 		octaviusColorSidebarItemTextActive: '#ffffff',
 		octaviusColorSidebarItemIconActive: '#ffffff',
-		octaviusColorSidebarItemTextSecondaryAlpha: 'rgba(231, 232, 234, 0.64)',
-		octaviusColorSidebarItemIconSecondaryAlpha: 'rgba(231, 232, 234, 0.64)',
+		octaviusColorSidebarItemTextSecondary: '#8C8E94',
+		octaviusColorSidebarItemIconSecondary: '#8C8E94',
 
 		octaviusColorSidebarShortItemIcon: '#E7E8EA',
 		octaviusColorSidebarShortItemText: '#E7E8EA',
@@ -336,14 +337,14 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorListLetterBackground:
 			darkTheme.colors.colorBackgroundContent,
-		octaviusColorListLetterSeparator:
+		octaviusColorListLetterSeparatorAlpha:
 			darkTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterAdvBackground: '#151515',
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,
-		octaviusColorLayoutBorder: 'transparent',
-		octaviusColorLayoutLetterBorder: 'rgba(0, 0, 0, 0.4)',
+		octaviusColorLayoutBorderAlpha: 'transparent',
+		octaviusColorLayoutLetterBorderAlpha: 'rgba(0, 0, 0, 0.4)',
 		octaviusColorEmptyStateTextLink: '#E7E8EA',
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
@@ -377,10 +378,14 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.64)',
 			active: 'rgba(255, 255, 255, 0.4)',
 		},
-		octaviusColorHeaderFilterTextAlpha: '#919399',
+		octaviusColorHeaderFilterTextAlpha: lightColors.colors.colorIconMediumAlpha,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
-		octaviusColorHeaderSearchChipBorderEditableAlpha: '#FFFFFF',
-		octaviusColorHeaderButtonBackgroundAlpha: '#FFFFFF',
+		octaviusColorHeaderSearchChipBorderEditableAlpha: lightTheme.colors.colorFieldBorderAlpha,
+		octaviusColorHeaderButtonBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.64)',
+			active: 'rgba(255, 255, 255, 0.4)',
+		},
 	},
 
 	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',
