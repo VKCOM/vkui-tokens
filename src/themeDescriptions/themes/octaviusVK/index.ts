@@ -85,9 +85,9 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			vkLightColors.colors.colorTextPrimary,
 		octaviusColorSidebarItemIconActive:
 			vkLightColors.colors.colorIconPrimary,
-		octaviusColorSidebarItemTextSecondaryAlpha:
+		octaviusColorSidebarItemTextSecondary:
 			vkLightColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondaryAlpha: 'rgba(63, 138, 224, 0.64)',
+		octaviusColorSidebarItemIconSecondary: vkLightColors.colors.colorIconAccent,
 
 		octaviusColorSidebarShortItemTextActive:
 			vkLightColors.colors.colorTextPrimary,
@@ -98,8 +98,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorSidebarShortItemIconSecondary:
 			vkLightColors.colors.colorIconSecondary,
 
-		octaviusColorHeaderSearchBackground: 'rgba(0, 16, 61, 0.07)',
-		octaviusColorHeaderSearchBackgroundCollapsed: 'rgba(0, 16, 61, 0.07)',
+		octaviusColorHeaderSearchBackground: vkLightColors.colors.colorBackground,
+		octaviusColorHeaderSearchBackgroundCollapsed: vkLightColors.colors.colorBackground,
 		octaviusColorHeaderSearchChipBackground: {
 			normal: '#FFFFFF',
 			hover: 'rgba(255, 255, 255, 0.64)',
@@ -117,16 +117,16 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		},
 		octaviusColorSidebarItemIconPrimary:
 			vkLightColors.colors.colorIconAccent,
-		octaviusColorSidebarCounterBackgroundAlpha: '#AEB7C2',
+		octaviusColorSidebarCounterBackgroundAlpha: vkLightColors.colors.colorIconTertiaryAlpha,
 		octaviusColorSidebarCounterText: '#FFFFFF',
 		octaviusColorSidebarScrollbarAlpha: 'rgba(0, 16, 61, 0.08)',
 
-		octaviusColorContentScrollbarAlpha: '#C4C8CC',
+		octaviusColorContentScrollbarAlpha: vkLightColors.colors.colorIconTertiaryAlpha,
 
 		octaviusColorDatasetBackground:
 			octaviusTheme.colors.colorBackgroundContent,
-		octaviusColorListLetterSeparator:
-			vkLightColors.colors.colorSeparatorPrimary,
+		octaviusColorListLetterSeparatorAlpha:
+			vkLightColors.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterBackground: {
 			normal: '#ffffff',
 			hover: '#E4E5E9',
@@ -393,14 +393,9 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			vkDarkColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkDarkColors.colors.colorBackgroundAccent,
 
-		octaviusColorHeaderSearchBackground: 'rgba(255, 255, 255, 0.07)',
-		octaviusColorHeaderSearchBackgroundCollapsed:
-			'rgba(255, 255, 255, 0.07)',
-		octaviusColorHeaderSearchChipBackground: {
-			normal: 'rgba(255, 255, 255, 0.08)',
-			hover: 'rgba(255, 255, 255, 0.12)',
-			active: 'rgba(255, 255, 255, 0.16)',
-		},
+		octaviusColorHeaderSearchBackground: vkDarkColors.colors.colorBackground,
+		octaviusColorHeaderSearchBackgroundCollapsed: vkDarkColors.colors.colorBackground,
+		octaviusColorHeaderSearchChipBackground: vkDarkColors.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
 		octaviusColorHeaderSearchChipBorderEditableAlpha:
 			'rgba(255, 255, 255, .48)',
@@ -424,7 +419,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorSidebarItemIconPrimary:
 			vkDarkColors.colors.colorIconPrimary,
-		octaviusColorSidebarCounterBackgroundAlpha: '#000000',
+		octaviusColorSidebarCounterBackgroundAlpha: vkDarkColors.colors.colorIconTertiaryAlpha,
 		octaviusColorSidebarCounterText: '#e1e3e6',
 		octaviusColorSidebarScrollbarAlpha: 'rgba(255, 255, 255, 0.12)',
 
@@ -432,8 +427,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorDatasetBackground:
 			vkDarkColors.colors.colorBackgroundContent,
-		octaviusColorListLetterSeparator:
-			vkDarkColors.colors.colorSeparatorPrimary,
+		octaviusColorListLetterSeparatorAlpha:
+			vkDarkColors.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterBackground: {
 			normal: '#19191A',
 			hover: '#2B2B2C',
@@ -468,17 +463,17 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
 
-		octaviusColorSidebarItemTextSecondaryAlpha:
+		octaviusColorSidebarItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,
-		octaviusColorSidebarItemIconSecondaryAlpha:
+		octaviusColorSidebarItemIconSecondary:
 			vkDarkColors.colors.colorIconSecondary,
 		octaviusColorSidebarShortItemTextSecondary:
 			vkDarkColors.colors.colorTextSecondary,
 		octaviusColorSidebarShortItemIconSecondary:
 			vkDarkColors.colors.colorIconSecondary,
 
-		octaviusColorLayoutBorder: 'transparent',
-		octaviusColorLayoutLetterBorder: 'rgba(0, 0, 0, 0.4)',
+		octaviusColorLayoutBorderAlpha: 'transparent',
+		octaviusColorLayoutLetterBorderAlpha: 'rgba(0, 0, 0, 0.4)',
 
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',

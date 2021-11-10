@@ -8,7 +8,7 @@ const fontWeightAccent1 = 400;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 600;
 const fontWeightBase1 = 400;
-const fontWeightBase2 = 700;
+const fontWeightBase2 = 500;
 const fontWeightBase3 = 600;
 
 export const lightColors: ColorsDescription = {
@@ -52,7 +52,7 @@ export const lightColors: ColorsDescription = {
 		colorIconTertiaryAlpha: 'rgba(0, 0, 0, 0.24)',
 		colorImageBorderAlpha: 'rgba(0, 0, 0, 0.08)',
 		colorWriteBarInputBackground: '#F2F3F5',
-		colorWriteBarInputBorderAlpha: '#E1E3E6',
+		colorWriteBarInputBorderAlpha: 'rgba(0, 0, 0, 0.08)',
 		colorTrackBackground: '#E1E3E6',
 		colorTrackBuffer: '#A0BFE4',
 		colorBackgroundModal: '#FFFFFF',
@@ -294,7 +294,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 14,
 			letterSpacing: '0.2px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -313,7 +313,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 14,
 			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -332,7 +332,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 12,
 			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},

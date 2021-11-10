@@ -79,18 +79,18 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorPaletteRed2: ColorDescription;
 	colorPaletteRed3: ColorDescription;
 	colorPaletteOrange1: ColorDescription;
-	colorPaletteOrange2Alpha: ColorDescription;
+	colorPaletteOrange1Alpha: ColorDescription;
 	colorPaletteYellow1: ColorDescription;
 	colorPaletteGreen1: ColorDescription;
 	colorPaletteGreen2: ColorDescription;
 	colorPaletteGreen3: ColorDescription;
 	colorPaletteGreen4: ColorDescription;
-	colorPaletteGreen5Alpha: ColorDescription;
-	colorPaletteGreen6Alpha: ColorDescription;
+	colorPaletteGreen1Alpha: ColorDescription;
+	colorPaletteGreen2Alpha: ColorDescription;
 	colorPaletteBlue1: ColorDescription;
 	colorPaletteBlue2: ColorDescription;
 	colorPaletteBlue3: ColorDescription;
-	colorPaletteBlue4Alpha: ColorDescription;
+	colorPaletteBlue1Alpha: ColorDescription;
 	colorPaletteViolet1: ColorDescription;
 	colorPaletteViolet2: ColorDescription;
 	colorAlert: ColorDescription;
@@ -186,7 +186,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены списка писем
 	octaviusColorListLetterBackground: ColorDescription;
-	octaviusColorListLetterSeparator: ColorDescription;
+	octaviusColorListLetterSeparatorAlpha: ColorDescription;
 
 	/**
 	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
@@ -205,8 +205,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	 */
 	octaviusColorEmptyStateText: ColorDescription;
 	octaviusColorBackgroundAccentTonedAlpha: ColorDescription;
-	octaviusColorLayoutBorder: ColorDescription;
-	octaviusColorLayoutLetterBorder: ColorDescription;
+	octaviusColorLayoutBorderAlpha: ColorDescription;
+	octaviusColorLayoutLetterBorderAlpha: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
 	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
 	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
