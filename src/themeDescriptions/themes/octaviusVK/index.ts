@@ -73,7 +73,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorHeaderTextSecondary:
 			vkLightColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkLightColors.colors.colorBackgroundAccent,
-		octaviusColorHeaderFilterTextAlpha: '#818C99',
+		octaviusColorHeaderFilterTextAlpha:
+			vkLightColors.colors.colorIconMediumAlpha,
 
 		octaviusColorSidebarItemText: '#333333',
 		octaviusColorSidebarItemIcon: '#3F8AE0',
@@ -98,8 +99,10 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorSidebarShortItemIconSecondary:
 			vkLightColors.colors.colorIconSecondary,
 
-		octaviusColorHeaderSearchBackground: vkLightColors.colors.colorBackground,
-		octaviusColorHeaderSearchBackgroundCollapsed: vkLightColors.colors.colorBackground,
+		octaviusColorHeaderSearchBackground:
+			vkLightColors.colors.colorBackground,
+		octaviusColorHeaderSearchBackgroundCollapsed:
+			vkLightColors.colors.colorBackground,
 		octaviusColorHeaderSearchChipBackground: {
 			normal: '#FFFFFF',
 			hover: 'rgba(255, 255, 255, 0.64)',
@@ -117,11 +120,13 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		},
 		octaviusColorSidebarItemIconPrimary:
 			vkLightColors.colors.colorIconAccent,
-		octaviusColorSidebarCounterBackgroundAlpha: vkLightColors.colors.colorIconTertiaryAlpha,
+		octaviusColorSidebarCounterBackgroundAlpha:
+			vkLightColors.colors.colorIconTertiaryAlpha,
 		octaviusColorSidebarCounterText: '#FFFFFF',
 		octaviusColorSidebarScrollbarAlpha: 'rgba(0, 16, 61, 0.08)',
 
-		octaviusColorContentScrollbarAlpha: vkLightColors.colors.colorIconTertiaryAlpha,
+		octaviusColorContentScrollbarAlpha:
+			vkLightColors.colors.colorIconTertiaryAlpha,
 
 		octaviusColorDatasetBackground:
 			octaviusTheme.colors.colorBackgroundContent,
@@ -393,9 +398,12 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			vkDarkColors.colors.colorTextSecondary,
 		octaviusColorHeaderProgress: vkDarkColors.colors.colorBackgroundAccent,
 
-		octaviusColorHeaderSearchBackground: vkDarkColors.colors.colorBackground,
-		octaviusColorHeaderSearchBackgroundCollapsed: vkDarkColors.colors.colorBackground,
-		octaviusColorHeaderSearchChipBackground: vkDarkColors.colors.colorBackgroundModal,
+		octaviusColorHeaderSearchBackground:
+			vkDarkColors.colors.colorBackground,
+		octaviusColorHeaderSearchBackgroundCollapsed:
+			vkDarkColors.colors.colorBackground,
+		octaviusColorHeaderSearchChipBackground:
+			vkDarkColors.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
 		octaviusColorHeaderSearchChipBorderEditableAlpha:
 			'rgba(255, 255, 255, .48)',
