@@ -78,7 +78,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentGreen: '#4BB34B',
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
-		colorAccentViolet: '#792EC0',,
+		colorAccentViolet: '#792EC0',
 		colorAccentSecondary: '#3F8AE0',
 		colorTextLinkVisited: '#4986CC',
 		colorTextContrast: '#FFFFFF',
