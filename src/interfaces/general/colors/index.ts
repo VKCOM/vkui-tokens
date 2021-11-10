@@ -93,8 +93,6 @@ export interface ColorsDescriptionStruct {
 	colorAccentOrange: ColorDescription;
 	colorAccentPurple: ColorDescription;
 	colorAccentViolet: ColorDescription;
-	colorSkeletonFrom: ColorDescription;
-	colorSkeletonTo: ColorDescription;
 	colorAccentSecondary: ColorDescription;
 	colorTextLinkVisited: ColorDescription;
 	colorTextContrast: ColorDescription;
@@ -112,8 +110,6 @@ export interface ColorsDescriptionStruct {
 	colorAvatarOverlay: ColorDescription;
 	colorOverlayPrimary: ColorDescription;
 	colorTransparent: ColorDescription;
-	colorSkeletonFromAlpha: ColorDescription;
-	colorSkeletonToAlpha: ColorDescription;
 }
 
 export type Colors = {

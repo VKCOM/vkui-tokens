@@ -78,9 +78,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentGreen: '#4BB34B',
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
-		colorAccentViolet: '#792EC0',
-		colorSkeletonFrom: '#F5F5F5',
-		colorSkeletonTo: '#E1E3E6',
+		colorAccentViolet: '#792EC0',,
 		colorAccentSecondary: '#3F8AE0',
 		colorTextLinkVisited: '#4986CC',
 		colorTextContrast: '#FFFFFF',
@@ -94,8 +92,6 @@ export const lightColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
-		colorSkeletonFromAlpha: 'transparent',
-		colorSkeletonToAlpha: 'transparent',
 	},
 };
 
@@ -169,8 +165,6 @@ export const darkColors: ColorsDescription = {
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
-		colorSkeletonFrom: '#F5F5F5',
-		colorSkeletonTo: '#E1E3E6',
 		colorAccentSecondary: '#3F8AE0',
 		colorTextLinkVisited: '#4986CC',
 		colorTextContrast: '#FFFFFF',
@@ -184,8 +178,6 @@ export const darkColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
-		colorSkeletonFromAlpha: 'transparent',
-		colorSkeletonToAlpha: 'transparent',
 	},
 };
 
