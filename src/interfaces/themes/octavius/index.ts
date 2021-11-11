@@ -67,7 +67,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorBackgroundThumbnail: ColorDescription;
 	colorBackgroundThumbnailAlpha: ColorDescription;
 	colorIconAccent: ColorDescription;
-	colorBgContrast: ColorDescription;
 	colorSocialVk: ColorDescription;
 	colorSocialOk: ColorDescription;
 	colorSocialMir: ColorDescription;

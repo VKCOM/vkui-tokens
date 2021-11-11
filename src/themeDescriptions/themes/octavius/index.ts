@@ -20,7 +20,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		...lightTheme.colors,
 		colorBackgroundThumbnail: '#EBECEF',
 		colorBackgroundThumbnailAlpha: 'rgba(0, 16, 61, 0.08)',
-		colorBgContrast: '#2C2D2E',
 		colorSocialVk: '#2787F5',
 		colorSocialOk: '#ee8208',
 		colorSocialMir: '#117eda',
