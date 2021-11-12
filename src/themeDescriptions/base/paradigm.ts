@@ -96,8 +96,6 @@ export const lightColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
-		colorSkeletonFromAlpha: 'transparent',
-		colorSkeletonToAlpha: 'transparent',
 	},
 };
 
@@ -184,8 +182,6 @@ export const darkColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
-		colorSkeletonFromAlpha: 'transparent',
-		colorSkeletonToAlpha: 'transparent',
 	},
 };
 
