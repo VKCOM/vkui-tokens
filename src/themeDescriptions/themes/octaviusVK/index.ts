@@ -39,11 +39,6 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		colorThumbErrorBackground: `rgba(230, 70, 70, 0.12)`,
 		colorBackgroundAccentAlternative:
 			vkLightColors.colors.colorBackgroundAccent,
-		colorBackgroundContent: {
-			normal: '#ffffff',
-			hover: '#E4E5E9',
-			active: '#DADCE2',
-		},
 
 		octaviusColorBackground: '#EDEEF0',
 		octaviusColorBackgroundAccentToned: toneOpacity(
@@ -374,12 +369,6 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 
 		colorBackgroundAccentAlternative:
 			vkDarkColors.colors.colorBackgroundAccent,
-
-		colorBackgroundContent: {
-			normal: '#161616',
-			hover: '#2B2B2C',
-			active: '#353535',
-		},
 
 		octaviusColorBackground: '#000000',
 		octaviusColorBackgroundAccentToned: toneOpacity(
