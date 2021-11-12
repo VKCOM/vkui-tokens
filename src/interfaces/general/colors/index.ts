@@ -112,8 +112,6 @@ export interface ColorsDescriptionStruct {
 	colorAvatarOverlay: ColorDescription;
 	colorOverlayPrimary: ColorDescription;
 	colorTransparent: ColorDescription;
-	colorSkeletonFromAlpha: ColorDescription;
-	colorSkeletonToAlpha: ColorDescription;
 }
 
 export type Colors = {
