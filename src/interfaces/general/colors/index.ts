@@ -105,6 +105,7 @@ export interface ColorsDescriptionStruct {
 	// цвет, который на тёмной теме становится тёмным
 	// нужен для иконок на primary accent кнопках
 	colorIconContrastThemed: ColorDescription;
+	colorLinkContrast: ColorDescription;
 	colorBackgroundPositive: ColorDescription;
 	colorIconPositive: ColorDescription;
 	colorTextPositive: ColorDescription;
