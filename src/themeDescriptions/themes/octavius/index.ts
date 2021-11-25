@@ -121,7 +121,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarComposeButtonText: '#2c2d2e',
 		octaviusColorSidebarComposeButtonIcon: '#2c2d2e',
 
-		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.16)',
+		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.08)',
 
 		octaviusColorIconUnread: '#005FF9',
 		octaviusColorIconFavorite: '#fc2c38',
