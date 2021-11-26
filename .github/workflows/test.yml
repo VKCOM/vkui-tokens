@@ -2,6 +2,7 @@ name: 'Test commit'
 
 on:
   - push
+  - pull_request
 
 jobs:
   lint:
