@@ -65,12 +65,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 		colorTextSecondary: '#93969B',
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
-		colorBgThumbnail: {
-			normal: 'rgba(0, 16, 61, 0.08)',
-			hover: 'rgba(0, 16, 61, 0.12)',
-			active: 'rgba(0, 16, 61, 0.16)',
-		},
-		colorFieldBorder: {
+		colorFieldBorderAlpha: {
 			normal: 'transparent',
 			hover: 'transparent',
 			active: 'transparent',
@@ -232,11 +227,11 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 	colors: {
 		...calendarTheme.colors,
 		...darkTheme.colors,
-		colorTextPrimary: 'rgba(255, 255, 255, 0.9)',
-		colorTextSecondary: 'rgba(255, 255, 255, 0.5)',
+		colorTextPrimary: '#E7E8EA',
+		colorTextSecondary: '#8C8E94',
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
-		colorFieldBorder: {
+		colorFieldBorderAlpha: {
 			normal: 'transparent',
 			hover: 'transparent',
 			active: 'transparent',

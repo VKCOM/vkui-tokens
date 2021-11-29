@@ -97,12 +97,12 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			active: '#2B2B2B',
 		},
 
-		colorTextPrimary: 'rgba(255, 255, 255, 0.9)',
-		colorTextSecondary: 'rgba(255, 255, 255, 0.5)',
+		colorTextPrimary: '#E7E8EA',
+		colorTextSecondary: '#8C8E94',
 
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
-		colorFieldBorder: {
+		colorFieldBorderAlpha: {
 			normal: 'transparent',
 			hover: 'transparent',
 			active: 'transparent',

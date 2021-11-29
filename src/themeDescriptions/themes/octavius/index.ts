@@ -3,6 +3,7 @@ import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
 	darkTheme,
 	darkThemeElevation,
+	lightColors,
 	lightTheme,
 } from '@/themeDescriptions/base/paradigm';
 
@@ -10,10 +11,15 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	...lightTheme,
 	themeName: 'octavius',
 	themeNameBase: 'octavius',
+	octaviusShadowSidebarItemText: 'none',
+	octaviusShadowSidebarItemIcon: 'none',
+	octaviusElevationCard: 'none',
+	octaviusShadowEmptyStateText: 'none',
+	octaviusElevationHeader: 'none',
 	colors: {
 		...lightTheme.colors,
-		colorBgThumbnail: 'rgba(0, 16, 61, 0.08)',
-		colorBgContrast: '#2C2D2E',
+		colorBackgroundThumbnail: '#EBECEF',
+		colorBackgroundThumbnailAlpha: 'rgba(0, 16, 61, 0.08)',
 		colorSocialVk: '#2787F5',
 		colorSocialOk: '#ee8208',
 		colorSocialMir: '#117eda',
@@ -25,39 +31,37 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorPaletteRed2: '#eb1981',
 		colorPaletteRed3: '#ff71bb',
 		colorPaletteOrange1: '#ff8b2e',
-		colorPaletteOrange2: getRGBA('#FF9E00', 0.12),
+		colorPaletteOrange1Alpha: getRGBA('#FF9E00', 0.12),
 		colorPaletteYellow1: '#ffc311',
 		colorPaletteGreen1: '#aee113',
 		colorPaletteGreen2: '#59c354',
 		colorPaletteGreen3: '#37eb94',
 		colorPaletteGreen4: '#00b1b3',
-		colorPaletteGreen5: getRGBA('#5CBA38', 0.12),
-		colorPaletteGreen6: getRGBA('#00E6B4', 0.08),
+		colorPaletteGreen1Alpha: getRGBA('#5CBA38', 0.12),
+		colorPaletteGreen2Alpha: getRGBA('#00E6B4', 0.08),
 		colorPaletteBlue1: '#2951ff',
 		colorPaletteBlue2: '#00abf2',
 		colorPaletteBlue3: '#26dfdf',
-		colorPaletteBlue4: getRGBA('#005FF9', 0.12),
+		colorPaletteBlue1Alpha: getRGBA('#005FF9', 0.12),
 		colorPaletteViolet1: '#6c00ff',
 		colorPaletteViolet2: '#ae73ff',
 		colorAlert: '#c1341b',
-		colorBgPlaceholder: '#ffffff',
-		colorBgPromo: '#EBEEF5',
-		colorTrueBlack: '#000000',
-		colorTrueWhite: '#ffffff',
+		octaviusColorPlaceholderBackground: '#ffffff',
+		octaviusColorPromoBackground: '#EBEEF5',
 		octaviusColorThreadFooterBackground: '#ebecef',
 		colorBackgroundSecondary: '#F0F1F3',
 
 		octaviusColorButtonText: '#333333',
 		octaviusColorButtonIcon: '#333333',
 
-		octaviusColorButtonBackground: {
+		octaviusColorButtonBackgroundAlpha: {
 			normal: 'transparent',
 			hover: 'rgba(0, 16, 61, 0.04)',
 			active: 'rgba(0, 16, 61, 0.08)',
 		},
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,
-		octaviusColorBackgroundAccentToned: toneOpacity(
+		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
 			lightTheme.colors.colorBackgroundAccent,
 			0.12,
 		),
@@ -65,10 +69,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorHeaderBackground: lightTheme.colors.colorBackgroundAccent,
 		octaviusColorHeaderButtonText: lightTheme.colors.colorTextContrast,
-		octaviusColorHeaderButtonBackground: {
+		octaviusColorHeaderButtonBackgroundAlpha: {
 			normal: 'transparent',
-			hover: getRGBA('#00103D', 0.12),
-			active: getRGBA('#00103D', 0.24),
+			hover: toneOpacity('#00103D', 0.12),
+			active: toneOpacity('#00103D', 0.24),
 		},
 		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
 		octaviusColorHeaderTextSecondary: '#93969b',
@@ -76,8 +80,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchChipBackground:
 			lightTheme.colors.colorBackgroundSecondary,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
-		octaviusColorHeaderSearchChipBorderEditable:
-			lightTheme.colors.colorFieldBorder,
+		octaviusColorHeaderSearchChipBorderEditableAlpha:
+			lightTheme.colors.colorFieldBorderAlpha,
 
 		octaviusColorHeaderSearchBackground: '#ffffff',
 		octaviusColorHeaderSearchBackgroundCollapsed: '#ffffff',
@@ -85,26 +89,32 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchText: lightTheme.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:
 			lightTheme.colors.colorTextSecondary,
-		octaviusColorHeaderFilterText: 'rgba(255, 255, 255, .48)',
+		octaviusColorHeaderFilterTextAlpha: 'rgba(255, 255, 255, .48)',
 
 		octaviusColorHeaderProgress:
 			lightTheme.colors.colorBackgroundAccentAlternative,
 
 		octaviusColorPortalMenuBackground: lightTheme.colors.colorBackground,
 
-		octaviusColorSidebarCounterBackground:
+		octaviusColorSidebarItemIconActive: lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarItemTextActive: lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarItemTextPrimary: lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarButtonIcon: lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarButtonText: lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarButtonBackground: '#FFFFFF',
+
+		octaviusColorSidebarCounterBackgroundAlpha:
 			lightTheme.colors.colorTransparent,
 		octaviusColorSidebarCounterText: lightTheme.colors.colorTextPrimary,
-		octaviusColorSidebarItemBackground: lightTheme.colors.colorTransparent,
-		octaviusColorSidebarScrollbar: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarItemBackgroundAlpha:
+			lightTheme.colors.colorTransparent,
+		octaviusColorSidebarScrollbarAlpha: 'rgba(0, 16, 61, 0.08)',
 		octaviusColorSidebarItemIcon: '#333333',
 		octaviusColorSidebarItemText: '#333333',
-		octaviusColorSidebarItemTextActive: lightTheme.colors.colorTextPrimary,
-		octaviusColorSidebarItemIconActive: lightTheme.colors.colorIconPrimary,
-		octaviusColorSidebarItemButtonBackground: 'rgba(0, 16, 61, 0.08)',
-		octaviusColorSidebarItemIconPrimary: lightTheme.colors.colorIconPrimary,
-		octaviusColorSidebarItemIconSecondary: 'rgba(51, 51, 51, 0.64)',
-		octaviusColorSidebarItemTextSecondary: 'rgba(51, 51, 51, 0.64)',
+		octaviusColorSidebarItemButtonBackgroundAlpha: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorSidebarItemIconSecondary: '#87898F',
+		octaviusColorSidebarItemTextSecondary: '#87898F',
 
 		octaviusColorSidebarShortItemIcon: '#333333',
 		octaviusColorSidebarShortItemText: '#333333',
@@ -121,7 +131,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarComposeButtonText: '#2c2d2e',
 		octaviusColorSidebarComposeButtonIcon: '#2c2d2e',
 
-		octaviusColorContentScrollbar: 'rgba(0, 16, 61, 0.08)',
+		octaviusColorContentScrollbarAlpha: 'rgba(0, 16, 61, 0.08)',
 
 		octaviusColorIconUnread: '#005FF9',
 		octaviusColorIconFavorite: '#fc2c38',
@@ -146,8 +156,11 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			hover: '#f5f5f7',
 			active: '#ebecef',
 		},
-		octaviusColorListLetterSeparator:
-			lightTheme.colors.colorSeparatorPrimary,
+		octaviusColorListTextUnread: lightTheme.colors.colorTextPrimary,
+		octaviusColorListTextPrimary: lightTheme.colors.colorTextPrimary,
+		octaviusColorListIconPrimary: lightTheme.colors.colorIconPrimary,
+		octaviusColorListLetterSeparatorAlpha:
+			lightTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterAdvBackground: '#F0F5FF',
 		octaviusColorLetterListTextUnread: '#2c2d2e',
 
@@ -155,8 +168,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			lightTheme.colors.colorBackgroundContent,
 
 		octaviusColorEmptyStateText: '#333333',
-		octaviusColorLayoutBorder: '#E0E2E8',
-		octaviusColorLayoutLetterBorder: '#E0E2E8',
+		octaviusColorLayoutBorderAlpha:
+			lightTheme.colors.colorSeparatorPrimaryAlpha,
+		octaviusColorLayoutLetterBorderAlpha:
+			lightTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorLetterPreviewBackgroundPrimary: '#F9F9FA',
 		octaviusColorLetterPreviewBackgroundSecondary: '#F3F3F5',
@@ -169,9 +184,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		},
 	},
 
-	octaviusElevationCard: 'none',
 	octaviusTextShadowEmptyStateText: 'none',
-	octaviusElevationHeader: 'none',
 	octaviusPositionBackground: '50% 0',
 	octaviusImageOverlayBackground: 'none',
 
@@ -219,25 +232,21 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 	colors: {
 		...octaviusTheme.colors,
 		...darkTheme.colors,
-		colorBgThumbnail: 'rgba(255, 255, 255, 0.08)',
-		colorBgPlaceholder: '#000000',
-		colorBgPromo: '#303030',
+		colorBackgroundThumbnail: '#1F1F1F',
+		colorBackgroundThumbnailAlpha: 'rgba(255, 255, 255, 0.08)',
+		octaviusColorPlaceholderBackground: '#000000',
+		octaviusColorPromoBackground: '#303030',
 		octaviusColorThreadFooterBackground: '#303030',
-		colorBackgroundSecondary: {
-			normal: 'rgba(255, 255, 255, 0.08)',
-			hover: 'rgba(255, 255, 255, 0.16)',
-			active: 'rgba(255, 255, 255, 0.2)',
-		},
 
 		octaviusColorPortalMenuBackground: '#19191A',
-		octaviusColorSidebarItemBackground: {
+		octaviusColorSidebarItemBackgroundAlpha: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
 		octaviusColorBackground: '#000000',
-		octaviusColorBackgroundAccentToned: toneOpacity(
+		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
 			darkTheme.colors.colorBackgroundAccent,
 			0.12,
 		),
@@ -254,7 +263,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchChipBackground:
 			darkTheme.colors.colorBackgroundModal,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
-		octaviusColorHeaderSearchChipBorderEditable: 'rgba(255, 255, 255, .48)',
+		octaviusColorHeaderSearchChipBorderEditableAlpha:
+			'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:
 			darkTheme.colors.colorTextSecondary,
@@ -265,8 +275,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarItemText: '#E7E8EA',
 		octaviusColorSidebarItemTextActive: '#ffffff',
 		octaviusColorSidebarItemIconActive: '#ffffff',
-		octaviusColorSidebarItemTextSecondary: 'rgba(231, 232, 234, 0.64)',
-		octaviusColorSidebarItemIconSecondary: 'rgba(231, 232, 234, 0.64)',
+		octaviusColorSidebarItemTextSecondary: '#8C8E94',
+		octaviusColorSidebarItemIconSecondary: '#8C8E94',
 
 		octaviusColorSidebarShortItemIcon: '#E7E8EA',
 		octaviusColorSidebarShortItemText: '#E7E8EA',
@@ -277,7 +287,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorSidebarShortItemIconSecondary:
 			darkTheme.colors.colorIconSecondary,
 
-		octaviusColorHeaderButtonBackground: {
+		octaviusColorHeaderButtonBackgroundAlpha: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
@@ -285,24 +295,28 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorButtonText: '#E7E8EA',
 		octaviusColorButtonIcon: '#E7E8EA',
-		octaviusColorButtonBackground: {
+		octaviusColorButtonBackgroundAlpha: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.04)',
 			active: 'rgba(255, 255, 255, 0.08)',
 		},
+		octaviusColorSidebarItemTextPrimary: darkTheme.colors.colorTextPrimary,
+		octaviusColorSidebarButtonIcon: lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarButtonText: lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarButtonBackground: '#FFFFFF',
 
-		octaviusColorSidebarCounterBackground:
+		octaviusColorSidebarCounterBackgroundAlpha:
 			darkTheme.colors.colorTransparent,
 
 		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
-		octaviusColorSidebarScrollbar: 'rgba(255, 255, 255, 0.12)',
-		octaviusColorSidebarItemButtonBackground: {
+		octaviusColorSidebarScrollbarAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorSidebarItemButtonBackgroundAlpha: {
 			normal: 'rgba(255, 255, 255, 0.08)',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
-		octaviusColorContentScrollbar: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorContentScrollbarAlpha: 'rgba(255, 255, 255, 0.12)',
 
 		octaviusColorIconUnread: '#0C7CFF',
 		octaviusColorIconFavorite: '#FF4550',
@@ -324,14 +338,14 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorListLetterBackground:
 			darkTheme.colors.colorBackgroundContent,
-		octaviusColorListLetterSeparator:
+		octaviusColorListLetterSeparatorAlpha:
 			darkTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterAdvBackground: '#151515',
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,
-		octaviusColorLayoutBorder: 'transparent',
-		octaviusColorLayoutLetterBorder: 'rgba(0, 0, 0, 0.4)',
+		octaviusColorLayoutBorderAlpha: 'transparent',
+		octaviusColorLayoutLetterBorderAlpha: 'rgba(0, 0, 0, 0.4)',
 		octaviusColorEmptyStateTextLink: '#E7E8EA',
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
@@ -365,10 +379,16 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.64)',
 			active: 'rgba(255, 255, 255, 0.4)',
 		},
-		octaviusColorHeaderFilterText: '#919399',
+		octaviusColorHeaderFilterTextAlpha:
+			lightColors.colors.colorIconMediumAlpha,
 		octaviusColorHeaderSearchChipBackgroundEditable: '#ffffff',
-		octaviusColorHeaderSearchChipBorderEditable: '#FFFFFF',
-		octaviusColorHeaderButtonBackground: '#FFFFFF',
+		octaviusColorHeaderSearchChipBorderEditableAlpha:
+			lightTheme.colors.colorFieldBorderAlpha,
+		octaviusColorHeaderButtonBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.64)',
+			active: 'rgba(255, 255, 255, 0.4)',
+		},
 	},
 
 	octaviusElevationHeader: '0px 0px 16px rgba(2, 13, 41, 0.16)',

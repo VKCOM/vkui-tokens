@@ -1,8 +1,13 @@
 import {Property} from 'csstype';
 
+import {
+	isColorDescriptionCallable,
+	isColorWithStates,
+} from '@/build/helpers/cssHelpers';
 import {ColorsDescription, ColorsFinal} from '@/interfaces/general';
 import {
 	ColorDescription,
+	ColorDescriptionStatic,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
@@ -34,6 +39,40 @@ const getColorWithStates = ({
 	active: mixColors(colorArg, colorState, toneValueActive),
 });
 
+function expandCallableColor<T extends {[key in keyof T]: ColorDescription}>(
+	color: ColorDescription<T>,
+	theme: Partial<ColorsDescription<T>>,
+): ColorDescriptionStatic {
+	if (!isColorDescriptionCallable(color)) {
+		return color;
+	}
+
+	// TODO: Придумать, как избавиться от any
+	return expandCallableColor(color(theme), theme as any);
+}
+
+export function expandColor<
+	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
+>(
+	color: ColorDescription<T>,
+	theme: Partial<ColorsDescription<T>>,
+): ColorWithStates {
+	color = expandCallableColor(color, theme);
+
+	if (isColorWithStates(color)) {
+		return color;
+	}
+
+	const colorState = colorStateMap[theme.colorsScheme];
+
+	return getColorWithStates({
+		colorArg: color,
+		colorState,
+		toneValueHover,
+		toneValueActive,
+	});
+}
+
 /**
  * Процессор, который формирует из описания темы (ThemeDescription)
  * цвета со всеми состояниями active, hover и normal
@@ -49,30 +88,13 @@ export function getExpandedThemeColors<
 		return null;
 	}
 
-	const colorState = colorStateMap[colorsScheme];
-
-	const colorWithStates = (
-		colorArg: Property.Color | ColorWithStates,
-	): ColorWithStates => {
-		if (typeof colorArg === 'object' && 'active' in colorArg) {
-			return colorArg;
-		}
-
-		return getColorWithStates({
-			colorArg,
-			colorState,
-			toneValueHover,
-			toneValueActive,
-		});
-	};
-
 	const theme: Partial<ColorsFinal> = {
 		colorsScheme,
 	};
 
 	Object.entries(colors).forEach(
 		([key, colorValue]: [keyof ColorsDescription, Property.Color]) => {
-			theme[key] = colorWithStates(colorValue);
+			theme[key] = expandColor(colorValue, colorsDescription);
 		},
 	);
 

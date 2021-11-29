@@ -1,3 +1,5 @@
+import {Property} from 'csstype';
+
 import {ThemeCssVars} from '@/interfaces/general';
 import {
 	ColorDescription,
@@ -12,20 +14,27 @@ import {
 } from '@/interfaces/namespaces/paradigm';
 
 export interface ThemeOctaviusOverValues {
-	octaviusElevationCard: string;
-	octaviusElevationHeader: string;
-	octaviusTextShadowEmptyStateText: string;
+	octaviusElevationCard: Property.BoxShadow;
+	octaviusElevationHeader: Property.BoxShadow;
+	octaviusTextShadowEmptyStateText: Property.TextShadow;
 
 	octaviusPositionBackground: string;
 	octaviusImageOverlayBackground: string;
 
-	octaviusTextShadowSidebarItemText: string;
+	octaviusTextShadowSidebarItemText: Property.TextShadow;
 	octaviusFilterSidebarItemIcon: string;
 	/**
 	 * Нужен для градиента у кнопки раскрытия аттачей в письме
 	 */
 	octaviusColorLetterAttachListBackground: string;
 
+	octaviusShadowSidebarItemText: Property.BoxShadow;
+	octaviusShadowSidebarItemIcon: Property.BoxShadow;
+	/**
+	 * Тень текста подписи под картинкой пустого состояния папки на некоторых
+	 * темах с фоном-картинкой
+	 */
+	octaviusShadowEmptyStateText: Property.BoxShadow;
 	/**
 	 * Нужен для тем у которых есть неадаптивный фон
 	 */
@@ -55,9 +64,9 @@ type ThemeOctaviusAdaptiveTokens = {
 };
 
 export interface LocalOctaviusColorsDescriptionStruct {
-	colorBgThumbnail: ColorDescription;
+	colorBackgroundThumbnail: ColorDescription;
+	colorBackgroundThumbnailAlpha: ColorDescription;
 	colorIconAccent: ColorDescription;
-	colorBgContrast: ColorDescription;
 	colorSocialVk: ColorDescription;
 	colorSocialOk: ColorDescription;
 	colorSocialMir: ColorDescription;
@@ -69,30 +78,26 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorPaletteRed2: ColorDescription;
 	colorPaletteRed3: ColorDescription;
 	colorPaletteOrange1: ColorDescription;
-	colorPaletteOrange2: ColorDescription;
+	colorPaletteOrange1Alpha: ColorDescription;
 	colorPaletteYellow1: ColorDescription;
 	colorPaletteGreen1: ColorDescription;
 	colorPaletteGreen2: ColorDescription;
 	colorPaletteGreen3: ColorDescription;
 	colorPaletteGreen4: ColorDescription;
-	colorPaletteGreen5: ColorDescription;
-	colorPaletteGreen6: ColorDescription;
+	colorPaletteGreen1Alpha: ColorDescription;
+	colorPaletteGreen2Alpha: ColorDescription;
 	colorPaletteBlue1: ColorDescription;
 	colorPaletteBlue2: ColorDescription;
 	colorPaletteBlue3: ColorDescription;
-	colorPaletteBlue4: ColorDescription;
+	colorPaletteBlue1Alpha: ColorDescription;
 	colorPaletteViolet1: ColorDescription;
 	colorPaletteViolet2: ColorDescription;
 	colorAlert: ColorDescription;
-	colorBgPlaceholder: ColorDescription;
-	colorBgPromo: ColorDescription;
-	colorTrueBlack: ColorDescription;
-	colorTrueWhite: ColorDescription;
 
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
-	octaviusColorButtonBackground: ColorDescription;
+	octaviusColorButtonBackgroundAlpha: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
@@ -101,11 +106,11 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
-	octaviusColorHeaderButtonBackground: ColorDescription;
+	octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
-	octaviusColorHeaderFilterText: ColorDescription;
+	octaviusColorHeaderFilterTextAlpha: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
@@ -115,21 +120,25 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchTextCollapsed: ColorDescription;
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
-	octaviusColorHeaderSearchChipBorderEditable: ColorDescription;
+	octaviusColorHeaderSearchChipBorderEditableAlpha: ColorDescription;
 
 	// Токены сайдбара
-	octaviusColorSidebarItemBackground: ColorDescription;
+	octaviusColorSidebarItemBackgroundAlpha: ColorDescription;
+	octaviusColorSidebarItemIconActive: ColorDescription;
 	octaviusColorSidebarItemIconPrimary: ColorDescription;
-	octaviusColorSidebarCounterBackground: ColorDescription;
+	octaviusColorSidebarItemIconSecondary: ColorDescription;
+	octaviusColorSidebarItemTextActive: ColorDescription;
+	octaviusColorSidebarItemTextPrimary: ColorDescription;
+	octaviusColorSidebarItemTextSecondary: ColorDescription;
+	octaviusColorSidebarButtonIcon: ColorDescription;
+	octaviusColorSidebarButtonText: ColorDescription;
+	octaviusColorSidebarButtonBackground: ColorDescription;
+	octaviusColorSidebarCounterBackgroundAlpha: ColorDescription;
 	octaviusColorSidebarCounterText: ColorDescription;
-	octaviusColorSidebarScrollbar: ColorDescription;
+	octaviusColorSidebarScrollbarAlpha: ColorDescription;
 	octaviusColorSidebarItemIcon: ColorDescription;
 	octaviusColorSidebarItemText: ColorDescription;
-	octaviusColorSidebarItemIconActive: ColorDescription;
-	octaviusColorSidebarItemTextActive: ColorDescription;
-	octaviusColorSidebarItemTextSecondary: ColorDescription;
-	octaviusColorSidebarItemIconSecondary: ColorDescription;
-	octaviusColorSidebarItemButtonBackground: ColorDescription;
+	octaviusColorSidebarItemButtonBackgroundAlpha: ColorDescription;
 
 	octaviusColorSidebarShortItemIcon: ColorDescription;
 	octaviusColorSidebarShortItemText: ColorDescription;
@@ -146,7 +155,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorPortalMenuBackground: ColorDescription;
 
 	// Контент страницы
-	octaviusColorContentScrollbar: ColorDescription;
+	octaviusColorContentScrollbarAlpha: ColorDescription;
 
 	// Токены письма
 	octaviusColorLetterListTextUnread: ColorDescription;
@@ -176,7 +185,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены списка писем
 	octaviusColorListLetterBackground: ColorDescription;
-	octaviusColorListLetterSeparator: ColorDescription;
+	octaviusColorListLetterSeparatorAlpha: ColorDescription;
 
 	/**
 	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
@@ -184,17 +193,26 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	 */
 	octaviusColorDatasetBackground: ColorDescription;
 	octaviusColorListLetterAdvBackground: ColorDescription;
+	octaviusColorListTextUnread: ColorDescription;
+	octaviusColorListTextPrimary: ColorDescription;
+	octaviusColorListIconPrimary: ColorDescription;
 
 	// Другие стили
+	/**
+	 * Цвет текста подписи под картинкой пустого состояния.
+	 * @see octaviusShadowTextBackgroundContrast
+	 */
 	octaviusColorEmptyStateText: ColorDescription;
-	octaviusColorBackgroundAccentToned: ColorDescription;
-	octaviusColorLayoutBorder: ColorDescription;
-	octaviusColorLayoutLetterBorder: ColorDescription;
+	octaviusColorBackgroundAccentTonedAlpha: ColorDescription;
+	octaviusColorLayoutBorderAlpha: ColorDescription;
+	octaviusColorLayoutLetterBorderAlpha: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
 	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
 	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
 	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
 	octaviusColorNotificationBorder: ColorDescription;
+	octaviusColorPlaceholderBackground: ColorDescription;
+	octaviusColorPromoBackground: ColorDescription;
 }
 
 export type OctaviusLocalColors = {

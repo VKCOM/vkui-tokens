@@ -1,6 +1,5 @@
 import {ThemeCssVars} from '@/interfaces/general';
 import {
-	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
@@ -21,9 +20,7 @@ export interface ThemeCalendarOverValues {
 	fontBodyAndroid: Adaptive<Font>;
 }
 
-export interface LocalCalendarColorDescriptionStruct {
-	colorBgThumbnail: ColorDescription;
-}
+export interface LocalCalendarColorDescriptionStruct {}
 
 export type CalendarLocalColors = {
 	[key in keyof LocalCalendarColorDescriptionStruct]: ColorWithStates;
