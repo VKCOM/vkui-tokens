@@ -29,7 +29,7 @@ import {
 	darkTheme as paradigmBaseDark,
 	lightTheme as paradigmBase,
 } from './base/paradigm';
-import {lightTheme as vkBase, darkTheme as vkBaseDark} from './base/vk';
+import {darkTheme as vkBaseDark, lightTheme as vkBase} from './base/vk';
 
 export const themes = [
 	// основные базовые темы новой дизайн-системы
