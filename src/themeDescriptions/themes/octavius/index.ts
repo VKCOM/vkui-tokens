@@ -238,31 +238,30 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorPromoBackground: '#303030',
 		octaviusColorThreadFooterBackground: '#303030',
 
-		octaviusColorPortalMenuBackground: '#19191A',
+		octaviusColorPortalMenuBackground: '#232324',
 		octaviusColorSidebarItemBackgroundAlpha: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
-		octaviusColorBackground: '#000000',
+		octaviusColorBackground: '#19191A',
 		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
 			darkTheme.colors.colorBackgroundAccent,
 			0.12,
 		),
 
-		octaviusColorHeaderBackground: '#161616',
+		octaviusColorHeaderBackground: '#232324',
 		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
 		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
 		octaviusColorHeaderProgress:
 			darkTheme.colors.colorBackgroundAccentAlternative,
 
-		octaviusColorHeaderSearchBackground: '#1F1F1F',
+		octaviusColorHeaderSearchBackground: '#303030',
 		octaviusColorHeaderSearchBackgroundCollapsed:
 			darkTheme.colors.colorBackgroundModal,
-		octaviusColorHeaderSearchChipBackground:
-			darkTheme.colors.colorBackgroundModal,
-		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
+		octaviusColorHeaderSearchChipBackground: '#404040',
+		octaviusColorHeaderSearchChipBackgroundEditable: '#3e3e3e',
 		octaviusColorHeaderSearchChipBorderEditableAlpha:
 			'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,

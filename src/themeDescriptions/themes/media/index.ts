@@ -44,6 +44,14 @@ export const mediaTheme: ThemeMediaDescription = {
 	colors: {
 		...replacedFamilyOctavius.colors,
 		...projectColors,
+
+		colorSocialVk: '#3F8AE0',
+		colorSocialOk: '#ee8208',
+		colorSocialFb: '#1877f2',
+		colorSocialMir: '#117eda',
+		colorSocialTwitter: '#1da1f2',
+		colorSocialBehance: '#1769ff',
+		colorSocialDribbble: '#ea4c89',
 	},
 
 	breakpoints: {
