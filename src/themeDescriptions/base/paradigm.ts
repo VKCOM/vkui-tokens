@@ -16,7 +16,7 @@ const fontWeightBase3 = 700;
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
-		//Background
+		// Background
 		colorBackgroundAccent: '#005FF9',
 		colorBackgroundAccentThemed: '#005FF9',
 		colorBackgroundAccentAlternative: '#FF9E00',
@@ -37,7 +37,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#FAEBEB',
 
-		//Text
+		// Text
 		colorTextAccent: '#005FF9',
 		colorTextAccentThemed: '#005FF9',
 		colorTextNegative: '#ED0A34',
@@ -55,7 +55,7 @@ export const lightColors: ColorsDescription = {
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
 
-		//Icons
+		// Icons
 		colorIconAccent: '#005FF9',
 		colorIconNegative: '#ED0A34',
 		colorIconPrimary: '#2C2D2E',
@@ -70,7 +70,7 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
 
-		//Stroke
+		// Stroke
 		colorStrokeAccent: '#005FF9',
 		colorStrokeAccentThemed: '#005FF9',
 		colorStrokeContrast: '#FFFFFF',
@@ -82,7 +82,7 @@ export const lightColors: ColorsDescription = {
 		colorSeparatorPrimary: '#DADCE0',
 		colorStrokePositive: '#0DC268',
 
-		//Palette
+		// Palette
 		colorAccentBlue: '#005FF9',
 		colorAccentGray: '#A5A7AD',
 		colorAccentRed: '#ED0A34',
@@ -92,7 +92,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentViolet: '#C15DF3',
 		colorAccentSecondary: '#FF9E00',
 
-		//Other
+		// Other
 		colorActionSheetText: '#005FF9',
 		colorHeaderBackground: '#FFFFFF',
 		colorPanelHeaderIcon: '#005FF9',
@@ -115,7 +115,7 @@ export const lightColors: ColorsDescription = {
 export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
-		//Background
+		// Background
 		colorBackgroundAccent: '#2775FC',
 		colorBackgroundAccentThemed: '#2775FC',
 		colorBackgroundAccentAlternative: '#FF9E00',
@@ -136,7 +136,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#522e2e',
 
-		//Text
+		// Text
 		colorTextAccent: '#3C82FD',
 		colorTextAccentThemed: '#3C82FD',
 		colorTextNegative: '#ED0A34',
@@ -154,7 +154,7 @@ export const darkColors: ColorsDescription = {
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
 
-		//Icons
+		// Icons
 		colorIconAccent: '#3C82FD',
 		colorIconNegative: '#ED0A34',
 		colorIconPrimary: '#D9DADD',
@@ -169,7 +169,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
 
-		//Stroke
+		// Stroke
 		colorStrokeAccent: '#3C82FD',
 		colorStrokeAccentThemed: '#3C82FD',
 		colorStrokeContrast: '#FFFFFF',
@@ -181,7 +181,7 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimary: '#151516',
 		colorStrokePositive: '#0DC268',
 
-		//Palette
+		// Palette
 		colorAccentBlue: '#2775FC',
 		colorAccentGray: '#9C9DA2',
 		colorAccentRed: '#ED0A34',
@@ -191,7 +191,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentViolet: '#C15DF3',
 		colorAccentSecondary: '#FF9E00',
 
-		//Other
+		// Other
 		colorActionSheetText: '#3C82FD',
 		colorHeaderBackground: '#232324',
 		colorPanelHeaderIcon: '#3C82FD',

@@ -30,7 +30,7 @@ interface ProjectColors {
 	colorSecondaryHealth: ColorWithStates;
 	colorSecondaryMycom: ColorWithStates;
 
-	//Social
+	// Social
 	colorSocialVk: ColorDescription;
 	colorSocialOk: ColorDescription;
 	colorSocialMir: ColorDescription;

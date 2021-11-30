@@ -14,7 +14,7 @@ const fontWeightBase3 = 600;
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
-		//Background
+		// Background
 		colorBackgroundAccent: '#3F8AE0',
 		colorBackgroundAccentThemed: '#3F8AE0',
 		colorBackgroundAccentAlternative: '#3F8AE0',
@@ -35,7 +35,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorBackgroundNegativeTint: '#FAEBEB',
 
-		//Text
+		// Text
 		colorTextAccent: '#3F8AE0',
 		colorTextAccentThemed: '#3F8AE0',
 		colorTextNegative: '#E64646',
@@ -53,7 +53,7 @@ export const lightColors: ColorsDescription = {
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#4BB34B',
 
-		//Icons
+		// Icons
 		colorIconAccent: '#3F8AE0',
 		colorIconNegative: '#E64646',
 		colorIconPrimary: '#2C2D2E',
@@ -68,7 +68,7 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#4BB34B',
 
-		//Stroke
+		// Stroke
 		colorStrokeAccent: '#3F8AE0',
 		colorStrokeAccentThemed: '#3F8AE0',
 		colorStrokeContrast: '#FFFFFF',
@@ -80,7 +80,7 @@ export const lightColors: ColorsDescription = {
 		colorSeparatorPrimary: '#D7D8D9',
 		colorStrokePositive: '#4BB34B',
 
-		//Palette
+		// Palette
 		colorAccentBlue: '#3F8AE0',
 		colorAccentGray: '#A3ADB8',
 		colorAccentRed: '#FF3347',
@@ -90,7 +90,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentViolet: '#792EC0',
 		colorAccentSecondary: '#3F8AE0',
 
-		//Other
+		// Other
 		colorActionSheetText: '#3F8AE0',
 		colorHeaderBackground: '#FFFFFF',
 		colorPanelHeaderIcon: '#3F8AE0',
@@ -113,7 +113,7 @@ export const lightColors: ColorsDescription = {
 export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
-		//Background
+		// Background
 		colorBackgroundAccent: '#71AAEB',
 		colorBackgroundAccentThemed: '#FFFFFF',
 		colorBackgroundAccentAlternative: '#71AAEB',
@@ -134,7 +134,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorBackgroundNegativeTint: '#522e2e',
 
-		//Text
+		// Text
 		colorTextAccent: '#71AAEB',
 		colorTextAccentThemed: '#FFFFFF',
 		colorTextNegative: '#E64646',
@@ -152,7 +152,7 @@ export const darkColors: ColorsDescription = {
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#4BB34B',
 
-		//Icons
+		// Icons
 		colorIconAccent: '#71AAEB',
 		colorIconNegative: '#E64646',
 		colorIconPrimary: '#E1E3E6',
@@ -167,7 +167,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastThemed: '#000000',
 		colorIconPositive: '#4BB34B',
 
-		//Stroke
+		// Stroke
 		colorStrokeAccent: '#71AAEB',
 		colorStrokeAccentThemed: '#FFFFFF',
 		colorStrokeContrast: '#FFFFFF',
@@ -179,7 +179,7 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimary: '#0F0F10',
 		colorStrokePositive: '#4BB34B',
 
-		//Palette
+		// Palette
 		colorAccentBlue: '#71AAEB',
 		// цвета ниже нужно поменять
 		// не успел сделать к релизу тёмной версии vk почты
@@ -191,7 +191,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentViolet: '#792EC0',
 		colorAccentSecondary: '#3F8AE0',
 
-		//Other
+		// Other
 		colorActionSheetText: '#71AAEB',
 		colorHeaderBackground: '#19191A',
 		colorPanelHeaderIcon: '#71AAEB',
