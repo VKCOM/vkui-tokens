@@ -35,6 +35,20 @@ type ProjectColorsDescriptions = {
 	[key in keyof ProjectColors]: ColorDescription;
 };
 
+interface SocialColors {
+	colorSocialVk: ColorWithStates;
+	colorSocialOk: ColorWithStates;
+	colorSocialMir: ColorWithStates;
+	colorSocialFb: ColorWithStates;
+	colorSocialTwitter: ColorWithStates;
+	colorSocialDribbble: ColorWithStates;
+	colorSocialBehance: ColorWithStates;
+}
+
+type SocialColorsDescriptions = {
+	[key in keyof SocialColors]: ColorDescription;
+};
+
 interface MediaUniqTokens {
 	fontFamilyArticle: Property.FontFamily;
 	fontWeightArticle1: Property.FontWeight;
@@ -60,12 +74,15 @@ interface MediaUniqTokens {
 export interface ThemeMedia
 	extends ParadigmTheme<MediaViewportsTuple>,
 		ProjectColors,
+		SocialColors,
 		MediaUniqTokens {}
 
 export interface ThemeMediaDescription
 	extends ParadigmThemeDescription<MediaViewportsTuple>,
 		MediaUniqTokens {
-	colors: ParadigmThemeDescription['colors'] & ProjectColorsDescriptions;
+	colors: ParadigmThemeDescription['colors'] &
+		ProjectColorsDescriptions &
+		SocialColorsDescriptions;
 }
 
 export interface ThemeMediaCssVars
