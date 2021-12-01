@@ -1,6 +1,6 @@
 import {replacePropDeep} from '@/build/helpers/replacePropDeep';
 import {ThemeMediaDescription} from '@/interfaces/themes/media';
-import {helpers, projectColors} from '@/themeDescriptions/common';
+import {helpers, projectColors, socialColors} from '@/themeDescriptions/common';
 
 import {darkTheme, lightTheme} from '../../base/paradigm';
 
@@ -44,6 +44,7 @@ export const mediaTheme: ThemeMediaDescription = {
 	colors: {
 		...replacedFamilyOctavius.colors,
 		...projectColors,
+		...socialColors,
 	},
 
 	breakpoints: {
