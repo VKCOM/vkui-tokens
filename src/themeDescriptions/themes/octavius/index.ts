@@ -175,6 +175,11 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorEmptyStateTextLink: '#005bd1',
 		octaviusColorLetterPreviewBackgroundPrimary: '#F9F9FA',
 		octaviusColorLetterPreviewBackgroundSecondary: '#F3F3F5',
+		octaviusColorLetterContactBackground: {
+			normal: 'transparent',
+			hover: 'rgba(0, 16, 61, 0.04)',
+			active: 'rgba(0, 16, 61, 0.08)',
+		},
 		octaviusColorNotificationBorder: '#ffffff',
 
 		octaviusTextDecorationEmptyStateTextLink: {
@@ -350,6 +355,11 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
 		octaviusColorLetterPreviewBackgroundSecondary: '#0F0F0F',
+		octaviusColorLetterContactBackground: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.04)',
+			active: 'rgba(255, 255, 255, 0.08)',
+		},
 		octaviusColorNotificationBorder: '#000000',
 
 		octaviusTextDecorationEmptyStateTextLink: {
