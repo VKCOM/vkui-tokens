@@ -1,4 +1,4 @@
-import {toneOpacity} from '@/build/helpers/cssHelpers';
+import {getRGBA, toneOpacity} from '@/build/helpers/cssHelpers';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
 	darkColors as vkDarkColors,
@@ -136,8 +136,8 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		octaviusColorEmptyStateTextLink: '#4986cc',
 		octaviusColorLetterContactBackgroundAlpha: {
 			normal: 'transparent',
-			hover: 'rgba(0, 16, 61, 0.04)',
-			active: 'rgba(0, 16, 61, 0.08)',
+			hover: getRGBA('#00103D', 0.04),
+			active: getRGBA('#00103D', 0.12),
 		},
 	},
 
@@ -495,8 +495,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		},
 		octaviusColorLetterContactBackgroundAlpha: {
 			normal: 'transparent',
-			hover: 'rgba(255, 255, 255, 0.04)',
-			active: 'rgba(255, 255, 255, 0.08)',
+			hover: getRGBA('#FFFFFF', 0.08),
+			active: getRGBA('#FFFFFF', 0.16),
 		},
 	},
 
