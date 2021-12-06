@@ -150,6 +150,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 
 	// Токены письма
 	octaviusColorLetterListTextUnread: ColorDescription;
+	octaviusColorLetterContactBackgroundAlpha: ColorDescription;
 
 	// TODO: убрать когда появится colorBackgroundSecondaryAlpha
 	octaviusColorThreadFooterBackground: ColorDescription;
@@ -193,7 +194,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorEmptyStateTextLink: ColorDescription;
 	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
 	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
-	octaviusColorLetterContactBackgroundAlpha: ColorDescription;
 	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
 	octaviusColorNotificationBorder: ColorDescription;
 }

@@ -134,6 +134,11 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 		},
 		octaviusColorEmptyStateText: octaviusTheme.colors.colorTextPrimary,
 		octaviusColorEmptyStateTextLink: '#4986cc',
+		octaviusColorLetterContactBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(0, 16, 61, 0.04)',
+			active: 'rgba(0, 16, 61, 0.08)',
+		},
 	},
 
 	octaviusElevationCard: '0px 1px 0px 0px #DCE1E6, 0px 0px 0px 1px #E7E8EC',
@@ -487,6 +492,11 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			normal: 'underline',
 			hover: 'none',
 			active: 'none',
+		},
+		octaviusColorLetterContactBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.04)',
+			active: 'rgba(255, 255, 255, 0.08)',
 		},
 	},
 
