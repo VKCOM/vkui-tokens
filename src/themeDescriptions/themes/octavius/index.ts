@@ -52,8 +52,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorButtonBackground: {
 			normal: 'transparent',
-			hover: 'rgba(0, 16, 61, 0.04)',
-			active: 'rgba(0, 16, 61, 0.08)',
+			hover: getRGBA('#00103D', 0.04),
+			active: getRGBA('#00103D', 0.12),
 		},
 
 		octaviusColorBackground: lightTheme.colors.colorBackground,
@@ -292,8 +292,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorButtonIcon: '#E7E8EA',
 		octaviusColorButtonBackground: {
 			normal: 'transparent',
-			hover: 'rgba(255, 255, 255, 0.04)',
-			active: 'rgba(255, 255, 255, 0.08)',
+			hover: getRGBA('#FFFFFF', 0.08),
+			active: getRGBA('#FFFFFF', 0.16),
 		},
 
 		octaviusColorSidebarCounterBackground:
