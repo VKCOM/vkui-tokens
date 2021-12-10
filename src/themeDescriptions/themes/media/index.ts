@@ -253,25 +253,28 @@ export const mediaTheme: ThemeMediaDescription = {
 	 */
 
 	sizeFieldHeight: {
-		compactX: x12,
-		compact: x12,
-		regular: x10,
-	},
-	sizeControlButtonWidthMin: {
-		compactX: 130,
-		compact: 130,
-		regular: 94,
+		regular: x12,
 	},
 
 	sizeButtonLargeHeight: {
 		regular: x12,
 	},
-	sizeButtonSmallHeight: {
-		regular: x8,
+	sizeButtonMediumHeight: {
+		regular: x10,
 	},
+	sizeButtonSmallHeight: {
+		regular: 36,
+	},
+
 	sizeFieldWidthMin: {
 		compactX: 288,
 		regular: 380,
+	},
+
+	sizeControlButtonWidthMin: {
+		compactX: 130,
+		compact: 130,
+		regular: 94,
 	},
 
 	/**
