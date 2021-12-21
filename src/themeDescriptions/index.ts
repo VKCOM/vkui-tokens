@@ -24,6 +24,8 @@ import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
 import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
 import {promoTheme} from '@/themeDescriptions/themes/promo';
 import {todoTheme} from '@/themeDescriptions/themes/todo';
+import {vkAndroidTheme} from '@/themeDescriptions/themes/vkAndroid';
+import {vkIOSTheme} from '@/themeDescriptions/themes/vkIOS';
 
 import {
 	darkTheme as paradigmBaseDark,
@@ -32,13 +34,17 @@ import {
 import {lightTheme as vkBase} from './base/vk';
 
 export const themes = [
-	// основные базовые темы новой дизайн-системы
+	// ==== Базовые темы новой дизайн-системы ====
 	paradigmBase,
 	paradigmBaseDark,
 	vkBase,
 
-	// темы наследуемые от октавиусной (Почтовой)
-	// парадигм-темы
+	// ==== Темы, наследуемые от базовой темы VK ====
+	vkAndroidTheme,
+	vkIOSTheme,
+
+	// ==== Темы, наследуемые от базовой темы Paradigm ====
+	// Темы, наследуемые от Octavius
 	octaviusTheme,
 	octaviusDarkTheme,
 	octaviusCompactTheme,
@@ -48,20 +54,29 @@ export const themes = [
 	calendarTheme,
 	calendarDarkTheme,
 	octaviusWhiteTheme,
-	callsTheme,
-	homeTheme,
-	homeDarkTheme,
-	todoTheme,
-	cloudTheme,
-	otvetTheme,
-	otvetDarkTheme,
 
-	// темы наследуемые от медиа темы (парадигм)
+	// Темы, наследуемые от Media
 	mediaTheme,
 	mediaDarkTheme,
 	mycomTheme,
 	pharmaTheme,
 
-	// это что-то странное
+	// Темы, наследуемые от Home
+	homeTheme,
+	homeDarkTheme,
+
+	// Темы, наследуемые от Otvet
+	otvetTheme,
+	otvetDarkTheme,
+
+	// Прочие темы
+	callsTheme,
+	todoTheme,
+	cloudTheme,
+
+	// ==== Deprecated Legacy ====
+	/**
+	 * @deprecated TODO: Удалить
+	 */
 	promoTheme,
 ] as const;
