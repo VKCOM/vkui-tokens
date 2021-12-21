@@ -459,5 +459,19 @@ export const lightTheme: ThemeDescription = {
 	opacityDisable: 0.4,
 };
 
-// todo: здесь должна быть также базовая тёмная тема
-// darkColors и darkTheme
+export const darkTheme: ThemeDescription = {
+	...lightTheme,
+	...darkColors,
+	themeName: 'vkBaseDark',
+	colorsScheme: 'dark',
+
+	// TODO: Поставить нормальные отступы из тёмной темы
+	elevation1:
+		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+	elevation2:
+		'0px 0px 2px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.08)',
+	elevation3:
+		'0px 0px 4px rgba(0, 0, 0, 0.08), 0px 8px 8px rgba(0, 0, 0, 0.16)',
+	elevation4:
+		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+};

@@ -31,13 +31,14 @@ import {
 	darkTheme as paradigmBaseDark,
 	lightTheme as paradigmBase,
 } from './base/paradigm';
-import {lightTheme as vkBase} from './base/vk';
+import {darkTheme as vkBaseDark, lightTheme as vkBase} from './base/vk';
 
 export const themes = [
 	// ==== Базовые темы новой дизайн-системы ====
 	paradigmBase,
 	paradigmBaseDark,
 	vkBase,
+	vkBaseDark,
 
 	// ==== Темы, наследуемые от базовой темы VK ====
 	vkAndroidTheme,
