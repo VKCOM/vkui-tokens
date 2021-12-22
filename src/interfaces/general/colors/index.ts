@@ -113,6 +113,7 @@ export interface ColorsDescriptionStruct {
 	colorAvatarOverlay: ColorDescription;
 	colorOverlayPrimary: ColorDescription;
 	colorTransparent: ColorDescription;
+	colorBackgroundNegativeTint: ColorDescription;
 }
 
 export type Colors = {

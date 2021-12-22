@@ -6,6 +6,7 @@ import {
 	lightColors,
 	lightTheme,
 } from '@/themeDescriptions/base/paradigm';
+import {socialColors} from '@/themeDescriptions/common';
 
 export const octaviusTheme: ThemeOctaviusDescription = {
 	...lightTheme,
@@ -18,15 +19,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusElevationHeader: 'none',
 	colors: {
 		...lightTheme.colors,
+		...socialColors,
 		colorBackgroundThumbnail: '#EBECEF',
 		colorBackgroundThumbnailAlpha: 'rgba(0, 16, 61, 0.08)',
-		colorSocialVk: '#2787F5',
-		colorSocialOk: '#ee8208',
-		colorSocialMir: '#117eda',
-		colorSocialFb: '#0561af',
-		colorSocialTwitter: '#00bff3',
-		colorSocialDribbble: '#ea4c89',
-		colorSocialBehance: '#0057ff',
 		colorPaletteRed1: '#fc2c38',
 		colorPaletteRed2: '#eb1981',
 		colorPaletteRed3: '#ff71bb',
@@ -238,31 +233,30 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorPromoBackground: '#303030',
 		octaviusColorThreadFooterBackground: '#303030',
 
-		octaviusColorPortalMenuBackground: '#19191A',
+		octaviusColorPortalMenuBackground: '#232324',
 		octaviusColorSidebarItemBackgroundAlpha: {
 			normal: 'transparent',
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 
-		octaviusColorBackground: '#000000',
+		octaviusColorBackground: '#19191A',
 		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
 			darkTheme.colors.colorBackgroundAccent,
 			0.12,
 		),
 
-		octaviusColorHeaderBackground: '#161616',
+		octaviusColorHeaderBackground: '#232324',
 		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
 		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
 		octaviusColorHeaderProgress:
 			darkTheme.colors.colorBackgroundAccentAlternative,
 
-		octaviusColorHeaderSearchBackground: '#1F1F1F',
+		octaviusColorHeaderSearchBackground: '#303030',
 		octaviusColorHeaderSearchBackgroundCollapsed:
 			darkTheme.colors.colorBackgroundModal,
-		octaviusColorHeaderSearchChipBackground:
-			darkTheme.colors.colorBackgroundModal,
-		octaviusColorHeaderSearchChipBackgroundEditable: '#313131',
+		octaviusColorHeaderSearchChipBackground: '#404040',
+		octaviusColorHeaderSearchChipBackgroundEditable: '#3e3e3e',
 		octaviusColorHeaderSearchChipBorderEditableAlpha:
 			'rgba(255, 255, 255, .48)',
 		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,
