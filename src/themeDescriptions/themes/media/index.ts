@@ -1,6 +1,6 @@
 import {replacePropDeep} from '@/build/helpers/replacePropDeep';
 import {ThemeMediaDescription} from '@/interfaces/themes/media';
-import {helpers, projectColors} from '@/themeDescriptions/common';
+import {helpers, projectColors, socialColors} from '@/themeDescriptions/common';
 
 import {darkTheme, lightTheme} from '../../base/paradigm';
 
@@ -44,14 +44,7 @@ export const mediaTheme: ThemeMediaDescription = {
 	colors: {
 		...replacedFamilyOctavius.colors,
 		...projectColors,
-
-		colorSocialVk: '#3F8AE0',
-		colorSocialOk: '#ee8208',
-		colorSocialFb: '#1877f2',
-		colorSocialMir: '#117eda',
-		colorSocialTwitter: '#1da1f2',
-		colorSocialBehance: '#1769ff',
-		colorSocialDribbble: '#ea4c89',
+		...socialColors,
 	},
 
 	breakpoints: {
@@ -260,25 +253,28 @@ export const mediaTheme: ThemeMediaDescription = {
 	 */
 
 	sizeFieldHeight: {
-		compactX: x12,
-		compact: x12,
-		regular: x10,
-	},
-	sizeControlButtonWidthMin: {
-		compactX: 130,
-		compact: 130,
-		regular: 94,
+		regular: x12,
 	},
 
 	sizeButtonLargeHeight: {
 		regular: x12,
 	},
-	sizeButtonSmallHeight: {
-		regular: x8,
+	sizeButtonMediumHeight: {
+		regular: x10,
 	},
+	sizeButtonSmallHeight: {
+		regular: 36,
+	},
+
 	sizeFieldWidthMin: {
 		compactX: 288,
 		regular: 380,
+	},
+
+	sizeControlButtonWidthMin: {
+		compactX: 130,
+		compact: 130,
+		regular: 94,
 	},
 
 	/**

@@ -6,6 +6,7 @@ import {
 	lightColors,
 	lightTheme,
 } from '@/themeDescriptions/base/paradigm';
+import {socialColors} from '@/themeDescriptions/common';
 
 export const octaviusTheme: ThemeOctaviusDescription = {
 	...lightTheme,
@@ -18,15 +19,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusElevationHeader: 'none',
 	colors: {
 		...lightTheme.colors,
+		...socialColors,
 		colorBackgroundThumbnail: '#EBECEF',
 		colorBackgroundThumbnailAlpha: 'rgba(0, 16, 61, 0.08)',
-		colorSocialVk: '#2787F5',
-		colorSocialOk: '#ee8208',
-		colorSocialMir: '#117eda',
-		colorSocialFb: '#0561af',
-		colorSocialTwitter: '#00bff3',
-		colorSocialDribbble: '#ea4c89',
-		colorSocialBehance: '#0057ff',
 		colorPaletteRed1: '#fc2c38',
 		colorPaletteRed2: '#eb1981',
 		colorPaletteRed3: '#ff71bb',
