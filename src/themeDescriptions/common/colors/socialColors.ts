@@ -11,11 +11,11 @@ export type SocialColors = {
 };
 
 export const socialColors: SocialColors = {
-	colorSocialVk: '#2787F5',
+	colorSocialVk: '#3F8AE0',
 	colorSocialOk: '#ee8208',
+	colorSocialFb: '#1877f2',
 	colorSocialMir: '#117eda',
-	colorSocialFb: '#0561af',
-	colorSocialTwitter: '#00bff3',
+	colorSocialTwitter: '#1da1f2',
+	colorSocialBehance: '#1769ff',
 	colorSocialDribbble: '#ea4c89',
-	colorSocialBehance: '#0057ff',
 };
