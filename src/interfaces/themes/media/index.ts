@@ -29,15 +29,6 @@ interface ProjectColors {
 	colorSecondaryBase: ColorWithStates;
 	colorSecondaryHealth: ColorWithStates;
 	colorSecondaryMycom: ColorWithStates;
-
-	// Social
-	colorSocialVk: ColorDescription;
-	colorSocialOk: ColorDescription;
-	colorSocialMir: ColorDescription;
-	colorSocialFb: ColorDescription;
-	colorSocialTwitter: ColorDescription;
-	colorSocialDribbble: ColorDescription;
-	colorSocialBehance: ColorDescription;
 }
 
 type ProjectColorsDescriptions = {
