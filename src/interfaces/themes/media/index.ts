@@ -8,7 +8,6 @@ import {
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
-import {SocialColors} from '@/themeDescriptions/common/colors/socialColors';
 
 export type MediaViewportsTuple = ['touch', 'tablet', 'desktopS', 'desktopM'];
 
@@ -35,6 +34,16 @@ interface ProjectColors {
 type ProjectColorsDescriptions = {
 	[key in keyof ProjectColors]: ColorDescription;
 };
+
+interface SocialColors {
+	colorSocialVk: ColorWithStates;
+	colorSocialOk: ColorWithStates;
+	colorSocialMir: ColorWithStates;
+	colorSocialFb: ColorWithStates;
+	colorSocialTwitter: ColorWithStates;
+	colorSocialDribbble: ColorWithStates;
+	colorSocialBehance: ColorWithStates;
+}
 
 type SocialColorsDescriptions = {
 	[key in keyof SocialColors]: ColorDescription;
