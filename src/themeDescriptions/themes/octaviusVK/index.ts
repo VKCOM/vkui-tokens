@@ -138,6 +138,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			hover: '#E4E5E9',
 			active: '#DADCE2',
 		},
+		ocatviusColorListBackgroundPositiveAlpha: 'rgba(13, 194, 104, 0.08)',
 		octaviusColorEmptyStateText: octaviusTheme.colors.colorTextPrimary,
 		octaviusColorEmptyStateTextLink: '#4986cc',
 	},
