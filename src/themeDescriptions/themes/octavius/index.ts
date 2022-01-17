@@ -157,6 +157,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorListLetterSeparatorAlpha:
 			lightTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterAdvBackground: '#F0F5FF',
+		ocatviusColorListBackgroundPositiveAlpha: 'rgba(13, 194, 104, 0.08)',
 		octaviusColorLetterListTextUnread: '#2c2d2e',
 
 		octaviusColorDatasetBackground:
@@ -332,10 +333,10 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorListLetterBackground:
 			darkTheme.colors.colorBackgroundContent,
-		ocatviusColorListBackgroundPositiveAlpha: 'rgba(13, 194, 104, 0.08)',
 		octaviusColorListLetterSeparatorAlpha:
 			darkTheme.colors.colorSeparatorPrimaryAlpha,
 		octaviusColorListLetterAdvBackground: '#151515',
+		ocatviusColorListBackgroundPositiveAlpha: 'rgba(13, 194, 104, 0.08)',
 
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,

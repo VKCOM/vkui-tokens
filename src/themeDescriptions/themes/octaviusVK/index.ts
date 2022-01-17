@@ -443,6 +443,7 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: '#2B2B2C',
 			active: '#353535',
 		},
+		ocatviusColorListBackgroundPositiveAlpha: 'rgba(13, 194, 104, 0.08)',
 		octaviusColorEmptyStateText: vkDarkColors.colors.colorTextPrimary,
 
 		octaviusColorSidebarItemText: vkDarkColors.colors.colorIconPrimary,
