@@ -493,8 +493,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorLetterListTextUnread: '#ffffff',
 		octaviusColorLetterContactBackgroundAlpha: {
 			normal: 'transparent',
-			hover: 'rgba(0, 16, 61, 0.08)',
-			active: 'rgba(0, 16, 61, 0.16)',
+			hover: 'rgba(255, 255, 255, 0.08)',
+			active: 'rgba(255, 255, 255, 0.16)',
 		},
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
 		octaviusColorLetterPreviewBackgroundSecondary: '#0F0F0F',
