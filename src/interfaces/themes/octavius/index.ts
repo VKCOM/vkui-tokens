@@ -207,6 +207,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorLayoutBorderAlpha: ColorDescription;
 	octaviusColorLayoutLetterBorderAlpha: ColorDescription;
 	octaviusColorEmptyStateTextLink: ColorDescription;
+	octaviusColorLetterContactBackgroundAlpha: ColorDescription;
 	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
 	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
 	octaviusTextDecorationEmptyStateTextLink: ColorDescription;

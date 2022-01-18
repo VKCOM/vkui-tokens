@@ -109,6 +109,11 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.64)',
 			active: 'rgba(255, 255, 255, 0.4)',
 		},
+		octaviusColorLetterContactBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(0, 16, 61, 0.08)',
+			active: 'rgba(0, 16, 61, 0.16)',
+		},
 		octaviusColorHeaderSearchIcon: '#b6b8be',
 		octaviusColorHeaderSearchText: vkLightColors.colors.colorTextPrimary,
 		octaviusColorHeaderSearchTextCollapsed:
@@ -484,6 +489,11 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorLayoutLetterBorderAlpha: 'rgba(0, 0, 0, 0.4)',
 
 		octaviusColorLetterListTextUnread: '#ffffff',
+		octaviusColorLetterContactBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(0, 16, 61, 0.08)',
+			active: 'rgba(0, 16, 61, 0.16)',
+		},
 		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
 		octaviusColorLetterPreviewBackgroundSecondary: '#0F0F0F',
 
