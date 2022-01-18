@@ -186,6 +186,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены списка писем
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparatorAlpha: ColorDescription;
+	octaviusColorListBackgroundPositiveAlpha: ColorDescription;
 
 	/**
 	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
