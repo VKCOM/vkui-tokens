@@ -17,6 +17,6 @@ jobs:
       - name: Assigning new version
         run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=${GITHUB_SHA:0:6}
       - name: Publishing release
-        run: npm publish:dev
+        run: npm run publish:dev
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
