@@ -21,7 +21,7 @@ jobs:
           cache: 'npm'
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish:latest
+      - run: npm run publish:latest
         env:
           NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
 
