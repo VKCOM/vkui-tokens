@@ -117,7 +117,7 @@ export const darkColors: ColorsDescription = {
 	colors: {
 		// Background
 		colorBackgroundAccent: '#2775FC',
-		colorBackgroundAccentThemed: '#2775FC',
+		colorBackgroundAccentThemed: '#FFFFFF',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#232324',
 		colorBackgroundSecondary: '#2A2A2B',
@@ -138,7 +138,7 @@ export const darkColors: ColorsDescription = {
 
 		// Text
 		colorTextAccent: '#3C82FD',
-		colorTextAccentThemed: '#3C82FD',
+		colorTextAccentThemed: '#FFFFFF',
 		colorTextNegative: '#ED0A34',
 		colorTextLink: '#589BFF',
 		colorTextLinkThemed: '#FFFFFF',
@@ -171,7 +171,7 @@ export const darkColors: ColorsDescription = {
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
-		colorStrokeAccentThemed: '#3C82FD',
+		colorStrokeAccentThemed: '#FFFFFF',
 		colorStrokeContrast: '#FFFFFF',
 		colorStrokeNegative: '#ED0A34',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
@@ -468,6 +468,7 @@ export const lightThemeBase: ThemeDescription = {
 	animationDurationS: '0.1s',
 	animationEasingDefault: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.48,
+	opacityDisableAccessibility: 0.64,
 };
 
 const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
