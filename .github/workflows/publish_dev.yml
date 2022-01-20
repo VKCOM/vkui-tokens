@@ -15,7 +15,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
       - name: Assigning new version
-        run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=${{ GITHUB_SHA::6 }}
+        run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=${GITHUB_SHA:0:6}
       - name: Publishing release
         run: echo 0
         env:
