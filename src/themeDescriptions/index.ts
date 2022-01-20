@@ -24,7 +24,7 @@ import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
 import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
 import {promoTheme} from '@/themeDescriptions/themes/promo';
 import {todoTheme} from '@/themeDescriptions/themes/todo';
-import {vkAndroidTheme} from '@/themeDescriptions/themes/vkAndroid';
+import {vkComTheme} from '@/themeDescriptions/themes/vkCom';
 import {vkIOSTheme} from '@/themeDescriptions/themes/vkIOS';
 
 import {
@@ -41,7 +41,7 @@ export const themes = [
 	vkBaseDark,
 
 	// ==== Темы, наследуемые от базовой темы VK ====
-	vkAndroidTheme,
+	vkComTheme,
 	vkIOSTheme,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
