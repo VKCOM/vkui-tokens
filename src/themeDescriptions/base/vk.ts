@@ -481,6 +481,7 @@ export const lightTheme: ThemeDescription = {
 	animationDurationS: '0.1s',
 	animationEasingDefault: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.4,
+	opacityDisableAccessibility: 0.64,
 };
 
 export const darkTheme: ThemeDescription = {
