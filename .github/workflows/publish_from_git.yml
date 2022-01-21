@@ -1,10 +1,11 @@
-name: 'Publish npm package from version in package.json'
+name: 'Publish release-candidate from package.json version'
 
 on:
   - workflow_dispatch
 
 jobs:
   publish:
+    name: Publish release-candidate from package.json version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

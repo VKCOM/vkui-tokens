@@ -1,6 +1,6 @@
 {
   "name": "@vkontakte/vkui-tokens",
-  "version": "4.0.0-rc.79",
+  "version": "4.0.0",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
   "main": "utils/descriptions.js",
@@ -10,6 +10,8 @@
     "prepublishOnly": "echo 'ПРЕДУПРЕЖДЕНИЕ: Публиковать из root этот пакет нельзя: выполните команду \\033[1;32m\"npm run publish:dist\"' && exit 1",
     "prepublish:dist": "npm run clear:src && npm run build",
     "publish:dist": "npm run prepublish:dist && cd dist && npm publish --access=public",
+    "publish:dev": "npm run prepublish:dist && cd dist && npm publish --tag=dev --access=public",
+    "publish:latest": "npm run prepublish:dist && cd dist && npm publish --tag=latest --access=public",
     "build:script": "ts-node -r tsconfig-paths/register src/build/index.ts",
     "lint": "TIMING=1 eslint ./src --ext .ts",
     "lint:fix": "npm run lint -- --fix",

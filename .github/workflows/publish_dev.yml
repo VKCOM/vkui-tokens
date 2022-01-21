@@ -1,0 +1,22 @@
+name: 'Publish development release from git commit SHA'
+
+on:
+  - workflow_dispatch
+
+jobs:
+  publish_dev_release:
+    name: Publish development release from git commit SHA
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm ci
+      - name: Assigning new version
+        run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=dev-${GITHUB_SHA:0:6}
+      - name: Publishing release
+        run: npm run publish:dev
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
