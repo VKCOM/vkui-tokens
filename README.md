@@ -11,33 +11,7 @@
 
 Для описания интерфейсов тем и значений переменных используется TypeScript.
 
-# Темы оформления
-* _vkBase_
-  * vkBaseDark
-  * vkCom
-  * vkIOS
-* _paradigmBase_
-  * paradigmBaseDark
-  * calendar
-    * calendarDark
-  * calls
-  * cloud
-  * home
-    * homeDark
-  * media
-    * mediaDark
-  * mycom
-  * octavius
-    * octaviusCompact
-    * octaviusCompactDark
-    * octaviusDark
-    * octaviusVK
-    * octaviusVKDark
-    * octaviusWhite
-  * otvet
-    * otvetDark
-  * pharma
-  * promo
+# Содержание
 
 # Использование
 
@@ -165,20 +139,6 @@ import baseTheme from '@vkontakte/vkui-tokens/themes/vkBase';
         postcss src/main.css -c ./ --dir public
 
    Такая команда прогонит файл src/main.css с помощью конфига из текущей папки и положит результат в папку public.
-
-# Структура репозитория
-
-* src
-    * **interfaces** &mdash; описание интерфейса токенов
-        * `general` &mdash; описание общих типов и структур дизайн-системы
-        * `napespaces` &mdash; пространства имён тем оформления (vk, paradigm)
-        * `themes` &mdash; описание интерфейса каждой темы оформления
-    * **themeDescriptions** &mdash; описание конкретных значений переменных тем оформления
-        * _base_ &mdash; значения переменных базовых тем
-        * _themes_ &mdash; значения переменных продуктовых тем
-        * _common_ &mdash; вспомогательный код и общие для всех тем значения
-    * **build** &mdash; инструменты сборки
-    * **lint** &mdash; инструменты линтинга токенов
 
 # Инструменты
 ## Локальная сборка своих тем инструментами библиотеки
