@@ -1,4 +1,4 @@
-# **CHANGELOG**
+# **CHANGELOG (Архивная версия)**
 
 ## 4.0.0
 * **Перешли на релизы через [GitHub](https://github.com/VKCOM/vkui-tokens/releases). Все следующие релизы будут описываться там!**
