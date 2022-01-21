@@ -125,7 +125,6 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 	{in: '.npmignore'},
 	{in: '.gitignore'},
 	{in: '.npmrc'},
-	{in: 'CHANGELOG.md'},
 	{in: 'README.md'},
 	{
 		in: 'assets',
