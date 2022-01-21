@@ -1,6 +1,9 @@
 <img src="assets/vkui_logo.png" alt="vkui logo" height="52"/>
 <img src="assets/logo.svg" alt="vkui logo" height="52"/>
 
+[![Tests](https://github.com/VKCOM/vkui-tokens/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/VKCOM/vkui-tokens/actions/workflows/test.yml)
+[![Npm](https://img.shields.io/npm/v/@vkontakte/vkui-tokens)](https://www.npmjs.com/package/@vkontakte/vkui-tokens)
+
 # Использование
 
 1. Устанавливаем npm-пакет `@vkontakte/vkui-tokens`:
