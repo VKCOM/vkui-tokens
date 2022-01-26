@@ -445,6 +445,20 @@ export const lightTheme: ThemeDescription = {
 		regular: 56,
 	},
 
+	//Токены компонента Cardscroll
+	sizeCardgridPadding: {
+		regular: 8,
+	},
+	sizeCardgridPaddingVertical: {
+		regular: 12,
+	},
+	sizeCardgridPaddingHorizontal: {
+		regular: 16,
+	},
+	sizeCardBorderRadius: {
+		regular: 8,
+	},
+
 	// Прочие отступы
 	elevation1:
 		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',

@@ -469,6 +469,10 @@ export const lightThemeBase: ThemeDescription = {
 	animationEasingDefault: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
+	sizeCardgridPaddingHorizontal: undefined,
+	sizeCardgridPadding: undefined,
+	sizeCardgridPaddingVertical: undefined,
+	sizeCardBorderRadius: undefined
 };
 
 const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
@@ -707,6 +711,20 @@ export const lightTheme: ParadigmThemeDescription = {
 	},
 	sizeIllustrationXXL: {
 		regular: 228,
+	},
+
+	//Токены компонента Cardscroll
+	sizeCardgridPadding: {
+		regular: 12,
+	},
+	sizeCardgridPaddingVertical: {
+		regular: 0,
+	},
+	sizeCardgridPaddingHorizontal: {
+		regular: 0,
+	},
+	sizeCardBorderRadius: {
+		regular: 16,
 	},
 
 	// остальное
