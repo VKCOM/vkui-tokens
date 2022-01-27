@@ -8,4 +8,9 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 	sizeBorderRadius: {
 		regular: 10,
 	},
+
+	// Токены компонента Cardscroll
+	sizeCardBorderRadius: {
+		regular: 10,
+	},
 };
