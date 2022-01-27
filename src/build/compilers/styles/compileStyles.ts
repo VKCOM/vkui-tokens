@@ -22,6 +22,7 @@ import {
 	isGroupToken,
 	isString,
 } from './helpers/tokenRecognition';
+import {getAllButColors} from '@/build/helpers/getAllButColors';
 
 export const serviceKeys = ['breakpoints', 'prefix', 'themeType'];
 
@@ -31,7 +32,8 @@ export type CompileStylesMode =
 	| 'onlyColors'
 	| 'withAdaptiveGroups'
 	| 'onlyAdaptiveGroups'
-	| 'noSizes';
+	| 'noSizes'
+	| 'noColors';
 
 /**
  * Компиллирует строку со стилями (в разных форматах), на основе темы
@@ -69,6 +71,10 @@ export const compileStyles = <PT = PixelifyTheme>(
 
 		case 'noSizes':
 			theme = getAllButSizes(theme, (theme as any).themeNameBase);
+			break;
+
+		case 'noColors':
+			theme = getAllButColors(theme, (theme as any).themeNameBase);
 			break;
 	}
 
