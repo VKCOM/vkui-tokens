@@ -457,8 +457,7 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBadgeXL: {
 		regular: 56,
 	},
-		
-	//Токены компонента Cardscroll
+	// Токены компонента Cardscroll
 	sizeCardgridPadding: {
 		regular: 12,
 	},
