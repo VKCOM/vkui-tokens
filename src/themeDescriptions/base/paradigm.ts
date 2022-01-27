@@ -457,6 +457,13 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBadgeXL: {
 		regular: 56,
 	},
+	// Токены компонента Cardscroll
+	sizeCardgridPadding: {
+		regular: 12,
+	},
+	sizeCardBorderRadius: {
+		regular: 16,
+	},
 
 	// Прочие отступы
 	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',

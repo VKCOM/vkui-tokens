@@ -37,4 +37,7 @@ export interface Sizes {
 	sizeBadgeM: number;
 	sizeBadgeL: number;
 	sizeBadgeXL: number;
+
+	sizeCardgridPadding: number;
+	sizeCardBorderRadius: number;
 }
