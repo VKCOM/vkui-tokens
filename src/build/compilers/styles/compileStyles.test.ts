@@ -604,6 +604,40 @@ const testData: TestVars[] = [
 			`,
 		},
 	},
+	{
+		name: 'should compile noColors',
+		mode: 'noColors',
+		descriptionTheme: {
+			sizeBasePadding: {
+				regular: '20px',
+			},
+			colorBackground: {
+				normal: '#FFF',
+				hover: '#AAA',
+				active: '#CCC',
+			},
+		},
+		result: {
+			css: stripIndent`
+				:root {
+					--vkui--size_base_padding--regular: 20px;
+				}
+			`,
+			scss: stripIndent`
+				$size-base-padding--regular: 20px;
+			`,
+			pcss: stripIndent`
+				:root {
+					--size-base-padding--regular: 20px;
+				}`,
+			less: stripIndent`
+				@size-base-padding--regular: 20px;
+			`,
+			styl: stripIndent`
+				$size-base-padding--regular = 20px;
+			`,
+		},
+	},
 ];
 
 describe('compileStyles', () => {
