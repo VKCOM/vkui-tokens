@@ -2,6 +2,7 @@ import 'css.escape';
 
 import {stripIndent} from 'common-tags';
 
+import {getAllButColors} from '@/build/helpers/getAllButColors';
 import {getAllButSizes} from '@/build/helpers/getAllButSizes';
 import {getOnlyColors} from '@/build/helpers/getOnlyColors';
 import {unCamelcasify} from '@/build/helpers/unCamelcasify';
@@ -22,7 +23,6 @@ import {
 	isGroupToken,
 	isString,
 } from './helpers/tokenRecognition';
-import {getAllButColors} from '@/build/helpers/getAllButColors';
 
 export const serviceKeys = ['breakpoints', 'prefix', 'themeType'];
 
