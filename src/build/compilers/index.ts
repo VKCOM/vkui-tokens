@@ -139,6 +139,7 @@ function writeCssVarsSourceFile<PT = PixelifyTheme>(
 		{mode: 'onlyColors', fileName: 'onlyColors.css'},
 		{mode: 'onlyAdaptiveGroups', fileName: 'onlyAdaptiveGroups.css'},
 		{mode: 'noSizes', fileName: 'noSizes.css'},
+		{mode: 'noColors', fileName: 'noColors.css'},
 	] as const).forEach(({mode, fileName}) => {
 		const filePath = path.resolve(themePath, fileName);
 

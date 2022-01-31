@@ -2,6 +2,7 @@ import 'css.escape';
 
 import {stripIndent} from 'common-tags';
 
+import {getAllButColors} from '@/build/helpers/getAllButColors';
 import {getAllButSizes} from '@/build/helpers/getAllButSizes';
 import {getOnlyColors} from '@/build/helpers/getOnlyColors';
 import {unCamelcasify} from '@/build/helpers/unCamelcasify';
@@ -31,7 +32,8 @@ export type CompileStylesMode =
 	| 'onlyColors'
 	| 'withAdaptiveGroups'
 	| 'onlyAdaptiveGroups'
-	| 'noSizes';
+	| 'noSizes'
+	| 'noColors';
 
 /**
  * Компиллирует строку со стилями (в разных форматах), на основе темы
@@ -69,6 +71,10 @@ export const compileStyles = <PT = PixelifyTheme>(
 
 		case 'noSizes':
 			theme = getAllButSizes(theme, (theme as any).themeNameBase);
+			break;
+
+		case 'noColors':
+			theme = getAllButColors(theme, (theme as any).themeNameBase);
 			break;
 	}
 
