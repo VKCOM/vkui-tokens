@@ -8,7 +8,7 @@ export const vkComTheme: ThemeVkComDescription = {
 	themeNameBase: 'vkCom',
 
 	sizeBorderRadius: {
-		regular: 8,
+		regular: 4,
 	},
 };
 
