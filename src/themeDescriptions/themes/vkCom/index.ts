@@ -1,6 +1,6 @@
 import {ThemeVkComDescription} from '@/interfaces/themes/vkCom';
 import {ThemeVkComDarkDescription} from '@/interfaces/themes/vkComDark';
-import {darkTheme, lightTheme} from '@/themeDescriptions/base/vk';
+import {darkColors, lightTheme} from '@/themeDescriptions/base/vk';
 
 export const vkComTheme: ThemeVkComDescription = {
 	...lightTheme,
@@ -14,7 +14,7 @@ export const vkComTheme: ThemeVkComDescription = {
 
 export const vkComThemeDark: ThemeVkComDarkDescription = {
 	...vkComTheme,
-	...darkTheme,
+	...darkColors,
 	themeName: 'vkComDark',
 	themeNameBase: 'vkCom',
 	colorsScheme: 'dark',
