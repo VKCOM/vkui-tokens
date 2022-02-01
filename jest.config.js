@@ -27,4 +27,5 @@ module.exports = {
 			lines: 90.84,
 		},
 	},
+	testMatch: ['**/?(*.)+(spec|test).[t]s?(x)'],
 };

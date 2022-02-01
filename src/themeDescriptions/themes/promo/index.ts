@@ -73,6 +73,7 @@ const fontSize11 = {
 export const promoTheme: ThemePromoDescription = {
 	...lightTheme,
 	themeName: 'promo',
+	themeNameBase: 'promo',
 
 	breakpoints: {
 		touch: {

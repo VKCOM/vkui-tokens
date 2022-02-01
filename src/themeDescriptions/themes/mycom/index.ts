@@ -14,6 +14,7 @@ delete themeWithFontFamily.prefix;
 export const mycomTheme: ThemeMycomDescription = {
 	...themeWithFontFamily,
 	themeName: 'mycom',
+	themeNameBase: 'mycom',
 	colors: {
 		...themeWithFontFamily.colors,
 		colorTextAccent: projectColors.colorPrimaryMycom,

@@ -6,6 +6,7 @@ import {mediaTheme} from '../media';
 export const pharmaTheme: ThemePharmaDescription = {
 	...mediaTheme,
 	themeName: 'pharma',
+	themeNameBase: 'pharma',
 	colors: {
 		...mediaTheme.colors,
 		colorTextAccent: projectColors.colorPrimaryPharma,

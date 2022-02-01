@@ -100,6 +100,7 @@ export const cloudTheme: ThemeCloudDescription = {
 	...lightTheme,
 
 	themeName: 'cloud',
+	themeNameBase: 'cloud',
 
 	fontFamilyBase,
 	fontFamilyAccent,

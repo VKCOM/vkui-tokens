@@ -29,32 +29,59 @@ export const serviceKeys = ['breakpoints', 'prefix', 'themeType'];
 export type CompileStylesMode =
 	| 'default'
 	| 'onlyVariables'
+	| 'onlyVariablesLocal'
 	| 'onlyColors'
 	| 'withAdaptiveGroups'
 	| 'onlyAdaptiveGroups'
 	| 'noSizes'
 	| 'noColors';
 
-/**
- * Компиллирует строку со стилями (в разных форматах), на основе темы
- */
-export const compileStyles = <PT = PixelifyTheme>(
+function isClassicCssType(format: Formats): boolean {
+	return format === EStyleTypes.CSS || format === EStyleTypes.PCSS;
+}
+
+export function getPrefix<PT extends PixelifyTheme>(
 	format: Formats,
 	theme: PT,
-	mode: CompileStylesMode = 'default',
-	// eslint-disable-next-line sonarjs/cognitive-complexity
-): string => {
-	const classicCssType =
-		format === EStyleTypes.CSS || format === EStyleTypes.PCSS;
+): string {
+	let prefix = theme.prefix ? `${theme.prefix}-` : '';
 
-	let prefix = (theme as any).prefix ? `${(theme as any).prefix}-` : '';
-	if (classicCssType && prefix) {
+	if (isClassicCssType(format) && prefix) {
 		prefix += '-';
 	}
 
 	if (format === EStyleTypes.CSS && !prefix) {
 		prefix = 'vkui--';
 	}
+
+	return prefix;
+}
+
+export function getRootSelector<PT extends PixelifyTheme>(
+	theme: PT,
+	mode: CompileStylesMode,
+): string {
+	if (!mode.endsWith('Local')) {
+		return ':root';
+	}
+
+	return `.${getPrefix(EStyleTypes.CSS, theme)}${
+		theme.themeNameBase ?? theme.themeName
+	}--${theme.colorsScheme}`;
+}
+
+/**
+ * Компиллирует строку со стилями (в разных форматах), на основе темы
+ */
+export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
+	format: Formats,
+	theme: PT,
+	mode: CompileStylesMode = 'default',
+	// eslint-disable-next-line sonarjs/cognitive-complexity
+): string => {
+	const classicCssType = isClassicCssType(format);
+	const prefix = getPrefix(format, theme);
+	const rootSelector = getRootSelector(theme, mode);
 
 	const getDeclaration = varDeclarations[format];
 	const getVariableStatement = variablesStatementDeclaration[format];
@@ -156,12 +183,12 @@ export const compileStyles = <PT = PixelifyTheme>(
 
 	if (classicCssType && variables) {
 		result = stripIndent`
-		:root {
+		${rootSelector} {
 		${variables.split('\n').join('\n\t\t')}}
 		`;
 	}
 
-	if (mode === 'onlyVariables') {
+	if (mode === 'onlyVariables' || mode === 'onlyVariablesLocal') {
 		return stripIndent(result);
 	}
 

@@ -191,6 +191,7 @@ export const darkColors: ColorsDescription = {
 
 export const lightTheme: ThemeDescription = {
 	themeName: 'vkBase',
+	themeNameBase: 'vkBase',
 	...lightColors,
 	// Типографика
 	fontFamilyAccent,
