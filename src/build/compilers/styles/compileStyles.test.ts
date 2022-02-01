@@ -823,4 +823,65 @@ describe('compileStyles', () => {
 			},
 		});
 	});
+
+	test.each(formats)('%s: customized selector in onlyVariablesLocal', (f) => {
+		runTest(f, {
+			mode: 'onlyVariablesLocal',
+			descriptionTheme: {
+				themeName: 'vkIOSDark',
+				themeNameBase: 'vkIOS',
+				colorsScheme: 'dark',
+				colorBackground: {
+					normal: '#FFF',
+					hover: '#AAA',
+					active: '#CCC',
+				},
+			},
+			result: {
+				css: stripIndent`
+					.vkui--vkIOS--dark {
+						--vkui--theme_name: 'vkIOSDark';
+						--vkui--theme_name_base: 'vkIOS';
+						--vkui--colors_scheme: dark;
+						--vkui--color_background: #FFF;
+						--vkui--color_background--hover: #AAA;
+						--vkui--color_background--active: #CCC;
+					}
+				`,
+				scss: stripIndent`
+					$theme-name: 'vkIOSDark';
+					$theme-name-base: 'vkIOS';
+					$colors-scheme: dark;
+					$color-background: #FFF;
+					$color-background--hover: #AAA;
+					$color-background--active: #CCC;
+				`,
+				pcss: stripIndent`
+				.vkui--vkIOS--dark {
+					--theme-name: 'vkIOSDark';
+					--theme-name-base: 'vkIOS';
+					--colors-scheme: dark;
+					--color-background: #FFF;
+					--color-background--hover: #AAA;
+					--color-background--active: #CCC;
+				}`,
+				less: stripIndent`
+					@theme-name: 'vkIOSDark';
+					@theme-name-base: 'vkIOS';
+					@colors-scheme: dark;
+					@color-background: #FFF;
+					@color-background--hover: #AAA;
+					@color-background--active: #CCC;
+				`,
+				styl: stripIndent`
+					$theme-name = 'vkIOSDark';
+					$theme-name-base = 'vkIOS';
+					$colors-scheme = dark;
+					$color-background = #FFF;
+					$color-background--hover = #AAA;
+					$color-background--active = #CCC;
+				`,
+			},
+		});
+	});
 });

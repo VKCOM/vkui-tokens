@@ -65,9 +65,9 @@ export function getRootSelector<PT extends PixelifyTheme>(
 		return ':root';
 	}
 
-	return `.${getPrefix(EStyleTypes.CSS, theme)}${theme.themeName}--${
-		theme.colorsScheme
-	}`;
+	return `.${getPrefix(EStyleTypes.CSS, theme)}${
+		theme.themeNameBase ?? theme.themeName
+	}--${theme.colorsScheme}`;
 }
 
 /**
