@@ -16,5 +16,6 @@ export const vkComThemeDark: ThemeVkComDarkDescription = {
 	...vkComTheme,
 	...darkTheme,
 	themeName: 'vkComDark',
+	themeNameBase: 'vkCom',
 	colorsScheme: 'dark',
 };
