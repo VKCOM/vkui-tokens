@@ -1,5 +1,5 @@
 import {ThemeVkIOSDescription} from '@/interfaces/themes/vkIOS';
-import {lightTheme} from '@/themeDescriptions/base/vk';
+import {darkTheme, lightTheme} from '@/themeDescriptions/base/vk';
 
 export const vkIOSTheme: ThemeVkIOSDescription = {
 	...lightTheme,
@@ -8,4 +8,11 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 	sizeBorderRadius: {
 		regular: 10,
 	},
+};
+
+export const vkIOSThemeDark: ThemeVkIOSDescription = {
+	...vkIOSTheme,
+	...darkTheme,
+	themeName: 'vkIOSDark',
+	colorsScheme: 'dark',
 };

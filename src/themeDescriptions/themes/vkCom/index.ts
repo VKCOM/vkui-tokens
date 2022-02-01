@@ -1,5 +1,5 @@
 import {ThemeVkComDescription} from '@/interfaces/themes/vkCom';
-import {lightTheme} from '@/themeDescriptions/base/vk';
+import {darkTheme, lightTheme} from '@/themeDescriptions/base/vk';
 
 export const vkComTheme: ThemeVkComDescription = {
 	...lightTheme,
@@ -8,4 +8,11 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeBorderRadius: {
 		regular: 8,
 	},
+};
+
+export const vkComThemeDark: ThemeVkComDescription = {
+	...vkComTheme,
+	...darkTheme,
+	themeName: 'vkComDark',
+	colorsScheme: 'dark',
 };
