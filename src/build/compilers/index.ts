@@ -106,7 +106,7 @@ function writeTsFile<T extends SpecialTokens = Theme>(
 	console.log(`успешно записали файл ${fileName}`);
 }
 
-function writeStyleFiles<PT = PixelifyTheme>(
+function writeStyleFiles<PT extends PixelifyTheme = PixelifyTheme>(
 	themePath: string,
 	theme: PT,
 	// type: Exclude<ThemeBuildType, 'cssVars' | 'cssVarsPseudoRoot'>,
@@ -126,7 +126,7 @@ function writeStyleFiles<PT = PixelifyTheme>(
 	});
 }
 
-function writeCssVarsSourceFile<PT = PixelifyTheme>(
+function writeCssVarsSourceFile<PT extends PixelifyTheme = PixelifyTheme>(
 	themePath: string,
 	theme: PT,
 	cssWarsTheme: any,
@@ -136,6 +136,7 @@ function writeCssVarsSourceFile<PT = PixelifyTheme>(
 	([
 		{mode: 'default', fileName: 'index.css'},
 		{mode: 'onlyVariables', fileName: 'onlyVariables.css'},
+		{mode: 'onlyVariablesLocal', fileName: 'onlyVariablesLocal.css'},
 		{mode: 'onlyColors', fileName: 'onlyColors.css'},
 		{mode: 'onlyAdaptiveGroups', fileName: 'onlyAdaptiveGroups.css'},
 		{mode: 'noSizes', fileName: 'noSizes.css'},

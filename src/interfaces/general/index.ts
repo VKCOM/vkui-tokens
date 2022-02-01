@@ -1,3 +1,5 @@
+import {Property} from 'csstype';
+
 import {Animations} from './animations';
 import {ColorDescription, Colors, ColorsDescriptionStruct} from './colors';
 import {Elevation} from './elevation';
@@ -7,6 +9,7 @@ import {Adaptive} from './tools';
 import {NamifyObject} from './tools/cssVars';
 import {StringifyObject} from './tools/utils';
 import {Fonts, TypographyBaseProps} from './typography';
+import ColorScheme = Property.ColorScheme;
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 
@@ -69,7 +72,11 @@ export interface Theme extends ThemeGeneral, ColorsFinal {
 export type PixelifyTheme<
 	T extends Partial<Record<keyof T, any>> = Theme
 > = StringifyObject<Omit<T, 'breakpoints' | 'themeType'>> &
-	Pick<T, Extract<'breakpoints', keyof T>> & {themeType: 'pixelify'};
+	Pick<T, Extract<'breakpoints', keyof T>> & {
+		themeType: 'pixelify';
+		themeName: string;
+		colorScheme: ColorScheme;
+	};
 
 /**
  * Тема, которая каждой переменной даёт name и value в виде названия
