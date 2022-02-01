@@ -59,6 +59,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 	...lightTheme,
 
 	themeName: 'calendar',
+	themeNameBase: 'calendar',
 
 	colors: {
 		...lightTheme.colors,

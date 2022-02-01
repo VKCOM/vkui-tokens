@@ -47,6 +47,7 @@ const fontText = {
 export const callsTheme: ThemeCallsDescription = {
 	...darkTheme,
 	themeName: 'calls',
+	themeNameBase: 'calls',
 
 	colors: {
 		...darkTheme.colors,

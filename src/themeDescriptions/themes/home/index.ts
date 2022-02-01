@@ -29,6 +29,7 @@ const elevations = {
 export const homeTheme: ThemeHomeDescription = {
 	...lightTheme,
 	themeName: 'home',
+	themeNameBase: 'home',
 	...elevations,
 	...localHomeOverValues,
 	colors: {
