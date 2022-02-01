@@ -40,4 +40,6 @@ export interface Sizes {
 
 	sizeCardgridPadding: number;
 	sizeCardBorderRadius: number;
+	sizeCardgridPaddingVertical: number;
+	sizeBasePaddingHorizontal: number;
 }

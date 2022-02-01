@@ -243,7 +243,7 @@ export const lightThemeBase: ThemeDescription = {
 	fontTitle3: {
 		regular: {
 			fontSize: 17,
-			lineHeight: 24,
+			lineHeight: 22,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
@@ -457,11 +457,18 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBadgeXL: {
 		regular: 56,
 	},
+
 	// Токены компонента Cardscroll
 	sizeCardgridPadding: {
 		regular: 12,
 	},
 	sizeCardBorderRadius: {
+		regular: 16,
+	},
+	sizeCardgridPaddingVertical: {
+		regular: 8,
+	},
+	sizeBasePaddingHorizontal: {
 		regular: 16,
 	},
 

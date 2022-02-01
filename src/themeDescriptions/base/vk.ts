@@ -453,6 +453,12 @@ export const lightTheme: ThemeDescription = {
 	sizeCardBorderRadius: {
 		regular: 8,
 	},
+	sizeCardgridPaddingVertical: {
+		regular: 8,
+	},
+	sizeBasePaddingHorizontal: {
+		regular: 16,
+	},
 
 	// Прочие отступы
 	elevation1:
