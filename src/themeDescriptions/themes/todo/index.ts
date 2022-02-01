@@ -8,6 +8,7 @@ const {x12, x10} = helpers;
 export const todoTheme: ThemeTodoDescription = {
 	...lightTheme,
 	themeName: 'todo',
+	themeNameBase: 'todo',
 
 	sizeFieldHeight: {
 		compact: x12,

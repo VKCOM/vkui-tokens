@@ -24,8 +24,8 @@ import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
 import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
 import {promoTheme} from '@/themeDescriptions/themes/promo';
 import {todoTheme} from '@/themeDescriptions/themes/todo';
-import {vkComTheme} from '@/themeDescriptions/themes/vkCom';
-import {vkIOSTheme} from '@/themeDescriptions/themes/vkIOS';
+import {vkComTheme, vkComThemeDark} from '@/themeDescriptions/themes/vkCom';
+import {vkIOSTheme, vkIOSThemeDark} from '@/themeDescriptions/themes/vkIOS';
 
 import {
 	darkTheme as paradigmBaseDark,
@@ -42,7 +42,9 @@ export const themes = [
 
 	// ==== Темы, наследуемые от базовой темы VK ====
 	vkComTheme,
+	vkComThemeDark,
 	vkIOSTheme,
+	vkIOSThemeDark,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius

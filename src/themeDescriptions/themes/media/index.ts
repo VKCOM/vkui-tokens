@@ -27,6 +27,7 @@ const replacedFamilyOctavius = replacePropDeep(lightTheme, {
 export const mediaTheme: ThemeMediaDescription = {
 	...replacedFamilyOctavius,
 	themeName: 'media',
+	themeNameBase: 'media',
 	prefix: 'vkui',
 	fontFamilyAccent,
 	fontFamilyArticle,
