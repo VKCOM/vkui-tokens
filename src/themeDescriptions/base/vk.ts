@@ -223,7 +223,7 @@ export const lightTheme: ThemeDescription = {
 	fontTitle3: {
 		regular: {
 			fontSize: 17,
-			lineHeight: 24,
+			lineHeight: 22,
 			letterSpacing: '-0.22px',
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
@@ -380,7 +380,7 @@ export const lightTheme: ThemeDescription = {
 	},
 	sizeButtonSmallHeight: {
 		regular: 30,
-		compact: 26,
+		compact: 28,
 	},
 	sizeCheckbox: {
 		regular: 16,
