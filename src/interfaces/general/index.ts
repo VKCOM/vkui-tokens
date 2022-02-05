@@ -36,7 +36,7 @@ export interface SpecialTokens {
 	// Базовая тема, от которой наследуемся
 	themeNameBase?: string;
 	// Тема, от которой наследуются значения при инкрементальной сборке
-	inheritsFrom?: string;
+	themeInheritsFrom?: string;
 	// Префикс токенов
 	prefix?: string;
 }
