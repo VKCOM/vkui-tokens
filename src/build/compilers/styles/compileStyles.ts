@@ -93,7 +93,6 @@ function isDeepEqual(actual: unknown, expected: unknown): boolean {
 		deepStrictEqual(actual, expected);
 		return true;
 	} catch (_) {
-		console.log(actual, expected);
 		return false;
 	}
 }
