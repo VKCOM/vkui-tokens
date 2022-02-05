@@ -6,6 +6,7 @@ export const vkComTheme: ThemeVkComDescription = {
 	...lightTheme,
 	themeName: 'vkCom',
 	themeNameBase: 'vkCom',
+	inheritsFrom: 'vkBase',
 
 	sizeBorderRadius: {
 		regular: 4,
@@ -17,5 +18,6 @@ export const vkComThemeDark: ThemeVkComDarkDescription = {
 	...darkColors,
 	themeName: 'vkComDark',
 	themeNameBase: 'vkCom',
+	inheritsFrom: 'vkBaseDark',
 	colorsScheme: 'dark',
 };

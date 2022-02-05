@@ -61,11 +61,13 @@ expandedThemes.forEach((expandedThemeObject) => {
 		pseudoThemeCssVars,
 	} = expandedThemeObject;
 
-	const {themeName, themeNameBase} = theme;
+	const {themeName, inheritsFrom} = theme;
+
 	const themeObjectBase =
-		themeName === themeNameBase
+		themeName === inheritsFrom
 			? undefined
-			: expandedThemesMap[themeNameBase];
+			: expandedThemesMap[inheritsFrom];
+
 	const pixelifyThemeBase = themeObjectBase?.pixelifyTheme;
 
 	console.log(`Начинаем процесс работы над темой ${themeName}\n`);
