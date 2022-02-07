@@ -2,19 +2,15 @@ import {Property} from 'csstype';
 
 import {ThemeCalendarDescription} from '@/interfaces/themes/calendar';
 import {ThemeCalendarDarkDescription} from '@/interfaces/themes/calendarDark';
+import {fontWeight} from '@/themeDescriptions/common/fontSizes';
 
 import {darkTheme, lightTheme} from '../../base/paradigm';
 import {fontSizes, helpers} from '../../common';
 
-const {x2, x3, x4, x5, sizeBase} = helpers;
+const {x2, x4, x5} = helpers;
 
 export const fontFamily: Property.FontFamily =
 	'MailSans, Helvetica, Arial, sans-serif';
-
-const fontSize1 = {
-	...fontSizes.fontSize1,
-	fontFamily,
-};
 
 const fontSize2 = {
 	...fontSizes.fontSize2,
@@ -41,18 +37,30 @@ const fontSize6 = {
 	fontFamily,
 };
 
-const fontSize7 = {
-	...fontSizes.fontSize7,
+const fontFootnote = {
+	...fontSize2,
+	lineHeight: '18px',
+};
+
+const fontCaption1 = {
+	fontSize: 12,
+	lineHeight: '16px',
+	fontWeight,
 	fontFamily,
 };
 
-const fontText = {
-	compact: {
-		...fontSize4,
-	},
-	regular: {
-		...fontSize3,
-	},
+const fontCaption2 = {
+	fontSize: 11,
+	lineHeight: '14px',
+	fontWeight,
+	fontFamily,
+};
+
+const fontCaption3 = {
+	fontSize: 9,
+	lineHeight: '12px',
+	fontWeight,
+	fontFamily,
 };
 
 export const calendarTheme: ThemeCalendarDescription = {
@@ -66,145 +74,183 @@ export const calendarTheme: ThemeCalendarDescription = {
 		colorTextSecondary: '#93969B',
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
-		colorFieldBorderAlpha: {
-			normal: 'transparent',
-			hover: 'transparent',
-			active: 'transparent',
+
+		// для кнопок, которые голубые в светлой теме и серые в темной
+		calendarColorBackgroundAccentTintThemedAlpha: {
+			normal: 'rgb(227, 238, 253, 1)',
+			hover: 'rgba(218, 228, 243, 1)',
+			active: 'rgba(227, 238, 253, 1)',
 		},
 	},
 
 	fontFamilyBase: fontFamily,
 	fontFamilyAccent: fontFamily,
 
-	fontH0: {
-		regular: {
-			...fontSize7,
-			fontWeight: 500,
-		},
-	},
-	fontH1: {
-		compact: {
-			...fontSize6,
-			fontWeight: 500,
-			marginBottom: x4,
-		},
-		regular: {
-			...fontSize7,
-			fontWeight: 500,
-			marginBottom: x4,
-		},
-	},
-	fontH2: {
-		compact: {
-			...fontSize5,
-			fontWeight: 500,
-			lineHeight: `${sizeBase * 6}px`,
-		},
-		regular: {
-			...fontSize6,
-			fontWeight: 500,
-			lineHeight: `${sizeBase * 7}px`,
-		},
-	},
 	fontTitle1: {
 		regular: {
-			...fontSize4,
+			...fontSize6,
+			fontWeight: 500,
+		},
+		compact: {
+			...fontSize6,
+			lineHeight: '28px',
 			fontWeight: 500,
 		},
 	},
 	fontTitle2: {
 		regular: {
-			...fontSize3,
+			...fontSize5,
+			lineHeight: '24px',
+			fontWeight: 500,
+		},
+		compact: {
+			...fontSize5,
+			lineHeight: '24px',
 			fontWeight: 500,
 		},
 	},
 	fontTitle3: {
 		regular: {
-			...fontSize3,
+			...fontSize4,
+			fontWeight: 500,
+		},
+		compact: {
+			...fontSize4,
 			fontWeight: 500,
 		},
 	},
 	fontHeadline1: {
 		regular: {
+			fontSize: 16,
+			lineHeight: '20px',
+			fontWeight: 500,
+			fontFamily,
+		},
+		compact: {
 			...fontSize3,
 			fontWeight: 500,
 		},
 	},
-	fontText,
-	fontFootnote: {
+	fontText: {
 		regular: {
+			fontSize: 16,
+			lineHeight: '20px',
+			fontWeight,
+			fontFamily,
+		},
+		compact: fontSize3,
+	},
+	fontParagraph: {
+		regular: fontSize3,
+		compact: fontSize3,
+	},
+	fontSubhead: {
+		regular: {
+			fontSize: 14,
+			lineHeight: '18px',
+			fontWeight,
+			fontFamily,
+		},
+		compact: {
 			...fontSize2,
+			lineHeight: '18px',
+			fontWeight: 500,
+		},
+	},
+	fontFootnote: {
+		regular: fontFootnote,
+		compact: fontFootnote,
+	},
+	fontFootnoteCaps: {
+		regular: {
+			...fontFootnote,
+			letterSpacing: '0.3px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			...fontFootnote,
+			letterSpacing: '0.3px',
+			textTransform: 'uppercase',
+		},
+	},
+	fontCaption1: {
+		regular: fontCaption1,
+		compact: {
+			...fontCaption1,
+			lineHeight: '14px',
+		},
+	},
+	fontCaption1Caps: {
+		regular: {
+			...fontCaption1,
+			letterSpacing: '0.26px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			...fontCaption1,
+			lineHeight: '14px',
+			letterSpacing: '0.26px',
+			textTransform: 'uppercase',
 		},
 	},
 	fontCaption2: {
+		regular: fontCaption2,
+		compact: fontCaption2,
+	},
+	fontCaption2Caps: {
 		regular: {
-			...fontSize1,
+			...fontCaption2,
+			letterSpacing: '0.22px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			...fontCaption2,
+			letterSpacing: '0.22px',
+			textTransform: 'uppercase',
 		},
 	},
-	fontEventM: {
-		compact: {
-			...fontSize4,
-			fontWeight: 500,
-		},
+	fontCaption3: {
+		regular: fontCaption3,
+		compact: fontCaption3,
+	},
+	fontCaption3Caps: {
 		regular: {
-			...fontSize3,
-			fontWeight: 500,
+			...fontCaption3,
+			letterSpacing: '0.16px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			...fontCaption3,
+			letterSpacing: '0.16px',
+			textTransform: 'uppercase',
 		},
 	},
-	fontEventS: {
+
+	calendarFontTextEvent: {
+		regular: fontSize4,
 		compact: {
-			...fontSize3,
-			lineHeight: '18px',
-			fontWeight: 500,
-		},
-		regular: {
 			...fontSize2,
 			lineHeight: '18px',
 			fontWeight: 500,
 		},
 	},
-	fontEventXS: {
-		regular: {
-			...fontText.compact,
+	calendarFontTextEventSmall: {
+		regular: fontSize3,
+		compact: {
 			fontSize: 12,
-			lineHeight: 16,
-			fontWeight: 500,
-		},
-	},
-	fontTime: {
-		regular: {
-			...fontSize2,
-			lineHeight: '18px',
-			fontWeight: 500,
-		},
-	},
-	fontBodyIOS: {
-		regular: {
-			...fontSize4,
-			fontWeight: 500,
-		},
-	},
-	fontBodyAndroid: {
-		regular: {
-			...fontSize4,
-			fontSize: 16,
-			lineHeight: `${sizeBase * 6}px`,
-			fontWeight: 500,
+			lineHeight: '12px',
+			fontWeight: 400,
+			fontFamily,
 		},
 	},
 
 	sizeButtonPaddingHorizontal: {
-		compact: x3,
-		regular: x4,
+		compact: x4,
+		regular: x5,
 	},
 	sizeBasePadding: {
 		regular: x5,
 	},
-
-	elevation1: 'none',
-	elevation2: 'none',
-	elevation3: '0px 4px 32px rgba(0, 16, 61, 0.32)',
-	elevation4: '0px 16px 48px rgba(0, 16, 61, 0.48)',
 
 	sizeAvatarXL: {
 		compact: 120,
@@ -216,7 +262,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 	},
 
 	sizeBorderRadius: {
-		compact: 12,
+		compact: 8,
 		regular: 8,
 	},
 };
@@ -232,10 +278,11 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		colorTextSecondary: '#8C8E94',
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
-		colorFieldBorderAlpha: {
-			normal: 'transparent',
-			hover: 'transparent',
-			active: 'transparent',
+
+		calendarColorBackgroundAccentTintThemedAlpha: {
+			normal: 'rgba(255, 255, 255, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.04)',
+			active: 'rgba(255, 255, 255, 0.12)',
 		},
 	},
 };
