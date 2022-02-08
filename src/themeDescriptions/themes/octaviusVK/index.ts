@@ -9,9 +9,9 @@ import {octaviusTheme} from '@/themeDescriptions/themes/octavius';
 
 const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'VKSansText, Helvetica, Arial, sans-serif';
+const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
-const fontWeightAccent3 = 500;
-const fontWeightBase1 = 400;
+const fontWeightBase3 = 400;
 
 // TODO: Придумать более изящный способ наследования
 const octaviusVKThemeBase: ThemeOctaviusDescription = {
@@ -163,7 +163,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 24,
 			lineHeight: 28,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle2: {
@@ -172,7 +172,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 20,
 			lineHeight: 26,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle3: {
@@ -181,12 +181,12 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 17,
 			lineHeight: 24,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
-	fontHeadline: {
+	fontHeadline1: {
 		regular: {
-			...vkLightTheme.fontHeadline.regular,
+			...vkLightTheme.fontHeadline1.regular,
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyAccent,
@@ -201,7 +201,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontSubhead: {
@@ -210,7 +210,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 14,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontFootnote: {
@@ -219,7 +219,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontFootnoteCaps: {
@@ -228,7 +228,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -238,7 +238,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption1Caps: {
@@ -247,7 +247,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -257,7 +257,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption2Caps: {
@@ -266,7 +266,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -276,7 +276,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption3Caps: {
@@ -285,7 +285,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -297,7 +297,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			lineHeight: 32,
 			letterSpacing: '-0.56px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 		compact: {
 			fontSize: 44,
@@ -311,7 +311,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			lineHeight: 28,
 			letterSpacing: '-0.48px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 		compact: {
 			fontSize: 32,
@@ -325,7 +325,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			lineHeight: 26,
 			letterSpacing: '-0.4px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 		compact: {
 			fontSize: 28,

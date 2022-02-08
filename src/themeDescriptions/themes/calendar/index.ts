@@ -124,7 +124,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 			fontWeight: 500,
 		},
 	},
-	fontHeadline: {
+	fontHeadline1: {
 		regular: {
 			...fontSize3,
 			fontWeight: 500,
