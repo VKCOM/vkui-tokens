@@ -5,6 +5,7 @@ import {CustomMediaByViewport} from '@/interfaces/general/tools/customMedia';
 
 import {processCustomMedia} from '../customMedia/customMedia';
 import {pixelifyValues} from '../pixelifyValues/pixelifyValues';
+import {staticRef} from '@/build/helpers/tokenHelpers';
 
 export function getVariableName({
 	key,
@@ -163,7 +164,7 @@ export function extractVarsNames<T = Theme>(
 
 	return processVarNaming({
 		object: pixelifyedTheme,
-		prefix: typedSourceTheme.prefix,
+		prefix: staticRef(typedSourceTheme.prefix),
 		customMedia,
 		...opt,
 	}) as any;

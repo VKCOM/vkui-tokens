@@ -1,4 +1,5 @@
 import {replacePropDeep} from '@/build/helpers/replacePropDeep';
+import {staticRef} from '@/build/helpers/tokenHelpers';
 import {ThemeMediaDescription} from '@/interfaces/themes/media';
 import {helpers, projectColors, socialColors} from '@/themeDescriptions/common';
 
@@ -116,48 +117,48 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 	fontTitle1: {
 		regular: {
-			...replacedFamilyOctavius.fontTitle1.regular,
+			...staticRef(replacedFamilyOctavius.fontTitle1).regular,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
 		compact: {
-			...replacedFamilyOctavius.fontTitle1.compact,
+			...staticRef(replacedFamilyOctavius.fontTitle1).compact,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
 	},
 	fontTitle2: {
 		regular: {
-			...replacedFamilyOctavius.fontTitle2.regular,
+			...staticRef(replacedFamilyOctavius.fontTitle2).regular,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
 		compact: {
-			...replacedFamilyOctavius.fontTitle2.compact,
+			...staticRef(replacedFamilyOctavius.fontTitle2).compact,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
 	},
 	fontTitle3: {
 		regular: {
-			...replacedFamilyOctavius.fontTitle3.regular,
+			...staticRef(replacedFamilyOctavius.fontTitle3).regular,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
 		compact: {
-			...replacedFamilyOctavius.fontTitle3.compact,
+			...staticRef(replacedFamilyOctavius.fontTitle3).compact,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
 	},
 	fontSubhead: {
 		regular: {
-			...replacedFamilyOctavius.fontSubhead.regular,
+			...staticRef(replacedFamilyOctavius.fontSubhead).regular,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
 		compact: {
-			...replacedFamilyOctavius.fontSubhead.compact,
+			...staticRef(replacedFamilyOctavius.fontSubhead).compact,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent3,
 		},
