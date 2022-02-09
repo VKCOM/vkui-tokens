@@ -1,4 +1,5 @@
 import {toneOpacity} from '@/build/helpers/cssHelpers';
+import {staticRef} from '@/build/helpers/tokenHelpers';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
 	darkColors as vkDarkColors,
@@ -9,9 +10,9 @@ import {octaviusTheme} from '@/themeDescriptions/themes/octavius';
 
 const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'VKSansText, Helvetica, Arial, sans-serif';
+const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
-const fontWeightAccent3 = 500;
-const fontWeightBase1 = 400;
+const fontWeightBase3 = 400;
 
 // TODO: Придумать более изящный способ наследования
 const octaviusVKThemeBase: ThemeOctaviusDescription = {
@@ -159,34 +160,34 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	fontFamilyBase,
 	fontTitle1: {
 		regular: {
-			...vkLightTheme.fontTitle1.regular,
+			...staticRef(vkLightTheme.fontTitle1).regular,
 			fontSize: 24,
 			lineHeight: 28,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle2: {
 		regular: {
-			...vkLightTheme.fontTitle2.regular,
+			...staticRef(vkLightTheme.fontTitle2).regular,
 			fontSize: 20,
 			lineHeight: 26,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle3: {
 		regular: {
-			...vkLightTheme.fontTitle3.regular,
+			...staticRef(vkLightTheme.fontTitle3).regular,
 			fontSize: 17,
 			lineHeight: 24,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
-	fontHeadline: {
+	fontHeadline1: {
 		regular: {
-			...vkLightTheme.fontHeadline.regular,
+			...staticRef(vkLightTheme.fontHeadline1).regular,
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyAccent,
@@ -197,95 +198,95 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	// todo fontSize в мобильном виде должен быть 16
 	fontText: {
 		regular: {
-			...vkLightTheme.fontText.regular,
+			...staticRef(vkLightTheme.fontText).regular,
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontSubhead: {
 		regular: {
-			...vkLightTheme.fontSubhead.regular,
+			...staticRef(vkLightTheme.fontSubhead).regular,
 			fontSize: 14,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontFootnote: {
 		regular: {
-			...vkLightTheme.fontFootnote.regular,
+			...staticRef(vkLightTheme.fontFootnote).regular,
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontFootnoteCaps: {
 		regular: {
-			...vkLightTheme.fontFootnoteCaps.regular,
+			...staticRef(vkLightTheme.fontFootnoteCaps).regular,
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
 	fontCaption1: {
 		regular: {
-			...vkLightTheme.fontCaption1.regular,
+			...staticRef(vkLightTheme.fontCaption1).regular,
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption1Caps: {
 		regular: {
-			...vkLightTheme.fontCaption1Caps.regular,
+			...staticRef(vkLightTheme.fontCaption1Caps).regular,
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
 	fontCaption2: {
 		regular: {
-			...vkLightTheme.fontCaption2.regular,
+			...staticRef(vkLightTheme.fontCaption2).regular,
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption2Caps: {
 		regular: {
-			...vkLightTheme.fontCaption2Caps.regular,
+			...staticRef(vkLightTheme.fontCaption2Caps).regular,
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
 	fontCaption3: {
 		regular: {
-			...vkLightTheme.fontCaption3.regular,
+			...staticRef(vkLightTheme.fontCaption3).regular,
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption3Caps: {
 		regular: {
-			...vkLightTheme.fontCaption3Caps.regular,
+			...staticRef(vkLightTheme.fontCaption3Caps).regular,
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -297,7 +298,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			lineHeight: 32,
 			letterSpacing: '-0.56px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 		compact: {
 			fontSize: 44,
@@ -311,7 +312,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			lineHeight: 28,
 			letterSpacing: '-0.48px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 		compact: {
 			fontSize: 32,
@@ -325,7 +326,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 			lineHeight: 26,
 			letterSpacing: '-0.4px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 		compact: {
 			fontSize: 28,
