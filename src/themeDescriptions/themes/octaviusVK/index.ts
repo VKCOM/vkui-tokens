@@ -1,4 +1,5 @@
 import {toneOpacity} from '@/build/helpers/cssHelpers';
+import {staticRef} from '@/build/helpers/tokenHelpers';
 import {ThemeOctaviusDescription} from '@/interfaces/themes/octavius';
 import {
 	darkColors as vkDarkColors,
@@ -159,7 +160,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	fontFamilyBase,
 	fontTitle1: {
 		regular: {
-			...vkLightTheme.fontTitle1.regular,
+			...staticRef(vkLightTheme.fontTitle1).regular,
 			fontSize: 24,
 			lineHeight: 28,
 			fontFamily: fontFamilyAccent,
@@ -168,7 +169,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontTitle2: {
 		regular: {
-			...vkLightTheme.fontTitle2.regular,
+			...staticRef(vkLightTheme.fontTitle2).regular,
 			fontSize: 20,
 			lineHeight: 26,
 			fontFamily: fontFamilyAccent,
@@ -177,7 +178,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontTitle3: {
 		regular: {
-			...vkLightTheme.fontTitle3.regular,
+			...staticRef(vkLightTheme.fontTitle3).regular,
 			fontSize: 17,
 			lineHeight: 24,
 			fontFamily: fontFamilyAccent,
@@ -186,7 +187,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontHeadline1: {
 		regular: {
-			...vkLightTheme.fontHeadline1.regular,
+			...staticRef(vkLightTheme.fontHeadline1).regular,
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyAccent,
@@ -197,7 +198,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	// todo fontSize в мобильном виде должен быть 16
 	fontText: {
 		regular: {
-			...vkLightTheme.fontText.regular,
+			...staticRef(vkLightTheme.fontText).regular,
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
@@ -206,7 +207,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontSubhead: {
 		regular: {
-			...vkLightTheme.fontSubhead.regular,
+			...staticRef(vkLightTheme.fontSubhead).regular,
 			fontSize: 14,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
@@ -215,7 +216,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontFootnote: {
 		regular: {
-			...vkLightTheme.fontFootnote.regular,
+			...staticRef(vkLightTheme.fontFootnote).regular,
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
@@ -224,7 +225,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontFootnoteCaps: {
 		regular: {
-			...vkLightTheme.fontFootnoteCaps.regular,
+			...staticRef(vkLightTheme.fontFootnoteCaps).regular,
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
@@ -234,7 +235,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontCaption1: {
 		regular: {
-			...vkLightTheme.fontCaption1.regular,
+			...staticRef(vkLightTheme.fontCaption1).regular,
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
@@ -243,7 +244,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontCaption1Caps: {
 		regular: {
-			...vkLightTheme.fontCaption1Caps.regular,
+			...staticRef(vkLightTheme.fontCaption1Caps).regular,
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
@@ -253,7 +254,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontCaption2: {
 		regular: {
-			...vkLightTheme.fontCaption2.regular,
+			...staticRef(vkLightTheme.fontCaption2).regular,
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
@@ -262,7 +263,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontCaption2Caps: {
 		regular: {
-			...vkLightTheme.fontCaption2Caps.regular,
+			...staticRef(vkLightTheme.fontCaption2Caps).regular,
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
@@ -272,7 +273,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontCaption3: {
 		regular: {
-			...vkLightTheme.fontCaption3.regular,
+			...staticRef(vkLightTheme.fontCaption3).regular,
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
@@ -281,7 +282,7 @@ const octaviusVKThemeBase: ThemeOctaviusDescription = {
 	},
 	fontCaption3Caps: {
 		regular: {
-			...vkLightTheme.fontCaption3Caps.regular,
+			...staticRef(vkLightTheme.fontCaption3Caps).regular,
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
