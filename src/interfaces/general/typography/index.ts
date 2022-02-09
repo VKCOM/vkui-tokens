@@ -21,6 +21,11 @@ export interface Fonts {
 	fontTitle1: Font;
 	fontTitle2: Font;
 	fontTitle3: Font;
+	/**
+	 * @deprecated
+	 * @see fontHeadline1
+	 */
+	fontHeadline: Font;
 	fontHeadline1: Font;
 	fontHeadline2: Font;
 	fontText: Font;

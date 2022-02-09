@@ -1,3 +1,4 @@
+import {alias, staticRef} from '@/build/helpers/tokenHelpers';
 import {overlayColors} from '@/build/themeProcessors/expandColors/overlayColors';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 import {Elevation} from '@/interfaces/general/elevation';
@@ -248,6 +249,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontWeight: fontWeightAccent1,
 		},
 	},
+	fontHeadline: alias('fontHeadline1'),
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
@@ -554,8 +556,8 @@ export const lightTheme: ParadigmThemeDescription = {
 		regular: {
 			fontSize: 28,
 			lineHeight: 32,
-			fontFamily: lightThemeBase.fontFamilyAccent,
-			fontWeight: lightThemeBase.fontWeightAccent1,
+			fontFamily: staticRef(lightThemeBase.fontFamilyAccent),
+			fontWeight: staticRef(lightThemeBase.fontWeightAccent1),
 		},
 		compact: {
 			fontSize: 44,
@@ -567,8 +569,8 @@ export const lightTheme: ParadigmThemeDescription = {
 		regular: {
 			fontSize: 24,
 			lineHeight: 28,
-			fontFamily: lightThemeBase.fontFamilyAccent,
-			fontWeight: lightThemeBase.fontWeightAccent1,
+			fontFamily: staticRef(lightThemeBase.fontFamilyAccent),
+			fontWeight: staticRef(lightThemeBase.fontWeightAccent1),
 		},
 		compact: {
 			fontSize: 32,
@@ -580,8 +582,8 @@ export const lightTheme: ParadigmThemeDescription = {
 		regular: {
 			fontSize: 20,
 			lineHeight: 26,
-			fontFamily: lightThemeBase.fontFamilyAccent,
-			fontWeight: lightThemeBase.fontWeightAccent1,
+			fontFamily: staticRef(lightThemeBase.fontFamilyAccent),
+			fontWeight: staticRef(lightThemeBase.fontWeightAccent1),
 		},
 		compact: {
 			fontSize: 28,

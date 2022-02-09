@@ -1,3 +1,4 @@
+import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 
 const fontFamilyAccent =
@@ -229,6 +230,7 @@ export const lightTheme: ThemeDescription = {
 			fontWeight: fontWeightAccent1,
 		},
 	},
+	fontHeadline: alias('fontHeadline1'),
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
