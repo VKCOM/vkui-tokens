@@ -1,5 +1,5 @@
+import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
-import {alias} from "@/build/helpers/tokenHelpers";
 
 const fontFamilyAccent =
 	'"TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';

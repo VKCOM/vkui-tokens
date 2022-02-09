@@ -25,7 +25,10 @@ function lintThemeObject(
 
 		const childEmit = (message) => emit(`${token} error: ${message}`);
 
-		if (token.startsWith('color') && isColorDescriptionCallable(tokenValue)) {
+		if (
+			token.startsWith('color') &&
+			isColorDescriptionCallable(tokenValue)
+		) {
 			checkAllRules(token, expandColor(tokenValue, theme), childEmit);
 		} else if (isColorDescriptionStatic(tokenValue)) {
 			checkAllRules(token, tokenValue, childEmit);

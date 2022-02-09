@@ -10,7 +10,7 @@ import {NamifyObject} from './tools/cssVars';
 import {StringifyObject} from './tools/utils';
 import {Fonts, TypographyBaseProps} from './typography';
 import ColorScheme = Property.ColorScheme;
-import {Tokens} from "@/interfaces/general/tools/tokenValue";
+import {Tokens} from '@/interfaces/general/tools/tokenValue';
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 
