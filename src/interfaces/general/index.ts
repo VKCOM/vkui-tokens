@@ -10,6 +10,7 @@ import {NamifyObject} from './tools/cssVars';
 import {StringifyObject} from './tools/utils';
 import {Fonts, TypographyBaseProps} from './typography';
 import ColorScheme = Property.ColorScheme;
+import {Tokens} from "@/interfaces/general/tools/tokenValue";
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 
@@ -42,16 +43,18 @@ export interface WithThemeType {
 	themeType: 'root' | 'flat' | 'pixelify' | 'cssVars' | 'cssVarsWide';
 }
 
-/**
- * Общий интерефейс между описанием и самой темой
- */
-export interface ThemeGeneral
+interface ThemeGeneralRaw
 	extends AdaptiveTokens,
 		SpecialTokens,
 		ToneValues,
 		TypographyBaseProps,
 		Elevation,
 		Animations {}
+
+/**
+ * Общий интерефейс между описанием и самой темой
+ */
+export type ThemeGeneral = Tokens<ThemeGeneralRaw>;
 
 /**
  * Интерфейс описания Темы (в этом типе описываются все темы дизайн-системы)

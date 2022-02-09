@@ -1,4 +1,5 @@
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
+import {alias} from "@/build/helpers/tokenHelpers";
 
 const fontFamilyAccent =
 	'"TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';
@@ -229,6 +230,7 @@ export const lightTheme: ThemeDescription = {
 			fontWeight: fontWeightAccent1,
 		},
 	},
+	fontHeadline: alias('fontHeadline1'),
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
