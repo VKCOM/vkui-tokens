@@ -18,7 +18,7 @@ export interface ThemeCalendarOverValues {
 }
 
 export interface LocalCalendarColorDescriptionStruct {
-	calendarColorBackgroundAccentTintThemedAlpha: ColorDescription;
+	calendarColorBackgroundAccentTintThemed: ColorDescription;
 }
 
 export type CalendarLocalColors = {
