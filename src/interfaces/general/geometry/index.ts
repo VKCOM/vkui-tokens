@@ -42,4 +42,8 @@ export interface Sizes {
 	sizeCardBorderRadius: number;
 	sizeCardgridPaddingVertical: number;
 	sizeBasePaddingHorizontal: number;
+
+	sizeButtonGroupGapSpace: number;
+	sizeButtonGroupGapSmall: number;
+	sizeButtonGroupGapMedium: number;
 }
