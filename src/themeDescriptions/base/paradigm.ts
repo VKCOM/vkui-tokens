@@ -506,6 +506,16 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 16,
 	},
 
+	sizeButtonGroupGapSpace: {
+		regular: 1,
+	},
+	sizeButtonGroupGapSmall: {
+		regular: 8,
+	},
+	sizeButtonGroupGapMedium: {
+		regular: 12,
+	},
+
 	// Прочие отступы
 	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
 	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
