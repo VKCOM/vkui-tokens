@@ -1,3 +1,4 @@
+import {staticRef} from '@/build/helpers/tokenHelpers';
 import {ThemeOctaviusCompactDescription} from '@/interfaces/themes/octaviusCompact';
 
 import {fontSizes} from '../../common';
@@ -10,7 +11,7 @@ export const octaviusCompactTheme: ThemeOctaviusCompactDescription = {
 	themeName: 'octaviusCompact',
 
 	fontText: {
-		compact: octaviusTheme.fontText.compact,
+		compact: staticRef(octaviusTheme.fontText).compact,
 		regular: {...fontSize2},
 	},
 

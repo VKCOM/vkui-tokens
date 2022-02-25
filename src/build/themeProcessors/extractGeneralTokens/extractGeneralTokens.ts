@@ -11,6 +11,16 @@ export function extractGeneralTokens<TD = ThemeDescription, TG = ThemeGeneral>(
 	themeDescription: TD,
 ): TG {
 	const copyDescription: any = JSON.parse(JSON.stringify(themeDescription));
+	const tokens = Object.keys(themeDescription);
+
+	// Разворачиваем токены-функции
+	for (const token of tokens) {
+		const tokenValue = themeDescription[token];
+
+		if (typeof tokenValue === 'function') {
+			copyDescription[token] = tokenValue(themeDescription);
+		}
+	}
 
 	delete copyDescription.colors;
 	delete copyDescription.colorsScheme;

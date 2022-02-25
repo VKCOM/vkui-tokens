@@ -59,6 +59,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 	...lightTheme,
 
 	themeName: 'calendar',
+	themeNameBase: 'calendar',
 
 	colors: {
 		...lightTheme.colors,
@@ -123,7 +124,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 			fontWeight: 500,
 		},
 	},
-	fontHeadline: {
+	fontHeadline1: {
 		regular: {
 			...fontSize3,
 			fontWeight: 500,

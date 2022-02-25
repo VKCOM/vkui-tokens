@@ -1,5 +1,6 @@
 import {Property} from 'csstype';
 
+import {staticRef} from '@/build/helpers/tokenHelpers';
 import {Font} from '@/interfaces/general/typography';
 import {ThemeCloudDescription} from '@/interfaces/themes/cloud';
 
@@ -24,69 +25,69 @@ const {
 } = lightTheme;
 
 const fontAccentBoldAtributes: FontAccentAtributes = {
-	fontFamily: fontFamilyAccent,
-	fontWeight: fontWeightAccent1,
+	fontFamily: staticRef(fontFamilyAccent),
+	fontWeight: staticRef(fontWeightAccent1),
 };
 const fontSize1: Font = {
 	fontSize: 11,
 	lineHeight: '14px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize2: Font = {
 	fontSize: 13,
 	lineHeight: '18px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize3: Font = {
 	fontSize: 15,
 	lineHeight: '20px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize4: Font = {
 	fontSize: 17,
 	lineHeight: '24px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize5: Font = {
 	fontSize: 20,
 	lineHeight: '26px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize6: Font = {
 	fontSize: 24,
 	lineHeight: '28px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize7: Font = {
 	fontSize: 28,
 	lineHeight: '32px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize8: Font = {
 	fontSize: 32,
 	lineHeight: '36px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize9: Font = {
 	fontSize: 40,
 	lineHeight: '48px',
-	fontWeight: fontWeightBase1,
+	fontWeight: staticRef(fontWeightBase1),
 	fontFamily: fontFamilyBase,
 };
 
@@ -100,6 +101,7 @@ export const cloudTheme: ThemeCloudDescription = {
 	...lightTheme,
 
 	themeName: 'cloud',
+	themeNameBase: 'cloud',
 
 	fontFamilyBase,
 	fontFamilyAccent,

@@ -1,3 +1,4 @@
+import {alias, staticRef} from '@/build/helpers/tokenHelpers';
 import {overlayColors} from '@/build/themeProcessors/expandColors/overlayColors';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 import {Elevation} from '@/interfaces/general/elevation';
@@ -6,12 +7,12 @@ import {helpers} from '@/themeDescriptions/common';
 
 const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Helvetica, Arial, sans-serif';
-const fontWeightAccent1 = 400;
+const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
-const fontWeightAccent3 = 500;
-const fontWeightBase1 = 400;
+const fontWeightAccent3 = 400;
+const fontWeightBase1 = 700;
 const fontWeightBase2 = 700;
-const fontWeightBase3 = 700;
+const fontWeightBase3 = 400;
 
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
@@ -229,7 +230,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 24,
 			lineHeight: 28,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle2: {
@@ -237,33 +238,62 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 20,
 			lineHeight: 26,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle3: {
 		regular: {
 			fontSize: 17,
-			lineHeight: 24,
+			lineHeight: 22,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
-	fontHeadline: {
+	fontHeadline: alias('fontHeadline1'),
+	fontHeadline1: {
+		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+		},
+	},
+	fontHeadline2: {
 		regular: {
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent2,
 		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 20,
+		},
 	},
 	// todo поменять местами fontSize, когда откажемся от auto
 	// todo fontSize в мобильном виде должен быть 16
 	fontText: {
 		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase3,
+		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+		},
+	},
+	fontParagraph: {
+		regular: {
 			fontSize: 15,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontSubhead: {
@@ -271,7 +301,11 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 14,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 18,
 		},
 	},
 	fontFootnote: {
@@ -279,7 +313,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontFootnoteCaps: {
@@ -287,7 +321,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 13,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 			letterSpacing: '0.3px',
 		},
@@ -297,7 +331,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption1Caps: {
@@ -305,7 +339,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 12,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 			letterSpacing: '0.26px',
 		},
@@ -315,7 +349,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption2Caps: {
@@ -323,7 +357,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 11,
 			lineHeight: 14,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 			letterSpacing: '0.22px',
 		},
@@ -333,7 +367,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption3Caps: {
@@ -341,7 +375,7 @@ export const lightThemeBase: ThemeDescription = {
 			fontSize: 9,
 			lineHeight: 12,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 			letterSpacing: '0.16px',
 		},
@@ -457,11 +491,18 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBadgeXL: {
 		regular: 56,
 	},
+
 	// Токены компонента Cardscroll
 	sizeCardgridPadding: {
 		regular: 12,
 	},
 	sizeCardBorderRadius: {
+		regular: 16,
+	},
+	sizeCardgridPaddingVertical: {
+		regular: 8,
+	},
+	sizeBasePaddingHorizontal: {
 		regular: 16,
 	},
 
@@ -515,8 +556,8 @@ export const lightTheme: ParadigmThemeDescription = {
 		regular: {
 			fontSize: 28,
 			lineHeight: 32,
-			fontFamily: lightThemeBase.fontFamilyAccent,
-			fontWeight: lightThemeBase.fontWeightAccent3,
+			fontFamily: staticRef(lightThemeBase.fontFamilyAccent),
+			fontWeight: staticRef(lightThemeBase.fontWeightAccent1),
 		},
 		compact: {
 			fontSize: 44,
@@ -528,8 +569,8 @@ export const lightTheme: ParadigmThemeDescription = {
 		regular: {
 			fontSize: 24,
 			lineHeight: 28,
-			fontFamily: lightThemeBase.fontFamilyAccent,
-			fontWeight: lightThemeBase.fontWeightAccent3,
+			fontFamily: staticRef(lightThemeBase.fontFamilyAccent),
+			fontWeight: staticRef(lightThemeBase.fontWeightAccent1),
 		},
 		compact: {
 			fontSize: 32,
@@ -541,8 +582,8 @@ export const lightTheme: ParadigmThemeDescription = {
 		regular: {
 			fontSize: 20,
 			lineHeight: 26,
-			fontFamily: lightThemeBase.fontFamilyAccent,
-			fontWeight: lightThemeBase.fontWeightAccent3,
+			fontFamily: staticRef(lightThemeBase.fontFamilyAccent),
+			fontWeight: staticRef(lightThemeBase.fontWeightAccent1),
 		},
 		compact: {
 			fontSize: 28,

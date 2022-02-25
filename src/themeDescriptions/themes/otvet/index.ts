@@ -14,6 +14,7 @@ export const otvetTheme: ThemeOtvetDescription = {
 	...octaviusThemeRegular,
 
 	themeName: 'otvet',
+	themeNameBase: 'otvet',
 
 	breakpoints: {
 		desktopS: {

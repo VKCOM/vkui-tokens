@@ -1,15 +1,16 @@
+import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 
 const fontFamilyAccent =
 	'"TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';
 const fontFamilyBase =
 	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const fontWeightAccent1 = 400;
+const fontWeightAccent1 = 600;
 const fontWeightAccent2 = 500;
-const fontWeightAccent3 = 600;
-const fontWeightBase1 = 400;
+const fontWeightAccent3 = 400;
+const fontWeightBase1 = 600;
 const fontWeightBase2 = 500;
-const fontWeightBase3 = 600;
+const fontWeightBase3 = 400;
 
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
@@ -191,6 +192,7 @@ export const darkColors: ColorsDescription = {
 
 export const lightTheme: ThemeDescription = {
 	themeName: 'vkBase',
+	themeNameBase: 'vkBase',
 	...lightColors,
 	// Типографика
 	fontFamilyAccent,
@@ -207,7 +209,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 28,
 			letterSpacing: '-0.48px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle2: {
@@ -216,19 +218,20 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 24,
 			letterSpacing: '-0.4px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle3: {
 		regular: {
 			fontSize: 17,
-			lineHeight: 24,
+			lineHeight: 22,
 			letterSpacing: '-0.22px',
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent1,
 		},
 	},
-	fontHeadline: {
+	fontHeadline: alias('fontHeadline1'),
+	fontHeadline1: {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
@@ -236,19 +239,47 @@ export const lightTheme: ThemeDescription = {
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent2,
 		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+			letterSpacing: '-0.1px',
+		},
+	},
+	fontHeadline2: {
+		regular: {
+			fontSize: 15,
+			lineHeight: 20,
+			letterSpacing: '-0.1px',
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 20,
+			letterSpacing: '-0.06px',
+		},
 	},
 	fontText: {
+		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			letterSpacing: '-0.16px',
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase3,
+		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+			letterSpacing: '-0.1px',
+		},
+	},
+	fontParagraph: {
 		regular: {
 			fontSize: 15,
 			lineHeight: 20,
 			letterSpacing: '-0.1px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
-		},
-		compact: {
-			fontSize: 16,
-			lineHeight: 20,
-			letterSpacing: '-0.16px',
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontSubhead: {
@@ -257,7 +288,12 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 18,
 			letterSpacing: '-0.06px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 16,
+			letterSpacing: '0px',
 		},
 	},
 	fontFootnote: {
@@ -266,7 +302,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 16,
 			letterSpacing: '0px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontFootnoteCaps: {
@@ -275,7 +311,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 16,
 			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 			textTransform: 'uppercase',
 		},
 	},
@@ -285,7 +321,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 14,
 			letterSpacing: '0.06px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption1Caps: {
@@ -294,7 +330,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 14,
 			letterSpacing: '0.2px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
+			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
 		},
 	},
@@ -304,7 +340,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 14,
 			letterSpacing: '0.11px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption2Caps: {
@@ -313,7 +349,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 14,
 			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
+			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
 		},
 	},
@@ -323,7 +359,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 12,
 			letterSpacing: '0.18px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase3,
 		},
 	},
 	fontCaption3Caps: {
@@ -332,7 +368,7 @@ export const lightTheme: ThemeDescription = {
 			lineHeight: 12,
 			letterSpacing: '0.3px',
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
+			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
 		},
 	},
@@ -379,7 +415,7 @@ export const lightTheme: ThemeDescription = {
 	},
 	sizeButtonSmallHeight: {
 		regular: 30,
-		compact: 26,
+		compact: 28,
 	},
 	sizeCheckbox: {
 		regular: 16,
@@ -452,14 +488,20 @@ export const lightTheme: ThemeDescription = {
 	sizeCardBorderRadius: {
 		regular: 8,
 	},
+	sizeCardgridPaddingVertical: {
+		regular: 8,
+	},
+	sizeBasePaddingHorizontal: {
+		regular: 16,
+	},
 
 	// Прочие отступы
 	elevation1:
 		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
 	elevation2:
-		'0px 0px 2px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.08)',
+		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
 	elevation3:
-		'0px 0px 4px rgba(0, 0, 0, 0.08), 0px 8px 8px rgba(0, 0, 0, 0.16)',
+		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
 	elevation4:
 		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
 	animationDurationL: '0.4s',
@@ -480,9 +522,9 @@ export const darkTheme: ThemeDescription = {
 	elevation1:
 		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
 	elevation2:
-		'0px 0px 2px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.08)',
+		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
 	elevation3:
-		'0px 0px 4px rgba(0, 0, 0, 0.08), 0px 8px 8px rgba(0, 0, 0, 0.16)',
+		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
 	elevation4:
 		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
 };
