@@ -495,6 +495,17 @@ export const lightTheme: ThemeDescription = {
 		regular: 16,
 	},
 
+	// Токены для ButtonGroup
+	sizeButtonGroupGapSpace: {
+		regular: 1,
+	},
+	sizeButtonGroupGapSmall: {
+		regular: 8,
+	},
+	sizeButtonGroupGapMedium: {
+		regular: 12,
+	},
+
 	// Прочие отступы
 	elevation1:
 		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',

@@ -4,7 +4,7 @@ import {ThemeCalendarDescription} from '@/interfaces/themes/calendar';
 import {ThemeCalendarDarkDescription} from '@/interfaces/themes/calendarDark';
 import {fontWeight} from '@/themeDescriptions/common/fontSizes';
 
-import {darkTheme, lightTheme} from '../../base/paradigm';
+import {darkTheme, darkThemeElevation, lightTheme} from '../../base/paradigm';
 import {fontSizes, helpers} from '../../common';
 
 const {x2, x4, x5} = helpers;
@@ -286,4 +286,6 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 			active: '#3E3E3F',
 		},
 	},
+
+	...darkThemeElevation,
 };
