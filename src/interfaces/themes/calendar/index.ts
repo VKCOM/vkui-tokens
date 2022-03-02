@@ -1,5 +1,6 @@
 import {ThemeCssVars} from '@/interfaces/general';
 import {
+	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
@@ -12,15 +13,13 @@ import {
 } from '@/interfaces/themes/paradigmBase';
 
 export interface ThemeCalendarOverValues {
-	fontEventM: Adaptive<Font>;
-	fontEventS: Adaptive<Font>;
-	fontEventXS: Adaptive<Font>;
-	fontTime: Adaptive<Font>;
-	fontBodyIOS: Adaptive<Font>;
-	fontBodyAndroid: Adaptive<Font>;
+	calendarFontTextEvent: Adaptive<Font>;
+	calendarFontTextEventSmall: Adaptive<Font>;
 }
 
-export interface LocalCalendarColorDescriptionStruct {}
+export interface LocalCalendarColorDescriptionStruct {
+	calendarColorBackgroundAccentTintThemed: ColorDescription;
+}
 
 export type CalendarLocalColors = {
 	[key in keyof LocalCalendarColorDescriptionStruct]: ColorWithStates;
