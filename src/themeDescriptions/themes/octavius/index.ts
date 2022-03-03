@@ -137,6 +137,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconEvent: '#09a6fa',
 		octaviusColorIconFees: '#e60000',
 
+		octaviusColorIconEventAlpha: 'rgba(59, 186, 254, 0.1)',
+		octaviusColorIconOrderAlpha: 'rgba(249, 76, 163, 0.1)',
+		octaviusColorIconTravelAlpha: 'rgba(193, 93, 243, 0.1)',
+
 		octaviusColorSidebarIconUnread: '#005FF9',
 		octaviusColorSidebarIconFavorite: '#fc2c38',
 		octaviusColorSidebarIconOrder: '#ff54aa',
@@ -326,6 +330,10 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconTravel: '#C15DF3',
 		octaviusColorIconEvent: '#3BBAFE',
 		octaviusColorIconFees: '#EE3C3C',
+
+		octaviusColorIconEventAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorIconOrderAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorIconTravelAlpha: 'rgba(255, 255, 255, 0.12)',
 
 		octaviusColorSidebarIconUnread: '#0C7CFF',
 		octaviusColorSidebarIconFavorite: '#FF4550',

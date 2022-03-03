@@ -173,6 +173,11 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
 
+	// Подложки в плашках заказов
+	octaviusColorIconEventAlpha: ColorDescription;
+	octaviusColorIconOrderAlpha: ColorDescription;
+	octaviusColorIconTravelAlpha: ColorDescription;
+
 	// Категории письма в sidebar
 	octaviusColorSidebarIconUnread: ColorDescription;
 	octaviusColorSidebarIconFavorite: ColorDescription;
