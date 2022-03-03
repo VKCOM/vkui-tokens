@@ -174,9 +174,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconFees: ColorDescription;
 
 	// Подложки в плашках заказов
-	octaviusColorIconEventTint: ColorDescription;
-	octaviusColorIconOrderTint: ColorDescription;
-	octaviusColorIconTravelTint: ColorDescription;
+	octaviusColorIconEventAlpha: ColorDescription;
+	octaviusColorIconOrderAlpha: ColorDescription;
+	octaviusColorIconTravelAlpha: ColorDescription;
 
 	// Категории письма в sidebar
 	octaviusColorSidebarIconUnread: ColorDescription;
