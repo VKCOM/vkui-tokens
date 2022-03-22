@@ -70,6 +70,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			active: toneOpacity('#00103D', 0.24),
 		},
 		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconUnread: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconFavorite: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconAttach: lightTheme.colors.colorIconContrast,
 		octaviusColorHeaderTextSecondary: '#93969b',
 		octaviusColorHeaderSearchIcon: '#b6b8be',
 		octaviusColorHeaderSearchChipBackground:
@@ -259,6 +262,9 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderBackground: '#232324',
 		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
 		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconUnread: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconFavorite: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconAttach: darkTheme.colors.colorIconContrast,
 		octaviusColorHeaderProgress:
 			darkTheme.colors.colorBackgroundAccentAlternative,
 
@@ -385,6 +391,9 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderBackground: '#FFFFFF',
 		octaviusColorHeaderButtonText: octaviusTheme.colors.colorTextPrimary,
 		octaviusColorHeaderIcon: octaviusTheme.colors.colorIconPrimary,
+		octaviusColorHeaderIconUnread: '#005FF9',
+		octaviusColorHeaderIconFavorite: '#FC2C38',
+		octaviusColorHeaderIconAttach: darkTheme.colors.colorIconPrimary,
 
 		octaviusColorHeaderSearchBackground: '#f0f1f3',
 		octaviusColorHeaderSearchBackgroundCollapsed: '#f0f1f3',
