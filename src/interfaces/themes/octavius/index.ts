@@ -108,6 +108,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderButtonText: ColorDescription;
 	octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
+	octaviusColorHeaderIconUnread: ColorDescription;
+	octaviusColorHeaderIconFavorite: ColorDescription;
+	octaviusColorHeaderIconAttach: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
 	octaviusColorHeaderFilterTextAlpha: ColorDescription;
