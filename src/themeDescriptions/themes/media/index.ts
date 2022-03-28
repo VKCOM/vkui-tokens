@@ -103,6 +103,100 @@ export const mediaTheme: ThemeMediaDescription = {
 	 * ТИПОГРАФИКА
 	 */
 
+	/**
+	 * для статьи
+	 */
+	mediaFontMediaHeader: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 36,
+			lineHeight: 44,
+			letterSpacing: '-0.5%',
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 40,
+			lineHeight: 48,
+			letterSpacing: '-0.5%',
+		},
+	},
+	mediaFontMediaTitle1: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 28,
+			lineHeight: 36,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 28,
+			lineHeight: 36,
+		},
+	},
+	mediaFontMediaTitle2: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 24,
+			lineHeight: 32,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 24,
+			lineHeight: 32,
+		},
+	},
+	mediaFontMediaTitle3: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 20,
+			lineHeight: 28,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 20,
+			lineHeight: 28,
+		},
+	},
+	mediaFontMediaLead: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 19,
+			lineHeight: 28,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+			fontSize: 22,
+			lineHeight: 32,
+			letterSpacing: '-0.3%',
+		},
+	},
+	mediaFontMediaParagraph: {
+		regular: {
+			fontFamily: fontFamilyArticle,
+			fontWeight: fontWeightAccent1,
+			fontSize: 18,
+			lineHeight: 28,
+		},
+		compact: {
+			fontFamily: fontFamilyArticle,
+			fontWeight: fontWeightAccent1,
+			fontSize: 19,
+			lineHeight: 32,
+		},
+	},
+
+	/**
+	 * для лент обвеса и сервисов(PAR)
+	 */
 	fontH0: {
 		regular: {
 			...replacedFamilyOctavius.fontH0.regular,
@@ -119,48 +213,151 @@ export const mediaTheme: ThemeMediaDescription = {
 		regular: {
 			...staticRef(replacedFamilyOctavius.fontTitle1).regular,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent2,
 		},
 		compact: {
 			...staticRef(replacedFamilyOctavius.fontTitle1).compact,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent2,
 		},
 	},
 	fontTitle2: {
 		regular: {
 			...staticRef(replacedFamilyOctavius.fontTitle2).regular,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent2,
 		},
 		compact: {
 			...staticRef(replacedFamilyOctavius.fontTitle2).compact,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent2,
 		},
 	},
 	fontTitle3: {
 		regular: {
 			...staticRef(replacedFamilyOctavius.fontTitle3).regular,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent2,
 		},
 		compact: {
 			...staticRef(replacedFamilyOctavius.fontTitle3).compact,
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontWeight: fontWeightAccent2,
+		},
+	},
+	fontHeadline1: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontHeadline1).regular,
+			fontSize: 15,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontHeadline1).compact,
+			fontSize: 16,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+	},
+	fontHeadline2: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontHeadline2).regular,
+			fontSize: 14,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontHeadline2).compact,
+			fontSize: 15,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+	},
+	fontText: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontText).regular,
+			fontSize: 15,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontText).compact,
+			fontSize: 16,
+			lineHeight: 24,
 		},
 	},
 	fontSubhead: {
 		regular: {
 			...staticRef(replacedFamilyOctavius.fontSubhead).regular,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontSize: 13,
+			fontWeight: fontWeightAccent1,
 		},
 		compact: {
 			...staticRef(replacedFamilyOctavius.fontSubhead).compact,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
+			fontSize: 14,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontFootnote: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontFootnote).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontFootnote).compact,
+		},
+	},
+	fontFootnoteCaps: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontFootnoteCaps).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontFootnoteCaps).compact,
+		},
+	},
+	fontCaption1: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontCaption1).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontCaption1).compact,
+		},
+	},
+	fontCaption1Caps: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontCaption1Caps).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontCaption1Caps).compact,
+		},
+	},
+	fontCaption2: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontCaption2).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontCaption2).compact,
+		},
+	},
+	fontCaption2Caps: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontCaption2Caps).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontCaption2Caps).compact,
+		},
+	},
+	fontCaption3: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontCaption3).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontCaption3).compact,
+		},
+	},
+	fontCaption3Caps: {
+		regular: {
+			...staticRef(replacedFamilyOctavius.fontCaption3Caps).regular,
+		},
+		compact: {
+			...staticRef(replacedFamilyOctavius.fontCaption3Caps).compact,
 		},
 	},
 
