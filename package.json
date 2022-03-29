@@ -62,5 +62,8 @@
     "tscpaths": "0.0.9",
     "type-fest": "1.0.2",
     "typescript": "4.2.4"
+  },
+  "engines": {
+    "npm": "8.5.5"
   }
 }
