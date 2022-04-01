@@ -163,16 +163,25 @@ function writeCssVarsSourceFile<PT extends PixelifyTheme = PixelifyTheme>(
 		const compiledVars = compileStyles<PT>(
 			'css',
 			theme,
-			modeConfig.mode,
+			modeConfig.mode === 'default'
+				? 'withAdaptiveGroups'
+				: modeConfig.mode,
 			themeBase,
 		);
 
 		const compiledBreakpoints =
 			modeConfig.mode === 'default'
-				? `\n\n${compileBreakpointsCssVarsDeclaration(
-						cssVarsTheme as any,
-				  )}`
+				? `\n\n${
+						compileBreakpointsCssVarsDeclaration(
+							cssVarsTheme as any,
+						) ?? ''
+				  }`
 				: '';
+
+		if (compiledBreakpoints.includes('null')) {
+			console.error(modeConfig);
+			throw new Error('NULL');
+		}
 
 		const content = compiledVars + compiledBreakpoints;
 		fs.writeFileSync(filePath, content);
