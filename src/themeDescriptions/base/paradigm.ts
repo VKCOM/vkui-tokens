@@ -37,6 +37,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#FAEBEB',
+		colorFieldBackground: '#ffffff',
 
 		// Text
 		colorTextAccent: '#005FF9',
@@ -136,6 +137,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundModal: '#303030',
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#522e2e',
+		colorFieldBackground: '#232324',
 
 		// Text
 		colorTextAccent: '#3C82FD',
