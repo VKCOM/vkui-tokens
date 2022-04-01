@@ -12,13 +12,14 @@ import {
 	ThemeCssVarsWide,
 	ThemeDescription,
 } from '@/interfaces/general';
+import {StaticTokens} from '@/interfaces/general/tools/tokenValue';
 
 export interface ExpandedThemeObject<T = Theme> {
-	theme: T;
-	pixelifyTheme: PixelifyTheme<T>;
-	cssVarsThemeWide: ThemeCssVarsWide<T>;
-	cssVarsTheme: ThemeCssVars<T>;
-	pseudoThemeCssVars: PixelifyTheme<T>;
+	theme: StaticTokens<T>;
+	pixelifyTheme: StaticTokens<PixelifyTheme<T>>;
+	cssVarsThemeWide: StaticTokens<ThemeCssVarsWide<T>>;
+	cssVarsTheme: StaticTokens<ThemeCssVars<T>>;
+	pseudoThemeCssVars: StaticTokens<StaticTokens<T>>;
 }
 
 /**
@@ -26,7 +27,7 @@ export interface ExpandedThemeObject<T = Theme> {
  */
 export function expandRootTheme<TD = ThemeDescription, T = Theme>(
 	themeDescription: TD,
-): T {
+): StaticTokens<T> {
 	const expandedColors = getExpandedThemeColors(themeDescription);
 	const generalTokens = extractGeneralTokens(themeDescription);
 	const customMedia = processCustomMedia(themeDescription);
@@ -36,7 +37,7 @@ export function expandRootTheme<TD = ThemeDescription, T = Theme>(
 		...expandedColors,
 		...customMedia,
 		themeType: 'root',
-	} as any) as T;
+	} as any) as StaticTokens<T>;
 }
 
 /**
@@ -45,23 +46,25 @@ export function expandRootTheme<TD = ThemeDescription, T = Theme>(
  */
 export function expandAll<TD = ThemeDescription, T = Theme>(
 	themeDescription: TD,
-): ExpandedThemeObject<T> {
+): ExpandedThemeObject<StaticTokens<T>> {
 	const theme = expandRootTheme<TD, T>(themeDescription);
 	const pixelifyTheme = pixelifyValues(theme);
 
-	const cssVarsThemeWide = extractVarsNames<T>(theme);
-	const cssVarsTheme = extractCssVarsStrict<T>(cssVarsThemeWide);
+	const cssVarsThemeWide = extractVarsNames<StaticTokens<T>>(theme);
+	const cssVarsTheme = extractCssVarsStrict<StaticTokens<T>>(
+		cssVarsThemeWide,
+	);
 
-	const pseudoThemeCssVars = createPseudoRootFromCssVars<T>(
+	const pseudoThemeCssVars = createPseudoRootFromCssVars<StaticTokens<T>>(
 		theme,
 		cssVarsThemeWide,
 	);
 
-	return {
+	return ({
 		theme,
 		pixelifyTheme,
 		cssVarsTheme,
 		cssVarsThemeWide,
 		pseudoThemeCssVars,
-	};
+	} as any) as ExpandedThemeObject<StaticTokens<T>>;
 }

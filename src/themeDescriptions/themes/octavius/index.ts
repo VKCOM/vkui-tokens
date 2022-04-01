@@ -70,6 +70,9 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			active: toneOpacity('#00103D', 0.24),
 		},
 		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconUnread: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconFavorite: lightTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconAttach: lightTheme.colors.colorIconContrast,
 		octaviusColorHeaderTextSecondary: '#93969b',
 		octaviusColorHeaderSearchIcon: '#b6b8be',
 		octaviusColorHeaderSearchChipBackground:
@@ -136,6 +139,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconTravel: '#ba34fc',
 		octaviusColorIconEvent: '#09a6fa',
 		octaviusColorIconFees: '#e60000',
+
+		octaviusColorIconEventAlpha: 'rgba(59, 186, 254, 0.1)',
+		octaviusColorIconOrderAlpha: 'rgba(249, 76, 163, 0.1)',
+		octaviusColorIconTravelAlpha: 'rgba(193, 93, 243, 0.1)',
 
 		octaviusColorSidebarIconUnread: '#005FF9',
 		octaviusColorSidebarIconFavorite: '#fc2c38',
@@ -255,6 +262,9 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderBackground: '#232324',
 		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
 		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconUnread: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconFavorite: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconAttach: darkTheme.colors.colorIconContrast,
 		octaviusColorHeaderProgress:
 			darkTheme.colors.colorBackgroundAccentAlternative,
 
@@ -327,6 +337,10 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconEvent: '#3BBAFE',
 		octaviusColorIconFees: '#EE3C3C',
 
+		octaviusColorIconEventAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorIconOrderAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorIconTravelAlpha: 'rgba(255, 255, 255, 0.12)',
+
 		octaviusColorSidebarIconUnread: '#0C7CFF',
 		octaviusColorSidebarIconFavorite: '#FF4550',
 		octaviusColorSidebarIconOrder: '#F94CA3',
@@ -377,6 +391,9 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderBackground: '#FFFFFF',
 		octaviusColorHeaderButtonText: octaviusTheme.colors.colorTextPrimary,
 		octaviusColorHeaderIcon: octaviusTheme.colors.colorIconPrimary,
+		octaviusColorHeaderIconUnread: '#005FF9',
+		octaviusColorHeaderIconFavorite: '#FC2C38',
+		octaviusColorHeaderIconAttach: darkTheme.colors.colorIconPrimary,
 
 		octaviusColorHeaderSearchBackground: '#f0f1f3',
 		octaviusColorHeaderSearchBackgroundCollapsed: '#f0f1f3',

@@ -114,6 +114,7 @@ export interface ColorsDescriptionStruct {
 	colorOverlayPrimary: ColorDescription;
 	colorTransparent: ColorDescription;
 	colorBackgroundNegativeTint: ColorDescription;
+	colorFieldBackground: ColorDescription;
 }
 
 export type Colors = {

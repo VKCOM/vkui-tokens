@@ -10,6 +10,7 @@ import {NamifyObject} from './tools/cssVars';
 import {StringifyObject} from './tools/utils';
 import {Fonts, TypographyBaseProps} from './typography';
 import ColorScheme = Property.ColorScheme;
+import {StaticTokens, Tokens} from '@/interfaces/general/tools/tokenValue';
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 
@@ -59,7 +60,9 @@ export interface ThemeGeneral
 /**
  * Интерфейс описания Темы (в этом типе описываются все темы дизайн-системы)
  */
-export interface ThemeDescription extends ThemeGeneral, ColorsDescription {}
+export interface ThemeDescription
+	extends Tokens<ThemeGeneral>,
+		ColorsDescription {}
 
 /**
  * Основной интерфейс темы
@@ -73,7 +76,7 @@ export interface Theme extends ThemeGeneral, ColorsFinal {
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type PixelifyTheme<
-	T extends Partial<Record<keyof T, any>> = Theme
+	T extends Partial<Record<keyof T, any>> = StaticTokens<Theme>
 > = StringifyObject<Omit<T, 'breakpoints' | 'themeType'>> &
 	Pick<T, Extract<'breakpoints', keyof T>> & {
 		themeType: 'pixelify';

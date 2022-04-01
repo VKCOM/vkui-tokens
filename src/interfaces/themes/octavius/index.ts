@@ -108,6 +108,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderButtonText: ColorDescription;
 	octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
 	octaviusColorHeaderIcon: ColorDescription;
+	octaviusColorHeaderIconUnread: ColorDescription;
+	octaviusColorHeaderIconFavorite: ColorDescription;
+	octaviusColorHeaderIconAttach: ColorDescription;
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
 	octaviusColorHeaderFilterTextAlpha: ColorDescription;
@@ -172,6 +175,11 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconTravel: ColorDescription;
 	octaviusColorIconEvent: ColorDescription;
 	octaviusColorIconFees: ColorDescription;
+
+	// Подложки в плашках заказов
+	octaviusColorIconEventAlpha: ColorDescription;
+	octaviusColorIconOrderAlpha: ColorDescription;
+	octaviusColorIconTravelAlpha: ColorDescription;
 
 	// Категории письма в sidebar
 	octaviusColorSidebarIconUnread: ColorDescription;
