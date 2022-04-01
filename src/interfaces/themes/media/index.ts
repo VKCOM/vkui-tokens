@@ -50,6 +50,12 @@ type SocialColorsDescriptions = {
 };
 
 interface MediaUniqTokens {
+	mediaFontMediaHeader: Adaptive<Font>;
+	mediaFontMediaTitle1: Adaptive<Font>;
+	mediaFontMediaTitle2: Adaptive<Font>;
+	mediaFontMediaTitle3: Adaptive<Font>;
+	mediaFontMediaLead: Adaptive<Font>;
+	mediaFontMediaParagraph: Adaptive<Font>;
 	fontFamilyArticle: Property.FontFamily;
 	fontWeightArticle1: Property.FontWeight;
 	fontWeightArticle2: Property.FontWeight;
