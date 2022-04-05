@@ -1,5 +1,6 @@
 import 'css.escape';
 
+import {deepStrictEqual} from 'assert';
 import {stripIndent} from 'common-tags';
 
 import {getAllButColors} from '@/build/helpers/getAllButColors';
@@ -30,6 +31,7 @@ export type CompileStylesMode =
 	| 'default'
 	| 'onlyVariables'
 	| 'onlyVariablesLocal'
+	| 'onlyVariablesLocalIncremental'
 	| 'onlyColors'
 	| 'withAdaptiveGroups'
 	| 'onlyAdaptiveGroups'
@@ -57,31 +59,58 @@ export function getPrefix<PT extends PixelifyTheme>(
 	return prefix;
 }
 
+function isOnlyVariables(mode: CompileStylesMode): boolean {
+	return mode.toLowerCase().includes('onlyvariables');
+}
+
+function isLocal(mode: CompileStylesMode): boolean {
+	return mode.toLowerCase().includes('local');
+}
+
+function isIncremental(mode: CompileStylesMode): boolean {
+	return mode.toLowerCase().includes('incremental');
+}
+
+function getThemeNameBase(theme: PixelifyTheme): string {
+	return theme.themeNameBase ?? theme.themeName;
+}
+
 export function getRootSelector<PT extends PixelifyTheme>(
 	theme: PT,
 	mode: CompileStylesMode,
 ): string {
-	if (!mode.endsWith('Local')) {
+	if (!isLocal(mode)) {
 		return ':root';
 	}
 
-	return `.${getPrefix(EStyleTypes.CSS, theme)}${
-		theme.themeNameBase ?? theme.themeName
-	}--${theme.colorsScheme}`;
+	return `.${getPrefix(EStyleTypes.CSS, theme)}${getThemeNameBase(theme)}--${
+		theme.colorsScheme
+	}`;
+}
+
+function isDeepEqual(actual: unknown, expected: unknown): boolean {
+	try {
+		deepStrictEqual(actual, expected);
+		return true;
+	} catch (_) {
+		return false;
+	}
 }
 
 /**
- * Компиллирует строку со стилями (в разных форматах), на основе темы
+ * Компилирует строку со стилями (в разных форматах), на основе темы
  */
 export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 	format: Formats,
 	theme: PT,
 	mode: CompileStylesMode = 'default',
+	themeBase?: PT,
 	// eslint-disable-next-line sonarjs/cognitive-complexity
 ): string => {
 	const classicCssType = isClassicCssType(format);
 	const prefix = getPrefix(format, theme);
 	const rootSelector = getRootSelector(theme, mode);
+	const incremental = isIncremental(mode);
 
 	const getDeclaration = varDeclarations[format];
 	const getVariableStatement = variablesStatementDeclaration[format];
@@ -112,6 +141,11 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 		}
 
 		const token = theme[key];
+
+		// в инкрементальном режиме пропускаем токены, чьи значения совпадают со значениями из themeBase
+		if (incremental && themeBase && isDeepEqual(token, themeBase[key])) {
+			return;
+		}
 
 		// если переменная — строка (например, имя темы)
 		if (isString(token, key)) {
@@ -188,7 +222,7 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 		`;
 	}
 
-	if (mode === 'onlyVariables' || mode === 'onlyVariablesLocal') {
+	if (isOnlyVariables(mode)) {
 		return stripIndent(result);
 	}
 

@@ -3,7 +3,10 @@ import path from 'path';
 
 import {compileGetDeclarationString} from '@/build/compilers/cssVars/jsUtils/compileGetDeclarationString';
 import {compileJSON} from '@/build/compilers/json/compileJSON';
-import {compileStyles} from '@/build/compilers/styles/compileStyles';
+import {
+	compileStyles,
+	CompileStylesMode,
+} from '@/build/compilers/styles/compileStyles';
 import {compileTypeScript} from '@/build/compilers/ts/compileTypeScript';
 import {capitalize} from '@/build/helpers/capitalize';
 import {
@@ -21,6 +24,26 @@ type ThemeBuildType =
 	| 'flat'
 	| 'cssVars'
 	| 'cssVarsPseudoRoot';
+
+interface CssModeConfig {
+	mode: CompileStylesMode;
+	fileName: string;
+	modeBase?: CompileStylesMode;
+}
+
+const cssModes: CssModeConfig[] = [
+	{mode: 'default', fileName: 'index.css'},
+	{mode: 'onlyVariables', fileName: 'onlyVariables.css'},
+	{mode: 'onlyVariablesLocal', fileName: 'onlyVariablesLocal.css'},
+	{
+		mode: 'onlyVariablesLocalIncremental',
+		fileName: 'onlyVariablesLocalIncremental.css',
+	},
+	{mode: 'onlyColors', fileName: 'onlyColors.css'},
+	{mode: 'onlyAdaptiveGroups', fileName: 'onlyAdaptiveGroups.css'},
+	{mode: 'noSizes', fileName: 'noSizes.css'},
+	{mode: 'noColors', fileName: 'noColors.css'},
+];
 
 function writeJsonFile<T = Theme>(
 	themePath: string,
@@ -129,38 +152,42 @@ function writeStyleFiles<PT extends PixelifyTheme = PixelifyTheme>(
 function writeCssVarsSourceFile<PT extends PixelifyTheme = PixelifyTheme>(
 	themePath: string,
 	theme: PT,
-	cssWarsTheme: any,
+	cssVarsTheme: any,
+	themeBase?: PT,
 ): void {
 	console.log(`компилируем источники для css vars тем...`);
 
-	([
-		{mode: 'default', fileName: 'index.css'},
-		{mode: 'onlyVariables', fileName: 'onlyVariables.css'},
-		{mode: 'onlyVariablesLocal', fileName: 'onlyVariablesLocal.css'},
-		{mode: 'onlyColors', fileName: 'onlyColors.css'},
-		{mode: 'onlyAdaptiveGroups', fileName: 'onlyAdaptiveGroups.css'},
-		{mode: 'noSizes', fileName: 'noSizes.css'},
-		{mode: 'noColors', fileName: 'noColors.css'},
-	] as const).forEach(({mode, fileName}) => {
-		const filePath = path.resolve(themePath, fileName);
+	for (const modeConfig of cssModes) {
+		const filePath = path.resolve(themePath, modeConfig.fileName);
 
-		const content =
-			mode === 'default'
-				? `${compileStyles<PT>(
-						'css',
-						theme,
-						'withAdaptiveGroups',
-				  )}\n\n${
+		const compiledVars = compileStyles<PT>(
+			'css',
+			theme,
+			modeConfig.mode === 'default'
+				? 'withAdaptiveGroups'
+				: modeConfig.mode,
+			themeBase,
+		);
+
+		const compiledBreakpoints =
+			modeConfig.mode === 'default'
+				? `\n\n${
 						compileBreakpointsCssVarsDeclaration(
-							cssWarsTheme as any,
+							cssVarsTheme as any,
 						) ?? ''
 				  }`
-				: compileStyles<PT>('css', theme, mode);
+				: '';
 
+		if (compiledBreakpoints.includes('null')) {
+			console.error(modeConfig);
+			throw new Error('NULL');
+		}
+
+		const content = compiledVars + compiledBreakpoints;
 		fs.writeFileSync(filePath, content);
 
-		console.log(`успешно записали файл ${fileName}`);
-	});
+		console.log(`успешно записали файл ${modeConfig.fileName}`);
+	}
 }
 
 function writeCssVarsSourceMediaFile<T = ThemeCssVarsWide>(

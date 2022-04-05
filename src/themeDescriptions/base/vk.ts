@@ -533,6 +533,7 @@ export const darkTheme: ThemeDescription = {
 	...lightTheme,
 	...darkColors,
 	themeName: 'vkBaseDark',
+	themeInheritsFrom: 'vkBase',
 	colorsScheme: 'dark',
 
 	// TODO: Поставить нормальные отступы из тёмной темы

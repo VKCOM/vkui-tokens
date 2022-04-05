@@ -6,6 +6,7 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 	...lightTheme,
 	themeName: 'vkIOS',
 	themeNameBase: 'vkIOS',
+	themeInheritsFrom: 'vkBase',
 
 	sizeBorderRadius: {
 		regular: 10,
@@ -22,5 +23,6 @@ export const vkIOSThemeDark: ThemeVkIOSDarkDescription = {
 	...darkColors,
 	themeName: 'vkIOSDark',
 	themeNameBase: 'vkIOS',
+	themeInheritsFrom: 'vkBaseDark',
 	colorsScheme: 'dark',
 };

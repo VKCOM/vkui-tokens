@@ -39,6 +39,13 @@ console.log('успешно\n');
 console.log('Начинаем процесс компиляции тем...\n');
 
 const expandedThemes = themes.map(expandAll);
+const expandedThemesMap: Record<string, typeof expandedThemes[0]> = {};
+
+for (const expandedThemeObject of expandedThemes) {
+	expandedThemesMap[
+		expandedThemeObject.theme.themeName
+	] = expandedThemeObject;
+}
 
 console.log('Успешно сформировали объекты тем на основе описания тем\n');
 
@@ -54,7 +61,14 @@ expandedThemes.forEach((expandedThemeObject) => {
 		pseudoThemeCssVars,
 	} = expandedThemeObject;
 
-	const {themeName} = theme;
+	const {themeName, themeInheritsFrom} = theme;
+
+	const themeObjectBase =
+		themeName === themeInheritsFrom
+			? undefined
+			: expandedThemesMap[themeInheritsFrom];
+
+	const pixelifyThemeBase = themeObjectBase?.pixelifyTheme;
 
 	console.log(`Начинаем процесс работы над темой ${themeName}\n`);
 
@@ -83,6 +97,7 @@ expandedThemes.forEach((expandedThemeObject) => {
 		cssVarsDeclarationsPath,
 		pixelifyTheme,
 		cssVarsThemeWide,
+		pixelifyThemeBase,
 	);
 	writeCssVarsJsUtils(cssVarsDeclarationsPath, cssVarsThemeWide);
 	writeCssVarsSourceMediaFile(cssVarsDeclarationsPath, cssVarsThemeWide);

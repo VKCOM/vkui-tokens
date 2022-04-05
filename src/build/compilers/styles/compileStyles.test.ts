@@ -11,6 +11,7 @@ type DescriptionTheme = Partial<PixelifyTheme<ParadigmTheme>> &
 
 interface TestVars {
 	descriptionTheme: DescriptionTheme & Record<any, any>;
+	descriptionThemeBase?: DescriptionTheme & Record<any, any>;
 	mode?: CompileStylesMode;
 	result: {
 		[key in Formats]: string;
@@ -24,6 +25,7 @@ function runTest(format: Formats, testData: TestVars) {
 		format,
 		testData.descriptionTheme as any,
 		testData.mode,
+		testData.descriptionThemeBase as any,
 	);
 
 	expect(compiled).toBe(testData.result[format]);
@@ -876,6 +878,88 @@ describe('compileStyles', () => {
 				styl: stripIndent`
 					$theme-name = 'vkIOSDark';
 					$theme-name-base = 'vkIOS';
+					$colors-scheme = dark;
+					$color-background = #FFF;
+					$color-background--hover = #AAA;
+					$color-background--active = #CCC;
+				`,
+			},
+		});
+	});
+
+	test.each(formats)('%s: onlyVariablesLocalIncremental', (f) => {
+		runTest(f, {
+			mode: 'onlyVariablesLocalIncremental',
+			descriptionTheme: {
+				themeName: 'vkIOSDark',
+				themeNameBase: 'vkIOS',
+				themeInheritsFrom: 'vkIOS',
+				colorsScheme: 'dark',
+				sizeBasePadding: {
+					regular: '20px',
+				},
+				colorBackground: {
+					normal: '#FFF',
+					hover: '#AAA',
+					active: '#CCC',
+				},
+			},
+			descriptionThemeBase: {
+				themeName: 'vkIOS',
+				colorsScheme: 'light',
+				sizeBasePadding: {
+					regular: '20px',
+				},
+				colorBackground: {
+					normal: '#AAA',
+					hover: '#AAA',
+					active: '#CCC',
+				},
+			},
+			result: {
+				css: stripIndent`
+					.vkui--vkIOS--dark {
+						--vkui--theme_name: 'vkIOSDark';
+						--vkui--theme_name_base: 'vkIOS';
+						--vkui--theme_inherits_from: 'vkIOS';
+						--vkui--colors_scheme: dark;
+						--vkui--color_background: #FFF;
+						--vkui--color_background--hover: #AAA;
+						--vkui--color_background--active: #CCC;
+					}
+				`,
+				scss: stripIndent`
+					$theme-name: 'vkIOSDark';
+					$theme-name-base: 'vkIOS';
+					$theme-inherits-from: 'vkIOS';
+					$colors-scheme: dark;
+					$color-background: #FFF;
+					$color-background--hover: #AAA;
+					$color-background--active: #CCC;
+				`,
+				pcss: stripIndent`
+				.vkui--vkIOS--dark {
+					--theme-name: 'vkIOSDark';
+					--theme-name-base: 'vkIOS';
+					--theme-inherits-from: 'vkIOS';
+					--colors-scheme: dark;
+					--color-background: #FFF;
+					--color-background--hover: #AAA;
+					--color-background--active: #CCC;
+				}`,
+				less: stripIndent`
+					@theme-name: 'vkIOSDark';
+					@theme-name-base: 'vkIOS';
+					@theme-inherits-from: 'vkIOS';
+					@colors-scheme: dark;
+					@color-background: #FFF;
+					@color-background--hover: #AAA;
+					@color-background--active: #CCC;
+				`,
+				styl: stripIndent`
+					$theme-name = 'vkIOSDark';
+					$theme-name-base = 'vkIOS';
+					$theme-inherits-from = 'vkIOS';
 					$colors-scheme = dark;
 					$color-background = #FFF;
 					$color-background--hover = #AAA;
