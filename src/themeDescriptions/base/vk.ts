@@ -61,7 +61,11 @@ export const lightColors: ColorsDescription = {
 		colorImagePlaceholderAlpha: 'rgba(0, 28, 61, 0.08)',
 		colorImagePlaceholder: '#F2F3F5',
 		colorSearchFieldBackground: '#EBEDF0',
-		colorFieldBorderAlpha: 'rgba(0, 0, 0, 0.12)',
+		colorFieldBorderAlpha: {
+			normal: 'rgba(0, 0, 0, 0.12)',
+			hover: 'rgba(0, 0, 0, 0.24)',
+			active: 'rgba(0, 0, 0, 0.36)',
+		},
 		colorFieldBackground: '#f2f3f5',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.12)',
 		colorSeparatorSecondary: '#E1E3E6',
