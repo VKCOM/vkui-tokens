@@ -5,4 +5,5 @@ export interface Elevation {
 	elevation3: Property.BoxShadow;
 	elevation2: Property.BoxShadow;
 	elevation1: Property.BoxShadow;
+	elevation1InvertY: Property.BoxShadow;
 }

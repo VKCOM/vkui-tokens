@@ -46,4 +46,6 @@ export interface Sizes {
 	sizeButtonGroupGapSpace: number;
 	sizeButtonGroupGapSmall: number;
 	sizeButtonGroupGapMedium: number;
+
+	sizeOptionHierarchy: number;
 }

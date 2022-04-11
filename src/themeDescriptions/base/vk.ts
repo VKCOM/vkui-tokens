@@ -512,9 +512,16 @@ export const lightTheme: ThemeDescription = {
 		regular: 12,
 	},
 
+	// Токены иерархии
+	sizeOptionHierarchy: {
+		regular: 32,
+	},
+
 	// Прочие отступы
 	elevation1:
 		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+	elevation1InvertY:
+		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
 	elevation2:
 		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
 	elevation3:
