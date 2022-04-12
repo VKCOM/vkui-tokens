@@ -519,8 +519,14 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 12,
 	},
 
+	// Токены иерархии
+	sizeOptionHierarchy: {
+		regular: 32,
+	},
+
 	// Прочие отступы
 	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
+	elevation1InvertY: '0 -2px 0 0 rgba(0, 16, 61, 0.04)',
 	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
 	elevation3: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
 	elevation4: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
@@ -784,6 +790,7 @@ export const lightTheme: ParadigmThemeDescription = {
 
 export const darkThemeElevation: Elevation = {
 	elevation1: '0 2px 0 0 rgba(0, 0, 0, 0.04)',
+	elevation1InvertY: '0 -2px 0 0 rgba(0, 0, 0, 0.04)',
 	elevation2: '0 4px 48px 0 rgba(0, 0, 0, 0.72)',
 	elevation3: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
 	elevation4: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
