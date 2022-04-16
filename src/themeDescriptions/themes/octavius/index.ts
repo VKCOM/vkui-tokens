@@ -41,6 +41,18 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorPaletteViolet1: '#6c00ff',
 		colorPaletteViolet2: '#ae73ff',
 		colorAlert: '#c1341b',
+
+		colorTagBackgroungMint: '#B3F0DD',
+		colorTagTextMint: '#205B5B',
+		colorTagBackgroungSky: '#A4DEFF',
+		colorTagTextSky: '#203F5B',
+		colorTagBackgroungOrange: '#FFD2A8',
+		colorTagTextOrange: '#5B3620',
+		colorTagBackgroungPink: '#FFB2DA',
+		colorTagTextPink: '#51205B',
+		colorTagBackgroungPurple: '#CEB3F0',
+		colorTagTextPurple: '#38205B',
+
 		octaviusColorPlaceholderBackground: '#ffffff',
 		octaviusColorPromoBackground: '#EBEEF5',
 		octaviusColorThreadFooterBackground: '#ebecef',
