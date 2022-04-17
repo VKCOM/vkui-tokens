@@ -94,6 +94,18 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorPaletteViolet2: ColorDescription;
 	colorAlert: ColorDescription;
 
+	// Токены меток
+	colorTagBackgroungMint: ColorDescription;
+	colorTagTextMint: ColorDescription;
+	colorTagBackgroungSky: ColorDescription;
+	colorTagTextSky: ColorDescription;
+	colorTagBackgroungOrange: ColorDescription;
+	colorTagTextOrange: ColorDescription;
+	colorTagBackgroungPink: ColorDescription;
+	colorTagTextPink: ColorDescription;
+	colorTagBackgroungPurple: ColorDescription;
+	colorTagTextPurple: ColorDescription;
+
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
