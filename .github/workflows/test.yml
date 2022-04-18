@@ -15,7 +15,6 @@ jobs:
         with:
           node-version: '17'
           cache: yarn
-      - run: yarn set version berry
       - run: yarn install --immutable
       - run: yarn run lint
   test:
@@ -26,7 +25,6 @@ jobs:
         with:
           node-version: '17'
           cache: yarn
-      - run: yarn set version berry
       - run: yarn install --immutable
       - run: yarn run test:ci
   build:
@@ -37,7 +35,6 @@ jobs:
         with:
           node-version: '17'
           cache: yarn
-      - run: yarn set version berry
       - run: yarn install --immutable
       - run: yarn run build
 

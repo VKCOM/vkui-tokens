@@ -20,7 +20,6 @@ jobs:
           node-version: 17
           cache: 'yarn'
           registry-url: https://registry.npmjs.org/
-      - run: yarn set version berry
       - run: yarn install --immutable
       - run: yarn run publish:latest
         env:
@@ -39,7 +38,6 @@ jobs:
           node-version: 17
           cache: 'yarn'
           registry-url: https://registry.npmjs.org/
-      - run: yarn set version berry
       - run: yarn install --immutable
       - run: yarn run publish:dist
         env:
