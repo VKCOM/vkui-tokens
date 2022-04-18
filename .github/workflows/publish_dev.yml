@@ -13,10 +13,10 @@ jobs:
         with:
           node-version: 17
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
       - name: Assigning new version
-        run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=dev-${GITHUB_SHA:0:6}
+        run: yarn version prerelease --commit-hooks=false --git-tag-version=false --preid=dev-${GITHUB_SHA:0:6}
       - name: Publishing release
-        run: npm run publish:dev
+        run: yarn run publish:dev
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}

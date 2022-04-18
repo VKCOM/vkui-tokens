@@ -14,8 +14,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '17'
-      - run: npm ci
-      - run: npm run lint
+      - run: yarn install --frozen-lockfile
+      - run: yarn run lint
   test:
     runs-on: ubuntu-latest
     steps:
@@ -23,8 +23,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '17'
-      - run: npm ci
-      - run: npm run test:ci
+      - run: yarn install --frozen-lockfile
+      - run: yarn run test:ci
   build:
     runs-on: ubuntu-latest
     steps:
@@ -32,6 +32,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '17'
-      - run: npm ci
-      - run: npm run build
+      - run: yarn install --frozen-lockfile
+      - run: yarn run build
 

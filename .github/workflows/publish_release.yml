@@ -18,10 +18,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 17
-          cache: 'npm'
+          cache: 'yarn'
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm run publish:latest
+      - run: yarn install --frozen-lockfile
+      - run: yarn run publish:latest
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPMJS_PUBLISH_TOKEN}}
 
@@ -36,9 +36,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 17
-          cache: 'npm'
+          cache: 'yarn'
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm run publish:dist
+      - run: yarn install --frozen-lockfile
+      - run: yarn run publish:dist
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPMJS_PUBLISH_TOKEN}}

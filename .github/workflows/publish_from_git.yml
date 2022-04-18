@@ -13,8 +13,8 @@ jobs:
         with:
           node-version: 17
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
       - name: Publishing release
-        run: npm run publish:dist
+        run: yarn run publish:dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
