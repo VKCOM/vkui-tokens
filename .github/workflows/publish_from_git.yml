@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 17
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - name: Publishing release
         run: yarn run publish:dist
         env:
