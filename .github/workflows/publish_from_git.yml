@@ -14,7 +14,7 @@ jobs:
           node-version: 17
           cache: yarn
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn set version stable
+      - run: yarn set version berry
       - run: yarn install --immutable
       - name: Publishing release
         run: yarn run publish:dist
