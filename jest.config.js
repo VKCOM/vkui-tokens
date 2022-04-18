@@ -21,10 +21,10 @@ module.exports = {
 	},
 	coverageThreshold: {
 		global: {
-			statements: 90,
-			branches: 88,
-			functions: 91,
-			lines: 90,
+			statements: 91.31,
+			branches: 88.3,
+			functions: 93.24,
+			lines: 91.88,
 		},
 	},
 	testMatch: ['**/?(*.)+(spec|test).[t]s?(x)'],
