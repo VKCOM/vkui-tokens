@@ -24,6 +24,7 @@ export interface ThemeCalendarOverValues {
 }
 
 export interface LocalCalendarColorDescriptionStruct {
+	calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
 	calendarColorBackgroundAccentTintThemed: ColorDescription;
 }
 
