@@ -17,7 +17,7 @@ jobs:
       - run: yarn set version 2.4.3
       - run: yarn install --immutable
       - name: Assigning new version
-        run: yarn version prerelease --commit-hooks=false --git-tag-version=false --preid=dev-${GITHUB_SHA:0:6}
+        run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=dev-${GITHUB_SHA:0:6}
       - name: Publishing release
         run: yarn run publish:dev
         env:
