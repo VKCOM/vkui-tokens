@@ -6,6 +6,7 @@ node_modules/
 !/src/
 !/demo
 !/assets
+!/.yarn/releases
 !/.github
 /**/*.d.ts
 /**/*.js
