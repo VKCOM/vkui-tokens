@@ -83,6 +83,11 @@ export const calendarTheme: ThemeCalendarDescription = {
 		},
 	},
 
+	calendarElevationHeader: '0 0 16px 0 rgba(2, 13, 41, 0.12)',
+	calendarSizeBorderRadiusSmall: 4,
+	calendarSizeBorderRadiusMedium: 6,
+	calendarSizeBorderRadiusLarge: 8,
+
 	fontFamilyBase: fontFamily,
 	fontFamilyAccent: fontFamily,
 
