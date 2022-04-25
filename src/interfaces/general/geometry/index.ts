@@ -48,4 +48,8 @@ export interface Sizes {
 	sizeButtonGroupGapMedium: number;
 
 	sizeOptionHierarchy: number;
+
+	sizeSwitchHeight: number;
+	sizeSwitchWidth: number;
+	sizeSwitchPin: number;
 }

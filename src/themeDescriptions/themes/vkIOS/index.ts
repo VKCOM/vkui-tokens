@@ -16,6 +16,20 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 	sizeCardBorderRadius: {
 		regular: 10,
 	},
+
+	// Компонент Switch
+	sizeSwitchHeight: {
+		regular: 31,
+		compact: 27,
+	},
+	sizeSwitchWidth: {
+		regular: 51,
+		compact: 47,
+	},
+	sizeSwitchPin: {
+		regular: 27,
+		compact: 23,
+	},
 };
 
 export const vkIOSThemeDark: ThemeVkIOSDarkDescription = {

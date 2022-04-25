@@ -517,6 +517,20 @@ export const lightTheme: ThemeDescription = {
 		regular: 32,
 	},
 
+	// Компонент Switch
+	sizeSwitchHeight: {
+		regular: 14,
+		compact: 12,
+	},
+	sizeSwitchWidth: {
+		regular: 34,
+		compact: 32,
+	},
+	sizeSwitchPin: {
+		regular: 20,
+		compact: 18,
+	},
+
 	// Прочие отступы
 	elevation1:
 		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
