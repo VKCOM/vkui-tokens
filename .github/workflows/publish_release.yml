@@ -20,7 +20,7 @@ jobs:
           node-version: 17
           cache: 'npm'
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - run: yarn
       - run: npm run publish:latest
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPMJS_PUBLISH_TOKEN}}
@@ -38,7 +38,7 @@ jobs:
           node-version: 17
           cache: 'npm'
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - run: yarn
       - run: npm run publish:dist
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPMJS_PUBLISH_TOKEN}}
