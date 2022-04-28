@@ -71,6 +71,7 @@ export const lightColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
+		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
 		colorStrokeAccent: '#005FF9',
@@ -171,6 +172,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
+		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
