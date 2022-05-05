@@ -19,7 +19,7 @@ const fontFamilyBase: Property.FontFamily =
 	'Inter, Helvetica, Arial, sans-serif';
 const {
 	fontFamilyAccent,
-	fontWeightBase1,
+	fontWeightBase3,
 	fontWeightAccent1,
 	fontWeightAccent2,
 } = lightTheme;
@@ -31,63 +31,63 @@ const fontAccentBoldAtributes: FontAccentAtributes = {
 const fontSize1: Font = {
 	fontSize: 11,
 	lineHeight: '14px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize2: Font = {
 	fontSize: 13,
 	lineHeight: '18px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize3: Font = {
 	fontSize: 15,
 	lineHeight: '20px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize4: Font = {
 	fontSize: 17,
 	lineHeight: '24px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize5: Font = {
 	fontSize: 20,
 	lineHeight: '26px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize6: Font = {
 	fontSize: 24,
 	lineHeight: '28px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize7: Font = {
 	fontSize: 28,
 	lineHeight: '32px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize8: Font = {
 	fontSize: 32,
 	lineHeight: '36px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
 const fontSize9: Font = {
 	fontSize: 40,
 	lineHeight: '48px',
-	fontWeight: staticRef(fontWeightBase1),
+	fontWeight: staticRef(fontWeightBase3),
 	fontFamily: fontFamilyBase,
 };
 
