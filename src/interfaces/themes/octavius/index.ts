@@ -223,6 +223,12 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorNotificationBorder: ColorDescription;
 	octaviusColorPlaceholderBackground: ColorDescription;
 	octaviusColorPromoBackground: ColorDescription;
+
+	// Тонированные фоны
+	octaviusColorBackgroundAccentTintAlpha: ColorDescription;
+	octaviusColorBackgroundNegativeTintAlpha: ColorDescription;
+	octaviusColorBackgroundPositiveTintAlpha: ColorDescription;
+	octaviusColorButtonBackgroundContrastAlpha: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
