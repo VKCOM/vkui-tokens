@@ -52,4 +52,20 @@ export interface Sizes {
 	sizeSwitchHeight: number;
 	sizeSwitchWidth: number;
 	sizeSwitchPin: number;
+
+	sizeButtonBaseSmallPaddingHorizontalText: number;
+	sizeButtonBaseMediumPaddingHorizontalText: number;
+	sizeButtonBaseLargePaddingHorizontalText: number;
+	sizeButtonBaseSmallPaddingHorizontalIcon: number;
+	sizeButtonBaseMediumPaddingHorizontalIcon: number;
+	sizeButtonBaseLargePaddingHorizontalIcon: number;
+	sizeButtonTertiarySmallPaddingHorizontalText: number;
+	sizeButtonTertiaryMediumPaddingHorizontalText: number;
+	sizeButtonTertiaryLargePaddingHorizontalText: number;
+	sizeButtonTertiarySmallPaddingHorizontalIcon: number;
+	sizeButtonTertiaryMediumPaddingHorizontalIcon: number;
+	sizeButtonTertiaryLargePaddingHorizontalIcon: number;
+	sizeButtonMinimumWidth: number;
+
+	sizeFormItemPaddingVertical: number;
 }

@@ -540,6 +540,52 @@ export const lightThemeBase: ThemeDescription = {
 		compact: 18,
 	},
 
+	// Токены отступов для кнопок
+	sizeButtonBaseSmallPaddingHorizontalText: {
+		regular: 16,
+	},
+	sizeButtonBaseMediumPaddingHorizontalText: {
+		regular: 16,
+	},
+	sizeButtonBaseLargePaddingHorizontalText: {
+		regular: 20,
+	},
+	sizeButtonBaseSmallPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseMediumPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseLargePaddingHorizontalIcon: {
+		regular: 16,
+	},
+	sizeButtonTertiarySmallPaddingHorizontalText: {
+		regular: 12,
+	},
+	sizeButtonTertiaryMediumPaddingHorizontalText: {
+		regular: 12,
+	},
+	sizeButtonTertiaryLargePaddingHorizontalText: {
+		regular: 16,
+	},
+	sizeButtonTertiarySmallPaddingHorizontalIcon: {
+		regular: 8,
+	},
+	sizeButtonTertiaryMediumPaddingHorizontalIcon: {
+		regular: 8,
+	},
+	sizeButtonTertiaryLargePaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonMinimumWidth: {
+		regular: 80,
+	},
+
+	// FormItem
+	sizeFormItemPaddingVertical: {
+		regular: 12,
+	},
+
 	// Прочие отступы
 	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
 	elevation1InvertY: '0 -2px 0 0 rgba(0, 16, 61, 0.04)',
