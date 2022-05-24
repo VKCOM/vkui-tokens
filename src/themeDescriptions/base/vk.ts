@@ -533,7 +533,7 @@ export const lightTheme: ThemeDescription = {
 		compact: 18,
 	},
 
-	//Токены отступов для кнопок
+	// Токены отступов для кнопок
 	sizeButtonBaseSmallPaddingHorizontalText: {
 		regular: 16,
 	},
@@ -574,7 +574,7 @@ export const lightTheme: ThemeDescription = {
 		regular: 80,
 	},
 
-	//FormItem
+	// FormItem
 	sizeFormItemPaddingVertical: {
 		regular: 12,
 	},
