@@ -110,6 +110,7 @@ export const lightColors: ColorsDescription = {
 		colorSkeletonFrom: '#F3F3F5',
 		colorSkeletonTo: '#E0E1E6',
 		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
 	},
@@ -211,6 +212,7 @@ export const darkColors: ColorsDescription = {
 		colorSkeletonFrom: '#2A2A2B',
 		colorSkeletonTo: '#3E3F40',
 		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
 	},
@@ -509,6 +511,9 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBasePaddingHorizontal: {
 		regular: 16,
 	},
+	sizeBasePaddingVertical: {
+		regular: 12,
+	},
 
 	// Токены для ButtonGroup
 	sizeButtonGroupGapSpace: {
@@ -541,13 +546,13 @@ export const lightThemeBase: ThemeDescription = {
 	},
 
 	// Токены отступов для кнопок
-	sizeButtonBaseSmallPaddingHorizontalText: {
+	sizeButtonBaseSmallPaddingHorizontal: {
 		regular: 16,
 	},
-	sizeButtonBaseMediumPaddingHorizontalText: {
+	sizeButtonBaseMediumPaddingHorizontal: {
 		regular: 16,
 	},
-	sizeButtonBaseLargePaddingHorizontalText: {
+	sizeButtonBaseLargePaddingHorizontal: {
 		regular: 20,
 	},
 	sizeButtonBaseSmallPaddingHorizontalIcon: {
@@ -559,13 +564,13 @@ export const lightThemeBase: ThemeDescription = {
 	sizeButtonBaseLargePaddingHorizontalIcon: {
 		regular: 16,
 	},
-	sizeButtonTertiarySmallPaddingHorizontalText: {
+	sizeButtonTertiarySmallPaddingHorizontal: {
 		regular: 12,
 	},
-	sizeButtonTertiaryMediumPaddingHorizontalText: {
+	sizeButtonTertiaryMediumPaddingHorizontal: {
 		regular: 12,
 	},
-	sizeButtonTertiaryLargePaddingHorizontalText: {
+	sizeButtonTertiaryLargePaddingHorizontal: {
 		regular: 16,
 	},
 	sizeButtonTertiarySmallPaddingHorizontalIcon: {
@@ -584,6 +589,11 @@ export const lightThemeBase: ThemeDescription = {
 	// FormItem
 	sizeFormItemPaddingVertical: {
 		regular: 12,
+	},
+
+	// Отступ для компонента SplitCol
+	sizeSplitColPaddingHorizontal: {
+		regular: 16,
 	},
 
 	// Прочие отступы
