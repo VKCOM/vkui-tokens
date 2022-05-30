@@ -27,7 +27,7 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeSwitchPin: {
 		regular: 16,
 		compact: 16,
-  },
+	},
 };
 
 export const vkComThemeDark: ThemeVkComDarkDescription = {
