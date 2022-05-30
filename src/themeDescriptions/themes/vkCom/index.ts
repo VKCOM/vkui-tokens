@@ -11,7 +11,7 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeBorderRadius: {
 		regular: 4,
 	},
-  sizeBorderRadiusPaper: {
+ 	sizeBorderRadiusPaper: {
 		regular: 8,
 	},
 
