@@ -100,9 +100,10 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorIconPositive: '#4BB34B',
 		colorStrokePositive: '#4BB34B',
-		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
+		colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	},
 };
 
@@ -192,9 +193,10 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorIconPositive: '#4BB34B',
 		colorStrokePositive: '#4BB34B',
-		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
+		colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	},
 };
 
@@ -502,6 +504,9 @@ export const lightTheme: ThemeDescription = {
 	sizeBasePaddingHorizontal: {
 		regular: 16,
 	},
+	sizeBasePaddingVertical: {
+		regular: 12,
+	},
 
 	// Токены для ButtonGroup
 	sizeButtonGroupGapSpace: {
@@ -534,13 +539,13 @@ export const lightTheme: ThemeDescription = {
 	},
 
 	// Токены отступов для кнопок
-	sizeButtonBaseSmallPaddingHorizontalText: {
+	sizeButtonBaseSmallPaddingHorizontal: {
 		regular: 16,
 	},
-	sizeButtonBaseMediumPaddingHorizontalText: {
+	sizeButtonBaseMediumPaddingHorizontal: {
 		regular: 16,
 	},
-	sizeButtonBaseLargePaddingHorizontalText: {
+	sizeButtonBaseLargePaddingHorizontal: {
 		regular: 20,
 	},
 	sizeButtonBaseSmallPaddingHorizontalIcon: {
@@ -552,13 +557,13 @@ export const lightTheme: ThemeDescription = {
 	sizeButtonBaseLargePaddingHorizontalIcon: {
 		regular: 16,
 	},
-	sizeButtonTertiarySmallPaddingHorizontalText: {
+	sizeButtonTertiarySmallPaddingHorizontal: {
 		regular: 12,
 	},
-	sizeButtonTertiaryMediumPaddingHorizontalText: {
+	sizeButtonTertiaryMediumPaddingHorizontal: {
 		regular: 12,
 	},
-	sizeButtonTertiaryLargePaddingHorizontalText: {
+	sizeButtonTertiaryLargePaddingHorizontal: {
 		regular: 16,
 	},
 	sizeButtonTertiarySmallPaddingHorizontalIcon: {
@@ -577,6 +582,11 @@ export const lightTheme: ThemeDescription = {
 	// FormItem
 	sizeFormItemPaddingVertical: {
 		regular: 12,
+	},
+
+	// Отступ для компонента SplitCol
+	sizeSplitColPaddingHorizontal: {
+		regular: 16,
 	},
 
 	// Прочие отступы
