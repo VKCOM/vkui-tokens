@@ -103,7 +103,7 @@ import baseTheme from '@vkontakte/vkui-tokens/themes/vkBase';
 
 ###  Используем pcss формат темы из пакета
 
-1Заходим в файл, где хотим использовать тему, и импортируем её:
+1. Заходим в файл, где хотим использовать тему, и импортируем её:
 
         @import "@vkontakte/vkui-tokens/themes/vkBase";
 
