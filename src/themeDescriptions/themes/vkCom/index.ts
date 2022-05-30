@@ -11,6 +11,9 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeBorderRadius: {
 		regular: 4,
 	},
+  sizeBorderRadiusPaper: {
+		regular: 8,
+	},
 
 	// Компонент Switch
 	sizeSwitchHeight: {
@@ -24,7 +27,7 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeSwitchPin: {
 		regular: 16,
 		compact: 16,
-	},
+  },
 };
 
 export const vkComThemeDark: ThemeVkComDarkDescription = {
