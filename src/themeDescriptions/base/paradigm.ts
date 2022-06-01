@@ -415,20 +415,20 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 20,
 	},
 	sizeFieldHeight: {
-		regular: 48,
-		compact: 40,
+		regular: 44,
+		compact: 36,
 	},
 	sizeButtonLargeHeight: {
-		regular: 48,
-		compact: 48,
+		regular: 44,
+		compact: 36,
 	},
 	sizeButtonMediumHeight: {
-		regular: 48,
-		compact: 40,
+		regular: 36,
+		compact: 32,
 	},
 	sizeButtonSmallHeight: {
-		regular: 32,
-		compact: 32,
+		regular: 30,
+		compact: 28,
 	},
 	sizeCheckbox: {
 		regular: 16,
