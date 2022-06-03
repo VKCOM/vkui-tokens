@@ -1,6 +1,6 @@
 {
   "name": "@vkontakte/vkui-tokens",
-  "version": "4.12.0",
+  "version": "4.12.1",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
   "main": "utils/descriptions.js",
@@ -64,7 +64,7 @@
     "typescript": "4.2.4"
   },
   "engines": {
-    "npm": "8.5.5",
+    "npm": ">=8.5.5",
     "yarn": ">=1.21.1 <=1.22.18"
   }
 }
