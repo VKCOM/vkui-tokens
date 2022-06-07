@@ -4,6 +4,8 @@ import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 import {Elevation} from '@/interfaces/general/elevation';
 import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
 import {helpers} from '@/themeDescriptions/common';
+import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
+import {Property} from 'csstype';
 
 const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Helvetica, Arial, sans-serif';
@@ -14,9 +16,15 @@ const fontWeightBase1 = 700;
 const fontWeightBase2 = 700;
 const fontWeightBase3 = 400;
 
+const colorBackgroundTertiaryLight: Property.Color = '#F9F9FA';
+const colorBackgroundTertiaryDark: Property.Color = '#252525';
+
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
+		gradientBlack: getGradientPointsFromColor('#000000'),
+		gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+		gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 		// Background
 		colorBackgroundAccent: '#005FF9',
 		colorBackgroundAccentThemed: '#005FF9',
@@ -33,7 +41,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
 		colorBackgroundWarning: '#FFF1AD',
 		colorBackgroundNegative: '#ED0A34',
-		colorBackgroundTertiary: '#F9F9FA',
+		colorBackgroundTertiary: colorBackgroundTertiaryLight,
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#FAEBEB',
@@ -130,7 +138,7 @@ export const darkColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
-		colorBackgroundTertiary: '#252525',
+		colorBackgroundTertiary: colorBackgroundTertiaryDark,
 		colorBackground: '#19191A',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',

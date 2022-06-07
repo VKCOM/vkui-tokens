@@ -1,5 +1,7 @@
 import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
+import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
+import { Property } from 'csstype';
 
 const fontFamilyAccent =
 	'"TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';
@@ -12,9 +14,15 @@ const fontWeightBase1 = 600;
 const fontWeightBase2 = 500;
 const fontWeightBase3 = 400;
 
+const colorBackgroundTertiaryLight: Property.Color = '#F9F9F9';
+const colorBackgroundTertiaryDark: Property.Color = '#202021';
+
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
+		gradientBlack: getGradientPointsFromColor('#000000'),
+		gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+		gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 		colorBackgroundAccent: '#2688EB',
 		colorBackgroundAccentThemed: '#2688EB',
 		colorBackgroundAccentAlternative: '#2688EB',
@@ -32,7 +40,8 @@ export const lightColors: ColorsDescription = {
 			hover: 'rgba(0, 0, 0, 0.08)',
 			active: 'rgba(0, 0, 0, 0.12)',
 		},
-		colorBackgroundTertiary: '#F9F9F9',
+		colorBackgroundTertiary: colorBackgroundTertiaryDark,
+		colorBackgroundTertiary: colorBackgroundTertiaryLight,
 		colorBackground: '#EBEDF0',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
@@ -110,6 +119,9 @@ export const lightColors: ColorsDescription = {
 export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
+		gradientBlack: getGradientPointsFromColor('#000000'),
+		gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+		gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
 		colorBackgroundAccent: '#529EF4',
 		colorBackgroundAccentThemed: '#FFFFFF',
 		colorBackgroundAccentAlternative: '#529EF4',
@@ -127,7 +139,8 @@ export const darkColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.08)',
 			active: 'rgba(255, 255, 255, 0.12)',
 		},
-		colorBackgroundTertiary: '#202021',
+		colorBackgroundTertiary: colorBackgroundTertiaryDark,
+		colorBackgroundTertiary: '#202021'k
 		colorBackground: '#0A0A0A',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
