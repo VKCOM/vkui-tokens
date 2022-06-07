@@ -1,12 +1,14 @@
 import color from 'color';
 import {Property} from 'csstype';
 
+import {GradientPoints} from '@/interfaces/general/gradients';
+
 type OpacityMap = Array<[number, number]>;
 
 export function getGradientPointsFromColor(
 	colorArg: Property.Color,
 	opacityMultiplier = 1,
-): string {
+): GradientPoints {
 	const opacityMap: OpacityMap = [
 		[0, 0],
 		[0.036, 13],

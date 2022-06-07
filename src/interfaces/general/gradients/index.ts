@@ -1,4 +1,4 @@
-type GradientPoints = string;
+export type GradientPoints = string;
 
 export interface Gradients {
 	gradientBlack: GradientPoints;
