@@ -1,7 +1,8 @@
+import {Property} from 'csstype';
+
+import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
 import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
-import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
-import { Property } from 'csstype';
 
 const fontFamilyAccent =
 	'"TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';
@@ -20,9 +21,6 @@ const colorBackgroundTertiaryDark: Property.Color = '#202021';
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
-		gradientBlack: getGradientPointsFromColor('#000000'),
-		gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-		gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 		colorBackgroundAccent: '#2688EB',
 		colorBackgroundAccentThemed: '#2688EB',
 		colorBackgroundAccentAlternative: '#2688EB',
@@ -40,7 +38,6 @@ export const lightColors: ColorsDescription = {
 			hover: 'rgba(0, 0, 0, 0.08)',
 			active: 'rgba(0, 0, 0, 0.12)',
 		},
-		colorBackgroundTertiary: colorBackgroundTertiaryDark,
 		colorBackgroundTertiary: colorBackgroundTertiaryLight,
 		colorBackground: '#EBEDF0',
 		colorBackgroundContrast: '#FFFFFF',
@@ -119,9 +116,6 @@ export const lightColors: ColorsDescription = {
 export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
-		gradientBlack: getGradientPointsFromColor('#000000'),
-		gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-		gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
 		colorBackgroundAccent: '#529EF4',
 		colorBackgroundAccentThemed: '#FFFFFF',
 		colorBackgroundAccentAlternative: '#529EF4',
@@ -140,7 +134,6 @@ export const darkColors: ColorsDescription = {
 			active: 'rgba(255, 255, 255, 0.12)',
 		},
 		colorBackgroundTertiary: colorBackgroundTertiaryDark,
-		colorBackgroundTertiary: '#202021'k
 		colorBackground: '#0A0A0A',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
@@ -613,6 +606,10 @@ export const lightTheme: ThemeDescription = {
 		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
 	elevation4:
 		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+
+	gradientBlack: getGradientPointsFromColor('#000000'),
+	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -637,4 +634,7 @@ export const darkTheme: ThemeDescription = {
 		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
 	elevation4:
 		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+	gradientBlack: getGradientPointsFromColor('#000000'),
+	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
 };

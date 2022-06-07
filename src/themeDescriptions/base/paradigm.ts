@@ -1,11 +1,12 @@
+import {Property} from 'csstype';
+
+import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
 import {alias, staticRef} from '@/build/helpers/tokenHelpers';
 import {overlayColors} from '@/build/themeProcessors/expandColors/overlayColors';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 import {Elevation} from '@/interfaces/general/elevation';
 import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
 import {helpers} from '@/themeDescriptions/common';
-import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
-import {Property} from 'csstype';
 
 const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Helvetica, Arial, sans-serif';
@@ -22,9 +23,6 @@ const colorBackgroundTertiaryDark: Property.Color = '#252525';
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
-		gradientBlack: getGradientPointsFromColor('#000000'),
-		gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-		gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 		// Background
 		colorBackgroundAccent: '#005FF9',
 		colorBackgroundAccentThemed: '#005FF9',
@@ -610,6 +608,9 @@ export const lightThemeBase: ThemeDescription = {
 	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
 	elevation3: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
 	elevation4: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
+	gradientBlack: getGradientPointsFromColor('#000000'),
+	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -878,6 +879,7 @@ export const darkThemeElevation: Elevation = {
 
 export const darkThemeBase: ThemeDescription = {
 	...lightThemeBase,
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
 	themeName: 'paradigmBaseDark',
 	...darkColors,
 	...darkThemeElevation,
