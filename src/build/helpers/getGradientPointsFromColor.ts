@@ -19,8 +19,7 @@ export function getGradientPointsFromColor(
 	];
 	const colorRGB: string = color(colorArg).rgb().array().join(', ');
 	return opacityMap
-		.map(function (pointValues) {
-			const [pointOpacity, pointCoordinate] = pointValues;
+		.map(function ([pointOpacity, pointCoordinate]) {
 			return `rgba(${colorRGB}, ${Math.round(pointOpacity * opacityMultiplier * 1000) / 1000}) ${pointCoordinate}%`;
 		})
 		.join(', ');
