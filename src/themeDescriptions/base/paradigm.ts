@@ -608,7 +608,7 @@ export const lightThemeBase: ThemeDescription = {
 	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
 	elevation3: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
 	elevation4: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
-	gradientBlack: getGradientPointsFromColor('#000000'),
+	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 	animationDurationL: '0.4s',
