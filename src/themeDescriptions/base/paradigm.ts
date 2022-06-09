@@ -403,7 +403,7 @@ export const lightThemeBase: ThemeDescription = {
 		compact: 24,
 	},
 	sizeBorderRadius: {
-		regular: 4,
+		regular: 8,
 	},
 	sizeCheckBorderRadius: {
 		regular: 4,
