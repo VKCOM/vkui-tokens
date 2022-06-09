@@ -5,6 +5,7 @@ export const searchTheme: ThemeSearchDescription = {
 	...lightTheme,
 	themeName: 'search',
 	themeNameBase: 'search',
+	fontFamilyBase: 'Arial, sans-serif',
 	sizeBorderRadius: {
 		regular: 8,
 	},
