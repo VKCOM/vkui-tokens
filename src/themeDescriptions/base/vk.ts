@@ -131,7 +131,7 @@ export const darkColors: ColorsDescription = {
 		colorBackground: '#0A0A0A',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
-		colorBackgroundWarning: '#6C4A00',
+		colorBackgroundWarning: '#887244',
 		colorBackgroundNegative: '#E64646',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorTextNegative: '#E64646',
