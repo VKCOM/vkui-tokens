@@ -159,7 +159,7 @@ export const darkColors: ColorsDescription = {
 		colorSearchFieldBackground: '#232324',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.12)',
 		colorFieldBackground: '#292929',
-		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.4)',
+		colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.12)',
 		colorSeparatorSecondary: '#141415',
 		colorSeparatorPrimary: '#0F0F10',
 		colorTextLink: '#529EF4',
