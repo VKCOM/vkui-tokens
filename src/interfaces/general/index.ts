@@ -4,6 +4,7 @@ import {Animations} from './animations';
 import {ColorDescription, Colors, ColorsDescriptionStruct} from './colors';
 import {Elevation} from './elevation';
 import {Sizes} from './geometry';
+import {Gradients} from './gradients';
 import {ToneValues} from './toneValues';
 import {Adaptive} from './tools';
 import {NamifyObject} from './tools/cssVars';
@@ -55,6 +56,7 @@ export interface ThemeGeneral
 		ToneValues,
 		TypographyBaseProps,
 		Elevation,
+		Gradients,
 		Animations {}
 
 /**
