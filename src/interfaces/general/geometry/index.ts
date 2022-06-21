@@ -42,10 +42,33 @@ export interface Sizes {
 	sizeCardBorderRadius: number;
 	sizeCardgridPaddingVertical: number;
 	sizeBasePaddingHorizontal: number;
+	sizeBasePaddingVertical: number;
 
 	sizeButtonGroupGapSpace: number;
 	sizeButtonGroupGapSmall: number;
 	sizeButtonGroupGapMedium: number;
 
 	sizeOptionHierarchy: number;
+
+	sizeSwitchHeight: number;
+	sizeSwitchWidth: number;
+	sizeSwitchPin: number;
+
+	sizeButtonBaseSmallPaddingHorizontal: number;
+	sizeButtonBaseMediumPaddingHorizontal: number;
+	sizeButtonBaseLargePaddingHorizontal: number;
+	sizeButtonBaseSmallPaddingHorizontalIcon: number;
+	sizeButtonBaseMediumPaddingHorizontalIcon: number;
+	sizeButtonBaseLargePaddingHorizontalIcon: number;
+	sizeButtonTertiarySmallPaddingHorizontal: number;
+	sizeButtonTertiaryMediumPaddingHorizontal: number;
+	sizeButtonTertiaryLargePaddingHorizontal: number;
+	sizeButtonTertiarySmallPaddingHorizontalIcon: number;
+	sizeButtonTertiaryMediumPaddingHorizontalIcon: number;
+	sizeButtonTertiaryLargePaddingHorizontalIcon: number;
+	sizeButtonMinimumWidth: number;
+
+	sizeFormItemPaddingVertical: number;
+
+	sizeSplitColPaddingHorizontal: number;
 }
