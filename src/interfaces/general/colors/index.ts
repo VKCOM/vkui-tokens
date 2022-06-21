@@ -111,10 +111,12 @@ export interface ColorsDescriptionStruct {
 	colorTextPositive: ColorDescription;
 	colorStrokePositive: ColorDescription;
 	colorAvatarOverlay: ColorDescription;
+	colorAvatarOverlayInverseAlpha: ColorDescription;
 	colorOverlayPrimary: ColorDescription;
 	colorTransparent: ColorDescription;
 	colorBackgroundNegativeTint: ColorDescription;
 	colorFieldBackground: ColorDescription;
+	colorIconContrastSecondary: ColorDescription;
 }
 
 export type Colors = {

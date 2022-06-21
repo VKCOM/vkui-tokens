@@ -52,6 +52,7 @@ export const lightColors: ColorsDescription = {
 		colorIconSecondaryAlpha: 'rgba(0, 0, 0, 0.36)',
 		colorIconTertiary: '#B8C1CC',
 		colorIconTertiaryAlpha: 'rgba(0, 0, 0, 0.24)',
+		colorIconContrastSecondary: '#F2F3F5',
 		colorImageBorderAlpha: 'rgba(0, 0, 0, 0.08)',
 		colorWriteBarInputBackground: '#F2F3F5',
 		colorWriteBarInputBorderAlpha: 'rgba(0, 0, 0, 0.08)',
@@ -99,9 +100,10 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorIconPositive: '#4BB34B',
 		colorStrokePositive: '#4BB34B',
-		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
+		colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	},
 };
 
@@ -129,7 +131,7 @@ export const darkColors: ColorsDescription = {
 		colorBackground: '#0A0A0A',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
-		colorBackgroundWarning: '#6C4A00',
+		colorBackgroundWarning: '#887244',
 		colorBackgroundNegative: '#E64646',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorTextNegative: '#E64646',
@@ -145,6 +147,7 @@ export const darkColors: ColorsDescription = {
 		colorIconSecondaryAlpha: 'rgba(0, 0, 0, 0.43)',
 		colorIconTertiary: '#5D5F61',
 		colorIconTertiaryAlpha: 'rgba(255, 255, 255, 0.3)',
+		colorIconContrastSecondary: '#F2F3F5',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorWriteBarInputBackground: '#232324',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
@@ -190,9 +193,10 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorIconPositive: '#4BB34B',
 		colorStrokePositive: '#4BB34B',
-		colorAvatarOverlay: 'rgba(129, 140, 153, 0.48)',
+		colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	},
 };
 
@@ -500,6 +504,9 @@ export const lightTheme: ThemeDescription = {
 	sizeBasePaddingHorizontal: {
 		regular: 16,
 	},
+	sizeBasePaddingVertical: {
+		regular: 12,
+	},
 
 	// Токены для ButtonGroup
 	sizeButtonGroupGapSpace: {
@@ -515,6 +522,71 @@ export const lightTheme: ThemeDescription = {
 	// Токены иерархии
 	sizeOptionHierarchy: {
 		regular: 32,
+	},
+
+	// Компонент Switch
+	sizeSwitchHeight: {
+		regular: 14,
+		compact: 12,
+	},
+	sizeSwitchWidth: {
+		regular: 34,
+		compact: 32,
+	},
+	sizeSwitchPin: {
+		regular: 20,
+		compact: 18,
+	},
+
+	// Токены отступов для кнопок
+	sizeButtonBaseSmallPaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonBaseMediumPaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonBaseLargePaddingHorizontal: {
+		regular: 20,
+	},
+	sizeButtonBaseSmallPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseMediumPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseLargePaddingHorizontalIcon: {
+		regular: 16,
+	},
+	sizeButtonTertiarySmallPaddingHorizontal: {
+		regular: 12,
+	},
+	sizeButtonTertiaryMediumPaddingHorizontal: {
+		regular: 12,
+	},
+	sizeButtonTertiaryLargePaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonTertiarySmallPaddingHorizontalIcon: {
+		regular: 8,
+	},
+	sizeButtonTertiaryMediumPaddingHorizontalIcon: {
+		regular: 8,
+	},
+	sizeButtonTertiaryLargePaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonMinimumWidth: {
+		regular: 80,
+	},
+
+	// FormItem
+	sizeFormItemPaddingVertical: {
+		regular: 12,
+	},
+
+	// Отступ для компонента SplitCol
+	sizeSplitColPaddingHorizontal: {
+		regular: 16,
 	},
 
 	// Прочие отступы

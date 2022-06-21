@@ -202,6 +202,12 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			hover: 'underline',
 			active: 'underline',
 		},
+
+		octaviusColorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.12)',
+		octaviusColorBackgroundNegativeTintAlpha: 'rgba(236, 71, 80, 0.12)',
+		octaviusColorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.1)',
+
+		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.99)',
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',
@@ -389,6 +395,11 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 			hover: 'none',
 			active: 'none',
 		},
+
+		octaviusColorBackgroundNegativeTintAlpha: 'rgba(236, 71, 80, 0.16)',
+		octaviusColorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.12)',
+
+		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.08)',
 	},
 	octaviusColorLetterAttachListBackground:
 		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',

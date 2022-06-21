@@ -71,6 +71,7 @@ export const lightColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
+		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
 		colorStrokeAccent: '#005FF9',
@@ -109,6 +110,7 @@ export const lightColors: ColorsDescription = {
 		colorSkeletonFrom: '#F3F3F5',
 		colorSkeletonTo: '#E0E1E6',
 		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
 	},
@@ -171,6 +173,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
+		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
@@ -209,6 +212,7 @@ export const darkColors: ColorsDescription = {
 		colorSkeletonFrom: '#2A2A2B',
 		colorSkeletonTo: '#3E3F40',
 		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
+		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
 		colorTransparent: 'transparent',
 	},
@@ -411,20 +415,20 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 20,
 	},
 	sizeFieldHeight: {
-		regular: 48,
-		compact: 40,
+		regular: 44,
+		compact: 36,
 	},
 	sizeButtonLargeHeight: {
-		regular: 48,
-		compact: 48,
+		regular: 44,
+		compact: 36,
 	},
 	sizeButtonMediumHeight: {
-		regular: 48,
-		compact: 40,
+		regular: 36,
+		compact: 32,
 	},
 	sizeButtonSmallHeight: {
-		regular: 32,
-		compact: 32,
+		regular: 30,
+		compact: 28,
 	},
 	sizeCheckbox: {
 		regular: 16,
@@ -507,6 +511,9 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBasePaddingHorizontal: {
 		regular: 16,
 	},
+	sizeBasePaddingVertical: {
+		regular: 12,
+	},
 
 	// Токены для ButtonGroup
 	sizeButtonGroupGapSpace: {
@@ -522,6 +529,71 @@ export const lightThemeBase: ThemeDescription = {
 	// Токены иерархии
 	sizeOptionHierarchy: {
 		regular: 32,
+	},
+
+	// Компонент Switch
+	sizeSwitchHeight: {
+		regular: 14,
+		compact: 12,
+	},
+	sizeSwitchWidth: {
+		regular: 34,
+		compact: 32,
+	},
+	sizeSwitchPin: {
+		regular: 20,
+		compact: 18,
+	},
+
+	// Токены отступов для кнопок
+	sizeButtonBaseSmallPaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonBaseMediumPaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonBaseLargePaddingHorizontal: {
+		regular: 20,
+	},
+	sizeButtonBaseSmallPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseMediumPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseLargePaddingHorizontalIcon: {
+		regular: 16,
+	},
+	sizeButtonTertiarySmallPaddingHorizontal: {
+		regular: 12,
+	},
+	sizeButtonTertiaryMediumPaddingHorizontal: {
+		regular: 12,
+	},
+	sizeButtonTertiaryLargePaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonTertiarySmallPaddingHorizontalIcon: {
+		regular: 8,
+	},
+	sizeButtonTertiaryMediumPaddingHorizontalIcon: {
+		regular: 8,
+	},
+	sizeButtonTertiaryLargePaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonMinimumWidth: {
+		regular: 80,
+	},
+
+	// FormItem
+	sizeFormItemPaddingVertical: {
+		regular: 12,
+	},
+
+	// Отступ для компонента SplitCol
+	sizeSplitColPaddingHorizontal: {
+		regular: 16,
 	},
 
 	// Прочие отступы

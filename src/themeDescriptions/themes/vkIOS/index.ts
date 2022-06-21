@@ -12,9 +12,26 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 		regular: 10,
 	},
 
-	// Токены компонента Cardscroll
+	// Токены компонента CardScroll
 	sizeCardBorderRadius: {
 		regular: 10,
+	},
+	sizeBasePaddingHorizontal: {
+		regular: 12,
+	},
+
+	// Компонент Switch
+	sizeSwitchHeight: {
+		regular: 31,
+		compact: 27,
+	},
+	sizeSwitchWidth: {
+		regular: 51,
+		compact: 47,
+	},
+	sizeSwitchPin: {
+		regular: 27,
+		compact: 23,
 	},
 };
 

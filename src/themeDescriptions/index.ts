@@ -23,6 +23,7 @@ import {
 import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
 import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
 import {promoTheme} from '@/themeDescriptions/themes/promo';
+import {searchTheme} from '@/themeDescriptions/themes/search';
 import {todoTheme} from '@/themeDescriptions/themes/todo';
 import {vkComTheme, vkComThemeDark} from '@/themeDescriptions/themes/vkCom';
 import {vkIOSTheme, vkIOSThemeDark} from '@/themeDescriptions/themes/vkIOS';
@@ -76,6 +77,7 @@ export const themes = [
 	callsTheme,
 	todoTheme,
 	cloudTheme,
+	searchTheme,
 
 	// ==== Deprecated Legacy ====
 	/**
