@@ -95,15 +95,15 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorAlert: ColorDescription;
 
 	// Токены меток
-	colorTagBackgroungMint: ColorDescription;
+	colorTagBackgroundMint: ColorDescription;
 	colorTagTextMint: ColorDescription;
-	colorTagBackgroungSky: ColorDescription;
+	colorTagBackgroundSky: ColorDescription;
 	colorTagTextSky: ColorDescription;
-	colorTagBackgroungOrange: ColorDescription;
+	colorTagBackgroundOrange: ColorDescription;
 	colorTagTextOrange: ColorDescription;
-	colorTagBackgroungPink: ColorDescription;
+	colorTagBackgroundPink: ColorDescription;
 	colorTagTextPink: ColorDescription;
-	colorTagBackgroungPurple: ColorDescription;
+	colorTagBackgroundPurple: ColorDescription;
 	colorTagTextPurple: ColorDescription;
 
 	// Токены кнопки
