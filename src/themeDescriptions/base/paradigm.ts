@@ -44,6 +44,9 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#FAEBEB',
 		colorFieldBackground: '#ffffff',
+		colorBackgroundModalInverse: '#303030',
+		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundAccentTint: '#5a9eff',
 
 		// Text
 		colorTextAccent: '#005FF9',
@@ -90,6 +93,8 @@ export const lightColors: ColorsDescription = {
 		colorSeparatorSecondary: '#E6E7EB',
 		colorSeparatorPrimary: '#DADCE0',
 		colorStrokePositive: '#0DC268',
+		colorSeparatorPrimary2x: '#CDD0D5',
+		colorSeparatorPrimary3x: '#BFC3CA',
 
 		// Palette
 		colorAccentBlue: '#005FF9',
@@ -146,6 +151,9 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#522e2e',
 		colorFieldBackground: '#232324',
+		colorBackgroundModalInverse: '#ffffff',
+		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundAccentTint: '#5a9eff',
 
 		// Text
 		colorTextAccent: '#3C82FD',
@@ -191,6 +199,8 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.4)',
 		colorSeparatorSecondary: '#181818',
 		colorSeparatorPrimary: '#151516',
+		colorSeparatorPrimary2x: '#202022',
+		colorSeparatorPrimary3x: '#2d2d2f',
 		colorStrokePositive: '#0DC268',
 
 		// Palette
