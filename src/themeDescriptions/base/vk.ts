@@ -1,3 +1,6 @@
+import {Property} from 'csstype';
+
+import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
 import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 
@@ -11,6 +14,9 @@ const fontWeightAccent3 = 400;
 const fontWeightBase1 = 600;
 const fontWeightBase2 = 500;
 const fontWeightBase3 = 400;
+
+const colorBackgroundTertiaryLight: Property.Color = '#F9F9F9';
+const colorBackgroundTertiaryDark: Property.Color = '#202021';
 
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
@@ -32,7 +38,7 @@ export const lightColors: ColorsDescription = {
 			hover: 'rgba(0, 0, 0, 0.08)',
 			active: 'rgba(0, 0, 0, 0.12)',
 		},
-		colorBackgroundTertiary: '#F9F9F9',
+		colorBackgroundTertiary: colorBackgroundTertiaryLight,
 		colorBackground: '#EBEDF0',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
@@ -127,16 +133,16 @@ export const darkColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.08)',
 			active: 'rgba(255, 255, 255, 0.12)',
 		},
-		colorBackgroundTertiary: '#202021',
+		colorBackgroundTertiary: colorBackgroundTertiaryDark,
 		colorBackground: '#0A0A0A',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
+		colorBackgroundNegative: '#FF5C5C',
 		colorBackgroundWarning: '#887244',
-		colorBackgroundNegative: '#E64646',
 		colorBackgroundNegativeTint: '#522E2E',
-		colorTextNegative: '#E64646',
-		colorIconNegative: '#E64646',
-		colorStrokeNegative: '#E64646',
+		colorTextNegative: '#FF5C5C',
+		colorIconNegative: '#FF5C5C',
+		colorStrokeNegative: '#FF5C5C',
 		colorHeaderBackground: '#19191A',
 		colorPanelHeaderIcon: '#71AAEB',
 		colorIconPrimary: '#E1E3E6',
@@ -151,7 +157,7 @@ export const darkColors: ColorsDescription = {
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorWriteBarInputBackground: '#232324',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
-		colorTrackBackground: '#202021',
+		colorTrackBackground: '#454647',
 		colorTrackBuffer: '#405772',
 		colorBackgroundModal: '#2D2D2E',
 		colorImagePlaceholderAlpha: 'rgba(241, 247, 255, 0.08)',
@@ -159,9 +165,9 @@ export const darkColors: ColorsDescription = {
 		colorSearchFieldBackground: '#232324',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.12)',
 		colorFieldBackground: '#292929',
-		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.4)',
+		colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.12)',
 		colorSeparatorSecondary: '#141415',
-		colorSeparatorPrimary: '#0F0F10',
+		colorSeparatorPrimary: '#363738',
 		colorTextLink: '#529EF4',
 		colorTextLinkThemed: '#FFFFFF',
 		colorTextMuted: '#E1E3E6',
@@ -600,6 +606,10 @@ export const lightTheme: ThemeDescription = {
 		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
 	elevation4:
 		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+
+	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
+	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -624,4 +634,5 @@ export const darkTheme: ThemeDescription = {
 		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
 	elevation4:
 		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
 };

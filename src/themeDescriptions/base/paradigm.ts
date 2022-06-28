@@ -1,3 +1,6 @@
+import {Property} from 'csstype';
+
+import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
 import {alias, staticRef} from '@/build/helpers/tokenHelpers';
 import {overlayColors} from '@/build/themeProcessors/expandColors/overlayColors';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
@@ -13,6 +16,9 @@ const fontWeightAccent3 = 400;
 const fontWeightBase1 = 700;
 const fontWeightBase2 = 700;
 const fontWeightBase3 = 400;
+
+const colorBackgroundTertiaryLight: Property.Color = '#F9F9FA';
+const colorBackgroundTertiaryDark: Property.Color = '#252525';
 
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
@@ -33,7 +39,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
 		colorBackgroundWarning: '#FFF1AD',
 		colorBackgroundNegative: '#ED0A34',
-		colorBackgroundTertiary: '#F9F9FA',
+		colorBackgroundTertiary: colorBackgroundTertiaryLight,
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#FAEBEB',
@@ -130,7 +136,7 @@ export const darkColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
-		colorBackgroundTertiary: '#252525',
+		colorBackgroundTertiary: colorBackgroundTertiaryDark,
 		colorBackground: '#19191A',
 		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
@@ -403,7 +409,7 @@ export const lightThemeBase: ThemeDescription = {
 		compact: 24,
 	},
 	sizeBorderRadius: {
-		regular: 4,
+		regular: 8,
 	},
 	sizeCheckBorderRadius: {
 		regular: 4,
@@ -602,6 +608,9 @@ export const lightThemeBase: ThemeDescription = {
 	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
 	elevation3: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
 	elevation4: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
+	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
+	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -870,6 +879,7 @@ export const darkThemeElevation: Elevation = {
 
 export const darkThemeBase: ThemeDescription = {
 	...lightThemeBase,
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
 	themeName: 'paradigmBaseDark',
 	...darkColors,
 	...darkThemeElevation,
