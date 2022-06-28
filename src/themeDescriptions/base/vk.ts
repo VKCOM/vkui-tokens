@@ -77,6 +77,8 @@ export const lightColors: ColorsDescription = {
 		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.12)',
 		colorSeparatorSecondary: '#E1E3E6',
 		colorSeparatorPrimary: '#D7D8D9',
+		colorSeparatorPrimary2x: '#cbcccd',
+		colorSeparatorPrimary3x: '#bebfc1',
 		colorTextLink: '#2D81E0',
 		colorTextLinkThemed: '#4986CC',
 		colorTextMuted: '#2C2D2E',
@@ -110,6 +112,9 @@ export const lightColors: ColorsDescription = {
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
+		colorBackgroundModalInverse: '#2d2d2e',
+		colorBackgroundContrastInverse: '#2d2d2e',
+		colorBackgroundAccentTint: '#5a9eff',
 	},
 };
 
@@ -168,6 +173,8 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.12)',
 		colorSeparatorSecondary: '#141415',
 		colorSeparatorPrimary: '#363738',
+		colorSeparatorPrimary2x: '#444546',
+		colorSeparatorPrimary3x: '#505253',
 		colorTextLink: '#529EF4',
 		colorTextLinkThemed: '#FFFFFF',
 		colorTextMuted: '#E1E3E6',
@@ -203,6 +210,9 @@ export const darkColors: ColorsDescription = {
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorTransparent: 'transparent',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
+		colorBackgroundModalInverse: '#ffffff',
+		colorBackgroundContrastInverse: '#2d2d2e',
+		colorBackgroundAccentTint: '#5a9eff',
 	},
 };
 
