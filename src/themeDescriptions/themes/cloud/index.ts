@@ -214,4 +214,9 @@ export const cloudTheme: ThemeCloudDescription = {
 	sizeBorderRadius: {
 		regular: 8,
 	},
+
+	colors: {
+		...lightTheme.colors,
+		colorBackgroundNegative: '#E64646',
+	},
 };
