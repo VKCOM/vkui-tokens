@@ -77,6 +77,8 @@ export interface ColorsDescriptionStruct {
 	colorSeparatorPrimaryAlpha: ColorDescription;
 	colorSeparatorSecondary: ColorDescription;
 	colorSeparatorPrimary: ColorDescription;
+	colorSeparatorPrimary2x: ColorDescription;
+	colorSeparatorPrimary3x: ColorDescription;
 	colorTextLink: ColorDescription;
 	colorTextLinkThemed: ColorDescription;
 	colorTextMuted: ColorDescription;
@@ -117,6 +119,9 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundNegativeTint: ColorDescription;
 	colorFieldBackground: ColorDescription;
 	colorIconContrastSecondary: ColorDescription;
+	colorBackgroundModalInverse: ColorDescription;
+	colorBackgroundContrastInverse: ColorDescription;
+	colorBackgroundAccentTint: ColorDescription;
 }
 
 export type Colors = {
