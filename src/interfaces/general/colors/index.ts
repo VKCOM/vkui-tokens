@@ -32,30 +32,49 @@ export type ColorDescription<
  * Либо можно указать состояния цвета вручную
  */
 export interface ColorsDescriptionStruct {
+	// Background
 	colorBackgroundAccent: ColorDescription;
 	colorBackgroundAccentThemed: ColorDescription;
+	colorBackgroundAccentTint: ColorDescription;
 	colorBackgroundAccentAlternative: ColorDescription;
-	colorIconAccent: ColorDescription;
-	colorTextAccent: ColorDescription;
-	colorTextAccentThemed: ColorDescription;
-	colorStrokeAccent: ColorDescription;
-	colorStrokeAccentThemed: ColorDescription;
-	colorStrokeContrast: ColorDescription;
-	colorActionSheetText: ColorDescription;
+	colorBackground: ColorDescription;
 	colorBackgroundContent: ColorDescription;
 	colorBackgroundSecondary: ColorDescription;
 	colorBackgroundSecondaryAlpha: ColorDescription;
 	colorBackgroundTertiary: ColorDescription;
-	colorBackground: ColorDescription;
 	colorBackgroundContrast: ColorDescription;
 	colorBackgroundContrastSecondaryAlpha: ColorDescription;
+	colorBackgroundContrastInverse: ColorDescription;
+	colorBackgroundModal: ColorDescription;
+	colorBackgroundModalInverse: ColorDescription;
 	colorBackgroundWarning: ColorDescription;
+	colorBackgroundPositive: ColorDescription;
 	colorBackgroundNegative: ColorDescription;
-	colorIconNegative: ColorDescription;
-	colorTextNegative: ColorDescription;
-	colorStrokeNegative: ColorDescription;
+	colorBackgroundNegativeTint: ColorDescription;
+	colorFieldBackground: ColorDescription;
 	colorHeaderBackground: ColorDescription;
-	colorPanelHeaderIcon: ColorDescription;
+
+	// Text
+	colorTextAccent: ColorDescription;
+	colorTextAccentThemed: ColorDescription;
+	colorTextPrimary: ColorDescription;
+	colorTextPrimaryInvariably: ColorDescription;
+	colorTextSecondary: ColorDescription;
+	colorTextSubhead: ColorDescription;
+	colorTextTertiary: ColorDescription;
+	colorTextContrast: ColorDescription;
+	colorTextContrastThemed: ColorDescription;
+	colorTextPositive: ColorDescription;
+	colorTextNegative: ColorDescription;
+	colorTextLink: ColorDescription;
+	colorTextLinkThemed: ColorDescription;
+	colorTextLinkVisited: ColorDescription;
+	colorTextMuted: ColorDescription;
+	colorLinkContrast: ColorDescription;
+	
+	// Icons
+	colorIconAccent: ColorDescription;
+	colorIconAccentThemed: ColorDescription;
 	colorIconPrimary: ColorDescription;
 	colorIconPrimaryInvariably: ColorDescription;
 	colorIconMedium: ColorDescription;
@@ -64,30 +83,27 @@ export interface ColorsDescriptionStruct {
 	colorIconSecondaryAlpha: ColorDescription;
 	colorIconTertiary: ColorDescription;
 	colorIconTertiaryAlpha: ColorDescription;
+	colorIconContrast: ColorDescription;
+	colorIconContrastThemed: ColorDescription;
+	colorIconContrastSecondary: ColorDescription;
+	colorIconPositive: ColorDescription;
+	colorIconNegative: ColorDescription;
+	
+	// Stroke
+	colorStrokeAccent: ColorDescription;
+	colorStrokeAccentThemed: ColorDescription;
+	colorStrokePositive: ColorDescription;
+	colorStrokeNegative: ColorDescription;
+	colorStrokeContrast: ColorDescription;
 	colorImageBorderAlpha: ColorDescription;
-	colorWriteBarInputBackground: ColorDescription;
-	colorWriteBarInputBorderAlpha: ColorDescription;
-	colorTrackBackground: ColorDescription;
-	colorTrackBuffer: ColorDescription;
-	colorBackgroundModal: ColorDescription;
-	colorImagePlaceholder: ColorDescription;
-	colorImagePlaceholderAlpha: ColorDescription;
-	colorSearchFieldBackground: ColorDescription;
 	colorFieldBorderAlpha: ColorDescription;
 	colorSeparatorPrimaryAlpha: ColorDescription;
 	colorSeparatorSecondary: ColorDescription;
 	colorSeparatorPrimary: ColorDescription;
 	colorSeparatorPrimary2x: ColorDescription;
 	colorSeparatorPrimary3x: ColorDescription;
-	colorTextLink: ColorDescription;
-	colorTextLinkThemed: ColorDescription;
-	colorTextMuted: ColorDescription;
-	colorTextPrimary: ColorDescription;
-	colorTextPrimaryInvariably: ColorDescription;
-	colorTextSecondary: ColorDescription;
-	colorTextSubhead: ColorDescription;
-	colorTextTertiary: ColorDescription;
-	colorWriteBarIcon: ColorDescription;
+	
+	// Palette
 	colorAccentBlue: ColorDescription;
 	colorAccentGray: ColorDescription;
 	colorAccentRed: ColorDescription;
@@ -95,33 +111,28 @@ export interface ColorsDescriptionStruct {
 	colorAccentOrange: ColorDescription;
 	colorAccentPurple: ColorDescription;
 	colorAccentViolet: ColorDescription;
-	colorSkeletonFrom: ColorDescription;
-	colorSkeletonTo: ColorDescription;
 	colorAccentSecondary: ColorDescription;
-	colorTextLinkVisited: ColorDescription;
-	colorTextContrast: ColorDescription;
-	// цвет, который на тёмной теме становится тёмным
-	// нужен для текста на primary accent кнопках
-	colorTextContrastThemed: ColorDescription;
-	colorIconContrast: ColorDescription;
-	// цвет, который на тёмной теме становится тёмным
-	// нужен для иконок на primary accent кнопках
-	colorIconContrastThemed: ColorDescription;
-	colorLinkContrast: ColorDescription;
-	colorBackgroundPositive: ColorDescription;
-	colorIconPositive: ColorDescription;
-	colorTextPositive: ColorDescription;
-	colorStrokePositive: ColorDescription;
+	
+	// Other
+	colorOverlayPrimary: ColorDescription;
 	colorAvatarOverlay: ColorDescription;
 	colorAvatarOverlayInverseAlpha: ColorDescription;
-	colorOverlayPrimary: ColorDescription;
+	colorImagePlaceholder: ColorDescription;
+	colorImagePlaceholderAlpha: ColorDescription;
+	colorSkeletonFrom: ColorDescription;
+	colorSkeletonTo: ColorDescription;
+	colorWriteBarIcon: ColorDescription;
+	colorWriteBarInputBackground: ColorDescription;
+	colorWriteBarInputBorderAlpha: ColorDescription;
+	colorActionSheetText: ColorDescription;
+	colorTrackBackground: ColorDescription;
+	colorTrackBuffer: ColorDescription;
+	colorSearchFieldBackground: ColorDescription;
+	colorPanelHeaderIcon: ColorDescription;
 	colorTransparent: ColorDescription;
-	colorBackgroundNegativeTint: ColorDescription;
-	colorFieldBackground: ColorDescription;
-	colorIconContrastSecondary: ColorDescription;
-	colorBackgroundModalInverse: ColorDescription;
-	colorBackgroundContrastInverse: ColorDescription;
-	colorBackgroundAccentTint: ColorDescription;
+	colorSegmentedControl: ColorDescription
+
+	// Themed цвета, в тёмной теме становится белыми
 }
 
 export type Colors = {
