@@ -71,7 +71,7 @@ export interface ColorsDescriptionStruct {
 	colorTextLinkVisited: ColorDescription;
 	colorTextMuted: ColorDescription;
 	colorLinkContrast: ColorDescription;
-	
+
 	// Icons
 	colorIconAccent: ColorDescription;
 	colorIconAccentThemed: ColorDescription;
@@ -88,7 +88,7 @@ export interface ColorsDescriptionStruct {
 	colorIconContrastSecondary: ColorDescription;
 	colorIconPositive: ColorDescription;
 	colorIconNegative: ColorDescription;
-	
+
 	// Stroke
 	colorStrokeAccent: ColorDescription;
 	colorStrokeAccentThemed: ColorDescription;
@@ -102,7 +102,7 @@ export interface ColorsDescriptionStruct {
 	colorSeparatorPrimary: ColorDescription;
 	colorSeparatorPrimary2x: ColorDescription;
 	colorSeparatorPrimary3x: ColorDescription;
-	
+
 	// Palette
 	colorAccentBlue: ColorDescription;
 	colorAccentGray: ColorDescription;
@@ -112,7 +112,7 @@ export interface ColorsDescriptionStruct {
 	colorAccentPurple: ColorDescription;
 	colorAccentViolet: ColorDescription;
 	colorAccentSecondary: ColorDescription;
-	
+
 	// Other
 	colorOverlayPrimary: ColorDescription;
 	colorAvatarOverlay: ColorDescription;
@@ -130,7 +130,7 @@ export interface ColorsDescriptionStruct {
 	colorSearchFieldBackground: ColorDescription;
 	colorPanelHeaderIcon: ColorDescription;
 	colorTransparent: ColorDescription;
-	colorSegmentedControl: ColorDescription
+	colorSegmentedControl: ColorDescription;
 
 	// Themed цвета, в тёмной теме становится белыми
 }

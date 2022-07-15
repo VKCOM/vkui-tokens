@@ -64,7 +64,7 @@ export const lightColors: ColorsDescription = {
 		colorTextLinkVisited: '#4986CC',
 		colorTextMuted: '#2C2D2E',
 		colorLinkContrast: '#FFFFFF',
-		
+
 		// Icons
 		colorIconAccent: '#2688EB',
 		colorIconAccentThemed: '#2688EB',
@@ -81,7 +81,7 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastSecondary: '#F2F3F5',
 		colorIconPositive: '#4BB34B',
 		colorIconNegative: '#E64646',
-		
+
 		// Stroke
 		colorStrokeAccent: '#2688EB',
 		colorStrokeAccentThemed: '#2688EB',
@@ -109,7 +109,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
 		colorAccentSecondary: '#3F8AE0',
-		
+
 		// Other
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
 		colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
@@ -177,7 +177,7 @@ export const darkColors: ColorsDescription = {
 		colorTextLinkVisited: '#4986CC',
 		colorTextMuted: '#E1E3E6',
 		colorLinkContrast: '#FFFFFF',
-		
+
 		// Icons
 		colorIconAccent: '#529EF4',
 		colorIconAccentThemed: '#FFFFFF',
@@ -194,7 +194,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastSecondary: '#F2F3F5',
 		colorIconPositive: '#4BB34B',
 		colorIconNegative: '#FF5C5C',
-		
+
 		// Stroke
 		colorStrokeAccent: '#529EF4',
 		colorStrokeAccentThemed: '#FFFFFF',
@@ -208,7 +208,7 @@ export const darkColors: ColorsDescription = {
 		colorStrokeContrast: '#FFFFFF',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.12)',
-		
+
 		// Palette
 		colorAccentBlue: '#529EF4',
 		colorAccentGray: '#A3ADB8',
