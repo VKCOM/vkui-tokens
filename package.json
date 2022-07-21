@@ -22,7 +22,8 @@
     "test:ci": "jest --coverage --verbose --reporters=\"jest-junit\" --reporters=\"default\"",
     "clear:src": "find src -name '*.d.ts' -delete &&  find src -name '*.js' -delete",
     "clear:dist": "find dist -regex '.*[^d]\\.ts' -delete",
-    "open:coverage": "open .coverage/index.html"
+    "open:coverage": "open .coverage/index.html",
+    "styleguide": "sh ./tasks/styleguide.sh"
   },
   "repository": "https://github.com/VKCOM/vkui-tokens.git",
   "dependencies": {

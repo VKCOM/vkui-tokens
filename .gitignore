@@ -9,6 +9,7 @@ node_modules/
 !/.github
 /**/*.d.ts
 /**/*.js
+!/tasks
 !.eslintrc.js
 !jest.config.js
 .yarnclean
