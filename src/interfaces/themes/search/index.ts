@@ -28,7 +28,7 @@ export type SearchLocalElevations = {
 };
 
 export type SearchLocalFonts = {
-	searchFontSearchTitle1: Adaptive<Font>;
+	searchFontSearchExtraHeadline: Adaptive<Font>;
 	searchFontSearchTitle4: Adaptive<Font>;
 	searchFontSearchTitle4Bold: Adaptive<Font>;
 	searchFontSearchSubheadBold: Adaptive<Font>;
@@ -37,8 +37,8 @@ export type SearchLocalFonts = {
 	searchFontSearchCaption1Bold: Adaptive<Font>;
 	searchFontSearchCaption1MailSans: Adaptive<Font>;
 	searchFontSearchCaption2MailSans: Adaptive<Font>;
-	searchFontSearchTextBold: Partial<Adaptive<Font>>;
-	searchFontSearchTextMailSans: Partial<Adaptive<Font>>;
+	searchFontSearchTextBold: Adaptive<Font>;
+	searchFontSearchTextMailSans: Adaptive<Font>;
 };
 
 export interface LocalSearchColorsDescriptionStruct {
