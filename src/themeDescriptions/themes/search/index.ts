@@ -1,3 +1,5 @@
+import {Adaptive} from '@/interfaces/general/tools';
+import {Font} from '@/interfaces/general/typography';
 import {ThemeSearchDescription} from '@/interfaces/themes/search';
 import {lightTheme} from '@/themeDescriptions/base/paradigm';
 
@@ -31,7 +33,7 @@ export const searchTheme: ThemeSearchDescription = {
 	sizeBorderRadius: {
 		regular: 8,
 	},
-	searchFontSearchTitle1: {
+	searchFontSearchExtraHeadline: {
 		regular: {
 			fontSize: 24,
 			lineHeight: 28,
@@ -104,6 +106,7 @@ export const searchTheme: ThemeSearchDescription = {
 		},
 	},
 	searchFontSearchTextBold: {
+		...(lightTheme.fontText as Adaptive<Font>),
 		compact: {
 			fontSize: 15,
 			lineHeight: 20,
@@ -112,6 +115,7 @@ export const searchTheme: ThemeSearchDescription = {
 		},
 	},
 	searchFontSearchTextMailSans: {
+		...(lightTheme.fontText as Adaptive<Font>),
 		compact: {
 			fontSize: 15,
 			lineHeight: 20,
