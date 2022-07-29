@@ -31,12 +31,15 @@ export type SearchLocalFonts = {
 	searchFontSearchExtraHeadline: Adaptive<Font>;
 	searchFontSearchTitle4: Adaptive<Font>;
 	searchFontSearchTitle4Bold: Adaptive<Font>;
+	searchFontSearchHeadline2: Adaptive<Font>;
 	searchFontSearchSubheadBold: Adaptive<Font>;
 	searchFontSearchFootnoteBold: Adaptive<Font>;
 	searchFontSearchFootnoteMailSans: Adaptive<Font>;
 	searchFontSearchCaption1Bold: Adaptive<Font>;
 	searchFontSearchCaption1MailSans: Adaptive<Font>;
 	searchFontSearchCaption2MailSans: Adaptive<Font>;
+	searchFontSearchBigText: Adaptive<Font>;
+	searchFontSearchBigTextBold: Adaptive<Font>;
 	searchFontSearchTextBold: Adaptive<Font>;
 	searchFontSearchTextMailSans: Adaptive<Font>;
 };
