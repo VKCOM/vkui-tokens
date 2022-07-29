@@ -455,6 +455,10 @@ export const lightTheme: ThemeDescription = {
 		regular: 44,
 		compact: 36,
 	},
+	sizeSearchHeight: {
+		regular: 36,
+		compact: 32,
+	},
 	sizeButtonLargeHeight: {
 		regular: 44,
 		compact: 36,
