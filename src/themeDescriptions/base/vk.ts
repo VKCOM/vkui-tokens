@@ -3,6 +3,8 @@ import {Property} from 'csstype';
 import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
 import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
+import {Elevation} from '@/interfaces/general/elevation';
+import {Gradients} from '@/interfaces/general/gradients';
 
 const fontFamilyAccent =
 	'"TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';
@@ -131,6 +133,25 @@ export const lightColors: ColorsDescription = {
 	},
 };
 
+export const lightGradient: Gradients = {
+	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
+	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+};
+
+export const lightElevation: Elevation = {
+	elevation1:
+		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+	elevation1InvertY:
+		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
+	elevation2:
+		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
+	elevation3:
+		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
+	elevation4:
+		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+};
+
 export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
@@ -240,10 +261,32 @@ export const darkColors: ColorsDescription = {
 	},
 };
 
+export const darkGradient: Gradients = {
+	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
+	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
+	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
+};
+
+export const darkElevation: Elevation = {
+	// TODO: Тени (Поправить для Dark)
+	elevation1:
+		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+	elevation1InvertY:
+		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
+	elevation2:
+		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
+	elevation3:
+		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
+	elevation4:
+		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+};
+
 export const lightTheme: ThemeDescription = {
 	themeName: 'vkBase',
 	themeNameBase: 'vkBase',
 	...lightColors,
+	...lightGradient,
+	...lightElevation,
 	// Типографика
 	fontFamilyAccent,
 	fontFamilyBase,
@@ -633,21 +676,7 @@ export const lightTheme: ThemeDescription = {
 		regular: 16,
 	},
 
-	// Тени и другое
-	elevation1:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
-	elevation1InvertY:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
-	elevation2:
-		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
-	elevation3:
-		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
-	elevation4:
-		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
-
-	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
-	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+	// Разное
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -659,20 +688,9 @@ export const lightTheme: ThemeDescription = {
 export const darkTheme: ThemeDescription = {
 	...lightTheme,
 	...darkColors,
+	...darkGradient,
+	...darkElevation,
 	themeName: 'vkBaseDark',
 	themeInheritsFrom: 'vkBase',
 	colorsScheme: 'dark',
-
-	// Тени и другое (Поправить для Dark)
-	elevation1:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
-	elevation1InvertY:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
-	elevation2:
-		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
-	elevation3:
-		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
-	elevation4:
-		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
-	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
 };

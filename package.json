@@ -1,6 +1,6 @@
 {
   "name": "@vkontakte/vkui-tokens",
-  "version": "4.14.1",
+  "version": "4.14.2",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
   "main": "utils/descriptions.js",
@@ -22,7 +22,8 @@
     "test:ci": "jest --coverage --verbose --reporters=\"jest-junit\" --reporters=\"default\"",
     "clear:src": "find src -name '*.d.ts' -delete &&  find src -name '*.js' -delete",
     "clear:dist": "find dist -regex '.*[^d]\\.ts' -delete",
-    "open:coverage": "open .coverage/index.html"
+    "open:coverage": "open .coverage/index.html",
+    "styleguide": "sh ./tasks/styleguide.sh"
   },
   "repository": "https://github.com/VKCOM/vkui-tokens.git",
   "dependencies": {
