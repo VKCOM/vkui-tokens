@@ -57,6 +57,20 @@ export const searchTheme: ThemeSearchDescription = {
 			fontFamily: 'Arial, sans-serif',
 		},
 	},
+	searchFontSearchHeadline2: {
+		regular: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 400,
+			fontFamily: 'Arial, sans-serif',
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 20,
+			fontWeight: 400,
+			fontFamily: 'Arial, sans-serif',
+		},
+	},
 	searchFontSearchSubheadBold: {
 		regular: {
 			fontSize: 14,
@@ -99,10 +113,28 @@ export const searchTheme: ThemeSearchDescription = {
 	},
 	searchFontSearchCaption2MailSans: {
 		regular: {
-			fontSize: 12,
-			lineHeight: 16,
+			fontSize: 11,
+			lineHeight: 14,
 			fontWeight: 400,
 			fontFamily: 'MailSans, Arial, sans-serif',
+		},
+	},
+	searchFontSearchBigText: {
+		...(lightTheme.fontText as Adaptive<Font>),
+		compact: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontWeight: 400,
+			fontFamily: 'Arial, sans-serif',
+		},
+	},
+	searchFontSearchBigTextBold: {
+		...(lightTheme.fontText as Adaptive<Font>),
+		compact: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontWeight: 700,
+			fontFamily: 'Arial, sans-serif',
 		},
 	},
 	searchFontSearchTextBold: {
