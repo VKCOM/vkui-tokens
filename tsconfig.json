@@ -12,7 +12,8 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
-    }
+    },
+    "resolveJsonModule": true
   },
   "include": [
     "**/*.ts"
