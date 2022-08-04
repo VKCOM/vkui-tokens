@@ -565,6 +565,11 @@ export const lightThemeBase: ThemeDescription = {
 		compact: 18,
 	},
 
+	// Компонент PanelHeader
+	sizePanelHeaderHeight: {
+		regular: 56,
+	},
+
 	// Токены отступов для кнопок
 	sizeButtonBaseSmallPaddingHorizontal: {
 		regular: 16,
