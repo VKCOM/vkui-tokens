@@ -14,10 +14,10 @@ export const vkComTheme: ThemeVkComDescription = {
 	themeInheritsFrom: 'vkBase',
 
 	sizeBorderRadius: {
-		regular: 4,
+		regular: 8,
 	},
 	sizeBorderRadiusPaper: {
-		regular: 8,
+		regular: 12,
 	},
 
 	// Компонент Switch
