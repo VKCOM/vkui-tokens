@@ -54,6 +54,8 @@ export interface Sizes {
 	sizeSwitchWidth: number;
 	sizeSwitchPin: number;
 
+	sizeSearchHeight: number;
+
 	sizeButtonBaseSmallPaddingHorizontal: number;
 	sizeButtonBaseMediumPaddingHorizontal: number;
 	sizeButtonBaseLargePaddingHorizontal: number;
