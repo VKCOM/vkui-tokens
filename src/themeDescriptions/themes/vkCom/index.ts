@@ -33,6 +33,11 @@ export const vkComTheme: ThemeVkComDescription = {
 		regular: 16,
 		compact: 16,
 	},
+
+	// Компонент PanelHeader
+	sizePanelHeaderHeight: {
+		regular: 48,
+	},
 };
 
 export const vkComThemeDark: ThemeVkComDarkDescription = {
