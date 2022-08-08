@@ -56,6 +56,8 @@ export interface Sizes {
 
 	sizePanelHeaderHeight: number;
 
+	sizeSearchHeight: number;
+
 	sizeButtonBaseSmallPaddingHorizontal: number;
 	sizeButtonBaseMediumPaddingHorizontal: number;
 	sizeButtonBaseLargePaddingHorizontal: number;
