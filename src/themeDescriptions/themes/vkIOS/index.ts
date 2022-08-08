@@ -38,6 +38,11 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 		regular: 27,
 		compact: 23,
 	},
+
+	// Компонент PanelHeader
+	sizePanelHeaderHeight: {
+		regular: 52,
+	},
 };
 
 export const vkIOSThemeDark: ThemeVkIOSDarkDescription = {

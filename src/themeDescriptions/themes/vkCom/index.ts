@@ -14,10 +14,10 @@ export const vkComTheme: ThemeVkComDescription = {
 	themeInheritsFrom: 'vkBase',
 
 	sizeBorderRadius: {
-		regular: 4,
+		regular: 8,
 	},
 	sizeBorderRadiusPaper: {
-		regular: 8,
+		regular: 12,
 	},
 
 	// Компонент Switch
@@ -32,6 +32,11 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeSwitchPin: {
 		regular: 16,
 		compact: 16,
+	},
+
+	// Компонент PanelHeader
+	sizePanelHeaderHeight: {
+		regular: 48,
 	},
 };
 

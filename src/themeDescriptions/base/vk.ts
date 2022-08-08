@@ -498,6 +498,10 @@ export const lightTheme: ThemeDescription = {
 		regular: 44,
 		compact: 36,
 	},
+	sizeSearchHeight: {
+		regular: 36,
+		compact: 32,
+	},
 	sizeButtonLargeHeight: {
 		regular: 44,
 		compact: 36,
@@ -619,6 +623,11 @@ export const lightTheme: ThemeDescription = {
 	sizeSwitchPin: {
 		regular: 20,
 		compact: 18,
+	},
+
+	// Компонент PanelHeader
+	sizePanelHeaderHeight: {
+		regular: 56,
 	},
 
 	// Токены отступов для кнопок
