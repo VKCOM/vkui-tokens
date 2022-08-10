@@ -625,6 +625,15 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 16,
 	},
 
+	// Для регулирования расстояния между элементами в SubnavigationBar
+	sizeSubnavigationBarGap: {
+		regular: 8,
+	},
+	// Внешние отступы(верхний и нижний) для SubnavigationBar
+	sizeSubnavigationBarPaddingVertical: {
+		regular: 12,
+	},
+
 	// Прочие отступы
 	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
 	elevation1InvertY: '0 -2px 0 0 rgba(0, 16, 61, 0.04)',

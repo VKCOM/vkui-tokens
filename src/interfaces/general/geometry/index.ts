@@ -75,4 +75,7 @@ export interface Sizes {
 	sizeFormItemPaddingVertical: number;
 
 	sizeSplitColPaddingHorizontal: number;
+
+	sizeSubnavigationBarGap: number;
+	sizeSubnavigationBarPaddingVertical: number;
 }
