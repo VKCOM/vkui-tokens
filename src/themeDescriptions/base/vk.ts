@@ -681,6 +681,15 @@ export const lightTheme: ThemeDescription = {
 		regular: 16,
 	},
 
+	// Для регулирования расстояния между элементами в SubnavigationBar
+	sizeSubnavigationBarGap: {
+		regular: 8,
+	},
+	// Внешние отступы(верхний и нижний) для SubnavigationBar
+	sizeSubnavigationBarPaddingVertical: {
+		regular: 12,
+	},
+
 	// Разное
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
