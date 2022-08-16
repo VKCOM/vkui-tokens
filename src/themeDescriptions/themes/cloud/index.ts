@@ -4,7 +4,7 @@ import {staticRef} from '@/build/helpers/tokenHelpers';
 import {Font} from '@/interfaces/general/typography';
 import {ThemeCloudDescription} from '@/interfaces/themes/cloud';
 
-import {lightTheme, darkTheme, darkThemeElevation} from '../../base/paradigm';
+import {darkTheme, darkThemeElevation, lightTheme} from '../../base/paradigm';
 import {helpers} from '../../common';
 
 const {x2, x4, x5} = helpers;
