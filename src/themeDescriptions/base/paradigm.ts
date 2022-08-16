@@ -240,7 +240,6 @@ export const darkColors: ColorsDescription = {
 
 export const lightThemeBase: ThemeDescription = {
 	themeName: 'paradigmBase',
-	themeNameBase: 'paradigmBase',
 	...lightColors,
 
 	// Типографика
@@ -933,4 +932,12 @@ export const darkTheme: ParadigmThemeDescription = {
 		},
 		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
 	},
+};
+
+// Для экспорта базовой темы прописываем токен themeNameBase отдельно
+// В darkThemeBase прописать не можем, т.к. он тогда перетрёт themeNameBase
+// в продуктовых темах.
+export const darkThemeExport: ParadigmThemeDescription = {
+	...darkTheme,
+	themeNameBase: 'paradigmBase',
 };

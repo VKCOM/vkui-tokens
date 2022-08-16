@@ -29,7 +29,7 @@ import {vkComTheme, vkComThemeDark} from '@/themeDescriptions/themes/vkCom';
 import {vkIOSTheme, vkIOSThemeDark} from '@/themeDescriptions/themes/vkIOS';
 
 import {
-	darkTheme as paradigmBaseDark,
+	darkThemeExport as paradigmBaseDark,
 	lightTheme as paradigmBase,
 } from './base/paradigm';
 import {darkTheme as vkBaseDark, lightTheme as vkBase} from './base/vk';
