@@ -240,6 +240,7 @@ export const darkColors: ColorsDescription = {
 
 export const lightThemeBase: ThemeDescription = {
 	themeName: 'paradigmBase',
+	themeNameBase: 'paradigmBase',
 	...lightColors,
 
 	// Типографика
