@@ -209,7 +209,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.99)',
 
-
 		octaviusColorIconSocial: '#7288FF',
         octaviusColorIconMailings: '#FC8A15',
         octaviusColorIconToMyself: '#00BD93',
