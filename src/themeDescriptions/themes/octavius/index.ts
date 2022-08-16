@@ -208,6 +208,15 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.1)',
 
 		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.99)',
+
+
+		octaviusColorIconSocial: '#7288FF',
+        octaviusColorIconMailings: '#FC8A15',
+        octaviusColorIconToMyself: '#00BD93',
+        octaviusColorIconNews: '#08ABD9',
+        octaviusColorIconOfficial: '#EC4750',
+        octaviusColorIconSchool: '#AC7EEC',
+        octaviusColorIconGames: '#F8BA04',
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',
