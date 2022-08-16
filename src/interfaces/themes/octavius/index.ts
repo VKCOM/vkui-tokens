@@ -219,13 +219,13 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListIconPrimary: ColorDescription;
 
 	// Метатреды
-	octaviusColorIconSocial: ColorDescription,
-	octaviusColorIconMailings: ColorDescription,
-	octaviusColorIconToMyself: ColorDescription,
-	octaviusColorIconNews: ColorDescription,
-	octaviusColorIconOfficial: ColorDescription,
-	octaviusColorIconSchool: ColorDescription,
-	octaviusColorIconGames: ColorDescription,
+	octaviusColorIconSocial: ColorDescription;
+	octaviusColorIconMailings: ColorDescription;
+	octaviusColorIconToMyself: ColorDescription;
+	octaviusColorIconNews: ColorDescription;
+	octaviusColorIconOfficial: ColorDescription;
+	octaviusColorIconSchool: ColorDescription;
+	octaviusColorIconGames: ColorDescription;
 
 	// Другие стили
 	/**
