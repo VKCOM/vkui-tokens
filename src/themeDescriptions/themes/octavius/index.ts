@@ -255,6 +255,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 	...darkTheme,
 	...darkThemeElevation,
 	themeName: 'octaviusDark',
+	themeNameBase: 'octaviusDark',
 	colors: {
 		...octaviusTheme.colors,
 		...darkTheme.colors,
