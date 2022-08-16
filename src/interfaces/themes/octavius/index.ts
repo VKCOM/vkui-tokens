@@ -218,6 +218,15 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListTextPrimary: ColorDescription;
 	octaviusColorListIconPrimary: ColorDescription;
 
+	// Метатреды
+	octaviusColorIconSocial: ColorDescription;
+	octaviusColorIconMailings: ColorDescription;
+	octaviusColorIconToMyself: ColorDescription;
+	octaviusColorIconNews: ColorDescription;
+	octaviusColorIconOfficial: ColorDescription;
+	octaviusColorIconSchool: ColorDescription;
+	octaviusColorIconGames: ColorDescription;
+
 	// Другие стили
 	/**
 	 * Цвет текста подписи под картинкой пустого состояния.
