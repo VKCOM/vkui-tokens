@@ -3,8 +3,9 @@ import {Property} from 'csstype';
 import {staticRef} from '@/build/helpers/tokenHelpers';
 import {Font} from '@/interfaces/general/typography';
 import {ThemeCloudDescription} from '@/interfaces/themes/cloud';
+import {ThemeCloudDarkDescription} from '@/interfaces/themes/cloudDark';
 
-import {lightTheme} from '../../base/paradigm';
+import {darkTheme, darkThemeElevation, lightTheme} from '../../base/paradigm';
 import {helpers} from '../../common';
 
 const {x2, x4, x5} = helpers;
@@ -218,5 +219,16 @@ export const cloudTheme: ThemeCloudDescription = {
 	colors: {
 		...lightTheme.colors,
 		colorBackgroundNegative: '#E64646',
+	},
+};
+
+export const cloudDarkTheme: ThemeCloudDarkDescription = {
+	...cloudTheme,
+	...darkTheme,
+	...darkThemeElevation,
+	themeName: 'cloudDark',
+	colors: {
+		...cloudTheme.colors,
+		...darkTheme.colors,
 	},
 };
