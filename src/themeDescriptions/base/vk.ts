@@ -46,6 +46,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorBackgroundNegative: '#E64646',
 		colorBackgroundNegativeTint: '#FAEBEB',
+		colorBackgroundPositiveTint: '#E8f9e8',
 		colorFieldBackground: '#f2f3f5',
 		colorHeaderBackground: '#FFFFFF',
 
@@ -178,6 +179,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundPositive: '#4BB34B',
 		colorBackgroundNegative: '#FF5C5C',
 		colorBackgroundNegativeTint: '#522E2E',
+		colorBackgroundPositiveTint: '#E8f9e8',
 		colorFieldBackground: '#292929',
 		colorHeaderBackground: '#19191A',
 
