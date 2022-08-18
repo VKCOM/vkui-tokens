@@ -24,6 +24,20 @@ export interface LocalParadigmColorsDescriptionStruct {
 	colorButtonContrastAlpha: ColorDescription;
 	colorRating: ColorDescription;
 	colorThumbErrorBackgroundAlpha: ColorDescription;
+
+	colorBackgroundAccentTintThemedAlpha: ColorDescription;
+	colorBackgroundAccentTintAlpha: ColorDescription;
+	colorBackgroundAccentTintThemed: ColorDescription;
+	colorBackgroundWarningTintThemedAlpha: ColorDescription;
+	colorBackgroundWarningTintAlpha: ColorDescription;
+	colorBackgroundWarningTintThemed: ColorDescription;
+	colorBackgroundWarningTint: ColorDescription;
+	colorBackgroundNegativeTintThemedAlpha: ColorDescription;
+	colorBackgroundNegativeTintAlpha: ColorDescription;
+	colorBackgroundNegativeTintThemed: ColorDescription;
+	colorBackgroundPositiveTintThemedAlpha: ColorDescription;
+	colorBackgroundPositiveTintAlpha: ColorDescription;
+	colorBackgroundPositiveTintThemed: ColorDescription;
 }
 
 export type ParadigmLocalColors = {

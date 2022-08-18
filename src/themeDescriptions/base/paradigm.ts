@@ -43,6 +43,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#FAEBEB',
+		colorBackgroundPositiveTint: '#ECFAF3',
 		colorFieldBackground: '#ffffff',
 		colorBackgroundModalInverse: '#303030',
 		colorBackgroundContrastInverse: '#303030',
@@ -152,6 +153,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundModal: '#303030',
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#522e2e',
+		colorBackgroundPositiveTint: '#182A22',
 		colorFieldBackground: '#232324',
 		colorBackgroundModalInverse: '#ffffff',
 		colorBackgroundContrastInverse: '#303030',
@@ -669,6 +671,24 @@ export const lightTheme: ParadigmThemeDescription = {
 			(theme) => theme.colors.colorButtonContrastAlpha,
 		),
 		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
+
+		// Тонированные цвета для проектов
+		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 95, 249, 0.06)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.06)',
+		colorBackgroundAccentTintThemed: '#f0f4ff',
+
+		colorBackgroundWarningTintThemedAlpha: 'rgba(255, 241, 173, 0.48)',
+		colorBackgroundWarningTintAlpha: 'rgba(255, 241, 173, 0.48)',
+		colorBackgroundWarningTintThemed: '#fffce0',
+		colorBackgroundWarningTint: '#fffce0',
+
+		colorBackgroundNegativeTintThemedAlpha: 'rgba(237, 10, 52, 0.08)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 10, 52, 0.08)',
+		colorBackgroundNegativeTintThemed: '#faebeb',
+
+		colorBackgroundPositiveTintThemedAlpha: 'rgba(13, 194, 104, 0.08)',
+		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.08)',
+		colorBackgroundPositiveTintThemed: '#ECFAF3',
 	},
 
 	breakpoints: {
@@ -931,6 +951,24 @@ export const darkTheme: ParadigmThemeDescription = {
 			active: 'rgba(255, 255, 255, 0.24)',
 		},
 		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
+
+		// Тонированные цвета для проектов
+		colorBackgroundAccentTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.1)',
+		colorBackgroundAccentTintThemed: '#2b2b2c',
+
+		colorBackgroundWarningTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
+		colorBackgroundWarningTintAlpha: 'rgba(255, 158, 0, 0.1)',
+		colorBackgroundWarningTintThemed: '#2b2b2c',
+		colorBackgroundWarningTint: '#302617',
+
+		colorBackgroundNegativeTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 10, 52, 0.1)',
+		colorBackgroundNegativeTintThemed: '#2b2b2c',
+
+		colorBackgroundPositiveTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
+		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.1)',
+		colorBackgroundPositiveTintThemed: '#2b2b2c',
 	},
 };
 
