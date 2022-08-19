@@ -3,7 +3,7 @@ import {
 	calendarTheme,
 } from '@/themeDescriptions/themes/calendar';
 import {callsTheme} from '@/themeDescriptions/themes/calls';
-import {cloudTheme} from '@/themeDescriptions/themes/cloud';
+import {cloudDarkTheme, cloudTheme} from '@/themeDescriptions/themes/cloud';
 import {homeDarkTheme, homeTheme} from '@/themeDescriptions/themes/home';
 import {mediaDarkTheme, mediaTheme} from '@/themeDescriptions/themes/media';
 import {mycomTheme} from '@/themeDescriptions/themes/mycom';
@@ -29,7 +29,7 @@ import {vkComTheme, vkComThemeDark} from '@/themeDescriptions/themes/vkCom';
 import {vkIOSTheme, vkIOSThemeDark} from '@/themeDescriptions/themes/vkIOS';
 
 import {
-	darkTheme as paradigmBaseDark,
+	darkThemeExport as paradigmBaseDark,
 	lightTheme as paradigmBase,
 } from './base/paradigm';
 import {darkTheme as vkBaseDark, lightTheme as vkBase} from './base/vk';
@@ -73,10 +73,13 @@ export const themes = [
 	otvetTheme,
 	otvetDarkTheme,
 
+	// Темы, наследуемые от Cloud
+	cloudTheme,
+	cloudDarkTheme,
+
 	// Прочие темы
 	callsTheme,
 	todoTheme,
-	cloudTheme,
 	searchTheme,
 
 	// ==== Deprecated Legacy ====

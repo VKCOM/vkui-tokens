@@ -51,6 +51,7 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundPositive: ColorDescription;
 	colorBackgroundNegative: ColorDescription;
 	colorBackgroundNegativeTint: ColorDescription;
+	colorBackgroundPositiveTint: ColorDescription;
 	colorFieldBackground: ColorDescription;
 	colorHeaderBackground: ColorDescription;
 
