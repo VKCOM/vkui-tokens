@@ -419,9 +419,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorCrossNavigationHeaderSearchIcon:
 			darkTheme.colors.colorIconPrimary,
 		octaviusColorCrossNavigationHeaderFieldBackground: '#303030',
-		octaviusColorCrossNavigationHeaderFieldBorderAlpha:
-			'rgba(0, 16, 61, 0.12)',
-		octaviusColorCrossNavigationBackground: '#F6F7F8',
+		octaviusColorCrossNavigationHeaderFieldBorderAlpha: '#303030',
+		octaviusColorCrossNavigationBackground: '#000000',
 	},
 	octaviusColorLetterAttachListBackground:
 		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',

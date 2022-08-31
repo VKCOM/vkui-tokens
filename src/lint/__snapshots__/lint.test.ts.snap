@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lint snapshot 1`] = `Array []`;
+exports[`lint snapshot 1`] = `
+Array [
+  "octaviusDark: colors.octaviusColorCrossNavigationHeaderFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "octaviusCompactDark: colors.octaviusColorCrossNavigationHeaderFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+]
+`;
