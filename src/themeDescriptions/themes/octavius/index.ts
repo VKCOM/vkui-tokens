@@ -216,6 +216,13 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconOfficial: '#EC4750',
 		octaviusColorIconSchool: '#AC7EEC',
 		octaviusColorIconGames: '#F8BA04',
+
+		octaviusColorCrossNavigationHeaderSearchIcon:
+			lightTheme.colors.colorIconAccent,
+		octaviusColorCrossNavigationHeaderFieldBackground: '#FFFFFF',
+		octaviusColorCrossNavigationHeaderFieldBorderAlpha:
+			'rgba(0, 16, 61, 0.12)',
+		octaviusColorCrossNavigationBackground: '#F6F7F8',
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',
@@ -408,6 +415,13 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.12)',
 
 		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.08)',
+
+		octaviusColorCrossNavigationHeaderSearchIcon:
+			darkTheme.colors.colorIconPrimary,
+		octaviusColorCrossNavigationHeaderFieldBackground: '#303030',
+		octaviusColorCrossNavigationHeaderFieldBorderAlpha:
+			'rgba(0, 16, 61, 0.12)',
+		octaviusColorCrossNavigationBackground: '#F6F7F8',
 	},
 	octaviusColorLetterAttachListBackground:
 		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',
