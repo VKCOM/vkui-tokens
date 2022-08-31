@@ -2,7 +2,19 @@
 
 exports[`lint snapshot 1`] = `
 Array [
-  "octaviusDark: colors.octaviusColorCrossNavigationHeaderFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
-  "octaviusCompactDark: colors.octaviusColorCrossNavigationHeaderFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "octavius: colors.octaviusColorCrossNavigationHeaderFieldBackground error: Color token type mismatch: opaque token name but alpha value",
+  "octavius: colors.octaviusColorCrossNavigationHeaderFieldBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusDark: colors.octaviusColorCrossNavigationHeaderFieldBackground error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusDark: colors.octaviusColorCrossNavigationHeaderFieldBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusCompact: colors.octaviusColorCrossNavigationHeaderFieldBackground error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusCompact: colors.octaviusColorCrossNavigationHeaderFieldBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusCompactDark: colors.octaviusColorCrossNavigationHeaderFieldBackground error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusCompactDark: colors.octaviusColorCrossNavigationHeaderFieldBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusVK: colors.octaviusColorCrossNavigationHeaderFieldBackground error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusVK: colors.octaviusColorCrossNavigationHeaderFieldBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusVKDark: colors.octaviusColorCrossNavigationHeaderFieldBackground error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusVKDark: colors.octaviusColorCrossNavigationHeaderFieldBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusWhite: colors.octaviusColorCrossNavigationHeaderFieldBackground error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusWhite: colors.octaviusColorCrossNavigationHeaderFieldBorder error: Color token type mismatch: opaque token name but alpha value",
 ]
 `;
