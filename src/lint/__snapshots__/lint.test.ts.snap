@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lint snapshot 1`] = `Array []`;
+exports[`lint snapshot 1`] = `
+Array [
+  "octavius: colors.octaviusColorCrossNavigationHeaderItemBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusDark: colors.octaviusColorCrossNavigationHeaderItemBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusCompact: colors.octaviusColorCrossNavigationHeaderItemBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusCompactDark: colors.octaviusColorCrossNavigationHeaderItemBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusVK: colors.octaviusColorCrossNavigationHeaderItemBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusVKDark: colors.octaviusColorCrossNavigationHeaderItemBorder error: Color token type mismatch: opaque token name but alpha value",
+  "octaviusWhite: colors.octaviusColorCrossNavigationHeaderItemBorder error: Color token type mismatch: opaque token name but alpha value",
+]
+`;
