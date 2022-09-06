@@ -7,7 +7,7 @@ import {Elevation} from '@/interfaces/general/elevation';
 import {Gradients} from '@/interfaces/general/gradients';
 
 const fontFamilyAccent =
-	'"TT Commons", -apple-system, system-ui, Helvetica Neue, Roboto, sans-serif';
+	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontFamilyBase =
 	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontWeightAccent1 = 600;
