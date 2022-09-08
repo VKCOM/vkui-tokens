@@ -5,6 +5,7 @@ import {Property} from 'csstype';
  */
 export interface Animations {
 	animationEasingDefault: Property.TransitionTimingFunction;
+	animationEasingPlatform: Property.TransitionTimingFunction;
 	animationDurationS: string;
 	animationDurationM: string;
 	animationDurationL: string;
