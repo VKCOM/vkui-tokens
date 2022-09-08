@@ -26,6 +26,12 @@ export interface ThemeCalendarOverValues {
 export interface LocalCalendarColorDescriptionStruct {
 	calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
 	calendarColorBackgroundAccentTintThemed: ColorDescription;
+	calendarColorButtonGroupBackgroundPositiveTint: ColorDescription;
+	calendarColorButtonGroupBackgroundNegativeTint: ColorDescription;
+	calendarColorButtonGroupBackgroundAccentTint: ColorDescription;
+	calendarColorButtonGroupTextPositive: ColorDescription;
+	calendarColorButtonGroupTextNegative: ColorDescription;
+	colorTextAccentThemed: ColorDescription;
 }
 
 export type CalendarLocalColors = {
