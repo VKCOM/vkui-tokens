@@ -649,6 +649,7 @@ export const lightThemeBase: ThemeDescription = {
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
 	animationEasingDefault: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
+	animationEasingPlatform: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
 };
