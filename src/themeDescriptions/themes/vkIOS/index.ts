@@ -43,6 +43,9 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 	sizePanelHeaderHeight: {
 		regular: 52,
 	},
+
+	// Разное
+	animationEasingPlatform: 'cubic-bezier(0.36, 0.66, 0.04, 1)',
 };
 
 export const vkIOSThemeDark: ThemeVkIOSDarkDescription = {
