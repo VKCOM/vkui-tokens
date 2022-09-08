@@ -626,6 +626,9 @@ export const lightThemeBase: ThemeDescription = {
 	sizeSplitColPaddingHorizontal: {
 		regular: 16,
 	},
+	sizeSplitColMarginHorizontal: {
+		regular: 16,
+	},
 
 	// Для регулирования расстояния между элементами в SubnavigationBar
 	sizeSubnavigationBarGap: {
