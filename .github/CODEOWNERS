@@ -1,4 +1,1 @@
-yarn.lock          @VKCOM/vk-sec
-.npmrc             @VKCOM/vk-sec
-.nvmrc             @VKCOM/vk-sec
-.yarnrc            @VKCOM/vk-sec
+.github/dependabot.yml          @VKCOM/vk-sec
