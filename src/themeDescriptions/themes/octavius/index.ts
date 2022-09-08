@@ -217,7 +217,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconSchool: '#AC7EEC',
 		octaviusColorIconGames: '#F8BA04',
 
-		octaviusColorCrossNavigationHeaderItemBorder: 'transparent',
+		octaviusColorCrossNavigationHeaderItemBorderAlpha: 'transparent',
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',
@@ -411,7 +411,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.08)',
 
-		octaviusColorCrossNavigationHeaderItemBorder: 'transparent',
+		octaviusColorCrossNavigationHeaderItemBorderAlpha: 'transparent',
 	},
 	octaviusColorLetterAttachListBackground:
 		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',

@@ -252,7 +252,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorButtonBackgroundContrastAlpha: ColorDescription;
 
 	// Кросс навигация
-	octaviusColorCrossNavigationHeaderItemBorder: ColorDescription;
+	octaviusColorCrossNavigationHeaderItemBorderAlpha: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
