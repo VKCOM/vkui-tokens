@@ -20,7 +20,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
 	colorBackgroundAccent: resolveColor(theme.colors.accent),
 	colorBackgroundAccentThemed: resolveColor(
-		theme.colors.button_outline_foreground,
+		theme.colors.button_primary_background,
 	),
 	// colorBackgroundAccentTint: '#5a9eff',
 	colorBackgroundAccentAlternative: resolveColor(theme.colors.accent),
@@ -67,9 +67,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 
 	// Text
 	colorTextAccent: resolveColor(theme.colors.accent),
-	colorTextAccentThemed: resolveColor(
-		theme.colors.button_secondary_foreground,
-	),
+	colorTextAccentThemed: resolveColor(theme.colors.button_primary_background),
 	colorTextPrimary: resolveColor(theme.colors.text_primary),
 	colorTextPrimaryInvariably: resolveColor(
 		theme.colors.media_overlay_button_foreground,
