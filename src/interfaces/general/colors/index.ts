@@ -42,6 +42,7 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundSecondary: ColorDescription;
 	colorBackgroundSecondaryAlpha: ColorDescription;
 	colorBackgroundTertiary: ColorDescription;
+	colorBackgroundTertiaryAlpha: ColorDescription;
 	colorBackgroundContrast: ColorDescription;
 	colorBackgroundContrastSecondaryAlpha: ColorDescription;
 	colorBackgroundContrastInverse: ColorDescription;
