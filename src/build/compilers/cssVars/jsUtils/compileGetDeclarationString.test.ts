@@ -40,14 +40,12 @@ describe('compileGetDeclarationString', () => {
 				},
 				compact: {
 					name: '--vkui--size_popup_base_padding--compact',
-					value:
-						'var(--vkui--size_popup_base_padding--compact, 16px)',
+					value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 					originalValue: '16px',
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 					originalValue: '20px',
 				},
 			},
@@ -106,14 +104,12 @@ describe('compileGetDeclarationString', () => {
 				},
 				compact: {
 					name: '--vkui--size_popup_base_padding--compact',
-					value:
-						'var(--vkui--size_popup_base_padding--compact, 16px)',
+					value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 					originalValue: '16px',
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 					originalValue: '20px',
 				},
 			},

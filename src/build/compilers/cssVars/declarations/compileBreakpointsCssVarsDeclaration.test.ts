@@ -73,14 +73,12 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 				compact: {
 					name: '--vkui--size_popup_base_padding--compact',
-					value:
-						'var(--vkui--size_popup_base_padding--compact, 16px)',
+					value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 					originalValue: '16px',
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 					originalValue: '20px',
 				},
 			},
@@ -132,8 +130,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 					originalValue: '20px',
 				},
 			},
@@ -184,8 +181,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 					},
 					lineHeight: {
 						name: '--vkui--font_h1--line_height--regular',
-						value:
-							'var(--vkui--font_h1--line_height--regular, 30px)',
+						value: 'var(--vkui--font_h1--line_height--regular, 30px)',
 						originalValue: '30px',
 					},
 				} as any,

@@ -6,7 +6,7 @@ import {
 } from '@/interfaces/general/tools/viewports';
 
 export function findViewportByAdaptivityState<
-	Vt extends ViewportsTuple = DefaultViewports
+	Vt extends ViewportsTuple = DefaultViewports,
 >(
 	breakpoints: Breakpoints<Vt>['breakpoints'],
 	adaptivityState: keyof Adaptive<any>,

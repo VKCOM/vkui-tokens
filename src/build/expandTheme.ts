@@ -32,12 +32,12 @@ export function expandRootTheme<TD = ThemeDescription, T = Theme>(
 	const generalTokens = extractGeneralTokens(themeDescription);
 	const customMedia = processCustomMedia(themeDescription);
 
-	return ({
+	return {
 		...generalTokens,
 		...expandedColors,
 		...customMedia,
 		themeType: 'root',
-	} as any) as StaticTokens<T>;
+	} as any as StaticTokens<T>;
 }
 
 /**
@@ -51,20 +51,19 @@ export function expandAll<TD = ThemeDescription, T = Theme>(
 	const pixelifyTheme = pixelifyValues(theme);
 
 	const cssVarsThemeWide = extractVarsNames<StaticTokens<T>>(theme);
-	const cssVarsTheme = extractCssVarsStrict<StaticTokens<T>>(
-		cssVarsThemeWide,
-	);
+	const cssVarsTheme =
+		extractCssVarsStrict<StaticTokens<T>>(cssVarsThemeWide);
 
 	const pseudoThemeCssVars = createPseudoRootFromCssVars<StaticTokens<T>>(
 		theme,
 		cssVarsThemeWide,
 	);
 
-	return ({
+	return {
 		theme,
 		pixelifyTheme,
 		cssVarsTheme,
 		cssVarsThemeWide,
 		pseudoThemeCssVars,
-	} as any) as ExpandedThemeObject<StaticTokens<T>>;
+	} as any as ExpandedThemeObject<StaticTokens<T>>;
 }

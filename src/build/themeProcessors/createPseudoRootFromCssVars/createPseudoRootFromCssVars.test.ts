@@ -93,13 +93,11 @@ describe('createPseudoRootFromCssVars', () => {
 				},
 				compact: {
 					name: '--vkui--size_popup_base_padding--compact',
-					value:
-						'var(--vkui--size_popup_base_padding--compact, 16px)',
+					value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 				},
 			},
 		};
@@ -152,8 +150,7 @@ describe('createPseudoRootFromCssVars', () => {
 					},
 					lineHeight: {
 						name: '--vkui--font_h1--line_height--compact',
-						value:
-							'var(--vkui--font_h1--line_height--compact, 32px)',
+						value: 'var(--vkui--font_h1--line_height--compact, 32px)',
 						originalValue: '32px',
 					},
 				},
@@ -165,8 +162,7 @@ describe('createPseudoRootFromCssVars', () => {
 					},
 					lineHeight: {
 						name: '--vkui--font_h1--line_height--regular',
-						value:
-							'var(--vkui--font_h1--line_height--regular, 30px)',
+						value: 'var(--vkui--font_h1--line_height--regular, 30px)',
 						originalValue: '30px',
 					},
 				} as any,

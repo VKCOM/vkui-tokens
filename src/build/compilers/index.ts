@@ -214,10 +214,12 @@ function writeCssVarsJsUtils<T = Theme>(
 ): void {
 	console.log(`компилируем утилиты для js для css vars тем...`);
 
-	([
-		{mode: 'default', fileName: 'onlyVariables.ts'},
-		{mode: 'onlyColors', fileName: 'onlyColors.ts'},
-	] as const).forEach(({mode, fileName}) => {
+	(
+		[
+			{mode: 'default', fileName: 'onlyVariables.ts'},
+			{mode: 'onlyColors', fileName: 'onlyColors.ts'},
+		] as const
+	).forEach(({mode, fileName}) => {
 		const filePath = path.resolve(themePath, fileName);
 
 		const content = compileGetDeclarationString<T>(theme, mode);

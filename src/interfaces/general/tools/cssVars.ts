@@ -21,7 +21,7 @@ export interface WideCssVarValue<T> extends CssVarValue {
 
 type Valuefy<
 	T,
-	WithoutValue extends boolean = false
+	WithoutValue extends boolean = false,
 > = WithoutValue extends true ? CssVarValue : WideCssVarValue<T>;
 
 export type NamifyObject<T, W extends boolean = false> = T extends Adaptive<
