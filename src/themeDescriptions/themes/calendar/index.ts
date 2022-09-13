@@ -87,7 +87,6 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorButtonGroupBackgroundAccentTint: '#E3F0FD',
 		calendarColorButtonGroupTextPositive: '#056142',
 		calendarColorButtonGroupTextNegative: '#CE1414',
-		colorTextAccentThemed: '#005FF9',
 	},
 
 	calendarElevationHeader: '0 0 16px 0 rgba(2, 13, 41, 0.12)',
@@ -303,7 +302,6 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorButtonGroupBackgroundAccentTint: '#2775FC',
 		calendarColorButtonGroupTextPositive: '#CEF5E8',
 		calendarColorButtonGroupTextNegative: '#FDE2E2',
-		colorTextAccentThemed: '#FFFFFF',
 	},
 
 	...darkThemeElevation,
