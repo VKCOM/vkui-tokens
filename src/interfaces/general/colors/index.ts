@@ -15,7 +15,7 @@ export type ColorDescriptionStatic = Property.Color | ColorWithStates;
 
 export type ColorDescriptionCallable<
 	// eslint-disable-next-line no-use-before-define
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
+	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
 > = (
 	theme: Partial<ColorsScheme & ColorsDescription<T>>,
 	// eslint-disable-next-line no-use-before-define
@@ -23,7 +23,7 @@ export type ColorDescriptionCallable<
 
 export type ColorDescription<
 	// eslint-disable-next-line no-use-before-define
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
+	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
 > = ColorDescriptionStatic | ColorDescriptionCallable<T>;
 
 /**
@@ -42,6 +42,7 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundSecondary: ColorDescription;
 	colorBackgroundSecondaryAlpha: ColorDescription;
 	colorBackgroundTertiary: ColorDescription;
+	colorBackgroundTertiaryAlpha: ColorDescription;
 	colorBackgroundContrast: ColorDescription;
 	colorBackgroundContrastSecondaryAlpha: ColorDescription;
 	colorBackgroundContrastInverse: ColorDescription;

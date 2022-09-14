@@ -52,7 +52,7 @@ function expandCallableColor<T extends {[key in keyof T]: ColorDescription}>(
 }
 
 export function expandColor<
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
+	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
 >(
 	color: ColorDescription<T>,
 	theme: Partial<ColorsDescription<T>>,
@@ -80,7 +80,7 @@ export function expandColor<
  * (и добавляет эти состояния только тем цветам, которые там действительно нужны)
  */
 export function getExpandedThemeColors<
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
+	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
 >(colorsDescription: Partial<ColorsDescription<T>>): ColorsFinal {
 	const {colorsScheme, colors} = colorsDescription;
 

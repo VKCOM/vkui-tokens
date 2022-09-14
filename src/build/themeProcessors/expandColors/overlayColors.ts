@@ -10,7 +10,7 @@ import {
 } from '@/interfaces/general/colors';
 
 export function overlayColors<
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
+	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
 >(
 	background: ColorDescription<T>,
 	foreground: ColorDescription<T>,

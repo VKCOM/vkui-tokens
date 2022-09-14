@@ -27,12 +27,12 @@ export const getCustomMediaKey = <Vt extends ViewportsTuple = DefaultViewports>(
 	layoutName: Viewports,
 	rule?: 'to' | 'from',
 ): CustomMediaByViewportUnion<Vt> =>
-	(`width${rule ? capitalize(rule) : ''}${capitalize(
+	`width${rule ? capitalize(rule) : ''}${capitalize(
 		layoutName,
-	)}` as any) as CustomMediaByViewportUnion<Vt>;
+	)}` as any as CustomMediaByViewportUnion<Vt>;
 
 export function processCustomMedia<
-	Vt extends ViewportsTuple = DefaultViewports
+	Vt extends ViewportsTuple = DefaultViewports,
 >({
 	breakpoints,
 }: Pick<Breakpoints<Vt>, 'breakpoints'>): CustomMediaByViewport<Vt> {

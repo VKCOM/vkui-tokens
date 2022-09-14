@@ -87,7 +87,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 
 	// Icons
 	colorIconAccent: resolveColor(theme.colors.accent),
-	colorIconAccentThemed: resolveColor(theme.colors.header_tint),
+	colorIconAccentThemed: resolveColor(theme.colors.button_primary_background),
 	// colorIconPrimary: '#E1E3E6',
 	colorIconPrimaryInvariably: resolveColor(
 		theme.colors.media_overlay_button_foreground,

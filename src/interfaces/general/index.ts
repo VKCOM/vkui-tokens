@@ -26,7 +26,7 @@ export interface ColorsScheme {
 }
 
 export interface ColorsDescription<
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct
+	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
 > extends ColorsScheme {
 	colors: T;
 }
@@ -78,7 +78,7 @@ export interface Theme extends ThemeGeneral, ColorsFinal {
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type PixelifyTheme<
-	T extends Partial<Record<keyof T, any>> = StaticTokens<Theme>
+	T extends Partial<Record<keyof T, any>> = StaticTokens<Theme>,
 > = StringifyObject<Omit<T, 'breakpoints' | 'themeType'>> &
 	Pick<T, Extract<'breakpoints', keyof T>> & {
 		themeType: 'pixelify';
@@ -95,8 +95,7 @@ export type ThemeCssVars<T = Theme, Ex extends keyof T = never> = {
 		StringifyObject<T>[K],
 		true
 	>;
-} &
-	Pick<T, Ex> & {themeType: 'cssVars'};
+} & Pick<T, Ex> & {themeType: 'cssVars'};
 
 /**
  * Тоже самое, что и ThemeCssVars, только у переменных есть ещё  originValue
@@ -104,5 +103,4 @@ export type ThemeCssVars<T = Theme, Ex extends keyof T = never> = {
  */
 export type ThemeCssVarsWide<T = Theme, Ex extends keyof T = never> = {
 	[K in keyof Omit<T, Ex | 'themeType'>]: NamifyObject<StringifyObject<T>[K]>;
-} &
-	Pick<T, Ex> & {themeType: 'cssVarsWide'};
+} & Pick<T, Ex> & {themeType: 'cssVarsWide'};

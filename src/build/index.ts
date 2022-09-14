@@ -42,9 +42,8 @@ const expandedThemes = themes.map(expandAll);
 const expandedThemesMap: Record<string, typeof expandedThemes[0]> = {};
 
 for (const expandedThemeObject of expandedThemes) {
-	expandedThemesMap[
-		expandedThemeObject.theme.themeName
-	] = expandedThemeObject;
+	expandedThemesMap[expandedThemeObject.theme.themeName] =
+		expandedThemeObject;
 }
 
 console.log('Успешно сформировали объекты тем на основе описания тем\n');

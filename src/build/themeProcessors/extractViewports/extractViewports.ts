@@ -7,7 +7,7 @@ import {ParadigmTheme} from '@/interfaces/namespaces/paradigm';
 
 export function extractViewports<
 	V extends ViewportsTuple = DefaultViewports,
-	T extends Breakpoints<V> = ParadigmTheme<V>
+	T extends Breakpoints<V> = ParadigmTheme<V>,
 >({breakpoints}: T): ViewportsTuple {
 	return [
 		...(Object.keys(

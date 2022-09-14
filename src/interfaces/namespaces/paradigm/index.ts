@@ -148,7 +148,7 @@ type ParadigmAdaptiveTokens = {
 };
 
 export interface ParadigmThemeDescription<
-	Vt extends ViewportsTuple = DefaultViewports
+	Vt extends ViewportsTuple = DefaultViewports,
 > extends ThemeDescription,
 		ParadigmAdaptiveTokens,
 		ParadigmToneValues,
@@ -167,15 +167,14 @@ interface ParadigmThemeStatic<Vt extends ViewportsTuple = DefaultViewports>
 		ParadigmHelpers,
 		ParadigmLocalColors {}
 
-export type ParadigmTheme<
-	Vt extends ViewportsTuple = DefaultViewports
-> = ParadigmThemeStatic<Vt> & CustomMediaByViewport<Vt>;
+export type ParadigmTheme<Vt extends ViewportsTuple = DefaultViewports> =
+	ParadigmThemeStatic<Vt> & CustomMediaByViewport<Vt>;
 
 export type ParadigmThemeCssVarsWide<
-	Vt extends ViewportsTuple = DefaultViewports
+	Vt extends ViewportsTuple = DefaultViewports,
 > = ThemeCssVarsWide<ParadigmTheme<Vt>, 'breakpoints'>;
 
 export type ParadigmThemeCssVars<
 	Vt extends ViewportsTuple = DefaultViewports,
-	T extends Breakpoints<Vt> = ParadigmTheme<Vt>
+	T extends Breakpoints<Vt> = ParadigmTheme<Vt>,
 > = ThemeCssVars<T, 'breakpoints'>;

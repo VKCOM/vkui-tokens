@@ -183,14 +183,12 @@ describe('extractVarsNames', () => {
 					},
 					compact: {
 						name: '--vkui--size_popup_base_padding--compact',
-						value:
-							'var(--vkui--size_popup_base_padding--compact, 16px)',
+						value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 						originalValue: '16px',
 					},
 					regular: {
 						name: '--vkui--size_popup_base_padding--regular',
-						value:
-							'var(--vkui--size_popup_base_padding--regular, 20px)',
+						value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 						originalValue: '20px',
 					},
 				},
@@ -248,28 +246,24 @@ describe('extractVarsNames', () => {
 					compact: {
 						fontSize: {
 							name: '--vkui--font_h1--font_size--compact',
-							value:
-								'var(--vkui--font_h1--font_size--compact, 24px)',
+							value: 'var(--vkui--font_h1--font_size--compact, 24px)',
 							originalValue: '24px',
 						},
 						lineHeight: {
 							name: '--vkui--font_h1--line_height--compact',
-							value:
-								'var(--vkui--font_h1--line_height--compact, 32px)',
+							value: 'var(--vkui--font_h1--line_height--compact, 32px)',
 							originalValue: '32px',
 						},
 					},
 					regular: {
 						fontSize: {
 							name: '--vkui--font_h1--font_size--regular',
-							value:
-								'var(--vkui--font_h1--font_size--regular, 22px)',
+							value: 'var(--vkui--font_h1--font_size--regular, 22px)',
 							originalValue: '22px',
 						},
 						lineHeight: {
 							name: '--vkui--font_h1--line_height--regular',
-							value:
-								'var(--vkui--font_h1--line_height--regular, 30px)',
+							value: 'var(--vkui--font_h1--line_height--regular, 30px)',
 							originalValue: '30px',
 						},
 					} as any,
