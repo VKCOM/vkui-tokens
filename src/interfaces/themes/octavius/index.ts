@@ -110,6 +110,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
 	octaviusColorButtonBackgroundAlpha: ColorDescription;
+	octaviusColorButtonEmptyStateText: ColorDescription;
+	octaviusColorButtonEmptyStateBackground: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
