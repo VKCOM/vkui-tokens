@@ -5,6 +5,7 @@ import {
 	writeCssVarsJsUtils,
 	writeCssVarsSourceFile,
 	writeCssVarsSourceMediaFile,
+	writeDocsFiles,
 	writeJsonFile,
 	writeStyleFiles,
 	writeTsFile,
@@ -80,6 +81,7 @@ expandedThemes.forEach((expandedThemeObject) => {
 	writeJsonFile(themePath, theme, 'root');
 	writeTsFile(themePath, theme, 'root');
 	writeStyleFiles(themePath, pixelifyTheme);
+	writeDocsFiles(themePath, theme);
 
 	console.log('успешно\n');
 

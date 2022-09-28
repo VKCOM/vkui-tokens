@@ -92,6 +92,10 @@ export interface ColorsDescriptionStruct {
 	colorIconNegative: ColorDescription;
 
 	// Stroke
+	/**
+	 * @desc Цвет акцентной обводки
+	 * @tags color,stroke
+	 */
 	colorStrokeAccent: ColorDescription;
 	colorStrokeAccentThemed: ColorDescription;
 	colorStrokePositive: ColorDescription;

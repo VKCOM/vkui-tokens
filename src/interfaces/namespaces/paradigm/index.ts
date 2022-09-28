@@ -25,7 +25,15 @@ export interface LocalParadigmColorsDescriptionStruct {
 	colorRating: ColorDescription;
 	colorThumbErrorBackgroundAlpha: ColorDescription;
 
+	/**
+	 * @desc Тонированный акцентный фон с прозрачностью меняется на белый в темной теме
+	 * @tags color,background,alpha,themed
+	 */
 	colorBackgroundAccentTintThemedAlpha: ColorDescription;
+	/**
+	 * @desc Тонированный акцентный фон с прозрачностью
+	 * @tags color,background,alpha
+	 */
 	colorBackgroundAccentTintAlpha: ColorDescription;
 	colorBackgroundAccentTintThemed: ColorDescription;
 	colorBackgroundWarningTintThemedAlpha: ColorDescription;
@@ -50,6 +58,11 @@ export interface ParadigmLocalSizes {
 	sizeArrowHeight: number;
 	sizeArrowWidth: number;
 	sizeBasePadding: number;
+	/**
+	 * @desc Legacy
+	 * @tags size,legacy
+	 * @deprecated
+	 */
 	sizeBorderWidthTab: number;
 	sizeBorderWidthBar: number;
 	sizeBorderWidthAccent: number;
@@ -102,6 +115,11 @@ export interface ParadigmLocalSizes {
 }
 
 export interface ParadigmToneValues {
+	/**
+	 * @desc Legacy. Значение прозрачности
+	 * @tags legacy
+	 * @deprecated
+	 */
 	toneValueOverlay: number;
 	toneValueViewer: number;
 	toneValueToolbar: number;
@@ -111,6 +129,11 @@ export interface ParadigmToneValues {
 }
 
 export interface ParadigmBorders {
+	/**
+	 * @desc Legacy
+	 * @tags legacy
+	 * @deprecated
+	 */
 	typeBorderButton: Property.BorderStyle;
 	typeBorderPosition: Property.BorderStyle;
 }
@@ -118,12 +141,22 @@ export interface ParadigmBorders {
 // todo удалить и заменить на контекстные токены в проектах
 export interface ParadigmLocalFonts {
 	// большие шрифты
+	/**
+	 * @desc Legacy. Крупный заголовок из темы Paradigm
+	 * @tags font
+	 * @deprecated
+	 */
 	fontH0: Font;
 	fontH1: Font;
 	fontH2: Font;
 }
 
 export interface ParadigmHelpers {
+	/**
+	 * @desc Legacy
+	 * @tags legacy,size
+	 * @deprecated
+	 */
 	sizeBase: number;
 	sizeGrid: number;
 	x0: number;

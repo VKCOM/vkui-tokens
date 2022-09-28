@@ -22,6 +22,8 @@ export interface Fonts {
 	fontTitle2: Font;
 	fontTitle3: Font;
 	/**
+	 * @desc Legacy. Сейчас не используется в компонентах
+	 * @tags font
 	 * @deprecated
 	 * @see fontHeadline1
 	 */
@@ -45,6 +47,10 @@ export interface Fonts {
  * Глобальные переменные типографии, которые можно использовать вне групп
  */
 export interface TypographyBaseProps {
+	/**
+	 * @desc Семейство шрифтов для заголовков
+	 * @tags font
+	 */
 	fontFamilyAccent: Property.FontFamily;
 	fontFamilyBase: Property.FontFamily;
 	fontWeightAccent1: Property.FontWeight;

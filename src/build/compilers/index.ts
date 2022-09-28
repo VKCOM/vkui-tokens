@@ -2,6 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 
 import {compileGetDeclarationString} from '@/build/compilers/cssVars/jsUtils/compileGetDeclarationString';
+import {compileDocsJSON} from '@/build/compilers/docs/compileDocsJSON';
 import {compileJSON} from '@/build/compilers/json/compileJSON';
 import {
 	compileStyles,
@@ -230,10 +231,26 @@ function writeCssVarsJsUtils<T = Theme>(
 	});
 }
 
+function writeDocsFiles<T extends SpecialTokens = Theme>(
+	themePath: string,
+	theme: T,
+): void {
+	console.log(`компилируем документацию...`);
+	const fileName = `docs.json`;
+	const filePath = path.resolve(themePath, fileName);
+
+	const content = compileDocsJSON(theme);
+
+	fs.writeFileSync(filePath, content);
+
+	console.log(`успешно записали файл ${fileName}`);
+}
+
 export {
 	writeCssVarsJsUtils,
 	writeCssVarsSourceFile,
 	writeCssVarsSourceMediaFile,
+	writeDocsFiles,
 	writeJsonFile,
 	writeStyleFiles,
 	writeTsFile,
