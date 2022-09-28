@@ -388,7 +388,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
 		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,
 		octaviusColorButtonEmptyStateText: '#E7E8EA',
-		octaviusColorButtonEmptyStateBackgroundAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorButtonEmptyStateBackgroundAlpha:
+			'rgba(255, 255, 255, 0.12)',
 		octaviusColorLayoutBorderAlpha: 'transparent',
 		octaviusColorLayoutLetterBorderAlpha: 'rgba(0, 0, 0, 0.4)',
 		octaviusColorEmptyStateTextLink: '#E7E8EA',
