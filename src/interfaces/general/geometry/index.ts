@@ -74,6 +74,10 @@ export interface Sizes {
 
 	sizeFormItemPaddingVertical: number;
 
+	/**
+	 * @desc Отступ для компонента SplitCol
+	 * @tags size,component
+	 */
 	sizeSplitColPaddingHorizontal: number;
 
 	sizeSubnavigationBarGap: number;
