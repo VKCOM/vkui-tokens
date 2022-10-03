@@ -39,7 +39,7 @@ export function isColorDescriptionStatic(
 
 /**
  * @deprecated
- * use toneOpacity
+ * @use toneOpacity
  * TODO: remove
  */
 export function getRGBA(

@@ -59,6 +59,7 @@
     "release-it": "14.10.0",
     "rimraf": "3.0.2",
     "ts-jest": "26.5.5",
+    "ts-morph": "16.0.0",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.1.0",
     "tscpaths": "0.0.9",
