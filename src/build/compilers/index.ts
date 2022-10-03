@@ -18,6 +18,7 @@ import {
 } from '@/interfaces/general';
 
 import {compileBreakpointsCssVarsDeclaration} from './cssVars/declarations/compileBreakpointsCssVarsDeclaration';
+import {compileStructJSON} from './structJSON/compileStructJSON';
 
 type ThemeBuildType =
 	| 'root'
@@ -45,6 +46,22 @@ const cssModes: CssModeConfig[] = [
 	{mode: 'noSizes', fileName: 'noSizes.css'},
 	{mode: 'noColors', fileName: 'noColors.css'},
 ];
+
+function writeStructJsonFile<T = Theme>(
+	themePath: string,
+	theme: T,
+	_?: ThemeBuildType,
+): void {
+	console.log(`компилируем структурный json...`);
+	const fileName = `struct.json`;
+	const filePath = path.resolve(themePath, fileName);
+
+	const content = compileStructJSON<T>(theme);
+
+	fs.writeFileSync(filePath, content);
+
+	console.log(`успешно записали файл ${fileName}`);
+}
 
 function writeJsonFile<T = Theme>(
 	themePath: string,
@@ -252,6 +269,7 @@ export {
 	writeCssVarsSourceMediaFile,
 	writeDocsFiles,
 	writeJsonFile,
+	writeStructJsonFile,
 	writeStyleFiles,
 	writeTsFile,
 };

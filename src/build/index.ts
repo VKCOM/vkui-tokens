@@ -7,6 +7,7 @@ import {
 	writeCssVarsSourceMediaFile,
 	writeDocsFiles,
 	writeJsonFile,
+	writeStructJsonFile,
 	writeStyleFiles,
 	writeTsFile,
 } from '@/build/compilers';
@@ -79,6 +80,7 @@ expandedThemes.forEach((expandedThemeObject) => {
 	console.log('\nНачинаем компиляцию обычных root тем');
 
 	writeJsonFile(themePath, theme, 'root');
+	writeStructJsonFile(themePath, theme, 'root');
 	writeTsFile(themePath, theme, 'root');
 	writeStyleFiles(themePath, pixelifyTheme);
 	writeDocsFiles(themePath, theme);
