@@ -226,6 +226,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconOfficial: ColorDescription;
 	octaviusColorIconSchool: ColorDescription;
 	octaviusColorIconGames: ColorDescription;
+	octaviusColorIconReceipts: ColorDescription;
 
 	// Другие стили
 	/**
