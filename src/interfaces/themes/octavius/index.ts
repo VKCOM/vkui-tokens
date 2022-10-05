@@ -207,6 +207,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparatorAlpha: ColorDescription;
 	octaviusColorListBackgroundPositiveAlpha: ColorDescription;
+	octaviusColorListBackgroundPositiveTagsOutline: ColorDescription;
 
 	/**
 	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
