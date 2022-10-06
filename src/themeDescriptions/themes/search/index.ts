@@ -78,9 +78,21 @@ export const searchTheme: ThemeSearchDescription = {
 			fontWeight: 700,
 			fontFamily: 'Arial, sans-serif',
 		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontWeight: 700,
+			fontFamily: 'Arial, sans-serif',
+		},
 	},
 	searchFontSearchFootnoteBold: {
 		regular: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontWeight: 700,
+			fontFamily: 'Arial, sans-serif',
+		},
+		compact: {
 			fontSize: 13,
 			lineHeight: 18,
 			fontWeight: 700,
@@ -91,12 +103,24 @@ export const searchTheme: ThemeSearchDescription = {
 		regular: {
 			fontSize: 13,
 			lineHeight: 18,
-			fontWeight: 400,
+			fontWeight: 500,
+			fontFamily: 'MailSans, Helvetica, Arial, sans-serif',
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontWeight: 500,
 			fontFamily: 'MailSans, Helvetica, Arial, sans-serif',
 		},
 	},
 	searchFontSearchCaption1Bold: {
 		regular: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontWeight: 700,
+			fontFamily: 'Arial, sans-serif',
+		},
+		compact: {
 			fontSize: 12,
 			lineHeight: 16,
 			fontWeight: 700,
@@ -110,9 +134,21 @@ export const searchTheme: ThemeSearchDescription = {
 			fontWeight: 400,
 			fontFamily: 'MailSans, Arial, sans-serif',
 		},
+		compact: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontWeight: 400,
+			fontFamily: 'MailSans, Arial, sans-serif',
+		},
 	},
 	searchFontSearchCaption2MailSans: {
 		regular: {
+			fontSize: 11,
+			lineHeight: 14,
+			fontWeight: 400,
+			fontFamily: 'MailSans, Arial, sans-serif',
+		},
+		compact: {
 			fontSize: 11,
 			lineHeight: 14,
 			fontWeight: 400,
@@ -152,6 +188,48 @@ export const searchTheme: ThemeSearchDescription = {
 			fontSize: 15,
 			lineHeight: 20,
 			fontWeight: 400,
+			fontFamily: 'Arial, sans-serif',
+		},
+	},
+	searchFontForAdvertisingBold: {
+		regular: {
+			fontSize: 17,
+			lineHeight: 24,
+			fontWeight: 700,
+			fontFamily: 'Arial, sans-serif',
+		},
+		compact: {
+			fontSize: 17,
+			lineHeight: 24,
+			fontWeight: 700,
+			fontFamily: 'Arial, sans-serif',
+		},
+	},
+	searchFontGreenURL: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: 'Arial, sans-serif',
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: 'Arial, sans-serif',
+		},
+	},
+	searchFontParagraphBold: {
+		regular: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 500,
+			fontFamily: 'Arial, sans-serif',
+		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 500,
 			fontFamily: 'Arial, sans-serif',
 		},
 	},

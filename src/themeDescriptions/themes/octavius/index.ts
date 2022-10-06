@@ -218,6 +218,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconOfficial: '#EC4750',
 		octaviusColorIconSchool: '#AC7EEC',
 		octaviusColorIconGames: '#F8BA04',
+		octaviusColorIconReceipts: '#74BF05',
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',

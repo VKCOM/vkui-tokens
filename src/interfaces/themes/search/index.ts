@@ -42,6 +42,9 @@ export type SearchLocalFonts = {
 	searchFontSearchBigTextBold: Adaptive<Font>;
 	searchFontSearchTextBold: Adaptive<Font>;
 	searchFontSearchTextMailSans: Adaptive<Font>;
+	searchFontForAdvertisingBold: Adaptive<Font>;
+	searchFontGreenURL: Adaptive<Font>;
+	searchFontParagraphBold: Adaptive<Font>;
 };
 
 export interface LocalSearchColorsDescriptionStruct {
