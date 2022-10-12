@@ -1,4 +1,3 @@
-// import docs from './docs.json' assert { type: "json" };
-import docs from './docs.json';
+import docs from './docs.json' assert { type: "json" };
 
 console.log(docs);
