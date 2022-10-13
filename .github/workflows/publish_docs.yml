@@ -1,4 +1,4 @@
-name: Deploying VKUI Tokens documentation to GitHub Pages
+name: Publish VKUI Tokens documentation to GitHub Pages
 
 on:
   push:
@@ -46,8 +46,11 @@ jobs:
       - run: yarn
       - run: npm run build
 
-      - name: Copy test.json
-        run: cp dist/docs.json docs/docs.json
+      - name: Build docs app
+      - run: npm run docs:build
+
+      - name: Copy docs.json
+        run: cp dist/docs.json docs/src/data/docs.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
@@ -55,7 +58,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './docs'
+          path: './docs/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment

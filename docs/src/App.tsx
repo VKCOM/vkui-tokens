@@ -1,5 +1,10 @@
 import React, {FC} from 'react';
 
-const App: FC = () => <div>Webpack React project</div>;
+import docs from './data/docs.json';
+
+const App: FC = () => {
+	console.log(docs);
+	return <div>Webpack React project</div>;
+};
 
 export default App;
