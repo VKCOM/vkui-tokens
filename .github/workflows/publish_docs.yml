@@ -39,16 +39,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Build main app and docs app
+      - name: Build main app
         uses: actions/setup-node@v3
         with:
           node-version: 17
       - run: yarn
       - run: npm run build
-      - run: npm run docs:build
 
       - name: Copy docs.json
         run: cp dist/docs.json docs/src/data/docs.json
+
+      - name: Build docs app
+        uses: actions/setup-node@v3
+        with:
+          node-version: 17
+      - run: yarn
+      - run: npm run docs:build
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
