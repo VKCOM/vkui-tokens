@@ -56,6 +56,10 @@ jobs:
       - run: yarn
       - run: npm run docs:build
 
+      - name: Watch build docs app
+      - run: ls docs/dist
+      - run: ls docs/dist/assets
+
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
