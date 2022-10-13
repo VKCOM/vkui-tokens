@@ -17,5 +17,6 @@ node_modules/
 .idea
 ./dist/
 junit.xml
-!/docs/
-!/docs/*.js
+!/docs/public
+!/docs/src
+!/docs/webpack
