@@ -1,4 +1,4 @@
-const path = require('path');
+// const path = require('path');
 
 module.exports = function () {
 	const modules = {
@@ -37,13 +37,22 @@ module.exports = function () {
 				},
 			],
 		},
+		svg: {
+			test: /\.svg/,
+			use: [
+				{
+					loader: '@svgr/webpack',
+				},
+			],
+		},
 	};
 
 	const resolve = {
 		extensions: ['.ts', '.tsx', '.js', '.jsx'],
-		alias: {
-			'@/*': path.resolve(__dirname, 'src/*'),
-		},
+		// alias: {
+		// 	'@/*': path.resolve(__dirname, '../src/*'),
+		// 	'@/public': path.resolve(__dirname, '../public/*'),
+		// },
 	};
 
 	return {

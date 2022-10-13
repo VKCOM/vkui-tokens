@@ -44,7 +44,12 @@ module.exports = function (env, argv) {
 			publicPath: '/',
 		},
 		module: {
-			rules: [config.modules.ts, config.modules.js, config.modules.css],
+			rules: [
+				config.modules.ts,
+				config.modules.js,
+				config.modules.css,
+				config.modules.svg,
+			],
 		},
 		plugins: [
 			new CleanWebpackPlugin({
@@ -57,8 +62,8 @@ module.exports = function (env, argv) {
 			new CopyWebpackPlugin({
 				patterns: [
 					{
-						from: './public/meta',
-						to: './meta',
+						from: './public/static',
+						to: './static',
 					},
 				],
 			}),

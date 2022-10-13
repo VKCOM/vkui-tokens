@@ -1,0 +1,20 @@
+.flex {
+	display: flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.link-reset {
+	color: var(--text_primary);
+	text-decoration: none;
+}
+
+.space-x-1px > *:not(:first-child) {
+	margin-left: 1px;
+}

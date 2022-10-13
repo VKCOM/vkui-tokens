@@ -76,6 +76,7 @@ module.exports = {
 		'@typescript-eslint/no-useless-constructor': 'error',
 		'no-unused-expressions': 'off', // плохо работает с ts (optional chaining)
 		'@typescript-eslint/no-unused-expressions': 'error',
+		'no-use-before-define': 'off',
 		'@typescript-eslint/no-use-before-define': 'off',
 		'@typescript-eslint/no-unused-vars': noUnusedVars,
 		'@typescript-eslint/explicit-member-accessibility': 'off',
