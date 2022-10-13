@@ -39,14 +39,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Build app
+      - name: Build main app and docs app
         uses: actions/setup-node@v3
         with:
           node-version: 17
       - run: yarn
       - run: npm run build
-
-      - name: Build docs app
       - run: npm run docs:build
 
       - name: Copy docs.json
