@@ -8,7 +8,17 @@
 	padding: 3rem 1rem 0;
 }
 
+@media (max-width: 1023px) {
+	.container {
+		padding-top: 1.5rem;
+	}
+}
+
 .link-reset {
 	color: var(--text_primary);
 	text-decoration: none;
+}
+
+.relative {
+	position: relative;
 }

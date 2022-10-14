@@ -1,7 +1,13 @@
 import './TokensActions.css';
 
 import {Icon20Search} from '@vkontakte/icons';
-import {CustomSelect, Input, SegmentedControl} from '@vkontakte/vkui';
+import {
+	CustomSelect,
+	Input,
+	SegmentedControl,
+	useAdaptivity,
+} from '@vkontakte/vkui';
+import clsx from 'clsx';
 import React, {FC, useRef, useState} from 'react';
 
 import {tags, themes, valueTypes} from './TokensActions.content';
@@ -11,6 +17,8 @@ const TokensActions: FC = () => {
 	const [selectedTheme, setSelectedTheme] = useState(themes[0].id);
 	const [valueType, changeValueType] = useState('compact');
 	const textInput = useRef(null);
+	const {viewWidth} = useAdaptivity();
+	const isTablet = viewWidth > 3;
 
 	const onSelectTagsChange = (
 		event: React.ChangeEvent<HTMLSelectElement>,
@@ -25,10 +33,22 @@ const TokensActions: FC = () => {
 	};
 
 	return (
-		<div className="flex justify-between">
-			<div className="flex space-x-20px">
+		<div
+			className={clsx(
+				'flex flex-col justify-between',
+				!isTablet && 'space-y-32px',
+				isTablet && 'flex-row',
+			)}
+		>
+			<div
+				className={clsx(
+					'flex flex-col',
+					!isTablet && 'space-y-12px',
+					isTablet && 'flex-row space-x-20px',
+				)}
+			>
 				<CustomSelect
-					className="my-tags-select"
+					className={clsx(isTablet && 'my-tags-select')}
 					multiple
 					placeholder="Выберите тэги"
 					options={tags.map((tag) => ({
@@ -39,7 +59,7 @@ const TokensActions: FC = () => {
 					onChange={onSelectTagsChange}
 				/>
 				<CustomSelect
-					className="my-theme-select"
+					className={clsx(isTablet && 'my-theme-select')}
 					placeholder="Выберите тему"
 					options={themes.map((theme) => ({
 						label: theme.name,
@@ -49,7 +69,7 @@ const TokensActions: FC = () => {
 					onChange={onSelectThemeChange}
 				/>
 				<SegmentedControl
-					className="my-segmentedControl"
+					className={clsx(isTablet && 'my-segmentedControl')}
 					size="l"
 					value={valueType}
 					onChange={(value: string) => changeValueType(value)}

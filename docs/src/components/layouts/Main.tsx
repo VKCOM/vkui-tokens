@@ -11,7 +11,7 @@ import {
 } from '@vkontakte/vkui';
 import React, {FC} from 'react';
 
-import Header from './shared/Header';
+import Header from './shared/Header/Header';
 
 type Props = {
 	children: React.ReactNode;

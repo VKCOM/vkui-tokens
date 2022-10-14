@@ -1,9 +1,9 @@
-type MenuItem = {
+type NavigationItem = {
 	text: string;
 	href?: string;
 };
 
-export const menuItems: Array<MenuItem> = [
+export const navigation: Array<NavigationItem> = [
 	{
 		text: 'Документация',
 		href: 'https://vkcom.github.io/VKUI/',

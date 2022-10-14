@@ -1,5 +1,6 @@
 import {Icon16Linked} from '@vkontakte/icons';
-import {Link, Title} from '@vkontakte/vkui';
+import {Link, Title, useAdaptivity} from '@vkontakte/vkui';
+import clsx from 'clsx';
 import React, {FC} from 'react';
 
 // TODO: Заменить href и контент ссылки на правильную версию
@@ -14,26 +15,41 @@ const styles = {
 	},
 };
 
-const TokensHeader: FC = () => (
-	<div className="flex items-center justify-between">
-		<Title level="1">VKUI Tokens</Title>
-		<div className="flex space-x-1px">
-			<div style={styles.linkContainer}>
-				<Link href={version.href} target="_blank">
-					{version.text}
-				</Link>
-			</div>
-			<div className="flex items-center" style={styles.linkContainer}>
-				<Icon16Linked style={{color: '#99A2AD', marginRight: 6}} />
-				<Link
-					href="https://github.com/VKCOM/vkui-tokens"
-					target="_blank"
+const TokensHeader: FC = () => {
+	const {viewWidth} = useAdaptivity();
+	const isTablet = viewWidth > 3;
+
+	return (
+		<div
+			className={clsx(
+				!isTablet && 'space-y-12px',
+				isTablet && 'flex items-center justify-between',
+			)}
+		>
+			<Title level="1">VKUI Tokens</Title>
+			<div className="flex space-x-1px">
+				<div
+					style={{
+						...styles.linkContainer,
+						...(!isTablet ? {paddingLeft: 0} : {}),
+					}}
 				>
-					Github
-				</Link>
+					<Link href={version.href} target="_blank">
+						{version.text}
+					</Link>
+				</div>
+				<div className="flex items-center" style={styles.linkContainer}>
+					<Icon16Linked style={{color: '#99A2AD', marginRight: 6}} />
+					<Link
+						href="https://github.com/VKCOM/vkui-tokens"
+						target="_blank"
+					>
+						Github
+					</Link>
+				</div>
 			</div>
 		</div>
-	</div>
-);
+	);
+};
 
 export default TokensHeader;

@@ -6,6 +6,14 @@
 	margin-left: 20px;
 }
 
+.space-y-12px > *:not(:first-child) {
+	margin-top: 12px;
+}
+
 .space-y-24px > *:not(:first-child) {
 	margin-top: 24px;
+}
+
+.space-y-32px > *:not(:first-child) {
+	margin-top: 32px;
 }

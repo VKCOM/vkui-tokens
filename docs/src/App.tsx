@@ -1,3 +1,4 @@
+import '@vkontakte/vkui/dist/fonts.css';
 import '@vkontakte/vkui/dist/vkui.css';
 import './styles/index.css';
 
