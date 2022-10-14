@@ -41,44 +41,42 @@ const styles = {
 	},
 };
 
-const Header: FC = () => {
-	return (
-		<PanelHeader>
-			<div className="flex items-center justify-between">
-				<div className="flex items-center">
-					<LogoIcon />
-				</div>
-				<div className="flex space-x-1px">
-					{menuItems.map((item) => {
-						if (item.href) {
-							return (
-								<a
-									key={item.text}
-									className="link-reset"
-									href={item.href}
-									target="_blank"
-								>
-									<Tappable>
-										<Text style={styles.tappable}>
-											{item.text}
-										</Text>
-									</Tappable>
-								</a>
-							);
-						}
-						return (
-							<Text
-								key={item.text}
-								style={{...styles.tappable, ...styles.selected}}
-							>
-								{item.text}
-							</Text>
-						);
-					})}
-				</div>
+const Header: FC = () => (
+	<PanelHeader separator={false}>
+		<div className="flex items-center justify-between">
+			<div className="flex items-center">
+				<LogoIcon />
 			</div>
-		</PanelHeader>
-	);
-};
+			<div className="flex space-x-1px">
+				{menuItems.map((item) => {
+					if (item.href) {
+						return (
+							<a
+								key={item.text}
+								className="link-reset"
+								href={item.href}
+								target="_blank"
+							>
+								<Tappable>
+									<Text style={styles.tappable}>
+										{item.text}
+									</Text>
+								</Tappable>
+							</a>
+						);
+					}
+					return (
+						<Text
+							key={item.text}
+							style={{...styles.tappable, ...styles.selected}}
+						>
+							{item.text}
+						</Text>
+					);
+				})}
+			</div>
+		</div>
+	</PanelHeader>
+);
 
 export default Header;

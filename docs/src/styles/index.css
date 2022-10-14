@@ -18,3 +18,18 @@
 .space-x-1px > *:not(:first-child) {
 	margin-left: 1px;
 }
+
+.space-x-20px > *:not(:first-child) {
+	margin-left: 20px;
+}
+
+.space-y-24px > *:not(:first-child) {
+	margin-top: 24px;
+}
+
+.container {
+	width: calc(100% - 2rem);
+	max-width: 1144px;
+	margin: 0 auto;
+	padding: 3rem 1rem 0;
+}
