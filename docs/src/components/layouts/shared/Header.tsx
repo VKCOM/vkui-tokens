@@ -1,4 +1,4 @@
-import {PanelHeader, Tappable, Text} from '@vkontakte/vkui';
+import {Card, PanelHeader, Tappable, Text} from '@vkontakte/vkui';
 import React, {FC} from 'react';
 
 import {LogoIcon} from '../../../shared/content/icons';
@@ -16,41 +16,43 @@ const styles = {
 };
 
 const Header: FC = () => (
-	<PanelHeader separator={false}>
-		<div className="flex items-center justify-between">
-			<div className="flex items-center">
-				<LogoIcon />
-			</div>
-			<div className="flex space-x-1px">
-				{menuItems.map((item) => {
-					if (item.href) {
+	<Card mode="shadow">
+		<PanelHeader separator={false}>
+			<div className="flex items-center justify-between">
+				<div className="flex items-center">
+					<LogoIcon />
+				</div>
+				<div className="flex space-x-1px">
+					{menuItems.map((item) => {
+						if (item.href) {
+							return (
+								<a
+									key={item.text}
+									className="link-reset"
+									href={item.href}
+									target="_blank"
+								>
+									<Tappable>
+										<Text style={styles.tappable}>
+											{item.text}
+										</Text>
+									</Tappable>
+								</a>
+							);
+						}
 						return (
-							<a
+							<Text
 								key={item.text}
-								className="link-reset"
-								href={item.href}
-								target="_blank"
+								style={{...styles.tappable, ...styles.selected}}
 							>
-								<Tappable>
-									<Text style={styles.tappable}>
-										{item.text}
-									</Text>
-								</Tappable>
-							</a>
+								{item.text}
+							</Text>
 						);
-					}
-					return (
-						<Text
-							key={item.text}
-							style={{...styles.tappable, ...styles.selected}}
-						>
-							{item.text}
-						</Text>
-					);
-				})}
+					})}
+				</div>
 			</div>
-		</div>
-	</PanelHeader>
+		</PanelHeader>
+	</Card>
 );
 
 export default Header;

@@ -3,6 +3,7 @@ import {
 	AppRoot,
 	ConfigProvider,
 	Panel,
+	SizeType,
 	SplitCol,
 	SplitLayout,
 	View,
@@ -18,7 +19,7 @@ type Props = {
 
 const Main: FC<Props> = ({children}) => (
 	<ConfigProvider webviewType={WebviewType.INTERNAL}>
-		<AdaptivityProvider>
+		<AdaptivityProvider sizeX={SizeType.COMPACT}>
 			<AppRoot>
 				<SplitLayout>
 					<SplitCol>
