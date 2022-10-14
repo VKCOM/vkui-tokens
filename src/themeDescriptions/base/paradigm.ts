@@ -144,7 +144,7 @@ export const darkColors: ColorsDescription = {
 	colors: {
 		// Background
 		colorBackgroundAccent: '#2775FC',
-		colorBackgroundAccentThemed: '#FFFFFF',
+		colorBackgroundAccentThemed: '#2775FC',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#232324',
 		colorBackgroundSecondary: '#2A2A2B',
