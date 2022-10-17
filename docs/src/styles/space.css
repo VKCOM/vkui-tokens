@@ -10,6 +10,10 @@
 	margin-top: 12px;
 }
 
+.space-y-16px > *:not(:first-child) {
+	margin-top: 16px;
+}
+
 .space-y-24px > *:not(:first-child) {
 	margin-top: 24px;
 }

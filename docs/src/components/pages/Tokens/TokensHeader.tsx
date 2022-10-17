@@ -11,7 +11,10 @@ const version = {
 
 const styles = {
 	linkContainer: {
-		padding: '5px 8px',
+		paddingTop: 5,
+		paddingRight: 8,
+		paddingBottom: 5,
+		paddingLeft: 8,
 	},
 };
 

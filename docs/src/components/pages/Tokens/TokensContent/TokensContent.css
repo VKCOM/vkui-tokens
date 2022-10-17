@@ -1,0 +1,108 @@
+.tokens-content-header, .tokens-content-item {
+	display: flex;
+}
+
+.tokens-content-header > div:nth-child(1), .tokens-content-header > div:nth-child(2) {
+	padding: 0 20px 0 0;
+}
+
+.tokens-content-header > div:nth-child(1), .tokens-content-item > div:nth-child(1),
+.tokens-content-header > div:nth-child(3), .tokens-content-item > div:nth-child(3) {
+	flex-basis: 40%;
+}
+
+.tokens-content-header > div:nth-child(2), .tokens-content-item > div:nth-child(2) {
+	flex-basis: 20%;
+}
+
+.tokens-content-header span {
+	color: var(--text_secondary);
+}
+
+.tokens-content-item {
+	padding: 10px 0;
+}
+
+.tokens-content-item > div:nth-child(1), .tokens-content-item > div:nth-child(2) {
+	padding-right: 20px;
+}
+
+.token-name-btn {
+	background-color: var(--content_warning_background);
+}
+
+.token-name-btn .vkuiButton__content {
+	font-weight: var(--vkui--font_weight_accent3);
+	font-size: var(--vkui--font_text--font_size--compact);
+	line-height: var(--vkui--font_paragraph--line_height--regular);
+	padding-right: var(--vkui--size_button_tertiary_small_padding_horizontal--regular);
+}
+
+.token-name-btn .vkuiButton__after {
+	display: none;
+}
+
+.token-name-btn_hover {
+	background-color: #FFEABD;
+}
+
+.token-name-btn_hover .vkuiButton__content {
+	padding-right: 0;
+}
+
+.token-name-btn_hover .vkuiButton__after {
+	display: block;
+}
+
+.color-circle {
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+	background-color: transparent;
+	margin-right: 12px;
+}
+
+.separator-header {
+	margin: 12px 0 8px;
+}
+
+.separator-item {
+	color: var(--separator_alternate);
+}
+
+@media screen and (max-width: 1024px){
+	.separator-header {
+		color: var(--separator_alternate);
+		width: calc(100% + 2rem);
+		margin: 0 0 0 -1rem;
+	}
+
+	.tokens-content-item {
+		padding: 16px 0 20px;
+		display: block;
+	}
+
+	.tokens-content-item > div:nth-child(1) {
+		padding-right: 0;
+	}
+
+	.tokens-content-item > div:nth-child(3) {
+		padding-right: 20px;
+	}
+
+	.tokens-content-item > *:not(:first-child) {
+		margin-top: 12px;
+	}
+
+	.token-name-btn {
+		min-height: var(--vkui--size_button_medium_height--regular);
+	}
+
+	.token-name-btn .vkuiButton__after {
+		display: block;
+	}
+
+	.token-name-btn .vkuiButton__in {
+		justify-content: space-between;
+	}
+}

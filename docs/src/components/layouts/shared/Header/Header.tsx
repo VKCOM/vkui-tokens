@@ -28,9 +28,12 @@ const Header: FC = () => {
 						<LogoIcon />
 					</div>
 					{!isTablet && (
-						<Icon24SearchOutline
+						<IconButton
 							style={{userSelect: 'none', opacity: 0}}
-						/>
+							disabled
+						>
+							<Icon24SearchOutline />
+						</IconButton>
 					)}
 					<Navigation
 						isTablet={isTablet}
