@@ -19,12 +19,63 @@ const content = [
 			'Тонированный фон для ошибок и использования в негативных сценариях работы. Меняется на нейтральный в темной теме. С прозрачностью',
 	},
 	{
-		token: 'sizeButtonTertiaryMediumPaddingHorizontalIcon',
+		token: 'sizeButtonTertiaryMediumPaddingHorizontalIcon1',
+		// eslint-disable-next-line sonarjs/no-duplicate-string
+		value: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'sizeButtonTertiaryMediumPaddingHorizontalIcon2',
+		value: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'sizeButtonTertiaryMediumPaddingHorizontalIcon3',
+		value: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'sizeButtonTertiaryMediumPaddingHorizontalIcon4',
 		value: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
 		description: 'Акцентный фон для элементов интерфейса',
 	},
 	{
 		token: 'colorBackgroundAccent3',
+		value: '#333333',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'colorBackgroundAccent4',
+		value: '#333333',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'colorBackgroundAccent5',
+		value: '#333333',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'colorBackgroundAccent6',
+		value: '#333333',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'colorBackgroundAccent7',
+		value: '#333333',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'colorBackgroundAccent8',
+		value: '#333333',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'colorBackgroundAccent9',
+		value: '#333333',
+		description: 'Акцентный фон для элементов интерфейса',
+	},
+	{
+		token: 'colorBackgroundAccent6',
 		value: '#333333',
 		description: 'Акцентный фон для элементов интерфейса',
 	},
