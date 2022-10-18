@@ -220,13 +220,3 @@ fs.writeFileSync(
 );
 
 console.log('успешно\n');
-
-console.log('Записываем тестовый docs.json для документации');
-const testDocsJsonObject = require(`${ROOT_DIR}/testDocs.json`);
-fs.writeFileSync(
-	`${DIST_PATH}/docs.json`,
-	JSON.stringify(testDocsJsonObject, null, '  '),
-	'utf-8',
-);
-
-console.log('успешно\n');

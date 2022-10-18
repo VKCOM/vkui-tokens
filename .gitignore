@@ -10,6 +10,7 @@ node_modules/
 /**/*.d.ts
 /**/*.js
 !/tasks
+!/tasks/**/*.js
 !.eslintrc.js
 !jest.config.js
 .yarnclean
