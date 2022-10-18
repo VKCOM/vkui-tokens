@@ -19,3 +19,4 @@ node_modules/
 ./dist/
 junit.xml
 !/docs/
+docs/**/*.json
