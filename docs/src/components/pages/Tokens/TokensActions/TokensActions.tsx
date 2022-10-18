@@ -9,23 +9,24 @@ import {
 } from '@vkontakte/vkui';
 import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
 import clsx from 'clsx';
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, useState} from 'react';
 
-import {tags, themes, valueTypes} from './TokensActions.content';
+import {tags, valueTypes} from './TokensActions.content';
 
-const TokensActions: FC = () => {
+type Props = {
+	themesProps: {
+		options: Array<string>;
+		value: string;
+		onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+	};
+};
+
+const TokensActions: FC<Props> = ({themesProps}) => {
 	const [selectedTags, setSelectedTags] = useState([]);
-	const [selectedTheme, setSelectedTheme] = useState(themes[0].id);
 	const [valueType, changeValueType] = useState('compact');
 	const [searchValue, setSearchValue] = useState('');
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
-
-	const onSelectThemeChange = (
-		event: React.ChangeEvent<HTMLSelectElement>,
-	) => {
-		setSelectedTheme(event.target.value);
-	};
 
 	const searchChangeHandler = (
 		event: React.ChangeEvent<HTMLInputElement>,
@@ -33,12 +34,12 @@ const TokensActions: FC = () => {
 		setSearchValue(event.target.value);
 	};
 
-	useEffect(() => {
-		console.log({selectedTags});
-		console.log({selectedTheme});
-		console.log({valueType});
-		console.log({searchValue});
-	}, [selectedTags, selectedTheme, valueType, searchValue]);
+	// useEffect(() => {
+	// 	console.log({selectedTags});
+	// 	console.log({selectedTheme});
+	// 	console.log({valueType});
+	// 	console.log({searchValue});
+	// }, [selectedTags, selectedTheme, valueType, searchValue]);
 
 	return (
 		<div
@@ -73,12 +74,11 @@ const TokensActions: FC = () => {
 					<CustomSelect
 						className={clsx(isTablet && 'my-theme-select')}
 						placeholder="Выберите тему"
-						options={themes.map((theme) => ({
-							label: theme.name,
-							value: theme.id,
+						{...themesProps}
+						options={themesProps.options.map((value) => ({
+							label: value,
+							value,
 						}))}
-						value={selectedTheme}
-						onChange={onSelectThemeChange}
 					/>
 				</div>
 				<SegmentedControl

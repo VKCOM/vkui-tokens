@@ -2,7 +2,7 @@
 
 root_path=$(pwd);
 themes_path="${root_path}/dist/themes";
-result_docs_path="${root_path}/docs/docs.json";
+result_docs_path="${root_path}/docs/public/static/data/docs.json";
 result_themes=''
 
 # Создаем пустой результирующий json
