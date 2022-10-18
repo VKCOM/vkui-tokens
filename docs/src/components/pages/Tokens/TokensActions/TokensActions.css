@@ -1,5 +1,9 @@
-.my-tags-select > div {
-	width: 329px;
+.my-theme-select, .my-tags-select, .my-segmentedControl {
+	width: fit-content;
+}
+
+.my-tags-select > .vkuiChipsInputBase {
+	width: 293px;
 }
 
 .my-theme-select > div {

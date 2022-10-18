@@ -7,30 +7,38 @@ import {
 	SegmentedControl,
 	useAdaptivity,
 } from '@vkontakte/vkui';
+import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
 import clsx from 'clsx';
-import React, {FC, useRef, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 
 import {tags, themes, valueTypes} from './TokensActions.content';
 
 const TokensActions: FC = () => {
-	const [selectedTags, setSelectedTags] = useState(tags[0].id);
+	const [selectedTags, setSelectedTags] = useState([]);
 	const [selectedTheme, setSelectedTheme] = useState(themes[0].id);
 	const [valueType, changeValueType] = useState('compact');
-	const textInput = useRef(null);
+	const [searchValue, setSearchValue] = useState('');
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
-
-	const onSelectTagsChange = (
-		event: React.ChangeEvent<HTMLSelectElement>,
-	) => {
-		setSelectedTags(event.target.value);
-	};
 
 	const onSelectThemeChange = (
 		event: React.ChangeEvent<HTMLSelectElement>,
 	) => {
 		setSelectedTheme(event.target.value);
 	};
+
+	const searchChangeHandler = (
+		event: React.ChangeEvent<HTMLInputElement>,
+	) => {
+		setSearchValue(event.target.value);
+	};
+
+	useEffect(() => {
+		console.log({selectedTags});
+		console.log({selectedTheme});
+		console.log({valueType});
+		console.log({searchValue});
+	}, [selectedTags, selectedTheme, valueType, searchValue]);
 
 	return (
 		<div
@@ -47,27 +55,32 @@ const TokensActions: FC = () => {
 					isTablet && 'flex-row space-x-20px',
 				)}
 			>
-				<CustomSelect
+				<ChipsSelect
 					className={clsx(isTablet && 'my-tags-select')}
-					multiple
-					placeholder="Выберите тэги"
+					value={selectedTags}
+					onChange={setSelectedTags}
 					options={tags.map((tag) => ({
 						label: tag.name,
 						value: tag.id,
 					}))}
-					value={selectedTags}
-					onChange={onSelectTagsChange}
+					placeholder="Выберите тэги"
+					emptyText="Ничего не найдено"
+					creatable={false}
+					showSelected={false}
+					closeAfterSelect={false}
 				/>
-				<CustomSelect
-					className={clsx(isTablet && 'my-theme-select')}
-					placeholder="Выберите тему"
-					options={themes.map((theme) => ({
-						label: theme.name,
-						value: theme.id,
-					}))}
-					value={selectedTheme}
-					onChange={onSelectThemeChange}
-				/>
+				<div>
+					<CustomSelect
+						className={clsx(isTablet && 'my-theme-select')}
+						placeholder="Выберите тему"
+						options={themes.map((theme) => ({
+							label: theme.name,
+							value: theme.id,
+						}))}
+						value={selectedTheme}
+						onChange={onSelectThemeChange}
+					/>
+				</div>
 				<SegmentedControl
 					className={clsx(isTablet && 'my-segmentedControl')}
 					size="l"
@@ -76,12 +89,15 @@ const TokensActions: FC = () => {
 					options={valueTypes}
 				/>
 			</div>
-			<Input
-				getRef={textInput}
-				type="text"
-				placeholder="Поиск"
-				after={<Icon20Search />}
-			/>
+			<div>
+				<Input
+					value={searchValue}
+					onChange={searchChangeHandler}
+					type="text"
+					placeholder="Поиск"
+					after={<Icon20Search />}
+				/>
+			</div>
 		</div>
 	);
 };
