@@ -5,20 +5,11 @@
 	width: calc(100% - 2rem);
 	max-width: 1144px;
 	margin: 0 auto;
-	padding: 3rem 1rem 0;
+	padding: 3rem 1rem;
 }
 
 @media (max-width: 1023px) {
 	.container {
-		padding-top: 1.5rem;
+		padding: 1.5rem 1rem;
 	}
-}
-
-.link-reset {
-	color: var(--text_primary);
-	text-decoration: none;
-}
-
-.relative {
-	position: relative;
 }

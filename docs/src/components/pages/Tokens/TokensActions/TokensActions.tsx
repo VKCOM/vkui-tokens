@@ -11,6 +11,7 @@ import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
 import clsx from 'clsx';
 import React, {FC, useState} from 'react';
 
+import {ValueType} from '../../../../shared/types';
 import {tags, valueTypes} from './TokensActions.content';
 
 type Props = {
@@ -19,11 +20,14 @@ type Props = {
 		value: string;
 		onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 	};
+	valueTypesProps: {
+		value: string;
+		onChange: (value: ValueType) => void;
+	};
 };
 
-const TokensActions: FC<Props> = ({themesProps}) => {
+const TokensActions: FC<Props> = ({themesProps, valueTypesProps}) => {
 	const [selectedTags, setSelectedTags] = useState([]);
-	const [valueType, changeValueType] = useState('compact');
 	const [searchValue, setSearchValue] = useState('');
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
@@ -33,13 +37,6 @@ const TokensActions: FC<Props> = ({themesProps}) => {
 	) => {
 		setSearchValue(event.target.value);
 	};
-
-	// useEffect(() => {
-	// 	console.log({selectedTags});
-	// 	console.log({selectedTheme});
-	// 	console.log({valueType});
-	// 	console.log({searchValue});
-	// }, [selectedTags, selectedTheme, valueType, searchValue]);
 
 	return (
 		<div
@@ -84,9 +81,8 @@ const TokensActions: FC<Props> = ({themesProps}) => {
 				<SegmentedControl
 					className={clsx(isTablet && 'my-segmentedControl')}
 					size="l"
-					value={valueType}
-					onChange={(value: string) => changeValueType(value)}
 					options={valueTypes}
+					{...valueTypesProps}
 				/>
 			</div>
 			<div>

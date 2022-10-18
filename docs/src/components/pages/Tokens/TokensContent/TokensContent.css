@@ -54,14 +54,6 @@
 	display: block;
 }
 
-.color-circle {
-	border-radius: 50%;
-	width: 28px;
-	height: 28px;
-	background-color: transparent;
-	margin-right: 12px;
-}
-
 .separator-header {
 	margin: 12px 0 8px;
 }

@@ -57,6 +57,10 @@ fs.readdirSync(THEMES_DIR).forEach((dir) => {
 	Object.keys(docs).forEach((docsKey) => {
 		const value = tokens[docsKey];
 
+		if (!value) {
+			return;
+		}
+
 		result[docsKey] = {
 			...docs[docsKey],
 			value,

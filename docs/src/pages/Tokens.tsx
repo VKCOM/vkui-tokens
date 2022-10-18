@@ -1,20 +1,22 @@
 import {useAdaptivity} from '@vkontakte/vkui';
 import React, {FC, useState} from 'react';
 
-import docs from '../../public/static/data/docs.json';
+import tokensData from '../../public/static/data/tokensData.json';
 import {
 	TokensActions,
 	TokensContent,
 	TokensHeader,
 } from '../components/pages/Tokens';
+import {ValueType} from '../shared/types';
 
-const themes = Object.keys(docs);
+const themes = Object.keys(tokensData);
 
 const Tokens: FC = () => {
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
 
 	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
+	const [valueType, setValueType] = useState<ValueType>('compact');
 
 	const changeThemeHandler = (
 		event: React.ChangeEvent<HTMLSelectElement>,
@@ -31,8 +33,15 @@ const Tokens: FC = () => {
 					value: selectedTheme,
 					onChange: changeThemeHandler,
 				}}
+				valueTypesProps={{
+					value: valueType,
+					onChange: setValueType,
+				}}
 			/>
-			<TokensContent />
+			<TokensContent
+				tokens={tokensData[selectedTheme]}
+				valueType={valueType}
+			/>
 		</div>
 	);
 };
