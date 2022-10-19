@@ -10,7 +10,7 @@ import {
 import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
 import {ChipOption} from '@vkontakte/vkui/src/components/Chip/Chip';
 import clsx from 'clsx';
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 
 import {ValueType} from '../../../../shared/types';
 import {valueTypes} from './TokensActions.content';
@@ -30,23 +30,20 @@ type Props = {
 		value: string;
 		onChange: (value: ValueType) => void;
 	};
+	searchProps: {
+		value: string;
+		onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+	};
 };
 
 const TokensActions: FC<Props> = ({
 	tagsProps,
 	themesProps,
 	valueTypesProps,
+	searchProps,
 }) => {
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
-
-	const [searchValue, setSearchValue] = useState('');
-
-	const searchChangeHandler = (
-		event: React.ChangeEvent<HTMLInputElement>,
-	) => {
-		setSearchValue(event.target.value);
-	};
 
 	return (
 		<div
@@ -92,11 +89,10 @@ const TokensActions: FC<Props> = ({
 			</div>
 			<div>
 				<Input
-					value={searchValue}
-					onChange={searchChangeHandler}
 					type="text"
 					placeholder="Поиск"
 					after={<Icon20Search />}
+					{...searchProps}
 				/>
 			</div>
 		</div>

@@ -38,10 +38,16 @@ const Tokens: FC = () => {
 		transformTags(tokensData[themes[0]]),
 	);
 	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
-	// const [selectedTags, setSelectedTags] = useState<Array<string>>([]);
 	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
 	const [selectedValueType, setSelectedValueType] =
 		useState<ValueType>('compact');
+	const [searchValue, setSearchValue] = useState('');
+
+	const searchChangeHandler = (
+		event: React.ChangeEvent<HTMLInputElement>,
+	) => {
+		setSearchValue(event.target.value);
+	};
 
 	const changeThemeHandler = (
 		event: React.ChangeEvent<HTMLSelectElement>,
@@ -73,6 +79,10 @@ const Tokens: FC = () => {
 					value: selectedValueType,
 					onChange: setSelectedValueType,
 				}}
+				searchProps={{
+					value: searchValue,
+					onChange: searchChangeHandler,
+				}}
 			/>
 			<TokensContent
 				tokens={tokensData[selectedTheme]}
@@ -80,6 +90,7 @@ const Tokens: FC = () => {
 					String(tagOption.value),
 				)}
 				selectedValueType={selectedValueType}
+				searchValue={searchValue}
 			/>
 		</div>
 	);
