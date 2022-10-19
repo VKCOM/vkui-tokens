@@ -3,10 +3,11 @@ import {Link, Title, useAdaptivity} from '@vkontakte/vkui';
 import clsx from 'clsx';
 import React, {FC} from 'react';
 
-// TODO: Заменить href и контент ссылки на правильную версию
+import packageJson from '../../../../../package.json';
+
 const version = {
-	href: 'https://github.com/VKCOM/vkui-tokens',
-	text: 'v.4.3434',
+	href: 'https://github.com/VKCOM/vkui-tokens/releases',
+	text: `v.${packageJson.version}`,
 };
 
 const styles = {
