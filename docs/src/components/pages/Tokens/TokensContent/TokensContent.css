@@ -3,7 +3,7 @@
 }
 
 .tokens-content-list {
-	height: calc(100% - 33px - 1.5rem);
+	height: calc(100% - 32px - 1.5rem);
 	overflow-y: auto;
 	padding-bottom: 1.5rem;
 }
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 1024px) {
 	.tokens-content-container {
-		height: calc(100% - 68px - 232px - 16px - 16px);
+		height: calc(100% - 68px - 200px - 16px - 16px);
 	}
 
 	.tokens-content-list {
@@ -116,5 +116,11 @@
 
 	.token-name-btn .vkuiButton__in {
 		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.tokens-content-container {
+		height: calc(100% - 68px - 232px - 16px - 16px);
 	}
 }
