@@ -8,13 +8,19 @@ import {
 	useAdaptivity,
 } from '@vkontakte/vkui';
 import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
+import {ChipOption} from '@vkontakte/vkui/src/components/Chip/Chip';
 import clsx from 'clsx';
 import React, {FC, useState} from 'react';
 
 import {ValueType} from '../../../../shared/types';
-import {tags, valueTypes} from './TokensActions.content';
+import {valueTypes} from './TokensActions.content';
 
 type Props = {
+	tagsProps: {
+		options: Array<ChipOption>;
+		value: Array<ChipOption>;
+		onChange: (option: ChipOption) => void;
+	};
 	themesProps: {
 		options: Array<string>;
 		value: string;
@@ -26,11 +32,15 @@ type Props = {
 	};
 };
 
-const TokensActions: FC<Props> = ({themesProps, valueTypesProps}) => {
-	const [selectedTags, setSelectedTags] = useState([]);
-	const [searchValue, setSearchValue] = useState('');
+const TokensActions: FC<Props> = ({
+	tagsProps,
+	themesProps,
+	valueTypesProps,
+}) => {
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
+
+	const [searchValue, setSearchValue] = useState('');
 
 	const searchChangeHandler = (
 		event: React.ChangeEvent<HTMLInputElement>,
@@ -55,17 +65,12 @@ const TokensActions: FC<Props> = ({themesProps, valueTypesProps}) => {
 			>
 				<ChipsSelect
 					className={clsx(isTablet && 'my-tags-select')}
-					value={selectedTags}
-					onChange={setSelectedTags}
-					options={tags.map((tag) => ({
-						label: tag.name,
-						value: tag.id,
-					}))}
 					placeholder="Выберите тэги"
 					emptyText="Ничего не найдено"
 					creatable={false}
 					showSelected={false}
 					closeAfterSelect={false}
+					{...tagsProps}
 				/>
 				<div>
 					<CustomSelect

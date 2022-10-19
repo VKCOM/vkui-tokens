@@ -1,4 +1,5 @@
 import {useAdaptivity} from '@vkontakte/vkui';
+import {ChipOption} from '@vkontakte/vkui/src/components/Chip/Chip';
 import React, {FC, useState} from 'react';
 
 import tokensData from '../../public/static/data/tokensData.json';
@@ -7,14 +8,37 @@ import {
 	TokensContent,
 	TokensHeader,
 } from '../components/pages/Tokens';
-import {ValueType} from '../shared/types';
+import {Tokens as TokensType, ValueType} from '../shared/types';
 
 const themes = Object.keys(tokensData);
+
+function transformTags(tokens: TokensType) {
+	const tokensKeys = Object.keys(tokens);
+	const tags = tokensKeys.map((t) => tokens[t].tags);
+	const flatTags = tags.reduce((acc, curr) => acc.concat(curr), []);
+	const sortedTagsWithQuantity = flatTags
+		.reduce(
+			(acc, curr, i, arr) =>
+				acc.concat([
+					[curr, arr.filter((curr1) => curr1 === curr).length],
+				]),
+			[],
+		)
+		.sort((a, b) => b[1] - a[1]);
+	return sortedTagsWithQuantity
+		.map((tuple) => tuple[0])
+		.filter((key, index, arr) => arr.indexOf(key) === index);
+}
 
 const Tokens: FC = () => {
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
 
+	const [themeTags] = useState<Array<string>>(
+		transformTags(tokensData[themes[0]]),
+	);
+	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
+	// const [selectedTags, setSelectedTags] = useState<Array<string>>([]);
 	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
 	const [selectedValueType, setSelectedValueType] =
 		useState<ValueType>('compact');
@@ -32,6 +56,14 @@ const Tokens: FC = () => {
 		>
 			<TokensHeader />
 			<TokensActions
+				tagsProps={{
+					options: themeTags.map((tag) => ({
+						label: tag,
+						value: tag,
+					})),
+					value: selectedTags,
+					onChange: setSelectedTags,
+				}}
 				themesProps={{
 					options: themes,
 					value: selectedTheme,
@@ -44,6 +76,9 @@ const Tokens: FC = () => {
 			/>
 			<TokensContent
 				tokens={tokensData[selectedTheme]}
+				selectedTags={selectedTags.map((tagOption) =>
+					String(tagOption.value),
+				)}
 				selectedValueType={selectedValueType}
 			/>
 		</div>

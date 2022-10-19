@@ -11,7 +11,7 @@ type TokenItemValueObject = {
 
 export type TokenItemValue = string | number | TokenItemValueObject;
 
-type TokenItem = {
+export type TokenItem = {
 	tags: Array<string>;
 	desc: string;
 	value: TokenItemValue;
