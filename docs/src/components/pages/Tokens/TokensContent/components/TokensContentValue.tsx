@@ -1,71 +1,104 @@
 import {Paragraph} from '@vkontakte/vkui';
+import clsx from 'clsx';
 import React, {FC} from 'react';
 
 import {TokenItemValue, ValueType} from '../../../../../shared/types';
 import {
+	isColor,
 	isNumber,
 	isRegularCompactObj,
 	isRegularObj,
 	isString,
 } from '../../../../../shared/utils';
+import ColorCircle from './ColorCircle/ColorCircle';
 
 type Props = {
 	contentValue: TokenItemValue;
 	selectedValueType: ValueType;
 };
 
-const styles = {
-	indent: {
-		marginLeft: '0.75rem',
-	},
-};
+function oneLineRenderCondition(contentValue: TokenItemValue): boolean {
+	return (
+		isString(contentValue) ||
+		isNumber(contentValue) ||
+		isRegularObj(contentValue) ||
+		isRegularCompactObj(contentValue)
+	);
+}
+
+function getOneLineContent(
+	value: TokenItemValue,
+	valueType: ValueType,
+): string | number {
+	if (isString(value) || isNumber(value)) {
+		return value;
+	}
+
+	if (isRegularObj(value) && valueType === 'regular') {
+		return value.regular;
+	}
+
+	if (isRegularCompactObj(value)) {
+		return value[valueType];
+	}
+
+	return '-';
+}
 
 const TokensContentValue: FC<Props> = ({contentValue, selectedValueType}) => {
-	if (isString(contentValue) || isNumber(contentValue)) {
-		return <Paragraph style={styles.indent}>{contentValue}</Paragraph>;
-	}
-
-	if (isRegularCompactObj(contentValue)) {
+	if (oneLineRenderCondition(contentValue)) {
+		const content = getOneLineContent(contentValue, selectedValueType);
 		return (
-			<Paragraph style={styles.indent}>
-				{contentValue[selectedValueType]}
-			</Paragraph>
-		);
-	}
-
-	if (isRegularObj(contentValue)) {
-		return (
-			<Paragraph style={styles.indent}>
-				{selectedValueType === 'regular' ? contentValue.regular : '-'}
-			</Paragraph>
+			<div className="flex items-center">
+				<Paragraph>{content}</Paragraph>
+				{isColor(content) && (
+					<ColorCircle
+						content={String(content)}
+						style={{marginLeft: '0.25rem'}}
+					/>
+				)}
+			</div>
 		);
 	}
 
 	if (!isRegularCompactObj(contentValue)) {
 		return (
-			<div style={styles.indent} className="flex flex-col">
+			<div className="flex flex-col">
 				{Object.keys(contentValue).map((key) => {
-					let renderValue = contentValue[key];
+					const nestedValue = contentValue[key];
 
-					if (isRegularObj(contentValue[key])) {
-						renderValue =
-							contentValue[key][selectedValueType] || '';
-					}
-
-					if (isRegularCompactObj(contentValue[key])) {
-						renderValue =
-							contentValue[key][selectedValueType] || '';
-					}
-
-					if (renderValue) {
+					if (oneLineRenderCondition(nestedValue)) {
+						const content = getOneLineContent(
+							nestedValue,
+							selectedValueType,
+						);
 						return (
-							<Paragraph
+							<div
+								className={clsx(
+									isColor(content) && 'flex items-center',
+								)}
 								key={key}
-							>{`${key}: ${renderValue}`}</Paragraph>
+							>
+								<Paragraph weight="1">{key}:&nbsp;</Paragraph>
+								<Paragraph>{content}</Paragraph>
+								{isColor(content) && (
+									<ColorCircle
+										content={String(content)}
+										style={{marginLeft: '0.25rem'}}
+									/>
+								)}
+							</div>
 						);
 					}
 
-					return null;
+					return (
+						<Paragraph key={key}>
+							<Paragraph weight="1">{key}:&nbsp;</Paragraph>
+							<Paragraph style={{whiteSpace: 'pre'}}>
+								{JSON.stringify(nestedValue, null, 4)}
+							</Paragraph>
+						</Paragraph>
+					);
 				})}
 			</div>
 		);

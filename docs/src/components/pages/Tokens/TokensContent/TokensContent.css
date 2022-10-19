@@ -2,17 +2,21 @@
 	display: flex;
 }
 
-.tokens-content-header > div:nth-child(1), .tokens-content-header > div:nth-child(2) {
-	padding: 0 20px 0 0;
+.tokens-content-header > div:nth-child(1), .tokens-content-header > div:nth-child(2),
+.tokens-content-item > div:nth-child(1), .tokens-content-item > div:nth-child(2){
+	padding-right: 20px;
 }
 
-.tokens-content-header > div:nth-child(1), .tokens-content-item > div:nth-child(1),
-.tokens-content-header > div:nth-child(3), .tokens-content-item > div:nth-child(3) {
-	flex-basis: 40%;
+.tokens-content-header > div:nth-child(1), .tokens-content-item > div:nth-child(1) {
+	flex-basis: 35%;
 }
 
 .tokens-content-header > div:nth-child(2), .tokens-content-item > div:nth-child(2) {
-	flex-basis: 20%;
+	flex-basis: 25%;
+}
+
+.tokens-content-header > div:nth-child(3), .tokens-content-item > div:nth-child(3) {
+	flex-basis: 40%;
 }
 
 .tokens-content-header span {
@@ -23,12 +27,9 @@
 	padding: 10px 0;
 }
 
-.tokens-content-item > div:nth-child(1), .tokens-content-item > div:nth-child(2) {
-	padding-right: 20px;
-}
-
 .token-name-btn {
 	background-color: var(--content_warning_background);
+	border-radius: 0.5rem;
 }
 
 .token-name-btn .vkuiButton__content {

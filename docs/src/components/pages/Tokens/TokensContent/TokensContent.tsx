@@ -6,10 +6,9 @@ import {Button, Paragraph, Separator, useAdaptivity} from '@vkontakte/vkui';
 import React, {FC} from 'react';
 
 import {Tokens, ValueType} from '../../../../shared/types';
-import ColorCircle from './components/ColorCircle/ColorCircle';
 import TokensContentValue from './components/TokensContentValue';
 
-export type Props = {
+type Props = {
 	tokens: Tokens;
 	selectedValueType: ValueType;
 };
@@ -57,17 +56,23 @@ const TokensContent: FC<Props> = ({tokens, selectedValueType}) => {
 								</Button>
 							</div>
 							<div>
-								<div className="flex items-center">
-									<ColorCircle value={tokens[token].value} />
-									<TokensContentValue
-										contentValue={tokens[token].value}
-										selectedValueType={selectedValueType}
-									/>
+								<TokensContentValue
+									contentValue={tokens[token].value}
+									selectedValueType={selectedValueType}
+								/>
+							</div>
+							{isTablet && (
+								<div>
+									<Paragraph>
+										{tokens[token].desc || '-'}
+									</Paragraph>
 								</div>
-							</div>
-							<div>
-								<Paragraph>{tokens[token].desc}</Paragraph>
-							</div>
+							)}
+							{!isTablet && !!tokens[token].desc && (
+								<div>
+									<Paragraph>{tokens[token].desc}</Paragraph>
+								</div>
+							)}
 						</div>
 					</React.Fragment>
 				))}

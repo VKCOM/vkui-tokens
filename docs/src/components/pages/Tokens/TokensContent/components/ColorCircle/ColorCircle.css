@@ -1,6 +1,7 @@
 .color-circle {
 	border-radius: 50%;
-	width: 28px;
-	height: 28px;
+	width: 14px;
+	height: 14px;
 	background-color: transparent;
+	border: 1px solid var(--input_border);
 }
