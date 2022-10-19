@@ -18,7 +18,7 @@ const TokensContent: FC<Props> = ({tokens, selectedValueType}) => {
 	const isTablet = viewWidth > 3;
 
 	return (
-		<div>
+		<div className="tokens-content-container">
 			<div
 				className="tokens-content-header"
 				style={!isTablet ? {display: 'none'} : {}}
@@ -34,7 +34,7 @@ const TokensContent: FC<Props> = ({tokens, selectedValueType}) => {
 				</div>
 			</div>
 			<Separator wide={true} className="separator-header" />
-			<div>
+			<div className="tokens-content-list">
 				{Object.keys(tokens).map((token, index) => (
 					<React.Fragment key={token}>
 						{index !== 0 && (

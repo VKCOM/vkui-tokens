@@ -4,8 +4,6 @@ import {
 	ConfigProvider,
 	Panel,
 	SizeType,
-	SplitCol,
-	SplitLayout,
 	View,
 	WebviewType,
 } from '@vkontakte/vkui';
@@ -21,16 +19,12 @@ const Main: FC<Props> = ({children}) => (
 	<ConfigProvider webviewType={WebviewType.INTERNAL}>
 		<AdaptivityProvider sizeX={SizeType.COMPACT}>
 			<AppRoot>
-				<SplitLayout>
-					<SplitCol>
-						<View activePanel="main">
-							<Panel id="main">
-								<Header />
-								<div className="container">{children}</div>
-							</Panel>
-						</View>
-					</SplitCol>
-				</SplitLayout>
+				<View activePanel="main">
+					<Panel id="main">
+						<Header />
+						<div className="container">{children}</div>
+					</Panel>
+				</View>
 			</AppRoot>
 		</AdaptivityProvider>
 	</ConfigProvider>
