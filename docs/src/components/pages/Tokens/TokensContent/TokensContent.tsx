@@ -6,14 +6,15 @@ import {Button, Paragraph, Separator, useAdaptivity} from '@vkontakte/vkui';
 import React, {FC} from 'react';
 
 import {Tokens, ValueType} from '../../../../shared/types';
+import ColorCircle from './components/ColorCircle/ColorCircle';
 import TokensContentValue from './components/TokensContentValue';
 
 export type Props = {
 	tokens: Tokens;
-	valueType: ValueType;
+	selectedValueType: ValueType;
 };
 
-const TokensContent: FC<Props> = ({tokens, valueType}) => {
+const TokensContent: FC<Props> = ({tokens, selectedValueType}) => {
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
 
@@ -57,9 +58,10 @@ const TokensContent: FC<Props> = ({tokens, valueType}) => {
 							</div>
 							<div>
 								<div className="flex items-center">
+									<ColorCircle value={tokens[token].value} />
 									<TokensContentValue
-										value={tokens[token].value}
-										valueType={valueType}
+										contentValue={tokens[token].value}
+										selectedValueType={selectedValueType}
 									/>
 								</div>
 							</div>

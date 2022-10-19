@@ -16,7 +16,8 @@ const Tokens: FC = () => {
 	const isTablet = viewWidth > 3;
 
 	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
-	const [valueType, setValueType] = useState<ValueType>('compact');
+	const [selectedValueType, setSelectedValueType] =
+		useState<ValueType>('compact');
 
 	const changeThemeHandler = (
 		event: React.ChangeEvent<HTMLSelectElement>,
@@ -34,13 +35,13 @@ const Tokens: FC = () => {
 					onChange: changeThemeHandler,
 				}}
 				valueTypesProps={{
-					value: valueType,
-					onChange: setValueType,
+					value: selectedValueType,
+					onChange: setSelectedValueType,
 				}}
 			/>
 			<TokensContent
 				tokens={tokensData[selectedTheme]}
-				valueType={valueType}
+				selectedValueType={selectedValueType}
 			/>
 		</div>
 	);

@@ -71,7 +71,7 @@ fs.readdirSync(THEMES_DIR).forEach((dir) => {
 			isObject(value.regular) &&
 			isObject(value.compact)
 		) {
-			result[docsKey].value = transformTokenObject(value);
+			result[docsKey].contentValue = transformTokenObject(value);
 		}
 	});
 	tokensData[dir] = result;

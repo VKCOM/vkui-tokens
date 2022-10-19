@@ -5,38 +5,73 @@ import {TokenItemValue, ValueType} from '../../../../../shared/types';
 import {
 	isNumber,
 	isRegularCompactObj,
+	isRegularObj,
 	isString,
 } from '../../../../../shared/utils';
-import ColorCircle from './ColorCircle/ColorCircle';
 
 type Props = {
-	value: TokenItemValue;
-	valueType: ValueType;
+	contentValue: TokenItemValue;
+	selectedValueType: ValueType;
 };
 
-const TokensContentValue: FC<Props> = ({value, valueType}) => {
-	let Content = null;
+const styles = {
+	indent: {
+		marginLeft: '0.75rem',
+	},
+};
 
-	if (isString(value) || isNumber(value)) {
-		Content = (
-			<Paragraph style={{marginLeft: '0.75rem'}}>{value}</Paragraph>
-		);
+const TokensContentValue: FC<Props> = ({contentValue, selectedValueType}) => {
+	if (isString(contentValue) || isNumber(contentValue)) {
+		return <Paragraph style={styles.indent}>{contentValue}</Paragraph>;
 	}
 
-	if (isRegularCompactObj(value)) {
-		Content = (
-			<Paragraph style={{marginLeft: '0.75rem'}}>
-				{value[valueType]}
+	if (isRegularCompactObj(contentValue)) {
+		return (
+			<Paragraph style={styles.indent}>
+				{contentValue[selectedValueType]}
 			</Paragraph>
 		);
 	}
 
-	return (
-		<>
-			<ColorCircle value={value} />
-			{Content}
-		</>
-	);
+	if (isRegularObj(contentValue)) {
+		return (
+			<Paragraph style={styles.indent}>
+				{selectedValueType === 'regular' ? contentValue.regular : '-'}
+			</Paragraph>
+		);
+	}
+
+	if (!isRegularCompactObj(contentValue)) {
+		return (
+			<div style={styles.indent} className="flex flex-col">
+				{Object.keys(contentValue).map((key) => {
+					let renderValue = contentValue[key];
+
+					if (isRegularObj(contentValue[key])) {
+						renderValue =
+							contentValue[key][selectedValueType] || '';
+					}
+
+					if (isRegularCompactObj(contentValue[key])) {
+						renderValue =
+							contentValue[key][selectedValueType] || '';
+					}
+
+					if (renderValue) {
+						return (
+							<Paragraph
+								key={key}
+							>{`${key}: ${renderValue}`}</Paragraph>
+						);
+					}
+
+					return null;
+				})}
+			</div>
+		);
+	}
+
+	return null;
 };
 
 export default TokensContentValue;
