@@ -2,6 +2,18 @@
 	display: flex;
 }
 
+.tokens-content-header span {
+	color: var(--text_secondary);
+}
+
+.tokens-content-item {
+	padding: 10px 0;
+}
+
+.tokens-content-item > div {
+	overflow: auto;
+}
+
 .tokens-content-header > div:nth-child(1), .tokens-content-header > div:nth-child(2),
 .tokens-content-item > div:nth-child(1), .tokens-content-item > div:nth-child(2){
 	padding-right: 20px;
@@ -19,17 +31,10 @@
 	flex-basis: 40%;
 }
 
-.tokens-content-header span {
-	color: var(--text_secondary);
-}
-
-.tokens-content-item {
-	padding: 10px 0;
-}
-
 .token-name-btn {
 	background-color: var(--content_warning_background);
 	border-radius: 0.5rem;
+	min-width: 0;
 }
 
 .token-name-btn .vkuiButton__content {
