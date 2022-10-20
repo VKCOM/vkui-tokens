@@ -46,21 +46,11 @@ jobs:
       - run: yarn
       - run: npm run build
 
-#      - name: Copy docs.json
-#        run: cp dist/docs.json docs/src/data/docs.json
+      - name: Prepare tokens data
+        run: npm run docs:prepare-data
 
       - name: Build docs app
-        uses: actions/setup-node@v3
-        with:
-          node-version: 17
-      - run: yarn
-      - run: npm run docs:build
-
-#      - name: Watch build docs app
-#        run: ls docs/dist
-#
-#      - name: Watch build assets docs app
-#        run: ls docs/dist/assets
+        run: npm run docs:build
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
