@@ -44,7 +44,7 @@ module.exports = function (env, argv) {
 			filename: watchMode
 				? 'assets/[name].[hash].js'
 				: 'assets/[name].[chunkhash].js',
-			publicPath: '/',
+			publicPath: 'auto',
 		},
 		module: {
 			rules: [config.modules.ts, config.modules.css, config.modules.svg],
