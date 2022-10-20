@@ -1,5 +1,4 @@
 import {useAdaptivity} from '@vkontakte/vkui';
-import {ChipOption} from '@vkontakte/vkui/src/components/Chip/Chip';
 import React, {FC, useState} from 'react';
 
 import tokensData from '../../public/static/data/tokensData.json';
@@ -9,6 +8,14 @@ import {
 	TokensHeader,
 } from '../components/pages/Tokens';
 import {Tokens as TokensType, ValueType} from '../shared/types';
+
+type ChipValue = string | number;
+
+export interface ChipOption {
+	value?: ChipValue;
+	label?: string;
+	[otherProp: string]: any;
+}
 
 const themes = Object.keys(tokensData);
 

@@ -8,10 +8,10 @@ import {
 	useAdaptivity,
 } from '@vkontakte/vkui';
 import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
-import {ChipOption} from '@vkontakte/vkui/src/components/Chip/Chip';
 import clsx from 'clsx';
 import React, {FC} from 'react';
 
+import {ChipOption} from '../../../../pages/Tokens';
 import {ValueType} from '../../../../shared/types';
 import {valueTypes} from './TokensActions.content';
 

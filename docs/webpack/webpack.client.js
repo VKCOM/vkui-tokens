@@ -31,6 +31,9 @@ module.exports = function (env, argv) {
 	}
 
 	return {
+		stats: {
+			errorDetails: false,
+		},
 		context: path.resolve(__dirname, '../'),
 		devtool: !isProd && 'source-map',
 		entry: {
