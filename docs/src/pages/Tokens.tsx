@@ -55,10 +55,7 @@ const Tokens: FC = () => {
 	};
 
 	return (
-		<div
-			className={isTablet ? 'space-y-24px' : 'space-y-16px'}
-			style={{height: '100%'}}
-		>
+		<div className={isTablet ? 'space-y-24px' : 'space-y-16px'}>
 			<TokensHeader />
 			<TokensActions
 				tagsProps={{

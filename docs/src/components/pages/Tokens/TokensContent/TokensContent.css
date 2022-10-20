@@ -1,13 +1,3 @@
-.tokens-content-container {
-	height: calc(100% - 28px - 36px - 24px - 24px);
-}
-
-.tokens-content-list {
-	height: calc(100% - 33px - 1.5rem);
-	overflow-y: auto;
-	padding-bottom: 1.5rem;
-}
-
 .tokens-content-header, .tokens-content-item {
 	display: flex;
 }
@@ -74,15 +64,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.tokens-content-container {
-		height: calc(100% - 68px - 200px - 16px - 16px);
-	}
-
-	.tokens-content-list {
-		height: calc(100% - 1px - 0.5rem);
-		padding-bottom: 0.5rem;
-	}
-
 	.separator-header {
 		color: var(--separator_alternate);
 		width: calc(100% + 2rem);
