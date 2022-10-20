@@ -8,14 +8,14 @@ const isObject = (value) =>
 
 const transformTokenObject = (value) => {
 	const result = {};
-	const regularKeys = Object.keys(value.regular);
-	const compactKeys = Object.keys(value.compact);
+	const regularKeys = value.regular ? Object.keys(value.regular) : [];
+	const compactKeys = value.compact ? Object.keys(value.compact) : [];
 	const uniqKeys = regularKeys
 		.concat(compactKeys)
 		.filter((key, index, arr) => arr.indexOf(key) === index);
 	uniqKeys.forEach((key) => {
-		const regular = value.regular[key];
-		const compact = value.compact[key];
+		const regular = value?.regular?.[key];
+		const compact = value?.compact?.[key];
 		if (regular === compact) {
 			result[key] = regular;
 			return;
@@ -68,8 +68,7 @@ fs.readdirSync(THEMES_DIR).forEach((dir) => {
 
 		if (
 			isObject(value) &&
-			isObject(value.regular) &&
-			isObject(value.compact)
+			(isObject(value.regular) || isObject(value.compact))
 		) {
 			result[docsKey].value = transformTokenObject(value);
 		}
