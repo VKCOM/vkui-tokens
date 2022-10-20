@@ -1,4 +1,4 @@
-import {TokenItemValue} from '../types';
+import {TokenItemValue} from '@/shared/types';
 
 export function isExist(obj: unknown, key: string): boolean {
 	return Object.prototype.hasOwnProperty.call(obj, key);

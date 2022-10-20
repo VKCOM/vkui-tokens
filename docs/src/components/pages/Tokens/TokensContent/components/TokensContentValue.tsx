@@ -2,48 +2,19 @@ import {Paragraph} from '@vkontakte/vkui';
 import clsx from 'clsx';
 import React, {FC} from 'react';
 
-import {TokenItemValue, ValueType} from '../../../../../shared/types';
-import {
-	isColor,
-	isNumber,
-	isRegularCompactObj,
-	isRegularObj,
-	isString,
-} from '../../../../../shared/utils';
+import {TokenItemValue, ValueType} from '@/shared/types';
+import {isColor, isRegularCompactObj} from '@/shared/utils';
+
 import ColorCircle from './ColorCircle/ColorCircle';
+import {
+	getOneLineContent,
+	oneLineRenderCondition,
+} from './TokensContentValue.helpers';
 
 type Props = {
 	contentValue: TokenItemValue;
 	selectedValueType: ValueType;
 };
-
-function oneLineRenderCondition(contentValue: TokenItemValue): boolean {
-	return (
-		isString(contentValue) ||
-		isNumber(contentValue) ||
-		isRegularObj(contentValue) ||
-		isRegularCompactObj(contentValue)
-	);
-}
-
-function getOneLineContent(
-	value: TokenItemValue,
-	valueType: ValueType,
-): string | number {
-	if (isString(value) || isNumber(value)) {
-		return value;
-	}
-
-	if (isRegularObj(value) && valueType === 'regular') {
-		return value.regular;
-	}
-
-	if (isRegularCompactObj(value)) {
-		return value[valueType];
-	}
-
-	return '-';
-}
 
 const TokensContentValue: FC<Props> = ({contentValue, selectedValueType}) => {
 	if (oneLineRenderCondition(contentValue)) {

@@ -20,3 +20,11 @@ export type TokenItem = {
 export type Tokens = {
 	[key: string]: TokenItem;
 };
+
+type ChipValue = string | number;
+
+export interface ChipOption {
+	value?: ChipValue;
+	label?: string;
+	[otherProp: string]: any;
+}

@@ -47,12 +47,7 @@ module.exports = function (env, argv) {
 			publicPath: '/',
 		},
 		module: {
-			rules: [
-				config.modules.ts,
-				config.modules.js,
-				config.modules.css,
-				config.modules.svg,
-			],
+			rules: [config.modules.ts, config.modules.css, config.modules.svg],
 		},
 		plugins: [
 			new CleanWebpackPlugin({

@@ -5,8 +5,8 @@ import './styles/index.css';
 
 import React, {FC} from 'react';
 
-import Main from './components/layouts/Main';
-import Tokens from './pages/Tokens';
+import Main from '@/components/layouts/Main';
+import Tokens from '@/pages/Tokens';
 
 const App: FC = () => (
 	<Main>

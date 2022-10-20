@@ -5,8 +5,10 @@ import {copyTextToClipboard} from '@vkontakte/vkjs';
 import {Button, Paragraph, Separator, useAdaptivity} from '@vkontakte/vkui';
 import React, {FC, useMemo} from 'react';
 
-import {TokenItem, Tokens, ValueType} from '../../../../shared/types';
+import {Tokens, ValueType} from '@/shared/types';
+
 import TokensContentValue from './components/TokensContentValue';
+import {filterByDesc, filterByTags} from './TokensContent.helpers';
 
 type Props = {
 	tokens: Tokens;
@@ -14,18 +16,6 @@ type Props = {
 	selectedValueType: ValueType;
 	searchValue: string;
 };
-
-const filterByTags = (selectedTags: Array<string>, token: TokenItem) => {
-	if (selectedTags.length === 0) {
-		return true;
-	}
-	return selectedTags.some((sTag) => token.tags.includes(sTag));
-};
-
-const filterByDesc = (searchValue: string, token: TokenItem) =>
-	searchValue === ''
-		? true
-		: token.desc.toLowerCase().includes(searchValue.toLowerCase());
 
 const TokensContent: FC<Props> = ({
 	tokens,

@@ -1,4 +1,5 @@
-import {RegularCompactObj} from '../types';
+import {RegularCompactObj} from '@/shared/types';
+
 import {isExist} from './helpers';
 
 export function isString(value: unknown): value is string {

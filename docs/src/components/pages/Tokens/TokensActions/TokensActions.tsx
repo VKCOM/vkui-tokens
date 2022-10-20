@@ -11,8 +11,8 @@ import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
 import clsx from 'clsx';
 import React, {FC} from 'react';
 
-import {ChipOption} from '../../../../pages/Tokens';
-import {ValueType} from '../../../../shared/types';
+import {ChipOption, ValueType} from '@/shared/types';
+
 import {valueTypes} from './TokensActions.content';
 
 type Props = {

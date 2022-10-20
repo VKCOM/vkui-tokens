@@ -2,7 +2,8 @@ import {Icon24MenuOutline, Icon24SearchOutline} from '@vkontakte/icons';
 import {Card, IconButton, PanelHeader, useAdaptivity} from '@vkontakte/vkui';
 import React, {FC, useState} from 'react';
 
-import {LogoIcon} from '../../../../shared/content/icons';
+import {LogoIcon} from '@/shared/content/icons';
+
 import Navigation from '../Navigation/Navigation';
 
 const Header: FC = () => {

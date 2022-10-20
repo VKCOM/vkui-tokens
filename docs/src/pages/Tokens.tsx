@@ -1,21 +1,13 @@
 import {useAdaptivity} from '@vkontakte/vkui';
 import React, {FC, useState} from 'react';
 
-import tokensData from '../../public/static/data/tokensData.json';
 import {
 	TokensActions,
 	TokensContent,
 	TokensHeader,
-} from '../components/pages/Tokens';
-import {Tokens as TokensType, ValueType} from '../shared/types';
-
-type ChipValue = string | number;
-
-export interface ChipOption {
-	value?: ChipValue;
-	label?: string;
-	[otherProp: string]: any;
-}
+} from '@/components/pages/Tokens';
+import tokensData from '@/public/static/data/tokensData.json';
+import {ChipOption, Tokens as TokensType, ValueType} from '@/shared/types';
 
 const themes = Object.keys(tokensData);
 
