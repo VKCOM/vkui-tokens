@@ -48,6 +48,7 @@
     "@vkontakte/icons": "1.198.0",
     "@vkontakte/vk-bridge": "2.7.0",
     "@vkontakte/vkui": "4.38.0",
+    "babel-jest": "26.0.0",
     "babel-loader": "8.2.5",
     "clean-webpack-plugin": "4.0.0",
     "clsx": "1.2.1",
