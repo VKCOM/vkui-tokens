@@ -3,13 +3,13 @@ import React from 'react';
 
 export const valueTypes = [
 	{
-		label: <Icon20SmartphoneOutline aria-hidden="true" />,
-		value: 'compact',
+		label: <Icon20SmartphoneOutline aria-hidden="true" title="Regular" />,
+		value: 'regular',
 		'aria-label': 'Compact',
 	},
 	{
-		label: <Icon20ComputerOutline aria-hidden="true" />,
-		value: 'regular',
+		label: <Icon20ComputerOutline aria-hidden="true" title="Compact" />,
+		value: 'compact',
 		'aria-label': 'Regular',
 	},
 ];

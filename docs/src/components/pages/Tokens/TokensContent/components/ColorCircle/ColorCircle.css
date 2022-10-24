@@ -3,5 +3,5 @@
 	width: 14px;
 	height: 14px;
 	background-color: transparent;
-	border: 1px solid var(--input_border);
+	border: 1px solid var(--vkui--color_field_border_alpha);
 }

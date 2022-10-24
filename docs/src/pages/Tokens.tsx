@@ -39,7 +39,7 @@ const Tokens: FC = () => {
 	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
 	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
 	const [selectedValueType, setSelectedValueType] =
-		useState<ValueType>('compact');
+		useState<ValueType>('regular');
 	const [searchValue, setSearchValue] = useState('');
 
 	const searchChangeHandler = (
