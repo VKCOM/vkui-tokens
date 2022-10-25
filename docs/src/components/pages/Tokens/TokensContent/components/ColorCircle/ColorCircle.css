@@ -1,0 +1,7 @@
+.color-circle {
+	border-radius: 50%;
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
+	border: 1px solid var(--vkui--color_field_border_alpha);
+}

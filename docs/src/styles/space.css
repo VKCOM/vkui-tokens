@@ -1,0 +1,23 @@
+.space-x-1px > *:not(:first-child) {
+	margin-left: 1px;
+}
+
+.space-x-20px > *:not(:first-child) {
+	margin-left: 20px;
+}
+
+.space-y-12px > *:not(:first-child) {
+	margin-top: 12px;
+}
+
+.space-y-16px > *:not(:first-child) {
+	margin-top: 16px;
+}
+
+.space-y-24px > *:not(:first-child) {
+	margin-top: 24px;
+}
+
+.space-y-32px > *:not(:first-child) {
+	margin-top: 32px;
+}
