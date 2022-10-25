@@ -19,6 +19,6 @@ node_modules/
 ./dist/
 junit.xml
 !/docs/
-/docs/src/**/*.d.ts
+docs/src/**/*.d.ts
 docs/public/**/*.json
-./docs/dist/
+docs/dist/
