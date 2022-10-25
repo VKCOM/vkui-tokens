@@ -1,4 +1,4 @@
-import {RegularCompactObj, Token, Tokens} from './prepareTokensData';
+import {RegularCompactObj, StrNum, Token, Tokens} from './prepareTokensData';
 
 const isObject = (value: unknown): value is Record<string, unknown> =>
 	Object.prototype.toString.call(value) === '[object Object]' &&
@@ -6,9 +6,9 @@ const isObject = (value: unknown): value is Record<string, unknown> =>
 	value !== null;
 
 const transformRegularCompactObj = (
-	value: RegularCompactObj,
-): Record<string, RegularCompactObj> => {
-	const result: Record<string, RegularCompactObj> = {};
+	value: RegularCompactObj<Record<string, StrNum>>,
+): Record<string, RegularCompactObj | StrNum> => {
+	const result: Record<string, RegularCompactObj | StrNum> = {};
 	const regularKeys = value.regular ? Object.keys(value.regular) : [];
 	const compactKeys = value.compact ? Object.keys(value.compact) : [];
 	const uniqKeys = regularKeys
@@ -23,10 +23,10 @@ const transformRegularCompactObj = (
 		}
 		result[key] = {};
 		if (regular) {
-			result[key].regular = regular;
+			(result[key] as RegularCompactObj).regular = regular;
 		}
 		if (compact) {
-			result[key].compact = compact;
+			(result[key] as RegularCompactObj).compact = compact;
 		}
 	});
 	return result;
@@ -34,7 +34,12 @@ const transformRegularCompactObj = (
 
 export function mergeTokensData(
 	docs: Record<string, Pick<Token, 'tags' | 'desc'>>,
-	tokens: Record<string, string | number | RegularCompactObj>,
+	tokens: Record<
+		string,
+		| StrNum
+		| RegularCompactObj<Record<string, StrNum>>
+		| Record<string, StrNum>
+	>,
 ): Tokens {
 	const result: Record<string, Token> = {};
 	Object.keys(docs).forEach((docsKey) => {

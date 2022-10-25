@@ -3,14 +3,16 @@ import {mergeTokensData} from './mergeTokensData';
 const path = require('path');
 const fs = require('fs-extra');
 
-export type RegularCompactObj = {
-	regular?: string | number;
-	compact?: string | number;
+export type StrNum = string | number;
+
+export type RegularCompactObj<Type = StrNum> = {
+	regular?: Type;
+	compact?: Type;
 };
 
-type TokenValueObject = Record<string, string | number | RegularCompactObj>;
+type TokenValueObject = Record<string, StrNum | RegularCompactObj>;
 
-type TokenValue = string | number | TokenValueObject;
+type TokenValue = StrNum | TokenValueObject;
 
 export type Token = {
 	tags: Array<string>;
