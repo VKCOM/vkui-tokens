@@ -26,7 +26,7 @@
     "styleguide": "sh ./tasks/styleguide.sh",
     "docs:dev": "cd docs/webpack && webpack-dev-server --config webpack.client.js --mode development",
     "docs:build": "cd docs/webpack && webpack --config webpack.client.js --mode production",
-    "docs:prepare-data": "node ./tasks/docs/prepareTokensData.js"
+    "docs:prepare-data": "ts-node tasks/docs/prepareTokensData.ts"
   },
   "repository": "https://github.com/VKCOM/vkui-tokens.git",
   "dependencies": {
