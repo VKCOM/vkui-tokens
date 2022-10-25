@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpackConfig = require('./webpack.config');
@@ -23,11 +23,13 @@ module.exports = function (env, argv) {
 				},
 			},
 		},
+		minimize: false,
 		minimizer: [],
 	};
 
 	if (isProd) {
-		optimization.minimizer.push(new UglifyJsPlugin());
+		optimization.minimize = true;
+		optimization.minimizer.push(new TerserPlugin());
 	}
 
 	return {
@@ -51,6 +53,7 @@ module.exports = function (env, argv) {
 		},
 		plugins: [
 			new CleanWebpackPlugin({
+				dry: true,
 				dangerouslyAllowCleanPatternsOutsideProject: true,
 			}),
 			new HtmlWebpackPlugin({
