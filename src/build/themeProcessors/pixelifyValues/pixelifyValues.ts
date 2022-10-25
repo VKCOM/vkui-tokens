@@ -21,7 +21,7 @@ export function pixelifyValues<T = Theme>(sourceTheme: T): PixelifyTheme<T> {
 		}
 
 		if (typeof value === 'object') {
-			theme[key] = pixelifyValues(value as Partial<T>);
+			theme[key] = pixelifyValues(value as any as Partial<T>);
 		}
 
 		if (Number.isInteger(value)) {
