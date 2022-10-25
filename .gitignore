@@ -10,6 +10,7 @@ node_modules/
 /**/*.d.ts
 /**/*.js
 !/tasks
+!/tasks/**/*.js
 !.eslintrc.js
 !jest.config.js
 .yarnclean
@@ -17,3 +18,7 @@ node_modules/
 .idea
 ./dist/
 junit.xml
+!/docs/
+/docs/src/**/*.d.ts
+docs/public/**/*.json
+./docs/dist/
