@@ -3,7 +3,7 @@ name: Publish VKUI Tokens documentation to GitHub Pages
 on:
   push:
     branches:
-      - docs-page-vkui-tokens
+      - master
 
 permissions:
   contents: read
