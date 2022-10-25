@@ -110,6 +110,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
 	octaviusColorButtonBackgroundAlpha: ColorDescription;
+	octaviusColorButtonEmptyStateText: ColorDescription;
+	octaviusColorButtonEmptyStateBackgroundAlpha: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
@@ -207,6 +209,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparatorAlpha: ColorDescription;
 	octaviusColorListBackgroundPositiveAlpha: ColorDescription;
+	octaviusColorListBackgroundPositiveTagsOutline: ColorDescription;
 
 	/**
 	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
