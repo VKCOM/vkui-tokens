@@ -43,7 +43,7 @@
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "4.33.0",
-    "@typescript-eslint/parser": "4.22.0",
+    "@typescript-eslint/parser": "4.33.0",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v9.51.4",
     "@vkontakte/icons": "1.198.0",
     "@vkontakte/vk-bridge": "2.7.0",
