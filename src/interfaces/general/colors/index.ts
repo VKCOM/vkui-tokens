@@ -476,22 +476,106 @@ export interface ColorsDescriptionStruct {
 	colorAccentSecondary: ColorDescription;
 
 	// Other
+	/**
+	 * @desc Основной цвет для подложек оверлеев
+	 * @tags color, overlay
+	 */
 	colorOverlayPrimary: ColorDescription;
+
+	/**
+	 * @desc Фон для компонента Avatar. Не прозрачный
+	 * @tags color, component
+	 */
 	colorAvatarOverlay: ColorDescription;
+
+	/**
+	 * @desc Фон для компонента Avatar противоположный токену colorAvatarOverlay. Прозрачный
+	 * @tags color, component, alpha
+	 */
 	colorAvatarOverlayInverseAlpha: ColorDescription;
+
+	/**
+	 * @desc Цвет изображения для плейсхолдера
+	 * @tags color, component
+	 */
 	colorImagePlaceholder: ColorDescription;
+
+	/**
+	 * @desc Цвет изображения для плейсхолдера с прозрачностью
+	 * @tags color, component, alpha
+	 */
 	colorImagePlaceholderAlpha: ColorDescription;
+
+	/**
+	 * @desc Цвет для компонента Skeleton. Начальная точка градиента
+	 * @tags color, component
+	 */
 	colorSkeletonFrom: ColorDescription;
+
+	/**
+	 * @desc Цвет для компонента Skeleton. Конечная точка градиента
+	 * @tags color, component
+	 */
 	colorSkeletonTo: ColorDescription;
+
+	/**
+	 * @desc Цвет иконок в компоненте WriteBar
+	 * @tags color, component
+	 */
 	colorWriteBarIcon: ColorDescription;
+
+	/**
+	 * @desc Цвет фона поля ввода в компоненте WriteBar
+	 * @tags color, component
+	 */
 	colorWriteBarInputBackground: ColorDescription;
+
+	/**
+	 * @desc Цвет фона поля ввода в компоненте WriteBar с прозрачностью
+	 * @tags color, component, alpha
+	 */
 	colorWriteBarInputBorderAlpha: ColorDescription;
+
+	/**
+	 * @desc Цветовой токен для компонента ActionSheet. Отвечает за цвет текста
+	 * @tags color, component
+	 */
 	colorActionSheetText: ColorDescription;
+
+	/**
+	 * @desc Цвет фона для компонента Progress
+	 * @tags color, component
+	 */
 	colorTrackBackground: ColorDescription;
+
+	/**
+	 * @desc Цвет фона заполнения для компонента Progress
+	 * @tags color, component
+	 */
 	colorTrackBuffer: ColorDescription;
+
+	/**
+	 * @desc Цвет фона поиска. Компонент Search
+	 * @tags color, component, background
+	 */
 	colorSearchFieldBackground: ColorDescription;
+
+	/**
+	 * @desc Цвет иконок в компоненте PanelHeader
+	 * @tags color, component, icon
+	 */
 	colorPanelHeaderIcon: ColorDescription;
+
+	/**
+	 * @desc Прозрачный цвет. Используется для создания эффектов состояний для прозрачных компонентов
+	 * @tags color, alpha, service
+	 */
 	colorTransparent: ColorDescription;
+
+	/**
+	 * @desc Фон элементов компонента SegmentedControl
+	 * @tags color, component, background
+	 */
 	colorSegmentedControl: ColorDescription;
 
 	// Themed цвета, в тёмной теме становится белыми
