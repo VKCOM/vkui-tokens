@@ -20,31 +20,111 @@ import {
 import {Font} from '@/interfaces/general/typography';
 
 export interface LocalParadigmColorsDescriptionStruct {
+	/**
+	 * @desc Legacy. Цвет для контрастных кнопок Paradigm
+	 * @tags color, component, legacy
+	 */
 	colorButtonContrast: ColorDescription;
+
+	/**
+	 * @desc Legacy. Цвет для контрастных кнопок Paradigm с прозрачностью
+	 * @tags color, component, legacy, alpha
+	 */
 	colorButtonContrastAlpha: ColorDescription;
+
+	/**
+	 * @desc Legacy. Цвет для рейтингов
+	 * @tags color, component, legacy
+	 */
 	colorRating: ColorDescription;
+
+	/**
+	 * @desc Legacy. Цвет фона компонента Thumb с ошибкой
+	 * @tags color, component, background, legacy, alpha
+	 */
 	colorThumbErrorBackgroundAlpha: ColorDescription;
 
 	/**
 	 * @desc Тонированный акцентный фон с прозрачностью меняется на белый в темной теме
-	 * @tags color,background,alpha,themed
+	 * @tags color, background, alpha, themed
 	 */
 	colorBackgroundAccentTintThemedAlpha: ColorDescription;
+
 	/**
 	 * @desc Тонированный акцентный фон с прозрачностью
-	 * @tags color,background,alpha
+	 * @tags color, background, alpha
 	 */
 	colorBackgroundAccentTintAlpha: ColorDescription;
+
+	/**
+	 * @desc Тонированный акцентный фон меняется на белый в темной теме
+	 * @tags color, background, themed
+	 */
 	colorBackgroundAccentTintThemed: ColorDescription;
+
+	/**
+	 * @desc Тонированный цвет фона предупреждающих элементов. Меняется на
+	 *       нейтральный в темной теме. С прозрачностью
+	 * @tags color, background, alpha, themed
+	 */
 	colorBackgroundWarningTintThemedAlpha: ColorDescription;
+
+	/**
+	 * @desc Тонированный цвет фона предупреждающих элементов с прозрачностью
+	 * @tags color, background, alpha
+	 */
 	colorBackgroundWarningTintAlpha: ColorDescription;
+
+	/**
+	 * @desc Тонированный цвет фона предупреждающих элементов. Меняется на нейтральный в темной теме
+	 * @tags color, background, themed
+	 */
 	colorBackgroundWarningTintThemed: ColorDescription;
+
+	/**
+	 * @desc Тонированный цвет фона предупреждающих элементов
+	 * @tags color, background
+	 */
 	colorBackgroundWarningTint: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для ошибок и использования в негативных сценариях
+	 *       работы. Меняется на нейтральный в темной теме. С прозрачностью
+	 * @tags color, background, alpha, themed
+	 */
 	colorBackgroundNegativeTintThemedAlpha: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для ошибок и использования в негативных сценариях работы с прозрачностью
+	 * @tags color, background, alpha
+	 */
 	colorBackgroundNegativeTintAlpha: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для ошибок и использования в негативных сценариях
+	 *       работы. Меняется на нейтральный в темной теме
+	 * @tags color, background, themed
+	 */
 	colorBackgroundNegativeTintThemed: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для использования в позитивных сценариях работы.
+	 *       Меняется на нейтральный в темной теме. С прозрачностью
+	 * @tags color, background, alpha, themed
+	 */
 	colorBackgroundPositiveTintThemedAlpha: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для использования в позитивных сценариях работы с прозрачностью
+	 * @tags color, background, alpha
+	 */
 	colorBackgroundPositiveTintAlpha: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для использования в позитивных сценариях работы.
+	 *       Меняется на нейтральный в темной теме
+	 * @tags color, background, themed
+	 */
 	colorBackgroundPositiveTintThemed: ColorDescription;
 }
 
