@@ -166,21 +166,100 @@ export interface ColorsDescriptionStruct {
 	colorHeaderBackground: ColorDescription;
 
 	// Text
+	/**
+	 * @desc Акцентный цвет текста
+	 * @tags color, text
+	 */
 	colorTextAccent: ColorDescription;
+
+	/**
+	 * @desc Акцентный цвет текста, становится белым в темной теме
+	 * @tags color, text, themed
+	 */
 	colorTextAccentThemed: ColorDescription;
+
+	/**
+	 * @desc Основной цвет текста
+	 * @tags color, text
+	 */
 	colorTextPrimary: ColorDescription;
+
+	/**
+	 * @desc Основной цвет текста не меняется в зависимости от темы
+	 * @tags color, text
+	 */
 	colorTextPrimaryInvariably: ColorDescription;
+
+	/**
+	 * @desc Второстепенный цвет текста
+	 * @tags color, text
+	 */
 	colorTextSecondary: ColorDescription;
+
+	/**
+	 * @desc Цвет текста подзаголовков
+	 * @tags color, text
+	 */
 	colorTextSubhead: ColorDescription;
+
+	/**
+	 * @desc Третичный цвет текста
+	 * @tags color, text
+	 */
 	colorTextTertiary: ColorDescription;
+
+	/**
+	 * @desc Контрастный цвет для текста, не меняется в зависимости от темы
+	 * @tags color, text
+	 */
 	colorTextContrast: ColorDescription;
+
+	/**
+	 * @desc Контрастный цвет для текста
+	 * @tags color, text, themed
+	 */
 	colorTextContrastThemed: ColorDescription;
+
+	/**
+	 * @desc Цвет текста позитивных сценариев
+	 * @tags color, text
+	 */
 	colorTextPositive: ColorDescription;
+
+	/**
+	 * @desc Цвет текста ошибок или подсвечивания негативных сценариев
+	 * @tags color, text
+	 */
 	colorTextNegative: ColorDescription;
+
+	/**
+	 * @desc Цвет текста ссылок
+	 * @tags color, text
+	 */
 	colorTextLink: ColorDescription;
+
+	/**
+	 * @desc Цвет текста ссылок, становится белым в темной теме
+	 * @tags color, text, themed
+	 */
 	colorTextLinkThemed: ColorDescription;
+
+	/**
+	 * @desc Цвет текста посещенных ссылок
+	 * @tags color, text
+	 */
 	colorTextLinkVisited: ColorDescription;
+
+	/**
+	 * @desc Приглушенный цвет для текста
+	 * @tags color, text
+	 */
 	colorTextMuted: ColorDescription;
+
+	/**
+	 * @desc Контрастный цвет для ссылок. Белый на всех темах
+	 * @tags color
+	 */
 	colorLinkContrast: ColorDescription;
 
 	// Icons
