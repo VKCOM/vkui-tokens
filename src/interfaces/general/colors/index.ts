@@ -359,16 +359,71 @@ export interface ColorsDescriptionStruct {
 	 * @tags color,stroke
 	 */
 	colorStrokeAccent: ColorDescription;
+
+	/**
+	 * @desc Цвет акцентной ободки, на темной теме становится белым
+	 * @tags color, stroke, themed
+	 */
 	colorStrokeAccentThemed: ColorDescription;
+
+	/**
+	 * @desc Цвет обводки позитивных сценариев
+	 * @tags color, stroke
+	 */
 	colorStrokePositive: ColorDescription;
+
+	/**
+	 * @desc Цвет для обводки ошибок или подсвечивания негативных сценариев
+	 * @tags color, stroke
+	 */
 	colorStrokeNegative: ColorDescription;
+
+	/**
+	 * @desc Контрастный цвет для обводки. Не меняется в зивисимости от темы
+	 * @tags color, stroke
+	 */
 	colorStrokeContrast: ColorDescription;
+
+	/**
+	 * @desc Цвет обводки для изображений с прозрачностью
+	 * @tags color, component, alpha
+	 */
 	colorImageBorderAlpha: ColorDescription;
+
+	/**
+	 * @desc Обводка полей ввода, селектов и других компонентов. С прозрачностью
+	 * @tags color, component, alpha
+	 */
 	colorFieldBorderAlpha: ColorDescription;
+
+	/**
+	 * @desc Цвет разделителей основной с прозрачностью
+	 * @tags color, stroke, alpha
+	 */
 	colorSeparatorPrimaryAlpha: ColorDescription;
+
+	/**
+	 * @desc Цвет разделителей второстепенный
+	 * @tags color, stroke
+	 */
 	colorSeparatorSecondary: ColorDescription;
+
+	/**
+	 * @desc Цвет разделителей основной
+	 * @tags color, stroke
+	 */
 	colorSeparatorPrimary: ColorDescription;
+
+	/**
+	 * @desc Цвет разделителей основной для экранов с разрешением 2х
+	 * @tags color, stroke
+	 */
 	colorSeparatorPrimary2x: ColorDescription;
+
+	/**
+	 * @desc Цвет разделителей основной для экранов с разрешением 3х
+	 * @tags color, stroke
+	 */
 	colorSeparatorPrimary3x: ColorDescription;
 
 	// Palette
