@@ -41,7 +41,7 @@ export interface ColorsDescriptionStruct {
 
 	/**
 	 * @desc Акцентный фон который меняется на белый в темной теме
-	 * @tags color, background, themes
+	 * @tags color, background, themed
 	 */
 	colorBackgroundAccentThemed: ColorDescription;
 
@@ -155,13 +155,13 @@ export interface ColorsDescriptionStruct {
 
 	/**
 	 * @desc Фон для полей ввода, селектов и других подобных компонентов
-	 * @tags color, component
+	 * @tags color, component, background
 	 */
 	colorFieldBackground: ColorDescription;
 
 	/**
 	 * @desc Цвет фона. Используется в компоненте Header
-	 * @tags color, component
+	 * @tags color, component, background
 	 */
 	colorHeaderBackground: ColorDescription;
 
@@ -520,13 +520,13 @@ export interface ColorsDescriptionStruct {
 
 	/**
 	 * @desc Цвет иконок в компоненте WriteBar
-	 * @tags color, component
+	 * @tags color, component, icon
 	 */
 	colorWriteBarIcon: ColorDescription;
 
 	/**
 	 * @desc Цвет фона поля ввода в компоненте WriteBar
-	 * @tags color, component
+	 * @tags color, component, background
 	 */
 	colorWriteBarInputBackground: ColorDescription;
 
@@ -538,13 +538,13 @@ export interface ColorsDescriptionStruct {
 
 	/**
 	 * @desc Цветовой токен для компонента ActionSheet. Отвечает за цвет текста
-	 * @tags color, component
+	 * @tags color, component, text
 	 */
 	colorActionSheetText: ColorDescription;
 
 	/**
 	 * @desc Цвет фона для компонента Progress
-	 * @tags color, component
+	 * @tags color, component, background
 	 */
 	colorTrackBackground: ColorDescription;
 
