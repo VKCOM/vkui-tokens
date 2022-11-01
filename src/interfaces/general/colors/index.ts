@@ -33,27 +33,136 @@ export type ColorDescription<
  */
 export interface ColorsDescriptionStruct {
 	// Background
+	/**
+	 * @desc Акцентный фон для элементов интерфейса
+	 * @tags color, background
+	 */
 	colorBackgroundAccent: ColorDescription;
+
+	/**
+	 * @desc Акцентный фон который меняется на белый в темной теме
+	 * @tags color, background, themes
+	 */
 	colorBackgroundAccentThemed: ColorDescription;
+
+	/**
+	 * @desc Тонированный акцентный фон
+	 * @tags color, background
+	 */
 	colorBackgroundAccentTint: ColorDescription;
+
+	/**
+	 * @desc Альтернативный акцентный фон элементов интерфейса
+	 * @tags color, background
+	 */
 	colorBackgroundAccentAlternative: ColorDescription;
+
+	/**
+	 * @desc Основной фон страницы
+	 * @tags color, background
+	 */
 	colorBackground: ColorDescription;
+
+	/**
+	 * @desc Цвет фона под контентом на странице
+	 * @tags color, background
+	 */
 	colorBackgroundContent: ColorDescription;
+
+	/**
+	 * @desc Второстепенный цвет фона
+	 * @tags color, background
+	 */
 	colorBackgroundSecondary: ColorDescription;
+
+	/**
+	 * @desc Второстепенный цвет фона с прозрачностью
+	 * @tags color, background, alpha
+	 */
 	colorBackgroundSecondaryAlpha: ColorDescription;
+
+	/**
+	 * @desc Третичный цвет для фона
+	 * @tags color, background
+	 */
 	colorBackgroundTertiary: ColorDescription;
+
+	/**
+	 * @desc Третичный цвет для фона с прозрачностью
+	 * @tags color, background, alpha
+	 */
 	colorBackgroundTertiaryAlpha: ColorDescription;
+
+	/**
+	 * @desc Белый контрастный фон, не зависит от темы
+	 * @tags color, background
+	 */
 	colorBackgroundContrast: ColorDescription;
+
+	/**
+	 * @desc Второстепенный контрастный фон с прозрачностью
+	 * @tags color, background, alpha
+	 */
 	colorBackgroundContrastSecondaryAlpha: ColorDescription;
+
+	/**
+	 * @desc Противоположный белому контрастному фон, не зависит от темы
+	 * @tags color, background
+	 */
 	colorBackgroundContrastInverse: ColorDescription;
+
+	/**
+	 * @desc Фон для всплывающих окон
+	 * @tags color, background
+	 */
 	colorBackgroundModal: ColorDescription;
+
+	/**
+	 * @desc Противоположный цвет для фона всплывающих окон.
+	 * @tags color, background
+	 */
 	colorBackgroundModalInverse: ColorDescription;
+
+	/**
+	 * @desc Цвет фона предупреждающих элементов
+	 * @tags color, background
+	 */
 	colorBackgroundWarning: ColorDescription;
+
+	/**
+	 * @desc Фон для использования в позитивных сценариях работы
+	 * @tags color, background
+	 */
 	colorBackgroundPositive: ColorDescription;
+
+	/**
+	 * @desc Фон для ошибок и использования в негативных сценариях работы
+	 * @tags color, background
+	 */
 	colorBackgroundNegative: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для ошибок и использования в негативных сценариях работы
+	 * @tags color, background
+	 */
 	colorBackgroundNegativeTint: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для использования в позитивных сценариях работы
+	 * @tags color, background
+	 */
 	colorBackgroundPositiveTint: ColorDescription;
+
+	/**
+	 * @desc Фон для полей ввода, селектов и других подобных компонентов
+	 * @tags color, component
+	 */
 	colorFieldBackground: ColorDescription;
+
+	/**
+	 * @desc Цвет фона. Используется в компоненте Header
+	 * @tags color, component
+	 */
 	colorHeaderBackground: ColorDescription;
 
 	// Text
