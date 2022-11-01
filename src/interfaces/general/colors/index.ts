@@ -427,13 +427,52 @@ export interface ColorsDescriptionStruct {
 	colorSeparatorPrimary3x: ColorDescription;
 
 	// Palette
+	/**
+	 * @desc Палитра цветов. Голубой цвет
+	 * @tags color, palette
+	 */
 	colorAccentBlue: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Серый цвет
+	 * @tags color, palette
+	 */
 	colorAccentGray: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Красный цвет
+	 * @tags color, palette
+	 */
 	colorAccentRed: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Зелёный цвет
+	 * @tags color, palette
+	 */
 	colorAccentGreen: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Оранжевый цвет
+	 * @tags color, palette
+	 */
 	colorAccentOrange: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Фиолетовый цвет
+	 * @tags color, palette
+	 */
 	colorAccentPurple: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Лиловый цвет
+	 * @tags color, palette
+	 */
 	colorAccentViolet: ColorDescription;
+
+	/**
+	 * @desc Второстепенный акцентный цвет для отдельных проектов
+	 * @tags color, palette
+	 */
 	colorAccentSecondary: ColorDescription;
 
 	// Other
