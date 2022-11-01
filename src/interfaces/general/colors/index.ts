@@ -263,20 +263,94 @@ export interface ColorsDescriptionStruct {
 	colorLinkContrast: ColorDescription;
 
 	// Icons
+	/**
+	 * @desc Акцентный цвет иконок
+	 * @tags color, icon
+	 */
 	colorIconAccent: ColorDescription;
+
+	/**
+	 * @desc Акцентный цвет иконок, меняется на контрастный в темной теме
+	 * @tags color, icon, themed
+	 */
 	colorIconAccentThemed: ColorDescription;
+
+	/**
+	 * @desc Основной цвет иконок
+	 * @tags color, icon
+	 */
 	colorIconPrimary: ColorDescription;
+
+	/**
+	 * @desc Основной цвет иконок который не меняется в зависимости от тем
+	 * @tags color, icon
+	 */
 	colorIconPrimaryInvariably: ColorDescription;
+
+	/**
+	 * @desc Средний по насыщенности цвет иконок
+	 * @tags color, icon
+	 */
 	colorIconMedium: ColorDescription;
+
+	/**
+	 * @desc Средний по насыщенности цвет иконок с прозрачностью
+	 * @tags color, icon, alpha
+	 */
 	colorIconMediumAlpha: ColorDescription;
+
+	/**
+	 * @desc Второстепенный цвет для иконок
+	 * @tags color, icon
+	 */
 	colorIconSecondary: ColorDescription;
+
+	/**
+	 * @desc Второстепенный цвет для иконок с прозрачностью
+	 * @tags color, icon, alpha
+	 */
 	colorIconSecondaryAlpha: ColorDescription;
+
+	/**
+	 * @desc Третичный цвет для иконок
+	 * @tags color, icon
+	 */
 	colorIconTertiary: ColorDescription;
+
+	/**
+	 * @desc Третичный цвет для иконок с прозрачностью
+	 * @tags color, icon, alpha
+	 */
 	colorIconTertiaryAlpha: ColorDescription;
+
+	/**
+	 * @desc Белый цвет иконок
+	 * @tags color, icon
+	 */
 	colorIconContrast: ColorDescription;
+
+	/**
+	 * @desc Белый цвет иконок, который меняется в темной теме
+	 * @tags color, icon, themed
+	 */
 	colorIconContrastThemed: ColorDescription;
+
+	/**
+	 * @desc Второстепенный белый цвет иконок
+	 * @tags color, icon
+	 */
 	colorIconContrastSecondary: ColorDescription;
+
+	/**
+	 * @desc Цвет иконок для позитивных сценариев
+	 * @tags color, icon
+	 */
 	colorIconPositive: ColorDescription;
+
+	/**
+	 * @desc Цвет иконок для ошибок и других негативных сценариев
+	 * @tags color, icon
+	 */
 	colorIconNegative: ColorDescription;
 
 	// Stroke
