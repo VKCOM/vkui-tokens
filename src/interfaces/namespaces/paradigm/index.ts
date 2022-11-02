@@ -223,11 +223,23 @@ export interface ParadigmLocalFonts {
 	// большие шрифты
 	/**
 	 * @desc Legacy. Крупный заголовок из темы Paradigm
-	 * @tags font
+	 * @tags font, legacy
 	 * @deprecated
 	 */
 	fontH0: Font;
+
+	/**
+	 * @desc Legacy. Крупный заголовок из темы Paradigm
+	 * @tags font, legacy
+	 * @deprecated
+	 */
 	fontH1: Font;
+
+	/**
+	 * @desc Legacy. Крупный заголовок из темы Paradigm
+	 * @tags font, legacy
+	 * @deprecated
+	 */
 	fontH2: Font;
 }
 
