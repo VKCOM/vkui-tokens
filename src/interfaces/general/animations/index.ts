@@ -9,8 +9,28 @@ export interface Animations {
 	 * @tags animation
 	 */
 	animationEasingDefault: Property.TransitionTimingFunction;
+
+	/**
+	 * @desc Параметры кривой анимации в зависимости от платформы
+	 * @tags animation
+	 */
 	animationEasingPlatform: Property.TransitionTimingFunction;
+
+	/**
+	 * @desc Длительность анимации (минимальное значение)
+	 * @tags animation
+	 */
 	animationDurationS: string;
+
+	/**
+	 * @desc Длительность анимации (среднее значение)
+	 * @tags animation
+	 */
 	animationDurationM: string;
+
+	/**
+	 * @desc Длительность анимации (максимальное значение)
+	 * @tags animation
+	 */
 	animationDurationL: string;
 }

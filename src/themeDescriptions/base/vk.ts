@@ -6,10 +6,10 @@ import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
 import {Elevation} from '@/interfaces/general/elevation';
 import {Gradients} from '@/interfaces/general/gradients';
 
-const fontFamilyAccent =
-	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const fontFamilyBase =
-	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const FONT_FAMILY_DEFAULT = 'VK Sans Text';
+
+const fontFamilyAccent = `"${FONT_FAMILY_DEFAULT}", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
+const fontFamilyBase = `"${FONT_FAMILY_DEFAULT}", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
 const fontWeightAccent1 = 600;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
