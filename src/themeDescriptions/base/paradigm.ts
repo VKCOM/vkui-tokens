@@ -149,9 +149,9 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundContent: '#232324',
 		colorBackgroundSecondary: '#2A2A2B',
 		colorBackgroundSecondaryAlpha: {
-			normal: 'rgba(255, 255, 255, 0.03)',
-			hover: 'rgba(255, 255, 255, 0.11)',
-			active: 'rgba(255, 255, 255, 0.15)',
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
 		},
 		colorBackgroundTertiary: colorBackgroundTertiaryDark,
 		colorBackgroundTertiaryAlpha: {
