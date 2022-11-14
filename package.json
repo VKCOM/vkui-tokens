@@ -47,7 +47,7 @@
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v9.51.4",
     "@vkontakte/icons": "1.201.0",
     "@vkontakte/vk-bridge": "2.7.0",
-    "@vkontakte/vkui": "4.38.0",
+    "@vkontakte/vkui": "4.39.0",
     "babel-jest": "26.0.0",
     "babel-loader": "8.2.5",
     "clean-webpack-plugin": "4.0.0",

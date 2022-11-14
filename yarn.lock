@@ -1204,14 +1204,7 @@
     core-js-pure "^3.25.1"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2":
-  version "7.19.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.0.tgz#22b11c037b094d27a8a2504ea4dcff00f50e2259"
-  integrity sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.14.6", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.14.6", "@babel/runtime@^7.8.4":
   version "7.19.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.19.4.tgz#a42f814502ee467d55b38dd1c256f53a7b885c78"
   integrity sha512-EXpLCrk55f+cYqmHsSR+yD/0gAIMxxA9QK9lnQWzhMCvt+YmoBN7Zx94s++Kv0+unHk39vxNO8t+CMA2WSS3wA==
@@ -2240,19 +2233,19 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.7.0.tgz#6a3c422b75d2ddd20dfad66d9418ab3921974a15"
   integrity sha512-Y3w3PivRaa/QkwKvwDdk+hWYdLRwqnFuxNJN3Z59PcEjLlCqgGbQ1x8vSZiEoLRmqjmV7NOqN+5fWnCCvGVNoQ==
 
-"@vkontakte/vkjs@^0.23.0":
-  version "0.23.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.23.0.tgz#d047a1d7a56bb1ed671a9c82cc2525afaa67d26f"
-  integrity sha512-qRQFkQqbN5UyG/zBAUgmmzId6DpNp8HoUPt7Zv9Zj1HAelwS5vpR8Mczs8dlwa5Q5V0YB22YVCtvvOF/2Ucmnw==
+"@vkontakte/vkjs@^0.27.0":
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.27.0.tgz#90860084b397464853da3b7966c89ec8cd13b459"
+  integrity sha512-f/NC5GFRYzzcV6vUHJZo75Z5i0cFT8itOQh6q9fI7Wz6OOtrlifnsG1wrZpWmjej3cTPHV9/jg1NErxrI3Z5xA==
 
-"@vkontakte/vkui@4.38.0":
-  version "4.38.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-4.38.0.tgz#c47b1801b22b8f11ce5aff03e9ffc1c7d1bbd20c"
-  integrity sha512-9APCjpsFiRdtirCx29Tpy9TMRg5PJT1HHnx3LXRiRN9EHdfTiFyPOl5LH/7Ze+y5cukGi61Zn76cA3eDIbEU3w==
+"@vkontakte/vkui@4.39.0":
+  version "4.39.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-4.39.0.tgz#1b373ef869a68801d125faeeb65b57bfd6f38538"
+  integrity sha512-wWgCCzfaBq0ErHG9gFaH/yjhhBjWjoYfMi71UTX14RJqYTC7okgdGTuUq3PXqqZTaSUNUg2B5IvfREdyzka0tg==
   dependencies:
     "@babel/runtime" "^7.14.6"
     "@popperjs/core" "^2.9.2"
-    "@vkontakte/vkjs" "^0.23.0"
+    "@vkontakte/vkjs" "^0.27.0"
     dayjs "^1.11.0"
     mitt "^3.0.0"
     react-popper "^2.2.5"
