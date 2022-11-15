@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.20.2",
-    "@svgr/webpack": "6.4.0",
+    "@svgr/webpack": "6.5.1",
     "@types/color": "3.0.3",
     "@types/common-tags": "1.8.1",
     "@types/fs-extra": "9.0.13",
