@@ -23,6 +23,7 @@ import {
 import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
 import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
 import {promoTheme} from '@/themeDescriptions/themes/promo';
+import {pulseTheme, pulseThemeDark} from '@/themeDescriptions/themes/pulse';
 import {searchTheme} from '@/themeDescriptions/themes/search';
 import {todoTheme} from '@/themeDescriptions/themes/todo';
 import {vkComTheme, vkComThemeDark} from '@/themeDescriptions/themes/vkCom';
@@ -76,6 +77,10 @@ export const themes = [
 	// Темы, наследуемые от Cloud
 	cloudTheme,
 	cloudDarkTheme,
+
+	// Темы, наследуемые от Pulse
+	pulseTheme,
+	pulseThemeDark,
 
 	// Прочие темы
 	callsTheme,
