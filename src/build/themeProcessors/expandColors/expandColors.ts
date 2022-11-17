@@ -33,11 +33,26 @@ const getColorWithStates = ({
 	colorState: Property.Color;
 	toneValueActive: number;
 	toneValueHover: number;
-}): ColorWithStates => ({
-	normal: colorArg,
-	hover: mixColors(colorArg, colorState, toneValueHover),
-	active: mixColors(colorArg, colorState, toneValueActive),
-});
+}): ColorWithStates => {
+	// Исправляет hover и action цвета в темной теме для белого цвета
+	if (
+		typeof colorArg === 'string' &&
+		colorArg.toLowerCase() === '#ffffff' &&
+		colorState === '#FFFFFF'
+	) {
+		return {
+			normal: '#FFFFFF',
+			hover: '#EBEDF0',
+			active: '#D7D8DB',
+		};
+	}
+
+	return {
+		normal: colorArg,
+		hover: mixColors(colorArg, colorState, toneValueHover),
+		active: mixColors(colorArg, colorState, toneValueActive),
+	};
+};
 
 function expandCallableColor<T extends {[key in keyof T]: ColorDescription}>(
 	color: ColorDescription<T>,

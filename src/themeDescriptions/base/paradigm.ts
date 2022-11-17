@@ -144,11 +144,7 @@ export const darkColors: ColorsDescription = {
 	colors: {
 		// Background
 		colorBackgroundAccent: '#2775FC',
-		colorBackgroundAccentThemed: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorBackgroundAccentThemed: '#FFFFFF',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#232324',
 		colorBackgroundSecondary: '#2A2A2B',
@@ -164,11 +160,7 @@ export const darkColors: ColorsDescription = {
 			active: 'rgba(255, 255, 255, 0.14)',
 		},
 		colorBackground: '#19191A',
-		colorBackgroundContrast: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorBackgroundContrast: '#FFFFFF',
 		colorBackgroundContrastSecondaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.2)',
 			hover: 'rgba(255, 255, 255, 0.24)',
@@ -181,28 +173,16 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundNegativeTint: '#522e2e',
 		colorBackgroundPositiveTint: '#182A22',
 		colorFieldBackground: '#232324',
-		colorBackgroundModalInverse: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorBackgroundModalInverse: '#ffffff',
 		colorBackgroundContrastInverse: '#303030',
 		colorBackgroundAccentTint: '#5a9eff',
 
 		// Text
 		colorTextAccent: '#3C82FD',
-		colorTextAccentThemed: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorTextAccentThemed: '#FFFFFF',
 		colorTextNegative: '#ED0A34',
 		colorTextLink: '#589BFF',
-		colorTextLinkThemed: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorTextLinkThemed: '#FFFFFF',
 		colorTextMuted: '#E7E8EA',
 		colorTextPrimary: '#E7E8EA',
 		colorTextPrimaryInvariably: '#2C2D2E',
@@ -210,26 +190,14 @@ export const darkColors: ColorsDescription = {
 		colorTextSubhead: '#BFC1C5',
 		colorTextTertiary: '#74767A',
 		colorTextLinkVisited: '#528FDF',
-		colorTextContrast: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorTextContrast: '#FFFFFF',
 		colorTextContrastThemed: '#2C2D2E',
-		colorLinkContrast: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
 
 		// Icons
 		colorIconAccent: '#3C82FD',
-		colorIconAccentThemed: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorIconAccentThemed: '#FFFFFF',
 		colorIconNegative: '#ED0A34',
 		colorIconPrimary: '#D9DADD',
 		colorIconPrimaryInvariably: '#2C2D2E',
@@ -239,27 +207,15 @@ export const darkColors: ColorsDescription = {
 		colorIconSecondaryAlpha: 'rgba(245, 246, 255, 0.6)',
 		colorIconTertiary: '#83848A',
 		colorIconTertiaryAlpha: 'rgba(245, 246, 255, 0.5)',
-		colorIconContrast: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
-		colorStrokeAccentThemed: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
-		colorStrokeContrast: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
-		},
+		colorStrokeAccentThemed: '#FFFFFF',
+		colorStrokeContrast: '#FFFFFF',
 		colorStrokeNegative: '#ED0A34',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.16)',
