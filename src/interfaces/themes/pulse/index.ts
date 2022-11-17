@@ -111,8 +111,9 @@ export type AllowedParadigmColorTokens =
 	| 'colorBackgroundSecondaryAlpha'
 	| 'colorBackgroundTertiary'
 	| 'colorBackgroundAccent'
-	| 'colorBackgroundPositiveTintAlpha'
+	| 'colorBackgroundAccentTintAlpha'
 	| 'colorBackgroundNegativeTintAlpha'
+	| 'colorBackgroundPositiveTintAlpha'
 	| 'colorBackgroundWarningTintAlpha'
 	| 'colorBackgroundAccentThemed'
 	| 'colorBackgroundNegative'
@@ -200,7 +201,6 @@ export interface ThemePulseZIndex {
 
 export interface ThemePulseColors {
 	pulseColorAccentYellow: ColorDescription;
-	pulseColorBackgroundInfoTintAlpha: ColorDescription;
 	pulseColorBackgroundPurple: ColorDescription;
 	pulseColorOverlayViewer: ColorDescription;
 	pulseColorPurpleAlpha: ColorDescription;
