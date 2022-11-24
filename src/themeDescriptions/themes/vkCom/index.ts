@@ -106,7 +106,9 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 
 	// Stroke
 	colorStrokeAccent: resolveColor(theme.colors.accent),
-	colorStrokeAccentThemed: resolveColor(theme.colors.accent),
+	colorStrokeAccentThemed: resolveColor(
+		theme.colors.button_primary_background,
+	),
 	// colorSeparatorPrimary: '#363738', // resolveColor(theme.colors.separator_common),
 	// colorSeparatorPrimary2x: '#444546',
 	// colorSeparatorPrimary3x: '#505253',
@@ -204,6 +206,12 @@ const vkComDarkColor: ColorsDescription = {
 	colors: {
 		...darkColors.colors,
 		...vkComColors(vkcom_dark),
+
+		colorBackgroundAccentThemed: {
+			normal: resolveColor(vkcom_dark.colors.button_primary_background),
+			hover: '#D8DBDF',
+			active: '#CFD2D8',
+		},
 	},
 };
 
