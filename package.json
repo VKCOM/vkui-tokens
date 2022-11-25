@@ -46,7 +46,7 @@
     "@typescript-eslint/parser": "4.33.0",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v9.51.4",
     "@vkontakte/icons": "1.205.0",
-    "@vkontakte/vk-bridge": "2.7.0",
+    "@vkontakte/vk-bridge": "2.7.1",
     "@vkontakte/vkui": "4.39.0",
     "babel-jest": "26.0.0",
     "babel-loader": "9.1.0",
