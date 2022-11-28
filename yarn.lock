@@ -1978,10 +1978,10 @@
   dependencies:
     svg-baker-runtime "1.4.7"
 
-"@vkontakte/vk-bridge@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.7.0.tgz#6a3c422b75d2ddd20dfad66d9418ab3921974a15"
-  integrity sha512-Y3w3PivRaa/QkwKvwDdk+hWYdLRwqnFuxNJN3Z59PcEjLlCqgGbQ1x8vSZiEoLRmqjmV7NOqN+5fWnCCvGVNoQ==
+"@vkontakte/vk-bridge@2.7.2":
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.7.2.tgz#284380d3d5f54774741e6a2e67cce9fbe62e2072"
+  integrity sha512-m/cgWEbd4Xi49xyS0tn14h3b8fLTG3Vw/wNo72k5sw5ILf8SFzB1CAyruc7kKBE6Xc8ibyIydVx1YkHwW1O0PA==
 
 "@vkontakte/vkjs@^0.27.0":
   version "0.27.0"
