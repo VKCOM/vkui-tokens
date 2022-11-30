@@ -95,3 +95,5 @@ pull request одобрил кто-то из мейнтейнеров репоз
         * otvetDark
     * pharma
     * promo
+    * pulse
+        * pulseDark
