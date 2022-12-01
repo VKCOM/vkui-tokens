@@ -551,6 +551,12 @@ export interface ParadigmBorders {
 	 * @deprecated
 	 */
 	typeBorderButton: Property.BorderStyle;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy
+	 * @deprecated
+	 */
 	typeBorderPosition: Property.BorderStyle;
 }
 
