@@ -4,5 +4,10 @@ export interface ToneValues {
 	 * @tags opacity
 	 */
 	opacityDisable: number;
+
+	/**
+	 * @desc Значение прозрачности подходящее под параметры аксесабилити
+	 * @tags opacity
+	 */
 	opacityDisableAccessibility: number;
 }
