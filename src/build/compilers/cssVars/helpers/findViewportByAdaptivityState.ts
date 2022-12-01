@@ -8,7 +8,7 @@ import {
 export function findViewportByAdaptivityState<
 	Vt extends ViewportsTuple = DefaultViewports,
 >(
-	breakpoints: Breakpoints<Vt>['breakpoints'],
+	breakpoints: Partial<Breakpoints<Vt>['breakpoints']>,
 	adaptivityState: keyof Adaptive<any>,
 ): Viewports {
 	return (Object.keys(breakpoints) as Viewports[]).find(
