@@ -34,13 +34,5 @@ jobs:
           node-version: '18'
       - run: yarn
       - run: npm run build
-  docs:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - run: yarn
       - run: npm run docs:prepare-data
       - run: npm run docs:build
