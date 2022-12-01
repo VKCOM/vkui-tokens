@@ -6,7 +6,7 @@ import {convertCamelToSnake} from '@/build/helpers/convertCamelToSnake';
 import {getOnlyColors} from '@/build/helpers/getOnlyColors';
 import {processCustomMedia} from '@/build/themeProcessors/customMedia/customMedia';
 import {Theme, ThemeCssVarsWide} from '@/interfaces/general';
-import {Adaptive} from '@/interfaces/general/tools';
+import {Adaptive, Breakpoints} from '@/interfaces/general/tools';
 
 import {accumulateValues} from '../helpers/accumulateValues';
 import {getVarString} from '../helpers/getVarString';
@@ -26,7 +26,8 @@ export function compileBreakpointsCssVarsDeclaration<T = Theme>(
 	if (!('breakpoints' in sourceTheme)) {
 		return null;
 	}
-	const breakpoints = sourceTheme['breakpoints'];
+	const breakpoints: Partial<Breakpoints['breakpoints']> =
+		sourceTheme['breakpoints'];
 	const customMedia = processCustomMedia(sourceTheme as any);
 
 	const theme: ThemeCssVarsWide<T> =

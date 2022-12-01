@@ -1,11 +1,6 @@
 module.exports = {
 	preset: 'ts-jest',
 	testEnvironment: 'node',
-	globals: {
-		'ts-jest': {
-			babelConfig: true,
-		},
-	},
 	moduleNameMapper: {
 		'^@/(.*)$': '<rootDir>/src/$1',
 	},
@@ -17,7 +12,12 @@ module.exports = {
 		'!<rootDir>/src/build/compilers/legacy/**/*.ts',
 	],
 	transform: {
-		'^.+(\\.d)!\\.tsx?$': 'ts-jest',
+		'^.+(\\.d)!\\.tsx?$': [
+			'ts-jest',
+			{
+				babelConfig: true,
+			},
+		],
 	},
 	coverageThreshold: {
 		global: {
