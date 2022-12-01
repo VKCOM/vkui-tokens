@@ -135,62 +135,368 @@ export type ParadigmLocalColors = {
 // кажется, половина переменных тут вообще не нужны или не используются
 // @todo перевьюить их с Зубановым
 export interface ParadigmLocalSizes {
-	sizeArrowHeight: number;
-	sizeArrowWidth: number;
-	sizeBasePadding: number;
 	/**
 	 * @desc Legacy
-	 * @tags size,legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
+	sizeArrowHeight: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
+	sizeArrowWidth: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
+	sizeBasePadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
 	 * @deprecated
 	 */
 	sizeBorderWidthTab: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeBorderWidthBar: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeBorderWidthAccent: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeBorderWidthAccentSecondary: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeControlButtonWidthMin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizePromoButtonClose: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeButtonSliderHeight: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeButtonSliderWidth: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeButtonSliderWidthPointer: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeFieldWidthMin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeLabelWidth: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeProgress: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeProgressScroll: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeDotBullet: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeDotIndicate: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeDotClickable: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeVerticalPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeButtonMorePadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeIconMorePadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeButtonIconPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeDivPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeMenuPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeTagPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeTabPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeTableHorizontalPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeTableVerticalPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeSliceTopPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeSliceBottomPadding: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeBaseMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeLabelVerticalMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeTipMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeFieldHorizontalMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeFieldVerticalMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeFieldSetMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeIconMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeChoiceMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeMenuMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeTagMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeTabMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeBulletMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeAttributeMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizePopupMargin: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeHeaderIcon: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeWysiwygIcon: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeIllustrationS: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeIllustrationXM: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeIllustrationM: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeIllustrationL: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags size, legacy
+	 * @deprecated
+	 */
 	sizeIllustrationXXL: number;
 }
 
