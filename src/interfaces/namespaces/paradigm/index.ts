@@ -246,24 +246,114 @@ export interface ParadigmLocalFonts {
 export interface ParadigmHelpers {
 	/**
 	 * @desc Legacy
-	 * @tags legacy,size
+	 * @tags legacy, size
 	 * @deprecated
 	 */
 	sizeBase: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	sizeGrid: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x0: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x025: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x05: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x1: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x2: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x3: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x4: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x5: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x6: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x8: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x10: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x12: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x15: number;
+
+	/**
+	 * @desc Legacy
+	 * @tags legacy, size
+	 * @deprecated
+	 */
 	x20: number;
 }
 
