@@ -507,10 +507,40 @@ export interface ParadigmToneValues {
 	 * @deprecated
 	 */
 	toneValueOverlay: number;
+
+	/**
+	 * @desc Legacy. Значение прозрачности
+	 * @tags legacy
+	 * @deprecated
+	 */
 	toneValueViewer: number;
+
+	/**
+	 * @desc Legacy. Значение прозрачности
+	 * @tags legacy
+	 * @deprecated
+	 */
 	toneValueToolbar: number;
+
+	/**
+	 * @desc Legacy. Значение прозрачности
+	 * @tags legacy
+	 * @deprecated
+	 */
 	toneValueHover: number;
+
+	/**
+	 * @desc Legacy. Значение прозрачности
+	 * @tags legacy
+	 * @deprecated
+	 */
 	toneValueActive: number;
+
+	/**
+	 * @desc Legacy. Значение прозрачности
+	 * @tags legacy
+	 * @deprecated
+	 */
 	toneValueFocus: number;
 }
 
