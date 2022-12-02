@@ -506,8 +506,8 @@ export const octaviusVKDarkTheme: ThemeOctaviusDescription = {
 			hover: 'none',
 			active: 'none',
 		},
-		octaviusColorPromoBackground: '#232324',
-		octaviusColorPlaceholderBackground: '#3E3E3F',
+		octaviusColorPromoBackground: '#292929',
+		octaviusColorPlaceholderBackground: '#161616',
 	},
 
 	octaviusElevationCard: 'none',
