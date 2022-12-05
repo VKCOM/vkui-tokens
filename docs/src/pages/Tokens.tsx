@@ -1,5 +1,5 @@
 import {useAdaptivity} from '@vkontakte/vkui';
-import React, {FC, useState} from 'react';
+import React, {FC, useMemo, useState} from 'react';
 
 import {
 	TokensActions,
@@ -7,6 +7,7 @@ import {
 	TokensHeader,
 } from '@/components/pages/Tokens';
 import tokensData from '@/public/static/data/tokensData.json';
+import {useDebounce} from '@/shared/hooks/useDebounce';
 import {ChipOption, Tokens as TokensType, ValueType} from '@/shared/types';
 
 const themes = Object.keys(tokensData);
@@ -29,18 +30,34 @@ function transformTags(tokens: TokensType) {
 		.filter((key, index, arr) => arr.indexOf(key) === index);
 }
 
+function findThemeTags(themeNames: string[]): string[] {
+	const tags: Record<string, boolean> = {};
+
+	for (const themeName of themeNames) {
+		const themeTags = transformTags(tokensData[themeName]);
+
+		for (const themeTag of themeTags) {
+			tags[themeTag] = true;
+		}
+	}
+
+	const tagsList = Object.keys(tags);
+	tagsList.sort();
+
+	return tagsList;
+}
+
 const Tokens: FC = () => {
 	const {viewWidth} = useAdaptivity();
 	const isTablet = viewWidth > 3;
 
-	const [themeTags] = useState<Array<string>>(
-		transformTags(tokensData[themes[0]]),
-	);
+	const themeTags = useMemo(() => findThemeTags(themes), [themes]);
 	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
 	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
 	const [selectedValueType, setSelectedValueType] =
 		useState<ValueType>('regular');
 	const [searchValue, setSearchValue] = useState('');
+	const searchValueDebounced = useDebounce(searchValue, 500);
 
 	const searchChangeHandler = (
 		event: React.ChangeEvent<HTMLInputElement>,
@@ -82,11 +99,15 @@ const Tokens: FC = () => {
 			/>
 			<TokensContent
 				tokens={tokensData[selectedTheme]}
-				selectedTags={selectedTags.map((tagOption) =>
-					String(tagOption.value),
+				selectedTags={React.useMemo(
+					() =>
+						selectedTags.map((tagOption) =>
+							String(tagOption.value),
+						),
+					[selectedTags.join(' ')],
 				)}
 				selectedValueType={selectedValueType}
-				searchValue={searchValue}
+				searchValue={searchValueDebounced}
 			/>
 		</div>
 	);
