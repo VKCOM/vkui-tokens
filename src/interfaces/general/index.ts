@@ -23,8 +23,8 @@ type AdaptiveTokens = {
 
 export interface ColorsScheme {
 	/**
-	 * @desc Legacy
-	 * @tags color,legacy
+	 * @desc Цветовая схема темы
+	 * @tags service
 	 * @deprecated
 	 */
 	colorsScheme: 'light' | 'dark';
@@ -40,15 +40,27 @@ export interface ColorsFinal extends Colors, ColorsScheme {}
 
 export interface SpecialTokens {
 	/**
-	 * @desc Legacy
-	 * @tags legacy
+	 * @desc Имя темы
+	 * @tags service
 	 */
 	themeName: string;
-	// Базовая тема, от которой наследуемся
+
+	/**
+	 * @desc Имя темы, от которой наследуется текущая
+	 * @tags service
+	 */
 	themeNameBase?: string;
-	// Тема, от которой наследуются значения при инкрементальной сборке
+
+	/**
+	 * @desc Имя темы, от которой наследуются значения при инкрементальной сборке
+	 * @tags service
+	 */
 	themeInheritsFrom?: string;
-	// Префикс токенов
+
+	/**
+	 * @desc Префикс токенов
+	 * @tags service
+	 */
 	prefix?: string;
 }
 
@@ -80,9 +92,8 @@ export interface ThemeDescription
  */
 export interface Theme extends ThemeGeneral, ColorsFinal {
 	/**
-	 * @desc Legacy
-	 * @tags legacy
-	 * @deprecated
+	 * @desc Тип темы. Используется только при компиляции
+	 * @tags service
 	 */
 	themeType: 'root';
 }

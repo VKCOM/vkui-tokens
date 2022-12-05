@@ -62,7 +62,7 @@ const TokensActions: FC<Props> = ({
 			>
 				<ChipsSelect
 					className={clsx(isTablet && 'my-tags-select')}
-					placeholder="Выберите тэги"
+					placeholder="Выберите теги"
 					emptyText="Ничего не найдено"
 					creatable={false}
 					showSelected={false}
