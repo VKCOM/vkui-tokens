@@ -2085,19 +2085,19 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.7.2.tgz#284380d3d5f54774741e6a2e67cce9fbe62e2072"
   integrity sha512-m/cgWEbd4Xi49xyS0tn14h3b8fLTG3Vw/wNo72k5sw5ILf8SFzB1CAyruc7kKBE6Xc8ibyIydVx1YkHwW1O0PA==
 
-"@vkontakte/vkjs@^0.27.0":
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.27.0.tgz#90860084b397464853da3b7966c89ec8cd13b459"
-  integrity sha512-f/NC5GFRYzzcV6vUHJZo75Z5i0cFT8itOQh6q9fI7Wz6OOtrlifnsG1wrZpWmjej3cTPHV9/jg1NErxrI3Z5xA==
+"@vkontakte/vkjs@^0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.29.0.tgz#b5fe58798217f1da8ff8b2926c46f42232a679d0"
+  integrity sha512-JuiLR9bGtpwpVSkKdTNFwPQLKVfL3EgfvuLCjIOC2DkIZsbUESysLPvbC8n1s+vuhBGYWaRsJfZ/33ltGDUBOQ==
 
-"@vkontakte/vkui@4.39.0":
-  version "4.39.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-4.39.0.tgz#1b373ef869a68801d125faeeb65b57bfd6f38538"
-  integrity sha512-wWgCCzfaBq0ErHG9gFaH/yjhhBjWjoYfMi71UTX14RJqYTC7okgdGTuUq3PXqqZTaSUNUg2B5IvfREdyzka0tg==
+"@vkontakte/vkui@4.40.0":
+  version "4.40.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-4.40.0.tgz#28b781c207f523784d0293b49c85cfe4ca9e2e9c"
+  integrity sha512-bGUUuj1GBE/NjTW/2b5VYuKptcrjBpulb9Gg4I4GbVOBVdm2tb7QbnFI9z8kaLWjKDTacdG388TZCHd3GNIy4g==
   dependencies:
     "@babel/runtime" "^7.14.6"
     "@popperjs/core" "^2.9.2"
-    "@vkontakte/vkjs" "^0.27.0"
+    "@vkontakte/vkjs" "^0.29.0"
     dayjs "^1.11.0"
     mitt "^3.0.0"
     react-popper "^2.2.5"
