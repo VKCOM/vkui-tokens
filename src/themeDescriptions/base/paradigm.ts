@@ -670,6 +670,8 @@ export const lightThemeBase: ThemeDescription = {
 	animationEasingPlatform: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
+	zIndexModal: 99,
+	zIndexPopout: 100,
 };
 
 const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
