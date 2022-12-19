@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lint snapshot 1`] = `[]`;
+exports[`lint snapshot 1`] = `
+[
+  "calendar: colors.calendarColorBackgroundMainSkyTintAlpha20 error: Color token type mismatch: alpha token name but opaque value",
+  "calendarDark: colors.calendarColorBackgroundMainSkyTintAlpha20 error: Color token type mismatch: alpha token name but opaque value",
+]
+`;
