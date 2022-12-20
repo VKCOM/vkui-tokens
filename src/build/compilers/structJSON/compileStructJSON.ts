@@ -8,6 +8,7 @@ const groups = [
 	'colorsScheme',
 	'size',
 	'opacity',
+	'zIndex',
 	'elevation',
 	'gradient',
 	'animation',
