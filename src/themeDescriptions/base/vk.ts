@@ -718,6 +718,8 @@ export const lightTheme: ThemeDescription = {
 	animationEasingPlatform: 'cubic-bezier(0.4, 0, 0.2, 1)',
 	opacityDisable: 0.4,
 	opacityDisableAccessibility: 0.64,
+	zIndexModal: 99,
+	zIndexPopout: 100,
 };
 
 export const darkTheme: ThemeDescription = {
