@@ -89,7 +89,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorButtonGroupTextNegative: '#CE1414',
 		calendarColorEventTextMainSky: '#20455B',
 		calendarColorBackgroundMainSkyTint: '#ECF8FF',
-		calendarColorBackgroundMainSkyTintAlpha20: '#00103D1F',
+		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(0, 16, 61, 0.122)',
 	},
 
 	calendarElevationHeader: '0 0 16px 0 rgba(2, 13, 41, 0.12)',
@@ -307,7 +307,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorButtonGroupTextNegative: '#FDE2E2',
 		calendarColorEventTextMainSky: '#E7E8EA',
 		calendarColorBackgroundMainSkyTint: '#ECF8FF',
-		calendarColorBackgroundMainSkyTintAlpha20: '#00103D1F',
+		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(0, 16, 61, 0.122)',
 	},
 
 	...darkThemeElevation,
