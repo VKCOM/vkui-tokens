@@ -31,6 +31,9 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorButtonGroupBackgroundAccentTint: ColorDescription;
 	calendarColorButtonGroupTextPositive: ColorDescription;
 	calendarColorButtonGroupTextNegative: ColorDescription;
+	calendarColorEventTextMainSky: ColorDescription;
+	calendarColorBackgroundMainSkyTint: ColorDescription;
+	calendarColorBackgroundMainSkyTintAlpha20: ColorDescription;
 }
 
 export type CalendarLocalColors = {

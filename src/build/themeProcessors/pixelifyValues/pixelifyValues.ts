@@ -1,6 +1,6 @@
 import {PixelifyTheme, Theme} from '@/interfaces/general';
 
-const numericCSSProperties = /^(breakpoints$|fontWeight)/i;
+const numericCSSProperties = /^(breakpoints$|fontWeight|zIndex)/i;
 
 /**
  * Процессор, который превращает численные значения переменных в строковые
