@@ -3,6 +3,7 @@ import {
 	vkcom_light,
 } from '@vkontakte/appearance/main.valette/scheme_web.json';
 
+import {alias} from '@/build/helpers/tokenHelpers';
 import {ColorsDescription} from '@/interfaces/general';
 import {ThemeVkComDescription} from '@/interfaces/themes/vkCom';
 import {ThemeVkComDarkDescription} from '@/interfaces/themes/vkComDark';
@@ -14,15 +15,14 @@ import {
 	lightTheme,
 } from '@/themeDescriptions/base/vk';
 
+import {resolveColor} from './appearance';
+
 const fontFamilyAccent =
 	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontFamilyBase =
 	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontWeightAccent2 = 500;
 const fontWeightBase3 = 400;
-
-import {resolveColor} from './appearance';
-import { alias } from '@/build/helpers/tokenHelpers';
 
 const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
@@ -219,7 +219,7 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeBasePaddingHorizontal: {
 		regular: 12,
 	},
-	
+
 	// Компонент Switch
 	sizeSwitchHeight: {
 		regular: 10,
