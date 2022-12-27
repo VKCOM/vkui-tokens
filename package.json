@@ -80,7 +80,7 @@
     "terser-webpack-plugin": "5.3.6",
     "ts-jest": "29.0.3",
     "ts-loader": "9.4.2",
-    "ts-morph": "16.0.0",
+    "ts-morph": "17.0.1",
     "ts-node": "10.9.1",
     "tsconfig-paths": "4.1.1",
     "tscpaths": "0.0.9",
