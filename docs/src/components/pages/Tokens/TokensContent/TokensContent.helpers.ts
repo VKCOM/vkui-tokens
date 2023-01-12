@@ -1,9 +1,6 @@
-import {TokenItem, TokenItemValue} from '@/shared/types';
+import { TokenItem, TokenItemValue } from '@/shared/types';
 
-export function filterByTags(
-	selectedTags: Array<string>,
-	token: TokenItem,
-): boolean {
+export function filterByTags(selectedTags: Array<string>, token: TokenItem): boolean {
 	// Исключаем legacy-токены по умолчанию, если не запросили явно
 	if (!selectedTags.includes('legacy') && token.tags.includes('legacy')) {
 		return false;
@@ -21,9 +18,7 @@ function containsInDesc(haystack: string, needle: string): boolean {
 }
 
 function containsInValue(haystack: TokenItemValue, needle: string): boolean {
-	const haystackNorm = JSON.stringify(haystack)
-		.toLowerCase()
-		.replace(/\s/g, '');
+	const haystackNorm = JSON.stringify(haystack).toLowerCase().replace(/\s/g, '');
 
 	return haystackNorm.includes(needle.replace(/\s/g, ''));
 }
@@ -35,8 +30,5 @@ export function filterByDesc(searchValue: string, token: TokenItem): boolean {
 
 	const needle = searchValue.toLowerCase();
 
-	return (
-		containsInDesc(token.desc, needle) ||
-		containsInValue(token.value, needle)
-	);
+	return containsInDesc(token.desc, needle) || containsInValue(token.value, needle);
 }

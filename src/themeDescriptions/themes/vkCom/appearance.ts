@@ -9,9 +9,7 @@ interface ClusterData {
 
 export function resolveColor(clusterData: ClusterData): string {
 	const color = palette[clusterData.color_identifier] as string;
-	const alphaMultiplier = clusterData.alpha_multiplier
-		? Number(clusterData.alpha_multiplier)
-		: 1;
+	const alphaMultiplier = clusterData.alpha_multiplier ? Number(clusterData.alpha_multiplier) : 1;
 
 	if (!color) {
 		console.error('Missing color:', clusterData.color_identifier);
@@ -33,8 +31,8 @@ function ahex2rgba(ahex: string, multiplier = 1): string {
 }
 
 function opacify(hex: string, opacity: number): string {
-	return `rgba(${parseInt(hex.slice(0, 2), 16)}, ${parseInt(
-		hex.slice(2, 4),
+	return `rgba(${parseInt(hex.slice(0, 2), 16)}, ${parseInt(hex.slice(2, 4), 16)}, ${parseInt(
+		hex.slice(4),
 		16,
-	)}, ${parseInt(hex.slice(4), 16)}, ${opacity.toFixed(2)})`;
+	)}, ${opacity.toFixed(2)})`;
 }

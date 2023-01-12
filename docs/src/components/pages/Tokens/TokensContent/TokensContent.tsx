@@ -1,14 +1,14 @@
 import './TokensContent.css';
 
-import {Icon20CopyOutline} from '@vkontakte/icons';
-import {copyTextToClipboard} from '@vkontakte/vkjs';
-import {Button, Paragraph, Separator, useAdaptivity} from '@vkontakte/vkui';
-import React, {FC, useMemo} from 'react';
+import { Icon20CopyOutline } from '@vkontakte/icons';
+import { copyTextToClipboard } from '@vkontakte/vkjs';
+import { Button, Paragraph, Separator, useAdaptivity } from '@vkontakte/vkui';
+import React, { FC, useMemo } from 'react';
 
-import {Tokens, ValueType} from '@/shared/types';
+import { Tokens, ValueType } from '@/shared/types';
 
 import TokensContentValue from './components/TokensContentValue';
-import {filterByDesc, filterByTags} from './TokensContent.helpers';
+import { filterByDesc, filterByTags } from './TokensContent.helpers';
 
 type Props = {
 	tokens: Tokens;
@@ -17,13 +17,8 @@ type Props = {
 	searchValue: string;
 };
 
-const TokensContent: FC<Props> = ({
-	tokens,
-	selectedTags,
-	selectedValueType,
-	searchValue,
-}) => {
-	const {viewWidth} = useAdaptivity();
+const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, searchValue }) => {
+	const { viewWidth } = useAdaptivity();
 	const isTablet = viewWidth > 3;
 
 	const tokensKeys = useMemo(
@@ -36,10 +31,7 @@ const TokensContent: FC<Props> = ({
 
 	return (
 		<div className="tokens-content-container">
-			<div
-				className="tokens-content-header"
-				style={!isTablet ? {display: 'none'} : {}}
-			>
+			<div className="tokens-content-header" style={!isTablet ? { display: 'none' } : {}}>
 				<div>
 					<Paragraph>Название токена</Paragraph>
 				</div>
@@ -54,9 +46,7 @@ const TokensContent: FC<Props> = ({
 			<div className="tokens-content-list">
 				{tokensKeys.map((token, index) => (
 					<React.Fragment key={token}>
-						{index !== 0 && (
-							<Separator wide={true} className="separator-item" />
-						)}
+						{index !== 0 && <Separator wide={true} className="separator-item" />}
 						<div className="tokens-content-item">
 							<div>
 								<Button
@@ -80,9 +70,7 @@ const TokensContent: FC<Props> = ({
 							</div>
 							{isTablet && (
 								<div>
-									<Paragraph>
-										{tokens[token].desc || '-'}
-									</Paragraph>
+									<Paragraph>{tokens[token].desc || '-'}</Paragraph>
 								</div>
 							)}
 							{!isTablet && !!tokens[token].desc && (

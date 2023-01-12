@@ -1,8 +1,8 @@
 import path from 'path';
-import {JSDocTagInfo, Node, Project, SourceFile} from 'ts-morph';
+import { JSDocTagInfo, Node, Project, SourceFile } from 'ts-morph';
 
-import {capitalize} from '@/build/helpers/capitalize';
-import {SpecialTokens, Theme} from '@/interfaces/general';
+import { capitalize } from '@/build/helpers/capitalize';
+import { SpecialTokens, Theme } from '@/interfaces/general';
 
 export interface ThemePropertyDoc {
 	tags: string[];
@@ -23,10 +23,7 @@ function getTagText(tag: JSDocTagInfo): string {
 function resolveDeclaration(declaration: Node): Node[] {
 	if (Node.isExportSpecifier(declaration)) {
 		// export { A as B } from 'path/to/module.ts'
-		const declarations = declaration
-			.getNameNode()
-			.getSymbol()
-			.getDeclarations();
+		const declarations = declaration.getNameNode().getSymbol().getDeclarations();
 		return resolveDeclarations(declarations);
 	}
 
@@ -39,10 +36,7 @@ function resolveDeclarations(declarations: Node[]): Node[] {
 	}, []);
 }
 
-function getExportedTypeDeclarations(
-	file: SourceFile,
-	typeName: string,
-): Node[] {
+function getExportedTypeDeclarations(file: SourceFile, typeName: string): Node[] {
 	const exportSymbol = file.getExportSymbols().find((symbol) => {
 		return symbol.getName() === typeName;
 	});
@@ -51,9 +45,7 @@ function getExportedTypeDeclarations(
 	return resolveDeclarations(declarations);
 }
 
-function mapJsDocTagsToThemePropertyDoc(
-	tags: JSDocTagInfo[],
-): ThemePropertyDoc {
+function mapJsDocTagsToThemePropertyDoc(tags: JSDocTagInfo[]): ThemePropertyDoc {
 	const doc: ThemePropertyDoc = {
 		tags: [],
 		desc: '',
@@ -87,14 +79,12 @@ export function getTypeDocs(filePath: string, name: string): ThemeDocs {
 		const properties = declaration.getType().getApparentProperties();
 
 		const docs = properties.reduce((all, prop) => {
-			all[prop.getName()] = mapJsDocTagsToThemePropertyDoc(
-				prop.getJsDocTags(),
-			);
+			all[prop.getName()] = mapJsDocTagsToThemePropertyDoc(prop.getJsDocTags());
 
 			return all;
 		}, {});
 
-		return {...all, ...docs};
+		return { ...all, ...docs };
 	}, {});
 }
 
@@ -125,12 +115,8 @@ export function getTypeDocs(filePath: string, name: string): ThemeDocs {
  * 	   export interface MyDarkTheme extends MyTheme, BaseTheme, AnotherBaseTheme
  * 	 - export { BaseTheme as MyTheme } from 'path/to/baseTheme.ts'
  */
-export function compileDocsJSON<T extends SpecialTokens = Theme>(
-	theme: T,
-): string {
-	const themeFilePath = path.resolve(
-		`src/interfaces/themes/${theme.themeName}/index.ts`,
-	);
+export function compileDocsJSON<T extends SpecialTokens = Theme>(theme: T): string {
+	const themeFilePath = path.resolve(`src/interfaces/themes/${theme.themeName}/index.ts`);
 	const themeInterfaceName = `Theme${capitalize(theme.themeName)}`;
 
 	const docs = getTypeDocs(themeFilePath, themeInterfaceName);

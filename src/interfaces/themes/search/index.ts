@@ -1,12 +1,12 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
 import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
-import {Adaptive} from '@/interfaces/general/tools';
-import {Font} from '@/interfaces/general/typography';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
@@ -78,5 +78,4 @@ export interface ThemeSearchDescription
 }
 
 // Интерфейс ниже не используем в коде, но нужен для сборки
-export interface ThemeSearchCssVars
-	extends ParadigmThemeCssVars<SearchViewports, ThemeSearch> {}
+export interface ThemeSearchCssVars extends ParadigmThemeCssVars<SearchViewports, ThemeSearch> {}

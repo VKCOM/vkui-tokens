@@ -1,6 +1,6 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {mixColors} from './mixColors';
+import { mixColors } from './mixColors';
 
 describe('mixColors', () => {
 	const colorState: Property.Color = '#000000';

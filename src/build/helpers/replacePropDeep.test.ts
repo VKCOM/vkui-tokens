@@ -1,4 +1,4 @@
-import {replacePropDeep} from '@/build/helpers/replacePropDeep';
+import { replacePropDeep } from '@/build/helpers/replacePropDeep';
 
 describe('replacePropDeep', () => {
 	const mapReplace = {
@@ -19,7 +19,7 @@ describe('replacePropDeep', () => {
 	});
 
 	it('should not touch other vars', () => {
-		const object = {opacityDisable: 0.5};
+		const object = { opacityDisable: 0.5 };
 
 		expect(replacePropDeep(object, mapReplace)).toStrictEqual({
 			opacityDisable: 0.5,
@@ -27,7 +27,7 @@ describe('replacePropDeep', () => {
 	});
 
 	it('should replace flat values', () => {
-		const object = {fontFamily: 'kek'};
+		const object = { fontFamily: 'kek' };
 
 		expect(replacePropDeep(object, mapReplace)).toStrictEqual({
 			fontFamily: 'lol',

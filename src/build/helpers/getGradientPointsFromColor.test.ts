@@ -1,4 +1,4 @@
-import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
+import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 
 describe('getGradientPointsFromColor', () => {
 	it('should generate gradient from color', () => {

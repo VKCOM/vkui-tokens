@@ -1,4 +1,4 @@
-import {unCamelcasify} from './unCamelcasify';
+import { unCamelcasify } from './unCamelcasify';
 
 describe('unCamelcasify', () => {
 	it('should correctly work with empty string', () => {
@@ -14,8 +14,6 @@ describe('unCamelcasify', () => {
 	});
 
 	it('should convert many words string', () => {
-		expect(unCamelcasify('helloWorldMyFriend')).toBe(
-			'hello-world-my-friend',
-		);
+		expect(unCamelcasify('helloWorldMyFriend')).toBe('hello-world-my-friend');
 	});
 });

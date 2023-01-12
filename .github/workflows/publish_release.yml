@@ -21,11 +21,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn
       - run: npm run publish:latest
-        if: "!github.event.release.prerelease"
+        if: '!github.event.release.prerelease'
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPMJS_PUBLISH_TOKEN}}
       - run: npm run publish:dist
-        if: "github.event.release.prerelease"
+        if: 'github.event.release.prerelease'
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPMJS_PUBLISH_TOKEN}}
 

@@ -1,4 +1,4 @@
-import type {Theme} from '@/interfaces/general';
+import type { Theme } from '@/interfaces/general';
 
 export type ValuesOf<T extends any[]> = T[number];
 
@@ -25,8 +25,7 @@ export const compileStructJSON = <T = Theme>(theme: T): string => {
 	const structTheme = {};
 
 	Object.keys(theme).forEach((key) => {
-		const group =
-			groups.find((predicate) => key.startsWith(predicate)) || 'other';
+		const group = groups.find((predicate) => key.startsWith(predicate)) || 'other';
 
 		if (!structTheme[group]) {
 			structTheme[group] = {};

@@ -1,10 +1,10 @@
-import {staticRef} from '@/build/helpers/tokenHelpers';
-import {ThemeOctaviusCompactDescription} from '@/interfaces/themes/octaviusCompact';
+import { staticRef } from '@/build/helpers/tokenHelpers';
+import { ThemeOctaviusCompactDescription } from '@/interfaces/themes/octaviusCompact';
 
-import {fontSizes} from '../../common';
-import {octaviusDarkTheme, octaviusTheme} from '../octavius';
+import { fontSizes } from '../../common';
+import { octaviusDarkTheme, octaviusTheme } from '../octavius';
 
-const {fontSize2} = fontSizes;
+const { fontSize2 } = fontSizes;
 
 export const octaviusCompactTheme: ThemeOctaviusCompactDescription = {
 	...octaviusTheme,
@@ -12,7 +12,7 @@ export const octaviusCompactTheme: ThemeOctaviusCompactDescription = {
 
 	fontText: {
 		compact: staticRef(octaviusTheme.fontText).compact,
-		regular: {...fontSize2},
+		regular: { ...fontSize2 },
 	},
 
 	sizeFieldHeight: {

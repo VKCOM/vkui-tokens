@@ -1,6 +1,6 @@
-import {Theme} from '@/interfaces/general';
-import {Adaptive, adaptiveKeys} from '@/interfaces/general/tools';
-import {WideCssVarValue} from '@/interfaces/general/tools/cssVars';
+import { Theme } from '@/interfaces/general';
+import { Adaptive, adaptiveKeys } from '@/interfaces/general/tools';
+import { WideCssVarValue } from '@/interfaces/general/tools/cssVars';
 
 export type FlatValuesObject = {
 	[key: string]: string | number;
@@ -26,18 +26,10 @@ const passOriginalValue = ({
 	toValue,
 	fromValue,
 }: {
-	toValue:
-		| WideCssVarValue<string | number>
-		| Record<string, WideCssVarValue<string | number>>;
-	fromValue:
-		| WideCssVarValue<string | number>
-		| Record<string, WideCssVarValue<string | number>>;
+	toValue: WideCssVarValue<string | number> | Record<string, WideCssVarValue<string | number>>;
+	fromValue: WideCssVarValue<string | number> | Record<string, WideCssVarValue<string | number>>;
 }): void => {
-	if (
-		typeof toValue === 'object' &&
-		'name' in toValue &&
-		typeof toValue.name === 'string'
-	) {
+	if (typeof toValue === 'object' && 'name' in toValue && typeof toValue.name === 'string') {
 		toValue.originalValue = fromValue.originalValue;
 		return;
 	}
@@ -78,20 +70,12 @@ const fillValues = ({
 	manyAdaptiveStates,
 }: {
 	destination: FlatValuesObject;
-	value:
-		| WideCssVarValue<string | number>
-		| Record<string, WideCssVarValue<string | number>>;
+	value: WideCssVarValue<string | number> | Record<string, WideCssVarValue<string | number>>;
 	adaptiveDestination?: AdaptiveValuesObject;
-	autoValue?:
-		| WideCssVarValue<string | number>
-		| Record<string, WideCssVarValue<string | number>>;
+	autoValue?: WideCssVarValue<string | number> | Record<string, WideCssVarValue<string | number>>;
 	manyAdaptiveStates: boolean;
 }) => {
-	if (
-		typeof value === 'object' &&
-		'name' in value &&
-		typeof value.name === 'string'
-	) {
+	if (typeof value === 'object' && 'name' in value && typeof value.name === 'string') {
 		constructSourceVal({
 			destination,
 			value: value as WideCssVarValue<string | number>,
@@ -144,7 +128,7 @@ const fillValues = ({
 	});
 };
 
-export function accumulateValues<T = Theme>({theme}: Params<T>): ReturnValues {
+export function accumulateValues<T = Theme>({ theme }: Params<T>): ReturnValues {
 	const flatValues: FlatValuesObject = {};
 	const adaptiveValues: AdaptiveValuesObject = {
 		auto: {},
@@ -165,5 +149,5 @@ export function accumulateValues<T = Theme>({theme}: Params<T>): ReturnValues {
 		});
 	});
 
-	return {flatValues, adaptiveValues};
+	return { flatValues, adaptiveValues };
 }

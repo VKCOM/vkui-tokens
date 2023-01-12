@@ -1,11 +1,11 @@
-import {replacePropDeep} from '@/build/helpers/replacePropDeep';
-import {staticRef} from '@/build/helpers/tokenHelpers';
-import {ThemeMediaDescription} from '@/interfaces/themes/media';
-import {helpers, projectColors, socialColors} from '@/themeDescriptions/common';
+import { replacePropDeep } from '@/build/helpers/replacePropDeep';
+import { staticRef } from '@/build/helpers/tokenHelpers';
+import { ThemeMediaDescription } from '@/interfaces/themes/media';
+import { helpers, projectColors, socialColors } from '@/themeDescriptions/common';
 
-import {darkTheme, lightTheme} from '../../base/paradigm';
+import { darkTheme, lightTheme } from '../../base/paradigm';
 
-const {x0, x05, x2, x3, x4, x5, x6, x8, x10, x12} = helpers;
+const { x0, x05, x2, x3, x4, x5, x6, x8, x10, x12 } = helpers;
 
 const fontFamilyAccent = 'MailSans, Inter, Helvetica, Arial, sans-serif';
 const fontFamilyArticle = 'Georgia, serif';

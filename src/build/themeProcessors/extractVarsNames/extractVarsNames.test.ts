@@ -1,23 +1,18 @@
-import {Breakpoints} from '@/interfaces/general/tools';
-import {
-	ParadigmTheme,
-	ParadigmThemeCssVarsWide,
-} from '@/interfaces/namespaces/paradigm';
+import { Breakpoints } from '@/interfaces/general/tools';
+import { ParadigmTheme, ParadigmThemeCssVarsWide } from '@/interfaces/namespaces/paradigm';
 
-import {extractVarsNames, getVariableName} from './extractVarsNames';
+import { extractVarsNames, getVariableName } from './extractVarsNames';
 
 describe('extractVarsNames', () => {
 	describe('getVariableName', () => {
 		it('should work only with key param', () => {
-			expect(getVariableName({key: 'paddingBase'})).toBe(
-				'--vkui--padding_base',
-			);
+			expect(getVariableName({ key: 'paddingBase' })).toBe('--vkui--padding_base');
 		});
 
 		it('shoud work with custom prefix', () => {
-			expect(
-				getVariableName({key: 'paddingBase', prefix: 'myParadigm'}),
-			).toBe('--my_paradigm--padding_base');
+			expect(getVariableName({ key: 'paddingBase', prefix: 'myParadigm' })).toBe(
+				'--my_paradigm--padding_base',
+			);
 		});
 
 		it('should work with custom prefix with double hyphen', () => {
@@ -30,21 +25,19 @@ describe('extractVarsNames', () => {
 		});
 
 		it('shoud work with auto mode', () => {
-			expect(getVariableName({key: 'paddingBase', mode: 'auto'})).toBe(
-				'--vkui--padding_base',
-			);
+			expect(getVariableName({ key: 'paddingBase', mode: 'auto' })).toBe('--vkui--padding_base');
 		});
 
 		it('should work with nocamel mode', () => {
-			expect(getVariableName({key: 'paddingBase', mode: 'touch'})).toBe(
+			expect(getVariableName({ key: 'paddingBase', mode: 'touch' })).toBe(
 				'--vkui--padding_base--touch',
 			);
 		});
 
 		it('should work with camel mode', () => {
-			expect(
-				getVariableName({key: 'paddingBase', mode: 'desktopS'}),
-			).toBe('--vkui--padding_base--desktop_s');
+			expect(getVariableName({ key: 'paddingBase', mode: 'desktopS' })).toBe(
+				'--vkui--padding_base--desktop_s',
+			);
 		});
 	});
 
@@ -79,7 +72,7 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			const expectedData = {...{breakpoints: {...theme.breakpoints}}};
+			const expectedData = { ...{ breakpoints: { ...theme.breakpoints } } };
 
 			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
 		});
@@ -361,8 +354,6 @@ describe('extractVarsNames', () => {
 		// eslint-disable-next-line unicorn/consistent-function-scoping
 		const valueConstruct = (_: string, value: string) => value;
 
-		expect(extractVarsNames(theme, {valueConstruct})).toStrictEqual(
-			expectedData,
-		);
+		expect(extractVarsNames(theme, { valueConstruct })).toStrictEqual(expectedData);
 	});
 });

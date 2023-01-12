@@ -1,4 +1,5 @@
-.tokens-content-header, .tokens-content-item {
+.tokens-content-header,
+.tokens-content-item {
 	display: flex;
 }
 
@@ -14,20 +15,25 @@
 	overflow: auto;
 }
 
-.tokens-content-header > div:nth-child(1), .tokens-content-header > div:nth-child(2),
-.tokens-content-item > div:nth-child(1), .tokens-content-item > div:nth-child(2){
+.tokens-content-header > div:nth-child(1),
+.tokens-content-header > div:nth-child(2),
+.tokens-content-item > div:nth-child(1),
+.tokens-content-item > div:nth-child(2) {
 	padding-right: 20px;
 }
 
-.tokens-content-header > div:nth-child(1), .tokens-content-item > div:nth-child(1) {
+.tokens-content-header > div:nth-child(1),
+.tokens-content-item > div:nth-child(1) {
 	flex-basis: 35%;
 }
 
-.tokens-content-header > div:nth-child(2), .tokens-content-item > div:nth-child(2) {
+.tokens-content-header > div:nth-child(2),
+.tokens-content-item > div:nth-child(2) {
 	flex-basis: 25%;
 }
 
-.tokens-content-header > div:nth-child(3), .tokens-content-item > div:nth-child(3) {
+.tokens-content-header > div:nth-child(3),
+.tokens-content-item > div:nth-child(3) {
 	flex-basis: 40%;
 }
 
@@ -49,7 +55,7 @@
 }
 
 .token-name-btn_hover {
-	background-color: #FFEABD;
+	background-color: #ffeabd;
 }
 
 .token-name-btn_hover .vkuiButton__content {

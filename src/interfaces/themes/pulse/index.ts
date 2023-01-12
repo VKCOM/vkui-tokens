@@ -1,18 +1,11 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {
-	ColorsDescription,
-	ThemeCssVars,
-	ThemeDescription,
-} from '@/interfaces/general';
-import {ColorDescription, ColorWithStates} from '@/interfaces/general/colors';
-import {GradientPoints} from '@/interfaces/general/gradients';
-import {Adaptive} from '@/interfaces/general/tools';
-import {Font} from '@/interfaces/general/typography';
-import {
-	ParadigmTheme,
-	ParadigmThemeDescription,
-} from '@/interfaces/namespaces/paradigm';
+import { ColorsDescription, ThemeCssVars, ThemeDescription } from '@/interfaces/general';
+import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
+import { GradientPoints } from '@/interfaces/general/gradients';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
+import { ParadigmTheme, ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
 
 type AllowedParadigmTokens =
 	/* Special */
@@ -226,16 +219,10 @@ type ThemePulseColorsWithState = {
 
 type AllowedParadigmThemeTokens = Pick<
 	ParadigmTheme,
-	| 'themeType'
-	| 'colorsScheme'
-	| AllowedParadigmTokens
-	| AllowedParadigmColorTokens
+	'themeType' | 'colorsScheme' | AllowedParadigmTokens | AllowedParadigmColorTokens
 >;
 
-type AllowedParadigmTokensDescription = Pick<
-	ThemeDescription,
-	AllowedParadigmTokens
->;
+type AllowedParadigmTokensDescription = Pick<ThemeDescription, AllowedParadigmTokens>;
 
 export interface ThemePulse
 	extends AllowedParadigmThemeTokens,

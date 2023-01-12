@@ -1,12 +1,12 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
-import {alias, staticRef} from '@/build/helpers/tokenHelpers';
-import {overlayColors} from '@/build/themeProcessors/expandColors/overlayColors';
-import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
-import {Elevation} from '@/interfaces/general/elevation';
-import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
-import {helpers} from '@/themeDescriptions/common';
+import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
+import { alias, staticRef } from '@/build/helpers/tokenHelpers';
+import { overlayColors } from '@/build/themeProcessors/expandColors/overlayColors';
+import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
+import { Elevation } from '@/interfaces/general/elevation';
+import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
+import { helpers } from '@/themeDescriptions/common';
 
 const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Helvetica, Arial, sans-serif';
@@ -674,7 +674,7 @@ export const lightThemeBase: ThemeDescription = {
 	zIndexPopout: 100,
 };
 
-const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
+const { x05, x1, x2, x3, x4, x5, x6, x8, x10 } = helpers;
 
 export const lightTheme: ParadigmThemeDescription = {
 	...lightThemeBase,

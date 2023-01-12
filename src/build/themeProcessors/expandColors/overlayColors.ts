@@ -1,8 +1,8 @@
 import color from 'color';
 
-import {expandColor} from '@/build/themeProcessors/expandColors/expandColors';
-import {mixColors} from '@/build/themeProcessors/expandColors/mixColors';
-import {ColorsDescription} from '@/interfaces/general';
+import { expandColor } from '@/build/themeProcessors/expandColors/expandColors';
+import { mixColors } from '@/build/themeProcessors/expandColors/mixColors';
+import { ColorsDescription } from '@/interfaces/general';
 import {
 	ColorDescription,
 	ColorDescriptionCallable,
@@ -10,7 +10,7 @@ import {
 } from '@/interfaces/general/colors';
 
 export function overlayColors<
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
+	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
 >(
 	background: ColorDescription<T>,
 	foreground: ColorDescription<T>,

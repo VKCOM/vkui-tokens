@@ -1,4 +1,4 @@
-import {FlatValuesObject} from './accumulateValues';
+import { FlatValuesObject } from './accumulateValues';
 
 interface GetVarStringParams {
 	valuesObject: FlatValuesObject;

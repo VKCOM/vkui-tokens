@@ -1,16 +1,14 @@
-import {stripIndent} from 'common-tags';
+import { stripIndent } from 'common-tags';
 
-import {ThemeCssVarsWide} from '@/interfaces/general';
-import {ParadigmThemeCssVarsWide} from '@/interfaces/namespaces/paradigm';
+import { ThemeCssVarsWide } from '@/interfaces/general';
+import { ParadigmThemeCssVarsWide } from '@/interfaces/namespaces/paradigm';
 
-import {compileBreakpointsCssVarsDeclaration} from './compileBreakpointsCssVarsDeclaration';
+import { compileBreakpointsCssVarsDeclaration } from './compileBreakpointsCssVarsDeclaration';
 
 describe('compileBreakpointsCssVarsDeclaration', () => {
 	it('should not work without breakpoints', () => {
 		const theme = {};
-		expect(
-			compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide),
-		).toBe(null);
+		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(null);
 	});
 
 	it('should work with breakpoints and empty vals', () => {
@@ -26,9 +24,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 			},
 		};
-		expect(
-			compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide),
-		).toBe(null);
+		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(null);
 	});
 
 	it('should work with non adaptive values', () => {
@@ -49,9 +45,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				originalValue: '4px',
 			},
 		};
-		expect(
-			compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide),
-		).toBe(null);
+		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(null);
 	});
 
 	it('should work with flat adaptive values and several breakpotins', () => {
@@ -83,8 +77,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 			},
 		};
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide))
-			.toBe(stripIndent`
+		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(stripIndent`
 			:root {
 				--vkui--size_popup_base_padding: var(--vkui--size_popup_base_padding--regular);
 			}
@@ -135,8 +128,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 			},
 		};
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide))
-			.toBe(stripIndent`
+		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(stripIndent`
 			:root {
 				--vkui--size_popup_base_padding: 20px;
 			}
@@ -188,8 +180,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 			},
 		};
 
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide))
-			.toBe(stripIndent`
+		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(stripIndent`
 			:root {
 				--vkui--font_h1--font_size: var(--vkui--font_h1--font_size--regular);
 				--vkui--font_h1--line_height: var(--vkui--font_h1--line_height--regular);
