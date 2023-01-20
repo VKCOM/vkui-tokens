@@ -87,9 +87,71 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorButtonGroupBackgroundAccentTint: '#E3F0FD',
 		calendarColorButtonGroupTextPositive: '#056142',
 		calendarColorButtonGroupTextNegative: '#CE1414',
+		calendarColorEventTextMainSky: '#20455B',
+		calendarColorBackgroundMainSkyTint: '#ECF8FF',
+		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(0, 16, 61, 0.122)',
+
+		calendarColorBackground: lightTheme.colors.colorBackground,
+		calendarColorOverlayBackground: 'transparent',
+
+		//#region Токены сайдбара
+		// цвет иконок в сайдбаре
+		calendarColorSidebarItemIconPrimary: '#333333',
+		// цвет текста в сайдбаре
+		calendarColorSidebarItemTextPrimary: '#333333',
+		// цвет второстепенных иконок в сайдбаре
+		calendarColorSidebarItemIconSecondary: '#87898F',
+		// цвет второстепенного текста в сайдбаре
+		calendarColorSidebarItemTextSecondary: '#87898F',
+		// цвет фона у кнопки в сайдбаре
+		calendarColorSidebarComposeButtonBackground: '#FFFFFF',
+		// цвет иконки у кнопки в сайдбаре
+		calendarColorSidebarComposeButtonIcon: '#333333',
+		// цвет текста у кнопки в сайдбаре
+		calendarColorSidebarComposeButtonText: '#333333',
+		// цвет скроллбара
+		calendarColorSidebarScrollbar: '#C7C7C7',
+		// #endregion Токены сайдбара
+
+		// #region Header
+		// Цвет иконок в хедере
+		calendarColorHeaderIcon: '#2C2D2E',
+		// Второстепенный текст в хедере
+		calendarColorHeaderTextSecondary: '#93969B',
+		// Текст в кнопках в хедере в т.ч. кнопка Найти в поиске
+		calendarColorHeaderButtonText: '#2C2D2E',
+		// Цвет загрузки
+		calendarColorHeaderProgress: '#FF9E00',
+
+		// Цвет иконки поиска
+		calendarColorHeaderSearchIcon: '#B6B8BE',
+		// Цвет текста в поиске
+		calendarColorHeaderSearchTextCollapsed: '#87898F',
+		// Фон поиска и кнопки Найти
+		calendarColorHeaderSearchBackground: '#F0F1F3',
+		// Фон поиска
+		calendarColorHeaderSearchBackgroundCollapsed: '#F0F1F3',
+		// Цвет текста в поиске
+		calendarColorHeaderSearchText: '#2C2D2E',
+		// #endregion Header
+
+		// #region Grid
+		// основной цвет текста в датах
+		calendarColorTextDatePrimary: '#2C2D2E',
+		// второстепенный цвет текста в датах
+		calendarColorTextDateSecondary: '#93969B',
+		// акцентный цвет текста в датах
+		calendarColorTextDateAccent: '#005FF9',
+		// цвет текста в таймлайне
+		calendarColorTextTimeline: '#2C2D2E',
+		// обводка сетки с событиями
+		calendarColorStrokeFieldBorder: '#E0E2E8',
+		// #endregion Grid
 	},
 
+	// тень хедера
 	calendarElevationHeader: '0 0 16px 0 rgba(2, 13, 41, 0.12)',
+
 	calendarSizeBorderRadiusSmall: 4,
 	calendarSizeBorderRadiusMedium: 6,
 	calendarSizeBorderRadiusLarge: 8,
@@ -302,6 +364,66 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorButtonGroupBackgroundAccentTint: '#2775FC',
 		calendarColorButtonGroupTextPositive: '#CEF5E8',
 		calendarColorButtonGroupTextNegative: '#FDE2E2',
+		calendarColorEventTextMainSky: '#E7E8EA',
+		calendarColorBackgroundMainSkyTint: '#ECF8FF',
+		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(0, 16, 61, 0.122)',
+
+		calendarColorBackground: darkTheme.colors.colorBackground,
+		calendarColorOverlayBackground: 'transparent',
+
+		//#region Токены сайдбара
+		// цвет иконок в сайдбаре
+		calendarColorSidebarItemIconPrimary: '#E7E8EA',
+		// цвет текста в сайдбаре
+		calendarColorSidebarItemTextPrimary: '#E7E8EA',
+		// цвет второстепенных иконок в сайдбаре
+		calendarColorSidebarItemIconSecondary: '#9C9DA2',
+		// цвет второстепенного текста в сайдбаре
+		calendarColorSidebarItemTextSecondary: '#8C8E94',
+		// цвет фона у кнопки в сайдбаре
+		calendarColorSidebarComposeButtonBackground: '#FFFFFF',
+		// цвет иконки у кнопки в сайдбаре
+		calendarColorSidebarComposeButtonIcon: '#333333',
+		// цвет текста у кнопки в сайдбаре
+		calendarColorSidebarComposeButtonText: '#333333',
+		// цвет скроллбара
+		calendarColorSidebarScrollbar: '#6F6F6F',
+		// #endregion Токены сайдбара
+
+		// #region Header
+		// Цвет иконок в хедере
+		calendarColorHeaderIcon: '#FFFFFF',
+		// Второстепенный текст в хедере
+		calendarColorHeaderTextSecondary: '#8C8E94',
+		// Текст в кнопках в хедере в т.ч. кнопка Найти в поиске
+		calendarColorHeaderButtonText: '#FFFFFF',
+		// Цвет загрузки
+		calendarColorHeaderProgress: '#FF9E00',
+
+		// Цвет иконки поиска
+		calendarColorHeaderSearchIcon: '#9C9DA2',
+		// Цвет текста в поиске
+		calendarColorHeaderSearchTextCollapsed: '#8C8E94',
+		// Фон поиска и кнопки Найти
+		calendarColorHeaderSearchBackground: '#303030',
+		// Фон поиска
+		calendarColorHeaderSearchBackgroundCollapsed: '#303030',
+		// Цвет текста в поиске
+		calendarColorHeaderSearchText: '#E7E8EA',
+		// #endregion Header
+
+		// #region Grid
+		// основной цвет текста в датах
+		calendarColorTextDatePrimary: '#E7E8EA',
+		// второстепенный цвет текста в датах
+		calendarColorTextDateSecondary: '#8C8E94',
+		// акцентный цвет текста в датах
+		calendarColorTextDateAccent: '#3C82FD',
+		// цвет текста в таймлайне
+		calendarColorTextTimeline: '#E7E8EA',
+		// обводка сетки с событиями
+		calendarColorStrokeFieldBorder: '#353536',
+		// #endregion Grid
 	},
 
 	...darkThemeElevation,
