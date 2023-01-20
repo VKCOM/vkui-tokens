@@ -112,14 +112,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightAccent2,
 			fontSize: 36,
 			lineHeight: 44,
-			letterSpacing: '-0.5%',
+			letterSpacing: '-0.005em',
 		},
 		compact: {
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent2,
 			fontSize: 40,
 			lineHeight: 48,
-			letterSpacing: '-0.5%',
+			letterSpacing: '-0.005em',
 		},
 	},
 	mediaFontMediaTitle1: {
@@ -176,7 +176,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightAccent2,
 			fontSize: 22,
 			lineHeight: 32,
-			letterSpacing: '-0.3%',
+			letterSpacing: '-0.003em',
 		},
 	},
 	mediaFontMediaParagraph: {

@@ -10,6 +10,7 @@ import {Adaptive} from './tools';
 import {NamifyObject} from './tools/cssVars';
 import {StringifyObject} from './tools/utils';
 import {Fonts, TypographyBaseProps} from './typography';
+import {ZIndex} from './zIndex';
 import ColorScheme = Property.ColorScheme;
 import {StaticTokens, Tokens} from '@/interfaces/general/tools/tokenValue';
 
@@ -69,12 +70,13 @@ export interface WithThemeType {
 }
 
 /**
- * Общий интерефейс между описанием и самой темой
+ * Общий интерфейс между описанием и самой темой
  */
 export interface ThemeGeneral
 	extends AdaptiveTokens,
 		SpecialTokens,
 		ToneValues,
+		ZIndex,
 		TypographyBaseProps,
 		Elevation,
 		Gradients,
@@ -99,7 +101,7 @@ export interface Theme extends ThemeGeneral, ColorsFinal {
 }
 
 /**
- * Тема, в коротой все значения пикселизированы. Т.е. 16 -> '16px'
+ * Тема, в которой все значения пикселизированы. Т.е. 16 -> '16px'
  */
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type PixelifyTheme<
