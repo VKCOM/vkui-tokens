@@ -1,10 +1,10 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
-import {alias} from '@/build/helpers/tokenHelpers';
-import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
-import {Elevation} from '@/interfaces/general/elevation';
-import {Gradients} from '@/interfaces/general/gradients';
+import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
+import { alias } from '@/build/helpers/tokenHelpers';
+import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
+import { Elevation } from '@/interfaces/general/elevation';
+import { Gradients } from '@/interfaces/general/gradients';
 
 const FONT_FAMILY_DEFAULT = 'VK Sans Text';
 
@@ -150,16 +150,11 @@ export const lightGradient: Gradients = {
 };
 
 export const lightElevation: Elevation = {
-	elevation1:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
-	elevation1InvertY:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
-	elevation2:
-		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
-	elevation3:
-		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
-	elevation4:
-		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+	elevation1: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+	elevation1InvertY: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
+	elevation2: '0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
+	elevation3: '0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
+	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
 };
 
 export const darkColors: ColorsDescription = {
@@ -289,16 +284,11 @@ export const darkGradient: Gradients = {
 
 export const darkElevation: Elevation = {
 	// TODO: Тени (Поправить для Dark)
-	elevation1:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
-	elevation1InvertY:
-		'0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
-	elevation2:
-		'0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
-	elevation3:
-		'0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
-	elevation4:
-		'0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+	elevation1: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
+	elevation1InvertY: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
+	elevation2: '0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
+	elevation3: '0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
+	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
 };
 
 export const lightTheme: ThemeDescription = {

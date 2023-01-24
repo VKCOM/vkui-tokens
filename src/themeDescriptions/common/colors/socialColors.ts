@@ -1,4 +1,4 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
 export type SocialColors = {
 	colorSocialVk: Property.Color;

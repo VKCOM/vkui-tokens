@@ -1,4 +1,4 @@
-import {expandAll, expandRootTheme} from '@/build/expandTheme';
+import { expandAll, expandRootTheme } from '@/build/expandTheme';
 
 describe('expandTheme', () => {
 	describe('expandRootTheme', () => {

@@ -10,7 +10,5 @@
     "lib": ["ES6", "DOM", "ES2017"],
     "declaration": true
   },
-  "include": [
-    "dist/**/*.ts"
-  ]
+  "include": ["dist/**/*.ts"]
 }

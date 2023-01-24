@@ -1,10 +1,7 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {
-	isColorDescriptionCallable,
-	isColorWithStates,
-} from '@/build/helpers/cssHelpers';
-import {ColorsDescription, ColorsFinal} from '@/interfaces/general';
+import { isColorDescriptionCallable, isColorWithStates } from '@/build/helpers/cssHelpers';
+import { ColorsDescription, ColorsFinal } from '@/interfaces/general';
 import {
 	ColorDescription,
 	ColorDescriptionStatic,
@@ -12,7 +9,7 @@ import {
 	ColorWithStates,
 } from '@/interfaces/general/colors';
 
-import {mixColors} from './mixColors';
+import { mixColors } from './mixColors';
 
 export const colorStateMap = {
 	light: '#00103D',
@@ -54,7 +51,7 @@ const getColorWithStates = ({
 	};
 };
 
-function expandCallableColor<T extends {[key in keyof T]: ColorDescription}>(
+function expandCallableColor<T extends { [key in keyof T]: ColorDescription }>(
 	color: ColorDescription<T>,
 	theme: Partial<ColorsDescription<T>>,
 ): ColorDescriptionStatic {
@@ -67,11 +64,8 @@ function expandCallableColor<T extends {[key in keyof T]: ColorDescription}>(
 }
 
 export function expandColor<
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
->(
-	color: ColorDescription<T>,
-	theme: Partial<ColorsDescription<T>>,
-): ColorWithStates {
+	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
+>(color: ColorDescription<T>, theme: Partial<ColorsDescription<T>>): ColorWithStates {
 	color = expandCallableColor(color, theme);
 
 	if (isColorWithStates(color)) {
@@ -95,9 +89,9 @@ export function expandColor<
  * (и добавляет эти состояния только тем цветам, которые там действительно нужны)
  */
 export function getExpandedThemeColors<
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
+	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
 >(colorsDescription: Partial<ColorsDescription<T>>): ColorsFinal {
-	const {colorsScheme, colors} = colorsDescription;
+	const { colorsScheme, colors } = colorsDescription;
 
 	if (!colorsScheme || !colors) {
 		return null;
@@ -107,11 +101,9 @@ export function getExpandedThemeColors<
 		colorsScheme,
 	};
 
-	Object.entries(colors).forEach(
-		([key, colorValue]: [keyof ColorsDescription, Property.Color]) => {
-			theme[key] = expandColor(colorValue, colorsDescription);
-		},
-	);
+	Object.entries(colors).forEach(([key, colorValue]: [keyof ColorsDescription, Property.Color]) => {
+		theme[key] = expandColor(colorValue, colorsDescription);
+	});
 
 	return theme as ColorsFinal;
 }

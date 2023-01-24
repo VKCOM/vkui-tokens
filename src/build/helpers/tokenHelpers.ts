@@ -1,9 +1,7 @@
-import {ThemeGeneral} from '@/interfaces/general';
-import {Token} from '@/interfaces/general/tools/tokenValue';
+import { ThemeGeneral } from '@/interfaces/general';
+import { Token } from '@/interfaces/general/tools/tokenValue';
 
-export function alias<T extends ThemeGeneral>(
-	token: string,
-): (theme: Partial<T>) => Token<any, T> {
+export function alias<T extends ThemeGeneral>(token: string): (theme: Partial<T>) => Token<any, T> {
 	return (theme) => theme[token];
 }
 

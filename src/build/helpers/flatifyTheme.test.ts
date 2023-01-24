@@ -1,5 +1,5 @@
-import {flatifyTheme} from '@/build/helpers/flatifyTheme';
-import {ThemeDescription} from '@/interfaces/general';
+import { flatifyTheme } from '@/build/helpers/flatifyTheme';
+import { ThemeDescription } from '@/interfaces/general';
 
 describe('flatifyTheme', () => {
 	it('should return new object', () => {
@@ -15,18 +15,18 @@ describe('flatifyTheme', () => {
 	});
 
 	it('should not touch flat vars', () => {
-		const theme: Partial<ThemeDescription> = {opacityDisable: 0.5};
+		const theme: Partial<ThemeDescription> = { opacityDisable: 0.5 };
 
-		expect(flatifyTheme(theme)).toStrictEqual({opacityDisable: 0.5});
+		expect(flatifyTheme(theme)).toStrictEqual({ opacityDisable: 0.5 });
 	});
 
 	it('should not touch colors', () => {
 		const theme: Partial<ThemeDescription> = {
-			colors: {colorTextPrimary: 'blue'} as any,
+			colors: { colorTextPrimary: 'blue' } as any,
 		};
 
 		expect(flatifyTheme(theme)).toStrictEqual({
-			colors: {colorTextPrimary: 'blue'},
+			colors: { colorTextPrimary: 'blue' },
 		});
 	});
 

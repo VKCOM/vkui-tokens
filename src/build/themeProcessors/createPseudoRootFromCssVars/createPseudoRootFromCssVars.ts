@@ -1,9 +1,4 @@
-import {
-	PixelifyTheme,
-	Theme,
-	ThemeCssVars,
-	ThemeCssVarsWide,
-} from '@/interfaces/general';
+import { PixelifyTheme, Theme, ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
 
 function fillNewValues({
 	objectTo,
@@ -46,7 +41,7 @@ export function createPseudoRootFromCssVars<T = Theme>(
 	const theme: PixelifyTheme<T> = JSON.parse(JSON.stringify(pseudoTheme));
 
 	Object.keys(theme).forEach((key) => {
-		fillNewValues({objectTo: theme, objectFrom: cssVarsTheme, key});
+		fillNewValues({ objectTo: theme, objectFrom: cssVarsTheme, key });
 	});
 
 	return theme;

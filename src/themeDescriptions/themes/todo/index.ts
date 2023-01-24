@@ -1,9 +1,9 @@
-import {ThemeTodoDescription} from '@/interfaces/themes/todo';
+import { ThemeTodoDescription } from '@/interfaces/themes/todo';
 
-import {lightTheme} from '../../base/paradigm';
-import {helpers} from '../../common/helpers';
+import { lightTheme } from '../../base/paradigm';
+import { helpers } from '../../common/helpers';
 
-const {x12, x10} = helpers;
+const { x12, x10 } = helpers;
 
 export const todoTheme: ThemeTodoDescription = {
 	...lightTheme,

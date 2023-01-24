@@ -1,4 +1,4 @@
-import {getRGBA, toneOpacity} from './cssHelpers';
+import { getRGBA, toneOpacity } from './cssHelpers';
 
 describe('cssHelpers', () => {
 	describe('getRGBA', () => {

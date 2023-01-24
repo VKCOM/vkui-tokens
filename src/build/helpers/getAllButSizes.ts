@@ -1,9 +1,6 @@
 const regexSize = /^(size|font|x\d+)/i;
 
-export function getAllButSizes(
-	theme: Record<string, any>,
-	themeNameBase?: unknown,
-): any {
+export function getAllButSizes(theme: Record<string, any>, themeNameBase?: unknown): any {
 	return Object.keys(theme).reduce<Record<string, any>>((acc, key) => {
 		const value = theme[key];
 

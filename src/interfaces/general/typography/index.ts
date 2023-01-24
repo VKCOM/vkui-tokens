@@ -1,4 +1,4 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
 type TLength = string | 0;
 

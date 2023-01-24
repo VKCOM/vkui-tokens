@@ -1,14 +1,14 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {staticRef} from '@/build/helpers/tokenHelpers';
-import {Font} from '@/interfaces/general/typography';
-import {ThemeCloudDescription} from '@/interfaces/themes/cloud';
-import {ThemeCloudDarkDescription} from '@/interfaces/themes/cloudDark';
+import { staticRef } from '@/build/helpers/tokenHelpers';
+import { Font } from '@/interfaces/general/typography';
+import { ThemeCloudDescription } from '@/interfaces/themes/cloud';
+import { ThemeCloudDarkDescription } from '@/interfaces/themes/cloudDark';
 
-import {darkTheme, darkThemeElevation, lightTheme} from '../../base/paradigm';
-import {helpers} from '../../common';
+import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm';
+import { helpers } from '../../common';
 
-const {x2, x4, x5} = helpers;
+const { x2, x4, x5 } = helpers;
 
 // шрифты не наследуются от fonSize потому что
 // мы хотим обновить шрифтовую шкалу и проще начать с этого проекта
@@ -16,14 +16,8 @@ type FontAccentAtributes = {
 	fontFamily: Property.FontFamily;
 	fontWeight: Property.FontWeight;
 };
-const fontFamilyBase: Property.FontFamily =
-	'Inter, Helvetica, Arial, sans-serif';
-const {
-	fontFamilyAccent,
-	fontWeightBase3,
-	fontWeightAccent1,
-	fontWeightAccent2,
-} = lightTheme;
+const fontFamilyBase: Property.FontFamily = 'Inter, Helvetica, Arial, sans-serif';
+const { fontFamilyAccent, fontWeightBase3, fontWeightAccent1, fontWeightAccent2 } = lightTheme;
 
 const fontAccentBoldAtributes: FontAccentAtributes = {
 	fontFamily: staticRef(fontFamilyAccent),
