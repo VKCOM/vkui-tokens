@@ -1,15 +1,15 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
 import {
 	AllowedParadigmColorDescriptions,
 	AllowedParadigmColorTokens,
 	ThemePulseDescription,
 } from '@/interfaces/themes/pulse';
-import {ThemePulseDarkDescription} from '@/interfaces/themes/pulseDark';
-import {darkColors, lightThemeBase} from '@/themeDescriptions/base/paradigm';
-import {helpers} from '@/themeDescriptions/common';
+import { ThemePulseDarkDescription } from '@/interfaces/themes/pulseDark';
+import { darkColors, lightThemeBase } from '@/themeDescriptions/base/paradigm';
+import { helpers } from '@/themeDescriptions/common';
 
-const {x3, x4, x5} = helpers;
+const { x3, x4, x5 } = helpers;
 
 const allowedParadigmColors: AllowedParadigmColorTokens[] = [
 	'colorTextPrimary',
@@ -92,10 +92,7 @@ const allowedParadigmColors: AllowedParadigmColorTokens[] = [
 	'colorAvatarOverlay',
 ];
 
-const pick = (
-	colors,
-	keys: AllowedParadigmColorTokens[],
-): AllowedParadigmColorDescriptions =>
+const pick = (colors, keys: AllowedParadigmColorTokens[]): AllowedParadigmColorDescriptions =>
 	keys
 		.filter((key) => key in colors)
 		.reduce((res, key) => {

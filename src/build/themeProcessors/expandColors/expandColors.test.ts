@@ -1,4 +1,4 @@
-import {getExpandedThemeColors} from './expandColors';
+import { getExpandedThemeColors } from './expandColors';
 
 describe('expandColors', () => {
 	it('should return null if colors not specified', () => {

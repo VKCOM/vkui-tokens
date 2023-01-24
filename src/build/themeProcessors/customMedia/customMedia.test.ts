@@ -1,12 +1,8 @@
-import {Breakpoints} from '@/interfaces/general/tools';
-import {CustomMediaByViewport} from '@/interfaces/general/tools/customMedia';
-import {ViewportsOrdered} from '@/interfaces/general/tools/viewports';
+import { Breakpoints } from '@/interfaces/general/tools';
+import { CustomMediaByViewport } from '@/interfaces/general/tools/customMedia';
+import { ViewportsOrdered } from '@/interfaces/general/tools/viewports';
 
-import {
-	getCustomMediaKey,
-	getUsingViewports,
-	processCustomMedia,
-} from './customMedia';
+import { getCustomMediaKey, getUsingViewports, processCustomMedia } from './customMedia';
 
 describe('customMedia', () => {
 	describe('getCustomMediaKey', () => {
@@ -37,10 +33,7 @@ describe('customMedia', () => {
 				},
 			};
 
-			expect(getUsingViewports<Viewports>(breakpoints)).toStrictEqual([
-				'touch',
-				'desktopS',
-			]);
+			expect(getUsingViewports<Viewports>(breakpoints)).toStrictEqual(['touch', 'desktopS']);
 		});
 
 		it('should sort breakpoints', () => {
@@ -86,15 +79,13 @@ describe('customMedia', () => {
 
 			const testData: Breakpoints<Viewports> = {
 				breakpoints: {
-					desktopS: {breakpoint: 0, adaptiveValue: 'regular'},
+					desktopS: { breakpoint: 0, adaptiveValue: 'regular' },
 				},
 			};
 
 			const expectedResult: CustomMediaByViewport<Viewports> = {};
 
-			expect(processCustomMedia<Viewports>(testData)).toStrictEqual(
-				expectedResult,
-			);
+			expect(processCustomMedia<Viewports>(testData)).toStrictEqual(expectedResult);
 		});
 
 		it('should correctly work with single breakpoint', () => {

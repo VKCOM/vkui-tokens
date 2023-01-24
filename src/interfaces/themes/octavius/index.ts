@@ -1,12 +1,12 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {ThemeCssVars} from '@/interfaces/general';
+import { ThemeCssVars } from '@/interfaces/general';
 import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
-import {Adaptive} from '@/interfaces/general/tools';
+import { Adaptive } from '@/interfaces/general/tools';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
@@ -58,9 +58,7 @@ export interface ThemeOctaviusLocalSizes {
 }
 
 type ThemeOctaviusAdaptiveTokens = {
-	[key in keyof ThemeOctaviusLocalSizes]: Adaptive<
-		ThemeOctaviusLocalSizes[key]
-	>;
+	[key in keyof ThemeOctaviusLocalSizes]: Adaptive<ThemeOctaviusLocalSizes[key]>;
 };
 
 export interface LocalOctaviusColorsDescriptionStruct {
@@ -274,5 +272,4 @@ export interface ThemeOctavius
 		OctaviusLocalColors,
 		ThemeOctaviusAdaptiveTokens {}
 
-export interface ThemeOctaviusCssVars
-	extends ThemeCssVars<ThemeOctavius, 'breakpoints'> {}
+export interface ThemeOctaviusCssVars extends ThemeCssVars<ThemeOctavius, 'breakpoints'> {}

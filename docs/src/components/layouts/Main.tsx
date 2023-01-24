@@ -7,7 +7,7 @@ import {
 	View,
 	WebviewType,
 } from '@vkontakte/vkui';
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
 import Header from './shared/Header/Header';
 
@@ -15,7 +15,7 @@ type Props = {
 	children: React.ReactNode;
 };
 
-const Main: FC<Props> = ({children}) => (
+const Main: FC<Props> = ({ children }) => (
 	<ConfigProvider webviewType={WebviewType.INTERNAL}>
 		<AdaptivityProvider sizeX={SizeType.COMPACT}>
 			<AppRoot>

@@ -1,19 +1,14 @@
 import './TokensActions.css';
 
-import {Icon20Search} from '@vkontakte/icons';
-import {
-	CustomSelect,
-	Input,
-	SegmentedControl,
-	useAdaptivity,
-} from '@vkontakte/vkui';
-import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
+import { Icon20Search } from '@vkontakte/icons';
+import { CustomSelect, Input, SegmentedControl, useAdaptivity } from '@vkontakte/vkui';
+import { ChipsSelect } from '@vkontakte/vkui/dist/unstable';
 import clsx from 'clsx';
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
-import {ChipOption, ValueType} from '@/shared/types';
+import { ChipOption, ValueType } from '@/shared/types';
 
-import {valueTypes} from './TokensActions.content';
+import { valueTypes } from './TokensActions.content';
 
 type Props = {
 	tagsProps: {
@@ -36,13 +31,8 @@ type Props = {
 	};
 };
 
-const TokensActions: FC<Props> = ({
-	tagsProps,
-	themesProps,
-	valueTypesProps,
-	searchProps,
-}) => {
-	const {viewWidth} = useAdaptivity();
+const TokensActions: FC<Props> = ({ tagsProps, themesProps, valueTypesProps, searchProps }) => {
+	const { viewWidth } = useAdaptivity();
 	const isTablet = viewWidth > 3;
 
 	return (
@@ -88,12 +78,7 @@ const TokensActions: FC<Props> = ({
 				/>
 			</div>
 			<div>
-				<Input
-					type="text"
-					placeholder="Поиск"
-					after={<Icon20Search />}
-					{...searchProps}
-				/>
+				<Input type="text" placeholder="Поиск" after={<Icon20Search />} {...searchProps} />
 			</div>
 		</div>
 	);

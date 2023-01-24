@@ -1,4 +1,4 @@
-import {compileTypeScript} from '@/build/compilers/ts/compileTypeScript';
+import { compileTypeScript } from '@/build/compilers/ts/compileTypeScript';
 
 describe('compileTypeScript', () => {
 	const testData = {
@@ -6,8 +6,7 @@ describe('compileTypeScript', () => {
 	};
 
 	it('should work', () => {
-		expect(compileTypeScript(testData))
-			.toBe(`import { $$InterfaceName$$ } from '$$InterfaceURL$$';
+		expect(compileTypeScript(testData)).toBe(`import { $$InterfaceName$$ } from '$$InterfaceURL$$';
 
 const theme: $$InterfaceName$$ = {
 	"themeName": "base"

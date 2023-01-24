@@ -1,4 +1,4 @@
-import {lint} from '@/lint/index';
+import { lint } from '@/lint/index';
 
 describe('lint unit', () => {
 	test('shows no warnings if everything is ok', () => {
@@ -39,7 +39,7 @@ describe('lint unit', () => {
 		expect(
 			lint([
 				{
-					colors: {colorBg: 'transparent'},
+					colors: { colorBg: 'transparent' },
 				},
 			]),
 		).toEqual([

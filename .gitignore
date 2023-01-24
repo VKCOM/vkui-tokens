@@ -13,6 +13,7 @@ node_modules/
 !/tasks/**/*.js
 !.eslintrc.js
 !jest.config.js
+!.prettierrc.js
 .yarnclean
 .DS_Store
 .idea

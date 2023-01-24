@@ -1,7 +1,7 @@
-import {ThemePharmaDescription} from '@/interfaces/themes/pharma';
+import { ThemePharmaDescription } from '@/interfaces/themes/pharma';
 
-import {projectColors} from '../../common';
-import {mediaTheme} from '../media';
+import { projectColors } from '../../common';
+import { mediaTheme } from '../media';
 
 export const pharmaTheme: ThemePharmaDescription = {
 	...mediaTheme,

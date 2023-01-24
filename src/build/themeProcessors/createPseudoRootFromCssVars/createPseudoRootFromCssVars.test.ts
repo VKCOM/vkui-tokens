@@ -1,28 +1,20 @@
-import {
-	PixelifyTheme,
-	Theme,
-	ThemeCssVars,
-	ThemeCssVarsWide,
-} from '@/interfaces/general';
+import { PixelifyTheme, Theme, ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeCssVarsWide,
 } from '@/interfaces/namespaces/paradigm';
 
-import {createPseudoRootFromCssVars} from './createPseudoRootFromCssVars';
+import { createPseudoRootFromCssVars } from './createPseudoRootFromCssVars';
 
 describe('createPseudoRootFromCssVars', () => {
 	it('should return new object', () => {
 		const theme = {};
 		const cssVarsTheme = {};
 
-		expect(
-			createPseudoRootFromCssVars(
-				theme as Theme,
-				cssVarsTheme as ThemeCssVarsWide,
-			),
-		).not.toBe(theme);
+		expect(createPseudoRootFromCssVars(theme as Theme, cssVarsTheme as ThemeCssVarsWide)).not.toBe(
+			theme,
+		);
 	});
 
 	it('should change type', () => {
@@ -35,12 +27,9 @@ describe('createPseudoRootFromCssVars', () => {
 			themeType: 'cssVars',
 		};
 
-		expect(
-			createPseudoRootFromCssVars(
-				theme as Theme,
-				cssVarsTheme as ThemeCssVars,
-			),
-		).toStrictEqual({themeType: 'pixelify'});
+		expect(createPseudoRootFromCssVars(theme as Theme, cssVarsTheme as ThemeCssVars)).toStrictEqual(
+			{ themeType: 'pixelify' },
+		);
 	});
 
 	it('should expand flat values', () => {
@@ -67,12 +56,9 @@ describe('createPseudoRootFromCssVars', () => {
 			x2: 'var(--paradigm--x2, 8px)',
 		};
 
-		expect(
-			createPseudoRootFromCssVars(
-				theme,
-				cssVarsTheme as ParadigmThemeCssVars,
-			),
-		).toStrictEqual(expectedResult);
+		expect(createPseudoRootFromCssVars(theme, cssVarsTheme as ParadigmThemeCssVars)).toStrictEqual(
+			expectedResult,
+		);
 	});
 
 	it('should expand adaptive values', () => {
@@ -109,9 +95,7 @@ describe('createPseudoRootFromCssVars', () => {
 			},
 		};
 
-		expect(
-			createPseudoRootFromCssVars(theme, cssVarsTheme as any),
-		).toStrictEqual(expectedResult);
+		expect(createPseudoRootFromCssVars(theme, cssVarsTheme as any)).toStrictEqual(expectedResult);
 	});
 
 	it('should expand adaptive complex values', () => {
@@ -183,10 +167,7 @@ describe('createPseudoRootFromCssVars', () => {
 		};
 
 		expect(
-			createPseudoRootFromCssVars(
-				theme,
-				cssVarsTheme as ParadigmThemeCssVarsWide,
-			),
+			createPseudoRootFromCssVars(theme, cssVarsTheme as ParadigmThemeCssVarsWide),
 		).toStrictEqual(expectedResult);
 	});
 
@@ -215,10 +196,7 @@ describe('createPseudoRootFromCssVars', () => {
 		};
 
 		expect(
-			createPseudoRootFromCssVars<ParadigmTheme>(
-				theme as ParadigmTheme,
-				cssVarsTheme as any,
-			),
+			createPseudoRootFromCssVars<ParadigmTheme>(theme as ParadigmTheme, cssVarsTheme as any),
 		).toStrictEqual(expectedResult);
 	});
 });

@@ -1,4 +1,4 @@
-import {lint} from '@/lint/index';
+import { lint } from '@/lint/index';
 
 describe('lint', () => {
 	test('snapshot', () => {

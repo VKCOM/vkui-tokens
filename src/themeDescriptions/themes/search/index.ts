@@ -1,7 +1,7 @@
-import {Adaptive} from '@/interfaces/general/tools';
-import {Font} from '@/interfaces/general/typography';
-import {ThemeSearchDescription} from '@/interfaces/themes/search';
-import {lightTheme} from '@/themeDescriptions/base/paradigm';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
+import { ThemeSearchDescription } from '@/interfaces/themes/search';
+import { lightTheme } from '@/themeDescriptions/base/paradigm';
 
 export const searchTheme: ThemeSearchDescription = {
 	...lightTheme,

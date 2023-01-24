@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const TerserPlugin = require('terser-webpack-plugin');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpackConfig = require('./webpack.config');
 
@@ -43,9 +43,7 @@ module.exports = function (env, argv) {
 		},
 		output: {
 			path: path.resolve(__dirname, '../dist'),
-			filename: watchMode
-				? 'assets/[name].[hash].js'
-				: 'assets/[name].[chunkhash].js',
+			filename: watchMode ? 'assets/[name].[hash].js' : 'assets/[name].[chunkhash].js',
 			publicPath: 'auto',
 		},
 		module: {
@@ -59,7 +57,7 @@ module.exports = function (env, argv) {
 			new HtmlWebpackPlugin({
 				template: './public/index.html',
 			}),
-			new WebpackNotifierPlugin({alwaysNotify: false}),
+			new WebpackNotifierPlugin({ alwaysNotify: false }),
 			new CopyWebpackPlugin({
 				patterns: [
 					{

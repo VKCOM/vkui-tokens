@@ -1,14 +1,10 @@
-import {useAdaptivity} from '@vkontakte/vkui';
-import React, {FC, useMemo, useState} from 'react';
+import { useAdaptivity } from '@vkontakte/vkui';
+import React, { FC, useMemo, useState } from 'react';
 
-import {
-	TokensActions,
-	TokensContent,
-	TokensHeader,
-} from '@/components/pages/Tokens';
+import { TokensActions, TokensContent, TokensHeader } from '@/components/pages/Tokens';
 import tokensData from '@/public/static/data/tokensData.json';
-import {useDebounce} from '@/shared/hooks/useDebounce';
-import {ChipOption, Tokens as TokensType, ValueType} from '@/shared/types';
+import { useDebounce } from '@/shared/hooks/useDebounce';
+import { ChipOption, Tokens as TokensType, ValueType } from '@/shared/types';
 
 const themes = Object.keys(tokensData);
 
@@ -18,10 +14,7 @@ function transformTags(tokens: TokensType) {
 	const flatTags = tags.reduce((acc, curr) => acc.concat(curr), []);
 	const sortedTagsWithQuantity = flatTags
 		.reduce(
-			(acc, curr, i, arr) =>
-				acc.concat([
-					[curr, arr.filter((curr1) => curr1 === curr).length],
-				]),
+			(acc, curr, i, arr) => acc.concat([[curr, arr.filter((curr1) => curr1 === curr).length]]),
 			[],
 		)
 		.sort((a, b) => b[1] - a[1]);
@@ -48,26 +41,21 @@ function findThemeTags(themeNames: string[]): string[] {
 }
 
 const Tokens: FC = () => {
-	const {viewWidth} = useAdaptivity();
+	const { viewWidth } = useAdaptivity();
 	const isTablet = viewWidth > 3;
 
 	const themeTags = useMemo(() => findThemeTags(themes), [themes]);
 	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
 	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
-	const [selectedValueType, setSelectedValueType] =
-		useState<ValueType>('regular');
+	const [selectedValueType, setSelectedValueType] = useState<ValueType>('regular');
 	const [searchValue, setSearchValue] = useState('');
 	const searchValueDebounced = useDebounce(searchValue, 500);
 
-	const searchChangeHandler = (
-		event: React.ChangeEvent<HTMLInputElement>,
-	) => {
+	const searchChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setSearchValue(event.target.value);
 	};
 
-	const changeThemeHandler = (
-		event: React.ChangeEvent<HTMLSelectElement>,
-	) => {
+	const changeThemeHandler = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		setSelectedTheme(event.target.value);
 	};
 
@@ -100,10 +88,7 @@ const Tokens: FC = () => {
 			<TokensContent
 				tokens={tokensData[selectedTheme]}
 				selectedTags={React.useMemo(
-					() =>
-						selectedTags.map((tagOption) =>
-							String(tagOption.value),
-						),
+					() => selectedTags.map((tagOption) => String(tagOption.value)),
 					[selectedTags.join(' ')],
 				)}
 				selectedValueType={selectedValueType}
