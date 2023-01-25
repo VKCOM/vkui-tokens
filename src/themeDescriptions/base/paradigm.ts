@@ -346,8 +346,8 @@ export const lightThemeBase: ThemeDescription = {
 		regular: {
 			fontSize: 14,
 			lineHeight: 18,
-			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
 		},
 		compact: {
 			fontSize: 13,
