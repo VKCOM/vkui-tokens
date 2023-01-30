@@ -1,5 +1,6 @@
 import {
 	AdaptivityProvider,
+	Appearance,
 	AppRoot,
 	ConfigProvider,
 	Panel,
@@ -16,7 +17,7 @@ type Props = {
 };
 
 const Main: FC<Props> = ({ children }) => (
-	<ConfigProvider webviewType={WebviewType.INTERNAL}>
+	<ConfigProvider appearance={Appearance.LIGHT} webviewType={WebviewType.INTERNAL}>
 		<AdaptivityProvider sizeX={SizeType.COMPACT}>
 			<AppRoot>
 				<View activePanel="main">
