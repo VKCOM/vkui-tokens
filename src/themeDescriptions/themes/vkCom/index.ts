@@ -156,6 +156,10 @@ export const vkComTheme: ThemeVkComDescription = {
 		regular: 12,
 	},
 
+	sizePopupSmall: {
+		regular: 448,
+	},
+
 	// Компонент Switch
 	sizeSwitchHeight: {
 		regular: 10,
