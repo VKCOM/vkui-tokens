@@ -50,7 +50,7 @@
     "@vkontakte/vk-bridge": "2.7.2",
     "@vkontakte/vkui": "4.40.0",
     "babel-jest": "29.4.1",
-    "babel-loader": "9.1.0",
+    "babel-loader": "9.1.2",
     "clean-webpack-plugin": "4.0.0",
     "clsx": "1.2.1",
     "color": "4.2.3",
