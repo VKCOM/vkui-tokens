@@ -2010,10 +2010,10 @@
   version "1.0.0"
   resolved "https://github.com/VKCOM/Appearance#b38b6c9448c79d39f2618cfb821e7199e82e8f38"
 
-"@vkontakte/icons@2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.3.0.tgz#ab0474268c5727b78558ed817aa5d6430cc264b7"
-  integrity sha512-VRnwu7R/Fi42ghnb08MMT8kaa1xigR9IzaBP8R+nNb5klORGfWB8OVnRNpEoGWbJDqT6IR/+89Qc7E593ND8rw==
+"@vkontakte/icons@2.14.0":
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.14.0.tgz#3bfa8340f24496a886f1eea84e792e1a70e3e462"
+  integrity sha512-uipsIzPFYymniXuu2no/NKeW8M/u+6JqZOskK0me58ckZY8jQP52QtZKdEpC6pQmtNacipsb/aj9G5wSLlJqlg==
   dependencies:
     svg-baker-runtime "1.4.7"
 
