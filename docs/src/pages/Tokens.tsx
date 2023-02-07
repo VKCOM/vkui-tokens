@@ -1,4 +1,4 @@
-import { useAdaptivity } from '@vkontakte/vkui';
+import { useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
 import React, { FC, useMemo, useState } from 'react';
 
 import { TokensActions, TokensContent, TokensHeader } from '@/components/pages/Tokens';
@@ -41,8 +41,8 @@ function findThemeTags(themeNames: string[]): string[] {
 }
 
 const Tokens: FC = () => {
-	const { viewWidth } = useAdaptivity();
-	const isTablet = viewWidth > 3;
+	const { viewWidth } = useAdaptivityWithJSMediaQueries();
+	const isTabletPlus = viewWidth > 3;
 
 	const themeTags = useMemo(() => findThemeTags(themes), [themes]);
 	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
@@ -60,7 +60,7 @@ const Tokens: FC = () => {
 	};
 
 	return (
-		<div className={isTablet ? 'space-y-24px' : 'space-y-16px'}>
+		<div className={isTabletPlus ? 'space-y-24px' : 'space-y-16px'}>
 			<TokensHeader />
 			<TokensActions
 				tagsProps={{
