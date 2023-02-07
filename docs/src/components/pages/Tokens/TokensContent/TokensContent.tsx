@@ -2,7 +2,7 @@ import './TokensContent.css';
 
 import { Icon20CopyOutline } from '@vkontakte/icons';
 import { copyTextToClipboard } from '@vkontakte/vkjs';
-import { Button, Paragraph, Separator, useAdaptivity } from '@vkontakte/vkui';
+import { Button, Paragraph, Separator, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
 import React, { FC, useMemo } from 'react';
 
 import { Tokens, ValueType } from '@/shared/types';
@@ -18,8 +18,8 @@ type Props = {
 };
 
 const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, searchValue }) => {
-	const { viewWidth } = useAdaptivity();
-	const isTablet = viewWidth > 3;
+	const { viewWidth } = useAdaptivityWithJSMediaQueries();
+	const isTabletPlus = viewWidth > 3;
 
 	const tokensKeys = useMemo(
 		() =>
@@ -31,7 +31,7 @@ const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, sea
 
 	return (
 		<div className="tokens-content-container">
-			<div className="tokens-content-header" style={!isTablet ? { display: 'none' } : {}}>
+			<div className="tokens-content-header" style={isTabletPlus ? undefined : { display: 'none' }}>
 				<div>
 					<Paragraph>Название токена</Paragraph>
 				</div>
@@ -56,7 +56,7 @@ const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, sea
 									appearance="neutral"
 									className="token-name-btn"
 									hoverMode="token-name-btn_hover"
-									stretched={!isTablet}
+									stretched={!isTabletPlus}
 									onClick={() => copyTextToClipboard(token)}
 								>
 									{token}
@@ -68,12 +68,12 @@ const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, sea
 									selectedValueType={selectedValueType}
 								/>
 							</div>
-							{isTablet && (
+							{isTabletPlus && (
 								<div>
 									<Paragraph>{tokens[token].desc || '-'}</Paragraph>
 								</div>
 							)}
-							{!isTablet && !!tokens[token].desc && (
+							{!isTabletPlus && !!tokens[token].desc && (
 								<div>
 									<Paragraph>{tokens[token].desc}</Paragraph>
 								</div>
