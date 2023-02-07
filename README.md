@@ -5,6 +5,8 @@
 [![Npm](https://img.shields.io/npm/v/@vkontakte/vkui-tokens)](https://www.npmjs.com/package/@vkontakte/vkui-tokens)
 [![GitHub Repo stars](https://img.shields.io/github/stars/VKCOM/vkui-tokens?label=GitHub%20Repo%20Stars&style=social)](https://github.com/VKCOM/vkui-tokens)
 
+**[Интерактивная документация](https://vkcom.github.io/vkui-tokens/)**
+
 Этот репозиторий содержит токены единой дизайн-системы VKUI и
 их значения для тем оформления различных проектов.
 
