@@ -1,8 +1,10 @@
 import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
 
+import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription } from '@/interfaces/general';
 import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
 import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
+
 import {
 	darkColors,
 	darkElevation,
@@ -12,6 +14,13 @@ import {
 } from '@/themeDescriptions/base/vk';
 
 import { resolveColor } from './appearance';
+
+const fontFamilyAccent =
+	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyBase =
+	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontWeightAccent2 = 500;
+const fontWeightBase3 = 400;
 
 const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
@@ -156,6 +165,36 @@ export const vkComTheme: ThemeVkComDescription = {
 		regular: 12,
 	},
 
+	fontHeadline: alias('fontHeadline1'),
+	fontHeadline1: {
+		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 18,
+		},
+	},
+
+	fontText: {
+		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase3,
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 16,
+		},
+	},
+
+	sizeBasePaddingHorizontal: {
+		regular: 12,
+  },
 	sizePopupSmall: {
 		regular: 448,
 	},
