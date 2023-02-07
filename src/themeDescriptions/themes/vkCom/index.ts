@@ -4,7 +4,6 @@ import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription } from '@/interfaces/general';
 import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
 import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
-
 import {
 	darkColors,
 	darkElevation,
@@ -15,10 +14,8 @@ import {
 
 import { resolveColor } from './appearance';
 
-const fontFamilyAccent =
-	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const fontFamilyBase =
-	'-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyAccent = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyBase = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontWeightAccent2 = 500;
 const fontWeightBase3 = 400;
 
@@ -194,7 +191,7 @@ export const vkComTheme: ThemeVkComDescription = {
 
 	sizeBasePaddingHorizontal: {
 		regular: 12,
-  },
+	},
 	sizePopupSmall: {
 		regular: 448,
 	},
