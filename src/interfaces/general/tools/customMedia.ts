@@ -1,5 +1,5 @@
-import {GetLast, GetLength} from './utils';
-import {ViewportsTuple} from './viewports';
+import { GetLast, GetLength } from './utils';
+import { ViewportsTuple } from './viewports';
 
 export type CustomMediaByViewportUnion<Vt extends ViewportsTuple> =
 	| `width${Capitalize<GetLength<Vt> extends 1 ? never : Vt[number]>}`

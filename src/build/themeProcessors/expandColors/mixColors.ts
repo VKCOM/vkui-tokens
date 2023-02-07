@@ -1,5 +1,5 @@
 import color from 'color';
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
 export const mixColors = (
 	colorArg: Property.Color,

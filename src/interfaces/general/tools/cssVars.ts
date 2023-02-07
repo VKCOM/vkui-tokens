@@ -1,7 +1,7 @@
 /**
  * Структура переменной в CssVars теме
  */
-import {Adaptive} from '.';
+import { Adaptive } from '.';
 
 export interface CssVarValue {
 	/**
@@ -19,22 +19,16 @@ export interface WideCssVarValue<T> extends CssVarValue {
 	originalValue: T;
 }
 
-type Valuefy<
-	T,
-	WithoutValue extends boolean = false,
-> = WithoutValue extends true ? CssVarValue : WideCssVarValue<T>;
+type Valuefy<T, WithoutValue extends boolean = false> = WithoutValue extends true
+	? CssVarValue
+	: WideCssVarValue<T>;
 
-export type NamifyObject<T, W extends boolean = false> = T extends Adaptive<
-	T[keyof T]
->
+export type NamifyObject<T, W extends boolean = false> = T extends Adaptive<T[keyof T]>
 	? {
 			auto: NamifyObject<T['regular'], true>;
 			regular: NamifyObject<T['regular'], W>;
 	  } & {
-			[key in Exclude<keyof T, 'regular'>]?: NamifyObject<
-				Partial<T['regular']>,
-				W
-			>;
+			[key in Exclude<keyof T, 'regular'>]?: NamifyObject<Partial<T['regular']>, W>;
 	  }
 	: T extends Record<string, unknown>
 	? {

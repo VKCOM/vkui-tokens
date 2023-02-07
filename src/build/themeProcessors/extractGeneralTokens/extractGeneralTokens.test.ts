@@ -1,4 +1,4 @@
-import {extractGeneralTokens} from './extractGeneralTokens';
+import { extractGeneralTokens } from './extractGeneralTokens';
 
 describe('mixColors', () => {
 	it('should return new object', () => {

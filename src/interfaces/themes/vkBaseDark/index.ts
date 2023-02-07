@@ -1,4 +1,4 @@
-import {Theme, ThemeCssVars, ThemeDescription} from '@/interfaces/general';
+import { Theme, ThemeCssVars, ThemeDescription } from '@/interfaces/general';
 
 export interface ThemeVkBaseDark extends Theme {}
 export interface ThemeVkBaseDarkDescription extends ThemeDescription {}

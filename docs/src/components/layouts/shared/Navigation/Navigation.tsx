@@ -1,7 +1,7 @@
-import {Button} from '@vkontakte/vkui';
-import React, {FC} from 'react';
+import { Button } from '@vkontakte/vkui';
+import React, { FC } from 'react';
 
-import {navigation} from './Navigation.content';
+import { navigation } from './Navigation.content';
 
 type Props = {
 	isTablet: boolean;
@@ -16,7 +16,7 @@ const styles = {
 	},
 };
 
-const Navigation: FC<Props> = ({isTablet}) => {
+const Navigation: FC<Props> = ({ isTablet }) => {
 	if (!isTablet) {
 		return null;
 	}

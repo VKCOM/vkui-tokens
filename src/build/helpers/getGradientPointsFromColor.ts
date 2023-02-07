@@ -1,7 +1,7 @@
 import color from 'color';
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {GradientPoints} from '@/interfaces/general/gradients';
+import { GradientPoints } from '@/interfaces/general/gradients';
 
 type OpacityMap = Array<[number, number]>;
 

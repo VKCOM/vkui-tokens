@@ -1,4 +1,6 @@
-.my-theme-select, .my-tags-select, .my-segmentedControl {
+.my-theme-select,
+.my-tags-select,
+.my-segmentedControl {
 	width: fit-content;
 }
 

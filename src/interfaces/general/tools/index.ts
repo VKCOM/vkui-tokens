@@ -1,4 +1,4 @@
-import {DefaultViewports, ViewportsTuple} from './viewports';
+import { DefaultViewports, ViewportsTuple } from './viewports';
 
 /**
  * Cтруктура адаптивной переменной.

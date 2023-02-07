@@ -1,10 +1,5 @@
-import {TokenItemValue, ValueType} from '@/shared/types';
-import {
-	isNumber,
-	isRegularCompactObj,
-	isRegularObj,
-	isString,
-} from '@/shared/utils';
+import { TokenItemValue, ValueType } from '@/shared/types';
+import { isNumber, isRegularCompactObj, isRegularObj, isString } from '@/shared/utils';
 
 export function oneLineRenderCondition(contentValue: TokenItemValue): boolean {
 	return (
@@ -15,10 +10,7 @@ export function oneLineRenderCondition(contentValue: TokenItemValue): boolean {
 	);
 }
 
-export function getOneLineContent(
-	value: TokenItemValue,
-	valueType: ValueType,
-): string | number {
+export function getOneLineContent(value: TokenItemValue, valueType: ValueType): string | number {
 	if (isString(value) || isNumber(value)) {
 		return value;
 	}

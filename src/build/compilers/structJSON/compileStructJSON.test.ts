@@ -1,4 +1,4 @@
-import {compileStructJSON} from './compileStructJSON';
+import { compileStructJSON } from './compileStructJSON';
 
 describe('compileJSON', () => {
 	it('should correct stringify', () => {

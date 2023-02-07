@@ -1,18 +1,15 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {ThemeCssVars} from '@/interfaces/general';
+import { ThemeCssVars } from '@/interfaces/general';
 import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
-import {Adaptive} from '@/interfaces/general/tools';
-import {Font} from '@/interfaces/general/typography';
-import {LocalParadigmColorsDescriptionStruct} from '@/interfaces/namespaces/paradigm';
-import {
-	ThemeParadigmBase,
-	ThemeParadigmBaseDescription,
-} from '@/interfaces/themes/paradigmBase';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
+import { LocalParadigmColorsDescriptionStruct } from '@/interfaces/namespaces/paradigm';
+import { ThemeParadigmBase, ThemeParadigmBaseDescription } from '@/interfaces/themes/paradigmBase';
 
 export interface ThemeCalendarOverValues {
 	calendarFontTextEvent: Adaptive<Font>;
@@ -112,5 +109,4 @@ export interface ThemeCalendarDescription
 		ColorsDescriptionStruct;
 }
 
-export interface ThemeCalendarCssVars
-	extends ThemeCssVars<ThemeCalendar, 'breakpoints'> {}
+export interface ThemeCalendarCssVars extends ThemeCssVars<ThemeCalendar, 'breakpoints'> {}

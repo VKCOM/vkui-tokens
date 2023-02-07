@@ -1,4 +1,4 @@
-import {Theme, ThemeCssVars, ThemeCssVarsWide} from '@/interfaces/general';
+import { Theme, ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
 
 function removeOriginValue(object: Record<string, any>) {
 	if (typeof object === 'object') {
@@ -18,9 +18,7 @@ function removeOriginValue(object: Record<string, any>) {
 	}
 }
 
-export function extractCssVarsStrict<T = Theme>(
-	sourceTheme: ThemeCssVarsWide<T>,
-): ThemeCssVars<T> {
+export function extractCssVarsStrict<T = Theme>(sourceTheme: ThemeCssVarsWide<T>): ThemeCssVars<T> {
 	const theme = JSON.parse(JSON.stringify(sourceTheme));
 
 	removeOriginValue(theme);

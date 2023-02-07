@@ -1,4 +1,4 @@
-import {convertCamelToSnake} from './convertCamelToSnake';
+import { convertCamelToSnake } from './convertCamelToSnake';
 
 describe('convertCamelToSnake', () => {
 	it('should correctly work with empty string', () => {
@@ -18,14 +18,10 @@ describe('convertCamelToSnake', () => {
 	});
 
 	it('should convert many words string', () => {
-		expect(convertCamelToSnake('helloWorldMyFriend')).toBe(
-			'hello_world_my_friend',
-		);
+		expect(convertCamelToSnake('helloWorldMyFriend')).toBe('hello_world_my_friend');
 	});
 
 	it('should convert special case 1', () => {
-		expect(convertCamelToSnake('octaviusShadowLetterList')).toBe(
-			'octavius_shadow_letter_list',
-		);
+		expect(convertCamelToSnake('octaviusShadowLetterList')).toBe('octavius_shadow_letter_list');
 	});
 });

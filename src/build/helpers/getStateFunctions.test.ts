@@ -1,6 +1,6 @@
-import {expect} from '@jest/globals';
+import { expect } from '@jest/globals';
 
-import {getStateFunctions} from './getStateFunctions';
+import { getStateFunctions } from './getStateFunctions';
 
 describe('getStateFunctions', () => {
 	const testThemeData = {
@@ -29,9 +29,7 @@ describe('getStateFunctions', () => {
 
 	describe('stateHover', () => {
 		it('should correctly work with transparent', () => {
-			expect(testStateFunctions.stateHover('transparent')).toBe(
-				'rgba(#00103D,0.04)',
-			);
+			expect(testStateFunctions.stateHover('transparent')).toBe('rgba(#00103D,0.04)');
 		});
 
 		it('should correct create stateHover with custom color', () => {
@@ -41,9 +39,7 @@ describe('getStateFunctions', () => {
 
 	describe('stateActive', () => {
 		it('should correctly work with transparent', () => {
-			expect(testStateFunctions.stateActive('transparent')).toBe(
-				'rgba(#00103D,0.08)',
-			);
+			expect(testStateFunctions.stateActive('transparent')).toBe('rgba(#00103D,0.08)');
 		});
 
 		it('should correct create stateActive with custom color', () => {
@@ -53,9 +49,7 @@ describe('getStateFunctions', () => {
 
 	describe('stateFocus', () => {
 		it('should correctly work with transparent', () => {
-			expect(testStateFunctions.stateFocus('transparent')).toBe(
-				'rgba(#00103D,0.08)',
-			);
+			expect(testStateFunctions.stateFocus('transparent')).toBe('rgba(#00103D,0.08)');
 		});
 
 		it('should correct create stateFocus with custom color', () => {
@@ -65,9 +59,7 @@ describe('getStateFunctions', () => {
 
 	describe('stateDisabled', () => {
 		it('should correct create stateDisabled with custom color', () => {
-			expect(testStateFunctions.stateDisabled('#f00')).toBe(
-				'rgba(255, 0, 0, 0.48)',
-			);
+			expect(testStateFunctions.stateDisabled('#f00')).toBe('rgba(255, 0, 0, 0.48)');
 		});
 	});
 });

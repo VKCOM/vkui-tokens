@@ -1,23 +1,15 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {
-	Theme,
-	ThemeCssVars,
-	ThemeCssVarsWide,
-	ThemeDescription,
-} from '@/interfaces/general';
+import { Theme, ThemeCssVars, ThemeCssVarsWide, ThemeDescription } from '@/interfaces/general';
 import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
-import {Adaptive, Breakpoints} from '@/interfaces/general/tools';
-import {CustomMediaByViewport} from '@/interfaces/general/tools/customMedia';
-import {
-	DefaultViewports,
-	ViewportsTuple,
-} from '@/interfaces/general/tools/viewports';
-import {Font} from '@/interfaces/general/typography';
+import { Adaptive, Breakpoints } from '@/interfaces/general/tools';
+import { CustomMediaByViewport } from '@/interfaces/general/tools/customMedia';
+import { DefaultViewports, ViewportsTuple } from '@/interfaces/general/tools/viewports';
+import { Font } from '@/interfaces/general/typography';
 
 export interface LocalParadigmColorsDescriptionStruct {
 	/**
@@ -704,9 +696,8 @@ type ParadigmAdaptiveTokens = {
 	[key in keyof AdaptiveValues]: Adaptive<AdaptiveValues[key]>;
 };
 
-export interface ParadigmThemeDescription<
-	Vt extends ViewportsTuple = DefaultViewports,
-> extends ThemeDescription,
+export interface ParadigmThemeDescription<Vt extends ViewportsTuple = DefaultViewports>
+	extends ThemeDescription,
 		ParadigmAdaptiveTokens,
 		ParadigmToneValues,
 		ParadigmBorders,
@@ -724,12 +715,11 @@ interface ParadigmThemeStatic<Vt extends ViewportsTuple = DefaultViewports>
 		ParadigmHelpers,
 		ParadigmLocalColors {}
 
-export type ParadigmTheme<Vt extends ViewportsTuple = DefaultViewports> =
-	ParadigmThemeStatic<Vt> & CustomMediaByViewport<Vt>;
+export type ParadigmTheme<Vt extends ViewportsTuple = DefaultViewports> = ParadigmThemeStatic<Vt> &
+	CustomMediaByViewport<Vt>;
 
-export type ParadigmThemeCssVarsWide<
-	Vt extends ViewportsTuple = DefaultViewports,
-> = ThemeCssVarsWide<ParadigmTheme<Vt>, 'breakpoints'>;
+export type ParadigmThemeCssVarsWide<Vt extends ViewportsTuple = DefaultViewports> =
+	ThemeCssVarsWide<ParadigmTheme<Vt>, 'breakpoints'>;
 
 export type ParadigmThemeCssVars<
 	Vt extends ViewportsTuple = DefaultViewports,
