@@ -9,8 +9,43 @@ describe('compileDocsJSON', () => {
 
 		expect(docs).toEqual({
 			importedBaseProp: {
-				desc: 'Short desc tag',
+				desc: [
+					{
+						type: 'text',
+						text: 'Short desc tag',
+					},
+				],
 				tags: ['tag1', 'tag2'],
+			},
+		});
+	});
+
+	it('should correct compile documentation with jsdoc link', () => {
+		const docs = getTypeDocs('src/build/compilers/docs/__test__/testLinks.ts', 'BaseTheme');
+
+		expect(docs).toEqual({
+			importedBaseProp: {
+				desc: [
+					{
+						type: 'text',
+						text: 'Link with text ',
+					},
+					{
+						type: 'link',
+						url: 'https://google.com',
+						text: 'Google',
+					},
+					{
+						type: 'text',
+						text: '.\nLink without text ',
+					},
+					{
+						type: 'link',
+						url: 'https://google.com',
+						text: 'https://google.com',
+					},
+				],
+				tags: [],
 			},
 		});
 	});
@@ -20,23 +55,23 @@ describe('compileDocsJSON', () => {
 
 		expect(docs).toEqual({
 			prop: {
-				desc: '',
+				desc: [],
 				tags: ['empty description'],
 			},
 			propWithoutDoc: {
-				desc: '',
+				desc: [],
 				tags: [],
 			},
 			localBaseProp: {
-				desc: 'Empty tags',
+				desc: [{ type: 'text', text: 'Empty tags' }],
 				tags: [],
 			},
 			importedBaseProp: {
-				desc: 'Short desc tag',
+				desc: [{ type: 'text', text: 'Short desc tag' }],
 				tags: ['tag1', 'tag2'],
 			},
 			derivedProp: {
-				desc: 'Long description tag',
+				desc: [{ type: 'text', text: 'Long description tag' }],
 				tags: ['tagListItem1', 'tagListItem2', 'tagListItem3'],
 			},
 		});
