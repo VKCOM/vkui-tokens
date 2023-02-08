@@ -40,6 +40,12 @@ console.log('успешно\n');
 
 console.log('Начинаем процесс компиляции тем...\n');
 
+console.log('Копируем директорию src/shared...');
+const SHARED_PATH_SOURCE = path.resolve(ROOT_DIR, 'src/shared');
+const SHARED_PATH_DIST = path.resolve(DIST_PATH, 'shared');
+fs.copySync(SHARED_PATH_SOURCE, SHARED_PATH_DIST);
+console.log('успешно\n');
+
 const expandedThemes = themes.map(expandAll);
 const expandedThemesMap: Record<string, typeof expandedThemes[0]> = {};
 

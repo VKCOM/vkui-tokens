@@ -4,6 +4,7 @@ import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription } from '@/interfaces/general';
 import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
 import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
+import { isNotFunction } from '@/shared/lib/guards';
 import {
 	darkColors,
 	darkElevation,
@@ -13,11 +14,6 @@ import {
 } from '@/themeDescriptions/base/vk';
 
 import { resolveColor } from './appearance';
-
-const fontFamilyAccent = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const fontFamilyBase = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const fontWeightAccent2 = 500;
-const fontWeightBase3 = 400;
 
 const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
@@ -167,8 +163,12 @@ export const vkComTheme: ThemeVkComDescription = {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: isNotFunction(lightTheme.fontFamilyAccent)
+				? lightTheme.fontFamilyAccent
+				: undefined,
+			fontWeight: isNotFunction(lightTheme.fontWeightAccent2)
+				? lightTheme.fontWeightAccent2
+				: undefined,
 		},
 		compact: {
 			fontSize: 14,
@@ -180,8 +180,10 @@ export const vkComTheme: ThemeVkComDescription = {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
-			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
+			fontFamily: isNotFunction(lightTheme.fontFamilyBase) ? lightTheme.fontFamilyBase : undefined,
+			fontWeight: isNotFunction(lightTheme.fontWeightAccent3)
+				? lightTheme.fontWeightAccent3
+				: undefined,
 		},
 		compact: {
 			fontSize: 13,
