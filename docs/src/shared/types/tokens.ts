@@ -11,9 +11,20 @@ type TokenItemValueObject = {
 
 export type TokenItemValue = string | number | TokenItemValueObject;
 
+export type Description =
+	| {
+			type: 'text';
+			text: string;
+	  }
+	| {
+			type: 'link';
+			url: string;
+			text: string;
+	  };
+
 export type TokenItem = {
 	tags: Array<string>;
-	desc: string;
+	desc: Description[];
 	value: TokenItemValue;
 };
 

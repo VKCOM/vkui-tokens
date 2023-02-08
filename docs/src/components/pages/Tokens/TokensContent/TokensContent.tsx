@@ -2,10 +2,16 @@ import './TokensContent.css';
 
 import { Icon20CopyOutline } from '@vkontakte/icons';
 import { copyTextToClipboard } from '@vkontakte/vkjs';
-import { Button, Paragraph, Separator, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
-import React, { FC, useMemo } from 'react';
+import {
+	Button,
+	Link,
+	Paragraph,
+	Separator,
+	useAdaptivityWithJSMediaQueries,
+} from '@vkontakte/vkui';
+import React, { FC, Fragment, useMemo } from 'react';
 
-import { Tokens, ValueType } from '@/shared/types';
+import type { Description, Tokens, ValueType } from '@/shared/types';
 
 import TokensContentValue from './components/TokensContentValue';
 import { filterByDesc, filterByTags } from './TokensContent.helpers';
@@ -16,6 +22,23 @@ type Props = {
 	selectedValueType: ValueType;
 	searchValue: string;
 };
+
+function mapTokenDescription(descriptions: Description[]) {
+	return descriptions.map((description, uniqueIndex) => {
+		switch (description.type) {
+			case 'text':
+				return <Fragment key={uniqueIndex}>{description.text}</Fragment>;
+			case 'link':
+				return (
+					<Link key={uniqueIndex} href={description.url}>
+						{description.text}
+					</Link>
+				);
+			default:
+				return null;
+		}
+	});
+}
 
 const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, searchValue }) => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
@@ -70,12 +93,14 @@ const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, sea
 							</div>
 							{isTabletPlus && (
 								<div>
-									<Paragraph>{tokens[token].desc || '-'}</Paragraph>
+									<Paragraph>
+										{tokens[token].desc.length > 0 ? mapTokenDescription(tokens[token].desc) : '-'}
+									</Paragraph>
 								</div>
 							)}
 							{!isTabletPlus && !!tokens[token].desc && (
 								<div>
-									<Paragraph>{tokens[token].desc}</Paragraph>
+									<Paragraph>{mapTokenDescription(tokens[token].desc)}</Paragraph>
 								</div>
 							)}
 						</div>
