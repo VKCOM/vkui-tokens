@@ -5,8 +5,9 @@ import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
+import { DEFAULT_FONT_FAMILY_ACCENT } from '@/shared/constants';
 
-const fontFamilyAccent = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
+const fontFamilyAccent = `"${DEFAULT_FONT_FAMILY_ACCENT}", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
 const fontFamilyBase = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
 const fontWeightAccent1 = 600;
 const fontWeightAccent2 = 500;
