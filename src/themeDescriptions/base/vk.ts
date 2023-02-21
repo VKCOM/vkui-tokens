@@ -615,6 +615,7 @@ export const lightTheme: ThemeDescription = {
 
 	// Компонент PanelHeader
 	sizePanelHeaderHeight: {
+		compact: 48,
 		regular: 56,
 	},
 

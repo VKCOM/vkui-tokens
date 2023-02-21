@@ -212,6 +212,7 @@ export const vkComTheme: ThemeVkComDescription = {
 
 	// Компонент PanelHeader
 	sizePanelHeaderHeight: {
+		compact: 48,
 		regular: 48,
 	},
 };
