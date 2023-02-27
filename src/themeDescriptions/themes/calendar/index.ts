@@ -92,6 +92,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 
 		calendarColorBackground: lightTheme.colors.colorBackground,
 		calendarColorOverlayBackground: 'transparent',
+		calendarImageOverlayBackground: 'transparent',
 
 		//#region Токены сайдбара
 		// цвет иконок в сайдбаре
@@ -379,6 +380,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 
 		calendarColorBackground: darkTheme.colors.colorBackground,
 		calendarColorOverlayBackground: 'transparent',
+		calendarImageOverlayBackground: 'transparent',
 
 		//#region Токены сайдбара
 		// цвет иконок в сайдбаре
