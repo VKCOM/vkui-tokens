@@ -36,6 +36,7 @@ export interface LocalCalendarColorDescriptionStruct {
 	// Фон страницы (отличается от colorBackground)
 	calendarColorBackground: ColorDescription;
 	calendarColorOverlayBackground: ColorDescription;
+	calendarImageOverlayBackground: string;
 
 	//#region Токены сайдбара
 	// цвет иконок в сайдбаре
