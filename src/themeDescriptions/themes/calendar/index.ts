@@ -92,7 +92,6 @@ export const calendarTheme: ThemeCalendarDescription = {
 
 		calendarColorBackground: lightTheme.colors.colorBackground,
 		calendarColorOverlayBackground: 'transparent',
-		calendarImageOverlayBackground: 'transparent',
 
 		//#region Токены сайдбара
 		// цвет иконок в сайдбаре
@@ -165,6 +164,8 @@ export const calendarTheme: ThemeCalendarDescription = {
 	calendarSizeBorderRadiusSmall: 4,
 	calendarSizeBorderRadiusMedium: 6,
 	calendarSizeBorderRadiusLarge: 8,
+
+	calendarImageOverlayBackground: 'none',
 
 	fontFamilyBase: fontFamily,
 	fontFamilyAccent: fontFamily,
@@ -380,7 +381,6 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 
 		calendarColorBackground: darkTheme.colors.colorBackground,
 		calendarColorOverlayBackground: 'transparent',
-		calendarImageOverlayBackground: 'transparent',
 
 		//#region Токены сайдбара
 		// цвет иконок в сайдбаре
