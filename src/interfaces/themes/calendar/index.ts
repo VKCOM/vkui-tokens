@@ -19,6 +19,8 @@ export interface ThemeCalendarOverValues {
 	calendarSizeBorderRadiusSmall: number;
 	calendarSizeBorderRadiusMedium: number;
 	calendarSizeBorderRadiusLarge: number;
+	// маска на фоновые картинки тем
+	calendarImageOverlayBackground: string;
 }
 
 export interface LocalCalendarColorDescriptionStruct {
@@ -36,7 +38,6 @@ export interface LocalCalendarColorDescriptionStruct {
 	// Фон страницы (отличается от colorBackground)
 	calendarColorBackground: ColorDescription;
 	calendarColorOverlayBackground: ColorDescription;
-	calendarImageOverlayBackground: string;
 
 	//#region Токены сайдбара
 	// цвет иконок в сайдбаре
