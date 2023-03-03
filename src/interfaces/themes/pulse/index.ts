@@ -134,6 +134,7 @@ export type AllowedParadigmColorTokens =
 	| 'colorAccentOrange'
 	| 'colorAccentPurple'
 	| 'colorAccentViolet'
+	| 'colorAccentRaspberryPink'
 	| 'colorAccentSecondary'
 	/* Other colors */
 	| 'colorTransparent'

@@ -53,6 +53,11 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorBackgroundPositiveTint: '#E8f9e8',
 	colorFieldBackground: resolveColor(theme.colors.field_background),
 	colorHeaderBackground: resolveColor(theme.colors.header_background),
+	colorContentPositiveBackground: resolveColor(theme.colors.content_positive_background),
+	colorContentNegativeBackground: resolveColor(theme.colors.content_negative_background),
+	colorContentTintBackgroundTransparent: resolveColor(theme.colors.content_tint_background),
+	colorSnippetBackground: resolveColor(theme.colors.snippet_background),
+	colorBackgroundTextHighlighted: resolveColor(theme.colors.background_text_highlighted),
 
 	// Text
 	colorTextAccent: resolveColor(theme.colors.accent),
@@ -101,6 +106,9 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorStrokeNegative: resolveColor(theme.colors.destructive),
 	// colorStrokeContrast: '#FFFFFF',
 	colorImageBorderAlpha: resolveColor(theme.colors.image_border),
+	colorSnippetBorder: resolveColor(theme.colors.snippet_border),
+	colorModalCardBoder: resolveColor(theme.colors.modal_card_border),
+	colorLandingSnippetBorder: resolveColor(theme.colors.landing_snippet_border),
 	// colorFieldBorderAlpha: resolveColor(theme.colors.field_border),
 
 	// Palette
@@ -110,6 +118,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
+	colorAccentRaspberryPink: resolveColor(theme.colors.dynamic_raspberry_pink),
 	colorAccentViolet: resolveColor(theme.colors.dynamic_violet),
 	// colorAccentSecondary: '#3F8AE0',
 
@@ -134,6 +143,14 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTrackBuffer: resolveColor(theme.colors.loader_track_value_fill),
 	colorSearchFieldBackground: resolveColor(theme.colors.search_bar_field_background),
 	colorPanelHeaderIcon: resolveColor(theme.colors.accent),
+	colorImForwardLine: resolveColor(theme.colors.im_forward_line_tint),
+	colorImBubbleBorderAlternateHighlighted: resolveColor(theme.colors.im_bubble_border_alternate_highlighted),
+	colorImBubbleIncomingExpiring: resolveColor(theme.colors.im_bubble_incoming_expiring),
+	colorImBubbleOutgoingExpiringHighlighted: resolveColor(theme.colors.im_bubble_outgoing_expiring_highlighted),
+	colorActionSheetSeparator: resolveColor(theme.colors.action_sheet_separator),
+	colorImBubbleGiftText: resolveColor(theme.colors.im_bubble_gift_text),
+	colorsImBubbleGiftTextSecondary: resolveColor(theme.colors.im_bubble_gift_text_secondary),
+
 	// colorSegmentedControl: resolveColor(
 	// 	theme.colors.segmented_control_bar_background,
 	// ),

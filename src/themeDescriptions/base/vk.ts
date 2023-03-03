@@ -118,6 +118,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
+		colorAccentRaspberryPink: '#E03FAB',
 		colorAccentSecondary: '#3F8AE0',
 
 		// Other
@@ -191,7 +192,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundNegative: '#FF5C5C',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#E8f9e8',
-		colorFieldBackground: '#292929',
+		colorFieldBackground: '#232324',
 		colorHeaderBackground: '#19191A',
 
 		// Text
@@ -201,7 +202,7 @@ export const darkColors: ColorsDescription = {
 		colorTextPrimaryInvariably: '#000000',
 		colorTextSecondary: '#76787A',
 		colorTextSubhead: '#969A9F',
-		colorTextTertiary: '#636567',
+		colorTextTertiary: '#5D5F61',
 		colorTextContrast: '#FFFFFF',
 		colorTextContrastThemed: '#000000',
 		colorTextPositive: '#4BB34B',
@@ -251,6 +252,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
+		colorAccentRaspberryPink: '#F060C0',
 		colorAccentSecondary: '#3F8AE0',
 
 		// Other
@@ -259,11 +261,11 @@ export const darkColors: ColorsDescription = {
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorImagePlaceholder: '#2A2B2C',
 		colorImagePlaceholderAlpha: 'rgba(241, 247, 255, 0.08)',
-		colorSkeletonFrom: '#F5F5F5',
-		colorSkeletonTo: '#E1E3E6',
+		colorSkeletonFrom: '#232324',
+		colorSkeletonTo: '#2C2D2E',
 		colorWriteBarIcon: '#529EF4',
 		colorWriteBarInputBackground: '#232324',
-		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
+		colorWriteBarInputBorderAlpha: '#2C2D2E',
 		colorActionSheetText: '#529EF4',
 		colorTrackBackground: '#454647',
 		colorTrackBuffer: '#405772',
