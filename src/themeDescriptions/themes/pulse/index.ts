@@ -82,7 +82,7 @@ const allowedParadigmColors: AllowedParadigmColorTokens[] = [
 	'colorPanelHeaderIcon',
 	'colorWriteBarIcon',
 	'colorWriteBarInputBackground',
-	'colorWriteBarInputBorderAlpha',
+	'colorWriteBarInputBorder',
 	'colorTrackBackground',
 	'colorTrackBuffer',
 	'colorImagePlaceholder',

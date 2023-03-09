@@ -540,7 +540,7 @@ export interface ColorsDescriptionStruct {
 	 * @desc Цвет фона поля ввода в компоненте WriteBar с прозрачностью
 	 * @tags color, component, alpha
 	 */
-	colorWriteBarInputBorderAlpha: ColorDescription;
+	colorWriteBarInputBorder: ColorDescription;
 
 	/**
 	 * @desc Цветовой токен для компонента ActionSheet. Отвечает за цвет текста

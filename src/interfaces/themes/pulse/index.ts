@@ -143,7 +143,7 @@ export type AllowedParadigmColorTokens =
 	| 'colorPanelHeaderIcon'
 	| 'colorWriteBarIcon'
 	| 'colorWriteBarInputBackground'
-	| 'colorWriteBarInputBorderAlpha'
+	| 'colorWriteBarInputBorder'
 	| 'colorTrackBackground'
 	| 'colorOverlayPrimary'
 	| 'colorTrackBuffer'
