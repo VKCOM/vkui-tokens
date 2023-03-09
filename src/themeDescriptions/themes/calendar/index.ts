@@ -453,5 +453,5 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 	...darkThemeElevation,
 
 	// тень у формы
-	calendarElevationEventForm: '0px 4px 64px rgba(0, 0, 0, 0.44)',
+	calendarElevationEventForm: '0px 4px 64px 0px rgba(0, 0, 0, 0.44)',
 };
