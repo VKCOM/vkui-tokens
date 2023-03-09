@@ -21,6 +21,8 @@ export interface ThemeCalendarOverValues {
 	calendarSizeBorderRadiusLarge: number;
 	// маска на фоновые картинки тем
 	calendarImageOverlayBackground: string;
+	// тень у формы
+	calendarElevationEventForm: string;
 }
 
 export interface LocalCalendarColorDescriptionStruct {

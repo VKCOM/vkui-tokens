@@ -161,6 +161,9 @@ export const calendarTheme: ThemeCalendarDescription = {
 	// тень хедера
 	calendarElevationHeader: '0 0 16px 0 rgba(2, 13, 41, 0.12)',
 
+	// тень у формы
+	calendarElevationEventForm: '0px 4px 64px 0px rgba(0, 16, 61, 0.2)',
+
 	calendarSizeBorderRadiusSmall: 4,
 	calendarSizeBorderRadiusMedium: 6,
 	calendarSizeBorderRadiusLarge: 8,
@@ -448,4 +451,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 	},
 
 	...darkThemeElevation,
+
+	// тень у формы
+	calendarElevationEventForm: '0px 4px 64px rgba(0, 0, 0, 0.44)',
 };
