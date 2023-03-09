@@ -1,11 +1,9 @@
-import {
-	vkcom_dark,
-	vkcom_light,
-} from '@vkontakte/appearance/main.valette/scheme_web.json';
+import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
 
-import {ColorsDescription} from '@/interfaces/general';
-import {ThemeVkComDescription} from '@/interfaces/themes/vkCom';
-import {ThemeVkComDarkDescription} from '@/interfaces/themes/vkComDark';
+import { alias } from '@/build/helpers/tokenHelpers';
+import { ColorsDescription } from '@/interfaces/general';
+import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
+import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
 import {
 	darkColors,
 	darkElevation,
@@ -14,21 +12,22 @@ import {
 	lightTheme,
 } from '@/themeDescriptions/base/vk';
 
-import {resolveColor} from './appearance';
+import { resolveColor } from './appearance';
+
+const fontFamilyAccent = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyBase = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontWeightAccent2 = 500;
+const fontWeightBase3 = 400;
 
 const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
 	colorBackgroundAccent: resolveColor(theme.colors.accent),
-	colorBackgroundAccentThemed: resolveColor(
-		theme.colors.button_primary_background,
-	),
+	colorBackgroundAccentThemed: resolveColor(theme.colors.button_primary_background),
 	// colorBackgroundAccentTint: '#5a9eff',
 	colorBackgroundAccentAlternative: resolveColor(theme.colors.accent),
 	colorBackground: resolveColor(theme.colors.background_page),
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
-	colorBackgroundSecondary: resolveColor(
-		theme.colors.content_tint_background,
-	),
+	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
 	// colorBackgroundSecondaryAlpha: {
 	// 	normal: 'rgba(255, 255, 255, 0.04)',
 	// 	hover: 'rgba(255, 255, 255, 0.08)',
@@ -38,26 +37,16 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// 	theme.colors.button_secondary_background,
 	// ),
 	colorBackgroundTertiary: resolveColor(theme.colors.background_light),
-	colorBackgroundContrast: resolveColor(
-		theme.colors.media_overlay_button_background,
-	),
+	colorBackgroundContrast: resolveColor(theme.colors.media_overlay_button_background),
 	// colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
-	colorBackgroundContrastInverse: resolveColor(
-		theme.colors.media_overlay_button_foreground,
-	),
+	colorBackgroundContrastInverse: resolveColor(theme.colors.media_overlay_button_foreground),
 	colorBackgroundModal: resolveColor(theme.colors.background_suggestions),
-	colorBackgroundModalInverse: resolveColor(
-		theme.colors.modal_card_header_close,
-	),
+	colorBackgroundModalInverse: resolveColor(theme.colors.modal_card_header_close),
 	// colorBackgroundWarning: resolveColor(
 	// 	theme.colors.content_warning_background,
 	// ),
-	colorBackgroundPositive: resolveColor(
-		theme.colors.button_commerce_background,
-	),
-	colorBackgroundNegative: resolveColor(
-		theme.colors.button_secondary_destructive_foreground,
-	),
+	colorBackgroundPositive: resolveColor(theme.colors.button_commerce_background),
+	colorBackgroundNegative: resolveColor(theme.colors.button_secondary_destructive_foreground),
 	// colorBackgroundNegativeTint: resolveColor(
 	// 	theme.colors.field_error_background,
 	// ),
@@ -69,9 +58,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTextAccent: resolveColor(theme.colors.accent),
 	colorTextAccentThemed: resolveColor(theme.colors.button_primary_background),
 	colorTextPrimary: resolveColor(theme.colors.text_primary),
-	colorTextPrimaryInvariably: resolveColor(
-		theme.colors.media_overlay_button_foreground,
-	),
+	colorTextPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
 	colorTextSecondary: resolveColor(theme.colors.content_placeholder_text),
 	colorTextSubhead: resolveColor(theme.colors.text_subhead),
 	colorTextTertiary: resolveColor(theme.colors.text_tertiary),
@@ -89,9 +76,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorIconAccent: resolveColor(theme.colors.accent),
 	colorIconAccentThemed: resolveColor(theme.colors.button_primary_background),
 	// colorIconPrimary: '#E1E3E6',
-	colorIconPrimaryInvariably: resolveColor(
-		theme.colors.media_overlay_button_foreground,
-	),
+	colorIconPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
 	colorIconMedium: resolveColor(theme.colors.icon_medium),
 	colorIconMediumAlpha: resolveColor(theme.colors.icon_medium_alpha),
 	colorIconSecondary: resolveColor(theme.colors.icon_secondary),
@@ -106,9 +91,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 
 	// Stroke
 	colorStrokeAccent: resolveColor(theme.colors.accent),
-	colorStrokeAccentThemed: resolveColor(
-		theme.colors.button_primary_background,
-	),
+	colorStrokeAccentThemed: resolveColor(theme.colors.button_primary_background),
 	// colorSeparatorPrimary: '#363738', // resolveColor(theme.colors.separator_common),
 	// colorSeparatorPrimary2x: '#444546',
 	// colorSeparatorPrimary3x: '#505253',
@@ -149,9 +132,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorActionSheetText: '#529EF4',
 	colorTrackBackground: resolveColor(theme.colors.loader_track_fill),
 	colorTrackBuffer: resolveColor(theme.colors.loader_track_value_fill),
-	colorSearchFieldBackground: resolveColor(
-		theme.colors.search_bar_field_background,
-	),
+	colorSearchFieldBackground: resolveColor(theme.colors.search_bar_field_background),
 	colorPanelHeaderIcon: resolveColor(theme.colors.accent),
 	// colorSegmentedControl: resolveColor(
 	// 	theme.colors.segmented_control_bar_background,
@@ -179,6 +160,40 @@ export const vkComTheme: ThemeVkComDescription = {
 	},
 	sizeBorderRadiusPaper: {
 		regular: 12,
+	},
+
+	fontHeadline: alias('fontHeadline1'),
+	fontHeadline1: {
+		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent2,
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 18,
+		},
+	},
+
+	fontText: {
+		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase3,
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 16,
+		},
+	},
+
+	sizeBasePaddingHorizontal: {
+		regular: 12,
+	},
+	sizePopupSmall: {
+		regular: 448,
 	},
 
 	// Компонент Switch

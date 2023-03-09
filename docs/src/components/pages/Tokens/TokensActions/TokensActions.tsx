@@ -1,19 +1,19 @@
 import './TokensActions.css';
 
-import {Icon20Search} from '@vkontakte/icons';
+import { Icon20Search } from '@vkontakte/icons';
 import {
 	CustomSelect,
 	Input,
 	SegmentedControl,
-	useAdaptivity,
+	unstable_ChipsSelect as ChipsSelect,
+	useAdaptivityWithJSMediaQueries,
 } from '@vkontakte/vkui';
-import {ChipsSelect} from '@vkontakte/vkui/dist/unstable';
 import clsx from 'clsx';
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
-import {ChipOption, ValueType} from '@/shared/types';
+import { ChipOption, ValueType } from '@/shared/types';
 
-import {valueTypes} from './TokensActions.content';
+import { valueTypes } from './TokensActions.content';
 
 type Props = {
 	tagsProps: {
@@ -36,33 +36,28 @@ type Props = {
 	};
 };
 
-const TokensActions: FC<Props> = ({
-	tagsProps,
-	themesProps,
-	valueTypesProps,
-	searchProps,
-}) => {
-	const {viewWidth} = useAdaptivity();
-	const isTablet = viewWidth > 3;
+const TokensActions: FC<Props> = ({ tagsProps, themesProps, valueTypesProps, searchProps }) => {
+	const { viewWidth } = useAdaptivityWithJSMediaQueries();
+	const isTabletPlus = viewWidth > 3;
 
 	return (
 		<div
 			className={clsx(
 				'flex flex-col justify-between',
-				!isTablet && 'space-y-32px',
-				isTablet && 'flex-row',
+				!isTabletPlus && 'space-y-32px',
+				isTabletPlus && 'flex-row',
 			)}
 		>
 			<div
 				className={clsx(
 					'flex flex-col',
-					!isTablet && 'space-y-12px',
-					isTablet && 'flex-row space-x-20px',
+					!isTabletPlus && 'space-y-12px',
+					isTabletPlus && 'flex-row space-x-20px',
 				)}
 			>
 				<ChipsSelect
-					className={clsx(isTablet && 'my-tags-select')}
-					placeholder="Выберите тэги"
+					className={isTabletPlus && 'my-tags-select'}
+					placeholder="Выберите теги"
 					emptyText="Ничего не найдено"
 					creatable={false}
 					showSelected={false}
@@ -71,7 +66,7 @@ const TokensActions: FC<Props> = ({
 				/>
 				<div>
 					<CustomSelect
-						className={clsx(isTablet && 'my-theme-select')}
+						className={isTabletPlus && 'my-theme-select'}
 						placeholder="Выберите тему"
 						{...themesProps}
 						options={themesProps.options.map((value) => ({
@@ -81,19 +76,14 @@ const TokensActions: FC<Props> = ({
 					/>
 				</div>
 				<SegmentedControl
-					className={clsx(isTablet && 'my-segmentedControl')}
+					className={isTabletPlus && 'my-segmentedControl'}
 					size="l"
 					options={valueTypes}
 					{...valueTypesProps}
 				/>
 			</div>
 			<div>
-				<Input
-					type="text"
-					placeholder="Поиск"
-					after={<Icon20Search />}
-					{...searchProps}
-				/>
+				<Input type="text" placeholder="Поиск" after={<Icon20Search />} {...searchProps} />
 			</div>
 		</div>
 	);

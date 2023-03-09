@@ -1,7 +1,7 @@
-import {Icon16Linked} from '@vkontakte/icons';
-import {Link, Title, useAdaptivity} from '@vkontakte/vkui';
+import { Icon16Linked } from '@vkontakte/icons';
+import { Link, Title, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
 import clsx from 'clsx';
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
 import packageJson from '@/../../package.json';
 
@@ -20,14 +20,14 @@ const styles = {
 };
 
 const TokensHeader: FC = () => {
-	const {viewWidth} = useAdaptivity();
-	const isTablet = viewWidth > 3;
+	const { viewWidth } = useAdaptivityWithJSMediaQueries();
+	const isTabletPlus = viewWidth > 3;
 
 	return (
 		<div
 			className={clsx(
-				!isTablet && 'space-y-12px',
-				isTablet && 'flex items-center justify-between',
+				!isTabletPlus && 'space-y-12px',
+				isTabletPlus && 'flex items-center justify-between',
 			)}
 		>
 			<Title level="1">VKUI Tokens</Title>
@@ -35,7 +35,7 @@ const TokensHeader: FC = () => {
 				<div
 					style={{
 						...styles.linkContainer,
-						...(!isTablet ? {paddingLeft: 0} : {}),
+						...(isTabletPlus ? undefined : { paddingLeft: 0 }),
 					}}
 				>
 					<Link href={version.href} target="_blank">
@@ -43,11 +43,8 @@ const TokensHeader: FC = () => {
 					</Link>
 				</div>
 				<div className="flex items-center" style={styles.linkContainer}>
-					<Icon16Linked style={{color: '#99A2AD', marginRight: 6}} />
-					<Link
-						href="https://github.com/VKCOM/vkui-tokens"
-						target="_blank"
-					>
+					<Icon16Linked style={{ color: '#99A2AD', marginRight: 6 }} />
+					<Link href="https://github.com/VKCOM/vkui-tokens" target="_blank">
 						Github
 					</Link>
 				</div>

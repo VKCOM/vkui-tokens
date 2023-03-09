@@ -1,12 +1,11 @@
-import {Font, TypographyBaseProps} from '@/interfaces/general/typography';
+import { Font, TypographyBaseProps } from '@/interfaces/general/typography';
 
-import {helpers} from '../helpers';
+import { helpers } from '../helpers';
 
-const {sizeBase} = helpers;
+const { sizeBase } = helpers;
 
 // базовые параметры шрифта
-export const fontFamily: TypographyBaseProps['fontFamilyBase'] =
-	'Helvetica, Arial, sans-serif';
+export const fontFamily: TypographyBaseProps['fontFamilyBase'] = 'Helvetica, Arial, sans-serif';
 export const fontFamilyAccent: TypographyBaseProps['fontFamilyAccent'] =
 	'MailSans, Helvetica, Arial, sans-serif';
 export const fontWeight: TypographyBaseProps['fontWeightBase1'] = 400;

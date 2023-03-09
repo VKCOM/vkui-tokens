@@ -1,15 +1,13 @@
-import {PixelifyTheme, Theme} from '@/interfaces/general';
+import { PixelifyTheme, Theme } from '@/interfaces/general';
 
-const numericCSSProperties = /^(breakpoints$|fontWeight)/i;
+const numericCSSProperties = /^(breakpoints$|fontWeight|zIndex)/i;
 
 /**
  * Процессор, который превращает численные значения переменных в строковые
  * пример fontSize: 14 -> fontSize: "14px"
  */
 export function pixelifyValues<T = Theme>(sourceTheme: T): PixelifyTheme<T> {
-	const theme: Partial<PixelifyTheme> = JSON.parse(
-		JSON.stringify(sourceTheme),
-	);
+	const theme: Partial<PixelifyTheme> = JSON.parse(JSON.stringify(sourceTheme));
 
 	Object.entries(theme).forEach(([key, value]) => {
 		if (numericCSSProperties.test(key)) {

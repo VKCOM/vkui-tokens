@@ -1,4 +1,4 @@
-import {getTypeDocs} from './compileDocsJSON';
+import { getTypeDocs } from './compileDocsJSON';
 
 describe('compileDocsJSON', () => {
 	it('should correct compile documentation with reexported interface', () => {
@@ -16,10 +16,7 @@ describe('compileDocsJSON', () => {
 	});
 
 	it('should correct compile documentation with imports', () => {
-		const docs = getTypeDocs(
-			'src/build/compilers/docs/__test__/testTheme.ts',
-			'ThemeTest',
-		);
+		const docs = getTypeDocs('src/build/compilers/docs/__test__/testTheme.ts', 'ThemeTest');
 
 		expect(docs).toEqual({
 			prop: {

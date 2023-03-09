@@ -1,6 +1,6 @@
-import {themes} from '@/themeDescriptions';
+import { themes } from '@/themeDescriptions';
 
-import {expandAll} from './expandTheme';
+import { expandAll } from './expandTheme';
 
 describe('shapshots', () => {
 	themes.forEach((theme) => {
@@ -20,9 +20,7 @@ describe('shapshots', () => {
 			});
 
 			it('should match pseudo theme from CssVars', () => {
-				expect(
-					expandedThemeObject.pseudoThemeCssVars,
-				).toMatchSnapshot();
+				expect(expandedThemeObject.pseudoThemeCssVars).toMatchSnapshot();
 			});
 		});
 	});

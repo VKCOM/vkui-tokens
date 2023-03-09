@@ -1,4 +1,4 @@
-import {getAllButSizes} from '@/build/helpers/getAllButSizes';
+import { getAllButSizes } from '@/build/helpers/getAllButSizes';
 
 describe('getAllButSizes', () => {
 	it('should filter out tokens that start with "size", "font" or are a size helper', () => {

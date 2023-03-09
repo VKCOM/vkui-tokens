@@ -1,12 +1,12 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {getGradientPointsFromColor} from '@/build/helpers/getGradientPointsFromColor';
-import {alias, staticRef} from '@/build/helpers/tokenHelpers';
-import {overlayColors} from '@/build/themeProcessors/expandColors/overlayColors';
-import {ColorsDescription, ThemeDescription} from '@/interfaces/general';
-import {Elevation} from '@/interfaces/general/elevation';
-import {ParadigmThemeDescription} from '@/interfaces/namespaces/paradigm';
-import {helpers} from '@/themeDescriptions/common';
+import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
+import { alias, staticRef } from '@/build/helpers/tokenHelpers';
+import { overlayColors } from '@/build/themeProcessors/expandColors/overlayColors';
+import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
+import { Elevation } from '@/interfaces/general/elevation';
+import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
+import { helpers } from '@/themeDescriptions/common';
 
 const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Helvetica, Arial, sans-serif';
@@ -167,7 +167,7 @@ export const darkColors: ColorsDescription = {
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
 		colorBackgroundWarning: '#6C4E00',
-		colorBackgroundNegative: '#ED0A34',
+		colorBackgroundNegative: '#FF5C5C',
 		colorBackgroundModal: '#303030',
 		colorBackgroundPositive: '#0DC268',
 		colorBackgroundNegativeTint: '#522e2e',
@@ -180,7 +180,7 @@ export const darkColors: ColorsDescription = {
 		// Text
 		colorTextAccent: '#3C82FD',
 		colorTextAccentThemed: '#FFFFFF',
-		colorTextNegative: '#ED0A34',
+		colorTextNegative: '#FF5C5C',
 		colorTextLink: '#589BFF',
 		colorTextLinkThemed: '#FFFFFF',
 		colorTextMuted: '#E7E8EA',
@@ -198,7 +198,7 @@ export const darkColors: ColorsDescription = {
 		// Icons
 		colorIconAccent: '#3C82FD',
 		colorIconAccentThemed: '#FFFFFF',
-		colorIconNegative: '#ED0A34',
+		colorIconNegative: '#FF5C5C',
 		colorIconPrimary: '#D9DADD',
 		colorIconPrimaryInvariably: '#2C2D2E',
 		colorIconMedium: '#B0B1B6',
@@ -216,7 +216,7 @@ export const darkColors: ColorsDescription = {
 		colorStrokeAccent: '#3C82FD',
 		colorStrokeAccentThemed: '#FFFFFF',
 		colorStrokeContrast: '#FFFFFF',
-		colorStrokeNegative: '#ED0A34',
+		colorStrokeNegative: '#FF5C5C',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.16)',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.4)',
@@ -346,8 +346,8 @@ export const lightThemeBase: ThemeDescription = {
 		regular: {
 			fontSize: 14,
 			lineHeight: 18,
-			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent3,
 		},
 		compact: {
 			fontSize: 13,
@@ -670,9 +670,11 @@ export const lightThemeBase: ThemeDescription = {
 	animationEasingPlatform: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
+	zIndexModal: 99,
+	zIndexPopout: 100,
 };
 
-const {x05, x1, x2, x3, x4, x5, x6, x8, x10} = helpers;
+const { x05, x1, x2, x3, x4, x5, x6, x8, x10 } = helpers;
 
 export const lightTheme: ParadigmThemeDescription = {
 	...lightThemeBase,

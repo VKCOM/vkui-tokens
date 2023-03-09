@@ -1,11 +1,6 @@
-import {ThemeVkIOSDescription} from '@/interfaces/themes/vkIOS';
-import {ThemeVkIOSDarkDescription} from '@/interfaces/themes/vkIOSDark';
-import {
-	darkColors,
-	darkElevation,
-	darkGradient,
-	lightTheme,
-} from '@/themeDescriptions/base/vk';
+import { ThemeVkIOSDescription } from '@/interfaces/themes/vkIOS';
+import { ThemeVkIOSDarkDescription } from '@/interfaces/themes/vkIOSDark';
+import { darkColors, darkElevation, darkGradient, lightTheme } from '@/themeDescriptions/base/vk';
 
 export const vkIOSTheme: ThemeVkIOSDescription = {
 	...lightTheme,

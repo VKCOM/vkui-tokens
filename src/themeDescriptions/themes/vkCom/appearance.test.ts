@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import {resolveColor} from './appearance';
+import { resolveColor } from './appearance';
 
 describe('vkCom/appearance', () => {
 	test('white', () => {

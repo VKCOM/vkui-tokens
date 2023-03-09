@@ -1,4 +1,4 @@
-import {mergeTokensData} from './mergeTokensData';
+import { mergeTokensData } from './mergeTokensData';
 
 const fontFamily = 'MailSans, Helvetica, Arial, sans-serif';
 
@@ -146,35 +146,26 @@ const content = {
 
 describe('mergeTokensData', () => {
 	it('should merge 2 object token with simple token value', () => {
-		expect(
-			mergeTokensData(content.simple.docs, content.simple.tokens),
-		).toEqual(content.simple.result);
+		expect(mergeTokensData(content.simple.docs, content.simple.tokens)).toEqual(
+			content.simple.result,
+		);
 	});
 
 	it('should merge 2 object token with regular/compact token value', () => {
-		expect(
-			mergeTokensData(
-				content.regularCompact.docs,
-				content.regularCompact.tokens,
-			),
-		).toEqual(content.regularCompact.result);
+		expect(mergeTokensData(content.regularCompact.docs, content.regularCompact.tokens)).toEqual(
+			content.regularCompact.result,
+		);
 	});
 
 	it('should merge 2 object token with only regular token value', () => {
-		expect(
-			mergeTokensData(
-				content.onlyRegular.docs,
-				content.onlyRegular.tokens,
-			),
-		).toEqual(content.onlyRegular.result);
+		expect(mergeTokensData(content.onlyRegular.docs, content.onlyRegular.tokens)).toEqual(
+			content.onlyRegular.result,
+		);
 	});
 
 	it('should merge 2 object token with not regular/compact token value', () => {
 		expect(
-			mergeTokensData(
-				content.notRegularCompact.docs,
-				content.notRegularCompact.tokens,
-			),
+			mergeTokensData(content.notRegularCompact.docs, content.notRegularCompact.tokens),
 		).toEqual(content.notRegularCompact.result);
 	});
 });

@@ -1,5 +1,5 @@
-import {capitalize} from '@/build/helpers/capitalize';
-import {Breakpoints} from '@/interfaces/general/tools';
+import { capitalize } from '@/build/helpers/capitalize';
+import { Breakpoints } from '@/interfaces/general/tools';
 import {
 	CustomMediaByViewport,
 	CustomMediaByViewportUnion,
@@ -31,9 +31,7 @@ export const getCustomMediaKey = <Vt extends ViewportsTuple = DefaultViewports>(
 		layoutName,
 	)}` as any as CustomMediaByViewportUnion<Vt>;
 
-export function processCustomMedia<
-	Vt extends ViewportsTuple = DefaultViewports,
->({
+export function processCustomMedia<Vt extends ViewportsTuple = DefaultViewports>({
 	breakpoints,
 }: Pick<Breakpoints<Vt>, 'breakpoints'>): CustomMediaByViewport<Vt> {
 	if (!breakpoints || Object.keys(breakpoints).length === 1) {
@@ -55,9 +53,7 @@ export function processCustomMedia<
 			// между текущим и следущим брейкпоинтом
 			result[getCustomMediaKey(viewport)] = `(min-width: ${
 				breakpoints[viewport].breakpoint
-			}px) and (max-width: ${
-				breakpoints[array[index + 1]]?.breakpoint - 1
-			}px)`;
+			}px) and (max-width: ${breakpoints[array[index + 1]]?.breakpoint - 1}px)`;
 		}
 
 		if (viewport === 'touch') {
@@ -78,9 +74,7 @@ export function processCustomMedia<
 
 		if (isLastKey) {
 			// больше текущего
-			result[
-				getCustomMediaKey(viewport)
-			] = `(min-width: ${breakpoints[viewport].breakpoint}px)`;
+			result[getCustomMediaKey(viewport)] = `(min-width: ${breakpoints[viewport].breakpoint}px)`;
 		}
 	});
 

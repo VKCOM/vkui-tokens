@@ -1,5 +1,6 @@
 import {
 	AdaptivityProvider,
+	Appearance,
 	AppRoot,
 	ConfigProvider,
 	Panel,
@@ -7,7 +8,7 @@ import {
 	View,
 	WebviewType,
 } from '@vkontakte/vkui';
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
 import Header from './shared/Header/Header';
 
@@ -15,8 +16,8 @@ type Props = {
 	children: React.ReactNode;
 };
 
-const Main: FC<Props> = ({children}) => (
-	<ConfigProvider webviewType={WebviewType.INTERNAL}>
+const Main: FC<Props> = ({ children }) => (
+	<ConfigProvider appearance={Appearance.LIGHT} webviewType={WebviewType.INTERNAL}>
 		<AdaptivityProvider sizeX={SizeType.COMPACT}>
 			<AppRoot>
 				<View activePanel="main">

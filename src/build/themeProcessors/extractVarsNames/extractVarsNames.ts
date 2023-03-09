@@ -1,11 +1,11 @@
-import {convertCamelToSnake} from '@/build/helpers/convertCamelToSnake';
-import {staticRef} from '@/build/helpers/tokenHelpers';
-import {Theme, ThemeCssVarsWide} from '@/interfaces/general';
-import {Adaptive} from '@/interfaces/general/tools';
-import {CustomMediaByViewport} from '@/interfaces/general/tools/customMedia';
+import { convertCamelToSnake } from '@/build/helpers/convertCamelToSnake';
+import { staticRef } from '@/build/helpers/tokenHelpers';
+import { Theme, ThemeCssVarsWide } from '@/interfaces/general';
+import { Adaptive } from '@/interfaces/general/tools';
+import { CustomMediaByViewport } from '@/interfaces/general/tools/customMedia';
 
-import {processCustomMedia} from '../customMedia/customMedia';
-import {pixelifyValues} from '../pixelifyValues/pixelifyValues';
+import { processCustomMedia } from '../customMedia/customMedia';
+import { pixelifyValues } from '../pixelifyValues/pixelifyValues';
 
 export function getVariableName({
 	key,
@@ -22,9 +22,7 @@ export function getVariableName({
 	}
 
 	return `--${convertCamelToSnake(prefix)}--${convertCamelToSnake(key)}${
-		mode !== undefined && mode !== 'auto'
-			? `--${convertCamelToSnake(mode)}`
-			: ''
+		mode !== undefined && mode !== 'auto' ? `--${convertCamelToSnake(mode)}` : ''
 	}`;
 }
 
@@ -76,7 +74,7 @@ function processVarNaming({
 			// если это адаптивный объект (например шрифты)
 			if (typeof value.regular === 'object') {
 				result[key] = (['auto', ...states] as const).reduce<
-					Partial<{[key in keyof Adaptive<any> | 'auto']: any}>
+					Partial<{ [key in keyof Adaptive<any> | 'auto']: any }>
 				>((acc, mode: keyof Adaptive<any> | 'auto') => {
 					acc[mode] = processVarNaming({
 						object: value[mode] ?? value.regular,
@@ -93,17 +91,17 @@ function processVarNaming({
 
 			// обычная адаптивная переменная, нужно сформировать объект
 			result[key] = (['auto', ...states] as const).reduce<
-				Partial<{[key in keyof Adaptive<any> | 'auto']: any}>
+				Partial<{ [key in keyof Adaptive<any> | 'auto']: any }>
 			>((acc, mode) => {
 				if (mode === 'auto') {
-					const name = getVariableName({key, prefix, mode: 'auto'});
+					const name = getVariableName({ key, prefix, mode: 'auto' });
 
 					acc[mode] = {
 						name,
 						value: valueConstruct(name),
 					};
 				} else {
-					const name = getVariableName({key, prefix, mode});
+					const name = getVariableName({ key, prefix, mode });
 					const originalValue = value[mode];
 					acc[mode] = {
 						name,
@@ -132,7 +130,7 @@ function processVarNaming({
 			value = JSON.stringify(value);
 		}
 
-		const name = getVariableName({key, prefix, mode});
+		const name = getVariableName({ key, prefix, mode });
 		result[key] =
 			mode !== 'auto'
 				? ({

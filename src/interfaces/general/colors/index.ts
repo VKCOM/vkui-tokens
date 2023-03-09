@@ -1,6 +1,6 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {ColorsDescription, ColorsScheme} from '@/interfaces/general';
+import { ColorsDescription, ColorsScheme } from '@/interfaces/general';
 
 /**
  * Интерфейс всех цветов на выходе
@@ -15,7 +15,7 @@ export type ColorDescriptionStatic = Property.Color | ColorWithStates;
 
 export type ColorDescriptionCallable<
 	// eslint-disable-next-line no-use-before-define
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
+	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
 > = (
 	theme: Partial<ColorsScheme & ColorsDescription<T>>,
 	// eslint-disable-next-line no-use-before-define
@@ -23,7 +23,7 @@ export type ColorDescriptionCallable<
 
 export type ColorDescription<
 	// eslint-disable-next-line no-use-before-define
-	T extends {[key in keyof T]: ColorDescription} = ColorsDescriptionStruct,
+	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
 > = ColorDescriptionStatic | ColorDescriptionCallable<T>;
 
 /**

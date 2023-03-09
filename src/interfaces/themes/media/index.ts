@@ -1,8 +1,8 @@
-import {Property} from 'csstype';
+import { Property } from 'csstype';
 
-import {ColorDescription, ColorWithStates} from '@/interfaces/general/colors';
-import {Adaptive} from '@/interfaces/general/tools';
-import {Font} from '@/interfaces/general/typography';
+import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
@@ -86,10 +86,7 @@ export interface ThemeMedia
 export interface ThemeMediaDescription
 	extends ParadigmThemeDescription<MediaViewportsTuple>,
 		MediaUniqTokens {
-	colors: ParadigmThemeDescription['colors'] &
-		ProjectColorsDescriptions &
-		SocialColorsDescriptions;
+	colors: ParadigmThemeDescription['colors'] & ProjectColorsDescriptions & SocialColorsDescriptions;
 }
 
-export interface ThemeMediaCssVars
-	extends ParadigmThemeCssVars<MediaViewportsTuple, ThemeMedia> {}
+export interface ThemeMediaCssVars extends ParadigmThemeCssVars<MediaViewportsTuple, ThemeMedia> {}
