@@ -53,10 +53,10 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorBackgroundPositiveTint: '#E8f9e8',
 	colorFieldBackground: resolveColor(theme.colors.field_background),
 	colorHeaderBackground: resolveColor(theme.colors.header_background),
-	colorContentPositiveBackgroundAlpha: resolveColor(theme.colors.content_positive_background),
-	colorContentNegativeBackgroundAlpha: resolveColor(theme.colors.content_negative_background),
+	colorContentPositiveBackground: resolveColor(theme.colors.content_positive_background),
+	colorContentNegativeBackground: resolveColor(theme.colors.content_negative_background),
 	colorContentTintBackground: resolveColor(theme.colors.content_tint_background),
-	colorSnippetBackground: resolveColor(theme.colors.snippet_background),
+	colorSnippetBackgroundAlpha: resolveColor(theme.colors.snippet_background),
 	colorBackgroundTextHighlightedAlpha: resolveColor(theme.colors.background_text_highlighted),
 
 	// Text
@@ -106,7 +106,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorStrokeNegative: resolveColor(theme.colors.destructive),
 	// colorStrokeContrast: '#FFFFFF',
 	colorImageBorderAlpha: resolveColor(theme.colors.image_border),
-	colorSnippetBorder: resolveColor(theme.colors.snippet_border),
+	colorSnippetBorderAlpha: resolveColor(theme.colors.snippet_border),
 	colorModalCardBoderAlpha: resolveColor(theme.colors.modal_card_border),
 	colorLandingSnippetBorderAlpha: resolveColor(theme.colors.landing_snippet_border),
 	// colorFieldBorderAlpha: resolveColor(theme.colors.field_border),
@@ -137,14 +137,14 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorSkeletonTo: resolveColor(theme.colors.skeleton_foreground_to),
 	colorWriteBarIcon: resolveColor(theme.colors.writebar_icon),
 	colorWriteBarInputBackground: resolveColor(theme.colors.input_background),
-	// colorWriteBarInputBorder: resolveColor(theme.colors.input_border),
+	colorInputBorder: resolveColor(theme.colors.input_border),
 	// colorActionSheetText: '#529EF4',
 	colorTrackBackground: resolveColor(theme.colors.loader_track_fill),
 	colorTrackBuffer: resolveColor(theme.colors.loader_track_value_fill),
 	colorSearchFieldBackground: resolveColor(theme.colors.search_bar_field_background),
 	colorPanelHeaderIcon: resolveColor(theme.colors.accent),
 	colorImForwardLineAlpha: resolveColor(theme.colors.im_forward_line_tint),
-	colorImBubbleBorderAlternateHighlighted: resolveColor(theme.colors.im_bubble_border_alternate_highlighted),
+	colorImBubbleBorderAlternateHighlightedAlpha: resolveColor(theme.colors.im_bubble_border_alternate_highlighted),
 	colorImBubbleIncomingExpiring: resolveColor(theme.colors.im_bubble_incoming_expiring),
 	colorImBubbleOutgoingExpiringHighlighted: resolveColor(theme.colors.im_bubble_outgoing_expiring_highlighted),
 	colorActionSheetSeparatorAlpha: resolveColor(theme.colors.action_sheet_separator),
@@ -224,6 +224,11 @@ export const vkComTheme: ThemeVkComDescription = {
 	},
 	sizePopupSmall: {
 		regular: 448,
+	},
+
+	// FormItem
+	sizeFormItemPaddingVertical: {
+		regular: 8,
 	},
 
 	// Компонент Switch
