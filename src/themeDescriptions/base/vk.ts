@@ -2,9 +2,10 @@ import { Property } from 'csstype';
 
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias } from '@/build/helpers/tokenHelpers';
-import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
+import { ColorsDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
+import { VkGradients, VkThemeDescription } from '@/interfaces/namespaces/vk';
 
 const fontFamilyAccent = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
 const fontFamilyBase = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
@@ -289,10 +290,48 @@ export const darkElevation: Elevation = {
 	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
 };
 
-export const lightTheme: ThemeDescription = {
+export const gradients: VkGradients = {
+	gradientAquamarineBlue: '#7DF1FA, #2BB4D6',
+	gradientBlue: '#66CCFF, #3F8AE0',
+	gradientCandy: '#FF99CC, #E52E6A',
+	gradientCrimson: '#FF7373, #E53949, #BF1C38',
+	gradientDisco: '#FFB726, #FF2693, #8122E0, #2693FF',
+	gradientEmerald: '#00D948, #0D8046',
+	gradientGray: '#C1CAD6, #878F99',
+	gradientGreen: '#6CD97E, #12B312',
+	gradientLagoon: '#2BD9D9, #5C9CE6',
+	gradientLavender: '#928FFF, #4B47B2',
+	gradientMarine: '#2EE54D, #0D7EFF',
+	gradientMidnight: '#73D0FF, #3885E1, #0032A6',
+	gradientOrange: '#FFBF80, #E66B2E',
+	gradientPink: '#FF8880, #E62E6B',
+	gradientPurple: '#A393F5, #735CE6',
+	gradientRaspberryPink: '#FF80D5, #E645B1',
+	gradientRed: '#FF7583, #E62E40',
+	gradientRetrowave: '#30F2B1, #5967FF, #FF26A5',
+	gradientSunset: '#FFD24D, #F26549, #E62E6B',
+	gradientTurquoise: '#8AE6E6, #12B3B3',
+	gradientTwilight: '#FF4D87, #9F40FF, #3399FF',
+	gradientUnicorn: '#FF99CC, #A179F2, #5CA1E6',
+	gradientViolet: '#D3A6FF, #903FE0',
+	gradientYellow: '#FFC44D, #F07300',
+	gradientYellowBright: '#FFD54F, #E7A902',
+	gradientHalloweenOrange: '#CB1E3B, #F05C44, #FFA000',
+	gradientHalloweenViolet: '#FFA000, #CD4C4B, #792EC0',
+	gradientNewYear: '#BB64E4, #805BD7, #2866D5',
+	gradientFrost: '#4FA0FF, #016CEA',
+	gradientValentine: '#FF8A65, #F25383, #8F13DB',
+	gradientWarmValentine: '#F3386A, #FF819E',
+	gradientSberkot: '#9DF19D, #31C2A7, #21A19A, #107F8C',
+	gradientMable: '#D9F4FF, #D9F4FF',
+	gradientWomensDay: '#FF99CC, #E52E6A',
+};
+
+export const lightTheme: VkThemeDescription = {
 	themeName: 'vkBase',
 	themeNameBase: 'vkBase',
 	...lightColors,
+	...gradients,
 	...lightGradient,
 	...lightElevation,
 	// Типографика
@@ -690,7 +729,7 @@ export const lightTheme: ThemeDescription = {
 	zIndexPopout: 100,
 };
 
-export const darkTheme: ThemeDescription = {
+export const darkTheme: VkThemeDescription = {
 	...lightTheme,
 	...darkColors,
 	...darkGradient,

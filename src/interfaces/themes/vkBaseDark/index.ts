@@ -1,6 +1,5 @@
-import { Theme, ThemeCssVars, ThemeDescription } from '@/interfaces/general';
+import { VkTheme, VkThemeCssVars, VkThemeDescription } from '@/interfaces/namespaces/vk';
 
-export interface ThemeVkBaseDark extends Theme {}
-export interface ThemeVkBaseDarkDescription extends ThemeDescription {}
-
-export interface ThemeVkBaseDarkCssVars extends ThemeCssVars {}
+export interface ThemeVkBaseDark extends VkTheme {}
+export interface ThemeVkBaseDarkDescription extends VkThemeDescription {}
+export interface ThemeVkBaseDarkCssVars extends VkThemeCssVars {}
