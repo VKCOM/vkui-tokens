@@ -176,6 +176,19 @@ export const vkComTheme: ThemeVkComDescription = {
 		},
 	},
 
+	fontSubhead: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase3,
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 18,
+		},
+	},
+
 	fontText: {
 		regular: {
 			fontSize: 16,
@@ -213,6 +226,11 @@ export const vkComTheme: ThemeVkComDescription = {
 	// Компонент PanelHeader
 	sizePanelHeaderHeight: {
 		regular: 48,
+	},
+
+	// FormItem
+	sizeFormItemPaddingVertical: {
+		regular: 8,
 	},
 };
 

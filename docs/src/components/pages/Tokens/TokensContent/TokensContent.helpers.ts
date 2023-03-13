@@ -1,4 +1,4 @@
-import { TokenItem, TokenItemValue } from '@/shared/types';
+import type { Description, TokenItem, TokenItemValue } from '@/shared/types';
 
 export function filterByTags(selectedTags: Array<string>, token: TokenItem): boolean {
 	// Исключаем legacy-токены по умолчанию, если не запросили явно
@@ -13,8 +13,8 @@ export function filterByTags(selectedTags: Array<string>, token: TokenItem): boo
 	return selectedTags.some((sTag) => token.tags.includes(sTag));
 }
 
-function containsInDesc(haystack: string, needle: string): boolean {
-	return haystack.toLowerCase().includes(needle);
+function containsInDesc(haystacks: Description[], needle: string): boolean {
+	return haystacks.some((haystack) => haystack.text.toLowerCase().includes(needle));
 }
 
 function containsInValue(haystack: TokenItemValue, needle: string): boolean {

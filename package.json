@@ -1,6 +1,6 @@
 {
   "name": "@vkontakte/vkui-tokens",
-  "version": "4.29.3",
+  "version": "4.29.4",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
   "main": "utils/descriptions.js",
@@ -74,7 +74,7 @@
     "jest": "29.4.1",
     "jest-junit": "15.0.0",
     "lodash": "4.17.21",
-    "prettier": "2.8.0",
+    "prettier": "2.8.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "4.4.0",
