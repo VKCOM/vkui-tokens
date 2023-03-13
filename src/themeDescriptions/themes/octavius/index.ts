@@ -133,6 +133,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 		octaviusColorContentScrollbarAlpha: 'rgba(0, 16, 61, 0.08)',
 
+		octaviusColorActionArchive: '#1F5C23',
+
 		octaviusColorIconUnread: '#005FF9',
 		octaviusColorIconFavorite: '#fc2c38',
 		octaviusColorIconOrder: '#ff54aa',
@@ -335,6 +337,8 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		},
 
 		octaviusColorContentScrollbarAlpha: 'rgba(255, 255, 255, 0.12)',
+
+		octaviusColorActionArchive: '#0EAB67',
 
 		octaviusColorIconUnread: '#0C7CFF',
 		octaviusColorIconFavorite: '#FF4550',
