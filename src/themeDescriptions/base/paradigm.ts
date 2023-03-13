@@ -8,8 +8,9 @@ import { Elevation } from '@/interfaces/general/elevation';
 import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
 import { helpers } from '@/themeDescriptions/common';
 
-const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
-const fontFamilyBase = 'Helvetica, Arial, sans-serif';
+const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
+const fontFamilyAccent = `MailSans, ${fontFamilyFallbacks}`;
+const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -263,6 +264,7 @@ export const lightThemeBase: ThemeDescription = {
 	...lightColors,
 
 	// Типографика
+	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
 	fontWeightAccent1,
