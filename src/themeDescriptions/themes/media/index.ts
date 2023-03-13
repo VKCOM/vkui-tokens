@@ -167,15 +167,15 @@ export const mediaTheme: ThemeMediaDescription = {
 	mediaFontMediaLead: {
 		regular: {
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontWeight: fontWeightAccent1,
 			fontSize: 19,
 			lineHeight: 28,
 		},
 		compact: {
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 22,
-			lineHeight: 32,
+			fontWeight: fontWeightAccent1,
+			fontSize: 20,
+			lineHeight: 30,
 			letterSpacing: '-0.003em',
 		},
 	},

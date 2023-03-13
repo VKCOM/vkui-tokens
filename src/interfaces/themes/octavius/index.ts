@@ -115,6 +115,9 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorBackground: ColorDescription;
 	octaviusColorOverlayBackground: ColorDescription;
 
+	// Токены текстов и иконок действий
+	octaviusColorActionArchive: ColorDescription;
+
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
