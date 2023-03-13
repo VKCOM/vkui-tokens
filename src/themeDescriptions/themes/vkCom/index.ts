@@ -227,6 +227,11 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizePanelHeaderHeight: {
 		regular: 48,
 	},
+
+	// FormItem
+	sizeFormItemPaddingVertical: {
+		regular: 8,
+	},
 };
 
 const vkComDarkColor: ColorsDescription = {
