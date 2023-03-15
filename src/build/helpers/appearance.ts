@@ -1,19 +1,21 @@
-import palette from '@vkontakte/appearance/main.valette/palette_web.json';
+import vkPalette from '@vkontakte/appearance/main.valette/palette.json';
 
 /* eslint-disable @typescript-eslint/naming-convention */
-interface ClusterData {
+export interface ClusterData {
 	color_identifier: string;
 	alpha_multiplier?: number;
 }
 /* eslint-enable @typescript-eslint/naming-convention */
 
-export function resolveColor(clusterData: ClusterData): string {
-	const color = palette[clusterData.color_identifier] as string;
+export function resolveColor(
+	clusterData: ClusterData,
+	palette: Record<string, string> = vkPalette,
+): string {
+	const color = palette[clusterData.color_identifier];
 	const alphaMultiplier = clusterData.alpha_multiplier ? Number(clusterData.alpha_multiplier) : 1;
 
 	if (!color) {
-		console.error('Missing color:', clusterData.color_identifier);
-		return '#000';
+		throw new Error(`Missing color: ${clusterData.color_identifier}`);
 	} else if (color.indexOf('#') === 0 && color.length === 9) {
 		// ahex
 		return ahex2rgba(color.replace('#', ''), alphaMultiplier);

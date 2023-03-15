@@ -1,4 +1,9 @@
 import { Theme, ThemeCssVars, ThemeDescription } from '@/interfaces/general';
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '@/interfaces/general/colors';
 import { GradientPoints } from '@/interfaces/general/gradients';
 import { Tokens } from '@/interfaces/general/tools/tokenValue';
 
@@ -175,6 +180,36 @@ export interface VkGradients {
 	gradientWomensDay: GradientPoints;
 }
 
-export interface VkTheme extends Theme, VkGradients {}
-export interface VkThemeDescription extends ThemeDescription, Tokens<VkGradients> {}
+export interface LocalVkColorsDescriptionStruct {
+	colorSnippetBorderAlpha: ColorDescription;
+	colorModalCardBorderAlpha: ColorDescription;
+	colorLandingSnippetBorderAlpha: ColorDescription;
+	colorActionSheetSeparatorAlpha: ColorDescription;
+	colorInputBorder: ColorDescription;
+
+	colorImForwardLineAlpha: ColorDescription;
+
+	colorImBubbleBorderAlternateHighlightedAlpha: ColorDescription;
+
+	colorImBubbleIncoming: ColorDescription;
+	colorImBubbleIncomingAlternate: ColorDescription;
+	colorImBubbleIncomingExpiring: ColorDescription;
+
+	colorImBubbleOutgoing: ColorDescription;
+	colorImBubbleOutgoingExpiringHighlighted: ColorDescription;
+
+	colorImBubbleGiftText: ColorDescription;
+	colorImBubbleGiftTextSecondary: ColorDescription;
+
+	colorImTextName: ColorDescription;
+}
+
+export type VkLocalColors = {
+	[key in keyof LocalVkColorsDescriptionStruct]: ColorWithStates;
+};
+
+export interface VkTheme extends Theme, VkGradients, VkLocalColors {}
+export interface VkThemeDescription extends ThemeDescription, Tokens<VkGradients> {
+	colors: LocalVkColorsDescriptionStruct & ColorsDescriptionStruct;
+}
 export interface VkThemeCssVars extends ThemeCssVars<VkTheme> {}

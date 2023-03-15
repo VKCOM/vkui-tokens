@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lint snapshot 1`] = `[]`;
+exports[`lint snapshot 1`] = `
+[
+  "vkBase: colors.colorImBubbleBorderAlternateHighlightedAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkCom: colors.colorImBubbleBorderAlternateHighlightedAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkIOS: colors.colorImBubbleBorderAlternateHighlightedAlpha error: Color token type mismatch: alpha token name but opaque value",
+]
+`;

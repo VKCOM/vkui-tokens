@@ -28,10 +28,10 @@ describe('vkCom/appearance', () => {
 	});
 
 	test('missing color', () => {
-		expect(
+		expect(() =>
 			resolveColor({
 				color_identifier: 'impossible',
 			}),
-		).toBe('#000');
+		).toThrow();
 	});
 });
