@@ -1,11 +1,54 @@
+import vkPalette from '@vkontakte/appearance/main.valette/palette.json';
+import { bright_light, space_gray } from '@vkontakte/appearance/main.valette/scheme.json';
+import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
 import { Property } from 'csstype';
 
+import { ClusterData, resolveColor } from '@/build/helpers/appearance';
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
-import { VkGradients, VkThemeDescription } from '@/interfaces/namespaces/vk';
+import {
+	LocalVkColorsDescriptionStruct,
+	VkGradients,
+	VkThemeDescription,
+} from '@/interfaces/namespaces/vk';
+
+export const vkLocalColors = (
+	theme: typeof bright_light | typeof space_gray | typeof vkcom_light | typeof vkcom_dark,
+	palette: Record<string, string> = vkPalette,
+): LocalVkColorsDescriptionStruct => {
+	const resolve = (clusterData: ClusterData) => resolveColor(clusterData, palette);
+
+	return {
+		colorSnippetBorderAlpha: resolve(theme.colors.snippet_border),
+		colorModalCardBorderAlpha: resolve(theme.colors.modal_card_border),
+		colorLandingSnippetBorderAlpha: resolve(theme.colors.landing_snippet_border),
+		colorActionSheetSeparatorAlpha: resolve(theme.colors.action_sheet_separator),
+		colorInputBorder: resolve(theme.colors.input_border),
+
+		colorImForwardLineAlpha: resolve(theme.colors.im_forward_line_tint),
+
+		colorImBubbleBorderAlternateHighlightedAlpha: resolve(
+			theme.colors.im_bubble_border_alternate_highlighted,
+		),
+
+		colorImBubbleIncoming: resolve(theme.colors.im_bubble_incoming),
+		colorImBubbleIncomingAlternate: resolve(theme.colors.im_bubble_incoming_alternate),
+		colorImBubbleIncomingExpiring: resolve(theme.colors.im_bubble_incoming_expiring),
+
+		colorImBubbleOutgoing: resolve(theme.colors.im_bubble_outgoing),
+		colorImBubbleOutgoingExpiringHighlighted: resolve(
+			theme.colors.im_bubble_outgoing_expiring_highlighted,
+		),
+
+		colorImBubbleGiftText: resolve(theme.colors.im_bubble_gift_text),
+		colorImBubbleGiftTextSecondary: resolve(theme.colors.im_bubble_gift_text_secondary),
+
+		colorImTextName: resolve(theme.colors.im_text_name),
+	};
+};
 
 const fontFamilyAccent = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
 const fontFamilyBase = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
@@ -331,6 +374,10 @@ export const lightTheme: VkThemeDescription = {
 	themeName: 'vkBase',
 	themeNameBase: 'vkBase',
 	...lightColors,
+	colors: {
+		...lightColors.colors,
+		...vkLocalColors(bright_light),
+	},
 	...gradients,
 	...lightGradient,
 	...lightElevation,
@@ -732,6 +779,10 @@ export const lightTheme: VkThemeDescription = {
 export const darkTheme: VkThemeDescription = {
 	...lightTheme,
 	...darkColors,
+	colors: {
+		...darkColors.colors,
+		...vkLocalColors(space_gray),
+	},
 	...darkGradient,
 	...darkElevation,
 	themeName: 'vkBaseDark',
