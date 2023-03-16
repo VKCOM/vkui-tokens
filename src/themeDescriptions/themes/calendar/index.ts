@@ -95,9 +95,9 @@ export const calendarTheme: ThemeCalendarDescription = {
 
 		//#region Токены сайдбара
 		// цвет иконок в сайдбаре
-		calendarColorSidebarItemIconPrimary: '#333333',
+		calendarColorSidebarItemIconPrimary: '#2C2D2E',
 		// цвет текста в сайдбаре
-		calendarColorSidebarItemTextPrimary: '#333333',
+		calendarColorSidebarItemTextPrimary: '#2C2D2E',
 		// цвет второстепенных иконок в сайдбаре
 		calendarColorSidebarItemIconSecondary: '#87898F',
 		// цвет второстепенного текста в сайдбаре
@@ -113,6 +113,16 @@ export const calendarTheme: ThemeCalendarDescription = {
 		// #endregion Токены сайдбара
 
 		// #region Header
+		// Фон шапки страницы
+		calendarColorHeaderBackground: '#FFFFFF',
+		// Цвет фона активного табика
+		calendarColorHeaderSecondaryAlpha: 'rgba(0, 95, 249, 0.1)',
+		// Цвет текста или элементов на активном табе
+		calendarColorHeaderonSecondary: '#005FF9',
+		// Цвет иконки в поиске
+		calendarColorHeaderonWidgetAlpha: 'rgba(0, 95, 249, 1)',
+		// Цвет фона у поиска и других виджетов
+		calendarColorHeaderWidgetBackgroundAlpha: 'rgba(255, 255, 255, 1)',
 		// Цвет иконок в хедере
 		calendarColorHeaderIcon: '#2C2D2E',
 		// Второстепенный текст в хедере
@@ -125,7 +135,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 		// Цвет иконки поиска
 		calendarColorHeaderSearchIcon: '#B6B8BE',
 		// Цвет текста в поиске
-		calendarColorHeaderSearchTextCollapsed: '#87898F',
+		calendarColorHeaderSearchTextCollapsed: '#2C2D2E',
 		// Фон поиска и кнопки Найти
 		calendarColorHeaderSearchBackground: '#F0F1F3',
 		// Фон поиска
@@ -151,9 +161,14 @@ export const calendarTheme: ThemeCalendarDescription = {
 	// тень хедера
 	calendarElevationHeader: '0 0 16px 0 rgba(2, 13, 41, 0.12)',
 
+	// тень у формы
+	calendarElevationEventForm: '0px 4px 64px 0px rgba(0, 16, 61, 0.2)',
+
 	calendarSizeBorderRadiusSmall: 4,
 	calendarSizeBorderRadiusMedium: 6,
 	calendarSizeBorderRadiusLarge: 8,
+
+	calendarImageOverlayBackground: 'none',
 
 	fontFamilyBase: fontFamily,
 	fontFamilyAccent: fontFamily,
@@ -390,6 +405,16 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		// #endregion Токены сайдбара
 
 		// #region Header
+		// Фон шапки страницы
+		calendarColorHeaderBackground: '#232324',
+		// Цвет фона активного табика
+		calendarColorHeaderSecondaryAlpha: 'rgba(255, 255, 255, 0.08)',
+		// Цвет текста или элементов на активном табе
+		calendarColorHeaderonSecondary: '#E7E8EA',
+		// Цвет иконки в поиске
+		calendarColorHeaderonWidgetAlpha: 'rgba(255, 255, 255, 0.3)',
+		// Цвет фона у поиска и других виджетов
+		calendarColorHeaderWidgetBackgroundAlpha: 'rgba(255, 255, 255, 0.08)',
 		// Цвет иконок в хедере
 		calendarColorHeaderIcon: '#FFFFFF',
 		// Второстепенный текст в хедере
@@ -400,9 +425,9 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorHeaderProgress: '#FF9E00',
 
 		// Цвет иконки поиска
-		calendarColorHeaderSearchIcon: '#9C9DA2',
+		calendarColorHeaderSearchIcon: '#E7E8EA',
 		// Цвет текста в поиске
-		calendarColorHeaderSearchTextCollapsed: '#8C8E94',
+		calendarColorHeaderSearchTextCollapsed: '#E7E8EA',
 		// Фон поиска и кнопки Найти
 		calendarColorHeaderSearchBackground: '#303030',
 		// Фон поиска
@@ -426,4 +451,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 	},
 
 	...darkThemeElevation,
+
+	// тень у формы
+	calendarElevationEventForm: '0px 4px 64px 0px rgba(0, 0, 0, 0.44)',
 };

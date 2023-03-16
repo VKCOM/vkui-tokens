@@ -4,14 +4,56 @@ import { JSDocTagInfo, Node, Project, SourceFile } from 'ts-morph';
 import { capitalize } from '@/build/helpers/capitalize';
 import { SpecialTokens, Theme } from '@/interfaces/general';
 
+export type Description =
+	| {
+			type: 'text';
+			text: string;
+	  }
+	| {
+			type: 'link';
+			url: string;
+			text: string;
+	  };
+
 export interface ThemePropertyDoc {
 	tags: string[];
-	desc: string;
+	desc: Description[];
 }
 
 export type ThemeDocs = {
 	[name: string]: ThemePropertyDoc;
 };
+
+function getTagDescription(tag: JSDocTagInfo): Description[] {
+	return tag
+		.getText()
+		.map<Description | null>((part) => {
+			switch (part.kind) {
+				case 'text':
+					return {
+						type: 'text',
+						text: part.text,
+					};
+				case 'linkText': {
+					const [url, urlText] = part.text.split(' ');
+					if (!url) {
+						throw new Error(
+							'[desc] Ожидаемый формат ссылки в JSDoc `{@link url urlText}` или `{@link url}`',
+						);
+					}
+					return {
+						url,
+						type: 'link',
+						text: urlText || url,
+					};
+				}
+				case 'link':
+				default:
+					return null;
+			}
+		})
+		.filter((i) => i !== null);
+}
 
 function getTagText(tag: JSDocTagInfo): string {
 	return tag
@@ -48,18 +90,19 @@ function getExportedTypeDeclarations(file: SourceFile, typeName: string): Node[]
 function mapJsDocTagsToThemePropertyDoc(tags: JSDocTagInfo[]): ThemePropertyDoc {
 	const doc: ThemePropertyDoc = {
 		tags: [],
-		desc: '',
+		desc: [],
 	};
 
 	tags.forEach((tag) => {
 		const tagName = tag.getName();
-		const tagText = getTagText(tag);
 		if (tagName === 'desc' || tagName === 'description') {
-			doc.desc = tagText;
+			doc.desc = getTagDescription(tag);
 		} else if (tagName === 'tags') {
-			doc.tags = tagText.split(',').map((tag) => tag.trim());
+			const docTags = getTagText(tag);
+			doc.tags = docTags.split(',').map((tag) => tag.trim());
 		} else if (tagName === 'tag') {
-			doc.tags.push(tagText);
+			const docTag = getTagText(tag);
+			doc.tags.push(docTag);
 		}
 	});
 
@@ -75,16 +118,21 @@ export function getTypeDocs(filePath: string, name: string): ThemeDocs {
 	const file = project.addSourceFileAtPath(filePath);
 	const declarations = getExportedTypeDeclarations(file, name);
 
-	return declarations.reduce((all, declaration) => {
-		const properties = declaration.getType().getApparentProperties();
+	return declarations.reduce((prevDocs, declaration) => {
+		const rawProperties = declaration.getType().getApparentProperties();
+		const parsedProperties = rawProperties
+			.reduce<[string, ThemePropertyDoc][]>((acc, prop) => {
+				acc.push([prop.getName(), mapJsDocTagsToThemePropertyDoc(prop.getJsDocTags())]);
+				return acc;
+			}, [])
+			.sort(([a], [b]) => a.localeCompare(b));
 
-		const docs = properties.reduce((all, prop) => {
-			all[prop.getName()] = mapJsDocTagsToThemePropertyDoc(prop.getJsDocTags());
-
-			return all;
+		const docs = parsedProperties.reduce((acc, [key, value]) => {
+			acc[key] = value;
+			return acc;
 		}, {});
 
-		return { ...all, ...docs };
+		return { ...prevDocs, ...docs };
 	}, {});
 }
 

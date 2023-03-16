@@ -19,6 +19,10 @@ export interface ThemeCalendarOverValues {
 	calendarSizeBorderRadiusSmall: number;
 	calendarSizeBorderRadiusMedium: number;
 	calendarSizeBorderRadiusLarge: number;
+	// маска на фоновые картинки тем
+	calendarImageOverlayBackground: string;
+	// тень у формы
+	calendarElevationEventForm: string;
 }
 
 export interface LocalCalendarColorDescriptionStruct {
@@ -57,6 +61,16 @@ export interface LocalCalendarColorDescriptionStruct {
 	// #endregion Токены сайдбара
 
 	// #region Header
+	// Фон шапки страницы
+	calendarColorHeaderBackground: ColorDescription;
+	// Цвет фона активного табика
+	calendarColorHeaderSecondaryAlpha: ColorDescription;
+	// Цвет текста или элементов на активном табе
+	calendarColorHeaderonSecondary: ColorDescription;
+	// Цвет иконки в поиске
+	calendarColorHeaderonWidgetAlpha: ColorDescription;
+	// Цвет фона у поиска и других виджетов
+	calendarColorHeaderWidgetBackgroundAlpha: ColorDescription;
 	// Цвет иконок в хедере
 	calendarColorHeaderIcon: ColorDescription;
 	// Второстепенный текст в хедере
