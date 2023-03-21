@@ -112,7 +112,6 @@ export type AllowedParadigmColorTokens =
 	| 'colorBackgroundNegative'
 	| 'colorBackgroundNegativeTint'
 	| 'colorBackgroundPositive'
-	| 'colorBackgroundPositiveTint'
 	| 'colorBackgroundContrast'
 	| 'colorBackgroundContrastSecondaryAlpha'
 	| 'colorBackgroundWarning'
