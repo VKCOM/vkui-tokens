@@ -208,6 +208,12 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconSchool: '#AC7EEC',
 		octaviusColorIconGames: '#F8BA04',
 		octaviusColorIconReceipts: '#74BF05',
+
+		octaviusColorSidebarWidgetBackground: {
+			normal: '#FFFFFF29',
+			hover: '#FFFFFF0A',
+			active: '#FFFFFF14',
+		},
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',
