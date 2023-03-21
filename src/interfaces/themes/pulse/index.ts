@@ -112,6 +112,7 @@ export type AllowedParadigmColorTokens =
 	| 'colorBackgroundNegative'
 	| 'colorBackgroundNegativeTint'
 	| 'colorBackgroundPositive'
+	| 'colorBackgroundPositiveTint'
 	| 'colorBackgroundContrast'
 	| 'colorBackgroundContrastSecondaryAlpha'
 	| 'colorBackgroundWarning'
@@ -134,6 +135,7 @@ export type AllowedParadigmColorTokens =
 	| 'colorAccentOrange'
 	| 'colorAccentPurple'
 	| 'colorAccentViolet'
+	| 'colorAccentRaspberryPink'
 	| 'colorAccentSecondary'
 	/* Other colors */
 	| 'colorTransparent'
