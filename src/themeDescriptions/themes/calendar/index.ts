@@ -164,6 +164,9 @@ export const calendarTheme: ThemeCalendarDescription = {
 	// тень у формы
 	calendarElevationEventForm: '0px 4px 64px 0px rgba(0, 16, 61, 0.2)',
 
+	// фоновая картинка
+	calendarImageBackground: 'none',
+
 	calendarSizeBorderRadiusSmall: 4,
 	calendarSizeBorderRadiusMedium: 6,
 	calendarSizeBorderRadiusLarge: 8,
