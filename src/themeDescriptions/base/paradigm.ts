@@ -17,7 +17,7 @@ const fontWeightBase1 = 700;
 const fontWeightBase2 = 700;
 const fontWeightBase3 = 400;
 
-const colorBackgroundTertiaryLight: Property.Color = '#F9F9FA';
+const colorBackgroundTertiaryLight: Property.Color = '#F6F7F8';
 const colorBackgroundTertiaryDark: Property.Color = '#252525';
 
 export const lightColors: ColorsDescription = {
@@ -115,6 +115,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentOrange: '#FF9E00',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
+		colorAccentRaspberryPink: '#E03FAB',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other
@@ -234,6 +235,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentOrange: '#FF9E00',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
+		colorAccentRaspberryPink: '#F060C0',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other

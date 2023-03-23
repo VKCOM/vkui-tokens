@@ -74,6 +74,7 @@ const allowedParadigmColors: AllowedParadigmColorTokens[] = [
 	'colorAccentOrange',
 	'colorAccentPurple',
 	'colorAccentViolet',
+	'colorAccentRaspberryPink',
 	'colorAccentSecondary',
 	'colorActionSheetText',
 	'colorHeaderBackground',

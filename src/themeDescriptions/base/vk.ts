@@ -46,7 +46,7 @@ export const lightColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
-		colorBackgroundContrastInverse: '#2d2d2e',
+		colorBackgroundContrastInverse: '#2C2D2E',
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundModalInverse: '#2d2d2e',
 		colorBackgroundWarning: '#FFF2D6',
@@ -118,6 +118,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
+		colorAccentRaspberryPink: '#E03FAB',
 		colorAccentSecondary: '#3F8AE0',
 
 		// Other
@@ -183,15 +184,15 @@ export const darkColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
-		colorBackgroundContrastInverse: '#2d2d2e',
-		colorBackgroundModal: '#2D2D2E',
+		colorBackgroundContrastInverse: '#2C2D2E',
+		colorBackgroundModal: '#2C2D2E',
 		colorBackgroundModalInverse: '#ffffff',
 		colorBackgroundWarning: '#857250',
 		colorBackgroundPositive: '#4BB34B',
 		colorBackgroundNegative: '#FF5C5C',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#E8f9e8',
-		colorFieldBackground: '#292929',
+		colorFieldBackground: '#232324',
 		colorHeaderBackground: '#19191A',
 
 		// Text
@@ -200,7 +201,7 @@ export const darkColors: ColorsDescription = {
 		colorTextPrimary: '#E1E3E6',
 		colorTextPrimaryInvariably: '#000000',
 		colorTextSecondary: '#76787A',
-		colorTextSubhead: '#969A9F',
+		colorTextSubhead: '#5D5F61',
 		colorTextTertiary: '#636567',
 		colorTextContrast: '#FFFFFF',
 		colorTextContrastThemed: '#000000',
@@ -251,6 +252,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
+		colorAccentRaspberryPink: '#F060C0',
 		colorAccentSecondary: '#3F8AE0',
 
 		// Other
@@ -259,8 +261,8 @@ export const darkColors: ColorsDescription = {
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorImagePlaceholder: '#2A2B2C',
 		colorImagePlaceholderAlpha: 'rgba(241, 247, 255, 0.08)',
-		colorSkeletonFrom: '#F5F5F5',
-		colorSkeletonTo: '#E1E3E6',
+		colorSkeletonFrom: '#232324',
+		colorSkeletonTo: '#2C2D2E',
 		colorWriteBarIcon: '#529EF4',
 		colorWriteBarInputBackground: '#232324',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
