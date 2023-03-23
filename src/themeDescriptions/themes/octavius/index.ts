@@ -209,10 +209,10 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorIconGames: '#F8BA04',
 		octaviusColorIconReceipts: '#74BF05',
 
-		octaviusColorSidebarWidgetBackground: {
-			normal: '#FFFFFF29',
-			hover: '#FFFFFF0A',
-			active: '#FFFFFF14',
+		octaviusColorSidebarWidgetBackgroundAlpha: {
+			normal: 'rgba(255, 255, 255, 0.16)',
+			hover: 'rgba(255, 255, 255, 0.04)',
+			active: 'rgba(255, 255, 255, 0.08)',
 		},
 	},
 
