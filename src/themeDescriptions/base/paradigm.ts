@@ -115,6 +115,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentOrange: '#FF9E00',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
+		colorAccentRaspberryPink: '#E03FAB',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other
@@ -234,6 +235,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentOrange: '#FF9E00',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
+		colorAccentRaspberryPink: '#F060C0',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other

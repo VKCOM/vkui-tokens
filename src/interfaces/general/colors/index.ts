@@ -470,6 +470,12 @@ export interface ColorsDescriptionStruct {
 	colorAccentViolet: ColorDescription;
 
 	/**
+	 * @desc Палитра цветов. Розовый цвет
+	 * @tags color, palette
+	 */
+	colorAccentRaspberryPink: ColorDescription;
+
+	/**
 	 * @desc Второстепенный акцентный цвет для отдельных проектов
 	 * @tags color, palette
 	 */
