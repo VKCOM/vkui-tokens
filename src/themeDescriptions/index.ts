@@ -1,6 +1,12 @@
 import { calendarDarkTheme, calendarTheme } from '@/themeDescriptions/themes/calendar';
 import { callsTheme } from '@/themeDescriptions/themes/calls';
 import { cloudDarkTheme, cloudTheme } from '@/themeDescriptions/themes/cloud';
+import {
+	csatHomeTouchDarkTheme,
+	csatHomeTouchTheme,
+	csatParadigmDarkTheme,
+	csatParadigmTheme,
+} from '@/themeDescriptions/themes/csat';
 import { homeDarkTheme, homeTheme } from '@/themeDescriptions/themes/home';
 import { mediaDarkTheme, mediaTheme } from '@/themeDescriptions/themes/media';
 import { mycomTheme } from '@/themeDescriptions/themes/mycom';
@@ -72,6 +78,12 @@ export const themes = [
 	// Темы, наследуемые от Pulse
 	pulseTheme,
 	pulseThemeDark,
+
+	// Темы для CSAT
+	csatParadigmTheme,
+	csatParadigmDarkTheme,
+	csatHomeTouchTheme,
+	csatHomeTouchDarkTheme,
 
 	// Прочие темы
 	callsTheme,

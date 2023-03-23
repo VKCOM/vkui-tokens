@@ -106,3 +106,8 @@ git config --local blame.ignoreRevsFile .git-blame-ignore-revs
   - promo
   - pulse
     - pulseDark
+  - csat
+    - csatParadigm
+    - csatParadigmDark
+    - csatHomeTouch
+    - csatHomeTouchDark
