@@ -680,6 +680,13 @@ export const lightTheme: ThemeDescription = {
 		regular: 12,
 	},
 
+	// Стандартные токены для отступов
+	spacingSizeXs: 4,
+	spacingSizeS: 6,
+	spacingSizeM: 8,
+	spacingSizeL: 10,
+	spacingSizeXl: 12,
+
 	// Разное
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
