@@ -81,7 +81,7 @@ export interface Fonts {
 	fontFootnote: Font;
 
 	/**
-	 * @desc Текст подписей строчными буквами
+	 * @desc Текст подписей прописными буквами
 	 * @tags font
 	 */
 	fontFootnoteCaps: Font;
@@ -93,7 +93,7 @@ export interface Fonts {
 	fontCaption1: Font;
 
 	/**
-	 * @desc Текст для подсказок строчными буквами, уровень 1
+	 * @desc Текст для подсказок прописными буквами, уровень 1
 	 * @tags font
 	 */
 	fontCaption1Caps: Font;
@@ -105,7 +105,7 @@ export interface Fonts {
 	fontCaption2: Font;
 
 	/**
-	 * @desc Текст для подсказок строчными буквами, уровень 2
+	 * @desc Текст для подсказок прописными буквами, уровень 2
 	 * @tags font
 	 */
 	fontCaption2Caps: Font;
@@ -117,7 +117,7 @@ export interface Fonts {
 	fontCaption3: Font;
 
 	/**
-	 * @desc Текст для подсказок строчными буквами, уровень 3
+	 * @desc Текст для подсказок прописными буквами, уровень 3
 	 * @tags font
 	 */
 	fontCaption3Caps: Font;
