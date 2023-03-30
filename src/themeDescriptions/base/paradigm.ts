@@ -658,6 +658,13 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 12,
 	},
 
+	// Стандартные токены для отступов
+	spacingSizeXs: 4,
+	spacingSizeS: 6,
+	spacingSizeM: 8,
+	spacingSizeL: 10,
+	spacingSizeXl: 12,
+
 	// Прочие отступы
 	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
 	elevation1InvertY: '0 -2px 0 0 rgba(0, 16, 61, 0.04)',
