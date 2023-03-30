@@ -128,6 +128,12 @@ export interface Fonts {
  */
 export interface TypographyBaseProps {
 	/**
+	 * @desc Фолбеки на случай пока грузится шрифт или если шрифт не загрузился
+	 * @tags font
+	 */
+	fontFamilyFallbacks: Property.FontFamily;
+
+	/**
 	 * @desc Семейство шрифтов для заголовков
 	 * @tags font
 	 */
