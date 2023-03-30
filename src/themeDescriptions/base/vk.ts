@@ -265,7 +265,7 @@ export const darkColors: ColorsDescription = {
 		colorSkeletonFrom: '#232324',
 		colorSkeletonTo: '#2C2D2E',
 		colorWriteBarIcon: '#529EF4',
-		colorWriteBarInputBackground: '#232324',
+		colorWriteBarInputBackground: '#2C2D2E',
 		colorWriteBarInputBorder: '#2C2D2E',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorActionSheetText: '#529EF4',
