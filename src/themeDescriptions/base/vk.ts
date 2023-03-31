@@ -6,8 +6,9 @@ import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
 
-const fontFamilyAccent = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
-const fontFamilyBase = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
+const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyAccent = fontFamilyFallbacks;
+const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 600;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -132,6 +133,7 @@ export const lightColors: ColorsDescription = {
 		colorSkeletonTo: '#E1E3E6',
 		colorWriteBarIcon: '#3F8AE0',
 		colorWriteBarInputBackground: '#F2F3F5',
+		colorWriteBarInputBorder: '#E1E3E6',
 		colorWriteBarInputBorderAlpha: 'rgba(0, 0, 0, 0.08)',
 		colorTrackBackground: '#E1E3E6',
 		colorTrackBuffer: '#A0BFE4',
@@ -201,8 +203,8 @@ export const darkColors: ColorsDescription = {
 		colorTextPrimary: '#E1E3E6',
 		colorTextPrimaryInvariably: '#000000',
 		colorTextSecondary: '#76787A',
-		colorTextSubhead: '#5D5F61',
-		colorTextTertiary: '#636567',
+		colorTextSubhead: '#969A9F',
+		colorTextTertiary: '#5D5F61',
 		colorTextContrast: '#FFFFFF',
 		colorTextContrastThemed: '#000000',
 		colorTextPositive: '#4BB34B',
@@ -264,7 +266,8 @@ export const darkColors: ColorsDescription = {
 		colorSkeletonFrom: '#232324',
 		colorSkeletonTo: '#2C2D2E',
 		colorWriteBarIcon: '#529EF4',
-		colorWriteBarInputBackground: '#232324',
+		colorWriteBarInputBackground: '#2C2D2E',
+		colorWriteBarInputBorder: '#2C2D2E',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorActionSheetText: '#529EF4',
 		colorTrackBackground: '#454647',
@@ -298,6 +301,7 @@ export const lightTheme: ThemeDescription = {
 	...lightGradient,
 	...lightElevation,
 	// Типографика
+	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
 	fontWeightAccent1,
@@ -679,6 +683,13 @@ export const lightTheme: ThemeDescription = {
 	sizeSubnavigationBarPaddingVertical: {
 		regular: 12,
 	},
+
+	// Стандартные токены для отступов
+	spacingSizeXs: 4,
+	spacingSizeS: 6,
+	spacingSizeM: 8,
+	spacingSizeL: 10,
+	spacingSizeXl: 12,
 
 	// Разное
 	animationDurationL: '0.4s',

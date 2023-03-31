@@ -410,3 +410,35 @@ export interface Sizes {
 	 */
 	sizeSubnavigationBarPaddingVertical: number;
 }
+
+export interface SpacingSizes {
+	/**
+	 * @desc Стандартный токен размера xs для отступов
+	 * @tags size
+	 */
+	spacingSizeXs: number;
+
+	/**
+	 * @desc Стандартный токен размера s для отступов
+	 * @tags size
+	 */
+	spacingSizeS: number;
+
+	/**
+	 * @desc Стандартный токен размера m для отступов
+	 * @tags size
+	 */
+	spacingSizeM: number;
+
+	/**
+	 * @desc Стандартный токен размера l для отступов
+	 * @tags size
+	 */
+	spacingSizeL: number;
+
+	/**
+	 * @desc Стандартный токен размера xl для отступов
+	 * @tags size
+	 */
+	spacingSizeXl: number;
+}
