@@ -110,6 +110,8 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorSidebarComposeButtonText: '#333333',
 		// цвет скроллбара
 		calendarColorSidebarScrollbar: '#C7C7C7',
+		// цвет бордера
+		calendarColorComposeButtonBorderAlpha: 'rgba(0, 16, 61, 0.12)',
 		// #endregion Токены сайдбара
 
 		// #region Header
@@ -155,6 +157,8 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorTextTimeline: '#2C2D2E',
 		// обводка сетки с событиями
 		calendarColorStrokeFieldBorder: '#E0E2E8',
+		// цвет заливки иконок
+		calendarColorIconPrimary: '#2C2D2E',
 		// #endregion Grid
 	},
 
@@ -405,6 +409,8 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorSidebarComposeButtonText: '#333333',
 		// цвет скроллбара
 		calendarColorSidebarScrollbar: '#6F6F6F',
+		// цвет бордера
+		calendarColorComposeButtonBorderAlpha: 'rgba(0, 16, 61, 0.12)',
 		// #endregion Токены сайдбара
 
 		// #region Header
@@ -450,6 +456,8 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorTextTimeline: '#E7E8EA',
 		// обводка сетки с событиями
 		calendarColorStrokeFieldBorder: '#353536',
+		// цвет заливки иконок
+		calendarColorIconPrimary: '#B4B4B4',
 		// #endregion Grid
 	},
 

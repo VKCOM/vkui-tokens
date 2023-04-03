@@ -60,6 +60,8 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorSidebarComposeButtonText: ColorDescription;
 	// цвет скроллбара
 	calendarColorSidebarScrollbar: ColorDescription;
+	// цвет бордера
+	calendarColorComposeButtonBorderAlpha: ColorDescription;
 	// #endregion Токены сайдбара
 
 	// #region Header
@@ -105,6 +107,8 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorTextTimeline: ColorDescription;
 	// обводка сетки с событиями
 	calendarColorStrokeFieldBorder: ColorDescription;
+	// цвет заливки иконок
+	calendarColorIconPrimary: ColorDescription;
 	// #endregion Grid
 }
 
