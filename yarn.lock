@@ -2047,13 +2047,12 @@
   dependencies:
     "@swc/helpers" "^0.4.14"
 
-"@vkontakte/icons@2.23.0":
-  version "2.23.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.23.0.tgz#7791520a107fa7caff6267bfe47eb7aa140d3d0b"
-  integrity sha512-zcKx0SMai3TtiE7gtbzJOh1SppCjPUcqNe4imw1p1GzzSGD9KLLfuKzA8rRkBHN48Y6tjYINEy433j2OrYNTXA==
+"@vkontakte/icons@2.25.0":
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.25.0.tgz#eeaa8b15f94bfbe999dafbfe1d91110dab1aedf5"
+  integrity sha512-Q6nrTF2Kac09H8mxK9zYxKvJ3QFneSLsXisCW56wM7YNLhmWvWzIoEmPV2nsqSkky+h4IRrpI0cJ2Ckz4T1kDw==
   dependencies:
     "@vkontakte/icons-sprite" "^1.0.1"
-    typescript "^5.0.2"
 
 "@vkontakte/prettier-config@0.1.0":
   version "0.1.0"
@@ -7828,11 +7827,6 @@ typescript@4.9.5:
   version "4.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
-
-typescript@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.2.tgz#891e1a90c5189d8506af64b9ef929fca99ba1ee5"
-  integrity sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
