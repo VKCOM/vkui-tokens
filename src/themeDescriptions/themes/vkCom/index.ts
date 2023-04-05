@@ -137,7 +137,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorSkeletonTo: resolveColor(theme.colors.skeleton_foreground_to),
 	colorWriteBarIcon: resolveColor(theme.colors.writebar_icon),
 	colorWriteBarInputBackground: resolveColor(theme.colors.input_background),
-	// colorWriteBarInputBorder: resolveColor(theme.colors.input_border),
+	colorWriteBarInputBorder: resolveColor(theme.colors.input_border),
 	// colorActionSheetText: '#529EF4',
 	colorTrackBackground: resolveColor(theme.colors.loader_track_fill),
 	colorTrackBuffer: resolveColor(theme.colors.loader_track_value_fill),
@@ -243,6 +243,11 @@ export const vkComTheme: ThemeVkComDescription = {
 	// Компонент PanelHeader
 	sizePanelHeaderHeight: {
 		regular: 48,
+	},
+
+	// FormItem
+	sizeFormItemPaddingVertical: {
+		regular: 8,
 	},
 };
 

@@ -537,6 +537,12 @@ export interface ColorsDescriptionStruct {
 	colorWriteBarInputBackground: ColorDescription;
 
 	/**
+	 * @desc Цвет фона поля ввода в компоненте WriteBar
+	 * @tags color, component
+	 */
+	colorWriteBarInputBorder: ColorDescription;
+
+	/**
 	 * @desc Цвет фона поля ввода в компоненте WriteBar с прозрачностью
 	 * @tags color, component, alpha
 	 */

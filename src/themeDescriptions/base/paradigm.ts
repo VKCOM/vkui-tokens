@@ -8,8 +8,9 @@ import { Elevation } from '@/interfaces/general/elevation';
 import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
 import { helpers } from '@/themeDescriptions/common';
 
-const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
-const fontFamilyBase = 'Helvetica, Arial, sans-serif';
+const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
+const fontFamilyAccent = `MailSans, ${fontFamilyFallbacks}`;
+const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -17,7 +18,7 @@ const fontWeightBase1 = 700;
 const fontWeightBase2 = 700;
 const fontWeightBase3 = 400;
 
-const colorBackgroundTertiaryLight: Property.Color = '#F9F9FA';
+const colorBackgroundTertiaryLight: Property.Color = '#F6F7F8';
 const colorBackgroundTertiaryDark: Property.Color = '#252525';
 
 export const lightColors: ColorsDescription = {
@@ -123,7 +124,8 @@ export const lightColors: ColorsDescription = {
 		colorHeaderBackground: '#FFFFFF',
 		colorPanelHeaderIcon: '#005FF9',
 		colorWriteBarInputBackground: '#F0F1F3',
-		colorWriteBarInputBorder: 'rgba(0, 16, 61, 0.8)',
+		colorWriteBarInputBorder: '#E1E3E6',
+		colorWriteBarInputBorderAlpha: 'rgba(0, 16, 61, 0.8)',
 		colorTrackBackground: '#DADCE0',
 		colorTrackBuffer: '#83AAEA',
 		colorImagePlaceholder: '#E6E7EB',
@@ -243,7 +245,8 @@ export const darkColors: ColorsDescription = {
 		colorHeaderBackground: '#232324',
 		colorPanelHeaderIcon: '#3C82FD',
 		colorWriteBarInputBackground: '#2A2A2B',
-		colorWriteBarInputBorder: 'rgba(255, 255, 255, 0.8)',
+		colorWriteBarInputBorder: '#2C2D2E',
+		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorTrackBackground: '#434445',
 		colorTrackBuffer: '#83AAEA',
 		colorImagePlaceholderAlpha: 'rgba(255, 255, 255, 0.8)',
@@ -265,6 +268,7 @@ export const lightThemeBase: ThemeDescription = {
 	...lightColors,
 
 	// Типографика
+	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
 	fontWeightAccent1,
@@ -655,6 +659,13 @@ export const lightThemeBase: ThemeDescription = {
 	sizeSubnavigationBarPaddingVertical: {
 		regular: 12,
 	},
+
+	// Стандартные токены для отступов
+	spacingSizeXs: 4,
+	spacingSizeS: 6,
+	spacingSizeM: 8,
+	spacingSizeL: 10,
+	spacingSizeXl: 12,
 
 	// Прочие отступы
 	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',

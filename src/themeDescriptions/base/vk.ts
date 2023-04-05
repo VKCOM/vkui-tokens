@@ -6,8 +6,9 @@ import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
 
-const fontFamilyAccent = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
-const fontFamilyBase = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
+const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyAccent = fontFamilyFallbacks;
+const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 600;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -46,7 +47,7 @@ export const lightColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
-		colorBackgroundContrastInverse: '#2d2d2e',
+		colorBackgroundContrastInverse: '#2C2D2E',
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundModalInverse: '#2d2d2e',
 		colorBackgroundWarning: '#FFF2D6',
@@ -132,7 +133,8 @@ export const lightColors: ColorsDescription = {
 		colorSkeletonTo: '#E1E3E6',
 		colorWriteBarIcon: '#3F8AE0',
 		colorWriteBarInputBackground: '#F2F3F5',
-		colorWriteBarInputBorder: 'rgba(0, 0, 0, 0.08)',
+		colorWriteBarInputBorder: '#E1E3E6',
+		colorWriteBarInputBorderAlpha: 'rgba(0, 0, 0, 0.08)',
 		colorTrackBackground: '#E1E3E6',
 		colorTrackBuffer: '#A0BFE4',
 		colorSearchFieldBackground: '#EBEDF0',
@@ -266,6 +268,7 @@ export const darkColors: ColorsDescription = {
 		colorWriteBarIcon: '#529EF4',
 		colorWriteBarInputBackground: '#232324',
 		colorWriteBarInputBorder: '#2C2D2E',
+		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorActionSheetText: '#529EF4',
 		colorTrackBackground: '#454647',
 		colorTrackBuffer: '#405772',
@@ -298,6 +301,7 @@ export const lightTheme: ThemeDescription = {
 	...lightGradient,
 	...lightElevation,
 	// Типографика
+	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
 	fontWeightAccent1,
@@ -679,6 +683,13 @@ export const lightTheme: ThemeDescription = {
 	sizeSubnavigationBarPaddingVertical: {
 		regular: 12,
 	},
+
+	// Стандартные токены для отступов
+	spacingSizeXs: 4,
+	spacingSizeS: 6,
+	spacingSizeM: 8,
+	spacingSizeL: 10,
+	spacingSizeXl: 12,
 
 	// Разное
 	animationDurationL: '0.4s',
