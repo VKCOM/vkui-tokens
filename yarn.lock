@@ -2086,6 +2086,13 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.31.0.tgz#7fe6ac779fc231a5207f3914ab4141e962e6425c"
   integrity sha512-LPfB++/mpywsAYUvNUUfKFWRFgCV8ORtDBphs7WTb1MH0Rq9iaLpStLUMmH5Hl2MMQUxGUIQ2J/grbWVv5BIfA==
 
+"@vkontakte/vkjs@0.32.0":
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.32.0.tgz#5274b41c9356ebda4fce027d493fb5ed8a312140"
+  integrity sha512-Vqtgfjr3Wn8FDoeTdw4qR/qQBP93tgXghDFzgsNeyGPPdAPt+RXV+bqURmRIQ1E76ifs1OX4pHTjWeuhBLncMQ==
+  dependencies:
+    "@swc/helpers" "^0.4.14"
+
 "@vkontakte/vkui@5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.1.0.tgz#65da59438d1be88f6e4bcbd1deddd9611ed43539"
