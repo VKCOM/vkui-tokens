@@ -3,7 +3,7 @@ import { Property } from 'csstype';
 import { Animations } from './animations';
 import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors';
 import { Elevation } from './elevation';
-import { Sizes } from './geometry';
+import { Sizes, SpacingSizes } from './geometry';
 import { Gradients } from './gradients';
 import { ToneValues } from './toneValues';
 import { Adaptive } from './tools';
@@ -78,7 +78,8 @@ export interface ThemeGeneral
 		TypographyBaseProps,
 		Elevation,
 		Gradients,
-		Animations {}
+		Animations,
+		SpacingSizes {}
 
 /**
  * Интерфейс описания Темы (в этом типе описываются все темы дизайн-системы)

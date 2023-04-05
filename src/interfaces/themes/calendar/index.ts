@@ -23,6 +23,8 @@ export interface ThemeCalendarOverValues {
 	calendarImageOverlayBackground: string;
 	// тень у формы
 	calendarElevationEventForm: string;
+	// фоновая картинка
+	calendarImageBackground: string;
 }
 
 export interface LocalCalendarColorDescriptionStruct {
