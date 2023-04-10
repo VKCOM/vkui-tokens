@@ -5,51 +5,51 @@ import { vkComTheme, vkComThemeDark } from '../vkCom';
 import { vkontakteTokens } from '../vkontakteAndroid';
 
 const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
-	colorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
-	colorModalCardBorderAlpha: 'rgba(0, 0, 0, 0)',
-	colorLandingSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
-	colorActionSheetSeparatorAlpha: 'rgba(0, 0, 0, 0.12)',
-	colorInputBorder: '#D3D9DE',
+	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
+	vkontakteColorModalCardBorderAlpha: 'rgba(0, 0, 0, 0)',
+	vkontakteColorLandingSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
+	vkontakteColorActionSheetSeparatorAlpha: 'rgba(0, 0, 0, 0.12)',
+	vkontakteColorInputBorder: '#D3D9DE',
 
-	colorImForwardLineAlpha: 'rgba(0, 20, 51, 0.12)',
+	vkontakteColorImForwardLineAlpha: 'rgba(0, 20, 51, 0.12)',
 
-	colorImBubbleBorderAlternateHighlightedAlpha: 'rgba(204, 204, 204, 1)',
+	vkontakteColorImBubbleBorderAlternateHighlightedAlpha: 'rgba(204, 204, 204, 1)',
 
-	colorImBubbleIncoming: '#EDEEF0',
-	colorImBubbleIncomingAlternate: '#FFFFFF',
-	colorImBubbleIncomingExpiring: '#E6E9FF',
+	vkontakteColorImBubbleIncoming: '#EDEEF0',
+	vkontakteColorImBubbleIncomingAlternate: '#FFFFFF',
+	vkontakteColorImBubbleIncomingExpiring: '#E6E9FF',
 
-	colorImBubbleOutgoing: '#CCE4FF',
-	colorImBubbleOutgoingExpiringHighlighted: '#ADB8FF',
+	vkontakteColorImBubbleOutgoing: '#CCE4FF',
+	vkontakteColorImBubbleOutgoingExpiringHighlighted: '#ADB8FF',
 
-	colorImBubbleGiftText: '#857250',
-	colorImBubbleGiftTextSecondary: '#AB9871',
+	vkontakteColorImBubbleGiftText: '#857250',
+	vkontakteColorImBubbleGiftTextSecondary: '#AB9871',
 
-	colorImTextName: '#2A5885',
+	vkontakteColorImTextName: '#2A5885',
 };
 
 const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
-	colorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
-	colorModalCardBorderAlpha: 'rgba(255, 255, 255, 0.12)',
-	colorLandingSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
-	colorActionSheetSeparatorAlpha: 'rgba(255, 255, 255, 0.16)',
-	colorInputBorder: '#555555',
+	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
+	vkontakteColorModalCardBorderAlpha: 'rgba(255, 255, 255, 0.12)',
+	vkontakteColorLandingSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
+	vkontakteColorActionSheetSeparatorAlpha: 'rgba(255, 255, 255, 0.16)',
+	vkontakteColorInputBorder: '#555555',
 
-	colorImForwardLineAlpha: 'rgba(255, 255, 255, 0.24)',
+	vkontakteColorImForwardLineAlpha: 'rgba(255, 255, 255, 0.24)',
 
-	colorImBubbleBorderAlternateHighlightedAlpha: 'rgba(0, 0, 0, 0.00)',
+	vkontakteColorImBubbleBorderAlternateHighlightedAlpha: 'rgba(0, 0, 0, 0.00)',
 
-	colorImBubbleIncoming: '#333333',
-	colorImBubbleIncomingAlternate: '#333333',
-	colorImBubbleIncomingExpiring: '#262B4D',
+	vkontakteColorImBubbleIncoming: '#333333',
+	vkontakteColorImBubbleIncomingAlternate: '#333333',
+	vkontakteColorImBubbleIncomingExpiring: '#262B4D',
 
-	colorImBubbleOutgoing: '#555555',
-	colorImBubbleOutgoingExpiringHighlighted: '#5965B3',
+	vkontakteColorImBubbleOutgoing: '#555555',
+	vkontakteColorImBubbleOutgoingExpiringHighlighted: '#5965B3',
 
-	colorImBubbleGiftText: '#FFFFFF',
-	colorImBubbleGiftTextSecondary: '#E3D3AC',
+	vkontakteColorImBubbleGiftText: '#FFFFFF',
+	vkontakteColorImBubbleGiftTextSecondary: '#E3D3AC',
 
-	colorImTextName: '#71AAEB',
+	vkontakteColorImTextName: '#71AAEB',
 };
 
 export const vkontakteComTheme: ThemeVkontakteComDescription = {

@@ -14,196 +14,196 @@ export interface VkontakteAndroidGradients {
 	 * @desc Градиент AquamarineBlue
 	 * @tags gradient
 	 */
-	gradientAquamarineBlue: GradientPoints;
+	vkontakteGradientAquamarineBlue: GradientPoints;
 	/**
 	 * @desc Градиент Blue
 	 * @tags gradient
 	 */
-	gradientBlue: GradientPoints;
+	vkontakteGradientBlue: GradientPoints;
 	/**
 	 * @desc Градиент Candy
 	 * @tags gradient
 	 */
-	gradientCandy: GradientPoints;
+	vkontakteGradientCandy: GradientPoints;
 	/**
 	 * @desc Градиент Crimson
 	 * @tags gradient
 	 */
-	gradientCrimson: GradientPoints;
+	vkontakteGradientCrimson: GradientPoints;
 	/**
 	 * @desc Градиент Disco
 	 * @tags gradient
 	 */
-	gradientDisco: GradientPoints;
+	vkontakteGradientDisco: GradientPoints;
 	/**
 	 * @desc Градиент Emerald
 	 * @tags gradient
 	 */
-	gradientEmerald: GradientPoints;
+	vkontakteGradientEmerald: GradientPoints;
 	/**
 	 * @desc Градиент Gray
 	 * @tags gradient
 	 */
-	gradientGray: GradientPoints;
+	vkontakteGradientGray: GradientPoints;
 	/**
 	 * @desc Градиент Green
 	 * @tags gradient
 	 */
-	gradientGreen: GradientPoints;
+	vkontakteGradientGreen: GradientPoints;
 	/**
 	 * @desc Градиент Lagoon
 	 * @tags gradient
 	 */
-	gradientLagoon: GradientPoints;
+	vkontakteGradientLagoon: GradientPoints;
 	/**
 	 * @desc Градиент Lavender
 	 * @tags gradient
 	 */
-	gradientLavender: GradientPoints;
+	vkontakteGradientLavender: GradientPoints;
 	/**
 	 * @desc Градиент Marine
 	 * @tags gradient
 	 */
-	gradientMarine: GradientPoints;
+	vkontakteGradientMarine: GradientPoints;
 	/**
 	 * @desc Градиент Midnight
 	 * @tags gradient
 	 */
-	gradientMidnight: GradientPoints;
+	vkontakteGradientMidnight: GradientPoints;
 	/**
 	 * @desc Градиент Orange
 	 * @tags gradient
 	 */
-	gradientOrange: GradientPoints;
+	vkontakteGradientOrange: GradientPoints;
 	/**
 	 * @desc Градиент Pink
 	 * @tags gradient
 	 */
-	gradientPink: GradientPoints;
+	vkontakteGradientPink: GradientPoints;
 	/**
 	 * @desc Градиент Purple
 	 * @tags gradient
 	 */
-	gradientPurple: GradientPoints;
+	vkontakteGradientPurple: GradientPoints;
 	/**
 	 * @desc Градиент RaspberryPink
 	 * @tags gradient
 	 */
-	gradientRaspberryPink: GradientPoints;
+	vkontakteGradientRaspberryPink: GradientPoints;
 	/**
 	 * @desc Градиент Red
 	 * @tags gradient
 	 */
-	gradientRed: GradientPoints;
+	vkontakteGradientRed: GradientPoints;
 	/**
 	 * @desc Градиент Retrowave
 	 * @tags gradient
 	 */
-	gradientRetrowave: GradientPoints;
+	vkontakteGradientRetrowave: GradientPoints;
 	/**
 	 * @desc Градиент Sunset
 	 * @tags gradient
 	 */
-	gradientSunset: GradientPoints;
+	vkontakteGradientSunset: GradientPoints;
 	/**
 	 * @desc Градиент Turquoise
 	 * @tags gradient
 	 */
-	gradientTurquoise: GradientPoints;
+	vkontakteGradientTurquoise: GradientPoints;
 	/**
 	 * @desc Градиент Twilight
 	 * @tags gradient
 	 */
-	gradientTwilight: GradientPoints;
+	vkontakteGradientTwilight: GradientPoints;
 	/**
 	 * @desc Градиент Unicorn
 	 * @tags gradient
 	 */
-	gradientUnicorn: GradientPoints;
+	vkontakteGradientUnicorn: GradientPoints;
 	/**
 	 * @desc Градиент Violet
 	 * @tags gradient
 	 */
-	gradientViolet: GradientPoints;
+	vkontakteGradientViolet: GradientPoints;
 	/**
 	 * @desc Градиент Yellow
 	 * @tags gradient
 	 */
-	gradientYellow: GradientPoints;
+	vkontakteGradientYellow: GradientPoints;
 	/**
 	 * @desc Градиент YellowBright
 	 * @tags gradient
 	 */
-	gradientYellowBright: GradientPoints;
+	vkontakteGradientYellowBright: GradientPoints;
 	/**
 	 * @desc Градиент HalloweenOrange
 	 * @tags gradient
 	 */
-	gradientHalloweenOrange: GradientPoints;
+	vkontakteGradientHalloweenOrange: GradientPoints;
 	/**
 	 * @desc Градиент HalloweenViolet
 	 * @tags gradient
 	 */
-	gradientHalloweenViolet: GradientPoints;
+	vkontakteGradientHalloweenViolet: GradientPoints;
 	/**
 	 * @desc Градиент NewYear
 	 * @tags gradient
 	 */
-	gradientNewYear: GradientPoints;
+	vkontakteGradientNewYear: GradientPoints;
 	/**
 	 * @desc Градиент Frost
 	 * @tags gradient
 	 */
-	gradientFrost: GradientPoints;
+	vkontakteGradientFrost: GradientPoints;
 	/**
 	 * @desc Градиент Valentine
 	 * @tags gradient
 	 */
-	gradientValentine: GradientPoints;
+	vkontakteGradientValentine: GradientPoints;
 	/**
 	 * @desc Градиент WarmValentine
 	 * @tags gradient
 	 */
-	gradientWarmValentine: GradientPoints;
+	vkontakteGradientWarmValentine: GradientPoints;
 	/**
 	 * @desc Градиент Sberkot
 	 * @tags gradient
 	 */
-	gradientSberkot: GradientPoints;
+	vkontakteGradientSberkot: GradientPoints;
 	/**
 	 * @desc Градиент Mable
 	 * @tags gradient
 	 */
-	gradientMable: GradientPoints;
+	vkontakteGradientMable: GradientPoints;
 	/**
 	 * @desc Градиент WomensDay
 	 * @tags gradient
 	 */
-	gradientWomensDay: GradientPoints;
+	vkontakteGradientWomensDay: GradientPoints;
 }
 
 export interface LocalVkontakteAndroidColorsDescriptionStruct {
-	colorSnippetBorderAlpha: ColorDescription;
-	colorModalCardBorderAlpha: ColorDescription;
-	colorLandingSnippetBorderAlpha: ColorDescription;
-	colorActionSheetSeparatorAlpha: ColorDescription;
-	colorInputBorder: ColorDescription;
+	vkontakteColorSnippetBorderAlpha: ColorDescription;
+	vkontakteColorModalCardBorderAlpha: ColorDescription;
+	vkontakteColorLandingSnippetBorderAlpha: ColorDescription;
+	vkontakteColorActionSheetSeparatorAlpha: ColorDescription;
+	vkontakteColorInputBorder: ColorDescription;
 
-	colorImForwardLineAlpha: ColorDescription;
+	vkontakteColorImForwardLineAlpha: ColorDescription;
 
-	colorImBubbleBorderAlternateHighlightedAlpha: ColorDescription;
+	vkontakteColorImBubbleBorderAlternateHighlightedAlpha: ColorDescription;
 
-	colorImBubbleIncoming: ColorDescription;
-	colorImBubbleIncomingAlternate: ColorDescription;
-	colorImBubbleIncomingExpiring: ColorDescription;
+	vkontakteColorImBubbleIncoming: ColorDescription;
+	vkontakteColorImBubbleIncomingAlternate: ColorDescription;
+	vkontakteColorImBubbleIncomingExpiring: ColorDescription;
 
-	colorImBubbleOutgoing: ColorDescription;
-	colorImBubbleOutgoingExpiringHighlighted: ColorDescription;
+	vkontakteColorImBubbleOutgoing: ColorDescription;
+	vkontakteColorImBubbleOutgoingExpiringHighlighted: ColorDescription;
 
-	colorImBubbleGiftText: ColorDescription;
-	colorImBubbleGiftTextSecondary: ColorDescription;
+	vkontakteColorImBubbleGiftText: ColorDescription;
+	vkontakteColorImBubbleGiftTextSecondary: ColorDescription;
 
-	colorImTextName: ColorDescription;
+	vkontakteColorImTextName: ColorDescription;
 }
 
 export type VkontakteAndroidLocalColors = {
