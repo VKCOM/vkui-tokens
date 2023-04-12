@@ -22,13 +22,13 @@ import { searchTheme } from '@/themeDescriptions/themes/search';
 import { todoTheme } from '@/themeDescriptions/themes/todo';
 import { vkComTheme, vkComThemeDark } from '@/themeDescriptions/themes/vkCom';
 import { vkIOSTheme, vkIOSThemeDark } from '@/themeDescriptions/themes/vkIOS';
-import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
 import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,
 } from '@/themeDescriptions/themes/vkontakteAndroid';
 import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/themes/vkontakteCom';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
+import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
 
 import { darkThemeExport as paradigmBaseDark, lightTheme as paradigmBase } from './base/paradigm';
 import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk';
