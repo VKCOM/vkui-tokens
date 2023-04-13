@@ -1602,6 +1602,13 @@
   dependencies:
     tslib "^2.4.0"
 
+"@swc/helpers@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.0.tgz#bf1d807b60f7290d0ec763feea7ccdeda06e85f1"
+  integrity sha512-SjY/p4MmECVVEWspzSRpQEM3sjR17sP8PbGxELWrT+YZMBfiUyt1MRUNjMV23zohwlG2HYtCQOsCwsTHguXkyg==
+  dependencies:
+    tslib "^2.4.0"
+
 "@trysound/sax@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
@@ -2069,12 +2076,12 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.31.0.tgz#7fe6ac779fc231a5207f3914ab4141e962e6425c"
   integrity sha512-LPfB++/mpywsAYUvNUUfKFWRFgCV8ORtDBphs7WTb1MH0Rq9iaLpStLUMmH5Hl2MMQUxGUIQ2J/grbWVv5BIfA==
 
-"@vkontakte/vkjs@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.32.0.tgz#5274b41c9356ebda4fce027d493fb5ed8a312140"
-  integrity sha512-Vqtgfjr3Wn8FDoeTdw4qR/qQBP93tgXghDFzgsNeyGPPdAPt+RXV+bqURmRIQ1E76ifs1OX4pHTjWeuhBLncMQ==
+"@vkontakte/vkjs@0.32.2":
+  version "0.32.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.32.2.tgz#ecdf5d217fa80d2dfac240aa7ff42ca949ed0c26"
+  integrity sha512-OTEPdsOY/UWdzVL31qGg32ZYXnRYzGxAfYy4/T15MIV/z+/Gz2z+wiNXyV2xO5K+/Ytyqg+Bzf7v1vv87DMYOw==
   dependencies:
-    "@swc/helpers" "^0.4.14"
+    "@swc/helpers" "^0.5.0"
 
 "@vkontakte/vkui@5.1.0":
   version "5.1.0"
