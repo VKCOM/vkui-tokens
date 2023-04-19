@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { PixelifyTheme, Theme } from '@/interfaces/general';
 import { ParadigmTheme } from '@/interfaces/namespaces/paradigm';
 

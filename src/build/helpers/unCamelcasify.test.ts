@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { unCamelcasify } from './unCamelcasify';
 
 describe('unCamelcasify', () => {

@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { extractViewports } from '@/build/themeProcessors/extractViewports/extractViewports';
 import { Breakpoints } from '@/interfaces/general/tools';
 import { DefaultViewports } from '@/interfaces/general/tools/viewports';
