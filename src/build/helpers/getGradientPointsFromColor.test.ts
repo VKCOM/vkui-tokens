@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 
 describe('getGradientPointsFromColor', () => {

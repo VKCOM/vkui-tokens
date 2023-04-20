@@ -1,3 +1,5 @@
+import { describe, expect, test } from '@jest/globals';
+
 /* eslint-disable @typescript-eslint/naming-convention */
 import { resolveColor } from './appearance';
 

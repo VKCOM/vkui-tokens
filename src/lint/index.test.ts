@@ -1,3 +1,5 @@
+import { describe, expect, test } from '@jest/globals';
+
 import { lint } from '@/lint/index';
 
 describe('lint unit', () => {

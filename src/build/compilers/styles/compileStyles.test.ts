@@ -1,3 +1,4 @@
+import { describe, expect, test } from '@jest/globals';
 import { stripIndent } from 'common-tags';
 
 import { PixelifyTheme } from '@/interfaces/general';
