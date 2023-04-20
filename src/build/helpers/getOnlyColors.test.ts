@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { getOnlyColors } from '@/build/helpers/getOnlyColors';
 
 describe('getOnlyColors', () => {

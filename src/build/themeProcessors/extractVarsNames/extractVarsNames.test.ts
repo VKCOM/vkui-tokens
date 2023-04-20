@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { Breakpoints } from '@/interfaces/general/tools';
 import { ParadigmTheme, ParadigmThemeCssVarsWide } from '@/interfaces/namespaces/paradigm';
 
