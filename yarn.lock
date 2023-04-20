@@ -2021,10 +2021,10 @@
   dependencies:
     "@swc/helpers" "^0.4.14"
 
-"@vkontakte/icons@2.25.0":
-  version "2.25.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.25.0.tgz#eeaa8b15f94bfbe999dafbfe1d91110dab1aedf5"
-  integrity sha512-Q6nrTF2Kac09H8mxK9zYxKvJ3QFneSLsXisCW56wM7YNLhmWvWzIoEmPV2nsqSkky+h4IRrpI0cJ2Ckz4T1kDw==
+"@vkontakte/icons@2.28.0":
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.28.0.tgz#7653aec6829806621cb6721faa86aa549ede9238"
+  integrity sha512-hEbX0iZ5sfWOUbQK/9I+oXZWviR2hg7+iS5k+1u5VRcE1F2WfupZu99q/5TQRgzDRSrwGMxOMLf0wHpDMHiDvg==
   dependencies:
     "@vkontakte/icons-sprite" "^1.0.1"
 
