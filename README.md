@@ -21,10 +21,10 @@
     - [Подключение темы на страницу](#подключение-темы-на-страницу)
     - [Использование переменных в вёрстке](#использование-переменных-в-вёрстке)
   - [Использование базовой темы напрямую из пакета](#использование-базовой-темы-напрямую-из-пакета)
+  - [Создание новой темы для вашего проекта](docs/articles/new-theme/INDEX.md)
 - [Инструменты](#инструменты)
   - [Локальная сборка своих тем инструментами библиотеки](#локальная-сборка-своих-тем-инструментами-библиотеки)
     - [Наследование от существующей темы](#наследование-от-существующей-темы)
-    - [Создание собственной темы "с нуля"](#создание-собственной-темы-с-нуля)
 - [Roadmap](#roadmap)
 - [Полезные ссылки](#полезные-ссылки)
 - [Информация для внесения изменений](CONTRIBUTING.md)
@@ -217,46 +217,6 @@ const { theme, pixelifyTheme, cssVarsTheme } = expandAll(myNewAwesomeTheme);
 // которую можно вставить в DOM или сохранить в файл
 const cssString = compileStyles('css', pixelifyTheme);
 ```
-
-### Создание собственной темы "с нуля"
-
-В некоторых случаях нет необходимости наследоваться от одной из
-базовых тем. Библиотека позволяет сгенерировать свою тему из
-произвольного количества уникальных переменных.
-
-Пример:
-
-```typescript
-import type { Adaptive } from '@vkontakte/vkui-tokens/interfaces/general/tools';
-import { expandAll } from '@vkontakte/vkui-tokens/build/expandTheme';
-import { compileStyles } from '@vkontakte/vkui-tokens/build/compilers/styles/compileStyles';
-
-interface MyNewAwesomeThemeDescription {
-	myNewAwesomeToken: Adaptive<number>;
-}
-
-const myNewAwesomeTheme: MyNewAwesomeThemeDescription = {
-	myNewAwesomeToken: {
-		regular: 20,
-		compact: 12,
-	},
-};
-
-// получаем разные типы тем на основе описания
-const { theme, pixelifyTheme, cssVarsTheme } = expandAll(myNewAwesomeTheme);
-
-// получаем CSS-строку со всеми переменными темы,
-// которую можно вставить в DOM или сохранить в файл
-// буквально тут содержится:
-/* 
-:root {
-	--vkui--my_new_awesome_token--regular: 20px;
-	--vkui--my_new_awesome_token--compact: 12px;
-}
- */
-const cssString = compileStyles('css', pixelifyTheme);
-```
-
 # Roadmap
 
 - [ ] Добавить более умную генерацию active, hover состояний цвета.
