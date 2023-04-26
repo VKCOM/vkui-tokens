@@ -14,27 +14,27 @@ interface PortalUITextColors {
 	 * @desc Цвет посещённой ссылки в саджестах поиска
 	 * @tags color, text
 	 */
-	portalColorTextLinkVisitedAlternative: ColorWithStates;
+	portalColorTextLinkVisitedAlternative: ColorDescription;
 	/**
 	 * @desc Цвет текста акцентного тултипа
 	 * @tags color, text
 	 */
-	portalColorTextBlueAccentThemed: ColorWithStates;
+	portalColorTextBlueAccentThemed: ColorDescription;
 	/**
 	 * @desc Цвет текста акцентного тултипа
 	 * @tags color, text
 	 */
-	portalColorTextGreenAccentThemed: ColorWithStates;
+	portalColorTextGreenAccentThemed: ColorDescription;
 	/**
 	 * @desc Цвет текста акцентного тултипа
 	 * @tags color, text
 	 */
-	portalColorTextOrangeAccentThemed: ColorWithStates;
+	portalColorTextOrangeAccentThemed: ColorDescription;
 	/**
 	 * @desc Цвет текста акцентного тултипа
 	 * @tags color, text
 	 */
-	portalColorTextPurpleAccentThemed: ColorWithStates;
+	portalColorTextPurpleAccentThemed: ColorDescription;
 }
 
 interface PortalUIBackgroundColors {
@@ -42,42 +42,42 @@ interface PortalUIBackgroundColors {
 	 * @desc Цвет прозрачных синих фонов
 	 * @tags color, background, alpha
 	 */
-	portalColorBackgroundAccentAlpha: ColorWithStates;
+	portalColorBackgroundAccentAlpha: ColorDescription;
 	/**
 	 * @desc Цвет акцентных синих фонов
 	 * @tags color, background
 	 */
-	portalColorBackgroundAccent: ColorWithStates;
+	portalColorBackgroundAccent: ColorDescription;
 	/**
 	 * @desc Цвет табов
 	 * @tags color, background, alpha
 	 */
-	portalColorBackgroundAccentTabAlpha: ColorWithStates;
+	portalColorBackgroundAccentTabAlpha: ColorDescription;
 	/**
 	 * @desc Цвет карточек (виджеты, пульс, баннер)
 	 * @tags color, background
 	 */
-	portalColorBackgroundCard: ColorWithStates;
+	portalColorBackgroundCard: ColorDescription;
 	/**
 	 * @desc Цвет фона страницы
 	 * @tags color, background
 	 */
-	portalColorBackground: ColorWithStates;
+	portalColorBackground: ColorDescription;
 	/**
 	 * @desc Цвет фона, одинаковый для всех тем
 	 * @tags color, background
 	 */
-	portalColorBackgroundInvariable: ColorWithStates;
+	portalColorBackgroundInvariable: ColorDescription;
 	/**
 	 * @desc Цвет оверлея под омнибоксом поиска
 	 * @tags color, background
 	 */
-	portalColorOverlayPrimaryAlpha: ColorWithStates;
+	portalColorOverlayPrimaryAlpha: ColorDescription;
 	/**
 	 * @desc Цвет контрастных блоков (видео, например)
 	 * @tags color, background
 	 */
-	portalColorBackgroundDark: ColorWithStates;
+	portalColorBackgroundDark: ColorDescription;
 }
 
 interface PortalUIPaletteColors {
@@ -85,33 +85,35 @@ interface PortalUIPaletteColors {
 	 * @desc Цвет фона акцентного тултипа
 	 * @tags color, palette
 	 */
-	portalColorPaletteSweetBlue: ColorWithStates;
+	portalColorPaletteSweetBlue: ColorDescription;
 	/**
 	 * @desc Цвет фона акцентного тултипа
 	 * @tags color, palette
 	 */
-	portalColorPaletteSweetGreen: ColorWithStates;
+	portalColorPaletteSweetGreen: ColorDescription;
 	/**
 	 * @desc Цвет фона акцентного тултипа
 	 * @tags color, palette
 	 */
-	portalColorPaletteSweetOrange: ColorWithStates;
+	portalColorPaletteSweetOrange: ColorDescription;
 	/**
 	 * @desc Цвет фона акцентного тултипа
 	 * @tags color, palette
 	 */
-	portalColorPaletteSweetPurple: ColorWithStates;
+	portalColorPaletteSweetPurple: ColorDescription;
 	/**
 	 * @desc Цвет фона акцентного тултипа
 	 * @tags color, palette
 	 */
-	portalColorPaletteLightBlue: ColorWithStates;
+	portalColorPaletteLightBlue: ColorDescription;
 }
 
-type PortalUIColors = PortalUITextColors & PortalUIBackgroundColors & PortalUIPaletteColors;
+type PortalUIColorsDescriptions = PortalUITextColors &
+	PortalUIBackgroundColors &
+	PortalUIPaletteColors;
 
-type PortalUIColorsDescriptions = {
-	[key in keyof PortalUIColors]: ColorDescription;
+type PortalUIColors = {
+	[key in keyof PortalUIColorsDescriptions]: ColorWithStates;
 };
 
 interface PortalUIElevation {
@@ -202,10 +204,7 @@ interface PortalUIGradients {
 
 interface PortalUIUniqueTokens extends PortalUIElevation, PortalUIGradients {}
 
-export interface ThemePortalUI
-	extends ParadigmTheme,
-		PortalUIColorsDescriptions,
-		PortalUIUniqueTokens {}
+export interface ThemePortalUI extends ParadigmTheme, PortalUIColors, PortalUIUniqueTokens {}
 
 export interface ThemePortalUIDescription extends ParadigmThemeDescription, PortalUIUniqueTokens {
 	colors: ParadigmThemeDescription['colors'] & PortalUIColorsDescriptions;
