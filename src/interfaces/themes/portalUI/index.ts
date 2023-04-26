@@ -211,4 +211,5 @@ export interface ThemePortalUIDescription extends ParadigmThemeDescription, Port
 	colors: ParadigmThemeDescription['colors'] & PortalUIColorsDescriptions;
 }
 
-export interface ThemePortalUICssVars extends ParadigmThemeCssVars<DefaultViewports, ThemePortalUI> {}
+export interface ThemePortalUICssVars
+	extends ParadigmThemeCssVars<DefaultViewports, ThemePortalUI> {}
