@@ -16,7 +16,7 @@ import {
 import { octaviusVKDarkTheme, octaviusVKTheme } from '@/themeDescriptions/themes/octaviusVK';
 import { otvetDarkTheme, otvetTheme } from '@/themeDescriptions/themes/otvet';
 import { pharmaTheme } from '@/themeDescriptions/themes/pharma';
-import { portalUITheme } from '@/themeDescriptions/themes/portalUI';
+import { portalUIDarkTheme, portalUITheme } from '@/themeDescriptions/themes/portalUI';
 import { promoTheme } from '@/themeDescriptions/themes/promo';
 import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
 import { searchTheme } from '@/themeDescriptions/themes/search';
@@ -87,6 +87,7 @@ export const themes = [
 
 	// Темы, наследуемые от PortalUI
 	portalUITheme,
+	portalUIDarkTheme,
 
 	// Темы, наследуемые от Pulse
 	pulseTheme,
