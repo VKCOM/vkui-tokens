@@ -110,7 +110,7 @@ interface PortalUIPaletteColors {
 
 type PortalUIColors = PortalUITextColors & PortalUIBackgroundColors & PortalUIPaletteColors;
 
-type ProjectColorsDescriptions = {
+type PortalUIColorsDescriptions = {
 	[key in keyof PortalUIColors]: ColorDescription;
 };
 
@@ -202,12 +202,13 @@ interface PortalUIGradients {
 
 interface PortalUIUniqueTokens extends PortalUIElevation, PortalUIGradients {}
 
-export interface ThemeMedia extends ParadigmTheme, PortalUIColors, PortalUIUniqueTokens {}
+export interface ThemePortalUI
+	extends ParadigmTheme,
+		PortalUIColorsDescriptions,
+		PortalUIUniqueTokens {}
 
-export interface ThemeMediaDescription
-	extends ParadigmThemeDescription,
-		PortalUIUniqueTokens {
-	colors: ParadigmThemeDescription['colors'] & ProjectColorsDescriptions;
+export interface ThemePortalUIDescription extends ParadigmThemeDescription, PortalUIUniqueTokens {
+	colors: ParadigmThemeDescription['colors'] & PortalUIColorsDescriptions;
 }
 
-export interface ThemeMediaCssVars extends ParadigmThemeCssVars<DefaultViewports, ThemeMedia> {}
+export interface ThemePortalUICssVars extends ParadigmThemeCssVars<DefaultViewports, ThemePortalUI> {}
