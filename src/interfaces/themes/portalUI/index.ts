@@ -1,14 +1,13 @@
 import { Property } from 'csstype';
 
 import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
-import { Adaptive } from '@/interfaces/general/tools';
-import { Font } from '@/interfaces/general/typography';
+import { GradientPoints } from '@/interfaces/general/gradients';
+import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
-import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 
 interface PortalUITextColors {
 	/**
@@ -133,7 +132,75 @@ interface PortalUIElevation {
 	portalElevation3: Property.BoxShadow;
 }
 
-type PortalUIUniqueTokens = PortalUIElevation;
+interface PortalUIGradients {
+	/**
+	 * @desc Градиент для обрезающихся элементов на фоне colorBackground
+	 * @tags gradient
+	 */
+	portalGradientBackground: GradientPoints;
+	/**
+	 * @desc Градиент Hover для обрезающихся элементов на фоне portalColorBackground
+	 * @tags gradient
+	 */
+	portalGradientBackgroundHover: GradientPoints;
+	/**
+	 * @desc Градиент Active для обрезающихся элементов на фоне colorBackground
+	 * @tags gradient
+	 */
+	portalGradientBackgroundActive: GradientPoints;
+	/**
+	 * @desc Градиент для обрезающихся элементов на фоне portalColorBackground
+	 * @tags gradient
+	 */
+	portalGradientBackgroundSecondary: GradientPoints;
+	/**
+	 * @desc Градиент для обрезающихся элементов на фоне portalColorBackgroundTertiary
+	 * @tags gradient
+	 */
+	portalGradientBackgroundTertiary: GradientPoints;
+	/**
+	 * @desc Градиент для обрезающихся элементов на фоне colorBackgroundContent
+	 * @tags gradient
+	 */
+	portalGradientBackgroundContent: GradientPoints;
+	/**
+	 * @desc Градиент для обрезающихся элементов на фоне colorBackgroundCard
+	 * @tags gradient
+	 */
+	portalGradientBackgroundCard: GradientPoints;
+	/**
+	 * @desc Градиент Hover для обрезающихся элементов на фоне colorBackgroundCard
+	 * @tags gradient
+	 */
+	portalGradientBackgroundCardHover: GradientPoints;
+	/**
+	 * @desc Градиент Active для обрезающихся элементов на фоне portalColorBackgroundCard
+	 * @tags gradient
+	 */
+	portalGradientBackgroundCardActive: GradientPoints;
+	/**
+	 * @desc Градиент для обрезающихся элементов на фоне portalColorBackgroundModal
+	 * @tags gradient
+	 */
+	portalGradientBackgroundModal: GradientPoints;
+	/**
+	 * @desc Градиент Hover для обрезающихся элементов на фоне portalColorBackgroundModal
+	 * @tags gradient
+	 */
+	portalGradientBackgroundModalHover: GradientPoints;
+	/**
+	 * @desc Градиент Active для обрезающихся элементов на фоне portalColorBackgroundModal
+	 * @tags gradient
+	 */
+	portalGradientBackgroundModalActive: GradientPoints;
+	/**
+	 * @desc Градиент для обрезающихся элементов на фоне portalColorBackgroundAccent
+	 * @tags gradient
+	 */
+	portalGradientBackgroundAccent: GradientPoints;
+}
+
+interface PortalUIUniqueTokens extends PortalUIElevation, PortalUIGradients {}
 
 export interface ThemeMedia extends ParadigmTheme, PortalUIColors, PortalUIUniqueTokens {}
 
