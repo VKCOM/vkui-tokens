@@ -6,8 +6,9 @@ import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
 
-const fontFamilyAccent = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
-const fontFamilyBase = `-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif`;
+const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+const fontFamilyAccent = fontFamilyFallbacks;
+const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 600;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -46,7 +47,7 @@ export const lightColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
-		colorBackgroundContrastInverse: '#2d2d2e',
+		colorBackgroundContrastInverse: '#2C2D2E',
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundModalInverse: '#2d2d2e',
 		colorBackgroundWarning: '#FFF2D6',
@@ -118,6 +119,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
+		colorAccentRaspberryPink: '#E03FAB',
 		colorAccentSecondary: '#3F8AE0',
 
 		// Other
@@ -131,6 +133,7 @@ export const lightColors: ColorsDescription = {
 		colorSkeletonTo: '#E1E3E6',
 		colorWriteBarIcon: '#3F8AE0',
 		colorWriteBarInputBackground: '#F2F3F5',
+		colorWriteBarInputBorder: '#E1E3E6',
 		colorWriteBarInputBorderAlpha: 'rgba(0, 0, 0, 0.08)',
 		colorTrackBackground: '#E1E3E6',
 		colorTrackBuffer: '#A0BFE4',
@@ -183,15 +186,15 @@ export const darkColors: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
-		colorBackgroundContrastInverse: '#2d2d2e',
-		colorBackgroundModal: '#2D2D2E',
+		colorBackgroundContrastInverse: '#2C2D2E',
+		colorBackgroundModal: '#2C2D2E',
 		colorBackgroundModalInverse: '#ffffff',
 		colorBackgroundWarning: '#857250',
 		colorBackgroundPositive: '#4BB34B',
 		colorBackgroundNegative: '#FF5C5C',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#E8f9e8',
-		colorFieldBackground: '#292929',
+		colorFieldBackground: '#232324',
 		colorHeaderBackground: '#19191A',
 
 		// Text
@@ -201,7 +204,7 @@ export const darkColors: ColorsDescription = {
 		colorTextPrimaryInvariably: '#000000',
 		colorTextSecondary: '#76787A',
 		colorTextSubhead: '#969A9F',
-		colorTextTertiary: '#636567',
+		colorTextTertiary: '#5D5F61',
 		colorTextContrast: '#FFFFFF',
 		colorTextContrastThemed: '#000000',
 		colorTextPositive: '#4BB34B',
@@ -251,6 +254,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentOrange: '#FFA000',
 		colorAccentPurple: '#735CE6',
 		colorAccentViolet: '#792EC0',
+		colorAccentRaspberryPink: '#F060C0',
 		colorAccentSecondary: '#3F8AE0',
 
 		// Other
@@ -259,10 +263,11 @@ export const darkColors: ColorsDescription = {
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorImagePlaceholder: '#2A2B2C',
 		colorImagePlaceholderAlpha: 'rgba(241, 247, 255, 0.08)',
-		colorSkeletonFrom: '#F5F5F5',
-		colorSkeletonTo: '#E1E3E6',
+		colorSkeletonFrom: '#232324',
+		colorSkeletonTo: '#2C2D2E',
 		colorWriteBarIcon: '#529EF4',
-		colorWriteBarInputBackground: '#232324',
+		colorWriteBarInputBackground: '#2C2D2E',
+		colorWriteBarInputBorder: '#2C2D2E',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorActionSheetText: '#529EF4',
 		colorTrackBackground: '#454647',
@@ -296,6 +301,7 @@ export const lightTheme: ThemeDescription = {
 	...lightGradient,
 	...lightElevation,
 	// Типографика
+	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
 	fontWeightAccent1,
@@ -677,6 +683,13 @@ export const lightTheme: ThemeDescription = {
 	sizeSubnavigationBarPaddingVertical: {
 		regular: 12,
 	},
+
+	// Стандартные токены для отступов
+	spacingSizeXs: 4,
+	spacingSizeS: 6,
+	spacingSizeM: 8,
+	spacingSizeL: 10,
+	spacingSizeXl: 12,
 
 	// Разное
 	animationDurationL: '0.4s',

@@ -470,6 +470,12 @@ export interface ColorsDescriptionStruct {
 	colorAccentViolet: ColorDescription;
 
 	/**
+	 * @desc Палитра цветов. Розовый цвет
+	 * @tags color, palette
+	 */
+	colorAccentRaspberryPink: ColorDescription;
+
+	/**
 	 * @desc Второстепенный акцентный цвет для отдельных проектов
 	 * @tags color, palette
 	 */
@@ -529,6 +535,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, component, background
 	 */
 	colorWriteBarInputBackground: ColorDescription;
+
+	/**
+	 * @desc Цвет фона поля ввода в компоненте WriteBar
+	 * @tags color, component
+	 */
+	colorWriteBarInputBorder: ColorDescription;
 
 	/**
 	 * @desc Цвет фона поля ввода в компоненте WriteBar с прозрачностью

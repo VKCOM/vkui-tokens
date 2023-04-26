@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { replacePropDeep } from '@/build/helpers/replacePropDeep';
 
 describe('replacePropDeep', () => {
