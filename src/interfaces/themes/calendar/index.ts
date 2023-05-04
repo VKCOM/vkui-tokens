@@ -28,16 +28,101 @@ export interface ThemeCalendarOverValues {
 }
 
 export interface LocalCalendarColorDescriptionStruct {
-	calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
+	// calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
 	calendarColorBackgroundAccentTintThemed: ColorDescription;
 	calendarColorButtonGroupBackgroundPositiveTint: ColorDescription;
 	calendarColorButtonGroupBackgroundNegativeTint: ColorDescription;
 	calendarColorButtonGroupBackgroundAccentTint: ColorDescription;
 	calendarColorButtonGroupTextPositive: ColorDescription;
 	calendarColorButtonGroupTextNegative: ColorDescription;
+
+	// calendarColorBackgroundMainSkyTintAlpha20: ColorDescription;
+
+	// #region Event
+	// Цвета событий
+	calendarColorEventRed: ColorDescription;
+	calendarColorEventSalmon: ColorDescription;
+	calendarColorEventOrange: ColorDescription;
+	calendarColorEventYellow: ColorDescription;
+	calendarColorEventLemon: ColorDescription;
+	calendarColorEventLime: ColorDescription;
+	calendarColorEventGrass: ColorDescription;
+	calendarColorEventMint: ColorDescription;
+	calendarColorEventSea: ColorDescription;
+	calendarColorEventTurquoise: ColorDescription;
+	calendarColorEventLightSky: ColorDescription;
+	calendarColorEventMainSky: ColorDescription;
+	calendarColorEventSky: ColorDescription;
+	calendarColorEventMidnightSky: ColorDescription;
+	calendarColorEventViolet: ColorDescription;
+	calendarColorEventPurple: ColorDescription;
+	calendarColorEventMagenta: ColorDescription;
+	calendarColorEventPink: ColorDescription;
+	// #endregion Event
+
+	// #region Text-Event
+	calendarColorEventTextRed: ColorDescription;
+	calendarColorEventTextOrange: ColorDescription;
+	calendarColorEventTextYellow: ColorDescription;
+	calendarColorEventTextLemon: ColorDescription;
+	calendarColorEventTextLime: ColorDescription;
+	calendarColorEventTextGrass: ColorDescription;
+	calendarColorEventTextMint: ColorDescription;
+	calendarColorEventTextSea: ColorDescription;
+	calendarColorEventTextTurquoise: ColorDescription;
+	calendarColorEventTextLightSky: ColorDescription;
 	calendarColorEventTextMainSky: ColorDescription;
-	calendarColorBackgroundMainSkyTint: ColorDescription;
+	calendarColorEventTextSky: ColorDescription;
+	calendarColorEventTextMidnightSky: ColorDescription;
+	calendarColorEventTextViolet: ColorDescription;
+	calendarColorEventTextPurple: ColorDescription;
+	calendarColorEventTextMagenta: ColorDescription;
+	calendarColorEventTextPink: ColorDescription;
+	// #endregion Text-Event
+
+	// #region Background-TintAlpha20-Alpha
+	calendarColorBackgroundRedTintAlpha20: ColorDescription;
+	calendarColorBackgroundSalmonTintAlpha20: ColorDescription;
+	calendarColorBackgroundOrangeTintAlpha20: ColorDescription;
+	calendarColorBackgroundYellowTintAlpha20: ColorDescription;
+	calendarColorBackgroundLemonTintAlpha20: ColorDescription;
+	calendarColorBackgroundLimeTintAlpha20: ColorDescription;
+	calendarColorBackgroundGrassTintAlpha20: ColorDescription;
+	calendarColorBackgroundMintTintAlpha20: ColorDescription;
+	calendarColorBackgroundSeaTintAlpha20: ColorDescription;
+	calendarColorBackgroundTurquoiseTintAlpha20: ColorDescription;
+	calendarColorBackgroundLightSkyTintAlpha20: ColorDescription;
 	calendarColorBackgroundMainSkyTintAlpha20: ColorDescription;
+	calendarColorBackgroundSkyTintAlpha20: ColorDescription;
+	calendarColorBackgroundMidnightSkyTintAlpha20: ColorDescription;
+	calendarColorBackgroundVioletTintAlpha20: ColorDescription;
+	calendarColorBackgroundPurpleTintAlpha20: ColorDescription;
+	calendarColorBackgroundMagentaTintAlpha20: ColorDescription;
+	calendarColorBackgroundPinkTintAlpha20: ColorDescription;
+	calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
+	// #endregion Background-TintAlpha20
+
+	// #region Background-Tint
+	// Тинтовые цвета событий без прозрачности. Нужны для растягивания событий, т.к. если под растягиваемым событие есть событие того же цвета, они сливаются
+	calendarColorBackgroundRedTint: ColorDescription;
+	calendarColorBackgroundSalmonTint: ColorDescription;
+	calendarColorBackgroundOrangeTint: ColorDescription;
+	calendarColorBackgroundYellowTint: ColorDescription;
+	calendarColorBackgroundLemonTint: ColorDescription;
+	calendarColorBackgroundLimeTint: ColorDescription;
+	calendarColorBackgroundGrassTint: ColorDescription;
+	calendarColorBackgroundMintTint: ColorDescription;
+	calendarColorBackgroundSeaTint: ColorDescription;
+	calendarColorBackgroundTurquoiseTint: ColorDescription;
+	calendarColorBackgroundLightSkyTint: ColorDescription;
+	calendarColorBackgroundMainSkyTint: ColorDescription;
+	calendarColorBackgroundSkyTint: ColorDescription;
+	calendarColorBackgroundMidnightSkyTint: ColorDescription;
+	calendarColorBackgroundVioletTint: ColorDescription;
+	calendarColorBackgroundPurpleTint: ColorDescription;
+	calendarColorBackgroundMagentaTint: ColorDescription;
+	calendarColorBackgroundPinkTint: ColorDescription;
+	// #endregion Background-Tint
 
 	// Фон страницы (отличается от colorBackground)
 	calendarColorBackground: ColorDescription;
