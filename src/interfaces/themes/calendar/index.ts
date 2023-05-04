@@ -28,15 +28,12 @@ export interface ThemeCalendarOverValues {
 }
 
 export interface LocalCalendarColorDescriptionStruct {
-	// calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
 	calendarColorBackgroundAccentTintThemed: ColorDescription;
 	calendarColorButtonGroupBackgroundPositiveTint: ColorDescription;
 	calendarColorButtonGroupBackgroundNegativeTint: ColorDescription;
 	calendarColorButtonGroupBackgroundAccentTint: ColorDescription;
 	calendarColorButtonGroupTextPositive: ColorDescription;
 	calendarColorButtonGroupTextNegative: ColorDescription;
-
-	// calendarColorBackgroundMainSkyTintAlpha20: ColorDescription;
 
 	// #region Event
 	// Цвета событий

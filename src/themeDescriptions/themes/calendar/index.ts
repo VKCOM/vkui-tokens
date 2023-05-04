@@ -73,7 +73,6 @@ export const calendarTheme: ThemeCalendarDescription = {
 		colorTextSecondary: '#93969B',
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
-		// calendarColorBackgroundPositiveTintAlpha4: 'rgba(13, 194, 104, 0.04)',
 
 		// для кнопок, которые голубые в светлой теме и серые в темной
 		calendarColorBackgroundAccentTintThemed: {
@@ -86,8 +85,6 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorButtonGroupBackgroundAccentTint: '#E3F0FD',
 		calendarColorButtonGroupTextPositive: '#056142',
 		calendarColorButtonGroupTextNegative: '#CE1414',
-
-		// calendarColorBackgroundMainSkyTintAlpha20: 'rgba(0, 16, 61, 0.122)',
 
 		calendarColorBackground: lightTheme.colors.colorBackground,
 		calendarColorOverlayBackground: 'transparent',
