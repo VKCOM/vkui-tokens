@@ -245,7 +245,7 @@ export interface ColorsDescriptionStruct {
 	colorTextLinkThemed: ColorDescription;
 
 	/**
-	 * @desc Третичный йвет текста ссылок
+	 * @desc Третичный цвет текста ссылок
 	 * @tags color, text
 	 */
 	colorTextLinkTint: ColorDescription;
