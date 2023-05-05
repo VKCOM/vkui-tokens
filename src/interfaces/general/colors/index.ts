@@ -245,6 +245,12 @@ export interface ColorsDescriptionStruct {
 	colorTextLinkThemed: ColorDescription;
 
 	/**
+	 * @desc Третичный йвет текста ссылок
+	 * @tags color, text
+	 */
+	colorTextLinkTint: ColorDescription;
+
+	/**
 	 * @desc Цвет текста посещенных ссылок
 	 * @tags color, text
 	 */
@@ -456,6 +462,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, palette
 	 */
 	colorAccentOrange: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Огненно оранжевый цвет
+	 * @tags color, palette
+	 */
+	colorAccentOrangeFire: ColorDescription;
 
 	/**
 	 * @desc Палитра цветов. Фиолетовый цвет
