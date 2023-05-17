@@ -73,7 +73,6 @@ export const calendarTheme: ThemeCalendarDescription = {
 		colorTextSecondary: '#93969B',
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
-		calendarColorBackgroundPositiveTintAlpha4: 'rgba(13, 194, 104, 0.04)',
 
 		// для кнопок, которые голубые в светлой теме и серые в темной
 		calendarColorBackgroundAccentTintThemed: {
@@ -86,12 +85,95 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorButtonGroupBackgroundAccentTint: '#E3F0FD',
 		calendarColorButtonGroupTextPositive: '#056142',
 		calendarColorButtonGroupTextNegative: '#CE1414',
-		calendarColorEventTextMainSky: '#20455B',
-		calendarColorBackgroundMainSkyTint: '#ECF8FF',
-		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(0, 16, 61, 0.122)',
 
 		calendarColorBackground: lightTheme.colors.colorBackground,
 		calendarColorOverlayBackground: 'transparent',
+
+		// #region Event
+		// Цвета событий
+		calendarColorEventRed: '#F55252',
+		calendarColorEventSalmon: '#FE9898',
+		calendarColorEventOrange: '#FFB181',
+		calendarColorEventYellow: '#FFDF7E',
+		calendarColorEventLemon: '#FFEF9D',
+		calendarColorEventLime: '#CAF28E',
+		calendarColorEventGrass: '#86DE8C',
+		calendarColorEventMint: '#96E9CD',
+		calendarColorEventSea: '#7BEADB',
+		calendarColorEventTurquoise: '#BCFFFF',
+		calendarColorEventLightSky: '#80E3F4',
+		calendarColorEventMainSky: '#9EDBFF',
+		calendarColorEventSky: '#B2D0FF',
+		calendarColorEventMidnightSky: '#7B9AFF',
+		calendarColorEventViolet: '#B5B3FB',
+		calendarColorEventPurple: '#CCA7FF',
+		calendarColorEventMagenta: '#F4B8FF',
+		calendarColorEventPink: '#FFBFDC',
+		// #endregion Event
+
+		// #region Text-Event
+		calendarColorEventTextRed: '#5C1F1F',
+		calendarColorEventTextOrange: '#5C361F',
+		calendarColorEventTextYellow: '#5C4D1F',
+		calendarColorEventTextLemon: '#595C1F',
+		calendarColorEventTextLime: '#435C1F',
+		calendarColorEventTextGrass: '#1F5C23',
+		calendarColorEventTextMint: '#1F5C5C',
+		calendarColorEventTextSea: '#1F5C53',
+		calendarColorEventTextTurquoise: '#1F535C',
+		calendarColorEventTextLightSky: '#1F455C',
+		calendarColorEventTextMainSky: '#20455B',
+		calendarColorEventTextSky: '#202E5B',
+		calendarColorEventTextMidnightSky: '#21205B',
+		calendarColorEventTextViolet: '#21205B',
+		calendarColorEventTextPurple: '#38205B',
+		calendarColorEventTextMagenta: '#5B203A',
+		calendarColorEventTextPink: '#51205B',
+		// #endregion Text-Event
+
+		// #region Background-TintAlpha20-Alpha
+		calendarColorBackgroundRedTintAlpha20: 'rgba(245, 82, 82, 0.2)',
+		calendarColorBackgroundSalmonTintAlpha20: 'rgba(254, 152, 152, 0.2)',
+		calendarColorBackgroundOrangeTintAlpha20: 'rgba(255, 177, 129, 0.2)',
+		calendarColorBackgroundYellowTintAlpha20: 'rgba(255, 223, 126, 0.2)',
+		calendarColorBackgroundLemonTintAlpha20: 'rgba(251, 255, 162, 0.2)',
+		calendarColorBackgroundLimeTintAlpha20: 'rgba(202, 242, 142, 0.2)',
+		calendarColorBackgroundGrassTintAlpha20: 'rgba(134, 222, 140, 0.2)',
+		calendarColorBackgroundMintTintAlpha20: 'rgba(150, 233, 205, 0.2)',
+		calendarColorBackgroundSeaTintAlpha20: 'rgba(123, 234, 219, 0.2)',
+		calendarColorBackgroundTurquoiseTintAlpha20: 'rgba(188, 255, 255, 0.2)',
+		calendarColorBackgroundLightSkyTintAlpha20: 'rgba(128, 227, 244, 0.2)',
+		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(158, 219, 255, 0.2)',
+		calendarColorBackgroundSkyTintAlpha20: 'rgba(178, 208, 255, 0.2)',
+		calendarColorBackgroundMidnightSkyTintAlpha20: 'rgba(123, 154, 255, 0.2)',
+		calendarColorBackgroundVioletTintAlpha20: 'rgba(181, 179, 251, 0.2)',
+		calendarColorBackgroundPurpleTintAlpha20: 'rgba(204, 167, 255, 0.2)',
+		calendarColorBackgroundMagentaTintAlpha20: 'rgba(244, 184, 255, 0.2)',
+		calendarColorBackgroundPinkTintAlpha20: 'rgba(255, 191, 220, 0.2)',
+		calendarColorBackgroundPositiveTintAlpha4: 'rgba(56, 183, 152, 0.04)',
+		// #endregion Background-TintAlpha20
+
+		// #region Background-Tint
+		// Тинтовые цвета событий без прозрачности. Нужны для растягивания событий, т.к. если под растягиваемым событие есть событие того же цвета, они сливаются
+		calendarColorBackgroundRedTint: '#FDDCDC',
+		calendarColorBackgroundSalmonTint: '#FFEAEA',
+		calendarColorBackgroundOrangeTint: '#FFEFE6',
+		calendarColorBackgroundYellowTint: '#FFF9E5',
+		calendarColorBackgroundLemonTint: '#FEFFEC',
+		calendarColorBackgroundLimeTint: '#F4FCE8',
+		calendarColorBackgroundGrassTint: '#E7F8E8',
+		calendarColorBackgroundMintTint: '#EAFBF5',
+		calendarColorBackgroundSeaTint: '#E5FBF8',
+		calendarColorBackgroundTurquoiseTint: '#F2FFFF',
+		calendarColorBackgroundLightSkyTint: '#E6F9FD',
+		calendarColorBackgroundMainSkyTint: '#ECF8FF',
+		calendarColorBackgroundSkyTint: '#F0F6FF',
+		calendarColorBackgroundMidnightSkyTint: '#E5EBFF',
+		calendarColorBackgroundVioletTint: '#F0F0FE',
+		calendarColorBackgroundPurpleTint: '#F5EDFF',
+		calendarColorBackgroundMagentaTint: '#FDF1FF',
+		calendarColorBackgroundPinkTint: '#FFF2F8',
+		// #endregion Background-Tint
 
 		//#region Токены сайдбара
 		// цвет иконок в сайдбаре
@@ -373,7 +455,6 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		colorTextSecondary: '#8C8E94',
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
-		calendarColorBackgroundPositiveTintAlpha4: 'rgba(0, 0, 0, 0.16)',
 
 		calendarColorBackgroundAccentTintThemed: {
 			normal: '#3E3E3F',
@@ -385,12 +466,98 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorButtonGroupBackgroundAccentTint: '#2775FC',
 		calendarColorButtonGroupTextPositive: '#CEF5E8',
 		calendarColorButtonGroupTextNegative: '#FDE2E2',
-		calendarColorEventTextMainSky: '#E7E8EA',
-		calendarColorBackgroundMainSkyTint: '#ECF8FF',
-		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(0, 16, 61, 0.122)',
 
 		calendarColorBackground: darkTheme.colors.colorBackground,
 		calendarColorOverlayBackground: 'transparent',
+
+		// #region Event
+		// Цвета событий
+		calendarColorEventRed: '#5C1F1F',
+		// В темной теме цвет такой же как и calendarColorEventRed
+		calendarColorEventSalmon: '#5C1F1F',
+		calendarColorEventOrange: '#5C361F',
+		calendarColorEventYellow: '#5C4D1F',
+		calendarColorEventLemon: '#595C1F',
+		calendarColorEventLime: '#435C1F',
+		calendarColorEventGrass: '#1F5C23',
+		calendarColorEventMint: '#1F5C5C',
+		calendarColorEventSea: '#1F5C53',
+		calendarColorEventTurquoise: '#1F535C',
+		calendarColorEventLightSky: '#1F455C',
+		calendarColorEventMainSky: '#20455B',
+		calendarColorEventSky: '#202E5B',
+		calendarColorEventMidnightSky: '#21205B',
+		calendarColorEventViolet: '#21205B',
+		calendarColorEventPurple: '#38205B',
+		calendarColorEventMagenta: '#5B203A',
+		calendarColorEventPink: '#51205B',
+		// #endregion Event
+
+		// #region Text-Event
+		calendarColorEventTextRed: '#F77272',
+		calendarColorEventTextOrange: '#FFB181',
+		calendarColorEventTextYellow: '#FFDF7E',
+		calendarColorEventTextLemon: '#FBFFA2',
+		calendarColorEventTextLime: '#CAF28E',
+		calendarColorEventTextGrass: '#86DE8C',
+		calendarColorEventTextMint: '#96E9CD',
+		calendarColorEventTextSea: '#7BEADB',
+		calendarColorEventTextTurquoise: '#BCFFFF',
+		calendarColorEventTextLightSky: '#80E3F4',
+		calendarColorEventTextMainSky: '#9EDBFF',
+		calendarColorEventTextSky: '#B2D0FF',
+		calendarColorEventTextMidnightSky: '#7B9AFF',
+		calendarColorEventTextViolet: '#B5B3FB',
+		calendarColorEventTextPurple: '#CCA7FF',
+		calendarColorEventTextMagenta: '#F4B8FF',
+		calendarColorEventTextPink: '#FFBFDC',
+		// #endregion Text-Event
+
+		// #region Background-TintAlpha20-Alpha
+		calendarColorBackgroundRedTintAlpha20: 'rgba(92, 31, 31, 0.2)',
+		// В темной теме цвет такой же как и calendarColorBackgroundRedTintAlpha20
+		calendarColorBackgroundSalmonTintAlpha20: 'rgba(92, 31, 31, 0.2)',
+		calendarColorBackgroundOrangeTintAlpha20: 'rgba(92, 54, 31, 0.2)',
+		calendarColorBackgroundYellowTintAlpha20: 'rgba(92, 77, 31, 0.2)',
+		calendarColorBackgroundLemonTintAlpha20: 'rgba(89, 92, 31, 0.2)',
+		calendarColorBackgroundLimeTintAlpha20: 'rgba(67, 92, 31, 0.2)',
+		calendarColorBackgroundGrassTintAlpha20: 'rgba(31, 92, 35, 0.2)',
+		calendarColorBackgroundMintTintAlpha20: 'rgba(31, 92, 92, 0.2)',
+		calendarColorBackgroundSeaTintAlpha20: 'rgba(31, 92, 83, 0.2)',
+		calendarColorBackgroundTurquoiseTintAlpha20: 'rgba(31, 83, 92, 0.2)',
+		calendarColorBackgroundLightSkyTintAlpha20: 'rgba(31, 69, 92, 0.2)',
+		calendarColorBackgroundMainSkyTintAlpha20: 'rgba(32, 69, 91, 0.2)',
+		calendarColorBackgroundSkyTintAlpha20: 'rgba(32, 46, 91, 0.2)',
+		calendarColorBackgroundMidnightSkyTintAlpha20: 'rgba(33, 32, 91, 0.2)',
+		calendarColorBackgroundVioletTintAlpha20: 'rgba(33, 32, 91, 0.2)',
+		calendarColorBackgroundPurpleTintAlpha20: 'rgba(56, 32, 91, 0.2)',
+		calendarColorBackgroundMagentaTintAlpha20: 'rgba(91, 32, 58, 0.2)',
+		calendarColorBackgroundPinkTintAlpha20: 'rgba(81, 32, 91, 0.2)',
+		calendarColorBackgroundPositiveTintAlpha4: 'rgba(0, 0, 0, 0.16)',
+		// #endregion Background-TintAlpha20
+
+		// #region Background-Tint
+		// Тинтовые цвета событий без прозрачности. Нужны для растягивания событий, т.к. если под растягиваемым событие есть событие того же цвета, они сливаются
+		calendarColorBackgroundRedTint: '#261A1B',
+		// В темной теме цвет такой же как и calendarColorBackgroundSalmonTint
+		calendarColorBackgroundSalmonTint: '#261A1B',
+		calendarColorBackgroundOrangeTint: '#261F1B',
+		calendarColorBackgroundYellowTint: '#26231B',
+		calendarColorBackgroundLemonTint: '#26261B',
+		calendarColorBackgroundLimeTint: '#21261B',
+		calendarColorBackgroundGrassTint: '#1A261C',
+		calendarColorBackgroundMintTint: '#1A2627',
+		calendarColorBackgroundSeaTint: '#1A2625',
+		calendarColorBackgroundTurquoiseTint: '#1A2527',
+		calendarColorBackgroundLightSkyTint: '#1A2227',
+		calendarColorBackgroundMainSkyTint: '#1A2227',
+		calendarColorBackgroundSkyTint: '#1A1D27',
+		calendarColorBackgroundMidnightSkyTint: '#1B1A27',
+		calendarColorBackgroundVioletTint: '#1B1A27',
+		calendarColorBackgroundPurpleTint: '#1F1A27',
+		calendarColorBackgroundMagentaTint: '#261A20',
+		calendarColorBackgroundPinkTint: '#241A27',
+		// #endregion Background-Tint
 
 		//#region Токены сайдбара
 		// цвет иконок в сайдбаре
