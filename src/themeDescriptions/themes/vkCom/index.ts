@@ -40,7 +40,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackgroundContrast: resolveColor(theme.colors.media_overlay_button_background),
 	// colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
 	colorBackgroundContrastInverse: resolveColor(theme.colors.media_overlay_button_foreground),
-	colorBackgroundModal: resolveColor(theme.colors.background_suggestions),
+	colorBackgroundModal: resolveColor(theme.colors.modal_card_background),
 	colorBackgroundModalInverse: resolveColor(theme.colors.modal_card_header_close),
 	// colorBackgroundWarning: resolveColor(
 	// 	theme.colors.content_warning_background,
