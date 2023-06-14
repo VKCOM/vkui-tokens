@@ -583,6 +583,9 @@ export const lightTheme: ThemeDescription = {
 	sizeCardBorderRadius: {
 		regular: 8,
 	},
+	sizeCardBorderRadiusM: {
+		regular: 16,
+	},
 	sizeCardgridPaddingVertical: {
 		regular: 8,
 	},
