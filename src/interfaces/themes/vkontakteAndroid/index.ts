@@ -189,6 +189,7 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteColorLandingSnippetBorderAlpha: ColorDescription;
 	vkontakteColorActionSheetSeparatorAlpha: ColorDescription;
 	vkontakteColorInputBorder: ColorDescription;
+	vkontakteColorSearchBarBackground: ColorDescription;
 
 	vkontakteColorImForwardLineAlpha: ColorDescription;
 

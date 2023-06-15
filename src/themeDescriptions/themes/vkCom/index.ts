@@ -109,6 +109,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentRed: resolveColor(theme.colors.dynamic_red),
 	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
+	colorAccentOrangePeach: resolveColor(theme.colors.dynamic_orange_peach),
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
 	colorAccentViolet: resolveColor(theme.colors.dynamic_violet),
 	// colorAccentSecondary: '#3F8AE0',

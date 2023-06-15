@@ -11,6 +11,7 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorInputBorder: '#D3D9DE',
 	vkontakteColorSnippetBackground: '#FFFFFF',
+	vkontakteColorSearchBarBackground: 'rgba(0, 0, 0, 0.00)',
 
 	vkontakteColorImForwardLineAlpha: 'rgba(0, 20, 51, 0.12)',
 
@@ -36,6 +37,7 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(255, 255, 255, 0.16)',
 	vkontakteColorInputBorder: '#555555',
 	vkontakteColorSnippetBackground: 'rgba(255, 255, 255, 0.004)',
+	vkontakteColorSearchBarBackground: '#222222',
 
 	vkontakteColorImForwardLineAlpha: 'rgba(255, 255, 255, 0.24)',
 
