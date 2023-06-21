@@ -184,10 +184,12 @@ export interface VkontakteAndroidGradients {
 
 export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteColorSnippetBorderAlpha: ColorDescription;
+	vkontakteColorSnippetBackground: ColorDescription;
 	vkontakteColorModalCardBorderAlpha: ColorDescription;
 	vkontakteColorLandingSnippetBorderAlpha: ColorDescription;
 	vkontakteColorActionSheetSeparatorAlpha: ColorDescription;
 	vkontakteColorInputBorder: ColorDescription;
+	vkontakteColorSearchBarBackground: ColorDescription;
 
 	vkontakteColorImForwardLineAlpha: ColorDescription;
 

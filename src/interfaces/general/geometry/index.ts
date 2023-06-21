@@ -236,6 +236,12 @@ export interface Sizes {
 	sizeCardBorderRadius: number;
 
 	/**
+	 * @desc Большой радиус закругления в компоненте Card
+	 * @tags size, component
+	 */
+	sizeCardBorderRadiusM: number;
+
+	/**
 	 * @desc Вертикальный отступ в компоненте Card
 	 * @tags size, component
 	 */
