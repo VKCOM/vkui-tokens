@@ -630,13 +630,13 @@ export const lightTheme: ThemeDescription = {
 
 	// Токены отступов для кнопок
 	sizeButtonBaseSmallPaddingHorizontal: {
-		regular: 16,
+		regular: 12,
 	},
 	sizeButtonBaseMediumPaddingHorizontal: {
-		regular: 16,
+		regular: 12,
 	},
 	sizeButtonBaseLargePaddingHorizontal: {
-		regular: 20,
+		regular: 16,
 	},
 	sizeButtonBaseSmallPaddingHorizontalIcon: {
 		regular: 12,
@@ -648,13 +648,13 @@ export const lightTheme: ThemeDescription = {
 		regular: 16,
 	},
 	sizeButtonTertiarySmallPaddingHorizontal: {
-		regular: 12,
+		regular: 8,
 	},
 	sizeButtonTertiaryMediumPaddingHorizontal: {
-		regular: 12,
+		regular: 8,
 	},
 	sizeButtonTertiaryLargePaddingHorizontal: {
-		regular: 16,
+		regular: 12,
 	},
 	sizeButtonTertiarySmallPaddingHorizontalIcon: {
 		regular: 8,
