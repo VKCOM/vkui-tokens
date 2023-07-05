@@ -33,7 +33,7 @@
     "csstype": "^3.1.1"
   },
   "devDependencies": {
-    "@babel/core": "7.21.8",
+    "@babel/core": "7.22.6",
     "@svgr/webpack": "8.0.1",
     "@types/color": "3.0.3",
     "@types/common-tags": "1.8.1",
