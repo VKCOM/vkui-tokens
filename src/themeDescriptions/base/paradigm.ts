@@ -494,7 +494,7 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 40,
 	},
 	sizePopupSmall: {
-		regular: 420,
+		regular: 430,
 	},
 	sizePopupMedium: {
 		regular: 680,
