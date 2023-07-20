@@ -257,7 +257,6 @@ const vkComDarkColor: ColorsDescription = {
 		colorTextButton: '#E1E3E6',
 		colorIconButton: '#E1E3E6',
 		colorStrokeButton: '#E1E3E6',
-
 	},
 };
 

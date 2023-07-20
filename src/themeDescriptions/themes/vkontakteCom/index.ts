@@ -20,7 +20,7 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteColorContentPlaceholderIcon: '#b2b2b2',
 	vkontakteColorContentTintForeground: '#939393',
 	vkontakteColorTextName: '#2a5885',
-	
+
 	vkontakteColorControlBackground: '#edeef0',
 	vkontakteColorControlForeground: '#447bba',
 	vkontakteColorControlTintMuted: '#828282',
@@ -33,14 +33,14 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteColorIconOutlineSecondary: '#99a2ad',
 
 	vkontakteColorSkeletonShimmerFrom: '#FFFFFF',
-	vkontakteColorSkeletonShimmerTo: 'transparent',
+	vkontakteColorAlphaSkeletonShimmerTo: 'transparent',
 
 	vkontakteColorLoaderBackground: '#edeef0',
 	vkontakteColorLoaderTint: '#828282',
 
 	vkontakteColorMusicPlaybackIcon: '#000000',
 
-	vkontakteColorOverlayStatusBackground: '#edeef0',
+	vkontakteColorStatusBackground: '#edeef0',
 
 	vkontakteColorPlaceholderIconForegroundPrimary: '#99a2ad',
 	vkontakteColorPlaceholderIconForegroundSecondary: '#aeb7c2',
@@ -53,7 +53,7 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteColorTabbarInactiveIcon: '#99a2ad',
 	vkontakteColorTabbarTabletTextSecondary: '#818c99',
 
-	vkontakteColorToolbarAttachBackgroundFrom: '##dce1e6',
+	vkontakteColorToolbarAttachBackgroundFrom: '#dce1e6',
 
 	vkontakteColorSplashScreenIcon: '#dce1e6',
 
@@ -61,7 +61,7 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 
 	vkontakteColorPanelTabActiveText: '#4e5966',
 
-	vkontakteColorBackgroundTextHighlighted: 'rgba(81, 129, 184, 0.2)',
+	vkontakteColorBackgroundTextAlpha: 'rgba(81, 129, 184, 0.2)',
 
 	vkontakteImBubbleButtonOutgoingBackgroundAlpha: 'rgba(255, 255, 255, 0.72)',
 	vkontakteImBubbleButtonForeground: '#000000',
@@ -122,14 +122,14 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteColorIconOutlineSecondary: '#939393',
 
 	vkontakteColorSkeletonShimmerFrom: '#222222',
-	vkontakteColorSkeletonShimmerTo: 'transparent',
+	vkontakteColorAlphaSkeletonShimmerTo: 'transparent',
 
 	vkontakteColorLoaderBackground: '#555555',
 	vkontakteColorLoaderTint: '#828282',
 
 	vkontakteColorMusicPlaybackIcon: '#FFFFFF',
 
-	vkontakteColorOverlayStatusBackground: '#222222',
+	vkontakteColorStatusBackground: '#222222',
 
 	vkontakteColorPlaceholderIconForegroundPrimary: '#939393',
 	vkontakteColorPlaceholderIconForegroundSecondary: '#656565',
@@ -150,7 +150,7 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 
 	vkontakteColorPanelTabActiveText: '#e1e3e6',
 
-	vkontakteColorBackgroundTextHighlighted: 'rgba(81, 129, 184, 0.2)',
+	vkontakteColorBackgroundTextAlpha: 'rgba(81, 129, 184, 0.2)',
 
 	vkontakteImBubbleButtonOutgoingBackgroundAlpha: 'rgba(255, 255, 255, 0.24)',
 	vkontakteImBubbleButtonForeground: '#e1e3e6',

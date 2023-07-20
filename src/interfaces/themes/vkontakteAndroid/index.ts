@@ -210,14 +210,14 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteColorIconOutlineSecondary?: ColorDescription;
 
 	vkontakteColorSkeletonShimmerFrom?: ColorDescription;
-	vkontakteColorSkeletonShimmerTo?: ColorDescription;
+	vkontakteColorAlphaSkeletonShimmerTo?: ColorDescription;
 
 	vkontakteColorLoaderBackground?: ColorDescription;
 	vkontakteColorLoaderTint?: ColorDescription;
 
 	vkontakteColorMusicPlaybackIcon?: ColorDescription;
 
-	vkontakteColorOverlayStatusBackground?: ColorDescription;
+	vkontakteColorStatusBackground?: ColorDescription;
 
 	vkontakteColorPlaceholderIconForegroundPrimary?: ColorDescription;
 	vkontakteColorPlaceholderIconForegroundSecondary?: ColorDescription;
@@ -240,7 +240,7 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 
 	vkontakteColorPanelTabActiveText?: ColorDescription;
 
-	vkontakteColorBackgroundTextHighlighted?: ColorDescription;
+	vkontakteColorBackgroundTextAlpha?: ColorDescription;
 
 	vkontakteImReplySeparator?: ColorDescription;
 
