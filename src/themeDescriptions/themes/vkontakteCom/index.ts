@@ -6,10 +6,13 @@ import { vkontakteTokens } from '../vkontakteAndroid';
 
 const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
+	vkontakteColorSnippetBackground: '#FFFFFF',
 	vkontakteColorModalCardBorderAlpha: 'rgba(0, 0, 0, 0)',
 	vkontakteColorLandingSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorInputBorder: '#D3D9DE',
+	vkontakteColorSearchBarBackground: '#e5ebf1',
+	vkontakteBackgroundHoverAlpha: 'rgba(174, 183, 194, 0.12)',
 
 	vkontakteColorImForwardLineAlpha: 'rgba(0, 20, 51, 0.12)',
 
@@ -30,10 +33,13 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 
 const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
+	vkontakteColorSnippetBackground: '#272727',
 	vkontakteColorModalCardBorderAlpha: 'rgba(255, 255, 255, 0.12)',
 	vkontakteColorLandingSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(255, 255, 255, 0.16)',
 	vkontakteColorInputBorder: '#555555',
+	vkontakteColorSearchBarBackground: '#222222',
+	vkontakteBackgroundHoverAlpha: 'rgba(255, 255, 255, 0.08)',
 
 	vkontakteColorImForwardLineAlpha: 'rgba(255, 255, 255, 0.24)',
 

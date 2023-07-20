@@ -29,9 +29,9 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
 	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
 	// colorBackgroundSecondaryAlpha: {
-	// 	normal: 'rgba(255, 255, 255, 0.04)',
-	// 	hover: 'rgba(255, 255, 255, 0.08)',
-	// 	active: 'rgba(255, 255, 255, 0.12)',
+	// 	normal: 'rgba(229, 235, 241, 0.99)',
+	// 	hover: 'rgba(213, 224, 234, 0.99)',
+	// 	active: 'rgba(200, 212, 224, 0.99)',
 	// },
 	// colorBackgroundSecondaryAlpha: resolveColor(
 	// 	theme.colors.button_secondary_background,
@@ -245,6 +245,11 @@ const vkComDarkColor: ColorsDescription = {
 			normal: resolveColor(vkcom_dark.colors.button_primary_background),
 			hover: '#D8DBDF',
 			active: '#CFD2D8',
+		},
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.10)',
+			hover: 'rgba(255, 255, 255, 0.12)',
+			active: 'rgba(255, 255, 255, 0.14)',
 		},
 	},
 };
