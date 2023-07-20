@@ -268,6 +268,12 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorLinkContrast: ColorDescription;
 
+	/**
+	 * @desc Цвет текста для кнопок
+	 * @tags color
+	 */
+	colorTextButton: ColorDescription;
+
 	// Icons
 	/**
 	 * @desc Акцентный цвет иконок
@@ -359,6 +365,12 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorIconNegative: ColorDescription;
 
+	/**
+	 * @desc Цвет иконок для кнопок
+	 * @tags color, icon
+	 */
+	colorIconButton: ColorDescription;
+
 	// Stroke
 	/**
 	 * @desc Цвет акцентной обводки
@@ -431,6 +443,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, stroke
 	 */
 	colorSeparatorPrimary3x: ColorDescription;
+
+	/**
+	 * @desc Цвет обводки для кнопок
+	 * @tags color, stroke
+	 */
+	colorStrokeButton: ColorDescription;
 
 	// Palette
 	/**

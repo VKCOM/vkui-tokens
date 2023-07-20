@@ -191,6 +191,69 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteColorInputBorder: ColorDescription;
 	vkontakteColorSearchBarBackground?: ColorDescription;
 	vkontakteBackgroundHoverAlpha?: ColorDescription;
+	vkontakteColorBackgroundSuggestions?: ColorDescription;
+
+	vkontakteColorTextName?: ColorDescription;
+	vkontakteColorAccentAlternate?: ColorDescription;
+	vkontakteColorBackgroundKeyboard?: ColorDescription;
+	vkontakteColorContentPlaceholderIcon?: ColorDescription;
+	vkontakteColorContentTintForeground?: ColorDescription;
+	vkontakteColorControlBackground?: ColorDescription;
+	vkontakteColorControlForeground?: ColorDescription;
+	vkontakteColorControlTintMuted?: ColorDescription;
+
+	vkontakteColorHeaderSearchFieldBackground?: ColorDescription;
+	vkontakteColorHeaderSearchFieldTint?: ColorDescription;
+	vkontakteColorHeaderTabActiveIndicator?: ColorDescription;
+
+	vkontakteColorIconOutlineMedium?: ColorDescription;
+	vkontakteColorIconOutlineSecondary?: ColorDescription;
+
+	vkontakteColorSkeletonShimmerFrom?: ColorDescription;
+	vkontakteColorSkeletonShimmerTo?: ColorDescription;
+
+	vkontakteColorLoaderBackground?: ColorDescription;
+	vkontakteColorLoaderTint?: ColorDescription;
+
+	vkontakteColorMusicPlaybackIcon?: ColorDescription;
+
+	vkontakteColorOverlayStatusBackground?: ColorDescription;
+
+	vkontakteColorPlaceholderIconForegroundPrimary?: ColorDescription;
+	vkontakteColorPlaceholderIconForegroundSecondary?: ColorDescription;
+	vkontakteColorPlaceholderIconTint?: ColorDescription;
+
+	vkontakteColorPollOptionBackground?: ColorDescription;
+
+	vkontakteColorSearchBarFieldTint?: ColorDescription;
+
+	vkontakteColorTabbarActiveIcon?: ColorDescription;
+	vkontakteColorTabbarBackground?: ColorDescription;
+	vkontakteColorTabbarInactiveIcon?: ColorDescription;
+	vkontakteColorTabbarTabletTextSecondary?: ColorDescription;
+
+	vkontakteColorToolbarAttachBackgroundFrom?: ColorDescription;
+
+	vkontakteColorSplashScreenIcon?: ColorDescription;
+
+	vkontakteColorIconName?: ColorDescription;
+
+	vkontakteColorPanelTabActiveText?: ColorDescription;
+
+	vkontakteColorBackgroundTextHighlighted?: ColorDescription;
+
+	vkontakteImReplySeparator?: ColorDescription;
+
+	vkontakteImToolbarVoiceMsgBackground?: ColorDescription;
+
+	vkontakteImBubbleButtonOutgoingBackgroundAlpha?: ColorDescription;
+	vkontakteImBubbleButtonForeground?: ColorDescription;
+	vkontakteImBubbleIncomingHighlighted?: ColorDescription;
+	vkontakteImBubbleGiftBackground?: ColorDescription;
+	vkontakteImBubbleGiftBackgroundHighlighted?: ColorDescription;
+	vkontakteImBubbleOutgoingAlternate?: ColorDescription;
+
+	vkontakteImAttachTint?: ColorDescription;
 
 	vkontakteColorImForwardLineAlpha: ColorDescription;
 
