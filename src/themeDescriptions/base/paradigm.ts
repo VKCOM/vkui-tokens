@@ -77,6 +77,7 @@ export const lightColors: ColorsDescription = {
 		colorTextContrastThemed: '#FFFFFF',
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
+		colorTextButton: '#005FF9',
 
 		// Icons
 		colorIconAccent: '#005FF9',
@@ -94,6 +95,7 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
+		colorIconButton: '#005FF9',
 
 		// Stroke
 		colorStrokeAccent: '#005FF9',
@@ -108,6 +110,7 @@ export const lightColors: ColorsDescription = {
 		colorStrokePositive: '#0DC268',
 		colorSeparatorPrimary2x: '#CDD0D5',
 		colorSeparatorPrimary3x: '#BFC3CA',
+		colorStrokeButton: '#005FF9',
 
 		// Palette
 		colorAccentBlue: '#005FF9',
@@ -139,7 +142,9 @@ export const lightColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
+		colorOverlaySecondary: 'rgb(44, 45, 46, 0.5)',
 		colorSegmentedControl: '#FFFFFF',
+		colorTabbarTextInactive: '#99A2AD',
 		colorTransparent: 'transparent',
 	},
 };
@@ -200,6 +205,7 @@ export const darkColors: ColorsDescription = {
 		colorTextContrastThemed: '#2C2D2E',
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
+		colorTextButton: '#FFFFFF',
 
 		// Icons
 		colorIconAccent: '#3C82FD',
@@ -217,6 +223,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
+		colorIconButton: '#FFFFFF',
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
@@ -231,6 +238,7 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimary2x: '#202022',
 		colorSeparatorPrimary3x: '#2d2d2f',
 		colorStrokePositive: '#0DC268',
+		colorStrokeButton: '#FFFFFF',
 
 		// Palette
 		colorAccentBlue: '#2775FC',
@@ -262,7 +270,9 @@ export const darkColors: ColorsDescription = {
 		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
+		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
 		colorSegmentedControl: '#626364',
+		colorTabbarTextInactive: '#76787A',
 		colorTransparent: 'transparent',
 	},
 };
@@ -454,6 +464,9 @@ export const lightThemeBase: ThemeDescription = {
 	},
 	sizeBorderRadius: {
 		regular: 8,
+	},
+	sizeBorderRadiusRounded: {
+		regular: 48,
 	},
 	sizeCheckBorderRadius: {
 		regular: 4,
