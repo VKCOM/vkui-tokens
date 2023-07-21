@@ -220,7 +220,7 @@ export const darkColors: ColorsDescription = {
 		colorTextLinkVisited: '#4986CC',
 		colorTextMuted: '#E1E3E6',
 		colorLinkContrast: '#FFFFFF',
-		colorTextButton: '#529EF4',
+		colorTextButton: '#FFFFFF',
 
 		// Icons
 		colorIconAccent: '#529EF4',
@@ -238,7 +238,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastSecondary: '#F2F3F5',
 		colorIconPositive: '#4BB34B',
 		colorIconNegative: '#FF5C5C',
-		colorIconButton: '#529EF4',
+		colorIconButton: '#FFFFFF',
 
 		// Stroke
 		colorStrokeAccent: '#529EF4',
@@ -253,7 +253,7 @@ export const darkColors: ColorsDescription = {
 		colorStrokeContrast: '#FFFFFF',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.12)',
-		colorStrokeButton: '#529EF4',
+		colorStrokeButton: '#FFFFFF',
 
 		// Palette
 		colorAccentBlue: '#529EF4',

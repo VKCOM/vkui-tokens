@@ -203,7 +203,7 @@ export const darkColors: ColorsDescription = {
 		colorTextContrastThemed: '#2C2D2E',
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
-		colorTextButton: '#3C82FD',
+		colorTextButton: '#FFFFFF',
 
 		// Icons
 		colorIconAccent: '#3C82FD',
@@ -221,7 +221,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
-		colorIconButton: '#3C82FD',
+		colorIconButton: '#FFFFFF',
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
@@ -236,7 +236,7 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimary2x: '#202022',
 		colorSeparatorPrimary3x: '#2d2d2f',
 		colorStrokePositive: '#0DC268',
-		colorStrokeButton: '#3C82FD',
+		colorStrokeButton: '#FFFFFF',
 
 		// Palette
 		colorAccentBlue: '#2775FC',
