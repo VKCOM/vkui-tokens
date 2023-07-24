@@ -63,6 +63,8 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 
 	vkontakteColorBackgroundTextAlpha: 'rgba(81, 129, 184, 0.2)',
 
+	vkontakteColorModalCardHeaderClose: '#000000',
+
 	vkontakteImBubbleButtonOutgoingBackgroundAlpha: 'rgba(255, 255, 255, 0.72)',
 	vkontakteImBubbleButtonForeground: '#000000',
 	vkontakteImBubbleIncomingHighlighted: '#d3d9de',
@@ -151,6 +153,8 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteColorPanelTabActiveText: '#e1e3e6',
 
 	vkontakteColorBackgroundTextAlpha: 'rgba(81, 129, 184, 0.2)',
+
+	vkontakteColorModalCardHeaderClose: '#FFFFFF',
 
 	vkontakteImBubbleButtonOutgoingBackgroundAlpha: 'rgba(255, 255, 255, 0.24)',
 	vkontakteImBubbleButtonForeground: '#e1e3e6',

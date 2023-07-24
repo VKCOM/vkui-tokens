@@ -246,6 +246,8 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 
 	vkontakteImToolbarVoiceMsgBackground?: ColorDescription;
 
+	vkontakteColorModalCardHeaderClose?: ColorDescription;
+
 	vkontakteImBubbleButtonOutgoingBackgroundAlpha?: ColorDescription;
 	vkontakteImBubbleButtonForeground?: ColorDescription;
 	vkontakteImBubbleIncomingHighlighted?: ColorDescription;

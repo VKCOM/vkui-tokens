@@ -59,7 +59,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTextAccentThemed: resolveColor(theme.colors.button_primary_background),
 	colorTextPrimary: resolveColor(theme.colors.text_primary),
 	colorTextPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
-	colorTextSecondary: resolveColor(theme.colors.content_placeholder_text),
+	colorTextSecondary: resolveColor(theme.colors.text_secondary),
 	colorTextSubhead: resolveColor(theme.colors.text_subhead),
 	colorTextTertiary: resolveColor(theme.colors.text_tertiary),
 	colorTextContrast: resolveColor(theme.colors.counter_prominent_text),
