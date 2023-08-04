@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 18
           cache: 'yarn'
-      - uses: artiomtr/jest-coverage-report-action@v2
+      - uses: artiomtr/jest-coverage-report-action@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           annotations: coverage
