@@ -48,6 +48,12 @@ export interface Sizes {
 	sizeBorderRadius: number;
 
 	/**
+	 * @desc Значение радиуса закругления для круглых кнопок
+	 * @tags size, stroke
+	 */
+	sizeBorderRadiusRounded: number;
+
+	/**
 	 * @desc Legacy
 	 * @tags size, legacy
 	 * @deprecated
