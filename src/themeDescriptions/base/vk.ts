@@ -129,6 +129,7 @@ export const lightColors: ColorsDescription = {
 
 		// Other
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
+		colorOverlaySecondary: 'rgb(44, 45, 46, 0.5)',
 		colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorActionSheetText: '#3F8AE0',
@@ -145,6 +146,7 @@ export const lightColors: ColorsDescription = {
 		colorSearchFieldBackground: '#EBEDF0',
 		colorPanelHeaderIcon: '#2688EB',
 		colorSegmentedControl: '#FFFFFF',
+		colorTabbarTextInactive: '#99A2AD',
 		colorTransparent: 'transparent',
 	},
 };
@@ -269,6 +271,7 @@ export const darkColors: ColorsDescription = {
 
 		// Other
 		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
+		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
 		colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 		colorImagePlaceholder: '#2A2B2C',
@@ -285,6 +288,7 @@ export const darkColors: ColorsDescription = {
 		colorSearchFieldBackground: '#363738',
 		colorPanelHeaderIcon: '#71AAEB',
 		colorSegmentedControl: '#626364',
+		colorTabbarTextInactive: '#76787A',
 		colorTransparent: 'transparent',
 	},
 };
@@ -488,6 +492,9 @@ export const lightTheme: ThemeDescription = {
 	},
 	sizeBorderRadius: {
 		regular: 8,
+	},
+	sizeBorderRadiusRounded: {
+		regular: 48,
 	},
 	sizeCheckBorderRadius: {
 		regular: 4,

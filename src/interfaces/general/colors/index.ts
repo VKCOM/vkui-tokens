@@ -519,6 +519,12 @@ export interface ColorsDescriptionStruct {
 	colorOverlayPrimary: ColorDescription;
 
 	/**
+	 * @desc Вторичный цвет для подложек оверлеев
+	 * @tags color, overlay
+	 */
+	colorOverlaySecondary: ColorDescription;
+
+	/**
 	 * @desc Фон для компонента Avatar. Не прозрачный
 	 * @tags color, component
 	 */
@@ -619,6 +625,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, component, background
 	 */
 	colorSegmentedControl: ColorDescription;
+
+	/**
+	 * @desc Цвет текста для неактивного таба в таббаре
+	 * @tags color, component, background
+	 */
+	colorTabbarTextInactive: ColorDescription;
 
 	// Themed цвета, в тёмной теме становится белыми
 }

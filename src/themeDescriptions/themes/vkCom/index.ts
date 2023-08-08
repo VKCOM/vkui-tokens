@@ -28,14 +28,11 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackground: resolveColor(theme.colors.background_page),
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
 	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
-	// colorBackgroundSecondaryAlpha: {
-	// 	normal: 'rgba(229, 235, 241, 0.99)',
-	// 	hover: 'rgba(213, 224, 234, 0.99)',
-	// 	active: 'rgba(200, 212, 224, 0.99)',
-	// },
-	// colorBackgroundSecondaryAlpha: resolveColor(
-	// 	theme.colors.button_secondary_background,
-	// ),
+	colorBackgroundSecondaryAlpha: {
+		normal: 'rgba(229, 235, 241, 0.99)',
+		hover: 'rgba(213, 224, 234, 0.99)',
+		active: 'rgba(200, 212, 224, 0.99)',
+	},
 	colorBackgroundTertiary: resolveColor(theme.colors.background_light),
 	colorBackgroundContrast: resolveColor(theme.colors.media_overlay_button_background),
 	// colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
@@ -119,6 +116,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Other
 
 	// colorOverlayPrimary: resolveColor(theme.colors.primary_overlay_badge),
+	colorOverlaySecondary: 'rgb(44, 45, 46, 0.5)',
 	// colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 	// colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	// colorImagePlaceholder: resolveColor(
@@ -257,6 +255,7 @@ const vkComDarkColor: ColorsDescription = {
 		colorTextButton: '#E1E3E6',
 		colorIconButton: '#E1E3E6',
 		colorStrokeButton: '#E1E3E6',
+		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
 	},
 };
 
