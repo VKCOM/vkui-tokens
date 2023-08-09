@@ -107,6 +107,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorTextLinkVisited: text.text_link_visited,
 			colorTextMuted: text.text_muted,
 			colorLinkContrast: text.link_contrast,
+			colorTextButton: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
 
 			// Icons
 			colorIconAccent: icons.icon_accent,
@@ -124,6 +128,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
 			colorIconNegative: icons.icon_negative,
+			colorIconButton: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
 
 			// Stroke
 			colorStrokeAccent: stroke.stroke_accent,
@@ -151,6 +159,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 				},
 				dark: 'rgba(255, 255, 255, 0.12)',
 			}[colorsScheme],
+			colorStrokeButton: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
 
 			// Palette
 			colorAccentBlue: palette.accent_blue,
@@ -166,6 +178,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 
 			// Other
 			colorOverlayPrimary: other.overlay_primary,
+			colorOverlaySecondary: {
+				light: 'rgb(44, 45, 46, 0.5)',
+				dark: 'rgb(55, 56, 57, 0.5)',
+			}[colorsScheme],
 			colorAvatarOverlay: other.avatar_overlay_alpha,
 			colorAvatarOverlayInverseAlpha: other.avatar_overlay_inverse_alpha,
 			colorActionSheetText: other.action_sheet_text,
@@ -185,6 +201,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorSearchFieldBackground: other.search_field_background,
 			colorPanelHeaderIcon: other.panel_header_icon,
 			colorSegmentedControl: other.segmented_control,
+			colorTabbarTextInactive: {
+				light: '#99a2ad',
+				dark: '#76787a',
+			}[colorsScheme],
 			colorTransparent: 'transparent',
 		},
 	};
@@ -407,6 +427,9 @@ export const lightTheme: ThemeDescription = {
 	},
 	sizeBorderRadius: {
 		regular: 8,
+	},
+	sizeBorderRadiusRounded: {
+		regular: 48,
 	},
 	sizeCheckBorderRadius: {
 		regular: 4,
