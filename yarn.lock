@@ -2103,19 +2103,19 @@
   uid bad206f39cf09b2e937a838d9dfd2f563ab27f48
   resolved "https://github.com/VKCOM/Appearance#bad206f39cf09b2e937a838d9dfd2f563ab27f48"
 
-"@vkontakte/icons-sprite@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-1.0.1.tgz#ed6ecff0a62b15e417f0628691440f87d576549e"
-  integrity sha512-qS5Iu4aGqfkZQcxIt1PTSUN/uXiLtXWuuZlQlkkAKLjjRmvEjwYWYlhR+bq0MSXLQU7++oN+qZ1xBUmzF80NpQ==
+"@vkontakte/icons-sprite@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-1.1.1.tgz#04c7a6a1268be39f324de070d27b490f157d04dd"
+  integrity sha512-mZt34A0wK72+C0Jr0rtypuEFtfJO3qBFt9RQQC5lpBDTVGB+sMKmI8Vi+CYbq1kPO8Uv7GiPQxLv8+Ti7cT24g==
   dependencies:
-    "@swc/helpers" "^0.4.14"
+    "@swc/helpers" "^0.5.0"
 
-"@vkontakte/icons@2.34.0":
-  version "2.34.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.34.0.tgz#94e93996ea9ed16d9855e10299f721d537074ecb"
-  integrity sha512-NulCW78nZL0IIGSqOtaKzf82ADNZR9f02uJkBvG2uKdRixjP/Wv87bsVqd654W37NqoCmXcFpyhNZr4qlFwzqg==
+"@vkontakte/icons@2.54.0":
+  version "2.54.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.54.0.tgz#e0f3c34ed386a6b9de3a7cebe8025f8640b9469d"
+  integrity sha512-Wb5GloeWsontMhIsgBwmQokHP5gXbt+Nwe6hqMv78nUlN7XNC1+o2Iu+oWCV5X8F9wlgBonJfgxETXfeljE1Aw==
   dependencies:
-    "@vkontakte/icons-sprite" "^1.0.1"
+    "@vkontakte/icons-sprite" "1.1.1"
 
 "@vkontakte/prettier-config@0.1.0":
   version "0.1.0"
