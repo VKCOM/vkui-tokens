@@ -28,14 +28,11 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackground: resolveColor(theme.colors.background_page),
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
 	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
-	// colorBackgroundSecondaryAlpha: {
-	// 	normal: 'rgba(255, 255, 255, 0.04)',
-	// 	hover: 'rgba(255, 255, 255, 0.08)',
-	// 	active: 'rgba(255, 255, 255, 0.12)',
-	// },
-	// colorBackgroundSecondaryAlpha: resolveColor(
-	// 	theme.colors.button_secondary_background,
-	// ),
+	colorBackgroundSecondaryAlpha: {
+		normal: 'rgba(229, 235, 241, 0.99)',
+		hover: 'rgba(213, 224, 234, 0.99)',
+		active: 'rgba(200, 212, 224, 0.99)',
+	},
 	colorBackgroundTertiary: resolveColor(theme.colors.background_light),
 	colorBackgroundContrast: resolveColor(theme.colors.media_overlay_button_background),
 	// colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
@@ -59,7 +56,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTextAccentThemed: resolveColor(theme.colors.button_primary_background),
 	colorTextPrimary: resolveColor(theme.colors.text_primary),
 	colorTextPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
-	colorTextSecondary: resolveColor(theme.colors.content_placeholder_text),
+	colorTextSecondary: resolveColor(theme.colors.text_secondary),
 	colorTextSubhead: resolveColor(theme.colors.text_subhead),
 	colorTextTertiary: resolveColor(theme.colors.text_tertiary),
 	colorTextContrast: resolveColor(theme.colors.counter_prominent_text),
@@ -71,6 +68,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorTextLinkVisited: '#4986CC',
 	colorTextMuted: resolveColor(theme.colors.text_muted),
 	colorLinkContrast: resolveColor(theme.colors.text_muted),
+	colorTextButton: '#346297',
 
 	// Icons
 	colorIconAccent: resolveColor(theme.colors.accent),
@@ -88,6 +86,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorIconContrastSecondary: '#F2F3F5',
 	colorIconPositive: resolveColor(theme.colors.button_commerce_background),
 	colorIconNegative: resolveColor(theme.colors.destructive),
+	colorIconButton: '#346297',
 
 	// Stroke
 	colorStrokeAccent: resolveColor(theme.colors.accent),
@@ -102,6 +101,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorStrokeContrast: '#FFFFFF',
 	colorImageBorderAlpha: resolveColor(theme.colors.image_border),
 	// colorFieldBorderAlpha: resolveColor(theme.colors.field_border),
+	colorStrokeButton: '#346297',
 
 	// Palette
 	colorAccentBlue: resolveColor(theme.colors.dynamic_blue),
@@ -116,6 +116,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Other
 
 	// colorOverlayPrimary: resolveColor(theme.colors.primary_overlay_badge),
+	colorOverlaySecondary: 'rgb(44, 45, 46, 0.5)',
 	// colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 	// colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	// colorImagePlaceholder: resolveColor(
@@ -246,6 +247,15 @@ const vkComDarkColor: ColorsDescription = {
 			hover: '#D8DBDF',
 			active: '#CFD2D8',
 		},
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.10)',
+			hover: 'rgba(255, 255, 255, 0.12)',
+			active: 'rgba(255, 255, 255, 0.14)',
+		},
+		colorTextButton: '#E1E3E6',
+		colorIconButton: '#E1E3E6',
+		colorStrokeButton: '#E1E3E6',
+		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
 	},
 };
 

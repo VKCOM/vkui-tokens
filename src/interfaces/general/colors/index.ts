@@ -268,6 +268,12 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorLinkContrast: ColorDescription;
 
+	/**
+	 * @desc Цвет текста для кнопок
+	 * @tags color
+	 */
+	colorTextButton: ColorDescription;
+
 	// Icons
 	/**
 	 * @desc Акцентный цвет иконок
@@ -359,6 +365,12 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorIconNegative: ColorDescription;
 
+	/**
+	 * @desc Цвет иконок для кнопок
+	 * @tags color, icon
+	 */
+	colorIconButton: ColorDescription;
+
 	// Stroke
 	/**
 	 * @desc Цвет акцентной обводки
@@ -432,6 +444,12 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorSeparatorPrimary3x: ColorDescription;
 
+	/**
+	 * @desc Цвет обводки для кнопок
+	 * @tags color, stroke
+	 */
+	colorStrokeButton: ColorDescription;
+
 	// Palette
 	/**
 	 * @desc Палитра цветов. Голубой цвет
@@ -499,6 +517,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, overlay
 	 */
 	colorOverlayPrimary: ColorDescription;
+
+	/**
+	 * @desc Вторичный цвет для подложек оверлеев
+	 * @tags color, overlay
+	 */
+	colorOverlaySecondary: ColorDescription;
 
 	/**
 	 * @desc Фон для компонента Avatar. Не прозрачный
@@ -601,6 +625,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, component, background
 	 */
 	colorSegmentedControl: ColorDescription;
+
+	/**
+	 * @desc Цвет текста для неактивного таба в таббаре
+	 * @tags color, component, background
+	 */
+	colorTabbarTextInactive: ColorDescription;
 
 	// Themed цвета, в тёмной теме становится белыми
 }
