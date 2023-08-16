@@ -79,6 +79,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 				},
 			}[colorsScheme],
 			colorBackgroundContrastInverse: background.background_contrast_inverse,
+			colorBackgroundContrastThemed: {
+				light: '#FFFFFF',
+				dark: '#323232',
+			}[colorsScheme],
 			colorBackgroundModal: background.background_modal,
 			colorBackgroundModalInverse: background.background_modal_inverse,
 			colorBackgroundWarning: background.background_warning,
@@ -107,10 +111,6 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorTextLinkVisited: text.text_link_visited,
 			colorTextMuted: text.text_muted,
 			colorLinkContrast: text.link_contrast,
-			colorTextButton: {
-				light: '#2688eb',
-				dark: '#ffffff',
-			}[colorsScheme],
 
 			// Icons
 			colorIconAccent: icons.icon_accent,
@@ -128,10 +128,6 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
 			colorIconNegative: icons.icon_negative,
-			colorIconButton: {
-				light: '#2688eb',
-				dark: '#ffffff',
-			}[colorsScheme],
 
 			// Stroke
 			colorStrokeAccent: stroke.stroke_accent,
@@ -159,10 +155,6 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 				},
 				dark: 'rgba(255, 255, 255, 0.12)',
 			}[colorsScheme],
-			colorStrokeButton: {
-				light: '#2688eb',
-				dark: '#ffffff',
-			}[colorsScheme],
 
 			// Palette
 			colorAccentBlue: palette.accent_blue,
@@ -189,6 +181,20 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorImagePlaceholderAlpha: other.image_placeholder_alpha,
 			colorSkeletonFrom: other.skeleton_from,
 			colorSkeletonTo: other.skeleton_to,
+			colorButtonText: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
+
+			colorButtonIcon: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
+
+			colorButtonStroke: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
 			colorWriteBarIcon: other.write_bar_icon,
 			colorWriteBarInputBackground: other.write_bar_input_background,
 			colorWriteBarInputBorder: other.write_bar_input_border,

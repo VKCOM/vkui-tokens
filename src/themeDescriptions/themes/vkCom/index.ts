@@ -29,16 +29,17 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
 	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
 	colorBackgroundSecondaryAlpha: {
-		normal: 'rgba(229, 235, 241, 0.99)',
-		hover: 'rgba(213, 224, 234, 0.99)',
-		active: 'rgba(200, 212, 224, 0.99)',
+		normal: 'rgba(235, 242, 250, 0.99)',
+		hover: 'rgba(223, 234, 246, 0.99)',
+		active: 'rgba(213, 226, 241, 0.99)',
 	},
 	colorBackgroundTertiary: resolveColor(theme.colors.background_light),
 	colorBackgroundContrast: resolveColor(theme.colors.media_overlay_button_background),
 	// colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
 	colorBackgroundContrastInverse: resolveColor(theme.colors.media_overlay_button_foreground),
+	colorBackgroundContrastThemed: '#FFFFFF',
 	colorBackgroundModal: resolveColor(theme.colors.modal_card_background),
-	colorBackgroundModalInverse: resolveColor(theme.colors.modal_card_header_close),
+	colorBackgroundModalInverse: '#2D2D2E',
 	// colorBackgroundWarning: resolveColor(
 	// 	theme.colors.content_warning_background,
 	// ),
@@ -53,7 +54,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 
 	// Text
 	colorTextAccent: resolveColor(theme.colors.accent),
-	colorTextAccentThemed: resolveColor(theme.colors.button_primary_background),
+	colorTextAccentThemed: '#3770B1',
 	colorTextPrimary: resolveColor(theme.colors.text_primary),
 	colorTextPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
 	colorTextSecondary: resolveColor(theme.colors.text_secondary),
@@ -68,11 +69,10 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorTextLinkVisited: '#4986CC',
 	colorTextMuted: resolveColor(theme.colors.text_muted),
 	colorLinkContrast: resolveColor(theme.colors.text_muted),
-	colorTextButton: '#346297',
 
 	// Icons
 	colorIconAccent: resolveColor(theme.colors.accent),
-	colorIconAccentThemed: resolveColor(theme.colors.button_primary_background),
+	colorIconAccentThemed: '#3770B1',
 	// colorIconPrimary: '#E1E3E6',
 	colorIconPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
 	colorIconMedium: resolveColor(theme.colors.icon_medium),
@@ -86,11 +86,10 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorIconContrastSecondary: '#F2F3F5',
 	colorIconPositive: resolveColor(theme.colors.button_commerce_background),
 	colorIconNegative: resolveColor(theme.colors.destructive),
-	colorIconButton: '#346297',
 
 	// Stroke
 	colorStrokeAccent: resolveColor(theme.colors.accent),
-	colorStrokeAccentThemed: resolveColor(theme.colors.button_primary_background),
+	colorStrokeAccentThemed: '#3770B1',
 	// colorSeparatorPrimary: '#363738', // resolveColor(theme.colors.separator_common),
 	// colorSeparatorPrimary2x: '#444546',
 	// colorSeparatorPrimary3x: '#505253',
@@ -101,7 +100,6 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// colorStrokeContrast: '#FFFFFF',
 	colorImageBorderAlpha: resolveColor(theme.colors.image_border),
 	// colorFieldBorderAlpha: resolveColor(theme.colors.field_border),
-	colorStrokeButton: '#346297',
 
 	// Palette
 	colorAccentBlue: resolveColor(theme.colors.dynamic_blue),
@@ -136,6 +134,9 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTrackBuffer: resolveColor(theme.colors.loader_track_value_fill),
 	colorSearchFieldBackground: resolveColor(theme.colors.search_bar_field_background),
 	colorPanelHeaderIcon: resolveColor(theme.colors.accent),
+	colorButtonText: '#346297',
+	colorButtonIcon: '#346297',
+	colorButtonStroke: '#346297',
 	// colorSegmentedControl: resolveColor(
 	// 	theme.colors.segmented_control_bar_background,
 	// ),
@@ -252,10 +253,15 @@ const vkComDarkColor: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.12)',
 			active: 'rgba(255, 255, 255, 0.14)',
 		},
-		colorTextButton: '#E1E3E6',
-		colorIconButton: '#E1E3E6',
-		colorStrokeButton: '#E1E3E6',
+		colorButtonText: '#E1E3E6',
+		colorButtonIcon: '#E1E3E6',
+		colorButtonStroke: '#E1E3E6',
 		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
+		colorBackgroundContrastThemed: '#323232',
+		colorTextAccentThemed: '#E1E3E6',
+		colorIconAccentThemed: '#E1E3E6',
+		colorStrokeAccentThemed: '#E1E3E6',
+		colorBackgroundModalInverse: '#FFFFFF',
 	},
 };
 
