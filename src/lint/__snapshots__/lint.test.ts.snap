@@ -2,6 +2,7 @@
 
 exports[`lint snapshot 1`] = `
 [
+<<<<<<< Updated upstream
   "paradigmBase: colors.colorOverlaySecondary error: Color token type mismatch: alpha token name but opaque value",
   "paradigmBaseDark: colors.colorOverlaySecondary error: Color token type mismatch: alpha token name but opaque value",
   "vkBase: colors.colorOverlaySecondary error: Color token type mismatch: alpha token name but opaque value",
@@ -42,5 +43,30 @@ exports[`lint snapshot 1`] = `
   "todo: colors.colorOverlaySecondary error: Color token type mismatch: alpha token name but opaque value",
   "search: colors.colorOverlaySecondary error: Color token type mismatch: alpha token name but opaque value",
   "promo: colors.colorOverlaySecondary error: Color token type mismatch: alpha token name but opaque value",
+=======
+  "vkCom: colors.colorFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkCom: colors.colorImagePlaceholder error: Color token type mismatch: opaque token name but alpha value",
+  "vkCom: colors.colorImagePlaceholderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkCom: colors.colorWriteBarInputBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkCom: colors.colorSegmentedControl error: Color token type mismatch: opaque token name but alpha value",
+  "vkComDark: colors.colorBackgroundWarning error: Color token type mismatch: opaque token name but alpha value",
+  "vkComDark: colors.colorBackgroundNegativeTint error: Color token type mismatch: opaque token name but alpha value",
+  "vkComDark: colors.colorFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkComDark: colors.colorImagePlaceholder error: Color token type mismatch: opaque token name but alpha value",
+  "vkComDark: colors.colorImagePlaceholderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkComDark: colors.colorWriteBarInputBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkontakteCom: colors.colorFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkontakteCom: colors.colorImagePlaceholder error: Color token type mismatch: opaque token name but alpha value",
+  "vkontakteCom: colors.colorImagePlaceholderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkontakteCom: colors.colorWriteBarInputBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkontakteCom: colors.colorSegmentedControl error: Color token type mismatch: opaque token name but alpha value",
+  "vkontakteCom: colors.vkontakteColorSearchBarBackground error: Color token type mismatch: opaque token name but alpha value",
+  "vkontakteComDark: colors.colorBackgroundWarning error: Color token type mismatch: opaque token name but alpha value",
+  "vkontakteComDark: colors.colorBackgroundNegativeTint error: Color token type mismatch: opaque token name but alpha value",
+  "vkontakteComDark: colors.colorFieldBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkontakteComDark: colors.colorImagePlaceholder error: Color token type mismatch: opaque token name but alpha value",
+  "vkontakteComDark: colors.colorImagePlaceholderAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "vkontakteComDark: colors.colorWriteBarInputBorderAlpha error: Color token type mismatch: alpha token name but opaque value",
+>>>>>>> Stashed changes
 ]
 `;

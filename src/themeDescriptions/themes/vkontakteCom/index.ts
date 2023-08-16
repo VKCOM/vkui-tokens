@@ -11,6 +11,7 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteColorLandingSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorInputBorder: '#D3D9DE',
+<<<<<<< Updated upstream
 	vkontakteColorSearchBarBackground: '#e5ebf1',
 	vkontakteColorSearchBarFieldTint: '#818c99',
 	vkontakteBackgroundHoverAlpha: 'rgba(174, 183, 194, 0.12)',
@@ -77,6 +78,17 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteImReplySeparator: '#2a5885',
 
 	vkontakteImToolbarVoiceMsgBackground: '#99a2ad',
+=======
+	vkontakteColorSnippetBackground: '#FFFFFF',
+
+	vkontakteColorSearchBarBackground: 'transparent',
+	vkontakteButtonSecondaryBackground: '#e5ebf1',
+	vkontakteButtonSecondaryBackgroundHighlighted: '#dae2ea',
+	vkontakteButtonSecondaryForeground: '#346297',
+	vkontakteBackgroundHoverAlpha: 'rgba(174, 183, 194, 0.12)',
+	vkontakteBackgroundSuggestions: '#FFFFFF',
+	vkontakteTextName: '#2a5885',
+>>>>>>> Stashed changes
 
 	vkontakteColorImForwardLineAlpha: 'rgba(0, 20, 51, 0.12)',
 
@@ -102,6 +114,7 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteColorLandingSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(255, 255, 255, 0.16)',
 	vkontakteColorInputBorder: '#555555',
+<<<<<<< Updated upstream
 	vkontakteColorSearchBarBackground: '#222222',
 	vkontakteColorSearchBarFieldTint: '#b2b2b2',
 	vkontakteBackgroundHoverAlpha: 'rgba(255, 255, 255, 0.08)',
@@ -168,6 +181,16 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteImReplySeparator: '#FFFFFF',
 
 	vkontakteImToolbarVoiceMsgBackground: '#555555',
+=======
+	vkontakteColorSnippetBackground: '#272727',
+	vkontakteColorSearchBarBackground: '#222222',
+	vkontakteButtonSecondaryBackground: '#424242',
+	vkontakteButtonSecondaryBackgroundHighlighted: '#555555',
+	vkontakteButtonSecondaryForeground: '#e1e3e6',
+	vkontakteBackgroundHoverAlpha: 'rgba(255, 255, 255, 0.08)',
+	vkontakteBackgroundSuggestions: '#333333',
+	vkontakteTextName: '#e1e3e6',
+>>>>>>> Stashed changes
 
 	vkontakteColorImForwardLineAlpha: 'rgba(255, 255, 255, 0.24)',
 

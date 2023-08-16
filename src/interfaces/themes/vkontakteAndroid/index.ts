@@ -184,11 +184,16 @@ export interface VkontakteAndroidGradients {
 
 export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteColorSnippetBorderAlpha: ColorDescription;
+<<<<<<< Updated upstream
 	vkontakteColorSnippetBackground: ColorDescription;
+=======
+	vkontakteColorSnippetBackground?: ColorDescription;
+>>>>>>> Stashed changes
 	vkontakteColorModalCardBorderAlpha: ColorDescription;
 	vkontakteColorLandingSnippetBorderAlpha: ColorDescription;
 	vkontakteColorActionSheetSeparatorAlpha: ColorDescription;
 	vkontakteColorInputBorder: ColorDescription;
+<<<<<<< Updated upstream
 	vkontakteColorSearchBarBackground: ColorDescription;
 	vkontakteBackgroundHoverAlpha: ColorDescription;
 	vkontakteColorBackgroundSuggestions: ColorDescription;
@@ -256,6 +261,15 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteImBubbleOutgoingAlternate: ColorDescription;
 
 	vkontakteImAttachTint: ColorDescription;
+=======
+	vkontakteColorSearchBarBackground?: ColorDescription;
+	vkontakteButtonSecondaryBackground?: ColorDescription;
+	vkontakteButtonSecondaryBackgroundHighlighted?: ColorDescription;
+	vkontakteButtonSecondaryForeground?: ColorDescription;
+	vkontakteBackgroundHoverAlpha?: ColorDescription;
+	vkontakteBackgroundSuggestions?: ColorDescription;
+	vkontakteTextName?: ColorDescription;
+>>>>>>> Stashed changes
 
 	vkontakteColorImForwardLineAlpha: ColorDescription;
 
