@@ -470,6 +470,12 @@ export interface ColorsDescriptionStruct {
 	colorAccentOrange: ColorDescription;
 
 	/**
+	 * @desc Палитра цветов. Нежно оранжевый цвет
+	 * @tags color, palette
+	 */
+	colorAccentOrangePeach: ColorDescription;
+
+	/**
 	 * @desc Палитра цветов. Огненно оранжевый цвет
 	 * @tags color, palette
 	 */

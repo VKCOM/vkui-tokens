@@ -68,7 +68,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTextLinkThemed: resolveColor(theme.colors.link_alternate),
 	// colorTextLinkVisited: '#4986CC',
 	colorTextMuted: resolveColor(theme.colors.text_muted),
-	colorLinkContrast: resolveColor(theme.colors.text_muted),
+	colorLinkContrast: '#FFFFFF',
 
 	// Icons
 	colorIconAccent: resolveColor(theme.colors.accent),
@@ -90,9 +90,9 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Stroke
 	colorStrokeAccent: resolveColor(theme.colors.accent),
 	colorStrokeAccentThemed: '#3770B1',
-	// colorSeparatorPrimary: '#363738', // resolveColor(theme.colors.separator_common),
-	// colorSeparatorPrimary2x: '#444546',
-	// colorSeparatorPrimary3x: '#505253',
+	colorSeparatorPrimary: '#DCE1E6',
+	colorSeparatorPrimary2x: '#CBCCCD',
+	colorSeparatorPrimary3x: '#BEBFC1',
 	// colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.12)', // resolveColor(theme.colors.separator_alpha),
 	colorSeparatorSecondary: resolveColor(theme.colors.separator_alternate),
 	colorStrokePositive: resolveColor(theme.colors.button_commerce_background),
@@ -107,6 +107,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentRed: resolveColor(theme.colors.dynamic_red),
 	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
+	colorAccentOrangePeach: resolveColor(theme.colors.dynamic_orange_peach),
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
 	colorAccentViolet: resolveColor(theme.colors.dynamic_violet),
 	// colorAccentSecondary: '#3F8AE0',
@@ -262,6 +263,10 @@ const vkComDarkColor: ColorsDescription = {
 		colorIconAccentThemed: '#E1E3E6',
 		colorStrokeAccentThemed: '#E1E3E6',
 		colorBackgroundModalInverse: '#FFFFFF',
+		colorLinkContrast: '#FFFFFF',
+		colorSeparatorPrimary: '#363738',
+		colorSeparatorPrimary2x: '#444546',
+		colorSeparatorPrimary3x: '#505253',
 	},
 };
 

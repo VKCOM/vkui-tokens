@@ -162,6 +162,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorAccentRed: palette.accent_red,
 			colorAccentGreen: palette.accent_green,
 			colorAccentOrange: palette.accent_orange,
+			colorAccentOrangePeach: {
+				light: '#F9B54F',
+				dark: '#FFC062',
+			}[colorsScheme],
 			colorAccentOrangeFire: palette.accent_orange_fire,
 			colorAccentPurple: palette.accent_purple,
 			colorAccentViolet: palette.accent_violet,
