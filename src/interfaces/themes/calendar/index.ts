@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ThemeCssVars } from '@/interfaces/general';
 import {

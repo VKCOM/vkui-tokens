@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias, staticRef } from '@/build/helpers/tokenHelpers';

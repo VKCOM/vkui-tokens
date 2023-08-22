@@ -98,6 +98,10 @@ module.exports = {
 				format: ['PascalCase'],
 				custom: { regex: '^I[A-Z]', match: false },
 			},
+			{
+				selector: ['classProperty', 'objectLiteralProperty', 'typeProperty'], // могут быть какими угодно
+				format: null,
+			},
 		],
 		'@typescript-eslint/interface-name-prefix': 'off',
 		'@typescript-eslint/no-empty-interface': 'off',

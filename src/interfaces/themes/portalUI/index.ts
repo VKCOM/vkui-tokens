@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
 import { GradientPoints } from '@/interfaces/general/gradients';

@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ColorsDescription, ThemeCssVars, ThemeDescription } from '@/interfaces/general';
 import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
