@@ -4,6 +4,8 @@ import { ThemeVkontakteComDarkDescription } from '../../../interfaces/themes/vko
 import { vkComTheme, vkComThemeDark } from '../vkCom';
 import { vkontakteTokens } from '../vkontakteAndroid';
 
+const themeNameBase = 'vkontakteCom';
+
 const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorSnippetBackground: '#FFFFFF',
@@ -188,7 +190,9 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 
 export const vkontakteComTheme: ThemeVkontakteComDescription = {
 	...vkComTheme,
-	themeName: 'vkontakteCom',
+	themeName: themeNameBase,
+	themeNameBase,
+	themeInheritsFrom: vkComTheme.themeName,
 
 	colors: {
 		...vkComTheme.colors,
@@ -199,7 +203,9 @@ export const vkontakteComTheme: ThemeVkontakteComDescription = {
 
 export const vkontakteComThemeDark: ThemeVkontakteComDarkDescription = {
 	...vkComThemeDark,
-	themeName: 'vkontakteComDark',
+	themeName: `${themeNameBase}Dark`,
+	themeNameBase,
+	themeInheritsFrom: vkComThemeDark.themeName,
 	colorsScheme: 'dark',
 
 	colors: {
