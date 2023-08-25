@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ColorWithStates } from '@/interfaces/general/colors';
 import { ParadigmThemeCssVars } from '@/interfaces/namespaces/paradigm';

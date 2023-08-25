@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ThemeCalendarDescription } from '@/interfaces/themes/calendar';
 import { ThemeCalendarDarkDescription } from '@/interfaces/themes/calendarDark';
