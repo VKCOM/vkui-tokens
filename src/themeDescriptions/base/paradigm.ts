@@ -57,6 +57,7 @@ export const lightColors: ColorsDescription = {
 		colorFieldBackground: '#ffffff',
 		colorBackgroundModalInverse: '#303030',
 		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundContrastThemed: '#FFFFFF',
 		colorBackgroundAccentTint: '#5a9eff',
 
 		// Text
@@ -77,7 +78,6 @@ export const lightColors: ColorsDescription = {
 		colorTextContrastThemed: '#FFFFFF',
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
-		colorTextButton: '#005FF9',
 
 		// Icons
 		colorIconAccent: '#005FF9',
@@ -95,7 +95,6 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
-		colorIconButton: '#005FF9',
 
 		// Stroke
 		colorStrokeAccent: '#005FF9',
@@ -110,7 +109,6 @@ export const lightColors: ColorsDescription = {
 		colorStrokePositive: '#0DC268',
 		colorSeparatorPrimary2x: '#CDD0D5',
 		colorSeparatorPrimary3x: '#BFC3CA',
-		colorStrokeButton: '#005FF9',
 
 		// Palette
 		colorAccentBlue: '#005FF9',
@@ -118,6 +116,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentRed: '#ED0A34',
 		colorAccentGreen: '#0DC268',
 		colorAccentOrange: '#FF9E00',
+		colorAccentOrangePeach: '#F9B54F',
 		colorAccentOrangeFire: '#F05C44',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
@@ -145,6 +144,9 @@ export const lightColors: ColorsDescription = {
 		colorOverlaySecondary: 'rgb(44, 45, 46, 0.5)',
 		colorSegmentedControl: '#FFFFFF',
 		colorTabbarTextInactive: '#99A2AD',
+		colorButtonText: '#005FF9',
+		colorButtonIcon: '#005FF9',
+		colorButtonStroke: '#005FF9',
 		colorTransparent: 'transparent',
 	},
 };
@@ -185,6 +187,7 @@ export const darkColors: ColorsDescription = {
 		colorFieldBackground: '#232324',
 		colorBackgroundModalInverse: '#ffffff',
 		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundContrastThemed: '#303030',
 		colorBackgroundAccentTint: '#5a9eff',
 
 		// Text
@@ -205,7 +208,6 @@ export const darkColors: ColorsDescription = {
 		colorTextContrastThemed: '#2C2D2E',
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
-		colorTextButton: '#FFFFFF',
 
 		// Icons
 		colorIconAccent: '#3C82FD',
@@ -223,7 +225,6 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
-		colorIconButton: '#FFFFFF',
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
@@ -238,7 +239,6 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimary2x: '#202022',
 		colorSeparatorPrimary3x: '#2d2d2f',
 		colorStrokePositive: '#0DC268',
-		colorStrokeButton: '#FFFFFF',
 
 		// Palette
 		colorAccentBlue: '#2775FC',
@@ -246,6 +246,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentRed: '#ED0A34',
 		colorAccentGreen: '#0DC268',
 		colorAccentOrange: '#FF9E00',
+		colorAccentOrangePeach: '#FFC062',
 		colorAccentOrangeFire: '#F05C44',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
@@ -273,6 +274,9 @@ export const darkColors: ColorsDescription = {
 		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
 		colorSegmentedControl: '#626364',
 		colorTabbarTextInactive: '#76787A',
+		colorButtonText: '#FFFFFF',
+		colorButtonIcon: '#FFFFFF',
+		colorButtonStroke: '#FFFFFF',
 		colorTransparent: 'transparent',
 	},
 };

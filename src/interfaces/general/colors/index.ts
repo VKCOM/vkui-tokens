@@ -112,6 +112,12 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundContrastInverse: ColorDescription;
 
 	/**
+	 * @desc Контрастный фон, перекрашивается в серый на тёмной теме
+	 * @tags color, background
+	 */
+	colorBackgroundContrastThemed: ColorDescription;
+
+	/**
 	 * @desc Фон для всплывающих окон
 	 * @tags color, background
 	 */
@@ -268,12 +274,6 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorLinkContrast: ColorDescription;
 
-	/**
-	 * @desc Цвет текста для кнопок
-	 * @tags color
-	 */
-	colorTextButton: ColorDescription;
-
 	// Icons
 	/**
 	 * @desc Акцентный цвет иконок
@@ -365,12 +365,6 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorIconNegative: ColorDescription;
 
-	/**
-	 * @desc Цвет иконок для кнопок
-	 * @tags color, icon
-	 */
-	colorIconButton: ColorDescription;
-
 	// Stroke
 	/**
 	 * @desc Цвет акцентной обводки
@@ -444,12 +438,6 @@ export interface ColorsDescriptionStruct {
 	 */
 	colorSeparatorPrimary3x: ColorDescription;
 
-	/**
-	 * @desc Цвет обводки для кнопок
-	 * @tags color, stroke
-	 */
-	colorStrokeButton: ColorDescription;
-
 	// Palette
 	/**
 	 * @desc Палитра цветов. Голубой цвет
@@ -480,6 +468,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, palette
 	 */
 	colorAccentOrange: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Нежно оранжевый цвет
+	 * @tags color, palette
+	 */
+	colorAccentOrangePeach: ColorDescription;
 
 	/**
 	 * @desc Палитра цветов. Огненно оранжевый цвет
@@ -631,6 +625,24 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, component, background
 	 */
 	colorTabbarTextInactive: ColorDescription;
+
+	/**
+	 * @desc Цвет текста для кнопок
+	 * @tags color
+	 */
+	colorButtonText: ColorDescription;
+
+	/**
+	 * @desc Цвет иконок для кнопок
+	 * @tags color, icon
+	 */
+	colorButtonIcon: ColorDescription;
+
+	/**
+	 * @desc Цвет обводки для кнопок
+	 * @tags color, stroke
+	 */
+	colorButtonStroke: ColorDescription;
 
 	// Themed цвета, в тёмной теме становится белыми
 }
