@@ -685,11 +685,14 @@ export const lightThemeBase: ThemeDescription = {
 	spacingSizeXl: 12,
 
 	// Прочие отступы
-	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
-	elevation1InvertY: '0 -2px 0 0 rgba(0, 16, 61, 0.04)',
-	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
-	elevation3: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
-	elevation4: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
+	elevation1: '0 2px 6px 0 rgba(0, 16, 61, 0.08), 0 1px 2px 0 rgba(0, 16, 61, 0.08)',
+	elevation1InvertY: '0 -2px 6px 0 rgba(0, 16, 61, 0.08), 0 -1px 2px 0 rgba(0, 16, 61, 0.08)',
+	elevation2:
+		'0 0 2px 0 rgba(0, 16, 61, 0.06), 0 0 6px 0 rgba(0, 16, 61, 0.06), 0 6px 12px 0 rgba(0, 16, 61, 0.06)',
+	elevation3:
+		'0 0 6px 0 rgba(0, 16, 61, 0.06), 0 6px 12px 0 rgba(0, 16, 61, 0.06), 0 6px 20px 0 rgba(0, 16, 61, 0.06), 0 10px 36px 0 rgba(0, 16, 61, 0.08)',
+	elevation4:
+		'0 2px 6px 0 rgba(0, 16, 61, 0.06), 0 16px 48px 0 rgba(0, 16, 61, 0.08), 0 24px 68px 0 rgba(0, 16, 61, 0.16)',
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
