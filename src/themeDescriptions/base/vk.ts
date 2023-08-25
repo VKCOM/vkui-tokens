@@ -646,6 +646,17 @@ export const lightTheme: ThemeDescription = {
 		regular: 12,
 	},
 
+	// Размер границ
+	sizeBorder1x: {
+		regular: 1,
+	},
+	sizeBorder2x: {
+		regular: 0.5,
+	},
+	sizeBorder3x: {
+		regular: 0.33,
+	},
+
 	// Стандартные токены для отступов
 	spacingSizeXs: 4,
 	spacingSizeS: 6,
