@@ -216,6 +216,7 @@ export const lightGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+	gradient: getGradientPointsFromColor('#FFFFFF'),
 };
 
 export const lightElevation: Elevation = {
@@ -232,6 +233,7 @@ export const darkGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
+	gradient: getGradientPointsFromColor(figma.dark.background.background_content, 0.4),
 };
 
 export const darkElevation: Elevation = {
