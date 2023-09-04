@@ -56,15 +56,15 @@ export const mediaTheme: ThemeMediaDescription = {
 		},
 		tablet: {
 			adaptiveValue: 'compact',
-			breakpoint: 768,
+			breakpoint: 660,
 		},
 		desktopS: {
 			adaptiveValue: 'regular',
-			breakpoint: 1004,
+			breakpoint: 980,
 		},
 		desktopM: {
 			adaptiveValue: 'large',
-			breakpoint: 1260,
+			breakpoint: 1300,
 		},
 	},
 
@@ -482,9 +482,9 @@ export const mediaTheme: ThemeMediaDescription = {
 
 	gridContent: {
 		compactX: '100%',
-		compact: 580,
-		regular: 880,
-		large: 1180,
+		compact: 620,
+		regular: 940,
+		large: 1260,
 	},
 	gridColumnX2: {
 		compactX: '100%',
@@ -512,15 +512,15 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 	gridLayoutArticle: {
 		compactX: '100%',
-		compact: '100%',
-		regular: 540,
-		large: 540,
+		compact: 620,
+		regular: 620,
+		large: 780,
 	},
 	gridLayoutBanner: {
 		compactX: '100%',
-		compact: 280,
-		regular: 280,
-		large: 560,
+		compact: 300,
+		regular: 300,
+		large: 300,
 	},
 
 	/**
