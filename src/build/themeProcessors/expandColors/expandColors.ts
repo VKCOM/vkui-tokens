@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { isColorDescriptionCallable, isColorWithStates } from '@/build/helpers/cssHelpers';
 import { ColorsDescription, ColorsFinal } from '@/interfaces/general';

@@ -19,7 +19,7 @@ jobs:
           node-version: 18
           cache: 'npm'
           registry-url: https://registry.npmjs.org/
-      - run: yarn
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - run: npm run publish:latest
         if: '!github.event.release.prerelease'
         env:
