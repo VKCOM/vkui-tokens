@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { staticRef } from '@/build/helpers/tokenHelpers';
 import { Font } from '@/interfaces/general/typography';
