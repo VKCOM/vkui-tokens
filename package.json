@@ -27,7 +27,6 @@
     "docs:dev": "cd docs/webpack && webpack-dev-server --config webpack.client.js --mode development",
     "docs:build": "cd docs/webpack && webpack --config webpack.client.js --mode production",
     "docs:prepare-data": "ts-node tasks/docs/prepareTokensData.ts",
-    "prepare": "husky install",
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
