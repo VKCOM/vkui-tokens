@@ -56,7 +56,7 @@ npm i --save @vkontakte/vkui-tokens@latest
 #### Использование в CSS
 
 ```postcss
-.myAwesomeClass:hover {
+.class:hover {
 	background-color: var(--vkui--color_background--hover);
 }
 ```
