@@ -115,7 +115,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Other
 
 	// colorOverlayPrimary: resolveColor(theme.colors.primary_overlay_badge),
-	colorOverlaySecondary: 'rgb(44, 45, 46, 0.5)',
+	colorOverlaySecondary: 'rgba(44, 45, 46, 0.5)',
 	// colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 	// colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	// colorImagePlaceholder: resolveColor(
@@ -268,7 +268,7 @@ const vkComDarkColor: ColorsDescription = {
 		colorButtonText: '#E1E3E6',
 		colorButtonIcon: '#E1E3E6',
 		colorButtonStroke: '#E1E3E6',
-		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
+		colorOverlaySecondary: 'rgba(55, 56, 57, 0.5)',
 		colorBackgroundContrastThemed: '#323232',
 		colorTextAccentThemed: '#E1E3E6',
 		colorIconAccentThemed: '#E1E3E6',
