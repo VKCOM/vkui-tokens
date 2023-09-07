@@ -217,6 +217,7 @@ const { theme, pixelifyTheme, cssVarsTheme } = expandAll(myNewAwesomeTheme);
 // которую можно вставить в DOM или сохранить в файл
 const cssString = compileStyles('css', pixelifyTheme);
 ```
+
 # Roadmap
 
 - [ ] Добавить более умную генерацию active, hover состояний цвета.
