@@ -1,6 +1,6 @@
 {
   "name": "@vkontakte/vkui-tokens",
-  "version": "4.38.0",
+  "version": "4.38.1",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
   "main": "utils/descriptions.js",
@@ -27,7 +27,6 @@
     "docs:dev": "cd docs/webpack && webpack-dev-server --config webpack.client.js --mode development",
     "docs:build": "cd docs/webpack && webpack --config webpack.client.js --mode production",
     "docs:prepare-data": "ts-node tasks/docs/prepareTokensData.ts",
-    "prepare": "husky install",
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
