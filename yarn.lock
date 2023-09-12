@@ -1216,24 +1216,32 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@floating-ui/core@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.2.6.tgz#d21ace437cc919cdd8f1640302fa8851e65e75c0"
-  integrity sha512-EvYTiXet5XqweYGClEmpu3BoxmsQ4hkj3QaYA6qEnigCWffTP3vNRwBReTdrwDwo7OoJ3wM8Uoe9Uk4n+d4hfg==
-
-"@floating-ui/dom@^1.2.1":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.2.7.tgz#c123e4db014b07b97e996cd459245fa217049c6b"
-  integrity sha512-DyqylONj1ZaBnzj+uBnVfzdjjCkFCL2aA9ESHLyUOGSqb03RpbLMImP1ekIQXYs4KLk9jAjJfZAU8hXfWSahEg==
+"@floating-ui/core@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.4.1.tgz#0d633f4b76052668afb932492ac452f7ebe97f17"
+  integrity sha512-jk3WqquEJRlcyu7997NtR5PibI+y5bi+LS3hPmguVClypenMsCY3CBa3LAQnozRCtCrYWSEtAdiskpamuJRFOQ==
   dependencies:
-    "@floating-ui/core" "^1.2.6"
+    "@floating-ui/utils" "^0.1.1"
 
-"@floating-ui/react-dom@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-1.3.0.tgz#4d35d416eb19811c2b0e9271100a6aa18c1579b3"
-  integrity sha512-htwHm67Ji5E/pROEAr7f8IKFShuiCKHwUC/UY4vC3I5jiSvGFAYnSYiZO5MlGmads+QqvUkR9ANHEguGrDv72g==
+"@floating-ui/dom@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.5.1.tgz#88b70defd002fe851f17b4a25efb2d3c04d7a8d7"
+  integrity sha512-KwvVcPSXg6mQygvA1TjbN/gh///36kKtllIF8SUm0qpFj8+rvYrpvlYdL1JoA71SHpDqgSSdGOSoQ0Mp3uY5aw==
   dependencies:
-    "@floating-ui/dom" "^1.2.1"
+    "@floating-ui/core" "^1.4.1"
+    "@floating-ui/utils" "^0.1.1"
+
+"@floating-ui/react-dom@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-2.0.2.tgz#fab244d64db08e6bed7be4b5fcce65315ef44d20"
+  integrity sha512-5qhlDvjaLmAst/rKb3VdlCinwTF4EYMiVxuuc/HVUjs46W0zgtbMmAZ1UTsDrRTxRmUEzl92mOtWbeeXL26lSQ==
+  dependencies:
+    "@floating-ui/dom" "^1.5.1"
+
+"@floating-ui/utils@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.1.tgz#1a5b1959a528e374e8037c4396c3e825d6cf4a83"
+  integrity sha512-m0G6wlnhm/AX0H12IOWtK8gASEMffnX08RtKkCgTdHb9JpHKGloI7icFfLg9ZmQeavcvR0PKmzxClyuFPSjKWw==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -1726,17 +1734,10 @@
     "@svgr/plugin-jsx" "8.0.1"
     "@svgr/plugin-svgo" "8.0.1"
 
-"@swc/helpers@^0.4.14":
-  version "0.4.14"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.14.tgz#1352ac6d95e3617ccb7c1498ff019654f1e12a74"
-  integrity sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==
-  dependencies:
-    tslib "^2.4.0"
-
-"@swc/helpers@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.0.tgz#bf1d807b60f7290d0ec763feea7ccdeda06e85f1"
-  integrity sha512-SjY/p4MmECVVEWspzSRpQEM3sjR17sP8PbGxELWrT+YZMBfiUyt1MRUNjMV23zohwlG2HYtCQOsCwsTHguXkyg==
+"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.1":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.2.tgz#85ea0c76450b61ad7d10a37050289eded783c27d"
+  integrity sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==
   dependencies:
     tslib "^2.4.0"
 
@@ -2166,12 +2167,26 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
+"@vkontakte/icons-sprite@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-2.0.0.tgz#5153e4d16f6c1c433a58cd4e099d9326a070cecc"
+  integrity sha512-P/AMcwSfiRY0tEEMv6jIt5FgAo7lr4K8uCeOD/c8CCuLEZFoUfMW7D50IWaGKHyCTWgPIFgGFiOypj45pD5hVg==
+  dependencies:
+    "@swc/helpers" "^0.5.1"
+
 "@vkontakte/icons@2.54.0":
   version "2.54.0"
   resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.54.0.tgz#e0f3c34ed386a6b9de3a7cebe8025f8640b9469d"
   integrity sha512-Wb5GloeWsontMhIsgBwmQokHP5gXbt+Nwe6hqMv78nUlN7XNC1+o2Iu+oWCV5X8F9wlgBonJfgxETXfeljE1Aw==
   dependencies:
     "@vkontakte/icons-sprite" "1.1.1"
+
+"@vkontakte/icons@^2.62.0":
+  version "2.64.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.64.0.tgz#5617c9d74f3fa6bafddba9b9136266f5dd20943e"
+  integrity sha512-GdI0jJwWiepxo3YUmX1/F9jhEfIN82vcEBJLw1hJMHQPIgsemEBi6Y+0xvQsSA+7FMcCppppCCTWGROR8R3oug==
+  dependencies:
+    "@vkontakte/icons-sprite" "2.0.0"
 
 "@vkontakte/prettier-config@0.1.0":
   version "0.1.0"
@@ -2183,23 +2198,31 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.7.2.tgz#284380d3d5f54774741e6a2e67cce9fbe62e2072"
   integrity sha512-m/cgWEbd4Xi49xyS0tn14h3b8fLTG3Vw/wNo72k5sw5ILf8SFzB1CAyruc7kKBE6Xc8ibyIydVx1YkHwW1O0PA==
 
-"@vkontakte/vkjs@0.32.2", "@vkontakte/vkjs@^0.32.1":
+"@vkontakte/vkjs@0.32.2":
   version "0.32.2"
   resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-0.32.2.tgz#ecdf5d217fa80d2dfac240aa7ff42ca949ed0c26"
   integrity sha512-OTEPdsOY/UWdzVL31qGg32ZYXnRYzGxAfYy4/T15MIV/z+/Gz2z+wiNXyV2xO5K+/Ytyqg+Bzf7v1vv87DMYOw==
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@vkontakte/vkui@5.4.1":
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.4.1.tgz#4f58681847d220111c56ddf08fbe7be44a36c05b"
-  integrity sha512-076vPIGkW+lWErWDjjh6YVeav+I82vSNtsstrpejdoDamecQmgBziJ0U70SqbygXlazTQQALFI4YKgy1WXHtAQ==
+"@vkontakte/vkjs@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-1.1.0.tgz#7bb12ae0f2e9b4a4a7482709bd71c1a223aff4ed"
+  integrity sha512-cBhngz1x4lwctQJMgXrmCsgbmA7DsLlRASlCKJtDf65BU3pqybW+GIyCSDOYKqGQOk4c8n5MgA3uTCHUWufSdw==
   dependencies:
-    "@floating-ui/react-dom" "1.3.0"
-    "@swc/helpers" "^0.4.14"
-    "@vkontakte/vkjs" "^0.32.1"
-    dayjs "1.11.7"
-    mitt "3.0.0"
+    "@swc/helpers" "^0.5.0"
+
+"@vkontakte/vkui@5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.8.0.tgz#d26c6fe79f21c6122eaf9c3c24df40d507195f5e"
+  integrity sha512-uRnkM85DRotoDyyiRL0edkFNUSwcGBEOhzP6WCdwUPegS0jZK6Pm6N6ntIkbGTZrx1ps+6fngPNJT+fGGC+wQw==
+  dependencies:
+    "@floating-ui/react-dom" "^2.0.2"
+    "@swc/helpers" "^0.5.1"
+    "@vkontakte/icons" "^2.62.0"
+    "@vkontakte/vkjs" "^1.1.0"
+    dayjs "^1.11.9"
+    mitt "^3.0.1"
 
 "@webassemblyjs/ast@1.11.6", "@webassemblyjs/ast@^1.11.5":
   version "1.11.6"
@@ -3390,10 +3413,10 @@ damerau-levenshtein@^1.0.6:
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
   integrity sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==
 
-dayjs@1.11.7:
-  version "1.11.7"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.7.tgz#4b296922642f70999544d1144a2c25730fce63e2"
-  integrity sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==
+dayjs@^1.11.9:
+  version "1.11.9"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.9.tgz#9ca491933fadd0a60a2c19f6c237c03517d71d1a"
+  integrity sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   version "2.6.9"
@@ -6341,10 +6364,10 @@ minipass@^5.0.0:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-6.0.2.tgz#542844b6c4ce95b202c0995b0a471f1229de4c81"
   integrity sha512-MzWSV5nYVT7mVyWCwn2o7JH13w2TBRmmSqSRCKzTw+lmft9X4z+3wjvs06Tzijo5z4W/kahUCDpRXTF+ZrmF/w==
 
-mitt@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.0.tgz#69ef9bd5c80ff6f57473e8d89326d01c414be0bd"
-  integrity sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==
+mitt@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.1.tgz#ea36cf0cc30403601ae074c8f77b7092cdab36d1"
+  integrity sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==
 
 mixin-deep@^1.2.0:
   version "1.3.2"
