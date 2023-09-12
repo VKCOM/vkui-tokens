@@ -7,12 +7,81 @@ import type { ThemeVkontakteAndroidDarkDescription } from '@/interfaces/themes/v
 
 import { darkTheme as vkDarkTheme, lightTheme as vkLightTheme } from '../../base/vk';
 
+const themeNameBase = 'vkontakteAndroid';
+
 export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
+	vkontakteColorSnippetBackground: '#FFFFFF',
 	vkontakteColorModalCardBorderAlpha: 'rgba(0, 0, 0, 0)',
 	vkontakteColorLandingSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorInputBorder: '#E1E3E6',
+	vkontakteColorSearchBarBackground: '#FFFFFF',
+	vkontakteColorSearchBarFieldTint: '#818c99',
+	vkontakteBackgroundHoverAlpha: 'rgba(0, 0, 0, 0.04)',
+	vkontakteColorAccentAlternate: '#0077ff',
+	vkontakteColorBackgroundSuggestions: '#FFFFFF',
+	vkontakteColorBackgroundKeyboard: '#e1e3e6',
+	vkontakteColorContentPlaceholderIcon: '#99a2ad',
+	vkontakteColorContentTintForeground: '#7f8285',
+	vkontakteColorTextName: '#2d81e0',
+
+	vkontakteColorControlBackground: '#ebedf0',
+	vkontakteColorControlForeground: '#5181b8',
+	vkontakteColorControlTintMuted: '#76787a',
+
+	vkontakteColorHeaderSearchFieldBackground: '#ebedf0',
+	vkontakteColorHeaderSearchFieldTint: '#818c99',
+	vkontakteColorHeaderTabActiveIndicator: '#2688eb',
+
+	vkontakteColorIconOutlineMedium: '#818c99',
+	vkontakteColorIconOutlineSecondary: '#99a2ad',
+
+	vkontakteColorSkeletonShimmerFrom: '#FFFFFF',
+	vkontakteColorAlphaSkeletonShimmerTo: 'transparent',
+
+	vkontakteColorLoaderBackground: '#ebedf0',
+	vkontakteColorLoaderTint: '#76787a',
+
+	vkontakteColorMusicPlaybackIcon: '#000000',
+
+	vkontakteColorStatusBackground: '#ebedf0',
+
+	vkontakteColorPlaceholderIconForegroundPrimary: '#99a2ad',
+	vkontakteColorPlaceholderIconForegroundSecondary: '#aeb7c2',
+	vkontakteColorPlaceholderIconTint: '#001c3d',
+
+	vkontakteColorPollOptionBackground: '#45678f',
+
+	vkontakteColorTabbarActiveIcon: '#2975cc',
+	vkontakteColorTabbarBackground: '#f9f9f9',
+	vkontakteColorTabbarInactiveIcon: '#99a2ad',
+	vkontakteColorTabbarTabletTextSecondary: '#909499',
+
+	vkontakteColorToolbarAttachBackgroundFrom: '#b8c1cc',
+
+	vkontakteColorSplashScreenIcon: '#e1e3e6',
+
+	vkontakteColorIconName: '#74a2d6',
+
+	vkontakteColorPanelTabActiveText: '#76787a',
+
+	vkontakteColorBackgroundTextAlpha: 'rgba(38, 136, 235, 0.20)',
+
+	vkontakteColorModalCardHeaderClose: '#000000',
+
+	vkontakteImBubbleButtonOutgoingBackgroundAlpha: 'rgba(255, 255, 255, 0.60)',
+	vkontakteImBubbleButtonForeground: '#000000',
+	vkontakteImBubbleIncomingHighlighted: '#d7d8d9',
+	vkontakteImBubbleGiftBackground: '#f4e7c3',
+	vkontakteImBubbleGiftBackgroundHighlighted: '#e3d3ac',
+	vkontakteImBubbleOutgoingAlternate: '#FFFFFF',
+
+	vkontakteImAttachTint: '#2d81e0',
+
+	vkontakteImReplySeparator: '#2d81e0',
+
+	vkontakteImToolbarVoiceMsgBackground: '#99a2ad',
 
 	vkontakteColorImForwardLineAlpha: 'rgba(69, 103, 143, 0.24)',
 
@@ -33,10 +102,77 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.15)',
+	vkontakteColorSnippetBackground: '#232324',
 	vkontakteColorModalCardBorderAlpha: 'rgba(255, 255, 255, 0.12)',
 	vkontakteColorLandingSnippetBorderAlpha: 'rgba(255, 255, 255, 0.15)',
 	vkontakteColorActionSheetSeparatorAlpha: 'rgba(255, 255, 255, 0.12)',
 	vkontakteColorInputBorder: '#2C2D2E',
+	vkontakteColorSearchBarBackground: '#19191a',
+	vkontakteColorSearchBarFieldTint: '#aaaeb3',
+	vkontakteBackgroundHoverAlpha: 'rgba(255, 255, 255, 0.04)',
+	vkontakteColorAccentAlternate: '#FFFFFF',
+	vkontakteColorBackgroundSuggestions: '#2c2d2e',
+	vkontakteColorBackgroundKeyboard: '#2c2d2e',
+	vkontakteColorContentPlaceholderIcon: '#aaaeb3',
+	vkontakteColorContentTintForeground: '#909499',
+	vkontakteColorTextName: '#e1e3e6',
+
+	vkontakteColorControlBackground: '#454647',
+	vkontakteColorControlForeground: '#e1e3e6',
+	vkontakteColorControlTintMuted: '#909499',
+
+	vkontakteColorHeaderSearchFieldBackground: '#363738',
+	vkontakteColorHeaderSearchFieldTint: '#aaaeb3',
+	vkontakteColorHeaderTabActiveIndicator: '#529ef4',
+
+	vkontakteColorIconOutlineMedium: '#aaaeb3',
+	vkontakteColorIconOutlineSecondary: '#909499',
+
+	vkontakteColorSkeletonShimmerFrom: '#19191a',
+	vkontakteColorAlphaSkeletonShimmerTo: 'transparent',
+
+	vkontakteColorLoaderBackground: '#19191a',
+	vkontakteColorLoaderTint: '#76787a',
+
+	vkontakteColorMusicPlaybackIcon: '#FFFFFF',
+
+	vkontakteColorStatusBackground: '#19191a',
+
+	vkontakteColorPlaceholderIconForegroundPrimary: '#909499',
+	vkontakteColorPlaceholderIconForegroundSecondary: '#5d5f61',
+	vkontakteColorPlaceholderIconTint: '#FFFFFF',
+
+	vkontakteColorPollOptionBackground: '#FFFFFF',
+
+	vkontakteColorTabbarActiveIcon: '#FFFFFF',
+	vkontakteColorTabbarBackground: '#2c2d2e',
+	vkontakteColorTabbarInactiveIcon: '#76787a',
+	vkontakteColorTabbarTabletTextSecondary: '#76787a',
+
+	vkontakteColorToolbarAttachBackgroundFrom: '#76787a',
+
+	vkontakteColorSplashScreenIcon: '#2c2d2e',
+
+	vkontakteColorIconName: '#aaaeb3',
+
+	vkontakteColorPanelTabActiveText: '#e1e3e6',
+
+	vkontakteColorBackgroundTextAlpha: 'rgba(82, 158, 244, 0.24)',
+
+	vkontakteColorModalCardHeaderClose: '#FFFFFF',
+
+	vkontakteImBubbleButtonOutgoingBackgroundAlpha: 'rgba(255, 255, 255, 0.20)',
+	vkontakteImBubbleButtonForeground: '#e1e3e6',
+	vkontakteImBubbleIncomingHighlighted: '#5d5f61',
+	vkontakteImBubbleGiftBackground: '#857250',
+	vkontakteImBubbleGiftBackgroundHighlighted: '#ab9871',
+	vkontakteImBubbleOutgoingAlternate: '#454647',
+
+	vkontakteImAttachTint: '#FFFFFF',
+
+	vkontakteImReplySeparator: '#FFFFFF',
+
+	vkontakteImToolbarVoiceMsgBackground: '#454647',
 
 	vkontakteColorImForwardLineAlpha: 'rgba(255, 255, 255, 0.24)',
 
@@ -98,7 +234,9 @@ export const vkontakteTokens = {
 
 export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 	...vkLightTheme,
-	themeName: 'vkontakteAndroid',
+	themeName: themeNameBase,
+	themeNameBase,
+	themeInheritsFrom: vkLightTheme.themeName,
 
 	colors: {
 		...vkLightTheme.colors,
@@ -109,7 +247,9 @@ export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 
 export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 	...vkDarkTheme,
-	themeName: 'vkontakteAndroidDark',
+	themeName: `${themeNameBase}Dark`,
+	themeNameBase,
+	themeInheritsFrom: vkDarkTheme.themeName,
 	colorsScheme: 'dark',
 
 	colors: {

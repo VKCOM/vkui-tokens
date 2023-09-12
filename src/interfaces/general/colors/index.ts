@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ColorsDescription, ColorsScheme } from '@/interfaces/general';
 
@@ -110,6 +110,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, background
 	 */
 	colorBackgroundContrastInverse: ColorDescription;
+
+	/**
+	 * @desc Контрастный фон, перекрашивается в серый на тёмной теме
+	 * @tags color, background
+	 */
+	colorBackgroundContrastThemed: ColorDescription;
 
 	/**
 	 * @desc Фон для всплывающих окон
@@ -464,6 +470,12 @@ export interface ColorsDescriptionStruct {
 	colorAccentOrange: ColorDescription;
 
 	/**
+	 * @desc Палитра цветов. Нежно оранжевый цвет
+	 * @tags color, palette
+	 */
+	colorAccentOrangePeach: ColorDescription;
+
+	/**
 	 * @desc Палитра цветов. Огненно оранжевый цвет
 	 * @tags color, palette
 	 */
@@ -499,6 +511,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, overlay
 	 */
 	colorOverlayPrimary: ColorDescription;
+
+	/**
+	 * @desc Вторичный цвет для подложек оверлеев
+	 * @tags color, overlay
+	 */
+	colorOverlaySecondary: ColorDescription;
 
 	/**
 	 * @desc Фон для компонента Avatar. Не прозрачный
@@ -601,6 +619,30 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, component, background
 	 */
 	colorSegmentedControl: ColorDescription;
+
+	/**
+	 * @desc Цвет текста для неактивного таба в таббаре
+	 * @tags color, component, background
+	 */
+	colorTabbarTextInactive: ColorDescription;
+
+	/**
+	 * @desc Цвет текста для кнопок
+	 * @tags color
+	 */
+	colorButtonText: ColorDescription;
+
+	/**
+	 * @desc Цвет иконок для кнопок
+	 * @tags color, icon
+	 */
+	colorButtonIcon: ColorDescription;
+
+	/**
+	 * @desc Цвет обводки для кнопок
+	 * @tags color, stroke
+	 */
+	colorButtonStroke: ColorDescription;
 
 	// Themed цвета, в тёмной теме становится белыми
 }

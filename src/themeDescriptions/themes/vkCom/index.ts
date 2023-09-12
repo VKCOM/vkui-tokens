@@ -28,20 +28,18 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackground: resolveColor(theme.colors.background_page),
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
 	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
-	// colorBackgroundSecondaryAlpha: {
-	// 	normal: 'rgba(255, 255, 255, 0.04)',
-	// 	hover: 'rgba(255, 255, 255, 0.08)',
-	// 	active: 'rgba(255, 255, 255, 0.12)',
-	// },
-	// colorBackgroundSecondaryAlpha: resolveColor(
-	// 	theme.colors.button_secondary_background,
-	// ),
+	colorBackgroundSecondaryAlpha: {
+		normal: 'rgba(235, 242, 250, 0.99)',
+		hover: 'rgba(223, 234, 246, 0.99)',
+		active: 'rgba(213, 226, 241, 0.99)',
+	},
 	colorBackgroundTertiary: resolveColor(theme.colors.background_light),
 	colorBackgroundContrast: resolveColor(theme.colors.media_overlay_button_background),
 	// colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
 	colorBackgroundContrastInverse: resolveColor(theme.colors.media_overlay_button_foreground),
+	colorBackgroundContrastThemed: '#FFFFFF',
 	colorBackgroundModal: resolveColor(theme.colors.modal_card_background),
-	colorBackgroundModalInverse: resolveColor(theme.colors.modal_card_header_close),
+	colorBackgroundModalInverse: '#2D2D2E',
 	// colorBackgroundWarning: resolveColor(
 	// 	theme.colors.content_warning_background,
 	// ),
@@ -56,10 +54,10 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 
 	// Text
 	colorTextAccent: resolveColor(theme.colors.accent),
-	colorTextAccentThemed: resolveColor(theme.colors.button_primary_background),
+	colorTextAccentThemed: '#3770B1',
 	colorTextPrimary: resolveColor(theme.colors.text_primary),
 	colorTextPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
-	colorTextSecondary: resolveColor(theme.colors.content_placeholder_text),
+	colorTextSecondary: resolveColor(theme.colors.text_secondary),
 	colorTextSubhead: resolveColor(theme.colors.text_subhead),
 	colorTextTertiary: resolveColor(theme.colors.text_tertiary),
 	colorTextContrast: resolveColor(theme.colors.counter_prominent_text),
@@ -70,11 +68,11 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTextLinkThemed: resolveColor(theme.colors.link_alternate),
 	// colorTextLinkVisited: '#4986CC',
 	colorTextMuted: resolveColor(theme.colors.text_muted),
-	colorLinkContrast: resolveColor(theme.colors.text_muted),
+	colorLinkContrast: '#FFFFFF',
 
 	// Icons
 	colorIconAccent: resolveColor(theme.colors.accent),
-	colorIconAccentThemed: resolveColor(theme.colors.button_primary_background),
+	colorIconAccentThemed: '#3770B1',
 	// colorIconPrimary: '#E1E3E6',
 	colorIconPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
 	colorIconMedium: resolveColor(theme.colors.icon_medium),
@@ -91,10 +89,10 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 
 	// Stroke
 	colorStrokeAccent: resolveColor(theme.colors.accent),
-	colorStrokeAccentThemed: resolveColor(theme.colors.button_primary_background),
-	// colorSeparatorPrimary: '#363738', // resolveColor(theme.colors.separator_common),
-	// colorSeparatorPrimary2x: '#444546',
-	// colorSeparatorPrimary3x: '#505253',
+	colorStrokeAccentThemed: '#3770B1',
+	colorSeparatorPrimary: '#DCE1E6',
+	colorSeparatorPrimary2x: '#CBCCCD',
+	colorSeparatorPrimary3x: '#BEBFC1',
 	// colorSeparatorPrimaryAlpha: 'rgba(255, 255, 255, 0.12)', // resolveColor(theme.colors.separator_alpha),
 	colorSeparatorSecondary: resolveColor(theme.colors.separator_alternate),
 	colorStrokePositive: resolveColor(theme.colors.button_commerce_background),
@@ -109,6 +107,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentRed: resolveColor(theme.colors.dynamic_red),
 	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
+	colorAccentOrangePeach: resolveColor(theme.colors.dynamic_orange_peach),
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
 	colorAccentViolet: resolveColor(theme.colors.dynamic_violet),
 	// colorAccentSecondary: '#3F8AE0',
@@ -116,6 +115,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Other
 
 	// colorOverlayPrimary: resolveColor(theme.colors.primary_overlay_badge),
+	colorOverlaySecondary: 'rgba(44, 45, 46, 0.5)',
 	// colorAvatarOverlay: 'rgba(0, 0, 0, 0.6)',
 	// colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
 	// colorImagePlaceholder: resolveColor(
@@ -135,6 +135,9 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTrackBuffer: resolveColor(theme.colors.loader_track_value_fill),
 	colorSearchFieldBackground: resolveColor(theme.colors.search_bar_field_background),
 	colorPanelHeaderIcon: resolveColor(theme.colors.accent),
+	colorButtonText: '#346297',
+	colorButtonIcon: '#346297',
+	colorButtonStroke: '#346297',
 	// colorSegmentedControl: resolveColor(
 	// 	theme.colors.segmented_control_bar_background,
 	// ),
@@ -233,6 +236,17 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeFormItemPaddingVertical: {
 		regular: 8,
 	},
+
+	// Размеры границ
+	sizeBorder1x: {
+		regular: 1,
+	},
+	sizeBorder2x: {
+		regular: 1,
+	},
+	sizeBorder3x: {
+		regular: 1,
+	},
 };
 
 const vkComDarkColor: ColorsDescription = {
@@ -246,6 +260,24 @@ const vkComDarkColor: ColorsDescription = {
 			hover: '#D8DBDF',
 			active: '#CFD2D8',
 		},
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.10)',
+			hover: 'rgba(255, 255, 255, 0.12)',
+			active: 'rgba(255, 255, 255, 0.14)',
+		},
+		colorButtonText: '#E1E3E6',
+		colorButtonIcon: '#E1E3E6',
+		colorButtonStroke: '#E1E3E6',
+		colorOverlaySecondary: 'rgba(55, 56, 57, 0.5)',
+		colorBackgroundContrastThemed: '#323232',
+		colorTextAccentThemed: '#E1E3E6',
+		colorIconAccentThemed: '#E1E3E6',
+		colorStrokeAccentThemed: '#E1E3E6',
+		colorBackgroundModalInverse: '#FFFFFF',
+		colorLinkContrast: '#FFFFFF',
+		colorSeparatorPrimary: '#363738',
+		colorSeparatorPrimary2x: '#444546',
+		colorSeparatorPrimary3x: '#505253',
 	},
 };
 
