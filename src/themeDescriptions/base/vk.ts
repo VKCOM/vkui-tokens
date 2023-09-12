@@ -1,5 +1,3 @@
-import type { Property } from 'csstype';
-
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
@@ -172,8 +170,8 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			// Other
 			colorOverlayPrimary: other.overlay_primary,
 			colorOverlaySecondary: {
-				light: 'rgb(44, 45, 46, 0.5)',
-				dark: 'rgb(55, 56, 57, 0.5)',
+				light: 'rgba(44, 45, 46, 0.5)',
+				dark: 'rgba(55, 56, 57, 0.5)',
 			}[colorsScheme],
 			colorAvatarOverlay: other.avatar_overlay_alpha,
 			colorAvatarOverlayInverseAlpha: other.avatar_overlay_inverse_alpha,
