@@ -20,6 +20,7 @@ const fontWeightBase3 = 400;
 
 const colorBackgroundTertiaryLight: Property.Color = '#F6F7F8';
 const colorBackgroundTertiaryDark: Property.Color = '#252525';
+const colorBackgroundContentDark: Property.Color = '#232324';
 
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
@@ -158,7 +159,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundAccent: '#2775FC',
 		colorBackgroundAccentThemed: '#FFFFFF',
 		colorBackgroundAccentAlternative: '#FF9E00',
-		colorBackgroundContent: '#232324',
+		colorBackgroundContent: colorBackgroundContentDark,
 		colorBackgroundSecondary: '#2A2A2B',
 		colorBackgroundSecondaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.08)',
@@ -711,6 +712,7 @@ export const lightThemeBase: ThemeDescription = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+	gradient: getGradientPointsFromColor('#FFFFFF'),
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -1001,6 +1003,7 @@ export const darkThemeElevation: Elevation = {
 export const darkThemeBase: ThemeDescription = {
 	...lightThemeBase,
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
+	gradient: getGradientPointsFromColor(colorBackgroundContentDark, 0.4),
 	themeName: 'paradigmBaseDark',
 	...darkColors,
 	...darkThemeElevation,
