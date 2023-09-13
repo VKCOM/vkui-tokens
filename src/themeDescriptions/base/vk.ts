@@ -3,6 +3,8 @@ import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Fonts, TypographyBaseProps } from '@/interfaces/general/typography';
 import figma from '@/themeDescriptions/base/figma/vk.json';
 
 const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
@@ -250,12 +252,15 @@ export const darkElevation: Elevation = {
 	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
 };
 
-export const lightTheme: ThemeDescription = {
-	themeName: 'vkBase',
-	themeNameBase: 'vkBase',
-	...lightColors,
-	...lightGradient,
-	...lightElevation,
+type BaseFonts = Omit<
+	{
+		[key in keyof Fonts]: Adaptive<Fonts[key]>;
+	},
+	'fontHeadline'
+> &
+	TypographyBaseProps;
+
+export const fonts: BaseFonts = {
 	// Типографика
 	fontFamilyFallbacks,
 	fontFamilyAccent,
@@ -290,7 +295,6 @@ export const lightTheme: ThemeDescription = {
 			fontWeight: fontWeightAccent1,
 		},
 	},
-	fontHeadline: alias('fontHeadline1'),
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
@@ -415,6 +419,16 @@ export const lightTheme: ThemeDescription = {
 			textTransform: 'uppercase',
 		},
 	},
+};
+
+export const lightTheme: ThemeDescription = {
+	themeName: 'vkBase',
+	themeNameBase: 'vkBase',
+	...lightColors,
+	...lightGradient,
+	...lightElevation,
+	...fonts,
+	fontHeadline: alias('fontHeadline1'),
 
 	// Размеры
 	sizeSelectIconPadding: {
