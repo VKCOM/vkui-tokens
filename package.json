@@ -1,6 +1,6 @@
 {
   "name": "@vkontakte/vkui-tokens",
-  "version": "4.38.2",
+  "version": "4.39.0",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
   "main": "utils/descriptions.js",
@@ -58,8 +58,8 @@
     "@vkontakte/prettier-config": "0.1.0",
     "@vkontakte/vk-bridge": "2.11.1",
     "@vkontakte/vkjs": "1.1.0",
-    "@vkontakte/vkui": "5.8.0",
-    "babel-jest": "29.6.2",
+    "@vkontakte/vkui": "5.8.1",
+    "babel-jest": "29.7.0",
     "babel-loader": "9.1.2",
     "clean-webpack-plugin": "4.0.0",
     "clsx": "1.2.1",

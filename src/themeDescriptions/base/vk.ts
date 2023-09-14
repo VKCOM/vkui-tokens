@@ -1,5 +1,3 @@
-import type { Property } from 'csstype';
-
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
@@ -16,9 +14,6 @@ const fontWeightAccent3 = 400;
 const fontWeightBase1 = 600;
 const fontWeightBase2 = 500;
 const fontWeightBase3 = 400;
-
-const colorBackgroundTertiaryLight: Property.Color = '#F9F9F9';
-const colorBackgroundTertiaryDark: Property.Color = '#202021';
 
 // eslint-disable-next-line max-lines-per-function
 export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescription => {
@@ -225,7 +220,8 @@ export const lightColors: ColorsDescription = colorFromFigma('light');
 export const lightGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+	gradientTint: getGradientPointsFromColor(figma.light.background.background_tertiary),
+	gradient: getGradientPointsFromColor('#FFFFFF'),
 };
 
 export const lightElevation: Elevation = {
@@ -241,7 +237,8 @@ export const darkColors: ColorsDescription = colorFromFigma('dark');
 export const darkGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
+	gradientTint: getGradientPointsFromColor(figma.dark.background.background_tertiary),
+	gradient: getGradientPointsFromColor(figma.dark.background.background_content, 0.4),
 };
 
 export const darkElevation: Elevation = {
