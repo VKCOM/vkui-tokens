@@ -2212,10 +2212,10 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@vkontakte/vkui@5.8.0":
-  version "5.8.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.8.0.tgz#d26c6fe79f21c6122eaf9c3c24df40d507195f5e"
-  integrity sha512-uRnkM85DRotoDyyiRL0edkFNUSwcGBEOhzP6WCdwUPegS0jZK6Pm6N6ntIkbGTZrx1ps+6fngPNJT+fGGC+wQw==
+"@vkontakte/vkui@5.8.1":
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.8.1.tgz#d4789c6f7514b44e6d6a5a6cf29f91ce224f9ed9"
+  integrity sha512-YVqyX7Y+6JaFNU6ebI2Bk4UVYfBx6crPJMizvoIa3lOB/oxiIYqmQ7ktzCzbCFmMXnjL+j0bUfY1fAHo5mBYBQ==
   dependencies:
     "@floating-ui/react-dom" "^2.0.2"
     "@swc/helpers" "^0.5.1"
