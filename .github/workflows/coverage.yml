@@ -4,6 +4,12 @@ on:
     branches:
       - master
 
+permissions:
+  issues: write
+  discussions: write
+  pull-requests: write
+  contents: read
+
 jobs:
   coverage:
     runs-on: ubuntu-latest
