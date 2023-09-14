@@ -12,7 +12,7 @@
 }
 
 .tokens-content-item > div {
-	overflow: auto;
+	overflow: visible;
 }
 
 .tokens-content-header > div:nth-child(1),
