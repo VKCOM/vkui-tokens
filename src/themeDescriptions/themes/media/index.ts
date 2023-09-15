@@ -480,11 +480,31 @@ export const mediaTheme: ThemeMediaDescription = {
 	 * РАЗМЕРЫ ДЛЯ СЕТКИ
 	 */
 
-	gridContent: {
+	gridWrapperContent: {
 		compactX: '100%',
 		compact: 620,
 		regular: 940,
 		large: 1260,
+	},
+	gridMaincontent: {
+		compactX: '100%',
+		compact: 620,
+		regular: 620,
+		large: 780,
+	},
+	gridAsideContent: {
+		compactX: '100%',
+		compact: 300,
+		regular: 300,
+		large: 300,
+	},
+
+	// @depricated
+	gridContent: {
+		compactX: '100%',
+		compact: 580,
+		regular: 880,
+		large: 1180,
 	},
 	gridColumnX2: {
 		compactX: '100%',
@@ -512,15 +532,15 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 	gridLayoutArticle: {
 		compactX: '100%',
-		compact: 620,
-		regular: 620,
-		large: 780,
+		compact: '100%',
+		regular: 540,
+		large: 540,
 	},
 	gridLayoutBanner: {
 		compactX: '100%',
-		compact: 300,
-		regular: 300,
-		large: 300,
+		compact: 280,
+		regular: 280,
+		large: 560,
 	},
 
 	/**
