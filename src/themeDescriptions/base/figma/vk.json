@@ -253,7 +253,7 @@
     "background": {
       "background_accent_tint": "#5a9eff",
       "header_background": "#ffffff",
-      "background_contrast_secondary_alpha": "#ffffff",
+      "background_contrast_secondary_alpha": "rgba(255, 255, 255, 0.20)",
       "background_tertiary": "#f9f9f9",
       "background_negative_tint": "#faebeb",
       "background_secondary_alpha": "rgba(0, 0, 0, 0.04)",
