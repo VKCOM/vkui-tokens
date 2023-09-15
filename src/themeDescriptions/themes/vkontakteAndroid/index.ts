@@ -194,6 +194,9 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	vkontakteColorImTextName: '#529EF4',
 };
 
+const fontFamilyAccent =
+	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
+
 const gradients: VkontakteAndroidGradients = {
 	vkontakteGradientAquamarineBlue: '#7DF1FA, #2BB4D6',
 	vkontakteGradientBlue: '#66CCFF, #3F8AE0',
@@ -302,6 +305,7 @@ const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof
 );
 
 export const vkontakteTokens = {
+	fontFamilyAccent,
 	...gradients,
 };
 
