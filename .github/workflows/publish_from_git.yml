@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - name: Publishing release
         run: npm run publish:dist
         env:

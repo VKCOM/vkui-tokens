@@ -6,19 +6,19 @@ import { ViewportsOrdered, ViewportsTuple } from '@/interfaces/general/tools/vie
 
 const stringKeys = ['themeName', 'themeNameBase', 'themeInheritsFrom'];
 
-export function isString(token: any, key: string): token is string {
+export function isString(token: unknown, key: string): token is string {
 	return typeof token === 'string' && stringKeys.includes(key);
 }
 
-export function isColor(token: any): token is ColorWithStates {
+export function isColor(token: unknown): token is ColorWithStates {
 	if (typeof token !== 'object') {
 		return false;
 	}
 
-	return token.normal !== undefined;
+	return (token as ColorWithStates).normal !== undefined;
 }
 
-export function isGroupToken(token: any): token is Record<string, any> {
+export function isGroupToken(token: unknown): token is Record<string, any> {
 	if (typeof token !== 'object') {
 		return false;
 	}
@@ -30,12 +30,15 @@ export function isGroupToken(token: any): token is Record<string, any> {
 	return !isColor(token);
 }
 
-export function isAdaptiveFlatToken(token: any): token is Adaptive<any> {
+export function isAdaptiveFlatToken(token: unknown): token is Adaptive<any> {
 	if (typeof token !== 'object') {
 		return false;
 	}
 
-	return token.regular !== undefined && typeof token.regular !== 'object';
+	return (
+		(token as Adaptive<any>).regular !== undefined &&
+		typeof (token as Adaptive<any>).regular !== 'object'
+	);
 }
 
 const allCustomMediaKeys = Object.keys(
@@ -69,6 +72,8 @@ const allCustomMediaKeys = Object.keys(
 	}),
 );
 
-export function isCustomMediaToken(key: any): key is CustomMediaByViewportUnion<ViewportsTuple> {
+export function isCustomMediaToken(
+	key: unknown,
+): key is CustomMediaByViewportUnion<ViewportsTuple> {
 	return typeof key === 'string' && allCustomMediaKeys.includes(key);
 }
