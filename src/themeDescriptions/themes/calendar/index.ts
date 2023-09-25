@@ -265,6 +265,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 	fontTitle1: {
 		regular: {
 			...fontSize6,
+			lineHeight: '28px',
 			fontWeight: 500,
 		},
 		compact: {
@@ -350,7 +351,10 @@ export const calendarTheme: ThemeCalendarDescription = {
 		},
 	},
 	fontCaption1: {
-		regular: fontCaption1,
+		regular: {
+			...fontCaption1,
+			lineHeight: '14px',
+		},
 		compact: {
 			...fontCaption1,
 			lineHeight: '14px',
@@ -359,7 +363,9 @@ export const calendarTheme: ThemeCalendarDescription = {
 	fontCaption1Caps: {
 		regular: {
 			...fontCaption1,
+			lineHeight: '14px',
 			letterSpacing: '0.26px',
+			fontWeight: 500,
 			textTransform: 'uppercase',
 		},
 		compact: {
