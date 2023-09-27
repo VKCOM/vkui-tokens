@@ -69,7 +69,7 @@ interface MediaUniqTokens {
 	fontSpecificFootnote: Adaptive<Font>;
 	fontSpecificButton: Adaptive<Font>;
 	gridWrapperContent: Adaptive<number | string>;
-	gridMaincontent: Adaptive<number | string>;
+	gridMainContent: Adaptive<number | string>;
 	gridAsideContent: Adaptive<number | string>;
 	gridColumnX2: Adaptive<string | number>;
 	gridColumnX3: Adaptive<string | number>;
