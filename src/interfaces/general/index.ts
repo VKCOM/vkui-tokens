@@ -1,4 +1,6 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
+
+import { StaticTokens, Tokens } from '@/interfaces/general/tools/tokenValue';
 
 import { Animations } from './animations';
 import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors';
@@ -11,8 +13,6 @@ import { NamifyObject } from './tools/cssVars';
 import { StringifyObject } from './tools/utils';
 import { Fonts, TypographyBaseProps } from './typography';
 import { ZIndex } from './zIndex';
-import ColorScheme = Property.ColorScheme;
-import { StaticTokens, Tokens } from '@/interfaces/general/tools/tokenValue';
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 
@@ -106,7 +106,7 @@ export type PixelifyTheme<T extends Partial<Record<keyof T, any>> = StaticTokens
 		Pick<T, Extract<'breakpoints', keyof T>> & {
 			themeType: 'pixelify';
 			themeName: string;
-			colorScheme: ColorScheme;
+			colorScheme: Property.ColorScheme;
 		};
 
 /**

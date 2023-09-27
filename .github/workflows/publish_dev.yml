@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 18
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - name: Assigning new version
         run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=dev-${GITHUB_SHA:0:6}
       - name: Publishing release

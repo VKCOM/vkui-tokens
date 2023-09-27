@@ -1,10 +1,10 @@
-import { Property } from 'csstype';
-
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Gradients } from '@/interfaces/general/gradients';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Fonts, TypographyBaseProps } from '@/interfaces/general/typography';
 import figma from '@/themeDescriptions/base/figma/vk.json';
 
 const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
@@ -16,9 +16,6 @@ const fontWeightAccent3 = 400;
 const fontWeightBase1 = 600;
 const fontWeightBase2 = 500;
 const fontWeightBase3 = 400;
-
-const colorBackgroundTertiaryLight: Property.Color = '#F9F9F9';
-const colorBackgroundTertiaryDark: Property.Color = '#202021';
 
 // eslint-disable-next-line max-lines-per-function
 export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescription => {
@@ -79,6 +76,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 				},
 			}[colorsScheme],
 			colorBackgroundContrastInverse: background.background_contrast_inverse,
+			colorBackgroundContrastThemed: {
+				light: '#FFFFFF',
+				dark: '#323232',
+			}[colorsScheme],
 			colorBackgroundModal: background.background_modal,
 			colorBackgroundModalInverse: background.background_modal_inverse,
 			colorBackgroundWarning: background.background_warning,
@@ -107,10 +108,6 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorTextLinkVisited: text.text_link_visited,
 			colorTextMuted: text.text_muted,
 			colorLinkContrast: text.link_contrast,
-			colorTextButton: {
-				light: '#2688eb',
-				dark: '#ffffff',
-			}[colorsScheme],
 
 			// Icons
 			colorIconAccent: icons.icon_accent,
@@ -128,10 +125,6 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
 			colorIconNegative: icons.icon_negative,
-			colorIconButton: {
-				light: '#2688eb',
-				dark: '#ffffff',
-			}[colorsScheme],
 
 			// Stroke
 			colorStrokeAccent: stroke.stroke_accent,
@@ -159,10 +152,6 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 				},
 				dark: 'rgba(255, 255, 255, 0.12)',
 			}[colorsScheme],
-			colorStrokeButton: {
-				light: '#2688eb',
-				dark: '#ffffff',
-			}[colorsScheme],
 
 			// Palette
 			colorAccentBlue: palette.accent_blue,
@@ -170,6 +159,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorAccentRed: palette.accent_red,
 			colorAccentGreen: palette.accent_green,
 			colorAccentOrange: palette.accent_orange,
+			colorAccentOrangePeach: {
+				light: '#F9B54F',
+				dark: '#FFC062',
+			}[colorsScheme],
 			colorAccentOrangeFire: palette.accent_orange_fire,
 			colorAccentPurple: palette.accent_purple,
 			colorAccentViolet: palette.accent_violet,
@@ -179,8 +172,8 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			// Other
 			colorOverlayPrimary: other.overlay_primary,
 			colorOverlaySecondary: {
-				light: 'rgb(44, 45, 46, 0.5)',
-				dark: 'rgb(55, 56, 57, 0.5)',
+				light: 'rgba(44, 45, 46, 0.5)',
+				dark: 'rgba(55, 56, 57, 0.5)',
 			}[colorsScheme],
 			colorAvatarOverlay: other.avatar_overlay_alpha,
 			colorAvatarOverlayInverseAlpha: other.avatar_overlay_inverse_alpha,
@@ -189,6 +182,20 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorImagePlaceholderAlpha: other.image_placeholder_alpha,
 			colorSkeletonFrom: other.skeleton_from,
 			colorSkeletonTo: other.skeleton_to,
+			colorButtonText: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
+
+			colorButtonIcon: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
+
+			colorButtonStroke: {
+				light: '#2688eb',
+				dark: '#ffffff',
+			}[colorsScheme],
 			colorWriteBarIcon: other.write_bar_icon,
 			colorWriteBarInputBackground: other.write_bar_input_background,
 			colorWriteBarInputBorder: other.write_bar_input_border,
@@ -215,7 +222,8 @@ export const lightColors: ColorsDescription = colorFromFigma('light');
 export const lightGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+	gradientTint: getGradientPointsFromColor(figma.light.background.background_tertiary),
+	gradient: getGradientPointsFromColor('#FFFFFF'),
 };
 
 export const lightElevation: Elevation = {
@@ -231,7 +239,8 @@ export const darkColors: ColorsDescription = colorFromFigma('dark');
 export const darkGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
-	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
+	gradientTint: getGradientPointsFromColor(figma.dark.background.background_tertiary),
+	gradient: getGradientPointsFromColor(figma.dark.background.background_content, 0.4),
 };
 
 export const darkElevation: Elevation = {
@@ -243,12 +252,15 @@ export const darkElevation: Elevation = {
 	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
 };
 
-export const lightTheme: ThemeDescription = {
-	themeName: 'vkBase',
-	themeNameBase: 'vkBase',
-	...lightColors,
-	...lightGradient,
-	...lightElevation,
+type BaseFonts = Omit<
+	{
+		[key in keyof Fonts]: Adaptive<Fonts[key]>;
+	},
+	'fontHeadline'
+> &
+	TypographyBaseProps;
+
+export const fonts: BaseFonts = {
 	// Типографика
 	fontFamilyFallbacks,
 	fontFamilyAccent,
@@ -283,7 +295,6 @@ export const lightTheme: ThemeDescription = {
 			fontWeight: fontWeightAccent1,
 		},
 	},
-	fontHeadline: alias('fontHeadline1'),
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
@@ -408,6 +419,16 @@ export const lightTheme: ThemeDescription = {
 			textTransform: 'uppercase',
 		},
 	},
+};
+
+export const lightTheme: ThemeDescription = {
+	themeName: 'vkBase',
+	themeNameBase: 'vkBase',
+	...lightColors,
+	...lightGradient,
+	...lightElevation,
+	...fonts,
+	fontHeadline: alias('fontHeadline1'),
 
 	// Размеры
 	sizeSelectIconPadding: {
@@ -634,6 +655,17 @@ export const lightTheme: ThemeDescription = {
 	// Внешние отступы(верхний и нижний) для SubnavigationBar
 	sizeSubnavigationBarPaddingVertical: {
 		regular: 12,
+	},
+
+	// Размер границ
+	sizeBorder1x: {
+		regular: 1,
+	},
+	sizeBorder2x: {
+		regular: 0.5,
+	},
+	sizeBorder3x: {
+		regular: 0.33,
 	},
 
 	// Стандартные токены для отступов

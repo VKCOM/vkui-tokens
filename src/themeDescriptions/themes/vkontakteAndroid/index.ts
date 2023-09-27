@@ -1,3 +1,6 @@
+import lodash from 'lodash';
+
+import { DeepPartial } from '@/interfaces/general/tools/utils';
 import type {
 	LocalVkontakteAndroidColorsDescriptionStruct,
 	ThemeVkontakteAndroidDescription,
@@ -5,7 +8,9 @@ import type {
 } from '@/interfaces/themes/vkontakteAndroid';
 import type { ThemeVkontakteAndroidDarkDescription } from '@/interfaces/themes/vkontakteAndroidDark';
 
-import { darkTheme as vkDarkTheme, lightTheme as vkLightTheme } from '../../base/vk';
+import { darkTheme as vkDarkTheme, fonts, lightTheme as vkLightTheme } from '../../base/vk';
+
+const themeNameBase = 'vkontakteAndroid';
 
 export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
@@ -226,24 +231,99 @@ const gradients: VkontakteAndroidGradients = {
 	vkontakteGradientWomensDay: '#FF99CC, #E52E6A',
 };
 
+const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+	lodash.cloneDeep(fonts),
+	{
+		fontHeadline1: {
+			regular: {
+				letterSpacing: '0.15px',
+			},
+			compact: {
+				letterSpacing: '0.15px',
+			},
+		},
+		fontText: {
+			regular: {
+				letterSpacing: '0.15px',
+			},
+			compact: {
+				letterSpacing: '0.15px',
+			},
+		},
+		fontSubhead: {
+			regular: {
+				letterSpacing: '0.15px',
+			},
+			compact: {
+				letterSpacing: '0.15px',
+			},
+		},
+		fontFootnote: {
+			regular: {
+				letterSpacing: '0.2px',
+			},
+		},
+		fontFootnoteCaps: {
+			regular: {
+				letterSpacing: '0.2px',
+			},
+		},
+		fontCaption1: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption1Caps: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption2: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption2Caps: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption3: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption3Caps: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+	},
+);
+
 export const vkontakteTokens = {
 	...gradients,
 };
 
 export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 	...vkLightTheme,
-	themeName: 'vkontakteAndroid',
+	themeName: themeNameBase,
+	themeNameBase,
+	themeInheritsFrom: vkLightTheme.themeName,
 
 	colors: {
 		...vkLightTheme.colors,
 		...vkontakteLocalColorLight,
 	},
 	...vkontakteTokens,
+	...androidFonts,
 };
 
 export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 	...vkDarkTheme,
-	themeName: 'vkontakteAndroidDark',
+	themeName: `${themeNameBase}Dark`,
+	themeNameBase,
+	themeInheritsFrom: vkDarkTheme.themeName,
 	colorsScheme: 'dark',
 
 	colors: {
@@ -251,4 +331,5 @@ export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 		...vkontakteLocalColorDark,
 	},
 	...vkontakteTokens,
+	...androidFonts,
 };

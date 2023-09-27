@@ -4,6 +4,8 @@ on:
     branches:
       - master
 
+permissions: write-all
+
 jobs:
   coverage:
     runs-on: ubuntu-latest
@@ -13,7 +15,7 @@ jobs:
         with:
           node-version: 18
           cache: 'yarn'
-      - uses: artiomtr/jest-coverage-report-action@v3
+      - uses: artiomtr/jest-coverage-report-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           annotations: coverage
