@@ -56,15 +56,15 @@ export const mediaTheme: ThemeMediaDescription = {
 		},
 		tablet: {
 			adaptiveValue: 'compact',
-			breakpoint: 768,
+			breakpoint: 660,
 		},
 		desktopS: {
 			adaptiveValue: 'regular',
-			breakpoint: 1004,
+			breakpoint: 980,
 		},
 		desktopM: {
 			adaptiveValue: 'large',
-			breakpoint: 1260,
+			breakpoint: 1300,
 		},
 	},
 
@@ -480,6 +480,26 @@ export const mediaTheme: ThemeMediaDescription = {
 	 * РАЗМЕРЫ ДЛЯ СЕТКИ
 	 */
 
+	gridWrapperContent: {
+		compactX: '100%',
+		compact: 620,
+		regular: 940,
+		large: 1260,
+	},
+	gridMainContent: {
+		compactX: '100%',
+		compact: 620,
+		regular: 620,
+		large: 780,
+	},
+	gridAsideContent: {
+		compactX: '100%',
+		compact: 300,
+		regular: 300,
+		large: 300,
+	},
+
+	// @deprecated
 	gridContent: {
 		compactX: '100%',
 		compact: 580,

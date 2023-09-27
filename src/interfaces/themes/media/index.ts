@@ -68,11 +68,15 @@ interface MediaUniqTokens {
 	fontSpecificText: Adaptive<Font>;
 	fontSpecificFootnote: Adaptive<Font>;
 	fontSpecificButton: Adaptive<Font>;
-	gridContent: Adaptive<number | string>;
+	gridWrapperContent: Adaptive<number | string>;
+	gridMainContent: Adaptive<number | string>;
+	gridAsideContent: Adaptive<number | string>;
 	gridColumnX2: Adaptive<string | number>;
 	gridColumnX3: Adaptive<string | number>;
 	gridColumnX4: Adaptive<string | number>;
 	gridColumnX6: Adaptive<string | number>;
+	// @deprecated
+	gridContent: Adaptive<number | string>;
 	gridLayoutArticle: Adaptive<string | number>;
 	gridLayoutBanner: Adaptive<string | number>;
 }
