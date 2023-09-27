@@ -75,7 +75,7 @@ interface MediaUniqTokens {
 	gridColumnX3: Adaptive<string | number>;
 	gridColumnX4: Adaptive<string | number>;
 	gridColumnX6: Adaptive<string | number>;
-	// @depricated
+	// @deprecated
 	gridContent: Adaptive<number | string>;
 	gridLayoutArticle: Adaptive<string | number>;
 	gridLayoutBanner: Adaptive<string | number>;

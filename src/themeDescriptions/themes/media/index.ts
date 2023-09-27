@@ -499,7 +499,7 @@ export const mediaTheme: ThemeMediaDescription = {
 		large: 300,
 	},
 
-	// @depricated
+	// @deprecated
 	gridContent: {
 		compactX: '100%',
 		compact: 580,
