@@ -1003,7 +1003,7 @@ export const darkThemeElevation: Elevation = {
 export const darkThemeBase: ThemeDescription = {
 	...lightThemeBase,
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
-	gradient: getGradientPointsFromColor(colorBackgroundContentDark, 0.4),
+	gradient: getGradientPointsFromColor(colorBackgroundContentDark),
 	themeName: 'paradigmBaseDark',
 	...darkColors,
 	...darkThemeElevation,
