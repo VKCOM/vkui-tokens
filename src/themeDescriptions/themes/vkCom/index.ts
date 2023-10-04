@@ -236,17 +236,6 @@ export const vkComTheme: ThemeVkComDescription = {
 	sizeFormItemPaddingVertical: {
 		regular: 8,
 	},
-
-	// Размеры границ
-	sizeBorder1x: {
-		regular: 1,
-	},
-	sizeBorder2x: {
-		regular: 1,
-	},
-	sizeBorder3x: {
-		regular: 1,
-	},
 };
 
 const vkComDarkColor: ColorsDescription = {
