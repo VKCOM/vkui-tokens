@@ -234,9 +234,63 @@ const gradients: VkontakteAndroidGradients = {
 	vkontakteGradientWomensDay: '#FF99CC, #E52E6A',
 };
 
-const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+export const vkontakteDisplayTitleFontsPartial: DeepPartial<typeof fonts> = {
+	fontDisplayTitle1: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle2: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle3: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle4: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+};
+
+export const vkontakteMobileFonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
 	lodash.cloneDeep(fonts),
+	vkontakteDisplayTitleFontsPartial,
+);
+
+const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+	lodash.cloneDeep(vkontakteMobileFonts),
 	{
+		fontDisplayTitle1: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
+		fontDisplayTitle2: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+			compact: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
+		fontDisplayTitle3: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
+		fontDisplayTitle4: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
 		fontHeadline1: {
 			regular: {
 				letterSpacing: '0.15px',
