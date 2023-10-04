@@ -19,6 +19,30 @@ export type Font = {
  */
 export interface Fonts {
 	/**
+	 * @desc Крупный выразительный текст, уровень 1
+	 * @tags font
+	 */
+	fontDisplayTitle1: Font;
+
+	/**
+	 * @desc Крупный выразительный текст, уровень 2
+	 * @tags font
+	 */
+	fontDisplayTitle2: Font;
+
+	/**
+	 * @desc Крупный выразительный текст, уровень 3
+	 * @tags font
+	 */
+	fontDisplayTitle3: Font;
+
+	/**
+	 * @desc Крупный выразительный текст, уровень 4
+	 * @tags font
+	 */
+	fontDisplayTitle4: Font;
+
+	/**
 	 * @desc Основной заголовок, уровень 1
 	 * @tags font
 	 */
