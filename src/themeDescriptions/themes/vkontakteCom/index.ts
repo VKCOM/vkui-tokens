@@ -1,8 +1,12 @@
-import { LocalVkontakteAndroidColorsDescriptionStruct } from '../../../interfaces/themes/vkontakteAndroid';
-import { ThemeVkontakteComDescription } from '../../../interfaces/themes/vkontakteCom';
-import { ThemeVkontakteComDarkDescription } from '../../../interfaces/themes/vkontakteComDark';
-import { vkComTheme, vkComThemeDark } from '../vkCom';
-import { vkontakteTokens } from '../vkontakteAndroid';
+import lodash from 'lodash';
+
+import { DeepPartial } from '@/interfaces/general/tools/utils';
+import { LocalVkontakteAndroidColorsDescriptionStruct } from '@/interfaces/themes/vkontakteAndroid';
+import { ThemeVkontakteComDescription } from '@/interfaces/themes/vkontakteCom';
+import { ThemeVkontakteComDarkDescription } from '@/interfaces/themes/vkontakteComDark';
+
+import { vkComFonts, vkComTheme, vkComThemeDark } from '../vkCom';
+import { vkontakteDisplayTitleFontsPartial, vkontakteTokens } from '../vkontakteAndroid';
 
 const themeNameBase = 'vkontakteCom';
 
@@ -188,6 +192,11 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteColorImTextName: '#71AAEB',
 };
 
+const vkontakteComFonts = lodash.merge<typeof vkComFonts, DeepPartial<typeof vkComFonts>>(
+	lodash.cloneDeep(vkComFonts),
+	vkontakteDisplayTitleFontsPartial,
+);
+
 export const vkontakteComTheme: ThemeVkontakteComDescription = {
 	...vkComTheme,
 	themeName: themeNameBase,
@@ -198,6 +207,7 @@ export const vkontakteComTheme: ThemeVkontakteComDescription = {
 		...vkComTheme.colors,
 		...vkontakteComLocalColorLight,
 	},
+	...vkontakteComFonts,
 	...vkontakteTokens,
 };
 
@@ -212,5 +222,6 @@ export const vkontakteComThemeDark: ThemeVkontakteComDarkDescription = {
 		...vkComThemeDark.colors,
 		...vkontakteComLocalColorDark,
 	},
+	...vkontakteComFonts,
 	...vkontakteTokens,
 };

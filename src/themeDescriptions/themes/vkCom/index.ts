@@ -8,6 +8,7 @@ import {
 	darkColors,
 	darkElevation,
 	darkGradient,
+	fonts,
 	lightColors,
 	lightTheme,
 } from '@/themeDescriptions/base/vk';
@@ -152,20 +153,8 @@ const vkComLightColor: ColorsDescription = {
 	},
 };
 
-export const vkComTheme: ThemeVkComDescription = {
-	...lightTheme,
-	...vkComLightColor,
-	themeName: 'vkCom',
-	themeNameBase: 'vkCom',
-	themeInheritsFrom: 'vkBase',
-
-	sizeBorderRadius: {
-		regular: 8,
-	},
-	sizeBorderRadiusPaper: {
-		regular: 12,
-	},
-
+export const vkComFonts = {
+	...fonts,
 	fontHeadline: alias('fontHeadline1'),
 	fontHeadline1: {
 		regular: {
@@ -205,6 +194,23 @@ export const vkComTheme: ThemeVkComDescription = {
 			lineHeight: 16,
 		},
 	},
+};
+
+export const vkComTheme: ThemeVkComDescription = {
+	...lightTheme,
+	...vkComLightColor,
+	themeName: 'vkCom',
+	themeNameBase: 'vkCom',
+	themeInheritsFrom: 'vkBase',
+
+	sizeBorderRadius: {
+		regular: 8,
+	},
+	sizeBorderRadiusPaper: {
+		regular: 12,
+	},
+
+	...vkComFonts,
 
 	sizeBasePaddingHorizontal: {
 		regular: 12,
@@ -235,17 +241,6 @@ export const vkComTheme: ThemeVkComDescription = {
 	// FormItem
 	sizeFormItemPaddingVertical: {
 		regular: 8,
-	},
-
-	// Размеры границ
-	sizeBorder1x: {
-		regular: 1,
-	},
-	sizeBorder2x: {
-		regular: 1,
-	},
-	sizeBorder3x: {
-		regular: 1,
 	},
 };
 

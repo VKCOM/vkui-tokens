@@ -4,6 +4,7 @@ import { vkIOSTheme, vkIOSThemeDark } from '../vkIOS';
 import {
 	vkontakteLocalColorDark,
 	vkontakteLocalColorLight,
+	vkontakteMobileFonts,
 	vkontakteTokens,
 } from '../vkontakteAndroid';
 
@@ -33,5 +34,6 @@ export const vkontakteIOSThemeDark: ThemeVkontakteIOSDarkDescription = {
 		...vkIOSThemeDark.colors,
 		...vkontakteLocalColorDark,
 	},
+	...vkontakteMobileFonts,
 	...vkontakteTokens,
 };
