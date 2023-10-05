@@ -1744,14 +1744,7 @@
     "@svgr/plugin-jsx" "8.1.0"
     "@svgr/plugin-svgo" "8.1.0"
 
-"@swc/helpers@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.0.tgz#bf1d807b60f7290d0ec763feea7ccdeda06e85f1"
-  integrity sha512-SjY/p4MmECVVEWspzSRpQEM3sjR17sP8PbGxELWrT+YZMBfiUyt1MRUNjMV23zohwlG2HYtCQOsCwsTHguXkyg==
-  dependencies:
-    tslib "^2.4.0"
-
-"@swc/helpers@^0.5.1":
+"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.1", "@swc/helpers@^0.5.2":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.2.tgz#85ea0c76450b61ad7d10a37050289eded783c27d"
   integrity sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==
@@ -2252,16 +2245,16 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@vkontakte/vkui@5.8.1":
-  version "5.8.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.8.1.tgz#d4789c6f7514b44e6d6a5a6cf29f91ce224f9ed9"
-  integrity sha512-YVqyX7Y+6JaFNU6ebI2Bk4UVYfBx6crPJMizvoIa3lOB/oxiIYqmQ7ktzCzbCFmMXnjL+j0bUfY1fAHo5mBYBQ==
+"@vkontakte/vkui@5.9.1":
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.9.1.tgz#7b400ba8729423c548a1ddc75b83e141562ebc39"
+  integrity sha512-h+HKge+G2Xgq75IJys6FKy/MkN1XfyLDyf9naZDA/WxvneRbUustUJxqvYp1A+v/SPOUw39nesaaqinrhPSgxw==
   dependencies:
     "@floating-ui/react-dom" "^2.0.2"
-    "@swc/helpers" "^0.5.1"
+    "@swc/helpers" "^0.5.2"
     "@vkontakte/icons" "^2.62.0"
     "@vkontakte/vkjs" "^1.1.0"
-    dayjs "^1.11.9"
+    dayjs "^1.11.10"
     mitt "^3.0.1"
 
 "@webassemblyjs/ast@1.11.6", "@webassemblyjs/ast@^1.11.5":
@@ -3529,10 +3522,10 @@ damerau-levenshtein@^1.0.6:
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
   integrity sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==
 
-dayjs@^1.11.9:
-  version "1.11.9"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.9.tgz#9ca491933fadd0a60a2c19f6c237c03517d71d1a"
-  integrity sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==
+dayjs@^1.11.10:
+  version "1.11.10"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.10.tgz#68acea85317a6e164457d6d6947564029a6a16a0"
+  integrity sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   version "2.6.9"
