@@ -14,18 +14,18 @@ updates:
           - 'react-dom'
           - '@types/react'
           - '@types/react-dom'
-    eslint:
-      patterns:
-        - 'eslint*'
-    jest:
-      patterns:
-        - 'jest*'
-        - '@types/jest*'
-        - 'babel-jest'
-    prettier:
-      patterns:
-        - 'prettier'
-        - '@vkontakte/prettier-config'
+      eslint:
+        patterns:
+          - 'eslint*'
+      jest:
+        patterns:
+          - 'jest*'
+          - '@types/jest*'
+          - 'babel-jest'
+      prettier:
+        patterns:
+          - 'prettier'
+          - '@vkontakte/prettier-config'
     reviewers:
       - 'VKCOM/vk-sec'
   - package-ecosystem: 'github-actions'
