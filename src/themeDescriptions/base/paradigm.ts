@@ -296,6 +296,44 @@ export const lightThemeBase: ThemeDescription = {
 	fontWeightBase1,
 	fontWeightBase2,
 	fontWeightBase3,
+	fontDisplayTitle1: {
+		regular: {
+			fontSize: 23,
+			lineHeight: 28,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle2: {
+		regular: {
+			fontSize: 21,
+			lineHeight: 26,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+		compact: {
+			fontSize: 22,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle3: {
+		regular: {
+			fontSize: 19,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle4: {
+		regular: {
+			fontSize: 17,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
 	fontTitle1: {
 		regular: {
 			fontSize: 24,
@@ -619,6 +657,7 @@ export const lightThemeBase: ThemeDescription = {
 
 	// Компонент PanelHeader
 	sizePanelHeaderHeight: {
+		compact: 48,
 		regular: 56,
 	},
 
@@ -1003,7 +1042,7 @@ export const darkThemeElevation: Elevation = {
 export const darkThemeBase: ThemeDescription = {
 	...lightThemeBase,
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
-	gradient: getGradientPointsFromColor(colorBackgroundContentDark, 0.4),
+	gradient: getGradientPointsFromColor(colorBackgroundContentDark),
 	themeName: 'paradigmBaseDark',
 	...darkColors,
 	...darkThemeElevation,
