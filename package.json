@@ -70,7 +70,7 @@
     "css-loader": "6.8.1",
     "css.escape": "1.5.1",
     "eslint": "7.32.0",
-    "eslint-config-prettier": "8.8.0",
+    "eslint-config-prettier": "9.0.0",
     "eslint-config-silence": "1.0.0",
     "eslint-import-resolver-alias": "1.1.2",
     "eslint-plugin-compat": "4.2.0",
