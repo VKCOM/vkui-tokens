@@ -101,6 +101,16 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	vkontakteColorImBubbleGiftTextSecondary: '#AB9871',
 
 	vkontakteColorImTextName: '#2D81E0',
+
+	vkontakteButtonMutedBackground: '#f2f3f5',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0.00)',
+	vkontakteButtonTertiaryForeground: '#2d81e0',
+	vkontakteFloatButtonForeground: '#99a2ad',
+	vkontakteLandingBackground: '#ffffff',
+
+	vkontakteImBubbleIncomingAlternateHighlighted: '#f9f9f9',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#ccd3ff',
+	vkontakteImBubbleOutgoingHighlighted: '#add3ff',
 };
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -192,6 +202,16 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	vkontakteColorImBubbleGiftTextSecondary: '#E3D3AC',
 
 	vkontakteColorImTextName: '#529EF4',
+
+	vkontakteButtonMutedBackground: '#2c2d2e',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0.00)',
+	vkontakteButtonTertiaryForeground: '#e1e3e6',
+	vkontakteFloatButtonForeground: '#aaaeb3',
+	vkontakteLandingBackground: '#19191a',
+
+	vkontakteImBubbleIncomingAlternateHighlighted: '#5d5f61',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#404980',
+	vkontakteImBubbleOutgoingHighlighted: '#5d5f61',
 };
 
 const fontFamilyAccent =
