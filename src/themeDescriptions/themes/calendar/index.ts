@@ -75,6 +75,15 @@ export const calendarTheme: ThemeCalendarDescription = {
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
 
+		calendarColorIconUnread: '#005FF9',
+		calendarColorIconFavorite: '#fc2c38',
+		calendarColorIconOrder: '#ff54aa',
+		calendarColorIconFinance: '#2fc885',
+		calendarColorIconRegistration: '#ff9e00',
+		calendarColorIconTravel: '#ba34fc',
+		calendarColorIconEvent: '#09a6fa',
+		calendarColorIconFees: '#e60000',
+
 		// для кнопок, которые голубые в светлой теме и серые в темной
 		calendarColorBackgroundAccentTintThemed: {
 			normal: '#E3F0FD',
@@ -279,6 +288,15 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		colorTextSecondary: '#8C8E94',
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
+
+		calendarColorIconUnread: '#0C7CFF',
+		calendarColorIconFavorite: '#FF4550',
+		calendarColorIconOrder: '#F94CA3',
+		calendarColorIconFinance: '#24C780',
+		calendarColorIconRegistration: '#FF9C37',
+		calendarColorIconTravel: '#C15DF3',
+		calendarColorIconEvent: '#3BBAFE',
+		calendarColorIconFees: '#EE3C3C',
 
 		calendarColorBackgroundAccentTintThemed: {
 			normal: '#3E3E3F',

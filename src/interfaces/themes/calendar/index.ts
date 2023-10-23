@@ -19,6 +19,16 @@ export interface ThemeCalendarOverValues {
 
 export interface LocalCalendarColorDescriptionStruct {
 	calendarColorBackgroundAccentTintThemed: ColorDescription;
+
+	// Категории событий
+	calendarColorIconUnread: ColorDescription;
+	calendarColorIconFavorite: ColorDescription;
+	calendarColorIconOrder: ColorDescription;
+	calendarColorIconFinance: ColorDescription;
+	calendarColorIconRegistration: ColorDescription;
+	calendarColorIconTravel: ColorDescription;
+	calendarColorIconEvent: ColorDescription;
+	calendarColorIconFees: ColorDescription;
 }
 
 export type CalendarLocalColors = {
