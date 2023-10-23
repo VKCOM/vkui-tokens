@@ -1,6 +1,8 @@
-import {extractViewports} from '@/build/themeProcessors/extractViewports/extractViewports';
-import {Breakpoints} from '@/interfaces/general/tools';
-import {DefaultViewports} from '@/interfaces/general/tools/viewports';
+import { describe, expect, it } from '@jest/globals';
+
+import { extractViewports } from '@/build/themeProcessors/extractViewports/extractViewports';
+import { Breakpoints } from '@/interfaces/general/tools';
+import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 
 describe('extractViewports', () => {
 	it('should work without breakpoints: touch', () => {
@@ -16,9 +18,7 @@ describe('extractViewports', () => {
 		};
 
 		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(
-				testBreakpoints,
-			),
+			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
 		).toStrictEqual(['touch']);
 	});
 
@@ -35,9 +35,7 @@ describe('extractViewports', () => {
 		};
 
 		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(
-				testBreakpoints,
-			),
+			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
 		).toStrictEqual(['desktopM']);
 	});
 
@@ -58,9 +56,7 @@ describe('extractViewports', () => {
 		};
 
 		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(
-				testBreakpoints,
-			),
+			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
 		).toStrictEqual(['touch', 'desktopS']);
 	});
 
@@ -89,9 +85,7 @@ describe('extractViewports', () => {
 		};
 
 		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(
-				testBreakpoints,
-			),
+			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
 		).toStrictEqual(['touch', 'desktopS', 'desktopM', 'desktopL']);
 	});
 });

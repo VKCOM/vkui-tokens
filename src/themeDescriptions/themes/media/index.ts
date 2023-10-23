@@ -1,11 +1,11 @@
-import {replacePropDeep} from '@/build/helpers/replacePropDeep';
-import {staticRef} from '@/build/helpers/tokenHelpers';
-import {ThemeMediaDescription} from '@/interfaces/themes/media';
-import {helpers, projectColors, socialColors} from '@/themeDescriptions/common';
+import { replacePropDeep } from '@/build/helpers/replacePropDeep';
+import { staticRef } from '@/build/helpers/tokenHelpers';
+import { ThemeMediaDescription } from '@/interfaces/themes/media';
+import { helpers, projectColors, socialColors } from '@/themeDescriptions/common';
 
-import {darkTheme, lightTheme} from '../../base/paradigm';
+import { darkTheme, lightTheme } from '../../base/paradigm';
 
-const {x0, x05, x2, x3, x4, x5, x6, x8, x10, x12} = helpers;
+const { x0, x05, x2, x3, x4, x5, x6, x8, x10, x12 } = helpers;
 
 const fontFamilyAccent = 'MailSans, Inter, Helvetica, Arial, sans-serif';
 const fontFamilyArticle = 'Georgia, serif';
@@ -56,15 +56,15 @@ export const mediaTheme: ThemeMediaDescription = {
 		},
 		tablet: {
 			adaptiveValue: 'compact',
-			breakpoint: 768,
+			breakpoint: 660,
 		},
 		desktopS: {
 			adaptiveValue: 'regular',
-			breakpoint: 1004,
+			breakpoint: 980,
 		},
 		desktopM: {
 			adaptiveValue: 'large',
-			breakpoint: 1260,
+			breakpoint: 1300,
 		},
 	},
 
@@ -112,14 +112,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightAccent2,
 			fontSize: 36,
 			lineHeight: 44,
-			letterSpacing: '-0.5%',
+			letterSpacing: '-0.005em',
 		},
 		compact: {
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent2,
 			fontSize: 40,
 			lineHeight: 48,
-			letterSpacing: '-0.5%',
+			letterSpacing: '-0.005em',
 		},
 	},
 	mediaFontMediaTitle1: {
@@ -167,16 +167,16 @@ export const mediaTheme: ThemeMediaDescription = {
 	mediaFontMediaLead: {
 		regular: {
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontWeight: fontWeightAccent1,
 			fontSize: 19,
 			lineHeight: 28,
 		},
 		compact: {
 			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 22,
-			lineHeight: 32,
-			letterSpacing: '-0.3%',
+			fontWeight: fontWeightAccent1,
+			fontSize: 20,
+			lineHeight: 30,
+			letterSpacing: '-0.003em',
 		},
 	},
 	mediaFontMediaParagraph: {
@@ -480,6 +480,26 @@ export const mediaTheme: ThemeMediaDescription = {
 	 * РАЗМЕРЫ ДЛЯ СЕТКИ
 	 */
 
+	gridWrapperContent: {
+		compactX: '100%',
+		compact: 620,
+		regular: 940,
+		large: 1260,
+	},
+	gridMainContent: {
+		compactX: '100%',
+		compact: 620,
+		regular: 620,
+		large: 780,
+	},
+	gridAsideContent: {
+		compactX: '100%',
+		compact: 300,
+		regular: 300,
+		large: 300,
+	},
+
+	// @deprecated
 	gridContent: {
 		compactX: '100%',
 		compact: 580,

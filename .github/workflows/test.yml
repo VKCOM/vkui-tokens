@@ -10,28 +10,29 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: '17'
-      - run: npm ci
+          node-version: '18'
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: '17'
-      - run: npm ci
+          node-version: '18'
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - run: npm run test:ci
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: '17'
-      - run: npm ci
+          node-version: '18'
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - run: npm run build
-
+      - run: npm run docs:prepare-data
+      - run: npm run docs:build

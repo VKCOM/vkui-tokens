@@ -1,7 +1,7 @@
-import {stripIndent} from 'common-tags';
+import { stripIndent } from 'common-tags';
 
-import {unCamelcasify} from '@/build/helpers/unCamelcasify';
-import {Adaptive} from '@/interfaces/general/tools';
+import { unCamelcasify } from '@/build/helpers/unCamelcasify';
+import { Adaptive } from '@/interfaces/general/tools';
 
 export const EStyleTypes = {
 	CSS: 'css',
@@ -11,32 +11,22 @@ export const EStyleTypes = {
 	STYL: 'styl',
 } as const;
 
-export type Formats = typeof EStyleTypes[keyof typeof EStyleTypes];
+export type Formats = (typeof EStyleTypes)[keyof typeof EStyleTypes];
 
 export const varDeclarations = {
-	[EStyleTypes.CSS]: (prop, prefix = '') =>
-		`--${prefix}${unCamelcasify(prop, '_')}`,
-	[EStyleTypes.PCSS]: (prop, prefix = '_') =>
-		`--${prefix}${unCamelcasify(prop)}`,
-	[EStyleTypes.SCSS]: (prop, prefix = '') =>
-		`$${prefix}${unCamelcasify(prop)}`,
-	[EStyleTypes.LESS]: (prop, prefix = '') =>
-		`@${prefix}${unCamelcasify(prop)}`,
-	[EStyleTypes.STYL]: (prop, prefix = '') =>
-		`$${prefix}${unCamelcasify(prop)}`,
+	[EStyleTypes.CSS]: (prop, prefix = '') => `--${prefix}${unCamelcasify(prop, '_')}`,
+	[EStyleTypes.PCSS]: (prop, prefix = '_') => `--${prefix}${unCamelcasify(prop)}`,
+	[EStyleTypes.SCSS]: (prop, prefix = '') => `$${prefix}${unCamelcasify(prop)}`,
+	[EStyleTypes.LESS]: (prop, prefix = '') => `@${prefix}${unCamelcasify(prop)}`,
+	[EStyleTypes.STYL]: (prop, prefix = '') => `$${prefix}${unCamelcasify(prop)}`,
 } as const;
 
 export const variablesStatementDeclaration = {
-	[EStyleTypes.CSS]: (key, token, postfix = '') =>
-		`\t${key}${postfix}: ${token};\n`,
-	[EStyleTypes.PCSS]: (key, token, postfix = '') =>
-		`\t${key}${postfix}: ${token};\n`,
-	[EStyleTypes.SCSS]: (key, token, postfix = '') =>
-		`${key}${postfix}: ${token};\n`,
-	[EStyleTypes.LESS]: (key, token, postfix = '') =>
-		`${key}${postfix}: ${token};\n`,
-	[EStyleTypes.STYL]: (key, token, postfix = '') =>
-		`${key}${postfix} = ${token};\n`,
+	[EStyleTypes.CSS]: (key, token, postfix = '') => `\t${key}${postfix}: ${token};\n`,
+	[EStyleTypes.PCSS]: (key, token, postfix = '') => `\t${key}${postfix}: ${token};\n`,
+	[EStyleTypes.SCSS]: (key, token, postfix = '') => `${key}${postfix}: ${token};\n`,
+	[EStyleTypes.LESS]: (key, token, postfix = '') => `${key}${postfix}: ${token};\n`,
+	[EStyleTypes.STYL]: (key, token, postfix = '') => `${key}${postfix} = ${token};\n`,
 } as const;
 
 export const mixinDeclaration = {
@@ -79,9 +69,7 @@ export const customMediaDeclaration = {
 
 interface ProcessGroupTokenParams {
 	format: Formats;
-	token:
-		| Adaptive<Record<string, string | number>>
-		| Record<string, string | number>;
+	token: Adaptive<Record<string, string | number>> | Record<string, string | number>;
 	key: string;
 	prefix: string;
 	adaptiveMode?: 'none' | 'onlyAdaptiveGroups' | 'withAdaptiveGroups';
@@ -103,25 +91,18 @@ export function processGroupToken({
 	key,
 	prefix,
 	adaptiveMode = 'none',
-}: ProcessGroupTokenParams): {variables: string; groupTokens: string} {
+}: ProcessGroupTokenParams): { variables: string; groupTokens: string } {
 	const needUpdateVariables = format === EStyleTypes.CSS;
 	const needMap = format === EStyleTypes.SCSS;
 	const needAddAdaptiveClasses =
-		(adaptiveMode === 'withAdaptiveGroups' ||
-			adaptiveMode === 'onlyAdaptiveGroups') &&
+		(adaptiveMode === 'withAdaptiveGroups' || adaptiveMode === 'onlyAdaptiveGroups') &&
 		format === EStyleTypes.CSS;
 
-	const defineStyleProperty = (
-		subKey: string,
-		subToken: string,
-		varName?: string,
-	) => {
+	const defineStyleProperty = (subKey: string, subToken: string, varName?: string) => {
 		let result = `\t${unCamelcasify(subKey)}: ${subToken};\n`;
 
 		if (needUpdateVariables) {
-			result += `\t${unCamelcasify(
-				subKey,
-			)}: var(${varName}, ${subToken});\n`;
+			result += `\t${unCamelcasify(subKey)}: var(${varName}, ${subToken});\n`;
 		}
 
 		return result;
@@ -147,9 +128,7 @@ export function processGroupToken({
 			}
 
 			if (needMap) {
-				map += `${varDeclarations.scss(key, prefix)}--${unCamelcasify(
-					adaptivityState,
-				)}--map: (\n`;
+				map += `${varDeclarations.scss(key, prefix)}--${unCamelcasify(adaptivityState)}--map: (\n`;
 			}
 
 			Object.entries({
@@ -159,32 +138,21 @@ export function processGroupToken({
 				let varName = '';
 
 				if (needUpdateVariables) {
-					const reallyNewToken =
-						token[adaptivityState][subKey] !== undefined;
+					const reallyNewToken = token[adaptivityState][subKey] !== undefined;
 
-					varName = `${varDeclarations.css(
-						key,
-						prefix,
-					)}--${unCamelcasify(subKey, '_')}--${
-						reallyNewToken
-							? unCamelcasify(adaptivityState, '_')
-							: 'regular'
+					varName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}--${
+						reallyNewToken ? unCamelcasify(adaptivityState, '_') : 'regular'
 					}`;
 
 					if (reallyNewToken) {
-						variables += variablesStatementDeclaration.css(
-							varName,
-							subValue,
-						);
+						variables += variablesStatementDeclaration.css(varName, subValue);
 					}
 				}
 
 				groupTokens += defineStyleProperty(subKey, subValue, varName);
 
 				if (needAddAdaptiveClasses && !addedAdaptiveGroup) {
-					adaptiveGroup += `\t${unCamelcasify(
-						subKey,
-					)}: var(${varName.replace(
+					adaptiveGroup += `\t${unCamelcasify(subKey)}: var(${varName.replace(
 						new RegExp(`--(regular|${adaptivityState})$`),
 						'',
 					)});\n`;
@@ -213,7 +181,7 @@ export function processGroupToken({
 			groupTokens = adaptiveGroup;
 		}
 
-		return {variables, groupTokens};
+		return { variables, groupTokens };
 	}
 
 	// неадаптивная группа
@@ -227,10 +195,7 @@ export function processGroupToken({
 		let varName = '';
 
 		if (needUpdateVariables) {
-			varName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(
-				subKey,
-				'_',
-			)}`;
+			varName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}`;
 
 			variables += variablesStatementDeclaration.css(varName, subValue);
 		}
@@ -247,5 +212,5 @@ export function processGroupToken({
 		groupTokens += map;
 	}
 
-	return {variables, groupTokens};
+	return { variables, groupTokens };
 }

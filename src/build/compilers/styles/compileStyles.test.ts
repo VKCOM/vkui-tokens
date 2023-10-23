@@ -1,10 +1,11 @@
-import {stripIndent} from 'common-tags';
+import { describe, expect, test } from '@jest/globals';
+import { stripIndent } from 'common-tags';
 
-import {PixelifyTheme} from '@/interfaces/general';
-import {ParadigmTheme} from '@/interfaces/namespaces/paradigm';
+import { PixelifyTheme } from '@/interfaces/general';
+import { ParadigmTheme } from '@/interfaces/namespaces/paradigm';
 
-import {compileStyles, CompileStylesMode} from './compileStyles';
-import {EStyleTypes, Formats} from './helpers/tokenProcessors';
+import { compileStyles, CompileStylesMode } from './compileStyles';
+import { EStyleTypes, Formats } from './helpers/tokenProcessors';
 
 type DescriptionTheme = Partial<PixelifyTheme<ParadigmTheme>> &
 	Pick<PixelifyTheme, 'themeName' | 'colorsScheme'>;
@@ -479,29 +480,27 @@ describe('compileStyles', () => {
 		});
 	});
 
-	test.each(formats)(
-		'%s: should compile adaptive class variables with onlyAdaptiveGroups',
-		(f) => {
-			runTest(f, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					fontText: {
-						regular: {
-							fontSize: '15px',
-							lineHeight: '20px',
-							fontFamily: 'Arial',
-							fontWeight: 500,
-						},
-						compact: {
-							fontSize: '16px',
-							lineHeight: '24px',
-						},
+	test.each(formats)('%s: should compile adaptive class variables with onlyAdaptiveGroups', (f) => {
+		runTest(f, {
+			descriptionTheme: {
+				themeName: 'testTheme',
+				colorsScheme: 'light',
+				fontText: {
+					regular: {
+						fontSize: '15px',
+						lineHeight: '20px',
+						fontFamily: 'Arial',
+						fontWeight: 500,
+					},
+					compact: {
+						fontSize: '16px',
+						lineHeight: '24px',
 					},
 				},
-				mode: 'onlyAdaptiveGroups',
-				result: {
-					css: stripIndent`
+			},
+			mode: 'onlyAdaptiveGroups',
+			result: {
+				css: stripIndent`
 				.vkui--font_text {
 					font-size: var(--vkui--font_text--font_size);
 					line-height: var(--vkui--font_text--line_height);
@@ -509,15 +508,14 @@ describe('compileStyles', () => {
 					font-weight: var(--vkui--font_text--font_weight);
 				}
 				`,
-					scss: stripIndent``,
-					pcss: stripIndent``,
-					less: stripIndent``,
+				scss: stripIndent``,
+				pcss: stripIndent``,
+				less: stripIndent``,
 
-					styl: stripIndent``,
-				},
-			});
-		},
-	);
+				styl: stripIndent``,
+			},
+		});
+	});
 
 	test.each(formats)(
 		'%s: should compile adaptive class variables with mode=withAdaptiveGroups',

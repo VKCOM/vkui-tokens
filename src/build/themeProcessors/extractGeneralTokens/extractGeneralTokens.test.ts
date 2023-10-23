@@ -1,4 +1,6 @@
-import {extractGeneralTokens} from './extractGeneralTokens';
+import { describe, expect, it } from '@jest/globals';
+
+import { extractGeneralTokens } from './extractGeneralTokens';
 
 describe('mixColors', () => {
 	it('should return new object', () => {
@@ -14,7 +16,7 @@ describe('mixColors', () => {
 			},
 		};
 
-		expect(extractGeneralTokens(testData as any)).toStrictEqual<any>({});
+		expect(extractGeneralTokens(testData as any)).toStrictEqual({});
 	});
 
 	it('should save another props except colors', () => {
@@ -25,7 +27,7 @@ describe('mixColors', () => {
 			anotherProp: 'prop',
 		};
 
-		expect(extractGeneralTokens(testData as any)).toStrictEqual<any>({
+		expect(extractGeneralTokens(testData as any)).toStrictEqual({
 			anotherProp: 'prop',
 		});
 	});

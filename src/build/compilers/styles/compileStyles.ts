@@ -1,13 +1,13 @@
 import 'css.escape';
 
-import {deepStrictEqual} from 'assert';
-import {stripIndent} from 'common-tags';
+import { deepStrictEqual } from 'assert';
+import { stripIndent } from 'common-tags';
 
-import {getAllButColors} from '@/build/helpers/getAllButColors';
-import {getAllButSizes} from '@/build/helpers/getAllButSizes';
-import {getOnlyColors} from '@/build/helpers/getOnlyColors';
-import {unCamelcasify} from '@/build/helpers/unCamelcasify';
-import {PixelifyTheme} from '@/interfaces/general';
+import { getAllButColors } from '@/build/helpers/getAllButColors';
+import { getAllButSizes } from '@/build/helpers/getAllButSizes';
+import { getOnlyColors } from '@/build/helpers/getOnlyColors';
+import { unCamelcasify } from '@/build/helpers/unCamelcasify';
+import { PixelifyTheme } from '@/interfaces/general';
 
 import {
 	customMediaDeclaration,
@@ -42,10 +42,7 @@ function isClassicCssType(format: Formats): boolean {
 	return format === EStyleTypes.CSS || format === EStyleTypes.PCSS;
 }
 
-export function getPrefix<PT extends PixelifyTheme>(
-	format: Formats,
-	theme: PT,
-): string {
+export function getPrefix<PT extends PixelifyTheme>(format: Formats, theme: PT): string {
 	let prefix = theme.prefix ? `${theme.prefix}-` : '';
 
 	if (isClassicCssType(format) && prefix) {
@@ -83,9 +80,7 @@ export function getRootSelector<PT extends PixelifyTheme>(
 		return ':root';
 	}
 
-	return `.${getPrefix(EStyleTypes.CSS, theme)}${getThemeNameBase(theme)}--${
-		theme.colorsScheme
-	}`;
+	return `.${getPrefix(EStyleTypes.CSS, theme)}${getThemeNameBase(theme)}--${theme.colorsScheme}`;
 }
 
 function isDeepEqual(actual: unknown, expected: unknown): boolean {
@@ -105,7 +100,7 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 	theme: PT,
 	mode: CompileStylesMode = 'default',
 	themeBase?: PT,
-	// eslint-disable-next-line sonarjs/cognitive-complexity
+	// eslint-disable-next-line sonarjs/cognitive-complexity, max-params
 ): string => {
 	const classicCssType = isClassicCssType(format);
 	const prefix = getPrefix(format, theme);
@@ -149,10 +144,7 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 
 		// если переменная — строка (например, имя темы)
 		if (isString(token, key)) {
-			variables += getVariableStatement(
-				getDeclaration(key, prefix),
-				`'${CSS.escape(token)}'`,
-			);
+			variables += getVariableStatement(getDeclaration(key, prefix), `'${CSS.escape(token)}'`);
 			return;
 		}
 
@@ -193,10 +185,7 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 				variables += getVariableStatement(
 					getDeclaration(key, prefix),
 					value,
-					`--${unCamelcasify(
-						adaptivivityState,
-						classicCssType ? '_' : '-',
-					)}`,
+					`--${unCamelcasify(adaptivivityState, classicCssType ? '_' : '-')}`,
 				);
 			});
 			return;

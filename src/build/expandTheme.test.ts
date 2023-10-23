@@ -1,4 +1,6 @@
-import {expandAll, expandRootTheme} from '@/build/expandTheme';
+import { describe, expect, it } from '@jest/globals';
+
+import { expandAll, expandRootTheme } from '@/build/expandTheme';
 
 describe('expandTheme', () => {
 	describe('expandRootTheme', () => {
@@ -93,20 +95,17 @@ describe('expandTheme', () => {
 					active: {
 						name: '--vkui--color_overlay_primary--active',
 						originalValue: 'rgba(0, 0, 0, 0.56)',
-						value:
-							'var(--vkui--color_overlay_primary--active, rgba(0, 0, 0, 0.56))',
+						value: 'var(--vkui--color_overlay_primary--active, rgba(0, 0, 0, 0.56))',
 					},
 					hover: {
 						name: '--vkui--color_overlay_primary--hover',
 						originalValue: 'rgba(0, 0, 0, 0.52)',
-						value:
-							'var(--vkui--color_overlay_primary--hover, rgba(0, 0, 0, 0.52))',
+						value: 'var(--vkui--color_overlay_primary--hover, rgba(0, 0, 0, 0.52))',
 					},
 					normal: {
 						name: '--vkui--color_overlay_primary',
 						originalValue: 'rgba(0, 0, 0, 0.48)',
-						value:
-							'var(--vkui--color_overlay_primary, rgba(0, 0, 0, 0.48))',
+						value: 'var(--vkui--color_overlay_primary, rgba(0, 0, 0, 0.48))',
 					},
 				},
 				colorsScheme: {
@@ -136,18 +135,15 @@ describe('expandTheme', () => {
 				colorOverlayPrimary: {
 					active: {
 						name: '--vkui--color_overlay_primary--active',
-						value:
-							'var(--vkui--color_overlay_primary--active, rgba(0, 0, 0, 0.56))',
+						value: 'var(--vkui--color_overlay_primary--active, rgba(0, 0, 0, 0.56))',
 					},
 					hover: {
 						name: '--vkui--color_overlay_primary--hover',
-						value:
-							'var(--vkui--color_overlay_primary--hover, rgba(0, 0, 0, 0.52))',
+						value: 'var(--vkui--color_overlay_primary--hover, rgba(0, 0, 0, 0.52))',
 					},
 					normal: {
 						name: '--vkui--color_overlay_primary',
-						value:
-							'var(--vkui--color_overlay_primary, rgba(0, 0, 0, 0.48))',
+						value: 'var(--vkui--color_overlay_primary, rgba(0, 0, 0, 0.48))',
 					},
 				},
 				colorsScheme: {

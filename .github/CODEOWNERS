@@ -1,3 +1,6 @@
-package-lock.json  @VKCOM/vk-sec
-.npmrc             @VKCOM/vk-sec
-.nvmrc             @VKCOM/vk-sec
+.github/dependabot.yml          @VKCOM/vk-sec
+src/interfaces/general          @VKCOM/vkui-design
+src/interfaces/namespaces       @VKCOM/vkui-design
+src/themeDescriptions/base      @VKCOM/vkui-design
+src/themeDescriptions/common    @VKCOM/vkui-design
+src/themeDescriptions/index.ts  @VKCOM/vkui-design

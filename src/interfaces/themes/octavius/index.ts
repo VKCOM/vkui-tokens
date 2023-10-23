@@ -1,12 +1,12 @@
-import {Property} from 'csstype';
+import type { Property } from 'csstype';
 
-import {ThemeCssVars} from '@/interfaces/general';
+import { ThemeCssVars } from '@/interfaces/general';
 import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
-import {Adaptive} from '@/interfaces/general/tools';
+import { Adaptive } from '@/interfaces/general/tools';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
@@ -58,9 +58,7 @@ export interface ThemeOctaviusLocalSizes {
 }
 
 type ThemeOctaviusAdaptiveTokens = {
-	[key in keyof ThemeOctaviusLocalSizes]: Adaptive<
-		ThemeOctaviusLocalSizes[key]
-	>;
+	[key in keyof ThemeOctaviusLocalSizes]: Adaptive<ThemeOctaviusLocalSizes[key]>;
 };
 
 export interface LocalOctaviusColorsDescriptionStruct {
@@ -94,14 +92,32 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorPaletteViolet2: ColorDescription;
 	colorAlert: ColorDescription;
 
+	// Токены меток
+	colorTagBackgroundMint: ColorDescription;
+	colorTagTextMint: ColorDescription;
+	colorTagBackgroundSky: ColorDescription;
+	colorTagTextSky: ColorDescription;
+	colorTagBackgroundOrange: ColorDescription;
+	colorTagTextOrange: ColorDescription;
+	colorTagBackgroundPink: ColorDescription;
+	colorTagTextPink: ColorDescription;
+	colorTagBackgroundPurple: ColorDescription;
+	colorTagTextPurple: ColorDescription;
+
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
 	octaviusColorButtonBackgroundAlpha: ColorDescription;
+	octaviusColorButtonEmptyStateText: ColorDescription;
+	octaviusColorButtonEmptyStateBackgroundAlpha: ColorDescription;
+	octaviusColorSidebarWidgetBackgroundAlpha: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
 	octaviusColorOverlayBackground: ColorDescription;
+
+	// Токены текстов и иконок действий
+	octaviusColorActionArchive: ColorDescription;
 
 	// Токены синей шапки
 	octaviusColorHeaderBackground: ColorDescription;
@@ -195,6 +211,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListLetterBackground: ColorDescription;
 	octaviusColorListLetterSeparatorAlpha: ColorDescription;
 	octaviusColorListBackgroundPositiveAlpha: ColorDescription;
+	octaviusColorListBackgroundPositiveTagsOutline: ColorDescription;
 
 	/**
 	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
@@ -205,6 +222,16 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorListTextUnread: ColorDescription;
 	octaviusColorListTextPrimary: ColorDescription;
 	octaviusColorListIconPrimary: ColorDescription;
+
+	// Метатреды
+	octaviusColorIconSocial: ColorDescription;
+	octaviusColorIconMailings: ColorDescription;
+	octaviusColorIconToMyself: ColorDescription;
+	octaviusColorIconNews: ColorDescription;
+	octaviusColorIconOfficial: ColorDescription;
+	octaviusColorIconSchool: ColorDescription;
+	octaviusColorIconGames: ColorDescription;
+	octaviusColorIconReceipts: ColorDescription;
 
 	// Другие стили
 	/**
@@ -223,6 +250,12 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorNotificationBorder: ColorDescription;
 	octaviusColorPlaceholderBackground: ColorDescription;
 	octaviusColorPromoBackground: ColorDescription;
+
+	// Тонированные фоны
+	octaviusColorBackgroundAccentTintAlpha: ColorDescription;
+	octaviusColorBackgroundNegativeTintAlpha: ColorDescription;
+	octaviusColorBackgroundPositiveTintAlpha: ColorDescription;
+	octaviusColorButtonBackgroundContrastAlpha: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
@@ -243,5 +276,4 @@ export interface ThemeOctavius
 		OctaviusLocalColors,
 		ThemeOctaviusAdaptiveTokens {}
 
-export interface ThemeOctaviusCssVars
-	extends ThemeCssVars<ThemeOctavius, 'breakpoints'> {}
+export interface ThemeOctaviusCssVars extends ThemeCssVars<ThemeOctavius, 'breakpoints'> {}

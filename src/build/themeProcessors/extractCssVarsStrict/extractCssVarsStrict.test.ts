@@ -1,16 +1,13 @@
-import {extractCssVarsStrict} from '@/build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict';
-import {ThemeCssVars, ThemeCssVarsWide} from '@/interfaces/general';
-import {
-	ParadigmThemeCssVars,
-	ParadigmThemeCssVarsWide,
-} from '@/interfaces/namespaces/paradigm';
+import { describe, expect, it } from '@jest/globals';
+
+import { extractCssVarsStrict } from '@/build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict';
+import { ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
+import { ParadigmThemeCssVars, ParadigmThemeCssVarsWide } from '@/interfaces/namespaces/paradigm';
 
 describe('extractCssVarsStrict', () => {
 	it('should work with empty object', () => {
 		const testData = {};
-		expect(
-			extractCssVarsStrict(testData as ThemeCssVarsWide),
-		).toStrictEqual({});
+		expect(extractCssVarsStrict(testData as ThemeCssVarsWide)).toStrictEqual({});
 	});
 
 	it('should not do anything with breakpoints', () => {
@@ -38,11 +35,9 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		const expectedData = {...{breakpoints: {...theme.breakpoints}}};
+		const expectedData = { ...{ breakpoints: { ...theme.breakpoints } } };
 
-		expect(
-			extractCssVarsStrict(theme as ThemeCssVarsWide<Viewports>),
-		).toStrictEqual(expectedData);
+		expect(extractCssVarsStrict(theme as ThemeCssVarsWide<Viewports>)).toStrictEqual(expectedData);
 	});
 
 	it('should change type', () => {
@@ -56,9 +51,7 @@ describe('extractCssVarsStrict', () => {
 			themeType: 'cssVars',
 		};
 
-		expect(extractCssVarsStrict(theme as ThemeCssVarsWide)).toStrictEqual(
-			expectResult,
-		);
+		expect(extractCssVarsStrict(theme as ThemeCssVarsWide)).toStrictEqual(expectResult);
 	});
 
 	it('should work with flat values', () => {
@@ -79,9 +72,7 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		expect(
-			extractCssVarsStrict(theme as ParadigmThemeCssVarsWide),
-		).toStrictEqual(expectResult);
+		expect(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide)).toStrictEqual(expectResult);
 	});
 
 	it('should work with adaprive breakpoints values', () => {
@@ -95,14 +86,12 @@ describe('extractCssVarsStrict', () => {
 				},
 				compact: {
 					name: '--vkui--size_popup_base_padding--compact',
-					value:
-						'var(--vkui--size_popup_base_padding--compact, 16px)',
+					value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 					originalValue: '16px',
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 					originalValue: '20px',
 				},
 			},
@@ -122,9 +111,7 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		expect(
-			extractCssVarsStrict(theme as ParadigmThemeCssVarsWide),
-		).toStrictEqual(expectedResult);
+		expect(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide)).toStrictEqual(expectedResult);
 	});
 
 	it('should with flat and adaptive values together', () => {
@@ -142,14 +129,12 @@ describe('extractCssVarsStrict', () => {
 				},
 				compact: {
 					name: '--vkui--size_popup_base_padding--compact',
-					value:
-						'var(--vkui--size_popup_base_padding--compact, 16px)',
+					value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 					originalValue: '16px',
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 					originalValue: '20px',
 				},
 			},
@@ -173,8 +158,6 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		expect(
-			extractCssVarsStrict(theme as ParadigmThemeCssVarsWide),
-		).toStrictEqual(expectedResult);
+		expect(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide)).toStrictEqual(expectedResult);
 	});
 });

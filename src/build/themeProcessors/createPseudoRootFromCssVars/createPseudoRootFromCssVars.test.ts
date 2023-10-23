@@ -1,28 +1,22 @@
-import {
-	PixelifyTheme,
-	Theme,
-	ThemeCssVars,
-	ThemeCssVarsWide,
-} from '@/interfaces/general';
+import { describe, expect, it } from '@jest/globals';
+
+import { PixelifyTheme, Theme, ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeCssVarsWide,
 } from '@/interfaces/namespaces/paradigm';
 
-import {createPseudoRootFromCssVars} from './createPseudoRootFromCssVars';
+import { createPseudoRootFromCssVars } from './createPseudoRootFromCssVars';
 
 describe('createPseudoRootFromCssVars', () => {
 	it('should return new object', () => {
 		const theme = {};
 		const cssVarsTheme = {};
 
-		expect(
-			createPseudoRootFromCssVars(
-				theme as Theme,
-				cssVarsTheme as ThemeCssVarsWide,
-			),
-		).not.toBe(theme);
+		expect(createPseudoRootFromCssVars(theme as Theme, cssVarsTheme as ThemeCssVarsWide)).not.toBe(
+			theme,
+		);
 	});
 
 	it('should change type', () => {
@@ -35,12 +29,9 @@ describe('createPseudoRootFromCssVars', () => {
 			themeType: 'cssVars',
 		};
 
-		expect(
-			createPseudoRootFromCssVars(
-				theme as Theme,
-				cssVarsTheme as ThemeCssVars,
-			),
-		).toStrictEqual({themeType: 'pixelify'});
+		expect(createPseudoRootFromCssVars(theme as Theme, cssVarsTheme as ThemeCssVars)).toStrictEqual(
+			{ themeType: 'pixelify' },
+		);
 	});
 
 	it('should expand flat values', () => {
@@ -67,12 +58,9 @@ describe('createPseudoRootFromCssVars', () => {
 			x2: 'var(--paradigm--x2, 8px)',
 		};
 
-		expect(
-			createPseudoRootFromCssVars(
-				theme,
-				cssVarsTheme as ParadigmThemeCssVars,
-			),
-		).toStrictEqual(expectedResult);
+		expect(createPseudoRootFromCssVars(theme, cssVarsTheme as ParadigmThemeCssVars)).toStrictEqual(
+			expectedResult,
+		);
 	});
 
 	it('should expand adaptive values', () => {
@@ -93,13 +81,11 @@ describe('createPseudoRootFromCssVars', () => {
 				},
 				compact: {
 					name: '--vkui--size_popup_base_padding--compact',
-					value:
-						'var(--vkui--size_popup_base_padding--compact, 16px)',
+					value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 				},
 				regular: {
 					name: '--vkui--size_popup_base_padding--regular',
-					value:
-						'var(--vkui--size_popup_base_padding--regular, 20px)',
+					value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 				},
 			},
 		};
@@ -111,9 +97,7 @@ describe('createPseudoRootFromCssVars', () => {
 			},
 		};
 
-		expect(
-			createPseudoRootFromCssVars(theme, cssVarsTheme as any),
-		).toStrictEqual(expectedResult);
+		expect(createPseudoRootFromCssVars(theme, cssVarsTheme as any)).toStrictEqual(expectedResult);
 	});
 
 	it('should expand adaptive complex values', () => {
@@ -152,8 +136,7 @@ describe('createPseudoRootFromCssVars', () => {
 					},
 					lineHeight: {
 						name: '--vkui--font_h1--line_height--compact',
-						value:
-							'var(--vkui--font_h1--line_height--compact, 32px)',
+						value: 'var(--vkui--font_h1--line_height--compact, 32px)',
 						originalValue: '32px',
 					},
 				},
@@ -165,8 +148,7 @@ describe('createPseudoRootFromCssVars', () => {
 					},
 					lineHeight: {
 						name: '--vkui--font_h1--line_height--regular',
-						value:
-							'var(--vkui--font_h1--line_height--regular, 30px)',
+						value: 'var(--vkui--font_h1--line_height--regular, 30px)',
 						originalValue: '30px',
 					},
 				} as any,
@@ -187,10 +169,7 @@ describe('createPseudoRootFromCssVars', () => {
 		};
 
 		expect(
-			createPseudoRootFromCssVars(
-				theme,
-				cssVarsTheme as ParadigmThemeCssVarsWide,
-			),
+			createPseudoRootFromCssVars(theme, cssVarsTheme as ParadigmThemeCssVarsWide),
 		).toStrictEqual(expectedResult);
 	});
 
@@ -219,10 +198,7 @@ describe('createPseudoRootFromCssVars', () => {
 		};
 
 		expect(
-			createPseudoRootFromCssVars<ParadigmTheme>(
-				theme as ParadigmTheme,
-				cssVarsTheme as any,
-			),
+			createPseudoRootFromCssVars<ParadigmTheme>(theme as ParadigmTheme, cssVarsTheme as any),
 		).toStrictEqual(expectedResult);
 	});
 });

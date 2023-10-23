@@ -1,12 +1,9 @@
-import {
-	calendarDarkTheme,
-	calendarTheme,
-} from '@/themeDescriptions/themes/calendar';
-import {callsTheme} from '@/themeDescriptions/themes/calls';
-import {cloudTheme} from '@/themeDescriptions/themes/cloud';
-import {homeDarkTheme, homeTheme} from '@/themeDescriptions/themes/home';
-import {mediaDarkTheme, mediaTheme} from '@/themeDescriptions/themes/media';
-import {mycomTheme} from '@/themeDescriptions/themes/mycom';
+import { calendarDarkTheme, calendarTheme } from '@/themeDescriptions/themes/calendar';
+import { callsTheme } from '@/themeDescriptions/themes/calls';
+import { cloudDarkTheme, cloudTheme } from '@/themeDescriptions/themes/cloud';
+import { homeDarkTheme, homeTheme } from '@/themeDescriptions/themes/home';
+import { mediaDarkTheme, mediaTheme } from '@/themeDescriptions/themes/media';
+import { mycomTheme } from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
 	octaviusTheme,
@@ -16,22 +13,27 @@ import {
 	octaviusCompactDarkTheme,
 	octaviusCompactTheme,
 } from '@/themeDescriptions/themes/octaviusCompact';
+import { octaviusVKDarkTheme, octaviusVKTheme } from '@/themeDescriptions/themes/octaviusVK';
+import { otvetDarkTheme, otvetTheme } from '@/themeDescriptions/themes/otvet';
+import { pharmaTheme } from '@/themeDescriptions/themes/pharma';
+import { portalUIDarkTheme, portalUITheme } from '@/themeDescriptions/themes/portalUI';
+import { promoTheme } from '@/themeDescriptions/themes/promo';
+import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
+import { searchTheme } from '@/themeDescriptions/themes/search';
+import { todoTheme } from '@/themeDescriptions/themes/todo';
+import { vkComTheme, vkComThemeDark } from '@/themeDescriptions/themes/vkCom';
+import { vkIOSTheme, vkIOSThemeDark } from '@/themeDescriptions/themes/vkIOS';
 import {
-	octaviusVKDarkTheme,
-	octaviusVKTheme,
-} from '@/themeDescriptions/themes/octaviusVK';
-import {otvetDarkTheme, otvetTheme} from '@/themeDescriptions/themes/otvet';
-import {pharmaTheme} from '@/themeDescriptions/themes/pharma';
-import {promoTheme} from '@/themeDescriptions/themes/promo';
-import {todoTheme} from '@/themeDescriptions/themes/todo';
-import {vkComTheme, vkComThemeDark} from '@/themeDescriptions/themes/vkCom';
-import {vkIOSTheme, vkIOSThemeDark} from '@/themeDescriptions/themes/vkIOS';
+	vkontakteAndroidTheme,
+	vkontakteAndroidThemeDark,
+} from '@/themeDescriptions/themes/vkontakteAndroid';
+import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/themes/vkontakteCom';
+import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
+import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
+import { workspaceLandingsTheme } from '@/themeDescriptions/themes/workspaceLandings';
 
-import {
-	darkTheme as paradigmBaseDark,
-	lightTheme as paradigmBase,
-} from './base/paradigm';
-import {darkTheme as vkBaseDark, lightTheme as vkBase} from './base/vk';
+import { darkThemeExport as paradigmBaseDark, lightTheme as paradigmBase } from './base/paradigm';
+import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk';
 
 export const themes = [
 	// ==== Базовые темы новой дизайн-системы ====
@@ -45,6 +47,12 @@ export const themes = [
 	vkComThemeDark,
 	vkIOSTheme,
 	vkIOSThemeDark,
+	vkontakteAndroidTheme,
+	vkontakteAndroidThemeDark,
+	vkontakteIOSTheme,
+	vkontakteIOSThemeDark,
+	vkontakteComTheme,
+	vkontakteComThemeDark,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius
@@ -54,6 +62,8 @@ export const themes = [
 	octaviusCompactDarkTheme,
 	octaviusVKTheme,
 	octaviusVKDarkTheme,
+
+	// Темы, наследуемые от Calendar
 	calendarTheme,
 	calendarDarkTheme,
 	octaviusWhiteTheme,
@@ -72,10 +82,28 @@ export const themes = [
 	otvetTheme,
 	otvetDarkTheme,
 
+	// Темы, наследуемые от Cloud
+	cloudTheme,
+	cloudDarkTheme,
+
+	// Темы, наследуемые от PortalUI
+	portalUITheme,
+	portalUIDarkTheme,
+
+	// Темы, наследуемые от Pulse
+	pulseTheme,
+	pulseThemeDark,
+
+	// Темы, наследуемые от WorkspaceAdmin
+	workspaceAdminTheme,
+
+	// Темы, наследуемые от WorkspaceLandings
+	workspaceLandingsTheme,
+
 	// Прочие темы
 	callsTheme,
 	todoTheme,
-	cloudTheme,
+	searchTheme,
 
 	// ==== Deprecated Legacy ====
 	/**

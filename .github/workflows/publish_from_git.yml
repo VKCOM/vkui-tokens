@@ -8,12 +8,12 @@ jobs:
     name: Publish release-candidate from package.json version
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: 17
+          node-version: 18
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - name: Publishing release
         run: npm run publish:dist
         env:

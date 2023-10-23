@@ -1,12 +1,12 @@
-import {ThemeOtvetDescription} from '@/interfaces/themes/otvet';
-import {ThemeOtvetDarkDescription} from '@/interfaces/themes/otvetDark';
+import { ThemeOtvetDescription } from '@/interfaces/themes/otvet';
+import { ThemeOtvetDarkDescription } from '@/interfaces/themes/otvetDark';
 
-import {flatifyTheme} from '../../../build/helpers/flatifyTheme';
-import {darkTheme, lightTheme} from '../../base/paradigm';
-import {fontSizes, helpers} from '../../common';
+import { flatifyTheme } from '../../../build/helpers/flatifyTheme';
+import { darkTheme, lightTheme } from '../../base/paradigm';
+import { fontSizes, helpers } from '../../common';
 
-const {x05, x3, x4, x5, x10} = helpers;
-const {fontSize4, fontSize5, fontSize6, fontSize7, fontSize8} = fontSizes;
+const { x05, x3, x4, x5, x10 } = helpers;
+const { fontSize4, fontSize5, fontSize6, fontSize7, fontSize8 } = fontSizes;
 
 const octaviusThemeRegular = flatifyTheme(lightTheme);
 

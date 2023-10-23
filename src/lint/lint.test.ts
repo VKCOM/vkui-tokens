@@ -1,4 +1,6 @@
-import {lint} from '@/lint/index';
+import { describe, expect, test } from '@jest/globals';
+
+import { lint } from '@/lint/index';
 
 describe('lint', () => {
 	test('snapshot', () => {

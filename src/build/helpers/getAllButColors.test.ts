@@ -1,4 +1,6 @@
-import {getAllButColors} from '@/build/helpers/getAllButColors';
+import { describe, expect, it } from '@jest/globals';
+
+import { getAllButColors } from '@/build/helpers/getAllButColors';
 
 describe('getAllButColors', () => {
 	it('should filter out tokens that start with "color"', () => {

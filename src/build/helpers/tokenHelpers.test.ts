@@ -1,9 +1,11 @@
-import {alias, staticRef} from '@/build/helpers/tokenHelpers';
+import { describe, expect, test } from '@jest/globals';
+
+import { alias, staticRef } from '@/build/helpers/tokenHelpers';
 
 describe('tokenHelpers', () => {
 	describe('alias', () => {
 		test('maps token to another token', () => {
-			expect(alias('sizeArrow')({sizeArrow: {regular: 10}})).toEqual({
+			expect(alias('sizeArrow')({ sizeArrow: { regular: 10 } })).toEqual({
 				regular: 10,
 			});
 		});

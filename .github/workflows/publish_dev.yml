@@ -8,12 +8,12 @@ jobs:
     name: Publish development release from git commit SHA
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
         with:
-          node-version: 17
+          node-version: 18
           registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - name: Assigning new version
         run: npm version prerelease --commit-hooks=false --git-tag-version=false --preid=dev-${GITHUB_SHA:0:6}
       - name: Publishing release

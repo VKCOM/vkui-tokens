@@ -1,0 +1,17 @@
+.my-theme-select,
+.my-tags-select,
+.my-segmentedControl {
+	width: fit-content;
+}
+
+.my-tags-select > .vkuiChipsInputBase {
+	width: 293px;
+}
+
+.my-theme-select > div {
+	width: 213px;
+}
+
+.my-segmentedControl > div {
+	width: 96px;
+}

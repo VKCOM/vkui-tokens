@@ -1,7 +1,9 @@
-import {PixelifyTheme, Theme} from '@/interfaces/general';
-import {ParadigmTheme} from '@/interfaces/namespaces/paradigm';
+import { describe, expect, it } from '@jest/globals';
 
-import {pixelifyValues} from './pixelifyValues';
+import { PixelifyTheme, Theme } from '@/interfaces/general';
+import { ParadigmTheme } from '@/interfaces/namespaces/paradigm';
+
+import { pixelifyValues } from './pixelifyValues';
 
 describe('pixelifyValues', () => {
 	describe('general', () => {
@@ -14,9 +16,7 @@ describe('pixelifyValues', () => {
 				themeType: 'pixelify',
 			};
 
-			expect(
-				pixelifyValues(theme) as Partial<PixelifyTheme>,
-			).toStrictEqual(pixelifyTheme);
+			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
 		});
 
 		it('should pixelify flat numbers', () => {
@@ -30,9 +30,7 @@ describe('pixelifyValues', () => {
 				x2: '8px',
 			};
 
-			expect(
-				pixelifyValues(theme) as Partial<PixelifyTheme>,
-			).toStrictEqual(pixelifyTheme);
+			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
 		});
 
 		it('should pixelify viewport values', () => {
@@ -50,9 +48,23 @@ describe('pixelifyValues', () => {
 				},
 			};
 
-			expect(
-				pixelifyValues(theme) as Partial<PixelifyTheme>,
-			).toStrictEqual(pixelifyTheme);
+			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
+		});
+
+		it('should pixelify float numbers', () => {
+			const theme: Partial<ParadigmTheme> = {
+				x1: 1,
+				x2: 0.5,
+				x3: 0.33,
+			};
+
+			const pixelifyTheme: Partial<PixelifyTheme<ParadigmTheme>> = {
+				x1: '1px',
+				x2: '0.5px',
+				x3: '0.33px',
+			};
+
+			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
 		});
 
 		it('should correctly pixelify fonts (exclude weight)', () => {
@@ -94,14 +106,31 @@ describe('pixelifyValues', () => {
 				},
 			};
 
-			expect(
-				pixelifyValues(theme) as Partial<PixelifyTheme>,
-			).toStrictEqual(pixelifyTheme);
+			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
 		});
 
 		it('should correctly pixelify custom fontWeight tokens', () => {
-			expect(pixelifyValues({fontWeightAccent1: 700})).toEqual({
+			expect(pixelifyValues({ fontWeightAccent1: 700 })).toEqual({
 				fontWeightAccent1: 700,
+			});
+		});
+
+		it('should correctly pixelify zIndex', () => {
+			expect(pixelifyValues({ zIndexModal: 100 })).toEqual({
+				zIndexModal: 100,
+			});
+		});
+
+		it('should correctly pixelify opacity', () => {
+			expect(pixelifyValues({ opacityDisable: 1, opacityDisableAccessibility: 0.5 })).toEqual({
+				opacityDisable: 1,
+				opacityDisableAccessibility: 0.5,
+			});
+		});
+
+		it('should correctly pixelify tone', () => {
+			expect(pixelifyValues({ toneValueActive: 0.1 })).toEqual({
+				toneValueActive: 0.1,
 			});
 		});
 	});

@@ -5,20 +5,22 @@ import {
 	writeCssVarsJsUtils,
 	writeCssVarsSourceFile,
 	writeCssVarsSourceMediaFile,
+	writeDocsFiles,
 	writeJsonFile,
+	writeStructJsonFile,
 	writeStyleFiles,
 	writeTsFile,
 } from '@/build/compilers';
-import {expandAll} from '@/build/expandTheme';
-import {themes} from '@/themeDescriptions';
+import { expandAll } from '@/build/expandTheme';
+import { themes } from '@/themeDescriptions';
 
-import {processCustomMedia} from './themeProcessors/customMedia/customMedia';
+import { processCustomMedia } from './themeProcessors/customMedia/customMedia';
 
 const ROOT_DIR = path.resolve(__dirname, '../..');
 
 console.log('Удаляем папку dist...');
 export const DIST_PATH = `${ROOT_DIR}/dist`;
-export const rmDist = (): void => fs.rmdirSync(DIST_PATH, {recursive: true});
+export const rmDist = (): void => fs.rmdirSync(DIST_PATH, { recursive: true });
 
 rmDist();
 
@@ -39,12 +41,10 @@ console.log('успешно\n');
 console.log('Начинаем процесс компиляции тем...\n');
 
 const expandedThemes = themes.map(expandAll);
-const expandedThemesMap: Record<string, typeof expandedThemes[0]> = {};
+const expandedThemesMap: Record<string, (typeof expandedThemes)[0]> = {};
 
 for (const expandedThemeObject of expandedThemes) {
-	expandedThemesMap[
-		expandedThemeObject.theme.themeName
-	] = expandedThemeObject;
+	expandedThemesMap[expandedThemeObject.theme.themeName] = expandedThemeObject;
 }
 
 console.log('Успешно сформировали объекты тем на основе описания тем\n');
@@ -53,20 +53,13 @@ console.log('Успешно сформировали объекты тем на 
 expandedThemes.forEach((expandedThemeObject) => {
 	console.log('\n----------\n');
 
-	const {
-		theme,
-		pixelifyTheme,
-		cssVarsThemeWide,
-		cssVarsTheme,
-		pseudoThemeCssVars,
-	} = expandedThemeObject;
+	const { theme, pixelifyTheme, cssVarsThemeWide, cssVarsTheme, pseudoThemeCssVars } =
+		expandedThemeObject;
 
-	const {themeName, themeInheritsFrom} = theme;
+	const { themeName, themeInheritsFrom } = theme;
 
 	const themeObjectBase =
-		themeName === themeInheritsFrom
-			? undefined
-			: expandedThemesMap[themeInheritsFrom];
+		themeName === themeInheritsFrom ? undefined : expandedThemesMap[themeInheritsFrom];
 
 	const pixelifyThemeBase = themeObjectBase?.pixelifyTheme;
 
@@ -79,8 +72,10 @@ expandedThemes.forEach((expandedThemeObject) => {
 	console.log('\nНачинаем компиляцию обычных root тем');
 
 	writeJsonFile(themePath, theme, 'root');
+	writeStructJsonFile(themePath, theme, 'root');
 	writeTsFile(themePath, theme, 'root');
 	writeStyleFiles(themePath, pixelifyTheme);
+	writeDocsFiles(themePath, theme);
 
 	console.log('успешно\n');
 
@@ -102,9 +97,7 @@ expandedThemes.forEach((expandedThemeObject) => {
 	writeCssVarsJsUtils(cssVarsDeclarationsPath, cssVarsThemeWide);
 	writeCssVarsSourceMediaFile(cssVarsDeclarationsPath, cssVarsThemeWide);
 
-	console.log(
-		'начинаем компиляцию объектов темы использующих css переменные',
-	);
+	console.log('начинаем компиляцию объектов темы использующих css переменные');
 
 	const cssVarsThemesPath = path.resolve(cssVarsPath, 'theme');
 	fs.mkdirSync(cssVarsThemesPath);
@@ -112,10 +105,7 @@ expandedThemes.forEach((expandedThemeObject) => {
 	writeJsonFile(cssVarsThemesPath, cssVarsTheme as any, 'cssVars');
 	writeTsFile(cssVarsThemesPath, cssVarsTheme as any, 'cssVars', themeName);
 
-	const cssVarsThemesPathFallbacks = path.resolve(
-		cssVarsThemesPath,
-		'fallbacks',
-	);
+	const cssVarsThemesPathFallbacks = path.resolve(cssVarsThemesPath, 'fallbacks');
 	fs.mkdirSync(cssVarsThemesPathFallbacks);
 	const pseudoForStyles = {
 		...JSON.parse(JSON.stringify(pseudoThemeCssVars)),
@@ -137,10 +127,10 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/helpers'));
 fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 
 [
-	{in: '.npmignore'},
-	{in: '.gitignore'},
-	{in: '.npmrc'},
-	{in: 'README.md'},
+	{ in: '.npmignore' },
+	{ in: '.gitignore' },
+	{ in: '.npmrc' },
+	{ in: 'README.md' },
 	{
 		in: 'assets',
 	},
@@ -192,10 +182,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 
 		const contentSource = fs.readFileSync(fileSourcePath, 'utf-8');
 
-		const contentDest = contentSource.replace(
-			/@\/themeDescriptions\/common/g,
-			`@/utils/common`,
-		);
+		const contentDest = contentSource.replace(/@\/themeDescriptions\/common/g, `@/utils/common`);
 
 		fs.writeFileSync(fileDestPath, contentDest);
 	} else {

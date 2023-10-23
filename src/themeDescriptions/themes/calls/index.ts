@@ -1,12 +1,11 @@
-import {Property} from 'csstype';
+import type { Property } from 'csstype';
 
-import {ThemeCallsDescription} from '@/interfaces/themes/calls';
+import { ThemeCallsDescription } from '@/interfaces/themes/calls';
 
-import {darkTheme} from '../../base/paradigm';
-import {fontSizes} from '../../common';
+import { darkTheme } from '../../base/paradigm';
+import { fontSizes } from '../../common';
 
-export const fontFamily: Property.FontFamily =
-	'MailSans, Helvetica, Arial, sans-serif';
+export const fontFamily: Property.FontFamily = 'MailSans, Helvetica, Arial, sans-serif';
 
 const fontSize1 = {
 	...fontSizes.fontSize1,

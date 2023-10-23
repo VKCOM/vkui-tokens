@@ -44,5 +44,4 @@ export interface ThemeHomeDescription
 }
 
 // Интерфейс ниже не используем в коде, но нужен для сборки
-export interface ThemeHomeCssVars
-	extends ParadigmThemeCssVars<HomeViewports, ThemeHome> {}
+export interface ThemeHomeCssVars extends ParadigmThemeCssVars<HomeViewports, ThemeHome> {}

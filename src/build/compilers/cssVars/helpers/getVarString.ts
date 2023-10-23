@@ -1,4 +1,4 @@
-import {FlatValuesObject} from './accumulateValues';
+import { FlatValuesObject } from './accumulateValues';
 
 interface GetVarStringParams {
 	valuesObject: FlatValuesObject;
@@ -10,11 +10,11 @@ export const getVarString = ({
 	valuesObject,
 	prefix,
 	delimeter = '\n',
-	callback,
+	callback: callbackFn,
 }: GetVarStringParams): string => {
 	return Object.entries(valuesObject)
 		.map(([name, value]) => {
-			callback?.(name, value);
+			callbackFn?.(name, value);
 			return `${prefix}${name}: ${value};`;
 		})
 		.join(delimeter);

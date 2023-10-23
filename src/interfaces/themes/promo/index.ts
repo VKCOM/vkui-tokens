@@ -1,7 +1,7 @@
-import {Property} from 'csstype';
+import type { Property } from 'csstype';
 
-import {Adaptive} from '@/interfaces/general/tools';
-import {ViewportsOrdered} from '@/interfaces/general/tools/viewports';
+import { Adaptive } from '@/interfaces/general/tools';
+import { ViewportsOrdered } from '@/interfaces/general/tools/viewports';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
@@ -44,13 +44,10 @@ type PromoSpecificTokens = {
 	sizeMarginL: Adaptive<number>;
 };
 
-export interface ThemePromo
-	extends ParadigmTheme<PromoViewports>,
-		PromoSpecificTokens {}
+export interface ThemePromo extends ParadigmTheme<PromoViewports>, PromoSpecificTokens {}
 
 export interface ThemePromoDescription
 	extends ParadigmThemeDescription<PromoViewports>,
 		PromoSpecificTokens {}
 
-export interface ThemePromoCssVars
-	extends ParadigmThemeCssVars<PromoViewports, ThemePromo> {}
+export interface ThemePromoCssVars extends ParadigmThemeCssVars<PromoViewports, ThemePromo> {}

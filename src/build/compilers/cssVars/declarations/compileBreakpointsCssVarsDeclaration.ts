@@ -1,15 +1,15 @@
-import {stripIndent, stripIndents} from 'common-tags';
+import { stripIndent, stripIndents } from 'common-tags';
 
-import {findViewportByAdaptivityState} from '@/build/compilers/cssVars/helpers/findViewportByAdaptivityState';
-import {capitalize} from '@/build/helpers/capitalize';
-import {convertCamelToSnake} from '@/build/helpers/convertCamelToSnake';
-import {getOnlyColors} from '@/build/helpers/getOnlyColors';
-import {processCustomMedia} from '@/build/themeProcessors/customMedia/customMedia';
-import {Theme, ThemeCssVarsWide} from '@/interfaces/general';
-import {Adaptive} from '@/interfaces/general/tools';
+import { findViewportByAdaptivityState } from '@/build/compilers/cssVars/helpers/findViewportByAdaptivityState';
+import { capitalize } from '@/build/helpers/capitalize';
+import { convertCamelToSnake } from '@/build/helpers/convertCamelToSnake';
+import { getOnlyColors } from '@/build/helpers/getOnlyColors';
+import { processCustomMedia } from '@/build/themeProcessors/customMedia/customMedia';
+import { Theme, ThemeCssVarsWide } from '@/interfaces/general';
+import { Adaptive, Breakpoints } from '@/interfaces/general/tools';
 
-import {accumulateValues} from '../helpers/accumulateValues';
-import {getVarString} from '../helpers/getVarString';
+import { accumulateValues } from '../helpers/accumulateValues';
+import { getVarString } from '../helpers/getVarString';
 
 export type DeclarationType = 'default' | 'onlyRoot' | 'modern' | 'onlyColors';
 
@@ -26,13 +26,13 @@ export function compileBreakpointsCssVarsDeclaration<T = Theme>(
 	if (!('breakpoints' in sourceTheme)) {
 		return null;
 	}
-	const breakpoints = sourceTheme['breakpoints'];
+	const breakpoints: Partial<Breakpoints['breakpoints']> = sourceTheme['breakpoints'];
 	const customMedia = processCustomMedia(sourceTheme as any);
 
 	const theme: ThemeCssVarsWide<T> =
 		type === 'onlyColors' ? getOnlyColors(sourceTheme) : sourceTheme;
 
-	const {adaptiveValues} = accumulateValues<any>({
+	const { adaptiveValues } = accumulateValues<any>({
 		theme,
 	});
 
@@ -44,7 +44,7 @@ export function compileBreakpointsCssVarsDeclaration<T = Theme>(
 
 	result += stripIndent`
 	:root {
-${getVarString({valuesObject: adaptiveValues.auto, prefix: '\t\t'})}
+${getVarString({ valuesObject: adaptiveValues.auto, prefix: '\t\t' })}
 	}`;
 
 	const adaptivityStatesLength = Object.keys(adaptiveValues).length;
@@ -85,12 +85,8 @@ ${getVarString({valuesObject: adaptiveValues.auto, prefix: '\t\t'})}
 											return;
 										}
 
-										const regularName = name.replace(
-											new RegExp(`${adaptivityState}$`),
-											'regular',
-										);
-										const regularValue =
-											adaptiveValues.regular[regularName];
+										const regularName = name.replace(new RegExp(`${adaptivityState}$`), 'regular');
+										const regularValue = adaptiveValues.regular[regularName];
 										if (regularValue) {
 											regularValues += `${regularName}: ${regularValue};\n`;
 										}

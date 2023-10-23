@@ -1,4 +1,6 @@
-import {checkAlphaMismatch} from '@/lint/rules/alphaMismatch';
+import { beforeEach, describe, expect, jest, test } from '@jest/globals';
+
+import { checkAlphaMismatch } from '@/lint/rules/alphaMismatch';
 
 describe('lint rules | alphaMismatch', () => {
 	const emit = jest.fn();

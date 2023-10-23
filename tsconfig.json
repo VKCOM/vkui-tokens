@@ -12,15 +12,9 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
-    }
+    },
+    "resolveJsonModule": true
   },
-  "include": [
-    "**/*.ts"
-  ],
-  "exclude": [
-    "node_modules/",
-    "src/themeDescriptions/",
-    "src/generators/",
-    "./index.ts"
-  ]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules/", "src/themeDescriptions/", "src/generators/", "./index.ts"]
 }

@@ -8,9 +8,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "lib": ["ES6", "DOM", "ES2017"],
-    "declaration": true
+    "declaration": true,
+    "resolveJsonModule": true
   },
-  "include": [
-    "dist/**/*.ts"
-  ]
+  "include": ["dist/**/*.ts"]
 }

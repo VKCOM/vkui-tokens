@@ -1,8 +1,8 @@
-import {Property} from 'csstype';
+import type { Property } from 'csstype';
 
-import {ColorDescription, ColorWithStates} from '@/interfaces/general/colors';
-import {Adaptive} from '@/interfaces/general/tools';
-import {Font} from '@/interfaces/general/typography';
+import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
+import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
@@ -68,11 +68,15 @@ interface MediaUniqTokens {
 	fontSpecificText: Adaptive<Font>;
 	fontSpecificFootnote: Adaptive<Font>;
 	fontSpecificButton: Adaptive<Font>;
-	gridContent: Adaptive<number | string>;
+	gridWrapperContent: Adaptive<number | string>;
+	gridMainContent: Adaptive<number | string>;
+	gridAsideContent: Adaptive<number | string>;
 	gridColumnX2: Adaptive<string | number>;
 	gridColumnX3: Adaptive<string | number>;
 	gridColumnX4: Adaptive<string | number>;
 	gridColumnX6: Adaptive<string | number>;
+	// @deprecated
+	gridContent: Adaptive<number | string>;
 	gridLayoutArticle: Adaptive<string | number>;
 	gridLayoutBanner: Adaptive<string | number>;
 }
@@ -86,10 +90,7 @@ export interface ThemeMedia
 export interface ThemeMediaDescription
 	extends ParadigmThemeDescription<MediaViewportsTuple>,
 		MediaUniqTokens {
-	colors: ParadigmThemeDescription['colors'] &
-		ProjectColorsDescriptions &
-		SocialColorsDescriptions;
+	colors: ParadigmThemeDescription['colors'] & ProjectColorsDescriptions & SocialColorsDescriptions;
 }
 
-export interface ThemeMediaCssVars
-	extends ParadigmThemeCssVars<MediaViewportsTuple, ThemeMedia> {}
+export interface ThemeMediaCssVars extends ParadigmThemeCssVars<MediaViewportsTuple, ThemeMedia> {}

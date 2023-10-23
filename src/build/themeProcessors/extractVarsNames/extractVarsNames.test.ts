@@ -1,23 +1,20 @@
-import {Breakpoints} from '@/interfaces/general/tools';
-import {
-	ParadigmTheme,
-	ParadigmThemeCssVarsWide,
-} from '@/interfaces/namespaces/paradigm';
+import { describe, expect, it } from '@jest/globals';
 
-import {extractVarsNames, getVariableName} from './extractVarsNames';
+import { Breakpoints } from '@/interfaces/general/tools';
+import { ParadigmTheme, ParadigmThemeCssVarsWide } from '@/interfaces/namespaces/paradigm';
+
+import { extractVarsNames, getVariableName } from './extractVarsNames';
 
 describe('extractVarsNames', () => {
 	describe('getVariableName', () => {
 		it('should work only with key param', () => {
-			expect(getVariableName({key: 'paddingBase'})).toBe(
-				'--vkui--padding_base',
-			);
+			expect(getVariableName({ key: 'paddingBase' })).toBe('--vkui--padding_base');
 		});
 
 		it('shoud work with custom prefix', () => {
-			expect(
-				getVariableName({key: 'paddingBase', prefix: 'myParadigm'}),
-			).toBe('--my_paradigm--padding_base');
+			expect(getVariableName({ key: 'paddingBase', prefix: 'myParadigm' })).toBe(
+				'--my_paradigm--padding_base',
+			);
 		});
 
 		it('should work with custom prefix with double hyphen', () => {
@@ -30,21 +27,19 @@ describe('extractVarsNames', () => {
 		});
 
 		it('shoud work with auto mode', () => {
-			expect(getVariableName({key: 'paddingBase', mode: 'auto'})).toBe(
-				'--vkui--padding_base',
-			);
+			expect(getVariableName({ key: 'paddingBase', mode: 'auto' })).toBe('--vkui--padding_base');
 		});
 
 		it('should work with nocamel mode', () => {
-			expect(getVariableName({key: 'paddingBase', mode: 'touch'})).toBe(
+			expect(getVariableName({ key: 'paddingBase', mode: 'touch' })).toBe(
 				'--vkui--padding_base--touch',
 			);
 		});
 
 		it('should work with camel mode', () => {
-			expect(
-				getVariableName({key: 'paddingBase', mode: 'desktopS'}),
-			).toBe('--vkui--padding_base--desktop_s');
+			expect(getVariableName({ key: 'paddingBase', mode: 'desktopS' })).toBe(
+				'--vkui--padding_base--desktop_s',
+			);
 		});
 	});
 
@@ -79,7 +74,7 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			const expectedData = {...{breakpoints: {...theme.breakpoints}}};
+			const expectedData = { ...{ breakpoints: { ...theme.breakpoints } } };
 
 			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
 		});
@@ -183,14 +178,12 @@ describe('extractVarsNames', () => {
 					},
 					compact: {
 						name: '--vkui--size_popup_base_padding--compact',
-						value:
-							'var(--vkui--size_popup_base_padding--compact, 16px)',
+						value: 'var(--vkui--size_popup_base_padding--compact, 16px)',
 						originalValue: '16px',
 					},
 					regular: {
 						name: '--vkui--size_popup_base_padding--regular',
-						value:
-							'var(--vkui--size_popup_base_padding--regular, 20px)',
+						value: 'var(--vkui--size_popup_base_padding--regular, 20px)',
 						originalValue: '20px',
 					},
 				},
@@ -248,28 +241,24 @@ describe('extractVarsNames', () => {
 					compact: {
 						fontSize: {
 							name: '--vkui--font_h1--font_size--compact',
-							value:
-								'var(--vkui--font_h1--font_size--compact, 24px)',
+							value: 'var(--vkui--font_h1--font_size--compact, 24px)',
 							originalValue: '24px',
 						},
 						lineHeight: {
 							name: '--vkui--font_h1--line_height--compact',
-							value:
-								'var(--vkui--font_h1--line_height--compact, 32px)',
+							value: 'var(--vkui--font_h1--line_height--compact, 32px)',
 							originalValue: '32px',
 						},
 					},
 					regular: {
 						fontSize: {
 							name: '--vkui--font_h1--font_size--regular',
-							value:
-								'var(--vkui--font_h1--font_size--regular, 22px)',
+							value: 'var(--vkui--font_h1--font_size--regular, 22px)',
 							originalValue: '22px',
 						},
 						lineHeight: {
 							name: '--vkui--font_h1--line_height--regular',
-							value:
-								'var(--vkui--font_h1--line_height--regular, 30px)',
+							value: 'var(--vkui--font_h1--line_height--regular, 30px)',
 							originalValue: '30px',
 						},
 					} as any,
@@ -367,8 +356,6 @@ describe('extractVarsNames', () => {
 		// eslint-disable-next-line unicorn/consistent-function-scoping
 		const valueConstruct = (_: string, value: string) => value;
 
-		expect(extractVarsNames(theme, {valueConstruct})).toStrictEqual(
-			expectedData,
-		);
+		expect(extractVarsNames(theme, { valueConstruct })).toStrictEqual(expectedData);
 	});
 });
