@@ -192,6 +192,12 @@ export interface LocalCalendarColorDescriptionStruct {
 	// цвет заливки иконок
 	calendarColorIconPrimary: ColorDescription;
 	// #endregion Grid
+
+	// Категории событий
+	calendarColorIconOrder: ColorDescription;
+	calendarColorIconFinance: ColorDescription;
+	calendarColorIconTravel: ColorDescription;
+	calendarColorIconEvent: ColorDescription;
 }
 
 export type CalendarLocalColors = {
