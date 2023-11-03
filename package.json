@@ -3,6 +3,7 @@
   "version": "4.41.0",
   "description": "Репозиторий, который содержит в себе дизайн-токены и другие инструменты объединенной дизайн-системы VKUI и Paradigm",
   "license": "MIT",
+  "homepage": "https://vkcom.github.io/vkui-tokens",
   "main": "utils/descriptions.js",
   "scripts": {
     "build": "mkdir -p dist && npm run build:script && npm run tsc:generate-paths && npm run tsc:dist",
