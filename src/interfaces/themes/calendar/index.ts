@@ -198,6 +198,7 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorIconFinance: ColorDescription;
 	calendarColorIconTravel: ColorDescription;
 	calendarColorIconEvent: ColorDescription;
+	calendarColorIconOthers: ColorDescription;
 }
 
 export type CalendarLocalColors = {
