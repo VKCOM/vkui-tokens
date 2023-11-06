@@ -1700,10 +1700,10 @@
   dependencies:
     "@types/color-convert" "*"
 
-"@types/common-tags@1.8.1":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@types/common-tags/-/common-tags-1.8.1.tgz#a5a49ca5ebbb58e0f8947f3ec98950c8970a68a9"
-  integrity sha512-20R/mDpKSPWdJs5TOpz3e7zqbeCNuMCPhV7Yndk9KU2Rbij2r5W4RzwDPkzC+2lzUqXYu9rFzTktCBnDjHuNQg==
+"@types/common-tags@1.8.3":
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/@types/common-tags/-/common-tags-1.8.3.tgz#7bf329bb0e63b3e3a27326cd5b577088d9e4d06a"
+  integrity sha512-v3smfzf7umSwpkJrmlUe+apSv6bVnrIFCeBeprnP4f8lIh6pECZxyD50e8yFwfouIt85TdxN5yXiFwS5fnsS3w==
 
 "@types/connect-history-api-fallback@^1.3.5":
   version "1.5.1"
