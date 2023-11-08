@@ -55,7 +55,7 @@
     "@typescript-eslint/eslint-plugin": "6.7.3",
     "@typescript-eslint/parser": "6.7.3",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.1.4",
-    "@vkontakte/icons": "2.54.0",
+    "@vkontakte/icons": "2.74.0",
     "@vkontakte/prettier-config": "0.1.0",
     "@vkontakte/vk-bridge": "2.11.1",
     "@vkontakte/vkjs": "1.1.0",
