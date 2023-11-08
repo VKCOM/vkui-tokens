@@ -21,7 +21,6 @@
     "tsc:generate-paths": "tscpaths -p tsconfig.tscpaths.json -s ./dist -o ./dist",
     "test": "jest --coverage",
     "test:ci": "jest --coverage --verbose --reporters=\"jest-junit\" --reporters=\"default\"",
-    "test:snapshot:update": "npm run test -- --updateSnapshot",
     "clear:src": "find src -name '*.d.ts' -delete &&  find src -name '*.js' -delete",
     "clear:dist": "find dist -regex '.*[^d]\\.ts' -delete",
     "open:coverage": "open .coverage/index.html",
