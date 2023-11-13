@@ -1591,10 +1591,10 @@
     "@svgr/plugin-jsx" "8.1.0"
     "@svgr/plugin-svgo" "8.1.0"
 
-"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.1", "@swc/helpers@^0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.2.tgz#85ea0c76450b61ad7d10a37050289eded783c27d"
-  integrity sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==
+"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.1", "@swc/helpers@^0.5.2", "@swc/helpers@^0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.3.tgz#98c6da1e196f5f08f977658b80d6bd941b5f294f"
+  integrity sha512-FaruWX6KdudYloq1AHD/4nU+UsMTdNE8CKyrseXWEcgjDAbvkwJg2QGPAnfIJLIWsjZOSPLOAykK6fuYp4vp4A==
   dependencies:
     tslib "^2.4.0"
 
@@ -2141,15 +2141,23 @@
   dependencies:
     "@swc/helpers" "^0.5.0"
 
-"@vkontakte/vkui@5.9.1":
-  version "5.9.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.9.1.tgz#7b400ba8729423c548a1ddc75b83e141562ebc39"
-  integrity sha512-h+HKge+G2Xgq75IJys6FKy/MkN1XfyLDyf9naZDA/WxvneRbUustUJxqvYp1A+v/SPOUw39nesaaqinrhPSgxw==
+"@vkontakte/vkui-floating-ui@^0.1.0":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui-floating-ui/-/vkui-floating-ui-0.1.1.tgz#378871a156d22b0aa07e3a0b26364f57bf74c242"
+  integrity sha512-sOxtIRPB8Fc1/i7UmeFtP8vu22ZOww5GIANhbY+vZ6GMs9Yj7nfgW5UD6YB6DQ5NEGC45H+p9fcWYi2j1bmeKQ==
   dependencies:
     "@floating-ui/react-dom" "^2.0.2"
+    "@swc/helpers" "^0.5.3"
+
+"@vkontakte/vkui@5.9.6":
+  version "5.9.6"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-5.9.6.tgz#d1bd3eeb1a7dcab076dbebdabf628211bdae2a02"
+  integrity sha512-GalSpuNwlKjs2+FhECS4XjcLv1OVXGfASkzFu074TuSdpgWqjdKjUprD9ERy3z4ij+17A5Q5zqmDK1kU0IqSLw==
+  dependencies:
     "@swc/helpers" "^0.5.2"
     "@vkontakte/icons" "^2.62.0"
     "@vkontakte/vkjs" "^1.1.0"
+    "@vkontakte/vkui-floating-ui" "^0.1.0"
     dayjs "^1.11.10"
     mitt "^3.0.1"
 
