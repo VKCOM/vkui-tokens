@@ -111,6 +111,9 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	vkontakteImBubbleIncomingAlternateHighlighted: '#f9f9f9',
 	vkontakteImBubbleIncomingExpiringHighlighted: '#ccd3ff',
 	vkontakteImBubbleOutgoingHighlighted: '#add3ff',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(0, 57, 115, 0.10)',
+	vkontakteStoriesSkeletonLoaderBackground: '#454647',
 };
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -212,6 +215,9 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	vkontakteImBubbleIncomingAlternateHighlighted: '#5d5f61',
 	vkontakteImBubbleIncomingExpiringHighlighted: '#404980',
 	vkontakteImBubbleOutgoingHighlighted: '#5d5f61',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(255, 255, 255, 0.15)',
+	vkontakteStoriesSkeletonLoaderBackground: '#c4c8cc',
 };
 
 const fontFamilyAccent =

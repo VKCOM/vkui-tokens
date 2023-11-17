@@ -108,6 +108,9 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteImBubbleIncomingAlternateHighlighted: '#f7f8fa',
 	vkontakteImBubbleIncomingExpiringHighlighted: '#ccd3ff',
 	vkontakteImBubbleOutgoingHighlighted: '#add3ff',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(0, 57, 115, 0.102)',
+	vkontakteStoriesSkeletonLoaderBackground: '#cccccc',
 };
 
 const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -207,6 +210,9 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteImBubbleIncomingAlternateHighlighted: '#656565',
 	vkontakteImBubbleIncomingExpiringHighlighted: '#404980',
 	vkontakteImBubbleOutgoingHighlighted: '#656565',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(255, 255, 255, 0.16)',
+	vkontakteStoriesSkeletonLoaderBackground: '#555555',
 };
 
 const vkontakteComFonts = lodash.merge<typeof vkComFonts, DeepPartial<typeof vkComFonts>>(
