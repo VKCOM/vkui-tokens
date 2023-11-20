@@ -199,6 +199,7 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorIconTravel: ColorDescription;
 	calendarColorIconEvent: ColorDescription;
 	calendarColorIconOthers: ColorDescription;
+	calendarColorIconAppointment: ColorDescription;
 }
 
 export type CalendarLocalColors = {

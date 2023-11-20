@@ -80,6 +80,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorIconTravel: '#ba34fc',
 		calendarColorIconEvent: '#09a6fa',
 		calendarColorIconOthers: '#005FF9',
+		calendarColorIconAppointment: '#F8BA04',
 
 		// для кнопок, которые голубые в светлой теме и серые в темной
 		calendarColorBackgroundAccentTintThemed: {
