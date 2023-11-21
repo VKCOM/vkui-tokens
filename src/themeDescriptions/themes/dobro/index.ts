@@ -8,10 +8,6 @@ import {
 	lightTheme,
 } from '@/themeDescriptions/base/vk';
 
-const fontFamilyDisplay = 'VK Sans Display, sans-serif, Arial';
-const fontFamilyDisplayMedium = 'VK Sans Display Medium, sans-serif, Arial';
-const fontFamilyDisplayRegular = 'VK Sans Display Regular, sans-serif, Arial';
-
 const lightColors: ColorsDescription = colorFromFigma('light');
 
 const darkColors: ColorsDescription = colorFromFigma('dark');
@@ -24,9 +20,9 @@ export const dobroTheme: ThemeDobroDescription = {
 	themeName: 'dobro',
 	themeNameBase: 'dobro',
 
-	fontFamilyDisplay,
-	fontFamilyDisplayMedium,
-	fontFamilyDisplayRegular,
+	fontFamilyDisplay: 'VK Sans Display, sans-serif, Arial',
+	fontFamilyDisplayMedium: 'VK Sans Display Medium, sans-serif, Arial',
+	fontFamilyDisplayRegular: 'VK Sans Display Regular, sans-serif, Arial',
 
 	zIndexMailMenu: 96,
 	zIndexPopover: 96,
