@@ -99,6 +99,15 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteColorImBubbleGiftTextSecondary: '#AB9871',
 
 	vkontakteColorImTextName: '#2A5885',
+
+	vkontakteButtonMutedBackground: '#e5ebf1',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0)',
+	vkontakteButtonTertiaryForeground: '#346297',
+	vkontakteFloatButtonForeground: '#99a2ad',
+	vkontakteLandingBackground: '#ffffff',
+	vkontakteImBubbleIncomingAlternateHighlighted: '#f7f8fa',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#ccd3ff',
+	vkontakteImBubbleOutgoingHighlighted: '#add3ff',
 };
 
 const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -190,6 +199,14 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteColorImBubbleGiftTextSecondary: '#E3D3AC',
 
 	vkontakteColorImTextName: '#71AAEB',
+	vkontakteButtonMutedBackground: '#333333',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0)',
+	vkontakteButtonTertiaryForeground: '#e1e3e6',
+	vkontakteFloatButtonForeground: '#b2b2b2',
+	vkontakteLandingBackground: '#222222',
+	vkontakteImBubbleIncomingAlternateHighlighted: '#656565',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#404980',
+	vkontakteImBubbleOutgoingHighlighted: '#656565',
 };
 
 const vkontakteComFonts = lodash.merge<typeof vkComFonts, DeepPartial<typeof vkComFonts>>(

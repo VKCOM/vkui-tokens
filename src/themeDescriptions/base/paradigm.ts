@@ -799,6 +799,15 @@ export const lightTheme: ParadigmThemeDescription = {
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(13, 194, 104, 0.08)',
 		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.08)',
 		colorBackgroundPositiveTintThemed: '#ECFAF3',
+
+		colorTooltipBackgroundBlueTint: '#DDE9FF',
+		colorTooltipBackgroundGreenTint: '#CEEEE6',
+		colorTooltipBackgroundOrangeTint: '#F9D3BD',
+		colorTooltipBackgroundPurpleTint: '#F2E8FF',
+		colorTooltipTextBlueThemed: '#1C4479',
+		colorTooltipTextGreenThemed: '#087C6D',
+		colorTooltipTextOrangeThemed: '#78472A',
+		colorTooltipTextPurpleThemed: '#73519F',
 	},
 
 	breakpoints: {
@@ -1080,6 +1089,15 @@ export const darkTheme: ParadigmThemeDescription = {
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.1)',
 		colorBackgroundPositiveTintThemed: '#2b2b2c',
+
+		colorTooltipBackgroundBlueTint: '#1C4479',
+		colorTooltipBackgroundGreenTint: '#087C6D',
+		colorTooltipBackgroundOrangeTint: '#78472A',
+		colorTooltipBackgroundPurpleTint: '#73519F',
+		colorTooltipTextBlueThemed: '#FFFFFF',
+		colorTooltipTextGreenThemed: '#FFFFFF',
+		colorTooltipTextOrangeThemed: '#FFFFFF',
+		colorTooltipTextPurpleThemed: '#FFFFFF',
 	},
 };
 
