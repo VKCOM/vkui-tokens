@@ -118,6 +118,15 @@ export interface LocalParadigmColorsDescriptionStruct {
 	 * @tags color, background, themed
 	 */
 	colorBackgroundPositiveTintThemed: ColorDescription;
+
+	colorTooltipBackgroundBlueTint: ColorDescription;
+	colorTooltipBackgroundGreenTint: ColorDescription;
+	colorTooltipBackgroundOrangeTint: ColorDescription;
+	colorTooltipBackgroundPurpleTint: ColorDescription;
+	colorTooltipTextBlueThemed: ColorDescription;
+	colorTooltipTextGreenThemed: ColorDescription;
+	colorTooltipTextOrangeThemed: ColorDescription;
+	colorTooltipTextPurpleThemed: ColorDescription;
 }
 
 export type ParadigmLocalColors = {

@@ -6,6 +6,26 @@ updates:
       interval: 'daily'
     allow:
       - dependency-type: 'direct'
+    open-pull-requests-limit: 10
+    groups:
+      react:
+        patterns:
+          - 'react'
+          - 'react-dom'
+          - '@types/react'
+          - '@types/react-dom'
+      eslint:
+        patterns:
+          - 'eslint*'
+      jest:
+        patterns:
+          - 'jest*'
+          - '@types/jest*'
+          - 'babel-jest'
+      prettier:
+        patterns:
+          - 'prettier'
+          - '@vkontakte/prettier-config'
     reviewers:
       - 'VKCOM/vk-sec'
   - package-ecosystem: 'github-actions'

@@ -470,13 +470,6 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
 
-		// Цвета категорий ML писем
-		calendarColorIconOrder: '#F94CA3',
-		calendarColorIconFinance: '#24C780',
-		calendarColorIconTravel: '#C15DF3',
-		calendarColorIconEvent: '#3BBAFE',
-		calendarColorIconOthers: '#3C82FD',
-
 		calendarColorBackgroundAccentTintThemed: {
 			normal: '#3E3E3F',
 			hover: '#2C2C2D',
