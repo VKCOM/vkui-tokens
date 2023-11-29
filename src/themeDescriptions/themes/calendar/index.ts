@@ -74,6 +74,14 @@ export const calendarTheme: ThemeCalendarDescription = {
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
 
+		// Цвета категорий ML писем
+		calendarColorIconOrder: '#ff54aa',
+		calendarColorIconFinance: '#2fc885',
+		calendarColorIconTravel: '#ba34fc',
+		calendarColorIconEvent: '#09a6fa',
+		calendarColorIconOthers: '#005FF9',
+		calendarColorIconAppointment: '#F8BA04',
+
 		// для кнопок, которые голубые в светлой теме и серые в темной
 		calendarColorBackgroundAccentTintThemed: {
 			normal: '#E3F0FD',
