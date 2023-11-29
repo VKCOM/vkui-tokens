@@ -47,7 +47,7 @@
     "@babel/core": "7.23.3",
     "@svgr/webpack": "8.1.0",
     "@types/color": "3.0.6",
-    "@types/common-tags": "1.8.1",
+    "@types/common-tags": "1.8.4",
     "@types/fs-extra": "11.0.4",
     "@types/lodash": "4.14.199",
     "@types/node": "18.11.10",
