@@ -55,7 +55,7 @@
     "@types/react-dom": "18.2.17",
     "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.13.1",
-    "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.1.4",
+    "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.1.7",
     "@vkontakte/icons": "2.85.0",
     "@vkontakte/prettier-config": "0.1.0",
     "@vkontakte/vk-bridge": "2.11.1",

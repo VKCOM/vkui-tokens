@@ -2092,9 +2092,10 @@
     "@typescript-eslint/types" "6.13.1"
     eslint-visitor-keys "^3.4.1"
 
-"@vkontakte/appearance@https://github.com/VKCOM/Appearance#v10.1.4":
+"@vkontakte/appearance@https://github.com/VKCOM/Appearance#v10.1.7":
   version "1.0.0"
-  resolved "https://github.com/VKCOM/Appearance#bad206f39cf09b2e937a838d9dfd2f563ab27f48"
+  uid "609e517e13a6c59a7801eaab48e4ca7c7376b76a"
+  resolved "https://github.com/VKCOM/Appearance#609e517e13a6c59a7801eaab48e4ca7c7376b76a"
 
 "@vkontakte/icons-sprite@2.0.0":
   version "2.0.0"
