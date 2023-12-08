@@ -46,10 +46,6 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// ),
 	colorBackgroundPositive: resolveColor(theme.colors.button_commerce_background),
 	colorBackgroundNegative: resolveColor(theme.colors.button_secondary_destructive_foreground),
-	// colorBackgroundNegativeTint: resolveColor(
-	// 	theme.colors.field_error_background,
-	// ),
-	// colorBackgroundPositiveTint: '#E8f9e8',
 	colorFieldBackground: resolveColor(theme.colors.field_background),
 	colorHeaderBackground: resolveColor(theme.colors.header_background),
 
@@ -150,6 +146,8 @@ const vkComLightColor: ColorsDescription = {
 	colors: {
 		...lightColors.colors,
 		...vkComColors(vkcom_light),
+		colorBackgroundNegativeTint: '#FAEBEB',
+		colorBackgroundPositiveTint: '#E8F9E8',
 	},
 };
 
@@ -274,6 +272,8 @@ const vkComDarkColor: ColorsDescription = {
 		colorSeparatorPrimary: '#363738',
 		colorSeparatorPrimary2x: '#444546',
 		colorSeparatorPrimary3x: '#505253',
+		colorBackgroundNegativeTint: '#522E2E',
+		colorBackgroundPositiveTint: '#2F422F',
 	},
 };
 

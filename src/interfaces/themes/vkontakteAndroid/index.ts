@@ -282,6 +282,9 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteImBubbleIncomingAlternateHighlighted: ColorDescription;
 	vkontakteImBubbleIncomingExpiringHighlighted: ColorDescription;
 	vkontakteImBubbleOutgoingHighlighted: ColorDescription;
+
+	vkontakteLandingSecondaryButtonBackground: ColorDescription;
+	vkontakteStoriesSkeletonLoaderBackground: ColorDescription;
 }
 
 export type VkontakteAndroidLocalColors = {
