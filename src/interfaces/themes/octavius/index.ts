@@ -119,7 +119,7 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	// Токены текстов и иконок действий
 	octaviusColorActionArchive: ColorDescription;
 
-	// Токены синей шапки
+	// Токены шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
 	octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
@@ -130,6 +130,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
 	octaviusColorHeaderFilterTextAlpha: ColorDescription;
+	octaviusColorHeaderTabActiveThemedAlpha: ColorDescription;
+	octaviusColorHeaderTabTextActiveThemed: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
@@ -140,6 +142,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
 	octaviusColorHeaderSearchChipBorderEditableAlpha: ColorDescription;
+	octaviusColorPortalSearchBackgroundAlpha: ColorDescription;
+	octaviusColorPortalSearchIconThemedAlpha: ColorDescription;
 
 	// Токены сайдбара
 	octaviusColorSidebarItemBackgroundAlpha: ColorDescription;
