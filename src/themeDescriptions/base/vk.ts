@@ -29,6 +29,7 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			// Background
 			colorBackgroundAccent: background.background_accent,
 			colorBackgroundAccentThemed: background.background_accent_themed,
+			colorBackgroundAccentThemedAlpha: background.background_accent_themed_alpha,
 			colorBackgroundAccentTint: background.background_accent_tint,
 			colorBackgroundAccentAlternative: {
 				light: '#2688EB',

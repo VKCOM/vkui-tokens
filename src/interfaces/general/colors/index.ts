@@ -46,6 +46,12 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundAccentThemed: ColorDescription;
 
 	/**
+	 * @desc Акцентный фон с прозрачностью, который меняется на белый в темной теме
+	 * @tags color, background, themed
+	 */
+	colorBackgroundAccentThemedAlpha: ColorDescription;
+
+	/**
 	 * @desc Тонированный акцентный фон
 	 * @tags color, background
 	 */
