@@ -17,31 +17,31 @@ export interface ThemeDobroDescription
 export interface ThemeDobroCssVars extends ThemeCssVars<ThemeDobro> {}
 
 interface ThemeDobroCustomTokens {
-	zIndexMailMenu: number;
-	zIndexPopover: number;
-	zIndexPopup: number;
-	zIndexMenu: number;
+	dobroZIndexMailMenu: number;
+	dobroZIndexPopover: number;
+	dobroZIndexPopup: number;
+	dobroZIndexMenu: number;
 }
 
 export interface ThemeDobroFonts {
-	fontFamilyDisplay: string;
-	fontFamilyDisplayMedium: string;
-	fontFamilyDisplayRegular: string;
+	dobroFontFamilyDisplay: string;
+	dobroFontFamilyDisplayMedium: string;
+	dobroFontFamilyDisplayRegular: string;
 }
 
 export interface ThemeDobroMedia {
-	widthToTouchS: string;
-	widthTouchM: string;
-	widthToTouchM: string;
-	widthTouchL: string;
-	widthToTouch: string;
-	widthFromTablet: string;
-	widthTablet: string;
-	widthToTablet: string;
-	widthFromDesktopS: string;
-	widthDesktopS: string;
-	widthToDesktopS: string;
-	widthFromDesktopM: string;
+	dobroWidthToTouchS: string;
+	dobroWidthTouchM: string;
+	dobroWidthToTouchM: string;
+	dobroWidthTouchL: string;
+	dobroWidthToTouch: string;
+	dobroWidthFromTablet: string;
+	dobroWidthTablet: string;
+	dobroWidthToTablet: string;
+	dobroWidthFromDesktopS: string;
+	dobroWidthDesktopS: string;
+	dobroWidthToDesktopS: string;
+	dobroWidthFromDesktopM: string;
 }
 
 export type BaseFonts = Omit<
