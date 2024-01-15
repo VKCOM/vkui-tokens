@@ -2104,10 +2104,10 @@
   dependencies:
     "@swc/helpers" "^0.5.1"
 
-"@vkontakte/icons@2.85.0", "@vkontakte/icons@^2.62.0":
-  version "2.85.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.85.0.tgz#d3d8029c426848b6c6ef4f9cd6c8d25699d44075"
-  integrity sha512-7SjTm1rPx+dRaFJg1gRdLpD0AoXg/1h50rlMB3xTYdnZbbTbL0rV9mgpUFdSM+tuCSQ/+RpFl88YTc3atAktaA==
+"@vkontakte/icons@2.92.0", "@vkontakte/icons@^2.62.0":
+  version "2.92.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.92.0.tgz#d3b4afea18e1f83f4fd5a9a5b0eec87dfb08a497"
+  integrity sha512-xcwA9Vk5pGoU4kOBVkUxFl39ag3tBAmWJ/wCQNsEzB00PynYiPELrvrPISWRkLKbM7I4Nwai5IngfPKwgH6BPQ==
   dependencies:
     "@vkontakte/icons-sprite" "2.0.0"
 
