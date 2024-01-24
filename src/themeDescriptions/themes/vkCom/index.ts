@@ -24,6 +24,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
 	colorBackgroundAccent: resolveColor(theme.colors.accent),
 	colorBackgroundAccentThemed: resolveColor(theme.colors.button_primary_background),
+	colorBackgroundAccentThemedAlpha: 'rgba(68, 123, 186, 0.12)',
 	// colorBackgroundAccentTint: '#5a9eff',
 	colorBackgroundAccentAlternative: resolveColor(theme.colors.accent),
 	colorBackground: resolveColor(theme.colors.background_page),
@@ -254,6 +255,7 @@ const vkComDarkColor: ColorsDescription = {
 			hover: '#D8DBDF',
 			active: '#CFD2D8',
 		},
+		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
 		colorBackgroundSecondaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.10)',
 			hover: 'rgba(255, 255, 255, 0.12)',
