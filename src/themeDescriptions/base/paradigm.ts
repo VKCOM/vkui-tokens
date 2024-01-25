@@ -28,6 +28,7 @@ export const lightColors: ColorsDescription = {
 		// Background
 		colorBackgroundAccent: '#005FF9',
 		colorBackgroundAccentThemed: '#005FF9',
+		colorBackgroundAccentThemedAlpha: 'rgba(0, 95, 249, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#FFFFFF',
 		colorBackgroundSecondary: '#F0F1F3',
@@ -158,6 +159,7 @@ export const darkColors: ColorsDescription = {
 		// Background
 		colorBackgroundAccent: '#2775FC',
 		colorBackgroundAccentThemed: '#FFFFFF',
+		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: colorBackgroundContentDark,
 		colorBackgroundSecondary: '#2A2A2B',
