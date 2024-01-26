@@ -4,44 +4,44 @@ import type { Fonts, TypographyBaseProps } from '@/interfaces/general/typography
 
 export interface ThemeDobro
 	extends Theme,
-		ThemeDobroMedia,
-		ThemeDobroCustomTokens,
-		ThemeDobroFonts {}
+	ThemeDobroMedia,
+	ThemeDobroCustomTokens,
+	ThemeDobroFonts { }
 
 export interface ThemeDobroDescription
 	extends ThemeDescription,
-		ThemeDobroMedia,
-		ThemeDobroCustomTokens,
-		ThemeDobroFonts {}
+	ThemeDobroMedia,
+	ThemeDobroCustomTokens,
+	ThemeDobroFonts { }
 
-export interface ThemeDobroCssVars extends ThemeCssVars<ThemeDobro> {}
+export interface ThemeDobroCssVars extends ThemeCssVars<ThemeDobro> { }
 
 interface ThemeDobroCustomTokens {
-	dobroZIndexMailMenu: number;
-	dobroZIndexPopover: number;
-	dobroZIndexPopup: number;
-	dobroZIndexMenu: number;
+	dobroPortalZIndex: number;
+	dobroPopoutZIndex: number;
+	dobroModalZIndex: number;
+	dobroMenuZIndex: number;
 }
 
 export interface ThemeDobroFonts {
-	dobroFontFamilyDisplay: string;
-	dobroFontFamilyDisplayMedium: string;
-	dobroFontFamilyDisplayRegular: string;
+	dobroFontFamily600: string;
+	dobroFontFamily500: string;
+	dobroFontFamily400: string;
 }
 
 export interface ThemeDobroMedia {
-	dobroWidthToTouchS: string;
-	dobroWidthTouchM: string;
-	dobroWidthToTouchM: string;
-	dobroWidthTouchL: string;
-	dobroWidthToTouch: string;
-	dobroWidthFromTablet: string;
-	dobroWidthTablet: string;
-	dobroWidthToTablet: string;
-	dobroWidthFromDesktopS: string;
-	dobroWidthDesktopS: string;
-	dobroWidthToDesktopS: string;
-	dobroWidthFromDesktopM: string;
+	dobroLayoutWidthToMobileS: string;
+	dobroLayoutWidthMobileM: string;
+	dobroLayoutWidthToMobileM: string;
+	dobroLayoutWidthMobileL: string;
+	dobroLayoutWidthToMobile: string;
+	dobroLayoutWidthFromTablet: string;
+	dobroLayoutWidthTablet: string;
+	dobroLayoutWidthToTablet: string;
+	dobroLayoutWidthFromDesktopS: string;
+	dobroLayoutWidthDesktopS: string;
+	dobroLayoutWidthToDesktopS: string;
+	dobroLayoutWidthDesktopM: string;
 }
 
 export type BaseFonts = Omit<
