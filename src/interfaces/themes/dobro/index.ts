@@ -4,17 +4,17 @@ import type { Fonts, TypographyBaseProps } from '@/interfaces/general/typography
 
 export interface ThemeDobro
 	extends Theme,
-	ThemeDobroMedia,
-	ThemeDobroCustomTokens,
-	ThemeDobroFonts { }
+		ThemeDobroMedia,
+		ThemeDobroCustomTokens,
+		ThemeDobroFonts {}
 
 export interface ThemeDobroDescription
 	extends ThemeDescription,
-	ThemeDobroMedia,
-	ThemeDobroCustomTokens,
-	ThemeDobroFonts { }
+		ThemeDobroMedia,
+		ThemeDobroCustomTokens,
+		ThemeDobroFonts {}
 
-export interface ThemeDobroCssVars extends ThemeCssVars<ThemeDobro> { }
+export interface ThemeDobroCssVars extends ThemeCssVars<ThemeDobro> {}
 
 interface ThemeDobroCustomTokens {
 	dobroPortalZIndex: number;
