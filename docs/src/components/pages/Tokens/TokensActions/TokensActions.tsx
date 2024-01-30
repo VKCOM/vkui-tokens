@@ -5,7 +5,7 @@ import {
 	CustomSelect,
 	Input,
 	SegmentedControl,
-	unstable_ChipsSelect as ChipsSelect,
+	ChipsSelect,
 	useAdaptivityWithJSMediaQueries,
 } from '@vkontakte/vkui';
 import clsx from 'clsx';
@@ -60,7 +60,7 @@ const TokensActions: FC<Props> = ({ tagsProps, themesProps, valueTypesProps, sea
 					placeholder="Выберите теги"
 					emptyText="Ничего не найдено"
 					creatable={false}
-					showSelected={false}
+					selectedBehavior="hide"
 					closeAfterSelect={false}
 					{...tagsProps}
 				/>
