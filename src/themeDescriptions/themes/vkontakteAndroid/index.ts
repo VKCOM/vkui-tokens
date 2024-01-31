@@ -399,8 +399,8 @@ export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 		...vkLightTheme.colors,
 		...vkontakteLocalColorLight,
 	},
-	...vkontakteTokens,
 	...androidFonts,
+	...vkontakteTokens,
 };
 
 export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
@@ -414,6 +414,6 @@ export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 		...vkDarkTheme.colors,
 		...vkontakteLocalColorDark,
 	},
-	...vkontakteTokens,
 	...androidFonts,
+	...vkontakteTokens,
 };

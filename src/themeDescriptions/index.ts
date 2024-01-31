@@ -1,6 +1,7 @@
 import { calendarDarkTheme, calendarTheme } from '@/themeDescriptions/themes/calendar';
 import { callsTheme } from '@/themeDescriptions/themes/calls';
 import { cloudDarkTheme, cloudTheme } from '@/themeDescriptions/themes/cloud';
+import { dobroDarkTheme, dobroTheme } from '@/themeDescriptions/themes/dobro';
 import { homeDarkTheme, homeTheme } from '@/themeDescriptions/themes/home';
 import { mediaDarkTheme, mediaTheme } from '@/themeDescriptions/themes/media';
 import { mycomTheme } from '@/themeDescriptions/themes/mycom';
@@ -85,6 +86,10 @@ export const themes = [
 	// Темы, наследуемые от Cloud
 	cloudTheme,
 	cloudDarkTheme,
+
+	// Темы, наследуемые от Dobro
+	dobroTheme,
+	dobroDarkTheme,
 
 	// Темы, наследуемые от PortalUI
 	portalUITheme,

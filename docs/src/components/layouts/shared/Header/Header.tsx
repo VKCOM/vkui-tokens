@@ -11,8 +11,8 @@ const Header: FC = () => {
 	const isTabletPlus = viewWidth > 3;
 
 	return (
-		<Card mode="shadow">
-			<PanelHeader separator={false}>
+        <Card mode="shadow">
+			<PanelHeader delimiter="none">
 				<div
 					className={clsx('flex items-center', isTabletPlus ? 'justify-between' : 'justify-center')}
 				>
@@ -23,7 +23,7 @@ const Header: FC = () => {
 				</div>
 			</PanelHeader>
 		</Card>
-	);
+    );
 };
 
 export default Header;
