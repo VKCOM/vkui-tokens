@@ -99,7 +99,7 @@
     "ts-node": "10.9.2",
     "tsconfig-paths": "4.2.0",
     "tscpaths": "0.0.9",
-    "type-fest": "4.10.1",
+    "type-fest": "4.10.2",
     "typescript": "5.2.2",
     "webpack": "5.89.0",
     "webpack-cli": "5.1.4",
