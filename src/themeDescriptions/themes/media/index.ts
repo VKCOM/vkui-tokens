@@ -85,7 +85,7 @@ export const mediaTheme: ThemeMediaDescription = {
 	/**
 	 * ТИПОГРАФИКА
 	 */
-	fontMediaTitle1: {
+	mediaFontMediaTitle1: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -101,7 +101,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaTitle2: {
+	mediaFontMediaTitle2: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -117,7 +117,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaTitle3: {
+	mediaFontMediaTitle3: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -133,7 +133,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaTitle4: {
+	mediaFontMediaTitle4: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -149,7 +149,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaTitle5: {
+	mediaFontMediaTitle5: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -165,7 +165,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaTitle6: {
+	mediaFontMediaTitle6: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -181,7 +181,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaLead: {
+	mediaFontMediaLead: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -197,7 +197,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaQuote: {
+	mediaFontMediaQuote: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
@@ -213,7 +213,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaQuotePerson: {
+	mediaFontMediaQuotePerson: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia2,
@@ -229,7 +229,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
-	fontMediaParagraph: {
+	mediaFontMediaParagraph: {
 		regular: {
 			fontFamily: fontFamilyArticle,
 			fontWeight: staticRef(fontWeightBase3),
@@ -245,14 +245,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '0.003em',
 		},
 	},
-	fontMediaParagraphSecondary: {
+	mediaFontMediaParagraphSecondary: {
 		regular: {
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
 			lineHeight: 24,
 		},
 	},
-	fontMediaTextSecondaryLight: {
+	mediaFontMediaTextSecondaryLight: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia4,
@@ -260,7 +260,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 20,
 		},
 	},
-	fontMediaCaption: {
+	mediaFontMediaCaption: {
 		regular: {
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 14,
@@ -272,7 +272,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 26,
 		},
 	},
-	fontMediaCaptionCaps: {
+	mediaFontMediaCaptionCaps: {
 		regular: {
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 13,

@@ -106,72 +106,72 @@ interface MediaUniqTokens {
 	 * @desc Заголовок h1
 	 * @tags font
 	 */
-	fontMediaTitle1: Adaptive<Font>;
+	mediaFontMediaTitle1: Adaptive<Font>;
 	/**
 	 * @desc Заголовок h2
 	 * @tags font
 	 */
-	fontMediaTitle2: Adaptive<Font>;
+	mediaFontMediaTitle2: Adaptive<Font>;
 	/**
 	 * @desc Заголовок h3
 	 * @tags font
 	 */
-	fontMediaTitle3: Adaptive<Font>;
+	mediaFontMediaTitle3: Adaptive<Font>;
 	/**
 	 * @desc Заголовок h4
 	 * @tags font
 	 */
-	fontMediaTitle4: Adaptive<Font>;
+	mediaFontMediaTitle4: Adaptive<Font>;
 	/**
 	 * @desc Заголовок h5
 	 * @tags font
 	 */
-	fontMediaTitle5: Adaptive<Font>;
+	mediaFontMediaTitle5: Adaptive<Font>;
 	/**
 	 * @desc Заголовок h6
 	 * @tags font
 	 */
-	fontMediaTitle6: Adaptive<Font>;
+	mediaFontMediaTitle6: Adaptive<Font>;
 	/**
 	 * @desc Лид статьи
 	 * @tags font
 	 */
-	fontMediaLead: Adaptive<Font>;
+	mediaFontMediaLead: Adaptive<Font>;
 	/**
 	 * @desc Цитата или другой врез
 	 * @tags font
 	 */
-	fontMediaQuote: Adaptive<Font>;
+	mediaFontMediaQuote: Adaptive<Font>;
 	/**
 	 * @desc Автор цитаты
 	 * @tags font
 	 */
-	fontMediaQuotePerson: Adaptive<Font>;
+	mediaFontMediaQuotePerson: Adaptive<Font>;
 	/**
 	 * @desc Параграф статьи
 	 * @tags font
 	 */
-	fontMediaParagraph: Adaptive<Font>;
+	mediaFontMediaParagraph: Adaptive<Font>;
 	/**
 	 * @desc Второстепенный блок текста
 	 * @tags font
 	 */
-	fontMediaParagraphSecondary: Adaptive<Font>;
+	mediaFontMediaParagraphSecondary: Adaptive<Font>;
 	/**
 	 * @desc Второстепенный текст
 	 * @tags font
 	 */
-	fontMediaTextSecondaryLight: Adaptive<Font>;
+	mediaFontMediaTextSecondaryLight: Adaptive<Font>;
 	/**
 	 * @desc Подпись под блоком статьи
 	 * @tags font
 	 */
-	fontMediaCaption: Adaptive<Font>;
+	mediaFontMediaCaption: Adaptive<Font>;
 	/**
 	 * @desc Подпись под блоком статьи заглавными буквами
 	 * @tags font
 	 */
-	fontMediaCaptionCaps: Adaptive<Font>;
+	mediaFontMediaCaptionCaps: Adaptive<Font>;
 	/**
 	 * @desc Семейство шрифтов статьи
 	 * @tags font
