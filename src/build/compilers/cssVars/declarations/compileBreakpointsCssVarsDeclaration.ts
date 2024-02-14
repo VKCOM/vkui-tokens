@@ -91,7 +91,7 @@ ${getVarString({ valuesObject: adaptiveValues.auto, prefix: '\t\t' })}
 											regularValues += `${regularName}: ${regularValue};\n`;
 										}
 									},
-							  }),
+								}),
 					)}
 				}
 			}
@@ -103,7 +103,7 @@ ${getVarString({ valuesObject: adaptiveValues.auto, prefix: '\t\t' })}
 						: getVarString({
 								valuesObject,
 								prefix: '',
-						  }),
+							}),
 				)}
 			}
 			`;

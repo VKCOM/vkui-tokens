@@ -74,7 +74,7 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			const expectedData = { ...{ breakpoints: { ...theme.breakpoints } } };
+			const expectedData = { breakpoints: { ...theme.breakpoints } };
 
 			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
 		});

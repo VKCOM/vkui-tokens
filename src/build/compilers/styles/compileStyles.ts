@@ -1,6 +1,7 @@
 import 'css.escape';
 
-import { deepStrictEqual } from 'assert';
+import { deepStrictEqual } from 'node:assert';
+
 import { stripIndent } from 'common-tags';
 
 import { getAllButColors } from '@/build/helpers/getAllButColors';
