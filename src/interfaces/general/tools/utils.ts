@@ -30,8 +30,8 @@ export type StringifyObject<Base> = {
 	[Key in keyof Base]: Base[Key] extends number
 		? number | string
 		: Base[Key] extends Record<string, any>
-		? StringifyObject<Base[Key]>
-		: Base[Key];
+			? StringifyObject<Base[Key]>
+			: Base[Key];
 };
 
 /**
@@ -41,5 +41,5 @@ export type StringifyObject<Base> = {
 export type DeepPartial<T> = T extends object
 	? {
 			[P in keyof T]?: DeepPartial<T[P]>;
-	  }
+		}
 	: T;

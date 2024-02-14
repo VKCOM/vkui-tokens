@@ -1,4 +1,5 @@
-import path from 'path';
+import path from 'node:path';
+
 import { JSDocTagInfo, Node, Project, SourceFile } from 'ts-morph';
 
 import { capitalize } from '@/build/helpers/capitalize';
