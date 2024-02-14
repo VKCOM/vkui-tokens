@@ -2063,9 +2063,9 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vkontakte/appearance@https://github.com/VKCOM/Appearance#v10.1.7":
-  version "1.0.0"
-  resolved "https://github.com/VKCOM/Appearance#609e517e13a6c59a7801eaab48e4ca7c7376b76a"
+"@vkontakte/appearance@https://github.com/VKCOM/Appearance#v10.2.0":
+  version "10.2.0"
+  resolved "https://github.com/VKCOM/Appearance#3d00c758d67a4bbbd49e86f6e2eb0459f04aeefc"
 
 "@vkontakte/icons-sprite@2.0.0":
   version "2.0.0"
