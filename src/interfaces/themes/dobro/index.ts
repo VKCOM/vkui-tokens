@@ -1,20 +1,10 @@
-import type { Theme, ThemeCssVars, ThemeDescription } from '@/interfaces/general';
-import type { Adaptive } from '@/interfaces/general/tools';
-import type { Fonts, TypographyBaseProps } from '@/interfaces/general/typography';
+import type { Theme, ThemeDescription } from '@/interfaces/general';
+import type { Breakpoints } from '@/interfaces/general/tools';
+import type { CustomMediaByViewport } from '@/interfaces/general/tools/customMedia';
+import type { DefaultViewports, ViewportsTuple } from '@/interfaces/general/tools/viewports';
+import type { ParadigmThemeCssVars } from '@/interfaces/namespaces/paradigm';
 
-export interface ThemeDobro
-	extends Theme,
-		ThemeDobroMedia,
-		ThemeDobroCustomTokens,
-		ThemeDobroFonts {}
-
-export interface ThemeDobroDescription
-	extends ThemeDescription,
-		ThemeDobroMedia,
-		ThemeDobroCustomTokens,
-		ThemeDobroFonts {}
-
-export interface ThemeDobroCssVars extends ThemeCssVars<ThemeDobro> {}
+type DobroViewportsTuple = ['touch', 'tablet', 'desktopS', 'desktopM'];
 
 interface ThemeDobroCustomTokens {
 	dobroPortalZIndex: number;
@@ -23,31 +13,29 @@ interface ThemeDobroCustomTokens {
 	dobroMenuZIndex: number;
 }
 
-export interface ThemeDobroFonts {
+interface ThemeDobroFonts {
 	dobroFontFamily600: string;
 	dobroFontFamily500: string;
 	dobroFontFamily400: string;
 }
 
-export interface ThemeDobroMedia {
-	dobroLayoutWidthToMobileS: string;
-	dobroLayoutWidthMobileM: string;
-	dobroLayoutWidthToMobileM: string;
-	dobroLayoutWidthMobileL: string;
-	dobroLayoutWidthToMobile: string;
-	dobroLayoutWidthFromTablet: string;
-	dobroLayoutWidthTablet: string;
-	dobroLayoutWidthToTablet: string;
-	dobroLayoutWidthFromDesktopS: string;
-	dobroLayoutWidthDesktopS: string;
-	dobroLayoutWidthToDesktopS: string;
-	dobroLayoutWidthDesktopM: string;
-}
+interface ThemeDobroStatic<Vt extends ViewportsTuple = DefaultViewports>
+	extends Theme,
+		ThemeDobroCustomTokens,
+		ThemeDobroFonts,
+		Breakpoints<Vt> {}
 
-export type BaseFonts = Omit<
-	{
-		[key in keyof Fonts]: Adaptive<Fonts[key]>;
-	},
-	'fontHeadline'
-> &
-	TypographyBaseProps;
+type ThemeDobroStaticType<Vt extends ViewportsTuple = DefaultViewports> = ThemeDobroStatic<Vt> &
+	CustomMediaByViewport<Vt>;
+
+interface ThemeDobroDescriptionStatic<Vt extends ViewportsTuple = DefaultViewports>
+	extends ThemeDescription,
+		ThemeDobroCustomTokens,
+		ThemeDobroFonts,
+		Breakpoints<Vt> {}
+
+interface ThemeDobroCssVarsStatic extends ParadigmThemeCssVars<DobroViewportsTuple, ThemeDobro> {}
+
+export type ThemeDobro = ThemeDobroStaticType<DobroViewportsTuple>;
+export type ThemeDobroDescription = ThemeDobroDescriptionStatic<DobroViewportsTuple>;
+export type ThemeDobroCssVars = ThemeDobroCssVarsStatic;
