@@ -29,18 +29,24 @@ export const dobroTheme: ThemeDobroDescription = {
 	dobroModalZIndex: 97,
 	dobroMenuZIndex: 98,
 
-	dobroLayoutWidthToMobileS: '(max-width: 499px)',
-	dobroLayoutWidthMobileM: '(min-width: 500px) and (max-width: 637px)',
-	dobroLayoutWidthToMobileM: '(max-width: 638px)',
-	dobroLayoutWidthMobileL: '(min-width: 639px) and (max-width: 767px)',
-	dobroLayoutWidthToMobile: '(max-width: 767px)',
-	dobroLayoutWidthFromTablet: '(min-width: 768px)',
-	dobroLayoutWidthTablet: '(min-width: 768px) and (max-width: 1003px)',
-	dobroLayoutWidthToTablet: '(max-width: 1003px)',
-	dobroLayoutWidthFromDesktopS: '(min-width: 1004px)',
-	dobroLayoutWidthDesktopS: '(min-width: 1004px) and (max-width: 1244px)',
-	dobroLayoutWidthToDesktopS: '(max-width: 1244px)',
-	dobroLayoutWidthDesktopM: '(min-width: 1245px)',
+	breakpoints: {
+		touch: {
+			breakpoint: 0,
+			adaptiveValue: 'regular',
+		},
+		tablet: {
+			breakpoint: 768,
+			adaptiveValue: 'regular',
+		},
+		desktopS: {
+			breakpoint: 1004,
+			adaptiveValue: 'compact',
+		},
+		desktopM: {
+			breakpoint: 1244,
+			adaptiveValue: 'compact',
+		},
+	},
 };
 
 export const dobroDarkTheme: ThemeDobroDescription = {

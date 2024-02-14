@@ -35,7 +35,7 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		const expectedData = { ...{ breakpoints: { ...theme.breakpoints } } };
+		const expectedData = { breakpoints: { ...theme.breakpoints } };
 
 		expect(extractCssVarsStrict(theme as ThemeCssVarsWide<Viewports>)).toStrictEqual(expectedData);
 	});
