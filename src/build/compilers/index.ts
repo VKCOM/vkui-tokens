@@ -1,5 +1,6 @@
+import path from 'node:path';
+
 import fs from 'fs-extra';
-import path from 'path';
 
 import { compileGetDeclarationString } from '@/build/compilers/cssVars/jsUtils/compileGetDeclarationString';
 import { compileDocsJSON } from '@/build/compilers/docs/compileDocsJSON';

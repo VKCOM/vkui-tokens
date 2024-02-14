@@ -23,15 +23,16 @@ type Valuefy<T, WithoutValue extends boolean = false> = WithoutValue extends tru
 	? CssVarValue
 	: WideCssVarValue<T>;
 
-export type NamifyObject<T, W extends boolean = false> = T extends Adaptive<T[keyof T]>
-	? {
-			auto: NamifyObject<T['regular'], true>;
-			regular: NamifyObject<T['regular'], W>;
-	  } & {
-			[key in Exclude<keyof T, 'regular'>]?: NamifyObject<Partial<T['regular']>, W>;
-	  }
-	: T extends Record<string, unknown>
-	? {
-			[key in keyof T]: NamifyObject<T[key], W>;
-	  }
-	: Valuefy<T, W>;
+export type NamifyObject<T, W extends boolean = false> =
+	T extends Adaptive<T[keyof T]>
+		? {
+				auto: NamifyObject<T['regular'], true>;
+				regular: NamifyObject<T['regular'], W>;
+			} & {
+				[key in Exclude<keyof T, 'regular'>]?: NamifyObject<Partial<T['regular']>, W>;
+			}
+		: T extends Record<string, unknown>
+			? {
+					[key in keyof T]: NamifyObject<T[key], W>;
+				}
+			: Valuefy<T, W>;
