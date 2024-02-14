@@ -6,11 +6,13 @@ node_modules/
 !/src/
 !/demo
 !/assets
+!/lint
 !/.github
 /**/*.d.ts
 /**/*.js
 !/tasks
 !/tasks/**/*.js
+!/lint/*.js
 !.eslintrc.js
 !jest.config.js
 !.prettierrc.js

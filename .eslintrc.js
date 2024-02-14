@@ -1,5 +1,7 @@
 const noUnusedVars = ['error', { ignoreRestSiblings: true, argsIgnorePattern: '^_.*$' }];
 
+const silence = require.resolve("./lint/silence-typescript.js")
+
 module.exports = {
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -23,7 +25,7 @@ module.exports = {
 		'plugin:import/errors',
 		'plugin:import/warnings',
 		'plugin:import/typescript',
-		'silence',
+		silence,
 		'plugin:prettier/recommended',
 		'plugin:@typescript-eslint/recommended',
 		'prettier',
@@ -110,7 +112,7 @@ module.exports = {
 		'unicorn/catch-error-name': [
 			'error',
 			{
-				caughtErrorsIgnorePattern: '^(error|err)$',
+				ignore: ['^(error|err)$'],
 			},
 		],
 		'unicorn/prefer-reflect-apply': 'off', // можно дропнуть вместе с поддержкой ie11
@@ -124,6 +126,28 @@ module.exports = {
 
 		'simple-import-sort/imports': 'error',
 		'simple-import-sort/exports': 'error',
+
+		'no-param-reassign': [
+			"warn",
+			{
+				props: true,
+				ignorePropertyModificationsFor: [
+					'acc',
+					'accumulator',
+					'e',
+					'ctx',
+					'context',
+					'req',
+					'request',
+					'res',
+					'response',
+					'$scope',
+					'staticContext',
+					'toValue',
+					'destination',
+				],
+			},
+		],
 	},
 	overrides: [
 		{
