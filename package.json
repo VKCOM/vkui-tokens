@@ -56,7 +56,7 @@
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0",
     "@vkontakte/icons": "2.95.0",
     "@vkontakte/prettier-config": "0.1.0",
-    "@vkontakte/vk-bridge": "2.12.2",
+    "@vkontakte/vk-bridge": "2.14.1",
     "@vkontakte/vkjs": "1.1.1",
     "@vkontakte/vkui": "6.0.0",
     "babel-jest": "29.7.0",
