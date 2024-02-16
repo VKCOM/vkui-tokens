@@ -55,23 +55,24 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 
 	sizeBasePadding: {
-		regular: 16,
-		compact: 20,
+		compactX: 16,
+		regular: 20,
 	},
 
 	sizeSelectIconPadding: {
-		regular: 7,
-		compact: 6,
+		compactX: 7,
+		compact: 7,
+		regular: 6,
 	},
 
 	sizePopupBasePadding: {
-		regular: x5,
-		compact: x8,
+		compactX: x5,
+		regular: x8,
 	},
 
 	sizePopupHeaderPadding: {
-		regular: x4,
-		compact: x6,
+		compactX: x4,
+		regular: x6,
 	},
 
 	sizeBorderWidthAccentSecondary: {
@@ -458,13 +459,14 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 
 	sizeFieldWidthMin: {
-		regular: 288,
-		compact: 380,
+		compactX: 288,
+		regular: 380,
 	},
 
 	sizeControlButtonWidthMin: {
-		regular: 130,
-		compact: 94,
+		compactX: 130,
+		compact: 130,
+		regular: 94,
 	},
 
 	/**
@@ -530,27 +532,31 @@ export const mediaTheme: ThemeMediaDescription = {
 		regular: x5,
 	},
 	sizeTabPadding: {
-		regular: x0,
-		compact: x4,
+		compactX: x0,
+		compact: x0,
+		regular: x4,
 	},
 
 	/**
 	 * ОТСТУПЫ МЕЖДУ ЭЛЕМЕНТАМИ УПРАВЛЕНИЯ
 	 */
 	sizeFieldHorizontalMargin: {
-		regular: x4,
-		compact: x5,
+		compactX: x4,
+		compact: x4,
+		regular: x5,
 	},
 	sizeIconMargin: {
 		regular: x2,
 	},
 	sizeTabMargin: {
-		regular: x8,
-		compact: x2,
+		compactX: x8,
+		compact: x8,
+		regular: x2,
 	},
 	sizePopupMargin: {
-		regular: x2,
-		compact: x6,
+		compactX: x2,
+		compact: x2,
+		regular: x6,
 	},
 
 	/**
@@ -558,8 +564,9 @@ export const mediaTheme: ThemeMediaDescription = {
 	 */
 
 	sizeIconUI: {
-		regular: x4,
-		compact: x4 + x05,
+		compactX: x4,
+		compact: x4,
+		regular: x4 + x05,
 	},
 
 	/**
