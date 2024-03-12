@@ -103,32 +103,42 @@ type SocialColorsDescriptions = {
 
 interface MediaUniqTokens {
 	/**
-	 * @desc Заголовок h1
+	 * @desc Главный заголовок статьи или медиа-страницы
 	 * @tags font
 	 */
 	mediaFontMediaTitle1: Adaptive<Font>;
 	/**
-	 * @desc Заголовок h2
+	 * @desc Уменьшенная версия главного заголовка
+	 * @tags font
+	 */
+	mediaFontMediaTitle1Tiny: Adaptive<Font>;
+	/**
+	 * @desc Заголовок 2 уровня
 	 * @tags font
 	 */
 	mediaFontMediaTitle2: Adaptive<Font>;
 	/**
-	 * @desc Заголовок h3
+	 * @desc Для 2 порядкового номера в нумерованном разделителе
+	 * @tags font
+	 */
+	mediaFontMediaTitle2Tiny: Adaptive<Font>;
+	/**
+	 * @desc Заголовок 3 уровня
 	 * @tags font
 	 */
 	mediaFontMediaTitle3: Adaptive<Font>;
 	/**
-	 * @desc Заголовок h4
+	 * @desc Заголовок 4 уровня
 	 * @tags font
 	 */
 	mediaFontMediaTitle4: Adaptive<Font>;
 	/**
-	 * @desc Заголовок h5
+	 * @desc Заголовок 5 уровня
 	 * @tags font
 	 */
 	mediaFontMediaTitle5: Adaptive<Font>;
 	/**
-	 * @desc Заголовок h6
+	 * @desc Заголовок 6 уровня
 	 * @tags font
 	 */
 	mediaFontMediaTitle6: Adaptive<Font>;
@@ -138,7 +148,7 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaLead: Adaptive<Font>;
 	/**
-	 * @desc Цитата или другой врез
+	 * @desc Цитаты, врезы в статьях, акценты текста на медиа-страницах
 	 * @tags font
 	 */
 	mediaFontMediaQuote: Adaptive<Font>;
@@ -148,27 +158,32 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaQuotePerson: Adaptive<Font>;
 	/**
-	 * @desc Параграф статьи
+	 * @desc Основной параграф наборного текст в статье по умолчанию
 	 * @tags font
 	 */
 	mediaFontMediaParagraph: Adaptive<Font>;
 	/**
-	 * @desc Второстепенный блок текста
+	 * @desc Используется только для выделения нумирации списков в статьях, чтобы списки выглядели акцентными
+	 * @tags font
+	 */
+	mediaFontMediaParagraphNumbering: Adaptive<Font>;
+	/**
+	 * @desc Второстепенный параграф наборным текстом в статье по умолчанию
 	 * @tags font
 	 */
 	mediaFontMediaParagraphSecondary: Adaptive<Font>;
 	/**
-	 * @desc Второстепенный текст
+	 * @desc Второстепенный не-наборный текст для поддержания визуальной иерархии
 	 * @tags font
 	 */
 	mediaFontMediaTextSecondaryLight: Adaptive<Font>;
 	/**
-	 * @desc Подпись под блоком статьи
+	 * @desc Подписи под изображениями, видео или другии блоками и врезами в статьях и на других медиа-страницах
 	 * @tags font
 	 */
 	mediaFontMediaCaption: Adaptive<Font>;
 	/**
-	 * @desc Подпись под блоком статьи заглавными буквами
+	 * @desc Бейджи и отбивки “Продолжение после рекламы”
 	 * @tags font
 	 */
 	mediaFontMediaCaptionCaps: Adaptive<Font>;
@@ -177,6 +192,10 @@ interface MediaUniqTokens {
 	 * @tags font
 	 */
 	fontFamilyArticle: Property.FontFamily;
+	fontWeightMedia1: Property.FontWeight;
+	fontWeightMedia2: Property.FontWeight;
+	fontWeightMedia3: Property.FontWeight;
+	fontWeightMedia4: Property.FontWeight;
 	fontH1: Adaptive<Font>;
 	fontH2: Adaptive<Font>;
 	fontH3: Adaptive<Font>;
