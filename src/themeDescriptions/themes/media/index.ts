@@ -14,7 +14,7 @@ const fontFamilyAccent: Property.FontFamily = `MailSans, ${fontFamilyBase}`;
 const fontFamilyArticle: Property.FontFamily = fontFamilyBase;
 const fontFamilyFallbacks: Property.FontFamily = fontFamilyBase;
 
-// const fontWeightMedia1 = 700;
+const fontWeightMedia1 = 700;
 const fontWeightMedia2 = 600;
 const fontWeightMedia3 = 500;
 const fontWeightMedia4 = 400;
@@ -28,6 +28,11 @@ export const mediaTheme: ThemeMediaDescription = {
 	fontFamilyArticle,
 	fontFamilyBase,
 	fontFamilyFallbacks,
+
+	fontWeightMedia1,
+	fontWeightMedia2,
+	fontWeightMedia3,
+	fontWeightMedia4,
 
 	colors: {
 		...lightTheme.colors,
@@ -102,6 +107,22 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
+	mediaFontMediaTitle1Tiny: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 30,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 40,
+			lineHeight: 48,
+			letterSpacing: '-0.005em',
+		},
+	},
 	mediaFontMediaTitle2: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -115,6 +136,22 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia3,
 			fontSize: 36,
 			lineHeight: 44,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaTitle2Tiny: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 26,
+			lineHeight: 32,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 32,
+			lineHeight: 40,
 			letterSpacing: '-0.005em',
 		},
 	},
@@ -251,6 +288,24 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
 			lineHeight: 24,
+		},
+	},
+	mediaFontMediaParagraphNumbering: {
+		regular: {
+			fontFamily: fontFamilyArticle,
+			fontWeight: staticRef(fontWeightMedia1),
+			fontSize: 16,
+			lineHeight: 28,
+			fontStyle: 'italic',
+			letterSpacing: '0.003em',
+		},
+		compact: {
+			fontFamily: fontFamilyArticle,
+			fontWeight: staticRef(fontWeightMedia1),
+			fontSize: 18,
+			lineHeight: 32,
+			fontStyle: 'italic',
+			letterSpacing: '0.003em',
 		},
 	},
 	mediaFontMediaTextSecondaryLight: {
