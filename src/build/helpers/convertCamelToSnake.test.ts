@@ -19,8 +19,15 @@ describe('convertCamelToSnake', () => {
 		expect(convertCamelToSnake('desktopS')).toBe('desktop_s');
 	});
 
+	it('should convert two words string with number prefix', () => {
+		expect(convertCamelToSnake('desktop3S')).toBe('desktop_3s');
+	});
+
 	it('should convert many words string', () => {
-		expect(convertCamelToSnake('helloWorldMyFriend')).toBe('hello_world_my_friend');
+		expect(convertCamelToSnake('hello1SWorldMy2XsFriend3Xs')).toBe(
+			'hello_1s_world_my_2xs_friend_3xs',
+		);
+		expect(convertCamelToSnake('sizeGridColumn1X2')).toBe('size_grid_column1_x2');
 	});
 
 	it('should convert special case 1', () => {
