@@ -1,5 +1,5 @@
 // 2Xs, 3Xs, 4S
-const SIZE_SUB_GROUP = '\\d[A-Z][a-z]{0,1}(?![^A-Z])';
+const SIZE_SUB_GROUP = '\\d[A-Z][a-z]{0,1}(?![0-9])';
 const REPLACE_REGEXP = new RegExp(`(?:^\\w|${SIZE_SUB_GROUP}|[A-Z]|\\b\\w)`, 'g');
 
 export function unCamelcasify(str: string, delimeter = '-'): string {
