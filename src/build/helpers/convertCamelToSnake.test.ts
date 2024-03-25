@@ -33,6 +33,9 @@ describe('convertCamelToSnake', () => {
 	it('should convert many words string', () => {
 		expect(convertCamelToSnake('fontCaption2Caps')).toBe('font_caption2_caps');
 	});
+	it('should convert many words string', () => {
+		expect(convertCamelToSnake('searchCaption2MailSans')).toBe('search_caption2_mail_sans');
+	});
 
 	it('should convert special case 1', () => {
 		expect(convertCamelToSnake('octaviusShadowLetterList')).toBe('octavius_shadow_letter_list');
