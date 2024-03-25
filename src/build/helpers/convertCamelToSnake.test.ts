@@ -28,7 +28,10 @@ describe('convertCamelToSnake', () => {
 			'hello_1s_world_my_2xs_friend_3xs',
 		);
 		expect(convertCamelToSnake('sizeGridColumn1X2')).toBe('size_grid_column1_x2');
-		expect(convertCamelToSnake('size2Xs3Regular2L')).toBe('size_2xs_3regular_2l');
+		expect(convertCamelToSnake('size2XsRegular2L')).toBe('size_2xs_regular_2l');
+	});
+	it('should convert many words string', () => {
+		expect(convertCamelToSnake('fontCaption2Caps')).toBe('font_caption2_caps');
 	});
 
 	it('should convert special case 1', () => {

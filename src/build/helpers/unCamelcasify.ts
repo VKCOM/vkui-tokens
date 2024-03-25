@@ -1,9 +1,9 @@
+import { SIZE_SUB_GROUP } from './convertCamelToSnake';
 // 2Xs, 3Xs, 4S
-const SIZE_SUB_GROUP = '\\d[A-Z][a-z]{0,1}(?![0-9])';
 const REPLACE_REGEXP = new RegExp(`(?:^\\w|${SIZE_SUB_GROUP}|[A-Z]|\\b\\w)`, 'g');
 
 export function unCamelcasify(str: string, delimeter = '-'): string {
-	return str.replace(REPLACE_REGEXP, (letter, index) => {
-		return `${index === 0 ? '' : delimeter}${letter.toLowerCase()}`;
-	});
+	return str
+		.replace(REPLACE_REGEXP, (letter) => `${delimeter}${letter.toLowerCase()}`)
+		.replace(new RegExp(`^${delimeter}`), '');
 }
