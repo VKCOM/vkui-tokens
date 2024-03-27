@@ -29,11 +29,7 @@ describe('convertCamelToSnake', () => {
 		);
 		expect(convertCamelToSnake('sizeGridColumn1X2')).toBe('size_grid_column1_x2');
 		expect(convertCamelToSnake('size2XsRegular2L')).toBe('size_2xs_regular_2l');
-	});
-	it('should convert many words string', () => {
 		expect(convertCamelToSnake('fontCaption2Caps')).toBe('font_caption2_caps');
-	});
-	it('should convert many words string', () => {
 		expect(convertCamelToSnake('searchCaption2MailSans')).toBe('search_caption2_mail_sans');
 	});
 
