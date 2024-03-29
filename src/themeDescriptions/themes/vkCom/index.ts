@@ -276,7 +276,6 @@ const vkComDarkColor: ColorsDescription = {
 		colorSeparatorPrimary3x: '#505253',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#2F422F',
-
 		colorAccentViolet: '#A94FFF',
 	},
 };
