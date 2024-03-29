@@ -1,8 +1,14 @@
-import { LocalVkontakteAndroidColorsDescriptionStruct } from '../../../interfaces/themes/vkontakteAndroid';
-import { ThemeVkontakteComDescription } from '../../../interfaces/themes/vkontakteCom';
-import { ThemeVkontakteComDarkDescription } from '../../../interfaces/themes/vkontakteComDark';
-import { vkComTheme, vkComThemeDark } from '../vkCom';
-import { vkontakteTokens } from '../vkontakteAndroid';
+import lodash from 'lodash';
+
+import { DeepPartial } from '@/interfaces/general/tools/utils';
+import { LocalVkontakteAndroidColorsDescriptionStruct } from '@/interfaces/themes/vkontakteAndroid';
+import { ThemeVkontakteComDescription } from '@/interfaces/themes/vkontakteCom';
+import { ThemeVkontakteComDarkDescription } from '@/interfaces/themes/vkontakteComDark';
+
+import { vkComFonts, vkComTheme, vkComThemeDark } from '../vkCom';
+import { vkontakteDisplayTitleFontsPartial, vkontakteTokens } from '../vkontakteAndroid';
+
+const themeNameBase = 'vkontakteCom';
 
 const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
@@ -105,6 +111,18 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteColorImBubbleGiftTextSecondary: '#AB9871',
 
 	vkontakteColorImTextName: '#2A5885',
+
+	vkontakteButtonMutedBackground: '#e5ebf1',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0)',
+	vkontakteButtonTertiaryForeground: '#346297',
+	vkontakteFloatButtonForeground: '#99a2ad',
+	vkontakteLandingBackground: '#ffffff',
+	vkontakteImBubbleIncomingAlternateHighlighted: '#f7f8fa',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#ccd3ff',
+	vkontakteImBubbleOutgoingHighlighted: '#add3ff',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(0, 57, 115, 0.102)',
+	vkontakteStoriesSkeletonLoaderBackground: '#cccccc',
 };
 
 const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -207,27 +225,49 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteColorImBubbleGiftTextSecondary: '#E3D3AC',
 
 	vkontakteColorImTextName: '#71AAEB',
+	vkontakteButtonMutedBackground: '#333333',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0)',
+	vkontakteButtonTertiaryForeground: '#e1e3e6',
+	vkontakteFloatButtonForeground: '#b2b2b2',
+	vkontakteLandingBackground: '#222222',
+	vkontakteImBubbleIncomingAlternateHighlighted: '#656565',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#404980',
+	vkontakteImBubbleOutgoingHighlighted: '#656565',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(255, 255, 255, 0.16)',
+	vkontakteStoriesSkeletonLoaderBackground: '#555555',
 };
+
+const vkontakteComFonts = lodash.merge<typeof vkComFonts, DeepPartial<typeof vkComFonts>>(
+	lodash.cloneDeep(vkComFonts),
+	vkontakteDisplayTitleFontsPartial,
+);
 
 export const vkontakteComTheme: ThemeVkontakteComDescription = {
 	...vkComTheme,
-	themeName: 'vkontakteCom',
+	themeName: themeNameBase,
+	themeNameBase,
+	themeInheritsFrom: vkComTheme.themeName,
 
 	colors: {
 		...vkComTheme.colors,
 		...vkontakteComLocalColorLight,
 	},
+	...vkontakteComFonts,
 	...vkontakteTokens,
 };
 
 export const vkontakteComThemeDark: ThemeVkontakteComDarkDescription = {
 	...vkComThemeDark,
-	themeName: 'vkontakteComDark',
+	themeName: `${themeNameBase}Dark`,
+	themeNameBase,
+	themeInheritsFrom: vkComThemeDark.themeName,
 	colorsScheme: 'dark',
 
 	colors: {
 		...vkComThemeDark.colors,
 		...vkontakteComLocalColorDark,
 	},
+	...vkontakteComFonts,
 	...vkontakteTokens,
 };

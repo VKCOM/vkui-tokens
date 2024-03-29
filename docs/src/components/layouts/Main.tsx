@@ -1,12 +1,11 @@
 import {
-	AdaptivityProvider,
-	Appearance,
-	AppRoot,
-	ConfigProvider,
-	Panel,
-	SizeType,
-	View,
-	WebviewType,
+    AdaptivityProvider,
+    Appearance,
+    AppRoot,
+    ConfigProvider,
+    Panel,
+    SizeType,
+    View,
 } from '@vkontakte/vkui';
 import React, { FC } from 'react';
 
@@ -17,7 +16,7 @@ type Props = {
 };
 
 const Main: FC<Props> = ({ children }) => (
-	<ConfigProvider appearance={Appearance.LIGHT} webviewType={WebviewType.INTERNAL}>
+	<ConfigProvider appearance={Appearance.LIGHT}>
 		<AdaptivityProvider sizeX={SizeType.COMPACT}>
 			<AppRoot>
 				<View activePanel="main">

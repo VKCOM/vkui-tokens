@@ -4,16 +4,18 @@ on:
     branches:
       - master
 
+permissions: write-all
+
 jobs:
   coverage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'yarn'
-      - uses: artiomtr/jest-coverage-report-action@v3
+      - uses: artiomtr/jest-coverage-report-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           annotations: coverage

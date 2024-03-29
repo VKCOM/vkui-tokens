@@ -1,6 +1,7 @@
 import { calendarDarkTheme, calendarTheme } from '@/themeDescriptions/themes/calendar';
 import { callsTheme } from '@/themeDescriptions/themes/calls';
 import { cloudDarkTheme, cloudTheme } from '@/themeDescriptions/themes/cloud';
+import { dobroDarkTheme, dobroTheme } from '@/themeDescriptions/themes/dobro';
 import { homeDarkTheme, homeTheme } from '@/themeDescriptions/themes/home';
 import { mediaDarkTheme, mediaTheme } from '@/themeDescriptions/themes/media';
 import { mycomTheme } from '@/themeDescriptions/themes/mycom';
@@ -30,6 +31,7 @@ import {
 import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/themes/vkontakteCom';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
 import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
+import { workspaceLandingsTheme } from '@/themeDescriptions/themes/workspaceLandings';
 
 import { darkThemeExport as paradigmBaseDark, lightTheme as paradigmBase } from './base/paradigm';
 import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk';
@@ -85,6 +87,10 @@ export const themes = [
 	cloudTheme,
 	cloudDarkTheme,
 
+	// Темы, наследуемые от Dobro
+	dobroTheme,
+	dobroDarkTheme,
+
 	// Темы, наследуемые от PortalUI
 	portalUITheme,
 	portalUIDarkTheme,
@@ -95,6 +101,9 @@ export const themes = [
 
 	// Темы, наследуемые от WorkspaceAdmin
 	workspaceAdminTheme,
+
+	// Темы, наследуемые от WorkspaceLandings
+	workspaceLandingsTheme,
 
 	// Прочие темы
 	callsTheme,

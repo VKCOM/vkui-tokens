@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias, staticRef } from '@/build/helpers/tokenHelpers';
@@ -20,6 +20,7 @@ const fontWeightBase3 = 400;
 
 const colorBackgroundTertiaryLight: Property.Color = '#F6F7F8';
 const colorBackgroundTertiaryDark: Property.Color = '#252525';
+const colorBackgroundContentDark: Property.Color = '#232324';
 
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
@@ -27,6 +28,7 @@ export const lightColors: ColorsDescription = {
 		// Background
 		colorBackgroundAccent: '#005FF9',
 		colorBackgroundAccentThemed: '#005FF9',
+		colorBackgroundAccentThemedAlpha: 'rgba(0, 95, 249, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#FFFFFF',
 		colorBackgroundSecondary: '#F0F1F3',
@@ -57,6 +59,7 @@ export const lightColors: ColorsDescription = {
 		colorFieldBackground: '#ffffff',
 		colorBackgroundModalInverse: '#303030',
 		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundContrastThemed: '#FFFFFF',
 		colorBackgroundAccentTint: '#5a9eff',
 
 		// Text
@@ -77,7 +80,6 @@ export const lightColors: ColorsDescription = {
 		colorTextContrastThemed: '#FFFFFF',
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
-		colorTextButton: '#005FF9',
 
 		// Icons
 		colorIconAccent: '#005FF9',
@@ -95,7 +97,6 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
-		colorIconButton: '#005FF9',
 
 		// Stroke
 		colorStrokeAccent: '#005FF9',
@@ -110,7 +111,6 @@ export const lightColors: ColorsDescription = {
 		colorStrokePositive: '#0DC268',
 		colorSeparatorPrimary2x: '#CDD0D5',
 		colorSeparatorPrimary3x: '#BFC3CA',
-		colorStrokeButton: '#005FF9',
 
 		// Palette
 		colorAccentBlue: '#005FF9',
@@ -118,6 +118,7 @@ export const lightColors: ColorsDescription = {
 		colorAccentRed: '#ED0A34',
 		colorAccentGreen: '#0DC268',
 		colorAccentOrange: '#FF9E00',
+		colorAccentOrangePeach: '#F9B54F',
 		colorAccentOrangeFire: '#F05C44',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
@@ -141,10 +142,13 @@ export const lightColors: ColorsDescription = {
 		colorSkeletonTo: '#E0E1E6',
 		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
-		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
-		colorOverlaySecondary: 'rgb(44, 45, 46, 0.5)',
+		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
+		colorOverlaySecondary: 'rgba(44, 45, 46, 0.5)',
 		colorSegmentedControl: '#FFFFFF',
 		colorTabbarTextInactive: '#99A2AD',
+		colorButtonText: '#005FF9',
+		colorButtonIcon: '#005FF9',
+		colorButtonStroke: '#005FF9',
 		colorTransparent: 'transparent',
 	},
 };
@@ -155,11 +159,12 @@ export const darkColors: ColorsDescription = {
 		// Background
 		colorBackgroundAccent: '#2775FC',
 		colorBackgroundAccentThemed: '#FFFFFF',
+		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
-		colorBackgroundContent: '#232324',
+		colorBackgroundContent: colorBackgroundContentDark,
 		colorBackgroundSecondary: '#2A2A2B',
 		colorBackgroundSecondaryAlpha: {
-			normal: 'rgba(255, 255, 255, 0.08)',
+			normal: 'rgba(255, 255, 255, 0.12)',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
@@ -185,6 +190,7 @@ export const darkColors: ColorsDescription = {
 		colorFieldBackground: '#232324',
 		colorBackgroundModalInverse: '#ffffff',
 		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundContrastThemed: '#303030',
 		colorBackgroundAccentTint: '#5a9eff',
 
 		// Text
@@ -205,7 +211,6 @@ export const darkColors: ColorsDescription = {
 		colorTextContrastThemed: '#2C2D2E',
 		colorLinkContrast: '#FFFFFF',
 		colorTextPositive: '#0DC268',
-		colorTextButton: '#FFFFFF',
 
 		// Icons
 		colorIconAccent: '#3C82FD',
@@ -223,7 +228,6 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
 		colorIconContrastSecondary: '#F2F3F5',
-		colorIconButton: '#FFFFFF',
 
 		// Stroke
 		colorStrokeAccent: '#3C82FD',
@@ -238,7 +242,6 @@ export const darkColors: ColorsDescription = {
 		colorSeparatorPrimary2x: '#202022',
 		colorSeparatorPrimary3x: '#2d2d2f',
 		colorStrokePositive: '#0DC268',
-		colorStrokeButton: '#FFFFFF',
 
 		// Palette
 		colorAccentBlue: '#2775FC',
@@ -246,6 +249,7 @@ export const darkColors: ColorsDescription = {
 		colorAccentRed: '#ED0A34',
 		colorAccentGreen: '#0DC268',
 		colorAccentOrange: '#FF9E00',
+		colorAccentOrangePeach: '#FFC062',
 		colorAccentOrangeFire: '#F05C44',
 		colorAccentPurple: '#4F6DDC',
 		colorAccentViolet: '#C15DF3',
@@ -269,10 +273,13 @@ export const darkColors: ColorsDescription = {
 		colorSkeletonTo: '#3E3F40',
 		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
-		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
-		colorOverlaySecondary: 'rgb(55, 56, 57, 0.5)',
+		colorOverlayPrimary: 'rgba(0, 0, 0, 0.72)',
+		colorOverlaySecondary: 'rgba(55, 56, 57, 0.5)',
 		colorSegmentedControl: '#626364',
 		colorTabbarTextInactive: '#76787A',
+		colorButtonText: '#FFFFFF',
+		colorButtonIcon: '#FFFFFF',
+		colorButtonStroke: '#FFFFFF',
 		colorTransparent: 'transparent',
 	},
 };
@@ -291,6 +298,44 @@ export const lightThemeBase: ThemeDescription = {
 	fontWeightBase1,
 	fontWeightBase2,
 	fontWeightBase3,
+	fontDisplayTitle1: {
+		regular: {
+			fontSize: 23,
+			lineHeight: 28,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle2: {
+		regular: {
+			fontSize: 21,
+			lineHeight: 26,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+		compact: {
+			fontSize: 22,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle3: {
+		regular: {
+			fontSize: 19,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle4: {
+		regular: {
+			fontSize: 17,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
 	fontTitle1: {
 		regular: {
 			fontSize: 24,
@@ -617,6 +662,7 @@ export const lightThemeBase: ThemeDescription = {
 
 	// Компонент PanelHeader
 	sizePanelHeaderHeight: {
+		compact: 48,
 		regular: 56,
 	},
 
@@ -680,6 +726,17 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 12,
 	},
 
+	// Размер границ
+	sizeBorder1x: {
+		regular: 1,
+	},
+	sizeBorder2x: {
+		regular: 0.5,
+	},
+	sizeBorder3x: {
+		regular: 0.33,
+	},
+
 	// Стандартные токены для отступов
 	spacingSizeXs: 4,
 	spacingSizeS: 6,
@@ -688,14 +745,18 @@ export const lightThemeBase: ThemeDescription = {
 	spacingSizeXl: 12,
 
 	// Прочие отступы
-	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
-	elevation1InvertY: '0 -2px 0 0 rgba(0, 16, 61, 0.04)',
-	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
-	elevation3: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
-	elevation4: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
+	elevation1: '0 2px 6px 0 rgba(0, 16, 61, 0.08), 0 1px 2px 0 rgba(0, 16, 61, 0.08)',
+	elevation1InvertY: '0 -2px 6px 0 rgba(0, 16, 61, 0.08), 0 -1px 2px 0 rgba(0, 16, 61, 0.08)',
+	elevation2:
+		'0 0 2px 0 rgba(0, 16, 61, 0.06), 0 0 6px 0 rgba(0, 16, 61, 0.06), 0 6px 12px 0 rgba(0, 16, 61, 0.06)',
+	elevation3:
+		'0 0 6px 0 rgba(0, 16, 61, 0.06), 0 6px 12px 0 rgba(0, 16, 61, 0.06), 0 6px 20px 0 rgba(0, 16, 61, 0.06), 0 10px 36px 0 rgba(0, 16, 61, 0.08)',
+	elevation4:
+		'0 2px 6px 0 rgba(0, 16, 61, 0.06), 0 16px 48px 0 rgba(0, 16, 61, 0.08), 0 24px 68px 0 rgba(0, 16, 61, 0.16)',
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+	gradient: getGradientPointsFromColor('#FFFFFF'),
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -743,6 +804,15 @@ export const lightTheme: ParadigmThemeDescription = {
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(13, 194, 104, 0.08)',
 		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.08)',
 		colorBackgroundPositiveTintThemed: '#ECFAF3',
+
+		colorTooltipBackgroundBlueTint: '#DDE9FF',
+		colorTooltipBackgroundGreenTint: '#CEEEE6',
+		colorTooltipBackgroundOrangeTint: '#F9D3BD',
+		colorTooltipBackgroundPurpleTint: '#F2E8FF',
+		colorTooltipTextBlueThemed: '#1C4479',
+		colorTooltipTextGreenThemed: '#087C6D',
+		colorTooltipTextOrangeThemed: '#78472A',
+		colorTooltipTextPurpleThemed: '#73519F',
 	},
 
 	breakpoints: {
@@ -986,6 +1056,7 @@ export const darkThemeElevation: Elevation = {
 export const darkThemeBase: ThemeDescription = {
 	...lightThemeBase,
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
+	gradient: getGradientPointsFromColor(colorBackgroundContentDark),
 	themeName: 'paradigmBaseDark',
 	...darkColors,
 	...darkThemeElevation,
@@ -1023,6 +1094,15 @@ export const darkTheme: ParadigmThemeDescription = {
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.1)',
 		colorBackgroundPositiveTintThemed: '#2b2b2c',
+
+		colorTooltipBackgroundBlueTint: '#1C4479',
+		colorTooltipBackgroundGreenTint: '#087C6D',
+		colorTooltipBackgroundOrangeTint: '#78472A',
+		colorTooltipBackgroundPurpleTint: '#73519F',
+		colorTooltipTextBlueThemed: '#FFFFFF',
+		colorTooltipTextGreenThemed: '#FFFFFF',
+		colorTooltipTextOrangeThemed: '#FFFFFF',
+		colorTooltipTextPurpleThemed: '#FFFFFF',
 	},
 };
 

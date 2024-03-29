@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ThemeCalendarDescription } from '@/interfaces/themes/calendar';
 import { ThemeCalendarDarkDescription } from '@/interfaces/themes/calendarDark';
@@ -73,6 +73,14 @@ export const calendarTheme: ThemeCalendarDescription = {
 		colorTextSecondary: '#93969B',
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
+
+		// Цвета категорий ML писем
+		calendarColorIconOrder: '#ff54aa',
+		calendarColorIconFinance: '#24C780',
+		calendarColorIconTravel: '#ba34fc',
+		calendarColorIconEvent: '#3BBAFE',
+		calendarColorIconOthers: '#005FF9',
+		calendarColorIconAppointment: '#FE9898',
 
 		// для кнопок, которые голубые в светлой теме и серые в темной
 		calendarColorBackgroundAccentTintThemed: {
@@ -265,6 +273,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 	fontTitle1: {
 		regular: {
 			...fontSize6,
+			lineHeight: '28px',
 			fontWeight: 500,
 		},
 		compact: {
@@ -350,7 +359,10 @@ export const calendarTheme: ThemeCalendarDescription = {
 		},
 	},
 	fontCaption1: {
-		regular: fontCaption1,
+		regular: {
+			...fontCaption1,
+			lineHeight: '14px',
+		},
 		compact: {
 			...fontCaption1,
 			lineHeight: '14px',
@@ -359,7 +371,9 @@ export const calendarTheme: ThemeCalendarDescription = {
 	fontCaption1Caps: {
 		regular: {
 			...fontCaption1,
+			lineHeight: '14px',
 			letterSpacing: '0.26px',
+			fontWeight: 500,
 			textTransform: 'uppercase',
 		},
 		compact: {
@@ -455,6 +469,14 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		colorTextSecondary: '#8C8E94',
 		colorIconPrimary: '#B4B4B4',
 		colorIconSecondary: '#5F5F5F',
+
+		// Цвета категорий ML писем
+		calendarColorIconOrder: '#D03784',
+		calendarColorIconFinance: '#24C780',
+		calendarColorIconTravel: '#A447D3',
+		calendarColorIconEvent: '#2DA9EB',
+		calendarColorIconOthers: '#3C82FD',
+		calendarColorIconAppointment: '#F8BA04',
 
 		calendarColorBackgroundAccentTintThemed: {
 			normal: '#3E3E3F',

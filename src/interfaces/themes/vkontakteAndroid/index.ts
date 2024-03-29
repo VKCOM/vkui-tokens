@@ -286,6 +286,19 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteColorImBubbleGiftTextSecondary: ColorDescription;
 
 	vkontakteColorImTextName: ColorDescription;
+
+	vkontakteButtonMutedBackground: ColorDescription;
+	vkontakteButtonTertiaryBackground: ColorDescription;
+	vkontakteButtonTertiaryForeground: ColorDescription;
+	vkontakteFloatButtonForeground: ColorDescription;
+	vkontakteLandingBackground: ColorDescription;
+
+	vkontakteImBubbleIncomingAlternateHighlighted: ColorDescription;
+	vkontakteImBubbleIncomingExpiringHighlighted: ColorDescription;
+	vkontakteImBubbleOutgoingHighlighted: ColorDescription;
+
+	vkontakteLandingSecondaryButtonBackground: ColorDescription;
+	vkontakteStoriesSkeletonLoaderBackground: ColorDescription;
 }
 
 export type VkontakteAndroidLocalColors = {

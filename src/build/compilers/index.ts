@@ -1,5 +1,6 @@
+import path from 'node:path';
+
 import fs from 'fs-extra';
-import path from 'path';
 
 import { compileGetDeclarationString } from '@/build/compilers/cssVars/jsUtils/compileGetDeclarationString';
 import { compileDocsJSON } from '@/build/compilers/docs/compileDocsJSON';
@@ -58,6 +59,7 @@ function writeJsonFile<T = Theme>(themePath: string, theme: T, _?: ThemeBuildTyp
 	console.log(`успешно записали файл ${fileName}`);
 }
 
+// eslint-disable-next-line max-params
 function writeTsFile<T extends SpecialTokens = Theme>(
 	themePath: string,
 	theme: T,
@@ -123,9 +125,11 @@ function writeStyleFiles<PT extends PixelifyTheme = PixelifyTheme>(
 	});
 }
 
+// eslint-disable-next-line max-params
 function writeCssVarsSourceFile<PT extends PixelifyTheme = PixelifyTheme>(
 	themePath: string,
 	theme: PT,
+	// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 	cssVarsTheme: any,
 	themeBase?: PT,
 ): void {

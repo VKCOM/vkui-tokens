@@ -1,6 +1,6 @@
 import { PixelifyTheme, Theme } from '@/interfaces/general';
 
-const numericCSSProperties = /^(breakpoints$|fontWeight|zIndex)/i;
+const numericCSSProperties = /^(breakpoints$|fontWeight|zIndex|opacity|tone)/i;
 
 /**
  * Процессор, который превращает численные значения переменных в строковые
@@ -22,7 +22,7 @@ export function pixelifyValues<T = Theme>(sourceTheme: T): PixelifyTheme<T> {
 			theme[key] = pixelifyValues(value as any as Partial<T>);
 		}
 
-		if (Number.isInteger(value)) {
+		if (typeof value === 'number') {
 			theme[key] = `${value}px`;
 		}
 	});

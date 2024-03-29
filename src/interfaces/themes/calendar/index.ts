@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ThemeCssVars } from '@/interfaces/general';
 import {
@@ -192,6 +192,14 @@ export interface LocalCalendarColorDescriptionStruct {
 	// цвет заливки иконок
 	calendarColorIconPrimary: ColorDescription;
 	// #endregion Grid
+
+	// Категории событий
+	calendarColorIconOrder: ColorDescription;
+	calendarColorIconFinance: ColorDescription;
+	calendarColorIconTravel: ColorDescription;
+	calendarColorIconEvent: ColorDescription;
+	calendarColorIconOthers: ColorDescription;
+	calendarColorIconAppointment: ColorDescription;
 }
 
 export type CalendarLocalColors = {

@@ -1,3 +1,6 @@
+import lodash from 'lodash';
+
+import { DeepPartial } from '@/interfaces/general/tools/utils';
 import type {
 	LocalVkontakteAndroidColorsDescriptionStruct,
 	ThemeVkontakteAndroidDescription,
@@ -5,7 +8,9 @@ import type {
 } from '@/interfaces/themes/vkontakteAndroid';
 import type { ThemeVkontakteAndroidDarkDescription } from '@/interfaces/themes/vkontakteAndroidDark';
 
-import { darkTheme as vkDarkTheme, lightTheme as vkLightTheme } from '../../base/vk';
+import { darkTheme as vkDarkTheme, fonts, lightTheme as vkLightTheme } from '../../base/vk';
+
+const themeNameBase = 'vkontakteAndroid';
 
 export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
@@ -96,6 +101,19 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	vkontakteColorImBubbleGiftTextSecondary: '#AB9871',
 
 	vkontakteColorImTextName: '#2D81E0',
+
+	vkontakteButtonMutedBackground: '#f2f3f5',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0.00)',
+	vkontakteButtonTertiaryForeground: '#2d81e0',
+	vkontakteFloatButtonForeground: '#99a2ad',
+	vkontakteLandingBackground: '#ffffff',
+
+	vkontakteImBubbleIncomingAlternateHighlighted: '#f9f9f9',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#ccd3ff',
+	vkontakteImBubbleOutgoingHighlighted: '#add3ff',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(0, 57, 115, 0.10)',
+	vkontakteStoriesSkeletonLoaderBackground: '#454647',
 };
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -187,7 +205,23 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	vkontakteColorImBubbleGiftTextSecondary: '#E3D3AC',
 
 	vkontakteColorImTextName: '#529EF4',
+
+	vkontakteButtonMutedBackground: '#2c2d2e',
+	vkontakteButtonTertiaryBackground: 'rgba(0, 0, 0, 0.00)',
+	vkontakteButtonTertiaryForeground: '#e1e3e6',
+	vkontakteFloatButtonForeground: '#aaaeb3',
+	vkontakteLandingBackground: '#19191a',
+
+	vkontakteImBubbleIncomingAlternateHighlighted: '#5d5f61',
+	vkontakteImBubbleIncomingExpiringHighlighted: '#404980',
+	vkontakteImBubbleOutgoingHighlighted: '#5d5f61',
+
+	vkontakteLandingSecondaryButtonBackground: 'rgba(255, 255, 255, 0.15)',
+	vkontakteStoriesSkeletonLoaderBackground: '#c4c8cc',
 };
+
+const fontFamilyAccent =
+	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 
 const gradients: VkontakteAndroidGradients = {
 	vkontakteGradientAquamarineBlue: '#7DF1FA, #2BB4D6',
@@ -226,29 +260,160 @@ const gradients: VkontakteAndroidGradients = {
 	vkontakteGradientWomensDay: '#FF99CC, #E52E6A',
 };
 
+export const vkontakteDisplayTitleFontsPartial: DeepPartial<typeof fonts> = {
+	fontDisplayTitle1: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle2: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle3: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle4: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+};
+
+export const vkontakteMobileFonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+	lodash.cloneDeep(fonts),
+	vkontakteDisplayTitleFontsPartial,
+);
+
+const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+	lodash.cloneDeep(vkontakteMobileFonts),
+	{
+		fontDisplayTitle1: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
+		fontDisplayTitle2: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+			compact: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
+		fontDisplayTitle3: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
+		fontDisplayTitle4: {
+			regular: {
+				fontFamily: fontFamilyAccent,
+			},
+		},
+		fontHeadline1: {
+			regular: {
+				letterSpacing: '0.15px',
+			},
+			compact: {
+				letterSpacing: '0.15px',
+			},
+		},
+		fontText: {
+			regular: {
+				letterSpacing: '0.15px',
+			},
+			compact: {
+				letterSpacing: '0.15px',
+			},
+		},
+		fontSubhead: {
+			regular: {
+				letterSpacing: '0.15px',
+			},
+			compact: {
+				letterSpacing: '0.15px',
+			},
+		},
+		fontFootnote: {
+			regular: {
+				letterSpacing: '0.2px',
+			},
+		},
+		fontFootnoteCaps: {
+			regular: {
+				letterSpacing: '0.2px',
+			},
+		},
+		fontCaption1: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption1Caps: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption2: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption2Caps: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption3: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+		fontCaption3Caps: {
+			regular: {
+				letterSpacing: '0.3px',
+			},
+		},
+	},
+);
+
 export const vkontakteTokens = {
+	fontFamilyAccent,
 	...gradients,
 };
 
 export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 	...vkLightTheme,
-	themeName: 'vkontakteAndroid',
+	themeName: themeNameBase,
+	themeNameBase,
+	themeInheritsFrom: vkLightTheme.themeName,
 
 	colors: {
 		...vkLightTheme.colors,
 		...vkontakteLocalColorLight,
 	},
+	...androidFonts,
 	...vkontakteTokens,
 };
 
 export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 	...vkDarkTheme,
-	themeName: 'vkontakteAndroidDark',
+	themeName: `${themeNameBase}Dark`,
+	themeNameBase,
+	themeInheritsFrom: vkDarkTheme.themeName,
 	colorsScheme: 'dark',
 
 	colors: {
 		...vkDarkTheme.colors,
 		...vkontakteLocalColorDark,
 	},
+	...androidFonts,
 	...vkontakteTokens,
 };

@@ -421,6 +421,24 @@ export interface Sizes {
 	 * @tags size, component
 	 */
 	sizeSubnavigationBarPaddingVertical: number;
+
+	/**
+	 * @desc Размер границ для экранов с разрешением 1х
+	 * @tags size, component
+	 */
+	sizeBorder1x: number;
+
+	/**
+	 * @desc Размер границ для экранов с разрешением 3х
+	 * @tags size, component
+	 */
+	sizeBorder2x: number;
+
+	/**
+	 * @desc Размер границ для экранов с разрешением 3х
+	 * @tags size, component
+	 */
+	sizeBorder3x: number;
 }
 
 export interface SpacingSizes {
