@@ -1,27 +1,27 @@
-import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
-import { alias } from '@/build/helpers/tokenHelpers';
-import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
-import { Elevation } from '@/interfaces/general/elevation';
-import { Gradients } from '@/interfaces/general/gradients';
-import { Adaptive } from '@/interfaces/general/tools';
-import { Fonts, TypographyBaseProps } from '@/interfaces/general/typography';
-import figma from '@/themeDescriptions/base/figma/vk.json';
+import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor'
+import { alias } from '@/build/helpers/tokenHelpers'
+import { ColorsDescription, ThemeDescription } from '@/interfaces/general'
+import { Elevation } from '@/interfaces/general/elevation'
+import { Gradients } from '@/interfaces/general/gradients'
+import { Adaptive } from '@/interfaces/general/tools'
+import { Fonts, TypographyBaseProps } from '@/interfaces/general/typography'
+import figma from '@/themeDescriptions/base/figma/vk.json'
 
-const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const fontFamilyAccent = fontFamilyFallbacks;
-const fontFamilyBase = fontFamilyFallbacks;
-const fontWeightAccent1 = 600;
-const fontWeightAccent2 = 500;
-const fontWeightAccent3 = 400;
-const fontWeightBase1 = 600;
-const fontWeightBase2 = 500;
-const fontWeightBase3 = 400;
+const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif'
+const fontFamilyAccent = fontFamilyFallbacks
+const fontFamilyBase = fontFamilyFallbacks
+const fontWeightAccent1 = 600
+const fontWeightAccent2 = 500
+const fontWeightAccent3 = 400
+const fontWeightBase1 = 600
+const fontWeightBase2 = 500
+const fontWeightBase3 = 400
 
 // eslint-disable-next-line max-lines-per-function
 export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescription => {
-	const { background, text, icons, stroke, palette, other } = figma[colorsScheme];
+	const { background, text, icons, stroke, palette, other } = figma[colorsScheme]
 
-	const { states } = figma.light;
+	const { states } = figma.light
 
 	return {
 		colorsScheme,
@@ -215,17 +215,17 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			}[colorsScheme],
 			colorTransparent: 'transparent',
 		},
-	};
-};
+	}
+}
 
-export const lightColors: ColorsDescription = colorFromFigma('light');
+export const lightColors: ColorsDescription = colorFromFigma('light')
 
 export const lightGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(figma.light.background.background_tertiary),
 	gradient: getGradientPointsFromColor('#FFFFFF'),
-};
+}
 
 export const lightElevation: Elevation = {
 	elevation1: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
@@ -233,33 +233,32 @@ export const lightElevation: Elevation = {
 	elevation2: '0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
 	elevation3: '0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
 	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
-};
+}
 
-export const darkColors: ColorsDescription = colorFromFigma('dark');
+export const darkColors: ColorsDescription = colorFromFigma('dark')
 
 export const darkGradient: Gradients = {
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(figma.dark.background.background_tertiary),
 	gradient: getGradientPointsFromColor(figma.dark.background.background_content),
-};
+}
 
 export const darkElevation: Elevation = {
-	// TODO: Тени (Поправить для Dark)
-	elevation1: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
-	elevation1InvertY: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
-	elevation2: '0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
-	elevation3: '0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
-	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
-};
+	elevation1: '0px 2px 2px 0px rgba(0, 0, 0, 0.20), 0px 0px 2px 0px rgba(0, 0, 0, 0.10)',
+	elevation1InvertY: '0px 2px 2px 0px rgba(0, 0, 0, 0.20), 0px 0px -2px 0px rgba(0, 0, 0, 0.10)',
+	elevation2: '0px 0px 4px 0px rgba(0, 0, 0, 0.20), 0px 4px 8px 0px rgba(0, 0, 0, 0.15)',
+	elevation3: '0px 4px 16px 0px rgba(0, 0, 0, 0.30), 0px 0px 2px 0px rgba(0, 0, 0, 0.30)',
+	elevation4: '0px 16px 16px 0px rgba(0, 0, 0, 0.20), 0px 0px 8px 0px rgba(0, 0, 0, 0.10)',
+}
 
 type BaseFonts = Omit<
 	{
-		[key in keyof Fonts]: Adaptive<Fonts[key]>;
+		[key in keyof Fonts]: Adaptive<Fonts[key]>
 	},
 	'fontHeadline'
 > &
-	TypographyBaseProps;
+	TypographyBaseProps
 
 export const fonts: BaseFonts = {
 	// Типографика
@@ -458,7 +457,7 @@ export const fonts: BaseFonts = {
 			textTransform: 'uppercase',
 		},
 	},
-};
+}
 
 export const lightTheme: ThemeDescription = {
 	themeName: 'vkBase',
@@ -725,7 +724,7 @@ export const lightTheme: ThemeDescription = {
 	opacityDisableAccessibility: 0.64,
 	zIndexModal: 99,
 	zIndexPopout: 100,
-};
+}
 
 export const darkTheme: ThemeDescription = {
 	...lightTheme,
@@ -735,4 +734,4 @@ export const darkTheme: ThemeDescription = {
 	themeName: 'vkBaseDark',
 	themeInheritsFrom: 'vkBase',
 	colorsScheme: 'dark',
-};
+}
