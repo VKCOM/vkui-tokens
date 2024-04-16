@@ -260,6 +260,19 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorBackgroundNegativeTintAlpha: ColorDescription;
 	octaviusColorBackgroundPositiveTintAlpha: ColorDescription;
 	octaviusColorButtonBackgroundContrastAlpha: ColorDescription;
+
+	// Токены для снекбара
+	octaviusColorSnackbarIconPositive: ColorDescription;
+	octaviusColorSnackbarIconNegative: ColorDescription;
+	octaviusColorSnackbarIconAccent: ColorDescription;
+	octaviusColorSnackbarIconSecondary: ColorDescription;
+	octaviusColorSnackbarIconWarning: ColorDescription;
+
+	octaviusColorSnackbarTextAccent: ColorDescription;
+	octaviusColorSnackbarTextContrast: ColorDescription;
+
+	octaviusColorSnackbarBackground: ColorDescription;
+	octaviusColorSnackbarTransparent: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
