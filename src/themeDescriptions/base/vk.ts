@@ -245,12 +245,11 @@ export const darkGradient: Gradients = {
 };
 
 export const darkElevation: Elevation = {
-	// TODO: Тени (Поправить для Dark)
-	elevation1: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)',
-	elevation1InvertY: '0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)',
-	elevation2: '0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)',
-	elevation3: '0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)',
-	elevation4: '0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)',
+	elevation1: '0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20)',
+	elevation1InvertY: '0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20)',
+	elevation2: '0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)',
+	elevation3: '0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)',
+	elevation4: '0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)',
 };
 
 type BaseFonts = Omit<
@@ -305,7 +304,7 @@ export const fonts: BaseFonts = {
 	fontDisplayTitle4: {
 		regular: {
 			fontSize: 17,
-			lineHeight: 24,
+			lineHeight: 22,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent1,
 		},
@@ -709,11 +708,14 @@ export const lightTheme: ThemeDescription = {
 	},
 
 	// Стандартные токены для отступов
-	spacingSizeXs: 4,
-	spacingSizeS: 6,
-	spacingSizeM: 8,
-	spacingSizeL: 10,
-	spacingSizeXl: 12,
+	spacingSize3Xs: 2,
+	spacingSize2Xs: 4,
+	spacingSizeXs: 6,
+	spacingSizeS: 8,
+	spacingSizeM: 12,
+	spacingSizeL: 16,
+	spacingSizeXl: 20,
+	spacingSize2Xl: 24,
 
 	// Разное
 	animationDurationL: '0.4s',
