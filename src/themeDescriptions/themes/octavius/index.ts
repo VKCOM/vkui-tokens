@@ -226,6 +226,23 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			hover: 'rgba(255, 255, 255, 0.04)',
 			active: 'rgba(255, 255, 255, 0.08)',
 		},
+
+		// Snackbar
+		octaviusColorSnackbarIconPositive: '#0DC268',
+		octaviusColorSnackbarIconNegative: '#FF5C5C',
+		octaviusColorSnackbarIconAccent: '#589BFF',
+		octaviusColorSnackbarIconSecondary: '#9C9DA2',
+		octaviusColorSnackbarIconWarning: '#FF9E00',
+
+		octaviusColorSnackbarTextAccent: '#589BFF',
+		octaviusColorSnackbarTextContrast: '#FFFFFF',
+
+		octaviusColorSnackbarBackground: '#303030',
+		octaviusColorSnackbarTransparent: {
+			normal: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.04)',
+			hover: 'rgba(255, 255, 255, 0.08)',
+		},
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',
