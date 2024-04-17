@@ -305,7 +305,7 @@ export const fonts: BaseFonts = {
 	fontDisplayTitle4: {
 		regular: {
 			fontSize: 17,
-			lineHeight: 24,
+			lineHeight: 22,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent1,
 		},

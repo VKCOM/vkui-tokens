@@ -315,7 +315,7 @@ export const lightThemeBase: ThemeDescription = {
 		},
 		compact: {
 			fontSize: 22,
-			lineHeight: 24,
+			lineHeight: 22,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent1,
 		},
