@@ -709,11 +709,14 @@ export const lightTheme: ThemeDescription = {
 	},
 
 	// Стандартные токены для отступов
-	spacingSizeXs: 4,
-	spacingSizeS: 6,
-	spacingSizeM: 8,
-	spacingSizeL: 10,
-	spacingSizeXl: 12,
+	spacingSize3Xs: 2,
+	spacingSize2Xs: 4,
+	spacingSizeXs: 6,
+	spacingSizeS: 8,
+	spacingSizeM: 12,
+	spacingSizeL: 16,
+	spacingSizeXl: 20,
+	spacingSize2Xl: 24,
 
 	// Разное
 	animationDurationL: '0.4s',
