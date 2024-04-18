@@ -2098,10 +2098,10 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.14.1.tgz#5966d9e2837570d7aed78d654bfda4ba83695c54"
   integrity sha512-ygUkWmAj1Yca1y6OKcFRhZjM2jJ8dlD/YM0hbz86iXc3Xrd8fc1aKGAOLmgPsXkqBR3mWMxA7PoNdlVLB97Qpg==
 
-"@vkontakte/vkjs@1.1.1", "@vkontakte/vkjs@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-1.1.1.tgz#892b253afe3537865fe85f4370bf6728ebc529c2"
-  integrity sha512-+tOfx6M+tsHweG+2xEHUUA5SAWbA2dYYX8Owa6uQ8OpwDq6LCgGikCas2SWDA61N5IXerfbfhDaKwFTuoG2vMg==
+"@vkontakte/vkjs@1.1.2", "@vkontakte/vkjs@^1.1.1":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-1.1.2.tgz#bde6c651aa2aac63faac008cd0121a96df6fab5f"
+  integrity sha512-GNrbq0zDW3hsPAnS7N6jML5G7+p1KetvaBt9wblwF5HgrKaHNFoaHnF50x8opIBGMZqS1OTkYJ/7BXA5hiVXjg==
   dependencies:
     "@swc/helpers" "^0.5.0"
 
