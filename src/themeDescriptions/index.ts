@@ -23,6 +23,8 @@ import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
 import { searchTheme } from '@/themeDescriptions/themes/search';
 import { todoTheme } from '@/themeDescriptions/themes/todo';
 import { vkComTheme, vkComThemeDark } from '@/themeDescriptions/themes/vkCom';
+import { vkIdOkTheme, vkIdOkThemeDark } from '@/themeDescriptions/themes/vkIdOk';
+import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '@/themeDescriptions/themes/vkIdOkIOS';
 import { vkIOSTheme, vkIOSThemeDark } from '@/themeDescriptions/themes/vkIOS';
 import {
 	vkontakteAndroidTheme,
@@ -32,8 +34,6 @@ import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/th
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
 import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
 import { workspaceLandingsTheme } from '@/themeDescriptions/themes/workspaceLandings';
-import { vkIdOkTheme, vkIdOkThemeDark } from '@/themeDescriptions/themes/vkIdOk';
-import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '@/themeDescriptions/themes/vkIdOkIOS';
 
 import { darkThemeExport as paradigmBaseDark, lightTheme as paradigmBase } from './base/paradigm';
 import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk';
