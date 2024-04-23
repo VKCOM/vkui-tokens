@@ -32,6 +32,8 @@ import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/th
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
 import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
 import { workspaceLandingsTheme } from '@/themeDescriptions/themes/workspaceLandings';
+import { vkIdOkTheme, vkIdOkThemeDark } from '@/themeDescriptions/themes/vkIdOk';
+import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '@/themeDescriptions/themes/vkIdOkIOS';
 
 import { darkThemeExport as paradigmBaseDark, lightTheme as paradigmBase } from './base/paradigm';
 import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk';
@@ -54,6 +56,10 @@ export const themes = [
 	vkontakteIOSThemeDark,
 	vkontakteComTheme,
 	vkontakteComThemeDark,
+	vkIdOkTheme,
+	vkIdOkThemeDark,
+	vkIdOkIOSTheme,
+	vkIdOkIOSThemeDark,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius
