@@ -23,6 +23,8 @@ import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
 import { searchTheme } from '@/themeDescriptions/themes/search';
 import { todoTheme } from '@/themeDescriptions/themes/todo';
 import { vkComTheme, vkComThemeDark } from '@/themeDescriptions/themes/vkCom';
+import { vkIdOkTheme, vkIdOkThemeDark } from '@/themeDescriptions/themes/vkIdOk';
+import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '@/themeDescriptions/themes/vkIdOkIOS';
 import { vkIOSTheme, vkIOSThemeDark } from '@/themeDescriptions/themes/vkIOS';
 import {
 	vkontakteAndroidTheme,
@@ -54,6 +56,10 @@ export const themes = [
 	vkontakteIOSThemeDark,
 	vkontakteComTheme,
 	vkontakteComThemeDark,
+	vkIdOkTheme,
+	vkIdOkThemeDark,
+	vkIdOkIOSTheme,
+	vkIdOkIOSThemeDark,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius
