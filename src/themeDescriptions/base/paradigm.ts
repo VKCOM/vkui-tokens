@@ -315,7 +315,7 @@ export const lightThemeBase: ThemeDescription = {
 		},
 		compact: {
 			fontSize: 22,
-			lineHeight: 24,
+			lineHeight: 22,
 			fontFamily: fontFamilyAccent,
 			fontWeight: fontWeightAccent1,
 		},
@@ -735,11 +735,14 @@ export const lightThemeBase: ThemeDescription = {
 	},
 
 	// Стандартные токены для отступов
-	spacingSizeXs: 4,
-	spacingSizeS: 6,
-	spacingSizeM: 8,
-	spacingSizeL: 10,
-	spacingSizeXl: 12,
+	spacingSize3Xs: 2,
+	spacingSize2Xs: 4,
+	spacingSizeXs: 6,
+	spacingSizeS: 8,
+	spacingSizeM: 12,
+	spacingSizeL: 16,
+	spacingSizeXl: 20,
+	spacingSize2Xl: 24,
 
 	// Прочие отступы
 	elevation1: '0 2px 6px 0 rgba(0, 16, 61, 0.08), 0 1px 2px 0 rgba(0, 16, 61, 0.08)',
