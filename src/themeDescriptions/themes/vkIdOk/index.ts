@@ -31,16 +31,16 @@ export const vkIdOkThemeDark: ThemeVkIdOkDarkDescription = {
 	colors: {
 		...darkTheme.colors,
 		colorTextAccent: '#EE8208',
-		colorTextAccentThemed: '#EE8208',
+		colorTextAccentThemed: '#EBEDF0',
 		colorBackgroundAccent: {
-			normal: '#EE8208',
-			hover: '#E57B04',
-			active: '#D87402',
-		},
-		colorBackgroundAccentThemed: {
 			normal: '#EE8208',
 			hover: '#F38910',
 			active: '#F58C15',
+		},
+		colorBackgroundAccentThemed: {
+			normal: '#FFFFFF',
+			hover: '#EBEDF0',
+			active: '#D7D8DB',
 		},
 		colorStrokeAccent: '#EE8208',
 	},
