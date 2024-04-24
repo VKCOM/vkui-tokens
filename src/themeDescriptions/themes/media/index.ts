@@ -1,65 +1,56 @@
-import { replacePropDeep } from '@/build/helpers/replacePropDeep';
+import { Property } from 'csstype';
+
 import { staticRef } from '@/build/helpers/tokenHelpers';
 import { ThemeMediaDescription } from '@/interfaces/themes/media';
 import { helpers, projectColors, socialColors } from '@/themeDescriptions/common';
 
 import { darkTheme, lightTheme } from '../../base/paradigm';
 
+const { fontWeightBase3 } = lightTheme;
 const { x0, x05, x2, x3, x4, x5, x6, x8, x10, x12 } = helpers;
 
-const fontFamilyAccent = 'MailSans, Inter, Helvetica, Arial, sans-serif';
-const fontFamilyArticle = 'Georgia, serif';
-const fontFamilyBase = 'Inter, Helvetica, Arial, sans-serif';
+const fontFamilyBase: Property.FontFamily = 'Inter, Helvetica, Arial, sans-serif';
+const fontFamilyAccent: Property.FontFamily = `MailSans, ${fontFamilyBase}`;
+const fontFamilyArticle: Property.FontFamily = fontFamilyBase;
+const fontFamilyFallbacks: Property.FontFamily = fontFamilyBase;
 
-const fontWeightAccent1 = 400;
-const fontWeightAccent2 = 500;
-const fontWeightAccent3 = 600;
-const fontWeightBase1 = 400;
-const fontWeightBase2 = 700;
-const fontWeightBase3 = 700;
-const fontWeightArticle1 = 400;
-const fontWeightArticle2 = 700;
-
-const replacedFamilyOctavius = replacePropDeep(lightTheme, {
-	fontFamily: fontFamilyBase,
-	fontWeight: fontWeightBase1,
-});
+const fontWeightMedia1 = 700;
+const fontWeightMedia2 = 600;
+const fontWeightMedia3 = 500;
+const fontWeightMedia4 = 400;
 
 export const mediaTheme: ThemeMediaDescription = {
-	...replacedFamilyOctavius,
+	...lightTheme,
 	themeName: 'media',
 	themeNameBase: 'media',
 	prefix: 'vkui',
 	fontFamilyAccent,
 	fontFamilyArticle,
 	fontFamilyBase,
+	fontFamilyFallbacks,
 
-	fontWeightAccent1,
-	fontWeightAccent2,
-	fontWeightAccent3,
-	fontWeightBase1,
-	fontWeightBase2,
-	fontWeightBase3,
-	fontWeightArticle1,
-	fontWeightArticle2,
+	fontWeightMedia1,
+	fontWeightMedia2,
+	fontWeightMedia3,
+	fontWeightMedia4,
 
 	colors: {
-		...replacedFamilyOctavius.colors,
+		...lightTheme.colors,
 		...projectColors,
 		...socialColors,
 	},
 
 	breakpoints: {
 		touch: {
-			adaptiveValue: 'compactX',
+			adaptiveValue: 'regular',
 			breakpoint: 0,
 		},
 		tablet: {
-			adaptiveValue: 'compact',
+			adaptiveValue: 'compactX',
 			breakpoint: 660,
 		},
 		desktopS: {
-			adaptiveValue: 'regular',
+			adaptiveValue: 'compact',
 			breakpoint: 980,
 		},
 		desktopM: {
@@ -67,8 +58,6 @@ export const mediaTheme: ThemeMediaDescription = {
 			breakpoint: 1300,
 		},
 	},
-
-	elevation3: `0 4px 20px 0 rgba(0,0,0,.16)`,
 
 	sizeBasePadding: {
 		compactX: 16,
@@ -102,348 +91,407 @@ export const mediaTheme: ThemeMediaDescription = {
 	/**
 	 * ТИПОГРАФИКА
 	 */
-
-	/**
-	 * для статьи
-	 */
-	mediaFontMediaHeader: {
+	mediaFontMediaTitle1: {
 		regular: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 36,
-			lineHeight: 44,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 30,
+			lineHeight: 36,
 			letterSpacing: '-0.005em',
 		},
 		compact: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 48,
+			lineHeight: 56,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaTitle1Tiny: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 30,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
 			fontSize: 40,
 			lineHeight: 48,
 			letterSpacing: '-0.005em',
 		},
 	},
-	mediaFontMediaTitle1: {
-		regular: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 28,
-			lineHeight: 36,
-		},
-		compact: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 28,
-			lineHeight: 36,
-		},
-	},
 	mediaFontMediaTitle2: {
 		regular: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 24,
-			lineHeight: 32,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 28,
+			lineHeight: 34,
+			letterSpacing: '-0.005em',
 		},
 		compact: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 24,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 36,
+			lineHeight: 44,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaTitle2Tiny: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 26,
 			lineHeight: 32,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 32,
+			lineHeight: 40,
+			letterSpacing: '-0.005em',
 		},
 	},
 	mediaFontMediaTitle3: {
 		regular: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 20,
-			lineHeight: 28,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 26,
+			lineHeight: 32,
+			letterSpacing: '-0.005em',
 		},
 		compact: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-			fontSize: 20,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 32,
+			lineHeight: 40,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaTitle4: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 24,
+			lineHeight: 30,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 28,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaTitle5: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 22,
 			lineHeight: 28,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 24,
+			lineHeight: 32,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaTitle6: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 20,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 22,
+			lineHeight: 28,
+			letterSpacing: '-0.005em',
 		},
 	},
 	mediaFontMediaLead: {
 		regular: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
-			fontSize: 19,
-			lineHeight: 28,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
 		},
 		compact: {
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
-			fontSize: 20,
-			lineHeight: 30,
-			letterSpacing: '-0.003em',
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 24,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaQuote: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 24,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaQuotePerson: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia2,
+			fontSize: 18,
+			lineHeight: 24,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia2,
+			fontSize: 24,
+			lineHeight: 32,
+			letterSpacing: '-0.005em',
 		},
 	},
 	mediaFontMediaParagraph: {
 		regular: {
 			fontFamily: fontFamilyArticle,
-			fontWeight: fontWeightAccent1,
-			fontSize: 18,
+			fontWeight: staticRef(fontWeightBase3),
+			fontSize: 16,
 			lineHeight: 28,
+			letterSpacing: '0.003em',
 		},
 		compact: {
 			fontFamily: fontFamilyArticle,
-			fontWeight: fontWeightAccent1,
-			fontSize: 19,
+			fontWeight: staticRef(fontWeightBase3),
+			fontSize: 18,
 			lineHeight: 32,
+			letterSpacing: '0.003em',
 		},
 	},
-
-	/**
-	 * для лент обвеса и сервисов(PAR)
-	 */
-	fontH0: {
+	mediaFontMediaParagraphSecondary: {
 		regular: {
-			...replacedFamilyOctavius.fontH0.regular,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
-		},
-		compact: {
-			...replacedFamilyOctavius.fontH0.compact,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent3,
-		},
-	},
-	fontTitle1: {
-		regular: {
-			...staticRef(replacedFamilyOctavius.fontTitle1).regular,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontTitle1).compact,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-	},
-	fontTitle2: {
-		regular: {
-			...staticRef(replacedFamilyOctavius.fontTitle2).regular,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontTitle2).compact,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-	},
-	fontTitle3: {
-		regular: {
-			...staticRef(replacedFamilyOctavius.fontTitle3).regular,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontTitle3).compact,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-	},
-	fontHeadline1: {
-		regular: {
-			...staticRef(replacedFamilyOctavius.fontHeadline1).regular,
-			fontSize: 15,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontHeadline1).compact,
-			fontSize: 16,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-	},
-	fontHeadline2: {
-		regular: {
-			...staticRef(replacedFamilyOctavius.fontHeadline2).regular,
-			fontSize: 14,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontHeadline2).compact,
-			fontSize: 15,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-	},
-	fontText: {
-		regular: {
-			...staticRef(replacedFamilyOctavius.fontText).regular,
-			fontSize: 15,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontText).compact,
+			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
 			lineHeight: 24,
 		},
 	},
-	fontSubhead: {
+	mediaFontMediaParagraphNumbering: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontSubhead).regular,
-			fontSize: 13,
-			fontWeight: fontWeightAccent1,
+			fontFamily: fontFamilyArticle,
+			fontWeight: staticRef(fontWeightMedia1),
+			fontSize: 16,
+			lineHeight: 28,
+			fontStyle: 'italic',
+			letterSpacing: '0.003em',
 		},
 		compact: {
-			...staticRef(replacedFamilyOctavius.fontSubhead).compact,
+			fontFamily: fontFamilyArticle,
+			fontWeight: staticRef(fontWeightMedia1),
+			fontSize: 18,
+			lineHeight: 32,
+			fontStyle: 'italic',
+			letterSpacing: '0.003em',
+		},
+	},
+	mediaFontMediaTextSecondaryLight: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia4,
+			fontSize: 15,
+			lineHeight: 20,
+		},
+	},
+	mediaFontMediaCaption: {
+		regular: {
+			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 14,
-			fontWeight: fontWeightAccent1,
+			lineHeight: 22,
+		},
+		compact: {
+			fontWeight: staticRef(fontWeightBase3),
+			fontSize: 16,
+			lineHeight: 26,
+		},
+	},
+	mediaFontMediaCaptionCaps: {
+		regular: {
+			fontWeight: staticRef(fontWeightBase3),
+			fontSize: 13,
+			lineHeight: 16,
+			letterSpacing: '0.05em',
+		},
+		compact: {
+			fontWeight: staticRef(fontWeightBase3),
+			fontSize: 15,
+			lineHeight: 20,
+			letterSpacing: '0.05em',
+		},
+	},
+	fontTitle1: {
+		regular: {
+			...staticRef(lightTheme.fontTitle1).regular,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontTitle2: {
+		regular: {
+			...staticRef(lightTheme.fontTitle2).regular,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontTitle3: {
+		regular: {
+			...staticRef(lightTheme.fontTitle3).regular,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontHeadline1: {
+		regular: {
+			...staticRef(lightTheme.fontHeadline1).regular,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			...staticRef(lightTheme.fontHeadline1).compact,
+		},
+	},
+	fontHeadline2: {
+		regular: {
+			...staticRef(lightTheme.fontHeadline2).regular,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			...staticRef(lightTheme.fontHeadline2).compact,
+		},
+	},
+	fontText: {
+		regular: {
+			...staticRef(lightTheme.fontText).regular,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			...staticRef(lightTheme.fontText).compact,
+		},
+	},
+	fontParagraph: {
+		regular: {
+			...staticRef(lightTheme.fontParagraph).regular,
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontSubhead: {
+		regular: {
+			...staticRef(lightTheme.fontSubhead).regular,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			...staticRef(lightTheme.fontSubhead).compact,
 		},
 	},
 	fontFootnote: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontFootnote).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontFootnote).compact,
+			...staticRef(lightTheme.fontFootnote).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
 	fontFootnoteCaps: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontFootnoteCaps).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontFootnoteCaps).compact,
+			...staticRef(lightTheme.fontFootnoteCaps).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
 	fontCaption1: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontCaption1).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontCaption1).compact,
+			...staticRef(lightTheme.fontCaption1).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
 	fontCaption1Caps: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontCaption1Caps).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontCaption1Caps).compact,
+			...staticRef(lightTheme.fontCaption1Caps).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
 	fontCaption2: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontCaption2).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontCaption2).compact,
+			...staticRef(lightTheme.fontCaption2).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
 	fontCaption2Caps: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontCaption2Caps).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontCaption2Caps).compact,
+			...staticRef(lightTheme.fontCaption2Caps).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
 	fontCaption3: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontCaption3).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontCaption3).compact,
+			...staticRef(lightTheme.fontCaption3).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
 	fontCaption3Caps: {
 		regular: {
-			...staticRef(replacedFamilyOctavius.fontCaption3Caps).regular,
-		},
-		compact: {
-			...staticRef(replacedFamilyOctavius.fontCaption3Caps).compact,
+			...staticRef(lightTheme.fontCaption3Caps).regular,
+			fontFamily: fontFamilyBase,
 		},
 	},
-
 	fontH1: {
 		regular: {
 			fontSize: 36,
 			lineHeight: 48,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
 		},
 		compact: {
 			fontSize: 28,
 			lineHeight: 36,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
 		},
 	},
 	fontH2: {
 		regular: {
 			fontSize: 28,
 			lineHeight: 34,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
 		},
 		compact: {
 			fontSize: 24,
 			lineHeight: 32,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
 		},
 	},
 	fontH3: {
 		regular: {
 			fontSize: 20,
 			lineHeight: 26,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
 		},
 	},
 	fontH4: {
 		regular: {
 			fontSize: 15,
 			lineHeight: 22,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
-		},
-	},
-	fontLead: {
-		regular: {
-			fontSize: 19,
-			lineHeight: 30,
-			fontFamily: fontFamilyArticle,
-			fontWeight: fontWeightArticle1,
-			fontStyle: 'italic',
-		},
-	},
-	fontArticleBody: {
-		regular: {
-			fontSize: 18,
-			lineHeight: 28,
-			fontFamily: fontFamilyArticle,
-			fontWeight: fontWeightArticle1,
-		},
-	},
-	fontSpecificText: {
-		regular: {
-			fontSize: 18,
-			lineHeight: 28,
-			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
-		},
-	},
-	fontSpecificFootnote: {
-		regular: {
-			fontSize: 14,
-			lineHeight: 22,
-			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
-		},
-	},
-	fontSpecificButton: {
-		regular: {
-			fontSize: 16,
-			lineHeight: 24,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
 		},
 	},
 
@@ -481,66 +529,48 @@ export const mediaTheme: ThemeMediaDescription = {
 	 */
 
 	gridWrapperContent: {
-		compactX: '100%',
-		compact: 620,
-		regular: 940,
+		regular: '100%',
+		compactX: 620,
+		compact: 940,
 		large: 1260,
 	},
 	gridMainContent: {
-		compactX: '100%',
+		regular: '100%',
+		compactX: 620,
 		compact: 620,
-		regular: 620,
 		large: 780,
 	},
 	gridAsideContent: {
-		compactX: '100%',
+		regular: '100%',
+		compactX: 300,
 		compact: 300,
-		regular: 300,
 		large: 300,
 	},
 
 	// @deprecated
-	gridContent: {
-		compactX: '100%',
-		compact: 580,
-		regular: 880,
-		large: 1180,
-	},
 	gridColumnX2: {
-		compactX: '100%',
-		compact: 280,
-		regular: 430,
+		regular: '100%',
+		compactX: 280,
+		compact: 430,
 		large: 580,
 	},
 	gridColumnX3: {
-		compactX: '100%',
-		compact: 180,
-		regular: 280,
+		regular: '100%',
+		compactX: 180,
+		compact: 280,
 		large: 380,
 	},
 	gridColumnX4: {
-		compactX: '100%',
-		compact: 130,
-		regular: 205,
+		regular: '100%',
+		compactX: 130,
+		compact: 205,
 		large: 280,
 	},
 	gridColumnX6: {
-		compactX: '100%',
-		compact: 80,
-		regular: 130,
+		regular: '100%',
+		compactX: 80,
+		compact: 130,
 		large: 180,
-	},
-	gridLayoutArticle: {
-		compactX: '100%',
-		compact: '100%',
-		regular: 540,
-		large: 540,
-	},
-	gridLayoutBanner: {
-		compactX: '100%',
-		compact: 280,
-		regular: 280,
-		large: 560,
 	},
 
 	/**
