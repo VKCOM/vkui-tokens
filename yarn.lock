@@ -1611,10 +1611,17 @@
     "@svgr/plugin-jsx" "8.1.0"
     "@svgr/plugin-svgo" "8.1.0"
 
-"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.1", "@swc/helpers@^0.5.3":
+"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.3":
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.6.tgz#d16d8566b7aea2bef90d059757e2d77f48224160"
   integrity sha512-aYX01Ke9hunpoCexYAgQucEpARGQ5w/cqHFrIR+e9gdKb1QWTsVJuTJ2ozQzIAxLyRQe/m+2RqzkyOOGiMKRQA==
+  dependencies:
+    tslib "^2.4.0"
+
+"@swc/helpers@^0.5.10":
+  version "0.5.11"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.11.tgz#5bab8c660a6e23c13b2d23fcd1ee44a2db1b0cb7"
+  integrity sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A==
   dependencies:
     tslib "^2.4.0"
 
@@ -2091,19 +2098,19 @@
   version "10.2.0"
   resolved "https://github.com/VKCOM/Appearance#3d00c758d67a4bbbd49e86f6e2eb0459f04aeefc"
 
-"@vkontakte/icons-sprite@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-2.0.0.tgz#5153e4d16f6c1c433a58cd4e099d9326a070cecc"
-  integrity sha512-P/AMcwSfiRY0tEEMv6jIt5FgAo7lr4K8uCeOD/c8CCuLEZFoUfMW7D50IWaGKHyCTWgPIFgGFiOypj45pD5hVg==
+"@vkontakte/icons-sprite@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-2.1.0.tgz#841fcc19056f3f50338a43638c45afd9909befb1"
+  integrity sha512-1wN/Mrftt0hhbIwSAAODlxEoVpLN4eBs/YfY1LntrUkd9RZfxckiTy0NIk3LNmPIgV+HFYM+aAChgsE4tua6qQ==
   dependencies:
-    "@swc/helpers" "^0.5.1"
+    "@swc/helpers" "^0.5.10"
 
-"@vkontakte/icons@2.108.0", "@vkontakte/icons@^2.62.0":
-  version "2.108.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.108.0.tgz#d6b09897bfafbb80be0ffc2bf998c516e20beda4"
-  integrity sha512-/Tt7+Pran6uup0mXmnhHjoV6zN7G3+DiIOejtWpIyfnjFgMaB/KGS978nn9pQJB9Z5Cwj6sl8aVFYwyMnZNrbQ==
+"@vkontakte/icons@2.114.0", "@vkontakte/icons@^2.62.0":
+  version "2.114.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.114.0.tgz#085d29756ad052ffc3072502007e9b6042a3e803"
+  integrity sha512-NnEBQ6CAVefJSA+eGeYZ/EM2HJ0fzIbgfVSyjrRyjwnUSkLZCxy3Ouy3wiSGJBhZV9W+cxE8CHpnAsPVkjXK4w==
   dependencies:
-    "@vkontakte/icons-sprite" "2.0.0"
+    "@vkontakte/icons-sprite" "2.1.0"
 
 "@vkontakte/prettier-config@0.1.0":
   version "0.1.0"
