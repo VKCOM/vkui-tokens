@@ -125,6 +125,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastThemed: icons.icon_contrast_themed,
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
+			colorIconWarning: {
+				light: '#E1B406',
+				dark: '#DBAF06',
+			}[colorsScheme],
 			colorIconNegative: icons.icon_negative,
 
 			// Stroke
