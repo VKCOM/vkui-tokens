@@ -366,6 +366,12 @@ export interface ColorsDescriptionStruct {
 	colorIconPositive: ColorDescription;
 
 	/**
+	 * @desc Цвет иконок для предупреждений
+	 * @tags color, icon
+	 */
+	colorIconWarning: ColorDescription;
+
+	/**
 	 * @desc Цвет иконок для ошибок и других негативных сценариев
 	 * @tags color, icon
 	 */
