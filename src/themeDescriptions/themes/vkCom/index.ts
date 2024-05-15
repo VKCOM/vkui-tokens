@@ -107,7 +107,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
 	colorAccentOrangePeach: resolveColor(theme.colors.dynamic_orange_peach),
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
-	colorAccentViolet: resolveColor(theme.colors.dynamic_violet),
+	colorAccentViolet: '#792EC0',
 	// colorAccentSecondary: '#3F8AE0',
 
 	// Other
@@ -276,6 +276,7 @@ const vkComDarkColor: ColorsDescription = {
 		colorSeparatorPrimary3x: '#505253',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#2F422F',
+		colorAccentViolet: '#A94FFF',
 	},
 };
 

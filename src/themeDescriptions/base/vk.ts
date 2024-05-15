@@ -83,11 +83,20 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			}[colorsScheme],
 			colorBackgroundModal: background.background_modal,
 			colorBackgroundModalInverse: background.background_modal_inverse,
-			colorBackgroundWarning: background.background_warning,
+			colorBackgroundWarning: {
+				light: '#FFF2D6',
+				dark: '#5B4D35',
+			}[colorsScheme],
 			colorBackgroundPositive: background.background_positive,
 			colorBackgroundNegative: background.background_negative,
-			colorBackgroundNegativeTint: background.background_negative_tint,
-			colorBackgroundPositiveTint: background.background_positive_tint,
+			colorBackgroundNegativeTint: {
+				light: '#FFE9E9',
+				dark: '#522E2E',
+			}[colorsScheme],
+			colorBackgroundPositiveTint: {
+				light: '#E8F9E8',
+				dark: '#2E3E2B',
+			}[colorsScheme],
 			colorFieldBackground: background.field_background,
 			colorHeaderBackground: background.header_background,
 
@@ -125,6 +134,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastThemed: icons.icon_contrast_themed,
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
+			colorIconWarning: {
+				light: '#E1B406',
+				dark: '#DBAF06',
+			}[colorsScheme],
 			colorIconNegative: icons.icon_negative,
 
 			// Stroke

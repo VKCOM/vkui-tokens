@@ -84,7 +84,6 @@ export const lightColors: ColorsDescription = {
 		// Icons
 		colorIconAccent: '#005FF9',
 		colorIconAccentThemed: '#005FF9',
-		colorIconNegative: '#ED0A34',
 		colorIconPrimary: '#2C2D2E',
 		colorIconPrimaryInvariably: '#2C2D2E',
 		colorIconMedium: '#919399',
@@ -96,6 +95,8 @@ export const lightColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
+		colorIconWarning: '#FF9E00',
+		colorIconNegative: '#ED0A34',
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
@@ -215,7 +216,6 @@ export const darkColors: ColorsDescription = {
 		// Icons
 		colorIconAccent: '#3C82FD',
 		colorIconAccentThemed: '#FFFFFF',
-		colorIconNegative: '#FF5C5C',
 		colorIconPrimary: '#D9DADD',
 		colorIconPrimaryInvariably: '#2C2D2E',
 		colorIconMedium: '#B0B1B6',
@@ -227,6 +227,8 @@ export const darkColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
+		colorIconWarning: '#FF9E00',
+		colorIconNegative: '#FF5C5C',
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
