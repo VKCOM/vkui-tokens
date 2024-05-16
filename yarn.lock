@@ -1637,14 +1637,7 @@
     "@svgr/plugin-jsx" "8.1.0"
     "@svgr/plugin-svgo" "8.1.0"
 
-"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.3":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.6.tgz#d16d8566b7aea2bef90d059757e2d77f48224160"
-  integrity sha512-aYX01Ke9hunpoCexYAgQucEpARGQ5w/cqHFrIR+e9gdKb1QWTsVJuTJ2ozQzIAxLyRQe/m+2RqzkyOOGiMKRQA==
-  dependencies:
-    tslib "^2.4.0"
-
-"@swc/helpers@^0.5.10":
+"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.10", "@swc/helpers@^0.5.3":
   version "0.5.11"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.11.tgz#5bab8c660a6e23c13b2d23fcd1ee44a2db1b0cb7"
   integrity sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A==
@@ -2163,10 +2156,10 @@
     "@floating-ui/react-dom" "^2.0.8"
     "@swc/helpers" "^0.5.3"
 
-"@vkontakte/vkui@6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-6.0.2.tgz#3a1194e08aa8515b958e716dcc5d1b3c5d361fc5"
-  integrity sha512-Wnar49W7iUMANz4nK1c/uM+FayqKsYXPF2NAfxv/EvJrnDAVd5Ryv7zIX/+zo1LX7+MomkWPAjjlG9wRdFjbSQ==
+"@vkontakte/vkui@6.0.3":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-6.0.3.tgz#c36d65b72c7a2e6ea87150706fb62f5a03719304"
+  integrity sha512-GfoIT2h6iKmYxx0VSuxjHSfc6KSsyrDe+vosU3rZKWIjIiGJjkRQcJZUUTTgU37VJ2Am2R8lsQpEFtK/LX0WuQ==
   dependencies:
     "@swc/helpers" "^0.5.3"
     "@vkontakte/icons" "^2.62.0"
