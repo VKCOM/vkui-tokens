@@ -85,7 +85,7 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorBackgroundModalInverse: background.background_modal_inverse,
 			colorBackgroundWarning: {
 				light: '#FFF2D6',
-				dark: '#5B4D35',
+				dark: '#473315',
 			}[colorsScheme],
 			colorBackgroundPositive: background.background_positive,
 			colorBackgroundNegative: background.background_negative,
