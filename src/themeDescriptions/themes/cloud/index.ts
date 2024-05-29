@@ -19,77 +19,48 @@ type FontAccentAtributes = {
 const fontFamilyBase: Property.FontFamily = 'Inter, Helvetica, Arial, sans-serif';
 const { fontFamilyAccent, fontWeightBase3, fontWeightAccent1, fontWeightAccent2 } = lightTheme;
 
+const fontWeightDemibold = 600;
 const fontAccentBoldAtributes: FontAccentAtributes = {
 	fontFamily: staticRef(fontFamilyAccent),
 	fontWeight: staticRef(fontWeightAccent1),
 };
-const fontSize1: Font = {
-	fontSize: 11,
-	lineHeight: '14px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
-};
 
-const fontSize2: Font = {
-	fontSize: 13,
-	lineHeight: '18px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
-};
-
-const fontSize3: Font = {
-	fontSize: 15,
-	lineHeight: '20px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
-};
-
-const fontSize4: Font = {
-	fontSize: 17,
+const fontTitle3Medium: Font = {
+	fontSize: 18,
 	lineHeight: '24px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
+	...fontAccentBoldAtributes,
 };
 
-const fontSize5: Font = {
+const fontTitle2Medium: Font = {
 	fontSize: 20,
 	lineHeight: '26px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
+	...fontAccentBoldAtributes,
 };
 
-const fontSize6: Font = {
-	fontSize: 24,
-	lineHeight: '28px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
+const footnoteCapsMedium: Font = {
+	...staticRef(lightTheme.fontFootnoteCaps).regular,
+	fontSize: 14,
+	lineHeight: '18px',
+	...fontAccentBoldAtributes,
 };
 
-const fontSize7: Font = {
+const footnoteRegular: Font = {
+	fontSize: 14,
+	lineHeight: '18px',
+	fontWeight: staticRef(fontWeightBase3),
+	fontFamily: staticRef(fontFamilyAccent),
+};
+
+const subheadMedium: Font = {
+	fontSize: 14,
+	lineHeight: '18px',
+	...fontAccentBoldAtributes,
+};
+
+const largeTitleMedium: Font = {
 	fontSize: 28,
-	lineHeight: '32px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
-};
-
-const fontSize8: Font = {
-	fontSize: 32,
-	lineHeight: '36px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
-};
-
-const fontSize9: Font = {
-	fontSize: 40,
-	lineHeight: '48px',
-	fontWeight: staticRef(fontWeightBase3),
-	fontFamily: fontFamilyBase,
-};
-
-const fontText = {
-	regular: {
-		...fontSize3,
-	},
+	lineHeight: '34px',
+	...fontAccentBoldAtributes,
 };
 
 export const cloudTheme: ThemeCloudDescription = {
@@ -105,86 +76,182 @@ export const cloudTheme: ThemeCloudDescription = {
 
 	fontH0: {
 		compact: {
-			...fontSize7,
+			fontSize: 40,
+			lineHeight: '46px',
 			...fontAccentBoldAtributes,
 		},
 		regular: {
-			...fontSize9,
+			fontSize: 40,
+			lineHeight: '46px',
 			...fontAccentBoldAtributes,
 		},
 	},
 	fontH1: {
 		compact: {
-			...fontSize6,
+			fontSize: 32,
+			lineHeight: '38px',
 			...fontAccentBoldAtributes,
 		},
 		regular: {
-			...fontSize8,
+			fontSize: 32,
+			lineHeight: '40px',
 			...fontAccentBoldAtributes,
 		},
 	},
 	fontH2: {
 		compact: {
-			...fontSize5,
+			fontSize: 28,
+			lineHeight: '32px',
 			...fontAccentBoldAtributes,
 		},
-		regular: {
-			...fontSize7,
-			...fontAccentBoldAtributes,
-		},
+		regular: largeTitleMedium,
 	},
 	fontTitle1: {
 		compact: {
-			...fontSize4,
+			fontSize: 24,
+			lineHeight: '28px',
 			...fontAccentBoldAtributes,
 		},
 		regular: {
-			...fontSize6,
+			fontSize: 24,
+			lineHeight: '28px',
 			...fontAccentBoldAtributes,
 		},
 	},
 	fontTitle2: {
 		compact: {
-			...fontSize3,
+			fontSize: 20,
+			lineHeight: '26px',
 			...fontAccentBoldAtributes,
 		},
+		regular: fontTitle2Medium,
+	},
+	fontTitle2Custom: {
 		regular: {
-			...fontSize5,
-			...fontAccentBoldAtributes,
+			...fontTitle2Medium,
+			fontWeight: staticRef(fontWeightBase3),
+			fontFamily: staticRef(fontFamilyAccent),
+		},
+		compact: {
+			fontSize: 20,
+			lineHeight: '26px',
+			fontWeight: staticRef(fontWeightBase3),
 		},
 	},
 	fontTitle3: {
 		compact: {
-			...fontSize3,
+			fontSize: 17,
+			lineHeight: '22px',
 			...fontAccentBoldAtributes,
 		},
+		regular: fontTitle3Medium,
+	},
+	fontTitle3Custom: {
 		regular: {
-			...fontSize4,
-			...fontAccentBoldAtributes,
+			...fontTitle3Medium,
+			fontWeight: staticRef(fontWeightBase3),
+		},
+		compact: {
+			fontSize: 17,
+			lineHeight: '22px',
+			fontWeight: staticRef(fontWeightBase3),
+			fontFamily: staticRef(fontFamilyAccent),
 		},
 	},
 	fontSubhead: {
 		compact: {
-			...fontSize3,
+			fontSize: 14,
+			lineHeight: '18px',
 			...fontAccentBoldAtributes,
 		},
+		regular: subheadMedium,
+	},
+	fontText: {
+		compact: {
+			fontSize: 15,
+			lineHeight: '20px',
+			fontWeight: staticRef(fontWeightBase3),
+			fontFamily: staticRef(fontFamilyAccent),
+		},
 		regular: {
-			...fontSize3,
-			...fontAccentBoldAtributes,
+			fontSize: 16,
+			lineHeight: '20px',
+			fontWeight: staticRef(fontWeightBase3),
+			fontFamily: staticRef(fontFamilyAccent),
 		},
 	},
-	fontText,
 	fontFootnote: {
-		regular: {
-			...fontSize2,
+		regular: footnoteRegular,
+		compact: {
+			fontSize: 14,
+			lineHeight: '18px',
+			fontWeight: staticRef(fontWeightBase3),
+			fontFamily: staticRef(fontFamilyAccent),
+		},
+	},
+	fontCaption1: {
+		...staticRef(lightTheme.fontCaption1),
+		compact: {
+			fontSize: 12,
+			lineHeight: '16px',
+			fontWeight: staticRef(fontFamilyAccent),
+			fontFamily: staticRef(fontFamilyAccent),
 		},
 	},
 	fontCaption2: {
 		regular: {
-			...fontSize1,
+			fontSize: 11,
+			lineHeight: '14px',
+			fontWeight: staticRef(fontWeightBase3),
+			fontFamily: fontFamilyBase,
 		},
 	},
-
+	fontFootnoteCaps: {
+		regular: footnoteCapsMedium,
+	},
+	fontCaption1CapsDemibold: {
+		regular: {
+			...staticRef(lightTheme.fontCaption1Caps).regular,
+			fontWeight: staticRef(fontWeightDemibold),
+			fontFamily: staticRef(fontFamilyAccent),
+		},
+	},
+	fontCaption2CapsDemibold: {
+		regular: {
+			...staticRef(lightTheme.fontCaption2Caps).regular,
+			fontWeight: staticRef(fontWeightDemibold),
+			fontFamily: staticRef(fontFamilyAccent),
+		},
+	},
+	fontCaption3CapsDemibold: {
+		regular: {
+			...staticRef(lightTheme.fontCaption3Caps).regular,
+			fontWeight: staticRef(fontWeightDemibold),
+			fontFamily: staticRef(fontFamilyAccent),
+		},
+	},
+	fontSubtitleMedium: {
+		fontSize: 18,
+		lineHeight: '24px',
+		...fontAccentBoldAtributes,
+	},
+	fontSubtitleCustom: {
+		fontSize: 18,
+		lineHeight: '24px',
+		fontWeight: staticRef(fontWeightBase3),
+		fontFamily: staticRef(fontFamilyAccent),
+	},
+	fontHeadlineLargeMedium: {
+		fontSize: 16,
+		lineHeight: '20px',
+		...fontAccentBoldAtributes,
+	},
+	fontLargeText: {
+		fontSize: 16,
+		lineHeight: '20px',
+		fontWeight: staticRef(fontWeightBase3),
+		fontFamily: staticRef(fontFamilyAccent),
+	},
 	sizeButtonPaddingHorizontal: {
 		regular: x4,
 	},
