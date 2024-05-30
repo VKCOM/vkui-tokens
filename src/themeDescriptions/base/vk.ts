@@ -135,8 +135,8 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
 			colorIconWarning: {
-				light: '#E1B406',
-				dark: '#DBAF06',
+				light: '#F8A01C',
+				dark: '#EDB055',
 			}[colorsScheme],
 			colorIconNegative: icons.icon_negative,
 
