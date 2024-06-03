@@ -22,6 +22,7 @@ import { promoTheme } from '@/themeDescriptions/themes/promo';
 import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
 import { searchTheme } from '@/themeDescriptions/themes/search';
 import { todoTheme } from '@/themeDescriptions/themes/todo';
+import { tutoriaDarkTheme, tutoriaTheme } from '@/themeDescriptions/themes/tutoria';
 import { vkComTheme, vkComThemeDark } from '@/themeDescriptions/themes/vkCom';
 import { vkIdOkTheme, vkIdOkThemeDark } from '@/themeDescriptions/themes/vkIdOk';
 import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '@/themeDescriptions/themes/vkIdOkIOS';
@@ -60,6 +61,10 @@ export const themes = [
 	vkIdOkThemeDark,
 	vkIdOkIOSTheme,
 	vkIdOkIOSThemeDark,
+
+	// Темы, наследуемые от Tutoria
+	tutoriaTheme,
+	tutoriaDarkTheme,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius
