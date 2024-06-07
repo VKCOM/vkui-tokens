@@ -1644,7 +1644,7 @@
   dependencies:
     tslib "^2.4.0"
 
-"@swc/helpers@^0.5.10":
+"@swc/helpers@^0.5.11":
   version "0.5.11"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.11.tgz#5bab8c660a6e23c13b2d23fcd1ee44a2db1b0cb7"
   integrity sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A==
@@ -2124,19 +2124,19 @@
   version "10.2.0"
   resolved "https://github.com/VKCOM/Appearance#3d00c758d67a4bbbd49e86f6e2eb0459f04aeefc"
 
-"@vkontakte/icons-sprite@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-2.1.0.tgz#841fcc19056f3f50338a43638c45afd9909befb1"
-  integrity sha512-1wN/Mrftt0hhbIwSAAODlxEoVpLN4eBs/YfY1LntrUkd9RZfxckiTy0NIk3LNmPIgV+HFYM+aAChgsE4tua6qQ==
+"@vkontakte/icons-sprite@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-2.2.0.tgz#b736ed8581c9565ea40aaa55377cf4ec6ed2f192"
+  integrity sha512-Ga+8INgja4hhcMTc18bmragb54C/2Q84/L6H5g4DT64+lXpyCbtgEDla32faVUxZI0jP+/nKvOdzbchDT3AEUw==
   dependencies:
-    "@swc/helpers" "^0.5.10"
+    "@swc/helpers" "^0.5.11"
 
-"@vkontakte/icons@2.114.0", "@vkontakte/icons@^2.62.0":
-  version "2.114.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.114.0.tgz#085d29756ad052ffc3072502007e9b6042a3e803"
-  integrity sha512-NnEBQ6CAVefJSA+eGeYZ/EM2HJ0fzIbgfVSyjrRyjwnUSkLZCxy3Ouy3wiSGJBhZV9W+cxE8CHpnAsPVkjXK4w==
+"@vkontakte/icons@2.119.0", "@vkontakte/icons@^2.62.0":
+  version "2.119.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-2.119.0.tgz#e810967a019d90fedd5d59904e3491b80fe720e8"
+  integrity sha512-slcBbieJqt2VBT8iTse25DaBUMOvXUW0M7wJPxHN+fFqDyWv8/xbcvWqtP7aAOA5tBbwP9Fb8bz2fvHJoulw0A==
   dependencies:
-    "@vkontakte/icons-sprite" "2.1.0"
+    "@vkontakte/icons-sprite" "2.2.0"
 
 "@vkontakte/prettier-config@0.1.0":
   version "0.1.0"
