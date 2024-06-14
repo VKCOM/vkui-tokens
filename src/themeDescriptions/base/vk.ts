@@ -83,19 +83,23 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			}[colorsScheme],
 			colorBackgroundModal: background.background_modal,
 			colorBackgroundModalInverse: background.background_modal_inverse,
+			colorBackgroundPositive: background.background_positive,
+			colorBackgroundPositiveTint: {
+				light: '#E8F9E8',
+				dark: '#2E3E2B',
+			}[colorsScheme],
 			colorBackgroundWarning: {
 				light: '#FFF2D6',
-				dark: '#5B4D35',
+				dark: '#473315',
 			}[colorsScheme],
-			colorBackgroundPositive: background.background_positive,
 			colorBackgroundNegative: background.background_negative,
 			colorBackgroundNegativeTint: {
 				light: '#FFE9E9',
 				dark: '#522E2E',
 			}[colorsScheme],
-			colorBackgroundPositiveTint: {
-				light: '#E8F9E8',
-				dark: '#2E3E2B',
+			colorBackgroundInfoTint: {
+				light: '#DEEEFF',
+				dark: '#1C3954',
 			}[colorsScheme],
 			colorFieldBackground: background.field_background,
 			colorHeaderBackground: background.header_background,
@@ -127,7 +131,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconMedium: icons.icon_medium,
 			colorIconMediumAlpha: icons.icon_medium_alpha,
 			colorIconSecondary: icons.icon_secondary,
-			colorIconSecondaryAlpha: icons.icon_secondary_alpha,
+			colorIconSecondaryAlpha: {
+				light: 'rgba(0, 0, 0, 0.36)',
+				dark: 'rgba(241, 247, 255, 0.43)',
+			}[colorsScheme],
 			colorIconTertiary: icons.icon_tertiary,
 			colorIconTertiaryAlpha: icons.icon_tertiary_alpha,
 			colorIconContrast: icons.icon_contrast,
@@ -135,8 +142,8 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
 			colorIconWarning: {
-				light: '#E1B406',
-				dark: '#DBAF06',
+				light: '#F8A01C',
+				dark: '#EDB055',
 			}[colorsScheme],
 			colorIconNegative: icons.icon_negative,
 

@@ -7,8 +7,7 @@
 
 **[Интерактивная документация](https://vkcom.github.io/vkui-tokens/)**
 
-Этот репозиторий содержит токены единой дизайн-системы VKUI и
-их значения для тем оформления различных проектов.
+Этот репозиторий содержит токены единой дизайн-системы VKUI и их значения для тем оформления различных проектов.
 
 Темы собираются в следующие форматы: `css`, `scss`, `less`, `pcss`, `styl`, `js`, `json`.
 
@@ -57,7 +56,7 @@ npm i --save @vkontakte/vkui-tokens@latest
 
 ```postcss
 .class:hover {
-	background-color: var(--vkui--color_background--hover);
+  background-color: var(--vkui--color_background--hover);
 }
 ```
 
@@ -108,114 +107,162 @@ import baseTheme from '@vkontakte/vkui-tokens/themes/vkBase';
 @import '~@vkontakte/vkui-tokens/themes/vkBase/index';
 
 .myAwesomeClass {
-	background-color: $color-bg;
+  background-color: $color-bg;
 }
 
 .myAwesomeClass:hover {
-	background-color: $color-bg--hover;
+  background-color: $color-bg--hover;
 }
 ```
 
 ### Используем pcss формат темы из пакета
 
-1.  Заходим в файл, где хотим использовать тему, и импортируем её:
+1. Заходим в файл, где хотим использовать тему, и импортируем её:
 
-        @import "@vkontakte/vkui-tokens/themes/vkBase";
+   ```css
+   @import '@vkontakte/vkui-tokens/themes/vkBase';
+   ```
 
-2.  Заходим в файл темы, смотрим какие там есть переменные и юзаем их, например:
+2. Заходим в файл темы, смотрим какие там есть переменные и используем их, например:
 
-        width: var(--size-content-block-width);
+   ```css
+   width: var(--size-content-block-width);
+   ```
 
-3.  Просто так ничего не заработает, нужно поставить postcss:
+3. Просто так ничего не заработает, нужно поставить postcss:
 
-         npm i --save-dev postcss
+   ```bash
+   npm i --save-dev postcss
+   ```
 
-    Для запуска у postcss есть командная строка, которую тоже надо установить:
+   Для запуска у postcss есть командная строка, которую тоже надо установить:
 
-         npm i --save-dev postcss-cli
+   ```bash
+   npm i --save-dev postcss-cli
+   ```
 
-4.  Создаем конфиг postcss. Для этого создаем файл postcss.config.js (можно в любом месте проекта, но лучше в корне) и пишем в него необходимые плагины:
+4. Создаем конфиг postcss. Для этого создаем файл postcss.config.js (можно в любом месте проекта, но лучше в корне) и пишем в него необходимые плагины:
 
-    ```javascript
-    const postcssPresetEnv = require('postcss-preset-env');
+   ```javascript
+   const postcssPresetEnv = require('postcss-preset-env');
 
-    module.exports = {
-    	plugins: [
-    		require('postcss-import'),
-    		require('precss'),
-    		require('postcss-css-variables'),
-    		require('postcss-custom-media'),
-    		require('postcss-media-minmax'),
-    		require('postcss-extend-rule'),
-    		postcssPresetEnv({
-    			stage: 0,
-    		}),
-    		require('postcss-color-mix'),
-    		require('cssnano'),
-    	],
-    };
-    ```
+   module.exports = {
+     plugins: [
+       require('postcss-import'),
+       require('precss'),
+       require('postcss-css-variables'),
+       require('postcss-custom-media'),
+       require('postcss-media-minmax'),
+       require('postcss-extend-rule'),
+       postcssPresetEnv({
+         stage: 0,
+       }),
+       require('postcss-color-mix'),
+       require('cssnano'),
+     ],
+   };
+   ```
 
-    Возможно, вам не понадобятся все эти плагины, поэтому лучше почитать, что делает каждый из них (https://www.postcss.parts/).
-    Нужно посмотреть файл вашей темы и ваш css (scss и др.), чтобы понять, что вам необходимо.
+   Возможно, вам не понадобятся все эти плагины, поэтому лучше почитать, что делает каждый из них (https://www.postcss.parts/).
+   Нужно посмотреть файл вашей темы и ваш css (scss и др.), чтобы понять, что вам необходимо.
 
-5.  Устанавливаем все необходимые плагины, которые написали в конфиге, например:
+5. Устанавливаем все необходимые плагины, которые написали в конфиге, например:
 
-        npm i --save-dev postcss-import
+   ```bash
+   npm i --save-dev postcss-import
+   ```
 
-6.  Настраиваем сборку postcss.
+6. Настраиваем сборку postcss.
 
-    Сборка производится командой postcss через командную строку с необходимым параметрами.
-    Про них подробнее тут https://github.com/postcss/postcss-cli
+   Сборка производится командой postcss через командную строку с необходимым параметрами.
+   Про них подробнее тут https://github.com/postcss/postcss-cli
 
-    Пример команды:
+   Пример команды:
 
-         postcss src/main.css -c ./ --dir public
+   ```bash
+   postcss src/main.css -c ./ --dir public
+   ```
 
-    Такая команда прогонит файл src/main.css с помощью конфига из текущей папки и положит результат в папку public.
+   Такая команда прогонит файл src/main.css с помощью конфига из текущей папки и положит результат в папку public.
 
 # Инструменты
 
 ## Локальная сборка своих тем инструментами библиотеки
 
-Библиотека предоставляет интерфейсы и темы, от которых можно
-наследоваться.
+Библиотека предоставляет интерфейсы и темы, от которых можно наследоваться, и набор функций, которые позволяют собрать собственную тему в нужном формате.
 
-Помимо этого, библиотека предоставляет набор функций, которые позволяют
-собрать собственную тему в нужном формате.
+Сборка темы подразумевает раскрытие наследования, генерацию цветов состояний (hover, active), округление и "пикселизация" значений и т.д.
 
-Сборка темы подразумевает раскрытие наследования, генерацию цветов
-состояний (hover, active), округление и "пикселизация" значений и т.д.
+## Предварительная настройка
+
+Инструменты адаптированы для запуска в `Node`-среде, и не подходят для генерации темы в рантайме (в браузерной среде).
+Вам необходимо установить следующие пакеты для корректной работы скриптов генерации:
+
+```bash
+npm i --save-dev color common-tags css.escape
+```
 
 ### Наследование от существующей темы
 
-Пример:
+Например, возьмем базовые темы (светлую и темную) и добавим к ним новый токен и переопределим один существующий.
+Для этого нам нужно исполнить следующий скрипт:
 
 ```typescript
 import type { ThemeDescription } from '@vkontakte/vkui-tokens/interfaces/general';
 import type { Adaptive } from '@vkontakte/vkui-tokens/interfaces/general/tools';
-import { lightTheme as baseTheme } from '@vkontakte/vkui-tokens/themeDescriptions/base/vk';
+import {
+  lightTheme as baseTheme,
+  darkTheme,
+} from '@vkontakte/vkui-tokens/themeDescriptions/base/vk.js';
 import { expandAll } from '@vkontakte/vkui-tokens/build/expandTheme';
 import { compileStyles } from '@vkontakte/vkui-tokens/build/compilers/styles/compileStyles';
 
 interface MyNewAwesomeThemeDescription extends ThemeDescription {
-	myNewAwesomeToken: Adaptive<number>;
+  myNewAwesomeToken: Adaptive<number>;
 }
 
 const myNewAwesomeTheme: MyNewAwesomeThemeDescription = {
-	...baseTheme,
-	myNewAwesomeToken: {
-		regular: 20,
-		compact: 12,
-	},
+  ...baseTheme,
+  // Название темы
+  themeName: 'myAwesomeTheme',
+  // Базовая часть названия темы (используется для генерации локального селектора, например: .vkui--myAwesomeTheme--light)
+  themeNameBase: 'myAwesomeTheme',
+  // Тема, от которой наследуются переменные, носит информационный характер
+  themeInheritsFrom: 'vkBase',
+  // Новый адаптивный токен
+  myNewAwesomeToken: {
+    regular: 20,
+    compact: 12,
+  },
+  colors: {
+    // Сохраняем остальные значения из темы
+    ...baseTheme.colors,
+    // Переопределяем необходимую переменную
+    colorTextAccentThemed: '#ff0000',
+  },
 };
 
-// получаем разные типы тем на основе описания
-const { theme, pixelifyTheme, cssVarsTheme } = expandAll(myNewAwesomeTheme);
+const myNewAwesomeThemeDark: MyNewAwesomeThemeDescription = {
+  ...myNewAwesomeTheme,
+  ...darkTheme,
+  themeName: 'myAwesomeThemeDark',
+  themeNameBase: 'myAwesomeTheme',
+  themeInheritsFrom: 'vkBaseDark',
+  colors: {
+    ...darkTheme.colors,
+    colorTextAccentThemed: '#00ff00',
+  },
+};
 
-// получаем CSS-строку со всеми переменными темы,
-// которую можно вставить в DOM или сохранить в файл
+// Получаем разные типы тем на основе описания
+const { theme, pixelifyTheme, cssVarsTheme } = expandAll(myNewAwesomeTheme);
+const { pixelifyTheme: pixelifyThemeDark } = expandAll(myNewAwesomeThemeDark);
+
+// Для использования, например, в вебе вам подойдет компиляция "пикселяризованной" темы в формате '.css':
 const cssString = compileStyles('css', pixelifyTheme);
+const cssStringDark = compileStyles('css', pixelifyThemeDark);
+
+// Полученные CSS-строки со всеми переменными тем можно вставить в DOM или сохранить в файл
 ```
 
 # Roadmap

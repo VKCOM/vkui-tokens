@@ -61,6 +61,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundContrastInverse: '#303030',
 		colorBackgroundContrastThemed: '#FFFFFF',
 		colorBackgroundAccentTint: '#5a9eff',
+		colorBackgroundInfoTint: '#f0f4ff',
 
 		// Text
 		colorTextAccent: '#005FF9',
@@ -193,6 +194,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundContrastInverse: '#303030',
 		colorBackgroundContrastThemed: '#303030',
 		colorBackgroundAccentTint: '#5a9eff',
+		colorBackgroundInfoTint: '#19202f',
 
 		// Text
 		colorTextAccent: '#3C82FD',
