@@ -85,7 +85,7 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorBackgroundModalInverse: background.background_modal_inverse,
 			colorBackgroundWarning: {
 				light: '#FFF2D6',
-				dark: '#5B4D35',
+				dark: '#473315',
 			}[colorsScheme],
 			colorBackgroundPositive: background.background_positive,
 			colorBackgroundNegative: background.background_negative,
@@ -135,8 +135,8 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorIconContrastSecondary: icons.icon_contrast_secondary,
 			colorIconPositive: icons.icon_positive,
 			colorIconWarning: {
-				light: '#E1B406',
-				dark: '#DBAF06',
+				light: '#F8A01C',
+				dark: '#EDB055',
 			}[colorsScheme],
 			colorIconNegative: icons.icon_negative,
 
