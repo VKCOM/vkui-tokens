@@ -136,16 +136,22 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundModalInverse: ColorDescription;
 
 	/**
-	 * @desc Цвет фона предупреждающих элементов
-	 * @tags color, background
-	 */
-	colorBackgroundWarning: ColorDescription;
-
-	/**
 	 * @desc Фон для использования в позитивных сценариях работы
 	 * @tags color, background
 	 */
 	colorBackgroundPositive: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для использования в позитивных сценариях работы
+	 * @tags color, background
+	 */
+	colorBackgroundPositiveTint: ColorDescription;
+
+	/**
+	 * @desc Цвет фона предупреждающих элементов
+	 * @tags color, background
+	 */
+	colorBackgroundWarning: ColorDescription;
 
 	/**
 	 * @desc Фон для ошибок и использования в негативных сценариях работы
@@ -160,10 +166,10 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundNegativeTint: ColorDescription;
 
 	/**
-	 * @desc Тонированный фон для использования в позитивных сценариях работы
+	 * @desc Тонированный фон для важной информации в нейтральных сценариях работы
 	 * @tags color, background
 	 */
-	colorBackgroundPositiveTint: ColorDescription;
+	colorBackgroundInfoTint: ColorDescription;
 
 	/**
 	 * @desc Фон для полей ввода, селектов и других подобных компонентов
