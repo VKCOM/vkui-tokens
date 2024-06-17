@@ -2150,10 +2150,10 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/prettier-config/-/prettier-config-0.1.0.tgz#4bb288d12a4a3f38cab1827bf7b94b10888773a9"
   integrity sha512-Ec0V5C4IUUZm/7cxHX1AowXRdK3lBEoXXCDxZ8Ii6N3MPhYOXDfegen3ld40mmtQA1jMpJdiqpH+E8e8st/zTg==
 
-"@vkontakte/vk-bridge@2.14.1":
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.14.1.tgz#5966d9e2837570d7aed78d654bfda4ba83695c54"
-  integrity sha512-ygUkWmAj1Yca1y6OKcFRhZjM2jJ8dlD/YM0hbz86iXc3Xrd8fc1aKGAOLmgPsXkqBR3mWMxA7PoNdlVLB97Qpg==
+"@vkontakte/vk-bridge@2.14.2":
+  version "2.14.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.14.2.tgz#7b8e8f120b9128e9c6e8424f56afbb28f6918ff2"
+  integrity sha512-npPEBw6nCLNv1vxJr7fUOsEEfglP8soOi2B2fscgE/aTxd00MF/nITzSq+LASrfSgpk/f3AtAw3CnE3Ia5E98w==
 
 "@vkontakte/vkjs@1.1.2", "@vkontakte/vkjs@^1.1.2":
   version "1.1.2"
