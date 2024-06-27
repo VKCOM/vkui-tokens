@@ -17,7 +17,6 @@ export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	tutoriaColorBackgroundOverlayAlpha: toneOpacity('#181B1E', 0.4),
 	tutoriaColorBackgroundNeutral: '#939FAD',
 	tutoriaColorBackgroundAccentTint: { normal: '#E5F1FF', hover: '#CCE4FF', active: '#99C9FF' },
-	tutoriaColorBackgroundColorPrimary: { normal: '#181B1E', hover: '#41474E', active: '#5C646D' },
 	tutoriaColorBackgroundPositiveTint: { normal: '#EDF7ED', hover: '#CAF6DA', active: '#98EDB7' },
 	tutoriaColorBackgroundWarning: { normal: '#FC9C0A', hover: '#FDB03B', active: '#FED79D' },
 	tutoriaColorBackgroundWarningTint: { normal: '#FFF5E7', hover: '#FEEBCE', active: '#FED79D' },
@@ -26,7 +25,7 @@ export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
 	tutoriaColorBackgroundInfoTint: { normal: '#ECF3FC', hover: '#CCE8FC', active: '#99D1FA' },
 
 	// shadow
-	tutoriaColorCardBoxShadow: 'rgba(37, 41, 46, 0.04)',
+	tutoriaColorCardBoxShadowAlpha: 'rgba(37, 41, 46, 0.04)',
 
 	// text
 	tutoriaColorTextWarning: '#FC9C0A',
@@ -114,8 +113,6 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		colorBackgroundContrast: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
 		colorBackgroundAccent: { normal: '#0077FF', hover: '#3392FF', active: '#66ADFF' },
 		colorBackgroundSecondary: { normal: '#E9ECEF', hover: '#E9ECEF', active: '#D4D9DE' },
-		colorBackgroundSecondaryAlpha: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
-		colorTransparent: { normal: 'transparent', hover: '#F4F5F7', active: '#E9ECEF' },
 		colorBackgroundNegative: { normal: '#FF4046', hover: '#FF666B', active: '#FFB3B5' },
 		colorBackgroundPositive: { normal: '#02D14E', hover: '#34DA71', active: '#66E394' },
 

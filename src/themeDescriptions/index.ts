@@ -61,8 +61,6 @@ export const themes = [
 	vkIdOkThemeDark,
 	vkIdOkIOSTheme,
 	vkIdOkIOSThemeDark,
-
-	// Темы, наследуемые от Tutoria
 	tutoriaTheme,
 	tutoriaDarkTheme,
 

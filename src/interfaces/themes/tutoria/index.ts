@@ -30,12 +30,11 @@ export interface LocalTutoriaColorsDescriptionStruct {
 	tutoriaColorBackgroundAccentTint: ColorDescription;
 	tutoriaColorBackgroundWarning: ColorDescription;
 	tutoriaColorBackgroundWarningTint: ColorDescription;
-	tutoriaColorBackgroundColorPrimary: ColorDescription;
 	tutoriaColorBackgroundPositiveTint: ColorDescription;
 	tutoriaColorBackgroundNegativeTint: ColorDescription;
 	tutoriaColorBackgroundInfo: ColorDescription;
 	tutoriaColorBackgroundInfoTint: ColorDescription;
-	tutoriaColorCardBoxShadow: ColorDescription;
+	tutoriaColorCardBoxShadowAlpha: ColorDescription;
 
 	tutoriaColorTextWarning: ColorDescription;
 	tutoriaColorTextInfo: ColorDescription;
