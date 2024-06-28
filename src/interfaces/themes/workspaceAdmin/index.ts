@@ -1,5 +1,9 @@
 import { ThemeCssVars } from '@/interfaces/general';
-import { ColorDescription, ColorsDescriptionStruct } from '@/interfaces/general/colors';
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '@/interfaces/general/colors';
 import { Font } from '@/interfaces/general/typography';
 import {
 	LocalParadigmColorsDescriptionStruct,
@@ -15,7 +19,14 @@ export interface LocalWorkspaceAdminColorsDescriptionStruct {
 	colorIconNegativeSnackbar: ColorDescription;
 }
 
-export interface ThemeWorkspaceAdmin extends ParadigmTheme {}
+export type WorkspaceAdminLocalColors = {
+	[key in keyof LocalWorkspaceAdminColorsDescriptionStruct]: ColorWithStates;
+};
+
+export interface ThemeWorkspaceAdmin
+	extends ParadigmTheme,
+		ThemeWorkspaceOverValues,
+		WorkspaceAdminLocalColors {}
 
 export interface ThemeWorkspaceAdminDescription
 	extends ParadigmThemeDescription,
