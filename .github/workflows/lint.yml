@@ -24,7 +24,7 @@ jobs:
         run: npm run build:local
         
       - name: Lint code
-        run: npm run lint
+        run: npm run lint:fix
         
       - name: Test and generate snapshots
         run: npm test -- -u
