@@ -1,7 +1,8 @@
 import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
+import lodash from 'lodash';
 
-import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription } from '@/interfaces/general';
+import { DeepPartial } from '@/interfaces/general/tools/utils';
 import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
 import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
 import {
@@ -154,9 +155,99 @@ const vkComLightColor: ColorsDescription = {
 	},
 };
 
-export const vkComFonts = {
-	...fonts,
-	fontHeadline: alias('fontHeadline1'),
+const vkComFontsPartial: DeepPartial<typeof fonts> = {
+	fontFamilyAccent,
+	fontFamilyBase,
+
+	fontDisplayTitle1: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle2: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle3: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle4: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontTitle1: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontTitle2: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontTitle3: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontHeadline2: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontParagraph: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontFootnote: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontFootnoteCaps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption1: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption1Caps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption2: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption2Caps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption3: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption3Caps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
@@ -196,6 +287,11 @@ export const vkComFonts = {
 		},
 	},
 };
+
+export const vkComFonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+	lodash.cloneDeep(fonts),
+	vkComFontsPartial,
+);
 
 export const vkComTheme: ThemeVkComDescription = {
 	...lightTheme,
