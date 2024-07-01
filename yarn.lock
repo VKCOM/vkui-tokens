@@ -2141,10 +2141,17 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/vk-bridge/-/vk-bridge-2.14.2.tgz#7b8e8f120b9128e9c6e8424f56afbb28f6918ff2"
   integrity sha512-npPEBw6nCLNv1vxJr7fUOsEEfglP8soOi2B2fscgE/aTxd00MF/nITzSq+LASrfSgpk/f3AtAw3CnE3Ia5E98w==
 
-"@vkontakte/vkjs@1.1.2", "@vkontakte/vkjs@^1.1.2":
+"@vkontakte/vkjs@1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-1.1.2.tgz#bde6c651aa2aac63faac008cd0121a96df6fab5f"
   integrity sha512-GNrbq0zDW3hsPAnS7N6jML5G7+p1KetvaBt9wblwF5HgrKaHNFoaHnF50x8opIBGMZqS1OTkYJ/7BXA5hiVXjg==
+  dependencies:
+    "@swc/helpers" "^0.5.0"
+
+"@vkontakte/vkjs@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-1.2.0.tgz#ca4fa56f53aa84f25d072534c50fe73106400a64"
+  integrity sha512-l5u3EGvKACQaSB3DFphY3PNgmkK7H2KZ/6XqHcqqkwAw1wrMu4ESWvkyczLxaa6/9hMTfw2Jj3VssiYDaHhbeg==
   dependencies:
     "@swc/helpers" "^0.5.0"
 
@@ -2156,14 +2163,14 @@
     "@floating-ui/react-dom" "^2.1.0"
     "@swc/helpers" "^0.5.11"
 
-"@vkontakte/vkui@6.1.1":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-6.1.1.tgz#0bd185a3718fc3f9a2c585d3f8ba6b6eb9a04ca4"
-  integrity sha512-2+6VtDkBNpLsDYW0VGeC+n5HNB7Lgx+liGHEzDlX6c6i7fYg4wSL/82/99lTn91iYOFQldbjpW3HwfJLTlRMlw==
+"@vkontakte/vkui@6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-6.2.0.tgz#4acc5ae8d739b53c8a3ee758874d88717486612a"
+  integrity sha512-bzH1sL8r0/DgiKao+j0mQKYK2zcOIZTO5XV+plblTMad8D/Mk+pQF7gnCNMnbFWEgXjowcx0+pfCJUE5A7Omrg==
   dependencies:
     "@swc/helpers" "^0.5.11"
     "@vkontakte/icons" "^2.115.0"
-    "@vkontakte/vkjs" "^1.1.2"
+    "@vkontakte/vkjs" "^1.2.0"
     "@vkontakte/vkui-floating-ui" "^0.2.1"
     dayjs "^1.11.11"
     mitt "^3.0.1"
