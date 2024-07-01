@@ -22,6 +22,14 @@ import { promoTheme } from '@/themeDescriptions/themes/promo';
 import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
 import { searchTheme } from '@/themeDescriptions/themes/search';
 import { todoTheme } from '@/themeDescriptions/themes/todo';
+import {
+	vkAccessibilityTheme,
+	vkAccessibilityThemeDark,
+} from '@/themeDescriptions/themes/vkAccessibility';
+import {
+	vkAccessibilityIOSTheme,
+	vkAccessibilityIOSThemeDark,
+} from '@/themeDescriptions/themes/vkAccessibilityIOS';
 import { vkComTheme, vkComThemeDark } from '@/themeDescriptions/themes/vkCom';
 import { vkIdOkTheme, vkIdOkThemeDark } from '@/themeDescriptions/themes/vkIdOk';
 import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '@/themeDescriptions/themes/vkIdOkIOS';
@@ -46,6 +54,10 @@ export const themes = [
 	vkBaseDark,
 
 	// ==== Темы, наследуемые от базовой темы VK ====
+	vkAccessibilityTheme,
+	vkAccessibilityThemeDark,
+	vkAccessibilityIOSTheme,
+	vkAccessibilityIOSThemeDark,
 	vkComTheme,
 	vkComThemeDark,
 	vkIOSTheme,
