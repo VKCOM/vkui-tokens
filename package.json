@@ -57,7 +57,7 @@
     "@vkontakte/icons": "2.123.0",
     "@vkontakte/prettier-config": "0.1.0",
     "@vkontakte/vk-bridge": "2.14.2",
-    "@vkontakte/vkjs": "1.1.2",
+    "@vkontakte/vkjs": "1.2.0",
     "@vkontakte/vkui": "6.1.1",
     "babel-jest": "29.7.0",
     "babel-loader": "9.1.3",
