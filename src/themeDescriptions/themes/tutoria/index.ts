@@ -1,57 +1,10 @@
 import { toneOpacity } from '@/build/helpers/cssHelpers';
-import {
-	LocalTutoriaColorsDescriptionStruct,
-	ThemeTutoriaAdaptiveTokens,
-	ThemeTutoriaDescription,
-} from '@/interfaces/themes/tutoria';
+import { ThemeTutoriaAdaptiveTokens, ThemeTutoriaDescription } from '@/interfaces/themes/tutoria';
 import { darkTheme, lightTheme } from '@/themeDescriptions/base/vk';
 
 const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
 const fontFamilyAccent = `VKSansDisplay, ${fontFamilyFallbacks}`;
 const fontFamilyBase = `Roboto, ${fontFamilyFallbacks}`;
-
-export const tutoriaThemeColors: LocalTutoriaColorsDescriptionStruct = {
-	// background
-	tutoriaColorBackgroundPrimary: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
-	tutoriaColorBackgroundContentInverse: { normal: '#181B1E', hover: '#41474E', active: '#5C646D' },
-	tutoriaColorBackgroundOverlayAlpha: toneOpacity('#181B1E', 0.4),
-	tutoriaColorBackgroundNeutral: '#939FAD',
-	tutoriaColorBackgroundAccentTint: { normal: '#E5F1FF', hover: '#CCE4FF', active: '#99C9FF' },
-	tutoriaColorBackgroundPositiveTint: { normal: '#EDF7ED', hover: '#CAF6DA', active: '#98EDB7' },
-	tutoriaColorBackgroundWarning: { normal: '#FC9C0A', hover: '#FDB03B', active: '#FED79D' },
-	tutoriaColorBackgroundWarningTint: { normal: '#FFF5E7', hover: '#FEEBCE', active: '#FED79D' },
-	tutoriaColorBackgroundNegativeTint: { normal: '#FFECED', hover: '#FFD9DA', active: '#FFB3B5' },
-	tutoriaColorBackgroundInfo: { normal: '#008DF2', hover: '#33A4F5', active: '#66BBF7' },
-	tutoriaColorBackgroundInfoTint: { normal: '#ECF3FC', hover: '#CCE8FC', active: '#99D1FA' },
-
-	// shadow
-	tutoriaColorCardBoxShadowAlpha: 'rgba(37, 41, 46, 0.04)',
-
-	// text
-	tutoriaColorTextWarning: '#FC9C0A',
-	tutoriaColorTextInfo: '#008DF2',
-
-	// icon
-	tutoriaColorIconWarning: '#FC9C0A',
-	tutoriaColorIconInfo: '#008DF2',
-	tutoriaColorIconLink: '#008DF2',
-
-	// separator
-	tutoriaColorSeparatorPrimaryAlpha: toneOpacity('#E9ECEF', 0.2),
-	tutoriaColorSeparatorSecondaryAlpha: toneOpacity('#E9ECEF', 0.1),
-
-	// stroke
-	tutoriaColorStrokePrimary: '#181B1E',
-	tutoriaColorStrokeSecondary: '#D4D9DE',
-	tutoriaColorStrokeTertiary: '#E9ECEF',
-	tutoriaColorStrokeAccentTint: '#99C9FF',
-	tutoriaColorStrokePositiveTint: '#98EDB7',
-	tutoriaColorStrokeWarning: '#FC9C0A',
-	tutoriaColorStrokeWarningTint: '#FED79D',
-	tutoriaColorStrokeNegativeTint: '#FFB3B5',
-	tutoriaColorStrokeInfo: '#008DF2',
-	tutoriaColorStrokeInfoTint: '#99D1FA',
-};
 
 export const tutoriaThemeAdaptiveTokens: ThemeTutoriaAdaptiveTokens = {
 	// fonts
@@ -107,7 +60,54 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 	themeNameBase: 'tutoria',
 	colors: {
 		...lightTheme.colors,
-		...tutoriaThemeColors,
+
+		// Специфичные для Тутории токены
+		// background
+		tutoriaColorBackgroundPrimary: { normal: '#F4F5F7', hover: '#E9ECEF', active: '#D4D9DE' },
+		tutoriaColorBackgroundContentInverse: {
+			normal: '#181B1E',
+			hover: '#41474E',
+			active: '#5C646D',
+		},
+		tutoriaColorBackgroundOverlayAlpha: toneOpacity('#181B1E', 0.4),
+		tutoriaColorBackgroundNeutral: '#939FAD',
+		tutoriaColorBackgroundAccentTint: { normal: '#E5F1FF', hover: '#CCE4FF', active: '#99C9FF' },
+		tutoriaColorBackgroundPositiveTint: { normal: '#EDF7ED', hover: '#CAF6DA', active: '#98EDB7' },
+		tutoriaColorBackgroundWarning: { normal: '#FC9C0A', hover: '#FDB03B', active: '#FED79D' },
+		tutoriaColorBackgroundWarningTint: { normal: '#FFF5E7', hover: '#FEEBCE', active: '#FED79D' },
+		tutoriaColorBackgroundNegativeTint: { normal: '#FFECED', hover: '#FFD9DA', active: '#FFB3B5' },
+		tutoriaColorBackgroundInfo: { normal: '#008DF2', hover: '#33A4F5', active: '#66BBF7' },
+		tutoriaColorBackgroundInfoTint: { normal: '#ECF3FC', hover: '#CCE8FC', active: '#99D1FA' },
+
+		// shadow
+		tutoriaColorCardBoxShadowAlpha: 'rgba(37, 41, 46, 0.04)',
+
+		// text
+		tutoriaColorTextWarning: '#FC9C0A',
+		tutoriaColorTextInfo: '#008DF2',
+
+		// icon
+		tutoriaColorIconWarning: '#FC9C0A',
+		tutoriaColorIconInfo: '#008DF2',
+		tutoriaColorIconLink: '#008DF2',
+
+		// separator
+		tutoriaColorSeparatorPrimaryAlpha: toneOpacity('#E9ECEF', 0.2),
+		tutoriaColorSeparatorSecondaryAlpha: toneOpacity('#E9ECEF', 0.1),
+
+		// stroke
+		tutoriaColorStrokePrimary: '#181B1E',
+		tutoriaColorStrokeSecondary: '#D4D9DE',
+		tutoriaColorStrokeTertiary: '#E9ECEF',
+		tutoriaColorStrokeAccentTint: '#99C9FF',
+		tutoriaColorStrokePositiveTint: '#98EDB7',
+		tutoriaColorStrokeWarning: '#FC9C0A',
+		tutoriaColorStrokeWarningTint: '#FED79D',
+		tutoriaColorStrokeNegativeTint: '#FFB3B5',
+		tutoriaColorStrokeInfo: '#008DF2',
+		tutoriaColorStrokeInfoTint: '#99D1FA',
+
+		// Переопределение стандартных токенов
 		// background
 		colorBackgroundContent: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
 		colorBackgroundContrast: { normal: '#FFFFFF', hover: '#F4F5F7', active: '#E9ECEF' },
@@ -145,6 +145,7 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 		colorStrokePositive: '#02D14E',
 		colorStrokeNegative: '#FF4046',
 	},
+
 	...tutoriaThemeAdaptiveTokens,
 
 	// fonts
@@ -304,7 +305,9 @@ export const tutoriaTheme: ThemeTutoriaDescription = {
 };
 
 export const tutoriaDarkTheme = {
+	...darkTheme,
 	...tutoriaTheme,
+
 	themeName: 'tutoriaDark',
 
 	colors: {
