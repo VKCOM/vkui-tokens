@@ -14,6 +14,10 @@ import {
 	octaviusCompactDarkTheme,
 	octaviusCompactTheme,
 } from '@/themeDescriptions/themes/octaviusCompact';
+import {
+	octaviusNew2024DarkTheme,
+	octaviusNew2024Theme,
+} from '@/themeDescriptions/themes/octaviusNew2024';
 import { octaviusVKDarkTheme, octaviusVKTheme } from '@/themeDescriptions/themes/octaviusVK';
 import { otvetDarkTheme, otvetTheme } from '@/themeDescriptions/themes/otvet';
 import { pharmaTheme } from '@/themeDescriptions/themes/pharma';
@@ -81,6 +85,8 @@ export const themes = [
 	octaviusCompactDarkTheme,
 	octaviusVKTheme,
 	octaviusVKDarkTheme,
+	octaviusNew2024Theme,
+	octaviusNew2024DarkTheme,
 
 	// Темы, наследуемые от Calendar
 	calendarTheme,
