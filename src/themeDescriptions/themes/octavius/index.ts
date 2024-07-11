@@ -461,7 +461,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 
 export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 	...lightTheme,
-	themeName: 'octavius',
+	themeName: 'octaviusWhite',
 	themeNameBase: 'octavius',
 	octaviusShadowSidebarItemText: 'none',
 	octaviusShadowSidebarItemIcon: 'none',
