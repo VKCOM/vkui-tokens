@@ -8,6 +8,7 @@ import { mycomTheme } from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
 	octaviusTheme,
+	octaviusWhiteDarkTheme,
 	octaviusWhiteTheme,
 } from '@/themeDescriptions/themes/octavius';
 import {
@@ -86,6 +87,7 @@ export const themes = [
 	calendarTheme,
 	calendarDarkTheme,
 	octaviusWhiteTheme,
+	octaviusWhiteDarkTheme,
 
 	// Темы, наследуемые от Media
 	mediaTheme,

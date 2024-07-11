@@ -333,7 +333,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderIconUnread: darkTheme.colors.colorIconContrast,
 		octaviusColorHeaderIconFavorite: darkTheme.colors.colorIconContrast,
 		octaviusColorHeaderIconAttach: darkTheme.colors.colorIconContrast,
-		octaviusColorHeaderProgress: darkTheme.colors.colorBackgroundAccentAlternative,
 
 		octaviusColorHeaderSearchBackground: '#303030',
 		octaviusColorHeaderSearchBackgroundCollapsed: darkTheme.colors.colorBackgroundModal,
@@ -408,7 +407,6 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorActionArchive: '#0EAB67',
 
 		// Category
-		octaviusColorIconUnread: '#0C7CFF',
 		octaviusColorIconFavorite: '#FF4550',
 		octaviusColorIconOrder: '#F94CA3',
 		octaviusColorIconFinance: '#24C780',
@@ -454,6 +452,19 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.12)',
 
 		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.12)',
+
+		colorTextAccent: '#1A85FF',
+		colorTextAccentThemed: '#FFFFFF',
+		colorTextLink: '#1A85FF',
+		colorTextLinkThemed: '#FFFFFF',
+		colorIconAccent: '#0077FF',
+		colorIconAccentThemed: '#FFFFFF',
+		colorBackgroundAccentThemed: '#FFFFFF',
+		colorBackgroundAccent: '#0077FF',
+		colorStrokeAccent: '#0077FF',
+		colorStrokeAccentThemed: '#FFFFFF',
+		octaviusColorIconUnread: '#0077FF',
+		octaviusColorHeaderProgress: '#0077FF',
 	},
 	octaviusColorLetterAttachListBackground:
 		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',
@@ -737,4 +748,164 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 	octaviusSizeSidebarWidgetsHeightCompactMin: {
 		regular: 104,
 	},
+};
+
+export const octaviusWhiteDarkTheme: ThemeOctaviusDescription = {
+	...octaviusWhiteTheme,
+	...darkTheme,
+	...darkThemeElevation,
+	themeName: 'octaviusWhiteDark',
+	colors: {
+		...octaviusTheme.colors,
+		...darkTheme.colors,
+		colorBackgroundThumbnail: '#1F1F1F',
+		colorBackgroundThumbnailAlpha: 'rgba(255, 255, 255, 0.08)',
+		octaviusColorPlaceholderBackground: '#000000',
+		octaviusColorPromoBackground: '#303030',
+		octaviusColorThreadFooterBackground: '#303030',
+
+		octaviusColorPortalMenuBackground: '#232324',
+		octaviusColorSidebarItemBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.24)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
+
+		octaviusColorBackground: '#19191A',
+		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
+			darkTheme.colors.colorBackgroundAccent,
+			0.12,
+		),
+
+		// Header
+		octaviusColorHeaderBackground: '#232324',
+		octaviusColorHeaderButtonText: darkTheme.colors.colorTextContrast,
+		octaviusColorHeaderIcon: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconUnread: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconFavorite: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderIconAttach: darkTheme.colors.colorIconContrast,
+		octaviusColorHeaderProgress: darkTheme.colors.colorBackgroundAccentAlternative,
+
+		octaviusColorHeaderSearchBackground: '#303030',
+		octaviusColorHeaderSearchBackgroundCollapsed: darkTheme.colors.colorBackgroundModal,
+		octaviusColorHeaderSearchChipBackground: '#404040',
+		octaviusColorHeaderSearchChipBackgroundEditable: '#3e3e3e',
+		octaviusColorHeaderSearchChipBorderEditableAlpha: 'rgba(255, 255, 255, .48)',
+		octaviusColorHeaderSearchText: darkTheme.colors.colorTextPrimary,
+		octaviusColorHeaderSearchTextCollapsed: darkTheme.colors.colorTextSecondary,
+
+		octaviusColorHeaderButtonBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.2)',
+		},
+
+		octaviusColorHeaderTabActiveThemedAlpha: 'rgba(255, 255, 255, .8)',
+		octaviusColorHeaderTabTextActiveThemed: '#E7E8EA',
+		octaviusColorPortalSearchBackgroundAlpha: 'rgba(255, 255, 255, .08)',
+		octaviusColorPortalSearchIconThemedAlpha: 'rgba(255, 255, 255, .3)',
+
+		// Sidebar
+		octaviusColorSidebarItemIconPrimary: '#E7E8EA',
+
+		octaviusColorSidebarItemIcon: '#E7E8EA',
+		octaviusColorSidebarItemText: '#E7E8EA',
+		octaviusColorSidebarItemTextActive: '#ffffff',
+		octaviusColorSidebarItemIconActive: '#ffffff',
+		octaviusColorSidebarItemTextSecondary: '#8C8E94',
+		octaviusColorSidebarItemIconSecondary: '#8C8E94',
+
+		octaviusColorSidebarShortItemIcon: '#E7E8EA',
+		octaviusColorSidebarShortItemText: '#E7E8EA',
+		octaviusColorSidebarShortItemTextActive: '#ffffff',
+		octaviusColorSidebarShortItemIconActive: '#ffffff',
+		octaviusColorSidebarShortItemTextSecondary: darkTheme.colors.colorTextSecondary,
+		octaviusColorSidebarShortItemIconSecondary: darkTheme.colors.colorIconSecondary,
+
+		octaviusColorSidebarItemTextPrimary: darkTheme.colors.colorTextPrimary,
+		octaviusColorSidebarButtonIcon: lightTheme.colors.colorIconPrimary,
+		octaviusColorSidebarButtonText: lightTheme.colors.colorTextPrimary,
+		octaviusColorSidebarButtonBackground: '#FFFFFF',
+
+		octaviusColorSidebarCounterBackgroundAlpha: darkTheme.colors.colorTransparent,
+
+		octaviusColorSidebarCounterText: darkTheme.colors.colorTextPrimary,
+		octaviusColorSidebarScrollbarAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorSidebarItemButtonBackgroundAlpha: {
+			normal: 'rgba(255, 255, 255, 0.08)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
+
+		octaviusColorSidebarIconUnread: '#0C7CFF',
+		octaviusColorSidebarIconFavorite: '#FF4550',
+		octaviusColorSidebarIconOrder: '#F94CA3',
+		octaviusColorSidebarIconFinance: '#24C780',
+		octaviusColorSidebarIconRegistration: '#FF9C37',
+		octaviusColorSidebarIconTravel: '#C15DF3',
+		octaviusColorSidebarIconEvent: '#3BBAFE',
+		octaviusColorSidebarIconFees: '#EE3C3C',
+
+		octaviusColorButtonText: '#E7E8EA',
+		octaviusColorButtonIcon: '#E7E8EA',
+		octaviusColorButtonBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.04)',
+			active: 'rgba(255, 255, 255, 0.08)',
+		},
+
+		octaviusColorContentScrollbarAlpha: 'rgba(255, 255, 255, 0.12)',
+
+		octaviusColorActionArchive: '#0EAB67',
+
+		// Category
+		octaviusColorIconUnread: '#0C7CFF',
+		octaviusColorIconFavorite: '#FF4550',
+		octaviusColorIconOrder: '#F94CA3',
+		octaviusColorIconFinance: '#24C780',
+		octaviusColorIconRegistration: '#FF9C37',
+		octaviusColorIconTravel: '#C15DF3',
+		octaviusColorIconEvent: '#3BBAFE',
+		octaviusColorIconFees: '#EE3C3C',
+
+		octaviusColorIconEventAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorIconOrderAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorIconTravelAlpha: 'rgba(255, 255, 255, 0.12)',
+
+		octaviusColorListLetterBackground: darkTheme.colors.colorBackgroundContent,
+		octaviusColorListLetterSeparatorAlpha: darkTheme.colors.colorSeparatorPrimaryAlpha,
+		octaviusColorListLetterAdvBackground: '#151515',
+		octaviusColorListBackgroundPositiveAlpha: 'rgba(13, 194, 104, 0.08)',
+		octaviusColorListBackgroundPositiveTagsOutline: '#272F2A',
+
+		octaviusColorDatasetBackground: darkTheme.colors.colorBackgroundContent,
+		octaviusColorEmptyStateText: darkTheme.colors.colorTextPrimary,
+		octaviusColorButtonEmptyStateText: '#E7E8EA',
+		octaviusColorButtonEmptyStateBackgroundAlpha: 'rgba(255, 255, 255, 0.12)',
+		octaviusColorLayoutBorderAlpha: 'transparent',
+		octaviusColorLayoutLetterBorderAlpha: 'rgba(0, 0, 0, 0.4)',
+		octaviusColorEmptyStateTextLink: '#E7E8EA',
+		octaviusColorLetterListTextUnread: '#ffffff',
+		octaviusColorLetterContactBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.08)',
+			active: 'rgba(255, 255, 255, 0.16)',
+		},
+		octaviusColorLetterPreviewBackgroundPrimary: '#141414',
+		octaviusColorLetterPreviewBackgroundSecondary: '#0F0F0F',
+		octaviusColorNotificationBorder: '#000000',
+
+		octaviusTextDecorationEmptyStateTextLink: {
+			normal: 'underline',
+			hover: 'none',
+			active: 'none',
+		},
+
+		octaviusColorBackgroundNegativeTintAlpha: 'rgba(236, 71, 80, 0.16)',
+		octaviusColorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.12)',
+
+		octaviusColorButtonBackgroundContrastAlpha: 'rgba(250, 250, 250, 0.12)',
+	},
+	octaviusColorLetterAttachListBackground:
+		'linear-gradient(90deg, rgba(31, 31, 31, 0) 0%, #1f1f1f 80%)',
 };
