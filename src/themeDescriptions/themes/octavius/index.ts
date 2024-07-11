@@ -107,8 +107,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderSearchTextCollapsed: lightTheme.colors.colorTextSecondary,
 		octaviusColorHeaderFilterTextAlpha: lightColors.colors.colorIconMediumAlpha,
 
-		octaviusColorHeaderProgress: lightTheme.colors.colorBackgroundAccentAlternative,
-
 		octaviusColorHeaderTabActiveThemedAlpha: 'rgba(0, 95, 249, .10)',
 		octaviusColorHeaderTabTextActiveThemed: '#005FF9',
 		octaviusColorPortalSearchBackgroundAlpha: 'rgba(255, 255, 255, .99)',
@@ -160,7 +158,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorActionArchive: '#1F5C23',
 
 		// Category
-		octaviusColorIconUnread: '#005FF9',
 		octaviusColorIconFavorite: '#fc2c38',
 		octaviusColorIconOrder: '#ff54aa',
 		octaviusColorIconFinance: '#2fc885',
@@ -247,6 +244,20 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.04)',
 			hover: 'rgba(255, 255, 255, 0.08)',
 		},
+
+		// fmail-24903
+		colorTextAccent: '#0070F0',
+		colorTextAccentThemed: '#0070F0',
+		colorTextLink: '#0070F0',
+		colorTextLinkThemed: '#0070F0',
+		colorIconAccent: '#0077FF',
+		colorIconAccentThemed: '#0077FF',
+		colorBackgroundAccentThemed: '#0077FF',
+		colorBackgroundAccent: '#0077FF',
+		colorStrokeAccent: '#0070FF',
+		colorStrokeAccentThemed: '#0070FF',
+		octaviusColorIconUnread: '#0077FF',
+		octaviusColorHeaderProgress: '#0077FF',
 	},
 
 	octaviusTextShadowEmptyStateText: 'none',
