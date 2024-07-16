@@ -143,6 +143,11 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaTitle6: Adaptive<Font>;
 	/**
+	 * @desc Подзаголовок, отделённый визуально от заголовка выше
+	 * @tags font
+	 */
+	mediaFontMediaSubtitleLight: Adaptive<Font>;
+	/**
 	 * @desc Лид статьи
 	 * @tags font
 	 */
@@ -200,6 +205,16 @@ interface MediaUniqTokens {
 	fontH2: Adaptive<Font>;
 	fontH3: Adaptive<Font>;
 	fontH4: Adaptive<Font>;
+	/**
+	 * @desc
+	 * @tags size
+	 */
+	mediaSizeGrid: number;
+	/**
+	 * @desc Базовый gap сетки
+	 * @tags size
+	 */
+	mediaSizeGap: number;
 	/**
 	 * @desc Ширина колонки страницы
 	 * @tags size, component
