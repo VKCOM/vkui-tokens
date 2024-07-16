@@ -548,6 +548,12 @@ export const mediaTheme: ThemeMediaDescription = {
 		compact: 620,
 		large: 780,
 	},
+	gridMainContentWide: {
+		regular: '100%',
+		compactX: 620,
+		compact: 620,
+		large: 860,
+	},
 	gridAsideContent: {
 		regular: '100%',
 		compactX: 300,

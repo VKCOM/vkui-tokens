@@ -226,6 +226,11 @@ interface MediaUniqTokens {
 	 */
 	gridMainContent: Adaptive<number | string>;
 	/**
+	 * @desc Ширина основной колонки контента с выносом
+	 * @tags size, component
+	 */
+	gridMainContentWide: Adaptive<number | string>;
+	/**
 	 * @desc Ширина sidebar
 	 * @tags size, component
 	 */
