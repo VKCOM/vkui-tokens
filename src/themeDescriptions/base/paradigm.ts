@@ -8,8 +8,9 @@ import { Elevation } from '@/interfaces/general/elevation';
 import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
 import { helpers } from '@/themeDescriptions/common';
 
+const fontFamilyUser = 'var(--vkui-font-family-accent, MailSans)';
 const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
-const fontFamilyAccent = `MailSans, ${fontFamilyFallbacks}`;
+const fontFamilyAccent = `${fontFamilyUser}, ${fontFamilyFallbacks}`;
 const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
