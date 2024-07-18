@@ -1,4 +1,5 @@
 import { getRGBA, toneOpacity } from '@/build/helpers/cssHelpers';
+import { staticRef } from '@/build/helpers/tokenHelpers';
 import { ThemeOctaviusDescription } from '@/interfaces/themes/octavius';
 import {
 	darkTheme,
@@ -7,6 +8,10 @@ import {
 	lightTheme,
 } from '@/themeDescriptions/base/paradigm';
 import { socialColors } from '@/themeDescriptions/common';
+
+const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
+const fontFamilyBase = 'VKSansDisplay, Helvetica, Arial, sans-serif';
+const fontFootnote = 'Arial, sans-serif';
 
 export const octaviusTheme: ThemeOctaviusDescription = {
 	...lightTheme,
@@ -253,7 +258,28 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusFilterSidebarItemIcon: 'none',
 	octaviusImageBackground: 'none',
 
-	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
+	// Типографика
+	fontFamilyBase,
+	fontTitle1: {
+		regular: {
+			...staticRef(lightTheme.fontTitle1).regular,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontText: {
+		regular: {
+			...staticRef(lightTheme.fontText).regular,
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontFootnote: {
+		regular: {
+			...staticRef(lightTheme.fontFootnote).regular,
+			fontFamily: fontFootnote,
+		},
+	},
+
+	octaviusFontFamilyDefault: 'VKSansDisplay, Helvetica, Arial, sans-serif',
 
 	octaviusFontFamilyMailSans: 'MailSans, HelveticaNeue, Helvetica, Arial, sans-serif',
 
