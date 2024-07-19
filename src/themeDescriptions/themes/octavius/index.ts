@@ -258,12 +258,14 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 	// Типографика
 	fontTitle1: {
+		...staticRef(lightTheme.fontTitle1),
 		regular: {
 			...staticRef(lightTheme.fontTitle1).regular,
 			fontFamily: fontFamilyAccent,
 		},
 	},
 	fontText: {
+		...staticRef(lightTheme.fontText),
 		regular: {
 			...staticRef(lightTheme.fontText).regular,
 			fontFamily: fontFamilyAccent,
