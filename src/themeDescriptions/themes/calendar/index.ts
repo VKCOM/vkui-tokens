@@ -246,7 +246,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 		// Цвет фона активного табика
 		calendarColorHeaderSecondaryAlpha: 'rgba(0, 95, 249, 0.1)',
 		// Цвет текста или элементов на активном табе
-		calendarColorHeaderonSecondary: '#005FF9',
+		calendarColorHeaderonSecondary: 'rgba(0, 119, 255, 0.1)',
 		// Цвет иконки в поиске
 		calendarColorHeaderonWidgetAlpha: 'rgba(0, 95, 249, 1)',
 		// Цвет фона у поиска и других виджетов
@@ -278,7 +278,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 		// второстепенный цвет текста в датах
 		calendarColorTextDateSecondary: '#93969B',
 		// акцентный цвет текста в датах
-		calendarColorTextDateAccent: '#005FF9',
+		calendarColorTextDateAccent: '#0077FF',
 		// цвет текста в таймлайне
 		calendarColorTextTimeline: '#2C2D2E',
 		// обводка сетки с событиями
@@ -651,7 +651,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		// Цвет фона активного табика
 		calendarColorHeaderSecondaryAlpha: 'rgba(255, 255, 255, 0.08)',
 		// Цвет текста или элементов на активном табе
-		calendarColorHeaderonSecondary: '#E7E8EA',
+		calendarColorHeaderonSecondary: 'rgba(255, 255, 255, 0.08)',
 		// Цвет иконки в поиске
 		calendarColorHeaderonWidgetAlpha: 'rgba(255, 255, 255, 0.3)',
 		// Цвет фона у поиска и других виджетов
@@ -683,7 +683,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		// второстепенный цвет текста в датах
 		calendarColorTextDateSecondary: '#8C8E94',
 		// акцентный цвет текста в датах
-		calendarColorTextDateAccent: '#3C82FD',
+		calendarColorTextDateAccent: '#1A85FF',
 		// цвет текста в таймлайне
 		calendarColorTextTimeline: '#E7E8EA',
 		// обводка сетки с событиями
