@@ -244,9 +244,9 @@ export const calendarTheme: ThemeCalendarDescription = {
 		// Фон шапки страницы
 		calendarColorHeaderBackground: '#FFFFFF',
 		// Цвет фона активного табика
-		calendarColorHeaderSecondaryAlpha: 'rgba(0, 95, 249, 0.1)',
+		calendarColorHeaderSecondaryAlpha: 'rgba(0, 119, 255, 0.1)',
 		// Цвет текста или элементов на активном табе
-		calendarColorHeaderonSecondary: 'rgba(0, 119, 255, 0.1)',
+		calendarColorHeaderonSecondary: '#0077FF',
 		// Цвет иконки в поиске
 		calendarColorHeaderonWidgetAlpha: 'rgba(0, 95, 249, 1)',
 		// Цвет фона у поиска и других виджетов
@@ -651,7 +651,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		// Цвет фона активного табика
 		calendarColorHeaderSecondaryAlpha: 'rgba(255, 255, 255, 0.08)',
 		// Цвет текста или элементов на активном табе
-		calendarColorHeaderonSecondary: 'rgba(255, 255, 255, 0.08)',
+		calendarColorHeaderonSecondary: '#FFFFFF',
 		// Цвет иконки в поиске
 		calendarColorHeaderonWidgetAlpha: 'rgba(255, 255, 255, 0.3)',
 		// Цвет фона у поиска и других виджетов
