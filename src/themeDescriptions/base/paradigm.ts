@@ -9,7 +9,7 @@ import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
 import { helpers } from '@/themeDescriptions/common';
 
 const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
-const fontFamilyAccent = `MailSans, ${fontFamilyFallbacks}`;
+const fontFamilyAccent = `VKSansDisplay, MailSans, ${fontFamilyFallbacks}`;
 const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;

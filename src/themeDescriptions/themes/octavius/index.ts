@@ -1,5 +1,4 @@
 import { getRGBA, toneOpacity } from '@/build/helpers/cssHelpers';
-import { staticRef } from '@/build/helpers/tokenHelpers';
 import { ThemeOctaviusDescription } from '@/interfaces/themes/octavius';
 import {
 	darkTheme,
@@ -8,8 +7,6 @@ import {
 	lightTheme,
 } from '@/themeDescriptions/base/paradigm';
 import { socialColors } from '@/themeDescriptions/common';
-
-const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
 
 export const octaviusTheme: ThemeOctaviusDescription = {
 	...lightTheme,
@@ -255,22 +252,6 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 	octaviusTextShadowSidebarItemText: 'none',
 	octaviusFilterSidebarItemIcon: 'none',
 	octaviusImageBackground: 'none',
-
-	// Типографика
-	fontTitle1: {
-		...staticRef(lightTheme.fontTitle1),
-		regular: {
-			...staticRef(lightTheme.fontTitle1).regular,
-			fontFamily: fontFamilyAccent,
-		},
-	},
-	fontText: {
-		...staticRef(lightTheme.fontText),
-		regular: {
-			...staticRef(lightTheme.fontText).regular,
-			fontFamily: fontFamilyAccent,
-		},
-	},
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
