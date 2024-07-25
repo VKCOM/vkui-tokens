@@ -232,11 +232,11 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		// Snackbar
 		octaviusColorSnackbarIconPositive: '#0DC268',
 		octaviusColorSnackbarIconNegative: '#FF5C5C',
-		octaviusColorSnackbarIconAccent: '#589BFF',
+		octaviusColorSnackbarIconAccent: '#0077FF',
 		octaviusColorSnackbarIconSecondary: '#9C9DA2',
 		octaviusColorSnackbarIconWarning: '#FF9E00',
 
-		octaviusColorSnackbarTextAccent: '#589BFF',
+		octaviusColorSnackbarTextAccent: '#1A85FF',
 		octaviusColorSnackbarTextContrast: '#FFFFFF',
 
 		octaviusColorSnackbarBackground: '#303030',
@@ -255,8 +255,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorIconAccentThemed: '#0077FF',
 		colorBackgroundAccentThemed: '#0077FF',
 		colorBackgroundAccent: '#0077FF',
-		colorStrokeAccent: '#0070FF',
-		colorStrokeAccentThemed: '#0070FF',
+		colorStrokeAccent: '#0077FF',
+		colorStrokeAccentThemed: '#0077FF',
 		octaviusColorIconUnread: '#0077FF',
 		octaviusColorHeaderProgress: '#0077FF',
 	},
