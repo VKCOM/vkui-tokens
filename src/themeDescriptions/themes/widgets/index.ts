@@ -5,6 +5,7 @@ import { darkTheme, darkThemeElevation, lightTheme } from '@/themeDescriptions/b
 export const widgetsTheme: ThemeWidgetsDescription = {
 	...lightTheme,
 	themeName: 'widgets',
+	themeNameBase: lightTheme.themeName,
 	colors: {
 		...lightTheme.colors,
 		colorStrokeAccent: '#0077FF',
