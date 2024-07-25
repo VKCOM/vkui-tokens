@@ -45,6 +45,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		colorPaletteViolet1: '#6c00ff',
 		colorPaletteViolet2: '#ae73ff',
 		colorAlert: '#c1341b',
+		colorAccentBlue: '#0077FF',
 
 		// Палитра для промо банеров
 		colorTagBackgroundMint: '#B3F0DD',
