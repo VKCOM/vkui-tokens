@@ -40,7 +40,10 @@ import {
 } from '@/themeDescriptions/themes/vkontakteAndroid';
 import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/themes/vkontakteCom';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
-import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
+import {
+	workspaceAdminDarkTheme,
+	workspaceAdminTheme,
+} from '@/themeDescriptions/themes/workspaceAdmin';
 import { workspaceLandingsTheme } from '@/themeDescriptions/themes/workspaceLandings';
 
 import { darkThemeExport as paradigmBaseDark, lightTheme as paradigmBase } from './base/paradigm';
@@ -119,6 +122,7 @@ export const themes = [
 
 	// Темы, наследуемые от WorkspaceAdmin
 	workspaceAdminTheme,
+	workspaceAdminDarkTheme,
 
 	// Темы, наследуемые от WorkspaceLandings
 	workspaceLandingsTheme,
