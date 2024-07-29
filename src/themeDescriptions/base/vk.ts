@@ -355,32 +355,32 @@ export const fonts: BaseFonts = {
 		regular: {
 			fontSize: 24,
 			lineHeight: 28,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
 	fontTitle2: {
 		regular: {
 			fontSize: 20,
 			lineHeight: 24,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
 	fontTitle3: {
 		regular: {
 			fontSize: 17,
 			lineHeight: 22,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase2,
 		},
 		compact: {
 			fontSize: 15,
@@ -391,8 +391,8 @@ export const fonts: BaseFonts = {
 		regular: {
 			fontSize: 15,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase2,
 		},
 		compact: {
 			fontSize: 14,
