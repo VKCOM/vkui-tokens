@@ -11,10 +11,10 @@ export function getGradientPointsFromColor(
 ): GradientPoints {
 	const opacityMap: OpacityMap = [
 		[0, 0],
-		[0.036, 13],
-		[0.15, 27],
-		[0.79, 68],
-		[0.95, 84],
+		[0.05, 15],
+		[0.2, 30],
+		[0.8, 70],
+		[0.95, 85],
 		[1, 100],
 	];
 

@@ -107,11 +107,15 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentBlue: resolveColor(theme.colors.dynamic_blue),
 	colorAccentGray: resolveColor(theme.colors.dynamic_gray),
 	colorAccentRed: resolveColor(theme.colors.dynamic_red),
-	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
 	colorAccentOrangePeach: resolveColor(theme.colors.dynamic_orange_peach),
+	colorAccentLime: '#BFF74F',
+	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
+	colorAccentCyan: '#7CF4DC',
+	colorAccentAzure: '#3F8AE0',
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
 	colorAccentViolet: '#792EC0',
+	colorAccentPink: '#F685FF',
 	// colorAccentSecondary: '#3F8AE0',
 
 	// Other
@@ -376,7 +380,11 @@ const vkComDarkColor: ColorsDescription = {
 		colorSeparatorPrimary3x: '#505253',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#2F422F',
+		colorAccentLime: '#CAF96C',
+		colorAccentCyan: '#55F1D2',
+		colorAccentAzure: '#5D9EE9',
 		colorAccentViolet: '#A94FFF',
+		colorAccentPink: '#F899FF',
 	},
 };
 
