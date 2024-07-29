@@ -476,10 +476,10 @@ export interface ColorsDescriptionStruct {
 	colorAccentRed: ColorDescription;
 
 	/**
-	 * @desc Палитра цветов. Зелёный цвет
+	 * @desc Палитра цветов. Огненно оранжевый цвет
 	 * @tags color, palette
 	 */
-	colorAccentGreen: ColorDescription;
+	colorAccentOrangeFire: ColorDescription;
 
 	/**
 	 * @desc Палитра цветов. Оранжевый цвет
@@ -494,10 +494,28 @@ export interface ColorsDescriptionStruct {
 	colorAccentOrangePeach: ColorDescription;
 
 	/**
-	 * @desc Палитра цветов. Огненно оранжевый цвет
+	 * @desc Палитра цветов. Лаймовый цвет
 	 * @tags color, palette
 	 */
-	colorAccentOrangeFire: ColorDescription;
+	colorAccentLime: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Зелёный цвет
+	 * @tags color, palette
+	 */
+	colorAccentGreen: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Циановый цвет
+	 * @tags color, palette
+	 */
+	colorAccentCyan: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Лазурный цвет
+	 * @tags color, palette
+	 */
+	colorAccentAzure: ColorDescription;
 
 	/**
 	 * @desc Палитра цветов. Фиолетовый цвет
@@ -512,10 +530,16 @@ export interface ColorsDescriptionStruct {
 	colorAccentViolet: ColorDescription;
 
 	/**
-	 * @desc Палитра цветов. Розовый цвет
+	 * @desc Палитра цветов. Розово-малиновый цвет
 	 * @tags color, palette
 	 */
 	colorAccentRaspberryPink: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Розовый цвет
+	 * @tags color, palette
+	 */
+	colorAccentPink: ColorDescription;
 
 	/**
 	 * @desc Второстепенный акцентный цвет для отдельных проектов
