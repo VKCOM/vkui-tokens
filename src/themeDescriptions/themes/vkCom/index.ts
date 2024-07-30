@@ -257,7 +257,6 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 			fontSize: 16,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
-			// fontWeight: fontWeightBase2,
 		},
 		compact: {
 			fontSize: 14,
