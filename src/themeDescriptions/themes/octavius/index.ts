@@ -271,7 +271,8 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
-	octaviusFontFamilyMailSans: 'VKSansDisplay, HelveticaNeue, Helvetica, Arial, sans-serif',
+	octaviusFontFamilyMailSans:
+		'VKSansDisplay, MailSans, HelveticaNeue, Helvetica, Arial, sans-serif',
 
 	octaviusFontFamilyGlobal: 'Arial, Tahoma, Verdana, sans-serif',
 	octaviusFontFamilyMac: 'Helvetica, Arial, Tahoma, Verdana, sans-serif',
@@ -722,7 +723,8 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 
 	octaviusFontFamilyDefault: 'HelveticaNeue, Helvetica, Arial, sans-serif',
 
-	octaviusFontFamilyMailSans: 'VKSansDisplay, HelveticaNeue, Helvetica, Arial, sans-serif',
+	octaviusFontFamilyMailSans:
+		'VKSansDisplay, MailSans, HelveticaNeue, Helvetica, Arial, sans-serif',
 
 	octaviusFontFamilyGlobal: 'Arial, Tahoma, Verdana, sans-serif',
 	octaviusFontFamilyMac: 'Helvetica, Arial, Tahoma, Verdana, sans-serif',
