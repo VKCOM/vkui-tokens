@@ -9,7 +9,8 @@ import { fontSizes, helpers } from '../../common';
 
 const { x2, x4, x5 } = helpers;
 
-export const fontFamily: Property.FontFamily = 'MailSans, Helvetica, Arial, sans-serif';
+export const fontFamily: Property.FontFamily =
+	'VKSansDisplay, MailSans, Helvetica, Arial, sans-serif';
 
 const fontSize2 = {
 	...fontSizes.fontSize2,
