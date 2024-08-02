@@ -21,8 +21,6 @@ const fontFamilyAccent =
 const fontFamilyBase =
 	'-apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif';
 const fontFamilyFallbacks = fontFamilyBase;
-const fontWeightAccent2 = 500;
-const fontWeightBase3 = 400;
 
 const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
@@ -258,8 +256,7 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 14,
@@ -272,7 +269,6 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 			fontSize: 14,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
 		},
 		compact: {
 			fontSize: 14,
@@ -285,7 +281,6 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 			fontSize: 16,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
 		},
 		compact: {
 			fontSize: 13,
