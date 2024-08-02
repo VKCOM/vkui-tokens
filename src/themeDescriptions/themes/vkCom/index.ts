@@ -1,7 +1,8 @@
 import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
+import lodash from 'lodash';
 
-import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription } from '@/interfaces/general';
+import { DeepPartial } from '@/interfaces/general/tools/utils';
 import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
 import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
 import {
@@ -19,6 +20,7 @@ const fontFamilyAccent =
 	'"VK Sans Display", "VK Sans Display Faux", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif';
 const fontFamilyBase =
 	'-apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif';
+const fontFamilyFallbacks = fontFamilyBase;
 const fontWeightAccent2 = 500;
 const fontWeightBase3 = 400;
 
@@ -105,11 +107,15 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentBlue: resolveColor(theme.colors.dynamic_blue),
 	colorAccentGray: resolveColor(theme.colors.dynamic_gray),
 	colorAccentRed: resolveColor(theme.colors.dynamic_red),
-	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
 	colorAccentOrangePeach: resolveColor(theme.colors.dynamic_orange_peach),
+	colorAccentLime: '#BFF74F',
+	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
+	colorAccentCyan: '#7CF4DC',
+	colorAccentAzure: '#3F8AE0',
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
 	colorAccentViolet: '#792EC0',
+	colorAccentPink: '#F685FF',
 	// colorAccentSecondary: '#3F8AE0',
 
 	// Other
@@ -154,9 +160,100 @@ const vkComLightColor: ColorsDescription = {
 	},
 };
 
-export const vkComFonts = {
-	...fonts,
-	fontHeadline: alias('fontHeadline1'),
+const vkComFontsPartial: DeepPartial<typeof fonts> = {
+	fontFamilyFallbacks,
+	fontFamilyAccent,
+	fontFamilyBase,
+
+	fontDisplayTitle1: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle2: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle3: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontDisplayTitle4: {
+		regular: {
+			fontFamily: fontFamilyAccent,
+		},
+	},
+	fontTitle1: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontTitle2: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontTitle3: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontHeadline2: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontParagraph: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontFootnote: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontFootnoteCaps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption1: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption1Caps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption2: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption2Caps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption3: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption3Caps: {
+		regular: {
+			fontFamily: fontFamilyBase,
+		},
+	},
+
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
@@ -196,6 +293,11 @@ export const vkComFonts = {
 		},
 	},
 };
+
+export const vkComFonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+	lodash.cloneDeep(fonts),
+	vkComFontsPartial,
+);
 
 export const vkComTheme: ThemeVkComDescription = {
 	...lightTheme,
@@ -278,7 +380,11 @@ const vkComDarkColor: ColorsDescription = {
 		colorSeparatorPrimary3x: '#505253',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#2F422F',
+		colorAccentLime: '#CAF96C',
+		colorAccentCyan: '#55F1D2',
+		colorAccentAzure: '#5D9EE9',
 		colorAccentViolet: '#A94FFF',
+		colorAccentPink: '#F899FF',
 	},
 };
 
