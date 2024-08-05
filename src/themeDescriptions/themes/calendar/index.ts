@@ -71,6 +71,42 @@ export const calendarTheme: ThemeCalendarDescription = {
 
 	colors: {
 		...lightTheme.colors,
+		colorStrokeAccent: '#0077FF',
+		colorIconAccent: {
+			normal: '#0077FF',
+			hover: '#0073F7',
+			active: '#0077FF',
+		},
+		colorStrokeAccentThemed: '#0077FF',
+		colorTextAccent: '#0077FF',
+		colorBackgroundAccent: {
+			normal: '#0077FF',
+			hover: '#0073F7',
+			active: '#006FEF',
+		},
+		colorTextAccentThemed: '#0077FF',
+		colorBackgroundAccentTint: '#0077FF',
+		colorTextLink: '#0077FF',
+		colorBackgroundAccentThemed: {
+			normal: '#0077FF',
+			hover: '#0073F7',
+			active: '#006FEF',
+		},
+		colorTextLinkThemed: '#0077FF',
+		colorIconAccentThemed: '#0077FF',
+		colorTextNegative: '#ED330A',
+		colorIconNegative: '#ED330A',
+		colorBackgroundNegative: {
+			normal: '#ED330A',
+			hover: '#E4320C',
+			active: '#DA300E',
+		},
+		colorBackgroundNegativeTintThemedAlpha: 'rgba(237, 51, 10, 0.08)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 51, 10, 0.08)',
+		colorBackgroundNegativeTintThemed: '#FAEBEB',
+		colorBackgroundNegativeTint: '#FAEBEB',
+		colorStrokeNegative: '#ED330A',
+
 		colorTextSecondary: '#93969B',
 		colorBackgroundSecondary: '#EBECEF',
 		colorIconSecondary: '#B6B8BE',
@@ -89,6 +125,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 			hover: '#DAE4F3',
 			active: '#E3F0FD',
 		},
+		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 119, 255, 0.06)',
 		calendarColorButtonGroupBackgroundPositiveTint: '#CEF5E8',
 		calendarColorButtonGroupBackgroundNegativeTint: '#FDE2E2',
 		calendarColorButtonGroupBackgroundAccentTint: '#E3F0FD',
@@ -209,9 +246,9 @@ export const calendarTheme: ThemeCalendarDescription = {
 		// Фон шапки страницы
 		calendarColorHeaderBackground: '#FFFFFF',
 		// Цвет фона активного табика
-		calendarColorHeaderSecondaryAlpha: 'rgba(0, 95, 249, 0.1)',
+		calendarColorHeaderSecondaryAlpha: 'rgba(0, 119, 255, 0.1)',
 		// Цвет текста или элементов на активном табе
-		calendarColorHeaderonSecondary: '#005FF9',
+		calendarColorHeaderonSecondary: '#0077FF',
 		// Цвет иконки в поиске
 		calendarColorHeaderonWidgetAlpha: 'rgba(0, 95, 249, 1)',
 		// Цвет фона у поиска и других виджетов
@@ -243,7 +280,7 @@ export const calendarTheme: ThemeCalendarDescription = {
 		// второстепенный цвет текста в датах
 		calendarColorTextDateSecondary: '#93969B',
 		// акцентный цвет текста в датах
-		calendarColorTextDateAccent: '#005FF9',
+		calendarColorTextDateAccent: '#0077FF',
 		// цвет текста в таймлайне
 		calendarColorTextTimeline: '#2C2D2E',
 		// обводка сетки с событиями
@@ -466,6 +503,13 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 	colors: {
 		...calendarTheme.colors,
 		...darkTheme.colors,
+		colorTextAccent: '#1A85FF',
+		colorTextLink: '#1A85FF',
+		colorTextNegative: '#FF5C5C',
+		colorIconNegative: '#FF5C5C',
+		colorBackgroundNegative: '#FF5C5C',
+		colorBackgroundNegativeTint: '#522E2E',
+		colorStrokeNegative: '#FF5C5C',
 		colorTextPrimary: '#E7E8EA',
 		colorTextSecondary: '#8C8E94',
 		colorIconPrimary: '#B4B4B4',
@@ -484,6 +528,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 			hover: '#2C2C2D',
 			active: '#3E3E3F',
 		},
+		colorBackgroundAccentTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
 		calendarColorButtonGroupBackgroundPositiveTint: '#056142',
 		calendarColorButtonGroupBackgroundNegativeTint: '#BD2222',
 		calendarColorButtonGroupBackgroundAccentTint: '#2775FC',
@@ -609,7 +654,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		// Цвет фона активного табика
 		calendarColorHeaderSecondaryAlpha: 'rgba(255, 255, 255, 0.08)',
 		// Цвет текста или элементов на активном табе
-		calendarColorHeaderonSecondary: '#E7E8EA',
+		calendarColorHeaderonSecondary: '#FFFFFF',
 		// Цвет иконки в поиске
 		calendarColorHeaderonWidgetAlpha: 'rgba(255, 255, 255, 0.3)',
 		// Цвет фона у поиска и других виджетов
@@ -641,7 +686,7 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		// второстепенный цвет текста в датах
 		calendarColorTextDateSecondary: '#8C8E94',
 		// акцентный цвет текста в датах
-		calendarColorTextDateAccent: '#3C82FD',
+		calendarColorTextDateAccent: '#1A85FF',
 		// цвет текста в таймлайне
 		calendarColorTextTimeline: '#E7E8EA',
 		// обводка сетки с событиями
