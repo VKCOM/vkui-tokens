@@ -1,7 +1,13 @@
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '@/interfaces/general/colors';
 import { Adaptive } from '@/interfaces/general/tools';
 import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 import { Font } from '@/interfaces/general/typography';
 import {
+	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
@@ -63,6 +69,44 @@ interface ThemeCloudTypohraphy {
 	fontLargeText: Font;
 }
 
-export interface ThemeCloud extends ParadigmTheme, ThemeCloudTypohraphy {}
-export interface ThemeCloudDescription extends ParadigmThemeDescription, ThemeCloudTypohraphy {}
+export interface ThemeCloudOverValues {
+	cloudImageOverlayBackground: string;
+}
+
+export interface LocalCloudColorDescriptionStruct {
+	// Токены сайдбара
+	cloudColorSidebarItemText: ColorDescription;
+	cloudColorSidebarItemTextPrimary: ColorDescription;
+	cloudColorSidebarItemTextSecondary: ColorDescription;
+	cloudColorSidebarItemBackgroundAlpha: ColorDescription;
+
+	// Фон страницы
+	cloudColorBackground: ColorDescription;
+	cloudColorOverlayBackground: ColorDescription;
+
+	// Стили для breadcrumbs на странице паблкика
+	cloudColorBreadcrumbTextPrimary: ColorDescription;
+	cloudColorBreadcrumbTextSecondary: ColorDescription;
+	cloudColorBreadcrumbFilecounterText: ColorDescription;
+}
+
+export type CloudLocalColors = {
+	[key in keyof LocalCloudColorDescriptionStruct]: ColorWithStates;
+};
+
+export interface ThemeCloud
+	extends ParadigmTheme,
+		ThemeCloudTypohraphy,
+		ThemeCloudOverValues,
+		CloudLocalColors {}
+
+export interface ThemeCloudDescription
+	extends ParadigmThemeDescription,
+		ThemeCloudOverValues,
+		ThemeCloudTypohraphy {
+	colors: LocalCloudColorDescriptionStruct &
+		LocalParadigmColorsDescriptionStruct &
+		ColorsDescriptionStruct;
+}
+
 export interface ThemeCloudCssVars extends ParadigmThemeCssVars<DefaultViewports, ThemeCloud> {}

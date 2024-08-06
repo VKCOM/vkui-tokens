@@ -277,9 +277,24 @@ export const cloudTheme: ThemeCloudDescription = {
 		regular: 8,
 	},
 
+	cloudImageOverlayBackground: 'none',
+
 	colors: {
 		...lightTheme.colors,
 		colorBackgroundNegative: '#E64646',
+		cloudColorSidebarItemText: '#333333',
+		cloudColorSidebarItemTextPrimary: '#2C2D2E',
+		cloudColorSidebarItemTextSecondary: '#87898F',
+		cloudColorSidebarItemBackgroundAlpha: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.24)',
+			active: 'rgba(255, 255, 255, 0.24)',
+		},
+		cloudColorBackground: lightTheme.colors.colorBackground,
+		cloudColorOverlayBackground: 'transparent',
+		cloudColorBreadcrumbTextPrimary: '#2C2D2E',
+		cloudColorBreadcrumbTextSecondary: '#87898F',
+		cloudColorBreadcrumbFilecounterText: '#87898F',
 	},
 };
 
