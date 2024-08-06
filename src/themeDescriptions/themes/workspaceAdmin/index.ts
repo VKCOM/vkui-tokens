@@ -44,6 +44,11 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.20)',
 		},
+		colorBackgroundTertiaryAlpha: {
+			normal: 'rgba(58, 58, 90, 0.04)',
+			hover: 'rgba(58, 58, 90, 0.08)',
+			active: 'rgba(58, 58, 90, 0.12)',
+		},
 
 		colorIconNegativeSnackbar: '#FF5C5C',
 		colorTextSecondary: '#797A80',
@@ -65,6 +70,7 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 			fontWeight: fontWeightAccent1,
 		},
 	},
+
 	fontHeadline3: {
 		fontSize: 13,
 		lineHeight: 16,
@@ -102,6 +108,11 @@ export const workspaceAdminDarkTheme: ThemeWorkspaceAdminDarkDescription = {
 			normal: 'rgba(39, 117, 252, 0.12)',
 			hover: 'rgba(39, 117, 252, 0.16)',
 			active: 'rgba(39, 117, 252, 0.2)',
+		},
+		colorBackgroundTertiaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.04)',
+			hover: 'rgba(255, 255, 255, 0.1)',
+			active: 'rgba(255, 255, 255, 0.14)',
 		},
 
 		colorIconNegativeSnackbar: '#FF5C5C',
