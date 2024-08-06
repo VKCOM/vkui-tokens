@@ -3,6 +3,7 @@ import { ThemeWorkspaceAdminDarkDescription } from '@/interfaces/themes/workspac
 import { darkTheme, lightTheme } from '@/themeDescriptions/base/paradigm';
 import { fontFamilyAccent } from '@/themeDescriptions/common/fontSizes';
 
+const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
 
 export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
@@ -24,9 +25,9 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 			active: 'rgba(13, 194, 104, 0.18)',
 		},
 		colorBackgroundWarningTintAlpha: {
-			normal: 'rgba(255, 241, 173, 0.64)',
-			hover: 'rgba(255, 241, 173, 0.72)',
-			active: 'rgba(255, 241, 173, 0.76)',
+			normal: 'rgba(255, 158, 0, 0.16)',
+			hover: 'rgba(255, 158, 0, 0.24)',
+			active: 'rgba(255, 158, 0, 0.28)',
 		},
 		colorBackgroundNegativeTintAlpha: {
 			normal: 'rgba(237, 10, 52, 0.10)',
@@ -38,14 +39,42 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 			hover: 'rgba(0, 95, 249, 0.1)',
 			active: 'rgba(0, 95, 249, 0.14)',
 		},
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.16)',
+			active: 'rgba(255, 255, 255, 0.20)',
+		},
+		colorBackgroundTertiaryAlpha: {
+			normal: 'rgba(58, 58, 90, 0.04)',
+			hover: 'rgba(58, 58, 90, 0.08)',
+			active: 'rgba(58, 58, 90, 0.12)',
+		},
 
 		colorIconNegativeSnackbar: '#FF5C5C',
 		colorTextSecondary: '#797A80',
 	},
 
+	fontTitle2: {
+		regular: {
+			fontSize: 20,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontTitle3: {
+		regular: {
+			fontSize: 17,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+
 	fontHeadline3: {
 		fontSize: 13,
-		lineHeight: 18,
+		lineHeight: 16,
+		fontStyle: 'normal',
 		fontFamily: fontFamilyAccent,
 		fontWeight: fontWeightAccent2,
 	},
@@ -79,6 +108,11 @@ export const workspaceAdminDarkTheme: ThemeWorkspaceAdminDarkDescription = {
 			normal: 'rgba(39, 117, 252, 0.12)',
 			hover: 'rgba(39, 117, 252, 0.16)',
 			active: 'rgba(39, 117, 252, 0.2)',
+		},
+		colorBackgroundTertiaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.04)',
+			hover: 'rgba(255, 255, 255, 0.1)',
+			active: 'rgba(255, 255, 255, 0.14)',
 		},
 
 		colorIconNegativeSnackbar: '#FF5C5C',
