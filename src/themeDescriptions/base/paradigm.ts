@@ -828,7 +828,7 @@ export const lightTheme: ParadigmThemeDescription = {
 		colorTooltipTextOrangeThemed: '#78472A',
 		colorTooltipTextPurpleThemed: '#73519F',
 
-		//Byte colors
+		// Byte colors
 		colorBackgroundSky: '#cce4ff',
 		colorBackgroundSkyAlpha: 'rgba(204, 228, 255, 0.9)',
 	},
@@ -1122,7 +1122,7 @@ export const darkTheme: ParadigmThemeDescription = {
 		colorTooltipTextOrangeThemed: '#FFFFFF',
 		colorTooltipTextPurpleThemed: '#FFFFFF',
 
-		//Byte colors
+		// Byte colors
 		colorBackgroundSky: '#2b2b2c',
 		colorBackgroundSkyAlpha: 'rgba(51, 51, 51, 0.8)',
 	},
