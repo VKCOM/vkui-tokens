@@ -128,7 +128,7 @@ export interface LocalParadigmColorsDescriptionStruct {
 	colorTooltipTextOrangeThemed: ColorDescription;
 	colorTooltipTextPurpleThemed: ColorDescription;
 
-	//Цвета для Байта
+	// Цвета для Байта
 	colorBackgroundSky: ColorDescription;
 	colorBackgroundSkyAlpha: ColorDescription;
 }
