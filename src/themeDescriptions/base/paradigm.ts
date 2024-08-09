@@ -26,9 +26,9 @@ export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
 		// Background
-		colorBackgroundAccent: '#005FF9',
-		colorBackgroundAccentThemed: '#005FF9',
-		colorBackgroundAccentThemedAlpha: 'rgba(0, 95, 249, 0.2)',
+		colorBackgroundAccent: '#0077FF',
+		colorBackgroundAccentThemed: '#0077FF',
+		colorBackgroundAccentThemedAlpha: 'rgba(0, 119, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#FFFFFF',
 		colorBackgroundSecondary: '#F0F1F3',
@@ -45,7 +45,7 @@ export const lightColors: ColorsDescription = {
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
 		colorBackgroundWarning: '#FFF1AD',
-		colorBackgroundNegative: '#ED0A34',
+		colorBackgroundNegative: '#ED330A',
 		colorBackgroundTertiary: colorBackgroundTertiaryLight,
 		colorBackgroundTertiaryAlpha: {
 			normal: 'rgba(0, 0, 0, 0.04)',
@@ -54,7 +54,7 @@ export const lightColors: ColorsDescription = {
 		},
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundPositive: '#0DC268',
-		colorBackgroundNegativeTint: '#FAEBEB',
+		colorBackgroundNegativeTint: '#FEEFEB',
 		colorBackgroundPositiveTint: '#ECFAF3',
 		colorFieldBackground: '#ffffff',
 		colorBackgroundModalInverse: '#303030',
@@ -64,12 +64,12 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundInfoTint: '#f0f4ff',
 
 		// Text
-		colorTextAccent: '#005FF9',
-		colorTextAccentThemed: '#005FF9',
-		colorTextNegative: '#ED0A34',
-		colorTextLink: '#005BD1',
+		colorTextAccent: '#0070f0',
+		colorTextAccentThemed: '#0070f0',
+		colorTextNegative: '#ED330a',
+		colorTextLink: '#0070f0',
 		colorTextLinkTint: '#71AAEB',
-		colorTextLinkThemed: '#005BD1',
+		colorTextLinkThemed: '#0070f0',
 		colorTextMuted: '#2C2D2E',
 		colorTextPrimary: '#2C2D2E',
 		colorTextPrimaryInvariably: '#2C2D2E',
@@ -83,8 +83,8 @@ export const lightColors: ColorsDescription = {
 		colorTextPositive: '#0DC268',
 
 		// Icons
-		colorIconAccent: '#005FF9',
-		colorIconAccentThemed: '#005FF9',
+		colorIconAccent: '#0077ff',
+		colorIconAccentThemed: '#0077ff',
 		colorIconPrimary: '#2C2D2E',
 		colorIconPrimaryInvariably: '#2C2D2E',
 		colorIconMedium: '#919399',
@@ -97,14 +97,14 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
 		colorIconWarning: '#FF9E00',
-		colorIconNegative: '#ED0A34',
+		colorIconNegative: '#ED033a',
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
-		colorStrokeAccent: '#005FF9',
-		colorStrokeAccentThemed: '#005FF9',
+		colorStrokeAccent: '#0077ff',
+		colorStrokeAccentThemed: '#0077ff',
 		colorStrokeContrast: '#FFFFFF',
-		colorStrokeNegative: '#ED0A34',
+		colorStrokeNegative: '#ED033a',
 		colorImageBorderAlpha: 'rgba(0, 16, 61, 0.08)',
 		colorFieldBorderAlpha: 'rgba(0, 16, 61, 0.12)',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 16, 61, 0.12)',
@@ -115,9 +115,9 @@ export const lightColors: ColorsDescription = {
 		colorSeparatorPrimary3x: '#BFC3CA',
 
 		// Palette
-		colorAccentBlue: '#005FF9',
+		colorAccentBlue: '#0077FF',
 		colorAccentGray: '#A5A7AD',
-		colorAccentRed: '#ED0A34',
+		colorAccentRed: '#ED033A',
 		colorAccentOrangeFire: '#F05C44',
 		colorAccentOrange: '#FF9E00',
 		colorAccentOrangePeach: '#F9B54F',
@@ -125,16 +125,16 @@ export const lightColors: ColorsDescription = {
 		colorAccentGreen: '#0DC268',
 		colorAccentCyan: '#07E5F9',
 		colorAccentAzure: '#0077FF',
-		colorAccentPurple: '#4F6DDC',
+		colorAccentPurple: '#8C64FF',
 		colorAccentViolet: '#C15DF3',
 		colorAccentRaspberryPink: '#E03FAB',
 		colorAccentPink: '#FF3985',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other
-		colorActionSheetText: '#005FF9',
+		colorActionSheetText: '#0077ff',
 		colorHeaderBackground: '#FFFFFF',
-		colorPanelHeaderIcon: '#005FF9',
+		colorPanelHeaderIcon: '#0077ff',
 		colorWriteBarInputBackground: '#F0F1F3',
 		colorWriteBarInputBorder: '#E1E3E6',
 		colorWriteBarInputBorderAlpha: 'rgba(0, 16, 61, 0.8)',
@@ -143,7 +143,7 @@ export const lightColors: ColorsDescription = {
 		colorImagePlaceholder: '#E6E7EB',
 		colorImagePlaceholderAlpha: 'rgba(0, 16, 61, 0.8)',
 		colorSearchFieldBackground: '#E6E7EB',
-		colorWriteBarIcon: '#005FF9',
+		colorWriteBarIcon: '#0077ff',
 		colorSkeletonFrom: '#F3F3F5',
 		colorSkeletonTo: '#E0E1E6',
 		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
@@ -152,9 +152,9 @@ export const lightColors: ColorsDescription = {
 		colorOverlaySecondary: 'rgba(44, 45, 46, 0.5)',
 		colorSegmentedControl: '#FFFFFF',
 		colorTabbarTextInactive: '#99A2AD',
-		colorButtonText: '#005FF9',
-		colorButtonIcon: '#005FF9',
-		colorButtonStroke: '#005FF9',
+		colorButtonText: '#0077ff',
+		colorButtonIcon: '#0077ff',
+		colorButtonStroke: '#0077ff',
 		colorTransparent: 'transparent',
 	},
 };
@@ -163,7 +163,7 @@ export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
 		// Background
-		colorBackgroundAccent: '#2775FC',
+		colorBackgroundAccent: '#0077FF',
 		colorBackgroundAccentThemed: '#FFFFFF',
 		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
@@ -201,10 +201,10 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundInfoTint: '#19202f',
 
 		// Text
-		colorTextAccent: '#3C82FD',
+		colorTextAccent: '#1A85FF',
 		colorTextAccentThemed: '#FFFFFF',
 		colorTextNegative: '#FF5C5C',
-		colorTextLink: '#589BFF',
+		colorTextLink: '#1A85FF',
 		colorTextLinkTint: '#71AAEB',
 		colorTextLinkThemed: '#FFFFFF',
 		colorTextMuted: '#E7E8EA',
@@ -220,7 +220,7 @@ export const darkColors: ColorsDescription = {
 		colorTextPositive: '#0DC268',
 
 		// Icons
-		colorIconAccent: '#3C82FD',
+		colorIconAccent: '#0077FF',
 		colorIconAccentThemed: '#FFFFFF',
 		colorIconPrimary: '#D9DADD',
 		colorIconPrimaryInvariably: '#2C2D2E',
@@ -238,7 +238,7 @@ export const darkColors: ColorsDescription = {
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
-		colorStrokeAccent: '#3C82FD',
+		colorStrokeAccent: '#0077FF',
 		colorStrokeAccentThemed: '#FFFFFF',
 		colorStrokeContrast: '#FFFFFF',
 		colorStrokeNegative: '#FF5C5C',
@@ -252,9 +252,9 @@ export const darkColors: ColorsDescription = {
 		colorStrokePositive: '#0DC268',
 
 		// Palette
-		colorAccentBlue: '#2775FC',
+		colorAccentBlue: '#0077ff',
 		colorAccentGray: '#9C9DA2',
-		colorAccentRed: '#ED0A34',
+		colorAccentRed: '#ED330A',
 		colorAccentOrangeFire: '#F05C44',
 		colorAccentOrange: '#FF9E00',
 		colorAccentOrangePeach: '#FFC062',
@@ -262,16 +262,16 @@ export const darkColors: ColorsDescription = {
 		colorAccentGreen: '#0DC268',
 		colorAccentCyan: '#07E5F9',
 		colorAccentAzure: '#0077FF',
-		colorAccentPurple: '#4F6DDC',
+		colorAccentPurple: '#8C64FF',
 		colorAccentViolet: '#C15DF3',
 		colorAccentRaspberryPink: '#F060C0',
 		colorAccentPink: '#FF3985',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other
-		colorActionSheetText: '#3C82FD',
+		colorActionSheetText: '#0077FF',
 		colorHeaderBackground: '#232324',
-		colorPanelHeaderIcon: '#3C82FD',
+		colorPanelHeaderIcon: '#0077FF',
 		colorWriteBarInputBackground: '#2A2A2B',
 		colorWriteBarInputBorder: '#2C2D2E',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
@@ -280,7 +280,7 @@ export const darkColors: ColorsDescription = {
 		colorImagePlaceholderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorImagePlaceholder: '#393A3B',
 		colorSearchFieldBackground: '#393A3B',
-		colorWriteBarIcon: '#3C82FD',
+		colorWriteBarIcon: '#0077FF',
 		colorSkeletonFrom: '#2A2A2B',
 		colorSkeletonTo: '#3E3F40',
 		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
@@ -802,18 +802,18 @@ export const lightTheme: ParadigmThemeDescription = {
 		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
 
 		// Тонированные цвета для проектов
-		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 95, 249, 0.06)',
-		colorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.06)',
-		colorBackgroundAccentTintThemed: '#f0f4ff',
+		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 119, 255, 0.06)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.06)',
+		colorBackgroundAccentTintThemed: '#f0f7ff',
 
 		colorBackgroundWarningTintThemedAlpha: 'rgba(255, 241, 173, 0.48)',
 		colorBackgroundWarningTintAlpha: 'rgba(255, 241, 173, 0.48)',
 		colorBackgroundWarningTintThemed: '#fffce0',
 		colorBackgroundWarningTint: '#fffce0',
 
-		colorBackgroundNegativeTintThemedAlpha: 'rgba(237, 10, 52, 0.08)',
-		colorBackgroundNegativeTintAlpha: 'rgba(237, 10, 52, 0.08)',
-		colorBackgroundNegativeTintThemed: '#faebeb',
+		colorBackgroundNegativeTintThemedAlpha: 'rgba(237, 51, 10, 0.08)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 51, 10, 0.08)',
+		colorBackgroundNegativeTintThemed: '#feefeb',
 
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(13, 194, 104, 0.08)',
 		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.08)',
@@ -827,6 +827,10 @@ export const lightTheme: ParadigmThemeDescription = {
 		colorTooltipTextGreenThemed: '#087C6D',
 		colorTooltipTextOrangeThemed: '#78472A',
 		colorTooltipTextPurpleThemed: '#73519F',
+
+		//Byte colors
+		colorBackgroundSky: '#cce4ff',
+		colorBackgroundSkyAlpha: 'rgba(204, 228, 255, 0.9)',
 	},
 
 	breakpoints: {
@@ -1093,7 +1097,7 @@ export const darkTheme: ParadigmThemeDescription = {
 
 		// Тонированные цвета для проектов
 		colorBackgroundAccentTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
-		colorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.1)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.1)',
 		colorBackgroundAccentTintThemed: '#2b2b2c',
 
 		colorBackgroundWarningTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
@@ -1102,7 +1106,7 @@ export const darkTheme: ParadigmThemeDescription = {
 		colorBackgroundWarningTint: '#302617',
 
 		colorBackgroundNegativeTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
-		colorBackgroundNegativeTintAlpha: 'rgba(237, 10, 52, 0.1)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 51, 10, 0.1)',
 		colorBackgroundNegativeTintThemed: '#2b2b2c',
 
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
@@ -1117,6 +1121,10 @@ export const darkTheme: ParadigmThemeDescription = {
 		colorTooltipTextGreenThemed: '#FFFFFF',
 		colorTooltipTextOrangeThemed: '#FFFFFF',
 		colorTooltipTextPurpleThemed: '#FFFFFF',
+
+		//Byte colors
+		colorBackgroundSky: '#2b2b2c',
+		colorBackgroundSkyAlpha: 'rgba(51, 51, 51, 0.8)',
 	},
 };
 
