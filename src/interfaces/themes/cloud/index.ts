@@ -83,11 +83,6 @@ export interface LocalCloudColorDescriptionStruct {
 	// Фон страницы
 	cloudColorBackground: ColorDescription;
 	cloudColorOverlayBackground: ColorDescription;
-
-	// Стили для breadcrumbs на странице паблкика
-	cloudColorBreadcrumbTextPrimary: ColorDescription;
-	cloudColorBreadcrumbTextSecondary: ColorDescription;
-	cloudColorBreadcrumbFilecounterText: ColorDescription;
 }
 
 export type CloudLocalColors = {

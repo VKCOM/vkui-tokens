@@ -292,9 +292,6 @@ export const cloudTheme: ThemeCloudDescription = {
 		},
 		cloudColorBackground: lightTheme.colors.colorBackground,
 		cloudColorOverlayBackground: 'transparent',
-		cloudColorBreadcrumbTextPrimary: '#2C2D2E',
-		cloudColorBreadcrumbTextSecondary: '#87898F',
-		cloudColorBreadcrumbFilecounterText: '#87898F',
 	},
 };
 
