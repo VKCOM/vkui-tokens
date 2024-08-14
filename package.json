@@ -53,6 +53,7 @@
     "@types/node": "18.11.10",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "8.0.1",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0",
     "@vkontakte/icons": "2.124.0",
     "@vkontakte/prettier-config": "0.1.0",
