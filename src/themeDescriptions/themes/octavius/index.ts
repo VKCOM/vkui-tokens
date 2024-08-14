@@ -88,7 +88,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 			active: 'rgba(255, 255, 255, 0.4)',
 		},
 		octaviusColorHeaderIcon: lightTheme.colors.colorIconContrast,
-		octaviusColorHeaderIconUnread: '#005FF9',
+		octaviusColorHeaderIconUnread: '#0077ff',
 		octaviusColorHeaderIconFavorite: '#FC2C38',
 		octaviusColorHeaderIconAttach: '#D9DADD',
 		octaviusColorHeaderTextSecondary: '#93969b',
@@ -109,7 +109,7 @@ export const octaviusTheme: ThemeOctaviusDescription = {
 		octaviusColorHeaderFilterTextAlpha: lightColors.colors.colorIconMediumAlpha,
 
 		octaviusColorHeaderTabActiveThemedAlpha: 'rgba(0, 95, 249, .10)',
-		octaviusColorHeaderTabTextActiveThemed: '#005FF9',
+		octaviusColorHeaderTabTextActiveThemed: '#0077ff',
 		octaviusColorPortalSearchBackgroundAlpha: 'rgba(255, 255, 255, .99)',
 		octaviusColorPortalSearchIconThemedAlpha: 'rgba(0, 95, 255, .99)',
 
@@ -535,11 +535,26 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		},
 
 		octaviusColorBackground: '#F6F7F8',
-		octaviusColorBackgroundAccentTonedAlpha: toneOpacity(
-			lightTheme.colors.colorBackgroundAccent,
-			0.12,
-		),
+		octaviusColorBackgroundAccentTonedAlpha: toneOpacity('#005FF9', 0.12),
+		colorBackgroundAccentThemed: '#005FF9',
+		colorBackgroundAccentThemedAlpha: 'rgba(0, 95, 249, 0.2)',
 		octaviusColorOverlayBackground: 'transparent',
+		colorTextAccent: '#005FF9',
+		colorTextAccentThemed: '#005FF9',
+		colorTextNegative: '#ED0A34',
+		colorTextLink: '#005BD1',
+		colorTextLinkThemed: '#005BD1',
+		colorIconAccent: '#005FF9',
+		colorIconAccentThemed: '#005FF9',
+		colorStrokeAccent: '#005FF9',
+		colorStrokeAccentThemed: '#005FF9',
+		colorAccentBlue: '#005FF9',
+		colorActionSheetText: '#005FF9',
+		colorPanelHeaderIcon: '#005FF9',
+		colorWriteBarIcon: '#005FF9',
+		colorButtonText: '#005FF9',
+		colorButtonIcon: '#005FF9',
+		colorButtonStroke: '#005FF9',
 
 		// Header
 		octaviusColorHeaderBackground: '#FFFFFF',
@@ -777,6 +792,23 @@ export const octaviusWhiteDarkTheme: ThemeOctaviusDescription = {
 			darkTheme.colors.colorBackgroundAccent,
 			0.12,
 		),
+		colorBackgroundAccent: '#2775FC',
+		colorTextAccent: '#3C82FD',
+		colorTextLink: '#589BFF',
+		colorIconAccent: '#3C82FD',
+		colorStrokeAccent: '#3C82FD',
+		colorAccentBlue: '#2775FC',
+		colorActionSheetText: '#3C82FD',
+		colorPanelHeaderIcon: '#3C82FD',
+		colorWriteBarIcon: '#3C82FD',
+
+		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 95, 249, 0.06)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.06)',
+		colorBackgroundAccentTintThemed: '#f0f4ff',
+
+		colorBackgroundNegativeTintThemedAlpha: 'rgba(237, 10, 52, 0.08)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 10, 52, 0.08)',
+		colorBackgroundNegativeTintThemed: '#faebeb',
 
 		// Header
 		octaviusColorHeaderBackground: '#232324',
