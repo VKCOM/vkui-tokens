@@ -513,7 +513,7 @@ export const octaviusWhiteTheme: ThemeOctaviusDescription = {
 		},
 
 		octaviusColorBackground: '#F6F7F8',
-		octaviusColorBackgroundAccentTonedAlpha: toneOpacity('#005FF9', 0.12),
+		octaviusColorBackgroundAccentTonedAlpha: 'rgba(0,95,249,0.12)',
 		colorBackgroundAccentThemed: '#005FF9',
 		colorBackgroundAccentThemedAlpha: 'rgba(0, 95, 249, 0.2)',
 		octaviusColorOverlayBackground: 'transparent',
