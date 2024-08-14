@@ -219,6 +219,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
+	mediaFontMediaSubtitleLight: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia4,
+			fontSize: 20,
+			lineHeight: 26,
+		},
+	},
 	mediaFontMediaLead: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -540,12 +548,20 @@ export const mediaTheme: ThemeMediaDescription = {
 		compact: 620,
 		large: 780,
 	},
+	gridMainContentWide: {
+		regular: '100%',
+		compactX: 620,
+		compact: 620,
+		large: 860,
+	},
 	gridAsideContent: {
 		regular: '100%',
 		compactX: 300,
 		compact: 300,
 		large: 300,
 	},
+	mediaSizeGap: 20,
+	mediaSizeGrid: 60,
 
 	// @deprecated
 	gridColumnX2: {
