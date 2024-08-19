@@ -10,7 +10,7 @@ const { fontWeightBase3 } = lightTheme;
 const { x0, x05, x2, x3, x4, x5, x6, x8, x10, x12 } = helpers;
 
 const fontFamilyBase: Property.FontFamily = 'Inter, Helvetica, Arial, sans-serif';
-const fontFamilyAccent: Property.FontFamily = `MailSans, ${fontFamilyBase}`;
+const fontFamilyAccent: Property.FontFamily = `VKSansDisplay, MailSans, ${fontFamilyBase}`;
 const fontFamilyArticle: Property.FontFamily = fontFamilyBase;
 const fontFamilyFallbacks: Property.FontFamily = fontFamilyBase;
 

@@ -1,7 +1,13 @@
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '@/interfaces/general/colors';
 import { Adaptive } from '@/interfaces/general/tools';
 import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 import { Font } from '@/interfaces/general/typography';
 import {
+	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
@@ -63,6 +69,105 @@ interface ThemeCloudTypohraphy {
 	fontLargeText: Font;
 }
 
-export interface ThemeCloud extends ParadigmTheme, ThemeCloudTypohraphy {}
-export interface ThemeCloudDescription extends ParadigmThemeDescription, ThemeCloudTypohraphy {}
+export interface LocalCloudColorsDescriptionStruct {
+	// Текст
+	cloudColorTextSecondaryAlpha: ColorDescription;
+	cloudColorTextAccentAlternative: ColorDescription;
+	cloudColorTextSnackbarAccent: ColorDescription;
+	cloudColorTextContrastThemedAlpha: ColorDescription;
+
+	// Background
+	cloudColorToolbarBackground: ColorDescription;
+	cloudColorViewerBackground: ColorDescription;
+	cloudColorTabbarBackgroundAlpha: ColorDescription;
+	cloudColorHeaderIconBackgroundAlpha: ColorDescription;
+	cloudColorBackgroundDragAndDrop: ColorDescription;
+	cloudColorBackgroundCTA: ColorDescription;
+	cloudColorHeaderSearchBackground: ColorDescription;
+	cloudColorHeaderSearchBackgroundCollapsed: ColorDescription;
+	cloudColorBackgroundPortal: ColorDescription;
+	cloudColorBackgroundAlternative: ColorDescription;
+	cloudColorBackgroundContentAlternative: ColorDescription;
+	cloudColorBackgroundFastScroll: ColorDescription;
+
+	// Icons
+	cloudColorIconAccentAlternative: ColorDescription;
+	cloudColorIconRating: ColorDescription;
+	cloudColorIconFolder: ColorDescription;
+
+	// Stroke
+	cloudColorLandingStrokeTariff: ColorDescription;
+
+	// Pallette
+	cloudColorSweetblue: ColorDescription;
+	cloudColorBlueAccentThemed: ColorDescription;
+	cloudColorSweetgreen: ColorDescription;
+	cloudColorGreenAccentThemed: ColorDescription;
+	cloudColorSweetorange: ColorDescription;
+	cloudColorOrangeAccentThemed: ColorDescription;
+	cloudColorSweetpurple: ColorDescription;
+	cloudColorPurpleAccentThemed: ColorDescription;
+	cloudColorIconIDCardThemedAlpha: ColorDescription;
+	cloudColorIconIDCard: ColorDescription;
+	cloudColorIconOfficialThemedAlpha: ColorDescription;
+	cloudColorIconOfficial: ColorDescription;
+	cloudColorIconTransportThemed: ColorDescription;
+	cloudColorIconTransport: ColorDescription;
+	cloudColorIconFinanceThemed: ColorDescription;
+	cloudColorIconFinance: ColorDescription;
+	cloudColorIconFileDocumentInvariably: ColorDescription;
+	cloudColorIconFilePresentationInvariably: ColorDescription;
+	cloudColorIconFileTableInvariably: ColorDescription;
+	cloudColorBackgroundFileDocument: ColorDescription;
+	cloudColorBackgroundFilePresentation: ColorDescription;
+	cloudColorBackgroundFileTable: ColorDescription;
+	cloudColorBackgroundFileOtherAlpha: ColorDescription;
+	cloudColorBackgroundProfileTariff: ColorDescription;
+	cloudColorIconProfileTariff: ColorDescription;
+	cloudColorBackgroundProfileAccess: ColorDescription;
+	cloudColorIconProfileAccess: ColorDescription;
+	cloudColorBackgroundProfileUploading: ColorDescription;
+	cloudColorIconProfileUploading: ColorDescription;
+	cloudColorBackgroundProfileTrash: ColorDescription;
+	cloudColorIconProfileTrash: ColorDescription;
+	cloudColorBackgroundProfileSettings: ColorDescription;
+	cloudColorIconProfileSettings: ColorDescription;
+	cloudColorBackgroundProfileMail: ColorDescription;
+	cloudColorIconProfileMail: ColorDescription;
+
+	// Other
+	cloudColorLandingBackground: ColorDescription;
+	cloudColorLandingSecondaryBackground: ColorDescription;
+	cloudColorLandingTertiaryBackground: ColorDescription;
+	cloudColorLandingMediumBackground: ColorDescription;
+	cloudColorLandingButtonBackground: ColorDescription;
+	cloudColorLandingLabelBackground: ColorDescription;
+	cloudColorLandingLabelInverseBackground: ColorDescription;
+	cloudColorLandingControlPrimaryBackground: ColorDescription;
+	cloudColorLandingControlSecondaryBackground: ColorDescription;
+	cloudColorSubscriptionButtonBackground: ColorDescription;
+	cloudColorScrollIndicatorAlpha: ColorDescription;
+
+	// Сайдбар
+	cloudColorSidebarItemText: ColorDescription;
+	cloudColorSidebarItemTextPrimary: ColorDescription;
+	cloudColorSidebarItemTextSecondary: ColorDescription;
+	cloudColorSidebarItemBackgroundAlpha: ColorDescription;
+
+	// Фон страницы
+	cloudColorBackground: ColorDescription;
+	cloudColorOverlayBackground: ColorDescription;
+}
+
+export type CloudLocalColors = {
+	[key in keyof LocalCloudColorsDescriptionStruct]: ColorWithStates;
+};
+
+export interface ThemeCloud extends ParadigmTheme, ThemeCloudTypohraphy, CloudLocalColors {}
+export interface ThemeCloudDescription extends ParadigmThemeDescription, ThemeCloudTypohraphy {
+	colors: LocalCloudColorsDescriptionStruct &
+		LocalParadigmColorsDescriptionStruct &
+		ColorsDescriptionStruct;
+}
+
 export interface ThemeCloudCssVars extends ParadigmThemeCssVars<DefaultViewports, ThemeCloud> {}
