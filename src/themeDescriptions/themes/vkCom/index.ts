@@ -21,8 +21,6 @@ const fontFamilyAccent =
 const fontFamilyBase =
 	'-apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif';
 const fontFamilyFallbacks = fontFamilyBase;
-const fontWeightAccent2 = 500;
-const fontWeightBase3 = 400;
 
 const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
@@ -107,11 +105,15 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentBlue: resolveColor(theme.colors.dynamic_blue),
 	colorAccentGray: resolveColor(theme.colors.dynamic_gray),
 	colorAccentRed: resolveColor(theme.colors.dynamic_red),
-	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
 	colorAccentOrange: resolveColor(theme.colors.dynamic_orange),
 	colorAccentOrangePeach: resolveColor(theme.colors.dynamic_orange_peach),
+	colorAccentLime: '#BFF74F',
+	colorAccentGreen: resolveColor(theme.colors.dynamic_green),
+	colorAccentCyan: '#7CF4DC',
+	colorAccentAzure: '#3F8AE0',
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
 	colorAccentViolet: '#792EC0',
+	colorAccentPink: '#F685FF',
 	// colorAccentSecondary: '#3F8AE0',
 
 	// Other
@@ -254,8 +256,7 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 14,
@@ -268,7 +269,6 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 			fontSize: 14,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
 		},
 		compact: {
 			fontSize: 14,
@@ -281,7 +281,6 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 			fontSize: 16,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
 		},
 		compact: {
 			fontSize: 13,
@@ -376,7 +375,11 @@ const vkComDarkColor: ColorsDescription = {
 		colorSeparatorPrimary3x: '#505253',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#2F422F',
+		colorAccentLime: '#CAF96C',
+		colorAccentCyan: '#55F1D2',
+		colorAccentAzure: '#5D9EE9',
 		colorAccentViolet: '#A94FFF',
+		colorAccentPink: '#F899FF',
 	},
 };
 

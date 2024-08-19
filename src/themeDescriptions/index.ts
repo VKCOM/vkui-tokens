@@ -22,6 +22,7 @@ import { promoTheme } from '@/themeDescriptions/themes/promo';
 import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
 import { searchTheme } from '@/themeDescriptions/themes/search';
 import { todoTheme } from '@/themeDescriptions/themes/todo';
+import { tutoriaDarkTheme, tutoriaTheme } from '@/themeDescriptions/themes/tutoria';
 import {
 	vkAccessibilityTheme,
 	vkAccessibilityThemeDark,
@@ -40,7 +41,10 @@ import {
 } from '@/themeDescriptions/themes/vkontakteAndroid';
 import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/themes/vkontakteCom';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
-import { workspaceAdminTheme } from '@/themeDescriptions/themes/workspaceAdmin';
+import {
+	workspaceAdminDarkTheme,
+	workspaceAdminTheme,
+} from '@/themeDescriptions/themes/workspaceAdmin';
 import { workspaceLandingsTheme } from '@/themeDescriptions/themes/workspaceLandings';
 
 import { darkThemeExport as paradigmBaseDark, lightTheme as paradigmBase } from './base/paradigm';
@@ -72,6 +76,8 @@ export const themes = [
 	vkIdOkThemeDark,
 	vkIdOkIOSTheme,
 	vkIdOkIOSThemeDark,
+	tutoriaTheme,
+	tutoriaDarkTheme,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius
@@ -119,6 +125,7 @@ export const themes = [
 
 	// Темы, наследуемые от WorkspaceAdmin
 	workspaceAdminTheme,
+	workspaceAdminDarkTheme,
 
 	// Темы, наследуемые от WorkspaceLandings
 	workspaceLandingsTheme,

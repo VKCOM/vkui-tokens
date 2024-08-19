@@ -184,16 +184,32 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorAccentBlue: palette.accent_blue,
 			colorAccentGray: palette.accent_gray,
 			colorAccentRed: palette.accent_red,
-			colorAccentGreen: palette.accent_green,
+			colorAccentOrangeFire: palette.accent_orange_fire,
 			colorAccentOrange: palette.accent_orange,
 			colorAccentOrangePeach: {
 				light: '#F9B54F',
 				dark: '#FFC062',
 			}[colorsScheme],
-			colorAccentOrangeFire: palette.accent_orange_fire,
+			colorAccentLime: {
+				light: '#AFF70D',
+				dark: '#AFF70D',
+			}[colorsScheme],
+			colorAccentGreen: palette.accent_green,
+			colorAccentCyan: {
+				light: '#13FFD0',
+				dark: '#13FFD0',
+			}[colorsScheme],
+			colorAccentAzure: {
+				light: '#0077FF',
+				dark: '#0077FF',
+			}[colorsScheme],
 			colorAccentPurple: palette.accent_purple,
 			colorAccentViolet: palette.accent_violet,
 			colorAccentRaspberryPink: palette.accent_raspberry_pink,
+			colorAccentPink: {
+				light: '#F45FFF',
+				dark: '#F45FFF',
+			}[colorsScheme],
 			colorAccentSecondary: palette.accent_secondary,
 
 			// Other
@@ -339,32 +355,32 @@ export const fonts: BaseFonts = {
 		regular: {
 			fontSize: 24,
 			lineHeight: 28,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
 	fontTitle2: {
 		regular: {
 			fontSize: 20,
 			lineHeight: 24,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
 	fontTitle3: {
 		regular: {
 			fontSize: 17,
 			lineHeight: 22,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase1,
 		},
 	},
 	fontHeadline1: {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase2,
 		},
 		compact: {
 			fontSize: 15,
@@ -375,8 +391,8 @@ export const fonts: BaseFonts = {
 		regular: {
 			fontSize: 15,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightBase2,
 		},
 		compact: {
 			fontSize: 14,
