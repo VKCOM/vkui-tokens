@@ -31,7 +31,7 @@ export const projectColors: ProjectColors = {
 	colorPrimaryKino: '#0077FF',
 	colorPrimaryLady: '#0077FF',
 	colorPrimaryMycom: '#00abf2',
-	colorPrimaryRealty: '#4c8ebc',
+	colorPrimaryRealty: '#0077FF',
 	colorPrimaryPharma: '#1DD3A2',
 	colorPrimaryPets: '#0077FF',
 
