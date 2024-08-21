@@ -127,6 +127,10 @@ export interface LocalParadigmColorsDescriptionStruct {
 	colorTooltipTextGreenThemed: ColorDescription;
 	colorTooltipTextOrangeThemed: ColorDescription;
 	colorTooltipTextPurpleThemed: ColorDescription;
+
+	// Цвета для Байта
+	colorBackgroundSky: ColorDescription;
+	colorBackgroundSkyAlpha: ColorDescription;
 }
 
 export type ParadigmLocalColors = {

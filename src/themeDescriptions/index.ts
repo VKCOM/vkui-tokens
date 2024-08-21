@@ -8,6 +8,7 @@ import { mycomTheme } from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
 	octaviusTheme,
+	octaviusWhiteDarkTheme,
 	octaviusWhiteTheme,
 } from '@/themeDescriptions/themes/octavius';
 import {
@@ -41,6 +42,7 @@ import {
 } from '@/themeDescriptions/themes/vkontakteAndroid';
 import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/themes/vkontakteCom';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
+import { widgetsDarkTheme, widgetsTheme } from '@/themeDescriptions/themes/widgets';
 import {
 	workspaceAdminDarkTheme,
 	workspaceAdminTheme,
@@ -92,6 +94,7 @@ export const themes = [
 	calendarTheme,
 	calendarDarkTheme,
 	octaviusWhiteTheme,
+	octaviusWhiteDarkTheme,
 
 	// Темы, наследуемые от Media
 	mediaTheme,
@@ -129,6 +132,10 @@ export const themes = [
 
 	// Темы, наследуемые от WorkspaceLandings
 	workspaceLandingsTheme,
+
+	// Темы, наследуемые от Widgets
+	widgetsTheme,
+	widgetsDarkTheme,
 
 	// Прочие темы
 	callsTheme,
