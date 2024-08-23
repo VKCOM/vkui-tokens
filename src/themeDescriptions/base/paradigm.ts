@@ -97,14 +97,14 @@ export const lightColors: ColorsDescription = {
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
 		colorIconWarning: '#FF9E00',
-		colorIconNegative: '#ED033a',
+		colorIconNegative: '#ED330a',
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
 		colorStrokeAccent: '#0077ff',
 		colorStrokeAccentThemed: '#0077ff',
 		colorStrokeContrast: '#FFFFFF',
-		colorStrokeNegative: '#ED033a',
+		colorStrokeNegative: '#ED330a',
 		colorImageBorderAlpha: 'rgba(0, 16, 61, 0.08)',
 		colorFieldBorderAlpha: 'rgba(0, 16, 61, 0.12)',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 16, 61, 0.12)',
@@ -117,7 +117,7 @@ export const lightColors: ColorsDescription = {
 		// Palette
 		colorAccentBlue: '#0077FF',
 		colorAccentGray: '#A5A7AD',
-		colorAccentRed: '#ED033A',
+		colorAccentRed: '#ED330A',
 		colorAccentOrangeFire: '#F05C44',
 		colorAccentOrange: '#FF9E00',
 		colorAccentOrangePeach: '#F9B54F',
