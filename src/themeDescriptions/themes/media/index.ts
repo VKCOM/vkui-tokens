@@ -7,7 +7,7 @@ import { helpers, projectColors, socialColors } from '@/themeDescriptions/common
 import { darkTheme, lightTheme } from '../../base/paradigm';
 
 const { fontWeightBase3 } = lightTheme;
-const { x0, x05, x2, x3, x4, x5, x6, x8, x10, x12 } = helpers;
+const { x0, x05, x2, x3, x4, x5, x6, x8 } = helpers;
 
 const fontFamilyBase: Property.FontFamily = 'Inter, Helvetica, Arial, sans-serif';
 const fontFamilyAccent: Property.FontFamily = `VKSansDisplay, MailSans, ${fontFamilyBase}`;
@@ -508,17 +508,23 @@ export const mediaTheme: ThemeMediaDescription = {
 	 */
 
 	sizeFieldHeight: {
-		regular: x12,
+		regular: 44,
+		compact: 36,
 	},
 
 	sizeButtonLargeHeight: {
-		regular: x12,
+		regular: 44,
+		compact: 36,
 	},
+
 	sizeButtonMediumHeight: {
-		regular: x10,
-	},
-	sizeButtonSmallHeight: {
 		regular: 36,
+		compact: 32,
+	},
+
+	sizeButtonSmallHeight: {
+		regular: 30,
+		compact: 28,
 	},
 
 	sizeFieldWidthMin: {
@@ -608,6 +614,25 @@ export const mediaTheme: ThemeMediaDescription = {
 		regular: x4,
 	},
 
+	sizeButtonBaseSmallPaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonBaseMediumPaddingHorizontal: {
+		regular: 16,
+	},
+	sizeButtonBaseLargePaddingHorizontal: {
+		regular: 20,
+	},
+	sizeButtonBaseSmallPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseMediumPaddingHorizontalIcon: {
+		regular: 12,
+	},
+	sizeButtonBaseLargePaddingHorizontalIcon: {
+		regular: 16,
+	},
+
 	/**
 	 * ОТСТУПЫ МЕЖДУ ЭЛЕМЕНТАМИ УПРАВЛЕНИЯ
 	 */
@@ -694,6 +719,8 @@ export const mediaTheme: ThemeMediaDescription = {
 	sizeBadgeXL: {
 		regular: 56,
 	},
+
+	elevation3: '0px 16px 48px 0px rgba(0, 16, 61, 0.28)',
 };
 
 export const mediaDarkTheme: ThemeMediaDescription = {
@@ -704,4 +731,5 @@ export const mediaDarkTheme: ThemeMediaDescription = {
 		...mediaTheme.colors,
 		...darkTheme.colors,
 	},
+	elevation3: '0px 16px 48px 0px rgba(0, 0, 0, 0.40)',
 };
