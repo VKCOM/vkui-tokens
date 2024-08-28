@@ -412,7 +412,7 @@ export const octaviusDarkTheme: ThemeOctaviusDescription = {
 		octaviusColorIconRegistration: '#FF9C37',
 		octaviusColorIconTravel: '#C15DF3',
 		octaviusColorIconEvent: '#FF6262',
-		octaviusColorIconFees: '#EE3C3C',
+		octaviusColorIconFees: '#FF6262',
 
 		octaviusColorIconSocial: '#5F7CE8',
 		octaviusColorIconMailings: '#FFA447',
