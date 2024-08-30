@@ -14,9 +14,7 @@ import {
 export const getUsingViewports = <Vt extends ViewportsTuple>(
 	breakpoints: Breakpoints<Vt>['breakpoints'],
 ): Vt => {
-	const usingViewports: Vt[number][] = [
-		...(Object.keys(breakpoints) as (keyof typeof breakpoints)[]),
-	];
+	const usingViewports: Vt[number][] = Object.keys(breakpoints) as (keyof typeof breakpoints)[];
 
 	return usingViewports.sort((a, b) =>
 		viewports.indexOf(a) > viewports.indexOf(b) ? 1 : -1,
