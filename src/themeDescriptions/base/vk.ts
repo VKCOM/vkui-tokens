@@ -79,7 +79,7 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorBackgroundContrastInverse: background.background_contrast_inverse,
 			colorBackgroundContrastThemed: {
 				light: '#FFFFFF',
-				dark: '#323232',
+				dark: '#2C2D2E',
 			}[colorsScheme],
 			colorBackgroundModal: {
 				light: '#FFFFFF',
