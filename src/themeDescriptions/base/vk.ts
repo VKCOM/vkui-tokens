@@ -114,10 +114,26 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorTextAccent: text.text_accent,
 			colorTextAccentThemed: text.text_accent_themed,
 			colorTextPrimary: text.text_primary,
+			colorTextPrimaryAlpha: {
+				light: 'rgba(0, 0, 0, 0.84)',
+				dark: 'rgba(249, 252, 255, 0.72)',
+			}[colorsScheme],
 			colorTextPrimaryInvariably: text.text_primary_invariably,
 			colorTextSecondary: text.text_secondary,
+			colorTextSecondaryAlpha: {
+				light: 'rgba(37, 41, 46, 0.55)',
+				dark: 'rgba(247, 251, 255, 0.42)',
+			}[colorsScheme],
 			colorTextSubhead: text.text_subhead,
+			colorTextSubheadAlpha: {
+				light: 'rgba(61, 68, 77, 0.71)',
+				dark: 'rgba(241, 247, 255, 0.58)',
+			}[colorsScheme],
 			colorTextTertiary: text.text_tertiary,
+			colorTextTertiaryAlpha: {
+				light: 'rgba(35, 39, 43, 0.44)',
+				dark: 'rgba(244, 250, 255, 0.31)',
+			}[colorsScheme],
 			colorTextContrast: text.text_contrast,
 			colorTextContrastThemed: text.text_contrast_themed,
 			colorTextPositive: text.text_positive,

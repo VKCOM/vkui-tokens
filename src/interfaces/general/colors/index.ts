@@ -203,6 +203,12 @@ export interface ColorsDescriptionStruct {
 	colorTextPrimary: ColorDescription;
 
 	/**
+	 * @desc Основной цвет текста с прозрачностью
+	 * @tags color, text, alpha
+	 */
+	colorTextPrimaryAlpha: ColorDescription;
+
+	/**
 	 * @desc Основной цвет текста не меняется в зависимости от темы
 	 * @tags color, text
 	 */
@@ -215,16 +221,34 @@ export interface ColorsDescriptionStruct {
 	colorTextSecondary: ColorDescription;
 
 	/**
+	 * @desc Второстепенный цвет текста с прозрачностью
+	 * @tags color, text, alpha
+	 */
+	colorTextSecondaryAlpha: ColorDescription;
+
+	/**
 	 * @desc Цвет текста подзаголовков
 	 * @tags color, text
 	 */
 	colorTextSubhead: ColorDescription;
 
 	/**
+	 * @desc Цвет текста подзаголовков с прозрачностью
+	 * @tags color, text, alpha
+	 */
+	colorTextSubheadAlpha: ColorDescription;
+
+	/**
 	 * @desc Третичный цвет текста
 	 * @tags color, text
 	 */
 	colorTextTertiary: ColorDescription;
+
+	/**
+	 * @desc Третичный цвет текста с прозрачностью
+	 * @tags color, text
+	 */
+	colorTextTertiaryAlpha: ColorDescription;
 
 	/**
 	 * @desc Контрастный цвет для текста, не меняется в зависимости от темы
