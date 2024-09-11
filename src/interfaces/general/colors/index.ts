@@ -233,22 +233,10 @@ export interface ColorsDescriptionStruct {
 	colorTextSubhead: ColorDescription;
 
 	/**
-	 * @desc Цвет текста подзаголовков с прозрачностью
-	 * @tags color, text, alpha
-	 */
-	colorTextSubheadAlpha: ColorDescription;
-
-	/**
 	 * @desc Третичный цвет текста
 	 * @tags color, text
 	 */
 	colorTextTertiary: ColorDescription;
-
-	/**
-	 * @desc Третичный цвет текста с прозрачностью
-	 * @tags color, text
-	 */
-	colorTextTertiaryAlpha: ColorDescription;
 
 	/**
 	 * @desc Контрастный цвет для текста, не меняется в зависимости от темы
