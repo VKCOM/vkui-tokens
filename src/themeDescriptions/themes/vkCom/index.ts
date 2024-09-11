@@ -21,8 +21,6 @@ const fontFamilyAccent =
 const fontFamilyBase =
 	'-apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif';
 const fontFamilyFallbacks = fontFamilyBase;
-const fontWeightAccent2 = 500;
-const fontWeightBase3 = 400;
 
 const vkComColors = (theme: typeof vkcom_light) => ({
 	// Background
@@ -57,8 +55,8 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	// Text
 	colorTextAccent: resolveColor(theme.colors.accent),
 	colorTextAccentThemed: '#3770B1',
-	colorTextPrimary: resolveColor(theme.colors.text_primary),
-	colorTextPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
+	colorTextPrimary: '#000000',
+	colorTextPrimaryInvariably: '#000000',
 	colorTextSecondary: resolveColor(theme.colors.text_secondary),
 	colorTextSubhead: resolveColor(theme.colors.text_subhead),
 	colorTextTertiary: resolveColor(theme.colors.text_tertiary),
@@ -72,11 +70,11 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorTextMuted: resolveColor(theme.colors.text_muted),
 	colorLinkContrast: '#FFFFFF',
 
-	// Icons
+	// Icon
 	colorIconAccent: resolveColor(theme.colors.accent),
 	colorIconAccentThemed: '#3770B1',
 	// colorIconPrimary: '#E1E3E6',
-	colorIconPrimaryInvariably: resolveColor(theme.colors.media_overlay_button_foreground),
+	colorIconPrimaryInvariably: '#2C2D2E',
 	colorIconMedium: resolveColor(theme.colors.icon_medium),
 	colorIconMediumAlpha: resolveColor(theme.colors.icon_medium_alpha),
 	colorIconSecondary: resolveColor(theme.colors.icon_secondary),
@@ -258,8 +256,7 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 		regular: {
 			fontSize: 16,
 			lineHeight: 20,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent2,
+			fontFamily: fontFamilyBase,
 		},
 		compact: {
 			fontSize: 14,
@@ -272,7 +269,6 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 			fontSize: 14,
 			lineHeight: 18,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
 		},
 		compact: {
 			fontSize: 14,
@@ -285,7 +281,6 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 			fontSize: 16,
 			lineHeight: 20,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
 		},
 		compact: {
 			fontSize: 13,
@@ -353,7 +348,7 @@ const vkComDarkColor: ColorsDescription = {
 	colors: {
 		...darkColors.colors,
 		...vkComColors(vkcom_dark),
-
+		// Background
 		colorBackgroundAccentThemed: {
 			normal: resolveColor(vkcom_dark.colors.button_primary_background),
 			hover: '#D8DBDF',
@@ -365,26 +360,37 @@ const vkComDarkColor: ColorsDescription = {
 			hover: 'rgba(255, 255, 255, 0.12)',
 			active: 'rgba(255, 255, 255, 0.14)',
 		},
-		colorButtonText: '#E1E3E6',
-		colorButtonIcon: '#E1E3E6',
-		colorButtonStroke: '#E1E3E6',
-		colorOverlaySecondary: 'rgba(55, 56, 57, 0.5)',
 		colorBackgroundContrastThemed: '#323232',
-		colorTextAccentThemed: '#E1E3E6',
-		colorIconAccentThemed: '#E1E3E6',
-		colorStrokeAccentThemed: '#E1E3E6',
 		colorBackgroundModalInverse: '#FFFFFF',
+
+		// Text
+		colorTextPrimary: '#E1E3E6',
+		colorTextAccentThemed: '#E1E3E6',
 		colorLinkContrast: '#FFFFFF',
+
+		// Icon
+		colorIconAccentThemed: '#E1E3E6',
+
+		// Stroke
+		colorStrokeAccentThemed: '#E1E3E6',
 		colorSeparatorPrimary: '#363738',
 		colorSeparatorPrimary2x: '#444546',
 		colorSeparatorPrimary3x: '#505253',
 		colorBackgroundNegativeTint: '#522E2E',
 		colorBackgroundPositiveTint: '#2F422F',
+
+		// Palette
 		colorAccentLime: '#CAF96C',
 		colorAccentCyan: '#55F1D2',
 		colorAccentAzure: '#5D9EE9',
 		colorAccentViolet: '#A94FFF',
 		colorAccentPink: '#F899FF',
+
+		// Other
+		colorOverlaySecondary: 'rgba(55, 56, 57, 0.5)',
+		colorButtonText: '#E1E3E6',
+		colorButtonIcon: '#E1E3E6',
+		colorButtonStroke: '#E1E3E6',
 	},
 };
 

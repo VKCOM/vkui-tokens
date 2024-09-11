@@ -79,7 +79,7 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorBackgroundContrastInverse: background.background_contrast_inverse,
 			colorBackgroundContrastThemed: {
 				light: '#FFFFFF',
-				dark: '#323232',
+				dark: '#2C2D2E',
 			}[colorsScheme],
 			colorBackgroundModal: {
 				light: '#FFFFFF',
@@ -114,8 +114,16 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorTextAccent: text.text_accent,
 			colorTextAccentThemed: text.text_accent_themed,
 			colorTextPrimary: text.text_primary,
+			colorTextPrimaryAlpha: {
+				light: 'rgba(37, 41, 46, 0.84)',
+				dark: 'rgba(249, 252, 255, 0.72)',
+			}[colorsScheme],
 			colorTextPrimaryInvariably: text.text_primary_invariably,
 			colorTextSecondary: text.text_secondary,
+			colorTextSecondaryAlpha: {
+				light: 'rgba(37, 41, 46, 0.55)',
+				dark: 'rgba(247, 251, 255, 0.42)',
+			}[colorsScheme],
 			colorTextSubhead: text.text_subhead,
 			colorTextTertiary: text.text_tertiary,
 			colorTextContrast: text.text_contrast,

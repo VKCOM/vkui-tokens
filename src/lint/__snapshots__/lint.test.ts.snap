@@ -1,3 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lint snapshot 1`] = `[]`;
+exports[`lint snapshot 1`] = `
+[
+  "cloud: colors.cloudColorIconTransportThemed error: Color token type mismatch: opaque token name but alpha value",
+  "cloud: colors.cloudColorIconFinanceThemed error: Color token type mismatch: opaque token name but alpha value",
+  "cloudDark: colors.cloudColorIconTransportThemed error: Color token type mismatch: opaque token name but alpha value",
+  "cloudDark: colors.cloudColorIconFinanceThemed error: Color token type mismatch: opaque token name but alpha value",
+]
+`;

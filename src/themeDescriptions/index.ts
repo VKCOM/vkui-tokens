@@ -8,6 +8,7 @@ import { mycomTheme } from '@/themeDescriptions/themes/mycom';
 import {
 	octaviusDarkTheme,
 	octaviusTheme,
+	octaviusWhiteDarkTheme,
 	octaviusWhiteTheme,
 } from '@/themeDescriptions/themes/octavius';
 import {
@@ -22,6 +23,7 @@ import { promoTheme } from '@/themeDescriptions/themes/promo';
 import { pulseTheme, pulseThemeDark } from '@/themeDescriptions/themes/pulse';
 import { searchTheme } from '@/themeDescriptions/themes/search';
 import { todoTheme } from '@/themeDescriptions/themes/todo';
+import { tutoriaDarkTheme, tutoriaTheme } from '@/themeDescriptions/themes/tutoria';
 import {
 	vkAccessibilityTheme,
 	vkAccessibilityThemeDark,
@@ -40,6 +42,7 @@ import {
 } from '@/themeDescriptions/themes/vkontakteAndroid';
 import { vkontakteComTheme, vkontakteComThemeDark } from '@/themeDescriptions/themes/vkontakteCom';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
+import { widgetsDarkTheme, widgetsTheme } from '@/themeDescriptions/themes/widgets';
 import {
 	workspaceAdminDarkTheme,
 	workspaceAdminTheme,
@@ -75,6 +78,8 @@ export const themes = [
 	vkIdOkThemeDark,
 	vkIdOkIOSTheme,
 	vkIdOkIOSThemeDark,
+	tutoriaTheme,
+	tutoriaDarkTheme,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius
@@ -89,6 +94,7 @@ export const themes = [
 	calendarTheme,
 	calendarDarkTheme,
 	octaviusWhiteTheme,
+	octaviusWhiteDarkTheme,
 
 	// Темы, наследуемые от Media
 	mediaTheme,
@@ -126,6 +132,10 @@ export const themes = [
 
 	// Темы, наследуемые от WorkspaceLandings
 	workspaceLandingsTheme,
+
+	// Темы, наследуемые от Widgets
+	widgetsTheme,
+	widgetsDarkTheme,
 
 	// Прочие темы
 	callsTheme,

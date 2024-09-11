@@ -21,21 +21,21 @@ export type ProjectColors = {
 };
 
 export const projectColors: ProjectColors = {
-	colorPrimaryAuto: '#ff4f00',
-	colorPrimaryBase: '#005ff9',
-	colorPrimaryDeti: '#ca9cf4',
+	colorPrimaryAuto: '#0077FF',
+	colorPrimaryBase: '#0077FF',
+	colorPrimaryDeti: '#0077FF',
 	colorPrimaryDobro: '#ffd400',
-	colorPrimaryHealth: '#008079',
-	colorPrimaryHealthNew: '#3cd298',
-	colorPrimaryHitech: '#5856d6',
-	colorPrimaryKino: '#eaff00',
-	colorPrimaryLady: '#ff2d54',
+	colorPrimaryHealth: '#0077FF',
+	colorPrimaryHealthNew: '#0077FF',
+	colorPrimaryHitech: '#0077FF',
+	colorPrimaryKino: '#0077FF',
+	colorPrimaryLady: '#0077FF',
 	colorPrimaryMycom: '#00abf2',
-	colorPrimaryRealty: '#4c8ebc',
+	colorPrimaryRealty: '#0077FF',
 	colorPrimaryPharma: '#1DD3A2',
-	colorPrimaryPets: '#fd696e',
+	colorPrimaryPets: '#0077FF',
 
-	colorSecondaryBase: '#ff9e00',
-	colorSecondaryHealth: '#fde953',
+	colorSecondaryBase: '#0077FF',
+	colorSecondaryHealth: '#0077FF',
 	colorSecondaryMycom: '#fc2c38',
 };

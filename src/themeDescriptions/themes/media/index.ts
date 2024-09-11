@@ -10,7 +10,7 @@ const { fontWeightBase3 } = lightTheme;
 const { x0, x05, x2, x3, x4, x5, x6, x8, x10, x12 } = helpers;
 
 const fontFamilyBase: Property.FontFamily = 'Inter, Helvetica, Arial, sans-serif';
-const fontFamilyAccent: Property.FontFamily = `MailSans, ${fontFamilyBase}`;
+const fontFamilyAccent: Property.FontFamily = `VKSansDisplay, MailSans, ${fontFamilyBase}`;
 const fontFamilyArticle: Property.FontFamily = fontFamilyBase;
 const fontFamilyFallbacks: Property.FontFamily = fontFamilyBase;
 
@@ -217,6 +217,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 22,
 			lineHeight: 28,
 			letterSpacing: '-0.005em',
+		},
+	},
+	mediaFontMediaSubtitleLight: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia4,
+			fontSize: 20,
+			lineHeight: 26,
 		},
 	},
 	mediaFontMediaLead: {
@@ -540,12 +548,20 @@ export const mediaTheme: ThemeMediaDescription = {
 		compact: 620,
 		large: 780,
 	},
+	gridMainContentWide: {
+		regular: '100%',
+		compactX: 620,
+		compact: 620,
+		large: 860,
+	},
 	gridAsideContent: {
 		regular: '100%',
 		compactX: 300,
 		compact: 300,
 		large: 300,
 	},
+	mediaSizeGap: 20,
+	mediaSizeGrid: 60,
 
 	// @deprecated
 	gridColumnX2: {

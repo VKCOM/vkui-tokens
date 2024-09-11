@@ -16,7 +16,24 @@ export interface ThemeWorkspaceOverValues {
 }
 
 export interface LocalWorkspaceAdminColorsDescriptionStruct {
+	colorAvatarsBlue: ColorDescription;
+	colorAvatarsCoral: ColorDescription;
+	colorAvatarsGreen: ColorDescription;
+	colorAvatarsIndigo: ColorDescription;
+	colorAvatarsLavender: ColorDescription;
+	colorAvatarsLime: ColorDescription;
+	colorAvatarsMint: ColorDescription;
+	colorAvatarsOrange: ColorDescription;
+	colorAvatarsPeach: ColorDescription;
+	colorAvatarsRed: ColorDescription;
+	colorAvatarsSea: ColorDescription;
+	colorAvatarsSeagreen: ColorDescription;
+	colorAvatarsSky: ColorDescription;
+	colorAvatarsViolet: ColorDescription;
+	colorAvatarsYellow: ColorDescription;
 	colorIconNegativeSnackbar: ColorDescription;
+	colorOnboarding: ColorDescription;
+	colorSearchResultsAlpha: ColorDescription;
 }
 
 export type WorkspaceAdminLocalColors = {
