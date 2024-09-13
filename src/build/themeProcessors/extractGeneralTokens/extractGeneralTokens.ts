@@ -1,4 +1,7 @@
-import { ThemeDescription, ThemeGeneral } from '@/interfaces/general';
+import lodash from 'lodash';
+
+import { AdaptiveTokens, ThemeDescription, ThemeGeneral } from '@/interfaces/general';
+import { lightTheme } from '@/themeDescriptions/base/vk';
 
 /**
  * Процессор, который возвращает новый объект на основе описания темы (ThemeDescription),
@@ -17,6 +20,9 @@ export function extractGeneralTokens<TD = ThemeDescription, TG = ThemeGeneral>(
 	for (const token of tokens) {
 		const tokenValue = themeDescription[token];
 
+		// заполняем пустые значения режима compact значениями из regular
+		copyDescription[token] = mergeCompactAdativityWithRegular(tokenValue, token);
+
 		if (typeof tokenValue === 'function') {
 			copyDescription[token] = tokenValue(themeDescription);
 		}
@@ -26,4 +32,31 @@ export function extractGeneralTokens<TD = ThemeDescription, TG = ThemeGeneral>(
 	delete copyDescription.colorsScheme;
 
 	return copyDescription;
+}
+
+function isAdaptiveToken(
+	tokenValue: ThemeGeneral[keyof ThemeGeneral],
+): tokenValue is AdaptiveTokens[keyof AdaptiveTokens] {
+	return typeof tokenValue === 'object' && 'regular' in tokenValue;
+}
+
+function mergeCompactAdativityWithRegular(
+	tokenValue: ThemeGeneral[keyof ThemeGeneral],
+	tokenName: string,
+) {
+	console.log('Token name: ', tokenName);
+	if (!isAdaptiveToken(tokenValue)) {
+		return tokenValue;
+	}
+
+	if (!(tokenName in lightTheme)) {
+		return tokenValue;
+	}
+
+	const compact =
+		typeof tokenValue.regular === 'object'
+			? lodash.merge(lodash.cloneDeep(tokenValue.regular), tokenValue.compact)
+			: tokenValue.compact ?? tokenValue.regular;
+
+	return { ...tokenValue, compact };
 }
