@@ -41,7 +41,7 @@ describe('mixColors', () => {
 				regular: '12px',
 				compact: '14px',
 			},
-			fontText1: {
+			fontText: {
 				regular: {
 					fontSize: '12px',
 					lineHeight: '14px',
@@ -68,7 +68,7 @@ describe('mixColors', () => {
 				regular: '12px',
 				compact: '14px',
 			},
-			fontText1: {
+			fontText: {
 				regular: {
 					fontSize: '12px',
 					lineHeight: '14px',
@@ -85,7 +85,6 @@ describe('mixColors', () => {
 				},
 				compact: {
 					fontSize: '14px',
-					fontWeight: '400',
 				},
 			},
 			anotherProp: 'prop',
