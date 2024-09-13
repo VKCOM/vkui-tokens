@@ -36,16 +36,20 @@ export function extractGeneralTokens<TD = ThemeDescription, TG = ThemeGeneral>(
 
 function isAdaptiveToken(
 	tokenValue: ThemeGeneral[keyof ThemeGeneral],
-	tokenName: string,
 ): tokenValue is AdaptiveTokens[keyof AdaptiveTokens] {
-	return typeof tokenValue === 'object' && 'regular' in tokenValue && tokenName in lightTheme;
+	return typeof tokenValue === 'object' && 'regular' in tokenValue;
 }
 
 function mergeCompactAdativityWithRegular(
 	tokenValue: ThemeGeneral[keyof ThemeGeneral],
 	tokenName: string,
 ) {
-	if (!isAdaptiveToken(tokenValue, tokenName)) {
+	console.log('Token name: ', tokenName);
+	if (!isAdaptiveToken(tokenValue)) {
+		return tokenValue;
+	}
+
+	if (!(tokenName in lightTheme)) {
 		return tokenValue;
 	}
 
