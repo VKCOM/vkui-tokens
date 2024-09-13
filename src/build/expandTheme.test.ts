@@ -36,6 +36,7 @@ describe('expandTheme', () => {
 			expect(result).toStrictEqual({
 				sizeArrow: {
 					regular: 3,
+					compact: 3,
 				},
 				someNewRandomToken: '3',
 				themeType: 'root',

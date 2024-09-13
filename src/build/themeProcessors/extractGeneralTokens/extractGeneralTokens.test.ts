@@ -31,4 +31,64 @@ describe('mixColors', () => {
 			anotherProp: 'prop',
 		});
 	});
+
+	it('should merge compact adaptivity with regular', () => {
+		const testData = {
+			sizeArrow: {
+				regular: '8px',
+			},
+			sizeAvatar: {
+				regular: '12px',
+				compact: '14px',
+			},
+			fontText1: {
+				regular: {
+					fontSize: '12px',
+					lineHeight: '14px',
+				},
+			},
+			fontText2: {
+				regular: {
+					fontSize: '12px',
+					fontWeight: '400',
+				},
+				compact: {
+					fontSize: '14px',
+				},
+			},
+			anotherProp: 'prop',
+		};
+
+		expect(extractGeneralTokens(testData as any)).toStrictEqual({
+			sizeArrow: {
+				regular: '8px',
+				compact: '8px',
+			},
+			sizeAvatar: {
+				regular: '12px',
+				compact: '14px',
+			},
+			fontText1: {
+				regular: {
+					fontSize: '12px',
+					lineHeight: '14px',
+				},
+				compact: {
+					fontSize: '12px',
+					lineHeight: '14px',
+				},
+			},
+			fontText2: {
+				regular: {
+					fontSize: '12px',
+					fontWeight: '400',
+				},
+				compact: {
+					fontSize: '14px',
+					fontWeight: '400',
+				},
+			},
+			anotherProp: 'prop',
+		});
+	});
 });

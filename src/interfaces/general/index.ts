@@ -16,7 +16,7 @@ import { ZIndex } from './zIndex';
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 
-type AdaptiveTokens = {
+export type AdaptiveTokens = {
 	[key in keyof AdaptiveInterfaceValues]: Adaptive<AdaptiveInterfaceValues[key]>;
 };
 
