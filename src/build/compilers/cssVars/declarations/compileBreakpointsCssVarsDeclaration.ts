@@ -71,6 +71,10 @@ ${getVarString({ valuesObject: adaptiveValues.auto, prefix: '\t\t' })}
 				adaptivityState as keyof Adaptive<any>,
 			);
 
+			if (!usedViewport) {
+				return;
+			}
+
 			mediaValues += stripIndent`
 			@media ${customMedia[`width${capitalize(usedViewport)}`]} {
 				:root, .vkui--force-auto {
