@@ -36,7 +36,7 @@ describe('tokenHelpers', () => {
 
 	describe('gradient', () => {
 		test('calculates gradient string from 1 color with variable', () => {
-			const gradientToken = gradient(['blue']);
+			const gradientToken = gradient('blue');
 			const gradientValue = gradientToken({});
 
 			expect(gradientValue).toEqual(
@@ -52,7 +52,7 @@ describe('tokenHelpers', () => {
 		});
 
 		test('calculates gradient string from 1 color with variable', () => {
-			const gradientToken = gradient([namedAlias('colorIconPrimary')]);
+			const gradientToken = gradient(namedAlias('colorIconPrimary'));
 			const gradientValue = gradientToken({ colors: { colorIconPrimary: 'blue' } as any });
 
 			expect(gradientValue).toEqual(
@@ -68,7 +68,7 @@ describe('tokenHelpers', () => {
 		});
 
 		test('calculates gradient string from 2 colors', () => {
-			const gradientToken = gradient([namedAlias('colorIconPrimary'), 'transparent']);
+			const gradientToken = gradient(namedAlias('colorIconPrimary'), 'transparent');
 			const gradientValue = gradientToken({ colors: { colorIconPrimary: 'blue' } as any });
 
 			expect(gradientValue).toEqual(
@@ -77,7 +77,7 @@ describe('tokenHelpers', () => {
 		});
 
 		test('calculates gradient string from 3 colors', () => {
-			const gradientToken = gradient(['blue', 'black', 'red']);
+			const gradientToken = gradient('blue', 'black', 'red');
 			const gradientValue = gradientToken({});
 
 			expect(gradientValue).toEqual(
