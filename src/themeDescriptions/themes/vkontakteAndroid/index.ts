@@ -1,5 +1,6 @@
 import lodash from 'lodash';
 
+import { gradient, namedAlias } from '@/build/helpers/tokenHelpers';
 import { Gradients } from '@/interfaces/general/gradients';
 import { DeepPartial } from '@/interfaces/general/tools/utils';
 import type {
@@ -10,7 +11,6 @@ import type {
 import type { ThemeVkontakteAndroidDarkDescription } from '@/interfaces/themes/vkontakteAndroidDark';
 
 import { darkTheme as vkDarkTheme, fonts, lightTheme as vkLightTheme } from '../../base/vk';
-import { gradient, namedAlias } from '@/build/helpers/tokenHelpers';
 
 const themeNameBase = 'vkontakteAndroid';
 
@@ -279,7 +279,7 @@ const gradients: Gradients = {
 	gradientTint: gradient(namedAlias('colorBackgroundTertiary'), 'transparent'),
 	gradientWhite: gradient('#FFFFFF', 'transparent'),
 	gradientBlack: gradient('#00000060', 'transparent'),
-}
+};
 
 export const vkontakteDisplayTitleFontsPartial: DeepPartial<typeof fonts> = {
 	fontDisplayTitle1: {
