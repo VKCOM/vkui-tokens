@@ -35,18 +35,53 @@ describe('tokenHelpers', () => {
 	});
 
 	describe('gradient', () => {
-		test('calculates gradient string', () => {
+		test('calculates gradient string from 1 color with variable', () => {
+			const gradientToken = gradient(['blue']);
+			const gradientValue = gradientToken({});
+
+			expect(gradientValue).toEqual(
+				[
+					'rgba(0, 0, 255, 0) 0%',
+					'rgba(0, 0, 255, 0.05) 15%',
+					'rgba(0, 0, 255, 0.2) 30%',
+					'rgba(0, 0, 255, 0.8) 70%',
+					'rgba(0, 0, 255, 0.95) 85%',
+					'rgba(0, 0, 255, 1) 100%',
+				].join(', '),
+			);
+		});
+
+		test('calculates gradient string from 1 color with variable', () => {
+			const gradientToken = gradient([namedAlias('colorIconPrimary')]);
+			const gradientValue = gradientToken({ colors: { colorIconPrimary: 'blue' } as any });
+
+			expect(gradientValue).toEqual(
+				[
+					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0)) 0%',
+					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.05)) 15%',
+					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.2)) 30%',
+					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.8)) 70%',
+					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.95)) 85%',
+					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 1)) 100%',
+				].join(', '),
+			);
+		});
+
+		test('calculates gradient string from 2 colors', () => {
 			const gradientToken = gradient([namedAlias('colorIconPrimary'), 'transparent']);
 			const gradientValue = gradientToken({ colors: { colorIconPrimary: 'blue' } as any });
 
 			expect(gradientValue).toEqual(
-				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 1)) 0%, rgba(0, 0, 0, 0, 0) 100%',
+				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 1)) 0%, rgba(0, 0, 0, 0) 100%',
 			);
 		});
 
-		test('fails if bad number of arguments is given', () => {
-			expect(() => gradient([namedAlias('colorIconPrimary')])).toThrowError(
-				'Gradient stops length (1) is not equal to the number of opacity points given (2)',
+		test('calculates gradient string from 3 colors', () => {
+			const gradientToken = gradient(['blue', 'black', 'red']);
+			const gradientValue = gradientToken({});
+
+			expect(gradientValue).toEqual(
+				'rgba(0, 0, 255, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 0, 0, 1) 100%',
 			);
 		});
 	});

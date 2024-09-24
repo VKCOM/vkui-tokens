@@ -41,12 +41,12 @@ export function getGradientPointsFromColor(
 ): GradientPoints {
 	const gradientPointData = typeof colorArg === 'function' ? colorArg() : { value: colorArg };
 
-	const colorRGB: string = color(gradientPointData.value).rgb().array().join(', ');
+	const colorRGB: string = color(gradientPointData.value).rgb().array().slice(0, 3).join(', ');
 	const colorAlpha = color(gradientPointData.value).alpha();
 
 	return opacityPoints
 		.map(([pointOpacity, pointCoordinate]) => {
-			const targetOpacity = colorAlpha < 1 ? colorAlpha : pointOpacity;
+			const targetOpacity = colorAlpha * pointOpacity;
 			const colorValue = `rgba(${colorRGB}, ${Math.round(targetOpacity * opacityMultiplier * 1000) / 1000})`;
 
 			if (typeof gradientPointData.key === 'string') {

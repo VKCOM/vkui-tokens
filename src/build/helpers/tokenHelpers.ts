@@ -3,7 +3,12 @@ import type { Property } from 'csstype';
 import { ThemeDescription } from '@/interfaces/general';
 import { Token } from '@/interfaces/general/tools/tokenValue';
 
-import { getGradientPointsFromColor, makeGradientPointRaw } from './getGradientPointsFromColor';
+import {
+	defaultOpacityPoints,
+	getGradientPointsFromColor,
+	makeGradientPointRaw,
+	OpacityPoints,
+} from './getGradientPointsFromColor';
 
 export type TokenFunction<T extends ThemeDescription> = (theme: Partial<T>) => Token<any, T>;
 export type NamedTokenFunction<T extends ThemeDescription> = (
@@ -32,25 +37,26 @@ export function staticRef<T>(value: Token<T, any>): T {
 	return value;
 }
 
+function makeOpacityPoints(count: number): OpacityPoints {
+	const result: OpacityPoints = [];
+
+	for (let i = 0; i < count; i++) {
+		const percent = Math.round(i * (1 / (count - 1)) * 100);
+		result.push([1, percent]);
+	}
+
+	return result;
+}
+
 export function gradient<T extends ThemeDescription>(
 	stops: (Property.Color | NamedTokenFunction<T>)[],
-	opacityPoints: OpacityPoint[] = [
-		[1, 0],
-		[1, 100],
-	],
 ): TokenFunction<T> {
-	if (stops.length !== opacityPoints.length) {
-		throw new Error(
-			`Gradient stops length (${
-				stops.length
-			}) is not equal to the number of opacity points given (${opacityPoints.length})`,
-		);
-	}
+	const opacityPoints = stops.length > 1 ? makeOpacityPoints(stops.length) : defaultOpacityPoints;
 
 	return (theme) => {
 		return opacityPoints
 			.map(([pointOpacity, pointCoordinate], index) => {
-				const stop = stops[index];
+				const stop = stops[index] ?? stops[stops.length - 1];
 				const [stopKey, stopValue] = typeof stop === 'function' ? stop(theme) : [undefined, stop];
 
 				const pointRaw = makeGradientPointRaw(stopValue, stopKey);
