@@ -12,13 +12,26 @@ import Tokens from '@/pages/Tokens';
 import { Articles } from './pages/Articles';
 
 import articleNewTheme from "./articles/NewTheme.md";
+import articleTokenHelpers from "./articles/TokenHelpers.md";
 
-function articleRoute(slug: string, contents?: string) {
-	return {
-		path: `/articles/${slug}`,
-		element: <Articles contentsHtml={contents}/>
-	};
-}
+const articles = [
+	{
+		title: "Темы",
+	},
+	{
+		slug: "new-theme",
+		title: "Создание новой темы для проекта",
+		contents: articleNewTheme,
+	},
+	{
+		title: "Токены",
+	},
+	{
+		slug: "token-helpers",
+		title: "Хелпер-функции",
+		contents: articleTokenHelpers,
+	},
+];
 
 const router = createBrowserRouter([
 	{
@@ -27,9 +40,16 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/articles",
-		element: <Articles />
+		element: <Articles items={articles} />
 	},
-	articleRoute("new-theme", articleNewTheme),
+	...articles
+		.filter((article) => !!article.slug)
+		.map((article) => (
+			{
+				path: `/articles/${article.slug}`,
+				element: <Articles items={articles} contentsHtml={article.contents}/>
+			}
+		)),
 ]);
 
 const App: FC = () => (

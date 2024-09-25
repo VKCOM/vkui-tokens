@@ -1,6 +1,5 @@
 import path from 'path';
 import RemarkHTML from 'remark-html';
-import RemarkHightlightJs from 'remark-highlight.js';
 import { fileURLToPath } from 'node:url';
 
 export default function () {
