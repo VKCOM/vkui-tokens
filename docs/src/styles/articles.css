@@ -99,3 +99,36 @@
     margin: var(--vkui--size_label_horizontal_margin--regular) 0;
     overflow: auto;
 }
+
+.code-tab [data-language] {
+    display: none;
+}
+
+.code-tab [data-language].code-tab-selected {
+    display: block;
+}
+
+.code-tab_button {
+    background: none;
+    border: 0 none;
+    cursor: pointer;
+
+    color: var(--vkui--color_text_secondary);
+
+    font-size: var(--vkui--font_text--font_size--regular);
+	line-height: var(--vkui--font_text--line_height--regular);
+	font-family: var(--vkui--font_text--font_family--regular);
+	font-weight: var(--vkui--font_text--font_weight--regular);
+}
+
+.code-tab_button:hover {
+    color: var(--vkui--color_text_secondary--hover);
+}
+
+.code-tab_button:active {
+    color: var(--vkui--color_text_secondary--active);
+}
+
+.code-tab_button.code-tab-selected {
+    color: var(--vkui--color_text_primary);
+}

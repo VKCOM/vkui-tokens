@@ -21,14 +21,28 @@ function readThemeToken(theme: any, token: string): Token<any, any> {
 	return theme[token] ?? (theme['colors'] ?? {})[token];
 }
 
+/**
+ * Функция выполняет подстановку значения другого токена.
+ * @param token Имя токена. Можно использовать токены из текущей темы либо из всех тем,
+ * от которой наследуется текущая.
+ */
 export function alias<T extends ThemeDescription>(token: string): TokenFunction<T> {
 	return (theme) => readThemeToken(theme, token);
 }
 
+/**
+ * Функция создаёт runtime-ссылку на другой токен темы выполняет подстановку fallback-значения этого токена.
+ * @param token Имя токена. Можно использовать токены из текущей темы либо из всех тем,
+ * от которой наследуется текущая.
+ */
 export function namedAlias<T extends ThemeDescription>(token: string): NamedTokenFunction<T> {
 	return (theme) => [token, readThemeToken(theme, token)];
 }
 
+/**
+ * Функция создаёт runtime-ссылку на другой токен темы.
+ * @param token Имя токена. Можно использовать любые токены, которые находятся в контексте страницы.
+ */
 export function staticRef<T>(value: Token<T, any>): T {
 	if (typeof value === 'function') {
 		throw new Error('Cannot use callable token value in static ref');
@@ -48,7 +62,7 @@ function makeOpacityPoints(count: number): OpacityPoints {
 	return result;
 }
 
-export function gradient<T extends ThemeDescription>(
+export function gradient<T extends ThemeDescription> (
 	...stops: (Property.Color | NamedTokenFunction<T>)[]
 ): TokenFunction<T> {
 	const opacityPoints = stops.length > 1 ? makeOpacityPoints(stops.length) : defaultOpacityPoints;
