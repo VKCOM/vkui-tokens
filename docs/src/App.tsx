@@ -52,6 +52,10 @@ const router = createBrowserRouter([
 		)),
 ]);
 
+router.subscribe(() => {
+	window.scrollTo(0, 0);
+});
+
 const App: FC = () => (
 	<Main>
 		<RouterProvider router={router} />

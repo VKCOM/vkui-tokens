@@ -152,7 +152,7 @@ export function Articles(props: ArticlesProps) {
             const link = links[i] as HTMLElement;
             link.setAttribute("target", "_blank");
         }
-    }, [ref.current]);
+    }, [ref.current, articleContent]);
 
     return (
         <div className={`articles ${isMobile ? 'articles__mobile' : ''}`}>

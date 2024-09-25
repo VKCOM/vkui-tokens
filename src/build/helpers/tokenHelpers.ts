@@ -62,7 +62,7 @@ function makeOpacityPoints(count: number): OpacityPoints {
 	return result;
 }
 
-export function gradient<T extends ThemeDescription> (
+export function gradient<T extends ThemeDescription>(
 	...stops: (Property.Color | NamedTokenFunction<T>)[]
 ): TokenFunction<T> {
 	const opacityPoints = stops.length > 1 ? makeOpacityPoints(stops.length) : defaultOpacityPoints;

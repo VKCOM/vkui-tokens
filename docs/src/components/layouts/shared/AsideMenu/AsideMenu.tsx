@@ -25,17 +25,17 @@ export function AsideMenu(props: AsideMenuProps) {
                 {items.map((item) => {
                     if (item.slug) {
                         return (
-                            <div className="aside-menu-item">
+                            <div className="aside-menu-item" key={item.title}>
                                 <Link to={`/articles/${item.slug}`}>{item.title}</Link>
                             </div>
                         );
                     } else {
                         return (
-                            <>
+                            <React.Fragment key={item.title}>
                                 <Spacing size={20}/>
                                 <Title level="3">{item.title}</Title>
                                 <Spacing size={8}/>
-                            </>
+                            </React.Fragment>
                         )
                     }
                 })}

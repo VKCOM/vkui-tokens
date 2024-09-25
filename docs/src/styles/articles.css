@@ -77,14 +77,17 @@
 
 .articles a, .articles a:visited {
     color: var(--vkui--color_text_link);
+    text-decoration: none;
 }
 
 .articles a:hover {
     color: var(--vkui--color_text_link--hover);
+    text-decoration: underline;
 }
 
 .articles a:active {
     color: var(--vkui--color_text_link--active);
+    text-decoration: underline;
 }
 
 .articles-container code {
