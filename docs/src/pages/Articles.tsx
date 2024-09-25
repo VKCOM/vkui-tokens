@@ -15,7 +15,7 @@ export function Articles(props: ArticlesProps) {
     const ref = React.useRef<HTMLDivElement>(undefined);
 
     const { viewWidth } = useAdaptivityWithJSMediaQueries();
-	const isMobile = viewWidth <= 3;
+    const isMobile = viewWidth <= 3;
 
     React.useEffect(() => {
         highlightCodeInElement(ref.current);
