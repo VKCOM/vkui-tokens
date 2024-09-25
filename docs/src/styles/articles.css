@@ -1,0 +1,69 @@
+
+.articles-container {
+    color: var(--vkui--color_text_primary);
+
+    font-size: var(--vkui--font_text--font_size--regular);
+	line-height: var(--vkui--font_text--line_height--regular);
+	font-family: var(--vkui--font_text--font_family--regular);
+	font-weight: var(--vkui--font_text--font_weight--regular);
+}
+
+.articles-container p {
+    font-size: var(--vkui--font_paragraph--font_size--regular);
+	line-height: var(--vkui--font_paragraph--line_height--regular);
+	font-family: var(--vkui--font_paragraph--font_family--regular);
+	font-weight: var(--vkui--font_paragraph--font_weight--regular);
+}
+
+.articles-container h1 {
+    font-size: var(--vkui--font_title1--font_size--regular);
+	line-height: var(--vkui--font_title1--line_height--regular);
+	font-family: var(--vkui--font_title1--font_family--regular);
+	font-weight: var(--vkui--font_title1--font_weight--regular);
+}
+
+.articles-container h2 {
+    font-size: var(--vkui--font_title2--font_size--regular);
+	line-height: var(--vkui--font_title2--line_height--regular);
+	font-family: var(--vkui--font_title2--font_family--regular);
+	font-weight: var(--vkui--font_title2--font_weight--regular);
+}
+
+.articles-container h3 {
+    font-size: var(--vkui--font_title3--font_size--regular);
+	line-height: var(--vkui--font_title3--line_height--regular);
+	font-family: var(--vkui--font_title3--font_family--regular);
+	font-weight: var(--vkui--font_title3--font_weight--regular);
+}
+
+.articles-container h3 {
+    font-size: var(--vkui--font_title3--font_size--regular);
+	line-height: var(--vkui--font_title3--line_height--regular);
+	font-family: var(--vkui--font_title3--font_family--regular);
+	font-weight: var(--vkui--font_title3--font_weight--regular);
+}
+
+.articles-container a, .articles-container a:visited {
+    color: var(--vkui--color_text_link);
+}
+
+.articles-container a:hover {
+    color: var(--vkui--color_text_link--hover);
+}
+
+.articles-container a:active {
+    color: var(--vkui--color_text_link--active);
+}
+
+.articles-container code {
+    background-color: var(--vkui--color_background_secondary);
+    border-radius: var(--vkui--size_border_radius--regular);
+    padding: 4px;
+}
+
+.articles-container pre code {
+    display: block;
+    padding: var(--vkui--size_base_padding_horizontal--regular) var(--vkui--size_base_padding_vertical--regular);
+    margin: var(--vkui--size_label_horizontal_margin--regular) 0;
+    overflow: auto;
+}

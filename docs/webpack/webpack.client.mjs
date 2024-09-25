@@ -1,12 +1,16 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackNotifierPlugin = require('webpack-notifier');
-const TerserPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const webpackConfig = require('./webpack.config');
+import path from 'path';
+import { fileURLToPath } from 'node:url';
 
-module.exports = function (env, argv) {
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import WebpackNotifierPlugin from 'webpack-notifier';
+import TerserPlugin from 'terser-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import webpackConfig from './webpack.config.mjs';
+
+export default function (env, argv) {
+	const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 	const watchMode = argv.liveReload || false;
 	const modeEnv = argv.mode || 'development';
 	const isProd = modeEnv === 'production';
@@ -44,10 +48,10 @@ module.exports = function (env, argv) {
 		output: {
 			path: path.resolve(__dirname, '../dist'),
 			filename: watchMode ? 'assets/[name].[hash].js' : 'assets/[name].[chunkhash].js',
-			publicPath: 'auto',
+			publicPath: '/',
 		},
 		module: {
-			rules: [config.modules.ts, config.modules.css, config.modules.svg],
+			rules: [config.modules.ts, config.modules.css, config.modules.svg, config.modules.md],
 		},
 		plugins: [
 			new CleanWebpackPlugin({
