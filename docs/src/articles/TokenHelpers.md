@@ -190,10 +190,15 @@ export const myCustomTheme: ParadigmThemeDescription = {
         "gradient": [
             {
                 "color": "rgba(64, 64, 64, 1)",
-                "token": "colorIconPrimary"
+                "token": "colorIconPrimary",
+                "step": 0,
+                "alpha": 1
             },
             {
-                "color": "rgba(32, 32, 32, 1)"
+                "color": "rgba(32, 32, 32, 1)",
+                "token": "colorIconPrimary",
+                "step": 1,
+                "alpha": 1
             }
         ]
     },
