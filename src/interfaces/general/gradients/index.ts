@@ -1,4 +1,5 @@
-export type GradientPoints = string;
+// TODO: Нормальный тип вместо unknown (поправить Type instantiation is excessively deep and possibly infinite)
+export type GradientPoints = string | unknown;
 
 export interface Gradients {
 	/**

@@ -1,5 +1,6 @@
 @import 'flex.css';
 @import 'space.css';
+@import 'articles.css';
 
 .container {
 	max-width: 1144px;

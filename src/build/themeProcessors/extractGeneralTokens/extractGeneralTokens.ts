@@ -18,7 +18,15 @@ export function extractGeneralTokens<TD = ThemeDescription, TG = ThemeGeneral>(
 		const tokenValue = themeDescription[token];
 
 		if (typeof tokenValue === 'function') {
-			copyDescription[token] = tokenValue(themeDescription);
+			copyDescription[token] = tokenValue;
+		}
+	}
+
+	for (const token of tokens) {
+		const tokenValue = copyDescription[token];
+
+		if (typeof tokenValue === 'function') {
+			copyDescription[token] = tokenValue(copyDescription);
 		}
 	}
 
