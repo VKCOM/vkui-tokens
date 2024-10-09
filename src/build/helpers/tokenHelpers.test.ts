@@ -35,7 +35,7 @@ describe('tokenHelpers', () => {
 	});
 
 	describe('gradient', () => {
-		test('calculates gradient string from 1 color with variable', () => {
+		test('calculates gradient string from 1 color with value', () => {
 			const gradientToken = gradient('blue');
 			const gradientValue = gradientToken({});
 

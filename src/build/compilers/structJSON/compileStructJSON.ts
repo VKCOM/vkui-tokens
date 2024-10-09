@@ -1,3 +1,5 @@
+import Color from 'color';
+
 import { convertSnakeToCamel } from '@/build/helpers/convertSnakeToCamel';
 import type { Theme } from '@/interfaces/general';
 
@@ -22,9 +24,16 @@ const groups = [
 interface StructGradientPoint {
 	color: string;
 	token?: string;
+	step?: number;
+	alpha?: number;
 }
 
 function parseRawToken(rawToken: string): StructGradientPoint {
+	const percentMatch = rawToken.match(/\d+$/);
+
+	const step =
+		percentMatch && percentMatch.length > 0 ? parseFloat(percentMatch[0]) / 100 : undefined;
+
 	rawToken = rawToken.replace(/^,\s/g, '').replace(/\d+$/g, '').trim();
 
 	if (rawToken.startsWith('var(')) {
@@ -34,13 +43,20 @@ function parseRawToken(rawToken: string): StructGradientPoint {
 			const varName = varNameRaw[1];
 			const varValue = rawToken.slice(varNameRaw[0].length, -1).trim().slice(1).trim();
 
-			return { color: varValue, token: convertSnakeToCamel(varName) };
+			return {
+				color: varValue,
+				token: convertSnakeToCamel(varName),
+				step,
+				alpha: new Color(varValue).alpha(),
+			};
 		}
-
-		return { color: rawToken };
 	}
 
-	return { color: rawToken };
+	return {
+		color: rawToken,
+		step,
+		alpha: new Color(rawToken).alpha(),
+	};
 }
 
 function compileStructGradients(
@@ -51,7 +67,17 @@ function compileStructGradients(
 
 	for (const key of keys) {
 		const rawPoints = cssGradients[key].split('%').slice(0, -1);
-		structGradients[key] = rawPoints.map(parseRawToken);
+
+		structGradients[key] = rawPoints.map(parseRawToken).map((structToken, index, array) => {
+			if (index > 0 && !structToken.token) {
+				return {
+					...structToken,
+					token: structToken.token ?? array[0].token,
+				};
+			}
+
+			return structToken;
+		});
 	}
 
 	return structGradients;
