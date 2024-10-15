@@ -1,5 +1,6 @@
 import lodash from 'lodash';
 
+import { gradient, namedAlias } from '@/build/helpers/tokenHelpers';
 import { Gradients } from '@/interfaces/general/gradients';
 import { DeepPartial } from '@/interfaces/general/tools/utils';
 import type {
@@ -224,7 +225,19 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 const fontFamilyAccent =
 	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 
-const colorGradients: VkontakteAndroidGradients = {
+function makeFunctionalGradients<T extends VkontakteAndroidGradients>(source: T): T {
+	const keys = Object.keys(source);
+	const result: T = {} as any;
+
+	for (const key of keys) {
+		const colors = source[key].split(', ');
+		result[key] = gradient(...colors);
+	}
+
+	return result;
+}
+
+const colorGradients: VkontakteAndroidGradients = makeFunctionalGradients({
 	vkontakteGradientAquamarineBlue: '#7DF1FA, #2BB4D6',
 	vkontakteGradientBlue: '#66CCFF, #3F8AE0',
 	vkontakteGradientCandy: '#FF99CC, #E52E6A',
@@ -259,13 +272,13 @@ const colorGradients: VkontakteAndroidGradients = {
 	vkontakteGradientSberkot: '#9DF19D, #31C2A7, #21A19A, #107F8C',
 	vkontakteGradientMable: '#D9F4FF, #D9F4FF',
 	vkontakteGradientWomensDay: '#FF99CC, #E52E6A',
-};
+});
 
 const gradients: Gradients = {
-	gradient: 'colorBackgroundContent, transparent',
-	gradientTint: 'colorBackgroundTertiary, transparent',
-	gradientWhite: '#FFFFFF, transparent',
-	gradientBlack: '#00000060, transparent',
+	gradient: gradient(namedAlias('colorBackgroundContent'), 'transparent'),
+	gradientTint: gradient(namedAlias('colorBackgroundTertiary'), 'transparent'),
+	gradientWhite: gradient('#FFFFFF', 'transparent'),
+	gradientBlack: gradient('#00000060', 'transparent'),
 };
 
 export const vkontakteDisplayTitleFontsPartial: DeepPartial<typeof fonts> = {

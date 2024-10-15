@@ -1,5 +1,6 @@
-import { Icon16Linked } from '@vkontakte/icons';
+import { Icon16Linked, Icon16HelpOutline } from '@vkontakte/icons';
 import { Link, Title, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
+import { Link as RouterLink } from 'react-router-dom';
 import clsx from 'clsx';
 import React, { FC } from 'react';
 
@@ -41,6 +42,14 @@ const TokensHeader: FC = () => {
 					<Link href={version.href} target="_blank">
 						{version.text}
 					</Link>
+				</div>
+				<div className="flex items-center" style={styles.linkContainer}>
+					<Icon16HelpOutline  style={{ color: '#99A2AD', marginRight: 6 }}/>
+					<RouterLink to="/articles/new-theme" style={{textDecoration: 'none'}}>
+						<Link>
+							Документация
+						</Link>
+					</RouterLink>
 				</div>
 				<div className="flex items-center" style={styles.linkContainer}>
 					<Icon16Linked style={{ color: '#99A2AD', marginRight: 6 }} />
