@@ -1,7 +1,9 @@
 import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
 import lodash from 'lodash';
 
+import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { ColorsDescription } from '@/interfaces/general';
+import { Gradients } from '@/interfaces/general/gradients';
 import { DeepPartial } from '@/interfaces/general/tools/utils';
 import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
 import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
@@ -394,10 +396,16 @@ const vkComDarkColor: ColorsDescription = {
 	},
 };
 
+export const vkComDarkGradient: Gradients = {
+	...darkGradient,
+	gradientTint: getGradientPointsFromColor(resolveColor(vkcom_dark.colors.background_light)),
+	gradient: getGradientPointsFromColor(resolveColor(vkcom_dark.colors.background_content)),
+};
+
 export const vkComThemeDark: ThemeVkComDarkDescription = {
 	...vkComTheme,
 	...vkComDarkColor,
-	...darkGradient,
+	...vkComDarkGradient,
 	...darkElevation,
 	themeName: 'vkComDark',
 	themeNameBase: 'vkCom',
