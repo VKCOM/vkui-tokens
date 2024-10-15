@@ -5,6 +5,8 @@ import { GradientPoints } from '@/interfaces/general/gradients';
 
 import { getVariableName } from '../themeProcessors/extractVarsNames/extractVarsNames';
 
+import opacityMap from './opacityMap.json';
+
 export type OpacityPoints = [number, number][];
 
 type GradientPointRaw = () => {
@@ -13,14 +15,7 @@ type GradientPointRaw = () => {
 	prefix?: string;
 };
 
-export const defaultOpacityPoints: OpacityPoints = [
-	[0, 0],
-	[0.05, 15],
-	[0.2, 30],
-	[0.8, 70],
-	[0.95, 85],
-	[1, 100],
-];
+export const defaultOpacityPoints: OpacityPoints = opacityMap as any;
 
 export function makeGradientPointRaw(
 	value: Property.Color,
