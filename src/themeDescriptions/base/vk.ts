@@ -222,7 +222,11 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 
 			// Other
 			colorOverlayPrimary: other.overlay_primary,
-			colorOverlaySecondary: 'rgba(0, 0, 0, 0.27)',
+			colorOverlaySecondary: {
+				normal: 'rgba(0, 0, 0, 0.27)',
+				hover: 'rgba(0, 0, 0, 0.31)',
+				active: 'rgba(0, 0, 0, 0.35)',
+			},
 			colorAvatarOverlay: other.avatar_overlay_alpha,
 			colorAvatarOverlayInverseAlpha: other.avatar_overlay_inverse_alpha,
 			colorActionSheetText: other.action_sheet_text,
