@@ -4,7 +4,6 @@ import type { Property } from 'csstype';
 import { GradientPoints } from '@/interfaces/general/gradients';
 
 import { getVariableName } from '../themeProcessors/extractVarsNames/extractVarsNames';
-
 import opacityMap from './opacityMap.json';
 
 export type OpacityPoints = [number, number][];
