@@ -35,18 +35,18 @@ const articles = [
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/vkui-tokens",
 		element: <Tokens />,
 	},
 	{
-		path: "/articles",
+		path: "/vkui-tokens/articles",
 		element: <Articles items={articles} />
 	},
 	...articles
 		.filter((article) => !!article.slug)
 		.map((article) => (
 			{
-				path: `/articles/${article.slug}`,
+				path: `/vkui-tokens/articles/${article.slug}`,
 				element: <Articles items={articles} contentsHtml={article.contents}/>
 			}
 		)),
