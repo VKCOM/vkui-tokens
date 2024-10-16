@@ -37,6 +37,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			}[colorsScheme],
 			colorBackground: background.background,
 			colorBackgroundContent: background.background_content,
+			colorBackgroundContentInverse: {
+				light: '#19191A',
+				dark: '#FFFFFF',
+			}[colorsScheme],
 			colorBackgroundSecondary: background.background_secondary,
 			colorBackgroundSecondaryAlpha: {
 				light: {
