@@ -1,7 +1,9 @@
 import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
 import lodash from 'lodash';
 
+import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { ColorsDescription } from '@/interfaces/general';
+import { Gradients } from '@/interfaces/general/gradients';
 import { DeepPartial } from '@/interfaces/general/tools/utils';
 import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
 import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
@@ -32,11 +34,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackground: resolveColor(theme.colors.background_page),
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
 	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
-	colorBackgroundSecondaryAlpha: {
-		normal: 'rgba(235, 242, 250, 0.99)',
-		hover: 'rgba(223, 234, 246, 0.99)',
-		active: 'rgba(213, 226, 241, 0.99)',
-	},
+	colorBackgroundSecondaryAlpha: 'rgba(39, 63, 92, 0.07)',
 	colorBackgroundTertiary: resolveColor(theme.colors.background_light),
 	colorBackgroundContrast: resolveColor(theme.colors.media_overlay_button_background),
 	// colorBackgroundContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.20)',
@@ -355,11 +353,7 @@ const vkComDarkColor: ColorsDescription = {
 			active: '#CFD2D8',
 		},
 		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
-		colorBackgroundSecondaryAlpha: {
-			normal: 'rgba(255, 255, 255, 0.10)',
-			hover: 'rgba(255, 255, 255, 0.12)',
-			active: 'rgba(255, 255, 255, 0.14)',
-		},
+		colorBackgroundSecondaryAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorBackgroundContrastThemed: '#323232',
 		colorBackgroundModalInverse: '#FFFFFF',
 
@@ -394,10 +388,16 @@ const vkComDarkColor: ColorsDescription = {
 	},
 };
 
+export const vkComDarkGradient: Gradients = {
+	...darkGradient,
+	gradientTint: getGradientPointsFromColor(resolveColor(vkcom_dark.colors.background_light)),
+	gradient: getGradientPointsFromColor(resolveColor(vkcom_dark.colors.background_content)),
+};
+
 export const vkComThemeDark: ThemeVkComDarkDescription = {
 	...vkComTheme,
 	...vkComDarkColor,
-	...darkGradient,
+	...vkComDarkGradient,
 	...darkElevation,
 	themeName: 'vkComDark',
 	themeNameBase: 'vkCom',

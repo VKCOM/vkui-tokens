@@ -76,6 +76,12 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundContent: ColorDescription;
 
 	/**
+	 * @desc Цвет фона, противоположный фону контента.
+	 * @tags color, background
+	 */
+	colorBackgroundContentInverse: ColorDescription;
+
+	/**
 	 * @desc Второстепенный цвет фона
 	 * @tags color, background
 	 */
