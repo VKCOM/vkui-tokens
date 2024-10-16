@@ -26,7 +26,7 @@ export function AsideMenu(props: AsideMenuProps) {
                     if (item.slug) {
                         return (
                             <div className="aside-menu-item" key={item.title}>
-                                <Link to={`/articles/${item.slug}`}>{item.title}</Link>
+                                <Link to={`/vkui-tokens/articles/${item.slug}`}>{item.title}</Link>
                             </div>
                         );
                     } else {
@@ -41,7 +41,7 @@ export function AsideMenu(props: AsideMenuProps) {
                 })}
 
                 <Spacing size={32}/>
-                <Link to="/">← К таблице токенов</Link>
+                <Link to="/vkui-tokens">← К таблице токенов</Link>
             </Card>
         </aside>
     );

@@ -45,7 +45,7 @@ const TokensHeader: FC = () => {
 				</div>
 				<div className="flex items-center" style={styles.linkContainer}>
 					<Icon16HelpOutline  style={{ color: '#99A2AD', marginRight: 6 }}/>
-					<RouterLink to="/articles/new-theme" style={{textDecoration: 'none'}}>
+					<RouterLink to="/vkui-tokens/articles/new-theme" style={{textDecoration: 'none'}}>
 						<Link>
 							Документация
 						</Link>
