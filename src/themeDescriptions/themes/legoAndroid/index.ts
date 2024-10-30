@@ -28,6 +28,11 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		colorIconAccentThemed: dark,
 		colorStrokeAccent: dark,
 		colorStrokeAccentThemed: dark,
+		colorBackgroundAccent: dark,
+		colorBackgroundAccentThemed: dark,
+		colorBackgroundAccentThemedAlpha: 'rgba(38, 136, 235, .2)',
+		colorBackgroundAccentAlternative: dark,
+		colorBackgroundAccentTint: '#2D2D2D',
 		colorWriteBarIcon: dark,
 	},
 };
@@ -54,6 +59,11 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 		colorIconAccentThemed: light,
 		colorStrokeAccent: light,
 		colorStrokeAccentThemed: light,
+		colorBackgroundAccent: light,
+		colorBackgroundAccentThemed: light,
+		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, .2)',
+		colorBackgroundAccentAlternative: light,
+		colorBackgroundAccentTint: '#EAEDF0',
 		colorWriteBarIcon: light,
 	},
 };
