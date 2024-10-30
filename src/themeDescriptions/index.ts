@@ -3,6 +3,7 @@ import { callsTheme } from '@/themeDescriptions/themes/calls';
 import { cloudDarkTheme, cloudTheme } from '@/themeDescriptions/themes/cloud';
 import { dobroDarkTheme, dobroTheme } from '@/themeDescriptions/themes/dobro';
 import { homeDarkTheme, homeTheme } from '@/themeDescriptions/themes/home';
+import { legoAndroidTheme, legoAndroidThemeDark } from '@/themeDescriptions/themes/legoAndroid';
 import { mediaDarkTheme, mediaTheme } from '@/themeDescriptions/themes/media';
 import { mycomTheme } from '@/themeDescriptions/themes/mycom';
 import {
@@ -80,6 +81,8 @@ export const themes = [
 	vkIdOkIOSThemeDark,
 	tutoriaTheme,
 	tutoriaDarkTheme,
+	legoAndroidTheme,
+	legoAndroidThemeDark,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius
