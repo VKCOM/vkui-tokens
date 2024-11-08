@@ -569,7 +569,7 @@ export const mediaTheme: ThemeMediaDescription = {
 		regular: '100%',
 		compactX: 300,
 		compact: 300,
-		large: 300,
+		large: 380,
 	},
 	mediaSizeGap: 20,
 	mediaSizeGrid: 60,
