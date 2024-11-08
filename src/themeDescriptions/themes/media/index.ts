@@ -38,6 +38,11 @@ export const mediaTheme: ThemeMediaDescription = {
 		...lightTheme.colors,
 		...projectColors,
 		...socialColors,
+		colorPrimaryPets: {
+			normal: '#fc738c',
+			hover: '#ec4d6a',
+			active: '#fc627e',
+		},
 	},
 
 	breakpoints: {

@@ -13,7 +13,6 @@ export type ProjectColors = {
 	colorPrimaryMycom: Property.Color;
 	colorPrimaryRealty: Property.Color;
 	colorPrimaryPharma: Property.Color;
-	colorPrimaryPets: Property.Color;
 
 	colorSecondaryBase: Property.Color;
 	colorSecondaryHealth: Property.Color;
@@ -33,7 +32,6 @@ export const projectColors: ProjectColors = {
 	colorPrimaryMycom: '#00abf2',
 	colorPrimaryRealty: '#0077FF',
 	colorPrimaryPharma: '#1DD3A2',
-	colorPrimaryPets: '#0077FF',
 
 	colorSecondaryBase: '#0077FF',
 	colorSecondaryHealth: '#0077FF',
