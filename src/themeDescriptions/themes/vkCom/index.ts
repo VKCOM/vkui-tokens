@@ -30,7 +30,7 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorBackgroundAccentThemed: resolveColor(theme.colors.button_primary_background),
 	colorBackgroundAccentThemedAlpha: 'rgba(68, 123, 186, 0.12)',
 	// colorBackgroundAccentTint: '#5a9eff',
-	colorBackgroundAccentAlternative: resolveColor(theme.colors.accent),
+	colorBackgroundAccentAlternative: '#2688EB',
 	colorBackground: resolveColor(theme.colors.background_page),
 	colorBackgroundContent: resolveColor(theme.colors.background_content),
 	colorBackgroundSecondary: resolveColor(theme.colors.content_tint_background),
