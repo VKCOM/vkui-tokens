@@ -114,7 +114,6 @@ const vkComColors = (theme: typeof vkcom_light) => ({
 	colorAccentPurple: resolveColor(theme.colors.dynamic_purple),
 	colorAccentViolet: '#792EC0',
 	colorAccentPink: '#F685FF',
-	colorAccentBlack: '#000000',
 	// colorAccentSecondary: '#3F8AE0',
 
 	// Other
