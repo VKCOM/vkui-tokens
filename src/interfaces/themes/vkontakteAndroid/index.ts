@@ -285,6 +285,8 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 
 	vkontakteLandingSecondaryButtonBackground: ColorDescription;
 	vkontakteStoriesSkeletonLoaderBackground: ColorDescription;
+
+	vkontaktePaletteBlack: ColorDescription;
 }
 
 export type VkontakteAndroidLocalColors = {

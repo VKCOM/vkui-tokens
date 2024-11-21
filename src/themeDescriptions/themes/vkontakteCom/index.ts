@@ -111,6 +111,8 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 
 	vkontakteLandingSecondaryButtonBackground: 'rgba(0, 57, 115, 0.102)',
 	vkontakteStoriesSkeletonLoaderBackground: '#cccccc',
+
+	vkontaktePaletteBlack: '#000000',
 };
 
 const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -213,6 +215,8 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 
 	vkontakteLandingSecondaryButtonBackground: 'rgba(255, 255, 255, 0.16)',
 	vkontakteStoriesSkeletonLoaderBackground: '#555555',
+
+	vkontaktePaletteBlack: '#000000',
 };
 
 const vkontakteComFonts = lodash.merge<typeof vkComFonts, DeepPartial<typeof vkComFonts>>(
