@@ -4,6 +4,7 @@ import {
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
+import { Adaptive } from '@/interfaces/general/tools';
 import { Font } from '@/interfaces/general/typography';
 import {
 	LocalParadigmColorsDescriptionStruct,
@@ -12,7 +13,7 @@ import {
 } from '@/interfaces/namespaces/paradigm';
 
 export interface ThemeWorkspaceOverValues {
-	fontHeadline3: Font;
+	fontHeadline3: Adaptive<Font>;
 }
 
 export interface LocalWorkspaceAdminColorsDescriptionStruct {
