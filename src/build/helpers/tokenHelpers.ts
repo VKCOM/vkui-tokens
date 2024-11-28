@@ -74,7 +74,7 @@ export function gradient<T extends ThemeDescription>(
 
 				const pointRaw = makeGradientPointRaw(
 					stopValue,
-					// Bind only last point to variable (if not explicitely set)
+					// Привязываем к переменной только стопы с оригинальной прозрачностью
 					pointOpacity === 1 ? stopKey : undefined,
 				);
 
