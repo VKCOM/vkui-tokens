@@ -279,10 +279,10 @@ const colorGradients: VkontakteAndroidGradients = makeFunctionalGradients({
 });
 
 const gradients: Gradients = {
-	gradient: gradient(namedAlias('colorBackgroundContent'), 'transparent'),
-	gradientTint: gradient(namedAlias('colorBackgroundTertiary'), 'transparent'),
-	gradientWhite: gradient('#FFFFFF', 'transparent'),
-	gradientBlack: gradient('#00000060', 'transparent'),
+	gradient: gradient(namedAlias('colorBackgroundContent')),
+	gradientTint: gradient(namedAlias('colorBackgroundTertiary')),
+	gradientWhite: gradient('#FFFFFF'),
+	gradientBlack: gradient('#00000066'),
 };
 
 export const vkontakteDisplayTitleFontsPartial: DeepPartial<typeof fonts> = {

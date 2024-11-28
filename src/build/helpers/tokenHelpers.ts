@@ -66,14 +66,17 @@ export function gradient<T extends ThemeDescription>(
 	...stops: (Property.Color | NamedTokenFunction<T>)[]
 ): TokenFunction<T> {
 	const opacityPoints = stops.length > 1 ? makeOpacityPoints(stops.length) : defaultOpacityPoints;
-
 	return (theme) => {
 		return opacityPoints
 			.map(([pointOpacity, pointCoordinate], index) => {
 				const stop = stops[index] ?? stops[stops.length - 1];
 				const [stopKey, stopValue] = typeof stop === 'function' ? stop(theme) : [undefined, stop];
 
-				const pointRaw = makeGradientPointRaw(stopValue, stopKey);
+				const pointRaw = makeGradientPointRaw(
+					stopValue,
+					// Bind only last point to variable (if not explicitely set)
+					pointOpacity === 1 ? stopKey : undefined,
+				);
 
 				return getGradientPointsFromColor(pointRaw, 1, [[pointOpacity, pointCoordinate]]);
 			})

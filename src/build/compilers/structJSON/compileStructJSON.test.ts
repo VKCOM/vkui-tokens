@@ -19,11 +19,11 @@ describe('compileJSON', () => {
 				'rgba(0, 0, 255, 1) 100%',
 			].join(', '),
 			gradientOneVariable: [
-				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0)) 0%',
-				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.05)) 15%',
-				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.2)) 30%',
-				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.8)) 70%',
-				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.95)) 85%',
+				'rgba(0, 0, 255, 0) 0%',
+				'rgba(0, 0, 255, 0.05) 15%',
+				'rgba(0, 0, 255, 0.2) 30%',
+				'rgba(0, 0, 255, 0.8) 70%',
+				'rgba(0, 0, 255, 0.95) 85%',
 				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 1)) 100%',
 			].join(', '),
 		};
@@ -42,85 +42,84 @@ describe('compileJSON', () => {
 	"gradient": {
 		"gradientTest": [
 			{
+				"step": 0,
 				"color": "rgba(255, 255, 255, 1)",
 				"token": "colorBackgroundContent",
-				"step": 0,
 				"alpha": 1
 			},
 			{
-				"color": "rgba(0, 0, 0, 0)",
 				"step": 1,
-				"alpha": 0,
-				"token": "colorBackgroundContent"
+				"color": "rgba(0, 0, 0, 0)",
+				"alpha": 0
 			}
 		],
 		"gradientOneColor": [
 			{
-				"color": "rgba(0, 0, 255, 0)",
 				"step": 0,
+				"color": "rgba(0, 0, 255, 0)",
 				"alpha": 0
 			},
 			{
-				"color": "rgba(0, 0, 255, 0.05)",
 				"step": 0.15,
+				"color": "rgba(0, 0, 255, 0.05)",
 				"alpha": 0.05
 			},
 			{
-				"color": "rgba(0, 0, 255, 0.2)",
 				"step": 0.3,
+				"color": "rgba(0, 0, 255, 0.2)",
 				"alpha": 0.2
 			},
 			{
-				"color": "rgba(0, 0, 255, 0.8)",
 				"step": 0.7,
+				"color": "rgba(0, 0, 255, 0.8)",
 				"alpha": 0.8
 			},
 			{
-				"color": "rgba(0, 0, 255, 0.95)",
 				"step": 0.85,
+				"color": "rgba(0, 0, 255, 0.95)",
 				"alpha": 0.95
 			},
 			{
-				"color": "rgba(0, 0, 255, 1)",
 				"step": 1,
+				"color": "rgba(0, 0, 255, 1)",
 				"alpha": 1
 			}
 		],
 		"gradientOneVariable": [
 			{
+				"step": 0,
 				"color": "rgba(0, 0, 255, 0)",
 				"token": "colorIconPrimary",
-				"step": 0,
 				"alpha": 0
 			},
 			{
+				"step": 0.15,
 				"color": "rgba(0, 0, 255, 0.05)",
 				"token": "colorIconPrimary",
-				"step": 0.15,
 				"alpha": 0.05
 			},
 			{
+				"step": 0.3,
 				"color": "rgba(0, 0, 255, 0.2)",
 				"token": "colorIconPrimary",
-				"step": 0.3,
 				"alpha": 0.2
 			},
 			{
+				"step": 0.7,
 				"color": "rgba(0, 0, 255, 0.8)",
 				"token": "colorIconPrimary",
-				"step": 0.7,
 				"alpha": 0.8
 			},
 			{
+				"step": 0.85,
 				"color": "rgba(0, 0, 255, 0.95)",
 				"token": "colorIconPrimary",
-				"step": 0.85,
 				"alpha": 0.95
 			},
 			{
+				"step": 1,
 				"color": "rgba(0, 0, 255, 1)",
 				"token": "colorIconPrimary",
-				"step": 1,
 				"alpha": 1
 			}
 		]
