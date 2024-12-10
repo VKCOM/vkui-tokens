@@ -116,6 +116,8 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 
 	vkontakteLandingSecondaryButtonBackground: 'rgba(0, 57, 115, 0.10)',
 	vkontakteStoriesSkeletonLoaderBackground: '#454647',
+
+	vkontaktePaletteBlack: '#000000',
 };
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -220,6 +222,8 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 
 	vkontakteLandingSecondaryButtonBackground: 'rgba(255, 255, 255, 0.15)',
 	vkontakteStoriesSkeletonLoaderBackground: '#c4c8cc',
+
+	vkontaktePaletteBlack: '#000000',
 };
 
 const fontFamilyAccent =
@@ -275,10 +279,10 @@ const colorGradients: VkontakteAndroidGradients = makeFunctionalGradients({
 });
 
 const gradients: Gradients = {
-	gradient: gradient(namedAlias('colorBackgroundContent'), 'transparent'),
-	gradientTint: gradient(namedAlias('colorBackgroundTertiary'), 'transparent'),
-	gradientWhite: gradient('#FFFFFF', 'transparent'),
-	gradientBlack: gradient('#00000060', 'transparent'),
+	gradient: gradient(namedAlias('colorBackgroundContent')),
+	gradientTint: gradient(namedAlias('colorBackgroundTertiary')),
+	gradientWhite: gradient('#FFFFFF'),
+	gradientBlack: gradient('#00000066'),
 };
 
 export const vkontakteDisplayTitleFontsPartial: DeepPartial<typeof fonts> = {

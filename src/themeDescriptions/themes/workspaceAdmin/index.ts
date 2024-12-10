@@ -1,10 +1,8 @@
+import { Adaptive } from '@/interfaces/general/tools';
+import { Font } from '@/interfaces/general/typography';
 import { ThemeWorkspaceAdminDescription } from '@/interfaces/themes/workspaceAdmin';
 import { ThemeWorkspaceAdminDarkDescription } from '@/interfaces/themes/workspaceAdminDark';
 import { darkTheme, lightTheme } from '@/themeDescriptions/base/paradigm';
-import { fontFamilyAccent } from '@/themeDescriptions/common/fontSizes';
-
-const fontWeightAccent1 = 500;
-const fontWeightAccent2 = 500;
 
 export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 	...lightTheme,
@@ -117,27 +115,24 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 
 	fontTitle2: {
 		regular: {
-			fontSize: 20,
+			...(lightTheme.fontTitle2 as Adaptive<Font>).regular,
 			lineHeight: 24,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
 		},
 	},
 	fontTitle3: {
 		regular: {
-			fontSize: 17,
+			...(lightTheme.fontTitle3 as Adaptive<Font>).regular,
 			lineHeight: 24,
-			fontFamily: fontFamilyAccent,
-			fontWeight: fontWeightAccent1,
 		},
 	},
 
 	fontHeadline3: {
-		fontSize: 13,
-		lineHeight: 16,
-		fontStyle: 'normal',
-		fontFamily: fontFamilyAccent,
-		fontWeight: fontWeightAccent2,
+		regular: {
+			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
+			fontSize: 15,
+			lineHeight: 20,
+			fontStyle: 'normal',
+		},
 	},
 };
 

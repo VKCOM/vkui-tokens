@@ -57,11 +57,11 @@ describe('tokenHelpers', () => {
 
 			expect(gradientValue).toEqual(
 				[
-					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0)) 0%',
-					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.05)) 15%',
-					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.2)) 30%',
-					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.8)) 70%',
-					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 0.95)) 85%',
+					'rgba(0, 0, 255, 0) 0%',
+					'rgba(0, 0, 255, 0.05) 15%',
+					'rgba(0, 0, 255, 0.2) 30%',
+					'rgba(0, 0, 255, 0.8) 70%',
+					'rgba(0, 0, 255, 0.95) 85%',
 					'var(--vkui--color_icon_primary, rgba(0, 0, 255, 1)) 100%',
 				].join(', '),
 			);
