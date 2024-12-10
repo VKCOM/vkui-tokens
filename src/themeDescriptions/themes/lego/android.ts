@@ -6,7 +6,7 @@ import {
 } from '@/themeDescriptions/themes/vkontakteAndroid';
 
 import figma from './figma.json';
-import { findFigmaToken } from './helpers/findFigmaToken';
+import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON';
 
 export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 	...vkontakteAndroidTheme, // импорт светлой базовой темы
@@ -19,15 +19,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		// Импорт изначальных токенов
 		...vkontakteAndroidTheme.colors,
 		// Переопределение токенов, которые есть в figma.json
-		...Object.fromEntries(
-			Object.keys(vkontakteAndroidTheme.colors).reduce((acc, key) => {
-				const figmaToken = findFigmaToken(figma, key);
-				if (figmaToken) {
-					acc.push([key, figmaToken.light]);
-				}
-				return acc;
-			}, []),
-		),
+		...overwriteFromFigmaJSON(vkontakteAndroidTheme.colors, 'appearance', 'light', figma),
 		// Здесь нужно прописать другие цвета с особыми различиями нейминга
 		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
@@ -57,15 +49,7 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 		...vkontakteAndroidThemeDark.colors,
 		// Переопределение токенов, которые есть в figma.json
 		// То же самое, что в светлой теме, но ссылаемся на figmaToken.dark вместо light
-		...Object.fromEntries(
-			Object.keys(vkontakteAndroidTheme.colors).reduce((acc, key) => {
-				const figmaToken = findFigmaToken(figma, key);
-				if (figmaToken) {
-					acc.push([key, figmaToken.dark]);
-				}
-				return acc;
-			}, []),
-		),
+		...overwriteFromFigmaJSON(vkontakteAndroidTheme.colors, 'appearance', 'dark', figma),
 		// Здесь нужно прописать другие цвета с особыми различиями нейминга
 		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме

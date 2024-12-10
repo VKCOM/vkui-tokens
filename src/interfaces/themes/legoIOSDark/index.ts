@@ -1,5 +1,5 @@
 export {
-	ThemeVkontakteIOSDark as ThemeLegoIOSDark,
-	ThemeVkontakteIOSDarkCssVars as ThemeLegoIOSDarkCssVars,
-	ThemeVkontakteIOSDarkDescription as ThemeLegoIOSDarkDescription,
-} from '@/interfaces/themes/vkontakteIOSDark';
+	ThemeLegoIOS as ThemeLegoIOSDark,
+	ThemeLegoIOSCssVars as ThemeLegoIOSDarkCssVars,
+	ThemeLegoIOSDescription as ThemeLegoIOSDarkDescription,
+} from '@/interfaces/themes/legoIOS';

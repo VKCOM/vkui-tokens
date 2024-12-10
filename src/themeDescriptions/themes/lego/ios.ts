@@ -2,12 +2,13 @@ import { ThemeLegoIOSDescription } from '@/interfaces/themes/legoIOS';
 import { ThemeLegoIOSDarkDescription } from '@/interfaces/themes/legoIOSDark';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
 
-const dark = '#212121';
-const light = '#E1E3E6';
+import figma from './figma.json';
+import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON';
 
 export const legoIOSTheme: ThemeLegoIOSDescription = {
 	// Мб заменить базу на vkIOS?
 	// Жду ответа Ульяны
+	// Мб наследовать от legoAndroidTheme
 	...vkontakteIOSTheme, // импорт светлой базовой темы
 
 	themeName: 'legoIOS', // название текущей темы
@@ -17,22 +18,10 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 	colors: {
 		...vkontakteIOSTheme.colors,
 		// переопределение переменных
-		colorTextAccent: dark,
-		colorTextAccentThemed: dark,
-		colorTextPrimary: dark,
-		colorTextLink: dark,
-		colorTextLinkThemed: dark,
-		colorTextLinkTint: dark,
-		colorIconAccent: dark,
-		colorIconAccentThemed: dark,
-		colorStrokeAccent: dark,
-		colorStrokeAccentThemed: dark,
-		colorBackgroundAccent: dark,
-		colorBackgroundAccentThemed: dark,
-		colorBackgroundAccentThemedAlpha: 'rgba(38, 136, 235, 0.2)',
-		colorBackgroundAccentAlternative: dark,
-		colorBackgroundAccentTint: '#2D2D2D',
-		colorWriteBarIcon: dark,
+		...overwriteFromFigmaJSON(vkontakteIOSThemeDark.colors, 'appearance', 'light', figma),
+	},
+	sizeBasePaddingHorizontal: {
+		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,
 	},
 };
 
@@ -47,22 +36,6 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 
 	colors: {
 		...vkontakteIOSThemeDark.colors,
-		// переопределение переменных
-		colorTextAccent: light,
-		colorTextAccentThemed: light,
-		colorTextPrimary: light,
-		colorTextLink: light,
-		colorTextLinkThemed: light,
-		colorTextLinkTint: light,
-		colorIconAccent: light,
-		colorIconAccentThemed: light,
-		colorStrokeAccent: light,
-		colorStrokeAccentThemed: light,
-		colorBackgroundAccent: light,
-		colorBackgroundAccentThemed: light,
-		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
-		colorBackgroundAccentAlternative: light,
-		colorBackgroundAccentTint: '#EAEDF0',
-		colorWriteBarIcon: light,
+		...overwriteFromFigmaJSON(vkontakteIOSThemeDark.colors, 'appearance', 'dark', figma),
 	},
 };
