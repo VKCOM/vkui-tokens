@@ -1,5 +1,6 @@
+// Реэкспорт интерфейсов, так как набор переменных в тёмной теме такой же
 export {
-	ThemeVkontakteAndroidDark as ThemeLegoAndroidDark,
-	ThemeVkontakteAndroidDarkCssVars as ThemeLegoAndroidDarkCssVars,
-	ThemeVkontakteAndroidDarkDescription as ThemeLegoAndroidDarkDescription,
-} from '@/interfaces/themes/vkontakteAndroidDark';
+	ThemeLegoAndroid as ThemeLegoAndroidDark,
+	ThemeLegoAndroidCssVars as ThemeLegoAndroidDarkCssVars,
+	ThemeLegoAndroidDescription as ThemeLegoAndroidDarkDescription,
+} from '@/interfaces/themes/legoAndroid';

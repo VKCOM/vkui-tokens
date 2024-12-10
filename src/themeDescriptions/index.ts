@@ -3,8 +3,8 @@ import { callsTheme } from '@/themeDescriptions/themes/calls';
 import { cloudDarkTheme, cloudTheme } from '@/themeDescriptions/themes/cloud';
 import { dobroDarkTheme, dobroTheme } from '@/themeDescriptions/themes/dobro';
 import { homeDarkTheme, homeTheme } from '@/themeDescriptions/themes/home';
-import { legoAndroidTheme, legoAndroidThemeDark } from '@/themeDescriptions/themes/legoAndroid';
-import { legoIOSTheme, legoIOSThemeDark } from '@/themeDescriptions/themes/legoIOS';
+import { legoAndroidTheme, legoAndroidThemeDark } from '@/themeDescriptions/themes/lego/android';
+import { legoIOSTheme, legoIOSThemeDark } from '@/themeDescriptions/themes/lego/ios';
 import { mediaDarkTheme, mediaTheme } from '@/themeDescriptions/themes/media';
 import { mycomTheme } from '@/themeDescriptions/themes/mycom';
 import {
