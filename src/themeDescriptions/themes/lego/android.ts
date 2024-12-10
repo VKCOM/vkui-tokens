@@ -9,11 +9,11 @@ import figma from './figma.json';
 import { findFigmaToken } from './helpers/findFigmaToken';
 
 export const legoAndroidTheme: ThemeLegoAndroidDescription = {
+	...vkontakteAndroidTheme, // импорт светлой базовой темы
+
 	themeName: 'legoAndroid', // название текущей темы
 	themeNameBase: 'legoAndroid', // название светлой (базовой) темы
 	themeInheritsFrom: 'vkontakteAndroid', // название родительской темы
-
-	...vkontakteAndroidTheme, // импорт светлой базовой темы
 
 	colors: {
 		// Импорт изначальных токенов
@@ -29,7 +29,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 			}, []),
 		),
 		// Здесь нужно прописать другие цвета с особыми различиями нейминга
-		// Локальные цвета, используемые только в этой теме
+		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
 		colorStrokePrimary: figma.appearance.strokePrimary.light,
 	},
@@ -38,20 +38,20 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		regular: figma.tokens.sizeBasePaddingHorizontal.android,
 	},
 	// Фигма использует целые проценты, а не сотые единицы
-	// Поэтому здесь нужно поделить на сто
+	// Поэтому здесь нужно поделить на 100
 	// Округление пока не стал писать
 	opacityDisable: figma.tokens.opacityDisabled.android / 100,
 	opacityDisableAccessibility: figma.tokens.opacityDisabled.android / 100,
 };
 
 export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
+	...legoAndroidTheme, // импорт светлой версии текущей темы,
+	...vkontakteAndroidThemeDark, // импорт тёмной базовой темы
+
 	themeName: 'legoAndroidDark', // название текущей темы
 	themeNameBase: 'legoAndroid', // название светлой (базовой) темы
 	themeInheritsFrom: 'vkontakteAndroidDark', // название родительской темы
 	colorsScheme: 'dark', // название схемы (светлая — по умолчанию)
-
-	...legoAndroidTheme, // импорт светлой версии текущей темы,
-	...vkontakteAndroidThemeDark, // импорт тёмной базовой темы
 
 	colors: {
 		...vkontakteAndroidThemeDark.colors,
@@ -67,7 +67,7 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 			}, []),
 		),
 		// Здесь нужно прописать другие цвета с особыми различиями нейминга
-		// Локальные цвета, используемые только в этой теме
+		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
 		colorStrokePrimary: figma.appearance.strokePrimary.dark,
 	},
