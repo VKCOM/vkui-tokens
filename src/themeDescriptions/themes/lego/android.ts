@@ -37,8 +37,8 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 };
 
 export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
-	...legoAndroidTheme, // импорт светлой версии текущей темы,
-	...vkontakteAndroidThemeDark, // импорт тёмной базовой темы
+	...legoAndroidTheme, // Импорт светлой версии текущей темы,
+	...vkontakteAndroidThemeDark, // Импорт тёмной базовой темы
 
 	themeName: 'legoAndroidDark', // название текущей темы
 	themeNameBase: 'legoAndroid', // название светлой (базовой) темы
