@@ -1,9 +1,5 @@
-import {
-	ThemeVkontakteAndroid,
-	ThemeVkontakteAndroidCssVars,
-	ThemeVkontakteAndroidDescription,
+export {
+	ThemeVkontakteAndroid as ThemeVkontakteIOS,
+	ThemeVkontakteAndroidCssVars as ThemeVkontakteIOSCssVars,
+	ThemeVkontakteAndroidDescription as ThemeVkontakteIOSDescription,
 } from '@/interfaces/themes/vkontakteAndroid';
-
-export type ThemeVkontakteIOS = ThemeVkontakteAndroid;
-export type ThemeVkontakteIOSDescription = ThemeVkontakteAndroidDescription;
-export type ThemeVkontakteIOSCssVars = ThemeVkontakteAndroidCssVars;

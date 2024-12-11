@@ -1,9 +1,5 @@
-import {
-	ThemeVkontakteIOS,
-	ThemeVkontakteIOSCssVars,
-	ThemeVkontakteIOSDescription,
+export {
+	ThemeVkontakteIOS as ThemeVkontakteIOSDark,
+	ThemeVkontakteIOSCssVars as ThemeVkontakteIOSDarkCssVars,
+	ThemeVkontakteIOSDescription as ThemeVkontakteIOSDarkDescription,
 } from '@/interfaces/themes/vkontakteIOS';
-
-export type ThemeVkontakteIOSDark = ThemeVkontakteIOS;
-export type ThemeVkontakteIOSDarkDescription = ThemeVkontakteIOSDescription;
-export type ThemeVkontakteIOSDarkCssVars = ThemeVkontakteIOSCssVars;
