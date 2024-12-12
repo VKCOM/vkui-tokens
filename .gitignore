@@ -26,3 +26,4 @@ docs/src/**/*.d.ts
 docs/public/**/*.json
 docs/dist/
 !.husky
+test-results.json
