@@ -109,6 +109,17 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteImBubbleIncomingExpiringHighlighted: '#ccd3ff',
 	vkontakteImBubbleOutgoingHighlighted: '#add3ff',
 
+	vkontakteImBubbleButtonBackground: '#F9F9F9',
+	vkontakteImBubbleButtonBackgroundHighlighted: '#D7D8D9',
+	vkontakteImBubbleMableOutgoing: '#D9F4FF',
+	vkontakteImBubbleMableOutgoingExpiringHighlighted: '#C2CBFF',
+	vkontakteImBubbleMableOutgoingHighlighted: '#B0E8FF',
+	vkontakteImBubbleMableWallpaperOutgoing: '#D9F4FF',
+	vkontakteImBubbleMableWallpaperOutgoingHighlighted: '#B0E8FF',
+	vkontakteImBubbleWallpaperButtonForeground: '#000000',
+
+	vkontakteImServiceMessageText: '#818C99',
+
 	vkontakteLandingSecondaryButtonBackground: 'rgba(0, 57, 115, 0.102)',
 	vkontakteStoriesSkeletonLoaderBackground: '#cccccc',
 
@@ -212,6 +223,17 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteImBubbleIncomingAlternateHighlighted: '#656565',
 	vkontakteImBubbleIncomingExpiringHighlighted: '#404980',
 	vkontakteImBubbleOutgoingHighlighted: '#656565',
+
+	vkontakteImBubbleButtonBackground: '#FFFFFF29',
+	vkontakteImBubbleButtonBackgroundHighlighted: '#FFFFFF3D',
+	vkontakteImBubbleMableOutgoing: '#346CAD',
+	vkontakteImBubbleMableOutgoingExpiringHighlighted: '#5965B3',
+	vkontakteImBubbleMableOutgoingHighlighted: '#4772A6',
+	vkontakteImBubbleMableWallpaperOutgoing: '#346CAD',
+	vkontakteImBubbleMableWallpaperOutgoingHighlighted: '#4772A6',
+	vkontakteImBubbleWallpaperButtonForeground: '#E1E3E6',
+
+	vkontakteImServiceMessageText: '#76787A',
 
 	vkontakteLandingSecondaryButtonBackground: 'rgba(255, 255, 255, 0.16)',
 	vkontakteStoriesSkeletonLoaderBackground: '#555555',
