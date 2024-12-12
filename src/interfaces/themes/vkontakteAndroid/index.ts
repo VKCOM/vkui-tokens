@@ -271,6 +271,20 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteColorImBubbleGiftText: ColorDescription;
 	vkontakteColorImBubbleGiftTextSecondary: ColorDescription;
 
+	vkontakteImBubbleIncomingAlternateHighlighted: ColorDescription;
+	vkontakteImBubbleIncomingExpiringHighlighted: ColorDescription;
+	vkontakteImBubbleOutgoingHighlighted: ColorDescription;
+
+	vkontakteImBubbleButtonBackground: ColorDescription;
+	vkontakteImBubbleButtonBackgroundHighlighted: ColorDescription;
+	vkontakteImBubbleMableOutgoing: ColorDescription;
+	vkontakteImBubbleMableOutgoingExpiringHighlighted: ColorDescription;
+	vkontakteImBubbleMableOutgoingHighlighted: ColorDescription;
+	vkontakteImBubbleMableWallpaperOutgoing: ColorDescription;
+	vkontakteImBubbleMableWallpaperOutgoingHighlighted: ColorDescription;
+	vkontakteImBubbleWallpaperButtonForeground: ColorDescription;
+
+	vkontakteImServiceMessageText: ColorDescription;
 	vkontakteColorImTextName: ColorDescription;
 
 	vkontakteButtonMutedBackground: ColorDescription;
@@ -278,10 +292,6 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteButtonTertiaryForeground: ColorDescription;
 	vkontakteFloatButtonForeground: ColorDescription;
 	vkontakteLandingBackground: ColorDescription;
-
-	vkontakteImBubbleIncomingAlternateHighlighted: ColorDescription;
-	vkontakteImBubbleIncomingExpiringHighlighted: ColorDescription;
-	vkontakteImBubbleOutgoingHighlighted: ColorDescription;
 
 	vkontakteLandingSecondaryButtonBackground: ColorDescription;
 	vkontakteStoriesSkeletonLoaderBackground: ColorDescription;
