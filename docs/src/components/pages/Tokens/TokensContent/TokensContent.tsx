@@ -14,7 +14,7 @@ import React, { FC, Fragment, useMemo } from 'react';
 import type { Description, Tokens, ValueType } from '@/shared/types';
 
 import TokensContentValue from './components/TokensContentValue';
-import { filterByDesc, filterByTags } from './TokensContent.helpers';
+import { filterByDesc, filterByTags, unCamelcasify } from './TokensContent.helpers';
 
 type Props = {
 	tokens: Tokens;
@@ -80,7 +80,7 @@ const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, sea
 									className="token-name-btn"
 									hoverMode="token-name-btn_hover"
 									stretched={!isTabletPlus}
-									onClick={() => copyTextToClipboard(token)}
+									onClick={() => copyTextToClipboard(`--vkui--${unCamelcasify(token, '_')}`)}
 								>
 									{token}
 								</Button>
