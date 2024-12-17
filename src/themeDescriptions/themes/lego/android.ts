@@ -23,7 +23,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		// Здесь нужно прописать другие цвета с особыми различиями нейминга
 		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
-		colorStrokePrimary: figma.appearance.strokePrimary.light,
+		// ...
 	},
 	// Изменённые не-цвета
 	sizeBasePaddingHorizontal: {
@@ -47,12 +47,7 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 
 	colors: {
 		...vkontakteAndroidThemeDark.colors,
-		// Переопределение токенов, которые есть в figma.json
 		// То же самое, что в светлой теме, но ссылаемся на figmaToken.dark вместо light
 		...overwriteFromFigmaJSON(vkontakteAndroidTheme.colors, 'appearance', 'dark', figma),
-		// Здесь нужно прописать другие цвета с особыми различиями нейминга
-		// А также локальные цвета, используемые только в этой теме
-		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
-		colorStrokePrimary: figma.appearance.strokePrimary.dark,
 	},
 };
