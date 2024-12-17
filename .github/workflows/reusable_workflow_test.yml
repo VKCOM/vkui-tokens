@@ -25,13 +25,16 @@ jobs:
         run: yarn run test:ci
 
       - name: Upload test artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-output
           path: |
-            junit.xml
+            test-results.json
+            .nyc_output/coverage-final.json
 
   deploy_test_coverage:
+    if: ${{ !cancelled() && (success() || failure()) }}
     needs: test
     runs-on: ubuntu-latest
     permissions:
@@ -49,5 +52,5 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           use_oidc: true
-          files: junit.xml
+          files: .nyc_output/coverage-final.json
           fail_ci_if_error: true
