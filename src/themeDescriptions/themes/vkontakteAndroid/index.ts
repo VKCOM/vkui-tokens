@@ -129,6 +129,8 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	vkontakteStoriesSkeletonLoaderBackground: '#454647',
 
 	vkontaktePaletteBlack: '#000000',
+
+	colorStrokePrimary: '#2C2D2E',
 };
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -246,6 +248,8 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	vkontakteStoriesSkeletonLoaderBackground: '#c4c8cc',
 
 	vkontaktePaletteBlack: '#000000',
+
+	colorStrokePrimary: '#E1E3E6',
 };
 
 const fontFamilyAccent =

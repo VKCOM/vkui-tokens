@@ -297,6 +297,8 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteStoriesSkeletonLoaderBackground: ColorDescription;
 
 	vkontaktePaletteBlack: ColorDescription;
+
+	colorStrokePrimary: ColorDescription;
 }
 
 export type VkontakteAndroidLocalColors = {
