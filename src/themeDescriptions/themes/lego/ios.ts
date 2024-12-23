@@ -23,11 +23,22 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,
 	},
+	sizeButtonSmallHeight: {
+		regular: figma.tokens.sizeButtonSmallHeight.iOS,
+	},
+	sizeButtonMediumHeight: {
+		regular: figma.tokens.sizeButtonMediumHeight.iOS,
+	},
+	sizeButtonLargeHeight: {
+		regular: figma.tokens.sizeButtonLargeHeight.iOS,
+	},
+	opacityDisable: figma.tokens.opacityDisabled.iOS / 100,
+	opacityDisableAccessibility: figma.tokens.opacityDisabled.iOS / 100,
 };
 
 export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
-	...legoIOSTheme, // импорт светлой версии текущей темы,
 	...vkIOSThemeDark, // импорт тёмной базовой темы
+	...legoIOSTheme, // импорт светлой версии текущей темы,
 
 	themeName: 'legoIOSDark', // название текущей темы
 	themeNameBase: 'legoIOS', // название светлой (базовой) темы
