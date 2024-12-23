@@ -131,6 +131,7 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	vkontaktePaletteBlack: '#000000',
 
 	colorStrokePrimary: '#2C2D2E',
+	colorBackgroundContentAlpha: '#FFFFFFCC',
 };
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -249,7 +250,8 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 
 	vkontaktePaletteBlack: '#000000',
 
-	colorStrokePrimary: '#E1E3E6',
+	colorStrokePrimary: '#E3E3E3',
+	colorBackgroundContentAlpha: '#0A0A0ACC',
 };
 
 const fontFamilyAccent =
@@ -436,6 +438,11 @@ const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof
 );
 
 export const vkontakteTokens = {
+	// Для соответствия Lego-теме
+	sizeButtonExtraSmallHeight: {
+		regular: 28,
+		compact: 24,
+	},
 	fontFamilyAccent,
 	...colorGradients,
 };
@@ -457,6 +464,7 @@ export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 
 export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 	...vkDarkTheme,
+	...vkontakteAndroidTheme,
 	themeName: `${themeNameBase}Dark`,
 	themeNameBase,
 	themeInheritsFrom: vkDarkTheme.themeName,
@@ -465,6 +473,8 @@ export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 	colors: {
 		...vkDarkTheme.colors,
 		...vkontakteLocalColorDark,
+		colorStrokePrimary: '#E3E3E3',
+		colorBackgroundContentAlpha: '#0A0A0ACC',
 	},
 	...gradients,
 	...androidFonts,

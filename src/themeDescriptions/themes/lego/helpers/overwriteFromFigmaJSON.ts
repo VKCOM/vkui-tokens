@@ -25,27 +25,35 @@ interface FigmaJSON {
 	[collection: string]: Collection;
 }
 
+type CollectionName = 'appearance' | 'tokens';
+type ModeName = 'light' | 'dark' | 'ios' | 'android' | 'desktop';
+
 /**
  * Функция, возращающася список токенов, переопределённых в специальном JSON-файле с фигмовскими переменными
  *
  * @param originalTokens Токены, замена для которых будет искаться в figma.json
- * @param {('appearance' | 'tokens')} [collection='appearance'] Коллекция, среди которой ищется замена
- * @param {('light'|'dark')} [mode='light'] Режим переменных фигмы, применяемый для замены. Сейчас ограничивается светлой и тёмной темой
+ * @param {CollectionName} [collection='appearance'] Коллекция, среди которой ищется замена
+ * @param {ModeName} [mode='light'] Режим переменных фигмы, применяемый для замены. Сейчас ограничивается светлой и тёмной темой
  * @param {FigmaJSON} source Объект, используемый вместо figma.json. Может генерироваться дизайнерами плагином Figma Variables To JSON
  * @returns Объект с токенами, для которых нашлась замена
  */
 // eslint-disable-next-line max-params
 export function overwriteFromFigmaJSON(
 	originalTokens,
-	collection: 'appearance' | 'tokens' = 'appearance',
-	mode: 'light' | 'dark' = 'light',
+	collection: CollectionName = 'appearance',
+	mode: ModeName = 'light',
 	source: FigmaJSON = figma,
 ): Partial<typeof originalTokens> {
 	return Object.fromEntries(
 		Object.keys(originalTokens).reduce((acc, key) => {
 			const figmaToken = findFigmaVariable(source[collection], key);
 			if (figmaToken) {
-				acc.push([key, figmaToken[mode]]);
+				if (collection === 'appearance') {
+					acc.push([key, figmaToken[mode]]);
+				} else {
+					// Если переопределяем не цвета, то добавляем regular и compact-версию
+					acc.push([key, { regular: figmaToken[mode], compact: figmaToken['desktop'] }]);
+				}
 			}
 			return acc;
 		}, []),

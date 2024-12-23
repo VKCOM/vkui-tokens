@@ -540,6 +540,10 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBorderRadiusPromo: {
 		regular: 20,
 	},
+	sizeCellHeight: {
+		regular: 48,
+		compact: 44,
+	},
 	sizeFieldHeight: {
 		regular: 44,
 		compact: 36,

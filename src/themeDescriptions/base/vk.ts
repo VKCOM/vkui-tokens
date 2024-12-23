@@ -2,6 +2,7 @@ import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFro
 import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
+import { Sizes } from '@/interfaces/general/geometry';
 import { Gradients } from '@/interfaces/general/gradients';
 import { Adaptive } from '@/interfaces/general/tools';
 import { Fonts, TypographyBaseProps } from '@/interfaces/general/typography';
@@ -514,15 +515,9 @@ export const fonts: BaseFonts = {
 	},
 };
 
-export const lightTheme: ThemeDescription = {
-	themeName: 'vkBase',
-	themeNameBase: 'vkBase',
-	...lightColors,
-	...lightGradient,
-	...lightElevation,
-	...fonts,
-	fontHeadline: alias('fontHeadline1'),
+type BaseSizes = { [key in keyof Sizes]: Adaptive<Sizes[key]> };
 
+export const sizes: BaseSizes = {
 	// Размеры
 	sizeSelectIconPadding: {
 		regular: 6,
@@ -553,6 +548,10 @@ export const lightTheme: ThemeDescription = {
 	},
 	sizeBorderRadiusPromo: {
 		regular: 20,
+	},
+	sizeCellHeight: {
+		regular: 48,
+		compact: 44,
 	},
 	sizeFieldHeight: {
 		regular: 44,
@@ -761,6 +760,17 @@ export const lightTheme: ThemeDescription = {
 	sizeBorder3x: {
 		regular: 0.33,
 	},
+};
+
+export const lightTheme: ThemeDescription = {
+	themeName: 'vkBase',
+	themeNameBase: 'vkBase',
+	...lightColors,
+	...lightGradient,
+	...lightElevation,
+	...fonts,
+	fontHeadline: alias('fontHeadline1'),
+	...sizes,
 
 	// Стандартные токены для отступов
 	spacingSize3Xs: 2,
