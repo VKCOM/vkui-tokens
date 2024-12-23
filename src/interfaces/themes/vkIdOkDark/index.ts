@@ -1,5 +1,5 @@
 export {
-	ThemeVkBaseDark as ThemeVkIdOkDark,
-	ThemeVkBaseDarkCssVars as ThemeVkIdOkDarkCssVars,
-	ThemeVkBaseDarkDescription as ThemeVkIdOkDarkDescription,
-} from '@/interfaces/themes/vkBaseDark';
+	ThemeVkIdOk as ThemeVkIdOkDark,
+	ThemeVkIdOkCssVars as ThemeVkIdOkDarkCssVars,
+	ThemeVkIdOkDescription as ThemeVkIdOkDarkDescription,
+} from '@/interfaces/themes/vkIdOk';

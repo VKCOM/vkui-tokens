@@ -1,5 +1,5 @@
 export {
-	ThemeVkBase as ThemeVkAccessibilityIOS,
-	ThemeVkBaseCssVars as ThemeVkAccessibilityIOSCssVars,
-	ThemeVkBaseDescription as ThemeVkAccessibilityIOSDescription,
-} from '@/interfaces/themes/vkBase';
+	ThemeVkIOS as ThemeVkAccessibilityIOS,
+	ThemeVkIOSCssVars as ThemeVkAccessibilityIOSCssVars,
+	ThemeVkIOSDescription as ThemeVkAccessibilityIOSDescription,
+} from '@/interfaces/themes/vkIOS';

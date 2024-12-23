@@ -1,5 +1,5 @@
 export {
-	ThemeVkBase as ThemeVkIdOkIOS,
-	ThemeVkBaseCssVars as ThemeVkIdOkIOSCssVars,
-	ThemeVkBaseDescription as ThemeVkIdOkIOSDescription,
-} from '@/interfaces/themes/vkBase';
+	ThemeVkIOS as ThemeVkIdOkIOS,
+	ThemeVkIOSCssVars as ThemeVkIdOkIOSCssVars,
+	ThemeVkIOSDescription as ThemeVkIdOkIOSDescription,
+} from '@/interfaces/themes/vkIOS';
