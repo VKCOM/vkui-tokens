@@ -8,6 +8,12 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 	themeNameBase: 'vkIOS',
 	themeInheritsFrom: 'vkBase',
 
+	colors: {
+		...lightTheme.colors,
+		colorStrokePrimary: '#2C2D2E',
+		colorBackgroundContentAlpha: '#FFFFFFCC',
+	},
+
 	sizeBorderRadius: {
 		regular: 10,
 	},
@@ -42,15 +48,24 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 
 	// Разное
 	animationEasingPlatform: 'cubic-bezier(0.36, 0.66, 0.04, 1)',
+	sizeButtonExtraSmallHeight: {
+		regular: 28,
+		compact: 24,
+	},
 };
 
 export const vkIOSThemeDark: ThemeVkIOSDarkDescription = {
 	...vkIOSTheme,
-	...darkColors,
 	...darkGradient,
 	...darkElevation,
 	themeName: 'vkIOSDark',
 	themeNameBase: 'vkIOS',
 	themeInheritsFrom: 'vkBaseDark',
 	colorsScheme: 'dark',
+
+	colors: {
+		...darkColors.colors,
+		colorStrokePrimary: '#E3E3E3',
+		colorBackgroundContentAlpha: '#0A0A0ACC',
+	},
 };

@@ -28,6 +28,27 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 	// Изменённые не-цвета
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.android,
+		compact: figma.tokens.sizeBasePaddingHorizontal.desktop,
+	},
+	sizeCellHeight: {
+		regular: figma.tokens.sizeCellHeight.android,
+		compact: figma.tokens.sizeCellHeight.desktop,
+	},
+	sizeButtonExtraSmallHeight: {
+		regular: figma.tokens.sizeButtonExtraSmallHeight.android,
+		compact: figma.tokens.sizeButtonExtraSmallHeight.desktop,
+	},
+	sizeButtonSmallHeight: {
+		regular: figma.tokens.sizeButtonSmallHeight.android,
+		compact: figma.tokens.sizeButtonSmallHeight.desktop,
+	},
+	sizeButtonMediumHeight: {
+		regular: figma.tokens.sizeButtonMediumHeight.android,
+		compact: figma.tokens.sizeButtonMediumHeight.desktop,
+	},
+	sizeButtonLargeHeight: {
+		regular: figma.tokens.sizeButtonLargeHeight.android,
+		compact: figma.tokens.sizeButtonLargeHeight.desktop,
 	},
 	// Фигма использует целые проценты, а не сотые единицы
 	// Поэтому здесь нужно поделить на 100
