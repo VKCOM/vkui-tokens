@@ -50,14 +50,11 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 
 export const vkIOSThemeDark: ThemeVkIOSDarkDescription = {
 	...vkIOSTheme,
+	...darkColors,
 	...darkGradient,
 	...darkElevation,
 	themeName: 'vkIOSDark',
 	themeNameBase: 'vkIOS',
 	themeInheritsFrom: 'vkBaseDark',
 	colorsScheme: 'dark',
-
-	colors: {
-		...darkColors.colors,
-	},
 };
