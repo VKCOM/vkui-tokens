@@ -129,9 +129,6 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	vkontakteStoriesSkeletonLoaderBackground: '#454647',
 
 	vkontaktePaletteBlack: '#000000',
-
-	colorStrokePrimary: '#2C2D2E',
-	colorBackgroundContentAlpha: '#FFFFFFCC',
 };
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -249,9 +246,6 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	vkontakteStoriesSkeletonLoaderBackground: '#c4c8cc',
 
 	vkontaktePaletteBlack: '#000000',
-
-	colorStrokePrimary: '#E3E3E3',
-	colorBackgroundContentAlpha: '#0A0A0ACC',
 };
 
 const fontFamilyAccent =
@@ -438,11 +432,6 @@ const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof
 );
 
 export const vkontakteTokens = {
-	// Для соответствия Lego-теме
-	sizeButtonExtraSmallHeight: {
-		regular: 28,
-		compact: 24,
-	},
 	fontFamilyAccent,
 	...colorGradients,
 };

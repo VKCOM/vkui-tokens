@@ -124,9 +124,6 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteStoriesSkeletonLoaderBackground: '#cccccc',
 
 	vkontaktePaletteBlack: '#000000',
-
-	colorStrokePrimary: '#2C2D2E',
-	colorBackgroundContentAlpha: '#FFFFFFCC',
 };
 
 const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
@@ -242,9 +239,6 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteStoriesSkeletonLoaderBackground: '#555555',
 
 	vkontaktePaletteBlack: '#000000',
-
-	colorStrokePrimary: '#E1E3E6',
-	colorBackgroundContentAlpha: '#0A0A0ACC',
 };
 
 const vkontakteComFonts = lodash.merge<typeof vkComFonts, DeepPartial<typeof vkComFonts>>(
