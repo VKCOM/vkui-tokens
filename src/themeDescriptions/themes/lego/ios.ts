@@ -18,8 +18,6 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 		...vkIOSTheme.colors,
 		// Переопределение переменных
 		...overwriteFromFigmaJSON(vkontakteIOSTheme.colors, 'appearance', 'light', figma),
-		// Локальные цвета
-		colorStrokePrimary: figma.appearance.strokePrimary.light,
 	},
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,
@@ -63,7 +61,5 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 		...vkIOSThemeDark.colors,
 		// Переопределение переменных
 		...overwriteFromFigmaJSON(vkontakteIOSThemeDark.colors, 'appearance', 'dark', figma),
-		// Локальные цвета
-		colorStrokePrimary: figma.appearance.strokePrimary.light,
 	},
 };

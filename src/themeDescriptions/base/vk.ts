@@ -38,6 +38,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			}[colorsScheme],
 			colorBackground: background.background,
 			colorBackgroundContent: background.background_content,
+			colorBackgroundContentAlpha: {
+				light: 'rgba(255, 255, 255, 0.8)',
+				dark: 'rgba(25, 25, 26, 0.8)',
+			}[colorsScheme],
 			colorBackgroundContentInverse: {
 				light: '#19191A',
 				dark: '#FFFFFF',
@@ -183,6 +187,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorStrokePositive: stroke.stroke_positive,
 			colorStrokeNegative: stroke.stroke_negative,
 			colorStrokeContrast: stroke.stroke_contrast,
+			colorStrokePrimary: {
+				light: '#2C2D2E',
+				dark: '#E1E3E6',
+			}[colorsScheme],
 			colorImageBorderAlpha: stroke.image_border_alpha,
 			colorFieldBorderAlpha: {
 				light: {
@@ -561,17 +569,21 @@ export const sizes: BaseSizes = {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonLargeHeight: {
-		regular: 44,
-		compact: 36,
+	sizeButtonExtraSmallHeight: {
+		regular: 24,
+		compact: 22,
+	},
+	sizeButtonSmallHeight: {
+		regular: 30,
+		compact: 28,
 	},
 	sizeButtonMediumHeight: {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonSmallHeight: {
-		regular: 30,
-		compact: 28,
+	sizeButtonLargeHeight: {
+		regular: 44,
+		compact: 36,
 	},
 	sizeCheckbox: {
 		regular: 16,

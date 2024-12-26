@@ -85,6 +85,12 @@ export interface Sizes {
 	sizeFieldHeight: number;
 
 	/**
+	 * @desc Высота очень маленьких кнопок
+	 * @tags size, component
+	 */
+	sizeButtonExtraSmallHeight: number;
+
+	/**
 	 * @desc Высота маленьких кнопок
 	 * @tags size, component
 	 */

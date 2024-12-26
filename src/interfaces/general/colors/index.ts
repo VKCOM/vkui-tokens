@@ -76,6 +76,12 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundContent: ColorDescription;
 
 	/**
+	 * @desc Цвет фона с прозрачностью
+	 * @tags color, background
+	 */
+	colorBackgroundContentAlpha: ColorDescription;
+
+	/**
 	 * @desc Цвет фона, противоположный фону контента.
 	 * @tags color, background
 	 */
@@ -427,10 +433,16 @@ export interface ColorsDescriptionStruct {
 	colorStrokeNegative: ColorDescription;
 
 	/**
-	 * @desc Контрастный цвет для обводки. Не меняется в зивисимости от темы
+	 * @desc Контрастный цвет для обводки. Не меняется в зависимости от темы
 	 * @tags color, stroke
 	 */
 	colorStrokeContrast: ColorDescription;
+
+	/**
+	 * @desc Нейтральный цвет для обводки.
+	 * @tags color, stroke
+	 */
+	colorStrokePrimary: ColorDescription;
 
 	/**
 	 * @desc Цвет обводки для изображений с прозрачностью

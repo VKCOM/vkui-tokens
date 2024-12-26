@@ -5,7 +5,6 @@ import {
 	ColorWithStates,
 } from '@/interfaces/general/colors';
 import { GradientPoints } from '@/interfaces/general/gradients';
-import { Adaptive } from '@/interfaces/general/tools';
 import { Tokens } from '@/interfaces/general/tools/tokenValue';
 
 import { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase';
@@ -298,15 +297,6 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteStoriesSkeletonLoaderBackground: ColorDescription;
 
 	vkontaktePaletteBlack: ColorDescription;
-
-	// Для соответствия Lego-теме
-	colorStrokePrimary: ColorDescription;
-	colorBackgroundContentAlpha: ColorDescription;
-}
-
-export interface VkontakteAndroidGeometry {
-	// Для соответствия Lego-теме
-	sizeButtonExtraSmallHeight: Adaptive<number>;
 }
 
 export type VkontakteAndroidLocalColors = {
@@ -316,13 +306,11 @@ export type VkontakteAndroidLocalColors = {
 export interface ThemeVkontakteAndroid
 	extends ThemeVkBase,
 		VkontakteAndroidLocalColors,
-		VkontakteAndroidGradients,
-		VkontakteAndroidGeometry {}
+		VkontakteAndroidGradients {}
 
 export interface ThemeVkontakteAndroidDescription
 	extends ThemeVkBaseDescription,
-		Tokens<VkontakteAndroidGradients>,
-		VkontakteAndroidGeometry {
+		Tokens<VkontakteAndroidGradients> {
 	colors: LocalVkontakteAndroidColorsDescriptionStruct & ColorsDescriptionStruct;
 }
 export interface ThemeVkontakteAndroidCssVars extends ThemeCssVars<ThemeVkontakteAndroid> {}
