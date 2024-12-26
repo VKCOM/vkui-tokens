@@ -453,7 +453,6 @@ export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 
 export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 	...vkDarkTheme,
-	...vkontakteAndroidTheme,
 	themeName: `${themeNameBase}Dark`,
 	themeNameBase,
 	themeInheritsFrom: vkDarkTheme.themeName,

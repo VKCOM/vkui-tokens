@@ -8,10 +8,6 @@ export const vkIOSTheme: ThemeVkIOSDescription = {
 	themeNameBase: 'vkIOS',
 	themeInheritsFrom: 'vkBase',
 
-	colors: {
-		...lightTheme.colors,
-	},
-
 	sizeBorderRadius: {
 		regular: 10,
 	},
