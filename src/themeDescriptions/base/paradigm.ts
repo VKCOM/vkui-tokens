@@ -31,6 +31,7 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundAccentThemedAlpha: 'rgba(0, 119, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#FFFFFF',
+		colorBackgroundContentAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorBackgroundContentInverse: colorBackgroundContentDark,
 		colorBackgroundSecondary: '#F0F1F3',
 		colorBackgroundSecondaryAlpha: {
@@ -108,6 +109,7 @@ export const lightColors: ColorsDescription = {
 		colorStrokeAccentThemed: '#0077ff',
 		colorStrokeContrast: '#FFFFFF',
 		colorStrokeNegative: '#ED330a',
+		colorStrokePrimary: '#2C2D2E',
 		colorImageBorderAlpha: 'rgba(0, 16, 61, 0.08)',
 		colorFieldBorderAlpha: 'rgba(0, 16, 61, 0.12)',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 16, 61, 0.12)',
@@ -171,6 +173,7 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: colorBackgroundContentDark,
+		colorBackgroundContentAlpha: 'rgba(35, 35, 36, 0.8)',
 		colorBackgroundContentInverse: '#FFFFFF',
 		colorBackgroundSecondary: '#2A2A2B',
 		colorBackgroundSecondaryAlpha: {
@@ -248,6 +251,7 @@ export const darkColors: ColorsDescription = {
 		colorStrokeAccentThemed: '#FFFFFF',
 		colorStrokeContrast: '#FFFFFF',
 		colorStrokeNegative: '#FF5C5C',
+		colorStrokePrimary: '#D9DADD',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.16)',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.4)',
@@ -540,6 +544,10 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBorderRadiusPromo: {
 		regular: 20,
 	},
+	sizeCellHeight: {
+		regular: 48,
+		compact: 44,
+	},
 	sizeFieldHeight: {
 		regular: 44,
 		compact: 36,
@@ -548,17 +556,21 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonLargeHeight: {
-		regular: 44,
-		compact: 36,
+	sizeButtonExtraSmallHeight: {
+		regular: 24,
+		compact: 22,
+	},
+	sizeButtonSmallHeight: {
+		regular: 30,
+		compact: 28,
 	},
 	sizeButtonMediumHeight: {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonSmallHeight: {
-		regular: 30,
-		compact: 28,
+	sizeButtonLargeHeight: {
+		regular: 44,
+		compact: 36,
 	},
 	sizeCheckbox: {
 		regular: 16,

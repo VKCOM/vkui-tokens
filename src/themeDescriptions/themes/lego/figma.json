@@ -18,7 +18,11 @@
 		},
 		"backgroundContent": {
 			"light": "#ffffff",
-			"dark": "#191919"
+			"dark": "#0a0a0a"
+		},
+		"backgroundContentAlpha": {
+			"light": "#ffffffcc",
+			"dark": "#0a0a0acc"
 		},
 		"iconAccentThemed": {
 			"light": "#2688eb",
@@ -54,7 +58,7 @@
 		},
 		"strokeImageBorderAlpha": {
 			"light": "#00000014",
-			"dark": "#ffffff14"
+			"dark": "#ffffff1c"
 		},
 		"strokeAccent": {
 			"light": "#2688eb",
@@ -62,7 +66,7 @@
 		},
 		"strokeSeparatorPrimaryAlpha": {
 			"light": "#0000001e",
-			"dark": "#ffffff1e"
+			"dark": "#ffffff23"
 		},
 		"paletteAccentRed": {
 			"light": "#ff3347",
@@ -86,19 +90,19 @@
 		},
 		"backgroundSecondary": {
 			"light": "#f5f5f5",
-			"dark": "#232323"
+			"dark": "#1b1b1b"
 		},
 		"backgroundSecondaryAlpha": {
 			"light": "#0000000a",
-			"dark": "#ffffff19"
+			"dark": "#ffffff1e"
 		},
 		"backgroundTertiary": {
 			"light": "#f9f9f9",
-			"dark": "#202020"
+			"dark": "#181818"
 		},
 		"backgroundTertiaryAlpha": {
 			"light": "#00000007",
-			"dark": "#ffffff07"
+			"dark": "#ffffff0c"
 		},
 		"backgroundContrast": {
 			"light": "#ffffff",
@@ -106,23 +110,23 @@
 		},
 		"backgroundContrastSecondaryAlpha": {
 			"light": "#ffffff33",
-			"dark": "#ffffff33"
+			"dark": "#ffffff38"
 		},
 		"backgroundContrastInverse": {
-			"light": "#2d2d2d",
-			"dark": "#2d2d2d"
+			"light": "#262626",
+			"dark": "#262626"
 		},
 		"backgroundModal": {
 			"light": "#ffffff",
-			"dark": "#1d1d1d"
+			"dark": "#0a0a0a"
 		},
 		"backgroundModalInverse": {
-			"light": "#1d1d1d",
+			"light": "#0a0a0a",
 			"dark": "#ffffff"
 		},
 		"backgroundWarning": {
 			"light": "#fff2d6",
-			"dark": "#473315"
+			"dark": "#483416"
 		},
 		"backgroundPositive": {
 			"light": "#4bb34b",
@@ -134,19 +138,19 @@
 		},
 		"backgroundPositiveTint": {
 			"light": "#e8f9e8",
-			"dark": "#2e3e2b"
+			"dark": "#273724"
 		},
 		"backgroundNegativeTint": {
 			"light": "#ffe9e9",
-			"dark": "#522e2e"
+			"dark": "#4b2727"
 		},
 		"backgroundFieldBackground": {
 			"light": "#ebebeb",
-			"dark": "#292929"
+			"dark": "#1b1b1b"
 		},
 		"backgroundHeaderBackground": {
 			"light": "#ffffff",
-			"dark": "#191919"
+			"dark": "#0a0a0a"
 		},
 		"textAccent": {
 			"light": "#2688eb",
@@ -242,19 +246,19 @@
 		},
 		"strokeSeparatorPrimary": {
 			"light": "#d8d8d8",
-			"dark": "#373737"
+			"dark": "#303030"
 		},
 		"strokeSeparatorPrimary2x": {
 			"light": "#cccccc",
-			"dark": "#454545"
+			"dark": "#3e3e3e"
 		},
 		"strokeSeparatorPrimary3x": {
 			"light": "#bfbfbf",
-			"dark": "#525252"
+			"dark": "#4c4c4c"
 		},
 		"strokeSeparatorSecondary": {
 			"light": "#e3e3e3",
-			"dark": "#141414"
+			"dark": "#181818"
 		},
 		"strokePositive": {
 			"light": "#4bb34b",
@@ -270,13 +274,13 @@
 		},
 		"strokeFieldBorderAlpha": {
 			"light": "#0000001e",
-			"dark": "#ffffff1e"
+			"dark": "#ffffff23"
 		},
 		"otherOverlayPrimary": {
 			"light": "#00000066",
 			"dark": "#00000066"
 		},
-		"otherAvatarOverlay": {
+		"otherAvatarOverlayAlpha": {
 			"light": "#00000099",
 			"dark": "#00000099"
 		},
@@ -290,11 +294,11 @@
 		},
 		"otherTrackBackground": {
 			"light": "#ebebeb",
-			"dark": "#464646"
+			"dark": "#3f3f3f"
 		},
 		"otherTrackBuffer": {
 			"light": "#a0bfe4",
-			"dark": "#405772"
+			"dark": "#39506b"
 		},
 		"otherSearchFieldBackground": {
 			"light": "#ebebeb",
@@ -306,7 +310,7 @@
 		},
 		"otherSegmentedControl": {
 			"light": "#ffffff",
-			"dark": "#626364"
+			"dark": "#5b5b5b"
 		},
 		"otherTransparent": {
 			"light": "#00000000",
@@ -314,19 +318,19 @@
 		},
 		"otherImagePlaceholder": {
 			"light": "#f3f3f3",
-			"dark": "#2b2b2b"
+			"dark": "#242424"
 		},
 		"otherImagePlaceholderAlpha": {
 			"light": "#2121210f",
-			"dark": "#f6f6f614"
+			"dark": "#f6f6f61c"
 		},
 		"otherSkeletonFrom": {
 			"light": "#f5f5f5",
-			"dark": "#2d2d2d"
+			"dark": "#1b1b1b"
 		},
 		"otherSkeletonTo": {
 			"light": "#ebebeb",
-			"dark": "#2d2d2d"
+			"dark": "#262626"
 		},
 		"otherWriteBarIcon": {
 			"light": "#3f8ae0",
@@ -334,11 +338,11 @@
 		},
 		"otherWriteBarInputBackground": {
 			"light": "#f3f3f3",
-			"dark": "#2d2d2d"
+			"dark": "#262626"
 		},
 		"otherWriteBarInputBorder": {
 			"light": "#ebebeb",
-			"dark": "#2d2d2d"
+			"dark": "#262626"
 		},
 		"otherWriteBarInputBorderAlpha": {
 			"light": "#00000014",
@@ -425,11 +429,11 @@
 			"dark": "#ff6969"
 		},
 		"statesHoverTransparent": {
-			"light": "#00103d07",
+			"light": "#0000000a",
 			"dark": "#ffffff0a"
 		},
 		"statesActiveTransparent": {
-			"light": "#00103d0c",
+			"light": "#00000014",
 			"dark": "#ffffff14"
 		},
 		"statesHoverTransparentContrast": {
@@ -482,7 +486,7 @@
 		},
 		"otherTabbarTextInactive": {
 			"light": "#adadad",
-			"dark": "#787878"
+			"dark": "#707070"
 		},
 		"otherOverlaySecondary": {
 			"light": "#00000044",
@@ -490,7 +494,7 @@
 		},
 		"backgroundContrastThemed": {
 			"light": "#ffffff",
-			"dark": "#2d2d2d"
+			"dark": "#262626"
 		},
 		"paletteAccentOrangePeach": {
 			"light": "#f9b54f",
@@ -510,7 +514,7 @@
 		},
 		"backgroundInfoTint": {
 			"light": "#deeeff",
-			"dark": "#1c3954"
+			"dark": "#16334e"
 		},
 		"gradientDefaultStop15": {
 			"light": "#ffffff0c",
@@ -609,7 +613,7 @@
 			"dark": "#fafafa6b"
 		},
 		"backgroundContentInverse": {
-			"light": "#191919",
+			"light": "#0a0a0a",
 			"dark": "#ffffff"
 		},
 		"strokePrimary": {
@@ -715,22 +719,22 @@
 			"desktop": 32
 		},
 		"sizeButtonLargeHeight": {
+			"iOS": 56,
+			"android": 56,
+			"vkCom": 44,
+			"desktop": 44
+		},
+		"sizeButtonMediumHeight": {
 			"iOS": 44,
 			"android": 44,
 			"vkCom": 36,
 			"desktop": 36
 		},
-		"sizeButtonMediumHeight": {
+		"sizeButtonSmallHeight": {
 			"iOS": 36,
 			"android": 36,
 			"vkCom": 32,
 			"desktop": 32
-		},
-		"sizeButtonSmallHeight": {
-			"iOS": 30,
-			"android": 30,
-			"vkCom": 28,
-			"desktop": 28
 		},
 		"fontFamilyBase": {
 			"iOS": "SF Pro Text",
@@ -769,74 +773,74 @@
 			"desktop": "VK Sans Display"
 		},
 		"fontLetterSpacingTitle1": {
-			"iOS": 0.07,
+			"iOS": 0.07000000029802322,
 			"android": 0,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingTitle2": {
-			"iOS": -0.45,
+			"iOS": -0.44999998807907104,
 			"android": 0,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingTitle3": {
-			"iOS": -0.43,
+			"iOS": -0.4300000071525574,
 			"android": 0,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingHeadline1": {
-			"iOS": -0.31,
-			"android": 0.15,
+			"iOS": -0.3100000023841858,
+			"android": 0.15000000596046448,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingHeadline2": {
-			"iOS": -0.23,
-			"android": 0.15,
+			"iOS": -0.23000000417232513,
+			"android": 0.15000000596046448,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingText": {
-			"iOS": -0.31,
-			"android": 0.15,
+			"iOS": -0.3100000023841858,
+			"android": 0.15000000596046448,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingParagraph": {
-			"iOS": -0.23,
+			"iOS": -0.23000000417232513,
 			"android": 0,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingSubhead": {
-			"iOS": -0.15,
-			"android": 0.15,
+			"iOS": -0.15000000596046448,
+			"android": 0.15000000596046448,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingFootnote": {
-			"iOS": -0.08,
-			"android": 0.20,
+			"iOS": -0.07999999821186066,
+			"android": 0.20000000298023224,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingCaption1": {
 			"iOS": 0,
-			"android": 0.30,
+			"android": 0.30000001192092896,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingCaption2": {
-			"iOS": 0.06,
-			"android": 0.30,
+			"iOS": 0.05999999865889549,
+			"android": 0.30000001192092896,
 			"vkCom": 0,
 			"desktop": 0
 		},
 		"fontLetterSpacingCaption3": {
-			"iOS": 0.17,
-			"android": 0.30,
+			"iOS": 0.17000000178813934,
+			"android": 0.30000001192092896,
 			"vkCom": 0,
 			"desktop": 0
 		},
@@ -919,7 +923,7 @@
 			"desktop": 20
 		},
 		"otherLargeButtonLetterSpacing": {
-			"iOS": -0.43,
+			"iOS": -0.4300000071525574,
 			"android": 0,
 			"vkCom": 0,
 			"desktop": 0
@@ -1135,16 +1139,46 @@
 			"desktop": 50
 		},
 		"sizeCellHeight": {
-			"iOS": 48,
-			"android": 48,
-			"vkCom": 44,
-			"desktop": 44
+			"iOS": 52,
+			"android": 52,
+			"vkCom": 48,
+			"desktop": 48
 		},
 		"fontWeightBold": {
 			"iOS": 700,
 			"android": 700,
 			"vkCom": 700,
 			"desktop": 700
+		},
+		"sizeButtonExtraSmallHeight": {
+			"iOS": 28,
+			"android": 28,
+			"vkCom": 24,
+			"desktop": 24
+		},
+		"blurSmall": {
+			"iOS": 8,
+			"android": 0,
+			"vkCom": 8,
+			"desktop": 8
+		},
+		"blurMedium": {
+			"iOS": 16,
+			"android": 0,
+			"vkCom": 16,
+			"desktop": 16
+		},
+		"blurLarge": {
+			"iOS": 48,
+			"android": 0,
+			"vkCom": 58,
+			"desktop": 48
+		},
+		"blurExtraLarge": {
+			"iOS": 96,
+			"android": 0,
+			"vkCom": 96,
+			"desktop": 96
 		}
 	}
 }

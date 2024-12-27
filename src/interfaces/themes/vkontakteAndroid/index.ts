@@ -297,8 +297,6 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	vkontakteStoriesSkeletonLoaderBackground: ColorDescription;
 
 	vkontaktePaletteBlack: ColorDescription;
-
-	colorStrokePrimary: ColorDescription;
 }
 
 export type VkontakteAndroidLocalColors = {
@@ -309,6 +307,7 @@ export interface ThemeVkontakteAndroid
 	extends ThemeVkBase,
 		VkontakteAndroidLocalColors,
 		VkontakteAndroidGradients {}
+
 export interface ThemeVkontakteAndroidDescription
 	extends ThemeVkBaseDescription,
 		Tokens<VkontakteAndroidGradients> {

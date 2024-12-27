@@ -73,10 +73,22 @@ export interface Sizes {
 	sizeBorderRadiusPromo: number;
 
 	/**
+	 * @desc Минимальная высота ячейки
+	 * @tags size, component
+	 */
+	sizeCellHeight: number;
+
+	/**
 	 * @desc Высота полей ввода, селектов и других похожих компонентов
 	 * @tags size, component
 	 */
 	sizeFieldHeight: number;
+
+	/**
+	 * @desc Высота очень маленьких кнопок
+	 * @tags size, component
+	 */
+	sizeButtonExtraSmallHeight: number;
 
 	/**
 	 * @desc Высота маленьких кнопок

@@ -2,6 +2,7 @@ import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFro
 import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
 import { Elevation } from '@/interfaces/general/elevation';
+import { Sizes } from '@/interfaces/general/geometry';
 import { Gradients } from '@/interfaces/general/gradients';
 import { Adaptive } from '@/interfaces/general/tools';
 import { Fonts, TypographyBaseProps } from '@/interfaces/general/typography';
@@ -37,6 +38,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			}[colorsScheme],
 			colorBackground: background.background,
 			colorBackgroundContent: background.background_content,
+			colorBackgroundContentAlpha: {
+				light: 'rgba(255, 255, 255, 0.8)',
+				dark: 'rgba(25, 25, 26, 0.8)',
+			}[colorsScheme],
 			colorBackgroundContentInverse: {
 				light: '#19191A',
 				dark: '#FFFFFF',
@@ -182,6 +187,10 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 			colorStrokePositive: stroke.stroke_positive,
 			colorStrokeNegative: stroke.stroke_negative,
 			colorStrokeContrast: stroke.stroke_contrast,
+			colorStrokePrimary: {
+				light: '#2C2D2E',
+				dark: '#E1E3E6',
+			}[colorsScheme],
 			colorImageBorderAlpha: stroke.image_border_alpha,
 			colorFieldBorderAlpha: {
 				light: {
@@ -514,15 +523,9 @@ export const fonts: BaseFonts = {
 	},
 };
 
-export const lightTheme: ThemeDescription = {
-	themeName: 'vkBase',
-	themeNameBase: 'vkBase',
-	...lightColors,
-	...lightGradient,
-	...lightElevation,
-	...fonts,
-	fontHeadline: alias('fontHeadline1'),
+type BaseSizes = { [key in keyof Sizes]: Adaptive<Sizes[key]> };
 
+export const sizes: BaseSizes = {
 	// Размеры
 	sizeSelectIconPadding: {
 		regular: 6,
@@ -554,6 +557,10 @@ export const lightTheme: ThemeDescription = {
 	sizeBorderRadiusPromo: {
 		regular: 20,
 	},
+	sizeCellHeight: {
+		regular: 48,
+		compact: 44,
+	},
 	sizeFieldHeight: {
 		regular: 44,
 		compact: 36,
@@ -562,17 +569,21 @@ export const lightTheme: ThemeDescription = {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonLargeHeight: {
-		regular: 44,
-		compact: 36,
+	sizeButtonExtraSmallHeight: {
+		regular: 24,
+		compact: 22,
+	},
+	sizeButtonSmallHeight: {
+		regular: 30,
+		compact: 28,
 	},
 	sizeButtonMediumHeight: {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonSmallHeight: {
-		regular: 30,
-		compact: 28,
+	sizeButtonLargeHeight: {
+		regular: 44,
+		compact: 36,
 	},
 	sizeCheckbox: {
 		regular: 16,
@@ -761,6 +772,17 @@ export const lightTheme: ThemeDescription = {
 	sizeBorder3x: {
 		regular: 0.33,
 	},
+};
+
+export const lightTheme: ThemeDescription = {
+	themeName: 'vkBase',
+	themeNameBase: 'vkBase',
+	...lightColors,
+	...lightGradient,
+	...lightElevation,
+	...fonts,
+	fontHeadline: alias('fontHeadline1'),
+	...sizes,
 
 	// Стандартные токены для отступов
 	spacingSize3Xs: 2,
