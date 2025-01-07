@@ -51,8 +51,8 @@
     "@types/fs-extra": "11.0.4",
     "@types/lodash": "4.17.7",
     "@types/node": "18.11.10",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
+    "@types/react": "19.0.3",
+    "@types/react-dom": "19.0.2",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0",
     "@vkontakte/icons": "2.124.0",
     "@vkontakte/prettier-config": "0.1.0",
@@ -90,8 +90,8 @@
     "lint-staged": "15.2.10",
     "lodash": "4.17.21",
     "prettier": "3.3.2",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-router-dom": "6.26.2",
     "remark": "15.0.1",
     "remark-html": "16.0.1",
@@ -121,6 +121,6 @@
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "resolutions": {
     "@types/node": "18.11.10",
-    "@types/react": "18.3.3"
+    "@types/react": "19.0.3"
   }
 }
