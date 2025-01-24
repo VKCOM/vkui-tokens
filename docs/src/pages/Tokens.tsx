@@ -1,5 +1,6 @@
 import { useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
-import React, { FC, useMemo, useState } from 'react';
+import React, { FC, useCallback, useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 import { TokensActions, TokensContent, TokensHeader } from '@/components/pages/Tokens';
 import tokensData from '@/public/static/data/tokensData.json';
@@ -55,14 +56,43 @@ function findThemeTags(themeNames: string[]): string[] {
 	return tagsList;
 }
 
+enum QueryParam {
+	theme = 'theme',
+	adaptivityMode = 'adaptivityMode',
+}
+
 const Tokens: FC = () => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
 	const isTabletPlus = viewWidth > 3;
 
+	const [searchParams, setSearchParams] = useSearchParams();
+	const navigate = useCallback((queryParamsDiff: Record<string, string>) => {
+		setSearchParams(
+			(prev) => {
+				Object.entries(queryParamsDiff).forEach(([name, value]) => {
+					prev.set(name, value);
+				});
+
+				return prev;
+			},
+			{ replace: true },
+		);
+	}, []);
+
 	const themeTags = useMemo(() => findThemeTags(themes), [themes]);
 	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
-	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
-	const [selectedValueType, setSelectedValueType] = useState<ValueType>('regular');
+	const [selectedTheme, setSelectedTheme] = useState<string>(() => {
+		const themeQueryParam = searchParams.get(QueryParam.theme);
+
+		return themeQueryParam && themes.includes(themeQueryParam) ? themeQueryParam : themes[0];
+	});
+	const [selectedValueType, setSelectedValueType] = useState<ValueType>(() => {
+		const adaptivityModeQueryParam = searchParams.get(QueryParam.adaptivityMode);
+
+		return adaptivityModeQueryParam === 'regular' || adaptivityModeQueryParam === 'compact'
+			? adaptivityModeQueryParam
+			: 'regular';
+	});
 	const [searchValue, setSearchValue] = useState('');
 	const searchValueDebounced = useDebounce(searchValue, 500);
 
@@ -71,7 +101,15 @@ const Tokens: FC = () => {
 	};
 
 	const changeThemeHandler = (event: React.ChangeEvent<HTMLSelectElement>) => {
-		setSelectedTheme(event.target.value);
+		const newTheme = event.target.value;
+
+		setSelectedTheme(newTheme);
+		navigate({ [QueryParam.theme]: newTheme });
+	};
+
+	const changeAdaptivityMode = (newAdaptivityMode: ValueType) => {
+		setSelectedValueType(newAdaptivityMode);
+		navigate({ [QueryParam.adaptivityMode]: newAdaptivityMode });
 	};
 
 	return (
@@ -93,7 +131,7 @@ const Tokens: FC = () => {
 				}}
 				valueTypesProps={{
 					value: selectedValueType,
-					onChange: setSelectedValueType,
+					onChange: changeAdaptivityMode,
 				}}
 				searchProps={{
 					value: searchValue,
