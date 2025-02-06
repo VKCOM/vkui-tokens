@@ -62,7 +62,7 @@ export const vkIdOkThemeDark: ThemeVkIdOkDarkDescription = {
 		colorIconAccent: '#EE8208',
 		colorIconAccentThemed: '#FFFFFF',
 		colorIconPrimary: '#FFFFFF',
-		colorBackgroundContent: '##1A1A1C',
+		colorBackgroundContent: '#1A1A1C',
 		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
 		colorBackgroundAccentTint: '#F38910',
 		colorBackgroundAccentAlternative: '#F38910',
