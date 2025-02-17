@@ -796,6 +796,7 @@ export const lightThemeBase: ThemeDescription = {
 	animationEasingPlatform: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
+	opacityActive: 0.72,
 	zIndexModal: 99,
 	zIndexPopout: 100,
 };
