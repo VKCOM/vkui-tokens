@@ -1,12 +1,12 @@
 export interface ToneValues {
 	/**
-	 * @desc Прозрачность дисейбленных элементов
+	 * @desc Прозрачность неинтерактивных элементов
 	 * @tags opacity
 	 */
 	opacityDisable: number;
 
 	/**
-	 * @desc Прозрачность дисейбленных элементов, подходящая под параметры доступности
+	 * @desc Прозрачность неинтерактивных элементов, подходящая под параметры доступности
 	 * @tags opacity
 	 */
 	opacityDisableAccessibility: number;
