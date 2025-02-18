@@ -43,7 +43,7 @@ export const vkIdOkThemeDark: ThemeVkIdOkDarkDescription = {
 	colors: {
 		...darkTheme.colors,
 		colorTextAccent: '#EE8208',
-		colorTextAccentThemed: '#EBEDF0',
+		colorTextAccentThemed: '#FFFFFF',
 		colorBackgroundAccent: {
 			normal: '#EE8208',
 			hover: '#F38910',
