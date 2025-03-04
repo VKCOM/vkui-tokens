@@ -466,7 +466,7 @@ export const fonts: BaseFonts = {
 			fontSize: 13,
 			lineHeight: 16,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase3,
+			fontWeight: fontWeightBase1,
 			textTransform: 'uppercase',
 		},
 	},
