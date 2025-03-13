@@ -129,8 +129,8 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 	fontHeadline3: {
 		regular: {
 			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
-			fontSize: 15,
-			lineHeight: 20,
+			fontSize: 13,
+			lineHeight: 16,
 			fontStyle: 'normal',
 		},
 	},
