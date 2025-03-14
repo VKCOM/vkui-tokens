@@ -134,6 +134,8 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorSidebarItemIconSecondary: ColorDescription;
 	// цвет второстепенного текста в сайдбаре
 	calendarColorSidebarItemTextSecondary: ColorDescription;
+	// цвет фона у элементов в сайдбаре
+	calendarColorSidebarItemBackground: ColorDescription;
 	// цвет фона у кнопки в сайдбаре
 	calendarColorSidebarComposeButtonBackground: ColorDescription;
 	// цвет иконки у кнопки в сайдбаре
