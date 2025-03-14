@@ -8,7 +8,7 @@ import { Elevation } from '@/interfaces/general/elevation';
 import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
 import { helpers } from '@/themeDescriptions/common';
 
-const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
+const fontFamilyFallbacks = 'apple-system, system-ui, "Helvetica Neue", Arial, sans-serif';
 const fontFamilyAccent = `VKSansDisplay, MailSans, ${fontFamilyFallbacks}`;
 const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 500;
