@@ -230,6 +230,12 @@ export const calendarTheme: ThemeCalendarDescription = {
 		calendarColorSidebarItemIconSecondary: '#87898F',
 		// цвет второстепенного текста в сайдбаре
 		calendarColorSidebarItemTextSecondary: '#87898F',
+		// цвет фона у элементов в сайдбаре
+		calendarColorSidebarItemBackground: {
+			normal: 'transparent',
+			hover: 'rgba(0, 16, 61, 0.04)',
+			active: 'rgba(0, 16, 61, 0.08)',
+		},
 		// цвет фона у кнопки в сайдбаре
 		calendarColorSidebarComposeButtonBackground: '#FFFFFF',
 		// цвет иконки у кнопки в сайдбаре
@@ -636,6 +642,12 @@ export const calendarDarkTheme: ThemeCalendarDarkDescription = {
 		calendarColorSidebarItemIconSecondary: '#9C9DA2',
 		// цвет второстепенного текста в сайдбаре
 		calendarColorSidebarItemTextSecondary: '#8C8E94',
+		// цвет фона у элементов в сайдбаре
+		calendarColorSidebarItemBackground: {
+			normal: 'transparent',
+			hover: 'rgba(255, 255, 255, 0.08)',
+			active: 'rgba(255, 255, 255, 0.12)',
+		},
 		// цвет фона у кнопки в сайдбаре
 		calendarColorSidebarComposeButtonBackground: '#FFFFFF',
 		// цвет иконки у кнопки в сайдбаре
