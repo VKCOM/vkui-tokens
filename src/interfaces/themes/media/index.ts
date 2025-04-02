@@ -103,6 +103,11 @@ type SocialColorsDescriptions = {
 
 interface MediaUniqTokens {
 	/**
+	 * @desc Главный заголовок фитчера
+	 * @tags font
+	 */
+	mediaFontMediaFeatureTitle: Adaptive<Font>;
+	/**
 	 * @desc Главный заголовок статьи или медиа-страницы
 	 * @tags font
 	 */

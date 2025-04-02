@@ -96,6 +96,29 @@ export const mediaTheme: ThemeMediaDescription = {
 	/**
 	 * ТИПОГРАФИКА
 	 */
+	mediaFontMediaFeatureTitle: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia1,
+			fontSize: 20,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia1,
+			fontSize: 32,
+			lineHeight: 40,
+			letterSpacing: '-0.005em',
+		},
+		compactX: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia1,
+			fontSize: 28,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+		},
+	},
 	mediaFontMediaTitle1: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
