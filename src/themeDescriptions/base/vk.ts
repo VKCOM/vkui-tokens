@@ -1,6 +1,7 @@
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias } from '@/build/helpers/tokenHelpers';
 import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
+import { Effects } from '@/interfaces/general/effects';
 import { Elevation } from '@/interfaces/general/elevation';
 import { Sizes } from '@/interfaces/general/geometry';
 import { Gradients } from '@/interfaces/general/gradients';
@@ -314,6 +315,10 @@ export const darkElevation: Elevation = {
 	elevation2: '0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)',
 	elevation3: '0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)',
 	elevation4: '0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)',
+};
+
+export const effects: Effects = {
+	blurM: 16,
 };
 
 type BaseFonts = Omit<
@@ -780,6 +785,7 @@ export const lightTheme: ThemeDescription = {
 	...lightColors,
 	...lightGradient,
 	...lightElevation,
+	...effects,
 	...fonts,
 	fontHeadline: alias('fontHeadline1'),
 	...sizes,
