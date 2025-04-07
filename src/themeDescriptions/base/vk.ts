@@ -53,11 +53,7 @@ export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescriptio
 					hover: states.background_secondary_alpha.hover,
 					active: states.background_secondary_alpha.active,
 				},
-				dark: {
-					normal: 'rgba(255, 255, 255, 0.10)',
-					hover: 'rgba(255, 255, 255, 0.12)',
-					active: 'rgba(255, 255, 255, 0.14)',
-				},
+				dark: 'rgba(255, 255, 255, 0.10)',
 			}[colorsScheme],
 			colorBackgroundTertiary: background.background_tertiary,
 			colorBackgroundTertiaryAlpha: {
