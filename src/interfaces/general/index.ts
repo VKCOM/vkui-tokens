@@ -4,6 +4,7 @@ import { StaticTokens, Tokens } from '@/interfaces/general/tools/tokenValue';
 
 import { Animations } from './animations';
 import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors';
+import { Effects } from './effects';
 import { Elevation } from './elevation';
 import { Sizes, SpacingSizes } from './geometry';
 import { Gradients } from './gradients';
@@ -79,6 +80,7 @@ export interface ThemeGeneral
 		Elevation,
 		Gradients,
 		Animations,
+		Effects,
 		SpacingSizes {}
 
 /**

@@ -797,6 +797,7 @@ export const lightThemeBase: ThemeDescription = {
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
 	opacityActive: 0.72,
+	blurM: 16,
 	zIndexModal: 99,
 	zIndexPopout: 100,
 };
