@@ -82,6 +82,14 @@ git config --local blame.ignoreRevsFile .git-blame-ignore-revs
   - vkBaseDark
   - vkCom
   - vkIOS
+  - vkAccessibility
+  - vkAccessibilityIOS
+  - vkIdOk
+  - vkIdOkIOS
+  - vkontakteCom
+  - vkontakteIOS
+  - vkontakteAndroid
+  - lego
 - _paradigmBase_
   - paradigmBaseDark
   - calendar
