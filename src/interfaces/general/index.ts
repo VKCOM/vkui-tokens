@@ -1,9 +1,12 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
+
+import { StaticTokens, Tokens } from '@/interfaces/general/tools/tokenValue';
 
 import { Animations } from './animations';
 import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors';
+import { Effects } from './effects';
 import { Elevation } from './elevation';
-import { Sizes } from './geometry';
+import { Sizes, SpacingSizes } from './geometry';
 import { Gradients } from './gradients';
 import { ToneValues } from './toneValues';
 import { Adaptive } from './tools';
@@ -11,8 +14,6 @@ import { NamifyObject } from './tools/cssVars';
 import { StringifyObject } from './tools/utils';
 import { Fonts, TypographyBaseProps } from './typography';
 import { ZIndex } from './zIndex';
-import ColorScheme = Property.ColorScheme;
-import { StaticTokens, Tokens } from '@/interfaces/general/tools/tokenValue';
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 
@@ -78,7 +79,9 @@ export interface ThemeGeneral
 		TypographyBaseProps,
 		Elevation,
 		Gradients,
-		Animations {}
+		Animations,
+		Effects,
+		SpacingSizes {}
 
 /**
  * Интерфейс описания Темы (в этом типе описываются все темы дизайн-системы)
@@ -105,7 +108,7 @@ export type PixelifyTheme<T extends Partial<Record<keyof T, any>> = StaticTokens
 		Pick<T, Extract<'breakpoints', keyof T>> & {
 			themeType: 'pixelify';
 			themeName: string;
-			colorScheme: ColorScheme;
+			colorScheme: Property.ColorScheme;
 		};
 
 /**

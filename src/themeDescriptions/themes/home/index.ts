@@ -20,17 +20,10 @@ const localHomeOverValues: ThemeHomeOverValues = {
 	homeFontWeightBold: '700',
 };
 
-const elevations = {
-	elevation1: '0px 4px 12px rgba(18, 25, 43, 0.12)',
-	elevation2: '0px 4px 20px rgba(18, 25, 43, 0.2)',
-	elevation3: '0px 16px 48px rgba(18, 25, 43, 0.28)',
-};
-
 export const homeTheme: ThemeHomeDescription = {
 	...lightTheme,
 	themeName: 'home',
 	themeNameBase: 'home',
-	...elevations,
 	...localHomeOverValues,
 	colors: {
 		...lightTheme.colors,
@@ -41,7 +34,6 @@ export const homeTheme: ThemeHomeDescription = {
 export const homeDarkTheme: ThemeHomeDarkDescription = {
 	...darkTheme,
 	themeName: 'homeDark',
-	...elevations,
 	...localHomeOverValues,
 	colors: {
 		...darkTheme.colors,

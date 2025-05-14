@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { compileTypeScript } from '@/build/compilers/ts/compileTypeScript';
 
 describe('compileTypeScript', () => {

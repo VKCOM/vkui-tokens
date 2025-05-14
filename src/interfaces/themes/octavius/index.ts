@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ThemeCssVars } from '@/interfaces/general';
 import {
@@ -110,12 +110,16 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorButtonBackgroundAlpha: ColorDescription;
 	octaviusColorButtonEmptyStateText: ColorDescription;
 	octaviusColorButtonEmptyStateBackgroundAlpha: ColorDescription;
+	octaviusColorSidebarWidgetBackgroundAlpha: ColorDescription;
 
 	// Фон страницы (отличается от colorBackground)
 	octaviusColorBackground: ColorDescription;
 	octaviusColorOverlayBackground: ColorDescription;
 
-	// Токены синей шапки
+	// Токены текстов и иконок действий
+	octaviusColorActionArchive: ColorDescription;
+
+	// Токены шапки
 	octaviusColorHeaderBackground: ColorDescription;
 	octaviusColorHeaderButtonText: ColorDescription;
 	octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
@@ -126,6 +130,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderTextSecondary: ColorDescription;
 	octaviusColorHeaderProgress: ColorDescription;
 	octaviusColorHeaderFilterTextAlpha: ColorDescription;
+	octaviusColorHeaderTabActiveThemedAlpha: ColorDescription;
+	octaviusColorHeaderTabTextActiveThemed: ColorDescription;
 
 	// Поиск
 	octaviusColorHeaderSearchIcon: ColorDescription;
@@ -136,6 +142,8 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorHeaderSearchChipBackground: ColorDescription;
 	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
 	octaviusColorHeaderSearchChipBorderEditableAlpha: ColorDescription;
+	octaviusColorPortalSearchBackgroundAlpha: ColorDescription;
+	octaviusColorPortalSearchIconThemedAlpha: ColorDescription;
 
 	// Токены сайдбара
 	octaviusColorSidebarItemBackgroundAlpha: ColorDescription;
@@ -229,6 +237,15 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorIconGames: ColorDescription;
 	octaviusColorIconReceipts: ColorDescription;
 
+	octaviusColorTextFees: ColorDescription;
+	octaviusColorTextFinance: ColorDescription;
+	octaviusColorTextSocial: ColorDescription;
+	octaviusColorTextMailings: ColorDescription;
+	octaviusColorTextToMyself: ColorDescription;
+	octaviusColorTextNews: ColorDescription;
+	octaviusColorTextSchool: ColorDescription;
+	octaviusColorTextGames: ColorDescription;
+
 	// Другие стили
 	/**
 	 * Цвет текста подписи под картинкой пустого состояния.
@@ -252,6 +269,19 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	octaviusColorBackgroundNegativeTintAlpha: ColorDescription;
 	octaviusColorBackgroundPositiveTintAlpha: ColorDescription;
 	octaviusColorButtonBackgroundContrastAlpha: ColorDescription;
+
+	// Токены для снекбара
+	octaviusColorSnackbarIconPositive: ColorDescription;
+	octaviusColorSnackbarIconNegative: ColorDescription;
+	octaviusColorSnackbarIconAccent: ColorDescription;
+	octaviusColorSnackbarIconSecondary: ColorDescription;
+	octaviusColorSnackbarIconWarning: ColorDescription;
+
+	octaviusColorSnackbarTextAccent: ColorDescription;
+	octaviusColorSnackbarTextContrast: ColorDescription;
+
+	octaviusColorSnackbarBackground: ColorDescription;
+	octaviusColorSnackbarTransparent: ColorDescription;
 }
 
 export type OctaviusLocalColors = {

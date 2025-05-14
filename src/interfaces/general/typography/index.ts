@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 type TLength = string | 0;
 
@@ -18,6 +18,30 @@ export type Font = {
  * Переменные, отвечающие за группы переменных, отвечающих за шрифты
  */
 export interface Fonts {
+	/**
+	 * @desc Крупный выразительный текст, уровень 1
+	 * @tags font
+	 */
+	fontDisplayTitle1: Font;
+
+	/**
+	 * @desc Крупный выразительный текст, уровень 2
+	 * @tags font
+	 */
+	fontDisplayTitle2: Font;
+
+	/**
+	 * @desc Крупный выразительный текст, уровень 3
+	 * @tags font
+	 */
+	fontDisplayTitle3: Font;
+
+	/**
+	 * @desc Крупный выразительный текст, уровень 4
+	 * @tags font
+	 */
+	fontDisplayTitle4: Font;
+
 	/**
 	 * @desc Основной заголовок, уровень 1
 	 * @tags font
@@ -81,7 +105,7 @@ export interface Fonts {
 	fontFootnote: Font;
 
 	/**
-	 * @desc Текст подписей строчными буквами
+	 * @desc Текст подписей прописными буквами
 	 * @tags font
 	 */
 	fontFootnoteCaps: Font;
@@ -93,7 +117,7 @@ export interface Fonts {
 	fontCaption1: Font;
 
 	/**
-	 * @desc Текст для подсказок строчными буквами, уровень 1
+	 * @desc Текст для подсказок прописными буквами, уровень 1
 	 * @tags font
 	 */
 	fontCaption1Caps: Font;
@@ -105,7 +129,7 @@ export interface Fonts {
 	fontCaption2: Font;
 
 	/**
-	 * @desc Текст для подсказок строчными буквами, уровень 2
+	 * @desc Текст для подсказок прописными буквами, уровень 2
 	 * @tags font
 	 */
 	fontCaption2Caps: Font;
@@ -117,7 +141,7 @@ export interface Fonts {
 	fontCaption3: Font;
 
 	/**
-	 * @desc Текст для подсказок строчными буквами, уровень 3
+	 * @desc Текст для подсказок прописными буквами, уровень 3
 	 * @tags font
 	 */
 	fontCaption3Caps: Font;
@@ -127,6 +151,12 @@ export interface Fonts {
  * Глобальные переменные типографии, которые можно использовать вне групп
  */
 export interface TypographyBaseProps {
+	/**
+	 * @desc Фолбеки на случай пока грузится шрифт или если шрифт не загрузился
+	 * @tags font
+	 */
+	fontFamilyFallbacks: Property.FontFamily;
+
 	/**
 	 * @desc Семейство шрифтов для заголовков
 	 * @tags font

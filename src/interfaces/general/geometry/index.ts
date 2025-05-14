@@ -48,6 +48,12 @@ export interface Sizes {
 	sizeBorderRadius: number;
 
 	/**
+	 * @desc Значение радиуса закругления для круглых кнопок
+	 * @tags size, stroke
+	 */
+	sizeBorderRadiusRounded: number;
+
+	/**
 	 * @desc Legacy
 	 * @tags size, legacy
 	 * @deprecated
@@ -67,10 +73,22 @@ export interface Sizes {
 	sizeBorderRadiusPromo: number;
 
 	/**
+	 * @desc Минимальная высота ячейки
+	 * @tags size, component
+	 */
+	sizeCellHeight: number;
+
+	/**
 	 * @desc Высота полей ввода, селектов и других похожих компонентов
 	 * @tags size, component
 	 */
 	sizeFieldHeight: number;
+
+	/**
+	 * @desc Высота очень маленьких кнопок
+	 * @tags size, component
+	 */
+	sizeButtonExtraSmallHeight: number;
 
 	/**
 	 * @desc Высота маленьких кнопок
@@ -409,4 +427,85 @@ export interface Sizes {
 	 * @tags size, component
 	 */
 	sizeSubnavigationBarPaddingVertical: number;
+
+	/**
+	 * @desc Размер границ для экранов с разрешением 1х
+	 * @tags size, component
+	 */
+	sizeBorder1x: number;
+
+	/**
+	 * @desc Размер границ для экранов с разрешением 3х
+	 * @tags size, component
+	 */
+	sizeBorder2x: number;
+
+	/**
+	 * @desc Размер границ для экранов с разрешением 3х
+	 * @tags size, component
+	 */
+	sizeBorder3x: number;
+}
+
+export interface SpacingSizes {
+	/**
+	 * @desc Стандартный токен размера 3xs для отступов
+	 * @tags size
+	 * @deprecated
+	 */
+	spacingSize3Xs: number;
+
+	/**
+	 * @desc Стандартный токен размера 2xs для отступов
+	 * @tags size
+	 */
+	spacingSize2Xs: number;
+
+	/**
+	 * @desc Стандартный токен размера xs для отступов
+	 * @tags size
+	 */
+	spacingSizeXs: number;
+
+	/**
+	 * @desc Стандартный токен размера s для отступов
+	 * @tags size
+	 */
+	spacingSizeS: number;
+
+	/**
+	 * @desc Стандартный токен размера m для отступов
+	 * @tags size
+	 */
+	spacingSizeM: number;
+
+	/**
+	 * @desc Стандартный токен размера l для отступов
+	 * @tags size
+	 */
+	spacingSizeL: number;
+
+	/**
+	 * @desc Стандартный токен размера xl для отступов
+	 * @tags size
+	 */
+	spacingSizeXl: number;
+
+	/**
+	 * @desc Стандартный токен размера 2xl для отступов
+	 * @tags size
+	 */
+	spacingSize2Xl: number;
+
+	/**
+	 * @desc Стандартный токен размера 3xl для отступов
+	 * @tags size
+	 */
+	spacingSize3Xl: number;
+
+	/**
+	 * @desc Стандартный токен размера 4xl для отступов
+	 * @tags size
+	 */
+	spacingSize4Xl: number;
 }

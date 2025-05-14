@@ -1,3 +1,4 @@
+import { describe, expect, it } from '@jest/globals';
 import { stripIndent } from 'common-tags';
 
 import { ThemeCssVarsWide } from '@/interfaces/general';

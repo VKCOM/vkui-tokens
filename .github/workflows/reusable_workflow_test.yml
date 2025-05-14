@@ -1,0 +1,56 @@
+name: 'Reusable workflow / Unit tests'
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        description: 'The branch, tag or SHA to checkout'
+        default: ${{ github.ref }}
+        required: false
+        type: string
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Run unit tests
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+
+      - name: Node setup
+        uses: ./.github/actions/node-setup
+
+      - name: Run tests
+        run: yarn run test:ci
+
+      - name: Upload test artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-output
+          path: |
+            test-results.json
+            .nyc_output/coverage-final.json
+
+  deploy_test_coverage:
+    if: ${{ !cancelled() && (success() || failure()) }}
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download test artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: test-output
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          use_oidc: true
+          files: .nyc_output/coverage-final.json
+          fail_ci_if_error: true

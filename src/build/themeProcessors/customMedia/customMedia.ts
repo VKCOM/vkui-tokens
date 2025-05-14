@@ -14,9 +14,7 @@ import {
 export const getUsingViewports = <Vt extends ViewportsTuple>(
 	breakpoints: Breakpoints<Vt>['breakpoints'],
 ): Vt => {
-	const usingViewports: Vt[number][] = [
-		...(Object.keys(breakpoints) as (keyof typeof breakpoints)[]),
-	];
+	const usingViewports: Vt[number][] = Object.keys(breakpoints) as (keyof typeof breakpoints)[];
 
 	return usingViewports.sort((a, b) =>
 		viewports.indexOf(a) > viewports.indexOf(b) ? 1 : -1,
@@ -46,14 +44,13 @@ export function processCustomMedia<Vt extends ViewportsTuple = DefaultViewports>
 	usingViewports.forEach((viewport, index, array) => {
 		if (viewport !== 'touch') {
 			// больше теущего брейкпоинта
-			result[
-				getCustomMediaKey(viewport, 'from')
-			] = `(min-width: ${breakpoints[viewport].breakpoint}px)`;
+			result[getCustomMediaKey(viewport, 'from')] =
+				`(min-width: ${breakpoints[viewport].breakpoint}px)`;
 
 			// между текущим и следущим брейкпоинтом
 			result[getCustomMediaKey(viewport)] = `(min-width: ${
 				breakpoints[viewport].breakpoint
-			}px) and (max-width: ${breakpoints[array[index + 1]]?.breakpoint - 1}px)`;
+			}px) and (max-width: ${(breakpoints[array[index + 1]]?.breakpoint ?? 0) - 1}px)`;
 		}
 
 		if (viewport === 'touch') {

@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { flatifyTheme } from '@/build/helpers/flatifyTheme';
 import { ThemeDescription } from '@/interfaces/general';
 

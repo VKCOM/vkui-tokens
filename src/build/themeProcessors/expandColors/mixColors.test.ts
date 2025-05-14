@@ -1,4 +1,5 @@
-import { Property } from 'csstype';
+import { describe, expect, it } from '@jest/globals';
+import type { Property } from 'csstype';
 
 import { mixColors } from './mixColors';
 

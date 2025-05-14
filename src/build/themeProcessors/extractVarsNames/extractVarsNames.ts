@@ -137,11 +137,11 @@ function processVarNaming({
 						name,
 						value: valueConstruct(name, value),
 						originalValue: value,
-				  } as any)
+					} as any)
 				: ({
 						name,
 						value: valueConstruct(name),
-				  } as any);
+					} as any);
 	});
 
 	return result;

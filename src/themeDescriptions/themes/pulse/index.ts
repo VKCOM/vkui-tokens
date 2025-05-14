@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import {
 	AllowedParadigmColorDescriptions,
@@ -74,6 +74,7 @@ const allowedParadigmColors: AllowedParadigmColorTokens[] = [
 	'colorAccentOrange',
 	'colorAccentPurple',
 	'colorAccentViolet',
+	'colorAccentRaspberryPink',
 	'colorAccentSecondary',
 	'colorActionSheetText',
 	'colorHeaderBackground',

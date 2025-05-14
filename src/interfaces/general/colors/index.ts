@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ColorsDescription, ColorsScheme } from '@/interfaces/general';
 
@@ -46,6 +46,12 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundAccentThemed: ColorDescription;
 
 	/**
+	 * @desc Акцентный фон с прозрачностью, который меняется на белый в темной теме
+	 * @tags color, background, themed
+	 */
+	colorBackgroundAccentThemedAlpha: ColorDescription;
+
+	/**
 	 * @desc Тонированный акцентный фон
 	 * @tags color, background
 	 */
@@ -68,6 +74,18 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, background
 	 */
 	colorBackgroundContent: ColorDescription;
+
+	/**
+	 * @desc Цвет фона с прозрачностью
+	 * @tags color, background
+	 */
+	colorBackgroundContentAlpha: ColorDescription;
+
+	/**
+	 * @desc Цвет фона, противоположный фону контента.
+	 * @tags color, background
+	 */
+	colorBackgroundContentInverse: ColorDescription;
 
 	/**
 	 * @desc Второстепенный цвет фона
@@ -112,6 +130,12 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundContrastInverse: ColorDescription;
 
 	/**
+	 * @desc Контрастный фон, перекрашивается в серый на тёмной теме
+	 * @tags color, background
+	 */
+	colorBackgroundContrastThemed: ColorDescription;
+
+	/**
 	 * @desc Фон для всплывающих окон
 	 * @tags color, background
 	 */
@@ -124,16 +148,22 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundModalInverse: ColorDescription;
 
 	/**
-	 * @desc Цвет фона предупреждающих элементов
-	 * @tags color, background
-	 */
-	colorBackgroundWarning: ColorDescription;
-
-	/**
 	 * @desc Фон для использования в позитивных сценариях работы
 	 * @tags color, background
 	 */
 	colorBackgroundPositive: ColorDescription;
+
+	/**
+	 * @desc Тонированный фон для использования в позитивных сценариях работы
+	 * @tags color, background
+	 */
+	colorBackgroundPositiveTint: ColorDescription;
+
+	/**
+	 * @desc Цвет фона предупреждающих элементов
+	 * @tags color, background
+	 */
+	colorBackgroundWarning: ColorDescription;
 
 	/**
 	 * @desc Фон для ошибок и использования в негативных сценариях работы
@@ -148,10 +178,10 @@ export interface ColorsDescriptionStruct {
 	colorBackgroundNegativeTint: ColorDescription;
 
 	/**
-	 * @desc Тонированный фон для использования в позитивных сценариях работы
+	 * @desc Тонированный фон для важной информации в нейтральных сценариях работы
 	 * @tags color, background
 	 */
-	colorBackgroundPositiveTint: ColorDescription;
+	colorBackgroundInfoTint: ColorDescription;
 
 	/**
 	 * @desc Фон для полей ввода, селектов и других подобных компонентов
@@ -185,6 +215,12 @@ export interface ColorsDescriptionStruct {
 	colorTextPrimary: ColorDescription;
 
 	/**
+	 * @desc Основной цвет текста с прозрачностью
+	 * @tags color, text, alpha
+	 */
+	colorTextPrimaryAlpha: ColorDescription;
+
+	/**
 	 * @desc Основной цвет текста не меняется в зависимости от темы
 	 * @tags color, text
 	 */
@@ -195,6 +231,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, text
 	 */
 	colorTextSecondary: ColorDescription;
+
+	/**
+	 * @desc Второстепенный цвет текста с прозрачностью
+	 * @tags color, text, alpha
+	 */
+	colorTextSecondaryAlpha: ColorDescription;
 
 	/**
 	 * @desc Цвет текста подзаголовков
@@ -243,6 +285,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, text, themed
 	 */
 	colorTextLinkThemed: ColorDescription;
+
+	/**
+	 * @desc Третичный цвет текста ссылок
+	 * @tags color, text
+	 */
+	colorTextLinkTint: ColorDescription;
 
 	/**
 	 * @desc Цвет текста посещенных ссылок
@@ -348,6 +396,12 @@ export interface ColorsDescriptionStruct {
 	colorIconPositive: ColorDescription;
 
 	/**
+	 * @desc Цвет иконок для предупреждений
+	 * @tags color, icon
+	 */
+	colorIconWarning: ColorDescription;
+
+	/**
 	 * @desc Цвет иконок для ошибок и других негативных сценариев
 	 * @tags color, icon
 	 */
@@ -379,10 +433,16 @@ export interface ColorsDescriptionStruct {
 	colorStrokeNegative: ColorDescription;
 
 	/**
-	 * @desc Контрастный цвет для обводки. Не меняется в зивисимости от темы
+	 * @desc Контрастный цвет для обводки. Не меняется в зависимости от темы
 	 * @tags color, stroke
 	 */
 	colorStrokeContrast: ColorDescription;
+
+	/**
+	 * @desc Нейтральный цвет для обводки.
+	 * @tags color, stroke
+	 */
+	colorStrokePrimary: ColorDescription;
 
 	/**
 	 * @desc Цвет обводки для изображений с прозрачностью
@@ -446,16 +506,46 @@ export interface ColorsDescriptionStruct {
 	colorAccentRed: ColorDescription;
 
 	/**
-	 * @desc Палитра цветов. Зелёный цвет
+	 * @desc Палитра цветов. Огненно оранжевый цвет
 	 * @tags color, palette
 	 */
-	colorAccentGreen: ColorDescription;
+	colorAccentOrangeFire: ColorDescription;
 
 	/**
 	 * @desc Палитра цветов. Оранжевый цвет
 	 * @tags color, palette
 	 */
 	colorAccentOrange: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Нежно оранжевый цвет
+	 * @tags color, palette
+	 */
+	colorAccentOrangePeach: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Лаймовый цвет
+	 * @tags color, palette
+	 */
+	colorAccentLime: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Зелёный цвет
+	 * @tags color, palette
+	 */
+	colorAccentGreen: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Циановый цвет
+	 * @tags color, palette
+	 */
+	colorAccentCyan: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Лазурный цвет
+	 * @tags color, palette
+	 */
+	colorAccentAzure: ColorDescription;
 
 	/**
 	 * @desc Палитра цветов. Фиолетовый цвет
@@ -470,6 +560,18 @@ export interface ColorsDescriptionStruct {
 	colorAccentViolet: ColorDescription;
 
 	/**
+	 * @desc Палитра цветов. Розово-малиновый цвет
+	 * @tags color, palette
+	 */
+	colorAccentRaspberryPink: ColorDescription;
+
+	/**
+	 * @desc Палитра цветов. Розовый цвет
+	 * @tags color, palette
+	 */
+	colorAccentPink: ColorDescription;
+
+	/**
 	 * @desc Второстепенный акцентный цвет для отдельных проектов
 	 * @tags color, palette
 	 */
@@ -481,6 +583,12 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, overlay
 	 */
 	colorOverlayPrimary: ColorDescription;
+
+	/**
+	 * @desc Вторичный цвет для подложек оверлеев
+	 * @tags color, overlay
+	 */
+	colorOverlaySecondary: ColorDescription;
 
 	/**
 	 * @desc Фон для компонента Avatar. Не прозрачный
@@ -531,6 +639,12 @@ export interface ColorsDescriptionStruct {
 	colorWriteBarInputBackground: ColorDescription;
 
 	/**
+	 * @desc Цвет фона поля ввода в компоненте WriteBar
+	 * @tags color, component
+	 */
+	colorWriteBarInputBorder: ColorDescription;
+
+	/**
 	 * @desc Цвет фона поля ввода в компоненте WriteBar с прозрачностью
 	 * @tags color, component, alpha
 	 */
@@ -577,6 +691,30 @@ export interface ColorsDescriptionStruct {
 	 * @tags color, component, background
 	 */
 	colorSegmentedControl: ColorDescription;
+
+	/**
+	 * @desc Цвет текста для неактивного таба в таббаре
+	 * @tags color, component, background
+	 */
+	colorTabbarTextInactive: ColorDescription;
+
+	/**
+	 * @desc Цвет текста для кнопок
+	 * @tags color
+	 */
+	colorButtonText: ColorDescription;
+
+	/**
+	 * @desc Цвет иконок для кнопок
+	 * @tags color, icon
+	 */
+	colorButtonIcon: ColorDescription;
+
+	/**
+	 * @desc Цвет обводки для кнопок
+	 * @tags color, stroke
+	 */
+	colorButtonStroke: ColorDescription;
 
 	// Themed цвета, в тёмной теме становится белыми
 }

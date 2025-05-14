@@ -6,7 +6,22 @@ import tokensData from '@/public/static/data/tokensData.json';
 import { useDebounce } from '@/shared/hooks/useDebounce';
 import { ChipOption, Tokens as TokensType, ValueType } from '@/shared/types';
 
+function isBaseTheme(themeName: string): boolean {
+	return themeName.startsWith('vkBase') || themeName.startsWith('paradigmBase');
+}
+
 const themes = Object.keys(tokensData);
+
+themes.sort((first: string, second: string) => {
+	const firstBase = isBaseTheme(first);
+	const secondBase = isBaseTheme(second);
+
+	if ((firstBase && secondBase) || (!firstBase && !secondBase)) {
+		return first > second ? 1 : -1;
+	}
+
+	return firstBase ? -1 : 1;
+});
 
 function transformTags(tokens: TokensType) {
 	const tokensKeys = Object.keys(tokens);

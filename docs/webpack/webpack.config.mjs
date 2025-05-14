@@ -1,6 +1,10 @@
-const path = require('path');
+import path from 'path';
+import RemarkHTML from 'remark-html';
+import { fileURLToPath } from 'node:url';
 
-module.exports = function () {
+export default function () {
+	const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 	const modules = {
 		ts: {
 			test: /\.ts(x?)$/,
@@ -32,6 +36,22 @@ module.exports = function () {
 				},
 			],
 		},
+		md: {
+			test: /\.md$/,
+			use: [
+			  {
+				loader: 'html-loader',
+			  },
+			  {
+				loader: 'remark-loader',
+				options: {
+				  remarkOptions: {
+					plugins: [RemarkHTML],
+				  },
+				},
+			  },
+			],
+		  },
 	};
 
 	const resolve = {

@@ -1,6 +1,7 @@
 import 'css.escape';
 
-import { deepStrictEqual } from 'assert';
+import { deepStrictEqual } from 'node:assert';
+
 import { stripIndent } from 'common-tags';
 
 import { getAllButColors } from '@/build/helpers/getAllButColors';
@@ -100,7 +101,7 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 	theme: PT,
 	mode: CompileStylesMode = 'default',
 	themeBase?: PT,
-	// eslint-disable-next-line sonarjs/cognitive-complexity
+	// eslint-disable-next-line sonarjs/cognitive-complexity, max-params
 ): string => {
 	const classicCssType = isClassicCssType(format);
 	const prefix = getPrefix(format, theme);

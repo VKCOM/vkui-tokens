@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { Adaptive } from '@/interfaces/general/tools';
 import { ViewportsOrdered } from '@/interfaces/general/tools/viewports';

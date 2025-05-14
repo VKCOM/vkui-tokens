@@ -1,3 +1,5 @@
+import { describe, expect, it } from '@jest/globals';
+
 import { extractCssVarsStrict } from '@/build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict';
 import { ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
 import { ParadigmThemeCssVars, ParadigmThemeCssVarsWide } from '@/interfaces/namespaces/paradigm';
@@ -33,7 +35,7 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		const expectedData = { ...{ breakpoints: { ...theme.breakpoints } } };
+		const expectedData = { breakpoints: { ...theme.breakpoints } };
 
 		expect(extractCssVarsStrict(theme as ThemeCssVarsWide<Viewports>)).toStrictEqual(expectedData);
 	});

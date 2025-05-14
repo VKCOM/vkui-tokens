@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { Theme, ThemeCssVars, ThemeCssVarsWide, ThemeDescription } from '@/interfaces/general';
 import {
@@ -118,6 +118,19 @@ export interface LocalParadigmColorsDescriptionStruct {
 	 * @tags color, background, themed
 	 */
 	colorBackgroundPositiveTintThemed: ColorDescription;
+
+	colorTooltipBackgroundBlueTint: ColorDescription;
+	colorTooltipBackgroundGreenTint: ColorDescription;
+	colorTooltipBackgroundOrangeTint: ColorDescription;
+	colorTooltipBackgroundPurpleTint: ColorDescription;
+	colorTooltipTextBlueThemed: ColorDescription;
+	colorTooltipTextGreenThemed: ColorDescription;
+	colorTooltipTextOrangeThemed: ColorDescription;
+	colorTooltipTextPurpleThemed: ColorDescription;
+
+	// Цвета для Байта
+	colorBackgroundSky: ColorDescription;
+	colorBackgroundSkyAlpha: ColorDescription;
 }
 
 export type ParadigmLocalColors = {

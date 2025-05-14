@@ -6,33 +6,32 @@ on:
       - master
   pull_request:
 
+concurrency:
+  group: test-${{ github.ref_name }}
+  cancel-in-progress: true
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - run: yarn
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - run: npm run lint
+
   test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      - run: yarn
-      - run: npm run test:ci
+    uses: ./.github/workflows/reusable_workflow_test.yml
+
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - run: yarn
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - run: npm run build
       - run: npm run docs:prepare-data
       - run: npm run docs:build

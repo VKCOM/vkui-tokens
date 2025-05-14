@@ -1,5 +1,6 @@
+import path from 'node:path';
+
 import fs from 'fs-extra';
-import path from 'path';
 
 import {
 	writeCssVarsJsUtils,
@@ -41,7 +42,7 @@ console.log('успешно\n');
 console.log('Начинаем процесс компиляции тем...\n');
 
 const expandedThemes = themes.map(expandAll);
-const expandedThemesMap: Record<string, typeof expandedThemes[0]> = {};
+const expandedThemesMap: Record<string, (typeof expandedThemes)[0]> = {};
 
 for (const expandedThemeObject of expandedThemes) {
 	expandedThemesMap[expandedThemeObject.theme.themeName] = expandedThemeObject;

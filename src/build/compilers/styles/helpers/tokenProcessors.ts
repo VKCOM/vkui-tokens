@@ -11,7 +11,7 @@ export const EStyleTypes = {
 	STYL: 'styl',
 } as const;
 
-export type Formats = typeof EStyleTypes[keyof typeof EStyleTypes];
+export type Formats = (typeof EStyleTypes)[keyof typeof EStyleTypes];
 
 export const varDeclarations = {
 	[EStyleTypes.CSS]: (prop, prefix = '') => `--${prefix}${unCamelcasify(prop, '_')}`,

@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { ThemeCssVars } from '@/interfaces/general';
 import {
@@ -19,19 +19,107 @@ export interface ThemeCalendarOverValues {
 	calendarSizeBorderRadiusSmall: number;
 	calendarSizeBorderRadiusMedium: number;
 	calendarSizeBorderRadiusLarge: number;
+	// маска на фоновые картинки тем
+	calendarImageOverlayBackground: string;
+	// тень у формы
+	calendarElevationEventForm: string;
+	// фоновая картинка
+	calendarImageBackground: string;
 }
 
 export interface LocalCalendarColorDescriptionStruct {
-	calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
 	calendarColorBackgroundAccentTintThemed: ColorDescription;
 	calendarColorButtonGroupBackgroundPositiveTint: ColorDescription;
 	calendarColorButtonGroupBackgroundNegativeTint: ColorDescription;
 	calendarColorButtonGroupBackgroundAccentTint: ColorDescription;
 	calendarColorButtonGroupTextPositive: ColorDescription;
 	calendarColorButtonGroupTextNegative: ColorDescription;
+
+	// #region Event
+	// Цвета событий
+	calendarColorEventRed: ColorDescription;
+	calendarColorEventSalmon: ColorDescription;
+	calendarColorEventOrange: ColorDescription;
+	calendarColorEventYellow: ColorDescription;
+	calendarColorEventLemon: ColorDescription;
+	calendarColorEventLime: ColorDescription;
+	calendarColorEventGrass: ColorDescription;
+	calendarColorEventMint: ColorDescription;
+	calendarColorEventSea: ColorDescription;
+	calendarColorEventTurquoise: ColorDescription;
+	calendarColorEventLightSky: ColorDescription;
+	calendarColorEventMainSky: ColorDescription;
+	calendarColorEventSky: ColorDescription;
+	calendarColorEventMidnightSky: ColorDescription;
+	calendarColorEventViolet: ColorDescription;
+	calendarColorEventPurple: ColorDescription;
+	calendarColorEventMagenta: ColorDescription;
+	calendarColorEventPink: ColorDescription;
+	// #endregion Event
+
+	// #region Text-Event
+	calendarColorEventTextRed: ColorDescription;
+	calendarColorEventTextOrange: ColorDescription;
+	calendarColorEventTextYellow: ColorDescription;
+	calendarColorEventTextLemon: ColorDescription;
+	calendarColorEventTextLime: ColorDescription;
+	calendarColorEventTextGrass: ColorDescription;
+	calendarColorEventTextMint: ColorDescription;
+	calendarColorEventTextSea: ColorDescription;
+	calendarColorEventTextTurquoise: ColorDescription;
+	calendarColorEventTextLightSky: ColorDescription;
 	calendarColorEventTextMainSky: ColorDescription;
-	calendarColorBackgroundMainSkyTint: ColorDescription;
+	calendarColorEventTextSky: ColorDescription;
+	calendarColorEventTextMidnightSky: ColorDescription;
+	calendarColorEventTextViolet: ColorDescription;
+	calendarColorEventTextPurple: ColorDescription;
+	calendarColorEventTextMagenta: ColorDescription;
+	calendarColorEventTextPink: ColorDescription;
+	// #endregion Text-Event
+
+	// #region Background-TintAlpha20-Alpha
+	calendarColorBackgroundRedTintAlpha20: ColorDescription;
+	calendarColorBackgroundSalmonTintAlpha20: ColorDescription;
+	calendarColorBackgroundOrangeTintAlpha20: ColorDescription;
+	calendarColorBackgroundYellowTintAlpha20: ColorDescription;
+	calendarColorBackgroundLemonTintAlpha20: ColorDescription;
+	calendarColorBackgroundLimeTintAlpha20: ColorDescription;
+	calendarColorBackgroundGrassTintAlpha20: ColorDescription;
+	calendarColorBackgroundMintTintAlpha20: ColorDescription;
+	calendarColorBackgroundSeaTintAlpha20: ColorDescription;
+	calendarColorBackgroundTurquoiseTintAlpha20: ColorDescription;
+	calendarColorBackgroundLightSkyTintAlpha20: ColorDescription;
 	calendarColorBackgroundMainSkyTintAlpha20: ColorDescription;
+	calendarColorBackgroundSkyTintAlpha20: ColorDescription;
+	calendarColorBackgroundMidnightSkyTintAlpha20: ColorDescription;
+	calendarColorBackgroundVioletTintAlpha20: ColorDescription;
+	calendarColorBackgroundPurpleTintAlpha20: ColorDescription;
+	calendarColorBackgroundMagentaTintAlpha20: ColorDescription;
+	calendarColorBackgroundPinkTintAlpha20: ColorDescription;
+	calendarColorBackgroundPositiveTintAlpha4: ColorDescription;
+	// #endregion Background-TintAlpha20
+
+	// #region Background-Tint
+	// Тинтовые цвета событий без прозрачности. Нужны для растягивания событий, т.к. если под растягиваемым событие есть событие того же цвета, они сливаются
+	calendarColorBackgroundRedTint: ColorDescription;
+	calendarColorBackgroundSalmonTint: ColorDescription;
+	calendarColorBackgroundOrangeTint: ColorDescription;
+	calendarColorBackgroundYellowTint: ColorDescription;
+	calendarColorBackgroundLemonTint: ColorDescription;
+	calendarColorBackgroundLimeTint: ColorDescription;
+	calendarColorBackgroundGrassTint: ColorDescription;
+	calendarColorBackgroundMintTint: ColorDescription;
+	calendarColorBackgroundSeaTint: ColorDescription;
+	calendarColorBackgroundTurquoiseTint: ColorDescription;
+	calendarColorBackgroundLightSkyTint: ColorDescription;
+	calendarColorBackgroundMainSkyTint: ColorDescription;
+	calendarColorBackgroundSkyTint: ColorDescription;
+	calendarColorBackgroundMidnightSkyTint: ColorDescription;
+	calendarColorBackgroundVioletTint: ColorDescription;
+	calendarColorBackgroundPurpleTint: ColorDescription;
+	calendarColorBackgroundMagentaTint: ColorDescription;
+	calendarColorBackgroundPinkTint: ColorDescription;
+	// #endregion Background-Tint
 
 	// Фон страницы (отличается от colorBackground)
 	calendarColorBackground: ColorDescription;
@@ -46,6 +134,8 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorSidebarItemIconSecondary: ColorDescription;
 	// цвет второстепенного текста в сайдбаре
 	calendarColorSidebarItemTextSecondary: ColorDescription;
+	// цвет фона у элементов в сайдбаре
+	calendarColorSidebarItemBackground: ColorDescription;
 	// цвет фона у кнопки в сайдбаре
 	calendarColorSidebarComposeButtonBackground: ColorDescription;
 	// цвет иконки у кнопки в сайдбаре
@@ -54,9 +144,21 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorSidebarComposeButtonText: ColorDescription;
 	// цвет скроллбара
 	calendarColorSidebarScrollbar: ColorDescription;
+	// цвет бордера
+	calendarColorComposeButtonBorderAlpha: ColorDescription;
 	// #endregion Токены сайдбара
 
 	// #region Header
+	// Фон шапки страницы
+	calendarColorHeaderBackground: ColorDescription;
+	// Цвет фона активного табика
+	calendarColorHeaderSecondaryAlpha: ColorDescription;
+	// Цвет текста или элементов на активном табе
+	calendarColorHeaderonSecondary: ColorDescription;
+	// Цвет иконки в поиске
+	calendarColorHeaderonWidgetAlpha: ColorDescription;
+	// Цвет фона у поиска и других виджетов
+	calendarColorHeaderWidgetBackgroundAlpha: ColorDescription;
 	// Цвет иконок в хедере
 	calendarColorHeaderIcon: ColorDescription;
 	// Второстепенный текст в хедере
@@ -89,7 +191,17 @@ export interface LocalCalendarColorDescriptionStruct {
 	calendarColorTextTimeline: ColorDescription;
 	// обводка сетки с событиями
 	calendarColorStrokeFieldBorder: ColorDescription;
+	// цвет заливки иконок
+	calendarColorIconPrimary: ColorDescription;
 	// #endregion Grid
+
+	// Категории событий
+	calendarColorIconOrder: ColorDescription;
+	calendarColorIconFinance: ColorDescription;
+	calendarColorIconTravel: ColorDescription;
+	calendarColorIconEvent: ColorDescription;
+	calendarColorIconOthers: ColorDescription;
+	calendarColorIconAppointment: ColorDescription;
 }
 
 export type CalendarLocalColors = {

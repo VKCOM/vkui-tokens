@@ -1,4 +1,4 @@
-import { Property } from 'csstype';
+import type { Property } from 'csstype';
 
 import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
 import { alias, staticRef } from '@/build/helpers/tokenHelpers';
@@ -8,8 +8,9 @@ import { Elevation } from '@/interfaces/general/elevation';
 import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
 import { helpers } from '@/themeDescriptions/common';
 
-const fontFamilyAccent = 'MailSans, Helvetica, Arial, sans-serif';
-const fontFamilyBase = 'Helvetica, Arial, sans-serif';
+const fontFamilyFallbacks = 'apple-system, system-ui, "Helvetica Neue", Arial, sans-serif';
+const fontFamilyAccent = `VKSansDisplay, MailSans, ${fontFamilyFallbacks}`;
+const fontFamilyBase = fontFamilyFallbacks;
 const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -17,17 +18,21 @@ const fontWeightBase1 = 700;
 const fontWeightBase2 = 700;
 const fontWeightBase3 = 400;
 
-const colorBackgroundTertiaryLight: Property.Color = '#F9F9FA';
+const colorBackgroundTertiaryLight: Property.Color = '#F6F7F8';
 const colorBackgroundTertiaryDark: Property.Color = '#252525';
+const colorBackgroundContentDark: Property.Color = '#232324';
 
 export const lightColors: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
 		// Background
-		colorBackgroundAccent: '#005FF9',
-		colorBackgroundAccentThemed: '#005FF9',
+		colorBackgroundAccent: '#0077FF',
+		colorBackgroundAccentThemed: '#0077FF',
+		colorBackgroundAccentThemedAlpha: 'rgba(0, 119, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
 		colorBackgroundContent: '#FFFFFF',
+		colorBackgroundContentAlpha: 'rgba(255, 255, 255, 0.8)',
+		colorBackgroundContentInverse: colorBackgroundContentDark,
 		colorBackgroundSecondary: '#F0F1F3',
 		colorBackgroundSecondaryAlpha: {
 			normal: 'rgba(0, 16, 61, 0.06)',
@@ -42,7 +47,7 @@ export const lightColors: ColorsDescription = {
 			active: 'rgba(255, 255, 255, 0.28)',
 		},
 		colorBackgroundWarning: '#FFF1AD',
-		colorBackgroundNegative: '#ED0A34',
+		colorBackgroundNegative: '#ED330A',
 		colorBackgroundTertiary: colorBackgroundTertiaryLight,
 		colorBackgroundTertiaryAlpha: {
 			normal: 'rgba(0, 0, 0, 0.04)',
@@ -51,23 +56,28 @@ export const lightColors: ColorsDescription = {
 		},
 		colorBackgroundModal: '#FFFFFF',
 		colorBackgroundPositive: '#0DC268',
-		colorBackgroundNegativeTint: '#FAEBEB',
+		colorBackgroundNegativeTint: '#FEEFEB',
 		colorBackgroundPositiveTint: '#ECFAF3',
 		colorFieldBackground: '#ffffff',
 		colorBackgroundModalInverse: '#303030',
 		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundContrastThemed: '#FFFFFF',
 		colorBackgroundAccentTint: '#5a9eff',
+		colorBackgroundInfoTint: '#f0f4ff',
 
 		// Text
-		colorTextAccent: '#005FF9',
-		colorTextAccentThemed: '#005FF9',
-		colorTextNegative: '#ED0A34',
-		colorTextLink: '#005BD1',
-		colorTextLinkThemed: '#005BD1',
+		colorTextAccent: '#0070f0',
+		colorTextAccentThemed: '#0070f0',
+		colorTextNegative: '#ED330a',
+		colorTextLink: '#0070f0',
+		colorTextLinkTint: '#71AAEB',
+		colorTextLinkThemed: '#0070f0',
 		colorTextMuted: '#2C2D2E',
 		colorTextPrimary: '#2C2D2E',
+		colorTextPrimaryAlpha: 'rgba(37, 41, 46, 0.84)',
 		colorTextPrimaryInvariably: '#2C2D2E',
 		colorTextSecondary: '#87898F',
+		colorTextSecondaryAlpha: 'rgba(37, 41, 46, 0.55)',
 		colorTextSubhead: '#797A80',
 		colorTextTertiary: '#AAADB3',
 		colorTextLinkVisited: '#528FDF',
@@ -77,9 +87,8 @@ export const lightColors: ColorsDescription = {
 		colorTextPositive: '#0DC268',
 
 		// Icons
-		colorIconAccent: '#005FF9',
-		colorIconAccentThemed: '#005FF9',
-		colorIconNegative: '#ED0A34',
+		colorIconAccent: '#0077ff',
+		colorIconAccentThemed: '#0077ff',
 		colorIconPrimary: '#2C2D2E',
 		colorIconPrimaryInvariably: '#2C2D2E',
 		colorIconMedium: '#919399',
@@ -91,13 +100,16 @@ export const lightColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#FFFFFF',
 		colorIconPositive: '#0DC268',
+		colorIconWarning: '#FF9E00',
+		colorIconNegative: '#ED330a',
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
-		colorStrokeAccent: '#005FF9',
-		colorStrokeAccentThemed: '#005FF9',
+		colorStrokeAccent: '#0077ff',
+		colorStrokeAccentThemed: '#0077ff',
 		colorStrokeContrast: '#FFFFFF',
-		colorStrokeNegative: '#ED0A34',
+		colorStrokeNegative: '#ED330a',
+		colorStrokePrimary: '#2C2D2E',
 		colorImageBorderAlpha: 'rgba(0, 16, 61, 0.08)',
 		colorFieldBorderAlpha: 'rgba(0, 16, 61, 0.12)',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 16, 61, 0.12)',
@@ -108,33 +120,46 @@ export const lightColors: ColorsDescription = {
 		colorSeparatorPrimary3x: '#BFC3CA',
 
 		// Palette
-		colorAccentBlue: '#005FF9',
+		colorAccentBlue: '#0077FF',
 		colorAccentGray: '#A5A7AD',
-		colorAccentRed: '#ED0A34',
-		colorAccentGreen: '#0DC268',
+		colorAccentRed: '#ED330A',
+		colorAccentOrangeFire: '#F05C44',
 		colorAccentOrange: '#FF9E00',
-		colorAccentPurple: '#4F6DDC',
+		colorAccentOrangePeach: '#F9B54F',
+		colorAccentLime: '#B8FC75',
+		colorAccentGreen: '#0DC268',
+		colorAccentCyan: '#07E5F9',
+		colorAccentAzure: '#0077FF',
+		colorAccentPurple: '#8C64FF',
 		colorAccentViolet: '#C15DF3',
+		colorAccentRaspberryPink: '#E03FAB',
+		colorAccentPink: '#FF3985',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other
-		colorActionSheetText: '#005FF9',
+		colorActionSheetText: '#0077ff',
 		colorHeaderBackground: '#FFFFFF',
-		colorPanelHeaderIcon: '#005FF9',
+		colorPanelHeaderIcon: '#0077ff',
 		colorWriteBarInputBackground: '#F0F1F3',
+		colorWriteBarInputBorder: '#E1E3E6',
 		colorWriteBarInputBorderAlpha: 'rgba(0, 16, 61, 0.8)',
 		colorTrackBackground: '#DADCE0',
 		colorTrackBuffer: '#83AAEA',
 		colorImagePlaceholder: '#E6E7EB',
 		colorImagePlaceholderAlpha: 'rgba(0, 16, 61, 0.8)',
 		colorSearchFieldBackground: '#E6E7EB',
-		colorWriteBarIcon: '#005FF9',
+		colorWriteBarIcon: '#0077ff',
 		colorSkeletonFrom: '#F3F3F5',
 		colorSkeletonTo: '#E0E1E6',
 		colorAvatarOverlay: 'rgba(145, 147, 153, 0.48)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
-		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
+		colorOverlayPrimary: 'rgba(0, 0, 0, 0.4)',
+		colorOverlaySecondary: 'rgba(44, 45, 46, 0.5)',
 		colorSegmentedControl: '#FFFFFF',
+		colorTabbarTextInactive: '#99A2AD',
+		colorButtonText: '#0077ff',
+		colorButtonIcon: '#0077ff',
+		colorButtonStroke: '#0077ff',
 		colorTransparent: 'transparent',
 	},
 };
@@ -143,13 +168,16 @@ export const darkColors: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
 		// Background
-		colorBackgroundAccent: '#2775FC',
+		colorBackgroundAccent: '#0077FF',
 		colorBackgroundAccentThemed: '#FFFFFF',
+		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',
 		colorBackgroundAccentAlternative: '#FF9E00',
-		colorBackgroundContent: '#232324',
+		colorBackgroundContent: colorBackgroundContentDark,
+		colorBackgroundContentAlpha: 'rgba(35, 35, 36, 0.8)',
+		colorBackgroundContentInverse: '#FFFFFF',
 		colorBackgroundSecondary: '#2A2A2B',
 		colorBackgroundSecondaryAlpha: {
-			normal: 'rgba(255, 255, 255, 0.08)',
+			normal: 'rgba(255, 255, 255, 0.12)',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
@@ -175,18 +203,23 @@ export const darkColors: ColorsDescription = {
 		colorFieldBackground: '#232324',
 		colorBackgroundModalInverse: '#ffffff',
 		colorBackgroundContrastInverse: '#303030',
+		colorBackgroundContrastThemed: '#303030',
 		colorBackgroundAccentTint: '#5a9eff',
+		colorBackgroundInfoTint: '#19202f',
 
 		// Text
-		colorTextAccent: '#3C82FD',
+		colorTextAccent: '#1A85FF',
 		colorTextAccentThemed: '#FFFFFF',
 		colorTextNegative: '#FF5C5C',
-		colorTextLink: '#589BFF',
+		colorTextLink: '#1A85FF',
+		colorTextLinkTint: '#71AAEB',
 		colorTextLinkThemed: '#FFFFFF',
 		colorTextMuted: '#E7E8EA',
 		colorTextPrimary: '#E7E8EA',
+		colorTextPrimaryAlpha: 'rgba(249, 252, 255, 0.72)',
 		colorTextPrimaryInvariably: '#2C2D2E',
 		colorTextSecondary: '#8C8E94',
+		colorTextSecondaryAlpha: 'rgba(247, 251, 255, 0.42)',
 		colorTextSubhead: '#BFC1C5',
 		colorTextTertiary: '#74767A',
 		colorTextLinkVisited: '#528FDF',
@@ -196,9 +229,8 @@ export const darkColors: ColorsDescription = {
 		colorTextPositive: '#0DC268',
 
 		// Icons
-		colorIconAccent: '#3C82FD',
+		colorIconAccent: '#0077FF',
 		colorIconAccentThemed: '#FFFFFF',
-		colorIconNegative: '#FF5C5C',
 		colorIconPrimary: '#D9DADD',
 		colorIconPrimaryInvariably: '#2C2D2E',
 		colorIconMedium: '#B0B1B6',
@@ -210,13 +242,16 @@ export const darkColors: ColorsDescription = {
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#2C2D2E',
 		colorIconPositive: '#0DC268',
+		colorIconWarning: '#FF9E00',
+		colorIconNegative: '#FF5C5C',
 		colorIconContrastSecondary: '#F2F3F5',
 
 		// Stroke
-		colorStrokeAccent: '#3C82FD',
+		colorStrokeAccent: '#0077FF',
 		colorStrokeAccentThemed: '#FFFFFF',
 		colorStrokeContrast: '#FFFFFF',
 		colorStrokeNegative: '#FF5C5C',
+		colorStrokePrimary: '#D9DADD',
 		colorImageBorderAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorFieldBorderAlpha: 'rgba(255, 255, 255, 0.16)',
 		colorSeparatorPrimaryAlpha: 'rgba(0, 0, 0, 0.4)',
@@ -227,33 +262,46 @@ export const darkColors: ColorsDescription = {
 		colorStrokePositive: '#0DC268',
 
 		// Palette
-		colorAccentBlue: '#2775FC',
+		colorAccentBlue: '#0077ff',
 		colorAccentGray: '#9C9DA2',
-		colorAccentRed: '#ED0A34',
-		colorAccentGreen: '#0DC268',
+		colorAccentRed: '#ED330A',
+		colorAccentOrangeFire: '#F05C44',
 		colorAccentOrange: '#FF9E00',
-		colorAccentPurple: '#4F6DDC',
+		colorAccentOrangePeach: '#FFC062',
+		colorAccentLime: '#B8FC75',
+		colorAccentGreen: '#0DC268',
+		colorAccentCyan: '#07E5F9',
+		colorAccentAzure: '#0077FF',
+		colorAccentPurple: '#8C64FF',
 		colorAccentViolet: '#C15DF3',
+		colorAccentRaspberryPink: '#F060C0',
+		colorAccentPink: '#FF3985',
 		colorAccentSecondary: '#FF9E00',
 
 		// Other
-		colorActionSheetText: '#3C82FD',
+		colorActionSheetText: '#0077FF',
 		colorHeaderBackground: '#232324',
-		colorPanelHeaderIcon: '#3C82FD',
+		colorPanelHeaderIcon: '#0077FF',
 		colorWriteBarInputBackground: '#2A2A2B',
+		colorWriteBarInputBorder: '#2C2D2E',
 		colorWriteBarInputBorderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorTrackBackground: '#434445',
 		colorTrackBuffer: '#83AAEA',
 		colorImagePlaceholderAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorImagePlaceholder: '#393A3B',
 		colorSearchFieldBackground: '#393A3B',
-		colorWriteBarIcon: '#3C82FD',
+		colorWriteBarIcon: '#0077FF',
 		colorSkeletonFrom: '#2A2A2B',
 		colorSkeletonTo: '#3E3F40',
 		colorAvatarOverlay: 'rgba(176, 178, 182, 0.48)',
 		colorAvatarOverlayInverseAlpha: 'rgba(255, 255, 255, 0.85)',
-		colorOverlayPrimary: 'rgba(0, 0, 0, 0.48)',
+		colorOverlayPrimary: 'rgba(0, 0, 0, 0.72)',
+		colorOverlaySecondary: 'rgba(55, 56, 57, 0.5)',
 		colorSegmentedControl: '#626364',
+		colorTabbarTextInactive: '#76787A',
+		colorButtonText: '#FFFFFF',
+		colorButtonIcon: '#FFFFFF',
+		colorButtonStroke: '#FFFFFF',
 		colorTransparent: 'transparent',
 	},
 };
@@ -263,6 +311,7 @@ export const lightThemeBase: ThemeDescription = {
 	...lightColors,
 
 	// Типографика
+	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
 	fontWeightAccent1,
@@ -271,6 +320,44 @@ export const lightThemeBase: ThemeDescription = {
 	fontWeightBase1,
 	fontWeightBase2,
 	fontWeightBase3,
+	fontDisplayTitle1: {
+		regular: {
+			fontSize: 23,
+			lineHeight: 28,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle2: {
+		regular: {
+			fontSize: 21,
+			lineHeight: 26,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+		compact: {
+			fontSize: 22,
+			lineHeight: 22,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle3: {
+		regular: {
+			fontSize: 19,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
+	fontDisplayTitle4: {
+		regular: {
+			fontSize: 17,
+			lineHeight: 24,
+			fontFamily: fontFamilyAccent,
+			fontWeight: fontWeightAccent1,
+		},
+	},
 	fontTitle1: {
 		regular: {
 			fontSize: 24,
@@ -445,6 +532,9 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBorderRadius: {
 		regular: 8,
 	},
+	sizeBorderRadiusRounded: {
+		regular: 48,
+	},
 	sizeCheckBorderRadius: {
 		regular: 4,
 	},
@@ -454,6 +544,10 @@ export const lightThemeBase: ThemeDescription = {
 	sizeBorderRadiusPromo: {
 		regular: 20,
 	},
+	sizeCellHeight: {
+		regular: 48,
+		compact: 44,
+	},
 	sizeFieldHeight: {
 		regular: 44,
 		compact: 36,
@@ -462,17 +556,21 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonLargeHeight: {
-		regular: 44,
-		compact: 36,
+	sizeButtonExtraSmallHeight: {
+		regular: 24,
+		compact: 22,
+	},
+	sizeButtonSmallHeight: {
+		regular: 30,
+		compact: 28,
 	},
 	sizeButtonMediumHeight: {
 		regular: 36,
 		compact: 32,
 	},
-	sizeButtonSmallHeight: {
-		regular: 30,
-		compact: 28,
+	sizeButtonLargeHeight: {
+		regular: 44,
+		compact: 36,
 	},
 	sizeCheckbox: {
 		regular: 16,
@@ -484,7 +582,7 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 40,
 	},
 	sizePopupSmall: {
-		regular: 420,
+		regular: 430,
 	},
 	sizePopupMedium: {
 		regular: 680,
@@ -591,6 +689,7 @@ export const lightThemeBase: ThemeDescription = {
 
 	// Компонент PanelHeader
 	sizePanelHeaderHeight: {
+		compact: 48,
 		regular: 56,
 	},
 
@@ -654,15 +753,42 @@ export const lightThemeBase: ThemeDescription = {
 		regular: 12,
 	},
 
+	// Размер границ
+	sizeBorder1x: {
+		regular: 1,
+	},
+	sizeBorder2x: {
+		regular: 0.5,
+	},
+	sizeBorder3x: {
+		regular: 0.33,
+	},
+
+	// Стандартные токены для отступов
+	spacingSize3Xs: 2,
+	spacingSize2Xs: 2,
+	spacingSizeXs: 4,
+	spacingSizeS: 6,
+	spacingSizeM: 8,
+	spacingSizeL: 10,
+	spacingSizeXl: 12,
+	spacingSize2Xl: 16,
+	spacingSize3Xl: 20,
+	spacingSize4Xl: 24,
+
 	// Прочие отступы
-	elevation1: '0 2px 0 0 rgba(0, 16, 61, 0.04)',
-	elevation1InvertY: '0 -2px 0 0 rgba(0, 16, 61, 0.04)',
-	elevation2: '0 4px 32px 0 rgba(0, 16, 61, 0.32)',
-	elevation3: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
-	elevation4: '0 16px 48px 0 rgba(0, 0, 0, 0.48)',
+	elevation1: '0 2px 6px 0 rgba(0, 16, 61, 0.08), 0 1px 2px 0 rgba(0, 16, 61, 0.08)',
+	elevation1InvertY: '0 -2px 6px 0 rgba(0, 16, 61, 0.08), 0 -1px 2px 0 rgba(0, 16, 61, 0.08)',
+	elevation2:
+		'0 0 2px 0 rgba(0, 16, 61, 0.06), 0 0 6px 0 rgba(0, 16, 61, 0.06), 0 6px 12px 0 rgba(0, 16, 61, 0.06)',
+	elevation3:
+		'0 0 6px 0 rgba(0, 16, 61, 0.06), 0 6px 12px 0 rgba(0, 16, 61, 0.06), 0 6px 20px 0 rgba(0, 16, 61, 0.06), 0 10px 36px 0 rgba(0, 16, 61, 0.08)',
+	elevation4:
+		'0 2px 6px 0 rgba(0, 16, 61, 0.06), 0 16px 48px 0 rgba(0, 16, 61, 0.08), 0 24px 68px 0 rgba(0, 16, 61, 0.16)',
 	gradientBlack: getGradientPointsFromColor('#000000', 0.4),
 	gradientWhite: getGradientPointsFromColor('#FFFFFF'),
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryLight),
+	gradient: getGradientPointsFromColor('#FFFFFF'),
 	animationDurationL: '0.4s',
 	animationDurationM: '0.2s',
 	animationDurationS: '0.1s',
@@ -670,6 +796,8 @@ export const lightThemeBase: ThemeDescription = {
 	animationEasingPlatform: 'cubic-bezier(0.3, 0.3, 0.5, 1)',
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
+	opacityActive: 0.72,
+	blurM: 16,
 	zIndexModal: 99,
 	zIndexPopout: 100,
 };
@@ -694,22 +822,35 @@ export const lightTheme: ParadigmThemeDescription = {
 		colorThumbErrorBackgroundAlpha: 'rgba(237, 10, 52, 0.12)',
 
 		// Тонированные цвета для проектов
-		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 95, 249, 0.06)',
-		colorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.06)',
-		colorBackgroundAccentTintThemed: '#f0f4ff',
+		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 119, 255, 0.06)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.06)',
+		colorBackgroundAccentTintThemed: '#f0f7ff',
 
 		colorBackgroundWarningTintThemedAlpha: 'rgba(255, 241, 173, 0.48)',
 		colorBackgroundWarningTintAlpha: 'rgba(255, 241, 173, 0.48)',
 		colorBackgroundWarningTintThemed: '#fffce0',
 		colorBackgroundWarningTint: '#fffce0',
 
-		colorBackgroundNegativeTintThemedAlpha: 'rgba(237, 10, 52, 0.08)',
-		colorBackgroundNegativeTintAlpha: 'rgba(237, 10, 52, 0.08)',
-		colorBackgroundNegativeTintThemed: '#faebeb',
+		colorBackgroundNegativeTintThemedAlpha: 'rgba(237, 51, 10, 0.08)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 51, 10, 0.08)',
+		colorBackgroundNegativeTintThemed: '#feefeb',
 
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(13, 194, 104, 0.08)',
 		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.08)',
 		colorBackgroundPositiveTintThemed: '#ECFAF3',
+
+		colorTooltipBackgroundBlueTint: '#DDE9FF',
+		colorTooltipBackgroundGreenTint: '#CEEEE6',
+		colorTooltipBackgroundOrangeTint: '#F9D3BD',
+		colorTooltipBackgroundPurpleTint: '#F2E8FF',
+		colorTooltipTextBlueThemed: '#1C4479',
+		colorTooltipTextGreenThemed: '#087C6D',
+		colorTooltipTextOrangeThemed: '#78472A',
+		colorTooltipTextPurpleThemed: '#73519F',
+
+		// Byte colors
+		colorBackgroundSky: '#cce4ff',
+		colorBackgroundSkyAlpha: 'rgba(204, 228, 255, 0.9)',
 	},
 
 	breakpoints: {
@@ -953,6 +1094,7 @@ export const darkThemeElevation: Elevation = {
 export const darkThemeBase: ThemeDescription = {
 	...lightThemeBase,
 	gradientTint: getGradientPointsFromColor(colorBackgroundTertiaryDark),
+	gradient: getGradientPointsFromColor(colorBackgroundContentDark),
 	themeName: 'paradigmBaseDark',
 	...darkColors,
 	...darkThemeElevation,
@@ -975,7 +1117,7 @@ export const darkTheme: ParadigmThemeDescription = {
 
 		// Тонированные цвета для проектов
 		colorBackgroundAccentTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
-		colorBackgroundAccentTintAlpha: 'rgba(0, 95, 249, 0.1)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.1)',
 		colorBackgroundAccentTintThemed: '#2b2b2c',
 
 		colorBackgroundWarningTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
@@ -984,12 +1126,25 @@ export const darkTheme: ParadigmThemeDescription = {
 		colorBackgroundWarningTint: '#302617',
 
 		colorBackgroundNegativeTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
-		colorBackgroundNegativeTintAlpha: 'rgba(237, 10, 52, 0.1)',
+		colorBackgroundNegativeTintAlpha: 'rgba(237, 51, 10, 0.1)',
 		colorBackgroundNegativeTintThemed: '#2b2b2c',
 
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorBackgroundPositiveTintAlpha: 'rgba(13, 194, 104, 0.1)',
 		colorBackgroundPositiveTintThemed: '#2b2b2c',
+
+		colorTooltipBackgroundBlueTint: '#1C4479',
+		colorTooltipBackgroundGreenTint: '#087C6D',
+		colorTooltipBackgroundOrangeTint: '#78472A',
+		colorTooltipBackgroundPurpleTint: '#73519F',
+		colorTooltipTextBlueThemed: '#FFFFFF',
+		colorTooltipTextGreenThemed: '#FFFFFF',
+		colorTooltipTextOrangeThemed: '#FFFFFF',
+		colorTooltipTextPurpleThemed: '#FFFFFF',
+
+		// Byte colors
+		colorBackgroundSky: '#2b2b2c',
+		colorBackgroundSkyAlpha: 'rgba(51, 51, 51, 0.8)',
 	},
 };
 
