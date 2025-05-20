@@ -38,11 +38,6 @@ export const mediaTheme: ThemeMediaDescription = {
 		...lightTheme.colors,
 		...projectColors,
 		...socialColors,
-		colorPrimaryPets: {
-			normal: '#fc738c',
-			hover: '#ec4d6a',
-			active: '#fc627e',
-		},
 	},
 
 	breakpoints: {
@@ -747,8 +742,6 @@ export const mediaTheme: ThemeMediaDescription = {
 	sizeBadgeXL: {
 		regular: 56,
 	},
-
-	elevation3: '0px 16px 48px 0px rgba(0, 16, 61, 0.28)',
 };
 
 export const mediaDarkTheme: ThemeMediaDescription = {
@@ -759,5 +752,4 @@ export const mediaDarkTheme: ThemeMediaDescription = {
 		...mediaTheme.colors,
 		...darkTheme.colors,
 	},
-	elevation3: '0px 16px 48px 0px rgba(0, 0, 0, 0.40)',
 };

@@ -1,28 +1,33 @@
-import type { Property } from 'csstype';
+import type { ColorDescription } from '@/interfaces/general/colors';
 
 export type ProjectColors = {
-	colorPrimaryAuto: Property.Color;
-	colorPrimaryBase: Property.Color;
-	colorPrimaryDeti: Property.Color;
-	colorPrimaryDobro: Property.Color;
-	colorPrimaryHealth: Property.Color;
-	colorPrimaryHealthNew: Property.Color;
-	colorPrimaryHitech: Property.Color;
-	colorPrimaryKino: Property.Color;
-	colorPrimaryLady: Property.Color;
-	colorPrimaryMycom: Property.Color;
-	colorPrimaryRealty: Property.Color;
-	colorPrimaryPharma: Property.Color;
+	colorPrimaryAuto: ColorDescription;
+	colorPrimaryBase: ColorDescription;
+	colorPrimaryDeti: ColorDescription;
+	colorPrimaryDobro: ColorDescription;
+	colorPrimaryHealth: ColorDescription;
+	colorPrimaryHealthNew: ColorDescription;
+	colorPrimaryHitech: ColorDescription;
+	colorPrimaryKino: ColorDescription;
+	colorPrimaryLady: ColorDescription;
+	colorPrimaryMycom: ColorDescription;
+	colorPrimaryPets: ColorDescription;
+	colorPrimaryRealty: ColorDescription;
+	colorPrimaryPharma: ColorDescription;
 
-	colorSecondaryBase: Property.Color;
-	colorSecondaryHealth: Property.Color;
-	colorSecondaryMycom: Property.Color;
+	colorSecondaryBase: ColorDescription;
+	colorSecondaryHealth: ColorDescription;
+	colorSecondaryMycom: ColorDescription;
 };
 
 export const projectColors: ProjectColors = {
 	colorPrimaryAuto: '#0077FF',
 	colorPrimaryBase: '#0077FF',
-	colorPrimaryDeti: '#0077FF',
+	colorPrimaryDeti: {
+		normal: '#7f4af8',
+		hover: '#bfa4fb',
+		active: '#7f4af8',
+	},
 	colorPrimaryDobro: '#ffd400',
 	colorPrimaryHealth: '#0077FF',
 	colorPrimaryHealthNew: '#0077FF',
@@ -30,7 +35,16 @@ export const projectColors: ProjectColors = {
 	colorPrimaryKino: '#0077FF',
 	colorPrimaryLady: '#0077FF',
 	colorPrimaryMycom: '#00abf2',
-	colorPrimaryRealty: '#0077FF',
+	colorPrimaryPets: {
+		normal: '#fc738c',
+		hover: '#ec4d6a',
+		active: '#fc627e',
+	},
+	colorPrimaryRealty: {
+		normal: '#7f704b',
+		hover: '#aea181',
+		active: '#7f704b',
+	},
 	colorPrimaryPharma: '#1DD3A2',
 
 	colorSecondaryBase: '#0077FF',
