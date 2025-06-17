@@ -19,6 +19,7 @@ import {
 } from '@/themeDescriptions/themes/octaviusCompact';
 import { octaviusVKDarkTheme, octaviusVKTheme } from '@/themeDescriptions/themes/octaviusVK';
 import { otvetDarkTheme, otvetTheme } from '@/themeDescriptions/themes/otvet';
+import { paradigmTechDarkTheme, paradigmTechTheme } from '@/themeDescriptions/themes/paradigmTech';
 import { pharmaTheme } from '@/themeDescriptions/themes/pharma';
 import { portalUIDarkTheme, portalUITheme } from '@/themeDescriptions/themes/portalUI';
 import { promoTheme } from '@/themeDescriptions/themes/promo';
@@ -95,6 +96,8 @@ export const themes = [
 	octaviusCompactDarkTheme,
 	octaviusVKTheme,
 	octaviusVKDarkTheme,
+	paradigmTechTheme,
+	paradigmTechDarkTheme,
 
 	// Темы, наследуемые от Calendar
 	calendarTheme,
