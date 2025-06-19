@@ -244,7 +244,7 @@ export const paradigmTechDarkTheme: ThemeParadigmTechDescription = {
 		colorStrokePositive: '#24c649',
 
 		// Переопределяем токены Octavius
-		octaviusColorBackground: '#f6f7fb',
+		octaviusColorBackground: '#17181b',
 		octaviusColorHeaderButtonText: '#252629',
 		octaviusColorHeaderIconFavorite: '#f23741',
 		octaviusColorSidebarIconFavorite: '#f23741',
