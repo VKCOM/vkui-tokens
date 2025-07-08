@@ -58,7 +58,7 @@
     "@vkontakte/prettier-config": "0.1.0",
     "@vkontakte/vk-bridge": "2.15.4",
     "@vkontakte/vkjs": "2.0.1",
-    "@vkontakte/vkui": "6.3.0",
+    "@vkontakte/vkui": "7.4.2",
     "babel-jest": "29.7.0",
     "babel-loader": "9.2.1",
     "clean-webpack-plugin": "4.0.0",
