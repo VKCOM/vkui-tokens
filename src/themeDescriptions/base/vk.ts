@@ -387,7 +387,7 @@ export const fonts: BaseFonts = {
 			fontSize: 20,
 			lineHeight: 24,
 			fontFamily: fontFamilyBase,
-			fontWeight: fontWeightBase1,
+			fontWeight: fontWeightBase2,
 		},
 	},
 	fontTitle3: {
