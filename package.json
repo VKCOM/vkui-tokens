@@ -50,7 +50,7 @@
     "@types/common-tags": "1.8.4",
     "@types/fs-extra": "11.0.4",
     "@types/lodash": "4.17.14",
-    "@types/node": "18.11.10",
+    "@types/node": "^24.1.0",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0",
@@ -100,17 +100,17 @@
     "style-loader": "4.0.0",
     "terser-webpack-plugin": "5.3.10",
     "tree-sitter": "0.21.1",
-    "ts-jest": "29.2.5",
-    "ts-loader": "9.5.1",
-    "ts-morph": "20.0.0",
-    "ts-node": "10.9.2",
-    "tsconfig-paths": "4.2.0",
-    "tscpaths": "0.0.9",
+    "ts-jest": "^29.4.0",
+    "ts-loader": "^9.5.2",
+    "ts-morph": "^26.0.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tscpaths": "^0.0.9",
     "type-fest": "4.26.1",
-    "typescript": "5.2.2",
+    "typescript": "^5.8.3",
     "typescript-eslint": "7.7.1",
     "webpack": "^5.100.2",
-    "webpack-cli": "5.1.4",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.2",
     "webpack-notifier": "^1.15.0"
   },
@@ -120,7 +120,6 @@
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "resolutions": {
-    "@types/node": "18.11.10",
     "@types/react": "18.3.3"
   }
 }
