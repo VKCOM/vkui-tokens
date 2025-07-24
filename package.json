@@ -96,7 +96,6 @@
     "remark": "15.0.1",
     "remark-html": "16.0.1",
     "remark-loader": "6.0.0",
-    "rimraf": "5.0.7",
     "style-loader": "4.0.0",
     "terser-webpack-plugin": "5.3.10",
     "tree-sitter": "0.21.1",
