@@ -65,11 +65,11 @@ const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, sea
 					<Paragraph>Описание</Paragraph>
 				</div>
 			</div>
-			<Separator wide={true} className="separator-header" />
+			<Separator className="separator-header" />
 			<div className="tokens-content-list">
 				{tokensKeys.map((token, index) => (
 					<React.Fragment key={token}>
-						{index !== 0 && <Separator wide={true} className="separator-item" />}
+						{index !== 0 && <Separator className="separator-item" />}
 						<div className="tokens-content-item">
 							<div>
 								<Button

@@ -1,6 +1,6 @@
 import {
     AdaptivityProvider,
-    Appearance,
+    ColorScheme,
     AppRoot,
     ConfigProvider,
     Panel,
@@ -16,7 +16,7 @@ type Props = {
 };
 
 const Main: FC<Props> = ({ children }) => (
-	<ConfigProvider appearance={Appearance.LIGHT}>
+	<ConfigProvider colorScheme={ColorScheme.LIGHT}>
 		<AdaptivityProvider sizeX={SizeType.COMPACT}>
 			<AppRoot>
 				<View activePanel="main">
