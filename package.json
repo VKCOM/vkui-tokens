@@ -27,16 +27,15 @@
     "styleguide": "sh ./tasks/styleguide.sh",
     "docs:dev": "cd docs/webpack && webpack-dev-server --config webpack.client.mjs --mode development",
     "docs:build": "cd docs/webpack && webpack --config webpack.client.mjs --mode production",
-    "docs:prepare-data": "ts-node tasks/docs/prepareTokensData.ts",
-    "pre-commit": "lint-staged"
+    "docs:prepare-data": "ts-node tasks/docs/prepareTokensData.ts"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
-      "prettier --write",
+      "prettier --check",
       "eslint"
     ],
     "*.{json,md}": [
-      "prettier --write"
+      "prettier --check"
     ]
   },
   "repository": "https://github.com/VKCOM/vkui-tokens.git",
@@ -85,7 +84,7 @@
     "html-webpack-plugin": "^5.6.3",
     "husky": "^9.1.7",
     "jest": "^30.0.5",
-    "lint-staged": "15.2.10",
+    "lint-staged": "^16.1.2",
     "lodash": "^4.17.21",
     "prettier": "^3.6.2",
     "react": "^18.3.1",
