@@ -9,6 +9,7 @@
     "noUnusedParameters": false,
     "lib": ["ES6", "DOM", "ES2017"],
     "declaration": true,
+    "skipLibCheck": true,
     "resolveJsonModule": true
   },
   "include": ["dist/**/*.ts"]

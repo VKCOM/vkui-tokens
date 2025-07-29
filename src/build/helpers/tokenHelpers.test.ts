@@ -28,7 +28,7 @@ describe('tokenHelpers', () => {
 		});
 
 		test('fails for dynamic value', () => {
-			expect(() => staticRef(alias('sizeArrow'))).toThrowError(
+			expect(() => staticRef(alias('sizeArrow'))).toThrow(
 				'Cannot use callable token value in static ref',
 			);
 		});
