@@ -24,7 +24,6 @@
     "clear:src": "find src -name '*.d.ts' -delete &&  find src -name '*.js' -delete",
     "clear:dist": "find dist -regex '.*[^d]\\.ts' -delete",
     "open:coverage": "open .coverage/index.html",
-    "styleguide": "sh ./tasks/styleguide.sh",
     "docs:dev": "cd docs/webpack && webpack-dev-server --config webpack.client.mjs --mode development",
     "docs:build": "cd docs/webpack && webpack --config webpack.client.mjs --mode production",
     "docs:prepare-data": "ts-node tasks/docs/prepareTokensData.ts"
