@@ -15,11 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: npm run lint
+      - name: Node setup
+        uses: ./.github/actions/node-setup
+      - run: yarn run lint
 
   test:
     uses: ./.github/workflows/reusable_workflow_test.yml
@@ -28,10 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: npm run build
-      - run: npm run docs:prepare-data
-      - run: npm run docs:build
+      - name: Node setup
+        uses: ./.github/actions/node-setup
+      - run: yarn run build
+      - run: yarn run docs:prepare-data
+      - run: yarn run docs:build
