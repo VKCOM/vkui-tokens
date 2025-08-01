@@ -18,21 +18,16 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Build main app
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: npm run build
+      - uses: actions/checkout@v4
+      - name: Node setup
+        uses: ./.github/actions/node-setup
+      - run: yarn run build
 
       - name: Prepare tokens data
-        run: npm run docs:prepare-data
+        run: yarn run docs:prepare-data
 
       - name: Build docs app
-        run: npm run docs:build
+        run: yarn run docs:build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
