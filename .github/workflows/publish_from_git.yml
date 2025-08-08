@@ -12,6 +12,6 @@ jobs:
       - name: Node setup
         uses: ./.github/actions/node-setup
       - name: Publishing release
-        run: yarn run publish:dist
+        run: npm run publish:dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
