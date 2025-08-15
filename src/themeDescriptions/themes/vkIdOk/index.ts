@@ -52,6 +52,11 @@ export const vkIdOkThemeDark: ThemeVkIdOkDarkDescription = {
 		colorTextLinkThemed: '#FFFFFF',
 		colorTextLinkTint: '#76787A',
 		colorTextLinkVisited: '#969A9F',
+		colorTextContrastThemed: {
+			normal: '#FFFFFF',
+			hover: '#FFFFFF',
+			active: '#FFFFFF',
+		},
 		colorIconAccent: '#FF7700',
 		colorIconAccentThemed: '#FFFFFF',
 		colorIconPrimary: '#FFFFFF',
@@ -60,10 +65,11 @@ export const vkIdOkThemeDark: ThemeVkIdOkDarkDescription = {
 			hover: '#F38910',
 			active: '#F58C15',
 		},
+		// сделано, чтобы accent-themed кнопки оставались оранжевыми в тёмной теме
 		colorBackgroundAccentThemed: {
-			normal: '#FFFFFF',
-			hover: '#EBEDF0',
-			active: '#D7D8DB',
+			normal: '#FF7700',
+			hover: '#F38910',
+			active: '#F58C15',
 		},
 		colorBackgroundContent: '#1A1A1C',
 		colorBackgroundAccentThemedAlpha: 'rgba(255, 255, 255, 0.2)',

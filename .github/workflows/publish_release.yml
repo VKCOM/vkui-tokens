@@ -12,14 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-          registry-url: https://registry.npmjs.org/
-      - run: yarn install --frozen-lockfile --ignore-scripts
+      - name: Node setup
+        uses: ./.github/actions/node-setup
       - run: npm run publish:latest
         if: '!github.event.release.prerelease'
         env:

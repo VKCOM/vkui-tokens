@@ -13,6 +13,7 @@ runs:
       with:
         node-version-file: '.nvmrc'
         cache: 'yarn'
+        registry-url: 'https://registry.npmjs.org'
 
     - name: Install dependencies
       run: YARN_ENABLE_SCRIPTS=false YARN_ENABLE_HARDENED_MODE=0 yarn install --immutable
