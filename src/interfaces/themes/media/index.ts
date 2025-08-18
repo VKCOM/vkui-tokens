@@ -148,6 +148,11 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaTitle6: Adaptive<Font>;
 	/**
+	 * @desc Заголовок 8 уровня
+	 * @tags font
+	 */
+	mediaFontMediaTitle8: Adaptive<Font>;
+	/**
 	 * @desc Подзаголовок, отделённый визуально от заголовка выше
 	 * @tags font
 	 */
