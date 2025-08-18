@@ -242,6 +242,22 @@ export const mediaTheme: ThemeMediaDescription = {
 			letterSpacing: '-0.005em',
 		},
 	},
+	mediaFontMediaTitle8: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+		},
+	},
 	mediaFontMediaSubtitleLight: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
