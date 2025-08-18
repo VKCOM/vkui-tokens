@@ -245,14 +245,14 @@ export const mediaTheme: ThemeMediaDescription = {
 	mediaFontMediaTitle8: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMedia4,
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMedia4,
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
