@@ -1,6 +1,7 @@
 <img src="assets/vkui_logo.png" alt="vkui logo" height="52"/>
 <img src="assets/logo.svg" alt="vkui logo" height="52"/>
 
+
 [![Tests](https://github.com/VKCOM/vkui-tokens/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/VKCOM/vkui-tokens/actions/workflows/test.yml)
 [![Npm](https://img.shields.io/npm/v/@vkontakte/vkui-tokens)](https://www.npmjs.com/package/@vkontakte/vkui-tokens)
 [![GitHub Repo stars](https://img.shields.io/github/stars/VKCOM/vkui-tokens?label=GitHub%20Repo%20Stars&style=social)](https://github.com/VKCOM/vkui-tokens)
