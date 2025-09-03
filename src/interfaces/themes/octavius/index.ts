@@ -126,7 +126,6 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorTagBackgroundTickle: ColorDescription;
 	colorTagTextTickle: ColorDescription;
 
-
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
