@@ -104,6 +104,29 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorTagBackgroundPurple: ColorDescription;
 	colorTagTextPurple: ColorDescription;
 
+	// Токены кастомных меток
+	colorTagBackgroundSalmon: ColorDescription;
+	colorTagTextSalmon: ColorDescription;
+	colorTagBackgroundYellow: ColorDescription;
+	colorTagTextYellow: ColorDescription;
+	colorTagBackgroundLime: ColorDescription;
+	colorTagTextLime: ColorDescription;
+	colorTagBackgroundGrass: ColorDescription;
+	colorTagTextGrass: ColorDescription;
+	colorTagBackgroundTurquoise: ColorDescription;
+	colorTagTextTurquoise: ColorDescription;
+	colorTagBackgroundLightsky: ColorDescription;
+	colorTagTextLightsky: ColorDescription;
+	colorTagBackgroundMainSky: ColorDescription;
+	colorTagTextMainSky: ColorDescription;
+	colorTagBackgroundViolet: ColorDescription;
+	colorTagTextViolet: ColorDescription;
+	colorTagBackgroundMagenta: ColorDescription;
+	colorTagTextMagenta: ColorDescription;
+	colorTagBackgroundTickle: ColorDescription;
+	colorTagTextTickle: ColorDescription;
+
+
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
 	octaviusColorButtonIcon: ColorDescription;
