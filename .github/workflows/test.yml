@@ -21,6 +21,9 @@ jobs:
 
   test:
     uses: ./.github/workflows/reusable_workflow_test.yml
+    permissions:
+      id-token: write
+    secrets: inherit
 
   build:
     runs-on: ubuntu-latest
