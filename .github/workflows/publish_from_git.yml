@@ -8,7 +8,7 @@ jobs:
     name: Publish release-candidate from package.json version
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Node setup
         uses: ./.github/actions/node-setup
       - name: Publishing release
