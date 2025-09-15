@@ -1099,27 +1099,27 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
-"@floating-ui/core@^1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.7.2.tgz#3d1c35263950b314b6d5a72c8bfb9e3c1551aefd"
-  integrity sha512-wNB5ooIKHQc+Kui96jE/n69rHFWAVoxn5CAzL1Xdd8FG03cgY3MLO+GF9U3W737fYDSgPWA6MReKhBQBop6Pcw==
+"@floating-ui/core@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.7.3.tgz#462d722f001e23e46d86fd2bd0d21b7693ccb8b7"
+  integrity sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w==
   dependencies:
     "@floating-ui/utils" "^0.2.10"
 
-"@floating-ui/dom@^1.7.2":
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.7.2.tgz#3540b051cf5ce0d4f4db5fb2507a76e8ea5b4a45"
-  integrity sha512-7cfaOQuCS27HD7DX+6ib2OrnW+b4ZBwDNnCcT0uTyidcmyWb03FnQqJybDBoCnpdxwBSfA94UAYlRCt7mV+TbA==
+"@floating-ui/dom@^1.7.4":
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.7.4.tgz#ee667549998745c9c3e3e84683b909c31d6c9a77"
+  integrity sha512-OOchDgh4F2CchOX94cRVqhvy7b3AFb+/rQXyswmzmGakRfkMgoWVjfnLWkRirfLEfuD4ysVW16eXzwt3jHIzKA==
   dependencies:
-    "@floating-ui/core" "^1.7.2"
+    "@floating-ui/core" "^1.7.3"
     "@floating-ui/utils" "^0.2.10"
 
-"@floating-ui/react-dom@^2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-2.1.4.tgz#a0689be8978352fff2be2dfdd718cf668c488ec3"
-  integrity sha512-JbbpPhp38UmXDDAu60RJmbeme37Jbgsm7NrHGgzYYFKmblzRUh6Pa641dII6LsjwF4XlScDrde2UAzDo/b9KPw==
+"@floating-ui/react-dom@^2.1.6":
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/@floating-ui/react-dom/-/react-dom-2.1.6.tgz#189f681043c1400561f62972f461b93f01bf2231"
+  integrity sha512-4JX6rEatQEvlmgU80wZyq9RT96HZJa88q8hp0pBd+LrczeDI4o6uA2M+uvxngVHo4Ihr8uibXxH6+70zhAFrVw==
   dependencies:
-    "@floating-ui/dom" "^1.7.2"
+    "@floating-ui/dom" "^1.7.4"
 
 "@floating-ui/utils@^0.2.10":
   version "0.2.10"
@@ -2268,30 +2268,29 @@
     "@swc/helpers" "^0.5.0"
     clsx "^2.1.1"
 
-"@vkontakte/vkui-date-fns-tz@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui-date-fns-tz/-/vkui-date-fns-tz-0.0.4.tgz#ac0a6b5a9f89b6f2d426c34e72d9f028f9b0d9c3"
-  integrity sha512-0mLb/gS/P6xgDTH2m7ZVlP+QfJNDO/6jevRf43R8EH+4iTA2f9RZTXb5h9bab0VMDZ7stdXfKUhEN84gyFPVKw==
+"@vkontakte/vkui-date-fns-tz@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui-date-fns-tz/-/vkui-date-fns-tz-0.0.6.tgz#9d1a3fa3eb1e2d1c207150d56f4e5f0fe9a8f358"
+  integrity sha512-bC4yscqq+XnSsqJJLOBh1gMePVmS5FttsZv57o/rt1FbJpuDoC666zLnDat2nzCskU7j+oWi8oipfMdh1VLp8w==
 
-"@vkontakte/vkui-floating-ui@^0.2.5":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui-floating-ui/-/vkui-floating-ui-0.2.5.tgz#fdc280c5d90d5b5e52c50dd09f7fe880cd9d237f"
-  integrity sha512-KkazttQMiihBstvEkIDnpueU5ByioOCneuYFfnNnBuD1CBG1VTU3F65qAzt4rnKX4b35Zxmph/7HYyFbYznCUQ==
+"@vkontakte/vkui-floating-ui@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui-floating-ui/-/vkui-floating-ui-0.2.7.tgz#5fe82ec813166c4b2cd88ed48342d6ad740eebfe"
+  integrity sha512-4cHwX2pJI4HBZM+Cp/E4f9tDIxU6AimvDEX5WEHGOLUkbCZDiSB2wavsZz128czedpmA/b+AX/l2codwKOhJtA==
   dependencies:
-    "@floating-ui/react-dom" "^2.1.4"
+    "@floating-ui/react-dom" "^2.1.6"
     "@swc/helpers" "^0.5.17"
 
 "@vkontakte/vkui@^7.5.2":
-  version "7.5.3"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-7.5.3.tgz#c6a024208711343f1624c65a91f9733e213d0552"
-  integrity sha512-1L/2xfZU3hHV5DTs1JfKGhFBrcV5YhlhJKOv5YyU5bj6+gZtPNkADh0sKr4D2qpvLbn+H55/o5ZfFYzO79678w==
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-7.7.0.tgz#d4b88bb8ed5f186c25fb03bc303297b4e9792018"
+  integrity sha512-WYEv4OlfJ9CTBO4gCyQo/WofEQjg/yr+3ufc6pH0PONS2vtdsIohVtRcv4VLtXailWRiMyB3Byi1Cl4WA3q1XQ==
   dependencies:
     "@swc/helpers" "^0.5.17"
     "@vkontakte/icons" "^3.0.0"
     "@vkontakte/vkjs" "^2.0.1"
-    "@vkontakte/vkui-date-fns-tz" "^0.0.4"
-    "@vkontakte/vkui-floating-ui" "^0.2.5"
-    date-fns "^4.1.0"
+    "@vkontakte/vkui-date-fns-tz" "^0.0.6"
+    "@vkontakte/vkui-floating-ui" "^0.2.7"
 
 "@webassemblyjs/ast@1.14.1", "@webassemblyjs/ast@^1.14.1":
   version "1.14.1"
@@ -3488,11 +3487,6 @@ data-view-byte-offset@^1.0.1:
     call-bound "^1.0.2"
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
-
-date-fns@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-4.1.0.tgz#64b3d83fff5aa80438f5b1a633c2e83b8a1c2d14"
-  integrity sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
