@@ -102,13 +102,6 @@ export const mediaTheme: ThemeMediaDescription = {
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia1,
-			fontSize: 32,
-			lineHeight: 40,
-			letterSpacing: '-0.005em',
-		},
-		compactX: {
-			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia1,
 			fontSize: 28,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
