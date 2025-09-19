@@ -39,19 +39,19 @@ export default function () {
 		md: {
 			test: /\.md$/,
 			use: [
-			  {
-				loader: 'html-loader',
-			  },
-			  {
-				loader: 'remark-loader',
-				options: {
-				  remarkOptions: {
-					plugins: [RemarkHTML],
-				  },
+				{
+					loader: 'html-loader',
 				},
-			  },
+				{
+					loader: 'remark-loader',
+					options: {
+						remarkOptions: {
+							plugins: [RemarkHTML],
+						},
+					},
+				},
 			],
-		  },
+		},
 	};
 
 	const resolve = {
@@ -66,4 +66,4 @@ export default function () {
 		modules,
 		resolve,
 	};
-};
+}

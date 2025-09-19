@@ -1,6 +1,6 @@
 const noUnusedVars = ['error', { ignoreRestSiblings: true, argsIgnorePattern: '^_.*$' }];
 
-const silence = require.resolve("./lint/silence-typescript.js")
+const silence = require.resolve('./lint/silence-typescript.js');
 
 module.exports = {
 	parser: '@typescript-eslint/parser',
@@ -128,7 +128,7 @@ module.exports = {
 		'simple-import-sort/exports': 'error',
 
 		'no-param-reassign': [
-			"warn",
+			'warn',
 			{
 				props: true,
 				ignorePropertyModificationsFor: [

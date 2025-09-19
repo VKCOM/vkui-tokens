@@ -1,11 +1,11 @@
 import {
-    AdaptivityProvider,
-    ColorScheme,
-    AppRoot,
-    ConfigProvider,
-    Panel,
-    SizeType,
-    View,
+	AdaptivityProvider,
+	ColorScheme,
+	AppRoot,
+	ConfigProvider,
+	Panel,
+	SizeType,
+	View,
 } from '@vkontakte/vkui';
 import React, { FC } from 'react';
 

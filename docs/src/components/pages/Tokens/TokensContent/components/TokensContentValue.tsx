@@ -36,7 +36,9 @@ const TokensContentValue: FC<Props> = ({ contentValue, selectedValueType }) => {
 						const content = getOneLineContent(nestedValue, selectedValueType);
 						return (
 							<div className={clsx(isColor(content) && 'flex items-center')} key={key}>
-								<Paragraph weight="1" useAccentWeight>{key}:&nbsp;</Paragraph>
+								<Paragraph weight="1" useAccentWeight>
+									{key}:&nbsp;
+								</Paragraph>
 								<Paragraph>{content}</Paragraph>
 								{isColor(content) && (
 									<ColorCircle content={String(content)} style={{ marginLeft: '0.25rem' }} />
@@ -47,7 +49,9 @@ const TokensContentValue: FC<Props> = ({ contentValue, selectedValueType }) => {
 
 					return (
 						<Paragraph key={key}>
-							<Paragraph weight="1" useAccentWeight>{key}:&nbsp;</Paragraph>
+							<Paragraph weight="1" useAccentWeight>
+								{key}:&nbsp;
+							</Paragraph>
 							<Paragraph style={{ whiteSpace: 'pre' }}>
 								{JSON.stringify(nestedValue, null, 4)}
 							</Paragraph>
