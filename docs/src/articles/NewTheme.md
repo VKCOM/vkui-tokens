@@ -51,7 +51,7 @@ export interface ThemeWorkspaceAdmin extends ParadigmTheme {}
 export interface ThemeWorkspaceAdminDescription extends ParadigmThemeDescription {}
 
 export interface ThemeWorkspaceAdminCssVars
-	extends ThemeCssVars<ThemeWorkspaceAdmin, 'breakpoints'> {}
+  extends ThemeCssVars<ThemeWorkspaceAdmin, 'breakpoints'> {}
 ```
 
 Пример декларации типов темы, наследованной от базовой темы `vk`:
@@ -79,9 +79,9 @@ import { ThemeWorkspaceAdminDescription } from '@/interfaces/themes/workspaceAdm
 import { lightTheme } from '@/themeDescriptions/base/paradigm';
 
 export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
-	...lightTheme,
-	themeName: 'workspaceAdmin',
-	themeNameBase: 'workspaceAdmin',
+  ...lightTheme,
+  themeName: 'workspaceAdmin',
+  themeNameBase: 'workspaceAdmin',
 };
 ```
 

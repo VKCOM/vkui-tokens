@@ -60,7 +60,7 @@ export default function (env, argv) {
 			}),
 			new HtmlWebpackPlugin({
 				template: './public/index.html',
-				publicPath: '/vkui-tokens/'
+				publicPath: '/vkui-tokens/',
 			}),
 			new WebpackNotifierPlugin({ alwaysNotify: false }),
 			new CopyWebpackPlugin({
@@ -85,11 +85,11 @@ export default function (env, argv) {
 			historyApiFallback: true,
 			proxy: [
 				{
-					context: ["/vkui-tokens/assets"],
-					target: "http://localhost:3000",
-					pathRewrite: { "^/vkui-tokens/(.*)": "/$1" },
+					context: ['/vkui-tokens/assets'],
+					target: 'http://localhost:3000',
+					pathRewrite: { '^/vkui-tokens/(.*)': '/$1' },
 				},
-			]
+			],
 		},
 	};
-};
+}
