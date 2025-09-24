@@ -104,7 +104,7 @@
     "tscpaths": "^0.0.9",
     "type-fest": "^4.41.0",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^7.7.1",
+    "typescript-eslint": "^8.44.1",
     "webpack": "^5.100.2",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
