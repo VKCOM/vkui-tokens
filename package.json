@@ -98,7 +98,7 @@
     "tree-sitter": "^0.25.0",
     "ts-jest": "^29.4.0",
     "ts-loader": "^9.5.2",
-    "ts-morph": "^26.0.0",
+    "ts-morph": "^27.0.0",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "tscpaths": "^0.0.9",
