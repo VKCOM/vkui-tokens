@@ -16,6 +16,7 @@
     "build:script": "ts-node -r tsconfig-paths/register src/build/index.ts",
     "lint": "TIMING=1 eslint ./src --ext .ts",
     "lint:fix": "npm run lint -- --fix",
+    "lint:prettier": "prettier --check --ignore-unknown --cache --cache-location .cache/.prettiercache .",
     "tsc": "tsc --project tsconfig.json",
     "tsc:dist": "tsc --project tsconfig.publish.json",
     "tsc:generate-paths": "tscpaths -p tsconfig.tscpaths.json -s ./dist -o ./dist",

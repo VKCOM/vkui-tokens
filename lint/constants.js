@@ -1,14 +1,14 @@
 const noUnusedVars = [
-	"error",
+	'error',
 	{
-		vars: "all",
-		args: "after-used",
+		vars: 'all',
+		args: 'after-used',
 		ignoreRestSiblings: true,
-		argsIgnorePattern: "^_",
-		caughtErrors: "none",
+		argsIgnorePattern: '^_',
+		caughtErrors: 'none',
 	},
-]
+];
 
 module.exports = {
 	noUnusedVars,
-}
+};

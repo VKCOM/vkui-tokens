@@ -25,13 +25,15 @@ const TokensHeader: FC = () => {
 	const isTabletPlus = viewWidth > 3;
 
 	return (
-        <div
+		<div
 			className={clsx(
 				!isTabletPlus && 'space-y-12px',
 				isTabletPlus && 'flex items-center justify-between',
 			)}
 		>
-			<Title level="1" Component="h1">VKUI Tokens</Title>
+			<Title level="1" Component="h1">
+				VKUI Tokens
+			</Title>
 			<div className="flex space-x-1px">
 				<div
 					style={{
@@ -44,11 +46,9 @@ const TokensHeader: FC = () => {
 					</Link>
 				</div>
 				<div className="flex items-center" style={styles.linkContainer}>
-					<Icon16HelpOutline  style={{ color: '#99A2AD', marginRight: 6 }}/>
-					<RouterLink to="/vkui-tokens/articles/new-theme" style={{textDecoration: 'none'}}>
-						<Link>
-							Документация
-						</Link>
+					<Icon16HelpOutline style={{ color: '#99A2AD', marginRight: 6 }} />
+					<RouterLink to="/vkui-tokens/articles/new-theme" style={{ textDecoration: 'none' }}>
+						<Link>Документация</Link>
 					</RouterLink>
 				</div>
 				<div className="flex items-center" style={styles.linkContainer}>
@@ -59,7 +59,7 @@ const TokensHeader: FC = () => {
 				</div>
 			</div>
 		</div>
-    );
+	);
 };
 
 export default TokensHeader;
