@@ -2282,9 +2282,9 @@
     "@swc/helpers" "^0.5.17"
 
 "@vkontakte/vkui@^7.5.2":
-  version "7.7.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-7.7.0.tgz#d4b88bb8ed5f186c25fb03bc303297b4e9792018"
-  integrity sha512-WYEv4OlfJ9CTBO4gCyQo/WofEQjg/yr+3ufc6pH0PONS2vtdsIohVtRcv4VLtXailWRiMyB3Byi1Cl4WA3q1XQ==
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-7.8.0.tgz#5bfdf1c376144392cb7f48b3fcb9c247dba86d09"
+  integrity sha512-ZXH/Lr+ETMzy0bcVrRPfQYnE16WJE70/3Jg+pUp5mZ0kUKQIXBETnU/CalS56EidivAnUz/eiEAF6hC744nXew==
   dependencies:
     "@swc/helpers" "^0.5.17"
     "@vkontakte/icons" "^3.0.0"
