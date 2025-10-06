@@ -49,7 +49,6 @@ module.exports = {
 		'spaced-comment': ['error', 'always', { markers: ['#region'], exceptions: ['#endregion'] }],
 		'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 		'no-prototype-builtins': 'off',
-		'no-throw-literal': 'off',
 		'prefer-promise-reject-errors': 'off',
 		'no-shadow': 'off',
 		'prefer-template': 'error',
@@ -57,21 +56,13 @@ module.exports = {
 		'curly': 'error',
 
 		'@typescript-eslint/class-name-casing': 'off',
-		'no-useless-constructor': 'off', // see @typescript-eslint/no-useless-constructor
-		'@typescript-eslint/no-useless-constructor': 'error',
-		'no-unused-expressions': 'off', // плохо работает с ts (optional chaining)
-		'@typescript-eslint/no-unused-expressions': 'error',
-		'no-use-before-define': 'off',
-		'@typescript-eslint/no-use-before-define': 'off',
 		'@typescript-eslint/no-unused-vars': noUnusedVars,
 		'@typescript-eslint/explicit-member-accessibility': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
-		'@typescript-eslint/prefer-interface': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-object-literal-type-assertion': 'off',
-		'@typescript-eslint/no-var-requires': 'off',
 		'@typescript-eslint/naming-convention': [
-			'warn',
+			'error',
 			{ selector: 'default', format: ['camelCase'] },
 
 			{ selector: 'variableLike', format: ['camelCase'] },
@@ -83,6 +74,10 @@ module.exports = {
 				selector: 'parameter',
 				format: ['camelCase'],
 				leadingUnderscore: 'allow',
+			},
+			{
+				selector: 'import',
+				format: ['camelCase', 'PascalCase'],
 			},
 			{ selector: 'memberLike', format: ['camelCase'] },
 			{
@@ -106,23 +101,18 @@ module.exports = {
 			},
 		],
 		'@typescript-eslint/interface-name-prefix': 'off',
-		'@typescript-eslint/no-empty-interface': 'off',
 
-		'unicorn/no-nested-ternary': 'warn',
 		'unicorn/catch-error-name': [
 			'error',
 			{
 				ignore: ['^(error|err)$'],
 			},
 		],
-		'unicorn/prefer-reflect-apply': 'off', // можно дропнуть вместе с поддержкой ie11
 		'unicorn/no-abusive-eslint-disable': 'off',
-		'require-atomic-updates': 'off', // красивое правило, но нужно подождать https://github.com/eslint/eslint/issues/11899
 
 		'import/no-default-export': 'off',
 		'import/named': 'off',
-		'import/no-unresolved': 'warn',
-		'import/no-webpack-loader-syntax': 'warn',
+		'import/no-unresolved': 'error',
 
 		'simple-import-sort/imports': 'error',
 		'simple-import-sort/exports': 'error',
@@ -145,6 +135,7 @@ module.exports = {
 					'staticContext',
 					'toValue',
 					'destination',
+					'objectTo',
 				],
 			},
 		],

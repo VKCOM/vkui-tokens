@@ -3,12 +3,14 @@ import { Theme, ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
 function removeOriginValue(object: Record<string, any>) {
 	if (typeof object === 'object') {
 		if ('originalValue' in object) {
+			// eslint-disable-next-line no-param-reassign
 			delete object.originalValue;
 			return;
 		}
 
 		Object.entries(object).forEach(([key, value]) => {
 			if (key === 'themeType') {
+				// eslint-disable-next-line no-param-reassign
 				object[key] = 'cssVars';
 				return;
 			}

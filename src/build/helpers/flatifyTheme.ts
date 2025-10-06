@@ -7,18 +7,16 @@ export function flatifyTheme<T = ThemeDescription>(
 ): T {
 	return Object.entries(theme).reduce((acc, [themeKey, themeValue]) => {
 		if (typeof themeValue === 'object') {
-			const rebuildVar = false;
+			const clonedValue = JSON.parse(JSON.stringify(themeValue));
 			removeStates.forEach((state) => {
-				if (state in themeValue) {
-					if (!rebuildVar) {
-						themeValue = JSON.parse(JSON.stringify(themeValue));
-					}
-
-					delete themeValue[state];
+				if (state in clonedValue) {
+					delete clonedValue[state];
 				}
 			});
+			acc[themeKey] = clonedValue;
+		} else {
+			acc[themeKey] = themeValue;
 		}
-		acc[themeKey] = themeValue;
 		return acc;
 	}, {} as T);
 }

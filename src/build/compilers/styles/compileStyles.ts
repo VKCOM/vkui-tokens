@@ -115,28 +115,29 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 	let result = '';
 	let variables = '';
 	let groupTokens = '';
+	let processedTheme = theme;
 
 	switch (mode) {
 		case 'onlyColors':
-			theme = getOnlyColors(theme);
+			processedTheme = getOnlyColors(processedTheme);
 			break;
 
 		case 'noSizes':
-			theme = getAllButSizes(theme, (theme as any).themeNameBase);
+			processedTheme = getAllButSizes(processedTheme, (processedTheme as any).themeNameBase);
 			break;
 
 		case 'noColors':
-			theme = getAllButColors(theme, (theme as any).themeNameBase);
+			processedTheme = getAllButColors(processedTheme, (processedTheme as any).themeNameBase);
 			break;
 	}
 
-	Object.keys(theme).forEach((key) => {
+	Object.keys(processedTheme).forEach((key) => {
 		// пропускаем служебные ключи
 		if (serviceKeys.includes(key)) {
 			return;
 		}
 
-		const token = theme[key];
+		const token = processedTheme[key];
 
 		// в инкрементальном режиме пропускаем токены, чьи значения совпадают со значениями из themeBase
 		if (incremental && themeBase && isDeepEqual(token, themeBase[key])) {
