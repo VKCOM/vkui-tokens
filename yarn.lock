@@ -2248,9 +2248,9 @@
     "@swc/helpers" "^0.5.17"
 
 "@vkontakte/icons@^3.0.0", "@vkontakte/icons@^3.13.0":
-  version "3.17.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-3.17.1.tgz#86a7e50f2cfbe60df62210927a5a193df2e5889d"
-  integrity sha512-jKN3Kr0N7mPIKsq2RT/XR9Pg3ZUPJhgyXng81BD63rPRYlTu90tRMT3vqw5fN9fg5zSvEB82/MMnOjp3fmCGMA==
+  version "3.21.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-3.21.0.tgz#2775fdb5ee44cb4621c3fa0f30cc48edbaf7a1cc"
+  integrity sha512-CiHpFxskZE1Sjprg344t19VJDslHHPcTNPDd/BPm9j1Enjx1EziUZnUaIkJB7W5l+bXZp7UEeYWG0A3xNW/SMg==
   dependencies:
     "@swc/helpers" "^0.5.17"
     "@vkontakte/icons-sprite" "^3.1.1"
