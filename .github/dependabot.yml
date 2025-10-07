@@ -7,6 +7,7 @@ updates:
     allow:
       - dependency-type: 'direct'
     open-pull-requests-limit: 10
+    versioning-strategy: increase
     groups:
       react:
         patterns:
