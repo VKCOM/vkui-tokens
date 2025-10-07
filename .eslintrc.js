@@ -118,7 +118,7 @@ module.exports = {
 		'simple-import-sort/exports': 'error',
 
 		'no-param-reassign': [
-			'warn',
+			'error',
 			{
 				props: true,
 				ignorePropertyModificationsFor: [
