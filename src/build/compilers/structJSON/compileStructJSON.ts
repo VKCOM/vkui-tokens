@@ -37,14 +37,14 @@ function parseRawToken(rawToken: string): StructGradientPoint {
 	const step =
 		percentMatch && percentMatch.length > 0 ? parseFloat(percentMatch[0]) / 100 : undefined;
 
-	rawToken = rawToken.replace(/^,\s/g, '').replace(/\d+$/g, '').trim();
+	const processedToken = rawToken.replace(/^,\s/g, '').replace(/\d+$/g, '').trim();
 
-	if (rawToken.startsWith('var(')) {
-		const varNameRaw = /^var\(([\w\-_]+)/.exec(rawToken);
+	if (processedToken.startsWith('var(')) {
+		const varNameRaw = /^var\(([\w\-_]+)/.exec(processedToken);
 
 		if (varNameRaw) {
 			const varName = varNameRaw[1];
-			const varValue = rawToken.slice(varNameRaw[0].length, -1).trim().slice(1).trim();
+			const varValue = processedToken.slice(varNameRaw[0].length, -1).trim().slice(1).trim();
 
 			return {
 				step,
@@ -56,9 +56,9 @@ function parseRawToken(rawToken: string): StructGradientPoint {
 	}
 
 	return {
-		color: rawToken,
+		color: processedToken,
 		step,
-		alpha: new Color(rawToken).alpha(),
+		alpha: new Color(processedToken).alpha(),
 	};
 }
 

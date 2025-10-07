@@ -1,5 +1,4 @@
 const silence = require.resolve('./silence-core.js');
-const { noUnusedVars } = require('./constants.js');
 
 module.exports = {
 	plugins: ['@typescript-eslint'],
@@ -21,7 +20,7 @@ module.exports = {
 		'no-unused-expressions': 'off',
 		'no-unused-vars': 'off',
 		'no-use-before-define': 'off',
-		'no-useless-constructor': 'off',
+		'no-useless-constructor': 'off', // see @typescript-eslint/no-useless-constructor
 		// #endregion
 
 		'@typescript-eslint/init-declarations': ['error', 'always'],
@@ -39,7 +38,6 @@ module.exports = {
 			'error',
 			{ allowShortCircuit: true, allowTernary: true },
 		],
-		'@typescript-eslint/no-unused-vars': noUnusedVars,
 		'@typescript-eslint/no-use-before-define': [
 			'error',
 			{ functions: false, enums: false, ignoreTypeReferences: true },

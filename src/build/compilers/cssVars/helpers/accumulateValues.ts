@@ -91,6 +91,7 @@ const fillValues = ({
 
 		if (adaptiveKeys.includes(key as keyof Adaptive<any>)) {
 			if (!adaptiveDestination[key]) {
+				// eslint-disable-next-line no-param-reassign
 				adaptiveDestination[key] = {};
 			}
 

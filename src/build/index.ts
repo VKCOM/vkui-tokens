@@ -196,7 +196,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 console.log('успешно\n');
 
 console.log('записываем корректный package.json');
-const packageJsonObject = require(`${ROOT_DIR}/package.json`);
+const packageJsonObject = fs.readJSONSync(`${ROOT_DIR}/package.json`);
 delete packageJsonObject.scripts.prepublishOnly;
 fs.writeFileSync(
 	`${DIST_PATH}/package.json`,
