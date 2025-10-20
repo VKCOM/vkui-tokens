@@ -56,7 +56,7 @@
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0",
     "@vkontakte/icons": "^3.22.0",
     "@vkontakte/prettier-config": "^0.2.1",
-    "@vkontakte/vkjs": "^2.0.1",
+    "@vkontakte/vkjs": "^2.0.2",
     "@vkontakte/vkui": "^7.5.2",
     "babel-jest": "^30.0.5",
     "babel-loader": "^10.0.0",
