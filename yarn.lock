@@ -2260,10 +2260,10 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/prettier-config/-/prettier-config-0.2.1.tgz#6f55da640b9b09c186507a165e72dee6ae8ca02b"
   integrity sha512-eKAwPUGccR2zNIH+aEhTLFi1CSphACwYuCvzhcbYbwdwtgfLg+jSylpxN2ecAXga+/WjQeO2Us//N7TnWBGToA==
 
-"@vkontakte/vkjs@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-2.0.1.tgz#a93511932ba4bd3a0d8e9b1316cf0d7d928ec1dd"
-  integrity sha512-VPce+45X7mXpukkLwDaXwFfqfq0NZecoZ3Js3XwXFfhwNanetxMo/6XqG3sV319mxJoAqW8gMQoSv+ExLTlmYg==
+"@vkontakte/vkjs@^2.0.1", "@vkontakte/vkjs@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-2.0.2.tgz#b5f4dea0d5a23c3edb783ff511bf145f2a70b33a"
+  integrity sha512-Qm8Z4QY7wdmiEZ3oY3mR0/7kgF3S6PmlBS/4/strrGodoNjZmrC7BYNsq/yW3N5s3yDS50Hz/COtVsnNYfpcSA==
   dependencies:
     "@swc/helpers" "^0.5.0"
     clsx "^2.1.1"
