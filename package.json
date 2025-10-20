@@ -54,7 +54,7 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0",
-    "@vkontakte/icons": "^3.22.0",
+    "@vkontakte/icons": "^3.23.0",
     "@vkontakte/prettier-config": "^0.2.1",
     "@vkontakte/vkjs": "^2.0.2",
     "@vkontakte/vkui": "^7.5.2",
