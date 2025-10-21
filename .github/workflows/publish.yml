@@ -1,0 +1,122 @@
+name: 'Publish release'
+run-name: Publish release ${{ inputs.custom_version || inputs.new_version }} (tag ${{ inputs.npm_tag_aka_pre_id || 'none' }})
+
+on:
+  workflow_dispatch:
+    inputs:
+      new_version:
+        description: 'version type:'
+        required: true
+        type: choice
+        default: 'minor'
+        options:
+          - patch
+          - minor
+          - major
+      custom_version:
+        description: 'use syntax x.y.z, without "v" (it will ignore "version type" parameter):'
+        required: false
+      npm_tag_aka_pre_id:
+        description: 'npm tag (default "latest", use "none" for publish without tag):'
+        required: false
+        type: choice
+        options:
+          - latest
+          - dev
+          - rc
+          - beta
+          - alpha
+          - none
+      publish_release_notes:
+        description: 'publish release notes'
+        type: boolean
+        default: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Node setup
+        uses: ./.github/actions/node-setup
+      - name: Run Eslint
+        run: yarn run lint
+      - name: Run Prettier
+        run: yarn run lint:prettier
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Node setup
+        uses: ./.github/actions/node-setup
+      - name: Run tests
+        run: yarn run test:ci
+
+  build_and_publish:
+    concurrency: ci-publish
+    needs: [lint, test]
+    permissions:
+      contents: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Node setup
+        uses: ./.github/actions/node-setup
+
+      - name: Bump version
+        run: |
+          VERSION="${{ inputs.custom_version || inputs.new_version }}"
+          npm version $VERSION --commit-hooks=false --git-tag-version=false
+
+      - name: Run build
+        run: yarn run clean-build
+
+      - name: Set Git credentials
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Get package version
+        id: get_version
+        run: |
+          echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
+      - name: Commit and tag version bump
+        run: |
+          git add -A
+          git commit -m "chore: bump version to v${{ steps.get_version.outputs.version }}"
+
+      - name: Pushing changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.DEVTOOLS_GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          tags: false
+
+      - name: Publish to npm
+        run: |
+          if [ "${{ inputs.npm_tag_aka_pre_id }}" = "none" ]; then
+            npm publish
+          else
+            npm publish --tag ${{ inputs.npm_tag_aka_pre_id }}
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
+        working-directory: ./dist
+
+      - name: Get bumped commit sha
+        if: ${{ inputs.publish_release_notes == true }}
+        id: get_bumped_commit
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+
+      - name: Publish release notes
+        if: ${{ inputs.publish_release_notes == true }}
+        uses: VKCOM/gh-actions/vkui-tokens/publish-release-notes@main
+        with:
+          token: ${{ secrets.DEVTOOLS_GITHUB_TOKEN }}
+          releaseName: v${{ steps.get_version.outputs.version }}
+          latest: ${{ inputs.npm_tag_aka_pre_id == 'latest' }}
+          sha: ${{ steps.get_bumped_commit.outputs.sha }}
