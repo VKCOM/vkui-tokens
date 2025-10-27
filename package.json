@@ -44,7 +44,7 @@
     "csstype": "^3.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.0",
+    "@babel/core": "^7.28.5",
     "@svgr/webpack": "^8.1.0",
     "@types/color": "^4.2.0",
     "@types/common-tags": "^1.8.4",
