@@ -57,7 +57,7 @@
     "@vkontakte/icons": "^3.23.0",
     "@vkontakte/prettier-config": "^0.2.1",
     "@vkontakte/vkjs": "^2.0.2",
-    "@vkontakte/vkui": "^7.5.2",
+    "@vkontakte/vkui": "^7.9.0",
     "babel-jest": "^30.0.5",
     "babel-loader": "^10.0.0",
     "clean-webpack-plugin": "^4.0.0",
