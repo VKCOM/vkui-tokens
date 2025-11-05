@@ -2265,7 +2265,7 @@
   resolved "https://registry.yarnpkg.com/@vkontakte/prettier-config/-/prettier-config-0.2.1.tgz#6f55da640b9b09c186507a165e72dee6ae8ca02b"
   integrity sha512-eKAwPUGccR2zNIH+aEhTLFi1CSphACwYuCvzhcbYbwdwtgfLg+jSylpxN2ecAXga+/WjQeO2Us//N7TnWBGToA==
 
-"@vkontakte/vkjs@^2.0.1", "@vkontakte/vkjs@^2.0.2":
+"@vkontakte/vkjs@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@vkontakte/vkjs/-/vkjs-2.0.2.tgz#b5f4dea0d5a23c3edb783ff511bf145f2a70b33a"
   integrity sha512-Qm8Z4QY7wdmiEZ3oY3mR0/7kgF3S6PmlBS/4/strrGodoNjZmrC7BYNsq/yW3N5s3yDS50Hz/COtVsnNYfpcSA==
@@ -2286,14 +2286,14 @@
     "@floating-ui/react-dom" "^2.1.6"
     "@swc/helpers" "^0.5.17"
 
-"@vkontakte/vkui@^7.5.2":
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-7.8.0.tgz#5bfdf1c376144392cb7f48b3fcb9c247dba86d09"
-  integrity sha512-ZXH/Lr+ETMzy0bcVrRPfQYnE16WJE70/3Jg+pUp5mZ0kUKQIXBETnU/CalS56EidivAnUz/eiEAF6hC744nXew==
+"@vkontakte/vkui@^7.9.2":
+  version "7.9.2"
+  resolved "https://registry.yarnpkg.com/@vkontakte/vkui/-/vkui-7.9.2.tgz#5874c708acb433f35d9a93b0aa9645cb833bf4ab"
+  integrity sha512-E+doyBPBnKJFPedOc7MO8dcTSSJfv7lFdY9LfxeIuRSAPs3V1hR5AxIyzzDgh5TeiVk6gK+fxbCLl3fuuMmFIA==
   dependencies:
     "@swc/helpers" "^0.5.17"
     "@vkontakte/icons" "^3.0.0"
-    "@vkontakte/vkjs" "^2.0.1"
+    "@vkontakte/vkjs" "^2.0.2"
     "@vkontakte/vkui-date-fns-tz" "^0.0.6"
     "@vkontakte/vkui-floating-ui" "^0.2.7"
 
