@@ -62,6 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+
       - name: Node setup
         uses: ./.github/actions/node-setup
 
@@ -102,8 +103,6 @@ jobs:
           else
             npm publish --tag ${{ inputs.npm_tag_aka_pre_id }}
           fi
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPMJS_PUBLISH_TOKEN }}
         working-directory: ./dist
 
       - name: Get bumped commit sha
