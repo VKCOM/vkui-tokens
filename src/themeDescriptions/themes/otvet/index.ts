@@ -2,10 +2,9 @@ import { ThemeOtvetDescription } from '@/interfaces/themes/otvet';
 import { ThemeOtvetDarkDescription } from '@/interfaces/themes/otvetDark';
 
 import { darkTheme, lightTheme } from '../../base/paradigm';
-import { fontSizes, helpers } from '../../common';
 
-const { x05, x3, x4, x5, x10 } = helpers;
-const { fontSize4, fontSize5, fontSize6, fontSize7, fontSize8 } = fontSizes;
+const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
+const fontFamilyBase = 'Arial, sans-serif';
 
 export const otvetTheme: ThemeOtvetDescription = {
 	...lightTheme,
@@ -13,64 +12,401 @@ export const otvetTheme: ThemeOtvetDescription = {
 	themeName: 'otvet',
 	themeNameBase: 'otvet',
 
-	sizeBorderRadiusPaper: {
-		regular: 4,
-	},
-
-	fontH0: {
+	fontFamilyAccent,
+	fontFamilyBase,
+	fontTitleXXL: {
 		regular: {
-			...fontSize8,
-			fontWeight: 700,
-			marginBottom: x5,
+			fontSize: 36,
+			lineHeight: 44,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 36,
+			lineHeight: 44,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
 		},
 	},
 
-	fontH1: {
+	fontTitleXL: {
 		regular: {
-			...fontSize7,
-			fontWeight: 700,
-			marginBottom: x4,
+			fontSize: 26,
+			lineHeight: 32,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
 		},
-	},
-
-	fontH2: {
-		regular: {
-			...fontSize6,
-			fontWeight: 700,
-			marginBottom: x3,
+		compact: {
+			fontSize: 26,
+			lineHeight: 32,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
 		},
 	},
 
 	fontTitle1: {
 		regular: {
-			...fontSize5,
-			fontWeight: 700,
-			marginBottom: x3,
+			fontSize: 24,
+			lineHeight: 28,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 24,
+			lineHeight: 28,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+
+	fontTitle1Bold: {
+		regular: {
+			fontSize: 24,
+			lineHeight: 28,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 24,
+			lineHeight: 28,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
 		},
 	},
 
 	fontTitle2: {
 		regular: {
-			...fontSize4,
-			fontWeight: 700,
-			marginBottom: x3,
+			fontSize: 22,
+			lineHeight: 28,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 22,
+			lineHeight: 28,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
 		},
 	},
 
-	sizeFieldHeight: {
-		regular: x10,
+	fontTitle2Bold: {
+		regular: {
+			fontSize: 22,
+			lineHeight: 28,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 22,
+			lineHeight: 28,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
+		},
 	},
 
-	sizeButtonPaddingHorizontal: {
-		regular: x5,
+	fontTitle3: {
+		regular: {
+			fontSize: 20,
+			lineHeight: 26,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 20,
+			lineHeight: 26,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
 	},
 
-	sizeIconMargin: {
-		regular: x3,
+	fontTitle4: {
+		regular: {
+			fontSize: 17,
+			lineHeight: 22,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 17,
+			lineHeight: 22,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
 	},
 
-	sizeIconUI: {
-		regular: x4 + x05,
+	fontHeadline1: {
+		regular: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 16,
+			lineHeight: 20,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+
+	fontHeadline2: {
+		regular: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+
+	fontHeadline2Bold: {
+		regular: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 600,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+
+	fontParagraph: {
+		regular: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			fontSize: 15,
+			lineHeight: 20,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontSubhead: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+
+	fontSubheadBold: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+		compact: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+	},
+
+	fontFootnote: {
+		regular: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontFootnoteCaps: {
+		regular: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.3px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.3px',
+			textTransform: 'uppercase',
+		},
+	},
+
+	fontCaption1: {
+		regular: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontCaption1Caps: {
+		regular: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.26px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.26px',
+			textTransform: 'uppercase',
+		},
+	},
+
+	fontCaption2: {
+		regular: {
+			fontSize: 11,
+			lineHeight: 14,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			fontSize: 11,
+			lineHeight: 14,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontCaption2Bold: {
+		regular: {
+			fontSize: 11,
+			lineHeight: 14,
+			fontWeight: 500,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			fontSize: 11,
+			lineHeight: 14,
+			fontWeight: 500,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontCaption2Caps: {
+		regular: {
+			fontSize: 11,
+			lineHeight: 14,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.22px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			fontSize: 11,
+			lineHeight: 14,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.22px',
+			textTransform: 'uppercase',
+		},
+	},
+
+	fontCaption3: {
+		regular: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontCaption3Bold: {
+		regular: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 500,
+			fontFamily: fontFamilyBase,
+		},
+		compact: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 500,
+			fontFamily: fontFamilyBase,
+		},
+	},
+
+	fontCaption3Caps: {
+		regular: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.16px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.16px',
+			textTransform: 'uppercase',
+		},
+	},
+
+	fontCaption3CapsBold: {
+		regular: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 500,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.16px',
+			textTransform: 'uppercase',
+		},
+		compact: {
+			fontSize: 9,
+			lineHeight: 12,
+			fontWeight: 500,
+			fontFamily: fontFamilyBase,
+			letterSpacing: '0.16px',
+			textTransform: 'uppercase',
+		},
 	},
 
 	colors: {
@@ -83,8 +419,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 
 export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 	...otvetTheme,
+
 	themeName: 'otvetDark',
 	colorsScheme: 'dark',
+
 	colors: {
 		...otvetTheme.colors,
 		...darkTheme.colors,
