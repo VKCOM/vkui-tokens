@@ -1,27 +1,17 @@
 import { ThemeOtvetDescription } from '@/interfaces/themes/otvet';
 import { ThemeOtvetDarkDescription } from '@/interfaces/themes/otvetDark';
 
-import { flatifyTheme } from '../../../build/helpers/flatifyTheme';
 import { darkTheme, lightTheme } from '../../base/paradigm';
 import { fontSizes, helpers } from '../../common';
 
 const { x05, x3, x4, x5, x10 } = helpers;
 const { fontSize4, fontSize5, fontSize6, fontSize7, fontSize8 } = fontSizes;
 
-const octaviusThemeRegular = flatifyTheme(lightTheme);
-
 export const otvetTheme: ThemeOtvetDescription = {
-	...octaviusThemeRegular,
+	...lightTheme,
 
 	themeName: 'otvet',
 	themeNameBase: 'otvet',
-
-	breakpoints: {
-		desktopS: {
-			breakpoint: 0,
-			adaptiveValue: 'regular',
-		},
-	},
 
 	sizeBorderRadiusPaper: {
 		regular: 4,
@@ -82,6 +72,13 @@ export const otvetTheme: ThemeOtvetDescription = {
 	sizeIconUI: {
 		regular: x4 + x05,
 	},
+
+	colors: {
+		...lightTheme.colors,
+
+		colorBackground: '#EEEFF1',
+		colorFieldBackground: 'rgba(0, 16, 61, 0.06)',
+	},
 };
 
 export const otvetDarkTheme: ThemeOtvetDarkDescription = {
@@ -92,21 +89,50 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 		...otvetTheme.colors,
 		...darkTheme.colors,
 
-		colorBackgroundContent: {
-			normal: '#191919',
-			hover: '#2B2B2B',
-			active: '#2B2B2B',
+		// Background
+		colorBackground: '#181B20',
+		colorBackgroundContent: '#20272E',
+		colorBackgroundModal: '#2A333C',
+		colorBackgroundTertiary: 'rgba(167, 203, 238, 0.06)',
+		colorFieldBackground: 'rgba(167, 203, 238, 0.12)',
+
+		// Background Tint
+		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.4)',
+		colorBackgroundAccentTintThemed: '#134782',
+
+		// Stroke
+		colorSeparatorPrimary: '#444A4F',
+		colorSeparatorPrimaryAlpha: 'rgba(68, 74, 79, 0.6)',
+
+		// States
+		colorBackgroundAccent: {
+			normal: '#0077FF',
+			hover: '#0073F7',
+			active: '#006FEF',
 		},
 
-		colorTextPrimary: '#E7E8EA',
-		colorTextSecondary: '#8C8E94',
+		colorBackgroundSecondary: {
+			normal: '#303B45',
+			hover: '#36414D',
+			active: '#3B4854',
+		},
 
-		colorIconPrimary: '#B4B4B4',
-		colorIconSecondary: '#5F5F5F',
-		colorFieldBorderAlpha: {
+		colorBackgroundSecondaryAlpha: {
+			normal: 'rgba(167, 203, 238, 0.12)',
+			hover: 'rgba(167, 203, 238, 0.16)',
+			active: 'rgba(167, 203, 238, 0.2)',
+		},
+
+		colorTransparent: {
 			normal: 'transparent',
-			hover: 'transparent',
-			active: 'transparent',
+			hover: 'rgba(167, 203, 238, 0.12)',
+			active: 'rgba(167, 203, 238, 0.16)',
+		},
+
+		colorBackgroundAccentTintThemedAlpha: {
+			normal: 'rgba(0, 119, 255, 0.4)',
+			hover: 'rgba(0, 119, 255, 0.46)',
+			active: 'rgba(0, 119, 255, 0.52)',
 		},
 	},
 };

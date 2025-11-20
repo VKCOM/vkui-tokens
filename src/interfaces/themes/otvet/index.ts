@@ -1,10 +1,10 @@
+import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
 
-type OtvetViewports = ['desktopS'];
-export interface ThemeOtvet extends ParadigmTheme<OtvetViewports> {}
-export interface ThemeOtvetDescription extends ParadigmThemeDescription<OtvetViewports> {}
-export interface ThemeOtvetCssVars extends ParadigmThemeCssVars<OtvetViewports, ThemeOtvet> {}
+export interface ThemeOtvet extends ParadigmTheme<DefaultViewports> {}
+export interface ThemeOtvetDescription extends ParadigmThemeDescription<DefaultViewports> {}
+export interface ThemeOtvetCssVars extends ParadigmThemeCssVars<DefaultViewports, ThemeOtvet> {}
