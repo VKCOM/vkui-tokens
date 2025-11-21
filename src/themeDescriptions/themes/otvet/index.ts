@@ -21,22 +21,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 600,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 36,
-			lineHeight: 44,
-			fontWeight: 600,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontTitleXL: {
 		regular: {
-			fontSize: 26,
-			lineHeight: 32,
-			fontWeight: 600,
-			fontFamily: fontFamilyAccent,
-		},
-		compact: {
 			fontSize: 26,
 			lineHeight: 32,
 			fontWeight: 600,
@@ -51,22 +39,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 500,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 24,
-			lineHeight: 28,
-			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontTitle1Bold: {
 		regular: {
-			fontSize: 24,
-			lineHeight: 28,
-			fontWeight: 600,
-			fontFamily: fontFamilyAccent,
-		},
-		compact: {
 			fontSize: 24,
 			lineHeight: 28,
 			fontWeight: 600,
@@ -81,22 +57,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 500,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 22,
-			lineHeight: 28,
-			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontTitle2Bold: {
 		regular: {
-			fontSize: 22,
-			lineHeight: 28,
-			fontWeight: 600,
-			fontFamily: fontFamilyAccent,
-		},
-		compact: {
 			fontSize: 22,
 			lineHeight: 28,
 			fontWeight: 600,
@@ -111,22 +75,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 500,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 20,
-			lineHeight: 26,
-			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontTitle4: {
 		regular: {
-			fontSize: 17,
-			lineHeight: 22,
-			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
-		},
-		compact: {
 			fontSize: 17,
 			lineHeight: 22,
 			fontWeight: 500,
@@ -141,22 +93,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 500,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 16,
-			lineHeight: 20,
-			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontHeadline2: {
 		regular: {
-			fontSize: 15,
-			lineHeight: 20,
-			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
-		},
-		compact: {
 			fontSize: 15,
 			lineHeight: 20,
 			fontWeight: 500,
@@ -171,22 +111,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 600,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 15,
-			lineHeight: 20,
-			fontWeight: 600,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontParagraph: {
 		regular: {
-			fontSize: 15,
-			lineHeight: 20,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
 			fontSize: 15,
 			lineHeight: 20,
 			fontWeight: 400,
@@ -201,12 +129,6 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 400,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 14,
-			lineHeight: 18,
-			fontWeight: 400,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontSubheadBold: {
@@ -216,22 +138,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 500,
 			fontFamily: fontFamilyAccent,
 		},
-		compact: {
-			fontSize: 14,
-			lineHeight: 18,
-			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
-		},
 	},
 
 	fontFootnote: {
 		regular: {
-			fontSize: 13,
-			lineHeight: 18,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
 			fontSize: 13,
 			lineHeight: 18,
 			fontWeight: 400,
@@ -248,24 +158,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			letterSpacing: '0.3px',
 			textTransform: 'uppercase',
 		},
-		compact: {
-			fontSize: 13,
-			lineHeight: 18,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-			letterSpacing: '0.3px',
-			textTransform: 'uppercase',
-		},
 	},
 
 	fontCaption1: {
 		regular: {
-			fontSize: 12,
-			lineHeight: 16,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
 			fontSize: 12,
 			lineHeight: 16,
 			fontWeight: 400,
@@ -282,14 +178,6 @@ export const otvetTheme: ThemeOtvetDescription = {
 			letterSpacing: '0.26px',
 			textTransform: 'uppercase',
 		},
-		compact: {
-			fontSize: 12,
-			lineHeight: 16,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-			letterSpacing: '0.26px',
-			textTransform: 'uppercase',
-		},
 	},
 
 	fontCaption2: {
@@ -299,22 +187,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 400,
 			fontFamily: fontFamilyBase,
 		},
-		compact: {
-			fontSize: 11,
-			lineHeight: 14,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-		},
 	},
 
 	fontCaption2Bold: {
 		regular: {
-			fontSize: 11,
-			lineHeight: 14,
-			fontWeight: 500,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
 			fontSize: 11,
 			lineHeight: 14,
 			fontWeight: 500,
@@ -331,24 +207,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			letterSpacing: '0.22px',
 			textTransform: 'uppercase',
 		},
-		compact: {
-			fontSize: 11,
-			lineHeight: 14,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-			letterSpacing: '0.22px',
-			textTransform: 'uppercase',
-		},
 	},
 
 	fontCaption3: {
 		regular: {
-			fontSize: 9,
-			lineHeight: 12,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-		},
-		compact: {
 			fontSize: 9,
 			lineHeight: 12,
 			fontWeight: 400,
@@ -363,24 +225,10 @@ export const otvetTheme: ThemeOtvetDescription = {
 			fontWeight: 500,
 			fontFamily: fontFamilyBase,
 		},
-		compact: {
-			fontSize: 9,
-			lineHeight: 12,
-			fontWeight: 500,
-			fontFamily: fontFamilyBase,
-		},
 	},
 
 	fontCaption3Caps: {
 		regular: {
-			fontSize: 9,
-			lineHeight: 12,
-			fontWeight: 400,
-			fontFamily: fontFamilyBase,
-			letterSpacing: '0.16px',
-			textTransform: 'uppercase',
-		},
-		compact: {
 			fontSize: 9,
 			lineHeight: 12,
 			fontWeight: 400,
@@ -399,14 +247,12 @@ export const otvetTheme: ThemeOtvetDescription = {
 			letterSpacing: '0.16px',
 			textTransform: 'uppercase',
 		},
-		compact: {
-			fontSize: 9,
-			lineHeight: 12,
-			fontWeight: 500,
-			fontFamily: fontFamilyBase,
-			letterSpacing: '0.16px',
-			textTransform: 'uppercase',
-		},
+	},
+
+	spacingSize3Xl: 36,
+
+	sizeBorder: {
+		regular: 1,
 	},
 
 	colors: {
@@ -414,6 +260,18 @@ export const otvetTheme: ThemeOtvetDescription = {
 
 		colorBackground: '#EEEFF1',
 		colorFieldBackground: 'rgba(0, 16, 61, 0.06)',
+
+		colorBackgroundPositiveTint: {
+			normal: '#ECFAF3',
+			hover: '#DEF6E2',
+			active: '#D9E7E4',
+		},
+
+		colorBackgroundNegativeTint: {
+			normal: '#FEEFEB',
+			hover: '#F9DBDE',
+			active: '#EADDDD',
+		},
 	},
 };
 

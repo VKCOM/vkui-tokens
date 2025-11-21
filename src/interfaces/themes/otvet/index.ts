@@ -20,8 +20,20 @@ export interface ThemeOtvetTypography {
 	fontCaption3Bold: Adaptive<Font>;
 }
 
-export interface ThemeOtvet extends ParadigmTheme<DefaultViewports>, ThemeOtvetTypography {}
+export interface ThemeOtveLocalSizes {
+	sizeBorder: number;
+}
+
+type ThemeOtvetAdaptiveTokens = {
+	[key in keyof ThemeOtveLocalSizes]: Adaptive<ThemeOtveLocalSizes[key]>;
+};
+
+export interface ThemeOtvet
+	extends ParadigmTheme<DefaultViewports>,
+		ThemeOtvetTypography,
+		ThemeOtvetAdaptiveTokens {}
 export interface ThemeOtvetDescription
 	extends ParadigmThemeDescription<DefaultViewports>,
-		ThemeOtvetTypography {}
+		ThemeOtvetTypography,
+		ThemeOtvetAdaptiveTokens {}
 export interface ThemeOtvetCssVars extends ParadigmThemeCssVars<DefaultViewports, ThemeOtvet> {}
