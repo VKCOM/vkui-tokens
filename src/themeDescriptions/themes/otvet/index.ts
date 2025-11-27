@@ -272,6 +272,18 @@ export const otvetTheme: ThemeOtvetDescription = {
 			hover: '#F9DBDE',
 			active: '#EADDDD',
 		},
+
+		colorTextAccent: {
+			normal: '#0070F0',
+			hover: '#005FCC',
+			active: '#004EA8',
+		},
+
+		colorIconAccent: {
+			normal: '#0077FF',
+			hover: '#005FCC',
+			active: '#004EA8',
+		},
 	},
 };
 
@@ -329,6 +341,18 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			normal: 'rgba(0, 119, 255, 0.4)',
 			hover: 'rgba(0, 119, 255, 0.46)',
 			active: 'rgba(0, 119, 255, 0.52)',
+		},
+
+		colorTextAccent: {
+			normal: '#1A85FF',
+			hover: '#3C97FF',
+			active: '#5FAAFF',
+		},
+
+		colorIconAccent: {
+			normal: '#0077FF',
+			hover: '#3C97FF',
+			active: '#5FAAFF',
 		},
 	},
 };
