@@ -298,6 +298,9 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 		...otvetTheme.colors,
 		...darkTheme.colors,
 
+		// Text
+		colorTextLink: '#00A9FF',
+
 		// Background
 		colorBackground: '#181B20',
 		colorBackgroundContent: '#20272E',
@@ -355,6 +358,12 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			normal: '#0077FF',
 			hover: '#3C97FF',
 			active: '#5FAAFF',
+		},
+
+		colorBackgroundSky: {
+			normal: '#1A3758',
+			hover: '#233F5F',
+			active: '#2C4765',
 		},
 	},
 };
