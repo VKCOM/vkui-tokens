@@ -1,7 +1,13 @@
+import {
+	ColorDescriptionStatic,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '@/interfaces/general/colors';
 import { Adaptive } from '@/interfaces/general/tools';
 import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 import { Font } from '@/interfaces/general/typography';
 import {
+	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
@@ -24,16 +30,29 @@ export interface ThemeOtveLocalSizes {
 	sizeBorder: number;
 }
 
+export interface LocalOtvetColorDescriptionStruct {
+	otvetColorBackgroundAnswer: ColorDescriptionStatic;
+}
+
 type ThemeOtvetAdaptiveTokens = {
 	[key in keyof ThemeOtveLocalSizes]: Adaptive<ThemeOtveLocalSizes[key]>;
+};
+
+export type OtvetLocalColors = {
+	[key in keyof LocalOtvetColorDescriptionStruct]: ColorWithStates;
 };
 
 export interface ThemeOtvet
 	extends ParadigmTheme<DefaultViewports>,
 		ThemeOtvetTypography,
-		ThemeOtvetAdaptiveTokens {}
+		ThemeOtvetAdaptiveTokens,
+		OtvetLocalColors {}
 export interface ThemeOtvetDescription
 	extends ParadigmThemeDescription<DefaultViewports>,
 		ThemeOtvetTypography,
-		ThemeOtvetAdaptiveTokens {}
+		ThemeOtvetAdaptiveTokens {
+	colors: LocalOtvetColorDescriptionStruct &
+		LocalParadigmColorsDescriptionStruct &
+		ColorsDescriptionStruct;
+}
 export interface ThemeOtvetCssVars extends ParadigmThemeCssVars<DefaultViewports, ThemeOtvet> {}
