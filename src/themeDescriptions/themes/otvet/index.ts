@@ -258,9 +258,41 @@ export const otvetTheme: ThemeOtvetDescription = {
 	colors: {
 		...lightTheme.colors,
 
+		// Background
 		colorBackground: '#EEEFF1',
 		colorFieldBackground: 'rgba(0, 16, 61, 0.06)',
 		otvetColorBackgroundAnswer: '#E7E9EC',
+
+		// Rang
+		colorRangHigherBrain: '#FCD6D6',
+		colorRangAi: '#E1F0A9',
+		colorRangGenius: '#FFD38B',
+		colorRangOracul: '#FFCAA7',
+		colorRangProLight: '#FACBF1',
+		colorRangMudriy: '#BEE9FF',
+		colorRangMyslitel: '#FED2D7',
+		colorRangGuru: '#F9EB98',
+		colorRangMaster: '#BDEFFD',
+		colorRangPro: '#FDCC89',
+		colorRangExpert: '#F7EAA7',
+		colorRangStudent: '#C9EDEE',
+
+		// Avatars
+		colorAvatarsRed: '#F55252',
+		colorAvatarsOrange: '#F68E42',
+		colorAvatarsPeach: '#FFB980',
+		colorAvatarsBlue: '#4C91FF',
+		colorAvatarsCoral: '#FEA4A4',
+		colorAvatarsGreen: '#43CC4C',
+		colorAvatarsIndigo: '#7772F8',
+		colorAvatarsLavender: '#D3B2FF',
+		colorAvatarsLime: '#C3F07F',
+		colorAvatarsMint: '#7BEADB',
+		colorAvatarsSea: '#22CEEC',
+		colorAvatarsSeagreen: '#42D7A5',
+		colorAvatarsSky: '#9EDBFF',
+		colorAvatarsViolet: '#F55252',
+		colorAvatarsYellow: '#FFD65C',
 
 		colorBackgroundPositiveTint: {
 			normal: '#ECFAF3',
@@ -316,6 +348,20 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 		// Stroke
 		colorSeparatorPrimary: '#444A4F',
 		colorSeparatorPrimaryAlpha: 'rgba(68, 74, 79, 0.6)',
+
+		// Rang
+		colorRangHigherBrain: '#9D6467',
+		colorRangAi: '#5A7133',
+		colorRangGenius: '#9D6A14',
+		colorRangOracul: '#9D4A14',
+		colorRangProLight: '#9D739C',
+		colorRangMudriy: '#0E81A3',
+		colorRangMyslitel: '#96727F',
+		colorRangGuru: '#898118',
+		colorRangMaster: '#0E81A3',
+		colorRangPro: '#9D6A14',
+		colorRangExpert: '#9D8C29',
+		colorRangStudent: '#5F8D93',
 
 		// States
 		colorBackgroundAccent: {

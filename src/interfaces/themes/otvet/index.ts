@@ -32,6 +32,33 @@ export interface ThemeOtveLocalSizes {
 
 export interface LocalOtvetColorDescriptionStruct {
 	otvetColorBackgroundAnswer: ColorDescriptionStatic;
+	colorRangHigherBrain: ColorDescriptionStatic;
+	colorRangAi: ColorDescriptionStatic;
+	colorRangGenius: ColorDescriptionStatic;
+	colorRangOracul: ColorDescriptionStatic;
+	colorRangProLight: ColorDescriptionStatic;
+	colorRangMudriy: ColorDescriptionStatic;
+	colorRangMyslitel: ColorDescriptionStatic;
+	colorRangGuru: ColorDescriptionStatic;
+	colorRangMaster: ColorDescriptionStatic;
+	colorRangPro: ColorDescriptionStatic;
+	colorRangExpert: ColorDescriptionStatic;
+	colorRangStudent: ColorDescriptionStatic;
+	colorAvatarsRed: ColorDescriptionStatic;
+	colorAvatarsOrange: ColorDescriptionStatic;
+	colorAvatarsPeach: ColorDescriptionStatic;
+	colorAvatarsYellow: ColorDescriptionStatic;
+	colorAvatarsLime: ColorDescriptionStatic;
+	colorAvatarsGreen: ColorDescriptionStatic;
+	colorAvatarsSea: ColorDescriptionStatic;
+	colorAvatarsMint: ColorDescriptionStatic;
+	colorAvatarsSeagreen: ColorDescriptionStatic;
+	colorAvatarsSky: ColorDescriptionStatic;
+	colorAvatarsBlue: ColorDescriptionStatic;
+	colorAvatarsIndigo: ColorDescriptionStatic;
+	colorAvatarsViolet: ColorDescriptionStatic;
+	colorAvatarsLavender: ColorDescriptionStatic;
+	colorAvatarsCoral: ColorDescriptionStatic;
 }
 
 type ThemeOtvetAdaptiveTokens = {
