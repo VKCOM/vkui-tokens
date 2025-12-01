@@ -255,6 +255,9 @@ export const otvetTheme: ThemeOtvetDescription = {
 		regular: 1,
 	},
 
+	// shadows
+	otvetBoxShadowIsland: '0px 6px 16px 0px rgba(0, 16, 61, 0.04)',
+
 	colors: {
 		...lightTheme.colors,
 
@@ -333,6 +336,9 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 
 	themeName: 'otvetDark',
 	colorsScheme: 'dark',
+
+	// shadows
+	otvetBoxShadowIsland: '0px 6px 16px 0px rgba (17, 20, 33, 0.16)',
 
 	colors: {
 		...otvetTheme.colors,

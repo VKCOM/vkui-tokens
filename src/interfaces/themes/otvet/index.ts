@@ -1,3 +1,5 @@
+import type { Property } from 'csstype';
+
 import {
 	ColorDescriptionStatic,
 	ColorsDescriptionStruct,
@@ -13,6 +15,9 @@ import {
 	ParadigmThemeDescription,
 } from '@/interfaces/namespaces/paradigm';
 
+export interface ThemeOtvetOverValues {
+	otvetBoxShadowIsland: Property.BoxShadow;
+}
 export interface ThemeOtvetTypography {
 	fontTitleXXL: Adaptive<Font>;
 	fontTitleXL: Adaptive<Font>;
@@ -72,11 +77,13 @@ export type OtvetLocalColors = {
 export interface ThemeOtvet
 	extends ParadigmTheme<DefaultViewports>,
 		ThemeOtvetTypography,
+		ThemeOtvetOverValues,
 		ThemeOtvetAdaptiveTokens,
 		OtvetLocalColors {}
 export interface ThemeOtvetDescription
 	extends ParadigmThemeDescription<DefaultViewports>,
 		ThemeOtvetTypography,
+		ThemeOtvetOverValues,
 		ThemeOtvetAdaptiveTokens {
 	colors: LocalOtvetColorDescriptionStruct &
 		LocalParadigmColorsDescriptionStruct &
