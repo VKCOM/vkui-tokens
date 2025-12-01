@@ -294,6 +294,14 @@ export const otvetTheme: ThemeOtvetDescription = {
 		colorAvatarsViolet: '#F55252',
 		colorAvatarsYellow: '#FFD65C',
 
+		// Palette
+		colorAccentCyan: {
+			normal: '#11AAC5',
+			hover: '#10A0B9',
+			active: '#0F96AD',
+		},
+
+		// states
 		colorBackgroundPositiveTint: {
 			normal: '#ECFAF3',
 			hover: '#DEF6E2',
@@ -362,6 +370,9 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 		colorRangPro: '#9D6A14',
 		colorRangExpert: '#9D8C29',
 		colorRangStudent: '#5F8D93',
+
+		// Palette
+		colorAccentCyan: '#07E5F9',
 
 		// States
 		colorBackgroundAccent: {
