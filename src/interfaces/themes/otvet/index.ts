@@ -5,6 +5,7 @@ import {
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '@/interfaces/general/colors';
+import { GradientPoints } from '@/interfaces/general/gradients';
 import { Adaptive } from '@/interfaces/general/tools';
 import { DefaultViewports } from '@/interfaces/general/tools/viewports';
 import { Font } from '@/interfaces/general/typography';
@@ -66,6 +67,11 @@ export interface LocalOtvetColorDescriptionStruct {
 	colorAvatarsCoral: ColorDescriptionStatic;
 }
 
+export interface ThemeOtvetGradients {
+	gradientContent0: GradientPoints;
+	gradientContent86: GradientPoints;
+}
+
 type ThemeOtvetAdaptiveTokens = {
 	[key in keyof ThemeOtveLocalSizes]: Adaptive<ThemeOtveLocalSizes[key]>;
 };
@@ -79,12 +85,14 @@ export interface ThemeOtvet
 		ThemeOtvetTypography,
 		ThemeOtvetOverValues,
 		ThemeOtvetAdaptiveTokens,
-		OtvetLocalColors {}
+		OtvetLocalColors,
+		ThemeOtvetGradients {}
 export interface ThemeOtvetDescription
 	extends ParadigmThemeDescription<DefaultViewports>,
 		ThemeOtvetTypography,
 		ThemeOtvetOverValues,
-		ThemeOtvetAdaptiveTokens {
+		ThemeOtvetAdaptiveTokens,
+		ThemeOtvetGradients {
 	colors: LocalOtvetColorDescriptionStruct &
 		LocalParadigmColorsDescriptionStruct &
 		ColorsDescriptionStruct;

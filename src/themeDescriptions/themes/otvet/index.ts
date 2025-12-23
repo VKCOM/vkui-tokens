@@ -258,13 +258,30 @@ export const otvetTheme: ThemeOtvetDescription = {
 	// shadows
 	otvetBoxShadowIsland: '0px 6px 16px 0px rgba(0, 16, 61, 0.04)',
 
+	// gradient
+	gradientContent0: 'rgba(255, 255, 255, 0.00)',
+	gradientContent86: 'rgba(255, 255, 255, 0.86)',
+
 	colors: {
 		...lightTheme.colors,
+
+		// Stroke
+		colorSeparatorSecondary: '#E0E2E8',
 
 		// Background
 		colorBackground: '#EEEFF1',
 		colorFieldBackground: 'rgba(0, 16, 61, 0.06)',
 		otvetColorBackgroundAnswer: '#E7E9EC',
+		colorBackgroundModal: {
+			normal: '#FFFFFF',
+			hover: '#F0F1F3',
+			active: '#E0E2E8',
+		},
+
+		// Background Tint
+		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 119, 255, 0.06)',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.06)',
+		colorBackgroundAccentTintThemed: '#F0F7FF',
 
 		// Rang
 		colorRangHigherBrain: '#FCD6D6',
@@ -328,6 +345,12 @@ export const otvetTheme: ThemeOtvetDescription = {
 			hover: '#005FCC',
 			active: '#004EA8',
 		},
+
+		colorFieldBorderAlpha: {
+			normal: 'rgba(0, 16, 61, 0.12)',
+			hover: 'rgba(0, 16, 61, 0.24)',
+			active: 'rgba(0, 16, 61, 0.36)',
+		},
 	},
 };
 
@@ -340,6 +363,10 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 	// shadows
 	otvetBoxShadowIsland: '0px 6px 16px 0px rgba (17, 20, 33, 0.16)',
 
+	// gradient
+	gradientContent0: 'rgba(32, 39, 46, 0.00)',
+	gradientContent86: 'rgba(32, 39, 46, 0.86)',
+
 	colors: {
 		...otvetTheme.colors,
 		...darkTheme.colors,
@@ -350,18 +377,23 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 		// Background
 		colorBackground: '#181B20',
 		colorBackgroundContent: '#20272E',
-		colorBackgroundModal: '#2A333C',
+		colorBackgroundModal: {
+			normal: '#2A333C',
+			hover: '#2F3943',
+			active: '#343F4A',
+		},
 		colorBackgroundTertiary: 'rgba(167, 203, 238, 0.06)',
 		colorFieldBackground: 'rgba(167, 203, 238, 0.12)',
 		otvetColorBackgroundAnswer: '#181B20',
 
 		// Background Tint
-		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.4)',
-		colorBackgroundAccentTintThemed: '#134782',
+		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.12)',
+		colorBackgroundAccentTintThemed: '#303B45',
 
 		// Stroke
 		colorSeparatorPrimary: '#444A4F',
 		colorSeparatorPrimaryAlpha: 'rgba(68, 74, 79, 0.6)',
+		colorSeparatorSecondary: '#444A4F',
 
 		// Rang
 		colorRangHigherBrain: '#9D6467',
@@ -399,14 +431,8 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			active: 'rgba(167, 203, 238, 0.2)',
 		},
 
-		colorTransparent: {
-			normal: 'transparent',
-			hover: 'rgba(167, 203, 238, 0.12)',
-			active: 'rgba(167, 203, 238, 0.16)',
-		},
-
 		colorBackgroundAccentTintThemedAlpha: {
-			normal: 'rgba(0, 119, 255, 0.4)',
+			normal: 'rgba(167, 203, 238, 0.12)',
 			hover: 'rgba(0, 119, 255, 0.46)',
 			active: 'rgba(0, 119, 255, 0.52)',
 		},
@@ -427,6 +453,12 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			normal: '#1A3758',
 			hover: '#233F5F',
 			active: '#2C4765',
+		},
+
+		colorFieldBorderAlpha: {
+			normal: 'rgba(255, 255, 255, 0.16)',
+			hover: 'rgba(255, 255, 255, 0.24)',
+			active: 'rgba(255, 255, 255, 0.32)',
 		},
 	},
 };
