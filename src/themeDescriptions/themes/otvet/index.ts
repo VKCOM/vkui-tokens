@@ -272,11 +272,7 @@ export const otvetTheme: ThemeOtvetDescription = {
 		colorBackground: '#EEEFF1',
 		colorFieldBackground: 'rgba(0, 16, 61, 0.06)',
 		otvetColorBackgroundAnswer: '#E7E9EC',
-		colorBackgroundModal: {
-			normal: '#FFFFFF',
-			hover: '#F0F1F3',
-			active: '#E0E2E8',
-		},
+		colorBackgroundNavBarOtvetui: '#FFFFFF',
 
 		// Background Tint
 		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 119, 255, 0.06)',
@@ -322,6 +318,12 @@ export const otvetTheme: ThemeOtvetDescription = {
 		},
 
 		// states
+		colorBackgroundModal: {
+			normal: '#FFFFFF',
+			hover: '#F0F1F3',
+			active: '#E0E2E8',
+		},
+
 		colorBackgroundPositiveTint: {
 			normal: '#ECFAF3',
 			hover: '#DEF6E2',
@@ -385,6 +387,7 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 		colorBackgroundTertiary: 'rgba(167, 203, 238, 0.06)',
 		colorFieldBackground: 'rgba(167, 203, 238, 0.12)',
 		otvetColorBackgroundAnswer: '#181B20',
+		colorBackgroundNavBarOtvetui: '#303A45',
 
 		// Background Tint
 		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.12)',
@@ -459,6 +462,12 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			normal: 'rgba(255, 255, 255, 0.16)',
 			hover: 'rgba(255, 255, 255, 0.24)',
 			active: 'rgba(255, 255, 255, 0.32)',
+		},
+
+		colorTransparent: {
+			normal: 'transparent',
+			hover: 'rgba(167, 203, 238, 0.12)',
+			active: 'rgba(167, 203, 238, 0.16)',
 		},
 	},
 };

@@ -38,6 +38,7 @@ export interface ThemeOtveLocalSizes {
 
 export interface LocalOtvetColorDescriptionStruct {
 	otvetColorBackgroundAnswer: ColorDescriptionStatic;
+	colorBackgroundNavBarOtvetui: ColorDescriptionStatic;
 	colorRangHigherBrain: ColorDescriptionStatic;
 	colorRangAi: ColorDescriptionStatic;
 	colorRangGenius: ColorDescriptionStatic;
