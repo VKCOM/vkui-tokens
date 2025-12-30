@@ -275,8 +275,6 @@ export const otvetTheme: ThemeOtvetDescription = {
 		colorBackgroundNavBarOtvetui: '#FFFFFF',
 
 		// Background Tint
-		colorBackgroundAccentTintThemedAlpha: 'rgba(0, 119, 255, 0.06)',
-		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.06)',
 		colorBackgroundAccentTintThemed: '#F0F7FF',
 
 		// Rang
@@ -353,6 +351,18 @@ export const otvetTheme: ThemeOtvetDescription = {
 			hover: 'rgba(0, 16, 61, 0.24)',
 			active: 'rgba(0, 16, 61, 0.36)',
 		},
+
+		colorBackgroundAccentTintThemedAlpha: {
+			normal: 'rgba(0, 119, 255, 0.06)',
+			hover: 'rgba(0, 119, 255, 0.14)',
+			active: 'rgba(0, 119, 255, 0.18)',
+		},
+
+		colorBackgroundAccentTintAlpha: {
+			normal: 'rgba(0, 119, 255, 0.1)',
+			hover: 'rgba(0, 119, 255, 0.14)',
+			active: 'rgba(0, 119, 255, 0.18)',
+		},
 	},
 };
 
@@ -390,7 +400,6 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 		colorBackgroundNavBarOtvetui: '#303A45',
 
 		// Background Tint
-		colorBackgroundAccentTintAlpha: 'rgba(0, 119, 255, 0.12)',
 		colorBackgroundAccentTintThemed: '#303B45',
 
 		// Stroke
@@ -436,8 +445,8 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 
 		colorBackgroundAccentTintThemedAlpha: {
 			normal: 'rgba(167, 203, 238, 0.12)',
-			hover: 'rgba(0, 119, 255, 0.46)',
-			active: 'rgba(0, 119, 255, 0.52)',
+			hover: 'rgba(167, 203, 238, 0.20)',
+			active: 'rgba(167, 203, 238, 0.28)',
 		},
 
 		colorTextAccent: {
@@ -468,6 +477,12 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			normal: 'transparent',
 			hover: 'rgba(167, 203, 238, 0.12)',
 			active: 'rgba(167, 203, 238, 0.16)',
+		},
+
+		colorBackgroundAccentTintAlpha: {
+			normal: 'rgba(0, 119, 255, 0.28)',
+			hover: 'rgba(0, 119, 255, 0.38)',
+			active: 'rgba(0, 119, 255, 0.48)',
 		},
 	},
 };
