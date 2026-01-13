@@ -363,6 +363,12 @@ export const otvetTheme: ThemeOtvetDescription = {
 			hover: 'rgba(0, 119, 255, 0.14)',
 			active: 'rgba(0, 119, 255, 0.18)',
 		},
+
+		colorStrokeBorderAlpha: {
+			normal: '',
+			hover: 'rgba(0, 16, 61, 0.24)',
+			active: 'rgba(0, 16, 61, 0.36)',
+		},
 	},
 };
 
@@ -483,6 +489,12 @@ export const otvetDarkTheme: ThemeOtvetDarkDescription = {
 			normal: 'rgba(0, 119, 255, 0.28)',
 			hover: 'rgba(0, 119, 255, 0.38)',
 			active: 'rgba(0, 119, 255, 0.48)',
+		},
+
+		colorStrokeBorderAlpha: {
+			normal: '',
+			hover: 'rgba(255, 255, 255, 0.24)',
+			active: 'rgba(255, 255, 255, 0.32)',
 		},
 	},
 };

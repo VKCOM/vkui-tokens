@@ -66,6 +66,7 @@ export interface LocalOtvetColorDescriptionStruct {
 	colorAvatarsViolet: ColorDescriptionStatic;
 	colorAvatarsLavender: ColorDescriptionStatic;
 	colorAvatarsCoral: ColorDescriptionStatic;
+	colorStrokeBorderAlpha: ColorDescriptionStatic;
 }
 
 export interface ThemeOtvetGradients {
