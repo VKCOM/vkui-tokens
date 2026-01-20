@@ -1,12 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'node:url';
 
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import WebpackNotifierPlugin from 'webpack-notifier';
-import TerserPlugin from 'terser-webpack-plugin';
-import { CleanWebpackPlugin } from 'clean-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import webpackConfig from './webpack.config.mjs';
+import { rspack } from '@rspack/core';
+import rspackConfig from './rspack.config.mjs';
 
 export default function (env, argv) {
 	const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -14,7 +10,7 @@ export default function (env, argv) {
 	const watchMode = argv.liveReload || false;
 	const modeEnv = argv.mode || 'development';
 	const isProd = modeEnv === 'production';
-	const config = webpackConfig(modeEnv);
+	const config = rspackConfig(modeEnv);
 
 	const optimization = {
 		splitChunks: {
@@ -33,7 +29,6 @@ export default function (env, argv) {
 
 	if (isProd) {
 		optimization.minimize = true;
-		optimization.minimizer.push(new TerserPlugin());
 	}
 
 	return {
@@ -47,29 +42,25 @@ export default function (env, argv) {
 		},
 		output: {
 			path: path.resolve(__dirname, '../dist'),
-			filename: watchMode ? 'assets/[name].[hash].js' : 'assets/[name].[chunkhash].js',
+			filename: watchMode ? 'assets/[name].[hash].js' : 'assets/[name].[contenthash].js',
 			publicPath: '/',
 		},
-		module: {
-			rules: [config.modules.ts, config.modules.css, config.modules.svg, config.modules.md],
+		experiments: {
+			css: true,
 		},
+		module: config.module,
 		plugins: [
-			new CleanWebpackPlugin({
-				dry: true,
-				dangerouslyAllowCleanPatternsOutsideProject: true,
-			}),
-			new HtmlWebpackPlugin({
-				template: './public/index.html',
-				publicPath: '/vkui-tokens/',
-			}),
-			new WebpackNotifierPlugin({ alwaysNotify: false }),
-			new CopyWebpackPlugin({
+			new rspack.CopyRspackPlugin({
 				patterns: [
 					{
 						from: './public/static',
 						to: './static',
 					},
 				],
+			}),
+			new rspack.HtmlRspackPlugin({
+				template: './public/index.html',
+				publicPath: '/vkui-tokens/',
 			}),
 		],
 		resolve: config.resolve,
