@@ -1,12 +1,12 @@
 import type { Property } from 'csstype';
 
-import { Adaptive } from '@/interfaces/general/tools';
-import { ViewportsOrdered } from '@/interfaces/general/tools/viewports';
+import { Adaptive } from '../../general/tools';
+import { ViewportsOrdered } from '../../general/tools/viewports';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '@/interfaces/namespaces/paradigm';
+} from '../../namespaces/paradigm';
 
 export type PromoViewports = ViewportsOrdered;
 

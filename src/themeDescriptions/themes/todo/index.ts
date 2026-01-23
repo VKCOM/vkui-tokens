@@ -1,5 +1,4 @@
-import { ThemeTodoDescription } from '@/interfaces/themes/todo';
-
+import { ThemeTodoDescription } from '../../../interfaces/themes/todo';
 import { lightTheme } from '../../base/paradigm';
 import { helpers } from '../../common/helpers';
 

@@ -1,17 +1,19 @@
-import * as React from 'react';
 import 'highlight.js/styles/github.css';
 
-import { AsideMenu, AsideMenuItem } from '@/components/layouts/shared/AsideMenu/AsideMenu';
 import { Spacing, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
-import { highlightCodeInElement } from '@/highlight/highlight';
+import * as React from 'react';
+
+import { AsideMenu, AsideMenuItem } from '../../src/components/layouts/shared/AsideMenu/AsideMenu';
+import { highlightCodeInElement } from '../../src/highlight/highlight';
 
 export interface ArticlesProps {
 	items?: AsideMenuItem[];
 	contentsHtml?: string;
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export function Articles(props: ArticlesProps) {
-	let articleContent = props.contentsHtml ?? '';
+	const articleContent = props.contentsHtml ?? '';
 	const ref = React.useRef<HTMLDivElement>(undefined);
 
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();

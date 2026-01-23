@@ -1,4 +1,4 @@
-import type { Description, TokenItem, TokenItemValue } from '@/shared/types';
+import type { Description, TokenItem, TokenItemValue } from '../../../../shared/types';
 
 export function filterByTags(selectedTags: Array<string>, token: TokenItem): boolean {
 	// Исключаем legacy-токены по умолчанию, если не запросили явно

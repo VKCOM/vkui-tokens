@@ -1,8 +1,4 @@
-import {
-	ThemeTutoria,
-	ThemeTutoriaCssVars,
-	ThemeTutoriaDescription,
-} from '@/interfaces/themes/tutoria';
+import { ThemeTutoria, ThemeTutoriaCssVars, ThemeTutoriaDescription } from '../../themes/tutoria';
 
 export type ThemeTutoriaDark = ThemeTutoria;
 export type ThemeTutoriaDarkDescription = ThemeTutoriaDescription;

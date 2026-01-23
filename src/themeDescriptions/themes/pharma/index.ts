@@ -1,5 +1,4 @@
-import { ThemePharmaDescription } from '@/interfaces/themes/pharma';
-
+import { ThemePharmaDescription } from '../../../interfaces/themes/pharma';
 import { projectColors } from '../../common';
 import { mediaTheme } from '../media';
 

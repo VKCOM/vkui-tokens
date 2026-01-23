@@ -2,9 +2,9 @@ import {
 	LocalHomeColorsDescriptionStruct,
 	ThemeHomeDescription,
 	ThemeHomeOverValues,
-} from '@/interfaces/themes/home';
-import { ThemeHomeDarkDescription } from '@/interfaces/themes/homeDark';
-import { darkTheme, lightTheme } from '@/themeDescriptions/base/paradigm';
+} from '../../../interfaces/themes/home';
+import { ThemeHomeDarkDescription } from '../../../interfaces/themes/homeDark';
+import { darkTheme, lightTheme } from '../../base/paradigm';
 
 const localHomeColors: LocalHomeColorsDescriptionStruct = {
 	homeColorSocialVk: '#2787F5',

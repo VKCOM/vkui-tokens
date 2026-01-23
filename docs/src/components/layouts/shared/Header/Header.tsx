@@ -2,8 +2,7 @@ import { Card, PanelHeader, useAdaptivityWithJSMediaQueries } from '@vkontakte/v
 import clsx from 'clsx';
 import React, { FC } from 'react';
 
-import { LogoIcon } from '@/shared/content/icons';
-
+import { LogoIcon } from '../../../../shared/content/icons';
 import Navigation from '../Navigation/Navigation';
 
 const Header: FC = () => {

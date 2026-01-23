@@ -1,9 +1,8 @@
 import { describe, expect, it } from '@jest/globals';
 import { stripIndent } from 'common-tags';
 
-import { ThemeCssVarsWide } from '@/interfaces/general';
-import { ParadigmThemeCssVarsWide } from '@/interfaces/namespaces/paradigm';
-
+import { ThemeCssVarsWide } from '../../../../interfaces/general';
+import { ParadigmThemeCssVarsWide } from '../../../../interfaces/namespaces/paradigm';
 import { compileBreakpointsCssVarsDeclaration } from './compileBreakpointsCssVarsDeclaration';
 
 describe('compileBreakpointsCssVarsDeclaration', () => {

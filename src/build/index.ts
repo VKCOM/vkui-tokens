@@ -11,10 +11,9 @@ import {
 	writeStructJsonFile,
 	writeStyleFiles,
 	writeTsFile,
-} from '@/build/compilers';
-import { expandAll } from '@/build/expandTheme';
-import { themes } from '@/themeDescriptions';
-
+} from '../build/compilers';
+import { expandAll } from '../build/expandTheme';
+import { themes } from '../themeDescriptions';
 import { processCustomMedia } from './themeProcessors/customMedia/customMedia';
 
 const ROOT_DIR = path.resolve(__dirname, '../..');
@@ -183,7 +182,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 
 		const contentSource = fs.readFileSync(fileSourcePath, 'utf-8');
 
-		const contentDest = contentSource.replace(/@\/themeDescriptions\/common/g, `@/utils/common`);
+		const contentDest = contentSource.replace(/..\/common/g, `../../utils/common`);
 
 		fs.writeFileSync(fileDestPath, contentDest);
 	} else {

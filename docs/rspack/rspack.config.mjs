@@ -66,10 +66,6 @@ export default function () {
 		},
 		resolve: {
 			extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.json'],
-			alias: {
-				'@/public': path.resolve(__dirname, '../public'),
-				'@': path.resolve(__dirname, '../src'),
-			},
 		},
 	};
 }

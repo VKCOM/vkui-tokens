@@ -1,13 +1,13 @@
-import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
-import { alias } from '@/build/helpers/tokenHelpers';
-import { ColorsDescription, ThemeDescription } from '@/interfaces/general';
-import { Effects } from '@/interfaces/general/effects';
-import { Elevation } from '@/interfaces/general/elevation';
-import { Sizes } from '@/interfaces/general/geometry';
-import { Gradients } from '@/interfaces/general/gradients';
-import { Adaptive } from '@/interfaces/general/tools';
-import { Fonts, TypographyBaseProps } from '@/interfaces/general/typography';
-import figma from '@/themeDescriptions/base/figma/vk.json';
+import { getGradientPointsFromColor } from '../../build/helpers/getGradientPointsFromColor';
+import { alias } from '../../build/helpers/tokenHelpers';
+import { ColorsDescription, ThemeDescription } from '../../interfaces/general';
+import { Effects } from '../../interfaces/general/effects';
+import { Elevation } from '../../interfaces/general/elevation';
+import { Sizes } from '../../interfaces/general/geometry';
+import { Gradients } from '../../interfaces/general/gradients';
+import { Adaptive } from '../../interfaces/general/tools';
+import { Fonts, TypographyBaseProps } from '../../interfaces/general/typography';
+import figma from '../base/figma/vk.json';
 
 const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontFamilyAccent = fontFamilyFallbacks;

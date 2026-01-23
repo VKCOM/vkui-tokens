@@ -1,18 +1,18 @@
-import { createPseudoRootFromCssVars } from '@/build/themeProcessors/createPseudoRootFromCssVars/createPseudoRootFromCssVars';
-import { processCustomMedia } from '@/build/themeProcessors/customMedia/customMedia';
-import { getExpandedThemeColors } from '@/build/themeProcessors/expandColors/expandColors';
-import { extractCssVarsStrict } from '@/build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict';
-import { extractGeneralTokens } from '@/build/themeProcessors/extractGeneralTokens/extractGeneralTokens';
-import { extractVarsNames } from '@/build/themeProcessors/extractVarsNames/extractVarsNames';
-import { pixelifyValues } from '@/build/themeProcessors/pixelifyValues/pixelifyValues';
+import { createPseudoRootFromCssVars } from '../build/themeProcessors/createPseudoRootFromCssVars/createPseudoRootFromCssVars';
+import { processCustomMedia } from '../build/themeProcessors/customMedia/customMedia';
+import { getExpandedThemeColors } from '../build/themeProcessors/expandColors/expandColors';
+import { extractCssVarsStrict } from '../build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict';
+import { extractGeneralTokens } from '../build/themeProcessors/extractGeneralTokens/extractGeneralTokens';
+import { extractVarsNames } from '../build/themeProcessors/extractVarsNames/extractVarsNames';
+import { pixelifyValues } from '../build/themeProcessors/pixelifyValues/pixelifyValues';
 import {
 	PixelifyTheme,
 	Theme,
 	ThemeCssVars,
 	ThemeCssVarsWide,
 	ThemeDescription,
-} from '@/interfaces/general';
-import { StaticTokens } from '@/interfaces/general/tools/tokenValue';
+} from '../interfaces/general';
+import { StaticTokens } from '../interfaces/general/tools/tokenValue';
 
 export interface ExpandedThemeObject<T = Theme> {
 	theme: StaticTokens<T>;

@@ -1,3 +1,3 @@
-import LogoIcon from '@/public/static/svg/logo.svg';
+import LogoIcon from '../../../public/static/svg/logo.svg';
 
 export { LogoIcon };

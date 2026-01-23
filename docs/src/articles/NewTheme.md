@@ -43,8 +43,8 @@
 Пример декларации типов темы, наследованной от базовой темы `paradigm`:
 
 ```typescript
-import { ThemeCssVars } from '@/interfaces/general';
-import { ParadigmTheme, ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
+import { ThemeCssVars } from '../../general';
+import { ParadigmTheme, ParadigmThemeDescription } from '../../namespaces/paradigm';
 
 export interface ThemeWorkspaceAdmin extends ParadigmTheme {}
 
@@ -57,7 +57,7 @@ export interface ThemeWorkspaceAdminCssVars
 Пример декларации типов темы, наследованной от базовой темы `vk`:
 
 ```typescript
-import { Theme, ThemeCssVars, ThemeDescription } from '@/interfaces/general';
+import { Theme, ThemeCssVars, ThemeDescription } from '../../general';
 
 export interface ThemeVkBase extends Theme {}
 export interface ThemeVkBaseDescription extends ThemeDescription {}
@@ -75,8 +75,8 @@ export interface ThemeVkBaseCssVars extends ThemeCssVars {}
 Пример темы с наследованием от базовой светлой темы `paradigm`:
 
 ```typescript
-import { ThemeWorkspaceAdminDescription } from '@/interfaces/themes/workspaceAdmin';
-import { lightTheme } from '@/themeDescriptions/base/paradigm';
+import { ThemeWorkspaceAdminDescription } from '../../../interfaces/themes/workspaceAdmin';
+import { lightTheme } from '../../base/paradigm';
 
 export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
   ...lightTheme,

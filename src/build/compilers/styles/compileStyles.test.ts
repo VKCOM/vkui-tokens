@@ -1,9 +1,8 @@
 import { describe, expect, test } from '@jest/globals';
 import { stripIndent } from 'common-tags';
 
-import { PixelifyTheme } from '@/interfaces/general';
-import { ParadigmTheme } from '@/interfaces/namespaces/paradigm';
-
+import { PixelifyTheme } from '../../../interfaces/general';
+import { ParadigmTheme } from '../../../interfaces/namespaces/paradigm';
 import { compileStyles, CompileStylesMode } from './compileStyles';
 import { EStyleTypes, Formats } from './helpers/tokenProcessors';
 

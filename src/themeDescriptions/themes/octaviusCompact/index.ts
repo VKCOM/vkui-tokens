@@ -1,6 +1,5 @@
-import { staticRef } from '@/build/helpers/tokenHelpers';
-import { ThemeOctaviusCompactDescription } from '@/interfaces/themes/octaviusCompact';
-
+import { staticRef } from '../../../build/helpers/tokenHelpers';
+import { ThemeOctaviusCompactDescription } from '../../../interfaces/themes/octaviusCompact';
 import { fontSizes } from '../../common';
 import { octaviusDarkTheme, octaviusTheme } from '../octavius';
 

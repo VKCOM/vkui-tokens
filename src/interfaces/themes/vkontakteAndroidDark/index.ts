@@ -2,7 +2,7 @@ import {
 	ThemeVkontakteAndroid,
 	ThemeVkontakteAndroidCssVars,
 	ThemeVkontakteAndroidDescription,
-} from '@/interfaces/themes/vkontakteAndroid';
+} from '../../themes/vkontakteAndroid';
 
 export type ThemeVkontakteAndroidDark = ThemeVkontakteAndroid;
 export type ThemeVkontakteAndroidDarkDescription = ThemeVkontakteAndroidDescription;

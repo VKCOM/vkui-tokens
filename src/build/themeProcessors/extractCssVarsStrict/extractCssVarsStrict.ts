@@ -1,4 +1,4 @@
-import { Theme, ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
+import { Theme, ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general';
 
 function removeOriginValue(object: Record<string, any>) {
 	if (typeof object === 'object') {

@@ -1,12 +1,11 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { PixelifyTheme, Theme, ThemeCssVars, ThemeCssVarsWide } from '@/interfaces/general';
+import { PixelifyTheme, Theme, ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeCssVarsWide,
-} from '@/interfaces/namespaces/paradigm';
-
+} from '../../../interfaces/namespaces/paradigm';
 import { createPseudoRootFromCssVars } from './createPseudoRootFromCssVars';
 
 describe('createPseudoRootFromCssVars', () => {

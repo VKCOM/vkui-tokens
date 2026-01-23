@@ -1,15 +1,14 @@
 import lodash from 'lodash';
 
-import { gradient, namedAlias } from '@/build/helpers/tokenHelpers';
-import { Gradients } from '@/interfaces/general/gradients';
-import { DeepPartial } from '@/interfaces/general/tools/utils';
+import { gradient, namedAlias } from '../../../build/helpers/tokenHelpers';
+import { Gradients } from '../../../interfaces/general/gradients';
+import { DeepPartial } from '../../../interfaces/general/tools/utils';
 import type {
 	LocalVkontakteAndroidColorsDescriptionStruct,
 	ThemeVkontakteAndroidDescription,
 	VkontakteAndroidGradients,
-} from '@/interfaces/themes/vkontakteAndroid';
-import type { ThemeVkontakteAndroidDarkDescription } from '@/interfaces/themes/vkontakteAndroidDark';
-
+} from '../../../interfaces/themes/vkontakteAndroid';
+import type { ThemeVkontakteAndroidDarkDescription } from '../../../interfaces/themes/vkontakteAndroidDark';
 import { darkTheme as vkDarkTheme, fonts, lightTheme as vkLightTheme } from '../../base/vk';
 
 const themeNameBase = 'vkontakteAndroid';

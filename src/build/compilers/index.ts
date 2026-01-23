@@ -2,14 +2,13 @@ import path from 'node:path';
 
 import fs from 'fs-extra';
 
-import { compileGetDeclarationString } from '@/build/compilers/cssVars/jsUtils/compileGetDeclarationString';
-import { compileDocsJSON } from '@/build/compilers/docs/compileDocsJSON';
-import { compileJSON } from '@/build/compilers/json/compileJSON';
-import { compileStyles, CompileStylesMode } from '@/build/compilers/styles/compileStyles';
-import { compileTypeScript } from '@/build/compilers/ts/compileTypeScript';
-import { capitalize } from '@/build/helpers/capitalize';
-import { PixelifyTheme, SpecialTokens, Theme, ThemeCssVarsWide } from '@/interfaces/general';
-
+import { compileGetDeclarationString } from '../../build/compilers/cssVars/jsUtils/compileGetDeclarationString';
+import { compileDocsJSON } from '../../build/compilers/docs/compileDocsJSON';
+import { compileJSON } from '../../build/compilers/json/compileJSON';
+import { compileStyles, CompileStylesMode } from '../../build/compilers/styles/compileStyles';
+import { compileTypeScript } from '../../build/compilers/ts/compileTypeScript';
+import { capitalize } from '../../build/helpers/capitalize';
+import { PixelifyTheme, SpecialTokens, Theme, ThemeCssVarsWide } from '../../interfaces/general';
 import { compileBreakpointsCssVarsDeclaration } from './cssVars/declarations/compileBreakpointsCssVarsDeclaration';
 import { compileStructJSON } from './structJSON/compileStructJSON';
 
@@ -78,26 +77,26 @@ function writeTsFile<T extends SpecialTokens = Theme>(
 		case 'flat':
 			content = sourceContent
 				.replace(/\$\$InterfaceName\$\$/g, `Theme${capitalize(theme.themeName)}Flat`)
-				.replace(/\$\$InterfaceURL\$\$/g, `@/interfaces/themes/${theme.themeName}`);
+				.replace(/\$\$InterfaceURL\$\$/g, `../../interfaces/themes/${theme.themeName}`);
 			break;
 		case 'subtheme':
 			content = sourceContent
 				.replace(/\$\$InterfaceName\$\$/g, `SubTheme${capitalize((theme as any).parentThemeName)}`)
 				.replace(
 					/\$\$InterfaceURL\$\$/g,
-					`@/interfaces/themes/${(theme as any).parentThemeName}/subthemes`,
+					`../../interfaces/themes/${(theme as any).parentThemeName}/subthemes`,
 				);
 			break;
 		case 'cssVars':
 			content = sourceContent
 				.replace(/\$\$InterfaceName\$\$/g, `Theme${capitalize(themeName)}CssVars`)
-				.replace(/\$\$InterfaceURL\$\$/g, `@/interfaces/themes/${themeName}`);
+				.replace(/\$\$InterfaceURL\$\$/g, `../../../../interfaces/themes/${themeName}`);
 			break;
 		case 'root':
 		default:
 			content = sourceContent
 				.replace(/\$\$InterfaceName\$\$/g, `Theme${capitalize(theme.themeName)}`)
-				.replace(/\$\$InterfaceURL\$\$/g, `@/interfaces/themes/${theme.themeName}`);
+				.replace(/\$\$InterfaceURL\$\$/g, `../../interfaces/themes/${theme.themeName}`);
 	}
 
 	fs.writeFileSync(filePath, content);

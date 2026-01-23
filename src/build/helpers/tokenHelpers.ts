@@ -1,8 +1,7 @@
 import type { Property } from 'csstype';
 
-import { ThemeDescription } from '@/interfaces/general';
-import { Token } from '@/interfaces/general/tools/tokenValue';
-
+import { ThemeDescription } from '../../interfaces/general';
+import { Token } from '../../interfaces/general/tools/tokenValue';
 import {
 	defaultOpacityPoints,
 	getGradientPointsFromColor,

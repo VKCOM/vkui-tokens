@@ -4,12 +4,11 @@ import './styles/index.css';
 import React, { FC } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Main from '@/components/layouts/Main';
-import Tokens from '@/pages/Tokens';
-
 import articleNewTheme from './articles/NewTheme.md';
 import articleTokenHelpers from './articles/TokenHelpers.md';
+import Main from './components/layouts/Main';
 import { Articles } from './pages/Articles';
+import Tokens from './pages/Tokens';
 
 const articles = [
 	{

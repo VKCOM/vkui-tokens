@@ -1,15 +1,11 @@
 import type { Property } from 'csstype';
 
-import { ThemeCssVars } from '@/interfaces/general';
-import {
-	ColorDescription,
-	ColorsDescriptionStruct,
-	ColorWithStates,
-} from '@/interfaces/general/colors';
-import { Adaptive } from '@/interfaces/general/tools';
-import { Font } from '@/interfaces/general/typography';
-import { LocalParadigmColorsDescriptionStruct } from '@/interfaces/namespaces/paradigm';
-import { ThemeParadigmBase, ThemeParadigmBaseDescription } from '@/interfaces/themes/paradigmBase';
+import { ThemeCssVars } from '../../general';
+import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
+import { Adaptive } from '../../general/tools';
+import { Font } from '../../general/typography';
+import { LocalParadigmColorsDescriptionStruct } from '../../namespaces/paradigm';
+import { ThemeParadigmBase, ThemeParadigmBaseDescription } from '../../themes/paradigmBase';
 
 export interface ThemeCalendarOverValues {
 	calendarFontTextEvent: Adaptive<Font>;

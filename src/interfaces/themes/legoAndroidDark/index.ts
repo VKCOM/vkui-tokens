@@ -3,4 +3,4 @@ export {
 	ThemeLegoAndroid as ThemeLegoAndroidDark,
 	ThemeLegoAndroidCssVars as ThemeLegoAndroidDarkCssVars,
 	ThemeLegoAndroidDescription as ThemeLegoAndroidDarkDescription,
-} from '@/interfaces/themes/legoAndroid';
+} from '../../themes/legoAndroid';

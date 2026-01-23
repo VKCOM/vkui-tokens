@@ -2,7 +2,7 @@ import {
 	ThemeParadigmBase,
 	ThemeParadigmBaseCssVars,
 	ThemeParadigmBaseDescription,
-} from '@/interfaces/themes/paradigmBase';
+} from '../../themes/paradigmBase';
 
 export interface ThemeCalls extends ThemeParadigmBase {}
 export interface ThemeCallsDescription extends ThemeParadigmBaseDescription {}

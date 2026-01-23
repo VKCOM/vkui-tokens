@@ -11,8 +11,7 @@ import {
 } from '@vkontakte/vkui';
 import React, { FC, Fragment, useMemo } from 'react';
 
-import type { Description, Tokens, ValueType } from '@/shared/types';
-
+import type { Description, Tokens, ValueType } from '../../../../shared/types';
 import TokensContentValue from './components/TokensContentValue';
 import { filterByDesc, filterByTags } from './TokensContent.helpers';
 

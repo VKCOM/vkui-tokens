@@ -1,12 +1,12 @@
-import { toneOpacity } from '@/build/helpers/cssHelpers';
-import { staticRef } from '@/build/helpers/tokenHelpers';
-import { ThemeOctaviusDescription } from '@/interfaces/themes/octavius';
+import { toneOpacity } from '../../../build/helpers/cssHelpers';
+import { staticRef } from '../../../build/helpers/tokenHelpers';
+import { ThemeOctaviusDescription } from '../../../interfaces/themes/octavius';
 import {
 	darkColors as vkDarkColors,
 	lightColors as vkLightColors,
 	lightTheme as vkLightTheme,
-} from '@/themeDescriptions/base/vk';
-import { octaviusTheme } from '@/themeDescriptions/themes/octavius';
+} from '../../base/vk';
+import { octaviusTheme } from '../../themes/octavius';
 
 const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'VKSansText, Helvetica, Arial, sans-serif';

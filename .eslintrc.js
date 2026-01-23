@@ -12,14 +12,7 @@ module.exports = {
 			modules: true,
 		},
 	},
-	settings: {
-		'import/resolver': {
-			alias: {
-				map: [['@', './src']],
-				extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
-			},
-		},
-	},
+	settings: {},
 	plugins: ['@typescript-eslint', 'prettier', 'simple-import-sort'],
 	extends: [
 		'plugin:import/errors',
@@ -152,6 +145,13 @@ module.exports = {
 			rules: {
 				'sonarjs/no-duplicate-string': 'off',
 				'max-lines-per-function': 'off',
+			},
+		},
+		{
+			files: ['./docs/**/*.ts', './docs/**/*.tsx'],
+			rules: {
+				'max-params': 'off',
+				'import/no-named-as-default': 'off',
 			},
 		},
 	],

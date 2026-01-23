@@ -2,7 +2,7 @@ import {
 	ThemeCalendar,
 	ThemeCalendarCssVars,
 	ThemeCalendarDescription,
-} from '@/interfaces/themes/calendar';
+} from '../../themes/calendar';
 
 export interface ThemeCalendarDark extends ThemeCalendar {}
 export interface ThemeCalendarDarkDescription extends ThemeCalendarDescription {}

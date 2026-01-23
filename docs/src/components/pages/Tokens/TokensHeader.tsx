@@ -1,10 +1,10 @@
-import { Icon16Linked, Icon16HelpOutline } from '@vkontakte/icons';
+import { Icon16HelpOutline, Icon16Linked } from '@vkontakte/icons';
 import { Link, Title, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
-import { Link as RouterLink } from 'react-router-dom';
 import clsx from 'clsx';
 import React, { FC } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 
-import packageJson from '@/../../package.json';
+import packageJson from '../../../../../package.json';
 
 const version = {
 	href: 'https://github.com/VKCOM/vkui-tokens/releases',

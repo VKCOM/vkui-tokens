@@ -1,13 +1,13 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
-import { Adaptive } from '@/interfaces/general/tools';
-import { Font } from '@/interfaces/general/typography';
+import { ColorDescription, ColorWithStates } from '../../general/colors';
+import { Adaptive } from '../../general/tools';
+import { Font } from '../../general/typography';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '@/interfaces/namespaces/paradigm';
+} from '../../namespaces/paradigm';
 
 export type MediaViewportsTuple = ['touch', 'tablet', 'desktopS', 'desktopM'];
 

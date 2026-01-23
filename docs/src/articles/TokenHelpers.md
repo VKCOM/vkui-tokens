@@ -32,9 +32,9 @@ function alias<T extends ThemeDescription>(token: string): TokenFunction<T>;
 Исходный файл темы:
 
 ```typescript
-import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
-import { lightTheme } from '@/themeDescriptions/base/paradigm';
-import { alias } from '@/build/helpers/tokenHelpers';
+import { ParadigmThemeDescription } from '../../../interfaces/namespaces/paradigm';
+import { lightTheme } from '../../base/paradigm';
+import { alias } from '../../../build/helpers/tokenHelpers';
 
 export const myCustomTheme: ParadigmThemeDescription = {
   ...lightTheme,
@@ -81,9 +81,9 @@ function namedAlias<T extends ThemeDescription>(token: string): NamedTokenFuncti
 Исходный файл темы:
 
 ```typescript
-import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
-import { lightTheme } from '@/themeDescriptions/base/paradigm';
-import { namedAlias } from '@/build/helpers/tokenHelpers';
+import { ParadigmThemeDescription } from '../../../interfaces/namespaces/paradigm';
+import { lightTheme } from '../../base/paradigm';
+import { namedAlias } from '../../../build/helpers/tokenHelpers';
 
 export const myCustomTheme: ParadigmThemeDescription = {
   ...lightTheme,
@@ -126,9 +126,9 @@ function staticRef<T>(value: Token<T, any>): T;
 Исходный файл темы:
 
 ```typescript
-import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
-import { lightTheme } from '@/themeDescriptions/base/paradigm';
-import { staticRef } from '@/build/helpers/tokenHelpers';
+import { ParadigmThemeDescription } from '../../../interfaces/namespaces/paradigm';
+import { lightTheme } from '../../base/paradigm';
+import { staticRef } from '../../../build/helpers/tokenHelpers';
 
 export const myCustomTheme: ParadigmThemeDescription = {
   ...lightTheme,
@@ -177,9 +177,9 @@ export function gradient<T extends ThemeDescription>(
 Исходный файл темы:
 
 ```typescript
-import { ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
-import { lightTheme } from '@/themeDescriptions/base/paradigm';
-import { gradient, namedAlias } from '@/build/helpers/tokenHelpers';
+import { ParadigmThemeDescription } from '../../../interfaces/namespaces/paradigm';
+import { lightTheme } from '../../base/paradigm';
+import { gradient, namedAlias } from '../../../build/helpers/tokenHelpers';
 
 export const myCustomTheme: ParadigmThemeDescription = {
   ...lightTheme,

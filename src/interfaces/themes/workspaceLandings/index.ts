@@ -1,6 +1,6 @@
-import { ThemeCssVars } from '@/interfaces/general';
-import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
-import { ParadigmTheme, ParadigmThemeDescription } from '@/interfaces/namespaces/paradigm';
+import { ThemeCssVars } from '../../general';
+import { ColorDescription, ColorWithStates } from '../../general/colors';
+import { ParadigmTheme, ParadigmThemeDescription } from '../../namespaces/paradigm';
 
 export interface LocalWorkspaceLandingsColorDescriptionStruct {
 	workspaceLandingsColorBackgroundDark1: ColorDescription;

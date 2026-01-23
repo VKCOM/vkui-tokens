@@ -1,10 +1,10 @@
 import { useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
 import React, { FC, useMemo, useState } from 'react';
 
-import { TokensActions, TokensContent, TokensHeader } from '@/components/pages/Tokens';
-import tokensData from '@/public/static/data/tokensData.json';
-import { useDebounce } from '@/shared/hooks/useDebounce';
-import { ChipOption, Tokens as TokensType, ValueType } from '@/shared/types';
+import tokensData from '../../public/static/data/tokensData.json';
+import { TokensActions, TokensContent, TokensHeader } from '../../src/components/pages/Tokens';
+import { useDebounce } from '../../src/shared/hooks/useDebounce';
+import { ChipOption, Tokens as TokensType, ValueType } from '../../src/shared/types';
 
 function isBaseTheme(themeName: string): boolean {
 	return themeName.startsWith('vkBase') || themeName.startsWith('paradigmBase');
@@ -26,7 +26,7 @@ themes.sort((first: string, second: string) => {
 function transformTags(tokens: TokensType) {
 	const tokensKeys = Object.keys(tokens);
 	const tags = tokensKeys.map((t) => tokens[t].tags);
-	const flatTags = tags.reduce((acc, curr) => acc.concat(curr), []);
+	const flatTags = tags.flat();
 	const sortedTagsWithQuantity = flatTags
 		.reduce(
 			(acc, curr, i, arr) => acc.concat([[curr, arr.filter((curr1) => curr1 === curr).length]]),

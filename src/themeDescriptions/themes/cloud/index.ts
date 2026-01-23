@@ -1,10 +1,9 @@
 import type { Property } from 'csstype';
 
-import { staticRef } from '@/build/helpers/tokenHelpers';
-import { Font } from '@/interfaces/general/typography';
-import { ThemeCloudDescription } from '@/interfaces/themes/cloud';
-import { ThemeCloudDarkDescription } from '@/interfaces/themes/cloudDark';
-
+import { staticRef } from '../../../build/helpers/tokenHelpers';
+import { Font } from '../../../interfaces/general/typography';
+import { ThemeCloudDescription } from '../../../interfaces/themes/cloud';
+import { ThemeCloudDarkDescription } from '../../../interfaces/themes/cloudDark';
 import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm';
 import { helpers } from '../../common';
 
