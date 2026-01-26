@@ -1,6 +1,5 @@
-import { ThemeOtvetDescription } from '@/interfaces/themes/otvet';
-import { ThemeOtvetDarkDescription } from '@/interfaces/themes/otvetDark';
-
+import { ThemeOtvetDescription } from '../../../interfaces/themes/otvet';
+import { ThemeOtvetDarkDescription } from '../../../interfaces/themes/otvetDark';
 import { darkTheme, lightTheme } from '../../base/paradigm';
 
 const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';

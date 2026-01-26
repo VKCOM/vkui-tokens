@@ -1,4 +1,4 @@
-import { Theme } from '@/interfaces/general';
+import { Theme } from '../interfaces/general';
 
 export type Description = {
 	category: string;

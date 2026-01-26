@@ -2,7 +2,7 @@ import {
 	ThemeParadigmTech,
 	ThemeParadigmTechCssVars,
 	ThemeParadigmTechDescription,
-} from '@/interfaces/themes/paradigmTech';
+} from '../../themes/paradigmTech';
 
 export interface ThemeParadigmTechDark extends ThemeParadigmTech {}
 export interface ThemeParadigmTechDarkDescription extends ThemeParadigmTechDescription {}

@@ -1,9 +1,8 @@
-import { convertCamelToSnake } from '@/build/helpers/convertCamelToSnake';
-import { staticRef } from '@/build/helpers/tokenHelpers';
-import { Theme, ThemeCssVarsWide } from '@/interfaces/general';
-import { Adaptive } from '@/interfaces/general/tools';
-import { CustomMediaByViewport } from '@/interfaces/general/tools/customMedia';
-
+import { convertCamelToSnake } from '../../../build/helpers/convertCamelToSnake';
+import { staticRef } from '../../../build/helpers/tokenHelpers';
+import { Theme, ThemeCssVarsWide } from '../../../interfaces/general';
+import { Adaptive } from '../../../interfaces/general/tools';
+import { CustomMediaByViewport } from '../../../interfaces/general/tools/customMedia';
 import { processCustomMedia } from '../customMedia/customMedia';
 import { pixelifyValues } from '../pixelifyValues/pixelifyValues';
 

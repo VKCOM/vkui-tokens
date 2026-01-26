@@ -1,13 +1,12 @@
 import { stripIndent, stripIndents } from 'common-tags';
 
-import { findViewportByAdaptivityState } from '@/build/compilers/cssVars/helpers/findViewportByAdaptivityState';
-import { capitalize } from '@/build/helpers/capitalize';
-import { convertCamelToSnake } from '@/build/helpers/convertCamelToSnake';
-import { getOnlyColors } from '@/build/helpers/getOnlyColors';
-import { processCustomMedia } from '@/build/themeProcessors/customMedia/customMedia';
-import { Theme, ThemeCssVarsWide } from '@/interfaces/general';
-import { Adaptive, Breakpoints } from '@/interfaces/general/tools';
-
+import { findViewportByAdaptivityState } from '../../../../build/compilers/cssVars/helpers/findViewportByAdaptivityState';
+import { capitalize } from '../../../../build/helpers/capitalize';
+import { convertCamelToSnake } from '../../../../build/helpers/convertCamelToSnake';
+import { getOnlyColors } from '../../../../build/helpers/getOnlyColors';
+import { processCustomMedia } from '../../../../build/themeProcessors/customMedia/customMedia';
+import { Theme, ThemeCssVarsWide } from '../../../../interfaces/general';
+import { Adaptive, Breakpoints } from '../../../../interfaces/general/tools';
 import { accumulateValues } from '../helpers/accumulateValues';
 import { getVarString } from '../helpers/getVarString';
 

@@ -2,9 +2,8 @@ import { Paragraph } from '@vkontakte/vkui';
 import clsx from 'clsx';
 import React, { FC } from 'react';
 
-import { TokenItemValue, ValueType } from '@/shared/types';
-import { isColor, isRegularCompactObj } from '@/shared/utils';
-
+import { TokenItemValue, ValueType } from '../../../../../../src/shared/types';
+import { isColor, isRegularCompactObj } from '../../../../../../src/shared/utils';
 import ColorCircle from './ColorCircle/ColorCircle';
 import { getOneLineContent, oneLineRenderCondition } from './TokensContentValue.helpers';
 

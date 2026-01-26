@@ -12,10 +12,6 @@
     "lib": ["ES6", "DOM", "ES2017"],
     "declaration": true,
     "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/public/*": ["./public/*"],
-      "@/*": ["./src/*"]
-    }
+    "baseUrl": "."
   }
 }

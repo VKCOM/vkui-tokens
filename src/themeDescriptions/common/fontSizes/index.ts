@@ -1,5 +1,4 @@
-import { Font, TypographyBaseProps } from '@/interfaces/general/typography';
-
+import { Font, TypographyBaseProps } from '../../../interfaces/general/typography';
 import { helpers } from '../helpers';
 
 const { sizeBase } = helpers;

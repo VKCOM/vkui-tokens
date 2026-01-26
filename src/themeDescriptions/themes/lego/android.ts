@@ -1,10 +1,6 @@
-import { ThemeLegoAndroidDescription } from '@/interfaces/themes/legoAndroid';
-import { ThemeLegoAndroidDarkDescription } from '@/interfaces/themes/legoAndroidDark';
-import {
-	vkontakteAndroidTheme,
-	vkontakteAndroidThemeDark,
-} from '@/themeDescriptions/themes/vkontakteAndroid';
-
+import { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid';
+import { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark';
+import { vkontakteAndroidTheme, vkontakteAndroidThemeDark } from '../../themes/vkontakteAndroid';
 import figma from './figma.json';
 import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON';
 

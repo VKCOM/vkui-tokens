@@ -1,21 +1,14 @@
-import { ThemeCssVars } from '@/interfaces/general';
-import {
-	ColorDescription,
-	ColorsDescriptionStruct,
-	ColorWithStates,
-} from '@/interfaces/general/colors';
-import { Adaptive } from '@/interfaces/general/tools';
-import {
-	LocalParadigmColorsDescriptionStruct,
-	ParadigmTheme,
-} from '@/interfaces/namespaces/paradigm';
+import { ThemeCssVars } from '../../general';
+import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
+import { Adaptive } from '../../general/tools';
+import { LocalParadigmColorsDescriptionStruct, ParadigmTheme } from '../../namespaces/paradigm';
 import {
 	LocalOctaviusColorsDescriptionStruct,
 	OctaviusLocalColors,
 	ThemeOctaviusDescription,
 	ThemeOctaviusLocalSizes,
 	ThemeOctaviusOverValues,
-} from '@/interfaces/themes/octavius';
+} from '../../themes/octavius';
 
 export interface LocalParadigmTechDescriptionStruct {
 	paradigmTechBackgroundPortal: ColorDescription;

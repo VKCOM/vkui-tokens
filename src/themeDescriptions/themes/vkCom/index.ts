@@ -1,12 +1,12 @@
 import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
 import lodash from 'lodash';
 
-import { getGradientPointsFromColor } from '@/build/helpers/getGradientPointsFromColor';
-import { ColorsDescription } from '@/interfaces/general';
-import { Gradients } from '@/interfaces/general/gradients';
-import { DeepPartial } from '@/interfaces/general/tools/utils';
-import { ThemeVkComDescription } from '@/interfaces/themes/vkCom';
-import { ThemeVkComDarkDescription } from '@/interfaces/themes/vkComDark';
+import { getGradientPointsFromColor } from '../../../build/helpers/getGradientPointsFromColor';
+import { ColorsDescription } from '../../../interfaces/general';
+import { Gradients } from '../../../interfaces/general/gradients';
+import { DeepPartial } from '../../../interfaces/general/tools/utils';
+import { ThemeVkComDescription } from '../../../interfaces/themes/vkCom';
+import { ThemeVkComDarkDescription } from '../../../interfaces/themes/vkComDark';
 import {
 	darkColors,
 	darkElevation,
@@ -14,8 +14,7 @@ import {
 	fonts,
 	lightColors,
 	lightTheme,
-} from '@/themeDescriptions/base/vk';
-
+} from '../../base/vk';
 import { resolveColor } from './appearance';
 
 const fontFamilyAccent =

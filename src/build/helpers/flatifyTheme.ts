@@ -1,5 +1,5 @@
-import { ThemeDescription } from '@/interfaces/general';
-import { Adaptive } from '@/interfaces/general/tools';
+import { ThemeDescription } from '../../interfaces/general';
+import { Adaptive } from '../../interfaces/general/tools';
 
 export function flatifyTheme<T = ThemeDescription>(
 	theme: T,

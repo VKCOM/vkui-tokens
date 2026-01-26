@@ -2,7 +2,7 @@ import {
 	ThemeVkontakteCom,
 	ThemeVkontakteComCssVars,
 	ThemeVkontakteComDescription,
-} from '@/interfaces/themes/vkontakteCom';
+} from '../../themes/vkontakteCom';
 
 export type ThemeVkontakteComDark = ThemeVkontakteCom;
 export type ThemeVkontakteComDarkDescription = ThemeVkontakteComDescription;

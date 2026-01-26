@@ -1,5 +1,4 @@
-import { ThemeParadigmTechDescription } from '@/interfaces/themes/paradigmTech';
-
+import { ThemeParadigmTechDescription } from '../../../interfaces/themes/paradigmTech';
 import { octaviusDarkTheme, octaviusTheme } from '../octavius';
 
 export const paradigmTechTheme: ThemeParadigmTechDescription = {

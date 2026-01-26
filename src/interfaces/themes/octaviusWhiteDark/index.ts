@@ -2,7 +2,7 @@ import {
 	ThemeOctavius,
 	ThemeOctaviusCssVars,
 	ThemeOctaviusDescription,
-} from '@/interfaces/themes/octavius';
+} from '../../themes/octavius';
 
 export type ThemeOctaviusWhiteDark = ThemeOctavius;
 export type ThemeOctaviusWhiteDarkDescription = ThemeOctaviusDescription;

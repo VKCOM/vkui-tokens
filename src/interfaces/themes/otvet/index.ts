@@ -4,17 +4,17 @@ import {
 	ColorDescriptionStatic,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '@/interfaces/general/colors';
-import { GradientPoints } from '@/interfaces/general/gradients';
-import { Adaptive } from '@/interfaces/general/tools';
-import { DefaultViewports } from '@/interfaces/general/tools/viewports';
-import { Font } from '@/interfaces/general/typography';
+} from '../../general/colors';
+import { GradientPoints } from '../../general/gradients';
+import { Adaptive } from '../../general/tools';
+import { DefaultViewports } from '../../general/tools/viewports';
+import { Font } from '../../general/typography';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '@/interfaces/namespaces/paradigm';
+} from '../../namespaces/paradigm';
 
 export interface ThemeOtvetOverValues {
 	otvetBoxShadowIsland: Property.BoxShadow;

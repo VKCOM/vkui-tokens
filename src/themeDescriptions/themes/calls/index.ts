@@ -1,7 +1,6 @@
 import type { Property } from 'csstype';
 
-import { ThemeCallsDescription } from '@/interfaces/themes/calls';
-
+import { ThemeCallsDescription } from '../../../interfaces/themes/calls';
 import { darkTheme } from '../../base/paradigm';
 import { fontSizes } from '../../common';
 

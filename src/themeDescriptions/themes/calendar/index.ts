@@ -1,11 +1,10 @@
 import type { Property } from 'csstype';
 
-import { ThemeCalendarDescription } from '@/interfaces/themes/calendar';
-import { ThemeCalendarDarkDescription } from '@/interfaces/themes/calendarDark';
-import { fontWeight } from '@/themeDescriptions/common/fontSizes';
-
+import { ThemeCalendarDescription } from '../../../interfaces/themes/calendar';
+import { ThemeCalendarDarkDescription } from '../../../interfaces/themes/calendarDark';
 import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm';
 import { fontSizes, helpers } from '../../common';
+import { fontWeight } from '../../common/fontSizes';
 
 const { x2, x4, x5 } = helpers;
 

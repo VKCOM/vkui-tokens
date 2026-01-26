@@ -1,12 +1,8 @@
-import { ThemeCssVars } from '@/interfaces/general';
-import {
-	ColorDescription,
-	ColorsDescriptionStruct,
-	ColorWithStates,
-} from '@/interfaces/general/colors';
-import { Adaptive } from '@/interfaces/general/tools';
-import { Font } from '@/interfaces/general/typography';
-import { ThemeVkBase, ThemeVkBaseDescription } from '@/interfaces/themes/vkBase';
+import { ThemeCssVars } from '../../general';
+import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
+import { Adaptive } from '../../general/tools';
+import { Font } from '../../general/typography';
+import { ThemeVkBase, ThemeVkBaseDescription } from '../../themes/vkBase';
 
 export interface ThemeTutoriaLocalSizes {
 	tutoriaSizePaddingCard: number;

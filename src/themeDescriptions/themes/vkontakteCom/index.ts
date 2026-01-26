@@ -1,10 +1,9 @@
 import lodash from 'lodash';
 
-import { DeepPartial } from '@/interfaces/general/tools/utils';
-import { LocalVkontakteAndroidColorsDescriptionStruct } from '@/interfaces/themes/vkontakteAndroid';
-import { ThemeVkontakteComDescription } from '@/interfaces/themes/vkontakteCom';
-import { ThemeVkontakteComDarkDescription } from '@/interfaces/themes/vkontakteComDark';
-
+import { DeepPartial } from '../../../interfaces/general/tools/utils';
+import { LocalVkontakteAndroidColorsDescriptionStruct } from '../../../interfaces/themes/vkontakteAndroid';
+import { ThemeVkontakteComDescription } from '../../../interfaces/themes/vkontakteCom';
+import { ThemeVkontakteComDarkDescription } from '../../../interfaces/themes/vkontakteComDark';
 import { vkComFonts, vkComTheme, vkComThemeDark } from '../vkCom';
 import { vkontakteDisplayTitleFontsPartial, vkontakteTokens } from '../vkontakteAndroid';
 

@@ -2,7 +2,7 @@ import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '@/interfaces/namespaces/paradigm';
+} from '../../namespaces/paradigm';
 
 export interface ThemeParadigmBaseDarkDescription extends ParadigmThemeDescription {}
 export interface ThemeParadigmBaseDark extends ParadigmTheme {}

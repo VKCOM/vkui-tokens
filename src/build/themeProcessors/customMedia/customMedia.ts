@@ -1,15 +1,15 @@
-import { capitalize } from '@/build/helpers/capitalize';
-import { Breakpoints } from '@/interfaces/general/tools';
+import { capitalize } from '../../../build/helpers/capitalize';
+import { Breakpoints } from '../../../interfaces/general/tools';
 import {
 	CustomMediaByViewport,
 	CustomMediaByViewportUnion,
-} from '@/interfaces/general/tools/customMedia';
+} from '../../../interfaces/general/tools/customMedia';
 import {
 	DefaultViewports,
 	Viewports,
 	viewports,
 	ViewportsTuple,
-} from '@/interfaces/general/tools/viewports';
+} from '../../../interfaces/general/tools/viewports';
 
 export const getUsingViewports = <Vt extends ViewportsTuple>(
 	breakpoints: Breakpoints<Vt>['breakpoints'],

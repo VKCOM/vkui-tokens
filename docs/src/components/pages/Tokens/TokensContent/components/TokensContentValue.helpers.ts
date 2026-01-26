@@ -1,5 +1,10 @@
-import { TokenItemValue, ValueType } from '@/shared/types';
-import { isNumber, isRegularCompactObj, isRegularObj, isString } from '@/shared/utils';
+import { TokenItemValue, ValueType } from '../../../../../../src/shared/types';
+import {
+	isNumber,
+	isRegularCompactObj,
+	isRegularObj,
+	isString,
+} from '../../../../../../src/shared/utils';
 
 export function oneLineRenderCondition(contentValue: TokenItemValue): boolean {
 	return (

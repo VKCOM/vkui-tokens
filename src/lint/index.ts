@@ -1,8 +1,8 @@
-import { isColorDescriptionCallable, isColorDescriptionStatic } from '@/build/helpers/cssHelpers';
-import { expandColor } from '@/build/themeProcessors/expandColors/expandColors';
-import { ColorsDescription } from '@/interfaces/general';
-import { checkAllRules } from '@/lint/rules';
-import { themes } from '@/themeDescriptions';
+import { isColorDescriptionCallable, isColorDescriptionStatic } from '../build/helpers/cssHelpers';
+import { expandColor } from '../build/themeProcessors/expandColors/expandColors';
+import { ColorsDescription } from '../interfaces/general';
+import { checkAllRules } from '../lint/rules';
+import { themes } from '../themeDescriptions';
 
 function lintThemeObject(
 	object: Record<string, unknown>,

@@ -1,9 +1,8 @@
-import { ThemeLegoIOSDescription } from '@/interfaces/themes/legoIOS';
-import { ThemeLegoIOSDarkDescription } from '@/interfaces/themes/legoIOSDark';
-import { darkElevation, darkGradient } from '@/themeDescriptions/base/vk';
-import { vkIOSTheme, vkIOSThemeDark } from '@/themeDescriptions/themes/vkIOS';
-import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '@/themeDescriptions/themes/vkontakteIOS';
-
+import { ThemeLegoIOSDescription } from '../../../interfaces/themes/legoIOS';
+import { ThemeLegoIOSDarkDescription } from '../../../interfaces/themes/legoIOSDark';
+import { darkElevation, darkGradient } from '../../base/vk';
+import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS';
+import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '../../themes/vkontakteIOS';
 import figma from './figma.json';
 import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON';
 

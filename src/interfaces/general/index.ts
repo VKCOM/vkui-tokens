@@ -1,7 +1,6 @@
 import type { Property } from 'csstype';
 
-import { StaticTokens, Tokens } from '@/interfaces/general/tools/tokenValue';
-
+import { StaticTokens, Tokens } from '../general/tools/tokenValue';
 import { Animations } from './animations';
 import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors';
 import { Effects } from './effects';

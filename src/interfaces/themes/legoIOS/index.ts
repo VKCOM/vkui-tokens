@@ -3,4 +3,4 @@ export {
 	ThemeVkIOS as ThemeLegoIOS,
 	ThemeVkIOSCssVars as ThemeLegoIOSCssVars,
 	ThemeVkIOSDescription as ThemeLegoIOSDescription,
-} from '@/interfaces/themes/vkIOS';
+} from '../../themes/vkIOS';

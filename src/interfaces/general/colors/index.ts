@@ -1,6 +1,6 @@
 import type { Property } from 'csstype';
 
-import { ColorsDescription, ColorsScheme } from '@/interfaces/general';
+import { ColorsDescription, ColorsScheme } from '../../general';
 
 /**
  * Интерфейс всех цветов на выходе

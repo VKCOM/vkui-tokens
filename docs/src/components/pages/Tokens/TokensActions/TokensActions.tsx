@@ -2,17 +2,16 @@ import './TokensActions.css';
 
 import { Icon20Search } from '@vkontakte/icons';
 import {
+	ChipsSelect,
 	CustomSelect,
 	Input,
 	SegmentedControl,
-	ChipsSelect,
 	useAdaptivityWithJSMediaQueries,
 } from '@vkontakte/vkui';
 import clsx from 'clsx';
 import React, { FC } from 'react';
 
-import { ChipOption, ValueType } from '@/shared/types';
-
+import { ChipOption, ValueType } from '../../../../shared/types';
 import { valueTypes } from './TokensActions.content';
 
 type Props = {

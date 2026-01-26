@@ -1,8 +1,8 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorWithStates } from '@/interfaces/general/colors';
-import { ParadigmThemeCssVars } from '@/interfaces/namespaces/paradigm';
-import { MediaViewportsTuple, ThemeMedia, ThemeMediaDescription } from '@/interfaces/themes/media';
+import { ColorDescription, ColorWithStates } from '../../general/colors';
+import { ParadigmThemeCssVars } from '../../namespaces/paradigm';
+import { MediaViewportsTuple, ThemeMedia, ThemeMediaDescription } from '../../themes/media';
 
 export interface ThemeMycom extends Omit<ThemeMedia, 'fontFamily'> {
 	colorSale: ColorWithStates;

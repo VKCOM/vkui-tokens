@@ -191,7 +191,6 @@ module.exports = {
 		'import/no-webpack-loader-syntax': 'error',
 		'import/no-self-import': 'error',
 		'import/export': 'error',
-		'import/no-named-as-default': 'error',
 		'import/no-named-as-default-member': 'error',
 		'import/no-deprecated': 'error',
 		'import/no-mutable-exports': 'error',

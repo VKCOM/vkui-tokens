@@ -2,7 +2,7 @@ import {
 	ThemeOctavius,
 	ThemeOctaviusCssVars,
 	ThemeOctaviusDescription,
-} from '@/interfaces/themes/octavius';
+} from '../../themes/octavius';
 
 export interface ThemeOctaviusCompactDark extends ThemeOctavius {}
 export interface ThemeOctaviusCompacDarkDescription extends ThemeOctaviusDescription {}
