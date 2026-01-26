@@ -123,6 +123,7 @@ export const paradigmTechTheme: ThemeParadigmTechDescription = {
 		// Локальные токены Paradigm Tech
 		//
 		paradigmTechBackgroundPortal: '#f6f7fb',
+		paradigmTechOtherSuperappMenuBackground: '#27303b',
 
 		// Avatars Pallete
 		paradigmTechAvatarsSky: '#9dd5fe',
@@ -150,6 +151,12 @@ export const paradigmTechDarkTheme: ThemeParadigmTechDescription = {
 	colors: {
 		...paradigmTechTheme.colors,
 		...octaviusDarkTheme.colors,
+
+		colorTransparent: {
+			normal: 'transparent',
+			hover: 'rgba(138, 153, 177, 0.08)',
+			active: 'rgba(138, 153, 177, 0.12)',
+		},
 
 		// Text
 		colorTextAccent: '#2e90fb',

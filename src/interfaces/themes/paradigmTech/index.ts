@@ -12,6 +12,7 @@ import {
 
 export interface LocalParadigmTechDescriptionStruct {
 	paradigmTechBackgroundPortal: ColorDescription;
+	paradigmTechOtherSuperappMenuBackground: ColorDescription;
 
 	// Аватары
 	paradigmTechAvatarsSky: ColorDescription;
