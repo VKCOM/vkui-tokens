@@ -1,13 +1,13 @@
 import color from 'color';
 
-import { expandColor } from '../../../build/themeProcessors/expandColors/expandColors';
-import { mixColors } from '../../../build/themeProcessors/expandColors/mixColors';
-import { ColorsDescription } from '../../../interfaces/general';
+import { expandColor } from '../../../build/themeProcessors/expandColors/expandColors.js';
+import { mixColors } from '../../../build/themeProcessors/expandColors/mixColors.js';
 import {
 	ColorDescription,
 	ColorDescriptionCallable,
 	ColorsDescriptionStruct,
-} from '../../../interfaces/general/colors';
+} from '../../../interfaces/general/colors/index.js';
+import { ColorsDescription } from '../../../interfaces/general/index.js';
 
 export function overlayColors<
 	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,

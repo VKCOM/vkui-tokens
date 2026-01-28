@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { themes } from '../themeDescriptions';
-import { expandAll } from './expandTheme';
+import { themes } from '../themeDescriptions/index.js';
+import { expandAll } from './expandTheme.js';
 
 describe('shapshots', () => {
 	themes.forEach((theme) => {

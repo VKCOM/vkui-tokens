@@ -1,14 +1,18 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
-import { Adaptive } from '../../general/tools';
-import { Font } from '../../general/typography';
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '../../general/colors/index.js';
+import { Adaptive } from '../../general/tools/index.js';
+import { Font } from '../../general/typography/index.js';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm';
+} from '../../namespaces/paradigm/index.js';
 
 type SearchViewports = ['touch', 'desktopS'];
 

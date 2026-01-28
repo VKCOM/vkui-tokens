@@ -1,6 +1,6 @@
 const noUnusedVars = ['error', { ignoreRestSiblings: true, argsIgnorePattern: '^_.*$' }];
 
-const silence = require.resolve('./lint/silence-typescript.js');
+const silence = require.resolve('./lint/silence-typescript.cjs');
 
 module.exports = {
 	parser: '@typescript-eslint/parser',
@@ -12,7 +12,17 @@ module.exports = {
 			modules: true,
 		},
 	},
-	settings: {},
+	settings: {
+		'import/resolver': {
+			typescript: {
+				project: './tsconfig.json',
+			},
+			node: {
+				extensions: ['.js', '.jsx', '.ts', '.tsx'],
+				moduleDirectory: ['node_modules', 'src'],
+			},
+		},
+	},
 	plugins: ['@typescript-eslint', 'prettier', 'simple-import-sort'],
 	extends: [
 		'plugin:import/errors',

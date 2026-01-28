@@ -1,18 +1,18 @@
 import type { Property } from 'csstype';
 
-import { StaticTokens, Tokens } from '../general/tools/tokenValue';
-import { Animations } from './animations';
-import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors';
-import { Effects } from './effects';
-import { Elevation } from './elevation';
-import { Sizes, SpacingSizes } from './geometry';
-import { Gradients } from './gradients';
-import { ToneValues } from './toneValues';
-import { Adaptive } from './tools';
-import { NamifyObject } from './tools/cssVars';
-import { StringifyObject } from './tools/utils';
-import { Fonts, TypographyBaseProps } from './typography';
-import { ZIndex } from './zIndex';
+import { StaticTokens, Tokens } from '../general/tools/tokenValue.js';
+import { Animations } from './animations/index.js';
+import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors/index.js';
+import { Effects } from './effects/index.js';
+import { Elevation } from './elevation/index.js';
+import { Sizes, SpacingSizes } from './geometry/index.js';
+import { Gradients } from './gradients/index.js';
+import { ToneValues } from './toneValues/index.js';
+import { NamifyObject } from './tools/cssVars.js';
+import { Adaptive } from './tools/index.js';
+import { StringifyObject } from './tools/utils.js';
+import { Fonts, TypographyBaseProps } from './typography/index.js';
+import { ZIndex } from './zIndex/index.js';
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 

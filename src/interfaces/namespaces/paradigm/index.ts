@@ -1,11 +1,15 @@
 import type { Property } from 'csstype';
 
-import { Theme, ThemeCssVars, ThemeCssVarsWide, ThemeDescription } from '../../general';
-import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
-import { Adaptive, Breakpoints } from '../../general/tools';
-import { CustomMediaByViewport } from '../../general/tools/customMedia';
-import { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports';
-import { Font } from '../../general/typography';
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '../../general/colors/index.js';
+import { Theme, ThemeCssVars, ThemeCssVarsWide, ThemeDescription } from '../../general/index.js';
+import { CustomMediaByViewport } from '../../general/tools/customMedia.js';
+import { Adaptive, Breakpoints } from '../../general/tools/index.js';
+import { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports.js';
+import { Font } from '../../general/typography/index.js';
 
 export interface LocalParadigmColorsDescriptionStruct {
 	/**

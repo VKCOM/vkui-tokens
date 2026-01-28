@@ -2,4 +2,4 @@ export {
 	ThemeVkontakteAndroid as ThemeVkontakteIOS,
 	ThemeVkontakteAndroidCssVars as ThemeVkontakteIOSCssVars,
 	ThemeVkontakteAndroidDescription as ThemeVkontakteIOSDescription,
-} from '../../themes/vkontakteAndroid';
+} from '../../themes/vkontakteAndroid/index.js';

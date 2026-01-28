@@ -1,6 +1,6 @@
-import { ThemeOtvetDescription } from '../../../interfaces/themes/otvet';
-import { ThemeOtvetDarkDescription } from '../../../interfaces/themes/otvetDark';
-import { darkTheme, lightTheme } from '../../base/paradigm';
+import { ThemeOtvetDescription } from '../../../interfaces/themes/otvet/index.js';
+import { ThemeOtvetDarkDescription } from '../../../interfaces/themes/otvetDark/index.js';
+import { darkTheme, lightTheme } from '../../base/paradigm.js';
 
 const fontFamilyAccent = 'VKSansDisplay, Helvetica, Arial, sans-serif';
 const fontFamilyBase = 'Arial, sans-serif';

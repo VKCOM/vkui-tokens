@@ -2,7 +2,7 @@ import {
 	ThemeVkontakteAndroid,
 	ThemeVkontakteAndroidCssVars,
 	ThemeVkontakteAndroidDescription,
-} from '../../themes/vkontakteAndroid';
+} from '../../themes/vkontakteAndroid/index.js';
 
 export type ThemeVkontakteCom = ThemeVkontakteAndroid;
 export type ThemeVkontakteComDescription = ThemeVkontakteAndroidDescription;

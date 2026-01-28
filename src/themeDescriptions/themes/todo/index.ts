@@ -1,6 +1,6 @@
-import { ThemeTodoDescription } from '../../../interfaces/themes/todo';
-import { lightTheme } from '../../base/paradigm';
-import { helpers } from '../../common/helpers';
+import { ThemeTodoDescription } from '../../../interfaces/themes/todo/index.js';
+import { lightTheme } from '../../base/paradigm.js';
+import { helpers } from '../../common/helpers/index.js';
 
 const { x12, x10 } = helpers;
 

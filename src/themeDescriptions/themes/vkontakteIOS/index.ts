@@ -1,12 +1,12 @@
-import type { ThemeVkontakteIOSDescription } from '../../../interfaces/themes/vkontakteIOS';
-import type { ThemeVkontakteIOSDarkDescription } from '../../../interfaces/themes/vkontakteIOSDark';
-import { vkIOSTheme, vkIOSThemeDark } from '../vkIOS';
+import type { ThemeVkontakteIOSDescription } from '../../../interfaces/themes/vkontakteIOS/index.js';
+import type { ThemeVkontakteIOSDarkDescription } from '../../../interfaces/themes/vkontakteIOSDark/index.js';
+import { vkIOSTheme, vkIOSThemeDark } from '../vkIOS/index.js';
 import {
 	vkontakteLocalColorDark,
 	vkontakteLocalColorLight,
 	vkontakteMobileFonts,
 	vkontakteTokens,
-} from '../vkontakteAndroid';
+} from '../vkontakteAndroid/index.js';
 
 const themeNameBase = 'vkontakteIOS';
 

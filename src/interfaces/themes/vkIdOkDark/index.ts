@@ -2,4 +2,4 @@ export {
 	ThemeVkIdOk as ThemeVkIdOkDark,
 	ThemeVkIdOkCssVars as ThemeVkIdOkDarkCssVars,
 	ThemeVkIdOkDescription as ThemeVkIdOkDarkDescription,
-} from '../../themes/vkIdOk';
+} from '../../themes/vkIdOk/index.js';

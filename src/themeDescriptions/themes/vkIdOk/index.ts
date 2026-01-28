@@ -1,6 +1,6 @@
-import { ThemeVkIdOkDescription } from '../../../interfaces/themes/vkIdOk';
-import { ThemeVkIdOkDarkDescription } from '../../../interfaces/themes/vkIdOkDark';
-import { darkTheme, lightTheme } from '../../base/vk';
+import { ThemeVkIdOkDescription } from '../../../interfaces/themes/vkIdOk/index.js';
+import { ThemeVkIdOkDarkDescription } from '../../../interfaces/themes/vkIdOkDark/index.js';
+import { darkTheme, lightTheme } from '../../base/vk.js';
 
 export const vkIdOkTheme: ThemeVkIdOkDescription = {
 	...lightTheme,

@@ -1,4 +1,4 @@
-import palette from '@vkontakte/appearance/main.valette/palette_web.json';
+import palette from '@vkontakte/appearance/main.valette/palette_web.json' with { type: 'json' };
 
 /* eslint-disable @typescript-eslint/naming-convention */
 interface ClusterData {

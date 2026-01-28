@@ -1,7 +1,7 @@
 import { useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
-import React, { FC, useMemo, useState } from 'react';
+import * as React from 'react';
 
-import tokensData from '../../public/static/data/tokensData.json';
+import tokensData from '../../public/static/data/tokensData.json' with { type: 'json' };
 import { TokensActions, TokensContent, TokensHeader } from '../../src/components/pages/Tokens';
 import { useDebounce } from '../../src/shared/hooks/useDebounce';
 import { ChipOption, Tokens as TokensType, ValueType } from '../../src/shared/types';
@@ -55,15 +55,15 @@ function findThemeTags(themeNames: string[]): string[] {
 	return tagsList;
 }
 
-const Tokens: FC = () => {
+const Tokens: React.FC = () => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
 	const isTabletPlus = viewWidth > 3;
 
-	const themeTags = useMemo(() => findThemeTags(themes), [themes]);
-	const [selectedTags, setSelectedTags] = useState<Array<ChipOption>>([]);
-	const [selectedTheme, setSelectedTheme] = useState<string>(themes[0]);
-	const [selectedValueType, setSelectedValueType] = useState<ValueType>('regular');
-	const [searchValue, setSearchValue] = useState('');
+	const themeTags = React.useMemo(() => findThemeTags(themes), [themes]);
+	const [selectedTags, setSelectedTags] = React.useState<Array<ChipOption>>([]);
+	const [selectedTheme, setSelectedTheme] = React.useState<string>(themes[0]);
+	const [selectedValueType, setSelectedValueType] = React.useState<ValueType>('regular');
+	const [searchValue, setSearchValue] = React.useState('');
 	const searchValueDebounced = useDebounce(searchValue, 500);
 
 	const searchChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -1,14 +1,17 @@
 import type { Property } from 'csstype';
 
-import { isColorDescriptionCallable, isColorWithStates } from '../../../build/helpers/cssHelpers';
-import { ColorsDescription, ColorsFinal } from '../../../interfaces/general';
+import {
+	isColorDescriptionCallable,
+	isColorWithStates,
+} from '../../../build/helpers/cssHelpers.js';
 import {
 	ColorDescription,
 	ColorDescriptionStatic,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../../interfaces/general/colors';
-import { mixColors } from './mixColors';
+} from '../../../interfaces/general/colors/index.js';
+import { ColorsDescription, ColorsFinal } from '../../../interfaces/general/index.js';
+import { mixColors } from './mixColors.js';
 
 export const colorStateMap = {
 	light: '#00103D',

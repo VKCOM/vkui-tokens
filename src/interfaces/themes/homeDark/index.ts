@@ -1,4 +1,4 @@
-import { ThemeHome, ThemeHomeCssVars, ThemeHomeDescription } from '../home';
+import { ThemeHome, ThemeHomeCssVars, ThemeHomeDescription } from '../home/index.js';
 
 export type ThemeHomeDark = ThemeHome;
 export type ThemeHomeDarkDescription = ThemeHomeDescription;

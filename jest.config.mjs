@@ -1,6 +1,11 @@
-module.exports = {
-	preset: 'ts-jest',
+export default {
+	preset: 'ts-jest/presets/default',
 	testEnvironment: 'node',
+	injectGlobals: true,
+	moduleFileExtensions: ['ts', 'js', 'json', 'node'],
+	moduleNameMapper: {
+		'^(\\.{1,2}/.*)\\.js$': '$1',
+	},
 	coverageReporters: ['html', 'cobertura', 'text-summary'],
 	coverageDirectory: '.coverage',
 	collectCoverageFrom: [
@@ -9,10 +14,10 @@ module.exports = {
 		'!<rootDir>/src/build/compilers/legacy/**/*.ts',
 	],
 	transform: {
-		'^.+(\\.d)!\\.tsx?$': [
+		'^.+\\.tsx?$': [
 			'ts-jest',
 			{
-				babelConfig: true,
+				tsconfig: 'tsconfig.jest.json',
 			},
 		],
 	},
@@ -25,5 +30,5 @@ module.exports = {
 		},
 	},
 	testMatch: ['**/?(*.)+(spec|test).[t]s?(x)'],
-	testPathIgnorePatterns: ['/node_modules/', '/VKUI/'],
+	testPathIgnorePatterns: ['/node_modules/', '/VKUI/', '/dist/'],
 };

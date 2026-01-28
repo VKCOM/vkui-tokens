@@ -1,5 +1,5 @@
-import { ThemeWorkspaceLandingsDescription } from '../../../interfaces/themes/workspaceLandings';
-import { darkTheme } from '../../base/paradigm';
+import { ThemeWorkspaceLandingsDescription } from '../../../interfaces/themes/workspaceLandings/index.js';
+import { darkTheme } from '../../base/paradigm.js';
 
 export const workspaceLandingsTheme: ThemeWorkspaceLandingsDescription = {
 	...darkTheme,

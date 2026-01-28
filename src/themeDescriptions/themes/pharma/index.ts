@@ -1,6 +1,6 @@
-import { ThemePharmaDescription } from '../../../interfaces/themes/pharma';
-import { projectColors } from '../../common';
-import { mediaTheme } from '../media';
+import { ThemePharmaDescription } from '../../../interfaces/themes/pharma/index.js';
+import { projectColors } from '../../common/index.js';
+import { mediaTheme } from '../media/index.js';
 
 export const pharmaTheme: ThemePharmaDescription = {
 	...mediaTheme,

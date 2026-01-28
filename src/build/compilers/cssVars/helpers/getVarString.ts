@@ -1,4 +1,4 @@
-import { FlatValuesObject } from './accumulateValues';
+import { FlatValuesObject } from './accumulateValues.js';
 
 interface GetVarStringParams {
 	valuesObject: FlatValuesObject;

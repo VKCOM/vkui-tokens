@@ -1,5 +1,5 @@
-import { ThemePortalUIDescription } from '../../../interfaces/themes/portalUI';
-import { darkTheme, lightTheme } from '../../base/paradigm';
+import { ThemePortalUIDescription } from '../../../interfaces/themes/portalUI/index.js';
+import { darkTheme, lightTheme } from '../../base/paradigm.js';
 
 export const portalUITheme: ThemePortalUIDescription = {
 	...lightTheme,

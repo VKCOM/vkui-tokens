@@ -1,4 +1,4 @@
-import { ThemeCloud, ThemeCloudCssVars, ThemeCloudDescription } from '../cloud';
+import { ThemeCloud, ThemeCloudCssVars, ThemeCloudDescription } from '../cloud/index.js';
 
 export type ThemeCloudDark = ThemeCloud;
 export type ThemeCloudDarkDescription = ThemeCloudDescription;

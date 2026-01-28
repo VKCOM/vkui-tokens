@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { getTypeDocs } from './compileDocsJSON';
+import { getTypeDocs } from './compileDocsJSON.js';
 
 describe('compileDocsJSON', () => {
 	it('should correct compile documentation with reexported interface', () => {
