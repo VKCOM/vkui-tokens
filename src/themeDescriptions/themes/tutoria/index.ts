@@ -1,9 +1,9 @@
-import { toneOpacity } from '../../../build/helpers/cssHelpers';
+import { toneOpacity } from '../../../build/helpers/cssHelpers.js';
 import {
 	ThemeTutoriaAdaptiveTokens,
 	ThemeTutoriaDescription,
-} from '../../../interfaces/themes/tutoria';
-import { darkTheme, lightTheme } from '../../base/vk';
+} from '../../../interfaces/themes/tutoria/index.js';
+import { darkTheme, lightTheme } from '../../base/vk.js';
 
 const fontFamilyFallbacks = 'Helvetica, Arial, sans-serif';
 const fontFamilyAccent = `VKSansDisplay, ${fontFamilyFallbacks}`;

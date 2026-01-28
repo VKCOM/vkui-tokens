@@ -1,4 +1,4 @@
-import figma from '../figma.json';
+import figma from '../figma.json' with { type: 'json' };
 
 // Поля — режимы соответсвующей коллекции переменных из фигмы
 // Цвета

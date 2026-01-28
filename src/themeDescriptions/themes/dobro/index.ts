@@ -1,6 +1,6 @@
-import type { ColorsDescription } from '../../../interfaces/general';
-import type { ThemeDobroDescription } from '../../../interfaces/themes/dobro';
-import { colorFromFigma, darkElevation, darkGradient, fonts, lightTheme } from '../../base/vk';
+import type { ColorsDescription } from '../../../interfaces/general/index.js';
+import type { ThemeDobroDescription } from '../../../interfaces/themes/dobro/index.js';
+import { colorFromFigma, darkElevation, darkGradient, fonts, lightTheme } from '../../base/vk.js';
 
 const lightColors: ColorsDescription = colorFromFigma('light');
 

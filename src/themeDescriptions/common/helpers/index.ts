@@ -1,4 +1,4 @@
-import { ParadigmHelpers } from '../../../interfaces/namespaces/paradigm';
+import { ParadigmHelpers } from '../../../interfaces/namespaces/paradigm/index.js';
 
 const sizeBase = 4;
 const x0 = 0;

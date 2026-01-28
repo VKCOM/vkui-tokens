@@ -1,12 +1,12 @@
-import { vkcom_dark, vkcom_light } from '@vkontakte/appearance/main.valette/scheme_web.json';
+import schemeWeb from '@vkontakte/appearance/main.valette/scheme_web.json' with { type: 'json' };
 import lodash from 'lodash';
 
-import { getGradientPointsFromColor } from '../../../build/helpers/getGradientPointsFromColor';
-import { ColorsDescription } from '../../../interfaces/general';
-import { Gradients } from '../../../interfaces/general/gradients';
-import { DeepPartial } from '../../../interfaces/general/tools/utils';
-import { ThemeVkComDescription } from '../../../interfaces/themes/vkCom';
-import { ThemeVkComDarkDescription } from '../../../interfaces/themes/vkComDark';
+import { getGradientPointsFromColor } from '../../../build/helpers/getGradientPointsFromColor.js';
+import { Gradients } from '../../../interfaces/general/gradients/index.js';
+import { ColorsDescription } from '../../../interfaces/general/index.js';
+import { DeepPartial } from '../../../interfaces/general/tools/utils.js';
+import { ThemeVkComDescription } from '../../../interfaces/themes/vkCom/index.js';
+import { ThemeVkComDarkDescription } from '../../../interfaces/themes/vkComDark/index.js';
 import {
 	darkColors,
 	darkElevation,
@@ -14,8 +14,10 @@ import {
 	fonts,
 	lightColors,
 	lightTheme,
-} from '../../base/vk';
-import { resolveColor } from './appearance';
+} from '../../base/vk.js';
+import { resolveColor } from './appearance.js';
+// eslint-disable-next-line no-useless-rename
+const { vkcom_dark: vkcomDark, vkcom_light: vkcomLight } = schemeWeb;
 
 const fontFamilyAccent =
 	'"VK Sans Display", "VK Sans Display Faux", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif';
@@ -23,7 +25,7 @@ const fontFamilyBase =
 	'-apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif';
 const fontFamilyFallbacks = fontFamilyBase;
 
-const vkComColors = (theme: typeof vkcom_light) => ({
+const vkComColors = (theme: typeof vkcomLight) => ({
 	// Background
 	colorBackgroundAccent: resolveColor(theme.colors.accent),
 	colorBackgroundAccentThemed: resolveColor(theme.colors.button_primary_background),
@@ -149,7 +151,7 @@ const vkComLightColor: ColorsDescription = {
 	colorsScheme: 'light',
 	colors: {
 		...lightColors.colors,
-		...vkComColors(vkcom_light),
+		...vkComColors(vkcomLight),
 		colorBackgroundNegativeTint: '#FAEBEB',
 		colorBackgroundPositiveTint: '#E8F9E8',
 	},
@@ -344,10 +346,10 @@ const vkComDarkColor: ColorsDescription = {
 	colorsScheme: 'dark',
 	colors: {
 		...darkColors.colors,
-		...vkComColors(vkcom_dark),
+		...vkComColors(vkcomDark),
 		// Background
 		colorBackgroundAccentThemed: {
-			normal: resolveColor(vkcom_dark.colors.button_primary_background),
+			normal: resolveColor(vkcomDark.colors.button_primary_background),
 			hover: '#D8DBDF',
 			active: '#CFD2D8',
 		},
@@ -389,8 +391,8 @@ const vkComDarkColor: ColorsDescription = {
 
 export const vkComDarkGradient: Gradients = {
 	...darkGradient,
-	gradientTint: getGradientPointsFromColor(resolveColor(vkcom_dark.colors.background_light)),
-	gradient: getGradientPointsFromColor(resolveColor(vkcom_dark.colors.background_content)),
+	gradientTint: getGradientPointsFromColor(resolveColor(vkcomDark.colors.background_light)),
+	gradient: getGradientPointsFromColor(resolveColor(vkcomDark.colors.background_content)),
 };
 
 export const vkComThemeDark: ThemeVkComDarkDescription = {

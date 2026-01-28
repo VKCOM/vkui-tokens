@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { getAllButSizes } from '../../build/helpers/getAllButSizes';
+import { getAllButSizes } from '../../build/helpers/getAllButSizes.js';
 
 describe('getAllButSizes', () => {
 	it('should filter out tokens that start with "size", "font" or are a size helper', () => {

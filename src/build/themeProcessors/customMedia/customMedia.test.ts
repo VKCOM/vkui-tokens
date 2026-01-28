@@ -1,9 +1,9 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { Breakpoints } from '../../../interfaces/general/tools';
-import { CustomMediaByViewport } from '../../../interfaces/general/tools/customMedia';
-import { ViewportsOrdered } from '../../../interfaces/general/tools/viewports';
-import { getCustomMediaKey, getUsingViewports, processCustomMedia } from './customMedia';
+import { CustomMediaByViewport } from '../../../interfaces/general/tools/customMedia.js';
+import { Breakpoints } from '../../../interfaces/general/tools/index.js';
+import { ViewportsOrdered } from '../../../interfaces/general/tools/viewports.js';
+import { getCustomMediaKey, getUsingViewports, processCustomMedia } from './customMedia.js';
 
 describe('customMedia', () => {
 	describe('getCustomMediaKey', () => {

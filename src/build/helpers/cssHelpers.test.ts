@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
 // eslint-disable-next-line import/no-deprecated
-import { getRGBA, toneOpacity } from './cssHelpers';
+import { getRGBA, toneOpacity } from './cssHelpers.js';
 
 describe('cssHelpers', () => {
 	describe('getRGBA', () => {

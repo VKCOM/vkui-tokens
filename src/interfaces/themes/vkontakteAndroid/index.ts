@@ -1,8 +1,12 @@
-import { ThemeCssVars } from '../../general';
-import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
-import { GradientPoints } from '../../general/gradients';
-import { Tokens } from '../../general/tools/tokenValue';
-import { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase';
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '../../general/colors/index.js';
+import { GradientPoints } from '../../general/gradients/index.js';
+import { ThemeCssVars } from '../../general/index.js';
+import { Tokens } from '../../general/tools/tokenValue.js';
+import { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.js';
 
 export interface VkontakteAndroidGradients {
 	/**

@@ -3,4 +3,4 @@ export {
 	ThemeVkIOS as ThemeLegoIOS,
 	ThemeVkIOSCssVars as ThemeLegoIOSCssVars,
 	ThemeVkIOSDescription as ThemeLegoIOSDescription,
-} from '../../themes/vkIOS';
+} from '../../themes/vkIOS/index.js';

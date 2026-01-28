@@ -4,11 +4,11 @@ import { deepStrictEqual } from 'node:assert';
 
 import { stripIndent } from 'common-tags';
 
-import { getAllButColors } from '../../../build/helpers/getAllButColors';
-import { getAllButSizes } from '../../../build/helpers/getAllButSizes';
-import { getOnlyColors } from '../../../build/helpers/getOnlyColors';
-import { unCamelcasify } from '../../../build/helpers/unCamelcasify';
-import { PixelifyTheme } from '../../../interfaces/general';
+import { getAllButColors } from '../../../build/helpers/getAllButColors.js';
+import { getAllButSizes } from '../../../build/helpers/getAllButSizes.js';
+import { getOnlyColors } from '../../../build/helpers/getOnlyColors.js';
+import { unCamelcasify } from '../../../build/helpers/unCamelcasify.js';
+import { PixelifyTheme } from '../../../interfaces/general/index.js';
 import {
 	customMediaDeclaration,
 	EStyleTypes,
@@ -16,14 +16,14 @@ import {
 	processGroupToken,
 	varDeclarations,
 	variablesStatementDeclaration,
-} from './helpers/tokenProcessors';
+} from './helpers/tokenProcessors.js';
 import {
 	isAdaptiveFlatToken,
 	isColor,
 	isCustomMediaToken,
 	isGroupToken,
 	isString,
-} from './helpers/tokenRecognition';
+} from './helpers/tokenRecognition.js';
 
 export const serviceKeys = ['breakpoints', 'prefix', 'themeType'];
 

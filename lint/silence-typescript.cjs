@@ -1,4 +1,4 @@
-const silence = require.resolve('./silence-core.js');
+const silence = require.resolve('./silence-core.cjs');
 
 module.exports = {
 	plugins: ['@typescript-eslint'],

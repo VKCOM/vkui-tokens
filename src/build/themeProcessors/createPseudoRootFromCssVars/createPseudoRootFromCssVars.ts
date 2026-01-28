@@ -1,4 +1,9 @@
-import { PixelifyTheme, Theme, ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general';
+import {
+	PixelifyTheme,
+	Theme,
+	ThemeCssVars,
+	ThemeCssVarsWide,
+} from '../../../interfaces/general/index.js';
 
 function fillNewValues({
 	objectTo,

@@ -1,7 +1,10 @@
-import { ThemeVkAccessibilityIOSDescription } from '../../../interfaces/themes/vkAccessibilityIOS';
-import { ThemeVkAccessibilityIOSDarkDescription } from '../../../interfaces/themes/vkAccessibilityIOSDark';
-import { vkAccessibilityTheme, vkAccessibilityThemeDark } from '../../themes/vkAccessibility';
-import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS';
+import { ThemeVkAccessibilityIOSDescription } from '../../../interfaces/themes/vkAccessibilityIOS/index.js';
+import { ThemeVkAccessibilityIOSDarkDescription } from '../../../interfaces/themes/vkAccessibilityIOSDark/index.js';
+import {
+	vkAccessibilityTheme,
+	vkAccessibilityThemeDark,
+} from '../../themes/vkAccessibility/index.js';
+import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.js';
 
 export const vkAccessibilityIOSTheme: ThemeVkAccessibilityIOSDescription = {
 	...vkIOSTheme,

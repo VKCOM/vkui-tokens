@@ -1,13 +1,13 @@
 import type { Property } from 'csstype';
 
-import { ThemeDescription } from '../../interfaces/general';
-import { Token } from '../../interfaces/general/tools/tokenValue';
+import { ThemeDescription } from '../../interfaces/general/index.js';
+import { Token } from '../../interfaces/general/tools/tokenValue.js';
 import {
 	defaultOpacityPoints,
 	getGradientPointsFromColor,
 	makeGradientPointRaw,
 	OpacityPoints,
-} from './getGradientPointsFromColor';
+} from './getGradientPointsFromColor.js';
 
 export type TokenFunction<T extends ThemeDescription> = (theme: Partial<T>) => Token<any, T>;
 export type NamedTokenFunction<T extends ThemeDescription> = (

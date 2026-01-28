@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-import { alias, gradient, namedAlias, staticRef } from '../../build/helpers/tokenHelpers';
+import { alias, gradient, namedAlias, staticRef } from '../../build/helpers/tokenHelpers.js';
 
 describe('tokenHelpers', () => {
 	describe('alias', () => {

@@ -3,4 +3,4 @@ export {
 	ThemeVkontakteAndroid as ThemeLegoAndroid,
 	ThemeVkontakteAndroidCssVars as ThemeLegoAndroidCssVars,
 	ThemeVkontakteAndroidDescription as ThemeLegoAndroidDescription,
-} from '../../themes/vkontakteAndroid';
+} from '../../themes/vkontakteAndroid/index.js';

@@ -1,7 +1,7 @@
-import { toneOpacity } from '../../../build/helpers/cssHelpers';
-import { ThemeOctaviusDescription } from '../../../interfaces/themes/octavius';
-import { darkTheme, darkThemeElevation, lightColors, lightTheme } from '../../base/paradigm';
-import { socialColors } from '../../common';
+import { toneOpacity } from '../../../build/helpers/cssHelpers.js';
+import { ThemeOctaviusDescription } from '../../../interfaces/themes/octavius/index.js';
+import { darkTheme, darkThemeElevation, lightColors, lightTheme } from '../../base/paradigm.js';
+import { socialColors } from '../../common/index.js';
 
 export const octaviusTheme: ThemeOctaviusDescription = {
 	...lightTheme,

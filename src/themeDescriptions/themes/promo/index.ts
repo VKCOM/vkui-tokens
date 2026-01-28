@@ -1,5 +1,5 @@
-import { ThemePromoDescription } from '../../../interfaces/themes/promo';
-import { lightTheme } from '../../base/paradigm';
+import { ThemePromoDescription } from '../../../interfaces/themes/promo/index.js';
+import { lightTheme } from '../../base/paradigm.js';
 
 const fontWeight = 300;
 

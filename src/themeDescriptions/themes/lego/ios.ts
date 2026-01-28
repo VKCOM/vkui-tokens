@@ -1,10 +1,10 @@
-import { ThemeLegoIOSDescription } from '../../../interfaces/themes/legoIOS';
-import { ThemeLegoIOSDarkDescription } from '../../../interfaces/themes/legoIOSDark';
-import { darkElevation, darkGradient } from '../../base/vk';
-import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS';
-import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '../../themes/vkontakteIOS';
-import figma from './figma.json';
-import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON';
+import { ThemeLegoIOSDescription } from '../../../interfaces/themes/legoIOS/index.js';
+import { ThemeLegoIOSDarkDescription } from '../../../interfaces/themes/legoIOSDark/index.js';
+import { darkElevation, darkGradient } from '../../base/vk.js';
+import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.js';
+import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '../../themes/vkontakteIOS/index.js';
+import figma from './figma.json' with { type: 'json' };
+import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.js';
 
 export const legoIOSTheme: ThemeLegoIOSDescription = {
 	...vkIOSTheme, // импорт светлой базовой темы

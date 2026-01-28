@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { expandAll, expandRootTheme } from '../build/expandTheme';
+import { expandAll, expandRootTheme } from '../build/expandTheme.js';
 
 describe('expandTheme', () => {
 	describe('expandRootTheme', () => {

@@ -1,8 +1,8 @@
-import type { Theme, ThemeDescription } from '../../general';
-import type { Breakpoints } from '../../general/tools';
-import type { CustomMediaByViewport } from '../../general/tools/customMedia';
-import type { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports';
-import type { ParadigmThemeCssVars } from '../../namespaces/paradigm';
+import type { Theme, ThemeDescription } from '../../general/index.js';
+import type { CustomMediaByViewport } from '../../general/tools/customMedia.js';
+import type { Breakpoints } from '../../general/tools/index.js';
+import type { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports.js';
+import type { ParadigmThemeCssVars } from '../../namespaces/paradigm/index.js';
 
 type DobroViewportsTuple = ['touch', 'tablet', 'desktopS', 'desktopM'];
 

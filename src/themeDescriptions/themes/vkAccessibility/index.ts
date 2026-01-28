@@ -1,6 +1,6 @@
-import { ThemeVkAccessibilityDescription } from '../../../interfaces/themes/vkAccessibility';
-import { ThemeVkAccessibilityDarkDescription } from '../../../interfaces/themes/vkAccessibilityDark';
-import { darkColors, darkTheme, lightColors, lightTheme } from '../../base/vk';
+import { ThemeVkAccessibilityDescription } from '../../../interfaces/themes/vkAccessibility/index.js';
+import { ThemeVkAccessibilityDarkDescription } from '../../../interfaces/themes/vkAccessibilityDark/index.js';
+import { darkColors, darkTheme, lightColors, lightTheme } from '../../base/vk.js';
 
 export const vkAccessibilityTheme: ThemeVkAccessibilityDescription = {
 	...lightTheme,

@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-import { lint } from '../lint/index';
+import { lint } from '../lint/index.js';
 
 describe('lint unit', () => {
 	test('shows no warnings if everything is ok', () => {

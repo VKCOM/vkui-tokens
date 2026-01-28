@@ -1,12 +1,16 @@
-import { ThemeCssVars } from '../../general';
-import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
-import { Adaptive } from '../../general/tools';
-import { Font } from '../../general/typography';
+import {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '../../general/colors/index.js';
+import { ThemeCssVars } from '../../general/index.js';
+import { Adaptive } from '../../general/tools/index.js';
+import { Font } from '../../general/typography/index.js';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm';
+} from '../../namespaces/paradigm/index.js';
 
 export interface ThemeWorkspaceOverValues {
 	fontHeadline3: Adaptive<Font>;

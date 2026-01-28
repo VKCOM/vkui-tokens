@@ -1,4 +1,5 @@
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import fs from 'fs-extra';
 
@@ -11,11 +12,15 @@ import {
 	writeStructJsonFile,
 	writeStyleFiles,
 	writeTsFile,
-} from '../build/compilers';
-import { expandAll } from '../build/expandTheme';
-import { themes } from '../themeDescriptions';
-import { processCustomMedia } from './themeProcessors/customMedia/customMedia';
+} from '../build/compilers/index.js';
+import { expandAll } from '../build/expandTheme.js';
+import { themes } from '../themeDescriptions/index.js';
+import { processCustomMedia } from './themeProcessors/customMedia/customMedia.js';
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const __filename = fileURLToPath(import.meta.url);
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '../..');
 
 console.log('Удаляем папку dist...');
@@ -35,6 +40,7 @@ console.log('успешно\n');
 console.log('Копируем директорию src/interfaces...');
 const INTERFACES_PATH_SOURCE = path.resolve(ROOT_DIR, 'src/interfaces');
 const INTERFACES_PATH_DIST = path.resolve(DIST_PATH, 'interfaces');
+// eslint-disable-next-line import/no-named-as-default-member
 fs.copySync(INTERFACES_PATH_SOURCE, INTERFACES_PATH_DIST);
 console.log('успешно\n');
 
@@ -188,6 +194,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 	} else {
 		// Всё остальное копируем как есть
 
+		// eslint-disable-next-line import/no-named-as-default-member
 		fs.copySync(fileSourcePath, fileDestPath);
 	}
 });
@@ -195,6 +202,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 console.log('успешно\n');
 
 console.log('записываем корректный package.json');
+// eslint-disable-next-line import/no-named-as-default-member
 const packageJsonObject = fs.readJSONSync(`${ROOT_DIR}/package.json`);
 delete packageJsonObject.scripts.prepublishOnly;
 fs.writeFileSync(

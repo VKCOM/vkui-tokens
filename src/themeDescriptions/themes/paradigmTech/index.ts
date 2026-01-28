@@ -1,5 +1,5 @@
-import { ThemeParadigmTechDescription } from '../../../interfaces/themes/paradigmTech';
-import { octaviusDarkTheme, octaviusTheme } from '../octavius';
+import { ThemeParadigmTechDescription } from '../../../interfaces/themes/paradigmTech/index.js';
+import { octaviusDarkTheme, octaviusTheme } from '../octavius/index.js';
 
 export const paradigmTechTheme: ThemeParadigmTechDescription = {
 	...octaviusTheme,

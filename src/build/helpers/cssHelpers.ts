@@ -3,7 +3,7 @@ import {
 	ColorDescriptionCallable,
 	ColorDescriptionStatic,
 	ColorWithStates,
-} from '../../interfaces/general/colors';
+} from '../../interfaces/general/colors/index.js';
 
 const hexToRgb = (hex: string) => {
 	const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
