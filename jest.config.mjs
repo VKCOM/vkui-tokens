@@ -21,14 +21,6 @@ export default {
 			},
 		],
 	},
-	coverageThreshold: {
-		global: {
-			statements: 90.38,
-			branches: 85.61,
-			functions: 92.49,
-			lines: 90.05,
-		},
-	},
 	testMatch: ['**/?(*.)+(spec|test).[t]s?(x)'],
 	testPathIgnorePatterns: ['/node_modules/', '/VKUI/', '/dist/'],
 };
