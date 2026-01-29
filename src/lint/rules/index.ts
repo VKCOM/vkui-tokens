@@ -1,5 +1,5 @@
-import { ColorDescriptionStatic } from '../../interfaces/general/colors/index.js';
-import { checkAlphaMismatch } from '../../lint/rules/alphaMismatch.js';
+import { ColorDescriptionStatic } from '../../interfaces/general/colors/index.ts';
+import { checkAlphaMismatch } from '../../lint/rules/alphaMismatch.ts';
 
 // Тут перечислены все проверки
 export function checkAllRules(

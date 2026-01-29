@@ -1,11 +1,11 @@
 import {
 	isColorDescriptionCallable,
 	isColorDescriptionStatic,
-} from '../build/helpers/cssHelpers.js';
-import { expandColor } from '../build/themeProcessors/expandColors/expandColors.js';
-import { ColorsDescription } from '../interfaces/general/index.js';
-import { checkAllRules } from '../lint/rules/index.js';
-import { themes } from '../themeDescriptions/index.js';
+} from '../build/helpers/cssHelpers.ts';
+import { expandColor } from '../build/themeProcessors/expandColors/expandColors.ts';
+import { ColorsDescription } from '../interfaces/general/index.ts';
+import { checkAllRules } from '../lint/rules/index.ts';
+import { themes } from '../themeDescriptions/index.ts';
 
 function lintThemeObject(
 	object: Record<string, unknown>,

@@ -1,5 +1,5 @@
-import { EmptyTheme } from '../../../../build/compilers/docs/__test__/emptyTheme.js';
-import { BaseTheme1 } from '../../../../build/compilers/docs/__test__/testBaseTheme.js';
+import { EmptyTheme } from '../../../../build/compilers/docs/__test__/emptyTheme.ts';
+import { BaseTheme1 } from '../../../../build/compilers/docs/__test__/testBaseTheme.ts';
 
 export interface BaseTheme2 {
 	/**

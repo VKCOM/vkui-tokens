@@ -1,12 +1,12 @@
 import schemeWeb from '@vkontakte/appearance/main.valette/scheme_web.json' with { type: 'json' };
 import lodash from 'lodash';
 
-import { getGradientPointsFromColor } from '../../../build/helpers/getGradientPointsFromColor.js';
-import { Gradients } from '../../../interfaces/general/gradients/index.js';
-import { ColorsDescription } from '../../../interfaces/general/index.js';
-import { DeepPartial } from '../../../interfaces/general/tools/utils.js';
-import { ThemeVkComDescription } from '../../../interfaces/themes/vkCom/index.js';
-import { ThemeVkComDarkDescription } from '../../../interfaces/themes/vkComDark/index.js';
+import { getGradientPointsFromColor } from '../../../build/helpers/getGradientPointsFromColor.ts';
+import { Gradients } from '../../../interfaces/general/gradients/index.ts';
+import { ColorsDescription } from '../../../interfaces/general/index.ts';
+import { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
+import { ThemeVkComDescription } from '../../../interfaces/themes/vkCom/index.ts';
+import { ThemeVkComDarkDescription } from '../../../interfaces/themes/vkComDark/index.ts';
 import {
 	darkColors,
 	darkElevation,
@@ -14,8 +14,8 @@ import {
 	fonts,
 	lightColors,
 	lightTheme,
-} from '../../base/vk.js';
-import { resolveColor } from './appearance.js';
+} from '../../base/vk.ts';
+import { resolveColor } from './appearance.ts';
 // eslint-disable-next-line no-useless-rename
 const { vkcom_dark: vkcomDark, vkcom_light: vkcomLight } = schemeWeb;
 
@@ -288,7 +288,7 @@ const vkComFontsPartial: DeepPartial<typeof fonts> = {
 	},
 };
 
-export const vkComFonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
+export const vkComFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
 	lodash.cloneDeep(fonts),
 	vkComFontsPartial,
 );

@@ -1,5 +1,5 @@
-export {
+export type {
 	ThemeVkontakteAndroid as ThemeVkontakteIOS,
 	ThemeVkontakteAndroidCssVars as ThemeVkontakteIOSCssVars,
 	ThemeVkontakteAndroidDescription as ThemeVkontakteIOSDescription,
-} from '../../themes/vkontakteAndroid/index.js';
+} from '../../themes/vkontakteAndroid/index.ts';

@@ -4,12 +4,12 @@ import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../general/colors/index.js';
-import { Theme, ThemeCssVars, ThemeCssVarsWide, ThemeDescription } from '../../general/index.js';
-import { CustomMediaByViewport } from '../../general/tools/customMedia.js';
-import { Adaptive, Breakpoints } from '../../general/tools/index.js';
-import { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports.js';
-import { Font } from '../../general/typography/index.js';
+} from '../../general/colors/index.ts';
+import { Theme, ThemeCssVars, ThemeCssVarsWide, ThemeDescription } from '../../general/index.ts';
+import { CustomMediaByViewport } from '../../general/tools/customMedia.ts';
+import { Adaptive, Breakpoints } from '../../general/tools/index.ts';
+import { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports.ts';
+import { Font } from '../../general/typography/index.ts';
 
 export interface LocalParadigmColorsDescriptionStruct {
 	/**

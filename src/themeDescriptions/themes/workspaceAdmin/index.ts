@@ -1,8 +1,8 @@
-import { Adaptive } from '../../../interfaces/general/tools/index.js';
-import { Font } from '../../../interfaces/general/typography/index.js';
-import { ThemeWorkspaceAdminDescription } from '../../../interfaces/themes/workspaceAdmin/index.js';
-import { ThemeWorkspaceAdminDarkDescription } from '../../../interfaces/themes/workspaceAdminDark/index.js';
-import { darkTheme, lightTheme } from '../../base/paradigm.js';
+import { Adaptive } from '../../../interfaces/general/tools/index.ts';
+import { Font } from '../../../interfaces/general/typography/index.ts';
+import { ThemeWorkspaceAdminDescription } from '../../../interfaces/themes/workspaceAdmin/index.ts';
+import { ThemeWorkspaceAdminDarkDescription } from '../../../interfaces/themes/workspaceAdminDark/index.ts';
+import { darkTheme, lightTheme } from '../../base/paradigm.ts';
 
 export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 	...lightTheme,

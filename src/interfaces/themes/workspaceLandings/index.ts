@@ -1,6 +1,6 @@
-import { ColorDescription, ColorWithStates } from '../../general/colors/index.js';
-import { ThemeCssVars } from '../../general/index.js';
-import { ParadigmTheme, ParadigmThemeDescription } from '../../namespaces/paradigm/index.js';
+import { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
+import { ThemeCssVars } from '../../general/index.ts';
+import { ParadigmTheme, ParadigmThemeDescription } from '../../namespaces/paradigm/index.ts';
 
 export interface LocalWorkspaceLandingsColorDescriptionStruct {
 	workspaceLandingsColorBackgroundDark1: ColorDescription;

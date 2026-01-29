@@ -1,15 +1,15 @@
 import lodash from 'lodash';
 
-import { gradient, namedAlias } from '../../../build/helpers/tokenHelpers.js';
-import { Gradients } from '../../../interfaces/general/gradients/index.js';
-import { DeepPartial } from '../../../interfaces/general/tools/utils.js';
+import { gradient, namedAlias } from '../../../build/helpers/tokenHelpers.ts';
+import { Gradients } from '../../../interfaces/general/gradients/index.ts';
+import { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
 import type {
 	LocalVkontakteAndroidColorsDescriptionStruct,
 	ThemeVkontakteAndroidDescription,
 	VkontakteAndroidGradients,
-} from '../../../interfaces/themes/vkontakteAndroid/index.js';
-import type { ThemeVkontakteAndroidDarkDescription } from '../../../interfaces/themes/vkontakteAndroidDark/index.js';
-import { darkTheme as vkDarkTheme, fonts, lightTheme as vkLightTheme } from '../../base/vk.js';
+} from '../../../interfaces/themes/vkontakteAndroid/index.ts';
+import type { ThemeVkontakteAndroidDarkDescription } from '../../../interfaces/themes/vkontakteAndroidDark/index.ts';
+import { darkTheme as vkDarkTheme, fonts, lightTheme as vkLightTheme } from '../../base/vk.ts';
 
 const themeNameBase = 'vkontakteAndroid';
 
@@ -332,10 +332,10 @@ export const vkontakteDisplayTitleFontsPartial: DeepPartial<typeof fonts> = {
 	},
 };
 
-export const vkontakteMobileFonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
-	lodash.cloneDeep(fonts),
-	vkontakteDisplayTitleFontsPartial,
-);
+export const vkontakteMobileFonts: typeof fonts = lodash.merge<
+	typeof fonts,
+	DeepPartial<typeof fonts>
+>(lodash.cloneDeep(fonts), vkontakteDisplayTitleFontsPartial);
 
 const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof fonts>>(
 	lodash.cloneDeep(vkontakteMobileFonts),
@@ -430,7 +430,9 @@ const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof
 	},
 );
 
-export const vkontakteTokens = {
+export const vkontakteTokens: {
+	fontFamilyAccent: string;
+} & VkontakteAndroidGradients = {
 	fontFamilyAccent,
 	...colorGradients,
 };

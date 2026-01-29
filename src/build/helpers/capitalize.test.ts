@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { capitalize } from './capitalize.js';
+import { capitalize } from './capitalize.ts';
 
 describe('capitalize', () => {
 	it('should work without letters', () => {

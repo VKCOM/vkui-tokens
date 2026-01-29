@@ -2,16 +2,16 @@ import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../general/colors/index.js';
-import { Adaptive } from '../../general/tools/index.js';
-import { DefaultViewports } from '../../general/tools/viewports.js';
-import { Font } from '../../general/typography/index.js';
+} from '../../general/colors/index.ts';
+import { Adaptive } from '../../general/tools/index.ts';
+import { DefaultViewports } from '../../general/tools/viewports.ts';
+import { Font } from '../../general/typography/index.ts';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm/index.js';
+} from '../../namespaces/paradigm/index.ts';
 
 interface ThemeCloudTypohraphy {
 	/**

@@ -2,20 +2,20 @@ import path from 'node:path';
 
 import fs from 'fs-extra';
 
-import { compileGetDeclarationString } from '../../build/compilers/cssVars/jsUtils/compileGetDeclarationString.js';
-import { compileDocsJSON } from '../../build/compilers/docs/compileDocsJSON.js';
-import { compileJSON } from '../../build/compilers/json/compileJSON.js';
-import { compileStyles, CompileStylesMode } from '../../build/compilers/styles/compileStyles.js';
-import { compileTypeScript } from '../../build/compilers/ts/compileTypeScript.js';
-import { capitalize } from '../../build/helpers/capitalize.js';
+import { compileGetDeclarationString } from '../../build/compilers/cssVars/jsUtils/compileGetDeclarationString.ts';
+import { compileDocsJSON } from '../../build/compilers/docs/compileDocsJSON.ts';
+import { compileJSON } from '../../build/compilers/json/compileJSON.ts';
+import { compileStyles, CompileStylesMode } from '../../build/compilers/styles/compileStyles.ts';
+import { compileTypeScript } from '../../build/compilers/ts/compileTypeScript.ts';
+import { capitalize } from '../../build/helpers/capitalize.ts';
 import {
 	PixelifyTheme,
 	SpecialTokens,
 	Theme,
 	ThemeCssVarsWide,
-} from '../../interfaces/general/index.js';
-import { compileBreakpointsCssVarsDeclaration } from './cssVars/declarations/compileBreakpointsCssVarsDeclaration.js';
-import { compileStructJSON } from './structJSON/compileStructJSON.js';
+} from '../../interfaces/general/index.ts';
+import { compileBreakpointsCssVarsDeclaration } from './cssVars/declarations/compileBreakpointsCssVarsDeclaration.ts';
+import { compileStructJSON } from './structJSON/compileStructJSON.ts';
 
 type ThemeBuildType = 'root' | 'subtheme' | 'flat' | 'cssVars' | 'cssVarsPseudoRoot';
 

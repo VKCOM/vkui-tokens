@@ -1,12 +1,12 @@
 import type { Property } from 'csstype';
 
-import { getGradientPointsFromColor } from '../../build/helpers/getGradientPointsFromColor.js';
-import { alias, staticRef } from '../../build/helpers/tokenHelpers.js';
-import { overlayColors } from '../../build/themeProcessors/expandColors/overlayColors.js';
-import { Elevation } from '../../interfaces/general/elevation/index.js';
-import { ColorsDescription, ThemeDescription } from '../../interfaces/general/index.js';
-import { ParadigmThemeDescription } from '../../interfaces/namespaces/paradigm/index.js';
-import { helpers } from '../common/index.js';
+import { getGradientPointsFromColor } from '../../build/helpers/getGradientPointsFromColor.ts';
+import { alias, staticRef } from '../../build/helpers/tokenHelpers.ts';
+import { overlayColors } from '../../build/themeProcessors/expandColors/overlayColors.ts';
+import { Elevation } from '../../interfaces/general/elevation/index.ts';
+import { ColorsDescription, ThemeDescription } from '../../interfaces/general/index.ts';
+import { ParadigmThemeDescription } from '../../interfaces/namespaces/paradigm/index.ts';
+import { helpers } from '../common/index.ts';
 
 const fontFamilyFallbacks = 'apple-system, system-ui, "Helvetica Neue", Arial, sans-serif';
 const fontFamilyAccent = `VKSansDisplay, MailSans, ${fontFamilyFallbacks}`;

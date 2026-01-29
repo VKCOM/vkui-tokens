@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { compileStructJSON } from './compileStructJSON.js';
+import { compileStructJSON } from './compileStructJSON.ts';
 
 describe('compileJSON', () => {
 	it('should stringify correctly', () => {

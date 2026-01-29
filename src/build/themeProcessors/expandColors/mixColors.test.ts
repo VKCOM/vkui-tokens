@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 import type { Property } from 'csstype';
 
-import { mixColors } from './mixColors.js';
+import { mixColors } from './mixColors.ts';
 
 describe('mixColors', () => {
 	const colorState: Property.Color = '#000000';

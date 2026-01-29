@@ -1,11 +1,11 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { extractCssVarsStrict } from '../../../build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict.js';
-import { ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general/index.js';
+import { extractCssVarsStrict } from '../../../build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict.ts';
+import { ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general/index.ts';
 import {
 	ParadigmThemeCssVars,
 	ParadigmThemeCssVarsWide,
-} from '../../../interfaces/namespaces/paradigm/index.js';
+} from '../../../interfaces/namespaces/paradigm/index.ts';
 
 describe('extractCssVarsStrict', () => {
 	it('should work with empty object', () => {

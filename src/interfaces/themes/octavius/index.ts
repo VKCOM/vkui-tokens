@@ -4,14 +4,14 @@ import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../general/colors/index.js';
-import { ThemeCssVars } from '../../general/index.js';
-import { Adaptive } from '../../general/tools/index.js';
+} from '../../general/colors/index.ts';
+import { ThemeCssVars } from '../../general/index.ts';
+import { Adaptive } from '../../general/tools/index.ts';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm/index.js';
+} from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeOctaviusOverValues {
 	octaviusElevationCard: Property.BoxShadow;

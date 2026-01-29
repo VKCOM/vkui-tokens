@@ -1,6 +1,6 @@
 // Реэкспорт интерфейсов, так как набор переменных в тёмной теме такой же
-export {
+export type {
 	ThemeLegoAndroid as ThemeLegoAndroidDark,
 	ThemeLegoAndroidCssVars as ThemeLegoAndroidDarkCssVars,
 	ThemeLegoAndroidDescription as ThemeLegoAndroidDarkDescription,
-} from '../../themes/legoAndroid/index.js';
+} from '../../themes/legoAndroid/index.ts';

@@ -2,7 +2,7 @@ import {
 	ThemeWorkspaceAdmin,
 	ThemeWorkspaceAdminCssVars,
 	ThemeWorkspaceAdminDescription,
-} from '../../themes/workspaceAdmin/index.js';
+} from '../../themes/workspaceAdmin/index.ts';
 
 export type ThemeWorkspaceAdminDark = ThemeWorkspaceAdmin;
 export type ThemeWorkspaceAdminDarkDescription = ThemeWorkspaceAdminDescription;

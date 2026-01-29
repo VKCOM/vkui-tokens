@@ -1,4 +1,4 @@
-import { DefaultViewports, ViewportsTuple } from './viewports.js';
+import { DefaultViewports, ViewportsTuple } from './viewports.ts';
 
 /**
  * Cтруктура адаптивной переменной.

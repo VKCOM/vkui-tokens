@@ -2,7 +2,7 @@ import {
 	ThemePortalUI,
 	ThemePortalUICssVars,
 	ThemePortalUIDescription,
-} from '../portalUI/index.js';
+} from '../portalUI/index.ts';
 
 export interface ThemePortalUIDark extends ThemePortalUI {}
 export interface ThemePortalUIDarkDescription extends ThemePortalUIDescription {}

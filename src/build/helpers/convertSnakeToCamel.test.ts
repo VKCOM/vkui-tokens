@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-import { convertSnakeToCamel } from './convertSnakeToCamel.js';
+import { convertSnakeToCamel } from './convertSnakeToCamel.ts';
 
 describe('convertSnakeToCamel', () => {
 	test('convert empty string', () => {

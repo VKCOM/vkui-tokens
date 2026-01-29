@@ -1,9 +1,9 @@
-import { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.js';
+import { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.ts';
 import {
 	DefaultViewports,
 	Viewports,
 	ViewportsTuple,
-} from '../../../../interfaces/general/tools/viewports.js';
+} from '../../../../interfaces/general/tools/viewports.ts';
 
 export function findViewportByAdaptivityState<Vt extends ViewportsTuple = DefaultViewports>(
 	breakpoints: Partial<Breakpoints<Vt>['breakpoints']>,

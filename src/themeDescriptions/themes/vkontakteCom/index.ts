@@ -1,11 +1,11 @@
 import lodash from 'lodash';
 
-import { DeepPartial } from '../../../interfaces/general/tools/utils.js';
-import { LocalVkontakteAndroidColorsDescriptionStruct } from '../../../interfaces/themes/vkontakteAndroid/index.js';
-import { ThemeVkontakteComDescription } from '../../../interfaces/themes/vkontakteCom/index.js';
-import { ThemeVkontakteComDarkDescription } from '../../../interfaces/themes/vkontakteComDark/index.js';
-import { vkComFonts, vkComTheme, vkComThemeDark } from '../vkCom/index.js';
-import { vkontakteDisplayTitleFontsPartial, vkontakteTokens } from '../vkontakteAndroid/index.js';
+import { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
+import { LocalVkontakteAndroidColorsDescriptionStruct } from '../../../interfaces/themes/vkontakteAndroid/index.ts';
+import { ThemeVkontakteComDescription } from '../../../interfaces/themes/vkontakteCom/index.ts';
+import { ThemeVkontakteComDarkDescription } from '../../../interfaces/themes/vkontakteComDark/index.ts';
+import { vkComFonts, vkComTheme, vkComThemeDark } from '../vkCom/index.ts';
+import { vkontakteDisplayTitleFontsPartial, vkontakteTokens } from '../vkontakteAndroid/index.ts';
 
 const themeNameBase = 'vkontakteCom';
 

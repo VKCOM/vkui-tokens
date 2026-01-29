@@ -3,15 +3,15 @@ import type { Property } from 'csstype';
 import {
 	isColorDescriptionCallable,
 	isColorWithStates,
-} from '../../../build/helpers/cssHelpers.js';
+} from '../../../build/helpers/cssHelpers.ts';
 import {
 	ColorDescription,
 	ColorDescriptionStatic,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../../interfaces/general/colors/index.js';
-import { ColorsDescription, ColorsFinal } from '../../../interfaces/general/index.js';
-import { mixColors } from './mixColors.js';
+} from '../../../interfaces/general/colors/index.ts';
+import { ColorsDescription, ColorsFinal } from '../../../interfaces/general/index.ts';
+import { mixColors } from './mixColors.ts';
 
 export const colorStateMap = {
 	light: '#00103D',

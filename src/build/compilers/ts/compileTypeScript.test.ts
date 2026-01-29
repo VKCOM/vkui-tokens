@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { compileTypeScript } from '../../../build/compilers/ts/compileTypeScript.js';
+import { compileTypeScript } from '../../../build/compilers/ts/compileTypeScript.ts';
 
 describe('compileTypeScript', () => {
 	const testData = {

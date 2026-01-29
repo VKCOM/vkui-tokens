@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "outDir": "./dist",
-    "isolatedModules": true
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "isolatedDeclarations": true
   },
   "exclude": ["docs/**/*", "dist/**/*"]
 }

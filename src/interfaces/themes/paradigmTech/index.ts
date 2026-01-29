@@ -2,20 +2,20 @@ import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../general/colors/index.js';
-import { ThemeCssVars } from '../../general/index.js';
-import { Adaptive } from '../../general/tools/index.js';
+} from '../../general/colors/index.ts';
+import { ThemeCssVars } from '../../general/index.ts';
+import { Adaptive } from '../../general/tools/index.ts';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
-} from '../../namespaces/paradigm/index.js';
+} from '../../namespaces/paradigm/index.ts';
 import {
 	LocalOctaviusColorsDescriptionStruct,
 	OctaviusLocalColors,
 	ThemeOctaviusDescription,
 	ThemeOctaviusLocalSizes,
 	ThemeOctaviusOverValues,
-} from '../../themes/octavius/index.js';
+} from '../../themes/octavius/index.ts';
 
 export interface LocalParadigmTechDescriptionStruct {
 	paradigmTechBackgroundPortal: ColorDescription;

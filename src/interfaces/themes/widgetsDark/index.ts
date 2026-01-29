@@ -2,7 +2,7 @@ import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm/index.js';
+} from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeWidgetsDarkDescription extends ParadigmThemeDescription {}
 export interface ThemeWidgetsDark extends ParadigmTheme {}

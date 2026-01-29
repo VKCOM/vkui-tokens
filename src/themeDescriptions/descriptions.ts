@@ -1,4 +1,4 @@
-import { Theme } from '../interfaces/general/index.js';
+import { Theme } from '../interfaces/general/index.ts';
 
 export type Description = {
 	category: string;

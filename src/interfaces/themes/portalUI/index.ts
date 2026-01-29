@@ -1,13 +1,13 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorWithStates } from '../../general/colors/index.js';
-import { GradientPoints } from '../../general/gradients/index.js';
-import { DefaultViewports } from '../../general/tools/viewports.js';
+import { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
+import { GradientPoints } from '../../general/gradients/index.ts';
+import { DefaultViewports } from '../../general/tools/viewports.ts';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm/index.js';
+} from '../../namespaces/paradigm/index.ts';
 
 interface PortalUITextColors {
 	/**

@@ -1,4 +1,4 @@
-import { ThemeDescription, ThemeGeneral } from '../../../interfaces/general/index.js';
+import { ThemeDescription, ThemeGeneral } from '../../../interfaces/general/index.ts';
 
 /**
  * Процессор, который возвращает новый объект на основе описания темы (ThemeDescription),

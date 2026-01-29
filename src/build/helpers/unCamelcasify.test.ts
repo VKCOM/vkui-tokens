@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { unCamelcasify } from './unCamelcasify.js';
+import { unCamelcasify } from './unCamelcasify.ts';
 
 describe('unCamelcasify', () => {
 	it('should correctly work with empty string', () => {

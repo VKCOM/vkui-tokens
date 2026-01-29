@@ -5,6 +5,7 @@ export default {
 	moduleFileExtensions: ['ts', 'js', 'json', 'node'],
 	moduleNameMapper: {
 		'^(\\.{1,2}/.*)\\.js$': '$1',
+		'^(\\.{1,2}/.*)\\.ts$': '$1',
 	},
 	coverageReporters: ['html', 'cobertura', 'text-summary'],
 	coverageDirectory: '.coverage',

@@ -1,14 +1,14 @@
 import { stripIndent, stripIndents } from 'common-tags';
 
-import { findViewportByAdaptivityState } from '../../../../build/compilers/cssVars/helpers/findViewportByAdaptivityState.js';
-import { capitalize } from '../../../../build/helpers/capitalize.js';
-import { convertCamelToSnake } from '../../../../build/helpers/convertCamelToSnake.js';
-import { getOnlyColors } from '../../../../build/helpers/getOnlyColors.js';
-import { processCustomMedia } from '../../../../build/themeProcessors/customMedia/customMedia.js';
-import { Theme, ThemeCssVarsWide } from '../../../../interfaces/general/index.js';
-import { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.js';
-import { accumulateValues } from '../helpers/accumulateValues.js';
-import { getVarString } from '../helpers/getVarString.js';
+import { findViewportByAdaptivityState } from '../../../../build/compilers/cssVars/helpers/findViewportByAdaptivityState.ts';
+import { capitalize } from '../../../../build/helpers/capitalize.ts';
+import { convertCamelToSnake } from '../../../../build/helpers/convertCamelToSnake.ts';
+import { getOnlyColors } from '../../../../build/helpers/getOnlyColors.ts';
+import { processCustomMedia } from '../../../../build/themeProcessors/customMedia/customMedia.ts';
+import { Theme, ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
+import { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.ts';
+import { accumulateValues } from '../helpers/accumulateValues.ts';
+import { getVarString } from '../helpers/getVarString.ts';
 
 export type DeclarationType = 'default' | 'onlyRoot' | 'modern' | 'onlyColors';
 

@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 
 import fs from 'fs-extra';
 
-import { mergeTokensData } from './mergeTokensData.js';
+import { mergeTokensData } from './mergeTokensData.ts';
 
 export type StrNum = string | number;
 

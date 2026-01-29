@@ -1,10 +1,10 @@
-import { convertCamelToSnake } from '../../../build/helpers/convertCamelToSnake.js';
-import { staticRef } from '../../../build/helpers/tokenHelpers.js';
-import { Theme, ThemeCssVarsWide } from '../../../interfaces/general/index.js';
-import { CustomMediaByViewport } from '../../../interfaces/general/tools/customMedia.js';
-import { Adaptive } from '../../../interfaces/general/tools/index.js';
-import { processCustomMedia } from '../customMedia/customMedia.js';
-import { pixelifyValues } from '../pixelifyValues/pixelifyValues.js';
+import { convertCamelToSnake } from '../../../build/helpers/convertCamelToSnake.ts';
+import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
+import { Theme, ThemeCssVarsWide } from '../../../interfaces/general/index.ts';
+import { CustomMediaByViewport } from '../../../interfaces/general/tools/customMedia.ts';
+import { Adaptive } from '../../../interfaces/general/tools/index.ts';
+import { processCustomMedia } from '../customMedia/customMedia.ts';
+import { pixelifyValues } from '../pixelifyValues/pixelifyValues.ts';
 
 export function getVariableName({
 	key,

@@ -1,7 +1,7 @@
-import { staticRef } from '../../../build/helpers/tokenHelpers.js';
-import { ThemeOctaviusCompactDescription } from '../../../interfaces/themes/octaviusCompact/index.js';
-import { fontSizes } from '../../common/index.js';
-import { octaviusDarkTheme, octaviusTheme } from '../octavius/index.js';
+import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
+import { ThemeOctaviusCompactDescription } from '../../../interfaces/themes/octaviusCompact/index.ts';
+import { fontSizes } from '../../common/index.ts';
+import { octaviusDarkTheme, octaviusTheme } from '../octavius/index.ts';
 
 const { fontSize2 } = fontSizes;
 

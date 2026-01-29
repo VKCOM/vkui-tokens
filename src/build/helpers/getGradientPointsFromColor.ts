@@ -1,8 +1,8 @@
 import color from 'color';
 import type { Property } from 'csstype';
 
-import { GradientPoints } from '../../interfaces/general/gradients/index.js';
-import { getVariableName } from '../themeProcessors/extractVarsNames/extractVarsNames.js';
+import { GradientPoints } from '../../interfaces/general/gradients/index.ts';
+import { getVariableName } from '../themeProcessors/extractVarsNames/extractVarsNames.ts';
 import opacityMap from './opacityMap.json' with { type: 'json' };
 
 export type OpacityPoints = [number, number][];

@@ -4,10 +4,10 @@ import {
 	AllowedParadigmColorDescriptions,
 	AllowedParadigmColorTokens,
 	ThemePulseDescription,
-} from '../../../interfaces/themes/pulse/index.js';
-import { ThemePulseDarkDescription } from '../../../interfaces/themes/pulseDark/index.js';
-import { darkColors, lightThemeBase } from '../../base/paradigm.js';
-import { helpers } from '../../common/index.js';
+} from '../../../interfaces/themes/pulse/index.ts';
+import { ThemePulseDarkDescription } from '../../../interfaces/themes/pulseDark/index.ts';
+import { darkColors, lightThemeBase } from '../../base/paradigm.ts';
+import { helpers } from '../../common/index.ts';
 
 const { x3, x4, x5 } = helpers;
 

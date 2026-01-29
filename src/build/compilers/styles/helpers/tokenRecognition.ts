@@ -1,11 +1,11 @@
-import { processCustomMedia } from '../../../../build/themeProcessors/customMedia/customMedia.js';
-import { ColorWithStates } from '../../../../interfaces/general/colors/index.js';
-import { CustomMediaByViewportUnion } from '../../../../interfaces/general/tools/customMedia.js';
-import { Adaptive } from '../../../../interfaces/general/tools/index.js';
+import { processCustomMedia } from '../../../../build/themeProcessors/customMedia/customMedia.ts';
+import { ColorWithStates } from '../../../../interfaces/general/colors/index.ts';
+import { CustomMediaByViewportUnion } from '../../../../interfaces/general/tools/customMedia.ts';
+import { Adaptive } from '../../../../interfaces/general/tools/index.ts';
 import {
 	ViewportsOrdered,
 	ViewportsTuple,
-} from '../../../../interfaces/general/tools/viewports.js';
+} from '../../../../interfaces/general/tools/viewports.ts';
 
 const stringKeys = ['themeName', 'themeNameBase', 'themeInheritsFrom'];
 

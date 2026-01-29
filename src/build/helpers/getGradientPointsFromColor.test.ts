@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { getGradientPointsFromColor } from '../../build/helpers/getGradientPointsFromColor.js';
+import { getGradientPointsFromColor } from '../../build/helpers/getGradientPointsFromColor.ts';
 
 describe('getGradientPointsFromColor', () => {
 	it('should generate gradient from color', () => {

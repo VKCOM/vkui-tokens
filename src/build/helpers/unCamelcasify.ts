@@ -1,4 +1,4 @@
-import { SIZE_SUB_GROUP } from './convertCamelToSnake.js';
+import { SIZE_SUB_GROUP } from './convertCamelToSnake.ts';
 // 2Xs, 3Xs, 4S
 const REPLACE_REGEXP = new RegExp(`(?:^\\w|${SIZE_SUB_GROUP}|[A-Z]|\\b\\w)`, 'g');
 

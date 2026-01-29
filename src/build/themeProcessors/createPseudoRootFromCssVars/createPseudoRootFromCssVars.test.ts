@@ -5,13 +5,13 @@ import {
 	Theme,
 	ThemeCssVars,
 	ThemeCssVarsWide,
-} from '../../../interfaces/general/index.js';
+} from '../../../interfaces/general/index.ts';
 import {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeCssVarsWide,
-} from '../../../interfaces/namespaces/paradigm/index.js';
-import { createPseudoRootFromCssVars } from './createPseudoRootFromCssVars.js';
+} from '../../../interfaces/namespaces/paradigm/index.ts';
+import { createPseudoRootFromCssVars } from './createPseudoRootFromCssVars.ts';
 
 describe('createPseudoRootFromCssVars', () => {
 	it('should return new object', () => {

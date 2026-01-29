@@ -1,4 +1,4 @@
-import { PixelifyTheme, Theme } from '../../../interfaces/general/index.js';
+import { PixelifyTheme, Theme } from '../../../interfaces/general/index.ts';
 
 const numericCSSProperties = /^(breakpoints$|fontWeight|zIndex|opacity|tone)/i;
 

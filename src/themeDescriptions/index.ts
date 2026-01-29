@@ -1,78 +1,78 @@
-import { calendarDarkTheme, calendarTheme } from '../themeDescriptions/themes/calendar/index.js';
-import { callsTheme } from '../themeDescriptions/themes/calls/index.js';
-import { cloudDarkTheme, cloudTheme } from '../themeDescriptions/themes/cloud/index.js';
-import { dobroDarkTheme, dobroTheme } from '../themeDescriptions/themes/dobro/index.js';
-import { homeDarkTheme, homeTheme } from '../themeDescriptions/themes/home/index.js';
+import { calendarDarkTheme, calendarTheme } from '../themeDescriptions/themes/calendar/index.ts';
+import { callsTheme } from '../themeDescriptions/themes/calls/index.ts';
+import { cloudDarkTheme, cloudTheme } from '../themeDescriptions/themes/cloud/index.ts';
+import { dobroDarkTheme, dobroTheme } from '../themeDescriptions/themes/dobro/index.ts';
+import { homeDarkTheme, homeTheme } from '../themeDescriptions/themes/home/index.ts';
 import {
 	legoAndroidTheme,
 	legoAndroidThemeDark,
-} from '../themeDescriptions/themes/lego/android.js';
-import { legoIOSTheme, legoIOSThemeDark } from '../themeDescriptions/themes/lego/ios.js';
-import { mediaDarkTheme, mediaTheme } from '../themeDescriptions/themes/media/index.js';
-import { mycomTheme } from '../themeDescriptions/themes/mycom/index.js';
+} from '../themeDescriptions/themes/lego/android.ts';
+import { legoIOSTheme, legoIOSThemeDark } from '../themeDescriptions/themes/lego/ios.ts';
+import { mediaDarkTheme, mediaTheme } from '../themeDescriptions/themes/media/index.ts';
+import { mycomTheme } from '../themeDescriptions/themes/mycom/index.ts';
 import {
 	octaviusDarkTheme,
 	octaviusTheme,
 	octaviusWhiteDarkTheme,
 	octaviusWhiteTheme,
-} from '../themeDescriptions/themes/octavius/index.js';
+} from '../themeDescriptions/themes/octavius/index.ts';
 import {
 	octaviusCompactDarkTheme,
 	octaviusCompactTheme,
-} from '../themeDescriptions/themes/octaviusCompact/index.js';
+} from '../themeDescriptions/themes/octaviusCompact/index.ts';
 import {
 	octaviusVKDarkTheme,
 	octaviusVKTheme,
-} from '../themeDescriptions/themes/octaviusVK/index.js';
-import { otvetDarkTheme, otvetTheme } from '../themeDescriptions/themes/otvet/index.js';
+} from '../themeDescriptions/themes/octaviusVK/index.ts';
+import { otvetDarkTheme, otvetTheme } from '../themeDescriptions/themes/otvet/index.ts';
 import {
 	paradigmTechDarkTheme,
 	paradigmTechTheme,
-} from '../themeDescriptions/themes/paradigmTech/index.js';
-import { pharmaTheme } from '../themeDescriptions/themes/pharma/index.js';
-import { portalUIDarkTheme, portalUITheme } from '../themeDescriptions/themes/portalUI/index.js';
-import { promoTheme } from '../themeDescriptions/themes/promo/index.js';
-import { pulseTheme, pulseThemeDark } from '../themeDescriptions/themes/pulse/index.js';
-import { searchTheme } from '../themeDescriptions/themes/search/index.js';
-import { todoTheme } from '../themeDescriptions/themes/todo/index.js';
-import { tutoriaDarkTheme, tutoriaTheme } from '../themeDescriptions/themes/tutoria/index.js';
+} from '../themeDescriptions/themes/paradigmTech/index.ts';
+import { pharmaTheme } from '../themeDescriptions/themes/pharma/index.ts';
+import { portalUIDarkTheme, portalUITheme } from '../themeDescriptions/themes/portalUI/index.ts';
+import { promoTheme } from '../themeDescriptions/themes/promo/index.ts';
+import { pulseTheme, pulseThemeDark } from '../themeDescriptions/themes/pulse/index.ts';
+import { searchTheme } from '../themeDescriptions/themes/search/index.ts';
+import { todoTheme } from '../themeDescriptions/themes/todo/index.ts';
+import { tutoriaDarkTheme, tutoriaTheme } from '../themeDescriptions/themes/tutoria/index.ts';
 import {
 	vkAccessibilityTheme,
 	vkAccessibilityThemeDark,
-} from '../themeDescriptions/themes/vkAccessibility/index.js';
+} from '../themeDescriptions/themes/vkAccessibility/index.ts';
 import {
 	vkAccessibilityIOSTheme,
 	vkAccessibilityIOSThemeDark,
-} from '../themeDescriptions/themes/vkAccessibilityIOS/index.js';
-import { vkComTheme, vkComThemeDark } from '../themeDescriptions/themes/vkCom/index.js';
-import { vkIdOkTheme, vkIdOkThemeDark } from '../themeDescriptions/themes/vkIdOk/index.js';
-import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '../themeDescriptions/themes/vkIdOkIOS/index.js';
-import { vkIOSTheme, vkIOSThemeDark } from '../themeDescriptions/themes/vkIOS/index.js';
+} from '../themeDescriptions/themes/vkAccessibilityIOS/index.ts';
+import { vkComTheme, vkComThemeDark } from '../themeDescriptions/themes/vkCom/index.ts';
+import { vkIdOkTheme, vkIdOkThemeDark } from '../themeDescriptions/themes/vkIdOk/index.ts';
+import { vkIdOkIOSTheme, vkIdOkIOSThemeDark } from '../themeDescriptions/themes/vkIdOkIOS/index.ts';
+import { vkIOSTheme, vkIOSThemeDark } from '../themeDescriptions/themes/vkIOS/index.ts';
 import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,
-} from '../themeDescriptions/themes/vkontakteAndroid/index.js';
+} from '../themeDescriptions/themes/vkontakteAndroid/index.ts';
 import {
 	vkontakteComTheme,
 	vkontakteComThemeDark,
-} from '../themeDescriptions/themes/vkontakteCom/index.js';
+} from '../themeDescriptions/themes/vkontakteCom/index.ts';
 import {
 	vkontakteIOSTheme,
 	vkontakteIOSThemeDark,
-} from '../themeDescriptions/themes/vkontakteIOS/index.js';
-import { widgetsDarkTheme, widgetsTheme } from '../themeDescriptions/themes/widgets/index.js';
+} from '../themeDescriptions/themes/vkontakteIOS/index.ts';
+import { widgetsDarkTheme, widgetsTheme } from '../themeDescriptions/themes/widgets/index.ts';
 import {
 	workspaceAdminDarkTheme,
 	workspaceAdminTheme,
-} from '../themeDescriptions/themes/workspaceAdmin/index.js';
-import { workspaceLandingsTheme } from '../themeDescriptions/themes/workspaceLandings/index.js';
+} from '../themeDescriptions/themes/workspaceAdmin/index.ts';
+import { workspaceLandingsTheme } from '../themeDescriptions/themes/workspaceLandings/index.ts';
 import {
 	darkThemeExport as paradigmBaseDark,
 	lightTheme as paradigmBase,
-} from './base/paradigm.js';
-import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk.js';
+} from './base/paradigm.ts';
+import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk.ts';
 
-export const themes = [
+export const themes: unknown[] = [
 	// ==== Базовые темы новой дизайн-системы ====
 	paradigmBase,
 	paradigmBaseDark,
@@ -173,4 +173,4 @@ export const themes = [
 	 * @deprecated TODO: Удалить
 	 */
 	promoTheme,
-] as const;
+];

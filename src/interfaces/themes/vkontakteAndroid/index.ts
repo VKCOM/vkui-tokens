@@ -2,11 +2,11 @@ import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../general/colors/index.js';
-import { GradientPoints } from '../../general/gradients/index.js';
-import { ThemeCssVars } from '../../general/index.js';
-import { Tokens } from '../../general/tools/tokenValue.js';
-import { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.js';
+} from '../../general/colors/index.ts';
+import { GradientPoints } from '../../general/gradients/index.ts';
+import { ThemeCssVars } from '../../general/index.ts';
+import { Tokens } from '../../general/tools/tokenValue.ts';
+import { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
 
 export interface VkontakteAndroidGradients {
 	/**

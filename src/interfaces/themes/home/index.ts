@@ -2,13 +2,13 @@ import {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../general/colors/index.js';
+} from '../../general/colors/index.ts';
 import {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm/index.js';
+} from '../../namespaces/paradigm/index.ts';
 
 export interface LocalHomeColorsDescriptionStruct {
 	homeColorSocialVk: ColorDescription;

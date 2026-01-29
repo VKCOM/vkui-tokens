@@ -1,8 +1,8 @@
-import { replacePropDeep } from '../../../build/helpers/replacePropDeep.js';
-import { ThemeMediaDescription } from '../../../interfaces/themes/media/index.js';
-import { ThemeMycomDescription } from '../../../interfaces/themes/mycom/index.js';
-import { projectColors } from '../../common/colors/projectColors.js';
-import { mediaTheme } from '../media/index.js';
+import { replacePropDeep } from '../../../build/helpers/replacePropDeep.ts';
+import { ThemeMediaDescription } from '../../../interfaces/themes/media/index.ts';
+import { ThemeMycomDescription } from '../../../interfaces/themes/mycom/index.ts';
+import { projectColors } from '../../common/colors/projectColors.ts';
+import { mediaTheme } from '../media/index.ts';
 
 const fontFamily = 'Proxima Nova, Arial, sans-serif';
 const themeWithFontFamily: ThemeMediaDescription = replacePropDeep(mediaTheme, {

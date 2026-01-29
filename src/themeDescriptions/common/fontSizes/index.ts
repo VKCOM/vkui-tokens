@@ -1,5 +1,5 @@
-import { Font, TypographyBaseProps } from '../../../interfaces/general/typography/index.js';
-import { helpers } from '../helpers/index.js';
+import { Font, TypographyBaseProps } from '../../../interfaces/general/typography/index.ts';
+import { helpers } from '../helpers/index.ts';
 
 const { sizeBase } = helpers;
 
@@ -69,7 +69,16 @@ const fontSize8: Font = {
 	fontFamily,
 };
 
-export const fontSizes = {
+export const fontSizes: {
+	fontSize1: Font;
+	fontSize2: Font;
+	fontSize3: Font;
+	fontSize4: Font;
+	fontSize5: Font;
+	fontSize6: Font;
+	fontSize7: Font;
+	fontSize8: Font;
+} = {
 	fontSize1,
 	fontSize2,
 	fontSize3,
@@ -78,4 +87,4 @@ export const fontSizes = {
 	fontSize6,
 	fontSize7,
 	fontSize8,
-} as const;
+};

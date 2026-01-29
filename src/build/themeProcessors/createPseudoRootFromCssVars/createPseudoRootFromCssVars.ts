@@ -3,7 +3,7 @@ import {
 	Theme,
 	ThemeCssVars,
 	ThemeCssVarsWide,
-} from '../../../interfaces/general/index.js';
+} from '../../../interfaces/general/index.ts';
 
 function fillNewValues({
 	objectTo,

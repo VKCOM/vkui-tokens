@@ -1,10 +1,10 @@
 import { describe, expect, test } from '@jest/globals';
 import { stripIndent } from 'common-tags';
 
-import { PixelifyTheme } from '../../../interfaces/general/index.js';
-import { ParadigmTheme } from '../../../interfaces/namespaces/paradigm/index.js';
-import { compileStyles, CompileStylesMode } from './compileStyles.js';
-import { EStyleTypes, Formats } from './helpers/tokenProcessors.js';
+import { PixelifyTheme } from '../../../interfaces/general/index.ts';
+import { ParadigmTheme } from '../../../interfaces/namespaces/paradigm/index.ts';
+import { compileStyles, CompileStylesMode } from './compileStyles.ts';
+import { EStyleTypes, Formats } from './helpers/tokenProcessors.ts';
 
 type DescriptionTheme = Partial<PixelifyTheme<ParadigmTheme>> &
 	Pick<PixelifyTheme, 'themeName' | 'colorsScheme'>;

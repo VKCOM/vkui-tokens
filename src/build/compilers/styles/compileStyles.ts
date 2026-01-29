@@ -4,11 +4,11 @@ import { deepStrictEqual } from 'node:assert';
 
 import { stripIndent } from 'common-tags';
 
-import { getAllButColors } from '../../../build/helpers/getAllButColors.js';
-import { getAllButSizes } from '../../../build/helpers/getAllButSizes.js';
-import { getOnlyColors } from '../../../build/helpers/getOnlyColors.js';
-import { unCamelcasify } from '../../../build/helpers/unCamelcasify.js';
-import { PixelifyTheme } from '../../../interfaces/general/index.js';
+import { getAllButColors } from '../../../build/helpers/getAllButColors.ts';
+import { getAllButSizes } from '../../../build/helpers/getAllButSizes.ts';
+import { getOnlyColors } from '../../../build/helpers/getOnlyColors.ts';
+import { unCamelcasify } from '../../../build/helpers/unCamelcasify.ts';
+import { PixelifyTheme } from '../../../interfaces/general/index.ts';
 import {
 	customMediaDeclaration,
 	EStyleTypes,
@@ -16,16 +16,16 @@ import {
 	processGroupToken,
 	varDeclarations,
 	variablesStatementDeclaration,
-} from './helpers/tokenProcessors.js';
+} from './helpers/tokenProcessors.ts';
 import {
 	isAdaptiveFlatToken,
 	isColor,
 	isCustomMediaToken,
 	isGroupToken,
 	isString,
-} from './helpers/tokenRecognition.js';
+} from './helpers/tokenRecognition.ts';
 
-export const serviceKeys = ['breakpoints', 'prefix', 'themeType'];
+export const serviceKeys = ['breakpoints', 'prefix', 'themeType'] as const;
 
 export type CompileStylesMode =
 	| 'default'
@@ -132,7 +132,7 @@ export const compileStyles = <PT extends PixelifyTheme = PixelifyTheme>(
 
 	Object.keys(processedTheme).forEach((key) => {
 		// пропускаем служебные ключи
-		if (serviceKeys.includes(key)) {
+		if (serviceKeys.includes(key as 'breakpoints' | 'prefix' | 'themeType')) {
 			return;
 		}
 

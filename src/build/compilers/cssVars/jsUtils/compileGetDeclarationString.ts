@@ -1,9 +1,9 @@
 import { stripIndent } from 'common-tags';
 
-import { accumulateValues } from '../../../../build/compilers/cssVars/helpers/accumulateValues.js';
-import { getVarString } from '../../../../build/compilers/cssVars/helpers/getVarString.js';
-import { getOnlyColors } from '../../../../build/helpers/getOnlyColors.js';
-import { Theme, ThemeCssVarsWide } from '../../../../interfaces/general/index.js';
+import { accumulateValues } from '../../../../build/compilers/cssVars/helpers/accumulateValues.ts';
+import { getVarString } from '../../../../build/compilers/cssVars/helpers/getVarString.ts';
+import { getOnlyColors } from '../../../../build/helpers/getOnlyColors.ts';
+import { Theme, ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
 
 export type DeclarationType = 'default' | 'onlyColors';
 

@@ -1,4 +1,4 @@
-import { ThemeMedia, ThemeMediaCssVars, ThemeMediaDescription } from '../media/index.js';
+import { ThemeMedia, ThemeMediaCssVars, ThemeMediaDescription } from '../media/index.ts';
 
 export type ThemeMediaDark = ThemeMedia;
 export type ThemeMediaDarkDescription = ThemeMediaDescription;

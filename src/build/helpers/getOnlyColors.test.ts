@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { getOnlyColors } from '../../build/helpers/getOnlyColors.js';
+import { getOnlyColors } from '../../build/helpers/getOnlyColors.ts';
 
 describe('getOnlyColors', () => {
 	it('should filter out tokens that do not look like a color', () => {
