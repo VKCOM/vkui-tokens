@@ -20,7 +20,7 @@
 					{
 						"^(.*?)\\.ts(x)?$": {
 							"skipDefaultConversion": true,
-							"transform": "{{matches.[1]}}.js",
+							"transform": "{{matches.[1]}}.cjs",
 						},
 					},
 				],
@@ -28,8 +28,9 @@
 		},
 	},
 	"module": {
-		"type": "es6",
+		"type": "commonjs",
 		"resolveFully": true,
+		"outFileExtension": "cjs",
 	},
 	"sourceMaps": true,
 }

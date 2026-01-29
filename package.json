@@ -16,7 +16,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:prettier": "prettier --check --ignore-unknown --cache --cache-location .cache/.prettiercache .",
     "tsc": "tsc --project tsconfig.json",
-    "tsc:dist": "swc dist/ --config-file package.swcrc --strip-leading-paths -d dist",
+    "tsc:dist": "swc dist/ --config-file package.swcrc --strip-leading-paths --out-file-extension cjs -d dist",
     "test": "jest --coverage",
     "test:ci": "jest --ci --silent --outputFile test-results.json --json --coverage --coverageReporters='json' --coverageDirectory='.nyc_output'",
     "clear:src": "find src -name '*.d.ts' -delete &&  find src -name '*.js' -delete",
