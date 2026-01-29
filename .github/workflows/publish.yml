@@ -71,7 +71,7 @@ jobs:
       - name: Bump version
         run: |
           VERSION="${{ inputs.custom_version || inputs.new_version }}"
-          npm version $VERSION --commit-hooks=false --git-tag-version=false
+          npm version "$VERSION" --commit-hooks=false --git-tag-version=false
 
       - name: Run build
         run: yarn run clean-build
