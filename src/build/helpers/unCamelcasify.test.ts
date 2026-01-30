@@ -1,27 +1,28 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { unCamelcasify } from './unCamelcasify.ts';
 
 describe('unCamelcasify', () => {
 	it('should correctly work with empty string', () => {
-		expect(unCamelcasify('')).toBe('');
+		assert.equal(unCamelcasify(''), '');
 	});
 
 	it('should work with Capitalize world', () => {
-		expect(unCamelcasify('Hello')).toBe('hello');
+		assert.equal(unCamelcasify('Hello'), 'hello');
 	});
 
 	it('should convert two words string', () => {
-		expect(unCamelcasify('desktopS')).toBe('desktop-s');
+		assert.equal(unCamelcasify('desktopS'), 'desktop-s');
 	});
 
 	it('should convert two words string with number prefix', () => {
-		expect(unCamelcasify('desktop3S')).toBe('desktop-3s');
+		assert.equal(unCamelcasify('desktop3S'), 'desktop-3s');
 	});
 
 	it('should convert many words string', () => {
-		expect(unCamelcasify('hello1SWorldMy2XsFriend3Xs')).toBe('hello-1s-world-my-2xs-friend-3xs');
-		expect(unCamelcasify('sizeGridColumn1X2')).toBe('size-grid-column1-x2');
-		expect(unCamelcasify('size2Xs3Regular2L')).not.toBe('size-2x-3regular-2l');
+		assert.equal(unCamelcasify('hello1SWorldMy2XsFriend3Xs'), 'hello-1s-world-my-2xs-friend-3xs');
+		assert.equal(unCamelcasify('sizeGridColumn1X2'), 'size-grid-column1-x2');
+		assert.notEqual(unCamelcasify('size2Xs3Regular2L'), 'size-2xs-3regular-2l');
 	});
 });
