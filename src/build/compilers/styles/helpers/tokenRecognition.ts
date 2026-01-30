@@ -1,8 +1,8 @@
 import { processCustomMedia } from '../../../../build/themeProcessors/customMedia/customMedia.ts';
-import { ColorWithStates } from '../../../../interfaces/general/colors/index.ts';
-import { CustomMediaByViewportUnion } from '../../../../interfaces/general/tools/customMedia.ts';
-import { Adaptive } from '../../../../interfaces/general/tools/index.ts';
-import {
+import type { ColorWithStates } from '../../../../interfaces/general/colors/index.ts';
+import type { CustomMediaByViewportUnion } from '../../../../interfaces/general/tools/customMedia.ts';
+import type { Adaptive } from '../../../../interfaces/general/tools/index.ts';
+import type {
 	ViewportsOrdered,
 	ViewportsTuple,
 } from '../../../../interfaces/general/tools/viewports.ts';

@@ -1,5 +1,5 @@
 import { toneOpacity } from '../../../build/helpers/cssHelpers.ts';
-import { ThemeOctaviusDescription } from '../../../interfaces/themes/octavius/index.ts';
+import type { ThemeOctaviusDescription } from '../../../interfaces/themes/octavius/index.ts';
 import { darkTheme, darkThemeElevation, lightColors, lightTheme } from '../../base/paradigm.ts';
 import { socialColors } from '../../common/index.ts';
 

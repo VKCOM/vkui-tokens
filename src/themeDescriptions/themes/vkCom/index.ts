@@ -2,11 +2,11 @@ import schemeWeb from '@vkontakte/appearance/main.valette/scheme_web.json' with 
 import lodash from 'lodash';
 
 import { getGradientPointsFromColor } from '../../../build/helpers/getGradientPointsFromColor.ts';
-import { Gradients } from '../../../interfaces/general/gradients/index.ts';
-import { ColorsDescription } from '../../../interfaces/general/index.ts';
-import { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
-import { ThemeVkComDescription } from '../../../interfaces/themes/vkCom/index.ts';
-import { ThemeVkComDarkDescription } from '../../../interfaces/themes/vkComDark/index.ts';
+import type { Gradients } from '../../../interfaces/general/gradients/index.ts';
+import type { ColorsDescription } from '../../../interfaces/general/index.ts';
+import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
+import type { ThemeVkComDescription } from '../../../interfaces/themes/vkCom/index.ts';
+import type { ThemeVkComDarkDescription } from '../../../interfaces/themes/vkComDark/index.ts';
 import {
 	darkColors,
 	darkElevation,

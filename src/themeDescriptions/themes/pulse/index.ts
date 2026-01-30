@@ -1,11 +1,11 @@
 import type { Property } from 'csstype';
 
-import {
+import type {
 	AllowedParadigmColorDescriptions,
 	AllowedParadigmColorTokens,
 	ThemePulseDescription,
 } from '../../../interfaces/themes/pulse/index.ts';
-import { ThemePulseDarkDescription } from '../../../interfaces/themes/pulseDark/index.ts';
+import type { ThemePulseDarkDescription } from '../../../interfaces/themes/pulseDark/index.ts';
 import { darkColors, lightThemeBase } from '../../base/paradigm.ts';
 import { helpers } from '../../common/index.ts';
 

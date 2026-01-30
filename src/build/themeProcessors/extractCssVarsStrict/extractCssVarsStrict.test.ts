@@ -1,8 +1,8 @@
 import { describe, expect, it } from '@jest/globals';
 
 import { extractCssVarsStrict } from '../../../build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict.ts';
-import { ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general/index.ts';
-import {
+import type { ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general/index.ts';
+import type {
 	ParadigmThemeCssVars,
 	ParadigmThemeCssVarsWide,
 } from '../../../interfaces/namespaces/paradigm/index.ts';

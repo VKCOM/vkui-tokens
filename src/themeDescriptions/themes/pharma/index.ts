@@ -1,4 +1,4 @@
-import { ThemePharmaDescription } from '../../../interfaces/themes/pharma/index.ts';
+import type { ThemePharmaDescription } from '../../../interfaces/themes/pharma/index.ts';
 import { projectColors } from '../../common/index.ts';
 import { mediaTheme } from '../media/index.ts';
 

@@ -1,4 +1,4 @@
-import { ThemeTodoDescription } from '../../../interfaces/themes/todo/index.ts';
+import type { ThemeTodoDescription } from '../../../interfaces/themes/todo/index.ts';
 import { lightTheme } from '../../base/paradigm.ts';
 import { helpers } from '../../common/helpers/index.ts';
 

@@ -1,4 +1,4 @@
-import { ThemeOtvet, ThemeOtvetCssVars, ThemeOtvetDescription } from '../otvet/index.ts';
+import type { ThemeOtvet, ThemeOtvetCssVars, ThemeOtvetDescription } from '../otvet/index.ts';
 
 export type ThemeOtvetDark = ThemeOtvet;
 export type ThemeOtvetDarkDescription = ThemeOtvetDescription;

@@ -5,14 +5,14 @@ import { extractCssVarsStrict } from '../build/themeProcessors/extractCssVarsStr
 import { extractGeneralTokens } from '../build/themeProcessors/extractGeneralTokens/extractGeneralTokens.ts';
 import { extractVarsNames } from '../build/themeProcessors/extractVarsNames/extractVarsNames.ts';
 import { pixelifyValues } from '../build/themeProcessors/pixelifyValues/pixelifyValues.ts';
-import {
+import type {
 	PixelifyTheme,
 	Theme,
 	ThemeCssVars,
 	ThemeCssVarsWide,
 	ThemeDescription,
 } from '../interfaces/general/index.ts';
-import { StaticTokens } from '../interfaces/general/tools/tokenValue.ts';
+import type { StaticTokens } from '../interfaces/general/tools/tokenValue.ts';
 
 export interface ExpandedThemeObject<T = Theme> {
 	theme: StaticTokens<T>;

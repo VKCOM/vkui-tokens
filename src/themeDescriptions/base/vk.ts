@@ -1,12 +1,12 @@
 import { getGradientPointsFromColor } from '../../build/helpers/getGradientPointsFromColor.ts';
 import { alias } from '../../build/helpers/tokenHelpers.ts';
-import { Effects } from '../../interfaces/general/effects/index.ts';
-import { Elevation } from '../../interfaces/general/elevation/index.ts';
-import { Sizes } from '../../interfaces/general/geometry/index.ts';
-import { Gradients } from '../../interfaces/general/gradients/index.ts';
-import { ColorsDescription, ThemeDescription } from '../../interfaces/general/index.ts';
-import { Adaptive } from '../../interfaces/general/tools/index.ts';
-import { Fonts, TypographyBaseProps } from '../../interfaces/general/typography/index.ts';
+import type { Effects } from '../../interfaces/general/effects/index.ts';
+import type { Elevation } from '../../interfaces/general/elevation/index.ts';
+import type { Sizes } from '../../interfaces/general/geometry/index.ts';
+import type { Gradients } from '../../interfaces/general/gradients/index.ts';
+import type { ColorsDescription, ThemeDescription } from '../../interfaces/general/index.ts';
+import type { Adaptive } from '../../interfaces/general/tools/index.ts';
+import type { Fonts, TypographyBaseProps } from '../../interfaces/general/typography/index.ts';
 import figma from '../base/figma/vk.json' with { type: 'json' };
 
 const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';

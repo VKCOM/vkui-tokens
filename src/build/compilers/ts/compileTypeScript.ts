@@ -1,5 +1,5 @@
 import { compileJSON } from '../../../build/compilers/json/compileJSON.ts';
-import { Theme } from '../../../interfaces/general/index.ts';
+import type { Theme } from '../../../interfaces/general/index.ts';
 
 /**
  * Компилирует строку с ts видом темы

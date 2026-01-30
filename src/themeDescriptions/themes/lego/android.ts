@@ -1,5 +1,5 @@
-import { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid/index.ts';
-import { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark/index.ts';
+import type { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid/index.ts';
+import type { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark/index.ts';
 import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,

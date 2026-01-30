@@ -5,10 +5,11 @@ import fs from 'fs-extra';
 import { compileGetDeclarationString } from '../../build/compilers/cssVars/jsUtils/compileGetDeclarationString.ts';
 import { compileDocsJSON } from '../../build/compilers/docs/compileDocsJSON.ts';
 import { compileJSON } from '../../build/compilers/json/compileJSON.ts';
-import { compileStyles, CompileStylesMode } from '../../build/compilers/styles/compileStyles.ts';
+import type { CompileStylesMode } from '../../build/compilers/styles/compileStyles.ts';
+import { compileStyles } from '../../build/compilers/styles/compileStyles.ts';
 import { compileTypeScript } from '../../build/compilers/ts/compileTypeScript.ts';
 import { capitalize } from '../../build/helpers/capitalize.ts';
-import {
+import type {
 	PixelifyTheme,
 	SpecialTokens,
 	Theme,

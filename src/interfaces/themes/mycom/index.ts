@@ -1,8 +1,8 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
-import { ParadigmThemeCssVars } from '../../namespaces/paradigm/index.ts';
-import {
+import type { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
+import type { ParadigmThemeCssVars } from '../../namespaces/paradigm/index.ts';
+import type {
 	MediaViewportsTuple,
 	ThemeMedia,
 	ThemeMediaDescription,

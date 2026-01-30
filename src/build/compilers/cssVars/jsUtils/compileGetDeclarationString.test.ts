@@ -2,8 +2,8 @@ import { describe, expect, it } from '@jest/globals';
 import { stripIndent } from 'common-tags';
 
 import { compileGetDeclarationString } from '../../../../build/compilers/cssVars/jsUtils/compileGetDeclarationString.ts';
-import { ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
-import { ParadigmThemeCssVarsWide } from '../../../../interfaces/namespaces/paradigm/index.ts';
+import type { ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
+import type { ParadigmThemeCssVarsWide } from '../../../../interfaces/namespaces/paradigm/index.ts';
 
 describe('compileGetDeclarationString', () => {
 	it('should work with empty', () => {

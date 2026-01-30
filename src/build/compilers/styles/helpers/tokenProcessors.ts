@@ -1,7 +1,7 @@
 import { stripIndent } from 'common-tags';
 
 import { unCamelcasify } from '../../../../build/helpers/unCamelcasify.ts';
-import { Adaptive } from '../../../../interfaces/general/tools/index.ts';
+import type { Adaptive } from '../../../../interfaces/general/tools/index.ts';
 
 export const EStyleTypes = {
 	CSS: 'css',

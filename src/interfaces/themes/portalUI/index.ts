@@ -1,9 +1,9 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
-import { GradientPoints } from '../../general/gradients/index.ts';
-import { DefaultViewports } from '../../general/tools/viewports.ts';
-import {
+import type { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
+import type { GradientPoints } from '../../general/gradients/index.ts';
+import type { DefaultViewports } from '../../general/tools/viewports.ts';
+import type {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,

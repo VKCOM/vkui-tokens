@@ -1,4 +1,4 @@
-import {
+import type {
 	ThemeCalendar,
 	ThemeCalendarCssVars,
 	ThemeCalendarDescription,

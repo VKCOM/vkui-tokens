@@ -1,4 +1,4 @@
-import { ColorDescriptionStatic } from '../../interfaces/general/colors/index.ts';
+import type { ColorDescriptionStatic } from '../../interfaces/general/colors/index.ts';
 import { checkAlphaMismatch } from '../../lint/rules/alphaMismatch.ts';
 
 // Тут перечислены все проверки

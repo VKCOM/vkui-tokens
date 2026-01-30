@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
 import { flatifyTheme } from '../../build/helpers/flatifyTheme.ts';
-import { ThemeDescription } from '../../interfaces/general/index.ts';
+import type { ThemeDescription } from '../../interfaces/general/index.ts';
 
 describe('flatifyTheme', () => {
 	it('should return new object', () => {

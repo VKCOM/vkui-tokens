@@ -1,5 +1,5 @@
-import { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.ts';
-import {
+import type { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.ts';
+import type {
 	DefaultViewports,
 	Viewports,
 	ViewportsTuple,

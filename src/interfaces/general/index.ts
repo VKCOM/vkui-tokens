@@ -1,18 +1,18 @@
 import type { Property } from 'csstype';
 
-import { StaticTokens, Tokens } from '../general/tools/tokenValue.ts';
-import { Animations } from './animations/index.ts';
-import { ColorDescription, Colors, ColorsDescriptionStruct } from './colors/index.ts';
-import { Effects } from './effects/index.ts';
-import { Elevation } from './elevation/index.ts';
-import { Sizes, SpacingSizes } from './geometry/index.ts';
-import { Gradients } from './gradients/index.ts';
-import { ToneValues } from './toneValues/index.ts';
-import { NamifyObject } from './tools/cssVars.ts';
-import { Adaptive } from './tools/index.ts';
-import { StringifyObject } from './tools/utils.ts';
-import { Fonts, TypographyBaseProps } from './typography/index.ts';
-import { ZIndex } from './zIndex/index.ts';
+import type { StaticTokens, Tokens } from '../general/tools/tokenValue.ts';
+import type { Animations } from './animations/index.ts';
+import type { ColorDescription, Colors, ColorsDescriptionStruct } from './colors/index.ts';
+import type { Effects } from './effects/index.ts';
+import type { Elevation } from './elevation/index.ts';
+import type { Sizes, SpacingSizes } from './geometry/index.ts';
+import type { Gradients } from './gradients/index.ts';
+import type { ToneValues } from './toneValues/index.ts';
+import type { NamifyObject } from './tools/cssVars.ts';
+import type { Adaptive } from './tools/index.ts';
+import type { StringifyObject } from './tools/utils.ts';
+import type { Fonts, TypographyBaseProps } from './typography/index.ts';
+import type { ZIndex } from './zIndex/index.ts';
 
 interface AdaptiveInterfaceValues extends Sizes, Fonts {}
 

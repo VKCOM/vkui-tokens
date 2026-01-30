@@ -1,9 +1,9 @@
-import {
+import type {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '../../general/colors/index.ts';
-import {
+import type {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,

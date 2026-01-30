@@ -1,5 +1,5 @@
-import { ThemeVkAccessibilityIOSDescription } from '../../../interfaces/themes/vkAccessibilityIOS/index.ts';
-import { ThemeVkAccessibilityIOSDarkDescription } from '../../../interfaces/themes/vkAccessibilityIOSDark/index.ts';
+import type { ThemeVkAccessibilityIOSDescription } from '../../../interfaces/themes/vkAccessibilityIOS/index.ts';
+import type { ThemeVkAccessibilityIOSDarkDescription } from '../../../interfaces/themes/vkAccessibilityIOSDark/index.ts';
 import {
 	vkAccessibilityTheme,
 	vkAccessibilityThemeDark,

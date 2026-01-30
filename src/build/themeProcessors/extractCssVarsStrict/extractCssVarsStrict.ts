@@ -1,4 +1,4 @@
-import { Theme, ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general/index.ts';
+import type { Theme, ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general/index.ts';
 
 function removeOriginValue(object: Record<string, any>) {
 	if (typeof object === 'object') {

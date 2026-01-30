@@ -1,5 +1,5 @@
 import { toneOpacity } from '../../../build/helpers/cssHelpers.ts';
-import {
+import type {
 	ThemeTutoriaAdaptiveTokens,
 	ThemeTutoriaDescription,
 } from '../../../interfaces/themes/tutoria/index.ts';

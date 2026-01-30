@@ -1,4 +1,4 @@
-import { Theme, ThemeCssVars, ThemeDescription } from '../../general/index.ts';
+import type { Theme, ThemeCssVars, ThemeDescription } from '../../general/index.ts';
 
 export interface ThemeVkBase extends Theme {}
 export interface ThemeVkBaseDescription extends ThemeDescription {}

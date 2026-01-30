@@ -1,5 +1,5 @@
-import { ThemeVkIdOkIOSDescription } from '../../../interfaces/themes/vkIdOkIOS/index.ts';
-import { ThemeVkIdOkIOSDarkDescription } from '../../../interfaces/themes/vkIdOkIOSDark/index.ts';
+import type { ThemeVkIdOkIOSDescription } from '../../../interfaces/themes/vkIdOkIOS/index.ts';
+import type { ThemeVkIdOkIOSDarkDescription } from '../../../interfaces/themes/vkIdOkIOSDark/index.ts';
 import { vkIdOkTheme, vkIdOkThemeDark } from '../../themes/vkIdOk/index.ts';
 import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.ts';
 

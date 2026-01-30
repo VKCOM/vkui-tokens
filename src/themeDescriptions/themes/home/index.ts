@@ -1,9 +1,9 @@
-import {
+import type {
 	LocalHomeColorsDescriptionStruct,
 	ThemeHomeDescription,
 	ThemeHomeOverValues,
 } from '../../../interfaces/themes/home/index.ts';
-import { ThemeHomeDarkDescription } from '../../../interfaces/themes/homeDark/index.ts';
+import type { ThemeHomeDarkDescription } from '../../../interfaces/themes/homeDark/index.ts';
 import { darkTheme, lightTheme } from '../../base/paradigm.ts';
 
 const localHomeColors: LocalHomeColorsDescriptionStruct = {

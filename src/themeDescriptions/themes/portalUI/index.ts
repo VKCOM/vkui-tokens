@@ -1,4 +1,4 @@
-import { ThemePortalUIDescription } from '../../../interfaces/themes/portalUI/index.ts';
+import type { ThemePortalUIDescription } from '../../../interfaces/themes/portalUI/index.ts';
 import { darkTheme, lightTheme } from '../../base/paradigm.ts';
 
 export const portalUITheme: ThemePortalUIDescription = {

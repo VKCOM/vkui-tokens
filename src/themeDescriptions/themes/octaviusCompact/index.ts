@@ -1,5 +1,5 @@
 import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
-import { ThemeOctaviusCompactDescription } from '../../../interfaces/themes/octaviusCompact/index.ts';
+import type { ThemeOctaviusCompactDescription } from '../../../interfaces/themes/octaviusCompact/index.ts';
 import { fontSizes } from '../../common/index.ts';
 import { octaviusDarkTheme, octaviusTheme } from '../octavius/index.ts';
 

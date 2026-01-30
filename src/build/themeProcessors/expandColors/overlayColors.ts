@@ -2,12 +2,12 @@ import color from 'color';
 
 import { expandColor } from '../../../build/themeProcessors/expandColors/expandColors.ts';
 import { mixColors } from '../../../build/themeProcessors/expandColors/mixColors.ts';
-import {
+import type {
 	ColorDescription,
 	ColorDescriptionCallable,
 	ColorsDescriptionStruct,
 } from '../../../interfaces/general/colors/index.ts';
-import { ColorsDescription } from '../../../interfaces/general/index.ts';
+import type { ColorsDescription } from '../../../interfaces/general/index.ts';
 
 export function overlayColors<
 	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,

@@ -1,12 +1,12 @@
-import {
+import type {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '../../general/colors/index.ts';
-import { ThemeCssVars } from '../../general/index.ts';
-import { Adaptive } from '../../general/tools/index.ts';
-import { Font } from '../../general/typography/index.ts';
-import {
+import type { ThemeCssVars } from '../../general/index.ts';
+import type { Adaptive } from '../../general/tools/index.ts';
+import type { Font } from '../../general/typography/index.ts';
+import type {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeDescription,

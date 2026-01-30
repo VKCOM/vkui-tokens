@@ -1,12 +1,12 @@
-import {
+import type {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '../../general/colors/index.ts';
-import { GradientPoints } from '../../general/gradients/index.ts';
-import { ThemeCssVars } from '../../general/index.ts';
-import { Tokens } from '../../general/tools/tokenValue.ts';
-import { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
+import type { GradientPoints } from '../../general/gradients/index.ts';
+import type { ThemeCssVars } from '../../general/index.ts';
+import type { Tokens } from '../../general/tools/tokenValue.ts';
+import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
 
 export interface VkontakteAndroidGradients {
 	/**

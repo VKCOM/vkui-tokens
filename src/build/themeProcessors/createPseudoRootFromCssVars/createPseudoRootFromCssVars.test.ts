@@ -1,12 +1,12 @@
 import { describe, expect, it } from '@jest/globals';
 
-import {
+import type {
 	PixelifyTheme,
 	Theme,
 	ThemeCssVars,
 	ThemeCssVarsWide,
 } from '../../../interfaces/general/index.ts';
-import {
+import type {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeCssVarsWide,

@@ -1,9 +1,9 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
-import { Adaptive } from '../../general/tools/index.ts';
-import { Font } from '../../general/typography/index.ts';
-import {
+import type { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
+import type { Adaptive } from '../../general/tools/index.ts';
+import type { Font } from '../../general/typography/index.ts';
+import type {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,

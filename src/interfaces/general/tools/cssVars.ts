@@ -1,7 +1,7 @@
 /**
  * Структура переменной в CssVars теме
  */
-import { Adaptive } from './index.ts';
+import type { Adaptive } from './index.ts';
 
 export interface CssVarValue {
 	/**

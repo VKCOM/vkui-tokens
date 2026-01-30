@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { Breakpoints } from '../../../interfaces/general/tools/index.ts';
-import {
+import type { Breakpoints } from '../../../interfaces/general/tools/index.ts';
+import type {
 	ParadigmTheme,
 	ParadigmThemeCssVarsWide,
 } from '../../../interfaces/namespaces/paradigm/index.ts';

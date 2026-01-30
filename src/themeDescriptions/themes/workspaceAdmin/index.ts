@@ -1,7 +1,7 @@
-import { Adaptive } from '../../../interfaces/general/tools/index.ts';
-import { Font } from '../../../interfaces/general/typography/index.ts';
-import { ThemeWorkspaceAdminDescription } from '../../../interfaces/themes/workspaceAdmin/index.ts';
-import { ThemeWorkspaceAdminDarkDescription } from '../../../interfaces/themes/workspaceAdminDark/index.ts';
+import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
+import type { Font } from '../../../interfaces/general/typography/index.ts';
+import type { ThemeWorkspaceAdminDescription } from '../../../interfaces/themes/workspaceAdmin/index.ts';
+import type { ThemeWorkspaceAdminDarkDescription } from '../../../interfaces/themes/workspaceAdminDark/index.ts';
 import { darkTheme, lightTheme } from '../../base/paradigm.ts';
 
 export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {

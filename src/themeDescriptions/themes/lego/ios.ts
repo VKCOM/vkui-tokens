@@ -1,5 +1,5 @@
-import { ThemeLegoIOSDescription } from '../../../interfaces/themes/legoIOS/index.ts';
-import { ThemeLegoIOSDarkDescription } from '../../../interfaces/themes/legoIOSDark/index.ts';
+import type { ThemeLegoIOSDescription } from '../../../interfaces/themes/legoIOS/index.ts';
+import type { ThemeLegoIOSDarkDescription } from '../../../interfaces/themes/legoIOSDark/index.ts';
 import { darkElevation, darkGradient } from '../../base/vk.ts';
 import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.ts';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '../../themes/vkontakteIOS/index.ts';

@@ -1,4 +1,4 @@
-import { RegularCompactObj, StrNum, Token, Tokens } from './prepareTokensData.ts';
+import type { RegularCompactObj, StrNum, Token, Tokens } from './prepareTokensData.ts';
 
 const isObject = (value: unknown): value is Record<string, unknown> =>
 	Object.prototype.toString.call(value) === '[object Object]' &&

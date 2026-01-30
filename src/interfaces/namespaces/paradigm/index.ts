@@ -1,15 +1,20 @@
 import type { Property } from 'csstype';
 
-import {
+import type {
 	ColorDescription,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '../../general/colors/index.ts';
-import { Theme, ThemeCssVars, ThemeCssVarsWide, ThemeDescription } from '../../general/index.ts';
-import { CustomMediaByViewport } from '../../general/tools/customMedia.ts';
-import { Adaptive, Breakpoints } from '../../general/tools/index.ts';
-import { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports.ts';
-import { Font } from '../../general/typography/index.ts';
+import type {
+	Theme,
+	ThemeCssVars,
+	ThemeCssVarsWide,
+	ThemeDescription,
+} from '../../general/index.ts';
+import type { CustomMediaByViewport } from '../../general/tools/customMedia.ts';
+import type { Adaptive, Breakpoints } from '../../general/tools/index.ts';
+import type { DefaultViewports, ViewportsTuple } from '../../general/tools/viewports.ts';
+import type { Font } from '../../general/typography/index.ts';
 
 export interface LocalParadigmColorsDescriptionStruct {
 	/**

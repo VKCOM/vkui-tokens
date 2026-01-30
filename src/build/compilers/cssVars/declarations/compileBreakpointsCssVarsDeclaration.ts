@@ -5,8 +5,8 @@ import { capitalize } from '../../../../build/helpers/capitalize.ts';
 import { convertCamelToSnake } from '../../../../build/helpers/convertCamelToSnake.ts';
 import { getOnlyColors } from '../../../../build/helpers/getOnlyColors.ts';
 import { processCustomMedia } from '../../../../build/themeProcessors/customMedia/customMedia.ts';
-import { Theme, ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
-import { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.ts';
+import type { Theme, ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
+import type { Adaptive, Breakpoints } from '../../../../interfaces/general/tools/index.ts';
 import { accumulateValues } from '../helpers/accumulateValues.ts';
 import { getVarString } from '../helpers/getVarString.ts';
 

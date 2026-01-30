@@ -8,11 +8,11 @@ import { getAllButColors } from '../../../build/helpers/getAllButColors.ts';
 import { getAllButSizes } from '../../../build/helpers/getAllButSizes.ts';
 import { getOnlyColors } from '../../../build/helpers/getOnlyColors.ts';
 import { unCamelcasify } from '../../../build/helpers/unCamelcasify.ts';
-import { PixelifyTheme } from '../../../interfaces/general/index.ts';
+import type { PixelifyTheme } from '../../../interfaces/general/index.ts';
+import type { Formats } from './helpers/tokenProcessors.ts';
 import {
 	customMediaDeclaration,
 	EStyleTypes,
-	Formats,
 	processGroupToken,
 	varDeclarations,
 	variablesStatementDeclaration,

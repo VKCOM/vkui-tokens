@@ -1,8 +1,8 @@
 import lodash from 'lodash';
 
 import { gradient, namedAlias } from '../../../build/helpers/tokenHelpers.ts';
-import { Gradients } from '../../../interfaces/general/gradients/index.ts';
-import { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
+import type { Gradients } from '../../../interfaces/general/gradients/index.ts';
+import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
 import type {
 	LocalVkontakteAndroidColorsDescriptionStruct,
 	ThemeVkontakteAndroidDescription,

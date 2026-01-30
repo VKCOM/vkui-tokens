@@ -17,7 +17,9 @@
     "isolatedModules": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "isolatedDeclarations": true
+    "isolatedDeclarations": true,
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true
   },
   "exclude": ["docs/**/*", "dist/**/*"]
 }

@@ -3,9 +3,9 @@ import type { Property } from 'csstype';
 import { getGradientPointsFromColor } from '../../build/helpers/getGradientPointsFromColor.ts';
 import { alias, staticRef } from '../../build/helpers/tokenHelpers.ts';
 import { overlayColors } from '../../build/themeProcessors/expandColors/overlayColors.ts';
-import { Elevation } from '../../interfaces/general/elevation/index.ts';
-import { ColorsDescription, ThemeDescription } from '../../interfaces/general/index.ts';
-import { ParadigmThemeDescription } from '../../interfaces/namespaces/paradigm/index.ts';
+import type { Elevation } from '../../interfaces/general/elevation/index.ts';
+import type { ColorsDescription, ThemeDescription } from '../../interfaces/general/index.ts';
+import type { ParadigmThemeDescription } from '../../interfaces/namespaces/paradigm/index.ts';
 import { helpers } from '../common/index.ts';
 
 const fontFamilyFallbacks = 'apple-system, system-ui, "Helvetica Neue", Arial, sans-serif';

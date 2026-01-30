@@ -1,6 +1,6 @@
 import { replacePropDeep } from '../../../build/helpers/replacePropDeep.ts';
-import { ThemeMediaDescription } from '../../../interfaces/themes/media/index.ts';
-import { ThemeMycomDescription } from '../../../interfaces/themes/mycom/index.ts';
+import type { ThemeMediaDescription } from '../../../interfaces/themes/media/index.ts';
+import type { ThemeMycomDescription } from '../../../interfaces/themes/mycom/index.ts';
 import { projectColors } from '../../common/colors/projectColors.ts';
 import { mediaTheme } from '../media/index.ts';
 

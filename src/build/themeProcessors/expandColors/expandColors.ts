@@ -4,13 +4,13 @@ import {
 	isColorDescriptionCallable,
 	isColorWithStates,
 } from '../../../build/helpers/cssHelpers.ts';
-import {
+import type {
 	ColorDescription,
 	ColorDescriptionStatic,
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from '../../../interfaces/general/colors/index.ts';
-import { ColorsDescription, ColorsFinal } from '../../../interfaces/general/index.ts';
+import type { ColorsDescription, ColorsFinal } from '../../../interfaces/general/index.ts';
 import { mixColors } from './mixColors.ts';
 
 export const colorStateMap = {

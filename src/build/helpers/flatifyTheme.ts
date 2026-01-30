@@ -1,5 +1,5 @@
-import { ThemeDescription } from '../../interfaces/general/index.ts';
-import { Adaptive } from '../../interfaces/general/tools/index.ts';
+import type { ThemeDescription } from '../../interfaces/general/index.ts';
+import type { Adaptive } from '../../interfaces/general/tools/index.ts';
 
 export function flatifyTheme<T = ThemeDescription>(
 	theme: T,

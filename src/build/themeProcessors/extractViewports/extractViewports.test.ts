@@ -1,8 +1,8 @@
 import { describe, expect, it } from '@jest/globals';
 
 import { extractViewports } from '../../../build/themeProcessors/extractViewports/extractViewports.ts';
-import { Breakpoints } from '../../../interfaces/general/tools/index.ts';
-import { DefaultViewports } from '../../../interfaces/general/tools/viewports.ts';
+import type { Breakpoints } from '../../../interfaces/general/tools/index.ts';
+import type { DefaultViewports } from '../../../interfaces/general/tools/viewports.ts';
 
 describe('extractViewports', () => {
 	it('should work without breakpoints: touch', () => {

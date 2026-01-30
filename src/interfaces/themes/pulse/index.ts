@@ -1,11 +1,11 @@
 import type { Property } from 'csstype';
 
-import { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
-import { GradientPoints } from '../../general/gradients/index.ts';
-import { ColorsDescription, ThemeCssVars, ThemeDescription } from '../../general/index.ts';
-import { Adaptive } from '../../general/tools/index.ts';
-import { Font } from '../../general/typography/index.ts';
-import { ParadigmTheme, ParadigmThemeDescription } from '../../namespaces/paradigm/index.ts';
+import type { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
+import type { GradientPoints } from '../../general/gradients/index.ts';
+import type { ColorsDescription, ThemeCssVars, ThemeDescription } from '../../general/index.ts';
+import type { Adaptive } from '../../general/tools/index.ts';
+import type { Font } from '../../general/typography/index.ts';
+import type { ParadigmTheme, ParadigmThemeDescription } from '../../namespaces/paradigm/index.ts';
 
 type AllowedParadigmTokens =
 	/* Special */

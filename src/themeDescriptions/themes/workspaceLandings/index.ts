@@ -1,4 +1,4 @@
-import { ThemeWorkspaceLandingsDescription } from '../../../interfaces/themes/workspaceLandings/index.ts';
+import type { ThemeWorkspaceLandingsDescription } from '../../../interfaces/themes/workspaceLandings/index.ts';
 import { darkTheme } from '../../base/paradigm.ts';
 
 export const workspaceLandingsTheme: ThemeWorkspaceLandingsDescription = {

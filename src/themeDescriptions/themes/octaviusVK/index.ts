@@ -1,6 +1,6 @@
 import { toneOpacity } from '../../../build/helpers/cssHelpers.ts';
 import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
-import { ThemeOctaviusDescription } from '../../../interfaces/themes/octavius/index.ts';
+import type { ThemeOctaviusDescription } from '../../../interfaces/themes/octavius/index.ts';
 import {
 	darkColors as vkDarkColors,
 	lightColors as vkLightColors,

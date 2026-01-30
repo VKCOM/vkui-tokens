@@ -1,9 +1,9 @@
 import type { Property } from 'csstype';
 
 import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
-import { Font } from '../../../interfaces/general/typography/index.ts';
-import { ThemeCloudDescription } from '../../../interfaces/themes/cloud/index.ts';
-import { ThemeCloudDarkDescription } from '../../../interfaces/themes/cloudDark/index.ts';
+import type { Font } from '../../../interfaces/general/typography/index.ts';
+import type { ThemeCloudDescription } from '../../../interfaces/themes/cloud/index.ts';
+import type { ThemeCloudDarkDescription } from '../../../interfaces/themes/cloudDark/index.ts';
 import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm.ts';
 import { helpers } from '../../common/index.ts';
 

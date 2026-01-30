@@ -1,7 +1,7 @@
 import type { Property } from 'csstype';
 
 import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
-import { ThemeMediaDescription } from '../../../interfaces/themes/media/index.ts';
+import type { ThemeMediaDescription } from '../../../interfaces/themes/media/index.ts';
 import { darkTheme, lightTheme } from '../../base/paradigm.ts';
 import { helpers, projectColors, socialColors } from '../../common/index.ts';
 

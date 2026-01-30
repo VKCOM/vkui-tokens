@@ -1,7 +1,7 @@
 import type { Property } from 'csstype';
 
-import { ThemeCalendarDescription } from '../../../interfaces/themes/calendar/index.ts';
-import { ThemeCalendarDarkDescription } from '../../../interfaces/themes/calendarDark/index.ts';
+import type { ThemeCalendarDescription } from '../../../interfaces/themes/calendar/index.ts';
+import type { ThemeCalendarDarkDescription } from '../../../interfaces/themes/calendarDark/index.ts';
 import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm.ts';
 import { fontWeight } from '../../common/fontSizes/index.ts';
 import { fontSizes, helpers } from '../../common/index.ts';

@@ -3,7 +3,7 @@ import {
 	isColorDescriptionStatic,
 } from '../build/helpers/cssHelpers.ts';
 import { expandColor } from '../build/themeProcessors/expandColors/expandColors.ts';
-import { ColorsDescription } from '../interfaces/general/index.ts';
+import type { ColorsDescription } from '../interfaces/general/index.ts';
 import { checkAllRules } from '../lint/rules/index.ts';
 import { themes } from '../themeDescriptions/index.ts';
 
