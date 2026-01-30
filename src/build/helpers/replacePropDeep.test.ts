@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { replacePropDeep } from '../../build/helpers/replacePropDeep.ts';
 
@@ -11,19 +12,19 @@ describe('replacePropDeep', () => {
 	it('should return new object', () => {
 		const object = {};
 
-		expect(replacePropDeep(object, mapReplace)).not.toBe(object);
+		assert.notEqual(replacePropDeep(object, mapReplace), object);
 	});
 
 	it('should work with empty', () => {
 		const object = {};
 
-		expect(replacePropDeep(object, mapReplace)).toStrictEqual({});
+		assert.deepEqual(replacePropDeep(object, mapReplace), {});
 	});
 
 	it('should not touch other vars', () => {
 		const object = { opacityDisable: 0.5 };
 
-		expect(replacePropDeep(object, mapReplace)).toStrictEqual({
+		assert.deepEqual(replacePropDeep(object, mapReplace), {
 			opacityDisable: 0.5,
 		});
 	});
@@ -31,7 +32,7 @@ describe('replacePropDeep', () => {
 	it('should replace flat values', () => {
 		const object = { fontFamily: 'kek' };
 
-		expect(replacePropDeep(object, mapReplace)).toStrictEqual({
+		assert.deepEqual(replacePropDeep(object, mapReplace), {
 			fontFamily: 'lol',
 		});
 	});
@@ -44,7 +45,7 @@ describe('replacePropDeep', () => {
 			},
 		};
 
-		expect(replacePropDeep(object, mapReplace)).toStrictEqual({
+		assert.deepEqual(replacePropDeep(object, mapReplace), {
 			fontFamily: 'lol',
 			kek: {
 				fontWeight: 666,

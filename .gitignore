@@ -12,10 +12,9 @@ node_modules/
 /**/*.js
 !/tasks
 !/tasks/**/*.js
-!/lint/*.js
-!.eslintrc.js
-!jest.config.js
-!.prettierrc.js
+ !/lint/*.js
+ !.eslintrc.js
+ !.prettierrc.js
 .yarnclean
 .DS_Store
 .idea
@@ -26,4 +25,5 @@ docs/src/**/*.d.ts
 docs/public/**/*.json
 docs/dist/
 !.husky
-test-results.json
+ test-results.json
+__snapshots__/

@@ -1,4 +1,6 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+
 import { stripIndent } from 'common-tags';
 
 import { compileGetDeclarationString } from '../../../../build/compilers/cssVars/jsUtils/compileGetDeclarationString.ts';
@@ -8,7 +10,8 @@ import type { ParadigmThemeCssVarsWide } from '../../../../interfaces/namespaces
 describe('compileGetDeclarationString', () => {
 	it('should work with empty', () => {
 		const theme = {};
-		expect(compileGetDeclarationString(theme as ThemeCssVarsWide)).toBe(
+		assert.equal(
+			compileGetDeclarationString(theme as ThemeCssVarsWide),
 			stripIndent`
 			import {Properties} from 'csstype';
 
@@ -68,7 +71,8 @@ describe('compileGetDeclarationString', () => {
 				},
 			};
 
-		expect(compileGetDeclarationString(theme as ParadigmThemeCssVarsWide)).toBe(
+		assert.equal(
+			compileGetDeclarationString(theme as ParadigmThemeCssVarsWide),
 			stripIndent`
 			import {Properties} from 'csstype';
 
@@ -128,7 +132,8 @@ describe('compileGetDeclarationString', () => {
 				},
 			};
 
-		expect(compileGetDeclarationString(theme as ParadigmThemeCssVarsWide, 'onlyColors')).toBe(
+		assert.equal(
+			compileGetDeclarationString(theme as ParadigmThemeCssVarsWide, 'onlyColors'),
 			stripIndent`
 			import {Properties} from 'csstype';
 

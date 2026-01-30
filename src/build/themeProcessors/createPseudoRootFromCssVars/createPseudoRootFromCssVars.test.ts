@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import type {
 	PixelifyTheme,
@@ -18,7 +19,8 @@ describe('createPseudoRootFromCssVars', () => {
 		const theme = {};
 		const cssVarsTheme = {};
 
-		expect(createPseudoRootFromCssVars(theme as Theme, cssVarsTheme as ThemeCssVarsWide)).not.toBe(
+		assert.notEqual(
+			createPseudoRootFromCssVars(theme as Theme, cssVarsTheme as ThemeCssVarsWide),
 			theme,
 		);
 	});
@@ -33,9 +35,9 @@ describe('createPseudoRootFromCssVars', () => {
 			themeType: 'cssVars',
 		};
 
-		expect(createPseudoRootFromCssVars(theme as Theme, cssVarsTheme as ThemeCssVars)).toStrictEqual(
-			{ themeType: 'pixelify' },
-		);
+		assert.deepEqual(createPseudoRootFromCssVars(theme, cssVarsTheme), {
+			themeType: 'pixelify',
+		});
 	});
 
 	it('should expand flat values', () => {
@@ -62,7 +64,8 @@ describe('createPseudoRootFromCssVars', () => {
 			x2: 'var(--paradigm--x2, 8px)',
 		};
 
-		expect(createPseudoRootFromCssVars(theme, cssVarsTheme as ParadigmThemeCssVars)).toStrictEqual(
+		assert.deepEqual(
+			createPseudoRootFromCssVars(theme, cssVarsTheme as ParadigmThemeCssVars),
 			expectedResult,
 		);
 	});
@@ -101,7 +104,7 @@ describe('createPseudoRootFromCssVars', () => {
 			},
 		};
 
-		expect(createPseudoRootFromCssVars(theme, cssVarsTheme as any)).toStrictEqual(expectedResult);
+		assert.deepEqual(createPseudoRootFromCssVars(theme, cssVarsTheme as any), expectedResult);
 	});
 
 	it('should expand adaptive complex values', () => {
@@ -172,9 +175,10 @@ describe('createPseudoRootFromCssVars', () => {
 			},
 		};
 
-		expect(
+		assert.deepEqual(
 			createPseudoRootFromCssVars(theme, cssVarsTheme as ParadigmThemeCssVarsWide),
-		).toStrictEqual(expectedResult);
+			expectedResult,
+		);
 	});
 
 	it(`shouldn't touch breakpoints`, () => {
@@ -201,8 +205,9 @@ describe('createPseudoRootFromCssVars', () => {
 			breakpoints: theme.breakpoints,
 		};
 
-		expect(
+		assert.deepEqual(
 			createPseudoRootFromCssVars<ParadigmTheme>(theme as ParadigmTheme, cssVarsTheme as any),
-		).toStrictEqual(expectedResult);
+			expectedResult,
+		);
 	});
 });

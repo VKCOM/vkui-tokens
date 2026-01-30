@@ -1,4 +1,6 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+
 import { stripIndent } from 'common-tags';
 
 import type { ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
@@ -8,7 +10,7 @@ import { compileBreakpointsCssVarsDeclaration } from './compileBreakpointsCssVar
 describe('compileBreakpointsCssVarsDeclaration', () => {
 	it('should not work without breakpoints', () => {
 		const theme = {};
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(null);
+		assert.equal(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide), null);
 	});
 
 	it('should work with breakpoints and empty vals', () => {
@@ -24,7 +26,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 			},
 		};
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(null);
+		assert.equal(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide), null);
 	});
 
 	it('should work with non adaptive values', () => {
@@ -45,7 +47,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				originalValue: '4px',
 			} as any,
 		};
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(null);
+		assert.equal(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide), null);
 	});
 
 	it('should work with flat adaptive values and several breakpotins', () => {
@@ -77,7 +79,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 			},
 		};
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(stripIndent`
+		const expected = stripIndent`
 			:root {
 				--vkui--size_popup_base_padding: var(--vkui--size_popup_base_padding--regular);
 			}
@@ -101,7 +103,8 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 			.vkui--force-desktop_s {
 				--vkui--size_popup_base_padding: var(--vkui--size_popup_base_padding--regular);
 			}
-			`);
+			`;
+		assert.equal(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide), expected);
 	});
 
 	it('should work with flat adaptive values and several breakpotins and without overriding', () => {
@@ -128,11 +131,12 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				},
 			},
 		};
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(stripIndent`
+		const expected = stripIndent`
 			:root {
 				--vkui--size_popup_base_padding: 20px;
 			}
-			`);
+			`;
+		assert.equal(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide), expected);
 	});
 
 	it('should work with adaptive complex object', () => {
@@ -180,7 +184,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 			},
 		};
 
-		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(stripIndent`
+		const expected = stripIndent`
 			:root {
 				--vkui--font_h1--font_size: var(--vkui--font_h1--font_size--regular);
 				--vkui--font_h1--line_height: var(--vkui--font_h1--line_height--regular);
@@ -205,6 +209,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 			.vkui--force-desktop_s {
 				--vkui--font_h1--font_size: var(--vkui--font_h1--font_size--regular);
 			}
-			`);
+			`;
+		assert.equal(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide), expected);
 	});
 });

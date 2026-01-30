@@ -1,38 +1,40 @@
-import { beforeEach, describe, expect, jest, test } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { beforeEach, describe, mock, test } from 'node:test';
 
 import { checkAlphaMismatch } from '../../lint/rules/alphaMismatch.ts';
 
 describe('lint rules | alphaMismatch', () => {
-	const emit = jest.fn();
+	const emit = mock.fn();
 
 	beforeEach(() => {
-		emit.mockClear();
+		emit.mock.resetCalls();
 	});
 
 	test('not a color', () => {
 		checkAlphaMismatch('sizeBorderRadius', '', emit);
-		expect(emit.mock.calls).toEqual([]);
+		assert.equal(emit.mock.callCount(), 0);
 	});
 
 	test('static color correct opaque', () => {
 		checkAlphaMismatch('colorBorder', 'rgb(1,1,1)', emit);
-		expect(emit.mock.calls).toEqual([]);
+		assert.equal(emit.mock.callCount(), 0);
 	});
 
 	test('static color correct transparent', () => {
 		checkAlphaMismatch('colorBorderAlpha', 'transparent', emit);
-		expect(emit.mock.calls).toEqual([]);
+		assert.equal(emit.mock.callCount(), 0);
 	});
 
 	test('static color correct rgba', () => {
 		checkAlphaMismatch('colorBorderAlpha', 'rgba(1,1,1,.1)', emit);
-		expect(emit.mock.calls).toEqual([]);
+		assert.equal(emit.mock.callCount(), 0);
 	});
 
 	test('static color incorrect', () => {
 		checkAlphaMismatch('colorBorder', 'rgba(1,1,1,.1)', emit);
-		expect(emit.mock.calls).toEqual([
-			['Color token type mismatch: opaque token name but alpha value'],
+		assert.equal(emit.mock.callCount(), 1);
+		assert.deepEqual(emit.mock.calls[0].arguments, [
+			'Color token type mismatch: opaque token name but alpha value',
 		]);
 	});
 });

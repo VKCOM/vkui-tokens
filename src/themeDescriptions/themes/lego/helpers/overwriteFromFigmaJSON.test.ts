@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { overwriteFromFigmaJSON } from './overwriteFromFigmaJSON.ts';
 
@@ -38,8 +39,9 @@ const overwrittenLightTokens = {
 
 describe('overwriteFromFigmaJSON', () => {
 	it('should leave only overwritten tokens', () => {
-		expect(
+		assert.deepEqual(
 			overwriteFromFigmaJSON(originalLightTokens, 'appearance', 'light', figmaJSON),
-		).toStrictEqual(overwrittenLightTokens);
+			overwrittenLightTokens,
+		);
 	});
 });

@@ -1,6 +1,6 @@
 import type { Property } from 'csstype';
 
-import type { ColorsDescription, ColorsScheme } from '../../general/index.ts';
+import type { ColorsDescription, ColorsScheme } from '../index.ts';
 
 /**
  * Интерфейс всех цветов на выходе

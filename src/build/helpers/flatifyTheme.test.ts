@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { flatifyTheme } from '../../build/helpers/flatifyTheme.ts';
 import type { ThemeDescription } from '../../interfaces/general/index.ts';
@@ -7,19 +8,19 @@ describe('flatifyTheme', () => {
 	it('should return new object', () => {
 		const theme: Partial<ThemeDescription> = {};
 
-		expect(flatifyTheme(theme)).not.toBe(theme);
+		assert.notEqual(flatifyTheme(theme), theme);
 	});
 
 	it('should work with empty', () => {
 		const theme: Partial<ThemeDescription> = {};
 
-		expect(flatifyTheme(theme)).toStrictEqual({});
+		assert.deepEqual(flatifyTheme(theme), {});
 	});
 
 	it('should not touch flat vars', () => {
 		const theme: Partial<ThemeDescription> = { opacityDisable: 0.5 };
 
-		expect(flatifyTheme(theme)).toStrictEqual({ opacityDisable: 0.5 });
+		assert.deepEqual(flatifyTheme(theme), { opacityDisable: 0.5 });
 	});
 
 	it('should not touch colors', () => {
@@ -27,7 +28,7 @@ describe('flatifyTheme', () => {
 			colors: { colorTextPrimary: 'blue' } as any,
 		};
 
-		expect(flatifyTheme(theme)).toStrictEqual({
+		assert.deepEqual(flatifyTheme(theme), {
 			colors: { colorTextPrimary: 'blue' },
 		});
 	});
@@ -45,7 +46,7 @@ describe('flatifyTheme', () => {
 			},
 		};
 
-		expect(flatifyTheme(theme)).toStrictEqual({
+		assert.deepEqual(flatifyTheme(theme), {
 			sizeArrow: {
 				regular: 9,
 			},
@@ -68,7 +69,7 @@ describe('flatifyTheme', () => {
 			},
 		};
 
-		expect(flatifyTheme(theme, ['compact'])).toStrictEqual({
+		assert.deepEqual(flatifyTheme(theme, ['compact']), {
 			sizeArrow: {
 				regular: 9,
 				large: 15,
@@ -95,7 +96,7 @@ describe('flatifyTheme', () => {
 			},
 		};
 
-		expect(flatifyTheme(theme)).toStrictEqual({
+		assert.deepEqual(flatifyTheme(theme), {
 			fontTitle1: {
 				regular: {
 					fontSize: 16,

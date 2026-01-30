@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 // eslint-disable-next-line import/no-deprecated
 import { getRGBA, toneOpacity } from './cssHelpers.ts';
@@ -7,22 +8,22 @@ describe('cssHelpers', () => {
 	describe('getRGBA', () => {
 		it('should work with red', () => {
 			// eslint-disable-next-line import/no-deprecated
-			expect(getRGBA('#f00000', 0.5)).toBe('rgba(240, 0, 0, 0.5)');
+			assert.equal(getRGBA('#f00000', 0.5), 'rgba(240, 0, 0, 0.5)');
 		});
 
 		it('should work with yellow', () => {
 			// eslint-disable-next-line import/no-deprecated
-			expect(getRGBA('#ffff00', 0.2)).toBe('rgba(255, 255, 0, 0.2)');
+			assert.equal(getRGBA('#ffff00', 0.2), 'rgba(255, 255, 0, 0.2)');
 		});
 	});
 
 	describe('toneOpacity', () => {
 		it('should work with string', () => {
-			expect(toneOpacity('#f00000', 0.5)).toBe('rgba(240, 0, 0, 0.5)');
+			assert.equal(toneOpacity('#f00000', 0.5), 'rgba(240, 0, 0, 0.5)');
 		});
 
 		it('should work with ColorWithStates', () => {
-			expect(
+			assert.equal(
 				toneOpacity(
 					{
 						normal: '#f00000',
@@ -31,7 +32,8 @@ describe('cssHelpers', () => {
 					},
 					0.5,
 				),
-			).toBe('rgba(240, 0, 0, 0.5)');
+				'rgba(240, 0, 0, 0.5)',
+			);
 		});
 	});
 });

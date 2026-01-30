@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { extractCssVarsStrict } from '../../../build/themeProcessors/extractCssVarsStrict/extractCssVarsStrict.ts';
 import type { ThemeCssVars, ThemeCssVarsWide } from '../../../interfaces/general/index.ts';
@@ -10,7 +11,7 @@ import type {
 describe('extractCssVarsStrict', () => {
 	it('should work with empty object', () => {
 		const testData = {};
-		expect(extractCssVarsStrict(testData as ThemeCssVarsWide)).toStrictEqual({});
+		assert.deepEqual(extractCssVarsStrict(testData as ThemeCssVarsWide), {});
 	});
 
 	it('should not do anything with breakpoints', () => {
@@ -40,7 +41,7 @@ describe('extractCssVarsStrict', () => {
 
 		const expectedData = { breakpoints: { ...theme.breakpoints } };
 
-		expect(extractCssVarsStrict(theme as ThemeCssVarsWide<Viewports>)).toStrictEqual(expectedData);
+		assert.deepEqual(extractCssVarsStrict(theme as ThemeCssVarsWide<Viewports>), expectedData);
 	});
 
 	it('should change type', () => {
@@ -54,7 +55,7 @@ describe('extractCssVarsStrict', () => {
 			themeType: 'cssVars',
 		};
 
-		expect(extractCssVarsStrict(theme as ThemeCssVarsWide)).toStrictEqual(expectResult);
+		assert.deepEqual(extractCssVarsStrict(theme as ThemeCssVarsWide), expectResult);
 	});
 
 	it('should work with flat values', () => {
@@ -75,7 +76,7 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		expect(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide)).toStrictEqual(expectResult);
+		assert.deepEqual(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide), expectResult);
 	});
 
 	it('should work with adaprive breakpoints values', () => {
@@ -114,7 +115,7 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		expect(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide)).toStrictEqual(expectedResult);
+		assert.deepEqual(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide), expectedResult);
 	});
 
 	it('should with flat and adaptive values together', () => {
@@ -161,6 +162,6 @@ describe('extractCssVarsStrict', () => {
 			},
 		};
 
-		expect(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide)).toStrictEqual(expectedResult);
+		assert.deepEqual(extractCssVarsStrict(theme as ParadigmThemeCssVarsWide), expectedResult);
 	});
 });

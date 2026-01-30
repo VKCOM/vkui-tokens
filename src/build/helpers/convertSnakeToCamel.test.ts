@@ -1,21 +1,22 @@
-import { describe, expect, test } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, test } from 'node:test';
 
 import { convertSnakeToCamel } from './convertSnakeToCamel.ts';
 
 describe('convertSnakeToCamel', () => {
 	test('convert empty string', () => {
-		expect(convertSnakeToCamel('')).toEqual('');
+		assert.equal(convertSnakeToCamel(''), '');
 	});
 
 	test('replaces prefix', () => {
-		expect(convertSnakeToCamel('--vkui--')).toEqual('');
+		assert.equal(convertSnakeToCamel('--vkui--'), '');
 	});
 
 	test('replaces prefix and converts to lower case', () => {
-		expect(convertSnakeToCamel('--vkui--Test')).toEqual('test');
+		assert.equal(convertSnakeToCamel('--vkui--Test'), 'test');
 	});
 
 	test('replaces prefix and converts to camel case', () => {
-		expect(convertSnakeToCamel('--vkui--Test_var')).toEqual('testVar');
+		assert.equal(convertSnakeToCamel('--vkui--Test_var'), 'testVar');
 	});
 });

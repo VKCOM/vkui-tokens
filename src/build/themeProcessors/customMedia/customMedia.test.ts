@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import type { CustomMediaByViewport } from '../../../interfaces/general/tools/customMedia.ts';
 import type { Breakpoints } from '../../../interfaces/general/tools/index.ts';
@@ -8,15 +9,15 @@ import { getCustomMediaKey, getUsingViewports, processCustomMedia } from './cust
 describe('customMedia', () => {
 	describe('getCustomMediaKey', () => {
 		it('should work as default', () => {
-			expect(getCustomMediaKey('touch')).toBe('widthTouch');
+			assert.equal(getCustomMediaKey('touch'), 'widthTouch');
 		});
 
 		it('should work with "to" rule', () => {
-			expect(getCustomMediaKey('desktopS', 'to')).toBe('widthToDesktopS');
+			assert.equal(getCustomMediaKey('desktopS', 'to'), 'widthToDesktopS');
 		});
 
 		it('should work with "from" rule', () => {
-			expect(getCustomMediaKey('tablet', 'from')).toBe('widthFromTablet');
+			assert.equal(getCustomMediaKey('tablet', 'from'), 'widthFromTablet');
 		});
 	});
 
@@ -34,7 +35,7 @@ describe('customMedia', () => {
 				},
 			};
 
-			expect(getUsingViewports<Viewports>(breakpoints)).toStrictEqual(['touch', 'desktopS']);
+			assert.deepEqual(getUsingViewports<Viewports>(breakpoints), ['touch', 'desktopS']);
 		});
 
 		it('should sort breakpoints', () => {
@@ -59,7 +60,7 @@ describe('customMedia', () => {
 				},
 			};
 
-			expect(getUsingViewports<Viewports>(breakpoints)).toStrictEqual([
+			assert.deepEqual(getUsingViewports<Viewports>(breakpoints), [
 				'touch',
 				'tablet',
 				'desktopS',
@@ -72,7 +73,7 @@ describe('customMedia', () => {
 		it('should work without breakpoints', () => {
 			const testData: Breakpoints = {};
 
-			expect(processCustomMedia(testData)).toStrictEqual({});
+			assert.deepEqual(processCustomMedia(testData), {});
 		});
 
 		it('should work 1 breakpoints', () => {
@@ -86,7 +87,7 @@ describe('customMedia', () => {
 
 			const expectedResult: CustomMediaByViewport<Viewports> = {};
 
-			expect(processCustomMedia<Viewports>(testData)).toStrictEqual(expectedResult);
+			assert.deepEqual(processCustomMedia<Viewports>(testData), expectedResult);
 		});
 
 		it('should correctly work with single breakpoint', () => {
@@ -112,7 +113,7 @@ describe('customMedia', () => {
 				widthToTouch: '(max-width: 767px)',
 			};
 
-			expect(processCustomMedia(testData)).toStrictEqual(expectedResult);
+			assert.deepEqual(processCustomMedia(testData), expectedResult);
 		});
 
 		it('should correctly work with all breakpoints', () => {
@@ -166,7 +167,7 @@ describe('customMedia', () => {
 				widthToDesktopL: '(max-width: 2199px)',
 			};
 
-			expect(processCustomMedia(testData)).toStrictEqual(expectedResult);
+			assert.deepEqual(processCustomMedia(testData), expectedResult);
 		});
 	});
 });
