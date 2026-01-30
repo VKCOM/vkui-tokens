@@ -154,8 +154,8 @@ export const paradigmTechDarkTheme: ThemeParadigmTechDescription = {
 
 		colorTransparent: {
 			normal: 'transparent',
-			hover: 'rgba(138, 153, 177, 0.08)',
-			active: 'rgba(138, 153, 177, 0.12)',
+			hover: 'rgba(255, 255, 255, 0.08)',
+			active: 'rgba(255, 255, 255, 0.12)',
 		},
 
 		// Text
