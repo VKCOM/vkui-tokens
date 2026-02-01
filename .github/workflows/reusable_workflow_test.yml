@@ -30,8 +30,7 @@ jobs:
         with:
           name: test-output
           path: |
-            test-results.json
-            .nyc_output/coverage-final.json
+            lcov.info
 
   deploy_test_coverage:
     if: ${{ !cancelled() && (success() || failure()) }}
@@ -52,5 +51,3 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           use_oidc: true
-          files: .nyc_output/coverage-final.json
-          fail_ci_if_error: true

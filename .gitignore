@@ -25,5 +25,5 @@ docs/src/**/*.d.ts
 docs/public/**/*.json
 docs/dist/
 !.husky
- test-results.json
+lcov.info
 __snapshots__/
