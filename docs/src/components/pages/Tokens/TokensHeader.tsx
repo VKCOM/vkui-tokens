@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import React, { FC } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
-import packageJson from '../../../../../package.json';
+import packageJson from '../../../../../package.json' with { type: 'json' };
 
 const version = {
 	href: 'https://github.com/VKCOM/vkui-tokens/releases',

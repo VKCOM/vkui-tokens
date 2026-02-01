@@ -213,7 +213,7 @@ import type { Adaptive } from '@vkontakte/vkui-tokens/interfaces/general/tools';
 import {
   lightTheme as baseTheme,
   darkTheme,
-} from '@vkontakte/vkui-tokens/themeDescriptions/base/vk.js';
+} from '@vkontakte/vkui-tokens/themeDescriptions/base/vk.ts';
 import { expandAll } from '@vkontakte/vkui-tokens/build/expandTheme';
 import { compileStyles } from '@vkontakte/vkui-tokens/build/compilers/styles/compileStyles';
 

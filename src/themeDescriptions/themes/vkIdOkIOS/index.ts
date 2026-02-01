@@ -1,7 +1,7 @@
-import { ThemeVkIdOkIOSDescription } from '../../../interfaces/themes/vkIdOkIOS';
-import { ThemeVkIdOkIOSDarkDescription } from '../../../interfaces/themes/vkIdOkIOSDark';
-import { vkIdOkTheme, vkIdOkThemeDark } from '../../themes/vkIdOk';
-import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS';
+import type { ThemeVkIdOkIOSDescription } from '../../../interfaces/themes/vkIdOkIOS/index.ts';
+import type { ThemeVkIdOkIOSDarkDescription } from '../../../interfaces/themes/vkIdOkIOSDark/index.ts';
+import { vkIdOkTheme, vkIdOkThemeDark } from '../../themes/vkIdOk/index.ts';
+import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.ts';
 
 export const vkIdOkIOSTheme: ThemeVkIdOkIOSDescription = {
 	...vkIOSTheme,

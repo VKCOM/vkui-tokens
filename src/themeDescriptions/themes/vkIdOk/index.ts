@@ -1,6 +1,6 @@
-import { ThemeVkIdOkDescription } from '../../../interfaces/themes/vkIdOk';
-import { ThemeVkIdOkDarkDescription } from '../../../interfaces/themes/vkIdOkDark';
-import { darkTheme, lightTheme } from '../../base/vk';
+import type { ThemeVkIdOkDescription } from '../../../interfaces/themes/vkIdOk/index.ts';
+import type { ThemeVkIdOkDarkDescription } from '../../../interfaces/themes/vkIdOkDark/index.ts';
+import { darkTheme, lightTheme } from '../../base/vk.ts';
 
 export const vkIdOkTheme: ThemeVkIdOkDescription = {
 	...lightTheme,

@@ -1,13 +1,17 @@
-import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
-import { Adaptive } from '../../general/tools';
-import { DefaultViewports } from '../../general/tools/viewports';
-import { Font } from '../../general/typography';
-import {
+import type {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '../../general/colors/index.ts';
+import type { Adaptive } from '../../general/tools/index.ts';
+import type { DefaultViewports } from '../../general/tools/viewports.ts';
+import type { Font } from '../../general/typography/index.ts';
+import type {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm';
+} from '../../namespaces/paradigm/index.ts';
 
 interface ThemeCloudTypohraphy {
 	/**

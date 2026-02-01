@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { overrideOnlyNeeded } from './overrideOnlyNeeded';
+import { overrideOnlyNeeded } from './overrideOnlyNeeded.ts';
 
 describe('overrideOnlyNeeded', () => {
 	it('should return new object', () => {

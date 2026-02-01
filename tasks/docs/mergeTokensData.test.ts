@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { mergeTokensData } from './mergeTokensData';
+import { mergeTokensData } from './mergeTokensData.ts';
 
 const fontFamily = 'MailSans, Helvetica, Arial, sans-serif';
 

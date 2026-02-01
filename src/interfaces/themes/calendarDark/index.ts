@@ -1,8 +1,8 @@
-import {
+import type {
 	ThemeCalendar,
 	ThemeCalendarCssVars,
 	ThemeCalendarDescription,
-} from '../../themes/calendar';
+} from '../../themes/calendar/index.ts';
 
 export interface ThemeCalendarDark extends ThemeCalendar {}
 export interface ThemeCalendarDarkDescription extends ThemeCalendarDescription {}

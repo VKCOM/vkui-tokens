@@ -1,10 +1,14 @@
-import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
-import {
+import type {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '../../general/colors/index.ts';
+import type {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm';
+} from '../../namespaces/paradigm/index.ts';
 
 export interface LocalHomeColorsDescriptionStruct {
 	homeColorSocialVk: ColorDescription;

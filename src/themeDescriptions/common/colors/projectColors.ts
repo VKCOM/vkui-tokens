@@ -1,4 +1,4 @@
-import type { ColorDescription } from '../../../interfaces/general/colors';
+import type { ColorDescription } from '../../../interfaces/general/colors/index.ts';
 
 export type ProjectColors = {
 	colorPrimaryAuto: ColorDescription;

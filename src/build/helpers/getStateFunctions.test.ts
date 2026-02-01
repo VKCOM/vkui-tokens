@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { getStateFunctions } from './getStateFunctions';
+import { getStateFunctions } from './getStateFunctions.ts';
 
 describe('getStateFunctions', () => {
 	const testThemeData = {

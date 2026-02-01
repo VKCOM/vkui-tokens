@@ -1,13 +1,13 @@
 import type { Property } from 'csstype';
 
-import {
+import type {
 	AllowedParadigmColorDescriptions,
 	AllowedParadigmColorTokens,
 	ThemePulseDescription,
-} from '../../../interfaces/themes/pulse';
-import { ThemePulseDarkDescription } from '../../../interfaces/themes/pulseDark';
-import { darkColors, lightThemeBase } from '../../base/paradigm';
-import { helpers } from '../../common';
+} from '../../../interfaces/themes/pulse/index.ts';
+import type { ThemePulseDarkDescription } from '../../../interfaces/themes/pulseDark/index.ts';
+import { darkColors, lightThemeBase } from '../../base/paradigm.ts';
+import { helpers } from '../../common/index.ts';
 
 const { x3, x4, x5 } = helpers;
 

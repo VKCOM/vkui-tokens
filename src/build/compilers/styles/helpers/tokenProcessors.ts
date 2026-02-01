@@ -1,7 +1,7 @@
 import { stripIndent } from 'common-tags';
 
-import { unCamelcasify } from '../../../../build/helpers/unCamelcasify';
-import { Adaptive } from '../../../../interfaces/general/tools';
+import { unCamelcasify } from '../../../../build/helpers/unCamelcasify.ts';
+import type { Adaptive } from '../../../../interfaces/general/tools/index.ts';
 
 export const EStyleTypes = {
 	CSS: 'css',
@@ -13,59 +13,74 @@ export const EStyleTypes = {
 
 export type Formats = (typeof EStyleTypes)[keyof typeof EStyleTypes];
 
-export const varDeclarations = {
-	[EStyleTypes.CSS]: (prop, prefix = '') => `--${prefix}${unCamelcasify(prop, '_')}`,
-	[EStyleTypes.PCSS]: (prop, prefix = '_') => `--${prefix}${unCamelcasify(prop)}`,
-	[EStyleTypes.SCSS]: (prop, prefix = '') => `$${prefix}${unCamelcasify(prop)}`,
-	[EStyleTypes.LESS]: (prop, prefix = '') => `@${prefix}${unCamelcasify(prop)}`,
-	[EStyleTypes.STYL]: (prop, prefix = '') => `$${prefix}${unCamelcasify(prop)}`,
-} as const;
+type VarDeclarationFn = (prop: string, prefix?: string) => string;
+type VariablesStatementDeclarationFn = (key: string, token: string, postfix?: string) => string;
+type MixinDeclarationFn = (groupName: string, prefix?: string, postfix?: string) => string;
+type CustomMediaDeclarationFn = (key: string, token: string, postfix?: string) => string;
 
-export const variablesStatementDeclaration = {
-	[EStyleTypes.CSS]: (key, token, postfix = '') => `\t${key}${postfix}: ${token};\n`,
-	[EStyleTypes.PCSS]: (key, token, postfix = '') => `\t${key}${postfix}: ${token};\n`,
-	[EStyleTypes.SCSS]: (key, token, postfix = '') => `${key}${postfix}: ${token};\n`,
-	[EStyleTypes.LESS]: (key, token, postfix = '') => `${key}${postfix}: ${token};\n`,
-	[EStyleTypes.STYL]: (key, token, postfix = '') => `${key}${postfix} = ${token};\n`,
-} as const;
+export const varDeclarations: Record<Formats, VarDeclarationFn> = {
+	[EStyleTypes.CSS]: (prop: string, prefix: string = ''): string =>
+		`--${prefix}${unCamelcasify(prop, '_')}`,
+	[EStyleTypes.PCSS]: (prop: string, prefix: string = '_'): string =>
+		`--${prefix}${unCamelcasify(prop)}`,
+	[EStyleTypes.SCSS]: (prop: string, prefix: string = ''): string =>
+		`$${prefix}${unCamelcasify(prop)}`,
+	[EStyleTypes.LESS]: (prop: string, prefix: string = ''): string =>
+		`@${prefix}${unCamelcasify(prop)}`,
+	[EStyleTypes.STYL]: (prop: string, prefix: string = ''): string =>
+		`$${prefix}${unCamelcasify(prop)}`,
+};
 
-export const mixinDeclaration = {
-	[EStyleTypes.SCSS]: (groupName: string, prefix = '', postfix = '') =>
+export const variablesStatementDeclaration: Record<Formats, VariablesStatementDeclarationFn> = {
+	[EStyleTypes.CSS]: (key: string, token: string, postfix: string = ''): string =>
+		`\t${key}${postfix}: ${token};\n`,
+	[EStyleTypes.PCSS]: (key: string, token: string, postfix: string = ''): string =>
+		`\t${key}${postfix}: ${token};\n`,
+	[EStyleTypes.SCSS]: (key: string, token: string, postfix: string = ''): string =>
+		`${key}${postfix}: ${token};\n`,
+	[EStyleTypes.LESS]: (key: string, token: string, postfix: string = ''): string =>
+		`${key}${postfix}: ${token};\n`,
+	[EStyleTypes.STYL]: (key: string, token: string, postfix: string = ''): string =>
+		`${key}${postfix} = ${token};\n`,
+};
+
+export const mixinDeclaration: Record<Formats, MixinDeclarationFn> = {
+	[EStyleTypes.SCSS]: (groupName: string, prefix: string = '', postfix: string = ''): string =>
 		`@mixin ${prefix}${unCamelcasify(groupName)}${postfix}()`,
-	[EStyleTypes.CSS]: (groupName: string, prefix = '', postfix = '') =>
+	[EStyleTypes.CSS]: (groupName: string, prefix: string = '', postfix: string = ''): string =>
 		`.${prefix}${unCamelcasify(groupName, '_')}${postfix}`,
-	[EStyleTypes.PCSS]: (groupName: string, prefix = '', postfix = '') =>
+	[EStyleTypes.PCSS]: (groupName: string, prefix: string = '', postfix: string = ''): string =>
 		`%${prefix}${unCamelcasify(groupName)}${postfix}`,
-	[EStyleTypes.LESS]: (groupName: string, prefix = '', postfix = '') =>
+	[EStyleTypes.LESS]: (groupName: string, prefix: string = '', postfix: string = ''): string =>
 		`.${prefix}${unCamelcasify(groupName)}${postfix}`,
-	[EStyleTypes.STYL]: (groupName: string, prefix = '', postfix = '') =>
+	[EStyleTypes.STYL]: (groupName: string, prefix: string = '', postfix: string = ''): string =>
 		`${prefix}${unCamelcasify(groupName)}${postfix}()`,
-} as const;
+};
 
-export const customMediaDeclaration = {
+export const customMediaDeclaration: Record<Formats, CustomMediaDeclarationFn | null> = {
 	[EStyleTypes.CSS]: null,
 
-	[EStyleTypes.PCSS]: (key, token, postfix = '') =>
+	[EStyleTypes.PCSS]: (key: string, token: string, postfix: string = ''): string =>
 		`@custom-media --${unCamelcasify(key)}${postfix} ${token};\n`,
 
-	[EStyleTypes.SCSS]: (key, token, postfix = '') =>
+	[EStyleTypes.SCSS]: (key: string, token: string, postfix: string = ''): string =>
 		`${stripIndent`
 		@mixin media-${unCamelcasify(key)}${postfix} {
 			@media ${token} { @content; }
 		}`}\n`,
 
-	[EStyleTypes.LESS]: (key, token, postfix = '') =>
+	[EStyleTypes.LESS]: (key: string, token: string, postfix: string = ''): string =>
 		`${stripIndent`
 		.media-${unCamelcasify(key)}${postfix}(@content) {
 			@media ${token} { @content; }
 		}`}\n`,
 
-	[EStyleTypes.STYL]: (key, token, postfix = '') =>
+	[EStyleTypes.STYL]: (key: string, token: string, postfix: string = ''): string =>
 		`${stripIndent`
 		media-${unCamelcasify(key)}${postfix}(content) {
 			@media ${token} { content }
 		}`}\n`,
-} as const;
+};
 
 interface ProcessGroupTokenParams {
 	format: Formats;

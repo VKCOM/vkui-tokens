@@ -1,6 +1,7 @@
-import { Theme } from '../../../../interfaces/general';
-import { Adaptive, adaptiveKeys } from '../../../../interfaces/general/tools';
-import { WideCssVarValue } from '../../../../interfaces/general/tools/cssVars';
+import type { Theme } from '../../../../interfaces/general/index.ts';
+import type { WideCssVarValue } from '../../../../interfaces/general/tools/cssVars.ts';
+import type { Adaptive } from '../../../../interfaces/general/tools/index.ts';
+import { adaptiveKeys } from '../../../../interfaces/general/tools/index.ts';
 
 export type FlatValuesObject = {
 	[key: string]: string | number;

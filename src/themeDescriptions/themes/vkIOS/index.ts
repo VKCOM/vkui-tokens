@@ -1,6 +1,6 @@
-import { ThemeVkIOSDescription } from '../../../interfaces/themes/vkIOS';
-import { ThemeVkIOSDarkDescription } from '../../../interfaces/themes/vkIOSDark';
-import { darkColors, darkElevation, darkGradient, lightTheme } from '../../base/vk';
+import type { ThemeVkIOSDescription } from '../../../interfaces/themes/vkIOS/index.ts';
+import type { ThemeVkIOSDarkDescription } from '../../../interfaces/themes/vkIOSDark/index.ts';
+import { darkColors, darkElevation, darkGradient, lightTheme } from '../../base/vk.ts';
 
 export const vkIOSTheme: ThemeVkIOSDescription = {
 	...lightTheme,

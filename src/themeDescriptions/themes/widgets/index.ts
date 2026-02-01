@@ -1,6 +1,6 @@
-import { ThemeWidgetsDescription } from '../../../interfaces/themes/widgets';
-import { ThemeWidgetsDarkDescription } from '../../../interfaces/themes/widgetsDark';
-import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm';
+import type { ThemeWidgetsDescription } from '../../../interfaces/themes/widgets/index.ts';
+import type { ThemeWidgetsDarkDescription } from '../../../interfaces/themes/widgetsDark/index.ts';
+import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm.ts';
 
 export const widgetsTheme: ThemeWidgetsDescription = {
 	...lightTheme,

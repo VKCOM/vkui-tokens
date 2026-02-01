@@ -2,8 +2,8 @@ import path from 'node:path';
 
 import { JSDocTagInfo, Node, Project, SourceFile } from 'ts-morph';
 
-import { capitalize } from '../../../build/helpers/capitalize';
-import { SpecialTokens, Theme } from '../../../interfaces/general';
+import { capitalize } from '../../../build/helpers/capitalize.ts';
+import type { SpecialTokens, Theme } from '../../../interfaces/general/index.ts';
 
 export type Description =
 	| {

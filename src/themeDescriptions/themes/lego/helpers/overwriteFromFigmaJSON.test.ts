@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { overwriteFromFigmaJSON } from './overwriteFromFigmaJSON';
+import { overwriteFromFigmaJSON } from './overwriteFromFigmaJSON.ts';
 
 const originalLightTokens = {
 	colorBackgroundAccent: '#000000',

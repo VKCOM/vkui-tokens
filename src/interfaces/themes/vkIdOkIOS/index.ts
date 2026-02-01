@@ -1,5 +1,5 @@
-export {
+export type {
 	ThemeVkIOS as ThemeVkIdOkIOS,
 	ThemeVkIOSCssVars as ThemeVkIdOkIOSCssVars,
 	ThemeVkIOSDescription as ThemeVkIdOkIOSDescription,
-} from '../../themes/vkIOS';
+} from '../../themes/vkIOS/index.ts';

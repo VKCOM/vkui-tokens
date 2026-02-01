@@ -1,6 +1,6 @@
 import color from 'color';
 
-import { colorStateMap } from '../../build/themeProcessors/expandColors/expandColors';
+import { colorStateMap } from '../../build/themeProcessors/expandColors/expandColors.ts';
 
 type ColorStateObject = {
 	colorsScheme: 'light' | 'dark';

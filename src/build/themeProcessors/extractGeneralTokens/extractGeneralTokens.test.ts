@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { extractGeneralTokens } from './extractGeneralTokens';
+import { extractGeneralTokens } from './extractGeneralTokens.ts';
 
 describe('mixColors', () => {
 	it('should return new object', () => {

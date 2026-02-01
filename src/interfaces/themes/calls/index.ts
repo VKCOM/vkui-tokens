@@ -1,8 +1,8 @@
-import {
+import type {
 	ThemeParadigmBase,
 	ThemeParadigmBaseCssVars,
 	ThemeParadigmBaseDescription,
-} from '../../themes/paradigmBase';
+} from '../../themes/paradigmBase/index.ts';
 
 export interface ThemeCalls extends ThemeParadigmBase {}
 export interface ThemeCallsDescription extends ThemeParadigmBaseDescription {}

@@ -1,0 +1,36 @@
+{
+	"$schema": "https://swc.rs/schema.json",
+	"exclude": ["\\.(test|spec|e2e)\\.[jt]sx?$", "testing/"],
+	"jsc": {
+		"externalHelpers": true,
+		"parser": {
+			"syntax": "typescript",
+		},
+		"target": "es5",
+		"preserveAllComments": true,
+		"baseUrl": "./",
+		"paths": {
+			"*": ["node_modules", "dist/*"],
+		},
+		"experimental": {
+			"emitIsolatedDts": true,
+			"plugins": [
+				[
+					"@swc/plugin-transform-imports",
+					{
+						"^(.*?)\\.ts(x)?$": {
+							"skipDefaultConversion": true,
+							"transform": "{{matches.[1]}}.cjs",
+						},
+					},
+				],
+			],
+		},
+	},
+	"module": {
+		"type": "commonjs",
+		"resolveFully": true,
+		"outFileExtension": "cjs",
+	},
+	"sourceMaps": true,
+}

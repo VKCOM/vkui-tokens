@@ -1,9 +1,9 @@
 import { describe, expect, it } from '@jest/globals';
 import { stripIndent } from 'common-tags';
 
-import { ThemeCssVarsWide } from '../../../../interfaces/general';
-import { ParadigmThemeCssVarsWide } from '../../../../interfaces/namespaces/paradigm';
-import { compileBreakpointsCssVarsDeclaration } from './compileBreakpointsCssVarsDeclaration';
+import type { ThemeCssVarsWide } from '../../../../interfaces/general/index.ts';
+import type { ParadigmThemeCssVarsWide } from '../../../../interfaces/namespaces/paradigm/index.ts';
+import { compileBreakpointsCssVarsDeclaration } from './compileBreakpointsCssVarsDeclaration.ts';
 
 describe('compileBreakpointsCssVarsDeclaration', () => {
 	it('should not work without breakpoints', () => {
@@ -43,7 +43,7 @@ describe('compileBreakpointsCssVarsDeclaration', () => {
 				name: '--vkui--x1',
 				value: 'var(--vkui--x1, 4px)',
 				originalValue: '4px',
-			},
+			} as any,
 		};
 		expect(compileBreakpointsCssVarsDeclaration(theme as ThemeCssVarsWide)).toBe(null);
 	});

@@ -1,11 +1,11 @@
 import type { Property } from 'csstype';
 
-import { staticRef } from '../../../build/helpers/tokenHelpers';
-import { Font } from '../../../interfaces/general/typography';
-import { ThemeCloudDescription } from '../../../interfaces/themes/cloud';
-import { ThemeCloudDarkDescription } from '../../../interfaces/themes/cloudDark';
-import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm';
-import { helpers } from '../../common';
+import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
+import type { Font } from '../../../interfaces/general/typography/index.ts';
+import type { ThemeCloudDescription } from '../../../interfaces/themes/cloud/index.ts';
+import type { ThemeCloudDarkDescription } from '../../../interfaces/themes/cloudDark/index.ts';
+import { darkTheme, darkThemeElevation, lightTheme } from '../../base/paradigm.ts';
+import { helpers } from '../../common/index.ts';
 
 const { x2, x4, x5 } = helpers;
 

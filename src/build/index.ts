@@ -1,4 +1,5 @@
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import fs from 'fs-extra';
 
@@ -11,15 +12,19 @@ import {
 	writeStructJsonFile,
 	writeStyleFiles,
 	writeTsFile,
-} from '../build/compilers';
-import { expandAll } from '../build/expandTheme';
-import { themes } from '../themeDescriptions';
-import { processCustomMedia } from './themeProcessors/customMedia/customMedia';
+} from '../build/compilers/index.ts';
+import { expandAll } from '../build/expandTheme.ts';
+import { themes } from '../themeDescriptions/index.ts';
+import { processCustomMedia } from './themeProcessors/customMedia/customMedia.ts';
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const __filename = fileURLToPath(import.meta.url);
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '../..');
 
 console.log('Удаляем папку dist...');
-export const DIST_PATH = `${ROOT_DIR}/dist`;
+export const DIST_PATH: string = `${ROOT_DIR}/dist`;
 export const rmDist = (): void => fs.rmdirSync(DIST_PATH, { recursive: true });
 
 rmDist();
@@ -28,20 +33,30 @@ console.log('успешно\n');
 
 console.log('Создаём папку dist...');
 fs.mkdirSync(DIST_PATH);
-const THEMES_PATH_DIST = path.resolve(DIST_PATH, 'themes');
+const THEMES_PATH_DIST: string = path.resolve(DIST_PATH, 'themes');
 fs.mkdirSync(THEMES_PATH_DIST);
 console.log('успешно\n');
 
 console.log('Копируем директорию src/interfaces...');
 const INTERFACES_PATH_SOURCE = path.resolve(ROOT_DIR, 'src/interfaces');
 const INTERFACES_PATH_DIST = path.resolve(DIST_PATH, 'interfaces');
+// eslint-disable-next-line import/no-named-as-default-member
 fs.copySync(INTERFACES_PATH_SOURCE, INTERFACES_PATH_DIST);
 console.log('успешно\n');
 
 console.log('Начинаем процесс компиляции тем...\n');
 
 const expandedThemes = themes.map(expandAll);
-const expandedThemesMap: Record<string, (typeof expandedThemes)[0]> = {};
+const expandedThemesMap: Record<
+	string,
+	{
+		theme: (typeof expandedThemes)[0]['theme'];
+		pixelifyTheme: (typeof expandedThemes)[0]['pixelifyTheme'];
+		cssVarsThemeWide: (typeof expandedThemes)[0]['cssVarsThemeWide'];
+		cssVarsTheme: (typeof expandedThemes)[0]['cssVarsTheme'];
+		pseudoThemeCssVars: (typeof expandedThemes)[0]['pseudoThemeCssVars'];
+	}
+> = {};
 
 for (const expandedThemeObject of expandedThemes) {
 	expandedThemesMap[expandedThemeObject.theme.themeName] = expandedThemeObject;
@@ -188,6 +203,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 	} else {
 		// Всё остальное копируем как есть
 
+		// eslint-disable-next-line import/no-named-as-default-member
 		fs.copySync(fileSourcePath, fileDestPath);
 	}
 });
@@ -195,6 +211,7 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 console.log('успешно\n');
 
 console.log('записываем корректный package.json');
+// eslint-disable-next-line import/no-named-as-default-member
 const packageJsonObject = fs.readJSONSync(`${ROOT_DIR}/package.json`);
 delete packageJsonObject.scripts.prepublishOnly;
 fs.writeFileSync(

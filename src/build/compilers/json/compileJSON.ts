@@ -1,4 +1,4 @@
-import { Theme } from '../../../interfaces/general';
+import type { Theme } from '../../../interfaces/general/index.ts';
 
 /**
  * Компилирует json с темой

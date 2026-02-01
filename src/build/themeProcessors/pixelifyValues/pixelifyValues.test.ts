@@ -1,8 +1,8 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { PixelifyTheme, Theme } from '../../../interfaces/general';
-import { ParadigmTheme } from '../../../interfaces/namespaces/paradigm';
-import { pixelifyValues } from './pixelifyValues';
+import type { PixelifyTheme, Theme } from '../../../interfaces/general/index.ts';
+import type { ParadigmTheme } from '../../../interfaces/namespaces/paradigm/index.ts';
+import { pixelifyValues } from './pixelifyValues.ts';
 
 describe('pixelifyValues', () => {
 	describe('general', () => {

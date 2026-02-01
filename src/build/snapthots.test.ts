@@ -1,11 +1,11 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { themes } from '../themeDescriptions';
-import { expandAll } from './expandTheme';
+import { themes } from '../themeDescriptions/index.ts';
+import { expandAll } from './expandTheme.ts';
 
 describe('shapshots', () => {
 	themes.forEach((theme) => {
-		describe(`${theme.themeName} theme`, () => {
+		describe(`${(theme as { themeName: string }).themeName} theme`, () => {
 			const expandedThemeObject = expandAll(theme);
 
 			it('should match root theme snapshot', () => {
