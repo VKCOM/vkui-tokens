@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import type { PixelifyTheme, Theme } from '../../../interfaces/general/index.ts';
 import type { ParadigmTheme } from '../../../interfaces/namespaces/paradigm/index.ts';
@@ -15,7 +16,7 @@ describe('pixelifyValues', () => {
 				themeType: 'pixelify',
 			};
 
-			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
+			assert.deepEqual(pixelifyValues(theme) as Partial<PixelifyTheme>, pixelifyTheme);
 		});
 
 		it('should pixelify flat numbers', () => {
@@ -29,7 +30,7 @@ describe('pixelifyValues', () => {
 				x2: '8px',
 			};
 
-			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
+			assert.deepEqual(pixelifyValues(theme) as Partial<PixelifyTheme>, pixelifyTheme);
 		});
 
 		it('should pixelify viewport values', () => {
@@ -47,7 +48,7 @@ describe('pixelifyValues', () => {
 				},
 			};
 
-			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
+			assert.deepEqual(pixelifyValues(theme) as Partial<PixelifyTheme>, pixelifyTheme);
 		});
 
 		it('should pixelify float numbers', () => {
@@ -63,7 +64,7 @@ describe('pixelifyValues', () => {
 				x3: '0.33px',
 			};
 
-			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
+			assert.deepEqual(pixelifyValues(theme) as Partial<PixelifyTheme>, pixelifyTheme);
 		});
 
 		it('should correctly pixelify fonts (exclude weight)', () => {
@@ -105,32 +106,28 @@ describe('pixelifyValues', () => {
 				},
 			};
 
-			expect(pixelifyValues(theme) as Partial<PixelifyTheme>).toStrictEqual(pixelifyTheme);
+			assert.deepEqual(pixelifyValues(theme) as Partial<PixelifyTheme>, pixelifyTheme);
 		});
 
 		it('should correctly pixelify custom fontWeight tokens', () => {
-			expect(pixelifyValues({ fontWeightAccent1: 700 })).toEqual({
+			assert.deepEqual(pixelifyValues({ fontWeightAccent1: 700 }), {
 				fontWeightAccent1: 700,
 			});
 		});
 
 		it('should correctly pixelify zIndex', () => {
-			expect(pixelifyValues({ zIndexModal: 100 })).toEqual({
-				zIndexModal: 100,
-			});
+			assert.deepEqual(pixelifyValues({ zIndexModal: 100 }), { zIndexModal: 100 });
 		});
 
 		it('should correctly pixelify opacity', () => {
-			expect(pixelifyValues({ opacityDisable: 1, opacityDisableAccessibility: 0.5 })).toEqual({
+			assert.deepEqual(pixelifyValues({ opacityDisable: 1, opacityDisableAccessibility: 0.5 }), {
 				opacityDisable: 1,
 				opacityDisableAccessibility: 0.5,
 			});
 		});
 
 		it('should correctly pixelify tone', () => {
-			expect(pixelifyValues({ toneValueActive: 0.1 })).toEqual({
-				toneValueActive: 0.1,
-			});
+			assert.deepEqual(pixelifyValues({ toneValueActive: 0.1 }), { toneValueActive: 0.1 });
 		});
 	});
 });

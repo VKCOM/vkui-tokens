@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { extractViewports } from '../../../build/themeProcessors/extractViewports/extractViewports.ts';
 import type { Breakpoints } from '../../../interfaces/general/tools/index.ts';
@@ -17,9 +18,9 @@ describe('extractViewports', () => {
 			},
 		};
 
-		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
-		).toStrictEqual(['touch']);
+		assert.deepEqual(extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints), [
+			'touch',
+		]);
 	});
 
 	it('should work without breakpoints: desktopM', () => {
@@ -34,9 +35,9 @@ describe('extractViewports', () => {
 			},
 		};
 
-		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
-		).toStrictEqual(['desktopM']);
+		assert.deepEqual(extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints), [
+			'desktopM',
+		]);
 	});
 
 	it('should work with default breakpoints', () => {
@@ -55,9 +56,10 @@ describe('extractViewports', () => {
 			},
 		};
 
-		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
-		).toStrictEqual(['touch', 'desktopS']);
+		assert.deepEqual(extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints), [
+			'touch',
+			'desktopS',
+		]);
 	});
 
 	it('should work with Custom breakpoints', () => {
@@ -84,8 +86,11 @@ describe('extractViewports', () => {
 			},
 		};
 
-		expect(
-			extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints),
-		).toStrictEqual(['touch', 'desktopS', 'desktopM', 'desktopL']);
+		assert.deepEqual(extractViewports<TestViewport, Breakpoints<TestViewport>>(testBreakpoints), [
+			'touch',
+			'desktopS',
+			'desktopM',
+			'desktopL',
+		]);
 	});
 });

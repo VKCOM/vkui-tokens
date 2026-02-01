@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { compileTypeScript } from '../../../build/compilers/ts/compileTypeScript.ts';
 
@@ -8,7 +9,7 @@ describe('compileTypeScript', () => {
 	};
 
 	it('should work', () => {
-		expect(compileTypeScript(testData)).toBe(`import { $$InterfaceName$$ } from '$$InterfaceURL$$';
+		const expected = `import { $$InterfaceName$$ } from '$$InterfaceURL$$';
 
 const theme: $$InterfaceName$$ = {
 	"themeName": "base"
@@ -16,6 +17,7 @@ const theme: $$InterfaceName$$ = {
 
 export default theme;
 export { $$InterfaceName$$ };
-`);
+`;
+		assert.equal(compileTypeScript(testData), expected);
 	});
 });

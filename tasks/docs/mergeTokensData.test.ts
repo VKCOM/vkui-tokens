@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { mergeTokensData } from './mergeTokensData.ts';
 
@@ -148,26 +149,30 @@ const content = {
 
 describe('mergeTokensData', () => {
 	it('should merge 2 object token with simple token value', () => {
-		expect(mergeTokensData(content.simple.docs, content.simple.tokens)).toEqual(
+		assert.deepEqual(
+			mergeTokensData(content.simple.docs, content.simple.tokens),
 			content.simple.result,
 		);
 	});
 
 	it('should merge 2 object token with regular/compact token value', () => {
-		expect(mergeTokensData(content.regularCompact.docs, content.regularCompact.tokens)).toEqual(
+		assert.deepEqual(
+			mergeTokensData(content.regularCompact.docs, content.regularCompact.tokens),
 			content.regularCompact.result,
 		);
 	});
 
 	it('should merge 2 object token with only regular token value', () => {
-		expect(mergeTokensData(content.onlyRegular.docs, content.onlyRegular.tokens)).toEqual(
+		assert.deepEqual(
+			mergeTokensData(content.onlyRegular.docs, content.onlyRegular.tokens),
 			content.onlyRegular.result,
 		);
 	});
 
 	it('should merge 2 object token with not regular/compact token value', () => {
-		expect(
+		assert.deepEqual(
 			mergeTokensData(content.notRegularCompact.docs, content.notRegularCompact.tokens),
-		).toEqual(content.notRegularCompact.result);
+			content.notRegularCompact.result,
+		);
 	});
 });

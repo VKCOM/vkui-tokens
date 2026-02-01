@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { expandAll, expandRootTheme } from '../build/expandTheme.ts';
 
@@ -13,7 +14,7 @@ describe('expandTheme', () => {
 				someNewRandomToken: '3',
 			});
 
-			expect(result).toStrictEqual({
+			assert.deepEqual(result, {
 				colorOverlayPrimary: {
 					active: 'rgba(0, 0, 0, 0.56)',
 					hover: 'rgba(0, 0, 0, 0.52)',
@@ -33,7 +34,7 @@ describe('expandTheme', () => {
 				},
 			});
 
-			expect(result).toStrictEqual({
+			assert.deepEqual(result, {
 				sizeArrow: {
 					regular: 3,
 				},
@@ -53,8 +54,8 @@ describe('expandTheme', () => {
 				someNewRandomToken: '3',
 			});
 
-			expect(result.theme).not.toBeUndefined();
-			expect(result.theme.themeType).toBe('root');
+			assert.notEqual(result.theme, undefined);
+			assert.equal(result.theme.themeType, 'root');
 		});
 
 		it('should add specific prop pixelifyTheme', () => {
@@ -66,8 +67,8 @@ describe('expandTheme', () => {
 				someNewRandomToken: '3',
 			});
 
-			expect(result.pixelifyTheme).not.toBeUndefined();
-			expect(result.pixelifyTheme.themeType).toBe('pixelify');
+			assert.notEqual(result.pixelifyTheme, undefined);
+			assert.equal(result.pixelifyTheme.themeType, 'pixelify');
 		});
 
 		it('should pixelify in pixelifyTheme', () => {
@@ -78,7 +79,7 @@ describe('expandTheme', () => {
 				},
 			});
 
-			expect(result.pixelifyTheme.sizeArrow.regular).toBe('3px');
+			assert.equal(result.pixelifyTheme.sizeArrow.regular, '3px');
 		});
 
 		it('should add specific prop cssVarsWide', () => {
@@ -90,7 +91,7 @@ describe('expandTheme', () => {
 				someNewRandomToken: '3',
 			});
 
-			expect(result.cssVarsThemeWide).toStrictEqual({
+			assert.deepEqual(result.cssVarsThemeWide, {
 				colorOverlayPrimary: {
 					active: {
 						name: '--vkui--color_overlay_primary--active',
@@ -131,7 +132,7 @@ describe('expandTheme', () => {
 				someNewRandomToken: '3',
 			});
 
-			expect(result.cssVarsTheme).toStrictEqual({
+			assert.deepEqual(result.cssVarsTheme, {
 				colorOverlayPrimary: {
 					active: {
 						name: '--vkui--color_overlay_primary--active',

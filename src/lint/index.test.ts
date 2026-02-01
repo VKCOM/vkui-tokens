@@ -1,50 +1,47 @@
-import { describe, expect, test } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, test } from 'node:test';
 
 import { lint } from '../lint/index.ts';
 
 describe('lint unit', () => {
 	test('shows no warnings if everything is ok', () => {
-		expect(
-			lint([
-				{
-					colorBgAlpha: 'transparent',
-				},
-			]),
-		).toEqual([]);
+		const result = lint([
+			{
+				colorBgAlpha: 'transparent',
+			},
+		]);
+		assert.deepEqual(result, []);
 	});
 
 	test('shows warnings for opaque token name but alpha value', () => {
-		expect(
-			lint([
-				{
-					colorBg: 'transparent',
-				},
-			]),
-		).toEqual([
+		const result = lint([
+			{
+				colorBg: 'transparent',
+			},
+		]);
+		assert.deepEqual(result, [
 			'undefined: colorBg error: Color token type mismatch: opaque token name but alpha value',
 		]);
 	});
 
 	test('shows warnings for alpha token name but opaque value', () => {
-		expect(
-			lint([
-				{
-					colorBgAlpha: 'black',
-				},
-			]),
-		).toEqual([
+		const result = lint([
+			{
+				colorBgAlpha: 'black',
+			},
+		]);
+		assert.deepEqual(result, [
 			'undefined: colorBgAlpha error: Color token type mismatch: alpha token name but opaque value',
 		]);
 	});
 
 	test('shows warnings for nested objects', () => {
-		expect(
-			lint([
-				{
-					colors: { colorBg: 'transparent' },
-				},
-			]),
-		).toEqual([
+		const result = lint([
+			{
+				colors: { colorBg: 'transparent' },
+			},
+		]);
+		assert.deepEqual(result, [
 			'undefined: colors.colorBg error: Color token type mismatch: opaque token name but alpha value',
 		]);
 	});
