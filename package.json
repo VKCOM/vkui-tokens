@@ -5,7 +5,7 @@
   "type": "module",
   "license": "MIT",
   "homepage": "https://vkcom.github.io/vkui-tokens",
-  "main": "./utils/descriptions.js",
+  "main": "./utils/descriptions.cjs",
   "scripts": {
     "build": "mkdir -p dist && npm run build:script && npm run tsc:dist",
     "build:local": "npm run build && npm run clear:dist",
