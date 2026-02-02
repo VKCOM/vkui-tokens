@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { getExpandedThemeColors } from './expandColors';
+import { getExpandedThemeColors } from './expandColors.ts';
 
 describe('expandColors', () => {
 	it('should return null if colors not specified', () => {

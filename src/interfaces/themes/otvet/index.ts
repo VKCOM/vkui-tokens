@@ -1,20 +1,20 @@
 import type { Property } from 'csstype';
 
-import {
+import type {
 	ColorDescriptionStatic,
 	ColorsDescriptionStruct,
 	ColorWithStates,
-} from '../../general/colors';
-import { GradientPoints } from '../../general/gradients';
-import { Adaptive } from '../../general/tools';
-import { DefaultViewports } from '../../general/tools/viewports';
-import { Font } from '../../general/typography';
-import {
+} from '../../general/colors/index.ts';
+import type { GradientPoints } from '../../general/gradients/index.ts';
+import type { Adaptive } from '../../general/tools/index.ts';
+import type { DefaultViewports } from '../../general/tools/viewports.ts';
+import type { Font } from '../../general/typography/index.ts';
+import type {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm';
+} from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeOtvetOverValues {
 	otvetBoxShadowIsland: Property.BoxShadow;

@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { replacePropDeep } from '../../build/helpers/replacePropDeep';
+import { replacePropDeep } from '../../build/helpers/replacePropDeep.ts';
 
 describe('replacePropDeep', () => {
 	const mapReplace = {

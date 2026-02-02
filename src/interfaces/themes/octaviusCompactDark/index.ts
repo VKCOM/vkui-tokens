@@ -1,8 +1,8 @@
-import {
+import type {
 	ThemeOctavius,
 	ThemeOctaviusCssVars,
 	ThemeOctaviusDescription,
-} from '../../themes/octavius';
+} from '../../themes/octavius/index.ts';
 
 export interface ThemeOctaviusCompactDark extends ThemeOctavius {}
 export interface ThemeOctaviusCompacDarkDescription extends ThemeOctaviusDescription {}

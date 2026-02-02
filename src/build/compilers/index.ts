@@ -2,15 +2,21 @@ import path from 'node:path';
 
 import fs from 'fs-extra';
 
-import { compileGetDeclarationString } from '../../build/compilers/cssVars/jsUtils/compileGetDeclarationString';
-import { compileDocsJSON } from '../../build/compilers/docs/compileDocsJSON';
-import { compileJSON } from '../../build/compilers/json/compileJSON';
-import { compileStyles, CompileStylesMode } from '../../build/compilers/styles/compileStyles';
-import { compileTypeScript } from '../../build/compilers/ts/compileTypeScript';
-import { capitalize } from '../../build/helpers/capitalize';
-import { PixelifyTheme, SpecialTokens, Theme, ThemeCssVarsWide } from '../../interfaces/general';
-import { compileBreakpointsCssVarsDeclaration } from './cssVars/declarations/compileBreakpointsCssVarsDeclaration';
-import { compileStructJSON } from './structJSON/compileStructJSON';
+import { compileGetDeclarationString } from '../../build/compilers/cssVars/jsUtils/compileGetDeclarationString.ts';
+import { compileDocsJSON } from '../../build/compilers/docs/compileDocsJSON.ts';
+import { compileJSON } from '../../build/compilers/json/compileJSON.ts';
+import type { CompileStylesMode } from '../../build/compilers/styles/compileStyles.ts';
+import { compileStyles } from '../../build/compilers/styles/compileStyles.ts';
+import { compileTypeScript } from '../../build/compilers/ts/compileTypeScript.ts';
+import { capitalize } from '../../build/helpers/capitalize.ts';
+import type {
+	PixelifyTheme,
+	SpecialTokens,
+	Theme,
+	ThemeCssVarsWide,
+} from '../../interfaces/general/index.ts';
+import { compileBreakpointsCssVarsDeclaration } from './cssVars/declarations/compileBreakpointsCssVarsDeclaration.ts';
+import { compileStructJSON } from './structJSON/compileStructJSON.ts';
 
 type ThemeBuildType = 'root' | 'subtheme' | 'flat' | 'cssVars' | 'cssVarsPseudoRoot';
 

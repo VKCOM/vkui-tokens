@@ -1,6 +1,9 @@
-import { Breakpoints } from '../../../interfaces/general/tools';
-import { DefaultViewports, ViewportsTuple } from '../../../interfaces/general/tools/viewports';
-import { ParadigmTheme } from '../../../interfaces/namespaces/paradigm';
+import type { Breakpoints } from '../../../interfaces/general/tools/index.ts';
+import type {
+	DefaultViewports,
+	ViewportsTuple,
+} from '../../../interfaces/general/tools/viewports.ts';
+import type { ParadigmTheme } from '../../../interfaces/namespaces/paradigm/index.ts';
 
 export function extractViewports<
 	V extends ViewportsTuple = DefaultViewports,

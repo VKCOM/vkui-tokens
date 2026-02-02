@@ -1,13 +1,17 @@
 import type { Property } from 'csstype';
 
-import { ThemeCssVars } from '../../general';
-import { ColorDescription, ColorsDescriptionStruct, ColorWithStates } from '../../general/colors';
-import { Adaptive } from '../../general/tools';
-import {
+import type {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from '../../general/colors/index.ts';
+import type { ThemeCssVars } from '../../general/index.ts';
+import type { Adaptive } from '../../general/tools/index.ts';
+import type {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm';
+} from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeOctaviusOverValues {
 	octaviusElevationCard: Property.BoxShadow;

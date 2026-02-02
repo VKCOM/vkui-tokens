@@ -1,4 +1,4 @@
-import { ThemePulse, ThemePulseCssVars, ThemePulseDescription } from '../pulse';
+import type { ThemePulse, ThemePulseCssVars, ThemePulseDescription } from '../pulse/index.ts';
 
 export interface ThemePulseDark extends ThemePulse {}
 export interface ThemePulseDarkDescription extends ThemePulseDescription {}

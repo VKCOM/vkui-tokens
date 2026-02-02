@@ -1,4 +1,4 @@
-import figma from '../figma.json';
+import figma from '../figma.json' with { type: 'json' };
 
 // Поля — режимы соответсвующей коллекции переменных из фигмы
 // Цвета
@@ -38,14 +38,14 @@ type ModeName = 'light' | 'dark' | 'ios' | 'android' | 'desktop';
  * @returns Объект с токенами, для которых нашлась замена
  */
 // eslint-disable-next-line max-params
-export function overwriteFromFigmaJSON(
-	originalTokens,
+export function overwriteFromFigmaJSON<T>(
+	originalTokens: T,
 	collection: CollectionName = 'appearance',
 	mode: ModeName = 'light',
 	source: FigmaJSON = figma,
-): Partial<typeof originalTokens> {
+): Partial<T> {
 	return Object.fromEntries(
-		Object.keys(originalTokens).reduce((acc, key) => {
+		Object.keys(originalTokens).reduce((acc: [string, unknown][], key) => {
 			const figmaToken = findFigmaVariable(source[collection], key);
 			if (figmaToken) {
 				if (collection === 'appearance') {
@@ -57,7 +57,7 @@ export function overwriteFromFigmaJSON(
 			}
 			return acc;
 		}, []),
-	);
+	) as Partial<T>;
 }
 
 /**

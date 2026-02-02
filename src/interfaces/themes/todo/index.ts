@@ -1,8 +1,8 @@
-import {
+import type {
 	ParadigmTheme,
 	ParadigmThemeCssVars,
 	ParadigmThemeDescription,
-} from '../../namespaces/paradigm';
+} from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeTodo extends ParadigmTheme {}
 export interface ThemeTodoDescription extends ParadigmThemeDescription {}

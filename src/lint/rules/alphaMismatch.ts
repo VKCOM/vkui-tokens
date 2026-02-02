@@ -1,5 +1,5 @@
-import { isColorWithStates } from '../../build/helpers/cssHelpers';
-import { ColorDescriptionStatic } from '../../interfaces/general/colors';
+import { isColorWithStates } from '../../build/helpers/cssHelpers.ts';
+import type { ColorDescriptionStatic } from '../../interfaces/general/colors/index.ts';
 
 function isAlphaColor(color: ColorDescriptionStatic): boolean {
 	if (isColorWithStates(color)) {

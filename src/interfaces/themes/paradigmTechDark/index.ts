@@ -1,8 +1,8 @@
-import {
+import type {
 	ThemeParadigmTech,
 	ThemeParadigmTechCssVars,
 	ThemeParadigmTechDescription,
-} from '../../themes/paradigmTech';
+} from '../../themes/paradigmTech/index.ts';
 
 export interface ThemeParadigmTechDark extends ThemeParadigmTech {}
 export interface ThemeParadigmTechDarkDescription extends ThemeParadigmTechDescription {}

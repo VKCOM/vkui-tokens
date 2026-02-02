@@ -1,6 +1,10 @@
-import { ColorDescription, ColorWithStates } from '../../general/colors';
-import { ParadigmThemeCssVars } from '../../namespaces/paradigm';
-import { MediaViewportsTuple, ThemeMedia, ThemeMediaDescription } from '../../themes/media';
+import type { ColorDescription, ColorWithStates } from '../../general/colors/index.ts';
+import type { ParadigmThemeCssVars } from '../../namespaces/paradigm/index.ts';
+import type {
+	MediaViewportsTuple,
+	ThemeMedia,
+	ThemeMediaDescription,
+} from '../../themes/media/index.ts';
 
 export interface ThemePharma extends ThemeMedia {
 	colorSale: ColorWithStates;

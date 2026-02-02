@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-import { overlayColors } from '../../../build/themeProcessors/expandColors/overlayColors';
+import { overlayColors } from '../../../build/themeProcessors/expandColors/overlayColors.ts';
 
 describe('overlayColors', () => {
 	test('overlay transparent on opaque in light color scheme', () => {

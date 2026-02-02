@@ -1,7 +1,7 @@
 import Color from 'color';
 
-import { convertSnakeToCamel } from '../../../build/helpers/convertSnakeToCamel';
-import type { Theme } from '../../../interfaces/general';
+import { convertSnakeToCamel } from '../../../build/helpers/convertSnakeToCamel.ts';
+import type { Theme } from '../../../interfaces/general/index.ts';
 
 export type ValuesOf<T extends any[]> = T[number];
 

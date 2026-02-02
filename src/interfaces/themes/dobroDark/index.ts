@@ -1,4 +1,4 @@
-import type { ThemeDobro, ThemeDobroCssVars, ThemeDobroDescription } from '../dobro';
+import type { ThemeDobro, ThemeDobroCssVars, ThemeDobroDescription } from '../dobro/index.ts';
 
 export type ThemeDobroDark = ThemeDobro;
 export type ThemeDobroDarkDescription = ThemeDobroDescription;

@@ -1,8 +1,11 @@
 import { describe, expect, it } from '@jest/globals';
 
-import { Breakpoints } from '../../../interfaces/general/tools';
-import { ParadigmTheme, ParadigmThemeCssVarsWide } from '../../../interfaces/namespaces/paradigm';
-import { extractVarsNames, getVariableName } from './extractVarsNames';
+import type { Breakpoints } from '../../../interfaces/general/tools/index.ts';
+import type {
+	ParadigmTheme,
+	ParadigmThemeCssVarsWide,
+} from '../../../interfaces/namespaces/paradigm/index.ts';
+import { extractVarsNames, getVariableName } from './extractVarsNames.ts';
 
 describe('extractVarsNames', () => {
 	describe('getVariableName', () => {

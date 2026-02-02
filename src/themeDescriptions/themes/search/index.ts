@@ -1,7 +1,7 @@
-import { Adaptive } from '../../../interfaces/general/tools';
-import { Font } from '../../../interfaces/general/typography';
-import { ThemeSearchDescription } from '../../../interfaces/themes/search';
-import { lightTheme } from '../../base/paradigm';
+import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
+import type { Font } from '../../../interfaces/general/typography/index.ts';
+import type { ThemeSearchDescription } from '../../../interfaces/themes/search/index.ts';
+import { lightTheme } from '../../base/paradigm.ts';
 
 export const searchTheme: ThemeSearchDescription = {
 	...lightTheme,

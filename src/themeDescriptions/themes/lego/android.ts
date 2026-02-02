@@ -1,8 +1,11 @@
-import { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid';
-import { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark';
-import { vkontakteAndroidTheme, vkontakteAndroidThemeDark } from '../../themes/vkontakteAndroid';
-import figma from './figma.json';
-import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON';
+import type { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid/index.ts';
+import type { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark/index.ts';
+import {
+	vkontakteAndroidTheme,
+	vkontakteAndroidThemeDark,
+} from '../../themes/vkontakteAndroid/index.ts';
+import figma from './figma.json' with { type: 'json' };
+import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
 
 export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 	...vkontakteAndroidTheme, // импорт светлой базовой темы
