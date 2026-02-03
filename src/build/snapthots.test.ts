@@ -1,27 +1,27 @@
-import { describe, expect, it } from '@jest/globals';
+import { describe, it } from 'node:test';
 
 import { themes } from '../themeDescriptions/index.ts';
 import { expandAll } from './expandTheme.ts';
 
-describe('shapshots', () => {
+describe('snapshots', () => {
 	themes.forEach((theme) => {
 		describe(`${(theme as { themeName: string }).themeName} theme`, () => {
 			const expandedThemeObject = expandAll(theme);
 
-			it('should match root theme snapshot', () => {
-				expect(expandedThemeObject.theme).toMatchSnapshot();
+			it('should match root theme snapshot', (t) => {
+				t.assert.snapshot(expandedThemeObject.theme);
 			});
 
-			it('should match pixelify theme snapshot', () => {
-				expect(expandedThemeObject.pixelifyTheme).toMatchSnapshot();
+			it('should match pixelify theme snapshot', (t) => {
+				t.assert.snapshot(expandedThemeObject.pixelifyTheme);
 			});
 
-			it('should match cssVars snapshot', () => {
-				expect(expandedThemeObject.cssVarsTheme).toMatchSnapshot();
+			it('should match cssVars snapshot', (t) => {
+				t.assert.snapshot(expandedThemeObject.cssVarsTheme);
 			});
 
-			it('should match pseudo theme from CssVars', () => {
-				expect(expandedThemeObject.pseudoThemeCssVars).toMatchSnapshot();
+			it('should match pseudo theme from CssVars', (t) => {
+				t.assert.snapshot(expandedThemeObject.pseudoThemeCssVars);
 			});
 		});
 	});

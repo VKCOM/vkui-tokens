@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { compileJSON } from './compileJSON.ts';
 
@@ -11,8 +12,8 @@ describe('compileJSON', () => {
 			toneValueHover: 0.04,
 		};
 
-		expect(compileJSON(testData)).toBe(
-			'{\n\t"colorState": {\n\t\t"normal": "#00103D"\n\t},\n\t"toneValueHover": 0.04\n}',
-		);
+		const expected =
+			'{\n\t"colorState": {\n\t\t"normal": "#00103D"\n\t},\n\t"toneValueHover": 0.04\n}';
+		assert.equal(compileJSON(testData), expected);
 	});
 });

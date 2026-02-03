@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { compileStructJSON } from './compileStructJSON.ts';
 
@@ -28,8 +29,7 @@ describe('compileJSON', () => {
 			].join(', '),
 		};
 
-		expect(compileStructJSON(testData)).toBe(
-			`{
+		const expected = `{
 	"color": {
 		"colorA": "#fff"
 	},
@@ -124,7 +124,7 @@ describe('compileJSON', () => {
 			}
 		]
 	}
-}`,
-		);
+}`;
+		assert.equal(compileStructJSON(testData), expected);
 	});
 });

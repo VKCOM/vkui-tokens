@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import type { Breakpoints } from '../../../interfaces/general/tools/index.ts';
 import type {
@@ -10,36 +11,40 @@ import { extractVarsNames, getVariableName } from './extractVarsNames.ts';
 describe('extractVarsNames', () => {
 	describe('getVariableName', () => {
 		it('should work only with key param', () => {
-			expect(getVariableName({ key: 'paddingBase' })).toBe('--vkui--padding_base');
+			assert.equal(getVariableName({ key: 'paddingBase' }), '--vkui--padding_base');
 		});
 
 		it('shoud work with custom prefix', () => {
-			expect(getVariableName({ key: 'paddingBase', prefix: 'myParadigm' })).toBe(
+			assert.equal(
+				getVariableName({ key: 'paddingBase', prefix: 'myParadigm' }),
 				'--my_paradigm--padding_base',
 			);
 		});
 
 		it('should work with custom prefix with double hyphen', () => {
-			expect(
+			assert.equal(
 				getVariableName({
 					key: 'lineHeight',
 					prefix: 'paradigm--fontH0',
 				}),
-			).toBe('--paradigm--font_h0--line_height');
+				'--paradigm--font_h0--line_height',
+			);
 		});
 
 		it('shoud work with auto mode', () => {
-			expect(getVariableName({ key: 'paddingBase', mode: 'auto' })).toBe('--vkui--padding_base');
+			assert.equal(getVariableName({ key: 'paddingBase', mode: 'auto' }), '--vkui--padding_base');
 		});
 
 		it('should work with nocamel mode', () => {
-			expect(getVariableName({ key: 'paddingBase', mode: 'touch' })).toBe(
+			assert.equal(
+				getVariableName({ key: 'paddingBase', mode: 'touch' }),
 				'--vkui--padding_base--touch',
 			);
 		});
 
 		it('should work with camel mode', () => {
-			expect(getVariableName({ key: 'paddingBase', mode: 'desktopS' })).toBe(
+			assert.equal(
+				getVariableName({ key: 'paddingBase', mode: 'desktopS' }),
 				'--vkui--padding_base--desktop_s',
 			);
 		});
@@ -49,7 +54,7 @@ describe('extractVarsNames', () => {
 		it('should work with empty', () => {
 			const theme: Partial<ParadigmTheme> = {};
 
-			expect(extractVarsNames(theme as ParadigmTheme)).toStrictEqual({});
+			assert.deepEqual(extractVarsNames(theme as ParadigmTheme), {});
 		});
 
 		it('should not touch breakpoints', () => {
@@ -78,7 +83,7 @@ describe('extractVarsNames', () => {
 
 			const expectedData = { breakpoints: { ...theme.breakpoints } };
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme), expectedData);
 		});
 
 		it('should change type', () => {
@@ -92,7 +97,7 @@ describe('extractVarsNames', () => {
 				themeType: 'cssVarsWide',
 			};
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme), expectedData);
 		});
 
 		it('should work with flat values', () => {
@@ -115,7 +120,7 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme), expectedData);
 		});
 
 		it('should ignore undefined values', () => {
@@ -127,7 +132,7 @@ describe('extractVarsNames', () => {
 
 			const expectedData: Partial<ParadigmThemeCssVarsWide> = {};
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme), expectedData);
 		});
 
 		it('should work with colors', () => {
@@ -160,7 +165,7 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme), expectedData);
 		});
 
 		it('should work with viewports values', () => {
@@ -191,7 +196,7 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme), expectedData);
 		});
 
 		it('should work with complex flat values', () => {
@@ -211,7 +216,7 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedResult);
+			assert.deepEqual(extractVarsNames(theme), expectedResult);
 		});
 
 		it('should work with complexity viewports values', () => {
@@ -263,101 +268,101 @@ describe('extractVarsNames', () => {
 							value: 'var(--vkui--font_h1--line_height--regular, 30px)',
 							originalValue: '30px',
 						},
-					} as any,
+					},
+				} as any,
+			};
+
+			assert.deepEqual(extractVarsNames(theme), expectedData);
+		});
+
+		it('should json stringify themeName and customMedia', () => {
+			type Prop = 'breakpoints' | 'themeName' | 'widthTouch';
+
+			const theme: Pick<ParadigmTheme, Prop> = {
+				breakpoints: {
+					touch: {
+						breakpoint: 0,
+						adaptiveValue: 'compact',
+					},
+					desktopS: {
+						breakpoint: 768,
+						adaptiveValue: 'regular',
+					},
+				},
+				themeName: 'kek',
+				widthTouch: '(max-width: 300px)',
+			};
+
+			const expectedData: Pick<ParadigmThemeCssVarsWide, Prop> = {
+				breakpoints: {
+					touch: {
+						breakpoint: 0,
+						adaptiveValue: 'compact',
+					},
+					desktopS: {
+						breakpoint: 768,
+						adaptiveValue: 'regular',
+					},
+				},
+				themeName: {
+					name: '--vkui--theme_name',
+					value: 'var(--vkui--theme_name, kek)',
+					originalValue: 'kek',
+				},
+				widthTouch: {
+					name: '--vkui--width_touch',
+					value: 'var(--vkui--width_touch, "(max-width: 300px)")',
+					originalValue: '"(max-width: 300px)"',
 				},
 			};
 
-			expect(extractVarsNames(theme)).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme), expectedData);
 		});
-	});
 
-	it('should json stringify themeName and customMedia', () => {
-		type Prop = 'breakpoints' | 'themeName' | 'widthTouch';
+		it('should work with custom construct', () => {
+			type Props = 'breakpoints' | 'x1' | 'x2';
+			const theme: Pick<ParadigmTheme, Props> = {
+				breakpoints: {
+					touch: {
+						breakpoint: 0,
+						adaptiveValue: 'compact',
+					},
+					desktopS: {
+						breakpoint: 768,
+						adaptiveValue: 'regular',
+					},
+				},
+				x1: 4,
+				x2: 8,
+			};
 
-		const theme: Pick<ParadigmTheme, Prop> = {
-			breakpoints: {
-				touch: {
-					breakpoint: 0,
-					adaptiveValue: 'compact',
+			const expectedData: Pick<ParadigmThemeCssVarsWide, Props> = {
+				breakpoints: {
+					touch: {
+						breakpoint: 0,
+						adaptiveValue: 'compact',
+					},
+					desktopS: {
+						breakpoint: 768,
+						adaptiveValue: 'regular',
+					},
 				},
-				desktopS: {
-					breakpoint: 768,
-					adaptiveValue: 'regular',
+				x1: {
+					name: '--vkui--x1',
+					value: '4px',
+					originalValue: '4px',
 				},
-			},
-			themeName: 'kek',
-			widthTouch: '(max-width: 300px)',
-		};
+				x2: {
+					name: '--vkui--x2',
+					value: '8px',
+					originalValue: '8px',
+				},
+			};
 
-		const expectedData: Pick<ParadigmThemeCssVarsWide, Prop> = {
-			breakpoints: {
-				touch: {
-					breakpoint: 0,
-					adaptiveValue: 'compact',
-				},
-				desktopS: {
-					breakpoint: 768,
-					adaptiveValue: 'regular',
-				},
-			},
-			themeName: {
-				name: '--vkui--theme_name',
-				value: 'var(--vkui--theme_name, kek)',
-				originalValue: 'kek',
-			},
-			widthTouch: {
-				name: '--vkui--width_touch',
-				value: 'var(--vkui--width_touch, "(max-width: 300px)")',
-				originalValue: '"(max-width: 300px)"',
-			},
-		};
+			// eslint-disable-next-line unicorn/consistent-function-scoping
+			const valueConstruct = (_: string, value: string) => value;
 
-		expect(extractVarsNames(theme)).toStrictEqual(expectedData);
-	});
-
-	it('should work with custom construct', () => {
-		type Props = 'breakpoints' | 'x1' | 'x2';
-		const theme: Pick<ParadigmTheme, Props> = {
-			breakpoints: {
-				touch: {
-					breakpoint: 0,
-					adaptiveValue: 'compact',
-				},
-				desktopS: {
-					breakpoint: 768,
-					adaptiveValue: 'regular',
-				},
-			},
-			x1: 4,
-			x2: 8,
-		};
-
-		const expectedData: Pick<ParadigmThemeCssVarsWide, Props> = {
-			breakpoints: {
-				touch: {
-					breakpoint: 0,
-					adaptiveValue: 'compact',
-				},
-				desktopS: {
-					breakpoint: 768,
-					adaptiveValue: 'regular',
-				},
-			},
-			x1: {
-				name: '--vkui--x1',
-				value: '4px',
-				originalValue: '4px',
-			},
-			x2: {
-				name: '--vkui--x2',
-				value: '8px',
-				originalValue: '8px',
-			},
-		};
-
-		// eslint-disable-next-line unicorn/consistent-function-scoping
-		const valueConstruct = (_: string, value: string) => value;
-
-		expect(extractVarsNames(theme, { valueConstruct })).toStrictEqual(expectedData);
+			assert.deepEqual(extractVarsNames(theme, { valueConstruct }), expectedData);
+		});
 	});
 });

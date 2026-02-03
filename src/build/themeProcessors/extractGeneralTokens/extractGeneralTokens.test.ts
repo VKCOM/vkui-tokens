@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { extractGeneralTokens } from './extractGeneralTokens.ts';
 
@@ -6,7 +7,7 @@ describe('mixColors', () => {
 	it('should return new object', () => {
 		const testData = {};
 
-		expect(extractGeneralTokens(testData as any)).not.toBe(testData);
+		assert.notEqual(extractGeneralTokens(testData as any), testData);
 	});
 
 	it('should delete colors', () => {
@@ -16,7 +17,7 @@ describe('mixColors', () => {
 			},
 		};
 
-		expect(extractGeneralTokens(testData as any)).toStrictEqual({});
+		assert.deepEqual(extractGeneralTokens(testData as any), {});
 	});
 
 	it('should save another props except colors', () => {
@@ -27,7 +28,7 @@ describe('mixColors', () => {
 			anotherProp: 'prop',
 		};
 
-		expect(extractGeneralTokens(testData as any)).toStrictEqual({
+		assert.deepEqual(extractGeneralTokens(testData as any), {
 			anotherProp: 'prop',
 		});
 	});

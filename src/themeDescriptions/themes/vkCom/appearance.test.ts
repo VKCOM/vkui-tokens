@@ -1,39 +1,44 @@
-import { describe, expect, test } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, test } from 'node:test';
 
 /* eslint-disable @typescript-eslint/naming-convention */
 import { resolveColor } from './appearance.ts';
 
 describe('vkCom/appearance', () => {
 	test('white', () => {
-		expect(
+		assert.equal(
 			resolveColor({
 				color_identifier: 'white',
 			}),
-		).toBe('#FFFFFF');
+			'#FFFFFF',
+		);
 	});
 
 	test('white_alpha12', () => {
-		expect(
+		assert.equal(
 			resolveColor({
 				color_identifier: 'white_alpha12',
 			}),
-		).toBe('rgba(255, 255, 255, 0.12)');
+			'rgba(255, 255, 255, 0.12)',
+		);
 	});
 
 	test('white with alpha_multiplier', () => {
-		expect(
+		assert.equal(
 			resolveColor({
 				color_identifier: 'white',
 				alpha_multiplier: 0.04,
 			}),
-		).toBe('rgba(255, 255, 255, 0.04)');
+			'rgba(255, 255, 255, 0.04)',
+		);
 	});
 
 	test('missing color', () => {
-		expect(
+		assert.equal(
 			resolveColor({
 				color_identifier: 'impossible',
 			}),
-		).toBe('#000');
+			'#000',
+		);
 	});
 });

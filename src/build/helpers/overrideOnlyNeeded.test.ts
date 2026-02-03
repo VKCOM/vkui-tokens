@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { overrideOnlyNeeded } from './overrideOnlyNeeded.ts';
 
@@ -6,8 +7,8 @@ describe('overrideOnlyNeeded', () => {
 	it('should return new object', () => {
 		const target = { a: 2, b: 3 };
 
-		expect(overrideOnlyNeeded(target, {})).not.toBe(target);
-		expect(overrideOnlyNeeded(target, {})).toStrictEqual(target);
+		assert.notEqual(overrideOnlyNeeded(target, {}), target);
+		assert.deepEqual(overrideOnlyNeeded(target, {}), target);
 	});
 
 	it('should not add new properties', () => {
@@ -16,8 +17,8 @@ describe('overrideOnlyNeeded', () => {
 
 		const result = overrideOnlyNeeded(target, override);
 
-		expect((result as any).c).toBeUndefined();
-		expect(result).toStrictEqual(target);
+		assert.equal((result as any).c, undefined);
+		assert.deepEqual(result, target);
 	});
 
 	it('should override props', () => {
@@ -26,7 +27,7 @@ describe('overrideOnlyNeeded', () => {
 
 		const result = overrideOnlyNeeded(target, override);
 
-		expect(result.a).toBe(32);
-		expect(result).toStrictEqual({ a: 32, b: 3 });
+		assert.equal(result.a, 32);
+		assert.deepEqual(result, { a: 32, b: 3 });
 	});
 });

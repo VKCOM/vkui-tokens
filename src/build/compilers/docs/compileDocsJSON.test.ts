@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { getTypeDocs } from './compileDocsJSON.ts';
 
@@ -9,7 +10,7 @@ describe('compileDocsJSON', () => {
 			'BaseTheme',
 		);
 
-		expect(docs).toEqual({
+		const expected = {
 			importedBaseProp: {
 				desc: [
 					{
@@ -19,13 +20,14 @@ describe('compileDocsJSON', () => {
 				],
 				tags: ['tag1', 'tag2'],
 			},
-		});
+		};
+		assert.deepEqual(docs, expected);
 	});
 
 	it('should correct compile documentation with jsdoc link', () => {
 		const docs = getTypeDocs('src/build/compilers/docs/__test__/testLinks.ts', 'BaseTheme');
 
-		expect(docs).toEqual({
+		const expected = {
 			importedBaseProp: {
 				desc: [
 					{
@@ -49,13 +51,14 @@ describe('compileDocsJSON', () => {
 				],
 				tags: [],
 			},
-		});
+		};
+		assert.deepEqual(docs, expected);
 	});
 
 	it('should correct compile documentation with imports', () => {
 		const docs = getTypeDocs('src/build/compilers/docs/__test__/testTheme.ts', 'ThemeTest');
 
-		expect(docs).toEqual({
+		const expected = {
 			prop: {
 				desc: [],
 				tags: ['empty description'],
@@ -76,6 +79,7 @@ describe('compileDocsJSON', () => {
 				desc: [{ type: 'text', text: 'Long description tag' }],
 				tags: ['tagListItem1', 'tagListItem2', 'tagListItem3'],
 			},
-		});
+		};
+		assert.deepEqual(docs, expected);
 	});
 });

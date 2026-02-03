@@ -1,11 +1,13 @@
-import { describe, expect, test } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, test } from 'node:test';
 
 import { alias, gradient, namedAlias, staticRef } from '../../build/helpers/tokenHelpers.ts';
 
 describe('tokenHelpers', () => {
 	describe('alias', () => {
 		test('maps token to another token', () => {
-			expect(alias('sizeArrow')({ sizeArrow: { regular: 10 } })).toEqual({
+			const result = alias('sizeArrow')({ sizeArrow: { regular: 10 } });
+			assert.deepEqual(result, {
 				regular: 10,
 			});
 		});
@@ -13,7 +15,8 @@ describe('tokenHelpers', () => {
 
 	describe('namedAlias', () => {
 		test('maps token to another token, preserving name', () => {
-			expect(namedAlias('sizeArrow')({ sizeArrow: { regular: 10 } })).toEqual([
+			const result = namedAlias('sizeArrow')({ sizeArrow: { regular: 10 } });
+			assert.deepEqual(result, [
 				'sizeArrow',
 				{
 					regular: 10,
@@ -24,13 +27,14 @@ describe('tokenHelpers', () => {
 
 	describe('staticRef', () => {
 		test('returns static value', () => {
-			expect(staticRef(10)).toEqual(10);
+			assert.deepEqual(staticRef(10), 10);
 		});
 
 		test('fails for dynamic value', () => {
-			expect(() => staticRef(alias('sizeArrow'))).toThrow(
-				'Cannot use callable token value in static ref',
-			);
+			assert.throws(() => staticRef(alias('sizeArrow')), {
+				name: 'Error',
+				message: 'Cannot use callable token value in static ref',
+			});
 		});
 	});
 
@@ -39,7 +43,8 @@ describe('tokenHelpers', () => {
 			const gradientToken = gradient('blue');
 			const gradientValue = gradientToken({});
 
-			expect(gradientValue).toEqual(
+			assert.equal(
+				gradientValue,
 				[
 					'rgba(0, 0, 255, 0) 0%',
 					'rgba(0, 0, 255, 0.05) 15%',
@@ -55,7 +60,8 @@ describe('tokenHelpers', () => {
 			const gradientToken = gradient(namedAlias('colorIconPrimary'));
 			const gradientValue = gradientToken({ colors: { colorIconPrimary: 'blue' } as any });
 
-			expect(gradientValue).toEqual(
+			assert.equal(
+				gradientValue,
 				[
 					'rgba(0, 0, 255, 0) 0%',
 					'rgba(0, 0, 255, 0.05) 15%',
@@ -71,7 +77,8 @@ describe('tokenHelpers', () => {
 			const gradientToken = gradient(namedAlias('colorIconPrimary'), 'transparent');
 			const gradientValue = gradientToken({ colors: { colorIconPrimary: 'blue' } as any });
 
-			expect(gradientValue).toEqual(
+			assert.equal(
+				gradientValue,
 				'var(--vkui--color_icon_primary, rgba(0, 0, 255, 1)) 0%, rgba(0, 0, 0, 0) 100%',
 			);
 		});
@@ -80,7 +87,8 @@ describe('tokenHelpers', () => {
 			const gradientToken = gradient('blue', 'black', 'red');
 			const gradientValue = gradientToken({});
 
-			expect(gradientValue).toEqual(
+			assert.equal(
+				gradientValue,
 				'rgba(0, 0, 255, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 0, 0, 1) 100%',
 			);
 		});

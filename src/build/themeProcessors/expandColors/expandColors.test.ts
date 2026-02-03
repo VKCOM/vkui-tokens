@@ -1,4 +1,5 @@
-import { describe, expect, it } from '@jest/globals';
+import * as assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
 
 import { getExpandedThemeColors } from './expandColors.ts';
 
@@ -8,7 +9,7 @@ describe('expandColors', () => {
 			colorsScheme: 'light',
 		} as const;
 
-		expect(getExpandedThemeColors(colorsTheme)).toStrictEqual(null);
+		assert.equal(getExpandedThemeColors(colorsTheme), null);
 	});
 
 	it('should return null if colorsScheme not specified', () => {
@@ -18,7 +19,7 @@ describe('expandColors', () => {
 			},
 		} as const;
 
-		expect(getExpandedThemeColors(colorsTheme)).toStrictEqual(null);
+		assert.equal(getExpandedThemeColors(colorsTheme), null);
 	});
 
 	it('should expand colors with states', () => {
@@ -38,7 +39,7 @@ describe('expandColors', () => {
 			},
 		};
 
-		expect(getExpandedThemeColors(colorsTheme)).toStrictEqual(result);
+		assert.deepEqual(getExpandedThemeColors(colorsTheme), result);
 	});
 
 	it('should expand colors with states dark scheme', () => {
@@ -58,7 +59,7 @@ describe('expandColors', () => {
 			},
 		};
 
-		expect(getExpandedThemeColors(colorsTheme)).toStrictEqual(result);
+		assert.deepEqual(getExpandedThemeColors(colorsTheme), result);
 	});
 
 	it('should expand transparent colors', () => {
@@ -78,7 +79,7 @@ describe('expandColors', () => {
 			colorsScheme: 'light',
 		};
 
-		expect(getExpandedThemeColors(colorsTheme)).toStrictEqual(result);
+		assert.deepEqual(getExpandedThemeColors(colorsTheme), result);
 	});
 
 	it('should expand transparent colors dark scheme', () => {
@@ -98,7 +99,7 @@ describe('expandColors', () => {
 			colorsScheme: 'dark',
 		};
 
-		expect(getExpandedThemeColors(colorsTheme)).toStrictEqual(result);
+		assert.deepEqual(getExpandedThemeColors(colorsTheme), result);
 	});
 
 	it('should not expand colors with already exists states', () => {
@@ -122,6 +123,6 @@ describe('expandColors', () => {
 			},
 		};
 
-		expect(getExpandedThemeColors(colorsTheme)).toStrictEqual(result);
+		assert.deepEqual(getExpandedThemeColors(colorsTheme), result);
 	});
 });
