@@ -4,16 +4,16 @@
  * Порядок важен
  */
 export const viewports = [
-	'touch',
-	'tablet',
-	'desktopS',
-	'desktopM',
-	'desktopL',
-	'desktopXL',
+  'touch',
+  'tablet',
+  'desktopS',
+  'desktopM',
+  'desktopL',
+  'desktopXL',
 ] as const;
 
 export type Mutable<T> = {
-	-readonly [P in keyof T]: T[P] extends ReadonlyArray<infer U> ? U[] : T[P];
+  -readonly [P in keyof T]: T[P] extends ReadonlyArray<infer U> ? U[] : T[P];
 };
 
 export type ViewportsOrdered = Mutable<typeof viewports>;

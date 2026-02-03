@@ -4,12 +4,12 @@ import { describe, it } from 'node:test';
 import { compileTypeScript } from '../../../build/compilers/ts/compileTypeScript.ts';
 
 describe('compileTypeScript', () => {
-	const testData = {
-		themeName: 'base',
-	};
+  const testData = {
+    themeName: 'base',
+  };
 
-	it('should work', () => {
-		const expected = `import { $$InterfaceName$$ } from '$$InterfaceURL$$';
+  it('should work', () => {
+    const expected = `import { $$InterfaceName$$ } from '$$InterfaceURL$$';
 
 const theme: $$InterfaceName$$ = {
 	"themeName": "base"
@@ -18,6 +18,6 @@ const theme: $$InterfaceName$$ = {
 export default theme;
 export { $$InterfaceName$$ };
 `;
-		assert.equal(compileTypeScript(testData), expected);
-	});
+    assert.equal(compileTypeScript(testData), expected);
+  });
 });

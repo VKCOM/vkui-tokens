@@ -3,22 +3,22 @@ import type { ThemeCssVars } from '../../general/index.ts';
 import type { ParadigmTheme, ParadigmThemeDescription } from '../../namespaces/paradigm/index.ts';
 
 export interface LocalWorkspaceLandingsColorDescriptionStruct {
-	workspaceLandingsColorBackgroundDark1: ColorDescription;
-	workspaceLandingsColorBackgroundDark2: ColorDescription;
-	workspaceLandingsColorBackgroundBlue: ColorDescription;
-	workspaceLandingsColorTextGray: ColorDescription;
-	workspaceLandingsColorTextGreen: ColorDescription;
+  workspaceLandingsColorBackgroundDark1: ColorDescription;
+  workspaceLandingsColorBackgroundDark2: ColorDescription;
+  workspaceLandingsColorBackgroundBlue: ColorDescription;
+  workspaceLandingsColorTextGray: ColorDescription;
+  workspaceLandingsColorTextGreen: ColorDescription;
 }
 
 export type WorkspaceLandingsLocalColors = {
-	[key in keyof LocalWorkspaceLandingsColorDescriptionStruct]: ColorWithStates;
+  [key in keyof LocalWorkspaceLandingsColorDescriptionStruct]: ColorWithStates;
 };
 
 export interface ThemeWorkspaceLandings extends ParadigmTheme, WorkspaceLandingsLocalColors {}
 
 export interface ThemeWorkspaceLandingsDescription extends ParadigmThemeDescription {
-	colors: LocalWorkspaceLandingsColorDescriptionStruct & ParadigmThemeDescription['colors'];
+  colors: LocalWorkspaceLandingsColorDescriptionStruct & ParadigmThemeDescription['colors'];
 }
 
 export interface ThemeWorkspaceLandingsCssVars
-	extends ThemeCssVars<ThemeWorkspaceLandings, 'breakpoints'> {}
+  extends ThemeCssVars<ThemeWorkspaceLandings, 'breakpoints'> {}

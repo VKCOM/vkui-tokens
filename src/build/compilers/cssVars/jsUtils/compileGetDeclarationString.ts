@@ -8,25 +8,25 @@ import type { Theme, ThemeCssVarsWide } from '../../../../interfaces/general/ind
 export type DeclarationType = 'default' | 'onlyColors';
 
 export function compileGetDeclarationString<T = Theme>(
-	sourceTheme: ThemeCssVarsWide<T>,
-	type: DeclarationType = 'default',
+  sourceTheme: ThemeCssVarsWide<T>,
+  type: DeclarationType = 'default',
 ): string {
-	const theme: ThemeCssVarsWide<T> =
-		type === 'onlyColors' ? getOnlyColors(sourceTheme) : sourceTheme;
+  const theme: ThemeCssVarsWide<T> =
+    type === 'onlyColors' ? getOnlyColors(sourceTheme) : sourceTheme;
 
-	const { flatValues } = accumulateValues({
-		theme,
-	});
+  const { flatValues } = accumulateValues({
+    theme,
+  });
 
-	return stripIndent`
+  return stripIndent`
 	import {Properties} from 'csstype';
 
 	export function getDeclarationVar${type === 'onlyColors' ? 'Colors' : ''}String(): string {
 		return \`${getVarString({
-			valuesObject: flatValues,
-			prefix: '',
-			delimeter: '',
-		})}\`;
+      valuesObject: flatValues,
+      prefix: '',
+      delimeter: '',
+    })}\`;
 	}
 
 	export function getDeclarationVar${type === 'onlyColors' ? 'Colors' : ''}Object(): Properties {

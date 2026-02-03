@@ -1,7 +1,7 @@
 import type {
-	ThemePortalUI,
-	ThemePortalUICssVars,
-	ThemePortalUIDescription,
+  ThemePortalUI,
+  ThemePortalUICssVars,
+  ThemePortalUIDescription,
 } from '../portalUI/index.ts';
 
 export interface ThemePortalUIDark extends ThemePortalUI {}

@@ -3,45 +3,45 @@ import color from 'color';
 import { expandColor } from '../../../build/themeProcessors/expandColors/expandColors.ts';
 import { mixColors } from '../../../build/themeProcessors/expandColors/mixColors.ts';
 import type {
-	ColorDescription,
-	ColorDescriptionCallable,
-	ColorsDescriptionStruct,
+  ColorDescription,
+  ColorDescriptionCallable,
+  ColorsDescriptionStruct,
 } from '../../../interfaces/general/colors/index.ts';
 import type { ColorsDescription } from '../../../interfaces/general/index.ts';
 
 export function overlayColors<
-	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
+  T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
 >(
-	background: ColorDescription<T>,
-	foreground: ColorDescription<T>,
-	state: 'normal' | 'hover' | 'active' | 'auto' = 'normal',
+  background: ColorDescription<T>,
+  foreground: ColorDescription<T>,
+  state: 'normal' | 'hover' | 'active' | 'auto' = 'normal',
 ): ColorDescriptionCallable<T> {
-	return (theme: Partial<ColorsDescription<T>>) => {
-		const bgColor = expandColor(background, theme);
-		const fgColor = expandColor(foreground, theme);
+  return (theme: Partial<ColorsDescription<T>>) => {
+    const bgColor = expandColor(background, theme);
+    const fgColor = expandColor(foreground, theme);
 
-		const fgColorParsed = {
-			normal: color(fgColor.normal),
-			hover: color(fgColor.hover),
-			active: color(fgColor.active),
-		};
+    const fgColorParsed = {
+      normal: color(fgColor.normal),
+      hover: color(fgColor.hover),
+      active: color(fgColor.active),
+    };
 
-		return {
-			normal: mixColors(
-				bgColor[state === 'auto' ? 'normal' : state],
-				fgColorParsed.normal.rgb().string(),
-				fgColorParsed.normal.alpha(),
-			),
-			hover: mixColors(
-				bgColor[state === 'auto' ? 'hover' : state],
-				fgColorParsed.hover.rgb().string(),
-				fgColorParsed.hover.alpha(),
-			),
-			active: mixColors(
-				bgColor[state === 'auto' ? 'active' : state],
-				fgColorParsed.active.rgb().string(),
-				fgColorParsed.active.alpha(),
-			),
-		};
-	};
+    return {
+      normal: mixColors(
+        bgColor[state === 'auto' ? 'normal' : state],
+        fgColorParsed.normal.rgb().string(),
+        fgColorParsed.normal.alpha(),
+      ),
+      hover: mixColors(
+        bgColor[state === 'auto' ? 'hover' : state],
+        fgColorParsed.hover.rgb().string(),
+        fgColorParsed.hover.alpha(),
+      ),
+      active: mixColors(
+        bgColor[state === 'auto' ? 'active' : state],
+        fgColorParsed.active.rgb().string(),
+        fgColorParsed.active.alpha(),
+      ),
+    };
+  };
 }

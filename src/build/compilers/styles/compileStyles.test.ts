@@ -11,45 +11,45 @@ import type { Formats } from './helpers/tokenProcessors.ts';
 import { EStyleTypes } from './helpers/tokenProcessors.ts';
 
 type DescriptionTheme = Partial<PixelifyTheme<ParadigmTheme>> &
-	Pick<PixelifyTheme, 'themeName' | 'colorsScheme'>;
+  Pick<PixelifyTheme, 'themeName' | 'colorsScheme'>;
 
 interface TestVars {
-	descriptionTheme: DescriptionTheme & Record<any, any>;
-	descriptionThemeBase?: DescriptionTheme & Record<any, any>;
-	mode?: CompileStylesMode;
-	result: {
-		[key in Formats]: string;
-	};
+  descriptionTheme: DescriptionTheme & Record<any, any>;
+  descriptionThemeBase?: DescriptionTheme & Record<any, any>;
+  mode?: CompileStylesMode;
+  result: {
+    [key in Formats]: string;
+  };
 }
 
 const formats = Object.values(EStyleTypes);
 
 function runTest(format: Formats, testData: TestVars) {
-	const compiled = compileStyles(
-		format,
-		testData.descriptionTheme as any,
-		testData.mode,
-		testData.descriptionThemeBase as any,
-	);
+  const compiled = compileStyles(
+    format,
+    testData.descriptionTheme as any,
+    testData.mode,
+    testData.descriptionThemeBase as any,
+  );
 
-	assert.equal(compiled, testData.result[format]);
+  assert.equal(compiled, testData.result[format]);
 }
 
 describe('compileStyles', () => {
-	for (const format of formats) {
-		test(`${format}: should compile colors`, () => {
-			runTest(format, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					colorAccent: {
-						normal: 'blue',
-						hover: 'darkblue',
-						active: 'darkslateblue',
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile colors`, () => {
+      runTest(format, {
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          colorAccent: {
+            normal: 'blue',
+            hover: 'darkblue',
+            active: 'darkslateblue',
+          },
+        },
+        result: {
+          css: stripIndent`
 				:root {
 					--vkui--theme_name: 'testTheme';
 					--vkui--colors_scheme: light;
@@ -58,14 +58,14 @@ describe('compileStyles', () => {
 					--vkui--color_accent--active: darkslateblue;
 				}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 					$theme-name: 'testTheme';
 					$colors-scheme: light;
 					$color-accent: blue;
 					$color-accent--hover: darkblue;
 					$color-accent--active: darkslateblue;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
@@ -74,38 +74,38 @@ describe('compileStyles', () => {
 					--color-accent--active: darkslateblue;
 				}
 				`,
-					less: stripIndent`
+          less: stripIndent`
 				@theme-name: 'testTheme';
 				@colors-scheme: light;
 				@color-accent: blue;
 				@color-accent--hover: darkblue;
 				@color-accent--active: darkslateblue;
 				`,
-					styl: stripIndent`
+          styl: stripIndent`
 				$theme-name = 'testTheme';
 				$colors-scheme = light;
 				$color-accent = blue;
 				$color-accent--hover = darkblue;
 				$color-accent--active = darkslateblue;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile flat class variables`, () => {
-			runTest(format, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					fontSome: {
-						fontSize: '16px',
-						lineHeight: '25px',
-					},
-				} as any,
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile flat class variables`, () => {
+      runTest(format, {
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          fontSome: {
+            fontSize: '16px',
+            lineHeight: '25px',
+          },
+        } as any,
+        result: {
+          css: stripIndent`
 				:root {
 					--vkui--theme_name: 'testTheme';
 					--vkui--colors_scheme: light;
@@ -120,7 +120,7 @@ describe('compileStyles', () => {
 					line-height: var(--vkui--font_some--line_height, 25px);
 				}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 				$theme-name: 'testTheme';
 				$colors-scheme: light;
 
@@ -134,7 +134,7 @@ describe('compileStyles', () => {
 					'lineHeight': 25px,
 				);
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
@@ -145,7 +145,7 @@ describe('compileStyles', () => {
 					line-height: 25px;
 				}
 				`,
-					less: stripIndent`
+          less: stripIndent`
 				@theme-name: 'testTheme';
 				@colors-scheme: light;
 
@@ -156,7 +156,7 @@ describe('compileStyles', () => {
 				}
 				`,
 
-					styl: stripIndent`
+          styl: stripIndent`
 				$theme-name = 'testTheme';
 				$colors-scheme = light;
 
@@ -166,32 +166,32 @@ describe('compileStyles', () => {
 					line-height: 25px;
 				}
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile adaptive class variables`, () => {
-			runTest(format, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					fontText: {
-						regular: {
-							fontSize: '15px',
-							lineHeight: '20px',
-							fontFamily: 'Arial',
-							fontWeight: 500,
-						},
-						compactX: {
-							fontSize: '16px',
-							lineHeight: '24px',
-						},
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile adaptive class variables`, () => {
+      runTest(format, {
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          fontText: {
+            regular: {
+              fontSize: '15px',
+              lineHeight: '20px',
+              fontFamily: 'Arial',
+              fontWeight: 500,
+            },
+            compactX: {
+              fontSize: '16px',
+              lineHeight: '24px',
+            },
+          },
+        },
+        result: {
+          css: stripIndent`
 				:root {
 					--vkui--theme_name: 'testTheme';
 					--vkui--colors_scheme: light;
@@ -224,7 +224,7 @@ describe('compileStyles', () => {
 					font-weight: var(--vkui--font_text--font_weight--regular, 500);
 				}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 				$theme-name: 'testTheme';
 				$colors-scheme: light;
 
@@ -260,7 +260,7 @@ describe('compileStyles', () => {
 					'fontWeight': 500,
 				);
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
@@ -279,7 +279,7 @@ describe('compileStyles', () => {
 					font-weight: 500;
 				}
 				`,
-					less: stripIndent`
+          less: stripIndent`
 				@theme-name: 'testTheme';
 				@colors-scheme: light;
 
@@ -298,7 +298,7 @@ describe('compileStyles', () => {
 				}
 				`,
 
-					styl: stripIndent`
+          styl: stripIndent`
 				$theme-name = 'testTheme';
 				$colors-scheme = light;
 
@@ -316,26 +316,26 @@ describe('compileStyles', () => {
 					font-weight: 500;
 				}
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile adaptive flat variables`, () => {
-			runTest(format, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					sizePopupBasePadding: {
-						compact: '20px',
-						regular: '32px',
-						large: '40px',
-						largeX: '50px',
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile adaptive flat variables`, () => {
+      runTest(format, {
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          sizePopupBasePadding: {
+            compact: '20px',
+            regular: '32px',
+            large: '40px',
+            largeX: '50px',
+          },
+        },
+        result: {
+          css: stripIndent`
 				:root {
 					--vkui--theme_name: 'testTheme';
 					--vkui--colors_scheme: light;
@@ -345,7 +345,7 @@ describe('compileStyles', () => {
 					--vkui--size_popup_base_padding--large_x: 50px;
 				}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 				$theme-name: 'testTheme';
 				$colors-scheme: light;
 				$size-popup-base-padding--compact: 20px;
@@ -353,7 +353,7 @@ describe('compileStyles', () => {
 				$size-popup-base-padding--large: 40px;
 				$size-popup-base-padding--large-x: 50px;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
@@ -363,7 +363,7 @@ describe('compileStyles', () => {
 					--size-popup-base-padding--large_x: 50px;
 				}
 				`,
-					less: stripIndent`
+          less: stripIndent`
 				@theme-name: 'testTheme';
 				@colors-scheme: light;
 				@size-popup-base-padding--compact: 20px;
@@ -372,7 +372,7 @@ describe('compileStyles', () => {
 				@size-popup-base-padding--large-x: 50px;
 				`,
 
-					styl: stripIndent`
+          styl: stripIndent`
 				$theme-name = 'testTheme';
 				$colors-scheme = light;
 				$size-popup-base-padding--compact = 20px;
@@ -380,71 +380,71 @@ describe('compileStyles', () => {
 				$size-popup-base-padding--large = 40px;
 				$size-popup-base-padding--large-x = 50px;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile flat variables`, () => {
-			runTest(format, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					opacityDisable: 0.4,
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile flat variables`, () => {
+      runTest(format, {
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          opacityDisable: 0.4,
+        },
+        result: {
+          css: stripIndent`
 				:root {
 					--vkui--theme_name: 'testTheme';
 					--vkui--colors_scheme: light;
 					--vkui--opacity_disable: 0.4;
 				}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 				$theme-name: 'testTheme';
 				$colors-scheme: light;
 				$opacity-disable: 0.4;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
 					--opacity-disable: 0.4;
 				}
 				`,
-					less: stripIndent`
+          less: stripIndent`
 				@theme-name: 'testTheme';
 				@colors-scheme: light;
 				@opacity-disable: 0.4;
 				`,
 
-					styl: stripIndent`
+          styl: stripIndent`
 				$theme-name = 'testTheme';
 				$colors-scheme = light;
 				$opacity-disable = 0.4;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile media queries`, () => {
-			runTest(format, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					widthTablet: '(min-width: 768px) and (max-width: 999px)',
-					widthToDesktopL: '(max-width: 2199px)',
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile media queries`, () => {
+      runTest(format, {
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          widthTablet: '(min-width: 768px) and (max-width: 999px)',
+          widthToDesktopL: '(max-width: 2199px)',
+        },
+        result: {
+          css: stripIndent`
 				:root {
 					--vkui--theme_name: 'testTheme';
 					--vkui--colors_scheme: light;
 				}`,
-					scss: stripIndent`
+          scss: stripIndent`
 				$theme-name: 'testTheme';
 				$colors-scheme: light;
 
@@ -456,7 +456,7 @@ describe('compileStyles', () => {
 					@media (max-width: 2199px) { @content; }
 				}
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
@@ -465,7 +465,7 @@ describe('compileStyles', () => {
 				@custom-media --width-tablet (min-width: 768px) and (max-width: 999px);
 				@custom-media --width-to-desktop-l (max-width: 2199px);
 				`,
-					less: stripIndent`
+          less: stripIndent`
 				@theme-name: 'testTheme';
 				@colors-scheme: light;
 
@@ -478,7 +478,7 @@ describe('compileStyles', () => {
 				}
 				`,
 
-					styl: stripIndent`
+          styl: stripIndent`
 				$theme-name = 'testTheme';
 				$colors-scheme = light;
 
@@ -490,33 +490,33 @@ describe('compileStyles', () => {
 					@media (max-width: 2199px) { content }
 				}
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile adaptive class variables with onlyAdaptiveGroups`, () => {
-			runTest(format, {
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					fontText: {
-						regular: {
-							fontSize: '15px',
-							lineHeight: '20px',
-							fontFamily: 'Arial',
-							fontWeight: 500,
-						},
-						compact: {
-							fontSize: '16px',
-							lineHeight: '24px',
-						},
-					},
-				},
-				mode: 'onlyAdaptiveGroups',
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile adaptive class variables with onlyAdaptiveGroups`, () => {
+      runTest(format, {
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          fontText: {
+            regular: {
+              fontSize: '15px',
+              lineHeight: '20px',
+              fontFamily: 'Arial',
+              fontWeight: 500,
+            },
+            compact: {
+              fontSize: '16px',
+              lineHeight: '24px',
+            },
+          },
+        },
+        mode: 'onlyAdaptiveGroups',
+        result: {
+          css: stripIndent`
 				.vkui--font_text {
 					font-size: var(--vkui--font_text--font_size);
 					line-height: var(--vkui--font_text--line_height);
@@ -524,38 +524,38 @@ describe('compileStyles', () => {
 					font-weight: var(--vkui--font_text--font_weight);
 				}
 				`,
-					scss: stripIndent``,
-					pcss: stripIndent``,
-					less: stripIndent``,
+          scss: stripIndent``,
+          pcss: stripIndent``,
+          less: stripIndent``,
 
-					styl: stripIndent``,
-				},
-			});
-		});
-	}
+          styl: stripIndent``,
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile adaptive class variables with mode=withAdaptiveGroups`, () => {
-			runTest(format, {
-				mode: 'withAdaptiveGroups',
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					fontText: {
-						regular: {
-							fontSize: '15px',
-							lineHeight: '20px',
-							fontFamily: 'Arial',
-							fontWeight: 500,
-						},
-						compact: {
-							fontSize: '16px',
-							lineHeight: '24px',
-						},
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile adaptive class variables with mode=withAdaptiveGroups`, () => {
+      runTest(format, {
+        mode: 'withAdaptiveGroups',
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          fontText: {
+            regular: {
+              fontSize: '15px',
+              lineHeight: '20px',
+              fontFamily: 'Arial',
+              fontWeight: 500,
+            },
+            compact: {
+              fontSize: '16px',
+              lineHeight: '24px',
+            },
+          },
+        },
+        result: {
+          css: stripIndent`
 				:root {
 					--vkui--theme_name: 'testTheme';
 					--vkui--colors_scheme: light;
@@ -594,7 +594,7 @@ describe('compileStyles', () => {
 					font-weight: var(--vkui--font_text--font_weight--regular, 500);
 				}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 				$theme-name: 'testTheme';
 				$colors-scheme: light;
 
@@ -630,7 +630,7 @@ describe('compileStyles', () => {
 					'fontWeight': 500,
 				);
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
@@ -649,7 +649,7 @@ describe('compileStyles', () => {
 					font-weight: 500;
 				}
 				`,
-					less: stripIndent`
+          less: stripIndent`
 				@theme-name: 'testTheme';
 				@colors-scheme: light;
 
@@ -668,7 +668,7 @@ describe('compileStyles', () => {
 				}
 				`,
 
-					styl: stripIndent`
+          styl: stripIndent`
 				$theme-name = 'testTheme';
 				$colors-scheme = light;
 
@@ -686,79 +686,79 @@ describe('compileStyles', () => {
 					font-weight: 500;
 				}
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile onlyColors`, () => {
-			runTest(format, {
-				mode: 'onlyColors',
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					sizeBasePadding: {
-						regular: 20,
-					},
-					colorBackground: {
-						normal: '#FFF',
-						hover: '#AAA',
-						active: '#CCC',
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile onlyColors`, () => {
+      runTest(format, {
+        mode: 'onlyColors',
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          sizeBasePadding: {
+            regular: 20,
+          },
+          colorBackground: {
+            normal: '#FFF',
+            hover: '#AAA',
+            active: '#CCC',
+          },
+        },
+        result: {
+          css: stripIndent`
 					:root {
 						--vkui--color_background: #FFF;
 						--vkui--color_background--hover: #AAA;
 						--vkui--color_background--active: #CCC;
 					}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 					$color-background: #FFF;
 					$color-background--hover: #AAA;
 					$color-background--active: #CCC;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--color-background: #FFF;
 					--color-background--hover: #AAA;
 					--color-background--active: #CCC;
 				}`,
-					less: stripIndent`
+          less: stripIndent`
 					@color-background: #FFF;
 					@color-background--hover: #AAA;
 					@color-background--active: #CCC;
 				`,
-					styl: stripIndent`
+          styl: stripIndent`
 					$color-background = #FFF;
 					$color-background--hover = #AAA;
 					$color-background--active = #CCC;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile noSizes`, () => {
-			runTest(format, {
-				mode: 'noSizes',
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					sizeBasePadding: {
-						regular: 20,
-					},
-					colorBackground: {
-						normal: '#FFF',
-						hover: '#AAA',
-						active: '#CCC',
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile noSizes`, () => {
+      runTest(format, {
+        mode: 'noSizes',
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          sizeBasePadding: {
+            regular: 20,
+          },
+          colorBackground: {
+            normal: '#FFF',
+            hover: '#AAA',
+            active: '#CCC',
+          },
+        },
+        result: {
+          css: stripIndent`
 					:root {
 						--vkui--theme_name: 'testTheme';
 						--vkui--colors_scheme: light;
@@ -767,14 +767,14 @@ describe('compileStyles', () => {
 						--vkui--color_background--active: #CCC;
 					}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 					$theme-name: 'testTheme';
 					$colors-scheme: light;
 					$color-background: #FFF;
 					$color-background--hover: #AAA;
 					$color-background--active: #CCC;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--colors-scheme: light;
@@ -782,86 +782,86 @@ describe('compileStyles', () => {
 					--color-background--hover: #AAA;
 					--color-background--active: #CCC;
 				}`,
-					less: stripIndent`
+          less: stripIndent`
 					@theme-name: 'testTheme';
 					@colors-scheme: light;
 					@color-background: #FFF;
 					@color-background--hover: #AAA;
 					@color-background--active: #CCC;
 				`,
-					styl: stripIndent`
+          styl: stripIndent`
 					$theme-name = 'testTheme';
 					$colors-scheme = light;
 					$color-background = #FFF;
 					$color-background--hover = #AAA;
 					$color-background--active = #CCC;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: should compile noColors`, () => {
-			runTest(format, {
-				mode: 'noColors',
-				descriptionTheme: {
-					themeName: 'testTheme',
-					colorsScheme: 'light',
-					sizeBasePadding: {
-						regular: '20px',
-					},
-					colorBackground: {
-						normal: '#FFF',
-						hover: '#AAA',
-						active: '#CCC',
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: should compile noColors`, () => {
+      runTest(format, {
+        mode: 'noColors',
+        descriptionTheme: {
+          themeName: 'testTheme',
+          colorsScheme: 'light',
+          sizeBasePadding: {
+            regular: '20px',
+          },
+          colorBackground: {
+            normal: '#FFF',
+            hover: '#AAA',
+            active: '#CCC',
+          },
+        },
+        result: {
+          css: stripIndent`
 					:root {
 						--vkui--theme_name: 'testTheme';
 						--vkui--size_base_padding--regular: 20px;
 					}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 					$theme-name: 'testTheme';
 					$size-base-padding--regular: 20px;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				:root {
 					--theme-name: 'testTheme';
 					--size-base-padding--regular: 20px;
 				}`,
-					less: stripIndent`
+          less: stripIndent`
 					@theme-name: 'testTheme';
 					@size-base-padding--regular: 20px;
 				`,
-					styl: stripIndent`
+          styl: stripIndent`
 					$theme-name = 'testTheme';
 					$size-base-padding--regular = 20px;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: customized selector in onlyVariablesLocal`, () => {
-			runTest(format, {
-				mode: 'onlyVariablesLocal',
-				descriptionTheme: {
-					themeName: 'vkIOSDark',
-					themeNameBase: 'vkIOS',
-					colorsScheme: 'dark',
-					colorBackground: {
-						normal: '#FFF',
-						hover: '#AAA',
-						active: '#CCC',
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: customized selector in onlyVariablesLocal`, () => {
+      runTest(format, {
+        mode: 'onlyVariablesLocal',
+        descriptionTheme: {
+          themeName: 'vkIOSDark',
+          themeNameBase: 'vkIOS',
+          colorsScheme: 'dark',
+          colorBackground: {
+            normal: '#FFF',
+            hover: '#AAA',
+            active: '#CCC',
+          },
+        },
+        result: {
+          css: stripIndent`
 					.vkui--vkIOS--dark {
 						--vkui--theme_name: 'vkIOSDark';
 						--vkui--theme_name_base: 'vkIOS';
@@ -871,7 +871,7 @@ describe('compileStyles', () => {
 						--vkui--color_background--active: #CCC;
 					}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 					$theme-name: 'vkIOSDark';
 					$theme-name-base: 'vkIOS';
 					$colors-scheme: dark;
@@ -879,7 +879,7 @@ describe('compileStyles', () => {
 					$color-background--hover: #AAA;
 					$color-background--active: #CCC;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				.vkui--vkIOS--dark {
 					--theme-name: 'vkIOSDark';
 					--theme-name-base: 'vkIOS';
@@ -888,7 +888,7 @@ describe('compileStyles', () => {
 					--color-background--hover: #AAA;
 					--color-background--active: #CCC;
 				}`,
-					less: stripIndent`
+          less: stripIndent`
 					@theme-name: 'vkIOSDark';
 					@theme-name-base: 'vkIOS';
 					@colors-scheme: dark;
@@ -896,7 +896,7 @@ describe('compileStyles', () => {
 					@color-background--hover: #AAA;
 					@color-background--active: #CCC;
 				`,
-					styl: stripIndent`
+          styl: stripIndent`
 					$theme-name = 'vkIOSDark';
 					$theme-name-base = 'vkIOS';
 					$colors-scheme = dark;
@@ -904,43 +904,43 @@ describe('compileStyles', () => {
 					$color-background--hover = #AAA;
 					$color-background--active = #CCC;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 
-	for (const format of formats) {
-		test(`${format}: onlyVariablesLocalIncremental`, () => {
-			runTest(format, {
-				mode: 'onlyVariablesLocalIncremental',
-				descriptionTheme: {
-					themeName: 'vkIOSDark',
-					themeNameBase: 'vkIOS',
-					themeInheritsFrom: 'vkIOS',
-					colorsScheme: 'dark',
-					sizeBasePadding: {
-						regular: '20px',
-					},
-					colorBackground: {
-						normal: '#FFF',
-						hover: '#AAA',
-						active: '#CCC',
-					},
-				},
-				descriptionThemeBase: {
-					themeName: 'vkIOS',
-					colorsScheme: 'light',
-					sizeBasePadding: {
-						regular: '20px',
-					},
-					colorBackground: {
-						normal: '#AAA',
-						hover: '#AAA',
-						active: '#CCC',
-					},
-				},
-				result: {
-					css: stripIndent`
+  for (const format of formats) {
+    test(`${format}: onlyVariablesLocalIncremental`, () => {
+      runTest(format, {
+        mode: 'onlyVariablesLocalIncremental',
+        descriptionTheme: {
+          themeName: 'vkIOSDark',
+          themeNameBase: 'vkIOS',
+          themeInheritsFrom: 'vkIOS',
+          colorsScheme: 'dark',
+          sizeBasePadding: {
+            regular: '20px',
+          },
+          colorBackground: {
+            normal: '#FFF',
+            hover: '#AAA',
+            active: '#CCC',
+          },
+        },
+        descriptionThemeBase: {
+          themeName: 'vkIOS',
+          colorsScheme: 'light',
+          sizeBasePadding: {
+            regular: '20px',
+          },
+          colorBackground: {
+            normal: '#AAA',
+            hover: '#AAA',
+            active: '#CCC',
+          },
+        },
+        result: {
+          css: stripIndent`
 					.vkui--vkIOS--dark {
 						--vkui--theme_name: 'vkIOSDark';
 						--vkui--theme_name_base: 'vkIOS';
@@ -951,7 +951,7 @@ describe('compileStyles', () => {
 						--vkui--color_background--active: #CCC;
 					}
 				`,
-					scss: stripIndent`
+          scss: stripIndent`
 					$theme-name: 'vkIOSDark';
 					$theme-name-base: 'vkIOS';
 					$theme-inherits-from: 'vkIOS';
@@ -960,7 +960,7 @@ describe('compileStyles', () => {
 					$color-background--hover: #AAA;
 					$color-background--active: #CCC;
 				`,
-					pcss: stripIndent`
+          pcss: stripIndent`
 				.vkui--vkIOS--dark {
 					--theme-name: 'vkIOSDark';
 					--theme-name-base: 'vkIOS';
@@ -970,7 +970,7 @@ describe('compileStyles', () => {
 					--color-background--hover: #AAA;
 					--color-background--active: #CCC;
 				}`,
-					less: stripIndent`
+          less: stripIndent`
 					@theme-name: 'vkIOSDark';
 					@theme-name-base: 'vkIOS';
 					@theme-inherits-from: 'vkIOS';
@@ -979,7 +979,7 @@ describe('compileStyles', () => {
 					@color-background--hover: #AAA;
 					@color-background--active: #CCC;
 				`,
-					styl: stripIndent`
+          styl: stripIndent`
 					$theme-name = 'vkIOSDark';
 					$theme-name-base = 'vkIOS';
 					$theme-inherits-from = 'vkIOS';
@@ -988,8 +988,8 @@ describe('compileStyles', () => {
 					$color-background--hover = #AAA;
 					$color-background--active = #CCC;
 				`,
-				},
-			});
-		});
-	}
+        },
+      });
+    });
+  }
 });

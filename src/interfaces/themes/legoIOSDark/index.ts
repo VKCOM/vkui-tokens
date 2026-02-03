@@ -1,5 +1,5 @@
 export type {
-	ThemeLegoIOS as ThemeLegoIOSDark,
-	ThemeLegoIOSCssVars as ThemeLegoIOSDarkCssVars,
-	ThemeLegoIOSDescription as ThemeLegoIOSDarkDescription,
+  ThemeLegoIOS as ThemeLegoIOSDark,
+  ThemeLegoIOSCssVars as ThemeLegoIOSDarkCssVars,
+  ThemeLegoIOSDescription as ThemeLegoIOSDarkDescription,
 } from '../../themes/legoIOS/index.ts';
