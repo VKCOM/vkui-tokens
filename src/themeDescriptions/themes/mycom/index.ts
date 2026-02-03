@@ -6,24 +6,24 @@ import { mediaTheme } from '../media/index.ts';
 
 const fontFamily = 'Proxima Nova, Arial, sans-serif';
 const themeWithFontFamily: ThemeMediaDescription = replacePropDeep(mediaTheme, {
-	fontFamily,
+  fontFamily,
 });
 delete themeWithFontFamily.prefix;
 
 export const mycomTheme: ThemeMycomDescription = {
-	...themeWithFontFamily,
-	themeName: 'mycom',
-	themeNameBase: 'mycom',
-	colors: {
-		...themeWithFontFamily.colors,
-		colorTextAccent: projectColors.colorPrimaryMycom,
-		colorIconAccent: projectColors.colorPrimaryMycom,
-		colorBackgroundAccent: projectColors.colorPrimaryMycom,
-		colorStrokeAccent: projectColors.colorPrimaryMycom,
-		colorSale: projectColors.colorSecondaryMycom,
-	},
-	fontFamily,
-	sizeSelectIconPadding: {
-		regular: 7,
-	},
+  ...themeWithFontFamily,
+  themeName: 'mycom',
+  themeNameBase: 'mycom',
+  colors: {
+    ...themeWithFontFamily.colors,
+    colorTextAccent: projectColors.colorPrimaryMycom,
+    colorIconAccent: projectColors.colorPrimaryMycom,
+    colorBackgroundAccent: projectColors.colorPrimaryMycom,
+    colorStrokeAccent: projectColors.colorPrimaryMycom,
+    colorSale: projectColors.colorSecondaryMycom,
+  },
+  fontFamily,
+  sizeSelectIconPadding: {
+    regular: 7,
+  },
 };

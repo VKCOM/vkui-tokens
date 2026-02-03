@@ -7,162 +7,163 @@ import { processCustomMedia } from '../customMedia/customMedia.ts';
 import { pixelifyValues } from '../pixelifyValues/pixelifyValues.ts';
 
 export function getVariableName({
-	key,
-	prefix = 'vkui',
-	mode,
+  key,
+  prefix = 'vkui',
+  mode,
 }: {
-	key: string;
-	prefix?: string;
-	mode?: any | 'auto';
+  key: string;
+  prefix?: string;
+  mode?: any | 'auto';
 }): string {
-	// для цветов не добавляем --normal в конец
-	if (key === 'normal') {
-		return `--${convertCamelToSnake(prefix)}`;
-	}
+  // для цветов не добавляем --normal в конец
+  if (key === 'normal') {
+    return `--${convertCamelToSnake(prefix)}`;
+  }
 
-	return `--${convertCamelToSnake(prefix)}--${convertCamelToSnake(key)}${
-		mode !== undefined && mode !== 'auto' ? `--${convertCamelToSnake(mode)}` : ''
-	}`;
+  return `--${convertCamelToSnake(prefix)}--${convertCamelToSnake(key)}${
+    mode !== undefined && mode !== 'auto' ? `--${convertCamelToSnake(mode)}` : ''
+  }`;
 }
 
 function defaultValueConstruct(name: string, value?: string): string {
-	return value ? `var(${name}, ${value})` : `var(${name})`;
+  return value ? `var(${name}, ${value})` : `var(${name})`;
 }
 
 interface Options {
-	valueConstruct?: (name: string, value?: string) => string;
+  valueConstruct?: (name: string, value?: string) => string;
 }
 
 function processVarNaming({
-	object,
-	mode,
-	prefix = 'vkui',
-	customMedia,
-	valueConstruct = defaultValueConstruct,
+  object,
+  mode,
+  prefix = 'vkui',
+  customMedia,
+  valueConstruct = defaultValueConstruct,
 }: {
-	object: Record<string, any>;
-	prefix?: string;
-	mode?: keyof Adaptive<any> | 'auto';
-	customMedia: CustomMediaByViewport<any>;
+  object: Record<string, any>;
+  prefix?: string;
+  mode?: keyof Adaptive<any> | 'auto';
+  customMedia: CustomMediaByViewport<any>;
 } & Options): Record<string, any> {
-	const result: any = {};
+  const result: any = {};
 
-	// todo разнести на несколько функций вместо скипа
-	// eslint-disable-next-line sonarjs/cognitive-complexity
-	Object.keys(object).forEach((key) => {
-		let value = JSON.parse(JSON.stringify(object[key]));
+  // todo разнести на несколько функций вместо скипа
 
-		// не процессим некоторые свойства темы
-		if (key === 'breakpoints') {
-			result[key] = value;
-			return;
-		}
+  // biome-ignore lint/complexity/noExcessiveCognitiveComplexity: старый код
+  Object.keys(object).forEach((key) => {
+    let value = JSON.parse(JSON.stringify(object[key]));
 
-		if (key === 'themeType') {
-			result[key] = 'cssVarsWide';
-			return;
-		}
+    // не процессим некоторые свойства темы
+    if (key === 'breakpoints') {
+      result[key] = value;
+      return;
+    }
 
-		if (typeof value === 'undefined') {
-			return;
-		}
+    if (key === 'themeType') {
+      result[key] = 'cssVarsWide';
+      return;
+    }
 
-		// если это адаптивная переменная
-		if (typeof value === 'object' && 'regular' in value) {
-			const states = Object.keys(value);
-			// если это адаптивный объект (например шрифты)
-			if (typeof value.regular === 'object') {
-				result[key] = (['auto', ...states] as const).reduce<
-					Partial<{ [key in keyof Adaptive<any> | 'auto']: any }>
-				>((acc, mode: keyof Adaptive<any> | 'auto') => {
-					acc[mode] = processVarNaming({
-						object: value[mode] ?? value.regular,
-						prefix: `${prefix}--${key}`,
-						mode,
-						customMedia,
-						valueConstruct,
-					});
-					return acc;
-				}, {});
+    if (typeof value === 'undefined') {
+      return;
+    }
 
-				return;
-			}
+    // если это адаптивная переменная
+    if (typeof value === 'object' && 'regular' in value) {
+      const states = Object.keys(value);
+      // если это адаптивный объект (например шрифты)
+      if (typeof value.regular === 'object') {
+        result[key] = (['auto', ...states] as const).reduce<
+          Partial<{ [key in keyof Adaptive<any> | 'auto']: any }>
+        >((acc, mode: keyof Adaptive<any> | 'auto') => {
+          acc[mode] = processVarNaming({
+            object: value[mode] ?? value.regular,
+            prefix: `${prefix}--${key}`,
+            mode,
+            customMedia,
+            valueConstruct,
+          });
+          return acc;
+        }, {});
 
-			// обычная адаптивная переменная, нужно сформировать объект
-			result[key] = (['auto', ...states] as const).reduce<
-				Partial<{ [key in keyof Adaptive<any> | 'auto']: any }>
-			>((acc, mode) => {
-				if (mode === 'auto') {
-					const name = getVariableName({ key, prefix, mode: 'auto' });
+        return;
+      }
 
-					acc[mode] = {
-						name,
-						value: valueConstruct(name),
-					};
-				} else {
-					const name = getVariableName({ key, prefix, mode });
-					const originalValue = value[mode];
-					acc[mode] = {
-						name,
-						value: valueConstruct(name, originalValue),
-						originalValue,
-					};
-				}
+      // обычная адаптивная переменная, нужно сформировать объект
+      result[key] = (['auto', ...states] as const).reduce<
+        Partial<{ [key in keyof Adaptive<any> | 'auto']: any }>
+      >((acc, mode) => {
+        if (mode === 'auto') {
+          const name = getVariableName({ key, prefix, mode: 'auto' });
 
-				return acc;
-			}, {});
-			return;
-		}
+          acc[mode] = {
+            name,
+            value: valueConstruct(name),
+          };
+        } else {
+          const name = getVariableName({ key, prefix, mode });
+          const originalValue = value[mode];
+          acc[mode] = {
+            name,
+            value: valueConstruct(name, originalValue),
+            originalValue,
+          };
+        }
 
-		if (typeof value === 'object') {
-			result[key] = processVarNaming({
-				object: value,
-				prefix: `${prefix}--${key}`,
-				mode,
-				customMedia,
-				valueConstruct,
-			});
-			return;
-		}
+        return acc;
+      }, {});
+      return;
+    }
 
-		if (Object.keys(customMedia).includes(key)) {
-			value = JSON.stringify(value);
-		}
+    if (typeof value === 'object') {
+      result[key] = processVarNaming({
+        object: value,
+        prefix: `${prefix}--${key}`,
+        mode,
+        customMedia,
+        valueConstruct,
+      });
+      return;
+    }
 
-		const name = getVariableName({ key, prefix, mode });
-		result[key] =
-			mode !== 'auto'
-				? ({
-						name,
-						value: valueConstruct(name, value),
-						originalValue: value,
-					} as any)
-				: ({
-						name,
-						value: valueConstruct(name),
-					} as any);
-	});
+    if (Object.keys(customMedia).includes(key)) {
+      value = JSON.stringify(value);
+    }
 
-	return result;
+    const name = getVariableName({ key, prefix, mode });
+    result[key] =
+      mode !== 'auto'
+        ? ({
+            name,
+            value: valueConstruct(name, value),
+            originalValue: value,
+          } as any)
+        : ({
+            name,
+            value: valueConstruct(name),
+          } as any);
+  });
+
+  return result;
 }
 
 /**
  * Процессор, который на основе темы, создаёт сложную структуру для CssVars темы
  */
 export function extractVarsNames<T = Theme>(
-	sourceTheme: T,
-	opt: Options = {},
+  sourceTheme: T,
+  opt: Options = {},
 ): ThemeCssVarsWide<T> {
-	const typedSourceTheme: Partial<Theme> = sourceTheme as any;
+  const typedSourceTheme: Partial<Theme> = sourceTheme as any;
 
-	const pixelifyedTheme = pixelifyValues(sourceTheme);
+  const pixelifyedTheme = pixelifyValues(sourceTheme);
 
-	const customMedia = processCustomMedia(sourceTheme);
+  const customMedia = processCustomMedia(sourceTheme);
 
-	return processVarNaming({
-		object: pixelifyedTheme,
-		prefix: staticRef(typedSourceTheme.prefix),
-		customMedia,
-		...opt,
-	}) as any;
+  return processVarNaming({
+    object: pixelifyedTheme,
+    prefix: staticRef(typedSourceTheme.prefix),
+    customMedia,
+    ...opt,
+  }) as any;
 }

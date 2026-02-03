@@ -1,7 +1,7 @@
 import type {
-	ThemeParadigmTech,
-	ThemeParadigmTechCssVars,
-	ThemeParadigmTechDescription,
+  ThemeParadigmTech,
+  ThemeParadigmTechCssVars,
+  ThemeParadigmTechDescription,
 } from '../../themes/paradigmTech/index.ts';
 
 export interface ThemeParadigmTechDark extends ThemeParadigmTech {}

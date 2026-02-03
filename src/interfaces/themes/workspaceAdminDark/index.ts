@@ -1,7 +1,7 @@
 import type {
-	ThemeWorkspaceAdmin,
-	ThemeWorkspaceAdminCssVars,
-	ThemeWorkspaceAdminDescription,
+  ThemeWorkspaceAdmin,
+  ThemeWorkspaceAdminCssVars,
+  ThemeWorkspaceAdminDescription,
 } from '../../themes/workspaceAdmin/index.ts';
 
 export type ThemeWorkspaceAdminDark = ThemeWorkspaceAdmin;

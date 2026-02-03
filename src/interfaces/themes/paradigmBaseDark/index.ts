@@ -1,7 +1,7 @@
 import type {
-	ParadigmTheme,
-	ParadigmThemeCssVars,
-	ParadigmThemeDescription,
+  ParadigmTheme,
+  ParadigmThemeCssVars,
+  ParadigmThemeDescription,
 } from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeParadigmBaseDarkDescription extends ParadigmThemeDescription {}

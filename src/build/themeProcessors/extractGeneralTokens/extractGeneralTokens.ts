@@ -8,30 +8,30 @@ import type { ThemeDescription, ThemeGeneral } from '../../../interfaces/general
  *
  */
 export function extractGeneralTokens<TD = ThemeDescription, TG = ThemeGeneral>(
-	themeDescription: TD,
+  themeDescription: TD,
 ): TG {
-	const copyDescription: any = JSON.parse(JSON.stringify(themeDescription));
-	const tokens = Object.keys(themeDescription);
+  const copyDescription: any = JSON.parse(JSON.stringify(themeDescription));
+  const tokens = Object.keys(themeDescription);
 
-	// Разворачиваем токены-функции
-	for (const token of tokens) {
-		const tokenValue = themeDescription[token];
+  // Разворачиваем токены-функции
+  for (const token of tokens) {
+    const tokenValue = themeDescription[token];
 
-		if (typeof tokenValue === 'function') {
-			copyDescription[token] = tokenValue;
-		}
-	}
+    if (typeof tokenValue === 'function') {
+      copyDescription[token] = tokenValue;
+    }
+  }
 
-	for (const token of tokens) {
-		const tokenValue = copyDescription[token];
+  for (const token of tokens) {
+    const tokenValue = copyDescription[token];
 
-		if (typeof tokenValue === 'function') {
-			copyDescription[token] = tokenValue(copyDescription);
-		}
-	}
+    if (typeof tokenValue === 'function') {
+      copyDescription[token] = tokenValue(copyDescription);
+    }
+  }
 
-	delete copyDescription.colors;
-	delete copyDescription.colorsScheme;
+  delete copyDescription.colors;
+  delete copyDescription.colorsScheme;
 
-	return copyDescription;
+  return copyDescription;
 }

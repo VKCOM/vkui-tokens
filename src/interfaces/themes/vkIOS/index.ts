@@ -1,5 +1,5 @@
 export type {
-	ThemeVkBase as ThemeVkIOS,
-	ThemeVkBaseCssVars as ThemeVkIOSCssVars,
-	ThemeVkBaseDescription as ThemeVkIOSDescription,
+  ThemeVkBase as ThemeVkIOS,
+  ThemeVkBaseCssVars as ThemeVkIOSCssVars,
+  ThemeVkBaseDescription as ThemeVkIOSDescription,
 } from '../../themes/vkBase/index.ts';

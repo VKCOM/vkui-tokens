@@ -1,71 +1,71 @@
-import path from 'path';
-import RemarkHTML from 'remark-html';
+import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import RemarkHTML from 'remark-html';
 
 export default function () {
-	const __dirname = path.dirname(fileURLToPath(import.meta.url));
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-	return {
-		module: {
-			rules: [
-				{
-					test: /\.ts(x?)$/,
-					use: {
-						loader: 'builtin:swc-loader',
-						options: {
-							jsc: {
-								parser: {
-									syntax: 'typescript',
-									tsx: true,
-								},
-							},
-						},
-					},
-				},
-				{
-					test: /\.css$/,
-					type: 'css',
-				},
-				{
-					test: /\.svg$/,
-					oneOf: [
-						{
-							resourceQuery: /url/,
-							type: 'asset',
-						},
-						{
-							resourceQuery: /inline/,
-							use: {
-								loader: '@svgr/webpack',
-							},
-						},
-						{
-							use: {
-								loader: '@svgr/webpack',
-							},
-						},
-					],
-				},
-				{
-					test: /\.md$/,
-					use: [
-						{
-							loader: 'html-loader',
-						},
-						{
-							loader: 'remark-loader',
-							options: {
-								remarkOptions: {
-									plugins: [RemarkHTML],
-								},
-							},
-						},
-					],
-				},
-			],
-		},
-		resolve: {
-			extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.json'],
-		},
-	};
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.ts(x?)$/,
+          use: {
+            loader: 'builtin:swc-loader',
+            options: {
+              jsc: {
+                parser: {
+                  syntax: 'typescript',
+                  tsx: true,
+                },
+              },
+            },
+          },
+        },
+        {
+          test: /\.css$/,
+          type: 'css',
+        },
+        {
+          test: /\.svg$/,
+          oneOf: [
+            {
+              resourceQuery: /url/,
+              type: 'asset',
+            },
+            {
+              resourceQuery: /inline/,
+              use: {
+                loader: '@svgr/webpack',
+              },
+            },
+            {
+              use: {
+                loader: '@svgr/webpack',
+              },
+            },
+          ],
+        },
+        {
+          test: /\.md$/,
+          use: [
+            {
+              loader: 'html-loader',
+            },
+            {
+              loader: 'remark-loader',
+              options: {
+                remarkOptions: {
+                  plugins: [RemarkHTML],
+                },
+              },
+            },
+          ],
+        },
+      ],
+    },
+    resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.jsx', '.css', '.json'],
+    },
+  };
 }

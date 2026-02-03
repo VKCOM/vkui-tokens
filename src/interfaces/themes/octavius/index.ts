@@ -1,327 +1,327 @@
 import type { Property } from 'csstype';
 
 import type {
-	ColorDescription,
-	ColorsDescriptionStruct,
-	ColorWithStates,
+  ColorDescription,
+  ColorsDescriptionStruct,
+  ColorWithStates,
 } from '../../general/colors/index.ts';
 import type { ThemeCssVars } from '../../general/index.ts';
 import type { Adaptive } from '../../general/tools/index.ts';
 import type {
-	LocalParadigmColorsDescriptionStruct,
-	ParadigmTheme,
-	ParadigmThemeDescription,
+  LocalParadigmColorsDescriptionStruct,
+  ParadigmTheme,
+  ParadigmThemeDescription,
 } from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeOctaviusOverValues {
-	octaviusElevationCard: Property.BoxShadow;
-	octaviusElevationHeader: Property.BoxShadow;
-	octaviusTextShadowEmptyStateText: Property.TextShadow;
+  octaviusElevationCard: Property.BoxShadow;
+  octaviusElevationHeader: Property.BoxShadow;
+  octaviusTextShadowEmptyStateText: Property.TextShadow;
 
-	octaviusPositionBackground: string;
-	octaviusImageOverlayBackground: string;
+  octaviusPositionBackground: string;
+  octaviusImageOverlayBackground: string;
 
-	octaviusTextShadowSidebarItemText: Property.TextShadow;
-	octaviusFilterSidebarItemIcon: string;
-	/**
-	 * Нужен для градиента у кнопки раскрытия аттачей в письме
-	 */
-	octaviusColorLetterAttachListBackground: string;
+  octaviusTextShadowSidebarItemText: Property.TextShadow;
+  octaviusFilterSidebarItemIcon: string;
+  /**
+   * Нужен для градиента у кнопки раскрытия аттачей в письме
+   */
+  octaviusColorLetterAttachListBackground: string;
 
-	octaviusShadowSidebarItemText: Property.BoxShadow;
-	octaviusShadowSidebarItemIcon: Property.BoxShadow;
-	/**
-	 * Тень текста подписи под картинкой пустого состояния папки на некоторых
-	 * темах с фоном-картинкой
-	 */
-	octaviusShadowEmptyStateText: Property.BoxShadow;
-	/**
-	 * Нужен для тем у которых есть неадаптивный фон
-	 */
-	octaviusImageBackground: string;
+  octaviusShadowSidebarItemText: Property.BoxShadow;
+  octaviusShadowSidebarItemIcon: Property.BoxShadow;
+  /**
+   * Тень текста подписи под картинкой пустого состояния папки на некоторых
+   * темах с фоном-картинкой
+   */
+  octaviusShadowEmptyStateText: Property.BoxShadow;
+  /**
+   * Нужен для тем у которых есть неадаптивный фон
+   */
+  octaviusImageBackground: string;
 
-	// Кастомные шрифты
-	octaviusFontFamilyDefault: string;
-	octaviusFontFamilyMailSans: string;
-	octaviusFontFamilyGlobal: string;
-	octaviusFontFamilyMac: string;
-	octaviusFontFamilyDisplay: string;
+  // Кастомные шрифты
+  octaviusFontFamilyDefault: string;
+  octaviusFontFamilyMailSans: string;
+  octaviusFontFamilyGlobal: string;
+  octaviusFontFamilyMac: string;
+  octaviusFontFamilyDisplay: string;
 }
 
 export interface ThemeOctaviusLocalSizes {
-	octaviusSizeHeadlineHeight: number;
-	octaviusSizeLayoutWidthMin: number;
-	octaviusSizeLayoutWidthMax: number;
-	octaviusSizeSidebarPaddingTop: number;
-	octaviusSizeSidebarWidgetsHeightMin: number;
-	octaviusSizeSidebarWidgetsHeightCompactMin: number;
+  octaviusSizeHeadlineHeight: number;
+  octaviusSizeLayoutWidthMin: number;
+  octaviusSizeLayoutWidthMax: number;
+  octaviusSizeSidebarPaddingTop: number;
+  octaviusSizeSidebarWidgetsHeightMin: number;
+  octaviusSizeSidebarWidgetsHeightCompactMin: number;
 }
 
 type ThemeOctaviusAdaptiveTokens = {
-	[key in keyof ThemeOctaviusLocalSizes]: Adaptive<ThemeOctaviusLocalSizes[key]>;
+  [key in keyof ThemeOctaviusLocalSizes]: Adaptive<ThemeOctaviusLocalSizes[key]>;
 };
 
 export interface LocalOctaviusColorsDescriptionStruct {
-	colorBackgroundThumbnail: ColorDescription;
-	colorBackgroundThumbnailAlpha: ColorDescription;
-	colorIconAccent: ColorDescription;
-	colorSocialVk: ColorDescription;
-	colorSocialOk: ColorDescription;
-	colorSocialMir: ColorDescription;
-	colorSocialFb: ColorDescription;
-	colorSocialTwitter: ColorDescription;
-	colorSocialDribbble: ColorDescription;
-	colorSocialBehance: ColorDescription;
-	colorPaletteRed1: ColorDescription;
-	colorPaletteRed2: ColorDescription;
-	colorPaletteRed3: ColorDescription;
-	colorPaletteOrange1: ColorDescription;
-	colorPaletteOrange1Alpha: ColorDescription;
-	colorPaletteYellow1: ColorDescription;
-	colorPaletteGreen1: ColorDescription;
-	colorPaletteGreen2: ColorDescription;
-	colorPaletteGreen3: ColorDescription;
-	colorPaletteGreen4: ColorDescription;
-	colorPaletteGreen1Alpha: ColorDescription;
-	colorPaletteGreen2Alpha: ColorDescription;
-	colorPaletteBlue1: ColorDescription;
-	colorPaletteBlue2: ColorDescription;
-	colorPaletteBlue3: ColorDescription;
-	colorPaletteBlue1Alpha: ColorDescription;
-	colorPaletteViolet1: ColorDescription;
-	colorPaletteViolet2: ColorDescription;
-	colorAlert: ColorDescription;
+  colorBackgroundThumbnail: ColorDescription;
+  colorBackgroundThumbnailAlpha: ColorDescription;
+  colorIconAccent: ColorDescription;
+  colorSocialVk: ColorDescription;
+  colorSocialOk: ColorDescription;
+  colorSocialMir: ColorDescription;
+  colorSocialFb: ColorDescription;
+  colorSocialTwitter: ColorDescription;
+  colorSocialDribbble: ColorDescription;
+  colorSocialBehance: ColorDescription;
+  colorPaletteRed1: ColorDescription;
+  colorPaletteRed2: ColorDescription;
+  colorPaletteRed3: ColorDescription;
+  colorPaletteOrange1: ColorDescription;
+  colorPaletteOrange1Alpha: ColorDescription;
+  colorPaletteYellow1: ColorDescription;
+  colorPaletteGreen1: ColorDescription;
+  colorPaletteGreen2: ColorDescription;
+  colorPaletteGreen3: ColorDescription;
+  colorPaletteGreen4: ColorDescription;
+  colorPaletteGreen1Alpha: ColorDescription;
+  colorPaletteGreen2Alpha: ColorDescription;
+  colorPaletteBlue1: ColorDescription;
+  colorPaletteBlue2: ColorDescription;
+  colorPaletteBlue3: ColorDescription;
+  colorPaletteBlue1Alpha: ColorDescription;
+  colorPaletteViolet1: ColorDescription;
+  colorPaletteViolet2: ColorDescription;
+  colorAlert: ColorDescription;
 
-	// Токены меток
-	colorTagBackgroundMint: ColorDescription;
-	colorTagTextMint: ColorDescription;
-	colorTagBackgroundSky: ColorDescription;
-	colorTagTextSky: ColorDescription;
-	colorTagBackgroundOrange: ColorDescription;
-	colorTagTextOrange: ColorDescription;
-	colorTagBackgroundPink: ColorDescription;
-	colorTagTextPink: ColorDescription;
-	colorTagBackgroundPurple: ColorDescription;
-	colorTagTextPurple: ColorDescription;
+  // Токены меток
+  colorTagBackgroundMint: ColorDescription;
+  colorTagTextMint: ColorDescription;
+  colorTagBackgroundSky: ColorDescription;
+  colorTagTextSky: ColorDescription;
+  colorTagBackgroundOrange: ColorDescription;
+  colorTagTextOrange: ColorDescription;
+  colorTagBackgroundPink: ColorDescription;
+  colorTagTextPink: ColorDescription;
+  colorTagBackgroundPurple: ColorDescription;
+  colorTagTextPurple: ColorDescription;
 
-	// Токены кастомных меток
-	colorTagBackgroundSalmon: ColorDescription;
-	colorTagTextSalmon: ColorDescription;
-	colorTagBackgroundYellow: ColorDescription;
-	colorTagTextYellow: ColorDescription;
-	colorTagBackgroundLime: ColorDescription;
-	colorTagTextLime: ColorDescription;
-	colorTagBackgroundGrass: ColorDescription;
-	colorTagTextGrass: ColorDescription;
-	colorTagBackgroundTurquoise: ColorDescription;
-	colorTagTextTurquoise: ColorDescription;
-	colorTagBackgroundLightsky: ColorDescription;
-	colorTagTextLightsky: ColorDescription;
-	colorTagBackgroundMainSky: ColorDescription;
-	colorTagTextMainSky: ColorDescription;
-	colorTagBackgroundViolet: ColorDescription;
-	colorTagTextViolet: ColorDescription;
-	colorTagBackgroundMagenta: ColorDescription;
-	colorTagTextMagenta: ColorDescription;
-	colorTagBackgroundTickle: ColorDescription;
-	colorTagTextTickle: ColorDescription;
+  // Токены кастомных меток
+  colorTagBackgroundSalmon: ColorDescription;
+  colorTagTextSalmon: ColorDescription;
+  colorTagBackgroundYellow: ColorDescription;
+  colorTagTextYellow: ColorDescription;
+  colorTagBackgroundLime: ColorDescription;
+  colorTagTextLime: ColorDescription;
+  colorTagBackgroundGrass: ColorDescription;
+  colorTagTextGrass: ColorDescription;
+  colorTagBackgroundTurquoise: ColorDescription;
+  colorTagTextTurquoise: ColorDescription;
+  colorTagBackgroundLightsky: ColorDescription;
+  colorTagTextLightsky: ColorDescription;
+  colorTagBackgroundMainSky: ColorDescription;
+  colorTagTextMainSky: ColorDescription;
+  colorTagBackgroundViolet: ColorDescription;
+  colorTagTextViolet: ColorDescription;
+  colorTagBackgroundMagenta: ColorDescription;
+  colorTagTextMagenta: ColorDescription;
+  colorTagBackgroundTickle: ColorDescription;
+  colorTagTextTickle: ColorDescription;
 
-	// Токены кнопки
-	octaviusColorButtonText: ColorDescription;
-	octaviusColorButtonIcon: ColorDescription;
-	octaviusColorButtonBackgroundAlpha: ColorDescription;
-	octaviusColorButtonEmptyStateText: ColorDescription;
-	octaviusColorButtonEmptyStateBackgroundAlpha: ColorDescription;
-	octaviusColorSidebarWidgetBackgroundAlpha: ColorDescription;
+  // Токены кнопки
+  octaviusColorButtonText: ColorDescription;
+  octaviusColorButtonIcon: ColorDescription;
+  octaviusColorButtonBackgroundAlpha: ColorDescription;
+  octaviusColorButtonEmptyStateText: ColorDescription;
+  octaviusColorButtonEmptyStateBackgroundAlpha: ColorDescription;
+  octaviusColorSidebarWidgetBackgroundAlpha: ColorDescription;
 
-	// Фон страницы (отличается от colorBackground)
-	octaviusColorBackground: ColorDescription;
-	octaviusColorOverlayBackground: ColorDescription;
+  // Фон страницы (отличается от colorBackground)
+  octaviusColorBackground: ColorDescription;
+  octaviusColorOverlayBackground: ColorDescription;
 
-	// Токены текстов и иконок действий
-	octaviusColorActionArchive: ColorDescription;
+  // Токены текстов и иконок действий
+  octaviusColorActionArchive: ColorDescription;
 
-	// Токены шапки
-	octaviusColorHeaderBackground: ColorDescription;
-	octaviusColorHeaderButtonText: ColorDescription;
-	octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
-	octaviusColorHeaderIcon: ColorDescription;
-	octaviusColorHeaderIconUnread: ColorDescription;
-	octaviusColorHeaderIconFavorite: ColorDescription;
-	octaviusColorHeaderIconAttach: ColorDescription;
-	octaviusColorHeaderTextSecondary: ColorDescription;
-	octaviusColorHeaderProgress: ColorDescription;
-	octaviusColorHeaderFilterTextAlpha: ColorDescription;
-	octaviusColorHeaderTabActiveThemedAlpha: ColorDescription;
-	octaviusColorHeaderTabTextActiveThemed: ColorDescription;
+  // Токены шапки
+  octaviusColorHeaderBackground: ColorDescription;
+  octaviusColorHeaderButtonText: ColorDescription;
+  octaviusColorHeaderButtonBackgroundAlpha: ColorDescription;
+  octaviusColorHeaderIcon: ColorDescription;
+  octaviusColorHeaderIconUnread: ColorDescription;
+  octaviusColorHeaderIconFavorite: ColorDescription;
+  octaviusColorHeaderIconAttach: ColorDescription;
+  octaviusColorHeaderTextSecondary: ColorDescription;
+  octaviusColorHeaderProgress: ColorDescription;
+  octaviusColorHeaderFilterTextAlpha: ColorDescription;
+  octaviusColorHeaderTabActiveThemedAlpha: ColorDescription;
+  octaviusColorHeaderTabTextActiveThemed: ColorDescription;
 
-	// Поиск
-	octaviusColorHeaderSearchIcon: ColorDescription;
-	octaviusColorHeaderSearchBackground: ColorDescription;
-	octaviusColorHeaderSearchBackgroundCollapsed: ColorDescription;
-	octaviusColorHeaderSearchText: ColorDescription;
-	octaviusColorHeaderSearchTextCollapsed: ColorDescription;
-	octaviusColorHeaderSearchChipBackground: ColorDescription;
-	octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
-	octaviusColorHeaderSearchChipBorderEditableAlpha: ColorDescription;
-	octaviusColorPortalSearchBackgroundAlpha: ColorDescription;
-	octaviusColorPortalSearchIconThemedAlpha: ColorDescription;
+  // Поиск
+  octaviusColorHeaderSearchIcon: ColorDescription;
+  octaviusColorHeaderSearchBackground: ColorDescription;
+  octaviusColorHeaderSearchBackgroundCollapsed: ColorDescription;
+  octaviusColorHeaderSearchText: ColorDescription;
+  octaviusColorHeaderSearchTextCollapsed: ColorDescription;
+  octaviusColorHeaderSearchChipBackground: ColorDescription;
+  octaviusColorHeaderSearchChipBackgroundEditable: ColorDescription;
+  octaviusColorHeaderSearchChipBorderEditableAlpha: ColorDescription;
+  octaviusColorPortalSearchBackgroundAlpha: ColorDescription;
+  octaviusColorPortalSearchIconThemedAlpha: ColorDescription;
 
-	// Токены сайдбара
-	octaviusColorSidebarItemBackgroundAlpha: ColorDescription;
-	octaviusColorSidebarItemIconActive: ColorDescription;
-	octaviusColorSidebarItemIconPrimary: ColorDescription;
-	octaviusColorSidebarItemIconSecondary: ColorDescription;
-	octaviusColorSidebarItemTextActive: ColorDescription;
-	octaviusColorSidebarItemTextPrimary: ColorDescription;
-	octaviusColorSidebarItemTextSecondary: ColorDescription;
-	octaviusColorSidebarButtonIcon: ColorDescription;
-	octaviusColorSidebarButtonText: ColorDescription;
-	octaviusColorSidebarButtonBackground: ColorDescription;
-	octaviusColorSidebarCounterBackgroundAlpha: ColorDescription;
-	octaviusColorSidebarCounterText: ColorDescription;
-	octaviusColorSidebarScrollbarAlpha: ColorDescription;
-	octaviusColorSidebarItemIcon: ColorDescription;
-	octaviusColorSidebarItemText: ColorDescription;
-	octaviusColorSidebarItemButtonBackgroundAlpha: ColorDescription;
+  // Токены сайдбара
+  octaviusColorSidebarItemBackgroundAlpha: ColorDescription;
+  octaviusColorSidebarItemIconActive: ColorDescription;
+  octaviusColorSidebarItemIconPrimary: ColorDescription;
+  octaviusColorSidebarItemIconSecondary: ColorDescription;
+  octaviusColorSidebarItemTextActive: ColorDescription;
+  octaviusColorSidebarItemTextPrimary: ColorDescription;
+  octaviusColorSidebarItemTextSecondary: ColorDescription;
+  octaviusColorSidebarButtonIcon: ColorDescription;
+  octaviusColorSidebarButtonText: ColorDescription;
+  octaviusColorSidebarButtonBackground: ColorDescription;
+  octaviusColorSidebarCounterBackgroundAlpha: ColorDescription;
+  octaviusColorSidebarCounterText: ColorDescription;
+  octaviusColorSidebarScrollbarAlpha: ColorDescription;
+  octaviusColorSidebarItemIcon: ColorDescription;
+  octaviusColorSidebarItemText: ColorDescription;
+  octaviusColorSidebarItemButtonBackgroundAlpha: ColorDescription;
 
-	octaviusColorSidebarShortItemIcon: ColorDescription;
-	octaviusColorSidebarShortItemText: ColorDescription;
-	octaviusColorSidebarShortItemIconActive: ColorDescription;
-	octaviusColorSidebarShortItemTextActive: ColorDescription;
-	octaviusColorSidebarShortItemTextSecondary: ColorDescription;
-	octaviusColorSidebarShortItemIconSecondary: ColorDescription;
+  octaviusColorSidebarShortItemIcon: ColorDescription;
+  octaviusColorSidebarShortItemText: ColorDescription;
+  octaviusColorSidebarShortItemIconActive: ColorDescription;
+  octaviusColorSidebarShortItemTextActive: ColorDescription;
+  octaviusColorSidebarShortItemTextSecondary: ColorDescription;
+  octaviusColorSidebarShortItemIconSecondary: ColorDescription;
 
-	octaviusColorSidebarComposeButtonBackground: ColorDescription;
-	octaviusColorSidebarComposeButtonText: ColorDescription;
-	octaviusColorSidebarComposeButtonIcon: ColorDescription;
+  octaviusColorSidebarComposeButtonBackground: ColorDescription;
+  octaviusColorSidebarComposeButtonText: ColorDescription;
+  octaviusColorSidebarComposeButtonIcon: ColorDescription;
 
-	// Токены портального меню
-	octaviusColorPortalMenuBackground: ColorDescription;
+  // Токены портального меню
+  octaviusColorPortalMenuBackground: ColorDescription;
 
-	// Контент страницы
-	octaviusColorContentScrollbarAlpha: ColorDescription;
+  // Контент страницы
+  octaviusColorContentScrollbarAlpha: ColorDescription;
 
-	// Токены письма
-	octaviusColorLetterListTextUnread: ColorDescription;
+  // Токены письма
+  octaviusColorLetterListTextUnread: ColorDescription;
 
-	// TODO: убрать когда появится colorBackgroundSecondaryAlpha
-	octaviusColorThreadFooterBackground: ColorDescription;
+  // TODO: убрать когда появится colorBackgroundSecondaryAlpha
+  octaviusColorThreadFooterBackground: ColorDescription;
 
-	// Категории письма
-	octaviusColorIconUnread: ColorDescription;
-	octaviusColorIconFavorite: ColorDescription;
-	octaviusColorIconOrder: ColorDescription;
-	octaviusColorIconFinance: ColorDescription;
-	octaviusColorIconRegistration: ColorDescription;
-	octaviusColorIconTravel: ColorDescription;
-	octaviusColorIconEvent: ColorDescription;
-	octaviusColorIconFees: ColorDescription;
+  // Категории письма
+  octaviusColorIconUnread: ColorDescription;
+  octaviusColorIconFavorite: ColorDescription;
+  octaviusColorIconOrder: ColorDescription;
+  octaviusColorIconFinance: ColorDescription;
+  octaviusColorIconRegistration: ColorDescription;
+  octaviusColorIconTravel: ColorDescription;
+  octaviusColorIconEvent: ColorDescription;
+  octaviusColorIconFees: ColorDescription;
 
-	// Подложки в плашках заказов
-	octaviusColorIconEventAlpha: ColorDescription;
-	octaviusColorIconOrderAlpha: ColorDescription;
-	octaviusColorIconTravelAlpha: ColorDescription;
+  // Подложки в плашках заказов
+  octaviusColorIconEventAlpha: ColorDescription;
+  octaviusColorIconOrderAlpha: ColorDescription;
+  octaviusColorIconTravelAlpha: ColorDescription;
 
-	// Категории письма в sidebar
-	octaviusColorSidebarIconUnread: ColorDescription;
-	octaviusColorSidebarIconFavorite: ColorDescription;
-	octaviusColorSidebarIconOrder: ColorDescription;
-	octaviusColorSidebarIconFinance: ColorDescription;
-	octaviusColorSidebarIconRegistration: ColorDescription;
-	octaviusColorSidebarIconTravel: ColorDescription;
-	octaviusColorSidebarIconEvent: ColorDescription;
-	octaviusColorSidebarIconFees: ColorDescription;
+  // Категории письма в sidebar
+  octaviusColorSidebarIconUnread: ColorDescription;
+  octaviusColorSidebarIconFavorite: ColorDescription;
+  octaviusColorSidebarIconOrder: ColorDescription;
+  octaviusColorSidebarIconFinance: ColorDescription;
+  octaviusColorSidebarIconRegistration: ColorDescription;
+  octaviusColorSidebarIconTravel: ColorDescription;
+  octaviusColorSidebarIconEvent: ColorDescription;
+  octaviusColorSidebarIconFees: ColorDescription;
 
-	// Токены списка писем
-	octaviusColorListLetterBackground: ColorDescription;
-	octaviusColorListLetterSeparatorAlpha: ColorDescription;
-	octaviusColorListBackgroundPositiveAlpha: ColorDescription;
-	octaviusColorListBackgroundPositiveTagsOutline: ColorDescription;
+  // Токены списка писем
+  octaviusColorListLetterBackground: ColorDescription;
+  octaviusColorListLetterSeparatorAlpha: ColorDescription;
+  octaviusColorListBackgroundPositiveAlpha: ColorDescription;
+  octaviusColorListBackgroundPositiveTagsOutline: ColorDescription;
 
-	/**
-	 * Фон подложки под письмами на списке писем. В некоторых темах этот фон
-	 * полупрозрачный.
-	 */
-	octaviusColorDatasetBackground: ColorDescription;
-	octaviusColorListLetterAdvBackground: ColorDescription;
-	octaviusColorListTextUnread: ColorDescription;
-	octaviusColorListTextPrimary: ColorDescription;
-	octaviusColorListIconPrimary: ColorDescription;
+  /**
+   * Фон подложки под письмами на списке писем. В некоторых темах этот фон
+   * полупрозрачный.
+   */
+  octaviusColorDatasetBackground: ColorDescription;
+  octaviusColorListLetterAdvBackground: ColorDescription;
+  octaviusColorListTextUnread: ColorDescription;
+  octaviusColorListTextPrimary: ColorDescription;
+  octaviusColorListIconPrimary: ColorDescription;
 
-	// Метатреды
-	octaviusColorIconSocial: ColorDescription;
-	octaviusColorIconMailings: ColorDescription;
-	octaviusColorIconToMyself: ColorDescription;
-	octaviusColorIconNews: ColorDescription;
-	octaviusColorIconOfficial: ColorDescription;
-	octaviusColorIconSchool: ColorDescription;
-	octaviusColorIconGames: ColorDescription;
-	octaviusColorIconReceipts: ColorDescription;
+  // Метатреды
+  octaviusColorIconSocial: ColorDescription;
+  octaviusColorIconMailings: ColorDescription;
+  octaviusColorIconToMyself: ColorDescription;
+  octaviusColorIconNews: ColorDescription;
+  octaviusColorIconOfficial: ColorDescription;
+  octaviusColorIconSchool: ColorDescription;
+  octaviusColorIconGames: ColorDescription;
+  octaviusColorIconReceipts: ColorDescription;
 
-	octaviusColorTextFees: ColorDescription;
-	octaviusColorTextFinance: ColorDescription;
-	octaviusColorTextSocial: ColorDescription;
-	octaviusColorTextMailings: ColorDescription;
-	octaviusColorTextToMyself: ColorDescription;
-	octaviusColorTextNews: ColorDescription;
-	octaviusColorTextSchool: ColorDescription;
-	octaviusColorTextGames: ColorDescription;
+  octaviusColorTextFees: ColorDescription;
+  octaviusColorTextFinance: ColorDescription;
+  octaviusColorTextSocial: ColorDescription;
+  octaviusColorTextMailings: ColorDescription;
+  octaviusColorTextToMyself: ColorDescription;
+  octaviusColorTextNews: ColorDescription;
+  octaviusColorTextSchool: ColorDescription;
+  octaviusColorTextGames: ColorDescription;
 
-	// Другие стили
-	/**
-	 * Цвет текста подписи под картинкой пустого состояния.
-	 * @see octaviusShadowTextBackgroundContrast
-	 */
-	octaviusColorEmptyStateText: ColorDescription;
-	octaviusColorBackgroundAccentTonedAlpha: ColorDescription;
-	octaviusColorLayoutBorderAlpha: ColorDescription;
-	octaviusColorLayoutLetterBorderAlpha: ColorDescription;
-	octaviusColorEmptyStateTextLink: ColorDescription;
-	octaviusColorLetterContactBackgroundAlpha: ColorDescription;
-	octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
-	octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
-	octaviusTextDecorationEmptyStateTextLink: ColorDescription;
-	octaviusColorNotificationBorder: ColorDescription;
-	octaviusColorPlaceholderBackground: ColorDescription;
-	octaviusColorPromoBackground: ColorDescription;
+  // Другие стили
+  /**
+   * Цвет текста подписи под картинкой пустого состояния.
+   * @see octaviusShadowTextBackgroundContrast
+   */
+  octaviusColorEmptyStateText: ColorDescription;
+  octaviusColorBackgroundAccentTonedAlpha: ColorDescription;
+  octaviusColorLayoutBorderAlpha: ColorDescription;
+  octaviusColorLayoutLetterBorderAlpha: ColorDescription;
+  octaviusColorEmptyStateTextLink: ColorDescription;
+  octaviusColorLetterContactBackgroundAlpha: ColorDescription;
+  octaviusColorLetterPreviewBackgroundPrimary: ColorDescription;
+  octaviusColorLetterPreviewBackgroundSecondary: ColorDescription;
+  octaviusTextDecorationEmptyStateTextLink: ColorDescription;
+  octaviusColorNotificationBorder: ColorDescription;
+  octaviusColorPlaceholderBackground: ColorDescription;
+  octaviusColorPromoBackground: ColorDescription;
 
-	// Тонированные фоны
-	octaviusColorBackgroundAccentTintAlpha: ColorDescription;
-	octaviusColorBackgroundNegativeTintAlpha: ColorDescription;
-	octaviusColorBackgroundPositiveTintAlpha: ColorDescription;
-	octaviusColorButtonBackgroundContrastAlpha: ColorDescription;
+  // Тонированные фоны
+  octaviusColorBackgroundAccentTintAlpha: ColorDescription;
+  octaviusColorBackgroundNegativeTintAlpha: ColorDescription;
+  octaviusColorBackgroundPositiveTintAlpha: ColorDescription;
+  octaviusColorButtonBackgroundContrastAlpha: ColorDescription;
 
-	// Токены для снекбара
-	octaviusColorSnackbarIconPositive: ColorDescription;
-	octaviusColorSnackbarIconNegative: ColorDescription;
-	octaviusColorSnackbarIconAccent: ColorDescription;
-	octaviusColorSnackbarIconSecondary: ColorDescription;
-	octaviusColorSnackbarIconWarning: ColorDescription;
+  // Токены для снекбара
+  octaviusColorSnackbarIconPositive: ColorDescription;
+  octaviusColorSnackbarIconNegative: ColorDescription;
+  octaviusColorSnackbarIconAccent: ColorDescription;
+  octaviusColorSnackbarIconSecondary: ColorDescription;
+  octaviusColorSnackbarIconWarning: ColorDescription;
 
-	octaviusColorSnackbarTextAccent: ColorDescription;
-	octaviusColorSnackbarTextContrast: ColorDescription;
+  octaviusColorSnackbarTextAccent: ColorDescription;
+  octaviusColorSnackbarTextContrast: ColorDescription;
 
-	octaviusColorSnackbarBackground: ColorDescription;
-	octaviusColorSnackbarTransparent: ColorDescription;
+  octaviusColorSnackbarBackground: ColorDescription;
+  octaviusColorSnackbarTransparent: ColorDescription;
 }
 
 export type OctaviusLocalColors = {
-	[key in keyof LocalOctaviusColorsDescriptionStruct]: ColorWithStates;
+  [key in keyof LocalOctaviusColorsDescriptionStruct]: ColorWithStates;
 };
 
 export interface ThemeOctaviusDescription
-	extends ParadigmThemeDescription,
-		ThemeOctaviusOverValues,
-		ThemeOctaviusAdaptiveTokens {
-	colors: LocalOctaviusColorsDescriptionStruct &
-		LocalParadigmColorsDescriptionStruct &
-		ColorsDescriptionStruct;
+  extends ParadigmThemeDescription,
+    ThemeOctaviusOverValues,
+    ThemeOctaviusAdaptiveTokens {
+  colors: LocalOctaviusColorsDescriptionStruct &
+    LocalParadigmColorsDescriptionStruct &
+    ColorsDescriptionStruct;
 }
 export interface ThemeOctavius
-	extends ParadigmTheme,
-		ThemeOctaviusOverValues,
-		OctaviusLocalColors,
-		ThemeOctaviusAdaptiveTokens {}
+  extends ParadigmTheme,
+    ThemeOctaviusOverValues,
+    OctaviusLocalColors,
+    ThemeOctaviusAdaptiveTokens {}
 
 export interface ThemeOctaviusCssVars extends ThemeCssVars<ThemeOctavius, 'breakpoints'> {}

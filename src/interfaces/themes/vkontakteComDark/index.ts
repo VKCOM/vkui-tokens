@@ -1,7 +1,7 @@
 import type {
-	ThemeVkontakteCom,
-	ThemeVkontakteComCssVars,
-	ThemeVkontakteComDescription,
+  ThemeVkontakteCom,
+  ThemeVkontakteComCssVars,
+  ThemeVkontakteComDescription,
 } from '../../themes/vkontakteCom/index.ts';
 
 export type ThemeVkontakteComDark = ThemeVkontakteCom;

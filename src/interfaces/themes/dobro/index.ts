@@ -7,32 +7,32 @@ import type { ParadigmThemeCssVars } from '../../namespaces/paradigm/index.ts';
 type DobroViewportsTuple = ['touch', 'tablet', 'desktopS', 'desktopM'];
 
 interface ThemeDobroCustomTokens {
-	dobroPortalZIndex: number;
-	dobroPopoutZIndex: number;
-	dobroModalZIndex: number;
-	dobroMenuZIndex: number;
+  dobroPortalZIndex: number;
+  dobroPopoutZIndex: number;
+  dobroModalZIndex: number;
+  dobroMenuZIndex: number;
 }
 
 interface ThemeDobroFonts {
-	dobroFontFamily600: string;
-	dobroFontFamily500: string;
-	dobroFontFamily400: string;
+  dobroFontFamily600: string;
+  dobroFontFamily500: string;
+  dobroFontFamily400: string;
 }
 
 interface ThemeDobroStatic<Vt extends ViewportsTuple = DefaultViewports>
-	extends Theme,
-		ThemeDobroCustomTokens,
-		ThemeDobroFonts,
-		Breakpoints<Vt> {}
+  extends Theme,
+    ThemeDobroCustomTokens,
+    ThemeDobroFonts,
+    Breakpoints<Vt> {}
 
 type ThemeDobroStaticType<Vt extends ViewportsTuple = DefaultViewports> = ThemeDobroStatic<Vt> &
-	CustomMediaByViewport<Vt>;
+  CustomMediaByViewport<Vt>;
 
 interface ThemeDobroDescriptionStatic<Vt extends ViewportsTuple = DefaultViewports>
-	extends ThemeDescription,
-		ThemeDobroCustomTokens,
-		ThemeDobroFonts,
-		Breakpoints<Vt> {}
+  extends ThemeDescription,
+    ThemeDobroCustomTokens,
+    ThemeDobroFonts,
+    Breakpoints<Vt> {}
 
 interface ThemeDobroCssVarsStatic extends ParadigmThemeCssVars<DobroViewportsTuple, ThemeDobro> {}
 

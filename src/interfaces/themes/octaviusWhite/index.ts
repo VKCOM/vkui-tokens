@@ -1,7 +1,7 @@
 import type {
-	ThemeOctavius,
-	ThemeOctaviusCssVars,
-	ThemeOctaviusDescription,
+  ThemeOctavius,
+  ThemeOctaviusCssVars,
+  ThemeOctaviusDescription,
 } from '../../themes/octavius/index.ts';
 
 export type ThemeOctaviusWhite = ThemeOctavius;

@@ -1,16 +1,16 @@
-@import 'flex.css';
-@import 'space.css';
-@import 'articles.css';
+@import "flex.css";
+@import "space.css";
+@import "articles.css";
 
 .container {
-	max-width: 1144px;
-	margin: 0 auto;
-	padding: 3rem 1rem;
-	width: calc(100% - 2rem);
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  width: calc(100% - 2rem);
 }
 
 @media screen and (max-width: 1024px) {
-	.container {
-		padding: 1.5rem 1rem;
-	}
+  .container {
+    padding: 1.5rem 1rem;
+  }
 }

@@ -15,18 +15,6 @@ updates:
           - 'react-dom'
           - '@types/react'
           - '@types/react-dom'
-      eslint:
-        patterns:
-          - 'eslint*'
-      jest:
-        patterns:
-          - 'jest*'
-          - '@types/jest*'
-          - 'babel-jest'
-      prettier:
-        patterns:
-          - 'prettier'
-          - '@vkontakte/prettier-config'
   - package-ecosystem: 'github-actions'
     # Workflow files stored in the
     # default location of `.github/workflows`

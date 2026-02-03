@@ -3,9 +3,9 @@ import { checkAlphaMismatch } from '../../lint/rules/alphaMismatch.ts';
 
 // Тут перечислены все проверки
 export function checkAllRules(
-	token: string,
-	value: ColorDescriptionStatic,
-	emit: (message: string) => void,
+  token: string,
+  value: ColorDescriptionStatic,
+  emit: (message: string) => void,
 ): void {
-	checkAlphaMismatch(token, value, emit);
+  checkAlphaMismatch(token, value, emit);
 }

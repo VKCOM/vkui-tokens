@@ -1,7 +1,7 @@
 import type {
-	ThemeTutoria,
-	ThemeTutoriaCssVars,
-	ThemeTutoriaDescription,
+  ThemeTutoria,
+  ThemeTutoriaCssVars,
+  ThemeTutoriaDescription,
 } from '../../themes/tutoria/index.ts';
 
 export type ThemeTutoriaDark = ThemeTutoria;
