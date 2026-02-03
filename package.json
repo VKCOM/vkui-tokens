@@ -79,7 +79,7 @@
     "html-loader": "^5.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "prettier": "^3.6.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
