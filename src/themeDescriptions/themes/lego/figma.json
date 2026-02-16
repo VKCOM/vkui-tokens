@@ -1,31 +1,23 @@
 {
   "appearance": {
     "backgroundAccent": {
-      "light": "#2688eb",
-      "dark": "#529ef4"
+      "light": "#2e90ff",
+      "dark": "#2e90ff"
     },
     "textPrimary": {
-      "light": "#212121",
-      "dark": "#e3e3e3"
+      "light": "#3b3b3b",
+      "dark": "#ffffff"
     },
     "textContrastThemed": {
       "light": "#ffffff",
-      "dark": "#000000"
+      "dark": "#3b3b3b"
     },
     "backgroundAccentThemed": {
-      "light": "#2688eb",
+      "light": "#2e90ff",
       "dark": "#ffffff"
     },
-    "backgroundContent": {
-      "light": "#ffffff",
-      "dark": "#0a0a0a"
-    },
-    "backgroundContentAlpha": {
-      "light": "#ffffffcc",
-      "dark": "#0a0a0acc"
-    },
     "iconAccentThemed": {
-      "light": "#2688eb",
+      "light": "#2e90ff",
       "dark": "#ffffff"
     },
     "iconContrastThemed": {
@@ -33,23 +25,19 @@
       "dark": "#000000"
     },
     "iconAccent": {
-      "light": "#2688eb",
-      "dark": "#529ef4"
+      "light": "#2e90ff",
+      "dark": "#2e90ff"
     },
     "iconSecondary": {
-      "light": "#a3a3a3",
-      "dark": "#787878"
+      "light": "#b3b3b3",
+      "dark": "#666666"
     },
     "textSecondary": {
-      "light": "#878a8c",
-      "dark": "#787878"
-    },
-    "textTertiary": {
-      "light": "#a1a1a1",
-      "dark": "#5f5f5f"
+      "light": "#999999",
+      "dark": "#666666"
     },
     "textAccentThemed": {
-      "light": "#2688eb",
+      "light": "#2e90ff",
       "dark": "#ffffff"
     },
     "textContrast": {
@@ -57,11 +45,11 @@
       "dark": "#ffffff"
     },
     "strokeImageBorderAlpha": {
-      "light": "#00000014",
-      "dark": "#ffffff1c"
+      "light": "#33333328",
+      "dark": "#ffffff3d"
     },
     "strokeAccent": {
-      "light": "#2688eb",
+      "light": "#2e90ff",
       "dark": "#529ef4"
     },
     "strokeSeparatorPrimaryAlpha": {
@@ -73,55 +61,35 @@
       "dark": "#ff3347"
     },
     "paletteAccentGreen": {
-      "light": "#4bb34b",
-      "dark": "#4bb34b"
-    },
-    "backgroundAccentTint": {
-      "light": "#5a9eff",
-      "dark": "#5a9eff"
-    },
-    "backgroundAccentAlternative": {
-      "light": "#2688eb",
-      "dark": "#529ef4"
+      "light": "#34c759",
+      "dark": "#34c759"
     },
     "backgroundBackground": {
-      "light": "#ededed",
-      "dark": "#0a0a0a"
+      "light": "#ffffff",
+      "dark": "#000000"
     },
     "backgroundSecondary": {
-      "light": "#f5f5f5",
-      "dark": "#1b1b1b"
-    },
-    "backgroundSecondaryAlpha": {
-      "light": "#0000000a",
-      "dark": "#ffffff1e"
+      "light": "#f7f7f7",
+      "dark": "#1e1e1c"
     },
     "backgroundTertiary": {
-      "light": "#f9f9f9",
-      "dark": "#181818"
-    },
-    "backgroundTertiaryAlpha": {
-      "light": "#00000007",
-      "dark": "#ffffff0c"
+      "light": "#f7f7f7",
+      "dark": "#141414"
     },
     "backgroundContrast": {
       "light": "#ffffff",
       "dark": "#ffffff"
     },
-    "backgroundContrastSecondaryAlpha": {
-      "light": "#ffffff33",
-      "dark": "#ffffff38"
-    },
     "backgroundContrastInverse": {
-      "light": "#262626",
-      "dark": "#262626"
+      "light": "#000000",
+      "dark": "#000000"
     },
     "backgroundModal": {
       "light": "#ffffff",
-      "dark": "#0a0a0a"
+      "dark": "#000000"
     },
     "backgroundModalInverse": {
-      "light": "#0a0a0a",
+      "light": "#000000",
       "dark": "#ffffff"
     },
     "backgroundWarning": {
@@ -129,12 +97,12 @@
       "dark": "#483416"
     },
     "backgroundPositive": {
-      "light": "#4bb34b",
-      "dark": "#4bb34b"
+      "light": "#34c759",
+      "dark": "#34c759"
     },
     "backgroundNegative": {
-      "light": "#e64646",
-      "dark": "#ff5c5c"
+      "light": "#fe3c60",
+      "dark": "#fe3c60"
     },
     "backgroundPositiveTint": {
       "light": "#e8f9e8",
@@ -145,184 +113,104 @@
       "dark": "#4b2727"
     },
     "backgroundFieldBackground": {
-      "light": "#ebebeb",
-      "dark": "#1b1b1b"
-    },
-    "backgroundHeaderBackground": {
-      "light": "#ffffff",
-      "dark": "#0a0a0a"
+      "light": "#ddff00",
+      "dark": "#ddff00"
     },
     "textAccent": {
-      "light": "#2688eb",
-      "dark": "#529ef4"
+      "light": "#2e90ff",
+      "dark": "#2e90ff"
     },
     "textPrimaryInvariably": {
-      "light": "#212121",
-      "dark": "#212121"
-    },
-    "textSubhead": {
-      "light": "#757575",
-      "dark": "#9a9a9a"
+      "light": "#3b3b3b",
+      "dark": "#3b3b3b"
     },
     "textPositive": {
-      "light": "#4bb34b",
-      "dark": "#4bb34b"
+      "light": "#34c759",
+      "dark": "#34c759"
     },
     "textNegative": {
-      "light": "#e64646",
-      "dark": "#ff5c5c"
+      "light": "#fe3c60",
+      "dark": "#fe3c60"
     },
     "textLink": {
-      "light": "#2d81e0",
-      "dark": "#529ef4"
+      "light": "#2e90ff",
+      "dark": "#2e90ff"
     },
     "textLinkThemed": {
-      "light": "#2d81e0",
+      "light": "#2e90ff",
       "dark": "#ffffff"
-    },
-    "textLinkTint": {
-      "light": "#71aaeb",
-      "dark": "#71aaeb"
-    },
-    "textLinkVisited": {
-      "light": "#4986cc",
-      "dark": "#4986cc"
-    },
-    "textMuted": {
-      "light": "#333333",
-      "dark": "#c4c4c4"
     },
     "textLinkContrast": {
       "light": "#ffffff",
       "dark": "#ffffff"
     },
     "iconPrimary": {
-      "light": "#212121",
-      "dark": "#e3e3e3"
+      "light": "#3b3b3b",
+      "dark": "#ffffff"
     },
     "iconPrimaryInvariably": {
-      "light": "#212121",
-      "dark": "#212121"
+      "light": "#3b3b3b",
+      "dark": "#3b3b3b"
     },
     "iconMedium": {
-      "light": "#8a8a8a",
-      "dark": "#b1b1b1"
-    },
-    "iconMediumAlpha": {
-      "light": "#0000007a",
-      "dark": "#f6f6f6a8"
-    },
-    "iconSecondaryAlpha": {
-      "light": "#0000005b",
-      "dark": "#f6f6f66d"
+      "light": "#999999",
+      "dark": "#e6e6e6"
     },
     "iconTertiary": {
-      "light": "#c2c2c2",
-      "dark": "#5f5f5f"
+      "light": "#d9d9d9",
+      "dark": "#4d4d4d"
     },
     "iconTertiaryAlpha": {
-      "light": "#0000003d",
-      "dark": "#ffffff4c"
+      "light": "#3b3b3b66",
+      "dark": "#ffffff7f"
     },
     "iconContrast": {
       "light": "#ffffff",
       "dark": "#ffffff"
     },
-    "iconContrastSecondary": {
-      "light": "#f3f3f3",
-      "dark": "#f3f3f3"
-    },
     "iconPositive": {
-      "light": "#4bb34b",
-      "dark": "#4bb34b"
+      "light": "#34c759",
+      "dark": "#34c759"
     },
     "iconNegative": {
-      "light": "#e64646",
-      "dark": "#ff5c5c"
+      "light": "#fe3c60",
+      "dark": "#fe3c60"
     },
     "strokeAccentThemed": {
-      "light": "#2688eb",
+      "light": "#2e90ff",
       "dark": "#ffffff"
     },
     "strokeSeparatorPrimary": {
-      "light": "#d8d8d8",
+      "light": "#ebebeb",
       "dark": "#303030"
     },
-    "strokeSeparatorPrimary2x": {
-      "light": "#cccccc",
-      "dark": "#3e3e3e"
-    },
-    "strokeSeparatorPrimary3x": {
-      "light": "#bfbfbf",
-      "dark": "#4c4c4c"
-    },
-    "strokeSeparatorSecondary": {
-      "light": "#e3e3e3",
-      "dark": "#181818"
-    },
     "strokePositive": {
-      "light": "#4bb34b",
-      "dark": "#4bb34b"
+      "light": "#34c759",
+      "dark": "#34c759"
     },
     "strokeNegative": {
-      "light": "#e64646",
-      "dark": "#ff5c5c"
+      "light": "#fe3c60",
+      "dark": "#fe3c60"
     },
     "strokeContrast": {
       "light": "#ffffff",
       "dark": "#ffffff"
     },
     "strokeFieldBorderAlpha": {
-      "light": "#0000001e",
-      "dark": "#ffffff23"
+      "light": "#3333330a",
+      "dark": "#ffffff0f"
     },
     "otherOverlayPrimary": {
-      "light": "#00000066",
-      "dark": "#00000066"
+      "light": "#3b3b3b",
+      "dark": "#3b3b3b"
     },
     "otherAvatarOverlayAlpha": {
-      "light": "#00000099",
-      "dark": "#00000099"
-    },
-    "otherAvatarOverlayInverseAlpha": {
-      "light": "#ffffffd8",
-      "dark": "#ffffffd8"
-    },
-    "otherActionSheetText": {
-      "light": "#3f8ae0",
-      "dark": "#529ef4"
-    },
-    "otherTrackBackground": {
-      "light": "#ebebeb",
-      "dark": "#3f3f3f"
-    },
-    "otherTrackBuffer": {
-      "light": "#a0bfe4",
-      "dark": "#39506b"
-    },
-    "otherSearchFieldBackground": {
-      "light": "#ebebeb",
-      "dark": "#373737"
-    },
-    "otherPanelHeaderIcon": {
-      "light": "#2688eb",
-      "dark": "#71aaeb"
-    },
-    "otherSegmentedControl": {
-      "light": "#ffffff",
-      "dark": "#5b5b5b"
+      "light": "#3b3b3b66",
+      "dark": "#3b3b3b66"
     },
     "otherTransparent": {
       "light": "#00000000",
       "dark": "#00000000"
-    },
-    "otherImagePlaceholder": {
-      "light": "#f3f3f3",
-      "dark": "#242424"
-    },
-    "otherImagePlaceholderAlpha": {
-      "light": "#2121210f",
-      "dark": "#f6f6f61c"
     },
     "otherSkeletonFrom": {
       "light": "#f5f5f5",
@@ -332,29 +220,9 @@
       "light": "#ebebeb",
       "dark": "#262626"
     },
-    "otherWriteBarIcon": {
-      "light": "#3f8ae0",
-      "dark": "#529ef4"
-    },
-    "otherWriteBarInputBackground": {
-      "light": "#f3f3f3",
-      "dark": "#262626"
-    },
-    "otherWriteBarInputBorder": {
-      "light": "#ebebeb",
-      "dark": "#262626"
-    },
-    "otherWriteBarInputBorderAlpha": {
-      "light": "#00000014",
-      "dark": "#ffffff14"
-    },
-    "statesHoverBackgroundAccent": {
-      "light": "#2c7cde",
-      "dark": "#59a2f4"
-    },
     "paletteAccentBlue": {
-      "light": "#2688eb",
-      "dark": "#529ef4"
+      "light": "#2e90ff",
+      "dark": "#2e90ff"
     },
     "paletteAccentGray": {
       "light": "#a3adb8",
@@ -384,209 +252,25 @@
       "light": "#3f8ae0",
       "dark": "#3f8ae0"
     },
-    "statesActiveBackgroundAccent": {
-      "light": "#1e6fdb",
-      "dark": "#60a6f5"
-    },
-    "statesHoverBackgroundAccentThemed": {
-      "light": "#2c7cde",
-      "dark": "#ebedf0"
-    },
-    "statesActiveBackgroundAccentThemed": {
-      "light": "#1e6fdb",
-      "dark": "#d7d8db"
-    },
-    "statesHoverBackgroundSecondary": {
-      "light": "#f0f2f4",
-      "dark": "#2c2c2d"
-    },
-    "statesActiveBackgroundSecondary": {
-      "light": "#dcdde0",
-      "dark": "#353536"
-    },
-    "statesHoverBackgroundSecondaryAlpha": {
-      "light": "#00000014",
-      "dark": "#ffffff1e"
-    },
-    "statesActiveBackgroundSecondaryAlpha": {
-      "light": "#0000001e",
-      "dark": "#ffffff23"
-    },
-    "statesHoverBackgroundPositive": {
-      "light": "#3ca03e",
-      "dark": "#52b652"
-    },
-    "statesActiveBackgroundPositive": {
-      "light": "#2f8d32",
-      "dark": "#59b959"
-    },
-    "statesHoverBackgroundNegative": {
-      "light": "#d83e3c",
-      "dark": "#ff6363"
-    },
-    "statesActiveBackgroundNegative": {
-      "light": "#c93633",
-      "dark": "#ff6969"
-    },
-    "statesHoverTransparent": {
-      "light": "#0000000a",
-      "dark": "#ffffff0a"
-    },
-    "statesActiveTransparent": {
-      "light": "#00000014",
-      "dark": "#ffffff14"
-    },
-    "statesHoverTransparentContrast": {
-      "light": "#ffffff14",
-      "dark": "#ffffff14"
-    },
-    "statesActiveTransparentContrast": {
-      "light": "#ffffff1e",
-      "dark": "#ffffff1e"
-    },
-    "statesHoverBackgroundContrast": {
-      "light": "#f5f5f7",
-      "dark": "#ebedf0"
-    },
-    "statesActiveBackgroundContrast": {
-      "light": "#ebecef",
-      "dark": "#d7d8db"
-    },
-    "statesHoverBackgroundContrastSecondaryAlpha": {
-      "light": "#ffffff3d",
-      "dark": "#ffffff1e"
-    },
-    "statesActiveBackgroundContrastSecondaryAlpha": {
-      "light": "#ffffff47",
-      "dark": "#ffffff47"
-    },
-    "statesHoverBackgroundTertiary": {
-      "light": "#eff0f1",
-      "dark": "#29292a"
-    },
-    "statesActiveBackgroundTertiary": {
-      "light": "#e5e6ea",
-      "dark": "#323233"
-    },
-    "statesHoverBackgroundTertiaryAlpha": {
-      "light": "#00000011",
-      "dark": "#ffffff11"
-    },
-    "statesActiveBackgroundTertiaryAlpha": {
-      "light": "#0000001c",
-      "dark": "#ffffff1c"
-    },
-    "statesHoverFieldBorderAlpha": {
-      "light": "#0000003d",
-      "dark": "#ffffff28"
-    },
-    "statesActiveFieldBorderAlpha": {
-      "light": "#0000005b",
-      "dark": "#ffffff33"
-    },
-    "otherTabbarTextInactive": {
-      "light": "#adadad",
-      "dark": "#707070"
-    },
     "otherOverlaySecondary": {
-      "light": "#00000044",
-      "dark": "#00000044"
+      "light": "#3b3b3b66",
+      "dark": "#3b3b3b66"
     },
     "backgroundContrastThemed": {
       "light": "#ffffff",
-      "dark": "#262626"
+      "dark": "#000000"
     },
     "paletteAccentOrangePeach": {
       "light": "#f9b54f",
       "dark": "#ffc062"
     },
-    "backgroundAccentThemedAlpha": {
-      "light": "#2688eb33",
-      "dark": "#ffffff33"
-    },
-    "appearance": {
-      "light": "Light",
-      "dark": "Dark"
-    },
     "iconWarning": {
-      "light": "#f8a01c",
-      "dark": "#edb055"
+      "light": "#ff6900",
+      "dark": "#ff6900"
     },
     "backgroundInfoTint": {
       "light": "#deeeff",
       "dark": "#16334e"
-    },
-    "gradientDefaultStop15": {
-      "light": "#ffffff0c",
-      "dark": "#19191a0c"
-    },
-    "gradientDefaultStop30": {
-      "light": "#ffffff33",
-      "dark": "#19191a33"
-    },
-    "gradientDefaultStop70": {
-      "light": "#ffffffcc",
-      "dark": "#19191acc"
-    },
-    "gradientDefaultStop85": {
-      "light": "#fffffff2",
-      "dark": "#19191af2"
-    },
-    "gradientDefaultStop100": {
-      "light": "#ffffff",
-      "dark": "#19191a"
-    },
-    "gradientTintStop15": {
-      "light": "#f9f9f90c",
-      "dark": "#2020210c"
-    },
-    "gradientTintStop30": {
-      "light": "#f9f9f933",
-      "dark": "#20202133"
-    },
-    "gradientTintStop70": {
-      "light": "#f9f9f9cc",
-      "dark": "#202021cc"
-    },
-    "gradientTintStop85": {
-      "light": "#f9f9f9f2",
-      "dark": "#202021f2"
-    },
-    "gradientTintStop100": {
-      "light": "#f9f9f9",
-      "dark": "#202021"
-    },
-    "gradientOverlayStop15": {
-      "light": "#00000005",
-      "dark": "#00000005"
-    },
-    "gradientOverlayStop30": {
-      "light": "#00000014",
-      "dark": "#00000014"
-    },
-    "gradientOverlayStop70": {
-      "light": "#00000051",
-      "dark": "#00000051"
-    },
-    "gradientOverlayStop85": {
-      "light": "#00000060",
-      "dark": "#00000060"
-    },
-    "gradientOverlayStop100": {
-      "light": "#000000cc",
-      "dark": "#000000cc"
-    },
-    "gradientDefaultStop0": {
-      "light": "#ffffff00",
-      "dark": "#19191a00"
-    },
-    "gradientTintStop0": {
-      "light": "#f9f9f900",
-      "dark": "#20202100"
-    },
-    "gradientOverlayStop0": {
-      "light": "#00000000",
-      "dark": "#00000000"
     },
     "paletteAccentAzure": {
       "light": "#0077ff",
@@ -604,21 +288,33 @@
       "light": "#f45fff",
       "dark": "#f45fff"
     },
-    "textPrimaryAlpha": {
-      "light": "#2b2b2bd6",
-      "dark": "#f8f8f8b7"
-    },
-    "textSecondaryAlpha": {
-      "light": "#2929298c",
-      "dark": "#fafafa6b"
-    },
-    "backgroundContentInverse": {
-      "light": "#0a0a0a",
+    "otherButton": {
+      "light": "#262626",
       "dark": "#ffffff"
     },
-    "strokePrimary": {
-      "light": "#212121",
-      "dark": "#e3e3e3"
+    "textTertiaryAlpha": {
+      "light": "#3b3b3b66",
+      "dark": "#ffffff7f"
+    },
+    "contextMenuColorDodge": {
+      "light": "#474747",
+      "dark": "#474747"
+    },
+    "contextMenuFill": {
+      "light": "#a1a1a1cc",
+      "dark": "#1a1a1acc"
+    },
+    "contextMenuStroke1": {
+      "light": "#bfbfbf4c",
+      "dark": "#6666664c"
+    },
+    "contextMenuStroke2": {
+      "light": "#bfbfbf19",
+      "dark": "#66666619"
+    },
+    "gradientProgressiveBottomStop0": {
+      "light": "#fffffff2",
+      "dark": "#000000f2"
     }
   },
   "tokens": {
@@ -719,8 +415,8 @@
       "desktop": 32
     },
     "sizeButtonLargeHeight": {
-      "iOS": 56,
-      "android": 56,
+      "iOS": 52,
+      "android": 52,
       "vkCom": 44,
       "desktop": 44
     },
@@ -737,10 +433,10 @@
       "desktop": 32
     },
     "fontFamilyBase": {
-      "iOS": "SF Pro Text",
+      "iOS": "SF Pro",
       "android": "Roboto",
-      "vkCom": "SF Pro Text",
-      "desktop": "SF Pro Text"
+      "vkCom": "VK Sans Text",
+      "desktop": "VK Sans Text"
     },
     "spacingSize2XS": {
       "iOS": 2,
@@ -773,26 +469,26 @@
       "desktop": "VK Sans Display"
     },
     "fontLetterSpacingTitle1": {
-      "iOS": 0.07000000029802322,
+      "iOS": -0.5799999833106995,
       "android": 0,
       "vkCom": 0,
       "desktop": 0
     },
     "fontLetterSpacingTitle2": {
-      "iOS": -0.44999998807907104,
+      "iOS": -0.7799999713897705,
       "android": 0,
       "vkCom": 0,
       "desktop": 0
     },
     "fontLetterSpacingTitle3": {
-      "iOS": -0.4300000071525574,
-      "android": 0,
+      "iOS": -0.6800000071525574,
+      "android": 0.036400001496076584,
       "vkCom": 0,
       "desktop": 0
     },
     "fontLetterSpacingHeadline1": {
-      "iOS": -0.3100000023841858,
-      "android": 0.15000000596046448,
+      "iOS": -0.7200000286102295,
+      "android": 0.05429999902844429,
       "vkCom": 0,
       "desktop": 0
     },
@@ -803,26 +499,26 @@
       "desktop": 0
     },
     "fontLetterSpacingText": {
-      "iOS": -0.3100000023841858,
+      "iOS": -0.6800000071525574,
       "android": 0.15000000596046448,
       "vkCom": 0,
       "desktop": 0
     },
     "fontLetterSpacingParagraph": {
-      "iOS": -0.23000000417232513,
-      "android": 0,
+      "iOS": -0.46000000834465027,
+      "android": 0.15000000596046448,
       "vkCom": 0,
       "desktop": 0
     },
     "fontLetterSpacingSubhead": {
-      "iOS": -0.15000000596046448,
+      "iOS": -0.23000000417232513,
       "android": 0.15000000596046448,
       "vkCom": 0,
       "desktop": 0
     },
     "fontLetterSpacingFootnote": {
-      "iOS": -0.07999999821186066,
-      "android": 0.20000000298023224,
+      "iOS": -0.5799999833106995,
+      "android": 0.18979999423027039,
       "vkCom": 0,
       "desktop": 0
     },
@@ -851,22 +547,22 @@
       "desktop": 360
     },
     "fontSizeBaseHeadline1": {
-      "iOS": 16,
-      "android": 16,
-      "vkCom": 14,
-      "desktop": 15
+      "iOS": 17,
+      "android": 17,
+      "vkCom": 17,
+      "desktop": 17
     },
     "fontSizeBaseText": {
       "iOS": 16,
       "android": 16,
-      "vkCom": 13,
-      "desktop": 15
+      "vkCom": 16,
+      "desktop": 16
     },
     "fontSizeBaseHeadline2": {
       "iOS": 15,
       "android": 15,
-      "vkCom": 14,
-      "desktop": 14
+      "vkCom": 15,
+      "desktop": 15
     },
     "sizeFormItemPaddingVertical": {
       "iOS": 12,
@@ -878,12 +574,12 @@
       "iOS": 14,
       "android": 14,
       "vkCom": 14,
-      "desktop": 13
+      "desktop": 14
     },
     "fontLineHeightBaseHeadline1": {
       "iOS": 20,
       "android": 20,
-      "vkCom": 18,
+      "vkCom": 20,
       "desktop": 20
     },
     "fontLineHeightBaseHeadline2": {
@@ -893,10 +589,10 @@
       "desktop": 20
     },
     "fontLineHeightBaseText": {
-      "iOS": 20,
-      "android": 20,
-      "vkCom": 16,
-      "desktop": 20
+      "iOS": 18.5,
+      "android": 18.5,
+      "vkCom": 18.5,
+      "desktop": 18.5
     },
     "fontLineHeightBaseSubhead": {
       "iOS": 18,
@@ -947,10 +643,10 @@
       "desktop": 20
     },
     "fontSizeBaseTitle3": {
-      "iOS": 17,
-      "android": 17,
-      "vkCom": 17,
-      "desktop": 17
+      "iOS": 18,
+      "android": 18,
+      "vkCom": 18,
+      "desktop": 18
     },
     "fontSizeBaseParagraph": {
       "iOS": 15,
@@ -959,10 +655,10 @@
       "desktop": 15
     },
     "fontSizeBaseFootnote": {
-      "iOS": 13,
-      "android": 13,
-      "vkCom": 13,
-      "desktop": 13
+      "iOS": 13.5,
+      "android": 13.5,
+      "vkCom": 13.5,
+      "desktop": 13.5
     },
     "fontSizeBaseCaption1": {
       "iOS": 12,
@@ -977,34 +673,34 @@
       "desktop": 11
     },
     "fontLineHeightBaseTitle1": {
-      "iOS": 28,
-      "android": 28,
-      "vkCom": 28,
-      "desktop": 28
+      "iOS": 26,
+      "android": 26,
+      "vkCom": 26,
+      "desktop": 26
     },
     "fontLineHeightBaseTitle2": {
-      "iOS": 24,
-      "android": 24,
-      "vkCom": 24,
-      "desktop": 24
+      "iOS": 23,
+      "android": 23,
+      "vkCom": 23,
+      "desktop": 23
     },
     "fontLineHeightBaseTitle3": {
-      "iOS": 22,
-      "android": 22,
-      "vkCom": 22,
-      "desktop": 22
+      "iOS": 21,
+      "android": 21,
+      "vkCom": 21,
+      "desktop": 21
     },
     "fontLineHeightBaseParagraph": {
-      "iOS": 20,
-      "android": 20,
-      "vkCom": 20,
-      "desktop": 20
+      "iOS": 18,
+      "android": 18,
+      "vkCom": 18,
+      "desktop": 18
     },
     "fontLineHeightBaseFootnote": {
-      "iOS": 16,
-      "android": 16,
-      "vkCom": 16,
-      "desktop": 16
+      "iOS": 15,
+      "android": 15,
+      "vkCom": 15,
+      "desktop": 15
     },
     "fontLineHeightBaseCaption1": {
       "iOS": 14,
@@ -1179,6 +875,192 @@
       "android": 0,
       "vkCom": 96,
       "desktop": 96
+    },
+    "fontSizeBaseTitle0": {
+      "iOS": 31,
+      "android": 31,
+      "vkCom": 31,
+      "desktop": 31
+    },
+    "fontSizeBaseTitle25": {
+      "iOS": 19,
+      "android": 19,
+      "vkCom": 19,
+      "desktop": 19
+    },
+    "fontSizeBaseBody": {
+      "iOS": 17.5,
+      "android": 17.5,
+      "vkCom": 17.5,
+      "desktop": 17.5
+    },
+    "fontLineHeightBaseTitle0": {
+      "iOS": 31,
+      "android": 31,
+      "vkCom": 31,
+      "desktop": 31
+    },
+    "fontLineHeightBaseTitle25": {
+      "iOS": 20,
+      "android": 20,
+      "vkCom": 20,
+      "desktop": 20
+    },
+    "fontLineHeightBaseBody": {
+      "iOS": 23,
+      "android": 23,
+      "vkCom": 23,
+      "desktop": 23
+    },
+    "fontLetterSpacingTitle0": {
+      "iOS": -0.7200000286102295,
+      "android": -0.7200000286102295,
+      "vkCom": -0.7200000286102295,
+      "desktop": 0
+    },
+    "fontLetterSpacingTitle25": {
+      "iOS": -0.5799999833106995,
+      "android": 0.018200000748038292,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "fontLetterSpacingBody": {
+      "iOS": -0.7200000286102295,
+      "android": 0.04540000110864639,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh9": {
+      "iOS": 2,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh1011": {
+      "iOS": 3,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh1214": {
+      "iOS": 4,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh1517": {
+      "iOS": 5,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh1822": {
+      "iOS": 6,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh2324": {
+      "iOS": 7,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh2528": {
+      "iOS": 8,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh2932": {
+      "iOS": 9,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh3335": {
+      "iOS": 10,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh3638": {
+      "iOS": 11,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh3941": {
+      "iOS": 12,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh4244": {
+      "iOS": 13,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh4547": {
+      "iOS": 14,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh4851": {
+      "iOS": 15,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh5255": {
+      "iOS": 16,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh5658": {
+      "iOS": 17,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh5961": {
+      "iOS": 18,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh6264": {
+      "iOS": 19,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh6568": {
+      "iOS": 20,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "radiusMinWh69": {
+      "iOS": 21,
+      "android": 0,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "otherContextMenuVerticalPadding": {
+      "iOS": 14,
+      "android": 14,
+      "vkCom": 14,
+      "desktop": 14
+    },
+    "otherContextMenuBorderRadius": {
+      "iOS": 32,
+      "android": 32,
+      "vkCom": 32,
+      "desktop": 32
     }
   }
 }
