@@ -1,102 +1,102 @@
 import type { Property } from 'csstype';
 
 import type {
-	ColorDescriptionStatic,
-	ColorsDescriptionStruct,
-	ColorWithStates,
+  ColorDescriptionStatic,
+  ColorsDescriptionStruct,
+  ColorWithStates,
 } from '../../general/colors/index.ts';
 import type { GradientPoints } from '../../general/gradients/index.ts';
 import type { Adaptive } from '../../general/tools/index.ts';
 import type { DefaultViewports } from '../../general/tools/viewports.ts';
 import type { Font } from '../../general/typography/index.ts';
 import type {
-	LocalParadigmColorsDescriptionStruct,
-	ParadigmTheme,
-	ParadigmThemeCssVars,
-	ParadigmThemeDescription,
+  LocalParadigmColorsDescriptionStruct,
+  ParadigmTheme,
+  ParadigmThemeCssVars,
+  ParadigmThemeDescription,
 } from '../../namespaces/paradigm/index.ts';
 
 export interface ThemeOtvetOverValues {
-	otvetBoxShadowIsland: Property.BoxShadow;
+  otvetBoxShadowIsland: Property.BoxShadow;
 }
 export interface ThemeOtvetTypography {
-	fontTitleXXL: Adaptive<Font>;
-	fontTitleXL: Adaptive<Font>;
-	fontTitle1Bold: Adaptive<Font>;
-	fontTitle2Bold: Adaptive<Font>;
-	fontTitle4: Adaptive<Font>;
-	fontHeadline2Bold: Adaptive<Font>;
-	fontSubheadBold: Adaptive<Font>;
-	fontCaption2Bold: Adaptive<Font>;
-	fontCaption3CapsBold: Adaptive<Font>;
-	fontCaption3Bold: Adaptive<Font>;
+  fontTitleXXL: Adaptive<Font>;
+  fontTitleXL: Adaptive<Font>;
+  fontTitle1Bold: Adaptive<Font>;
+  fontTitle2Bold: Adaptive<Font>;
+  fontTitle4: Adaptive<Font>;
+  fontHeadline2Bold: Adaptive<Font>;
+  fontSubheadBold: Adaptive<Font>;
+  fontCaption2Bold: Adaptive<Font>;
+  fontCaption3CapsBold: Adaptive<Font>;
+  fontCaption3Bold: Adaptive<Font>;
 }
 
 export interface ThemeOtveLocalSizes {
-	sizeBorder: number;
+  sizeBorder: number;
 }
 
 export interface LocalOtvetColorDescriptionStruct {
-	otvetColorBackgroundAnswer: ColorDescriptionStatic;
-	colorBackgroundNavBarOtvetui: ColorDescriptionStatic;
-	colorRangHigherBrain: ColorDescriptionStatic;
-	colorRangAi: ColorDescriptionStatic;
-	colorRangGenius: ColorDescriptionStatic;
-	colorRangOracul: ColorDescriptionStatic;
-	colorRangProLight: ColorDescriptionStatic;
-	colorRangMudriy: ColorDescriptionStatic;
-	colorRangMyslitel: ColorDescriptionStatic;
-	colorRangGuru: ColorDescriptionStatic;
-	colorRangMaster: ColorDescriptionStatic;
-	colorRangPro: ColorDescriptionStatic;
-	colorRangExpert: ColorDescriptionStatic;
-	colorRangStudent: ColorDescriptionStatic;
-	colorAvatarsRed: ColorDescriptionStatic;
-	colorAvatarsOrange: ColorDescriptionStatic;
-	colorAvatarsPeach: ColorDescriptionStatic;
-	colorAvatarsYellow: ColorDescriptionStatic;
-	colorAvatarsLime: ColorDescriptionStatic;
-	colorAvatarsGreen: ColorDescriptionStatic;
-	colorAvatarsSea: ColorDescriptionStatic;
-	colorAvatarsMint: ColorDescriptionStatic;
-	colorAvatarsSeagreen: ColorDescriptionStatic;
-	colorAvatarsSky: ColorDescriptionStatic;
-	colorAvatarsBlue: ColorDescriptionStatic;
-	colorAvatarsIndigo: ColorDescriptionStatic;
-	colorAvatarsViolet: ColorDescriptionStatic;
-	colorAvatarsLavender: ColorDescriptionStatic;
-	colorAvatarsCoral: ColorDescriptionStatic;
-	colorStrokeBorderAlpha: ColorDescriptionStatic;
+  otvetColorBackgroundAnswer: ColorDescriptionStatic;
+  colorBackgroundNavBarOtvetui: ColorDescriptionStatic;
+  colorRangHigherBrain: ColorDescriptionStatic;
+  colorRangAi: ColorDescriptionStatic;
+  colorRangGenius: ColorDescriptionStatic;
+  colorRangOracul: ColorDescriptionStatic;
+  colorRangProLight: ColorDescriptionStatic;
+  colorRangMudriy: ColorDescriptionStatic;
+  colorRangMyslitel: ColorDescriptionStatic;
+  colorRangGuru: ColorDescriptionStatic;
+  colorRangMaster: ColorDescriptionStatic;
+  colorRangPro: ColorDescriptionStatic;
+  colorRangExpert: ColorDescriptionStatic;
+  colorRangStudent: ColorDescriptionStatic;
+  colorAvatarsRed: ColorDescriptionStatic;
+  colorAvatarsOrange: ColorDescriptionStatic;
+  colorAvatarsPeach: ColorDescriptionStatic;
+  colorAvatarsYellow: ColorDescriptionStatic;
+  colorAvatarsLime: ColorDescriptionStatic;
+  colorAvatarsGreen: ColorDescriptionStatic;
+  colorAvatarsSea: ColorDescriptionStatic;
+  colorAvatarsMint: ColorDescriptionStatic;
+  colorAvatarsSeagreen: ColorDescriptionStatic;
+  colorAvatarsSky: ColorDescriptionStatic;
+  colorAvatarsBlue: ColorDescriptionStatic;
+  colorAvatarsIndigo: ColorDescriptionStatic;
+  colorAvatarsViolet: ColorDescriptionStatic;
+  colorAvatarsLavender: ColorDescriptionStatic;
+  colorAvatarsCoral: ColorDescriptionStatic;
+  colorStrokeBorderAlpha: ColorDescriptionStatic;
 }
 
 export interface ThemeOtvetGradients {
-	gradientContent0: GradientPoints;
-	gradientContent86: GradientPoints;
+  gradientContent0: GradientPoints;
+  gradientContent86: GradientPoints;
 }
 
 type ThemeOtvetAdaptiveTokens = {
-	[key in keyof ThemeOtveLocalSizes]: Adaptive<ThemeOtveLocalSizes[key]>;
+  [key in keyof ThemeOtveLocalSizes]: Adaptive<ThemeOtveLocalSizes[key]>;
 };
 
 export type OtvetLocalColors = {
-	[key in keyof LocalOtvetColorDescriptionStruct]: ColorWithStates;
+  [key in keyof LocalOtvetColorDescriptionStruct]: ColorWithStates;
 };
 
 export interface ThemeOtvet
-	extends ParadigmTheme<DefaultViewports>,
-		ThemeOtvetTypography,
-		ThemeOtvetOverValues,
-		ThemeOtvetAdaptiveTokens,
-		OtvetLocalColors,
-		ThemeOtvetGradients {}
+  extends ParadigmTheme<DefaultViewports>,
+    ThemeOtvetTypography,
+    ThemeOtvetOverValues,
+    ThemeOtvetAdaptiveTokens,
+    OtvetLocalColors,
+    ThemeOtvetGradients {}
 export interface ThemeOtvetDescription
-	extends ParadigmThemeDescription<DefaultViewports>,
-		ThemeOtvetTypography,
-		ThemeOtvetOverValues,
-		ThemeOtvetAdaptiveTokens,
-		ThemeOtvetGradients {
-	colors: LocalOtvetColorDescriptionStruct &
-		LocalParadigmColorsDescriptionStruct &
-		ColorsDescriptionStruct;
+  extends ParadigmThemeDescription<DefaultViewports>,
+    ThemeOtvetTypography,
+    ThemeOtvetOverValues,
+    ThemeOtvetAdaptiveTokens,
+    ThemeOtvetGradients {
+  colors: LocalOtvetColorDescriptionStruct &
+    LocalParadigmColorsDescriptionStruct &
+    ColorsDescriptionStruct;
 }
 export interface ThemeOtvetCssVars extends ParadigmThemeCssVars<DefaultViewports, ThemeOtvet> {}

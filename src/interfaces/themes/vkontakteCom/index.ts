@@ -1,7 +1,7 @@
 import type {
-	ThemeVkontakteAndroid,
-	ThemeVkontakteAndroidCssVars,
-	ThemeVkontakteAndroidDescription,
+  ThemeVkontakteAndroid,
+  ThemeVkontakteAndroidCssVars,
+  ThemeVkontakteAndroidDescription,
 } from '../../themes/vkontakteAndroid/index.ts';
 
 export type ThemeVkontakteCom = ThemeVkontakteAndroid;

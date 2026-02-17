@@ -6,38 +6,38 @@ import { extractGeneralTokens } from '../build/themeProcessors/extractGeneralTok
 import { extractVarsNames } from '../build/themeProcessors/extractVarsNames/extractVarsNames.ts';
 import { pixelifyValues } from '../build/themeProcessors/pixelifyValues/pixelifyValues.ts';
 import type {
-	PixelifyTheme,
-	Theme,
-	ThemeCssVars,
-	ThemeCssVarsWide,
-	ThemeDescription,
+  PixelifyTheme,
+  Theme,
+  ThemeCssVars,
+  ThemeCssVarsWide,
+  ThemeDescription,
 } from '../interfaces/general/index.ts';
 import type { StaticTokens } from '../interfaces/general/tools/tokenValue.ts';
 
 export interface ExpandedThemeObject<T = Theme> {
-	theme: StaticTokens<T>;
-	pixelifyTheme: StaticTokens<PixelifyTheme<T>>;
-	cssVarsThemeWide: StaticTokens<ThemeCssVarsWide<T>>;
-	cssVarsTheme: StaticTokens<ThemeCssVars<T>>;
-	pseudoThemeCssVars: StaticTokens<StaticTokens<T>>;
+  theme: StaticTokens<T>;
+  pixelifyTheme: StaticTokens<PixelifyTheme<T>>;
+  cssVarsThemeWide: StaticTokens<ThemeCssVarsWide<T>>;
+  cssVarsTheme: StaticTokens<ThemeCssVars<T>>;
+  pseudoThemeCssVars: StaticTokens<StaticTokens<T>>;
 }
 
 /**
  * На основе описания темы, генерирует рутовую тему
  */
 export function expandRootTheme<TD = ThemeDescription, T = Theme>(
-	themeDescription: TD,
+  themeDescription: TD,
 ): StaticTokens<T> {
-	const expandedColors = getExpandedThemeColors(themeDescription);
-	const generalTokens = extractGeneralTokens(themeDescription);
-	const customMedia = processCustomMedia(themeDescription);
+  const expandedColors = getExpandedThemeColors(themeDescription);
+  const generalTokens = extractGeneralTokens(themeDescription);
+  const customMedia = processCustomMedia(themeDescription);
 
-	return {
-		...generalTokens,
-		...expandedColors,
-		...customMedia,
-		themeType: 'root',
-	} as any as StaticTokens<T>;
+  return {
+    ...generalTokens,
+    ...expandedColors,
+    ...customMedia,
+    themeType: 'root',
+  } as any as StaticTokens<T>;
 }
 
 /**
@@ -45,21 +45,21 @@ export function expandRootTheme<TD = ThemeDescription, T = Theme>(
  * Может работать и с любым интерфейсом и количеством переменных в теме
  */
 export function expandAll<TD = ThemeDescription, T = Theme>(
-	themeDescription: TD,
+  themeDescription: TD,
 ): ExpandedThemeObject<StaticTokens<T>> {
-	const theme = expandRootTheme<TD, T>(themeDescription);
-	const pixelifyTheme = pixelifyValues(theme);
+  const theme = expandRootTheme<TD, T>(themeDescription);
+  const pixelifyTheme = pixelifyValues(theme);
 
-	const cssVarsThemeWide = extractVarsNames<StaticTokens<T>>(theme);
-	const cssVarsTheme = extractCssVarsStrict<StaticTokens<T>>(cssVarsThemeWide);
+  const cssVarsThemeWide = extractVarsNames<StaticTokens<T>>(theme);
+  const cssVarsTheme = extractCssVarsStrict<StaticTokens<T>>(cssVarsThemeWide);
 
-	const pseudoThemeCssVars = createPseudoRootFromCssVars<StaticTokens<T>>(theme, cssVarsThemeWide);
+  const pseudoThemeCssVars = createPseudoRootFromCssVars<StaticTokens<T>>(theme, cssVarsThemeWide);
 
-	return {
-		theme,
-		pixelifyTheme,
-		cssVarsTheme,
-		cssVarsThemeWide,
-		pseudoThemeCssVars,
-	} as any as ExpandedThemeObject<StaticTokens<T>>;
+  return {
+    theme,
+    pixelifyTheme,
+    cssVarsTheme,
+    cssVarsThemeWide,
+    pseudoThemeCssVars,
+  } as any as ExpandedThemeObject<StaticTokens<T>>;
 }

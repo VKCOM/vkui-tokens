@@ -4,21 +4,21 @@ import { vkIdOkTheme, vkIdOkThemeDark } from '../../themes/vkIdOk/index.ts';
 import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.ts';
 
 export const vkIdOkIOSTheme: ThemeVkIdOkIOSDescription = {
-	...vkIOSTheme,
-	themeName: 'vkIdOkIOS',
-	themeNameBase: 'vkIdOkIOS',
-	colors: {
-		...vkIOSTheme.colors,
-		...vkIdOkTheme.colors,
-	},
+  ...vkIOSTheme,
+  themeName: 'vkIdOkIOS',
+  themeNameBase: 'vkIdOkIOS',
+  colors: {
+    ...vkIOSTheme.colors,
+    ...vkIdOkTheme.colors,
+  },
 };
 
 export const vkIdOkIOSThemeDark: ThemeVkIdOkIOSDarkDescription = {
-	...vkIOSThemeDark,
-	themeName: 'vkIdOkIOSDark',
-	themeNameBase: 'vkIdOkIOS',
-	colors: {
-		...vkIOSThemeDark.colors,
-		...vkIdOkThemeDark.colors,
-	},
+  ...vkIOSThemeDark,
+  themeName: 'vkIdOkIOSDark',
+  themeNameBase: 'vkIdOkIOS',
+  colors: {
+    ...vkIOSThemeDark.colors,
+    ...vkIdOkThemeDark.colors,
+  },
 };

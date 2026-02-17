@@ -1,80 +1,80 @@
 import type { Property } from 'csstype';
 
 import type {
-	ColorDescription,
-	ColorsDescriptionStruct,
-	ColorWithStates,
+  ColorDescription,
+  ColorsDescriptionStruct,
+  ColorWithStates,
 } from '../../general/colors/index.ts';
 import type { Adaptive } from '../../general/tools/index.ts';
 import type { Font } from '../../general/typography/index.ts';
 import type {
-	LocalParadigmColorsDescriptionStruct,
-	ParadigmTheme,
-	ParadigmThemeCssVars,
-	ParadigmThemeDescription,
+  LocalParadigmColorsDescriptionStruct,
+  ParadigmTheme,
+  ParadigmThemeCssVars,
+  ParadigmThemeDescription,
 } from '../../namespaces/paradigm/index.ts';
 
 type SearchViewports = ['touch', 'desktopS'];
 
 export type SearchLocalGradients = {
-	searchCardBackground: string;
-	searchCardWithTextBackground: string;
+  searchCardBackground: string;
+  searchCardWithTextBackground: string;
 };
 
 export type SearchLocalElevations = {
-	elevation1Hover: Property.BoxShadow;
-	elevation2Hover: Property.BoxShadow;
-	elevationButtons: Property.BoxShadow;
+  elevation1Hover: Property.BoxShadow;
+  elevation2Hover: Property.BoxShadow;
+  elevationButtons: Property.BoxShadow;
 };
 
 export type SearchLocalFonts = {
-	searchFontSearchExtraHeadline: Adaptive<Font>;
-	searchFontSearchTitle4: Adaptive<Font>;
-	searchFontSearchTitle4Bold: Adaptive<Font>;
-	searchFontSearchHeadline2: Adaptive<Font>;
-	searchFontSearchSubheadBold: Adaptive<Font>;
-	searchFontSearchFootnoteBold: Adaptive<Font>;
-	searchFontSearchFootnoteMailSans: Adaptive<Font>;
-	searchFontSearchCaption1Bold: Adaptive<Font>;
-	searchFontSearchCaption1MailSans: Adaptive<Font>;
-	searchFontSearchCaption2MailSans: Adaptive<Font>;
-	searchFontSearchBigText: Adaptive<Font>;
-	searchFontSearchBigTextBold: Adaptive<Font>;
-	searchFontSearchTextBold: Adaptive<Font>;
-	searchFontSearchTextMailSans: Adaptive<Font>;
-	searchFontForAdvertisingBold: Adaptive<Font>;
-	searchFontGreenURL: Adaptive<Font>;
-	searchFontParagraphBold: Adaptive<Font>;
+  searchFontSearchExtraHeadline: Adaptive<Font>;
+  searchFontSearchTitle4: Adaptive<Font>;
+  searchFontSearchTitle4Bold: Adaptive<Font>;
+  searchFontSearchHeadline2: Adaptive<Font>;
+  searchFontSearchSubheadBold: Adaptive<Font>;
+  searchFontSearchFootnoteBold: Adaptive<Font>;
+  searchFontSearchFootnoteMailSans: Adaptive<Font>;
+  searchFontSearchCaption1Bold: Adaptive<Font>;
+  searchFontSearchCaption1MailSans: Adaptive<Font>;
+  searchFontSearchCaption2MailSans: Adaptive<Font>;
+  searchFontSearchBigText: Adaptive<Font>;
+  searchFontSearchBigTextBold: Adaptive<Font>;
+  searchFontSearchTextBold: Adaptive<Font>;
+  searchFontSearchTextMailSans: Adaptive<Font>;
+  searchFontForAdvertisingBold: Adaptive<Font>;
+  searchFontGreenURL: Adaptive<Font>;
+  searchFontParagraphBold: Adaptive<Font>;
 };
 
 export interface LocalSearchColorsDescriptionStruct {
-	searchColorTextLinkPositive: ColorDescription;
-	searchColorTextLinkPositiveTint: ColorDescription;
-	searchColorBackgroundAccentTint: ColorDescription;
-	searchColorBackgroundOrangeAccentHover: ColorDescription;
-	searchColorBackgroundOrangeAccentActive: ColorDescription;
-	searchColorTextLinkAlternativeHover: ColorDescription;
+  searchColorTextLinkPositive: ColorDescription;
+  searchColorTextLinkPositiveTint: ColorDescription;
+  searchColorBackgroundAccentTint: ColorDescription;
+  searchColorBackgroundOrangeAccentHover: ColorDescription;
+  searchColorBackgroundOrangeAccentActive: ColorDescription;
+  searchColorTextLinkAlternativeHover: ColorDescription;
 }
 
 export type SearchLocalColors = {
-	[key in keyof LocalSearchColorsDescriptionStruct]: ColorWithStates;
+  [key in keyof LocalSearchColorsDescriptionStruct]: ColorWithStates;
 };
 
 export interface ThemeSearch
-	extends ParadigmTheme<SearchViewports>,
-		SearchLocalGradients,
-		SearchLocalElevations,
-		SearchLocalFonts,
-		SearchLocalColors {}
+  extends ParadigmTheme<SearchViewports>,
+    SearchLocalGradients,
+    SearchLocalElevations,
+    SearchLocalFonts,
+    SearchLocalColors {}
 
 export interface ThemeSearchDescription
-	extends ParadigmThemeDescription<SearchViewports>,
-		SearchLocalGradients,
-		SearchLocalElevations,
-		SearchLocalFonts {
-	colors: LocalSearchColorsDescriptionStruct &
-		LocalParadigmColorsDescriptionStruct &
-		ColorsDescriptionStruct;
+  extends ParadigmThemeDescription<SearchViewports>,
+    SearchLocalGradients,
+    SearchLocalElevations,
+    SearchLocalFonts {
+  colors: LocalSearchColorsDescriptionStruct &
+    LocalParadigmColorsDescriptionStruct &
+    ColorsDescriptionStruct;
 }
 
 // Интерфейс ниже не используем в коде, но нужен для сборки
