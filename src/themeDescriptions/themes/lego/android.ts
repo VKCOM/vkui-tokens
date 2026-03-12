@@ -6,9 +6,11 @@ import {
 } from '../../themes/vkontakteAndroid/index.ts';
 import figma from './figma.json' with { type: 'json' };
 import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
+import { legoFonts } from './ios.ts';
 
 export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 	...vkontakteAndroidTheme, // импорт светлой базовой темы
+	...legoFonts, // шрифты
 
 	themeName: 'legoAndroid', // название текущей темы
 	themeNameBase: 'legoAndroid', // название светлой (базовой) темы
