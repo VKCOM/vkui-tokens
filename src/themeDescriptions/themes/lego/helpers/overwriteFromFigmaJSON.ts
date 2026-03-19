@@ -1,6 +1,6 @@
 import figma from '../figma.json' with { type: 'json' };
 
-// Поля — режимы соответсвующей коллекции переменных из фигмы
+// Поля — режимы соответствующей коллекции переменных из фигмы
 // Цвета
 interface AppearanceVariable {
 	light: string;

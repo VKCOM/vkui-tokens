@@ -1,6 +1,23 @@
-// Сюда нельзя добавлять локальные переменные — так условились с разработкой IOS
-export type {
-	ThemeVkIOS as ThemeLegoIOS,
-	ThemeVkIOSCssVars as ThemeLegoIOSCssVars,
-	ThemeVkIOSDescription as ThemeLegoIOSDescription,
-} from '../../themes/vkIOS/index.ts';
+import type {
+	ColorDescription,
+	ColorsDescriptionStruct,
+	ColorWithStates,
+} from 'interfaces/general/colors/index.ts';
+import type { ThemeCssVars } from 'interfaces/general/index.ts';
+
+import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
+
+export interface LocalVkontakteIOSColorsDescriptionStruct {
+	colorBackgroundInverse: ColorDescription;
+}
+
+export type LegoIOSLocalColors = {
+	[key in keyof LocalVkontakteIOSColorsDescriptionStruct]: ColorWithStates;
+};
+
+export interface ThemeLegoIOS extends ThemeVkBase, LegoIOSLocalColors {}
+
+export interface ThemeLegoIOSDescription extends ThemeVkBaseDescription {
+	colors: LocalVkontakteIOSColorsDescriptionStruct & ColorsDescriptionStruct;
+}
+export interface ThemeLegoIOSCssVars extends ThemeCssVars<ThemeLegoIOS> {}

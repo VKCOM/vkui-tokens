@@ -205,8 +205,8 @@
       "dark": "#3b3b3b"
     },
     "otherAvatarOverlayAlpha": {
-      "light": "#3b3b3b66",
-      "dark": "#3b3b3b66"
+      "light": "#3b3b3b33",
+      "dark": "#3b3b3b33"
     },
     "otherTransparent": {
       "light": "#00000000",
@@ -288,7 +288,7 @@
       "light": "#f45fff",
       "dark": "#f45fff"
     },
-    "otherButton": {
+    "backgroundInverse": {
       "light": "#262626",
       "dark": "#ffffff"
     },
@@ -315,6 +315,10 @@
     "gradientProgressiveBottomStop0": {
       "light": "#fffffff2",
       "dark": "#000000f2"
+    },
+    "otherWriteBarInputBorderAlpha": {
+      "light": "#ddff00",
+      "dark": "#ddff00"
     }
   },
   "tokens": {
@@ -829,10 +833,10 @@
       "desktop": 12
     },
     "opacityDisabled": {
-      "iOS": 50,
-      "android": 50,
-      "vkCom": 50,
-      "desktop": 50
+      "iOS": 52,
+      "android": 52,
+      "vkCom": 52,
+      "desktop": 52
     },
     "sizeCellHeight": {
       "iOS": 52,
