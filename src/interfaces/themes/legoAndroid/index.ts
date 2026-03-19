@@ -10,6 +10,7 @@ import type { VkontakteAndroidGradients } from '../../themes/vkontakteAndroid/in
 import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
 
 export interface LocalLegoAndroidColorsDescriptionStruct {
+	// Дополнительные цвета для темы
 	colorBackgroundInverse: ColorDescription;
 }
 

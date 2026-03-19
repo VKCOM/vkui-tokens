@@ -8,6 +8,7 @@ import type { ThemeCssVars } from 'interfaces/general/index.ts';
 import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
 
 export interface LocalVkontakteIOSColorsDescriptionStruct {
+	// Дополнительные цвета для темы
 	colorBackgroundInverse: ColorDescription;
 }
 
