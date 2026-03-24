@@ -7,7 +7,7 @@ import type { Theme } from '../../../interfaces/general/index.ts';
 export const compileTypeScript = <T = Theme>(theme: T): string => {
 	const jsonTheme = compileJSON<T>(theme);
 
-	return `import { $$InterfaceName$$ } from '$$InterfaceURL$$';
+	return `import type { $$InterfaceName$$ } from '$$InterfaceURL$$';
 
 const theme: $$InterfaceName$$ = ${jsonTheme};
 

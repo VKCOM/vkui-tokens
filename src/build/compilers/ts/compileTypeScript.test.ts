@@ -9,7 +9,7 @@ describe('compileTypeScript', () => {
 	};
 
 	it('should work', () => {
-		const expected = `import { $$InterfaceName$$ } from '$$InterfaceURL$$';
+		const expected = `import type { $$InterfaceName$$ } from '$$InterfaceURL$$';
 
 const theme: $$InterfaceName$$ = {
 	"themeName": "base"
