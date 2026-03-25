@@ -16,9 +16,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:prettier": "prettier --check --ignore-unknown --cache --cache-location .cache/.prettiercache .",
     "tsc": "tsc --project tsconfig.json",
-    "swc": "yarn run swc:cjs && yarn run swc:esm",
-    "swc:cjs": "swc dist/ --config-file package.swcrc --strip-leading-paths --out-file-extension cjs -d dist",
-    "swc:esm": "swc dist/ --config-file package.swcrc --strip-leading-paths --out-file-extension js  -d dist -C module.type=es6",
+    "swc": "swc dist/ --config-file package.swcrc --strip-leading-paths --out-file-extension js  -d dist -C module.type=es6",
     "test": "node --test",
     "test:ci": "node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info",
     "clear:src": "find src -name '*.d.ts' -delete &&  find src -name '*.js' -delete",
@@ -39,6 +37,7 @@
   },
   "repository": "https://github.com/VKCOM/vkui-tokens.git",
   "dependencies": {
+    "@swc/helpers": "^0.5.19",
     "csstype": "^3.1.1"
   },
   "devDependencies": {
