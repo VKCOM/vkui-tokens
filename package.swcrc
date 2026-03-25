@@ -4,13 +4,17 @@
 	"jsc": {
 		"externalHelpers": true,
 		"parser": {
-			"syntax": "typescript",
+			"syntax": "typescript"
 		},
 		"target": "es5",
 		"preserveAllComments": true,
 		"baseUrl": "./",
 		"paths": {
-			"*": ["node_modules", "dist/*"],
+			"*": ["node_modules", "dist/*"]
+		},
+		"minify": {
+			"compress": true,
+			"mangle": true
 		},
 		"experimental": {
 			"emitIsolatedDts": true,
@@ -20,17 +24,18 @@
 					{
 						"^(.*?)\\.ts(x)?$": {
 							"skipDefaultConversion": true,
-							"transform": "{{matches.[1]}}.cjs",
-						},
-					},
-				],
-			],
-		},
+							"transform": "{{matches.[1]}}.js"
+						}
+					}
+				]
+			]
+		}
 	},
 	"module": {
-		"type": "commonjs",
+		"type": "es6",
 		"resolveFully": true,
-		"outFileExtension": "cjs",
+		"outFileExtension": "js"
 	},
-	"sourceMaps": true,
+	"sourceMaps": false,
+	"minify": true
 }
