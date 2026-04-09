@@ -321,32 +321,6 @@
       "dark": "#ddff00"
     }
   },
-  "constants": {
-    "colorBlue": {
-      "mode1": "#2e90ff"
-    },
-    "colorWhite": {
-      "mode1": "#ffffff"
-    },
-    "colorBlack": {
-      "mode1": "#000000"
-    },
-    "colorRed": {
-      "mode1": "#fe3c60"
-    },
-    "colorGreen": {
-      "mode1": "#34c759"
-    },
-    "colorDarkGrey": {
-      "mode1": "#3b3b3b"
-    },
-    "colorOrange": {
-      "mode1": "#ff6900"
-    },
-    "testHighlight": {
-      "mode1": "#ddff00"
-    }
-  },
   "tokens": {
     "sizeBorderRadius": {
       "iOS": 10,
