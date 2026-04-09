@@ -205,8 +205,8 @@
       "dark": "#3b3b3b"
     },
     "otherAvatarOverlayAlpha": {
-      "light": "#3b3b3b66",
-      "dark": "#3b3b3b66"
+      "light": "#3b3b3b33",
+      "dark": "#3b3b3b33"
     },
     "otherTransparent": {
       "light": "#00000000",
@@ -288,7 +288,7 @@
       "light": "#f45fff",
       "dark": "#f45fff"
     },
-    "otherButton": {
+    "backgroundInverse": {
       "light": "#262626",
       "dark": "#ffffff"
     },
@@ -315,6 +315,10 @@
     "gradientProgressiveBottomStop0": {
       "light": "#fffffff2",
       "dark": "#000000f2"
+    },
+    "otherWriteBarInputBorderAlpha": {
+      "light": "#ddff00",
+      "dark": "#ddff00"
     }
   },
   "tokens": {
@@ -468,19 +472,19 @@
       "vkCom": "VK Sans Display",
       "desktop": "VK Sans Display"
     },
-    "fontLetterSpacingTitle1": {
+    "fontLetterSpacingTitle2": {
       "iOS": -0.5799999833106995,
       "android": 0,
       "vkCom": 0,
       "desktop": 0
     },
-    "fontLetterSpacingTitle2": {
+    "fontLetterSpacingTitle3": {
       "iOS": -0.7799999713897705,
       "android": 0,
       "vkCom": 0,
       "desktop": 0
     },
-    "fontLetterSpacingTitle3": {
+    "fontLetterSpacingLabel2": {
       "iOS": -0.6800000071525574,
       "android": 0.036400001496076584,
       "vkCom": 0,
@@ -630,19 +634,19 @@
       "vkCom": 48,
       "desktop": 48
     },
-    "fontSizeBaseTitle1": {
+    "fontSizeBaseTitle2": {
       "iOS": 24,
       "android": 24,
       "vkCom": 24,
       "desktop": 24
     },
-    "fontSizeBaseTitle2": {
+    "fontSizeBaseTitle3": {
       "iOS": 20,
       "android": 20,
       "vkCom": 20,
       "desktop": 20
     },
-    "fontSizeBaseTitle3": {
+    "fontSizeBaseLabel2": {
       "iOS": 18,
       "android": 18,
       "vkCom": 18,
@@ -672,19 +676,19 @@
       "vkCom": 11,
       "desktop": 11
     },
-    "fontLineHeightBaseTitle1": {
+    "fontLineHeightBaseTitle2": {
       "iOS": 26,
       "android": 26,
       "vkCom": 26,
       "desktop": 26
     },
-    "fontLineHeightBaseTitle2": {
+    "fontLineHeightBaseTitle3": {
       "iOS": 23,
       "android": 23,
       "vkCom": 23,
       "desktop": 23
     },
-    "fontLineHeightBaseTitle3": {
+    "fontLineHeightBaseLabel2": {
       "iOS": 21,
       "android": 21,
       "vkCom": 21,
@@ -829,10 +833,10 @@
       "desktop": 12
     },
     "opacityDisabled": {
-      "iOS": 50,
-      "android": 50,
-      "vkCom": 50,
-      "desktop": 50
+      "iOS": 52,
+      "android": 52,
+      "vkCom": 52,
+      "desktop": 52
     },
     "sizeCellHeight": {
       "iOS": 52,
@@ -876,13 +880,13 @@
       "vkCom": 96,
       "desktop": 96
     },
-    "fontSizeBaseTitle0": {
+    "fontSizeBaseTitle1": {
       "iOS": 31,
       "android": 31,
       "vkCom": 31,
       "desktop": 31
     },
-    "fontSizeBaseTitle25": {
+    "fontSizeBaseLabel1": {
       "iOS": 19,
       "android": 19,
       "vkCom": 19,
@@ -894,13 +898,13 @@
       "vkCom": 17.5,
       "desktop": 17.5
     },
-    "fontLineHeightBaseTitle0": {
+    "fontLineHeightBaseTitle1": {
       "iOS": 31,
       "android": 31,
       "vkCom": 31,
       "desktop": 31
     },
-    "fontLineHeightBaseTitle25": {
+    "fontLineHeightBaseLabel1": {
       "iOS": 20,
       "android": 20,
       "vkCom": 20,
@@ -912,13 +916,13 @@
       "vkCom": 23,
       "desktop": 23
     },
-    "fontLetterSpacingTitle0": {
+    "fontLetterSpacingTitle1": {
       "iOS": -0.7200000286102295,
       "android": -0.7200000286102295,
       "vkCom": -0.7200000286102295,
       "desktop": 0
     },
-    "fontLetterSpacingTitle25": {
+    "fontLetterSpacingLabel1": {
       "iOS": -0.5799999833106995,
       "android": 0.018200000748038292,
       "vkCom": 0,

@@ -4,9 +4,9 @@ import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,
 } from '../../themes/vkontakteAndroid/index.ts';
+import { legoFonts } from './data/fonts.ts';
 import figma from './figma.json' with { type: 'json' };
 import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
-import { legoFonts } from './ios.ts';
 
 export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 	...vkontakteAndroidTheme, // импорт светлой базовой темы
@@ -24,7 +24,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		// Здесь нужно прописать другие цвета с особыми различиями нейминга
 		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
-		// ...
+		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
 	},
 	// Изменённые не-цвета
 	sizeBasePaddingHorizontal: {
@@ -71,5 +71,6 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 		...vkontakteAndroidThemeDark.colors,
 		// То же самое, что в светлой теме, но ссылаемся на figmaToken.dark вместо light
 		...overwriteFromFigmaJSON(vkontakteAndroidTheme.colors, 'appearance', 'dark', figma),
+		colorBackgroundInverse: figma.appearance.backgroundInverse.dark,
 	},
 };
