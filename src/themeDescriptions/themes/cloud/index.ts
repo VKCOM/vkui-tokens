@@ -274,7 +274,7 @@ export const cloudTheme: ThemeCloudDescription = {
 	// Локальные цвета Облака
 	colors: {
 		...lightTheme.colors,
-		colorBackgroundNegative: '#E64646',
+		colorBackgroundNegative: '#ED330A',
 
 		// Текст
 		cloudColorTextSecondaryAlpha: 'rgba(255, 255, 255, .6)',
