@@ -45,6 +45,9 @@ export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoF
 				lineHeight: 26,
 				fontWeight: bold,
 				letterSpacing: '-0.58px',
+				fontVariationSettings: {
+					opticalSize: 28,
+				},
 			},
 		},
 		fontTitle3: {

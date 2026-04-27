@@ -12,6 +12,14 @@ export type Font = {
 	fontStyle?: Property.FontStyle;
 	margin?: string;
 	marginBottom?: string | number;
+	fontVariationSettings?: FontVariationSettings;
+};
+
+/** Оси вариативных шрифтов */
+export type FontVariationSettings = {
+	opticalSize?: string | number;
+	slant?: number;
+	width?: number;
 };
 
 /**
