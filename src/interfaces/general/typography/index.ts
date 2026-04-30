@@ -17,7 +17,7 @@ export type Font = {
 
 /**
  * Оси вариативных шрифтов
- * */
+ */
 export type FontVariationSettings = {
 	opticalSize?: string | number;
 	slant?: number;
