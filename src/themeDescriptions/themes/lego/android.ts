@@ -1,11 +1,11 @@
-import type { Adaptive } from 'interfaces/general/tools/index.ts';
-import type { DeepPartial } from 'interfaces/general/tools/utils.ts';
-import type { Font } from 'interfaces/general/typography/index.ts';
 import lodash from 'lodash';
-import { fonts } from 'themeDescriptions/base/vk.ts';
 
+import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
+import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
+import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid/index.ts';
 import type { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark/index.ts';
+import { fonts } from '../../../themeDescriptions/base/vk.ts';
 import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,
@@ -34,6 +34,8 @@ type LegoFonts =
 // Наследование стандартных шрифтов из базовой темы
 export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 	lodash.cloneDeep(fonts),
+	// Значения переменных не такие же, как в фигме,
+	// а подобраны эмпирически для визуального совпадения
 	{
 		fontTitle1: {
 			regular: {

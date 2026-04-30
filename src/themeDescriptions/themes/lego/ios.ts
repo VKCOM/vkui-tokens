@@ -1,11 +1,11 @@
-import type { Adaptive } from 'interfaces/general/tools/index.ts';
-import type { DeepPartial } from 'interfaces/general/tools/utils.ts';
-import type { Font } from 'interfaces/general/typography/index.ts';
 import lodash from 'lodash';
-import { darkElevation, darkGradient, fonts } from 'themeDescriptions/base/vk.ts';
 
+import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
+import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
+import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeLegoIOSDescription } from '../../../interfaces/themes/legoIOS/index.ts';
 import type { ThemeLegoIOSDarkDescription } from '../../../interfaces/themes/legoIOSDark/index.ts';
+import { darkElevation, darkGradient, fonts } from '../../../themeDescriptions/base/vk.ts';
 import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.ts';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '../../themes/vkontakteIOS/index.ts';
 import figma from './figma.json' with { type: 'json' };
@@ -31,6 +31,8 @@ type LegoFonts =
 // Наследование стандартных шрифтов из базовой темы
 const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 	lodash.cloneDeep(fonts),
+	// Значения переменных не такие же, как в фигме,
+	// а подобраны эмпирически для визуального совпадения
 	{
 		fontTitle1: {
 			regular: {
