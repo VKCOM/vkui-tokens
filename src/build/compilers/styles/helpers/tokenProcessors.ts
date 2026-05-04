@@ -84,7 +84,9 @@ export const customMediaDeclaration: Record<Formats, CustomMediaDeclarationFn | 
 
 interface ProcessGroupTokenParams {
 	format: Formats;
-	token: Adaptive<Record<string, string | number>> | Record<string, string | number>;
+	token:
+		| Adaptive<Record<string, string | number | Record<string, string | number>>>
+		| Record<string, string | number | Record<string, string | number>>;
 	key: string;
 	prefix: string;
 	adaptiveMode?: 'none' | 'onlyAdaptiveGroups' | 'withAdaptiveGroups';
@@ -97,6 +99,67 @@ const defineMapProperty = (subKey: string, subToken: string) => {
 	}
 
 	return `\t'${subKey}': ${displayValue},\n`;
+};
+
+interface ProcessNestedObjectParams {
+	subKey: string;
+	subValue: Record<string, string | number>;
+	token: ProcessGroupTokenParams['token'];
+	key: string;
+	prefix: string;
+	needUpdateVariables: boolean;
+	needMap: boolean;
+	needAddAdaptiveClasses: boolean;
+	addedAdaptiveGroup: boolean;
+	adaptivityState?: string;
+	onVariables: (v: string) => void;
+	onAdaptiveGroup: (v: string) => void;
+	onMap: (v: string) => void;
+}
+
+const processNestedObject = ({
+	subKey,
+	subValue,
+	token,
+	key,
+	prefix,
+	needUpdateVariables,
+	needMap,
+	needAddAdaptiveClasses,
+	addedAdaptiveGroup,
+	adaptivityState,
+	onVariables,
+	onAdaptiveGroup,
+	onMap,
+}: ProcessNestedObjectParams) => {
+	Object.entries(subValue).forEach(([nestedKey, nestedValue]: [string, string | number]) => {
+		if (needUpdateVariables) {
+			let nestedVarName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}--${unCamelcasify(nestedKey, '_')}`;
+			if (adaptivityState !== undefined) {
+				const reallyNewToken =
+					// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+					(token as unknown as Record<string, Record<string, Record<string, string | number>>>)[
+						adaptivityState
+					][subKey]?.[nestedKey] !== undefined;
+				nestedVarName += `--${reallyNewToken ? unCamelcasify(adaptivityState, '_') : 'regular'}`;
+				if (reallyNewToken) {
+					onVariables(variablesStatementDeclaration.css(nestedVarName, String(nestedValue)));
+				}
+			} else {
+				onVariables(variablesStatementDeclaration.css(nestedVarName, String(nestedValue)));
+			}
+		}
+		// fontVariationSettings не добавляем в groupTokens (не выводим CSS-свойство)
+		if (needAddAdaptiveClasses && !addedAdaptiveGroup) {
+			const nestedVarBase = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}--${unCamelcasify(nestedKey, '_')}`;
+			onAdaptiveGroup(
+				`\t${unCamelcasify(subKey)}--${unCamelcasify(nestedKey)}: var(${nestedVarBase});\n`,
+			);
+		}
+		if (needMap) {
+			onMap(defineMapProperty(`${subKey}.${nestedKey}`, String(nestedValue)));
+		}
+	});
 };
 
 // eslint-disable-next-line sonarjs/cognitive-complexity,max-lines-per-function
@@ -147,36 +210,65 @@ export function processGroupToken({
 			}
 
 			Object.entries({
-				...(token as Adaptive<Record<string, string | number>>).regular,
+				...(token as Adaptive<Record<string, string | number | Record<string, string | number>>>)
+					.regular,
 				...token[adaptivityState],
-			}).forEach(([subKey, subValue]: [string, string]) => {
-				let varName = '';
-
-				if (needUpdateVariables) {
-					const reallyNewToken = token[adaptivityState][subKey] !== undefined;
-
-					varName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}--${
-						reallyNewToken ? unCamelcasify(adaptivityState, '_') : 'regular'
-					}`;
-
-					if (reallyNewToken) {
-						variables += variablesStatementDeclaration.css(varName, subValue);
+			}).forEach(
+				([subKey, subValue]: [string, string | number | Record<string, string | number>]) => {
+					// Обработка вложенных объектов (fontVariationSettings)
+					if (typeof subValue === 'object' && subValue !== null) {
+						processNestedObject({
+							subKey,
+							subValue,
+							token,
+							key,
+							prefix,
+							needUpdateVariables,
+							needMap,
+							needAddAdaptiveClasses,
+							addedAdaptiveGroup,
+							adaptivityState,
+							onVariables: (v) => {
+								variables += v;
+							},
+							onAdaptiveGroup: (v) => {
+								adaptiveGroup += v;
+							},
+							onMap: (v) => {
+								map += v;
+							},
+						});
+						return;
 					}
-				}
 
-				groupTokens += defineStyleProperty(subKey, subValue, varName);
+					let varName = '';
 
-				if (needAddAdaptiveClasses && !addedAdaptiveGroup) {
-					adaptiveGroup += `\t${unCamelcasify(subKey)}: var(${varName.replace(
-						new RegExp(`--(regular|${adaptivityState})$`),
-						'',
-					)});\n`;
-				}
+					if (needUpdateVariables) {
+						const reallyNewToken = token[adaptivityState][subKey] !== undefined;
 
-				if (needMap) {
-					map += defineMapProperty(subKey, subValue);
-				}
-			});
+						varName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}--${
+							reallyNewToken ? unCamelcasify(adaptivityState, '_') : 'regular'
+						}`;
+
+						if (reallyNewToken) {
+							variables += variablesStatementDeclaration.css(varName, String(subValue));
+						}
+					}
+
+					groupTokens += defineStyleProperty(subKey, String(subValue), varName);
+
+					if (needAddAdaptiveClasses && !addedAdaptiveGroup) {
+						adaptiveGroup += `\t${unCamelcasify(subKey)}: var(${varName.replace(
+							new RegExp(`--(regular|${adaptivityState})$`),
+							'',
+						)});\n`;
+					}
+
+					if (needMap) {
+						map += defineMapProperty(subKey, String(subValue));
+					}
+				},
+			);
 
 			groupTokens += '}\n';
 
@@ -206,20 +298,47 @@ export function processGroupToken({
 		map += `${varDeclarations.scss(key, prefix)}--map: (\n`;
 	}
 
-	Object.entries(token).forEach(([subKey, subValue]: [string, string]) => {
-		let varName = '';
+	Object.entries(token).forEach(
+		([subKey, subValue]: [string, string | number | Record<string, string | number>]) => {
+			// Обработка вложенных объектов (fontVariationSettings)
+			if (typeof subValue === 'object' && subValue !== null) {
+				processNestedObject({
+					subKey,
+					subValue,
+					token,
+					key,
+					prefix,
+					needUpdateVariables,
+					needMap,
+					needAddAdaptiveClasses,
+					addedAdaptiveGroup,
+					onVariables: (v) => {
+						variables += v;
+					},
+					onAdaptiveGroup: (v) => {
+						adaptiveGroup += v;
+					},
+					onMap: (v) => {
+						map += v;
+					},
+				});
+				return;
+			}
 
-		if (needUpdateVariables) {
-			varName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}`;
+			let varName = '';
 
-			variables += variablesStatementDeclaration.css(varName, subValue);
-		}
+			if (needUpdateVariables) {
+				varName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}`;
 
-		groupTokens += defineStyleProperty(subKey, subValue, varName);
-		if (needMap) {
-			map += defineMapProperty(subKey, subValue);
-		}
-	});
+				variables += variablesStatementDeclaration.css(varName, String(subValue));
+			}
+
+			groupTokens += defineStyleProperty(subKey, String(subValue), varName);
+			if (needMap) {
+				map += defineMapProperty(subKey, String(subValue));
+			}
+		},
+	);
 
 	groupTokens += '}\n';
 	if (needMap) {

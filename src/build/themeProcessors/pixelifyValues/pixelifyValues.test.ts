@@ -129,5 +129,63 @@ describe('pixelifyValues', () => {
 		it('should correctly pixelify tone', () => {
 			assert.deepEqual(pixelifyValues({ toneValueActive: 0.1 }), { toneValueActive: 0.1 });
 		});
+
+		it('should not pixelify fontVariationSettings values', () => {
+			const theme = {
+				fontTitle2: {
+					regular: {
+						fontSize: 24,
+						lineHeight: 26,
+						fontWeight: 700,
+						fontVariationSettings: {
+							opticalSize: 28,
+							slant: 0,
+							width: 100,
+						},
+					},
+				},
+			};
+
+			const result = pixelifyValues(theme);
+
+			assert.deepEqual(result.fontTitle2.regular.fontVariationSettings, {
+				opticalSize: 28,
+				slant: 0,
+				width: 100,
+			});
+			assert.equal(result.fontTitle2.regular.fontSize, '24px');
+			assert.equal(result.fontTitle2.regular.lineHeight, '26px');
+			assert.equal(result.fontTitle2.regular.fontWeight, 700);
+		});
+
+		it('should not pixelify fontVariationSettings in adaptive fonts', () => {
+			const theme = {
+				fontHeadline1: {
+					compact: {
+						fontSize: 16,
+						lineHeight: 20,
+						fontWeight: 600,
+						fontVariationSettings: {
+							opticalSize: 20,
+						},
+					},
+					regular: {
+						fontSize: 17,
+						lineHeight: 20,
+						fontWeight: 600,
+						fontVariationSettings: {
+							opticalSize: 24,
+						},
+					},
+				},
+			};
+
+			const result = pixelifyValues(theme);
+
+			assert.equal(result.fontHeadline1.compact.fontVariationSettings.opticalSize, 20);
+			assert.equal(result.fontHeadline1.regular.fontVariationSettings.opticalSize, 24);
+			assert.equal(result.fontHeadline1.compact.fontSize, '16px');
+			assert.equal(result.fontHeadline1.regular.fontSize, '17px');
+		});
 	});
 });
