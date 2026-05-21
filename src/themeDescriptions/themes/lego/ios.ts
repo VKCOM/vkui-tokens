@@ -185,7 +185,7 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 
 	themeName: 'legoIOSDark', // название текущей темы
 	themeNameBase: 'legoIOS', // название светлой (базовой) темы
-	themeInheritsFrom: 'vkIOSDark', // название родительской темыs
+	themeInheritsFrom: 'vkIOSDark', // название родительской темы
 	colorsScheme: 'dark', // название схемы (светлая — по умолчанию)
 
 	colors: {
