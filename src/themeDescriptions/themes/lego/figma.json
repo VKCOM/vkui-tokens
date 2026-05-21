@@ -52,6 +52,10 @@
       "light": "#2e90ff",
       "dark": "#529ef4"
     },
+    "strokeContrastSecondaryAlpha": {
+      "light": "#ffffff1f",
+      "dark": "#ffffff1f"
+    },
     "strokeSeparatorPrimaryAlpha": {
       "light": "#0000001e",
       "dark": "#ffffff23"
@@ -101,8 +105,8 @@
       "dark": "#34c759"
     },
     "backgroundNegative": {
-      "light": "#fe3c60",
-      "dark": "#fe3c60"
+      "light": "#F65460",
+      "dark": "#FD6571"
     },
     "backgroundPositiveTint": {
       "light": "#e8f9e8",
@@ -129,8 +133,8 @@
       "dark": "#34c759"
     },
     "textNegative": {
-      "light": "#fe3c60",
-      "dark": "#fe3c60"
+      "light": "#F65460",
+      "dark": "#FD6571"
     },
     "textLink": {
       "light": "#2e90ff",
@@ -173,8 +177,8 @@
       "dark": "#34c759"
     },
     "iconNegative": {
-      "light": "#fe3c60",
-      "dark": "#fe3c60"
+      "light": "#F65460",
+      "dark": "#FD6571"
     },
     "strokeAccentThemed": {
       "light": "#2e90ff",
@@ -189,8 +193,8 @@
       "dark": "#34c759"
     },
     "strokeNegative": {
-      "light": "#fe3c60",
-      "dark": "#fe3c60"
+      "light": "#F65460",
+      "dark": "#FD6571"
     },
     "strokeContrast": {
       "light": "#ffffff",

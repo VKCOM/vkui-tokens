@@ -37,7 +37,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontTitle1: {
 			regular: {
 				fontSize: 31,
-				lineHeight: 30.8,
+				lineHeight: 31,
 				fontFamily: fontFamilyAccent,
 				fontWeight: bold,
 				letterSpacing: '-0.65px',
@@ -57,7 +57,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontTitle3: {
 			regular: {
 				fontSize: 21.5,
-				lineHeight: 22.85,
+				lineHeight: 23,
 				fontWeight: bold,
 				fontVariationSettings: {
 					opticalSize: 23.8,
@@ -67,7 +67,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontLabel1: {
 			regular: {
 				fontSize: 19,
-				lineHeight: 19.87,
+				lineHeight: 20,
 				fontWeight: bold,
 				fontVariationSettings: {
 					opticalSize: 22,
@@ -77,7 +77,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontLabel2: {
 			regular: {
 				fontSize: 18,
-				lineHeight: 20.82,
+				lineHeight: 21,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 21.8,
@@ -87,7 +87,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontHeadline1: {
 			regular: {
 				fontSize: 17,
-				lineHeight: 19.84,
+				lineHeight: 20,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 21.1,
@@ -97,7 +97,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontBody: {
 			regular: {
 				fontSize: 16.5,
-				lineHeight: 21.24,
+				lineHeight: 21,
 				fontWeight: medium,
 				fontVariationSettings: {
 					opticalSize: 21.5,
@@ -107,7 +107,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontText: {
 			regular: {
 				fontSize: 16,
-				lineHeight: 18.39,
+				lineHeight: 18.5,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 21.8,
@@ -117,7 +117,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontParagraph: {
 			regular: {
 				fontSize: 15,
-				lineHeight: 18.31,
+				lineHeight: 18.5,
 				fontWeight: semiboldish,
 				fontVariationSettings: {
 					opticalSize: 21.5,
@@ -127,7 +127,7 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 		fontFootnote: {
 			regular: {
 				fontSize: 13.5,
-				lineHeight: 14.9,
+				lineHeight: 15,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 22.2,
@@ -150,6 +150,12 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 		// Переопределение переменных
 		...overwriteFromFigmaJSON(vkontakteIOSTheme.colors, 'appearance', 'light', figma),
 		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
+		colorFieldBorderAlpha: {
+			normal: '#333333',
+			hover: '#3333333D',
+			active: '#3333335C',
+		},
 	},
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,
@@ -192,5 +198,11 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 		// Переопределение переменных
 		...overwriteFromFigmaJSON(vkontakteIOSThemeDark.colors, 'appearance', 'dark', figma),
 		colorBackgroundInverse: figma.appearance.backgroundInverse.dark,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
+		colorFieldBorderAlpha: {
+			normal: '#FFFFFF0F',
+			hover: '#33333329',
+			active: '#33333333',
+		},
 	},
 };

@@ -109,7 +109,7 @@ export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoF
 		fontText: {
 			regular: {
 				fontSize: 16,
-				lineHeight: 18.33,
+				lineHeight: 18.5,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 24,
@@ -156,6 +156,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
 		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
 	},
 	// Изменённые не-цвета
 	sizeBasePaddingHorizontal: {
@@ -203,5 +204,6 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 		// То же самое, что в светлой теме, но ссылаемся на figmaToken.dark вместо light
 		...overwriteFromFigmaJSON(vkontakteAndroidTheme.colors, 'appearance', 'dark', figma),
 		colorBackgroundInverse: figma.appearance.backgroundInverse.dark,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
 	},
 };
