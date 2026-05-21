@@ -109,7 +109,7 @@ export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoF
 		fontText: {
 			regular: {
 				fontSize: 16,
-				lineHeight: 18.33,
+				lineHeight: 18.5,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 24,
