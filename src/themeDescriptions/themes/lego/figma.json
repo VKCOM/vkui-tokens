@@ -52,6 +52,10 @@
       "light": "#2e90ff",
       "dark": "#529ef4"
     },
+    "strokeContrastSecondaryAlpha": {
+      "light": "#ffffff1f",
+      "dark": "#ffffff1f"
+    },
     "strokeSeparatorPrimaryAlpha": {
       "light": "#0000001e",
       "dark": "#ffffff23"

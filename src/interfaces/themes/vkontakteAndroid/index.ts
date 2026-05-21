@@ -183,22 +183,7 @@ export interface VkontakteAndroidGradients {
 
 export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
-
-	componentsGradientButtonOverlayPrimaryStroke: GradientPoints;
-	componentsColorButtonOverlayPrimaryStroke1: ColorDescription;
-	componentsColorButtonOverlayPrimaryStroke2: ColorDescription;
-	componentsColorButtonOverlayPrimaryBackground: ColorDescription;
-
-	componentsGradientButtonNeutralPrimaryStroke: GradientPoints;
-	componentsColorButtonNeutralPrimaryStroke1: ColorDescription;
-	componentsColorButtonNeutralPrimaryStroke2: ColorDescription;
-	componentsColorButtonNeutralPrimaryBackground: ColorDescription;
-
-	componentsGradientContextMenuStroke: GradientPoints;
-	componentsColorContextMenuStroke1: ColorDescription;
-	componentsColorContextMenuStroke2: ColorDescription;
-	componentsColorContextMenuBackground: ColorDescription;
-	componentsColorContextMenuColorDodger: ColorDescription;
+	colorStrokeContrastSecondaryAlpha: ColorDescription;
 
 	vkontakteColorSnippetBorderAlpha: ColorDescription;
 	vkontakteColorSnippetBackground: ColorDescription;

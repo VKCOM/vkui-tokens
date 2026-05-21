@@ -3,7 +3,6 @@ import type {
 	ColorsDescriptionStruct,
 	ColorWithStates,
 } from 'interfaces/general/colors/index.ts';
-import type { GradientPoints } from 'interfaces/general/gradients/index.ts';
 import type { ThemeCssVars } from 'interfaces/general/index.ts';
 
 import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
@@ -13,22 +12,7 @@ import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
  */
 export interface LocalVkontakteIOSColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
-
-	componentsGradientButtonOverlayPrimaryStroke: GradientPoints;
-	componentsColorButtonOverlayPrimaryStroke1: ColorDescription;
-	componentsColorButtonOverlayPrimaryStroke2: ColorDescription;
-	componentsColorButtonOverlayPrimaryBackground: ColorDescription;
-
-	componentsGradientButtonNeutralPrimaryStroke: GradientPoints;
-	componentsColorButtonNeutralPrimaryStroke1: ColorDescription;
-	componentsColorButtonNeutralPrimaryStroke2: ColorDescription;
-	componentsColorButtonNeutralPrimaryBackground: ColorDescription;
-
-	componentsGradientContextMenuStroke: GradientPoints;
-	componentsColorContextMenuStroke1: ColorDescription;
-	componentsColorContextMenuStroke2: ColorDescription;
-	componentsColorContextMenuBackground: ColorDescription;
-	componentsColorContextMenuColorDodger: ColorDescription;
+	colorStrokeContrastSecondaryAlpha: ColorDescription;
 }
 
 export type LegoIOSLocalColors = {
