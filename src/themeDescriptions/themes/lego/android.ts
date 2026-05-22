@@ -157,6 +157,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
 		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
+		colorBackgroundContent: figma.appearance.backgroundBackground.light,
 	},
 	// Изменённые не-цвета
 	sizeBasePaddingHorizontal: {
@@ -205,5 +206,6 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 		...overwriteFromFigmaJSON(vkontakteAndroidTheme.colors, 'appearance', 'dark', figma),
 		colorBackgroundInverse: figma.appearance.backgroundInverse.dark,
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
+		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
 	},
 };

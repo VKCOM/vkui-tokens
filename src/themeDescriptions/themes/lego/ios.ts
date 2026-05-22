@@ -156,6 +156,7 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 			hover: '#3333333D',
 			active: '#3333335C',
 		},
+		colorBackgroundContent: figma.appearance.backgroundBackground.light,
 	},
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,
@@ -204,5 +205,6 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 			hover: '#33333329',
 			active: '#33333333',
 		},
+		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
 	},
 };
