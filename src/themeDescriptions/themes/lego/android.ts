@@ -29,6 +29,8 @@ type LegoFonts =
 			fontLabel2: Adaptive<Font>;
 			fontBody: Adaptive<Font>;
 			fontHeadline: Adaptive<Font>;
+			fontTextBold: Adaptive<Font>;
+			fontFootnoteBold: Adaptive<Font>;
 	  };
 
 // Наследование стандартных шрифтов из базовой темы
@@ -116,6 +118,16 @@ export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoF
 				},
 			},
 		},
+		fontTextBold: {
+			regular: {
+				fontSize: 16,
+				lineHeight: 18.5,
+				fontWeight: bold,
+				fontVariationSettings: {
+					opticalSize: 21.8,
+				},
+			},
+		},
 		fontParagraph: {
 			regular: {
 				fontSize: 15,
@@ -131,6 +143,16 @@ export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoF
 				fontSize: 13.5,
 				lineHeight: 15,
 				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 20,
+				},
+			},
+		},
+		fontFootnoteBold: {
+			regular: {
+				fontSize: 13.5,
+				lineHeight: 15,
+				fontWeight: bold,
 				fontVariationSettings: {
 					opticalSize: 20,
 				},
@@ -159,7 +181,13 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
 		colorBackgroundContent: figma.appearance.backgroundBackground.light,
 	},
+
 	// Изменённые не-цвета
+	blurS: figma.tokens.blurSmall.android,
+	blurM: figma.tokens.blurMedium.android,
+	blurL: figma.tokens.blurLarge.android,
+	blurXL: figma.tokens.blurExtraLarge.android,
+
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.android,
 		compact: figma.tokens.sizeBasePaddingHorizontal.desktop,
@@ -184,6 +212,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		regular: figma.tokens.sizeButtonLargeHeight.android,
 		compact: figma.tokens.sizeButtonLargeHeight.desktop,
 	},
+
 	// Фигма использует целые проценты, а не сотые единицы
 	// Поэтому здесь нужно поделить на 100
 	// Округление пока не стал писать
