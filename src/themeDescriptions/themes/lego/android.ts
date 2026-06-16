@@ -180,6 +180,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
 		colorBackgroundContent: figma.appearance.backgroundBackground.light,
+		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.light,
 	},
 
 	// Изменённые не-цвета
@@ -236,5 +237,6 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 		colorBackgroundInverse: figma.appearance.backgroundInverse.dark,
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
 		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
+		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.dark,
 	},
 };
