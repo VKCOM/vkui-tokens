@@ -13,6 +13,7 @@ import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
 export interface LocalVkontakteIOSColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
 	colorStrokeContrastSecondaryAlpha: ColorDescription;
+	colorTextTertiaryAlpha: ColorDescription;
 }
 
 export type LegoIOSLocalColors = {

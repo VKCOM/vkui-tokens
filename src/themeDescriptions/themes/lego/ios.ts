@@ -171,6 +171,9 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 		...vkIOSTheme.colors,
 		// Переопределение переменных
 		...overwriteFromFigmaJSON(vkontakteIOSTheme.colors, 'appearance', 'light', figma),
+		// Здесь нужно прописать другие цвета с особыми различиями нейминга
+		// А также локальные цвета, используемые только в этой теме
+		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
 		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
 		colorFieldBorderAlpha: {
@@ -179,6 +182,7 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 			active: '#3333335C',
 		},
 		colorBackgroundContent: figma.appearance.backgroundBackground.light,
+		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.light,
 	},
 
 	// Изменённые не-цвета
@@ -235,5 +239,6 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 			active: '#33333333',
 		},
 		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
+		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.dark,
 	},
 };
