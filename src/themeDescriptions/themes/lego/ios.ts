@@ -26,6 +26,8 @@ type LegoFonts =
 			fontLabel2: Adaptive<Font>;
 			fontBody: Adaptive<Font>;
 			fontHeadline: Adaptive<Font>;
+			fontTextBold: Adaptive<Font>;
+			fontFootnoteBold: Adaptive<Font>;
 	  };
 
 // Наследование стандартных шрифтов из базовой темы
@@ -114,6 +116,16 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 				},
 			},
 		},
+		fontTextBold: {
+			regular: {
+				fontSize: 16,
+				lineHeight: 18.5,
+				fontWeight: bold,
+				fontVariationSettings: {
+					opticalSize: 21.8,
+				},
+			},
+		},
 		fontParagraph: {
 			regular: {
 				fontSize: 15,
@@ -129,6 +141,16 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 				fontSize: 13.5,
 				lineHeight: 15,
 				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 22.2,
+				},
+			},
+		},
+		fontFootnoteBold: {
+			regular: {
+				fontSize: 13.5,
+				lineHeight: 15,
+				fontWeight: bold,
 				fontVariationSettings: {
 					opticalSize: 22.2,
 				},
@@ -158,6 +180,13 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 		},
 		colorBackgroundContent: figma.appearance.backgroundBackground.light,
 	},
+
+	// Изменённые не-цвета
+	blurS: figma.tokens.blurSmall.android,
+	blurM: figma.tokens.blurMedium.android,
+	blurL: figma.tokens.blurLarge.android,
+	blurXL: figma.tokens.blurExtraLarge.android,
+
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,
 	},
