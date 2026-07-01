@@ -158,6 +158,16 @@ export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoF
 				},
 			},
 		},
+		fontCaption1: {
+			regular: {
+				fontSize: 11.5,
+				lineHeight: 12,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 11,
+				},
+			},
+		},
 	},
 );
 
