@@ -188,6 +188,11 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
 		colorBackgroundContent: figma.appearance.backgroundBackground.light,
 		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.light,
+		colorFieldBorderAlpha: {
+			normal: figma.appearance.strokeFieldBorderAlpha.light,
+			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.light,
+			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.light,
+		},
 	},
 
 	// Изменённые не-цвета
@@ -240,5 +245,10 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
 		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
 		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.dark,
+		colorFieldBorderAlpha: {
+			normal: figma.appearance.strokeFieldBorderAlpha.dark,
+			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.dark,
+			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.dark,
+		},
 	},
 };

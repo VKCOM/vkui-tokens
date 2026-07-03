@@ -208,7 +208,7 @@
       "light": "#3b3b3b33",
       "dark": "#3b3b3b33"
     },
-    "otherTransparentDark": {
+    "otherTransparent": {
       "light": "#00000000",
       "dark": "#00000000"
     },
@@ -296,41 +296,29 @@
       "light": "#3b3b3b66",
       "dark": "#ffffff7f"
     },
-    "componentsContextMenuColorDodger": {
-      "light": "#474747",
-      "dark": "#474747"
-    },
-    "componentsContextMenuBackground": {
-      "light": "#a1a1a1cc",
-      "dark": "#1a1a1acc"
-    },
-    "componentsContextMenuStroke1": {
-      "light": "#bfbfbf4c",
-      "dark": "#6666664c"
-    },
-    "componentsContextMenuStroke2": {
-      "light": "#bfbfbf19",
-      "dark": "#66666619"
-    },
-    "gradientProgressiveBottomStop0": {
-      "light": "#fffffff2",
-      "dark": "#000000f2"
-    },
     "otherWriteBarInputBorderAlpha": {
       "light": "#ddff00",
       "dark": "#ddff00"
+    },
+    "appearance": {
+      "light": "Light",
+      "dark": "Dark"
     },
     "backgroundContrastSecondaryAlpha": {
       "light": "#ffffff33",
       "dark": "#ffffff33"
     },
-    "componentsContextMenuOverlay": {
-      "light": "#3b3b3b33",
-      "dark": "#00000066"
-    },
     "strokeContrastSecondaryAlpha": {
       "light": "#ffffff1e",
       "dark": "#ffffff1e"
+    },
+    "statesHoverStrokeFieldBorderAlpha": {
+      "light": "#3333333d",
+      "dark": "#ffffff28"
+    },
+    "statesActiveStrokeFieldBorderAlpha": {
+      "light": "#3333335b",
+      "dark": "#ffffff33"
     },
     "otherTransparentLight": {
       "light": "#ffffff00",
@@ -480,6 +468,12 @@
       "vkCom": 32,
       "desktop": 32
     },
+    "fontFamilyBase": {
+      "iOS": "SF Pro",
+      "android": "Roboto Flex",
+      "vkCom": "SF Pro",
+      "desktop": "SF Pro"
+    },
     "spacingSize2XS": {
       "iOS": 2,
       "android": 2,
@@ -504,19 +498,25 @@
       "vkCom": 24,
       "desktop": 24
     },
+    "fontFamilyAccent": {
+      "iOS": "VK Sans Display",
+      "android": "VK Sans Display",
+      "vkCom": "VK Sans Display",
+      "desktop": "VK Sans Display"
+    },
     "otherPlatformWidth": {
       "iOS": 393,
       "android": 360,
       "vkCom": 360,
       "desktop": 360
     },
-    "headline1": {
+    "fontSizeHeadline1": {
       "iOS": 17,
       "android": 17,
       "vkCom": 17,
       "desktop": 17
     },
-    "text": {
+    "fontSizeText": {
       "iOS": 16,
       "android": 16,
       "vkCom": 16,
@@ -527,6 +527,12 @@
       "android": 12,
       "vkCom": 8,
       "desktop": 12
+    },
+    "otherPlatform": {
+      "iOS": "iOS",
+      "android": "Android",
+      "vkCom": "vkCom",
+      "desktop": "Desktop"
     },
     "otherLargeButtonSize": {
       "iOS": 17,
@@ -552,31 +558,31 @@
       "vkCom": 48,
       "desktop": 48
     },
-    "title2": {
+    "fontSizeTitle2": {
       "iOS": 24,
       "android": 24,
       "vkCom": 24,
       "desktop": 24
     },
-    "title3": {
+    "fontSizeTitle3": {
       "iOS": 21.5,
       "android": 21.5,
       "vkCom": 21.5,
       "desktop": 21.5
     },
-    "label2": {
+    "fontSizeLabel2": {
       "iOS": 18,
       "android": 18,
       "vkCom": 18,
       "desktop": 18
     },
-    "paragraph": {
+    "fontSizeParagraph": {
       "iOS": 15,
       "android": 15,
       "vkCom": 15,
       "desktop": 15
     },
-    "footnote": {
+    "fontSizeFootnote": {
       "iOS": 13.5,
       "android": 13.5,
       "vkCom": 13.5,
@@ -666,19 +672,19 @@
       "vkCom": 96,
       "desktop": 96
     },
-    "title1": {
+    "fontSizeTitle1": {
       "iOS": 31,
       "android": 31,
       "vkCom": 31,
       "desktop": 31
     },
-    "label1": {
+    "fontSizeLabel1": {
       "iOS": 19,
       "android": 19,
       "vkCom": 19,
       "desktop": 19
     },
-    "body": {
+    "fontSizeBody": {
       "iOS": 16.5,
       "android": 16.5,
       "vkCom": 16.5,
@@ -875,6 +881,24 @@
       "android": -0.1599999964237213,
       "vkCom": 0,
       "desktop": 0
+    },
+    "fontSizeCaption": {
+      "iOS": 11.5,
+      "android": 11.5,
+      "vkCom": 11.5,
+      "desktop": 11.5
+    },
+    "fontLetterSpacingCaption": {
+      "iOS": 0,
+      "android": -0.11999999731779099,
+      "vkCom": 0,
+      "desktop": 0
+    },
+    "fontOpticalSizeCaption": {
+      "iOS": 22,
+      "android": 22,
+      "vkCom": 22,
+      "desktop": 22
     }
   }
 }
