@@ -1554,10 +1554,10 @@
     "@rspack/binding-win32-ia32-msvc" "1.7.3"
     "@rspack/binding-win32-x64-msvc" "1.7.3"
 
-"@rspack/cli@^1.7.3":
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/@rspack/cli/-/cli-1.7.3.tgz#95c240f13f51c5fa717bd88a5b7cca4c71361aab"
-  integrity sha512-6fb+cd1RjCK3ByN8oq7dIXZWFkbI7+y7VGlIvt/Nl2roGnL3IzXhEbyQzmXv9X+/fZ/pEKHWEyH05Rnqs3+VUQ==
+"@rspack/cli@^1.7.12":
+  version "1.7.12"
+  resolved "https://registry.yarnpkg.com/@rspack/cli/-/cli-1.7.12.tgz#cdffdba3ff11a3b534ab489ea38f37ff143ffb5d"
+  integrity sha512-aiVj5hm12/rhkH/KTvs9BugpRuLEutIw5o3KmQDvSMd6EqEIASuCCUI3/97uaNP58hqZSl7mAotsLcwn/OCbJQ==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     "@rspack/dev-server" "~1.1.5"

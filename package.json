@@ -41,7 +41,7 @@
     "csstype": "^3.1.1"
   },
   "devDependencies": {
-    "@rspack/cli": "^1.7.3",
+    "@rspack/cli": "^1.7.12",
     "@rspack/core": "^1.7.3",
     "@svgr/webpack": "^8.1.0",
     "@swc/cli": "^0.7.10",
