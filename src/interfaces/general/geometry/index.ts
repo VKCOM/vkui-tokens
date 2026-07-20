@@ -508,4 +508,16 @@ export interface SpacingSizes {
 	 * @tags size
 	 */
 	spacingSize4Xl: number;
+
+	/**
+	 * @desc Стандартный токен размера 5xl для отступов
+	 * @tags size
+	 */
+	spacingSize5Xl: number;
+
+	/**
+	 * @desc Стандартный токен размера 6xl для отступов
+	 * @tags size
+	 */
+	spacingSize6Xl: number;
 }
