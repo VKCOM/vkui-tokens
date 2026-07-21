@@ -1794,10 +1794,10 @@
   resolved "https://registry.yarnpkg.com/@swc/counter/-/counter-0.1.3.tgz#cc7463bd02949611c6329596fccd2b0ec782b0e9"
   integrity sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==
 
-"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.17", "@swc/helpers@^0.5.19":
-  version "0.5.19"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.19.tgz#9a8c8a0bdaecfdfb9b8ae5421c0c8e09246dfee9"
-  integrity sha512-QamiFeIK3txNjgUTNppE6MiG3p7TdninpZu0E0PbqVh1a9FNLT2FRhisaa4NcaX52XVhA5l7Pk58Ft7Sqi/2sA==
+"@swc/helpers@^0.5.0", "@swc/helpers@^0.5.17", "@swc/helpers@^0.5.19", "@swc/helpers@^0.5.23":
+  version "0.5.23"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.23.tgz#19287d0d86d962b111376039a50c792902c9a86a"
+  integrity sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==
   dependencies:
     tslib "^2.8.0"
 
@@ -2292,20 +2292,20 @@
   version "10.2.0"
   resolved "https://github.com/VKCOM/Appearance#3d00c758d67a4bbbd49e86f6e2eb0459f04aeefc"
 
-"@vkontakte/icons-sprite@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-3.1.1.tgz#22f5547176a627e65932365f184b3c915e22ed5f"
-  integrity sha512-qFrTDmijeZpmcP779DRBGfBr9Wn5sdPrP39ZL/4fG5pg/D6+Fc6sYuC5N088vOVrGP6oro07B45liJrfhv5LfA==
+"@vkontakte/icons-sprite@^3.2.1":
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons-sprite/-/icons-sprite-3.2.1.tgz#781813036aef6826e2402e51cb43fbc6fdd3ab2b"
+  integrity sha512-qVa9l6Xzi7r9PBjZKE+fMy08h2OgY3lQylBMWSUIhaSBCY7wX3KC3JPw+gq+9C8i0BCwUqEFVcmJk2BYYPIFgQ==
   dependencies:
-    "@swc/helpers" "^0.5.17"
+    "@swc/helpers" "^0.5.19"
 
-"@vkontakte/icons@^3.0.0", "@vkontakte/icons@^3.27.0":
-  version "3.27.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-3.27.0.tgz#b2506990076e8dc19173e376bd2d63007f7ed492"
-  integrity sha512-3yuZ4ElW5fOl/ZQDP28h1TsVPypSj1nFlHLCn9/xcFZ9v6mf2IhP2EcnnOF6cnYlosl000QB1Hw0oqu2kmz9AA==
+"@vkontakte/icons@^3.0.0", "@vkontakte/icons@^3.62.0":
+  version "3.62.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-3.62.0.tgz#554bb17ce3b0f297697fbbba8533f5eab7f73e86"
+  integrity sha512-1birpNqEft6YfJiNTnURJUdCGiV49+9Ux/TS15Dece5NFeOBNaxGf9QOUa1DVKsi8b0bbqVGin+/5BzppvJndg==
   dependencies:
-    "@swc/helpers" "^0.5.17"
-    "@vkontakte/icons-sprite" "^3.1.1"
+    "@swc/helpers" "^0.5.23"
+    "@vkontakte/icons-sprite" "^3.2.1"
 
 "@vkontakte/prettier-config@^0.2.1":
   version "0.2.1"
