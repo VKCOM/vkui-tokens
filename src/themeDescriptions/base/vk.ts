@@ -800,6 +800,8 @@ export const lightTheme: ThemeDescription = {
 	spacingSize2Xl: 16,
 	spacingSize3Xl: 20,
 	spacingSize4Xl: 24,
+	spacingSize5Xl: 32,
+	spacingSize6Xl: 40,
 
 	// Разное
 	animationDurationL: '0.4s',

@@ -775,6 +775,8 @@ export const lightThemeBase: ThemeDescription = {
 	spacingSize2Xl: 16,
 	spacingSize3Xl: 20,
 	spacingSize4Xl: 24,
+	spacingSize5Xl: 32,
+	spacingSize6Xl: 40,
 
 	// Прочие отступы
 	elevation1: '0 2px 6px 0 rgba(0, 16, 61, 0.08), 0 1px 2px 0 rgba(0, 16, 61, 0.08)',
@@ -797,7 +799,10 @@ export const lightThemeBase: ThemeDescription = {
 	opacityDisable: 0.48,
 	opacityDisableAccessibility: 0.64,
 	opacityActive: 0.72,
+	blurS: 8,
 	blurM: 16,
+	blurL: 48,
+	blurXL: 96,
 	zIndexModal: 99,
 	zIndexPopout: 100,
 };
