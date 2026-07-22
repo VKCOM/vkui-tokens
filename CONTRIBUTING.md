@@ -82,7 +82,9 @@ git config --local blame.ignoreRevsFile .git-blame-ignore-revs
   - vkontakteCom
   - vkontakteIOS
   - vkontakteAndroid
-  - lego
+  - milkshakeIOS
+  - legoIOS
+  - legoAndroid
 - _paradigmBase_
   - paradigmBaseDark
   - calendar

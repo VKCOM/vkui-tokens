@@ -1,3 +1,4 @@
+import type { Radii } from 'interfaces/general/radii/index.ts';
 import lodash from 'lodash';
 
 import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
@@ -5,7 +6,7 @@ import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
 import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid/index.ts';
 import type { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark/index.ts';
-import { fonts } from '../../../themeDescriptions/base/vk.ts';
+import { type BaseFonts, fonts } from '../../../themeDescriptions/base/vk.ts';
 import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,
@@ -23,7 +24,7 @@ const boldAccent = 700;
 
 // Расширение типа новыми переменными в лего
 type LegoFonts =
-	| typeof fonts
+	| BaseFonts
 	| {
 			fontLabel1: Adaptive<Font>;
 			fontLabel2: Adaptive<Font>;
@@ -34,7 +35,7 @@ type LegoFonts =
 	  };
 
 // Наследование стандартных шрифтов из базовой темы
-export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
+export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFonts>>(
 	lodash.cloneDeep(fonts),
 	// Значения переменных не такие же, как в фигме,
 	// а подобраны эмпирически для визуального совпадения
@@ -171,9 +172,21 @@ export const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoF
 	},
 );
 
+export const legoRadii: Radii = {
+	radius2XS: figma.tokens.radiusRadius2XS.android,
+	radiusXS: figma.tokens.radiusRadiusXS.android,
+	radiusS: figma.tokens.radiusRadiusS.android,
+	radiusM: figma.tokens.radiusRadiusM.android,
+	radiusL: figma.tokens.radiusRadiusL.android,
+	radiusXL: figma.tokens.radiusRadiusXL.android,
+	radius2XL: figma.tokens.radiusRadius2XL.android,
+	radius3XL: figma.tokens.radiusRadius3XL.android,
+};
+
 export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 	...vkontakteAndroidTheme, // импорт светлой базовой темы
 	...legoFonts, // шрифты
+	...legoRadii, // скругления
 
 	themeName: 'legoAndroid', // название текущей темы
 	themeNameBase: 'legoAndroid', // название светлой (базовой) темы

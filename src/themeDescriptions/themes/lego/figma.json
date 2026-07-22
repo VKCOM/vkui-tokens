@@ -300,10 +300,6 @@
       "light": "#ddff00",
       "dark": "#ddff00"
     },
-    "appearance": {
-      "light": "Light",
-      "dark": "Dark"
-    },
     "backgroundContrastSecondaryAlpha": {
       "light": "#ffffff33",
       "dark": "#ffffff33"
@@ -332,55 +328,45 @@
       "light": "#ffffff7f",
       "dark": "#ffffff7f"
     },
-    "experimentalTextPrimaryInverse": {
+    "experimentalTextInversePrimary": {
       "light": "#ffffff",
-      "dark": "#3b3b3b"
+      "dark": "#ffffff"
     },
-    "experimentalIconPrimaryInverse": {
+    "experimentalIconInversePrimary": {
       "light": "#ffffff",
-      "dark": "#3b3b3b"
+      "dark": "#ffffff"
     },
-    "experimentalTextSecondaryInverse": {
+    "experimentalTextInverseSecondary": {
       "light": "#666666",
       "dark": "#999999"
     },
-    "experimentalTextTertiaryAlphaInverse": {
+    "experimentalTextInverseTertiaryAlpha": {
       "light": "#ffffff7f",
       "dark": "#3b3b3b66"
     },
-    "experimentalIconSecondaryInverse": {
+    "experimentalIconInverseSecondary": {
       "light": "#a2a3a6",
       "dark": "#b3b3b3"
     },
     "strokePrimary": {
       "light": "#3b3b3b",
       "dark": "#ffffff"
-    }
-  },
-  "constants": {
-    "colorBlue": {
-      "mode1": "#2e90ff"
     },
-    "colorWhite": {
-      "mode1": "#ffffff"
+    "experimentalTextInverseContrastSecondaryAlpha": {
+      "light": "#ffffff7f",
+      "dark": "#ffffff7f"
     },
-    "colorBlack": {
-      "mode1": "#000000"
+    "experimentalIconInverseContrastSecondaryAlpha": {
+      "light": "#ffffff7f",
+      "dark": "#ffffff7f"
     },
-    "colorRed": {
-      "mode1": "#fe3c60"
+    "experimentalStrokeInverseFieldBorderAlpha": {
+      "light": "#3333330a",
+      "dark": "#3333330a"
     },
-    "colorGreen": {
-      "mode1": "#34c759"
-    },
-    "colorDarkGrey": {
-      "mode1": "#3b3b3b"
-    },
-    "colorOrange": {
-      "mode1": "#ff6900"
-    },
-    "testHighlight": {
-      "mode1": "#ddff00"
+    "experimentalBackgroundInverseContrastSecondaryAlpha": {
+      "light": "#ffffff33",
+      "dark": "#3b3b3b66"
     }
   },
   "tokens": {
@@ -498,12 +484,6 @@
       "vkCom": 32,
       "desktop": 32
     },
-    "fontFamilyBase": {
-      "iOS": "SF Pro",
-      "android": "Roboto Flex",
-      "vkCom": "SF Pro",
-      "desktop": "SF Pro"
-    },
     "spacingSize2XS": {
       "iOS": 2,
       "android": 2,
@@ -528,12 +508,6 @@
       "vkCom": 24,
       "desktop": 24
     },
-    "fontFamilyAccent": {
-      "iOS": "VK Sans Display",
-      "android": "VK Sans Display",
-      "vkCom": "VK Sans Display",
-      "desktop": "VK Sans Display"
-    },
     "otherPlatformWidth": {
       "iOS": 393,
       "android": 360,
@@ -557,12 +531,6 @@
       "android": 12,
       "vkCom": 8,
       "desktop": 12
-    },
-    "otherPlatform": {
-      "iOS": "iOS",
-      "android": "Android",
-      "vkCom": "vkCom",
-      "desktop": "Desktop"
     },
     "otherLargeButtonSize": {
       "iOS": 17,
@@ -720,37 +688,37 @@
       "vkCom": 16.5,
       "desktop": 16.5
     },
-    "radiusRadiusXS": {
+    "radiusRadius2XS": {
       "iOS": 4,
       "android": 4,
       "vkCom": 4,
       "desktop": 4
     },
-    "radiusRadiusS": {
+    "radiusRadiusXS": {
       "iOS": 6,
       "android": 6,
       "vkCom": 6,
       "desktop": 6
     },
-    "radiusRadiusM": {
+    "radiusRadiusS": {
       "iOS": 8,
       "android": 8,
       "vkCom": 8,
       "desktop": 8
     },
-    "radiusRadiusL": {
+    "radiusRadiusM": {
       "iOS": 12,
       "android": 12,
       "vkCom": 12,
       "desktop": 12
     },
-    "radiusRadiusXL": {
+    "radiusRadiusL": {
       "iOS": 16,
       "android": 16,
       "vkCom": 16,
       "desktop": 16
     },
-    "radiusRadius2XL": {
+    "radiusRadiusXL": {
       "iOS": 20,
       "android": 20,
       "vkCom": 20,
@@ -929,6 +897,12 @@
       "android": 22,
       "vkCom": 22,
       "desktop": 22
+    },
+    "radiusRadius2XL": {
+      "iOS": 24,
+      "android": 20,
+      "vkCom": 20,
+      "desktop": 20
     }
   }
 }

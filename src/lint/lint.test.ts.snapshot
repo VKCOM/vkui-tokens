@@ -1,5 +1,9 @@
 exports[`lint > snapshot 1`] = `
 [
+  "milkshakeIOS: colors.colorStrokeContrastSecondaryAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "milkshakeIOS: colors.colorTextTertiaryAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "milkshakeIOSDark: colors.colorStrokeContrastSecondaryAlpha error: Color token type mismatch: alpha token name but opaque value",
+  "milkshakeIOSDark: colors.colorTextTertiaryAlpha error: Color token type mismatch: alpha token name but opaque value",
   "legoAndroid: colors.colorBackgroundContrastSecondaryAlpha error: Color token type mismatch: alpha token name but opaque value",
   "legoAndroid: colors.colorIconTertiaryAlpha error: Color token type mismatch: alpha token name but opaque value",
   "legoAndroid: colors.colorSeparatorPrimaryAlpha error: Color token type mismatch: alpha token name but opaque value",

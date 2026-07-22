@@ -1,3 +1,4 @@
+import type { Radii } from 'interfaces/general/radii/index.ts';
 import lodash from 'lodash';
 
 import { gradient, namedAlias } from '../../../build/helpers/tokenHelpers.ts';
@@ -438,6 +439,17 @@ const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof
 	},
 );
 
+export const vkontakteRadii: Radii = {
+	radius2XS: 2,
+	radiusXS: 4,
+	radiusS: 6,
+	radiusM: 8,
+	radiusL: 12,
+	radiusXL: 16,
+	radius2XL: 20,
+	radius3XL: 24,
+};
+
 export const vkontakteTokens: {
 	fontFamilyAccent: string;
 } & VkontakteAndroidGradients = {
@@ -457,6 +469,7 @@ export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 	},
 	...gradients,
 	...androidFonts,
+	...vkontakteRadii,
 	...vkontakteTokens,
 };
 
@@ -472,6 +485,5 @@ export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 		...vkontakteLocalColorDark,
 	},
 	...gradients,
-	...androidFonts,
 	...vkontakteTokens,
 };
