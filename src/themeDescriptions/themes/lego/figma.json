@@ -900,9 +900,9 @@
     },
     "radiusRadius2XL": {
       "iOS": 24,
-      "android": 20,
-      "vkCom": 20,
-      "desktop": 20
+      "android": 24,
+      "vkCom": 24,
+      "desktop": 24
     }
   }
 }

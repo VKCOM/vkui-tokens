@@ -2,7 +2,6 @@ export interface Radii {
 	/**
 	 * @desc Скругление углов размера 2XS
 	 * @tags radius
-	 * @deprecated
 	 */
 	radius2XS: number;
 
