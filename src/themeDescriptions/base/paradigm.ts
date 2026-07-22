@@ -313,7 +313,6 @@ export const darkColors: ColorsDescription = {
 		colorCounterBackgroundSecondaryAlpha: 'rgba(255, 255, 255, 0.14)',
 		colorCounterBackgroundTertiaryAlpha: 'rgba(0, 119, 255, 0.28)',
 		colorCounterTextTertiary: '#8EC3FF',
-		
 	},
 };
 
