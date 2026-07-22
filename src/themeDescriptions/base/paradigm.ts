@@ -161,6 +161,11 @@ export const lightColors: ColorsDescription = {
 		colorButtonIcon: '#0077ff',
 		colorButtonStroke: '#0077ff',
 		colorTransparent: 'transparent',
+
+		// Counter
+		colorCounterBackgroundSecondaryAlpha: 'rgba(0, 16, 61, 0.1)',
+		colorCounterBackgroundTertiaryAlpha: 'rgba(90, 158, 255, 0.2)',
+		colorCounterTextTertiary: '#0070F0',
 	},
 };
 
@@ -303,6 +308,12 @@ export const darkColors: ColorsDescription = {
 		colorButtonIcon: '#FFFFFF',
 		colorButtonStroke: '#FFFFFF',
 		colorTransparent: 'transparent',
+
+		// Counter
+		colorCounterBackgroundSecondaryAlpha: 'rgba(255, 255, 255, 0.14)',
+		colorCounterBackgroundTertiaryAlpha: 'rgba(0, 119, 255, 0.28)',
+		colorCounterTextTertiary: '#8EC3FF',
+		
 	},
 };
 
