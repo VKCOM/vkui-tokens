@@ -164,7 +164,7 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 	},
 ) as BaseFonts & LocalLegoIOSFonts;
 
-export const legoRadii: Radii = {
+const legoRadii: Radii = {
 	radius2XS: figma.tokens.radiusRadius2XS.iOS,
 	radiusXS: figma.tokens.radiusRadiusXS.iOS,
 	radiusS: figma.tokens.radiusRadiusS.iOS,

@@ -4,7 +4,6 @@ import type { ThemeMilkshakeIOSDescription } from '../../../interfaces/themes/mi
 import type { ThemeMilkshakeIOSDarkDescription } from '../../../interfaces/themes/milkshakeIOSDark/index.ts';
 import { darkElevation, darkGradient } from '../../../themeDescriptions/base/vk.ts';
 import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.ts';
-import { legoRadii } from '../lego/ios.ts';
 
 const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontFamilyBase = fontFamilyFallbacks;
@@ -52,7 +51,7 @@ const milkshakeFonts = {
 	},
 };
 
-export const milkshakeRadii: Radii = {
+const milkshakeRadii: Radii = {
 	radius2XS: 2,
 	radiusXS: 4,
 	radiusS: 6,
@@ -66,7 +65,7 @@ export const milkshakeRadii: Radii = {
 export const milkshakeIOSTheme: ThemeMilkshakeIOSDescription = {
 	...vkIOSTheme, // импорт светлой базовой темы
 	...milkshakeFonts, // шрифты
-	...legoRadii, // сругления
+	...milkshakeRadii, // скругления
 
 	themeName: 'milkshakeIOS', // название текущей темы
 	themeNameBase: 'milkshakeIOS', // название светлой (базовой) темы

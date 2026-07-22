@@ -485,5 +485,6 @@ export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 		...vkontakteLocalColorDark,
 	},
 	...gradients,
+	...androidFonts,
 	...vkontakteTokens,
 };
