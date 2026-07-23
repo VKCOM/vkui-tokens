@@ -31,6 +31,15 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 	// Значения переменных не такие же, как в фигме,
 	// а подобраны эмпирически для визуального совпадения
 	{
+		fontDisplayTitle1: {
+			regular: {
+				fontSize: 31,
+				lineHeight: 31,
+				fontFamily: fontFamilyAccent,
+				fontWeight: bold,
+				letterSpacing: '-0.65px',
+			},
+		},
 		fontTitle1: {
 			regular: {
 				fontSize: 31,
@@ -107,7 +116,7 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 				lineHeight: 18.5,
 				fontWeight: semibold,
 				fontVariationSettings: {
-					opticalSize: 21.8,
+					opticalSize: 22,
 				},
 			},
 		},
@@ -117,7 +126,7 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 				lineHeight: 18.5,
 				fontWeight: bold,
 				fontVariationSettings: {
-					opticalSize: 21.8,
+					opticalSize: 22,
 				},
 			},
 		},
