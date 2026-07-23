@@ -856,6 +856,11 @@ export const lightTheme: ParadigmThemeDescription = {
 		// Byte colors
 		colorBackgroundSky: '#cce4ff',
 		colorBackgroundSkyAlpha: 'rgba(204, 228, 255, 0.9)',
+
+		// Counter
+		colorCounterBackgroundSecondaryAlpha: 'rgba(0, 16, 61, 0.1)',
+		colorCounterBackgroundTertiaryAlpha: 'rgba(90, 158, 255, 0.2)',
+		colorCounterTextTertiary: '#0070F0',
 	},
 
 	breakpoints: {
@@ -1150,6 +1155,11 @@ export const darkTheme: ParadigmThemeDescription = {
 		// Byte colors
 		colorBackgroundSky: '#2b2b2c',
 		colorBackgroundSkyAlpha: 'rgba(51, 51, 51, 0.8)',
+
+		// Counter
+		colorCounterBackgroundSecondaryAlpha: 'rgba(255, 255, 255, 0.14)',
+		colorCounterBackgroundTertiaryAlpha: 'rgba(0, 119, 255, 0.28)',
+		colorCounterTextTertiary: '#8EC3FF',
 	},
 };
 
