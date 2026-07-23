@@ -1,11 +1,18 @@
+import type { Radii } from 'interfaces/general/radii/index.ts';
 import lodash from 'lodash';
 
-import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
 import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
-import type { Font } from '../../../interfaces/general/typography/index.ts';
-import type { ThemeLegoIOSDescription } from '../../../interfaces/themes/legoIOS/index.ts';
+import type {
+	LocalLegoIOSFonts,
+	ThemeLegoIOSDescription,
+} from '../../../interfaces/themes/legoIOS/index.ts';
 import type { ThemeLegoIOSDarkDescription } from '../../../interfaces/themes/legoIOSDark/index.ts';
-import { darkElevation, darkGradient, fonts } from '../../../themeDescriptions/base/vk.ts';
+import {
+	type BaseFonts,
+	darkElevation,
+	darkGradient,
+	fonts,
+} from '../../../themeDescriptions/base/vk.ts';
 import { vkIOSTheme, vkIOSThemeDark } from '../../themes/vkIOS/index.ts';
 import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '../../themes/vkontakteIOS/index.ts';
 import figma from './figma.json' with { type: 'json' };
@@ -18,20 +25,8 @@ const semiboldish = 580;
 const semibold = 600;
 const bold = 700;
 
-// Расширение типа новыми переменными в лего
-type LegoFonts =
-	| typeof fonts
-	| {
-			fontLabel1: Adaptive<Font>;
-			fontLabel2: Adaptive<Font>;
-			fontBody: Adaptive<Font>;
-			fontHeadline: Adaptive<Font>;
-			fontTextBold: Adaptive<Font>;
-			fontFootnoteBold: Adaptive<Font>;
-	  };
-
 // Наследование стандартных шрифтов из базовой темы
-const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
+const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFonts>>(
 	lodash.cloneDeep(fonts),
 	// Значения переменных не такие же, как в фигме,
 	// а подобраны эмпирически для визуального совпадения
@@ -167,11 +162,23 @@ const legoFonts: LegoFonts = lodash.merge<typeof fonts, DeepPartial<LegoFonts>>(
 			},
 		},
 	},
-);
+) as BaseFonts & LocalLegoIOSFonts;
+
+const legoRadii: Radii = {
+	radius2XS: figma.tokens.radiusRadius2XS.iOS,
+	radiusXS: figma.tokens.radiusRadiusXS.iOS,
+	radiusS: figma.tokens.radiusRadiusS.iOS,
+	radiusM: figma.tokens.radiusRadiusM.iOS,
+	radiusL: figma.tokens.radiusRadiusL.iOS,
+	radiusXL: figma.tokens.radiusRadiusXL.iOS,
+	radius2XL: figma.tokens.radiusRadius2XL.iOS,
+	radius3XL: figma.tokens.radiusRadius3XL.iOS,
+};
 
 export const legoIOSTheme: ThemeLegoIOSDescription = {
 	...vkIOSTheme, // импорт светлой базовой темы
 	...legoFonts, // шрифты
+	...legoRadii, // скругления
 
 	themeName: 'legoIOS', // название текущей темы
 	themeNameBase: 'legoIOS', // название светлой (базовой) темы
@@ -196,10 +203,10 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 	},
 
 	// Изменённые не-цвета
-	blurS: figma.tokens.blurSmall.android,
-	blurM: figma.tokens.blurMedium.android,
-	blurL: figma.tokens.blurLarge.android,
-	blurXL: figma.tokens.blurExtraLarge.android,
+	blurS: figma.tokens.blurSmall.iOS,
+	blurM: figma.tokens.blurMedium.iOS,
+	blurL: figma.tokens.blurLarge.iOS,
+	blurXL: figma.tokens.blurExtraLarge.iOS,
 
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,

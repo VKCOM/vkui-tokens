@@ -19,6 +19,7 @@ const groups = [
 	'font',
 	'theme',
 	'blur',
+	'radius',
 	// Todo: Раскомментить в VKUI Tokens 5.0
 	// 'spacing',
 	'other',

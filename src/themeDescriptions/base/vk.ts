@@ -320,7 +320,7 @@ export const effects: Effects = {
 	blurXL: 96,
 };
 
-type BaseFonts = Omit<
+export type BaseFonts = Omit<
 	{
 		[key in keyof Fonts]: Adaptive<Fonts[key]>;
 	},

@@ -71,6 +71,7 @@ import {
 	lightTheme as paradigmBase,
 } from './base/paradigm.ts';
 import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk.ts';
+import { milkshakeIOSTheme, milkshakeIOSThemeDark } from './themes/milkshake/ios.ts';
 
 export const themes: unknown[] = [
 	// ==== Базовые темы новой дизайн-системы ====
@@ -100,6 +101,8 @@ export const themes: unknown[] = [
 	vkIdOkIOSThemeDark,
 	tutoriaTheme,
 	tutoriaDarkTheme,
+	milkshakeIOSTheme,
+	milkshakeIOSThemeDark,
 	legoAndroidTheme,
 	legoAndroidThemeDark,
 	legoIOSTheme,
