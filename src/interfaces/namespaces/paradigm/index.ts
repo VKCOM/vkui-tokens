@@ -136,6 +136,11 @@ export interface LocalParadigmColorsDescriptionStruct {
 	// Цвета для Байта
 	colorBackgroundSky: ColorDescription;
 	colorBackgroundSkyAlpha: ColorDescription;
+
+	// Цвета для счётчиков
+	colorCounterBackgroundSecondaryAlpha: ColorDescription;
+	colorCounterBackgroundTertiaryAlpha: ColorDescription;
+	colorCounterTextTertiary: ColorDescription;
 }
 
 export type ParadigmLocalColors = {
