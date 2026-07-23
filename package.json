@@ -18,7 +18,7 @@
     "tsc": "tsc --project tsconfig.json",
     "swc": "swc dist/ --config-file package.swcrc --strip-leading-paths --out-file-extension js  -d dist -C module.type=es6",
     "test": "node --test",
-    "test:ci": "node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info",
+    "test:ci": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=lcov.info",
     "clear:src": "find src -name '*.d.ts' -delete &&  find src -name '*.js' -delete",
     "clear:dist": "find dist -regex '.*[^d]\\.ts' -delete",
     "docs:dev": "cd docs/rspack && rspack serve -c rspack.client.mjs --mode development",
