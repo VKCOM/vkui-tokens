@@ -72,6 +72,7 @@ import {
 } from './base/paradigm.ts';
 import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk.ts';
 import { milkshakeIOSTheme, milkshakeIOSThemeDark } from './themes/milkshake/ios.ts';
+import { workSpaceChatsDarkTheme, workSpaceChatsTheme } from './themes/workSpaceChats/index.ts';
 
 export const themes: unknown[] = [
 	// ==== Базовые темы новой дизайн-системы ====
@@ -118,6 +119,8 @@ export const themes: unknown[] = [
 	octaviusVKDarkTheme,
 	paradigmTechTheme,
 	paradigmTechDarkTheme,
+	workSpaceChatsTheme,
+	workSpaceChatsDarkTheme,
 
 	// Темы, наследуемые от Calendar
 	calendarTheme,
