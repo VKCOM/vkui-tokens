@@ -5,10 +5,7 @@ import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
 import type { Token } from '../../../interfaces/general/tools/tokenValue.ts';
 import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeWorkSpaceChatsDescription } from '../../../interfaces/themes/workSpaceChats/index.ts';
-import {
-	darkThemeExport as paradigmBaseDark,
-	lightTheme as paradigmBase,
-} from '../../base/paradigm.ts';
+import { darkTheme as paradigmBaseDark, lightTheme as paradigmBase } from '../../base/paradigm.ts';
 
 const fontFamilyAccent: Property.FontFamily = 'VK Sans Display';
 const fontFamilyBase: Property.FontFamily = 'Arial';
@@ -69,6 +66,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 	...paradigmBase,
 	...workSpaceChatsTypography,
 	themeName: 'workSpaceChats',
+	themeNameBase: 'workSpaceChats',
 	colorsScheme: 'light',
 
 	colors: {
@@ -118,6 +116,7 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 	...paradigmBaseDark,
 	...workSpaceChatsTypography,
 	themeName: 'workSpaceChatsDark',
+	themeNameBase: 'workSpaceChats',
 	colorsScheme: 'dark',
 	colors: {
 		...workSpaceChatsTheme.colors,
