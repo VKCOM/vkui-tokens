@@ -1,70 +1,8 @@
-import type { Property } from 'csstype';
-
-import type { ThemeGeneral } from '../../../interfaces/general/index.ts';
-import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
-import type { Token } from '../../../interfaces/general/tools/tokenValue.ts';
-import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeWorkSpaceChatsDescription } from '../../../interfaces/themes/workSpaceChats/index.ts';
 import { darkTheme as paradigmBaseDark, lightTheme as paradigmBase } from '../../base/paradigm.ts';
 
-const fontFamilyAccent: Property.FontFamily = 'VK Sans Display';
-const fontFamilyBase: Property.FontFamily = 'Arial';
-
-type AdaptiveFont = Adaptive<Font>;
-type FontToken = Token<AdaptiveFont, ThemeGeneral>;
-
-// Подменяет fontFamily во всех адаптивных вариантах (regular/compact/...) шрифтового токена,
-// сохраняя остальные параметры (fontSize, lineHeight, fontWeight, ...) из базовой темы.
-// Альсы (alias) не передаются — они разрешатся в переопределённый токен.
-const withFamily = (family: Property.FontFamily, token: FontToken): AdaptiveFont => {
-	const source = (typeof token === 'function' ? ({} as AdaptiveFont) : token) as AdaptiveFont;
-	const result = { ...source } as Record<string, Partial<Font> | undefined>;
-	for (const key of Object.keys(result)) {
-		const variant = result[key];
-		if (variant) {
-			result[key] = { ...variant, fontFamily: family };
-		}
-	}
-	return result as unknown as AdaptiveFont;
-};
-
-const accent = (token: FontToken): AdaptiveFont => withFamily(fontFamilyAccent, token);
-const base = (token: FontToken): AdaptiveFont => withFamily(fontFamilyBase, token);
-
-// Переопределённая типографика: VK Sans Display для акцентных шрифтов, Arial — для основного текста.
-// Вынесено в отдельный объект, чтобы переопределить шрифты и в светлой, и в тёмной теме
-// (тёмная базовая тема иначе затрёт их значениями paradigmBase).
-const workSpaceChatsTypography = {
-	fontFamilyAccent,
-	fontFamilyBase,
-	fontDisplayTitle1: accent(paradigmBase.fontDisplayTitle1),
-	fontDisplayTitle2: accent(paradigmBase.fontDisplayTitle2),
-	fontDisplayTitle3: accent(paradigmBase.fontDisplayTitle3),
-	fontDisplayTitle4: accent(paradigmBase.fontDisplayTitle4),
-	fontTitle1: accent(paradigmBase.fontTitle1),
-	fontTitle2: accent(paradigmBase.fontTitle2),
-	fontTitle3: accent(paradigmBase.fontTitle3),
-	fontHeadline1: accent(paradigmBase.fontHeadline1),
-	fontHeadline2: accent(paradigmBase.fontHeadline2),
-	fontSubhead: accent(paradigmBase.fontSubhead),
-	fontH0: accent(paradigmBase.fontH0),
-	fontH1: accent(paradigmBase.fontH1),
-	fontH2: accent(paradigmBase.fontH2),
-	fontText: base(paradigmBase.fontText),
-	fontParagraph: base(paradigmBase.fontParagraph),
-	fontFootnote: base(paradigmBase.fontFootnote),
-	fontFootnoteCaps: base(paradigmBase.fontFootnoteCaps),
-	fontCaption1: base(paradigmBase.fontCaption1),
-	fontCaption1Caps: base(paradigmBase.fontCaption1Caps),
-	fontCaption2: base(paradigmBase.fontCaption2),
-	fontCaption2Caps: base(paradigmBase.fontCaption2Caps),
-	fontCaption3: base(paradigmBase.fontCaption3),
-	fontCaption3Caps: base(paradigmBase.fontCaption3Caps),
-};
-
 export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 	...paradigmBase,
-	...workSpaceChatsTypography,
 	themeName: 'workSpaceChats',
 	themeNameBase: 'workSpaceChats',
 	colorsScheme: 'light',
@@ -114,7 +52,6 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 	...workSpaceChatsTheme,
 	...paradigmBaseDark,
-	...workSpaceChatsTypography,
 	themeName: 'workSpaceChatsDark',
 	themeNameBase: 'workSpaceChats',
 	colorsScheme: 'dark',
