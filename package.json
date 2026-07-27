@@ -88,7 +88,7 @@
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "remark-loader": "^6.0.0",
-    "ts-morph": "^27.0.2",
+    "ts-morph": "^28.0.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^7.7.1"
   },
