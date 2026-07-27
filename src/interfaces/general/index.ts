@@ -101,7 +101,6 @@ export interface Theme extends ThemeGeneral, ColorsFinal {
 /**
  * Тема, в которой все значения пикселизированы. Т.е. 16 -> '16px'
  */
-// eslint-disable-next-line @typescript-eslint/ban-types
 export type PixelifyTheme<T extends Partial<Record<keyof T, any>> = StaticTokens<Theme>> =
 	StringifyObject<Omit<T, 'breakpoints' | 'themeType'>> &
 		Pick<T, Extract<'breakpoints', keyof T>> & {

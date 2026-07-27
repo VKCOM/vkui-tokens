@@ -17,9 +17,7 @@ import { expandAll } from '../build/expandTheme.ts';
 import { themes } from '../themeDescriptions/index.ts';
 import { processCustomMedia } from './themeProcessors/customMedia/customMedia.ts';
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const __filename = fileURLToPath(import.meta.url);
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '../..');
 
@@ -40,7 +38,6 @@ console.log('успешно\n');
 console.log('Копируем директорию src/interfaces...');
 const INTERFACES_PATH_SOURCE = path.resolve(ROOT_DIR, 'src/interfaces');
 const INTERFACES_PATH_DIST = path.resolve(DIST_PATH, 'interfaces');
-// eslint-disable-next-line import/no-named-as-default-member
 fs.copySync(INTERFACES_PATH_SOURCE, INTERFACES_PATH_DIST);
 console.log('успешно\n');
 
@@ -64,7 +61,6 @@ for (const expandedThemeObject of expandedThemes) {
 
 console.log('Успешно сформировали объекты тем на основе описания тем\n');
 
-// eslint-disable-next-line max-lines-per-function
 expandedThemes.forEach((expandedThemeObject) => {
 	console.log('\n----------\n');
 
@@ -203,7 +199,6 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 	} else {
 		// Всё остальное копируем как есть
 
-		// eslint-disable-next-line import/no-named-as-default-member
 		fs.copySync(fileSourcePath, fileDestPath);
 	}
 });
@@ -211,7 +206,6 @@ fs.mkdirSync(path.resolve(DIST_PATH, 'build/compilers'));
 console.log('успешно\n');
 
 console.log('записываем корректный package.json');
-// eslint-disable-next-line import/no-named-as-default-member
 const packageJsonObject = fs.readJSONSync(`${ROOT_DIR}/package.json`);
 delete packageJsonObject.scripts.prepublishOnly;
 fs.writeFileSync(

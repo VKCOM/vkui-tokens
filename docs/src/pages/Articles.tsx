@@ -11,7 +11,6 @@ export interface ArticlesProps {
 	contentsHtml?: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 export function Articles(props: ArticlesProps) {
 	const articleContent = props.contentsHtml ?? '';
 	const ref = React.useRef<HTMLDivElement>(undefined);

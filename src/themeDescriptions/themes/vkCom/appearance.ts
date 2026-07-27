@@ -1,11 +1,9 @@
 import palette from '@vkontakte/appearance/main.valette/palette_web.json' with { type: 'json' };
 
-/* eslint-disable @typescript-eslint/naming-convention */
 interface ClusterData {
 	color_identifier: string;
 	alpha_multiplier?: number;
 }
-/* eslint-enable @typescript-eslint/naming-convention */
 
 export function resolveColor(clusterData: ClusterData): string {
 	const color = palette[clusterData.color_identifier] as string;

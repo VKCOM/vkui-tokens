@@ -12,9 +12,8 @@
     "prepublishOnly": "echo 'ПРЕДУПРЕЖДЕНИЕ: Публиковать из root этот пакет нельзя: выполните команду \\033[1;32m\"npm run publish:dist\"' && exit 1",
     "clean-build": "npm run clear:src && npm run build",
     "build:script": "node src/build/index.ts",
-    "lint": "TIMING=1 eslint ./src --ext .ts",
-    "lint:fix": "npm run lint -- --fix",
-    "lint:prettier": "prettier --check --ignore-unknown --cache --cache-location .cache/.prettiercache .",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
     "tsc": "tsc --project tsconfig.json",
     "swc": "swc dist/ --config-file package.swcrc --strip-leading-paths --out-file-extension js  -d dist -C module.type=es6",
     "test": "node --test",
@@ -27,13 +26,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,jsx}": [
-      "prettier --check",
-      "eslint"
-    ],
-    "*.{json,md}": [
-      "prettier --check"
-    ]
+    "*": "biome check --no-errors-on-unmatched"
   },
   "repository": "https://github.com/VKCOM/vkui-tokens.git",
   "dependencies": {
@@ -41,6 +34,7 @@
     "csstype": "^3.1.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.5",
     "@rspack/cli": "^1.7.12",
     "@rspack/core": "^1.7.12",
     "@svgr/webpack": "^8.1.0",
@@ -56,32 +50,18 @@
     "@types/react-dom": "^19.2.3",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0",
     "@vkontakte/icons": "^3.62.0",
-    "@vkontakte/prettier-config": "^0.2.1",
     "@vkontakte/vkjs": "^2.0.2",
     "@vkontakte/vkui": "^7.10.0",
     "clsx": "^2.1.1",
     "color": "^4.2.3",
     "common-tags": "^1.8.2",
     "css.escape": "^1.5.1",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "4.4.4",
-    "eslint-plugin-compat": "^6.0.2",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-jasmine": "^4.2.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.5.3",
-    "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-sonarjs": "^3.0.4",
-    "eslint-plugin-unicorn": "^55.0.0",
     "fs-extra": "^11.3.0",
     "highlight.js": "^11.11.1",
     "html-loader": "^5.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
     "lodash": "^4.18.1",
-    "prettier": "^3.6.2",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.1",
@@ -89,8 +69,7 @@
     "remark-html": "^16.0.1",
     "remark-loader": "^6.0.0",
     "ts-morph": "^28.0.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^7.7.1"
+    "typescript": "^5.9.3"
   },
   "engines": {
     "npm": ">=9.3.1",
