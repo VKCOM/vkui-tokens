@@ -1941,10 +1941,10 @@
   dependencies:
     "@swc/helpers" "^0.5.19"
 
-"@vkontakte/icons@^3.0.0", "@vkontakte/icons@^3.62.0":
-  version "3.62.0"
-  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-3.62.0.tgz#554bb17ce3b0f297697fbbba8533f5eab7f73e86"
-  integrity sha512-1birpNqEft6YfJiNTnURJUdCGiV49+9Ux/TS15Dece5NFeOBNaxGf9QOUa1DVKsi8b0bbqVGin+/5BzppvJndg==
+"@vkontakte/icons@^3.0.0", "@vkontakte/icons@^3.64.0":
+  version "3.64.0"
+  resolved "https://registry.yarnpkg.com/@vkontakte/icons/-/icons-3.64.0.tgz#0a6a04d3c8feb60e9b63d4f240b6082b88e4b198"
+  integrity sha512-KObzT+Z1ThY0FLVkYkleaUqfvgfuzaXI5rXZp7YZLTQgp0UoQb8SG0wGDrZpMtw0fYBHPfv+qJzO9E7hsD1YGw==
   dependencies:
     "@swc/helpers" "^0.5.23"
     "@vkontakte/icons-sprite" "^3.2.1"
