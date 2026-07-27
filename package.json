@@ -69,7 +69,7 @@
     "remark-html": "^16.0.1",
     "remark-loader": "^6.0.0",
     "ts-morph": "^28.0.0",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "engines": {
     "npm": ">=9.3.1",
