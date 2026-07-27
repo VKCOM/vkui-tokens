@@ -1,6 +1,6 @@
 import 'highlight.js/styles/github.css';
 
-import { Spacing, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
+import { Spacing, useAdaptivityWithJSMediaQueries, ViewWidth } from '@vkontakte/vkui';
 import * as React from 'react';
 
 import { AsideMenu, AsideMenuItem } from '../../src/components/layouts/shared/AsideMenu/AsideMenu';
@@ -16,7 +16,7 @@ export function Articles(props: ArticlesProps) {
 	const ref = React.useRef<HTMLDivElement>(undefined);
 
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
-	const isMobile = viewWidth <= 3;
+	const isMobile = viewWidth <= ViewWidth.SMALL_TABLET;
 
 	React.useEffect(() => {
 		highlightCodeInElement(ref.current);

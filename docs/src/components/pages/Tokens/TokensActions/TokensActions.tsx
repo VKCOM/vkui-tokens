@@ -7,6 +7,7 @@ import {
 	Input,
 	SegmentedControl,
 	useAdaptivityWithJSMediaQueries,
+	ViewWidth,
 } from '@vkontakte/vkui';
 import clsx from 'clsx';
 import React, { FC } from 'react';
@@ -37,7 +38,7 @@ type Props = {
 
 const TokensActions: FC<Props> = ({ tagsProps, themesProps, valueTypesProps, searchProps }) => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
-	const isTabletPlus = viewWidth > 3;
+	const isTabletPlus = viewWidth > ViewWidth.SMALL_TABLET;
 
 	return (
 		<div

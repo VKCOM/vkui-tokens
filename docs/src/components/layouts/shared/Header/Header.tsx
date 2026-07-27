@@ -1,5 +1,10 @@
-import { Card, PanelHeader, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
-import clsx from 'clsx';
+import {
+	Card,
+	Flex,
+	PanelHeader,
+	useAdaptivityWithJSMediaQueries,
+	ViewWidth,
+} from '@vkontakte/vkui';
 import React, { FC } from 'react';
 
 import { LogoIcon } from '../../../../shared/content/icons';
@@ -7,19 +12,17 @@ import Navigation from '../Navigation/Navigation';
 
 const Header: FC = () => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
-	const isTabletPlus = viewWidth > 3;
+	const isTabletPlus = viewWidth > ViewWidth.SMALL_TABLET;
 
 	return (
 		<Card mode="shadow">
 			<PanelHeader delimiter="none">
-				<div
-					className={clsx('flex items-center', isTabletPlus ? 'justify-between' : 'justify-center')}
-				>
-					<div className="flex items-center">
+				<Flex align="center" justify={isTabletPlus ? 'space-between' : 'center'}>
+					<Flex align="center">
 						<LogoIcon />
-					</div>
+					</Flex>
 					{isTabletPlus && <Navigation />}
-				</div>
+				</Flex>
 			</PanelHeader>
 		</Card>
 	);
