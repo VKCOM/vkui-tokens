@@ -7,10 +7,10 @@
   "homepage": "https://vkcom.github.io/vkui-tokens",
   "main": "./utils/descriptions.cjs",
   "scripts": {
-    "build": "mkdir -p dist && npm run build:script && npm run swc",
-    "build:local": "npm run build && npm run clear:dist",
+    "build": "mkdir -p dist && yarn build:script && yarn swc",
+    "build:local": "yarn build && yarn clear:dist",
     "prepublishOnly": "echo 'ПРЕДУПРЕЖДЕНИЕ: Публиковать из root этот пакет нельзя: выполните команду \\033[1;32m\"npm run publish:dist\"' && exit 1",
-    "clean-build": "npm run clear:src && npm run build",
+    "clean-build": "yarn clear:src && yarn build",
     "build:script": "node src/build/index.ts",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
@@ -73,9 +73,9 @@
   },
   "engines": {
     "npm": ">=9.3.1",
-    "yarn": ">=1.21.1 <2"
+    "yarn": ">=4.0.0 <5"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "packageManager": "yarn@4.17.1",
   "publishConfig": {
     "provenance": true
   }
