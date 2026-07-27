@@ -1,0 +1,83 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.5/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "tab",
+    "indentWidth": 2,
+    "lineWidth": 100,
+    "lineEnding": "lf"
+  },
+  "linter": {
+    "enabled": false
+  },
+  "assist": {
+    "enabled": false
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "preserve",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single"
+    }
+  },
+  "css": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.json", "**/*.jsonc", "**/*.yml", "**/*.yaml", "**/*.md"],
+      "formatter": {
+        "indentStyle": "space"
+      }
+    },
+    {
+      "includes": ["src/build/helpers/opacityMap.json"],
+      "formatter": {
+        "enabled": false
+      }
+    },
+    {
+      "includes": ["src/**/*.ts"],
+      "linter": {
+        "enabled": true,
+        "rules": {
+          "recommended": true,
+          "complexity": {
+            "noUselessSwitchCase": "off",
+            "useLiteralKeys": "off",
+            "useOptionalChain": "off"
+          },
+          "correctness": {
+            "noUnusedFunctionParameters": "off"
+          },
+          "performance": {
+            "noAccumulatingSpread": "off"
+          },
+          "style": {
+            "useImportType": "off"
+          },
+          "suspicious": {
+            "noEmptyInterface": "off",
+            "noExplicitAny": "off",
+            "noTsIgnore": "off"
+          }
+        }
+      }
+    }
+  ]
+}

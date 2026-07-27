@@ -48,7 +48,6 @@ function processVarNaming({
 	const result: any = {};
 
 	// todo разнести на несколько функций вместо скипа
-	// eslint-disable-next-line sonarjs/cognitive-complexity
 	Object.keys(object).forEach((key) => {
 		let value = JSON.parse(JSON.stringify(object[key]));
 

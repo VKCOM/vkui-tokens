@@ -19,7 +19,6 @@ const fontWeightBase1 = 600;
 const fontWeightBase2 = 500;
 const fontWeightBase3 = 400;
 
-// eslint-disable-next-line max-lines-per-function
 export const colorFromFigma = (colorsScheme: 'light' | 'dark'): ColorsDescription => {
 	const { background, text, icons, stroke, palette, other } = figma[colorsScheme];
 

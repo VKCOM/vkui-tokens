@@ -13,16 +13,14 @@ export interface ColorWithStates {
 
 export type ColorDescriptionStatic = Property.Color | ColorWithStates;
 
+// biome-ignore format: Preserve the existing multiline recursive type definition.
 export type ColorDescriptionCallable<
-	// eslint-disable-next-line no-use-before-define
 	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
 > = (
 	theme: Partial<ColorsScheme & ColorsDescription<T>>,
-	// eslint-disable-next-line no-use-before-define
 ) => ColorDescription;
 
 export type ColorDescription<
-	// eslint-disable-next-line no-use-before-define
 	T extends { [key in keyof T]: ColorDescription } = ColorsDescriptionStruct,
 > = ColorDescriptionStatic | ColorDescriptionCallable<T>;
 

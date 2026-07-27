@@ -1,7 +1,6 @@
 import * as assert from 'node:assert/strict';
 import { describe, test } from 'node:test';
 
-/* eslint-disable @typescript-eslint/naming-convention */
 import { resolveColor } from './appearance.ts';
 
 describe('vkCom/appearance', () => {
