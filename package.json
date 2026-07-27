@@ -53,7 +53,7 @@
     "@vkontakte/vkjs": "^2.0.2",
     "@vkontakte/vkui": "^7.10.0",
     "clsx": "^2.1.1",
-    "color": "^4.2.3",
+    "color": "^5.0.3",
     "common-tags": "^1.8.2",
     "css.escape": "^1.5.1",
     "fs-extra": "^11.3.0",
