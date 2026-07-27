@@ -1,5 +1,5 @@
 import { Icon16HelpOutline, Icon16Linked } from '@vkontakte/icons';
-import { Link, Title, useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
+import { Link, Title, useAdaptivityWithJSMediaQueries, ViewWidth } from '@vkontakte/vkui';
 import clsx from 'clsx';
 import React, { FC } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
@@ -22,7 +22,7 @@ const styles = {
 
 const TokensHeader: FC = () => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
-	const isTabletPlus = viewWidth > 3;
+	const isTabletPlus = viewWidth > ViewWidth.SMALL_TABLET;
 
 	return (
 		<div

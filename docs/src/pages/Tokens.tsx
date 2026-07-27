@@ -1,4 +1,4 @@
-import { useAdaptivityWithJSMediaQueries } from '@vkontakte/vkui';
+import { useAdaptivityWithJSMediaQueries, ViewWidth } from '@vkontakte/vkui';
 import * as React from 'react';
 
 import tokensData from '../../public/static/data/tokensData.json' with { type: 'json' };
@@ -57,7 +57,7 @@ function findThemeTags(themeNames: string[]): string[] {
 
 const Tokens: React.FC = () => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
-	const isTabletPlus = viewWidth > 3;
+	const isTabletPlus = viewWidth > ViewWidth.SMALL_TABLET;
 
 	const themeTags = React.useMemo(() => findThemeTags(themes), [themes]);
 	const [selectedTags, setSelectedTags] = React.useState<Array<ChipOption>>([]);

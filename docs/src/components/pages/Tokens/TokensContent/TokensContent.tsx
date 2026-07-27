@@ -8,6 +8,7 @@ import {
 	Paragraph,
 	Separator,
 	useAdaptivityWithJSMediaQueries,
+	ViewWidth,
 } from '@vkontakte/vkui';
 import React, { FC, Fragment, useMemo } from 'react';
 
@@ -41,7 +42,7 @@ function mapTokenDescription(descriptions: Description[]) {
 
 const TokensContent: FC<Props> = ({ tokens, selectedTags, selectedValueType, searchValue }) => {
 	const { viewWidth } = useAdaptivityWithJSMediaQueries();
-	const isTabletPlus = viewWidth > 3;
+	const isTabletPlus = viewWidth > ViewWidth.SMALL_TABLET;
 
 	const tokensKeys = useMemo(
 		() =>
