@@ -25,7 +25,7 @@ const ROOT_DIR = path.resolve(__dirname, '../..');
 
 console.log('Удаляем папку dist...');
 export const DIST_PATH: string = `${ROOT_DIR}/dist`;
-export const rmDist = (): void => fs.rmdirSync(DIST_PATH, { recursive: true });
+export const rmDist = (): void => fs.rmSync(DIST_PATH, { recursive: true, force: true });
 
 rmDist();
 
