@@ -1,17 +1,23 @@
 {
   "compilerOptions": {
     "strict": false,
-    "target": "es5",
+    "target": "ES2019",
     "jsx": "react",
-    "module": "CommonJS",
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "removeComments": false,
     "allowSyntheticDefaultImports": true,
+    "noUncheckedSideEffectImports": false,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
-    "lib": ["ES6", "DOM", "ES2017"],
+    "skipLibCheck": true,
+    "lib": ["ES2019", "DOM"],
+    "types": ["*"],
     "declaration": true,
     "resolveJsonModule": true,
-    "baseUrl": "."
+    "paths": {
+      "*": ["./*"]
+    }
   }
 }

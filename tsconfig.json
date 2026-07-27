@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
+    "strict": false,
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "removeComments": false,
     "allowSyntheticDefaultImports": true,
+    "noUncheckedSideEffectImports": false,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "lib": ["ES2023", "DOM"],
+    "types": ["*"],
     "declaration": true,
-    "baseUrl": "./src",
+    "paths": {
+      "*": ["./src/*"]
+    },
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "outDir": "./dist",
