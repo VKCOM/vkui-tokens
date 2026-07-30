@@ -41,7 +41,7 @@
     "@swc/cli": "^0.8.1",
     "@swc/core": "^1.15.46",
     "@swc/plugin-transform-imports": "^12.15.0",
-    "@types/color": "^4.2.0",
+    "@types/color": "^4.2.1",
     "@types/common-tags": "^1.8.4",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash": "^4.17.24",

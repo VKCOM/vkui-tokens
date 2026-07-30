@@ -2342,28 +2342,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/color-convert@npm:*":
-  version: 2.0.3
-  resolution: "@types/color-convert@npm:2.0.3"
+"@types/color-convert@npm:2":
+  version: 2.0.4
+  resolution: "@types/color-convert@npm:2.0.4"
   dependencies:
-    "@types/color-name": "npm:*"
-  checksum: 10c0/a5870547660f426cddd76b54e942703e29c3b43fc26b1ba567e10b9707d144b7d8863e0af7affd9c3391815c06582571f43835c71ede270a6c58949155d18b77
+    "@types/color-name": "npm:^1.1.0"
+  checksum: 10c0/fdd2cea0ccf593055c8d952760286a4c114ed72a9940798d13f159823bf71d40a6b124009865e2e066f062d6d5611b677ddb61fd0ed05f6494170454cc6457c2
   languageName: node
   linkType: hard
 
-"@types/color-name@npm:*":
-  version: 1.1.3
-  resolution: "@types/color-name@npm:1.1.3"
-  checksum: 10c0/caea7b6446623acdbf38138a8d4416b0363314784d82b13f3e3fa29f2070bc5630f674f2c953edac5f1c9710f3302328abf912b32de5b6e799d3bdb149269fbc
+"@types/color-name@npm:^1.1.0":
+  version: 1.1.5
+  resolution: "@types/color-name@npm:1.1.5"
+  checksum: 10c0/ce566d98ab1c2622a2e9d9d1d5cbde403e731a4fc084e8b0f56e89901cd3c46981feafb797d4505918d5eb5a7fd897fce2332d489f450ddf1c58bc4986bd9d76
   languageName: node
   linkType: hard
 
-"@types/color@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@types/color@npm:4.2.0"
+"@types/color@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "@types/color@npm:4.2.1"
   dependencies:
-    "@types/color-convert": "npm:*"
-  checksum: 10c0/d09b68390bfd4ae6d57115e047be9dbd3ad4d30e9b7c20e6004c778057a94eec9f5c61689c1b6b09a743f8c2491536870dd0c9a2c79bfcaa37f594b54fc9c96d
+    "@types/color-convert": "npm:2"
+  checksum: 10c0/fdf1558e91fd31e9d95bf60be08524b62815ab339aab4b1318672461044541eb7927e41427792dcc1da8d63680e3c572402414a5a8e1d3909ad3d65cb0b64c39
   languageName: node
   linkType: hard
 
@@ -2852,7 +2852,7 @@ __metadata:
     "@swc/core": "npm:^1.15.46"
     "@swc/helpers": "npm:^0.5.19"
     "@swc/plugin-transform-imports": "npm:^12.15.0"
-    "@types/color": "npm:^4.2.0"
+    "@types/color": "npm:^4.2.1"
     "@types/common-tags": "npm:^1.8.4"
     "@types/fs-extra": "npm:^11.0.4"
     "@types/lodash": "npm:^4.17.24"
