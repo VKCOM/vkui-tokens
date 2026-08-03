@@ -57,12 +57,12 @@
       "dark": "#ffffff23"
     },
     "paletteAccentRed": {
-      "light": "#ff3347",
-      "dark": "#ff3347"
+      "light": "#ff5773",
+      "dark": "#ff5773"
     },
     "paletteAccentGreen": {
-      "light": "#34c759",
-      "dark": "#34c759"
+      "light": "#42d347",
+      "dark": "#42d347"
     },
     "backgroundBackground": {
       "light": "#ffffff",
@@ -229,8 +229,8 @@
       "dark": "#a3adb8"
     },
     "paletteAccentOrange": {
-      "light": "#ffa000",
-      "dark": "#ffa000"
+      "light": "#ff913d",
+      "dark": "#ff913d"
     },
     "paletteAccentOrangeFire": {
       "light": "#f05c44",
@@ -245,8 +245,8 @@
       "dark": "#a94fff"
     },
     "paletteAccentRaspberryPink": {
-      "light": "#e03fab",
-      "dark": "#f060c0"
+      "light": "#fa7fbb",
+      "dark": "#fa7fbb"
     },
     "paletteAccentSecondary": {
       "light": "#3f8ae0",
@@ -285,8 +285,8 @@
       "dark": "#13ffd0"
     },
     "paletteAccentPink": {
-      "light": "#f45fff",
-      "dark": "#f45fff"
+      "light": "#e866ff",
+      "dark": "#e866ff"
     },
     "backgroundInverse": {
       "light": "#262626",
@@ -320,29 +320,9 @@
       "light": "#ffffff00",
       "dark": "#ffffff00"
     },
-    "experimentalTextContrastSecondaryAlpha": {
-      "light": "#ffffff7f",
-      "dark": "#ffffff7f"
-    },
-    "experimentalIconContrastSecondaryAlpha": {
-      "light": "#ffffff7f",
-      "dark": "#ffffff7f"
-    },
-    "experimentalTextInversePrimary": {
-      "light": "#ffffff",
-      "dark": "#ffffff"
-    },
     "experimentalIconInversePrimary": {
       "light": "#ffffff",
       "dark": "#ffffff"
-    },
-    "experimentalTextInverseSecondary": {
-      "light": "#666666",
-      "dark": "#999999"
-    },
-    "experimentalTextInverseTertiaryAlpha": {
-      "light": "#ffffff7f",
-      "dark": "#3b3b3b66"
     },
     "experimentalIconInverseSecondary": {
       "light": "#a2a3a6",
@@ -351,10 +331,6 @@
     "strokePrimary": {
       "light": "#3b3b3b",
       "dark": "#ffffff"
-    },
-    "experimentalTextInverseContrastSecondaryAlpha": {
-      "light": "#ffffff7f",
-      "dark": "#ffffff7f"
     },
     "experimentalIconInverseContrastSecondaryAlpha": {
       "light": "#ffffff7f",
@@ -367,6 +343,14 @@
     "experimentalBackgroundInverseContrastSecondaryAlpha": {
       "light": "#ffffff33",
       "dark": "#3b3b3b66"
+    },
+    "textContrastSecondaryAlpha": {
+      "light": "#ffffff7f",
+      "dark": "#ffffff7f"
+    },
+    "iconContrastSecondaryAlpha": {
+      "light": "#ffffff7f",
+      "dark": "#ffffff7f"
     }
   },
   "tokens": {
@@ -659,16 +643,16 @@
       "desktop": 16
     },
     "blurLarge": {
-      "iOS": 48,
-      "android": 48,
-      "vkCom": 58,
-      "desktop": 48
+      "iOS": 32,
+      "android": 32,
+      "vkCom": 32,
+      "desktop": 32
     },
     "blurExtraLarge": {
-      "iOS": 96,
-      "android": 96,
-      "vkCom": 96,
-      "desktop": 96
+      "iOS": 64,
+      "android": 64,
+      "vkCom": 64,
+      "desktop": 64
     },
     "fontSizeTitle1": {
       "iOS": 31,

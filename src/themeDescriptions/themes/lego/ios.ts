@@ -209,6 +209,8 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.light,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.light,
 		},
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.light,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.light,
 	},
 
 	// Изменённые не-цвета
@@ -273,5 +275,7 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.dark,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.dark,
 		},
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.dark,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.dark,
 	},
 };

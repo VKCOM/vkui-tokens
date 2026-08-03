@@ -22,6 +22,8 @@ export interface LocalLegoIOSFonts {
 export interface LocalLegoIOSColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
 	colorStrokeContrastSecondaryAlpha: ColorDescription;
+	colorTextContrastSecondaryAlpha: ColorDescription;
+	colorIconContrastSecondaryAlpha: ColorDescription;
 	colorTextTertiaryAlpha: ColorDescription;
 }
 
