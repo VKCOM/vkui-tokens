@@ -76,6 +76,8 @@ export const milkshakeIOSTheme: ThemeMilkshakeIOSDescription = {
 		colorBackgroundInverse: '#0A0A0A',
 		colorStrokeContrastSecondaryAlpha: '#FFFFFF33',
 		colorTextTertiaryAlpha: '#25292E7A',
+		colorIconContrastSecondaryAlpha: '#FFFFFF80',
+		colorTextContrastSecondaryAlpha: '#FFFFFF80',
 	},
 };
 
@@ -96,5 +98,7 @@ export const milkshakeIOSThemeDark: ThemeMilkshakeIOSDarkDescription = {
 		colorBackgroundInverse: '#EBEDF0',
 		colorStrokeContrastSecondaryAlpha: '#FFFFFF33',
 		colorTextTertiaryAlpha: '#F7FBFF5C',
+		colorIconContrastSecondaryAlpha: '#FFFFFF80',
+		colorTextContrastSecondaryAlpha: '#FFFFFF80',
 	},
 };
