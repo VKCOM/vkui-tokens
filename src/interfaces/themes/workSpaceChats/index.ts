@@ -78,7 +78,7 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	 * @desc Акцентная подсветка пузыря сообщения
 	 * @tags color, bubble, background, alpha
 	 */
-	colorBubbleHighlightAccent: ColorDescription;
+	colorBubbleHighlightAccentAlpha: ColorDescription;
 
 	/**
 	 * @desc Цвет текста в пузыре — красный
@@ -181,19 +181,25 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	 * @desc Фон pull-to-refresh с акцентом
 	 * @tags color, other, alpha
 	 */
-	colorOtherPullBackgroundAccent: ColorDescription;
+	colorOtherPullBackgroundAccentAlpha: ColorDescription;
 
 	/**
 	 * @desc Прогресс pull-to-refresh с акцентом
 	 * @tags color, other, alpha
 	 */
-	colorOtherPullProgressAccent: ColorDescription;
+	colorOtherPullProgressAccentAlpha: ColorDescription;
 
 	/**
 	 * @desc Фоновый размытый слой
 	 * @tags color, other, background, alpha
 	 */
-	colorOtherBackgroundBlur: ColorDescription;
+	colorOtherBackgroundBlurAlpha: ColorDescription;
+
+	/**
+	 * @desc Фон медиа в пузыре сообщения
+	 * @tags color, other, background, alpha
+	 */
+	colorOtherBackgroundMediaAlpha: ColorDescription;
 
 	// States
 	/**

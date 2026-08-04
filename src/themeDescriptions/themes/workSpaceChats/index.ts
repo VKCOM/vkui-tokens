@@ -43,7 +43,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		// Bubble
 		colorBubbleBackgroundAccent: '#DEECFF',
 		colorBubbleBackgroundNeutral: '#FFFFFF',
-		colorBubbleHighlightAccent: 'rgba(0, 119, 255, 0.16)',
+		colorBubbleHighlightAccentAlpha: 'rgba(0, 119, 255, 0.16)',
 		colorBubbleTextRed: '#C43131',
 		colorBubbleTextOrange: '#C84900',
 		colorBubbleTextPeach: '#BE6116',
@@ -62,9 +62,10 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextPink: '#A22A60',
 
 		// Other
-		colorOtherPullBackgroundAccent: 'rgba(0, 119, 255, 0.06)',
-		colorOtherPullProgressAccent: 'rgba(0, 119, 255, 0.08)',
-		colorOtherBackgroundBlur: 'rgba(255, 255, 255, 0.01)',
+		colorOtherPullBackgroundAccentAlpha: 'rgba(0, 119, 255, 0.06)',
+		colorOtherPullProgressAccentAlpha: 'rgba(0, 119, 255, 0.08)',
+		colorOtherBackgroundBlurAlpha: 'rgba(255, 255, 255, 0.01)',
+		colorOtherBackgroundMediaAlpha: 'rgba(0, 16, 61, 0.12)',
 
 		// States
 		colorBubbleTransparentHover: 'rgba(0, 16, 61, 0.08)',
@@ -93,7 +94,7 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 		// Bubble
 		colorBubbleBackgroundAccent: '#12335A',
 		colorBubbleBackgroundNeutral: '#303030',
-		colorBubbleHighlightAccent: 'rgba(255, 255, 255, 0.12)',
+		colorBubbleHighlightAccentAlpha: 'rgba(255, 255, 255, 0.12)',
 		colorBubbleTextRed: '#FF6464',
 		colorBubbleTextOrange: '#F68E42',
 		colorBubbleTextPeach: '#FFB980',
@@ -112,9 +113,10 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextPink: '#FFBFDC',
 
 		// Other
-		colorOtherPullBackgroundAccent: 'rgba(255, 255, 255, 0.08)',
-		colorOtherPullProgressAccent: 'rgba(0, 119, 255, 0.24)',
-		colorOtherBackgroundBlur: 'rgba(255, 255, 255, 0.01)',
+		colorOtherPullBackgroundAccentAlpha: 'rgba(255, 255, 255, 0.08)',
+		colorOtherPullProgressAccentAlpha: 'rgba(0, 119, 255, 0.24)',
+		colorOtherBackgroundBlurAlpha: 'rgba(255, 255, 255, 0.01)',
+		colorOtherBackgroundMediaAlpha: 'rgba(255, 255, 255, 0.08)',
 
 		// States
 		colorBubbleTransparentHover: 'rgba(255, 255, 255, 0.08)',
