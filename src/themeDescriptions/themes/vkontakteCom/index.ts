@@ -9,7 +9,7 @@ import { vkontakteDisplayTitleFontsPartial, vkontakteTokens } from '../vkontakte
 
 const themeNameBase = 'vkontakteCom';
 
-const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
+const vkontakteComLocalColorLight = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.12)',
 	vkontakteColorSnippetBackground: '#FFFFFF',
 	vkontakteColorModalCardBorderAlpha: 'rgba(0, 0, 0, 0)',
@@ -123,9 +123,9 @@ const vkontakteComLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct 
 	vkontakteStoriesSkeletonLoaderBackground: '#cccccc',
 
 	vkontaktePaletteBlack: '#000000',
-};
+} as LocalVkontakteAndroidColorsDescriptionStruct;
 
-const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
+const vkontakteComLocalColorDark = {
 	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.16)',
 	vkontakteColorSnippetBackground: '#272727',
 	vkontakteColorModalCardBorderAlpha: 'rgba(255, 255, 255, 0.12)',
@@ -238,7 +238,7 @@ const vkontakteComLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct =
 	vkontakteStoriesSkeletonLoaderBackground: '#555555',
 
 	vkontaktePaletteBlack: '#000000',
-};
+} as LocalVkontakteAndroidColorsDescriptionStruct;
 
 const vkontakteComFonts = lodash.merge<typeof vkComFonts, DeepPartial<typeof vkComFonts>>(
 	lodash.cloneDeep(vkComFonts),

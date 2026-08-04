@@ -37,7 +37,6 @@ type ModeName = 'light' | 'dark' | 'ios' | 'android' | 'desktop';
  * @param {FigmaJSON} source Объект, используемый вместо figma.json. Может генерироваться дизайнерами плагином Figma Variables To JSON
  * @returns Объект с токенами, для которых нашлась замена
  */
-// eslint-disable-next-line max-params
 export function overwriteFromFigmaJSON<T>(
 	originalTokens: T,
 	collection: CollectionName = 'appearance',

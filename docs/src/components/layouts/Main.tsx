@@ -4,7 +4,6 @@ import {
 	AppRoot,
 	ConfigProvider,
 	Panel,
-	SizeType,
 	View,
 } from '@vkontakte/vkui';
 import React, { FC } from 'react';
@@ -17,8 +16,8 @@ type Props = {
 
 const Main: FC<Props> = ({ children }) => (
 	<ConfigProvider colorScheme={ColorScheme.LIGHT}>
-		<AdaptivityProvider sizeX={SizeType.COMPACT}>
-			<AppRoot>
+		<AdaptivityProvider density="compact">
+			<AppRoot disableSettingVKUIClassesInRuntime>
 				<View activePanel="main">
 					<Panel id="main">
 						<Header />

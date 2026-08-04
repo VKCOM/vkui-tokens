@@ -16,7 +16,6 @@ import {
 	lightTheme,
 } from '../../base/vk.ts';
 import { resolveColor } from './appearance.ts';
-// eslint-disable-next-line no-useless-rename
 const { vkcom_dark: vkcomDark, vkcom_light: vkcomLight } = schemeWeb;
 
 const fontFamilyAccent =

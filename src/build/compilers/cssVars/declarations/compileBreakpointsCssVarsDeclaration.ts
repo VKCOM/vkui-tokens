@@ -17,7 +17,6 @@ export type DeclarationType = 'default' | 'onlyRoot' | 'modern' | 'onlyColors';
  * @param sourceTheme
  * @param type
  */
-// eslint-disable-next-line sonarjs/cognitive-complexity
 export function compileBreakpointsCssVarsDeclaration<T = Theme>(
 	sourceTheme: ThemeCssVarsWide<T, Extract<keyof T, 'breakpoints'>>,
 	type: DeclarationType = 'default',

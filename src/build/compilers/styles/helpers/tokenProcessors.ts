@@ -137,7 +137,6 @@ const processNestedObject = ({
 			let nestedVarName = `${varDeclarations.css(key, prefix)}--${unCamelcasify(subKey, '_')}--${unCamelcasify(nestedKey, '_')}`;
 			if (adaptivityState !== undefined) {
 				const reallyNewToken =
-					// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 					(token as unknown as Record<string, Record<string, Record<string, string | number>>>)[
 						adaptivityState
 					][subKey]?.[nestedKey] !== undefined;
@@ -162,7 +161,6 @@ const processNestedObject = ({
 	});
 };
 
-// eslint-disable-next-line sonarjs/cognitive-complexity,max-lines-per-function
 export function processGroupToken({
 	format,
 	token,

@@ -125,7 +125,6 @@ describe('extractVarsNames', () => {
 
 		it('should ignore undefined values', () => {
 			const theme: Partial<ParadigmTheme> = {
-				// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 				// @ts-ignore
 				x1: undefined,
 			};
@@ -359,7 +358,6 @@ describe('extractVarsNames', () => {
 				},
 			};
 
-			// eslint-disable-next-line unicorn/consistent-function-scoping
 			const valueConstruct = (_: string, value: string) => value;
 
 			assert.deepEqual(extractVarsNames(theme, { valueConstruct }), expectedData);

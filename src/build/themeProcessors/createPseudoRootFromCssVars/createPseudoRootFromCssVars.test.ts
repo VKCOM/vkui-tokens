@@ -35,7 +35,7 @@ describe('createPseudoRootFromCssVars', () => {
 			themeType: 'cssVars',
 		};
 
-		assert.deepEqual(createPseudoRootFromCssVars(theme, cssVarsTheme), {
+		assert.deepEqual(createPseudoRootFromCssVars<Pick<Theme, Props>>(theme, cssVarsTheme), {
 			themeType: 'pixelify',
 		});
 	});
