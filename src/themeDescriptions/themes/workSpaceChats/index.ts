@@ -59,6 +59,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextViolet: '#7042AC',
 		colorBubbleTextLavender: '#6D5292',
 		colorBubbleTextCoral: '#A53848',
+		colorBubbleTextPink: '#A22A60',
 
 		// Other
 		colorOtherPullBackgroundAccent: 'rgba(0, 119, 255, 0.06)',
@@ -108,6 +109,7 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextViolet: '#B884FF',
 		colorBubbleTextLavender: '#D3B2FF',
 		colorBubbleTextCoral: '#FEA4A4',
+		colorBubbleTextPink: '#FFBFDC',
 
 		// Other
 		colorOtherPullBackgroundAccent: 'rgba(255, 255, 255, 0.08)',

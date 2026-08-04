@@ -170,6 +170,12 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	 */
 	colorBubbleTextCoral: ColorDescription;
 
+	/**
+	 * @desc Цвет текста в пузыре — розовый
+	 * @tags color, bubble, text
+	 */
+	colorBubbleTextPink: ColorDescription;
+
 	// Other
 	/**
 	 * @desc Фон pull-to-refresh с акцентом
