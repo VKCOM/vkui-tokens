@@ -119,8 +119,6 @@ export const themes: unknown[] = [
 	octaviusVKDarkTheme,
 	paradigmTechTheme,
 	paradigmTechDarkTheme,
-	workSpaceChatsTheme,
-	workSpaceChatsDarkTheme,
 
 	// Темы, наследуемые от Calendar
 	calendarTheme,
@@ -157,6 +155,10 @@ export const themes: unknown[] = [
 	// Темы, наследуемые от Pulse
 	pulseTheme,
 	pulseThemeDark,
+
+	// Темы, наследуемые от WorkSpaceChats
+	workSpaceChatsTheme,
+	workSpaceChatsDarkTheme,
 
 	// Темы, наследуемые от WorkspaceAdmin
 	workspaceAdminTheme,
