@@ -1,11 +1,33 @@
+import type { Property } from 'csstype';
+
 import type { ThemeWorkSpaceChatsDescription } from '../../../interfaces/themes/workSpaceChats/index.ts';
 import { darkTheme as paradigmBaseDark, lightTheme as paradigmBase } from '../../base/paradigm.ts';
+
+const fontFamilyAccent: Property.FontFamily = 'VK Sans Display';
+const fontFamilyBase: Property.FontFamily = 'Arial';
 
 export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 	...paradigmBase,
 	themeName: 'workSpaceChats',
 	themeNameBase: 'workSpaceChats',
 	colorsScheme: 'light',
+
+	fontTitle3400: {
+		regular: {
+			fontSize: 17,
+			lineHeight: 24,
+			fontWeight: 400,
+			fontFamily: fontFamilyBase,
+		},
+	},
+	fontCaption1500: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 19,
+			fontWeight: 500,
+			fontFamily: fontFamilyAccent,
+		},
+	},
 
 	colors: {
 		...paradigmBase.colors,
@@ -28,7 +50,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextYellow: '#987202',
 		colorBubbleTextLime: '#5B841D',
 		colorBubbleTextGreen: '#1C8022',
-		colorBubbleTextSea: '#097F94',
+		colorBubbleTextCyan: '#097F94',
 		colorBubbleTextMint: '#1E7D70',
 		colorBubbleTextSeagreen: '#0F815B',
 		colorBubbleTextSky: '#2B6D94',
@@ -77,7 +99,7 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextYellow: '#FFD65C',
 		colorBubbleTextLime: '#C3F07F',
 		colorBubbleTextGreen: '#43CC4C',
-		colorBubbleTextSea: '#22CEEC',
+		colorBubbleTextCyan: '#22CEEC',
 		colorBubbleTextMint: '#7BEADB',
 		colorBubbleTextSeagreen: '#42D7A5',
 		colorBubbleTextSky: '#9EDBFF',

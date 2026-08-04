@@ -4,11 +4,31 @@ import type {
 	ColorWithStates,
 } from '../../general/colors/index.ts';
 import type { ThemeCssVars } from '../../general/index.ts';
+import type { Adaptive } from '../../general/tools/index.ts';
+import type { Font } from '../../general/typography/index.ts';
 import type {
 	LocalParadigmColorsDescriptionStruct,
 	ParadigmTheme,
 	ParadigmThemeDescription,
 } from '../../namespaces/paradigm/index.ts';
+
+/**
+ * Локальная типографика WorkSpaceChats (UI-KIT Chats Web).
+ * Источник: Figma UI-KIT-Chats-Web, фрейм Fonts.
+ */
+export interface LocalWorkSpaceChatsTypography {
+	/**
+	 * @desc Title 3 • 400. Regular (mobile)
+	 * @tags font
+	 */
+	fontTitle3400: Adaptive<Font>;
+
+	/**
+	 * @desc Caption 1 • 500. Regular (mobile)
+	 * @tags font
+	 */
+	fontCaption1500: Adaptive<Font>;
+}
 
 /**
  * Локальные цвета темы WorkSpaceChats (чат-токены из UI-KIT Chats Web).
@@ -97,10 +117,10 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	colorBubbleTextGreen: ColorDescription;
 
 	/**
-	 * @desc Цвет текста в пузыре — морской
+	 * @desc Цвет текста в пузыре — cyan
 	 * @tags color, bubble, text
 	 */
-	colorBubbleTextSea: ColorDescription;
+	colorBubbleTextCyan: ColorDescription;
 
 	/**
 	 * @desc Цвет текста в пузыре — мятный
@@ -187,9 +207,14 @@ type WorkSpaceChatsLocalColors = {
 	[key in keyof LocalWorkSpaceChatsColorsDescriptionStruct]: ColorWithStates;
 };
 
-export interface ThemeWorkSpaceChats extends ParadigmTheme, WorkSpaceChatsLocalColors {}
+export interface ThemeWorkSpaceChats
+	extends ParadigmTheme,
+		LocalWorkSpaceChatsTypography,
+		WorkSpaceChatsLocalColors {}
 
-export interface ThemeWorkSpaceChatsDescription extends ParadigmThemeDescription {
+export interface ThemeWorkSpaceChatsDescription
+	extends ParadigmThemeDescription,
+		LocalWorkSpaceChatsTypography {
 	colors: LocalParadigmColorsDescriptionStruct &
 		ColorsDescriptionStruct &
 		LocalWorkSpaceChatsColorsDescriptionStruct;
