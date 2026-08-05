@@ -217,6 +217,13 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 	blurL: figma.tokens.blurLarge.iOS,
 	blurXL: figma.tokens.blurExtraLarge.iOS,
 
+	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
+	animationEasingInSmooth: 'cubic-bezier(1, 0, 0.7, 1)',
+	animationEasingOutSmooth: 'cubic-bezier(0.3, 0, 0, 1)',
+	animationEasingInOutSmooth: 'cubic-bezier(0.3, 0, 0.7, 1)',
+	animationEasingOutSharp: 'cubic-bezier(0.2, 0, 0, 1)',
+	animationEasingInOutSharp: 'cubic-bezier(0.7, 0, 0.3, 1)',
+
 	sizeBasePaddingHorizontal: {
 		regular: figma.tokens.sizeBasePaddingHorizontal.iOS,
 	},

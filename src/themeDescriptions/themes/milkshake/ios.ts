@@ -77,6 +77,13 @@ export const milkshakeIOSTheme: ThemeMilkshakeIOSDescription = {
 		colorStrokeContrastSecondaryAlpha: '#FFFFFF33',
 		colorTextTertiaryAlpha: '#25292E7A',
 	},
+
+	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
+	animationEasingInSmooth: 'cubic-bezier(1, 0, 0.7, 1)',
+	animationEasingOutSmooth: 'cubic-bezier(0.3, 0, 0, 1)',
+	animationEasingInOutSmooth: 'cubic-bezier(0.3, 0, 0.7, 1)',
+	animationEasingOutSharp: 'cubic-bezier(0.2, 0, 0, 1)',
+	animationEasingInOutSharp: 'cubic-bezier(0.7, 0, 0.3, 1)',
 };
 
 export const milkshakeIOSThemeDark: ThemeMilkshakeIOSDarkDescription = {
