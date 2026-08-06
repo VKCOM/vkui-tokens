@@ -18,6 +18,7 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	colorBackgroundInverse: '#0A0A0A',
 	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(59, 59, 59, 0.40)',
+	colorAccentMint: '#A3FD79',
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
 	vkontakteColorSnippetBackground: '#FFFFFF',
@@ -139,6 +140,7 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	colorBackgroundInverse: '#EBEDF0',
 	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(255, 255, 255, 0.40)',
+	colorAccentMint: '#A3FD79',
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.15)',
 	vkontakteColorSnippetBackground: '#232324',
@@ -439,7 +441,7 @@ const androidFonts: typeof fonts = lodash.merge<typeof fonts, DeepPartial<typeof
 	},
 );
 
-export const vkontakteRadii: Radii = {
+const vkontakteRadii: Radii = {
 	radius2XS: 2,
 	radiusXS: 4,
 	radiusS: 6,
@@ -448,6 +450,15 @@ export const vkontakteRadii: Radii = {
 	radiusXL: 16,
 	radius2XL: 20,
 	radius3XL: 24,
+};
+
+const vkontakteEasings = {
+	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
+	animationEasingInSmooth: 'cubic-bezier(1, 0, 0.7, 1)',
+	animationEasingOutSmooth: 'cubic-bezier(0.3, 0, 0, 1)',
+	animationEasingInOutSmooth: 'cubic-bezier(0.3, 0, 0.7, 1)',
+	animationEasingOutSharp: 'cubic-bezier(0.2, 0, 0, 1)',
+	animationEasingInOutSharp: 'cubic-bezier(0.7, 0, 0.3, 1)',
 };
 
 export const vkontakteTokens: {
@@ -470,6 +481,7 @@ export const vkontakteAndroidTheme: ThemeVkontakteAndroidDescription = {
 	...gradients,
 	...androidFonts,
 	...vkontakteRadii,
+	...vkontakteEasings,
 	...vkontakteTokens,
 };
 
@@ -486,5 +498,6 @@ export const vkontakteAndroidThemeDark: ThemeVkontakteAndroidDarkDescription = {
 	},
 	...gradients,
 	...androidFonts,
+	...vkontakteEasings,
 	...vkontakteTokens,
 };

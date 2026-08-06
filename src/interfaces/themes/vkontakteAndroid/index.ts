@@ -185,6 +185,7 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
 	colorStrokeContrastSecondaryAlpha: ColorDescription;
 	colorTextTertiaryAlpha: ColorDescription;
+	colorAccentMint: ColorDescription;
 
 	vkontakteColorSnippetBorderAlpha: ColorDescription;
 	vkontakteColorSnippetBackground: ColorDescription;

@@ -9,6 +9,7 @@ import type { Adaptive } from 'interfaces/general/tools/index.ts';
 import type { Font } from 'interfaces/general/typography/index.ts';
 
 import type { ThemeVkBase, ThemeVkBaseDescription } from '../vkBase/index.ts';
+import type { Property } from 'csstype';
 
 export interface LocalLegoIOSFonts {
 	fontLabel1: Adaptive<Font>;
@@ -21,16 +22,37 @@ export interface LocalLegoIOSFonts {
 export interface LocalLegoIOSColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
 	colorStrokeContrastSecondaryAlpha: ColorDescription;
+	colorTextContrastSecondaryAlpha: ColorDescription;
+	colorIconContrastSecondaryAlpha: ColorDescription;
 	colorTextTertiaryAlpha: ColorDescription;
+	colorAccentMint: ColorDescription;
 }
 
 type LegoIOSLocalColors = {
 	[key in keyof LocalLegoIOSColorsDescriptionStruct]: ColorWithStates;
 };
 
-export interface ThemeLegoIOS extends ThemeVkBase, LocalLegoIOSFonts, LegoIOSLocalColors, Radii {}
+type LegoIOSLocalEasings = {
+	animationEasingLinear: Property.TransitionTimingFunction;
+	animationEasingInSmooth: Property.TransitionTimingFunction;
+	animationEasingOutSmooth: Property.TransitionTimingFunction;
+	animationEasingInOutSmooth: Property.TransitionTimingFunction;
+	animationEasingOutSharp: Property.TransitionTimingFunction;
+	animationEasingInOutSharp: Property.TransitionTimingFunction;
+};
 
-export interface ThemeLegoIOSDescription extends ThemeVkBaseDescription, LocalLegoIOSFonts, Radii {
+export interface ThemeLegoIOS
+	extends ThemeVkBase,
+		LocalLegoIOSFonts,
+		LegoIOSLocalColors,
+		Radii,
+		LegoIOSLocalEasings {}
+
+export interface ThemeLegoIOSDescription
+	extends ThemeVkBaseDescription,
+		LocalLegoIOSFonts,
+		Radii,
+		LegoIOSLocalEasings {
 	colors: ColorsDescriptionStruct & LocalLegoIOSColorsDescriptionStruct;
 }
 

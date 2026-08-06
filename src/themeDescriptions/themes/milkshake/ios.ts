@@ -76,7 +76,17 @@ export const milkshakeIOSTheme: ThemeMilkshakeIOSDescription = {
 		colorBackgroundInverse: '#0A0A0A',
 		colorStrokeContrastSecondaryAlpha: '#FFFFFF33',
 		colorTextTertiaryAlpha: '#25292E7A',
+		colorIconContrastSecondaryAlpha: '#FFFFFF80',
+		colorTextContrastSecondaryAlpha: '#FFFFFF80',
+		colorAccentMint: '#A3FD79',
 	},
+
+	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
+	animationEasingInSmooth: 'cubic-bezier(1, 0, 0.7, 1)',
+	animationEasingOutSmooth: 'cubic-bezier(0.3, 0, 0, 1)',
+	animationEasingInOutSmooth: 'cubic-bezier(0.3, 0, 0.7, 1)',
+	animationEasingOutSharp: 'cubic-bezier(0.2, 0, 0, 1)',
+	animationEasingInOutSharp: 'cubic-bezier(0.7, 0, 0.3, 1)',
 };
 
 export const milkshakeIOSThemeDark: ThemeMilkshakeIOSDarkDescription = {
@@ -96,5 +106,8 @@ export const milkshakeIOSThemeDark: ThemeMilkshakeIOSDarkDescription = {
 		colorBackgroundInverse: '#EBEDF0',
 		colorStrokeContrastSecondaryAlpha: '#FFFFFF33',
 		colorTextTertiaryAlpha: '#F7FBFF5C',
+		colorIconContrastSecondaryAlpha: '#FFFFFF80',
+		colorTextContrastSecondaryAlpha: '#FFFFFF80',
+		colorAccentMint: '#A3FD79',
 	},
 };

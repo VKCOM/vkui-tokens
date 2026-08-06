@@ -172,7 +172,7 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 	},
 );
 
-export const legoRadii: Radii = {
+const legoRadii: Radii = {
 	radius2XS: figma.tokens.radiusRadius2XS.android,
 	radiusXS: figma.tokens.radiusRadiusXS.android,
 	radiusS: figma.tokens.radiusRadiusS.android,
@@ -183,10 +183,20 @@ export const legoRadii: Radii = {
 	radius3XL: figma.tokens.radiusRadius3XL.android,
 };
 
+const legoEasings = {
+	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
+	animationEasingInSmooth: 'cubic-bezier(1, 0, 0.7, 1)',
+	animationEasingOutSmooth: 'cubic-bezier(0.3, 0, 0, 1)',
+	animationEasingInOutSmooth: 'cubic-bezier(0.3, 0, 0.7, 1)',
+	animationEasingOutSharp: 'cubic-bezier(0.2, 0, 0, 1)',
+	animationEasingInOutSharp: 'cubic-bezier(0.7, 0, 0.3, 1)',
+};
+
 export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 	...vkontakteAndroidTheme, // импорт светлой базовой темы
 	...legoFonts, // шрифты
 	...legoRadii, // скругления
+	...legoEasings, // кривые анимации
 
 	themeName: 'legoAndroid', // название текущей темы
 	themeNameBase: 'legoAndroid', // название светлой (базовой) темы
@@ -209,6 +219,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.light,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.light,
 		},
+		colorAccentMint: figma.appearance.paletteAccentMint.light,
 	},
 
 	// Изменённые не-цвета
@@ -271,5 +282,6 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.dark,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.dark,
 		},
+		colorAccentMint: figma.appearance.paletteAccentMint.dark,
 	},
 };
