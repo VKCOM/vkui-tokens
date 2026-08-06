@@ -18,6 +18,7 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	colorBackgroundInverse: '#0A0A0A',
 	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(59, 59, 59, 0.40)',
+	colorAccentMint: '#A3FD79',
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
 	vkontakteColorSnippetBackground: '#FFFFFF',
@@ -139,6 +140,7 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	colorBackgroundInverse: '#EBEDF0',
 	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(255, 255, 255, 0.40)',
+	colorAccentMint: '#A3FD79',
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.15)',
 	vkontakteColorSnippetBackground: '#232324',

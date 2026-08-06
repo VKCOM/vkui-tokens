@@ -320,29 +320,9 @@
       "light": "#ffffff00",
       "dark": "#ffffff00"
     },
-    "experimentalIconInversePrimary": {
-      "light": "#ffffff",
-      "dark": "#ffffff"
-    },
-    "experimentalIconInverseSecondary": {
-      "light": "#a2a3a6",
-      "dark": "#b3b3b3"
-    },
     "strokePrimary": {
       "light": "#3b3b3b",
       "dark": "#ffffff"
-    },
-    "experimentalIconInverseContrastSecondaryAlpha": {
-      "light": "#ffffff7f",
-      "dark": "#ffffff7f"
-    },
-    "experimentalStrokeInverseFieldBorderAlpha": {
-      "light": "#3333330a",
-      "dark": "#3333330a"
-    },
-    "experimentalBackgroundInverseContrastSecondaryAlpha": {
-      "light": "#ffffff33",
-      "dark": "#3b3b3b66"
     },
     "textContrastSecondaryAlpha": {
       "light": "#ffffff7f",
@@ -351,6 +331,10 @@
     "iconContrastSecondaryAlpha": {
       "light": "#ffffff7f",
       "dark": "#ffffff7f"
+    },
+    "paletteAccentMint": {
+      "light": "#a3fd79",
+      "dark": "#a3fd79"
     }
   },
   "tokens": {

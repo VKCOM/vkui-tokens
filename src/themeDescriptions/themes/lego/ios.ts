@@ -211,6 +211,7 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 		},
 		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.light,
 		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.light,
+		colorAccentMint: figma.appearance.paletteAccentMint.light,
 	},
 
 	// Изменённые не-цвета
@@ -277,5 +278,6 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 		},
 		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.dark,
 		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.dark,
+		colorAccentMint: figma.appearance.paletteAccentMint.dark,
 	},
 };

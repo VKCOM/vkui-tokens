@@ -78,6 +78,7 @@ export const milkshakeIOSTheme: ThemeMilkshakeIOSDescription = {
 		colorTextTertiaryAlpha: '#25292E7A',
 		colorIconContrastSecondaryAlpha: '#FFFFFF80',
 		colorTextContrastSecondaryAlpha: '#FFFFFF80',
+		colorAccentMint: '#A3FD79',
 	},
 
 	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
@@ -107,5 +108,6 @@ export const milkshakeIOSThemeDark: ThemeMilkshakeIOSDarkDescription = {
 		colorTextTertiaryAlpha: '#F7FBFF5C',
 		colorIconContrastSecondaryAlpha: '#FFFFFF80',
 		colorTextContrastSecondaryAlpha: '#FFFFFF80',
+		colorAccentMint: '#A3FD79',
 	},
 };

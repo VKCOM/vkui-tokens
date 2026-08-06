@@ -219,6 +219,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.light,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.light,
 		},
+		colorAccentMint: figma.appearance.paletteAccentMint.light,
 	},
 
 	// Изменённые не-цвета
@@ -281,5 +282,6 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.dark,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.dark,
 		},
+		colorAccentMint: figma.appearance.paletteAccentMint.dark,
 	},
 };
