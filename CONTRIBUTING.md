@@ -85,6 +85,7 @@ git config --local blame.ignoreRevsFile .git-blame-ignore-revs
   - milkshakeIOS
   - legoIOS
   - legoAndroid
+    - legoSimpleAndroid
 - _paradigmBase_
   - paradigmBaseDark
   - calendar

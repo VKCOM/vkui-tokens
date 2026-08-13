@@ -26,6 +26,11 @@ export interface LocalLegoIOSColorsDescriptionStruct {
 	colorIconContrastSecondaryAlpha: ColorDescription;
 	colorTextTertiaryAlpha: ColorDescription;
 	colorAccentMint: ColorDescription;
+
+	colorTextLinkInPrimary: ColorDescription;
+	colorTextLinkInSecondary: ColorDescription;
+	colorTextLinkInContrast: ColorDescription;
+	colorTextLinkInContrastSecondaryAlpha: ColorDescription;
 }
 
 type LegoIOSLocalColors = {
@@ -43,17 +48,17 @@ type LegoIOSLocalEasings = {
 
 export interface ThemeLegoIOS
 	extends ThemeVkBase,
-		LocalLegoIOSFonts,
-		LegoIOSLocalColors,
-		Radii,
-		LegoIOSLocalEasings {}
+	LocalLegoIOSFonts,
+	LegoIOSLocalColors,
+	Radii,
+	LegoIOSLocalEasings { }
 
 export interface ThemeLegoIOSDescription
 	extends ThemeVkBaseDescription,
-		LocalLegoIOSFonts,
-		Radii,
-		LegoIOSLocalEasings {
+	LocalLegoIOSFonts,
+	Radii,
+	LegoIOSLocalEasings {
 	colors: ColorsDescriptionStruct & LocalLegoIOSColorsDescriptionStruct;
 }
 
-export interface ThemeLegoIOSCssVars extends ThemeCssVars<ThemeLegoIOS> {}
+export interface ThemeLegoIOSCssVars extends ThemeCssVars<ThemeLegoIOS> { }

@@ -183,9 +183,16 @@ export interface VkontakteAndroidGradients {
 
 export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
-	colorStrokeContrastSecondaryAlpha: ColorDescription;
 	colorTextTertiaryAlpha: ColorDescription;
+	colorTextContrastSecondaryAlpha: ColorDescription;
+	colorIconContrastSecondaryAlpha: ColorDescription;
+	colorStrokeContrastSecondaryAlpha: ColorDescription;
 	colorAccentMint: ColorDescription;
+
+	colorTextLinkInPrimary: ColorDescription;
+	colorTextLinkInSecondary: ColorDescription;
+	colorTextLinkInContrast: ColorDescription;
+	colorTextLinkInContrastSecondaryAlpha: ColorDescription;
 
 	vkontakteColorSnippetBorderAlpha: ColorDescription;
 	vkontakteColorSnippetBackground: ColorDescription;
@@ -309,12 +316,12 @@ export type VkontakteAndroidLocalColors = {
 
 export interface ThemeVkontakteAndroid
 	extends ThemeVkBase,
-		VkontakteAndroidLocalColors,
-		VkontakteAndroidGradients {}
+	VkontakteAndroidLocalColors,
+	VkontakteAndroidGradients { }
 
 export interface ThemeVkontakteAndroidDescription
 	extends ThemeVkBaseDescription,
-		Tokens<VkontakteAndroidGradients> {
+	Tokens<VkontakteAndroidGradients> {
 	colors: LocalVkontakteAndroidColorsDescriptionStruct & ColorsDescriptionStruct;
 }
-export interface ThemeVkontakteAndroidCssVars extends ThemeCssVars<ThemeVkontakteAndroid> {}
+export interface ThemeVkontakteAndroidCssVars extends ThemeCssVars<ThemeVkontakteAndroid> { }
