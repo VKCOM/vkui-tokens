@@ -26,13 +26,13 @@ const boldAccent = 700;
 type LegoFonts =
 	| BaseFonts
 	| {
-		fontLabel1: Adaptive<Font>;
-		fontLabel2: Adaptive<Font>;
-		fontBody: Adaptive<Font>;
-		fontHeadline: Adaptive<Font>;
-		fontTextBold: Adaptive<Font>;
-		fontFootnoteBold: Adaptive<Font>;
-	};
+			fontLabel1: Adaptive<Font>;
+			fontLabel2: Adaptive<Font>;
+			fontBody: Adaptive<Font>;
+			fontHeadline: Adaptive<Font>;
+			fontTextBold: Adaptive<Font>;
+			fontFootnoteBold: Adaptive<Font>;
+	  };
 
 // Наследование стандартных шрифтов из базовой темы
 export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFonts>>(

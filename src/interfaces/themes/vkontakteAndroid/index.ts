@@ -316,12 +316,12 @@ export type VkontakteAndroidLocalColors = {
 
 export interface ThemeVkontakteAndroid
 	extends ThemeVkBase,
-	VkontakteAndroidLocalColors,
-	VkontakteAndroidGradients { }
+		VkontakteAndroidLocalColors,
+		VkontakteAndroidGradients {}
 
 export interface ThemeVkontakteAndroidDescription
 	extends ThemeVkBaseDescription,
-	Tokens<VkontakteAndroidGradients> {
+		Tokens<VkontakteAndroidGradients> {
 	colors: LocalVkontakteAndroidColorsDescriptionStruct & ColorsDescriptionStruct;
 }
-export interface ThemeVkontakteAndroidCssVars extends ThemeCssVars<ThemeVkontakteAndroid> { }
+export interface ThemeVkontakteAndroidCssVars extends ThemeCssVars<ThemeVkontakteAndroid> {}
