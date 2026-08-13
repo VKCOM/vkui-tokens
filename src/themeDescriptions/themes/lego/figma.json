@@ -134,7 +134,7 @@
     },
     "textLinkInPrimary": {
       "light": "#999999",
-      "dark": "#999999"
+      "dark": "#666666"
     },
     "iconPrimary": {
       "light": "#3b3b3b",
@@ -330,7 +330,7 @@
     },
     "textLinkInSecondary": {
       "light": "#3b3b3b",
-      "dark": "#3b3b3b"
+      "dark": "#ffffff"
     },
     "textLinkInContrast": {
       "light": "#ffffff7f",
