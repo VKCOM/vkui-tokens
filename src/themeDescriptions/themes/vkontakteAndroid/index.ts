@@ -16,8 +16,10 @@ const themeNameBase = 'vkontakteAndroid';
 
 export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	colorBackgroundInverse: '#0A0A0A',
-	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(59, 59, 59, 0.40)',
+	colorTextContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.5)',
+	colorIconContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.5)',
+	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorAccentMint: '#A3FD79',
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
@@ -138,8 +140,10 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
 	colorBackgroundInverse: '#EBEDF0',
-	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(255, 255, 255, 0.40)',
+	colorTextContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.5)',
+	colorIconContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.5)',
+	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorAccentMint: '#A3FD79',
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.15)',

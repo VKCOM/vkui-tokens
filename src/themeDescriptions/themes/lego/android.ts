@@ -26,13 +26,13 @@ const boldAccent = 700;
 type LegoFonts =
 	| BaseFonts
 	| {
-			fontLabel1: Adaptive<Font>;
-			fontLabel2: Adaptive<Font>;
-			fontBody: Adaptive<Font>;
-			fontHeadline: Adaptive<Font>;
-			fontTextBold: Adaptive<Font>;
-			fontFootnoteBold: Adaptive<Font>;
-	  };
+		fontLabel1: Adaptive<Font>;
+		fontLabel2: Adaptive<Font>;
+		fontBody: Adaptive<Font>;
+		fontHeadline: Adaptive<Font>;
+		fontTextBold: Adaptive<Font>;
+		fontFootnoteBold: Adaptive<Font>;
+	};
 
 // Наследование стандартных шрифтов из базовой темы
 export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFonts>>(
@@ -214,12 +214,14 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
 		colorBackgroundContent: figma.appearance.backgroundBackground.light,
 		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.light,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.light,
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.light,
+		colorAccentMint: figma.appearance.paletteAccentMint.light,
 		colorFieldBorderAlpha: {
 			normal: figma.appearance.strokeFieldBorderAlpha.light,
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.light,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.light,
 		},
-		colorAccentMint: figma.appearance.paletteAccentMint.light,
 	},
 
 	// Изменённые не-цвета
@@ -277,11 +279,13 @@ export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
 		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
 		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.dark,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.dark,
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.dark,
+		colorAccentMint: figma.appearance.paletteAccentMint.dark,
 		colorFieldBorderAlpha: {
 			normal: figma.appearance.strokeFieldBorderAlpha.dark,
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.dark,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.dark,
 		},
-		colorAccentMint: figma.appearance.paletteAccentMint.dark,
 	},
 };
