@@ -26,6 +26,11 @@ export interface LocalLegoIOSColorsDescriptionStruct {
 	colorIconContrastSecondaryAlpha: ColorDescription;
 	colorTextTertiaryAlpha: ColorDescription;
 	colorAccentMint: ColorDescription;
+
+	colorTextLinkInPrimary: ColorDescription;
+	colorTextLinkInSecondary: ColorDescription;
+	colorTextLinkInContrast: ColorDescription;
+	colorTextLinkInContrastSecondaryAlpha: ColorDescription;
 }
 
 type LegoIOSLocalColors = {

@@ -132,17 +132,9 @@
       "light": "#f65460",
       "dark": "#fd6571"
     },
-    "textLink": {
-      "light": "#2e90ff",
-      "dark": "#2e90ff"
-    },
-    "textLinkThemed": {
-      "light": "#2e90ff",
-      "dark": "#ffffff"
-    },
-    "textLinkContrast": {
-      "light": "#ffffff",
-      "dark": "#ffffff"
+    "textLinkInPrimary": {
+      "light": "#999999",
+      "dark": "#666666"
     },
     "iconPrimary": {
       "light": "#3b3b3b",
@@ -335,542 +327,376 @@
     "paletteAccentMint": {
       "light": "#a3fd79",
       "dark": "#a3fd79"
+    },
+    "textLinkInSecondary": {
+      "light": "#3b3b3b",
+      "dark": "#ffffff"
+    },
+    "textLinkInContrast": {
+      "light": "#ffffff7f",
+      "dark": "#ffffff7f"
+    },
+    "textLinkInContrastSecondaryAlpha": {
+      "light": "#ffffff",
+      "dark": "#ffffff"
     }
   },
   "tokens": {
     "sizeBorderRadius": {
       "iOS": 10,
-      "android": 10,
-      "vkCom": 8,
-      "desktop": 10
+      "android": 10
     },
     "sizeBasePaddingHorizontal": {
       "iOS": 16,
-      "android": 16,
-      "vkCom": 12,
-      "desktop": 16
+      "android": 16
     },
     "sizeBasePaddingVertical": {
       "iOS": 12,
-      "android": 12,
-      "vkCom": 12,
-      "desktop": 12
+      "android": 12
     },
     "sizeBorderRadiusRounded": {
       "iOS": 999,
-      "android": 999,
-      "vkCom": 999,
-      "desktop": 999
+      "android": 999
     },
     "sizeCardGridPadding": {
       "iOS": 8,
-      "android": 8,
-      "vkCom": 8,
-      "desktop": 8
+      "android": 8
     },
     "sizeCardGridPaddingVertical": {
       "iOS": 8,
-      "android": 8,
-      "vkCom": 8,
-      "desktop": 8
+      "android": 8
     },
     "sizeBorderRadiusPaper": {
       "iOS": 12,
-      "android": 12,
-      "vkCom": 12,
-      "desktop": 12
+      "android": 12
     },
     "spacingSizeXS": {
       "iOS": 4,
-      "android": 4,
-      "vkCom": 4,
-      "desktop": 4
+      "android": 4
     },
     "spacingSizeS": {
       "iOS": 6,
-      "android": 6,
-      "vkCom": 6,
-      "desktop": 6
+      "android": 6
     },
     "spacingSizeM": {
       "iOS": 8,
-      "android": 8,
-      "vkCom": 8,
-      "desktop": 8
+      "android": 8
     },
     "spacingSizeL": {
       "iOS": 10,
-      "android": 10,
-      "vkCom": 10,
-      "desktop": 10
+      "android": 10
     },
     "spacingSizeXL": {
       "iOS": 12,
-      "android": 12,
-      "vkCom": 12,
-      "desktop": 12
+      "android": 12
     },
     "sizeBorderRadiusPromo": {
       "iOS": 20,
-      "android": 20,
-      "vkCom": 20,
-      "desktop": 20
+      "android": 20
     },
     "sizeCheckBorderRadius": {
       "iOS": 4,
-      "android": 4,
-      "vkCom": 4,
-      "desktop": 4
+      "android": 4
     },
     "sizeFieldHeight": {
       "iOS": 44,
-      "android": 44,
-      "vkCom": 36,
-      "desktop": 36
+      "android": 44
     },
     "sizeSearchHeight": {
       "iOS": 36,
-      "android": 36,
-      "vkCom": 32,
-      "desktop": 32
+      "android": 36
     },
     "sizeButtonLargeHeight": {
       "iOS": 52,
-      "android": 52,
-      "vkCom": 44,
-      "desktop": 44
+      "android": 52
     },
     "sizeButtonMediumHeight": {
-      "iOS": 44,
-      "android": 44,
-      "vkCom": 36,
-      "desktop": 36
+      "iOS": 38,
+      "android": 38
     },
     "sizeButtonSmallHeight": {
-      "iOS": 36,
-      "android": 36,
-      "vkCom": 32,
-      "desktop": 32
+      "iOS": 28,
+      "android": 28
     },
     "spacingSize2XS": {
       "iOS": 2,
-      "android": 2,
-      "vkCom": 2,
-      "desktop": 2
+      "android": 2
     },
     "spacingSize2XL": {
       "iOS": 16,
-      "android": 16,
-      "vkCom": 16,
-      "desktop": 16
+      "android": 16
     },
     "spacingSize3XL": {
       "iOS": 20,
-      "android": 20,
-      "vkCom": 20,
-      "desktop": 20
+      "android": 20
     },
     "spacingSize4XL": {
       "iOS": 24,
-      "android": 24,
-      "vkCom": 24,
-      "desktop": 24
+      "android": 24
     },
     "otherPlatformWidth": {
       "iOS": 393,
-      "android": 360,
-      "vkCom": 360,
-      "desktop": 360
+      "android": 360
     },
     "fontSizeHeadline1": {
       "iOS": 17,
-      "android": 17,
-      "vkCom": 17,
-      "desktop": 17
+      "android": 17
     },
     "fontSizeText": {
       "iOS": 16,
-      "android": 16,
-      "vkCom": 16,
-      "desktop": 16
+      "android": 16
     },
     "sizeFormItemPaddingVertical": {
       "iOS": 12,
-      "android": 12,
-      "vkCom": 8,
-      "desktop": 12
+      "android": 12
     },
     "otherLargeButtonSize": {
       "iOS": 17,
-      "android": 16,
-      "vkCom": 14,
-      "desktop": 15
+      "android": 16
     },
     "otherLargeButtonLineHeight": {
       "iOS": 22,
-      "android": 20,
-      "vkCom": 18,
-      "desktop": 20
+      "android": 20
     },
     "otherLargeButtonLetterSpacing": {
       "iOS": -0.4300000071525574,
-      "android": 0,
-      "vkCom": 0,
-      "desktop": 0
+      "android": 0
     },
     "sizePanelHeaderHeight": {
       "iOS": 52,
-      "android": 56,
-      "vkCom": 48,
-      "desktop": 48
+      "android": 56
     },
     "fontSizeTitle2": {
       "iOS": 24,
-      "android": 24,
-      "vkCom": 24,
-      "desktop": 24
+      "android": 24
     },
     "fontSizeTitle3": {
       "iOS": 21.5,
-      "android": 21.5,
-      "vkCom": 21.5,
-      "desktop": 21.5
+      "android": 21.5
     },
     "fontSizeLabel2": {
       "iOS": 18,
-      "android": 18,
-      "vkCom": 18,
-      "desktop": 18
+      "android": 18
     },
     "fontSizeParagraph": {
       "iOS": 15,
-      "android": 15,
-      "vkCom": 15,
-      "desktop": 15
+      "android": 15
     },
     "fontSizeFootnote": {
       "iOS": 13.5,
-      "android": 13.5,
-      "vkCom": 13.5,
-      "desktop": 13.5
+      "android": 13.5
     },
     "fontWeightMedium": {
       "iOS": 520,
-      "android": 520,
-      "vkCom": 520,
-      "desktop": 520
+      "android": 520
     },
     "fontWeightSemibold": {
       "iOS": 600,
-      "android": 600,
-      "vkCom": 600,
-      "desktop": 600
+      "android": 600
     },
     "otherHorizontalCellPaddingHorizontalS": {
       "iOS": 4,
-      "android": 4,
-      "vkCom": 4,
-      "desktop": 8
+      "android": 4
     },
     "otherPlatformHeight": {
       "iOS": 852,
-      "android": 800,
-      "vkCom": 800,
-      "desktop": 800
+      "android": 800
     },
     "otherHorizontalCellPaddingHorizontalM": {
       "iOS": 6,
-      "android": 6,
-      "vkCom": 6,
-      "desktop": 10
+      "android": 6
     },
     "otherSnackbarPadding": {
       "iOS": 8,
-      "android": 8,
-      "vkCom": 12,
-      "desktop": 12
+      "android": 8
     },
     "opacityDisabled": {
       "iOS": 52,
-      "android": 52,
-      "vkCom": 52,
-      "desktop": 52
+      "android": 52
     },
     "sizeCellHeight": {
       "iOS": 52,
-      "android": 52,
-      "vkCom": 48,
-      "desktop": 48
+      "android": 52
     },
     "fontWeightBold": {
       "iOS": 700,
-      "android": 680,
-      "vkCom": 700,
-      "desktop": 700
+      "android": 680
     },
     "sizeButtonExtraSmallHeight": {
       "iOS": 28,
-      "android": 28,
-      "vkCom": 24,
-      "desktop": 24
+      "android": 28
     },
     "blurSmall": {
       "iOS": 8,
-      "android": 8,
-      "vkCom": 8,
-      "desktop": 8
+      "android": 8
     },
     "blurMedium": {
       "iOS": 16,
-      "android": 16,
-      "vkCom": 16,
-      "desktop": 16
+      "android": 16
     },
     "blurLarge": {
       "iOS": 32,
-      "android": 32,
-      "vkCom": 32,
-      "desktop": 32
+      "android": 32
     },
     "blurExtraLarge": {
       "iOS": 64,
-      "android": 64,
-      "vkCom": 64,
-      "desktop": 64
+      "android": 64
     },
     "fontSizeTitle1": {
       "iOS": 31,
-      "android": 31,
-      "vkCom": 31,
-      "desktop": 31
+      "android": 31
     },
     "fontSizeLabel1": {
       "iOS": 19,
-      "android": 19,
-      "vkCom": 19,
-      "desktop": 19
+      "android": 19
     },
     "fontSizeBody": {
       "iOS": 16.5,
-      "android": 16.5,
-      "vkCom": 16.5,
-      "desktop": 16.5
+      "android": 16.5
     },
     "radiusRadius2XS": {
       "iOS": 4,
-      "android": 4,
-      "vkCom": 4,
-      "desktop": 4
+      "android": 4
     },
     "radiusRadiusXS": {
       "iOS": 6,
-      "android": 6,
-      "vkCom": 6,
-      "desktop": 6
+      "android": 6
     },
     "radiusRadiusS": {
       "iOS": 8,
-      "android": 8,
-      "vkCom": 8,
-      "desktop": 8
+      "android": 8
     },
     "radiusRadiusM": {
       "iOS": 12,
-      "android": 12,
-      "vkCom": 12,
-      "desktop": 12
+      "android": 12
     },
     "radiusRadiusL": {
       "iOS": 16,
-      "android": 16,
-      "vkCom": 16,
-      "desktop": 16
+      "android": 16
     },
     "radiusRadiusXL": {
       "iOS": 20,
-      "android": 20,
-      "vkCom": 20,
-      "desktop": 20
+      "android": 20
     },
     "otherContextMenuVerticalPadding": {
       "iOS": 14,
-      "android": 14,
-      "vkCom": 14,
-      "desktop": 14
+      "android": 14
     },
     "otherContextMenuBorderRadius": {
       "iOS": 32,
-      "android": 32,
-      "vkCom": 32,
-      "desktop": 32
+      "android": 32
     },
     "spacingSize5XL": {
       "iOS": 32,
-      "android": 32,
-      "vkCom": 32,
-      "desktop": 32
+      "android": 32
     },
     "spacingSize6XL": {
       "iOS": 40,
-      "android": 40,
-      "vkCom": 40,
-      "desktop": 40
+      "android": 40
     },
     "radiusRadius3XL": {
       "iOS": 32,
-      "android": 32,
-      "vkCom": 32,
-      "desktop": 32
+      "android": 32
     },
     "fontWeightSemiboldish": {
       "iOS": 580,
-      "android": 580,
-      "vkCom": 580,
-      "desktop": 580
+      "android": 580
     },
     "fontOpticalSizeTitle1": {
       "iOS": 31,
-      "android": 31,
-      "vkCom": 31,
-      "desktop": 31
+      "android": 31
     },
     "fontOpticalSizeTitle2": {
       "iOS": 28,
-      "android": 28,
-      "vkCom": 28,
-      "desktop": 28
+      "android": 28
     },
     "fontOpticalSizeTitle3": {
       "iOS": 28,
-      "android": 28,
-      "vkCom": 28,
-      "desktop": 28
+      "android": 28
     },
     "fontOpticalSizeLabel1": {
       "iOS": 26,
-      "android": 26,
-      "vkCom": 26,
-      "desktop": 26
+      "android": 26
     },
     "fontOpticalSizeLabel2": {
       "iOS": 26,
-      "android": 26,
-      "vkCom": 26,
-      "desktop": 26
+      "android": 26
     },
     "fontOpticalSizeHeadline1": {
       "iOS": 24,
-      "android": 24,
-      "vkCom": 24,
-      "desktop": 24
+      "android": 24
     },
     "fontOpticalSizeBody": {
       "iOS": 24,
-      "android": 24,
-      "vkCom": 24,
-      "desktop": 24
+      "android": 24
     },
     "fontOpticalSizeText": {
       "iOS": 24,
-      "android": 24,
-      "vkCom": 24,
-      "desktop": 24
+      "android": 24
     },
     "fontOpticalSizeParagraph": {
       "iOS": 23,
-      "android": 23,
-      "vkCom": 23,
-      "desktop": 23
+      "android": 23
     },
     "fontOpticalSizeFootnote": {
       "iOS": 23,
-      "android": 23,
-      "vkCom": 23,
-      "desktop": 23
+      "android": 23
     },
     "fontLetterSpacingTitle1": {
       "iOS": -0.5,
-      "android": -0.5,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.5
     },
     "fontLetterSpacingTitle2": {
       "iOS": 0,
-      "android": -0.09000000357627869,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.09000000357627869
     },
     "fontLetterSpacingTitle3": {
       "iOS": 0,
-      "android": -0.15000000596046448,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.15000000596046448
     },
     "fontLetterSpacingLabel1": {
       "iOS": 0,
-      "android": -0.14000000059604645,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.14000000059604645
     },
     "fontLetterSpacingLabel2": {
       "iOS": 0,
-      "android": -0.1899999976158142,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.1899999976158142
     },
     "fontLetterSpacingHeadline1": {
       "iOS": 0,
-      "android": -0.1599999964237213,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.1599999964237213
     },
     "fontLetterSpacingBody": {
       "iOS": 0,
-      "android": -0.20999999344348907,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.20999999344348907
     },
     "fontLetterSpacingText": {
       "iOS": 0,
-      "android": -0.15000000596046448,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.15000000596046448
     },
     "fontLetterSpacingParagraph": {
       "iOS": 0,
-      "android": -0.17000000178813934,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.17000000178813934
     },
     "fontLetterSpacingFootnote": {
       "iOS": 0,
-      "android": -0.1599999964237213,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.1599999964237213
     },
     "fontSizeCaption": {
       "iOS": 11.5,
-      "android": 11.5,
-      "vkCom": 11.5,
-      "desktop": 11.5
+      "android": 11.5
     },
     "fontLetterSpacingCaption": {
       "iOS": 0,
-      "android": -0.11999999731779099,
-      "vkCom": 0,
-      "desktop": 0
+      "android": -0.11999999731779099
     },
     "fontOpticalSizeCaption": {
       "iOS": 22,
-      "android": 22,
-      "vkCom": 22,
-      "desktop": 22
+      "android": 22
     },
     "radiusRadius2XL": {
       "iOS": 24,
-      "android": 24,
-      "vkCom": 24,
-      "desktop": 24
+      "android": 24
     }
   }
 }

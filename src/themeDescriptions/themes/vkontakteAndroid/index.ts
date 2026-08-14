@@ -16,9 +16,16 @@ const themeNameBase = 'vkontakteAndroid';
 
 export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStruct = {
 	colorBackgroundInverse: '#0A0A0A',
-	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(59, 59, 59, 0.40)',
+	colorTextContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.50)',
+	colorIconContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.50)',
+	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorAccentMint: '#A3FD79',
+
+	colorTextLinkInPrimary: vkLightTheme.colors.colorTextLink,
+	colorTextLinkInSecondary: vkLightTheme.colors.colorTextLink,
+	colorTextLinkInContrast: vkLightTheme.colors.colorTextLink,
+	colorTextLinkInContrastSecondaryAlpha: vkLightTheme.colors.colorTextLink,
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(0, 0, 0, 0.15)',
 	vkontakteColorSnippetBackground: '#FFFFFF',
@@ -138,9 +145,16 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 
 export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStruct = {
 	colorBackgroundInverse: '#EBEDF0',
-	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorTextTertiaryAlpha: 'rgba(255, 255, 255, 0.40)',
+	colorTextContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.50)',
+	colorIconContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.50)',
+	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorAccentMint: '#A3FD79',
+
+	colorTextLinkInPrimary: vkDarkTheme.colors.colorTextLink,
+	colorTextLinkInSecondary: vkDarkTheme.colors.colorTextLink,
+	colorTextLinkInContrast: vkDarkTheme.colors.colorTextLink,
+	colorTextLinkInContrastSecondaryAlpha: vkDarkTheme.colors.colorTextLink,
 
 	vkontakteColorSnippetBorderAlpha: 'rgba(255, 255, 255, 0.15)',
 	vkontakteColorSnippetBackground: '#232324',

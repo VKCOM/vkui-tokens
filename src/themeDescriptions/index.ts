@@ -8,6 +8,10 @@ import {
 	legoAndroidThemeDark,
 } from '../themeDescriptions/themes/lego/android.ts';
 import { legoIOSTheme, legoIOSThemeDark } from '../themeDescriptions/themes/lego/ios.ts';
+import {
+	legoSimpleAndroidTheme,
+	legoSimpleAndroidThemeDark,
+} from '../themeDescriptions/themes/lego/simpleAndroid.ts';
 import { mediaDarkTheme, mediaTheme } from '../themeDescriptions/themes/media/index.ts';
 import { mycomTheme } from '../themeDescriptions/themes/mycom/index.ts';
 import {
@@ -106,6 +110,8 @@ export const themes: unknown[] = [
 	milkshakeIOSThemeDark,
 	legoAndroidTheme,
 	legoAndroidThemeDark,
+	legoSimpleAndroidTheme,
+	legoSimpleAndroidThemeDark,
 	legoIOSTheme,
 	legoIOSThemeDark,
 
