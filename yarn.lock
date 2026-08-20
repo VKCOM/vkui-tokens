@@ -2560,15 +2560,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vkontakte/icons@npm:^3.65.0":
-  version: 3.65.0
-  resolution: "@vkontakte/icons@npm:3.65.0"
+"@vkontakte/icons@npm:^3.66.0":
+  version: 3.66.0
+  resolution: "@vkontakte/icons@npm:3.66.0"
   dependencies:
     "@swc/helpers": "npm:^0.5.23"
     "@vkontakte/icons-sprite": "npm:^3.2.2"
   peerDependencies:
     react: ^18 || ^19
-  checksum: 10c0/4caafea2ff3213ff7029a564a74a4c8d27028a36b63d32d70597cba88193bbd8f4543c753ce91d7c00b6584d837b62e634b3fb96d56854863eb914973ab59ae8
+  checksum: 10c0/791434ab8b21928b6c88ecb92c9e4e74185038017049828c90b7c9e2d26cb0090925440df3dd81557be02b7e54291d8a8b48153137bbf0404dd15d934c4fd310
   languageName: node
   linkType: hard
 
@@ -2622,7 +2622,7 @@ __metadata:
     "@types/react": "npm:^19.2.18"
     "@types/react-dom": "npm:^19.2.4"
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0"
-    "@vkontakte/icons": "npm:^3.65.0"
+    "@vkontakte/icons": "npm:^3.66.0"
     "@vkontakte/vkjs": "npm:^2.0.2"
     "@vkontakte/vkui": "npm:^8.3.1"
     clsx: "npm:^2.1.1"
