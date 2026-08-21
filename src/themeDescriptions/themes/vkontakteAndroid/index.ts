@@ -21,6 +21,7 @@ export const vkontakteLocalColorLight: LocalVkontakteAndroidColorsDescriptionStr
 	colorIconContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.50)',
 	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorAccentMint: '#A3FD79',
+	colorOverlaySecondaryThemed: vkDarkTheme.colors.colorOverlaySecondary,
 
 	colorTextLinkInPrimary: vkLightTheme.colors.colorTextLink,
 	colorTextLinkInSecondary: vkLightTheme.colors.colorTextLink,
@@ -150,6 +151,7 @@ export const vkontakteLocalColorDark: LocalVkontakteAndroidColorsDescriptionStru
 	colorIconContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.50)',
 	colorStrokeContrastSecondaryAlpha: 'rgba(255, 255, 255, 0.12)',
 	colorAccentMint: '#A3FD79',
+	colorOverlaySecondaryThemed: vkDarkTheme.colors.colorBackgroundContrastSecondaryAlpha,
 
 	colorTextLinkInPrimary: vkDarkTheme.colors.colorTextLink,
 	colorTextLinkInSecondary: vkDarkTheme.colors.colorTextLink,

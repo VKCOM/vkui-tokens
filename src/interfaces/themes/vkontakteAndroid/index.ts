@@ -188,6 +188,7 @@ export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	colorIconContrastSecondaryAlpha: ColorDescription;
 	colorStrokeContrastSecondaryAlpha: ColorDescription;
 	colorAccentMint: ColorDescription;
+	colorOverlaySecondaryThemed: ColorDescription;
 
 	colorTextLinkInPrimary: ColorDescription;
 	colorTextLinkInSecondary: ColorDescription;
