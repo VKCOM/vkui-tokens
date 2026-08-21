@@ -79,6 +79,7 @@ export const milkshakeIOSTheme: ThemeMilkshakeIOSDescription = {
 		colorIconContrastSecondaryAlpha: '#FFFFFF80',
 		colorTextContrastSecondaryAlpha: '#FFFFFF80',
 		colorAccentMint: '#A3FD79',
+		colorOverlaySecondaryThemed: vkIOSTheme.colors.colorOverlaySecondary,
 
 		colorTextLinkInPrimary: vkIOSTheme.colors.colorTextLink,
 		colorTextLinkInSecondary: vkIOSTheme.colors.colorTextLink,
@@ -114,6 +115,7 @@ export const milkshakeIOSThemeDark: ThemeMilkshakeIOSDarkDescription = {
 		colorIconContrastSecondaryAlpha: '#FFFFFF80',
 		colorTextContrastSecondaryAlpha: '#FFFFFF80',
 		colorAccentMint: '#A3FD79',
+		colorOverlaySecondaryThemed: vkIOSTheme.colors.colorBackgroundContrastSecondaryAlpha,
 
 		colorTextLinkInPrimary: vkIOSThemeDark.colors.colorTextLink,
 		colorTextLinkInSecondary: vkIOSThemeDark.colors.colorTextLink,
