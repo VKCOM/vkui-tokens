@@ -34,7 +34,7 @@
     "csstype": "^3.1.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.7",
+    "@biomejs/biome": "2.5.8",
     "@rspack/cli": "^2.1.8",
     "@rspack/core": "^2.1.8",
     "@svgr/webpack": "^8.1.0",
