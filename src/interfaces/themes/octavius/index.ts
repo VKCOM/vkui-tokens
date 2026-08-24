@@ -125,6 +125,24 @@ export interface LocalOctaviusColorsDescriptionStruct {
 	colorTagTextMagenta: ColorDescription;
 	colorTagBackgroundTickle: ColorDescription;
 	colorTagTextTickle: ColorDescription;
+	colorTagBackgroundPink2: ColorDescription;
+	colorTagTextPink2: ColorDescription;
+	colorTagBackgroundTeal: ColorDescription;
+	colorTagTextTeal: ColorDescription;
+	colorTagBackgroundCyan: ColorDescription;
+	colorTagTextCyan: ColorDescription;
+	colorTagBackgroundBlue: ColorDescription;
+	colorTagTextBlue: ColorDescription;
+	colorTagBackgroundOrange2: ColorDescription;
+	colorTagTextOrange2: ColorDescription;
+	colorTagBackgroundRed: ColorDescription;
+	colorTagTextRed: ColorDescription;
+	colorTagBackgroundViolet2: ColorDescription;
+	colorTagTextViolet2: ColorDescription;
+	colorTagBackgroundPurple2: ColorDescription;
+	colorTagTextPurple2: ColorDescription;
+	colorTagBackgroundGreen: ColorDescription;
+	colorTagTextGreen: ColorDescription;
 
 	// Токены кнопки
 	octaviusColorButtonText: ColorDescription;
