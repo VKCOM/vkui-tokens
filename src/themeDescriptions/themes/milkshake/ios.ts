@@ -79,6 +79,12 @@ export const milkshakeIOSTheme: ThemeMilkshakeIOSDescription = {
 		colorIconContrastSecondaryAlpha: '#FFFFFF80',
 		colorTextContrastSecondaryAlpha: '#FFFFFF80',
 		colorAccentMint: '#A3FD79',
+		colorOverlaySecondaryThemed: vkIOSTheme.colors.colorOverlaySecondary,
+
+		colorTextLinkInPrimary: vkIOSTheme.colors.colorTextLink,
+		colorTextLinkInSecondary: vkIOSTheme.colors.colorTextLink,
+		colorTextLinkInContrast: vkIOSTheme.colors.colorTextLink,
+		colorTextLinkInContrastSecondaryAlpha: vkIOSTheme.colors.colorTextLink,
 	},
 
 	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
@@ -109,5 +115,11 @@ export const milkshakeIOSThemeDark: ThemeMilkshakeIOSDarkDescription = {
 		colorIconContrastSecondaryAlpha: '#FFFFFF80',
 		colorTextContrastSecondaryAlpha: '#FFFFFF80',
 		colorAccentMint: '#A3FD79',
+		colorOverlaySecondaryThemed: vkIOSTheme.colors.colorBackgroundContrastSecondaryAlpha,
+
+		colorTextLinkInPrimary: vkIOSThemeDark.colors.colorTextLink,
+		colorTextLinkInSecondary: vkIOSThemeDark.colors.colorTextLink,
+		colorTextLinkInContrast: vkIOSThemeDark.colors.colorTextLink,
+		colorTextLinkInContrastSecondaryAlpha: vkIOSThemeDark.colors.colorTextLink,
 	},
 };

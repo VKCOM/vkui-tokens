@@ -11,8 +11,8 @@ interface AppearanceVariable {
 interface TokensVariable {
 	iOS: string | number;
 	android: string | number;
-	desktop: string | number;
-	vkCom: string | number;
+	desktop?: string | number;
+	vkCom?: string | number;
 }
 
 // Коллекция с переменными

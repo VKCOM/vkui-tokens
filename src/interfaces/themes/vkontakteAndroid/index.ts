@@ -183,9 +183,17 @@ export interface VkontakteAndroidGradients {
 
 export interface LocalVkontakteAndroidColorsDescriptionStruct {
 	colorBackgroundInverse: ColorDescription;
-	colorStrokeContrastSecondaryAlpha: ColorDescription;
 	colorTextTertiaryAlpha: ColorDescription;
+	colorTextContrastSecondaryAlpha: ColorDescription;
+	colorIconContrastSecondaryAlpha: ColorDescription;
+	colorStrokeContrastSecondaryAlpha: ColorDescription;
 	colorAccentMint: ColorDescription;
+	colorOverlaySecondaryThemed: ColorDescription;
+
+	colorTextLinkInPrimary: ColorDescription;
+	colorTextLinkInSecondary: ColorDescription;
+	colorTextLinkInContrast: ColorDescription;
+	colorTextLinkInContrastSecondaryAlpha: ColorDescription;
 
 	vkontakteColorSnippetBorderAlpha: ColorDescription;
 	vkontakteColorSnippetBackground: ColorDescription;

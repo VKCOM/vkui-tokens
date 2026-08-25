@@ -201,17 +201,22 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 		// А также локальные цвета, используемые только в этой теме
 		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
 		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
-		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
 		colorBackgroundContent: figma.appearance.backgroundBackground.light,
 		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.light,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.light,
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.light,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
+		colorAccentMint: figma.appearance.paletteAccentMint.light,
 		colorFieldBorderAlpha: {
 			normal: figma.appearance.strokeFieldBorderAlpha.light,
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.light,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.light,
 		},
-		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.light,
-		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.light,
-		colorAccentMint: figma.appearance.paletteAccentMint.light,
+		colorOverlaySecondaryThemed: figma.appearance.otherOverlaySecondaryThemed.light,
+		colorTextLinkInPrimary: figma.appearance.textLinkInPrimary.light,
+		colorTextLinkInSecondary: figma.appearance.textLinkInSecondary.light,
+		colorTextLinkInContrast: figma.appearance.iconContrast.light,
+		colorTextLinkInContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.light,
 	},
 
 	// Изменённые не-цвета
@@ -232,23 +237,18 @@ export const legoIOSTheme: ThemeLegoIOSDescription = {
 	},
 	sizeCellHeight: {
 		regular: figma.tokens.sizeCellHeight.iOS,
-		compact: figma.tokens.sizeCellHeight.desktop,
 	},
 	sizeButtonExtraSmallHeight: {
 		regular: figma.tokens.sizeButtonExtraSmallHeight.iOS,
-		compact: figma.tokens.sizeButtonExtraSmallHeight.desktop,
 	},
 	sizeButtonSmallHeight: {
 		regular: figma.tokens.sizeButtonSmallHeight.iOS,
-		compact: figma.tokens.sizeButtonSmallHeight.desktop,
 	},
 	sizeButtonMediumHeight: {
 		regular: figma.tokens.sizeButtonMediumHeight.iOS,
-		compact: figma.tokens.sizeButtonMediumHeight.desktop,
 	},
 	sizeButtonLargeHeight: {
 		regular: figma.tokens.sizeButtonLargeHeight.iOS,
-		compact: figma.tokens.sizeButtonLargeHeight.desktop,
 	},
 };
 
@@ -268,16 +268,21 @@ export const legoIOSThemeDark: ThemeLegoIOSDarkDescription = {
 		// Переопределение переменных
 		...overwriteFromFigmaJSON(vkontakteIOSThemeDark.colors, 'appearance', 'dark', figma),
 		colorBackgroundInverse: figma.appearance.backgroundInverse.dark,
-		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
 		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
 		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.dark,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.dark,
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.dark,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
+		colorAccentMint: figma.appearance.paletteAccentMint.dark,
 		colorFieldBorderAlpha: {
 			normal: figma.appearance.strokeFieldBorderAlpha.dark,
 			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.dark,
 			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.dark,
 		},
-		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.dark,
-		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.dark,
-		colorAccentMint: figma.appearance.paletteAccentMint.dark,
+		colorOverlaySecondaryThemed: figma.appearance.otherOverlaySecondaryThemed.dark,
+		colorTextLinkInPrimary: figma.appearance.textLinkInPrimary.dark,
+		colorTextLinkInSecondary: figma.appearance.textLinkInSecondary.dark,
+		colorTextLinkInContrast: figma.appearance.iconContrast.dark,
+		colorTextLinkInContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.dark,
 	},
 };
