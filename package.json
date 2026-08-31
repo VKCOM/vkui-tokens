@@ -39,7 +39,7 @@
     "@rspack/core": "^2.1.10",
     "@svgr/webpack": "^8.1.0",
     "@swc/cli": "^0.8.1",
-    "@swc/core": "^1.15.47",
+    "@swc/core": "^1.16.1",
     "@swc/plugin-transform-imports": "^12.15.0",
     "@types/color": "^4.2.1",
     "@types/common-tags": "^1.8.4",
