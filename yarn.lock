@@ -2546,17 +2546,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vkontakte/icons-sprite@npm:^3.2.1":
-  version: 3.2.1
-  resolution: "@vkontakte/icons-sprite@npm:3.2.1"
-  dependencies:
-    "@swc/helpers": "npm:^0.5.19"
-  peerDependencies:
-    react: ^18 || ^19
-  checksum: 10c0/1b634aa4a4bc73350ae2c77cc5787478e5424e846e1644c6838ede9d05539cd6ff49ab9d131f4c10d500fa48aed4d97cf92a31ebf5ebb6336bcdd5de7fd29794
-  languageName: node
-  linkType: hard
-
 "@vkontakte/icons-sprite@npm:^3.2.2":
   version: 3.2.2
   resolution: "@vkontakte/icons-sprite@npm:3.2.2"
@@ -2565,18 +2554,6 @@ __metadata:
   peerDependencies:
     react: ^18 || ^19
   checksum: 10c0/b0fe65a9b4911f261b49cac77c4570a6cf30a0c86eb0d9d068a59e574feaa4ea782f1552a412c41995a47a2cdf8504616ba6f2b0102ce941b25018568b20182a
-  languageName: node
-  linkType: hard
-
-"@vkontakte/icons@npm:^3.58.0":
-  version: 3.64.0
-  resolution: "@vkontakte/icons@npm:3.64.0"
-  dependencies:
-    "@swc/helpers": "npm:^0.5.23"
-    "@vkontakte/icons-sprite": "npm:^3.2.1"
-  peerDependencies:
-    react: ^18 || ^19
-  checksum: 10c0/208aa6f612a307c1b37b98bb660c4dc1e0f32f6ad518f2956bec85b03a9bf45cfa59d63b594fb8f0928b26f0722afd4cc59a1971cb9fdbfa1f00e1f7c64f06f2
   languageName: node
   linkType: hard
 
@@ -2644,7 +2621,7 @@ __metadata:
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0"
     "@vkontakte/icons": "npm:^3.67.0"
     "@vkontakte/vkjs": "npm:^2.0.2"
-    "@vkontakte/vkui": "npm:^8.3.1"
+    "@vkontakte/vkui": "npm:^8.4.0"
     clsx: "npm:^2.1.1"
     color: "npm:^5.0.3"
     common-tags: "npm:^1.8.2"
@@ -2667,19 +2644,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@vkontakte/vkui@npm:^8.3.1":
-  version: 8.3.1
-  resolution: "@vkontakte/vkui@npm:8.3.1"
+"@vkontakte/vkui@npm:^8.4.0":
+  version: 8.4.0
+  resolution: "@vkontakte/vkui@npm:8.4.0"
   dependencies:
     "@swc/helpers": "npm:^0.5.23"
-    "@vkontakte/icons": "npm:^3.58.0"
+    "@vkontakte/icons": "npm:^3.67.0"
     "@vkontakte/vkjs": "npm:^2.0.2"
     "@vkontakte/vkui-date-fns-tz": "npm:^0.0.6"
     "@vkontakte/vkui-floating-ui": "npm:^0.2.8"
   peerDependencies:
     react: ^18.2.0 || ^19.0.0
     react-dom: ^18.2.0 || ^19.0.0
-  checksum: 10c0/db24638c533934ae9241a6654213df3c0a8a85ef1ea8ce72bece39877f7556130daa94b4228f3f5f21529474ce9020c10bac9b109cc4f8f8d6080b87de983220
+  checksum: 10c0/2dbffd57eb6345d3f01e1e4c60899c021239640d3feffb30d6787388c49cdc9a1b4cc690cbb7a5c2ac1e28cb79aedb77ae130771887d39cb31b5759e97425b3b
   languageName: node
   linkType: hard
 
