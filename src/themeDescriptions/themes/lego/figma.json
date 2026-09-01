@@ -22,7 +22,7 @@
     },
     "iconContrastThemed": {
       "light": "#ffffff",
-      "dark": "#000000"
+      "dark": "#3b3b3b"
     },
     "iconAccent": {
       "light": "#2e90ff",
@@ -57,7 +57,7 @@
       "dark": "#ffffff23"
     },
     "paletteAccentRed": {
-      "light": "#ff5773",
+      "light": "#ff3347",
       "dark": "#ff5773"
     },
     "paletteAccentGreen": {
