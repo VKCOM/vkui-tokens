@@ -21,7 +21,7 @@ import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
 const fontFamilyAccent =
 	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const medium = 520;
-const semiboldish = 580;
+const semiboldish = 550;
 const semibold = 600;
 const bold = 700;
 
