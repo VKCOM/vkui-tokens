@@ -19,7 +19,7 @@ const simpleOverrides = {
 	fontBody: { fontWeight: medium, letterSpacing: '-0.21px' },
 	fontText: { fontWeight: semibold, letterSpacing: '-0.15px' },
 	fontTextBold: { fontWeight: bold, letterSpacing: '-0.15px' },
-	fontParagraph: { fontWeight: semibold, letterSpacing: '-0.17px' },
+	fontParagraph: { fontWeight: medium, letterSpacing: '-0.17px' },
 	fontFootnote: { fontWeight: semibold, letterSpacing: '-0.16px' },
 	fontFootnoteBold: { fontWeight: bold, letterSpacing: '-0.16px' },
 	fontCaption1: { fontWeight: semibold, letterSpacing: '-0.16px' },

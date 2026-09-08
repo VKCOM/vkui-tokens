@@ -301,12 +301,12 @@
       "dark": "#ffffff1e"
     },
     "statesHoverStrokeFieldBorderAlpha": {
-      "light": "#3333333d",
-      "dark": "#ffffff28"
+      "light": "#33333328",
+      "dark": "#ffffff1e"
     },
     "statesActiveStrokeFieldBorderAlpha": {
-      "light": "#3333335b",
-      "dark": "#ffffff33"
+      "light": "#3333333d",
+      "dark": "#ffffff28"
     },
     "otherTransparentLight": {
       "light": "#ffffff00",
