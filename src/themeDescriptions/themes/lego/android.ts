@@ -17,7 +17,7 @@ import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
 const fontFamilyAccent =
 	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const medium = 520;
-const semiboldish = 580;
+const semiboldish = 530;
 const semibold = 600;
 const bold = 670;
 const boldAccent = 700;
@@ -132,10 +132,10 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 		fontParagraph: {
 			regular: {
 				fontSize: 15,
-				lineHeight: 18.5,
+				lineHeight: 18.2,
 				fontWeight: semiboldish,
 				fontVariationSettings: {
-					opticalSize: 26,
+					opticalSize: 17,
 				},
 			},
 		},
