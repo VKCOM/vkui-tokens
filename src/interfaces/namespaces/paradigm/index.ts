@@ -141,6 +141,12 @@ export interface LocalParadigmColorsDescriptionStruct {
 	colorCounterBackgroundSecondaryAlpha: ColorDescription;
 	colorCounterBackgroundTertiaryAlpha: ColorDescription;
 	colorCounterTextTertiary: ColorDescription;
+
+	/**
+	 * @desc Полупрозрачный фон кнопки
+	 * @tags color, background, alpha
+	 */
+	colorButtonBackgroundAlpha: ColorDescription;
 }
 
 export type ParadigmLocalColors = {
