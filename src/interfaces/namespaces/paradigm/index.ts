@@ -143,7 +143,7 @@ export interface LocalParadigmColorsDescriptionStruct {
 	colorCounterTextTertiary: ColorDescription;
 
 	/**
-	 * @desc Полупрозрачный фон кнопки
+	 * @desc Полупрозрачный фон кнопки. Используется для Secondary Overlay Button
 	 * @tags color, background, alpha
 	 */
 	colorButtonBackgroundAlpha: ColorDescription;
