@@ -2204,12 +2204,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/plugin-transform-imports@npm:^14.0.0":
-  version: 14.0.0
-  resolution: "@swc/plugin-transform-imports@npm:14.0.0"
+"@swc/plugin-transform-imports@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "@swc/plugin-transform-imports@npm:15.0.0"
   dependencies:
     "@swc/counter": "npm:^0.1.3"
-  checksum: 10c0/66c231810e65cc2ac5eda47b3c87801f6b59eb8d15aa0357a3ee178b575e251454ce5050af8b8c3bf75857118663029513cf654bc1a93d9772245f0f00049dc8
+  checksum: 10c0/f54a7e4229d974ebb3f0b283e02387271c1bc3d5e4e77fb099a59872dc97fb1e326c66989e84a5462fcdce2695fea8dea8a6cffe18f422aa1f26dbc9c4fee07e
   languageName: node
   linkType: hard
 
@@ -2622,7 +2622,7 @@ __metadata:
     "@swc/cli": "npm:^0.8.1"
     "@swc/core": "npm:^1.16.12"
     "@swc/helpers": "npm:^0.5.19"
-    "@swc/plugin-transform-imports": "npm:^14.0.0"
+    "@swc/plugin-transform-imports": "npm:^15.0.0"
     "@types/color": "npm:^4.2.1"
     "@types/common-tags": "npm:^1.8.4"
     "@types/fs-extra": "npm:^11.0.4"
