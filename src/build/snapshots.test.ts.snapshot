@@ -94197,15 +94197,15 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
   "colorImageBorderAlpha": {
     "normal": {
       "name": "--vkui--color_image_border_alpha",
-      "value": "var(--vkui--color_image_border_alpha, #33333328)"
+      "value": "var(--vkui--color_image_border_alpha, #3333330f)"
     },
     "hover": {
       "name": "--vkui--color_image_border_alpha--hover",
-      "value": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.2))"
+      "value": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.1))"
     },
     "active": {
       "name": "--vkui--color_image_border_alpha--active",
-      "value": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.24))"
+      "value": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.14))"
     }
   },
   "colorFieldBorderAlpha": {
@@ -97021,9 +97021,9 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
     "active": "#36383B"
   },
   "colorImageBorderAlpha": {
-    "normal": "#33333328",
-    "hover": "rgba(51, 51, 51, 0.2)",
-    "active": "rgba(51, 51, 51, 0.24)"
+    "normal": "#3333330f",
+    "hover": "rgba(51, 51, 51, 0.1)",
+    "active": "rgba(51, 51, 51, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#3333330a",
@@ -98650,9 +98650,9 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_stroke_primary--active, #36383B)"
   },
   "colorImageBorderAlpha": {
-    "normal": "var(--vkui--color_image_border_alpha, #33333328)",
-    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.2))",
-    "active": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.24))"
+    "normal": "var(--vkui--color_image_border_alpha, #3333330f)",
+    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.1))",
+    "active": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.14))"
   },
   "colorFieldBorderAlpha": {
     "normal": "var(--vkui--color_field_border_alpha, #3333330a)",
@@ -100279,9 +100279,9 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
     "active": "#36383B"
   },
   "colorImageBorderAlpha": {
-    "normal": "#33333328",
-    "hover": "rgba(51, 51, 51, 0.2)",
-    "active": "rgba(51, 51, 51, 0.24)"
+    "normal": "#3333330f",
+    "hover": "rgba(51, 51, 51, 0.1)",
+    "active": "rgba(51, 51, 51, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#3333330a",
@@ -104322,15 +104322,15 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   "colorImageBorderAlpha": {
     "normal": {
       "name": "--vkui--color_image_border_alpha",
-      "value": "var(--vkui--color_image_border_alpha, #ffffff3d)"
+      "value": "var(--vkui--color_image_border_alpha, #ffffff0f)"
     },
     "hover": {
       "name": "--vkui--color_image_border_alpha--hover",
-      "value": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.28))"
+      "value": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.1))"
     },
     "active": {
       "name": "--vkui--color_image_border_alpha--active",
-      "value": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.32))"
+      "value": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.14))"
     }
   },
   "colorFieldBorderAlpha": {
@@ -107146,9 +107146,9 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
     "active": "#D7D8DB"
   },
   "colorImageBorderAlpha": {
-    "normal": "#ffffff3d",
-    "hover": "rgba(255, 255, 255, 0.28)",
-    "active": "rgba(255, 255, 255, 0.32)"
+    "normal": "#ffffff0f",
+    "hover": "rgba(255, 255, 255, 0.1)",
+    "active": "rgba(255, 255, 255, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#ffffff0f",
@@ -108775,9 +108775,9 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
     "active": "var(--vkui--color_stroke_primary--active, #D7D8DB)"
   },
   "colorImageBorderAlpha": {
-    "normal": "var(--vkui--color_image_border_alpha, #ffffff3d)",
-    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.28))",
-    "active": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.32))"
+    "normal": "var(--vkui--color_image_border_alpha, #ffffff0f)",
+    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.1))",
+    "active": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.14))"
   },
   "colorFieldBorderAlpha": {
     "normal": "var(--vkui--color_field_border_alpha, #ffffff0f)",
@@ -110404,9 +110404,9 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
     "active": "#D7D8DB"
   },
   "colorImageBorderAlpha": {
-    "normal": "#ffffff3d",
-    "hover": "rgba(255, 255, 255, 0.28)",
-    "active": "rgba(255, 255, 255, 0.32)"
+    "normal": "#ffffff0f",
+    "hover": "rgba(255, 255, 255, 0.1)",
+    "active": "rgba(255, 255, 255, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#ffffff0f",
@@ -114347,15 +114347,15 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
   "colorImageBorderAlpha": {
     "normal": {
       "name": "--vkui--color_image_border_alpha",
-      "value": "var(--vkui--color_image_border_alpha, #33333328)"
+      "value": "var(--vkui--color_image_border_alpha, #3333330f)"
     },
     "hover": {
       "name": "--vkui--color_image_border_alpha--hover",
-      "value": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.2))"
+      "value": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.1))"
     },
     "active": {
       "name": "--vkui--color_image_border_alpha--active",
-      "value": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.24))"
+      "value": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.14))"
     }
   },
   "colorFieldBorderAlpha": {
@@ -115995,9 +115995,9 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
     "active": "#36383B"
   },
   "colorImageBorderAlpha": {
-    "normal": "#33333328",
-    "hover": "rgba(51, 51, 51, 0.2)",
-    "active": "rgba(51, 51, 51, 0.24)"
+    "normal": "#3333330f",
+    "hover": "rgba(51, 51, 51, 0.1)",
+    "active": "rgba(51, 51, 51, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#3333330a",
@@ -117186,9 +117186,9 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
     "active": "var(--vkui--color_stroke_primary--active, #36383B)"
   },
   "colorImageBorderAlpha": {
-    "normal": "var(--vkui--color_image_border_alpha, #33333328)",
-    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.2))",
-    "active": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.24))"
+    "normal": "var(--vkui--color_image_border_alpha, #3333330f)",
+    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.1))",
+    "active": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.14))"
   },
   "colorFieldBorderAlpha": {
     "normal": "var(--vkui--color_field_border_alpha, #3333330a)",
@@ -118377,9 +118377,9 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
     "active": "#36383B"
   },
   "colorImageBorderAlpha": {
-    "normal": "#33333328",
-    "hover": "rgba(51, 51, 51, 0.2)",
-    "active": "rgba(51, 51, 51, 0.24)"
+    "normal": "#3333330f",
+    "hover": "rgba(51, 51, 51, 0.1)",
+    "active": "rgba(51, 51, 51, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#3333330a",
@@ -121910,15 +121910,15 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
   "colorImageBorderAlpha": {
     "normal": {
       "name": "--vkui--color_image_border_alpha",
-      "value": "var(--vkui--color_image_border_alpha, #ffffff3d)"
+      "value": "var(--vkui--color_image_border_alpha, #ffffff0f)"
     },
     "hover": {
       "name": "--vkui--color_image_border_alpha--hover",
-      "value": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.28))"
+      "value": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.1))"
     },
     "active": {
       "name": "--vkui--color_image_border_alpha--active",
-      "value": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.32))"
+      "value": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.14))"
     }
   },
   "colorFieldBorderAlpha": {
@@ -123558,9 +123558,9 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
     "active": "#D7D8DB"
   },
   "colorImageBorderAlpha": {
-    "normal": "#ffffff3d",
-    "hover": "rgba(255, 255, 255, 0.28)",
-    "active": "rgba(255, 255, 255, 0.32)"
+    "normal": "#ffffff0f",
+    "hover": "rgba(255, 255, 255, 0.1)",
+    "active": "rgba(255, 255, 255, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#ffffff0f",
@@ -124749,9 +124749,9 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_stroke_primary--active, #D7D8DB)"
   },
   "colorImageBorderAlpha": {
-    "normal": "var(--vkui--color_image_border_alpha, #ffffff3d)",
-    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.28))",
-    "active": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.32))"
+    "normal": "var(--vkui--color_image_border_alpha, #ffffff0f)",
+    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.1))",
+    "active": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.14))"
   },
   "colorFieldBorderAlpha": {
     "normal": "var(--vkui--color_field_border_alpha, #ffffff0f)",
@@ -125940,9 +125940,9 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
     "active": "#D7D8DB"
   },
   "colorImageBorderAlpha": {
-    "normal": "#ffffff3d",
-    "hover": "rgba(255, 255, 255, 0.28)",
-    "active": "rgba(255, 255, 255, 0.32)"
+    "normal": "#ffffff0f",
+    "hover": "rgba(255, 255, 255, 0.1)",
+    "active": "rgba(255, 255, 255, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#ffffff0f",
@@ -129505,15 +129505,15 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
   "colorImageBorderAlpha": {
     "normal": {
       "name": "--vkui--color_image_border_alpha",
-      "value": "var(--vkui--color_image_border_alpha, #33333328)"
+      "value": "var(--vkui--color_image_border_alpha, #3333330f)"
     },
     "hover": {
       "name": "--vkui--color_image_border_alpha--hover",
-      "value": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.2))"
+      "value": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.1))"
     },
     "active": {
       "name": "--vkui--color_image_border_alpha--active",
-      "value": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.24))"
+      "value": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.14))"
     }
   },
   "colorFieldBorderAlpha": {
@@ -132298,9 +132298,9 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
     "active": "#36383B"
   },
   "colorImageBorderAlpha": {
-    "normal": "#33333328",
-    "hover": "rgba(51, 51, 51, 0.2)",
-    "active": "rgba(51, 51, 51, 0.24)"
+    "normal": "#3333330f",
+    "hover": "rgba(51, 51, 51, 0.1)",
+    "active": "rgba(51, 51, 51, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#3333330a",
@@ -133896,9 +133896,9 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
     "active": "var(--vkui--color_stroke_primary--active, #36383B)"
   },
   "colorImageBorderAlpha": {
-    "normal": "var(--vkui--color_image_border_alpha, #33333328)",
-    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.2))",
-    "active": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.24))"
+    "normal": "var(--vkui--color_image_border_alpha, #3333330f)",
+    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(51, 51, 51, 0.1))",
+    "active": "var(--vkui--color_image_border_alpha--active, rgba(51, 51, 51, 0.14))"
   },
   "colorFieldBorderAlpha": {
     "normal": "var(--vkui--color_field_border_alpha, #3333330a)",
@@ -135494,9 +135494,9 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
     "active": "#36383B"
   },
   "colorImageBorderAlpha": {
-    "normal": "#33333328",
-    "hover": "rgba(51, 51, 51, 0.2)",
-    "active": "rgba(51, 51, 51, 0.24)"
+    "normal": "#3333330f",
+    "hover": "rgba(51, 51, 51, 0.1)",
+    "active": "rgba(51, 51, 51, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#3333330a",
@@ -139469,15 +139469,15 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   "colorImageBorderAlpha": {
     "normal": {
       "name": "--vkui--color_image_border_alpha",
-      "value": "var(--vkui--color_image_border_alpha, #ffffff3d)"
+      "value": "var(--vkui--color_image_border_alpha, #ffffff0f)"
     },
     "hover": {
       "name": "--vkui--color_image_border_alpha--hover",
-      "value": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.28))"
+      "value": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.1))"
     },
     "active": {
       "name": "--vkui--color_image_border_alpha--active",
-      "value": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.32))"
+      "value": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.14))"
     }
   },
   "colorFieldBorderAlpha": {
@@ -142262,9 +142262,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
     "active": "#D7D8DB"
   },
   "colorImageBorderAlpha": {
-    "normal": "#ffffff3d",
-    "hover": "rgba(255, 255, 255, 0.28)",
-    "active": "rgba(255, 255, 255, 0.32)"
+    "normal": "#ffffff0f",
+    "hover": "rgba(255, 255, 255, 0.1)",
+    "active": "rgba(255, 255, 255, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#ffffff0f",
@@ -143860,9 +143860,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
     "active": "var(--vkui--color_stroke_primary--active, #D7D8DB)"
   },
   "colorImageBorderAlpha": {
-    "normal": "var(--vkui--color_image_border_alpha, #ffffff3d)",
-    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.28))",
-    "active": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.32))"
+    "normal": "var(--vkui--color_image_border_alpha, #ffffff0f)",
+    "hover": "var(--vkui--color_image_border_alpha--hover, rgba(255, 255, 255, 0.1))",
+    "active": "var(--vkui--color_image_border_alpha--active, rgba(255, 255, 255, 0.14))"
   },
   "colorFieldBorderAlpha": {
     "normal": "var(--vkui--color_field_border_alpha, #ffffff0f)",
@@ -145458,9 +145458,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
     "active": "#D7D8DB"
   },
   "colorImageBorderAlpha": {
-    "normal": "#ffffff3d",
-    "hover": "rgba(255, 255, 255, 0.28)",
-    "active": "rgba(255, 255, 255, 0.32)"
+    "normal": "#ffffff0f",
+    "hover": "rgba(255, 255, 255, 0.1)",
+    "active": "rgba(255, 255, 255, 0.14)"
   },
   "colorFieldBorderAlpha": {
     "normal": "#ffffff0f",
