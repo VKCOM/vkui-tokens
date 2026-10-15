@@ -20,8 +20,7 @@ import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
 
 const fontFamilyAccent =
 	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
-const medium = 520;
-const semiboldish = 530;
+const medium = 540;
 const semibold = 600;
 const bold = 700;
 
@@ -33,20 +32,26 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 	{
 		fontDisplayTitle1: {
 			regular: {
-				fontSize: 31,
-				lineHeight: 31,
+				fontSize: 31.5,
+				lineHeight: 31.5,
 				fontFamily: fontFamilyAccent,
-				fontWeight: bold,
-				letterSpacing: '-0.65px',
+				fontWeight: 720,
+				letterSpacing: '-0.3px',
+				fontVariationSettings: {
+					opticalSize: 28,
+				},
 			},
 		},
 		fontTitle1: {
 			regular: {
-				fontSize: 31,
-				lineHeight: 31,
+				fontSize: 31.5,
+				lineHeight: 31.5,
 				fontFamily: fontFamilyAccent,
-				fontWeight: bold,
-				letterSpacing: '-0.65px',
+				fontWeight: 720,
+				letterSpacing: '-0.3px',
+				fontVariationSettings: {
+					opticalSize: 28,
+				},
 			},
 		},
 		fontTitle2: {
@@ -103,10 +108,10 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 		fontBody: {
 			regular: {
 				fontSize: 16.5,
-				lineHeight: 21,
+				lineHeight: 19.5,
 				fontWeight: medium,
 				fontVariationSettings: {
-					opticalSize: 21.5,
+					opticalSize: 21,
 				},
 			},
 		},
@@ -114,7 +119,7 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 			regular: {
 				fontSize: 16,
 				lineHeight: 18.5,
-				fontWeight: semibold,
+				fontWeight: 620,
 				fontVariationSettings: {
 					opticalSize: 22,
 				},
@@ -134,8 +139,7 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 			regular: {
 				fontSize: 15,
 				lineHeight: 18.5,
-				fontWeight: semiboldish,
-				letterSpacing: '-0.05px',
+				fontWeight: 550,
 				fontVariationSettings: {
 					opticalSize: 21.5,
 				},
@@ -165,6 +169,16 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 			regular: {
 				fontSize: 11.5,
 				lineHeight: 12,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 22.8,
+				},
+			},
+		},
+		fontCaption2: {
+			regular: {
+				fontSize: 8,
+				lineHeight: 10,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 22.8,

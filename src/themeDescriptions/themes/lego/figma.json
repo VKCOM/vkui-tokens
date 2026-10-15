@@ -45,8 +45,8 @@
       "dark": "#ffffff"
     },
     "strokeImageBorderAlpha": {
-      "light": "#33333328",
-      "dark": "#ffffff3d"
+      "light": "#3333330f",
+      "dark": "#ffffff0f"
     },
     "strokeAccent": {
       "light": "#2e90ff",
@@ -343,6 +343,10 @@
     "otherOverlaySecondaryThemed": {
       "light": "#3b3b3b66",
       "dark": "#ffffff33"
+    },
+    "componentsSubnavigationBarSelectedBackground": {
+      "light": "#f2f2f2",
+      "dark": "#181818"
     }
   },
   "tokens": {
@@ -442,14 +446,6 @@
       "iOS": 393,
       "android": 360
     },
-    "fontSizeHeadline1": {
-      "iOS": 17,
-      "android": 17
-    },
-    "fontSizeText": {
-      "iOS": 16,
-      "android": 16
-    },
     "sizeFormItemPaddingVertical": {
       "iOS": 12,
       "android": 12
@@ -470,31 +466,11 @@
       "iOS": 52,
       "android": 56
     },
-    "fontSizeTitle2": {
-      "iOS": 24,
-      "android": 24
-    },
-    "fontSizeTitle3": {
-      "iOS": 21.5,
-      "android": 21.5
-    },
-    "fontSizeLabel2": {
-      "iOS": 18,
-      "android": 18
-    },
-    "fontSizeParagraph": {
-      "iOS": 15,
-      "android": 15
-    },
-    "fontSizeFootnote": {
-      "iOS": 13.5,
-      "android": 13.5
-    },
-    "fontWeightMedium": {
-      "iOS": 520,
+    "fontWeightCommonMedium": {
+      "iOS": 540,
       "android": 520
     },
-    "fontWeightSemibold": {
+    "fontWeightCommonSemibold": {
       "iOS": 600,
       "android": 600
     },
@@ -522,7 +498,7 @@
       "iOS": 52,
       "android": 52
     },
-    "fontWeightBold": {
+    "fontWeightCommonBold": {
       "iOS": 700,
       "android": 680
     },
@@ -545,18 +521,6 @@
     "blurExtraLarge": {
       "iOS": 64,
       "android": 64
-    },
-    "fontSizeTitle1": {
-      "iOS": 31,
-      "android": 31
-    },
-    "fontSizeLabel1": {
-      "iOS": 19,
-      "android": 19
-    },
-    "fontSizeBody": {
-      "iOS": 16.5,
-      "android": 16.5
     },
     "radiusRadius2XS": {
       "iOS": 4,
@@ -602,13 +566,9 @@
       "iOS": 32,
       "android": 32
     },
-    "fontWeightSemiboldish": {
-      "iOS": 580,
-      "android": 580
-    },
     "fontOpticalSizeTitle1": {
-      "iOS": 31,
-      "android": 31
+      "iOS": 24,
+      "android": 24
     },
     "fontOpticalSizeTitle2": {
       "iOS": 28,
@@ -631,8 +591,8 @@
       "android": 24
     },
     "fontOpticalSizeBody": {
-      "iOS": 24,
-      "android": 24
+      "iOS": 23,
+      "android": 23
     },
     "fontOpticalSizeText": {
       "iOS": 24,
@@ -646,9 +606,25 @@
       "iOS": 23,
       "android": 23
     },
+    "fontLetterSpacingParagraph": {
+      "iOS": 0,
+      "android": -0.05
+    },
+    "fontOpticalSizeCaption": {
+      "iOS": 23,
+      "android": 23
+    },
+    "radiusRadius2XL": {
+      "iOS": 24,
+      "android": 24
+    },
+    "fontLineHeightParagraph": {
+      "iOS": 18.5,
+      "android": 17.799999
+    },
     "fontLetterSpacingTitle1": {
-      "iOS": -0.5,
-      "android": -0.5
+      "iOS": 0,
+      "android": 0
     },
     "fontLetterSpacingTitle2": {
       "iOS": 0,
@@ -666,7 +642,7 @@
       "iOS": 0,
       "android": -0.19
     },
-    "fontLetterSpacingHeadline1": {
+    "fontLetterSpacingHeadline": {
       "iOS": 0,
       "android": -0.16
     },
@@ -678,29 +654,29 @@
       "iOS": 0,
       "android": -0.15
     },
-    "fontLetterSpacingParagraph": {
-      "iOS": 0,
-      "android": -0.17
-    },
     "fontLetterSpacingFootnote": {
       "iOS": 0,
       "android": -0.16
     },
-    "fontSizeCaption": {
-      "iOS": 11.5,
-      "android": 11.5
-    },
-    "fontLetterSpacingCaption": {
+    "fontLetterSpacingCaption1": {
       "iOS": 0,
-      "android": -0.12
+      "android": -0.16
     },
-    "fontOpticalSizeCaption": {
-      "iOS": 22,
-      "android": 22
+    "fontLetterSpacingCaption2": {
+      "iOS": 0,
+      "android": -0.16
     },
-    "radiusRadius2XL": {
-      "iOS": 24,
-      "android": 24
+    "fontWeightTitle1": {
+      "iOS": 720,
+      "android": 660
+    },
+    "fontWeightText": {
+      "iOS": 620,
+      "android": 600
+    },
+    "fontWeightParagraph": {
+      "iOS": 550,
+      "android": 530
     }
   }
 }

@@ -20,7 +20,6 @@ const medium = 520;
 const semiboldish = 530;
 const semibold = 600;
 const bold = 670;
-const boldAccent = 700;
 
 // Расширение типа новыми переменными в лего
 type LegoFonts =
@@ -42,11 +41,13 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 	{
 		fontTitle1: {
 			regular: {
-				fontSize: 31,
-				lineHeight: 31,
+				fontSize: 31.5,
+				lineHeight: 31.5,
 				fontFamily: fontFamilyAccent,
-				fontWeight: boldAccent,
-				letterSpacing: '-0.5px',
+				fontWeight: 660,
+				fontVariationSettings: {
+					opticalSize: 31.5,
+				},
 			},
 		},
 		fontTitle2: {
@@ -65,7 +66,7 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 				lineHeight: 23,
 				fontWeight: bold,
 				fontVariationSettings: {
-					opticalSize: 23,
+					opticalSize: 28,
 				},
 			},
 		},
@@ -102,10 +103,10 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 		fontBody: {
 			regular: {
 				fontSize: 16.5,
-				lineHeight: 21,
+				lineHeight: 19.5,
 				fontWeight: medium,
 				fontVariationSettings: {
-					opticalSize: 22,
+					opticalSize: 24,
 				},
 			},
 		},
@@ -125,14 +126,14 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 				lineHeight: 18.5,
 				fontWeight: bold,
 				fontVariationSettings: {
-					opticalSize: 21.8,
+					opticalSize: 24,
 				},
 			},
 		},
 		fontParagraph: {
 			regular: {
 				fontSize: 15,
-				lineHeight: 18.2,
+				lineHeight: 17.8,
 				fontWeight: semiboldish,
 				fontVariationSettings: {
 					opticalSize: 17,
@@ -163,6 +164,16 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 			regular: {
 				fontSize: 11.5,
 				lineHeight: 12,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 11,
+				},
+			},
+		},
+		fontCaption2: {
+			regular: {
+				fontSize: 8,
+				lineHeight: 10,
 				fontWeight: semibold,
 				fontVariationSettings: {
 					opticalSize: 11,
