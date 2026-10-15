@@ -91092,19 +91092,21 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
         "name": "--vkui--font_title1--font_weight",
         "value": "var(--vkui--font_title1--font_weight)"
       },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing",
-        "value": "var(--vkui--font_title1--letter_spacing)"
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_title1--font_size--regular",
-        "value": "var(--vkui--font_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_title1--line_height--regular",
-        "value": "var(--vkui--font_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title1--font_family--regular",
@@ -91112,11 +91114,13 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight--regular",
-        "value": "var(--vkui--font_title1--font_weight--regular, 700)"
+        "value": "var(--vkui--font_title1--font_weight--regular, 660)"
       },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 31.5)"
+        }
       }
     }
   },
@@ -91215,7 +91219,7 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_title3--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 23)"
+          "value": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 28)"
         }
       }
     }
@@ -91420,7 +91424,7 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       },
       "lineHeight": {
         "name": "--vkui--font_paragraph--line_height--regular",
-        "value": "var(--vkui--font_paragraph--line_height--regular, 18.2px)"
+        "value": "var(--vkui--font_paragraph--line_height--regular, 17.8px)"
       },
       "fontFamily": {
         "name": "--vkui--font_paragraph--font_family--regular",
@@ -91695,16 +91699,22 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight",
         "value": "var(--vkui--font_caption2--font_weight)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_caption2--font_size--regular",
-        "value": "var(--vkui--font_caption2--font_size--regular, 11px)"
+        "value": "var(--vkui--font_caption2--font_size--regular, 8px)"
       },
       "lineHeight": {
         "name": "--vkui--font_caption2--line_height--regular",
-        "value": "var(--vkui--font_caption2--line_height--regular, 14px)"
+        "value": "var(--vkui--font_caption2--line_height--regular, 10px)"
       },
       "fontFamily": {
         "name": "--vkui--font_caption2--font_family--regular",
@@ -91712,7 +91722,13 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight--regular",
-        "value": "var(--vkui--font_caption2--font_weight--regular, 400)"
+        "value": "var(--vkui--font_caption2--font_weight--regular, 600)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 11)"
+        }
       }
     }
   },
@@ -92842,7 +92858,7 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       },
       "lineHeight": {
         "name": "--vkui--font_body--line_height--regular",
-        "value": "var(--vkui--font_body--line_height--regular, 21px)"
+        "value": "var(--vkui--font_body--line_height--regular, 19.5px)"
       },
       "fontWeight": {
         "name": "--vkui--font_body--font_weight--regular",
@@ -92851,7 +92867,7 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_body--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 22)"
+          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 24)"
         }
       }
     }
@@ -92893,7 +92909,7 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_text_bold--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 21.8)"
+          "value": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 24)"
         }
       }
     }
@@ -96106,11 +96122,13 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 660,
+      "fontVariationSettings": {
+        "opticalSize": 31.5
+      }
     }
   },
   "fontTitle2": {
@@ -96131,7 +96149,7 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 23
+        "opticalSize": 28
       }
     }
   },
@@ -96180,7 +96198,7 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
   "fontParagraph": {
     "regular": {
       "fontSize": "15px",
-      "lineHeight": "18.2px",
+      "lineHeight": "17.8px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 530,
       "fontVariationSettings": {
@@ -96242,10 +96260,13 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "11px",
-      "lineHeight": "14px",
+      "fontSize": "8px",
+      "lineHeight": "10px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 11
+      }
     }
   },
   "fontCaption2Caps": {
@@ -96553,10 +96574,10 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
   "fontBody": {
     "regular": {
       "fontSize": "16.5px",
-      "lineHeight": "21px",
+      "lineHeight": "19.5px",
       "fontWeight": 520,
       "fontVariationSettings": {
-        "opticalSize": 22
+        "opticalSize": 24
       }
     }
   },
@@ -96566,7 +96587,7 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
       "lineHeight": "18.5px",
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 21.8
+        "opticalSize": 24
       }
     }
   },
@@ -97730,11 +97751,13 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
+      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 660)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 31.5)"
+      }
     }
   },
   "fontTitle2": {
@@ -97755,7 +97778,7 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
       "fontFamily": "var(--vkui--font_title3--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
       "fontWeight": "var(--vkui--font_title3--font_weight--regular, 670)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 23)"
+        "opticalSize": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 28)"
       }
     }
   },
@@ -97804,7 +97827,7 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
   "fontParagraph": {
     "regular": {
       "fontSize": "var(--vkui--font_paragraph--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--font_paragraph--line_height--regular, 18.2px)",
+      "lineHeight": "var(--vkui--font_paragraph--line_height--regular, 17.8px)",
       "fontFamily": "var(--vkui--font_paragraph--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
       "fontWeight": "var(--vkui--font_paragraph--font_weight--regular, 530)",
       "fontVariationSettings": {
@@ -97866,10 +97889,13 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "var(--vkui--font_caption2--font_size--regular, 11px)",
-      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 14px)",
+      "fontSize": "var(--vkui--font_caption2--font_size--regular, 8px)",
+      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 10px)",
       "fontFamily": "var(--vkui--font_caption2--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 400)"
+      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 600)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 11)"
+      }
     }
   },
   "fontCaption2Caps": {
@@ -98177,10 +98203,10 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
   "fontBody": {
     "regular": {
       "fontSize": "var(--vkui--font_body--font_size--regular, 16.5px)",
-      "lineHeight": "var(--vkui--font_body--line_height--regular, 21px)",
+      "lineHeight": "var(--vkui--font_body--line_height--regular, 19.5px)",
       "fontWeight": "var(--vkui--font_body--font_weight--regular, 520)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 22)"
+        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 24)"
       }
     }
   },
@@ -98190,7 +98216,7 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
       "lineHeight": "var(--vkui--font_text_bold--line_height--regular, 18.5px)",
       "fontWeight": "var(--vkui--font_text_bold--font_weight--regular, 670)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 21.8)"
+        "opticalSize": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 24)"
       }
     }
   },
@@ -99354,11 +99380,13 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 660,
+      "fontVariationSettings": {
+        "opticalSize": 31.5
+      }
     }
   },
   "fontTitle2": {
@@ -99379,7 +99407,7 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 23
+        "opticalSize": 28
       }
     }
   },
@@ -99428,7 +99456,7 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
   "fontParagraph": {
     "regular": {
       "fontSize": 15,
-      "lineHeight": 18.2,
+      "lineHeight": 17.8,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 530,
       "fontVariationSettings": {
@@ -99490,10 +99518,13 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": 11,
-      "lineHeight": 14,
+      "fontSize": 8,
+      "lineHeight": 10,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 11
+      }
     }
   },
   "fontCaption2Caps": {
@@ -99801,10 +99832,10 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
   "fontBody": {
     "regular": {
       "fontSize": 16.5,
-      "lineHeight": 21,
+      "lineHeight": 19.5,
       "fontWeight": 520,
       "fontVariationSettings": {
-        "opticalSize": 22
+        "opticalSize": 24
       }
     }
   },
@@ -99814,7 +99845,7 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
       "lineHeight": 18.5,
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 21.8
+        "opticalSize": 24
       }
     }
   },
@@ -101186,19 +101217,21 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
         "name": "--vkui--font_title1--font_weight",
         "value": "var(--vkui--font_title1--font_weight)"
       },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing",
-        "value": "var(--vkui--font_title1--letter_spacing)"
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_title1--font_size--regular",
-        "value": "var(--vkui--font_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_title1--line_height--regular",
-        "value": "var(--vkui--font_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title1--font_family--regular",
@@ -101206,11 +101239,13 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       },
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight--regular",
-        "value": "var(--vkui--font_title1--font_weight--regular, 700)"
+        "value": "var(--vkui--font_title1--font_weight--regular, 660)"
       },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 31.5)"
+        }
       }
     }
   },
@@ -101309,7 +101344,7 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_title3--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 23)"
+          "value": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 28)"
         }
       }
     }
@@ -101514,7 +101549,7 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       },
       "lineHeight": {
         "name": "--vkui--font_paragraph--line_height--regular",
-        "value": "var(--vkui--font_paragraph--line_height--regular, 18.2px)"
+        "value": "var(--vkui--font_paragraph--line_height--regular, 17.8px)"
       },
       "fontFamily": {
         "name": "--vkui--font_paragraph--font_family--regular",
@@ -101789,16 +101824,22 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight",
         "value": "var(--vkui--font_caption2--font_weight)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_caption2--font_size--regular",
-        "value": "var(--vkui--font_caption2--font_size--regular, 11px)"
+        "value": "var(--vkui--font_caption2--font_size--regular, 8px)"
       },
       "lineHeight": {
         "name": "--vkui--font_caption2--line_height--regular",
-        "value": "var(--vkui--font_caption2--line_height--regular, 14px)"
+        "value": "var(--vkui--font_caption2--line_height--regular, 10px)"
       },
       "fontFamily": {
         "name": "--vkui--font_caption2--font_family--regular",
@@ -101806,7 +101847,13 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       },
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight--regular",
-        "value": "var(--vkui--font_caption2--font_weight--regular, 400)"
+        "value": "var(--vkui--font_caption2--font_weight--regular, 600)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 11)"
+        }
       }
     }
   },
@@ -102936,7 +102983,7 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       },
       "lineHeight": {
         "name": "--vkui--font_body--line_height--regular",
-        "value": "var(--vkui--font_body--line_height--regular, 21px)"
+        "value": "var(--vkui--font_body--line_height--regular, 19.5px)"
       },
       "fontWeight": {
         "name": "--vkui--font_body--font_weight--regular",
@@ -102945,7 +102992,7 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_body--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 22)"
+          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 24)"
         }
       }
     }
@@ -102987,7 +103034,7 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_text_bold--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 21.8)"
+          "value": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 24)"
         }
       }
     }
@@ -106200,11 +106247,13 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 660,
+      "fontVariationSettings": {
+        "opticalSize": 31.5
+      }
     }
   },
   "fontTitle2": {
@@ -106225,7 +106274,7 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 23
+        "opticalSize": 28
       }
     }
   },
@@ -106274,7 +106323,7 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
   "fontParagraph": {
     "regular": {
       "fontSize": "15px",
-      "lineHeight": "18.2px",
+      "lineHeight": "17.8px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 530,
       "fontVariationSettings": {
@@ -106336,10 +106385,13 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "11px",
-      "lineHeight": "14px",
+      "fontSize": "8px",
+      "lineHeight": "10px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 11
+      }
     }
   },
   "fontCaption2Caps": {
@@ -106647,10 +106699,10 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
   "fontBody": {
     "regular": {
       "fontSize": "16.5px",
-      "lineHeight": "21px",
+      "lineHeight": "19.5px",
       "fontWeight": 520,
       "fontVariationSettings": {
-        "opticalSize": 22
+        "opticalSize": 24
       }
     }
   },
@@ -106660,7 +106712,7 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
       "lineHeight": "18.5px",
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 21.8
+        "opticalSize": 24
       }
     }
   },
@@ -107824,11 +107876,13 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
+      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 660)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 31.5)"
+      }
     }
   },
   "fontTitle2": {
@@ -107849,7 +107903,7 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
       "fontFamily": "var(--vkui--font_title3--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
       "fontWeight": "var(--vkui--font_title3--font_weight--regular, 670)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 23)"
+        "opticalSize": "var(--vkui--font_title3--font_variation_settings--optical_size--regular, 28)"
       }
     }
   },
@@ -107898,7 +107952,7 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
   "fontParagraph": {
     "regular": {
       "fontSize": "var(--vkui--font_paragraph--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--font_paragraph--line_height--regular, 18.2px)",
+      "lineHeight": "var(--vkui--font_paragraph--line_height--regular, 17.8px)",
       "fontFamily": "var(--vkui--font_paragraph--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
       "fontWeight": "var(--vkui--font_paragraph--font_weight--regular, 530)",
       "fontVariationSettings": {
@@ -107960,10 +108014,13 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "var(--vkui--font_caption2--font_size--regular, 11px)",
-      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 14px)",
+      "fontSize": "var(--vkui--font_caption2--font_size--regular, 8px)",
+      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 10px)",
       "fontFamily": "var(--vkui--font_caption2--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 400)"
+      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 600)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 11)"
+      }
     }
   },
   "fontCaption2Caps": {
@@ -108271,10 +108328,10 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
   "fontBody": {
     "regular": {
       "fontSize": "var(--vkui--font_body--font_size--regular, 16.5px)",
-      "lineHeight": "var(--vkui--font_body--line_height--regular, 21px)",
+      "lineHeight": "var(--vkui--font_body--line_height--regular, 19.5px)",
       "fontWeight": "var(--vkui--font_body--font_weight--regular, 520)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 22)"
+        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 24)"
       }
     }
   },
@@ -108284,7 +108341,7 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
       "lineHeight": "var(--vkui--font_text_bold--line_height--regular, 18.5px)",
       "fontWeight": "var(--vkui--font_text_bold--font_weight--regular, 670)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 21.8)"
+        "opticalSize": "var(--vkui--font_text_bold--font_variation_settings--optical_size--regular, 24)"
       }
     }
   },
@@ -109448,11 +109505,13 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 660,
+      "fontVariationSettings": {
+        "opticalSize": 31.5
+      }
     }
   },
   "fontTitle2": {
@@ -109473,7 +109532,7 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 23
+        "opticalSize": 28
       }
     }
   },
@@ -109522,7 +109581,7 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
   "fontParagraph": {
     "regular": {
       "fontSize": 15,
-      "lineHeight": 18.2,
+      "lineHeight": 17.8,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
       "fontWeight": 530,
       "fontVariationSettings": {
@@ -109584,10 +109643,13 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": 11,
-      "lineHeight": 14,
+      "fontSize": 8,
+      "lineHeight": 10,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 11
+      }
     }
   },
   "fontCaption2Caps": {
@@ -109895,10 +109957,10 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
   "fontBody": {
     "regular": {
       "fontSize": 16.5,
-      "lineHeight": 21,
+      "lineHeight": 19.5,
       "fontWeight": 520,
       "fontVariationSettings": {
-        "opticalSize": 22
+        "opticalSize": 24
       }
     }
   },
@@ -109908,7 +109970,7 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
       "lineHeight": 18.5,
       "fontWeight": 670,
       "fontVariationSettings": {
-        "opticalSize": 21.8
+        "opticalSize": 24
       }
     }
   },
@@ -111129,16 +111191,22 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       "letterSpacing": {
         "name": "--vkui--font_display_title1--letter_spacing",
         "value": "var(--vkui--font_display_title1--letter_spacing)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_display_title1--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_display_title1--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_display_title1--font_size--regular",
-        "value": "var(--vkui--font_display_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_display_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_display_title1--line_height--regular",
-        "value": "var(--vkui--font_display_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_display_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_display_title1--font_family--regular",
@@ -111146,11 +111214,17 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_display_title1--font_weight--regular",
-        "value": "var(--vkui--font_display_title1--font_weight--regular, 700)"
+        "value": "var(--vkui--font_display_title1--font_weight--regular, 720)"
       },
       "letterSpacing": {
         "name": "--vkui--font_display_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_display_title1--letter_spacing--regular, -0.65px)"
+        "value": "var(--vkui--font_display_title1--letter_spacing--regular, -0.3px)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_display_title1--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_display_title1--font_variation_settings--optical_size--regular, 28)"
+        }
       }
     }
   },
@@ -111307,16 +111381,22 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       "letterSpacing": {
         "name": "--vkui--font_title1--letter_spacing",
         "value": "var(--vkui--font_title1--letter_spacing)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_title1--font_size--regular",
-        "value": "var(--vkui--font_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_title1--line_height--regular",
-        "value": "var(--vkui--font_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title1--font_family--regular",
@@ -111324,11 +111404,17 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight--regular",
-        "value": "var(--vkui--font_title1--font_weight--regular, 700)"
+        "value": "var(--vkui--font_title1--font_weight--regular, 720)"
       },
       "letterSpacing": {
         "name": "--vkui--font_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.65px)"
+        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.3px)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 28)"
+        }
       }
     }
   },
@@ -111588,7 +111674,7 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_text--font_weight--regular",
-        "value": "var(--vkui--font_text--font_weight--regular, 600)"
+        "value": "var(--vkui--font_text--font_weight--regular, 620)"
       },
       "fontVariationSettings": {
         "opticalSize": {
@@ -111626,10 +111712,6 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
         "name": "--vkui--font_paragraph--font_weight",
         "value": "var(--vkui--font_paragraph--font_weight)"
       },
-      "letterSpacing": {
-        "name": "--vkui--font_paragraph--letter_spacing",
-        "value": "var(--vkui--font_paragraph--letter_spacing)"
-      },
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_paragraph--font_variation_settings--optical_size",
@@ -111652,11 +111734,7 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_paragraph--font_weight--regular",
-        "value": "var(--vkui--font_paragraph--font_weight--regular, 530)"
-      },
-      "letterSpacing": {
-        "name": "--vkui--font_paragraph--letter_spacing--regular",
-        "value": "var(--vkui--font_paragraph--letter_spacing--regular, -0.05px)"
+        "value": "var(--vkui--font_paragraph--font_weight--regular, 550)"
       },
       "fontVariationSettings": {
         "opticalSize": {
@@ -111923,16 +112001,22 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight",
         "value": "var(--vkui--font_caption2--font_weight)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_caption2--font_size--regular",
-        "value": "var(--vkui--font_caption2--font_size--regular, 11px)"
+        "value": "var(--vkui--font_caption2--font_size--regular, 8px)"
       },
       "lineHeight": {
         "name": "--vkui--font_caption2--line_height--regular",
-        "value": "var(--vkui--font_caption2--line_height--regular, 14px)"
+        "value": "var(--vkui--font_caption2--line_height--regular, 10px)"
       },
       "fontFamily": {
         "name": "--vkui--font_caption2--font_family--regular",
@@ -111940,7 +112024,13 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight--regular",
-        "value": "var(--vkui--font_caption2--font_weight--regular, 400)"
+        "value": "var(--vkui--font_caption2--font_weight--regular, 600)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 22.8)"
+        }
       }
     }
   },
@@ -113014,16 +113104,16 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
       },
       "lineHeight": {
         "name": "--vkui--font_body--line_height--regular",
-        "value": "var(--vkui--font_body--line_height--regular, 21px)"
+        "value": "var(--vkui--font_body--line_height--regular, 19.5px)"
       },
       "fontWeight": {
         "name": "--vkui--font_body--font_weight--regular",
-        "value": "var(--vkui--font_body--font_weight--regular, 520)"
+        "value": "var(--vkui--font_body--font_weight--regular, 540)"
       },
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_body--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21.5)"
+          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21)"
         }
       }
     }
@@ -115000,11 +115090,14 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
   "fontWeightBase3": 400,
   "fontDisplayTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontDisplayTitle2": {
@@ -115039,11 +115132,14 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontTitle2": {
@@ -115101,7 +115197,7 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
       "fontSize": "16px",
       "lineHeight": "18.5px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 600,
+      "fontWeight": 620,
       "fontVariationSettings": {
         "opticalSize": 22
       }
@@ -115116,8 +115212,7 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
       "fontSize": "15px",
       "lineHeight": "18.5px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 530,
-      "letterSpacing": "-0.05px",
+      "fontWeight": 550,
       "fontVariationSettings": {
         "opticalSize": 21.5
       }
@@ -115177,10 +115272,13 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "11px",
-      "lineHeight": "14px",
+      "fontSize": "8px",
+      "lineHeight": "10px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 22.8
+      }
     }
   },
   "fontCaption2Caps": {
@@ -115474,10 +115572,10 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
   "fontBody": {
     "regular": {
       "fontSize": "16.5px",
-      "lineHeight": "21px",
-      "fontWeight": 520,
+      "lineHeight": "19.5px",
+      "fontWeight": 540,
       "fontVariationSettings": {
-        "opticalSize": 21.5
+        "opticalSize": 21
       }
     }
   },
@@ -116183,11 +116281,14 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
   "fontWeightBase3": "var(--vkui--font_weight_base3, 400)",
   "fontDisplayTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_display_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_display_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_display_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_display_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_display_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_display_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_display_title1--letter_spacing--regular, -0.65px)"
+      "fontWeight": "var(--vkui--font_display_title1--font_weight--regular, 720)",
+      "letterSpacing": "var(--vkui--font_display_title1--letter_spacing--regular, -0.3px)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_display_title1--font_variation_settings--optical_size--regular, 28)"
+      }
     }
   },
   "fontDisplayTitle2": {
@@ -116222,11 +116323,14 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.65px)"
+      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 720)",
+      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.3px)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 28)"
+      }
     }
   },
   "fontTitle2": {
@@ -116284,7 +116388,7 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
       "fontSize": "var(--vkui--font_text--font_size--regular, 16px)",
       "lineHeight": "var(--vkui--font_text--line_height--regular, 18.5px)",
       "fontFamily": "var(--vkui--font_text--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_text--font_weight--regular, 600)",
+      "fontWeight": "var(--vkui--font_text--font_weight--regular, 620)",
       "fontVariationSettings": {
         "opticalSize": "var(--vkui--font_text--font_variation_settings--optical_size--regular, 22)"
       }
@@ -116299,8 +116403,7 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
       "fontSize": "var(--vkui--font_paragraph--font_size--regular, 15px)",
       "lineHeight": "var(--vkui--font_paragraph--line_height--regular, 18.5px)",
       "fontFamily": "var(--vkui--font_paragraph--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_paragraph--font_weight--regular, 530)",
-      "letterSpacing": "var(--vkui--font_paragraph--letter_spacing--regular, -0.05px)",
+      "fontWeight": "var(--vkui--font_paragraph--font_weight--regular, 550)",
       "fontVariationSettings": {
         "opticalSize": "var(--vkui--font_paragraph--font_variation_settings--optical_size--regular, 21.5)"
       }
@@ -116360,10 +116463,13 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "var(--vkui--font_caption2--font_size--regular, 11px)",
-      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 14px)",
+      "fontSize": "var(--vkui--font_caption2--font_size--regular, 8px)",
+      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 10px)",
       "fontFamily": "var(--vkui--font_caption2--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 400)"
+      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 600)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 22.8)"
+      }
     }
   },
   "fontCaption2Caps": {
@@ -116657,10 +116763,10 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
   "fontBody": {
     "regular": {
       "fontSize": "var(--vkui--font_body--font_size--regular, 16.5px)",
-      "lineHeight": "var(--vkui--font_body--line_height--regular, 21px)",
-      "fontWeight": "var(--vkui--font_body--font_weight--regular, 520)",
+      "lineHeight": "var(--vkui--font_body--line_height--regular, 19.5px)",
+      "fontWeight": "var(--vkui--font_body--font_weight--regular, 540)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21.5)"
+        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21)"
       }
     }
   },
@@ -117366,11 +117472,14 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
   "fontWeightBase3": 400,
   "fontDisplayTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontDisplayTitle2": {
@@ -117405,11 +117514,14 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontTitle2": {
@@ -117467,7 +117579,7 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
       "fontSize": 16,
       "lineHeight": 18.5,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 600,
+      "fontWeight": 620,
       "fontVariationSettings": {
         "opticalSize": 22
       }
@@ -117482,8 +117594,7 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
       "fontSize": 15,
       "lineHeight": 18.5,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 530,
-      "letterSpacing": "-0.05px",
+      "fontWeight": 550,
       "fontVariationSettings": {
         "opticalSize": 21.5
       }
@@ -117543,10 +117654,13 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": 11,
-      "lineHeight": 14,
+      "fontSize": 8,
+      "lineHeight": 10,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 22.8
+      }
     }
   },
   "fontCaption2Caps": {
@@ -117840,10 +117954,10 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
   "fontBody": {
     "regular": {
       "fontSize": 16.5,
-      "lineHeight": 21,
-      "fontWeight": 520,
+      "lineHeight": 19.5,
+      "fontWeight": 540,
       "fontVariationSettings": {
-        "opticalSize": 21.5
+        "opticalSize": 21
       }
     }
   },
@@ -118640,16 +118754,22 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       "letterSpacing": {
         "name": "--vkui--font_display_title1--letter_spacing",
         "value": "var(--vkui--font_display_title1--letter_spacing)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_display_title1--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_display_title1--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_display_title1--font_size--regular",
-        "value": "var(--vkui--font_display_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_display_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_display_title1--line_height--regular",
-        "value": "var(--vkui--font_display_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_display_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_display_title1--font_family--regular",
@@ -118657,11 +118777,17 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_display_title1--font_weight--regular",
-        "value": "var(--vkui--font_display_title1--font_weight--regular, 700)"
+        "value": "var(--vkui--font_display_title1--font_weight--regular, 720)"
       },
       "letterSpacing": {
         "name": "--vkui--font_display_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_display_title1--letter_spacing--regular, -0.65px)"
+        "value": "var(--vkui--font_display_title1--letter_spacing--regular, -0.3px)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_display_title1--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_display_title1--font_variation_settings--optical_size--regular, 28)"
+        }
       }
     }
   },
@@ -118818,16 +118944,22 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       "letterSpacing": {
         "name": "--vkui--font_title1--letter_spacing",
         "value": "var(--vkui--font_title1--letter_spacing)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_title1--font_size--regular",
-        "value": "var(--vkui--font_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_title1--line_height--regular",
-        "value": "var(--vkui--font_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title1--font_family--regular",
@@ -118835,11 +118967,17 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight--regular",
-        "value": "var(--vkui--font_title1--font_weight--regular, 700)"
+        "value": "var(--vkui--font_title1--font_weight--regular, 720)"
       },
       "letterSpacing": {
         "name": "--vkui--font_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.65px)"
+        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.3px)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_title1--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 28)"
+        }
       }
     }
   },
@@ -119099,7 +119237,7 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_text--font_weight--regular",
-        "value": "var(--vkui--font_text--font_weight--regular, 600)"
+        "value": "var(--vkui--font_text--font_weight--regular, 620)"
       },
       "fontVariationSettings": {
         "opticalSize": {
@@ -119137,10 +119275,6 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
         "name": "--vkui--font_paragraph--font_weight",
         "value": "var(--vkui--font_paragraph--font_weight)"
       },
-      "letterSpacing": {
-        "name": "--vkui--font_paragraph--letter_spacing",
-        "value": "var(--vkui--font_paragraph--letter_spacing)"
-      },
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_paragraph--font_variation_settings--optical_size",
@@ -119163,11 +119297,7 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_paragraph--font_weight--regular",
-        "value": "var(--vkui--font_paragraph--font_weight--regular, 530)"
-      },
-      "letterSpacing": {
-        "name": "--vkui--font_paragraph--letter_spacing--regular",
-        "value": "var(--vkui--font_paragraph--letter_spacing--regular, -0.05px)"
+        "value": "var(--vkui--font_paragraph--font_weight--regular, 550)"
       },
       "fontVariationSettings": {
         "opticalSize": {
@@ -119434,16 +119564,22 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight",
         "value": "var(--vkui--font_caption2--font_weight)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size)"
+        }
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_caption2--font_size--regular",
-        "value": "var(--vkui--font_caption2--font_size--regular, 11px)"
+        "value": "var(--vkui--font_caption2--font_size--regular, 8px)"
       },
       "lineHeight": {
         "name": "--vkui--font_caption2--line_height--regular",
-        "value": "var(--vkui--font_caption2--line_height--regular, 14px)"
+        "value": "var(--vkui--font_caption2--line_height--regular, 10px)"
       },
       "fontFamily": {
         "name": "--vkui--font_caption2--font_family--regular",
@@ -119451,7 +119587,13 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       },
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight--regular",
-        "value": "var(--vkui--font_caption2--font_weight--regular, 400)"
+        "value": "var(--vkui--font_caption2--font_weight--regular, 600)"
+      },
+      "fontVariationSettings": {
+        "opticalSize": {
+          "name": "--vkui--font_caption2--font_variation_settings--optical_size--regular",
+          "value": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 22.8)"
+        }
       }
     }
   },
@@ -120525,16 +120667,16 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
       },
       "lineHeight": {
         "name": "--vkui--font_body--line_height--regular",
-        "value": "var(--vkui--font_body--line_height--regular, 21px)"
+        "value": "var(--vkui--font_body--line_height--regular, 19.5px)"
       },
       "fontWeight": {
         "name": "--vkui--font_body--font_weight--regular",
-        "value": "var(--vkui--font_body--font_weight--regular, 520)"
+        "value": "var(--vkui--font_body--font_weight--regular, 540)"
       },
       "fontVariationSettings": {
         "opticalSize": {
           "name": "--vkui--font_body--font_variation_settings--optical_size--regular",
-          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21.5)"
+          "value": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21)"
         }
       }
     }
@@ -122511,11 +122653,14 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
   "fontWeightBase3": 400,
   "fontDisplayTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontDisplayTitle2": {
@@ -122550,11 +122695,14 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontTitle2": {
@@ -122612,7 +122760,7 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
       "fontSize": "16px",
       "lineHeight": "18.5px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 600,
+      "fontWeight": 620,
       "fontVariationSettings": {
         "opticalSize": 22
       }
@@ -122627,8 +122775,7 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
       "fontSize": "15px",
       "lineHeight": "18.5px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 530,
-      "letterSpacing": "-0.05px",
+      "fontWeight": 550,
       "fontVariationSettings": {
         "opticalSize": 21.5
       }
@@ -122688,10 +122835,13 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "11px",
-      "lineHeight": "14px",
+      "fontSize": "8px",
+      "lineHeight": "10px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 22.8
+      }
     }
   },
   "fontCaption2Caps": {
@@ -122985,10 +123135,10 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
   "fontBody": {
     "regular": {
       "fontSize": "16.5px",
-      "lineHeight": "21px",
-      "fontWeight": 520,
+      "lineHeight": "19.5px",
+      "fontWeight": 540,
       "fontVariationSettings": {
-        "opticalSize": 21.5
+        "opticalSize": 21
       }
     }
   },
@@ -123694,11 +123844,14 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
   "fontWeightBase3": "var(--vkui--font_weight_base3, 400)",
   "fontDisplayTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_display_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_display_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_display_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_display_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_display_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_display_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_display_title1--letter_spacing--regular, -0.65px)"
+      "fontWeight": "var(--vkui--font_display_title1--font_weight--regular, 720)",
+      "letterSpacing": "var(--vkui--font_display_title1--letter_spacing--regular, -0.3px)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_display_title1--font_variation_settings--optical_size--regular, 28)"
+      }
     }
   },
   "fontDisplayTitle2": {
@@ -123733,11 +123886,14 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.65px)"
+      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 720)",
+      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.3px)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_title1--font_variation_settings--optical_size--regular, 28)"
+      }
     }
   },
   "fontTitle2": {
@@ -123795,7 +123951,7 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
       "fontSize": "var(--vkui--font_text--font_size--regular, 16px)",
       "lineHeight": "var(--vkui--font_text--line_height--regular, 18.5px)",
       "fontFamily": "var(--vkui--font_text--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_text--font_weight--regular, 600)",
+      "fontWeight": "var(--vkui--font_text--font_weight--regular, 620)",
       "fontVariationSettings": {
         "opticalSize": "var(--vkui--font_text--font_variation_settings--optical_size--regular, 22)"
       }
@@ -123810,8 +123966,7 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
       "fontSize": "var(--vkui--font_paragraph--font_size--regular, 15px)",
       "lineHeight": "var(--vkui--font_paragraph--line_height--regular, 18.5px)",
       "fontFamily": "var(--vkui--font_paragraph--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_paragraph--font_weight--regular, 530)",
-      "letterSpacing": "var(--vkui--font_paragraph--letter_spacing--regular, -0.05px)",
+      "fontWeight": "var(--vkui--font_paragraph--font_weight--regular, 550)",
       "fontVariationSettings": {
         "opticalSize": "var(--vkui--font_paragraph--font_variation_settings--optical_size--regular, 21.5)"
       }
@@ -123871,10 +124026,13 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "var(--vkui--font_caption2--font_size--regular, 11px)",
-      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 14px)",
+      "fontSize": "var(--vkui--font_caption2--font_size--regular, 8px)",
+      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 10px)",
       "fontFamily": "var(--vkui--font_caption2--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 400)"
+      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 600)",
+      "fontVariationSettings": {
+        "opticalSize": "var(--vkui--font_caption2--font_variation_settings--optical_size--regular, 22.8)"
+      }
     }
   },
   "fontCaption2Caps": {
@@ -124168,10 +124326,10 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
   "fontBody": {
     "regular": {
       "fontSize": "var(--vkui--font_body--font_size--regular, 16.5px)",
-      "lineHeight": "var(--vkui--font_body--line_height--regular, 21px)",
-      "fontWeight": "var(--vkui--font_body--font_weight--regular, 520)",
+      "lineHeight": "var(--vkui--font_body--line_height--regular, 19.5px)",
+      "fontWeight": "var(--vkui--font_body--font_weight--regular, 540)",
       "fontVariationSettings": {
-        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21.5)"
+        "opticalSize": "var(--vkui--font_body--font_variation_settings--optical_size--regular, 21)"
       }
     }
   },
@@ -124877,11 +125035,14 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
   "fontWeightBase3": 400,
   "fontDisplayTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontDisplayTitle2": {
@@ -124916,11 +125077,14 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.65px"
+      "fontWeight": 720,
+      "letterSpacing": "-0.3px",
+      "fontVariationSettings": {
+        "opticalSize": 28
+      }
     }
   },
   "fontTitle2": {
@@ -124978,7 +125142,7 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
       "fontSize": 16,
       "lineHeight": 18.5,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 600,
+      "fontWeight": 620,
       "fontVariationSettings": {
         "opticalSize": 22
       }
@@ -124993,8 +125157,7 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
       "fontSize": 15,
       "lineHeight": 18.5,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 530,
-      "letterSpacing": "-0.05px",
+      "fontWeight": 550,
       "fontVariationSettings": {
         "opticalSize": 21.5
       }
@@ -125054,10 +125217,13 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": 11,
-      "lineHeight": 14,
+      "fontSize": 8,
+      "lineHeight": 10,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "fontVariationSettings": {
+        "opticalSize": 22.8
+      }
     }
   },
   "fontCaption2Caps": {
@@ -125351,10 +125517,10 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
   "fontBody": {
     "regular": {
       "fontSize": 16.5,
-      "lineHeight": 21,
-      "fontWeight": 520,
+      "lineHeight": 19.5,
+      "fontWeight": 540,
       "fontVariationSettings": {
-        "opticalSize": 21.5
+        "opticalSize": 21
       }
     }
   },
@@ -126301,20 +126467,16 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight",
         "value": "var(--vkui--font_title1--font_weight)"
-      },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing",
-        "value": "var(--vkui--font_title1--letter_spacing)"
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_title1--font_size--regular",
-        "value": "var(--vkui--font_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_title1--line_height--regular",
-        "value": "var(--vkui--font_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title1--font_family--regular",
@@ -126323,10 +126485,6 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight--regular",
         "value": "var(--vkui--font_title1--font_weight--regular, 700)"
-      },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
       }
     }
   },
@@ -126877,16 +127035,20 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight",
         "value": "var(--vkui--font_caption2--font_weight)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--font_caption2--letter_spacing",
+        "value": "var(--vkui--font_caption2--letter_spacing)"
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_caption2--font_size--regular",
-        "value": "var(--vkui--font_caption2--font_size--regular, 11px)"
+        "value": "var(--vkui--font_caption2--font_size--regular, 8px)"
       },
       "lineHeight": {
         "name": "--vkui--font_caption2--line_height--regular",
-        "value": "var(--vkui--font_caption2--line_height--regular, 14px)"
+        "value": "var(--vkui--font_caption2--line_height--regular, 10px)"
       },
       "fontFamily": {
         "name": "--vkui--font_caption2--font_family--regular",
@@ -126894,7 +127056,11 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
       },
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight--regular",
-        "value": "var(--vkui--font_caption2--font_weight--regular, 400)"
+        "value": "var(--vkui--font_caption2--font_weight--regular, 600)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--font_caption2--letter_spacing--regular",
+        "value": "var(--vkui--font_caption2--letter_spacing--regular, -0.16px)"
       }
     }
   },
@@ -128014,7 +128180,7 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
       },
       "lineHeight": {
         "name": "--vkui--font_body--line_height--regular",
-        "value": "var(--vkui--font_body--line_height--regular, 21px)"
+        "value": "var(--vkui--font_body--line_height--regular, 17.8px)"
       },
       "fontWeight": {
         "name": "--vkui--font_body--font_weight--regular",
@@ -131264,11 +131430,10 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 700
     }
   },
   "fontTitle2": {
@@ -131386,10 +131551,11 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "11px",
-      "lineHeight": "14px",
+      "fontSize": "8px",
+      "lineHeight": "10px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "letterSpacing": "-0.16px"
     }
   },
   "fontCaption2Caps": {
@@ -131693,7 +131859,7 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
   "fontBody": {
     "regular": {
       "fontSize": "16.5px",
-      "lineHeight": "21px",
+      "lineHeight": "17.8px",
       "fontWeight": 500,
       "letterSpacing": "-0.21px"
     }
@@ -132862,11 +133028,10 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
+      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)"
     }
   },
   "fontTitle2": {
@@ -132984,10 +133149,11 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "var(--vkui--font_caption2--font_size--regular, 11px)",
-      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 14px)",
+      "fontSize": "var(--vkui--font_caption2--font_size--regular, 8px)",
+      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 10px)",
       "fontFamily": "var(--vkui--font_caption2--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 400)"
+      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 600)",
+      "letterSpacing": "var(--vkui--font_caption2--letter_spacing--regular, -0.16px)"
     }
   },
   "fontCaption2Caps": {
@@ -133291,7 +133457,7 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
   "fontBody": {
     "regular": {
       "fontSize": "var(--vkui--font_body--font_size--regular, 16.5px)",
-      "lineHeight": "var(--vkui--font_body--line_height--regular, 21px)",
+      "lineHeight": "var(--vkui--font_body--line_height--regular, 17.8px)",
       "fontWeight": "var(--vkui--font_body--font_weight--regular, 500)",
       "letterSpacing": "var(--vkui--font_body--letter_spacing--regular, -0.21px)"
     }
@@ -134460,11 +134626,10 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 700
     }
   },
   "fontTitle2": {
@@ -134582,10 +134747,11 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": 11,
-      "lineHeight": 14,
+      "fontSize": 8,
+      "lineHeight": 10,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "letterSpacing": "-0.16px"
     }
   },
   "fontCaption2Caps": {
@@ -134889,7 +135055,7 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
   "fontBody": {
     "regular": {
       "fontSize": 16.5,
-      "lineHeight": 21,
+      "lineHeight": 17.8,
       "fontWeight": 500,
       "letterSpacing": "-0.21px"
     }
@@ -136265,20 +136431,16 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight",
         "value": "var(--vkui--font_title1--font_weight)"
-      },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing",
-        "value": "var(--vkui--font_title1--letter_spacing)"
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_title1--font_size--regular",
-        "value": "var(--vkui--font_title1--font_size--regular, 31px)"
+        "value": "var(--vkui--font_title1--font_size--regular, 31.5px)"
       },
       "lineHeight": {
         "name": "--vkui--font_title1--line_height--regular",
-        "value": "var(--vkui--font_title1--line_height--regular, 31px)"
+        "value": "var(--vkui--font_title1--line_height--regular, 31.5px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title1--font_family--regular",
@@ -136287,10 +136449,6 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
       "fontWeight": {
         "name": "--vkui--font_title1--font_weight--regular",
         "value": "var(--vkui--font_title1--font_weight--regular, 700)"
-      },
-      "letterSpacing": {
-        "name": "--vkui--font_title1--letter_spacing--regular",
-        "value": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
       }
     }
   },
@@ -136841,16 +136999,20 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight",
         "value": "var(--vkui--font_caption2--font_weight)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--font_caption2--letter_spacing",
+        "value": "var(--vkui--font_caption2--letter_spacing)"
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_caption2--font_size--regular",
-        "value": "var(--vkui--font_caption2--font_size--regular, 11px)"
+        "value": "var(--vkui--font_caption2--font_size--regular, 8px)"
       },
       "lineHeight": {
         "name": "--vkui--font_caption2--line_height--regular",
-        "value": "var(--vkui--font_caption2--line_height--regular, 14px)"
+        "value": "var(--vkui--font_caption2--line_height--regular, 10px)"
       },
       "fontFamily": {
         "name": "--vkui--font_caption2--font_family--regular",
@@ -136858,7 +137020,11 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
       },
       "fontWeight": {
         "name": "--vkui--font_caption2--font_weight--regular",
-        "value": "var(--vkui--font_caption2--font_weight--regular, 400)"
+        "value": "var(--vkui--font_caption2--font_weight--regular, 600)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--font_caption2--letter_spacing--regular",
+        "value": "var(--vkui--font_caption2--letter_spacing--regular, -0.16px)"
       }
     }
   },
@@ -137978,7 +138144,7 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
       },
       "lineHeight": {
         "name": "--vkui--font_body--line_height--regular",
-        "value": "var(--vkui--font_body--line_height--regular, 21px)"
+        "value": "var(--vkui--font_body--line_height--regular, 17.8px)"
       },
       "fontWeight": {
         "name": "--vkui--font_body--font_weight--regular",
@@ -141228,11 +141394,10 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "31px",
-      "lineHeight": "31px",
+      "fontSize": "31.5px",
+      "lineHeight": "31.5px",
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 700
     }
   },
   "fontTitle2": {
@@ -141350,10 +141515,11 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "11px",
-      "lineHeight": "14px",
+      "fontSize": "8px",
+      "lineHeight": "10px",
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "letterSpacing": "-0.16px"
     }
   },
   "fontCaption2Caps": {
@@ -141657,7 +141823,7 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
   "fontBody": {
     "regular": {
       "fontSize": "16.5px",
-      "lineHeight": "21px",
+      "lineHeight": "17.8px",
       "fontWeight": 500,
       "letterSpacing": "-0.21px"
     }
@@ -142826,11 +142992,10 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": "var(--vkui--font_title1--font_size--regular, 31px)",
-      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31px)",
+      "fontSize": "var(--vkui--font_title1--font_size--regular, 31.5px)",
+      "lineHeight": "var(--vkui--font_title1--line_height--regular, 31.5px)",
       "fontFamily": "var(--vkui--font_title1--font_family--regular, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)",
-      "letterSpacing": "var(--vkui--font_title1--letter_spacing--regular, -0.5px)"
+      "fontWeight": "var(--vkui--font_title1--font_weight--regular, 700)"
     }
   },
   "fontTitle2": {
@@ -142948,10 +143113,11 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": "var(--vkui--font_caption2--font_size--regular, 11px)",
-      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 14px)",
+      "fontSize": "var(--vkui--font_caption2--font_size--regular, 8px)",
+      "lineHeight": "var(--vkui--font_caption2--line_height--regular, 10px)",
       "fontFamily": "var(--vkui--font_caption2--font_family--regular, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
-      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 400)"
+      "fontWeight": "var(--vkui--font_caption2--font_weight--regular, 600)",
+      "letterSpacing": "var(--vkui--font_caption2--letter_spacing--regular, -0.16px)"
     }
   },
   "fontCaption2Caps": {
@@ -143255,7 +143421,7 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
   "fontBody": {
     "regular": {
       "fontSize": "var(--vkui--font_body--font_size--regular, 16.5px)",
-      "lineHeight": "var(--vkui--font_body--line_height--regular, 21px)",
+      "lineHeight": "var(--vkui--font_body--line_height--regular, 17.8px)",
       "fontWeight": "var(--vkui--font_body--font_weight--regular, 500)",
       "letterSpacing": "var(--vkui--font_body--letter_spacing--regular, -0.21px)"
     }
@@ -144424,11 +144590,10 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
   },
   "fontTitle1": {
     "regular": {
-      "fontSize": 31,
-      "lineHeight": 31,
+      "fontSize": 31.5,
+      "lineHeight": 31.5,
       "fontFamily": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 700,
-      "letterSpacing": "-0.5px"
+      "fontWeight": 700
     }
   },
   "fontTitle2": {
@@ -144546,10 +144711,11 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
   },
   "fontCaption2": {
     "regular": {
-      "fontSize": 11,
-      "lineHeight": 14,
+      "fontSize": 8,
+      "lineHeight": 10,
       "fontFamily": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
-      "fontWeight": 400
+      "fontWeight": 600,
+      "letterSpacing": "-0.16px"
     }
   },
   "fontCaption2Caps": {
@@ -144853,7 +145019,7 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
   "fontBody": {
     "regular": {
       "fontSize": 16.5,
-      "lineHeight": 21,
+      "lineHeight": 17.8,
       "fontWeight": 500,
       "letterSpacing": "-0.21px"
     }
