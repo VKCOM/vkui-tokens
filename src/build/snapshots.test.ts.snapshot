@@ -104378,15 +104378,15 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   "colorAccentRed": {
     "normal": {
       "name": "--vkui--color_accent_red",
-      "value": "var(--vkui--color_accent_red, #ff5773)"
+      "value": "var(--vkui--color_accent_red, #ff3347)"
     },
     "hover": {
       "name": "--vkui--color_accent_red--hover",
-      "value": "var(--vkui--color_accent_red--hover, #FF5E79)"
+      "value": "var(--vkui--color_accent_red--hover, #FF3B4E)"
     },
     "active": {
       "name": "--vkui--color_accent_red--active",
-      "value": "var(--vkui--color_accent_red--active, #FF647E)"
+      "value": "var(--vkui--color_accent_red--active, #FF4356)"
     }
   },
   "colorAccentOrangeFire": {
@@ -107166,9 +107166,9 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
     "active": "#AAB4BE"
   },
   "colorAccentRed": {
-    "normal": "#ff5773",
-    "hover": "#FF5E79",
-    "active": "#FF647E"
+    "normal": "#ff3347",
+    "hover": "#FF3B4E",
+    "active": "#FF4356"
   },
   "colorAccentOrangeFire": {
     "normal": "#f05c44",
@@ -108795,9 +108795,9 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
     "active": "var(--vkui--color_accent_gray--active, #AAB4BE)"
   },
   "colorAccentRed": {
-    "normal": "var(--vkui--color_accent_red, #ff5773)",
-    "hover": "var(--vkui--color_accent_red--hover, #FF5E79)",
-    "active": "var(--vkui--color_accent_red--active, #FF647E)"
+    "normal": "var(--vkui--color_accent_red, #ff3347)",
+    "hover": "var(--vkui--color_accent_red--hover, #FF3B4E)",
+    "active": "var(--vkui--color_accent_red--active, #FF4356)"
   },
   "colorAccentOrangeFire": {
     "normal": "var(--vkui--color_accent_orange_fire, #f05c44)",
@@ -110424,9 +110424,9 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
     "active": "#AAB4BE"
   },
   "colorAccentRed": {
-    "normal": "#ff5773",
-    "hover": "#FF5E79",
-    "active": "#FF647E"
+    "normal": "#ff3347",
+    "hover": "#FF3B4E",
+    "active": "#FF4356"
   },
   "colorAccentOrangeFire": {
     "normal": "#f05c44",
@@ -121966,15 +121966,15 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
   "colorAccentRed": {
     "normal": {
       "name": "--vkui--color_accent_red",
-      "value": "var(--vkui--color_accent_red, #ff5773)"
+      "value": "var(--vkui--color_accent_red, #ff3347)"
     },
     "hover": {
       "name": "--vkui--color_accent_red--hover",
-      "value": "var(--vkui--color_accent_red--hover, #FF5E79)"
+      "value": "var(--vkui--color_accent_red--hover, #FF3B4E)"
     },
     "active": {
       "name": "--vkui--color_accent_red--active",
-      "value": "var(--vkui--color_accent_red--active, #FF647E)"
+      "value": "var(--vkui--color_accent_red--active, #FF4356)"
     }
   },
   "colorAccentOrangeFire": {
@@ -123578,9 +123578,9 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
     "active": "#AAB4BE"
   },
   "colorAccentRed": {
-    "normal": "#ff5773",
-    "hover": "#FF5E79",
-    "active": "#FF647E"
+    "normal": "#ff3347",
+    "hover": "#FF3B4E",
+    "active": "#FF4356"
   },
   "colorAccentOrangeFire": {
     "normal": "#f05c44",
@@ -124769,9 +124769,9 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_accent_gray--active, #AAB4BE)"
   },
   "colorAccentRed": {
-    "normal": "var(--vkui--color_accent_red, #ff5773)",
-    "hover": "var(--vkui--color_accent_red--hover, #FF5E79)",
-    "active": "var(--vkui--color_accent_red--active, #FF647E)"
+    "normal": "var(--vkui--color_accent_red, #ff3347)",
+    "hover": "var(--vkui--color_accent_red--hover, #FF3B4E)",
+    "active": "var(--vkui--color_accent_red--active, #FF4356)"
   },
   "colorAccentOrangeFire": {
     "normal": "var(--vkui--color_accent_orange_fire, #f05c44)",
@@ -125960,9 +125960,9 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
     "active": "#AAB4BE"
   },
   "colorAccentRed": {
-    "normal": "#ff5773",
-    "hover": "#FF5E79",
-    "active": "#FF647E"
+    "normal": "#ff3347",
+    "hover": "#FF3B4E",
+    "active": "#FF4356"
   },
   "colorAccentOrangeFire": {
     "normal": "#f05c44",
@@ -139525,15 +139525,15 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   "colorAccentRed": {
     "normal": {
       "name": "--vkui--color_accent_red",
-      "value": "var(--vkui--color_accent_red, #ff5773)"
+      "value": "var(--vkui--color_accent_red, #ff3347)"
     },
     "hover": {
       "name": "--vkui--color_accent_red--hover",
-      "value": "var(--vkui--color_accent_red--hover, #FF5E79)"
+      "value": "var(--vkui--color_accent_red--hover, #FF3B4E)"
     },
     "active": {
       "name": "--vkui--color_accent_red--active",
-      "value": "var(--vkui--color_accent_red--active, #FF647E)"
+      "value": "var(--vkui--color_accent_red--active, #FF4356)"
     }
   },
   "colorAccentOrangeFire": {
@@ -142282,9 +142282,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
     "active": "#AAB4BE"
   },
   "colorAccentRed": {
-    "normal": "#ff5773",
-    "hover": "#FF5E79",
-    "active": "#FF647E"
+    "normal": "#ff3347",
+    "hover": "#FF3B4E",
+    "active": "#FF4356"
   },
   "colorAccentOrangeFire": {
     "normal": "#f05c44",
@@ -143880,9 +143880,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
     "active": "var(--vkui--color_accent_gray--active, #AAB4BE)"
   },
   "colorAccentRed": {
-    "normal": "var(--vkui--color_accent_red, #ff5773)",
-    "hover": "var(--vkui--color_accent_red--hover, #FF5E79)",
-    "active": "var(--vkui--color_accent_red--active, #FF647E)"
+    "normal": "var(--vkui--color_accent_red, #ff3347)",
+    "hover": "var(--vkui--color_accent_red--hover, #FF3B4E)",
+    "active": "var(--vkui--color_accent_red--active, #FF4356)"
   },
   "colorAccentOrangeFire": {
     "normal": "var(--vkui--color_accent_orange_fire, #f05c44)",
@@ -145478,9 +145478,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
     "active": "#AAB4BE"
   },
   "colorAccentRed": {
-    "normal": "#ff5773",
-    "hover": "#FF5E79",
-    "active": "#FF647E"
+    "normal": "#ff3347",
+    "hover": "#FF3B4E",
+    "active": "#FF4356"
   },
   "colorAccentOrangeFire": {
     "normal": "#f05c44",
