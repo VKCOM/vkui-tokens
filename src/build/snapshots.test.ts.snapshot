@@ -59014,11 +59014,11 @@ exports[`snapshots > dobro theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -62489,8 +62489,8 @@ exports[`snapshots > dobro theme > should match pixelify theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -63564,8 +63564,8 @@ exports[`snapshots > dobro theme > should match pseudo theme from CssVars 1`] = 
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -64639,8 +64639,8 @@ exports[`snapshots > dobro theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -65755,11 +65755,11 @@ exports[`snapshots > dobroDark theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -69234,8 +69234,8 @@ exports[`snapshots > dobroDark theme > should match pixelify theme snapshot 1`] 
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -70310,8 +70310,8 @@ exports[`snapshots > dobroDark theme > should match pseudo theme from CssVars 1`
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -71386,8 +71386,8 @@ exports[`snapshots > dobroDark theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -170858,11 +170858,11 @@ exports[`snapshots > milkshakeIOS theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -174651,8 +174651,8 @@ exports[`snapshots > milkshakeIOS theme > should match pixelify theme snapshot 1
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -175801,8 +175801,8 @@ exports[`snapshots > milkshakeIOS theme > should match pseudo theme from CssVars
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -176951,8 +176951,8 @@ exports[`snapshots > milkshakeIOS theme > should match root theme snapshot 1`] =
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -178142,11 +178142,11 @@ exports[`snapshots > milkshakeIOSDark theme > should match cssVars snapshot 1`] 
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -181935,8 +181935,8 @@ exports[`snapshots > milkshakeIOSDark theme > should match pixelify theme snapsh
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -183085,8 +183085,8 @@ exports[`snapshots > milkshakeIOSDark theme > should match pseudo theme from Css
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -184235,8 +184235,8 @@ exports[`snapshots > milkshakeIOSDark theme > should match root theme snapshot 1
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -461703,11 +461703,11 @@ exports[`snapshots > tutoria theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -465698,8 +465698,8 @@ exports[`snapshots > tutoria theme > should match pixelify theme snapshot 1`] = 
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
@@ -466931,8 +466931,8 @@ exports[`snapshots > tutoria theme > should match pseudo theme from CssVars 1`] 
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Roboto, Helvetica, Arial, sans-serif)",
@@ -468164,8 +468164,8 @@ exports[`snapshots > tutoria theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
@@ -469438,11 +469438,11 @@ exports[`snapshots > tutoriaDark theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -473437,8 +473437,8 @@ exports[`snapshots > tutoriaDark theme > should match pixelify theme snapshot 1`
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
@@ -474671,8 +474671,8 @@ exports[`snapshots > tutoriaDark theme > should match pseudo theme from CssVars 
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Roboto, Helvetica, Arial, sans-serif)",
@@ -475905,8 +475905,8 @@ exports[`snapshots > tutoriaDark theme > should match root theme snapshot 1`] = 
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
@@ -477180,11 +477180,11 @@ exports[`snapshots > vkAccessibility theme > should match cssVars snapshot 1`] =
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -480573,8 +480573,8 @@ exports[`snapshots > vkAccessibility theme > should match pixelify theme snapsho
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -481614,8 +481614,8 @@ exports[`snapshots > vkAccessibility theme > should match pseudo theme from CssV
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -482655,8 +482655,8 @@ exports[`snapshots > vkAccessibility theme > should match root theme snapshot 1`
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -483737,11 +483737,11 @@ exports[`snapshots > vkAccessibilityDark theme > should match cssVars snapshot 1
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -487130,8 +487130,8 @@ exports[`snapshots > vkAccessibilityDark theme > should match pixelify theme sna
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -488171,8 +488171,8 @@ exports[`snapshots > vkAccessibilityDark theme > should match pseudo theme from 
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -489212,8 +489212,8 @@ exports[`snapshots > vkAccessibilityDark theme > should match root theme snapsho
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -490294,11 +490294,11 @@ exports[`snapshots > vkAccessibilityIOS theme > should match cssVars snapshot 1`
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -493687,8 +493687,8 @@ exports[`snapshots > vkAccessibilityIOS theme > should match pixelify theme snap
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -494728,8 +494728,8 @@ exports[`snapshots > vkAccessibilityIOS theme > should match pseudo theme from C
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -495769,8 +495769,8 @@ exports[`snapshots > vkAccessibilityIOS theme > should match root theme snapshot
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -496851,11 +496851,11 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match cssVars snapsho
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -500244,8 +500244,8 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match pixelify theme 
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -501285,8 +501285,8 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match pseudo theme fr
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -502326,8 +502326,8 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match root theme snap
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -503408,11 +503408,11 @@ exports[`snapshots > vkBase theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -506797,8 +506797,8 @@ exports[`snapshots > vkBase theme > should match pixelify theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -507837,8 +507837,8 @@ exports[`snapshots > vkBase theme > should match pseudo theme from CssVars 1`] =
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -508877,8 +508877,8 @@ exports[`snapshots > vkBase theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -509958,11 +509958,11 @@ exports[`snapshots > vkBaseDark theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -513351,8 +513351,8 @@ exports[`snapshots > vkBaseDark theme > should match pixelify theme snapshot 1`]
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -514392,8 +514392,8 @@ exports[`snapshots > vkBaseDark theme > should match pseudo theme from CssVars 1
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -515433,8 +515433,8 @@ exports[`snapshots > vkBaseDark theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -516515,11 +516515,11 @@ exports[`snapshots > vkCom theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -519908,8 +519908,8 @@ exports[`snapshots > vkCom theme > should match pixelify theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -520949,8 +520949,8 @@ exports[`snapshots > vkCom theme > should match pseudo theme from CssVars 1`] = 
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
@@ -521990,8 +521990,8 @@ exports[`snapshots > vkCom theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -523072,11 +523072,11 @@ exports[`snapshots > vkComDark theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -526465,8 +526465,8 @@ exports[`snapshots > vkComDark theme > should match pixelify theme snapshot 1`] 
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -527506,8 +527506,8 @@ exports[`snapshots > vkComDark theme > should match pseudo theme from CssVars 1`
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
@@ -528547,8 +528547,8 @@ exports[`snapshots > vkComDark theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -529629,11 +529629,11 @@ exports[`snapshots > vkIOS theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -533022,8 +533022,8 @@ exports[`snapshots > vkIOS theme > should match pixelify theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -534063,8 +534063,8 @@ exports[`snapshots > vkIOS theme > should match pseudo theme from CssVars 1`] = 
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -535104,8 +535104,8 @@ exports[`snapshots > vkIOS theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -536186,11 +536186,11 @@ exports[`snapshots > vkIOSDark theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -539579,8 +539579,8 @@ exports[`snapshots > vkIOSDark theme > should match pixelify theme snapshot 1`] 
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -540620,8 +540620,8 @@ exports[`snapshots > vkIOSDark theme > should match pseudo theme from CssVars 1`
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -541661,8 +541661,8 @@ exports[`snapshots > vkIOSDark theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -542743,11 +542743,11 @@ exports[`snapshots > vkIdOk theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -546132,8 +546132,8 @@ exports[`snapshots > vkIdOk theme > should match pixelify theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -547172,8 +547172,8 @@ exports[`snapshots > vkIdOk theme > should match pseudo theme from CssVars 1`] =
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -548212,8 +548212,8 @@ exports[`snapshots > vkIdOk theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -549293,11 +549293,11 @@ exports[`snapshots > vkIdOkDark theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -552686,8 +552686,8 @@ exports[`snapshots > vkIdOkDark theme > should match pixelify theme snapshot 1`]
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -553727,8 +553727,8 @@ exports[`snapshots > vkIdOkDark theme > should match pseudo theme from CssVars 1
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -554768,8 +554768,8 @@ exports[`snapshots > vkIdOkDark theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -555850,11 +555850,11 @@ exports[`snapshots > vkIdOkIOS theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -559243,8 +559243,8 @@ exports[`snapshots > vkIdOkIOS theme > should match pixelify theme snapshot 1`] 
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -560284,8 +560284,8 @@ exports[`snapshots > vkIdOkIOS theme > should match pseudo theme from CssVars 1`
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -561325,8 +561325,8 @@ exports[`snapshots > vkIdOkIOS theme > should match root theme snapshot 1`] = `
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -562407,11 +562407,11 @@ exports[`snapshots > vkIdOkIOSDark theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -565800,8 +565800,8 @@ exports[`snapshots > vkIdOkIOSDark theme > should match pixelify theme snapshot 
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -566841,8 +566841,8 @@ exports[`snapshots > vkIdOkIOSDark theme > should match pseudo theme from CssVar
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -567882,8 +567882,8 @@ exports[`snapshots > vkIdOkIOSDark theme > should match root theme snapshot 1`] 
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -568948,11 +568948,11 @@ exports[`snapshots > vkontakteAndroid theme > should match cssVars snapshot 1`] 
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -573959,8 +573959,8 @@ exports[`snapshots > vkontakteAndroid theme > should match pixelify theme snapsh
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -575529,8 +575529,8 @@ exports[`snapshots > vkontakteAndroid theme > should match pseudo theme from Css
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -577099,8 +577099,8 @@ exports[`snapshots > vkontakteAndroid theme > should match root theme snapshot 1
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -578698,11 +578698,11 @@ exports[`snapshots > vkontakteAndroidDark theme > should match cssVars snapshot 
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -583677,8 +583677,8 @@ exports[`snapshots > vkontakteAndroidDark theme > should match pixelify theme sn
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -585239,8 +585239,8 @@ exports[`snapshots > vkontakteAndroidDark theme > should match pseudo theme from
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -586801,8 +586801,8 @@ exports[`snapshots > vkontakteAndroidDark theme > should match root theme snapsh
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -588408,11 +588408,11 @@ exports[`snapshots > vkontakteCom theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -593085,8 +593085,8 @@ exports[`snapshots > vkontakteCom theme > should match pixelify theme snapshot 1
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -594570,8 +594570,8 @@ exports[`snapshots > vkontakteCom theme > should match pseudo theme from CssVars
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
@@ -596055,8 +596055,8 @@ exports[`snapshots > vkontakteCom theme > should match root theme snapshot 1`] =
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -597581,11 +597581,11 @@ exports[`snapshots > vkontakteComDark theme > should match cssVars snapshot 1`] 
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -602258,8 +602258,8 @@ exports[`snapshots > vkontakteComDark theme > should match pixelify theme snapsh
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -603743,8 +603743,8 @@ exports[`snapshots > vkontakteComDark theme > should match pseudo theme from Css
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
@@ -605228,8 +605228,8 @@ exports[`snapshots > vkontakteComDark theme > should match root theme snapshot 1
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
@@ -606754,11 +606754,11 @@ exports[`snapshots > vkontakteIOS theme > should match cssVars snapshot 1`] = `
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -611585,8 +611585,8 @@ exports[`snapshots > vkontakteIOS theme > should match pixelify theme snapshot 1
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -613125,8 +613125,8 @@ exports[`snapshots > vkontakteIOS theme > should match pseudo theme from CssVars
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -614665,8 +614665,8 @@ exports[`snapshots > vkontakteIOS theme > should match root theme snapshot 1`] =
   "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -616246,11 +616246,11 @@ exports[`snapshots > vkontakteIOSDark theme > should match cssVars snapshot 1`] 
   },
   "blurL": {
     "name": "--vkui--blur_l",
-    "value": "var(--vkui--blur_l, 48px)"
+    "value": "var(--vkui--blur_l, 32px)"
   },
   "blurXL": {
     "name": "--vkui--blur_x_l",
-    "value": "var(--vkui--blur_x_l, 96px)"
+    "value": "var(--vkui--blur_x_l, 64px)"
   },
   "fontFamilyFallbacks": {
     "name": "--vkui--font_family_fallbacks",
@@ -621077,8 +621077,8 @@ exports[`snapshots > vkontakteIOSDark theme > should match pixelify theme snapsh
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
-  "blurL": "48px",
-  "blurXL": "96px",
+  "blurL": "32px",
+  "blurXL": "64px",
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
@@ -622617,8 +622617,8 @@ exports[`snapshots > vkontakteIOSDark theme > should match pseudo theme from Css
   "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
-  "blurL": "var(--vkui--blur_l, 48px)",
-  "blurXL": "var(--vkui--blur_x_l, 96px)",
+  "blurL": "var(--vkui--blur_l, 32px)",
+  "blurXL": "var(--vkui--blur_x_l, 64px)",
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
@@ -624157,8 +624157,8 @@ exports[`snapshots > vkontakteIOSDark theme > should match root theme snapshot 1
   "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
-  "blurL": 48,
-  "blurXL": 96,
+  "blurL": 32,
+  "blurXL": 64,
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",

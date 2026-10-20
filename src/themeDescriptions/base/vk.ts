@@ -315,8 +315,8 @@ export const darkElevation: Elevation = {
 export const effects: Effects = {
 	blurS: 8,
 	blurM: 16,
-	blurL: 48,
-	blurXL: 96,
+	blurL: 32,
+	blurXL: 64,
 };
 
 export type BaseFonts = Omit<
