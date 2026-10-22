@@ -33,7 +33,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		...paradigmBase.colors,
 
 		// Text
-		colorTextMediumAlpha: 'rgba(44, 45, 46, 0.56)',
+		colorTextMediumAlpha: 'rgba(17, 35, 55, 0.56)',
 
 		// Icon
 		colorIconNotificationNeutralAlpha: 'rgba(67, 83, 103, 0.28)',
@@ -44,6 +44,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleBackgroundAccent: '#DEECFF',
 		colorBubbleBackgroundNeutral: '#FFFFFF',
 		colorBubbleHighlightAccentAlpha: 'rgba(0, 119, 255, 0.16)',
+		colorBubbleHighlightAccentThemedAlpha: 'rgba(0, 119, 255, 0.24)',
 		colorBubbleTextRed: '#C43131',
 		colorBubbleTextOrange: '#C84900',
 		colorBubbleTextPeach: '#BE6116',
@@ -66,6 +67,9 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		colorOtherPullProgressAccentAlpha: 'rgba(0, 119, 255, 0.08)',
 		colorOtherBackgroundBlurAlpha: 'rgba(255, 255, 255, 0.01)',
 		colorOtherBackgroundMediaAlpha: 'rgba(0, 16, 61, 0.12)',
+		colorOtherHighlight: '#FFF1AD',
+		colorOtherThreadsBackgroundAlpha: 'rgba(17, 35, 55, 0.03)',
+		colorOtherViewerOverlay: 'rgba(25, 25, 26, 0.9)',
 
 		// States
 		colorBubbleTransparentHover: 'rgba(0, 16, 61, 0.08)',
@@ -94,7 +98,8 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 		// Bubble
 		colorBubbleBackgroundAccent: '#12335A',
 		colorBubbleBackgroundNeutral: '#303030',
-		colorBubbleHighlightAccentAlpha: 'rgba(255, 255, 255, 0.12)',
+		colorBubbleHighlightAccentAlpha: 'rgba(0, 119, 255, 0.32)',
+		colorBubbleHighlightAccentThemedAlpha: 'rgba(255, 255, 255, 0.12)',
 		colorBubbleTextRed: '#FF6464',
 		colorBubbleTextOrange: '#F68E42',
 		colorBubbleTextPeach: '#FFB980',
@@ -117,6 +122,9 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 		colorOtherPullProgressAccentAlpha: 'rgba(0, 119, 255, 0.24)',
 		colorOtherBackgroundBlurAlpha: 'rgba(255, 255, 255, 0.01)',
 		colorOtherBackgroundMediaAlpha: 'rgba(255, 255, 255, 0.08)',
+		colorOtherHighlight: '#6C4E00',
+		colorOtherThreadsBackgroundAlpha: 'rgba(255, 255, 255, 0.01)',
+		colorOtherViewerOverlay: 'rgba(25, 25, 26, 0.9)',
 
 		// States
 		colorBubbleTransparentHover: 'rgba(255, 255, 255, 0.08)',
