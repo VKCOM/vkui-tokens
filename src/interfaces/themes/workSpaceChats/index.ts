@@ -32,7 +32,7 @@ export interface LocalWorkSpaceChatsTypography {
 
 /**
  * Локальные цвета темы WorkSpaceChats (чат-токены из UI-KIT Chats Web).
- * Источник: Figma-переменные коллекции Colors (группа Chat).
+ * Источник: Figma-переменные коллекции Colors (UI-KIT Chats Web).
  */
 export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	// Text
@@ -79,6 +79,12 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	 * @tags color, bubble, background, alpha
 	 */
 	colorBubbleHighlightAccentAlpha: ColorDescription;
+
+	/**
+	 * @desc Тематическая акцентная подсветка пузыря сообщения
+	 * @tags color, bubble, background, alpha
+	 */
+	colorBubbleHighlightAccentThemedAlpha: ColorDescription;
 
 	/**
 	 * @desc Цвет текста в пузыре — красный
@@ -200,6 +206,24 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	 * @tags color, other, background, alpha
 	 */
 	colorOtherBackgroundMediaAlpha: ColorDescription;
+
+	/**
+	 * @desc Цвет подсветки
+	 * @tags color, other, background
+	 */
+	colorOtherHighlight: ColorDescription;
+
+	/**
+	 * @desc Фон веток обсуждения
+	 * @tags color, other, background, alpha
+	 */
+	colorOtherThreadsBackgroundAlpha: ColorDescription;
+
+	/**
+	 * @desc Затемнение фона в просмотрщике медиа
+	 * @tags color, other, overlay, alpha
+	 */
+	colorOtherViewerOverlay: ColorDescription;
 
 	// States
 	/**
