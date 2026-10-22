@@ -2633,7 +2633,7 @@ __metadata:
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v10.2.0"
     "@vkontakte/icons": "npm:^3.75.0"
     "@vkontakte/vkjs": "npm:^2.0.2"
-    "@vkontakte/vkui": "npm:^8.4.1"
+    "@vkontakte/vkui": "npm:^8.4.2"
     clsx: "npm:^2.1.1"
     color: "npm:^5.0.3"
     common-tags: "npm:^1.8.2"
@@ -2656,9 +2656,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@vkontakte/vkui@npm:^8.4.1":
-  version: 8.4.1
-  resolution: "@vkontakte/vkui@npm:8.4.1"
+"@vkontakte/vkui@npm:^8.4.2":
+  version: 8.4.2
+  resolution: "@vkontakte/vkui@npm:8.4.2"
   dependencies:
     "@swc/helpers": "npm:^0.5.23"
     "@vkontakte/icons": "npm:^3.67.0"
@@ -2668,7 +2668,7 @@ __metadata:
   peerDependencies:
     react: ^18.2.0 || ^19.0.0
     react-dom: ^18.2.0 || ^19.0.0
-  checksum: 10c0/af320c3696047da10cc59f3b06b229c6e5264dbde4cef66ebc67b963a01dd8138bb98c28192dcaa925dd5e9a0a3e4bc18e084bc018abfee8d9256f6826e5bf74
+  checksum: 10c0/378c1d086d8d9997607bd35499cf14fb89bfa235ce640d045d973d205286147f7d2c313138125705cf494785535e7128ff19a263329e3f287962839f82e708c3
   languageName: node
   linkType: hard
 
