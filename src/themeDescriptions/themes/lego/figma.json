@@ -1,8 +1,8 @@
 {
   "appearance": {
     "backgroundAccent": {
-      "light": "#2e90ff",
-      "dark": "#2e90ff"
+      "light": "#2086f9",
+      "dark": "#2086f9"
     },
     "textPrimary": {
       "light": "#3b3b3b",
@@ -13,11 +13,11 @@
       "dark": "#3b3b3b"
     },
     "backgroundAccentThemed": {
-      "light": "#2e90ff",
+      "light": "#2086f9",
       "dark": "#ffffff"
     },
     "iconAccentThemed": {
-      "light": "#2e90ff",
+      "light": "#2086f9",
       "dark": "#ffffff"
     },
     "iconContrastThemed": {
@@ -25,8 +25,8 @@
       "dark": "#3b3b3b"
     },
     "iconAccent": {
-      "light": "#2e90ff",
-      "dark": "#2e90ff"
+      "light": "#2086f9",
+      "dark": "#2086f9"
     },
     "iconSecondary": {
       "light": "#b3b3b3",
@@ -37,7 +37,7 @@
       "dark": "#666666"
     },
     "textAccentThemed": {
-      "light": "#2e90ff",
+      "light": "#2086f9",
       "dark": "#ffffff"
     },
     "textContrast": {
@@ -49,7 +49,7 @@
       "dark": "#ffffff0f"
     },
     "strokeAccent": {
-      "light": "#2e90ff",
+      "light": "#2086f9",
       "dark": "#529ef4"
     },
     "strokeSeparatorPrimaryAlpha": {
@@ -117,8 +117,8 @@
       "dark": "#ddff00"
     },
     "textAccent": {
-      "light": "#2e90ff",
-      "dark": "#2e90ff"
+      "light": "#2086f9",
+      "dark": "#2086f9"
     },
     "textPrimaryInvariably": {
       "light": "#3b3b3b",
@@ -169,7 +169,7 @@
       "dark": "#fd6571"
     },
     "strokeAccentThemed": {
-      "light": "#2e90ff",
+      "light": "#2086f9",
       "dark": "#ffffff"
     },
     "strokeSeparatorPrimary": {
@@ -213,8 +213,8 @@
       "dark": "#262626"
     },
     "paletteAccentBlue": {
-      "light": "#2e90ff",
-      "dark": "#2e90ff"
+      "light": "#2086f9",
+      "dark": "#2086f9"
     },
     "paletteAccentGray": {
       "light": "#a3adb8",
@@ -347,6 +347,18 @@
     "componentsSubnavigationBarSelectedBackground": {
       "light": "#f2f2f2",
       "dark": "#181818"
+    },
+    "componentsSubnavigationBarUnselectedBackground": {
+      "light": "#ffffff",
+      "dark": "#000000"
+    },
+    "componentsSubnavigationBarUnselectedStroke": {
+      "light": "#ebebeb",
+      "dark": "#1c1c1c"
+    },
+    "componentsSubnavigationBarSelectedStroke": {
+      "light": "#3333330a",
+      "dark": "#ffffff0f"
     }
   },
   "tokens": {
