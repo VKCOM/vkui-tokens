@@ -648505,15 +648505,15 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
   "colorTextMediumAlpha": {
     "normal": {
       "name": "--vkui--color_text_medium_alpha",
-      "value": "var(--vkui--color_text_medium_alpha, rgba(44, 45, 46, 0.56))"
+      "value": "var(--vkui--color_text_medium_alpha, rgba(17, 35, 55, 0.56))"
     },
     "hover": {
       "name": "--vkui--color_text_medium_alpha--hover",
-      "value": "var(--vkui--color_text_medium_alpha--hover, rgba(44, 45, 46, 0.6))"
+      "value": "var(--vkui--color_text_medium_alpha--hover, rgba(17, 35, 55, 0.6))"
     },
     "active": {
       "name": "--vkui--color_text_medium_alpha--active",
-      "value": "var(--vkui--color_text_medium_alpha--active, rgba(44, 45, 46, 0.64))"
+      "value": "var(--vkui--color_text_medium_alpha--active, rgba(17, 35, 55, 0.64))"
     }
   },
   "colorIconNotificationNeutralAlpha": {
@@ -648598,6 +648598,20 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
     "active": {
       "name": "--vkui--color_bubble_highlight_accent_alpha--active",
       "value": "var(--vkui--color_bubble_highlight_accent_alpha--active, rgba(0, 119, 255, 0.24))"
+    }
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
+    "normal": {
+      "name": "--vkui--color_bubble_highlight_accent_themed_alpha",
+      "value": "var(--vkui--color_bubble_highlight_accent_themed_alpha, rgba(0, 119, 255, 0.24))"
+    },
+    "hover": {
+      "name": "--vkui--color_bubble_highlight_accent_themed_alpha--hover",
+      "value": "var(--vkui--color_bubble_highlight_accent_themed_alpha--hover, rgba(0, 119, 255, 0.28))"
+    },
+    "active": {
+      "name": "--vkui--color_bubble_highlight_accent_themed_alpha--active",
+      "value": "var(--vkui--color_bubble_highlight_accent_themed_alpha--active, rgba(0, 119, 255, 0.32))"
     }
   },
   "colorBubbleTextRed": {
@@ -648878,6 +648892,48 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
     "active": {
       "name": "--vkui--color_other_background_media_alpha--active",
       "value": "var(--vkui--color_other_background_media_alpha--active, rgba(0, 16, 61, 0.2))"
+    }
+  },
+  "colorOtherHighlight": {
+    "normal": {
+      "name": "--vkui--color_other_highlight",
+      "value": "var(--vkui--color_other_highlight, #FFF1AD)"
+    },
+    "hover": {
+      "name": "--vkui--color_other_highlight--hover",
+      "value": "var(--vkui--color_other_highlight--hover, #F5E8A9)"
+    },
+    "active": {
+      "name": "--vkui--color_other_highlight--active",
+      "value": "var(--vkui--color_other_highlight--active, #EBDFA4)"
+    }
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": {
+      "name": "--vkui--color_other_threads_background_alpha",
+      "value": "var(--vkui--color_other_threads_background_alpha, rgba(17, 35, 55, 0.03))"
+    },
+    "hover": {
+      "name": "--vkui--color_other_threads_background_alpha--hover",
+      "value": "var(--vkui--color_other_threads_background_alpha--hover, rgba(17, 35, 55, 0.07))"
+    },
+    "active": {
+      "name": "--vkui--color_other_threads_background_alpha--active",
+      "value": "var(--vkui--color_other_threads_background_alpha--active, rgba(17, 35, 55, 0.11))"
+    }
+  },
+  "colorOtherViewerOverlay": {
+    "normal": {
+      "name": "--vkui--color_other_viewer_overlay",
+      "value": "var(--vkui--color_other_viewer_overlay, rgba(25, 25, 26, 0.9))"
+    },
+    "hover": {
+      "name": "--vkui--color_other_viewer_overlay--hover",
+      "value": "var(--vkui--color_other_viewer_overlay--hover, rgba(25, 25, 26, 0.9400000000000001))"
+    },
+    "active": {
+      "name": "--vkui--color_other_viewer_overlay--active",
+      "value": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
     }
   },
   "colorBubbleTransparentHover": {
@@ -650374,9 +650430,9 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "active": "rgba(255, 255, 255, 0.92)"
   },
   "colorTextMediumAlpha": {
-    "normal": "rgba(44, 45, 46, 0.56)",
-    "hover": "rgba(44, 45, 46, 0.6)",
-    "active": "rgba(44, 45, 46, 0.64)"
+    "normal": "rgba(17, 35, 55, 0.56)",
+    "hover": "rgba(17, 35, 55, 0.6)",
+    "active": "rgba(17, 35, 55, 0.64)"
   },
   "colorIconNotificationNeutralAlpha": {
     "normal": "rgba(67, 83, 103, 0.28)",
@@ -650407,6 +650463,11 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "normal": "rgba(0, 119, 255, 0.16)",
     "hover": "rgba(0, 119, 255, 0.2)",
     "active": "rgba(0, 119, 255, 0.24)"
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
+    "normal": "rgba(0, 119, 255, 0.24)",
+    "hover": "rgba(0, 119, 255, 0.28)",
+    "active": "rgba(0, 119, 255, 0.32)"
   },
   "colorBubbleTextRed": {
     "normal": "#C43131",
@@ -650507,6 +650568,21 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "normal": "rgba(0, 16, 61, 0.12)",
     "hover": "rgba(0, 16, 61, 0.16)",
     "active": "rgba(0, 16, 61, 0.2)"
+  },
+  "colorOtherHighlight": {
+    "normal": "#FFF1AD",
+    "hover": "#F5E8A9",
+    "active": "#EBDFA4"
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": "rgba(17, 35, 55, 0.03)",
+    "hover": "rgba(17, 35, 55, 0.07)",
+    "active": "rgba(17, 35, 55, 0.11)"
+  },
+  "colorOtherViewerOverlay": {
+    "normal": "rgba(25, 25, 26, 0.9)",
+    "hover": "rgba(25, 25, 26, 0.9400000000000001)",
+    "active": "rgba(25, 25, 26, 0.98)"
   },
   "colorBubbleTransparentHover": {
     "normal": "rgba(0, 16, 61, 0.08)",
@@ -651972,9 +652048,9 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_button_background_alpha--active, rgba(255, 255, 255, 0.92))"
   },
   "colorTextMediumAlpha": {
-    "normal": "var(--vkui--color_text_medium_alpha, rgba(44, 45, 46, 0.56))",
-    "hover": "var(--vkui--color_text_medium_alpha--hover, rgba(44, 45, 46, 0.6))",
-    "active": "var(--vkui--color_text_medium_alpha--active, rgba(44, 45, 46, 0.64))"
+    "normal": "var(--vkui--color_text_medium_alpha, rgba(17, 35, 55, 0.56))",
+    "hover": "var(--vkui--color_text_medium_alpha--hover, rgba(17, 35, 55, 0.6))",
+    "active": "var(--vkui--color_text_medium_alpha--active, rgba(17, 35, 55, 0.64))"
   },
   "colorIconNotificationNeutralAlpha": {
     "normal": "var(--vkui--color_icon_notification_neutral_alpha, rgba(67, 83, 103, 0.28))",
@@ -652005,6 +652081,11 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "normal": "var(--vkui--color_bubble_highlight_accent_alpha, rgba(0, 119, 255, 0.16))",
     "hover": "var(--vkui--color_bubble_highlight_accent_alpha--hover, rgba(0, 119, 255, 0.2))",
     "active": "var(--vkui--color_bubble_highlight_accent_alpha--active, rgba(0, 119, 255, 0.24))"
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
+    "normal": "var(--vkui--color_bubble_highlight_accent_themed_alpha, rgba(0, 119, 255, 0.24))",
+    "hover": "var(--vkui--color_bubble_highlight_accent_themed_alpha--hover, rgba(0, 119, 255, 0.28))",
+    "active": "var(--vkui--color_bubble_highlight_accent_themed_alpha--active, rgba(0, 119, 255, 0.32))"
   },
   "colorBubbleTextRed": {
     "normal": "var(--vkui--color_bubble_text_red, #C43131)",
@@ -652105,6 +652186,21 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "normal": "var(--vkui--color_other_background_media_alpha, rgba(0, 16, 61, 0.12))",
     "hover": "var(--vkui--color_other_background_media_alpha--hover, rgba(0, 16, 61, 0.16))",
     "active": "var(--vkui--color_other_background_media_alpha--active, rgba(0, 16, 61, 0.2))"
+  },
+  "colorOtherHighlight": {
+    "normal": "var(--vkui--color_other_highlight, #FFF1AD)",
+    "hover": "var(--vkui--color_other_highlight--hover, #F5E8A9)",
+    "active": "var(--vkui--color_other_highlight--active, #EBDFA4)"
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": "var(--vkui--color_other_threads_background_alpha, rgba(17, 35, 55, 0.03))",
+    "hover": "var(--vkui--color_other_threads_background_alpha--hover, rgba(17, 35, 55, 0.07))",
+    "active": "var(--vkui--color_other_threads_background_alpha--active, rgba(17, 35, 55, 0.11))"
+  },
+  "colorOtherViewerOverlay": {
+    "normal": "var(--vkui--color_other_viewer_overlay, rgba(25, 25, 26, 0.9))",
+    "hover": "var(--vkui--color_other_viewer_overlay--hover, rgba(25, 25, 26, 0.9400000000000001))",
+    "active": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
   },
   "colorBubbleTransparentHover": {
     "normal": "var(--vkui--color_bubble_transparent_hover, rgba(0, 16, 61, 0.08))",
@@ -653570,9 +653666,9 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "active": "rgba(255, 255, 255, 0.92)"
   },
   "colorTextMediumAlpha": {
-    "normal": "rgba(44, 45, 46, 0.56)",
-    "hover": "rgba(44, 45, 46, 0.6)",
-    "active": "rgba(44, 45, 46, 0.64)"
+    "normal": "rgba(17, 35, 55, 0.56)",
+    "hover": "rgba(17, 35, 55, 0.6)",
+    "active": "rgba(17, 35, 55, 0.64)"
   },
   "colorIconNotificationNeutralAlpha": {
     "normal": "rgba(67, 83, 103, 0.28)",
@@ -653603,6 +653699,11 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "normal": "rgba(0, 119, 255, 0.16)",
     "hover": "rgba(0, 119, 255, 0.2)",
     "active": "rgba(0, 119, 255, 0.24)"
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
+    "normal": "rgba(0, 119, 255, 0.24)",
+    "hover": "rgba(0, 119, 255, 0.28)",
+    "active": "rgba(0, 119, 255, 0.32)"
   },
   "colorBubbleTextRed": {
     "normal": "#C43131",
@@ -653703,6 +653804,21 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "normal": "rgba(0, 16, 61, 0.12)",
     "hover": "rgba(0, 16, 61, 0.16)",
     "active": "rgba(0, 16, 61, 0.2)"
+  },
+  "colorOtherHighlight": {
+    "normal": "#FFF1AD",
+    "hover": "#F5E8A9",
+    "active": "#EBDFA4"
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": "rgba(17, 35, 55, 0.03)",
+    "hover": "rgba(17, 35, 55, 0.07)",
+    "active": "rgba(17, 35, 55, 0.11)"
+  },
+  "colorOtherViewerOverlay": {
+    "normal": "rgba(25, 25, 26, 0.9)",
+    "hover": "rgba(25, 25, 26, 0.9400000000000001)",
+    "active": "rgba(25, 25, 26, 0.98)"
   },
   "colorBubbleTransparentHover": {
     "normal": "rgba(0, 16, 61, 0.08)",
@@ -658579,15 +658695,29 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
   "colorBubbleHighlightAccentAlpha": {
     "normal": {
       "name": "--vkui--color_bubble_highlight_accent_alpha",
-      "value": "var(--vkui--color_bubble_highlight_accent_alpha, rgba(255, 255, 255, 0.12))"
+      "value": "var(--vkui--color_bubble_highlight_accent_alpha, rgba(0, 119, 255, 0.32))"
     },
     "hover": {
       "name": "--vkui--color_bubble_highlight_accent_alpha--hover",
-      "value": "var(--vkui--color_bubble_highlight_accent_alpha--hover, rgba(255, 255, 255, 0.16))"
+      "value": "var(--vkui--color_bubble_highlight_accent_alpha--hover, rgba(0, 119, 255, 0.36))"
     },
     "active": {
       "name": "--vkui--color_bubble_highlight_accent_alpha--active",
-      "value": "var(--vkui--color_bubble_highlight_accent_alpha--active, rgba(255, 255, 255, 0.2))"
+      "value": "var(--vkui--color_bubble_highlight_accent_alpha--active, rgba(0, 119, 255, 0.4))"
+    }
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
+    "normal": {
+      "name": "--vkui--color_bubble_highlight_accent_themed_alpha",
+      "value": "var(--vkui--color_bubble_highlight_accent_themed_alpha, rgba(255, 255, 255, 0.12))"
+    },
+    "hover": {
+      "name": "--vkui--color_bubble_highlight_accent_themed_alpha--hover",
+      "value": "var(--vkui--color_bubble_highlight_accent_themed_alpha--hover, rgba(255, 255, 255, 0.16))"
+    },
+    "active": {
+      "name": "--vkui--color_bubble_highlight_accent_themed_alpha--active",
+      "value": "var(--vkui--color_bubble_highlight_accent_themed_alpha--active, rgba(255, 255, 255, 0.2))"
     }
   },
   "colorBubbleTextRed": {
@@ -658868,6 +658998,48 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
     "active": {
       "name": "--vkui--color_other_background_media_alpha--active",
       "value": "var(--vkui--color_other_background_media_alpha--active, rgba(255, 255, 255, 0.16))"
+    }
+  },
+  "colorOtherHighlight": {
+    "normal": {
+      "name": "--vkui--color_other_highlight",
+      "value": "var(--vkui--color_other_highlight, #6C4E00)"
+    },
+    "hover": {
+      "name": "--vkui--color_other_highlight--hover",
+      "value": "var(--vkui--color_other_highlight--hover, #72550A)"
+    },
+    "active": {
+      "name": "--vkui--color_other_highlight--active",
+      "value": "var(--vkui--color_other_highlight--active, #785C14)"
+    }
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": {
+      "name": "--vkui--color_other_threads_background_alpha",
+      "value": "var(--vkui--color_other_threads_background_alpha, rgba(255, 255, 255, 0.01))"
+    },
+    "hover": {
+      "name": "--vkui--color_other_threads_background_alpha--hover",
+      "value": "var(--vkui--color_other_threads_background_alpha--hover, rgba(255, 255, 255, 0.05))"
+    },
+    "active": {
+      "name": "--vkui--color_other_threads_background_alpha--active",
+      "value": "var(--vkui--color_other_threads_background_alpha--active, rgba(255, 255, 255, 0.09))"
+    }
+  },
+  "colorOtherViewerOverlay": {
+    "normal": {
+      "name": "--vkui--color_other_viewer_overlay",
+      "value": "var(--vkui--color_other_viewer_overlay, rgba(25, 25, 26, 0.9))"
+    },
+    "hover": {
+      "name": "--vkui--color_other_viewer_overlay--hover",
+      "value": "var(--vkui--color_other_viewer_overlay--hover, rgba(25, 25, 26, 0.9400000000000001))"
+    },
+    "active": {
+      "name": "--vkui--color_other_viewer_overlay--active",
+      "value": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
     }
   },
   "colorBubbleTransparentHover": {
@@ -660394,6 +660566,11 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
     "active": "#414141"
   },
   "colorBubbleHighlightAccentAlpha": {
+    "normal": "rgba(0, 119, 255, 0.32)",
+    "hover": "rgba(0, 119, 255, 0.36)",
+    "active": "rgba(0, 119, 255, 0.4)"
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
     "normal": "rgba(255, 255, 255, 0.12)",
     "hover": "rgba(255, 255, 255, 0.16)",
     "active": "rgba(255, 255, 255, 0.2)"
@@ -660497,6 +660674,21 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
     "normal": "rgba(255, 255, 255, 0.08)",
     "hover": "rgba(255, 255, 255, 0.12)",
     "active": "rgba(255, 255, 255, 0.16)"
+  },
+  "colorOtherHighlight": {
+    "normal": "#6C4E00",
+    "hover": "#72550A",
+    "active": "#785C14"
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": "rgba(255, 255, 255, 0.01)",
+    "hover": "rgba(255, 255, 255, 0.05)",
+    "active": "rgba(255, 255, 255, 0.09)"
+  },
+  "colorOtherViewerOverlay": {
+    "normal": "rgba(25, 25, 26, 0.9)",
+    "hover": "rgba(25, 25, 26, 0.9400000000000001)",
+    "active": "rgba(25, 25, 26, 0.98)"
   },
   "colorBubbleTransparentHover": {
     "normal": "rgba(255, 255, 255, 0.08)",
@@ -661992,9 +662184,14 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_bubble_background_neutral--active, #414141)"
   },
   "colorBubbleHighlightAccentAlpha": {
-    "normal": "var(--vkui--color_bubble_highlight_accent_alpha, rgba(255, 255, 255, 0.12))",
-    "hover": "var(--vkui--color_bubble_highlight_accent_alpha--hover, rgba(255, 255, 255, 0.16))",
-    "active": "var(--vkui--color_bubble_highlight_accent_alpha--active, rgba(255, 255, 255, 0.2))"
+    "normal": "var(--vkui--color_bubble_highlight_accent_alpha, rgba(0, 119, 255, 0.32))",
+    "hover": "var(--vkui--color_bubble_highlight_accent_alpha--hover, rgba(0, 119, 255, 0.36))",
+    "active": "var(--vkui--color_bubble_highlight_accent_alpha--active, rgba(0, 119, 255, 0.4))"
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
+    "normal": "var(--vkui--color_bubble_highlight_accent_themed_alpha, rgba(255, 255, 255, 0.12))",
+    "hover": "var(--vkui--color_bubble_highlight_accent_themed_alpha--hover, rgba(255, 255, 255, 0.16))",
+    "active": "var(--vkui--color_bubble_highlight_accent_themed_alpha--active, rgba(255, 255, 255, 0.2))"
   },
   "colorBubbleTextRed": {
     "normal": "var(--vkui--color_bubble_text_red, #FF6464)",
@@ -662095,6 +662292,21 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
     "normal": "var(--vkui--color_other_background_media_alpha, rgba(255, 255, 255, 0.08))",
     "hover": "var(--vkui--color_other_background_media_alpha--hover, rgba(255, 255, 255, 0.12))",
     "active": "var(--vkui--color_other_background_media_alpha--active, rgba(255, 255, 255, 0.16))"
+  },
+  "colorOtherHighlight": {
+    "normal": "var(--vkui--color_other_highlight, #6C4E00)",
+    "hover": "var(--vkui--color_other_highlight--hover, #72550A)",
+    "active": "var(--vkui--color_other_highlight--active, #785C14)"
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": "var(--vkui--color_other_threads_background_alpha, rgba(255, 255, 255, 0.01))",
+    "hover": "var(--vkui--color_other_threads_background_alpha--hover, rgba(255, 255, 255, 0.05))",
+    "active": "var(--vkui--color_other_threads_background_alpha--active, rgba(255, 255, 255, 0.09))"
+  },
+  "colorOtherViewerOverlay": {
+    "normal": "var(--vkui--color_other_viewer_overlay, rgba(25, 25, 26, 0.9))",
+    "hover": "var(--vkui--color_other_viewer_overlay--hover, rgba(25, 25, 26, 0.9400000000000001))",
+    "active": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
   },
   "colorBubbleTransparentHover": {
     "normal": "var(--vkui--color_bubble_transparent_hover, rgba(255, 255, 255, 0.08))",
@@ -663590,6 +663802,11 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
     "active": "#414141"
   },
   "colorBubbleHighlightAccentAlpha": {
+    "normal": "rgba(0, 119, 255, 0.32)",
+    "hover": "rgba(0, 119, 255, 0.36)",
+    "active": "rgba(0, 119, 255, 0.4)"
+  },
+  "colorBubbleHighlightAccentThemedAlpha": {
     "normal": "rgba(255, 255, 255, 0.12)",
     "hover": "rgba(255, 255, 255, 0.16)",
     "active": "rgba(255, 255, 255, 0.2)"
@@ -663693,6 +663910,21 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
     "normal": "rgba(255, 255, 255, 0.08)",
     "hover": "rgba(255, 255, 255, 0.12)",
     "active": "rgba(255, 255, 255, 0.16)"
+  },
+  "colorOtherHighlight": {
+    "normal": "#6C4E00",
+    "hover": "#72550A",
+    "active": "#785C14"
+  },
+  "colorOtherThreadsBackgroundAlpha": {
+    "normal": "rgba(255, 255, 255, 0.01)",
+    "hover": "rgba(255, 255, 255, 0.05)",
+    "active": "rgba(255, 255, 255, 0.09)"
+  },
+  "colorOtherViewerOverlay": {
+    "normal": "rgba(25, 25, 26, 0.9)",
+    "hover": "rgba(25, 25, 26, 0.9400000000000001)",
+    "active": "rgba(25, 25, 26, 0.98)"
   },
   "colorBubbleTransparentHover": {
     "normal": "rgba(255, 255, 255, 0.08)",
