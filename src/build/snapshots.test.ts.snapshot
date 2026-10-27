@@ -93175,29 +93175,29 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
   "colorBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_background_accent",
-      "value": "var(--vkui--color_background_accent, #2e90ff)"
+      "value": "var(--vkui--color_background_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent--hover",
-      "value": "var(--vkui--color_background_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_background_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_background_accent--active",
-      "value": "var(--vkui--color_background_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_background_accent--active, #1D7DEA)"
     }
   },
   "colorBackgroundAccentThemed": {
     "normal": {
       "name": "--vkui--color_background_accent_themed",
-      "value": "var(--vkui--color_background_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_background_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent_themed--hover",
-      "value": "var(--vkui--color_background_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_background_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_background_accent_themed--active",
-      "value": "var(--vkui--color_background_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_background_accent_themed--active, #1D7DEA)"
     }
   },
   "colorBackgroundAccentThemedAlpha": {
@@ -93553,29 +93553,29 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
   "colorTextAccent": {
     "normal": {
       "name": "--vkui--color_text_accent",
-      "value": "var(--vkui--color_text_accent, #2e90ff)"
+      "value": "var(--vkui--color_text_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent--hover",
-      "value": "var(--vkui--color_text_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_text_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_text_accent--active",
-      "value": "var(--vkui--color_text_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_text_accent--active, #1D7DEA)"
     }
   },
   "colorTextAccentThemed": {
     "normal": {
       "name": "--vkui--color_text_accent_themed",
-      "value": "var(--vkui--color_text_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_text_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent_themed--hover",
-      "value": "var(--vkui--color_text_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_text_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_text_accent_themed--active",
-      "value": "var(--vkui--color_text_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_text_accent_themed--active, #1D7DEA)"
     }
   },
   "colorTextPrimary": {
@@ -93819,29 +93819,29 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
   "colorIconAccent": {
     "normal": {
       "name": "--vkui--color_icon_accent",
-      "value": "var(--vkui--color_icon_accent, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent--hover",
-      "value": "var(--vkui--color_icon_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_icon_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_icon_accent--active",
-      "value": "var(--vkui--color_icon_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_icon_accent--active, #1D7DEA)"
     }
   },
   "colorIconAccentThemed": {
     "normal": {
       "name": "--vkui--color_icon_accent_themed",
-      "value": "var(--vkui--color_icon_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent_themed--hover",
-      "value": "var(--vkui--color_icon_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_icon_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_icon_accent_themed--active",
-      "value": "var(--vkui--color_icon_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_icon_accent_themed--active, #1D7DEA)"
     }
   },
   "colorIconPrimary": {
@@ -94043,29 +94043,29 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
   "colorStrokeAccent": {
     "normal": {
       "name": "--vkui--color_stroke_accent",
-      "value": "var(--vkui--color_stroke_accent, #2e90ff)"
+      "value": "var(--vkui--color_stroke_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_stroke_accent--hover",
-      "value": "var(--vkui--color_stroke_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_stroke_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_stroke_accent--active",
-      "value": "var(--vkui--color_stroke_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_stroke_accent--active, #1D7DEA)"
     }
   },
   "colorStrokeAccentThemed": {
     "normal": {
       "name": "--vkui--color_stroke_accent_themed",
-      "value": "var(--vkui--color_stroke_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_stroke_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_stroke_accent_themed--hover",
-      "value": "var(--vkui--color_stroke_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_stroke_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_stroke_accent_themed--active",
-      "value": "var(--vkui--color_stroke_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_stroke_accent_themed--active, #1D7DEA)"
     }
   },
   "colorSeparatorPrimary": {
@@ -94225,15 +94225,15 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
   "colorAccentBlue": {
     "normal": {
       "name": "--vkui--color_accent_blue",
-      "value": "var(--vkui--color_accent_blue, #2e90ff)"
+      "value": "var(--vkui--color_accent_blue, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_accent_blue--hover",
-      "value": "var(--vkui--color_accent_blue--hover, #2C8BF7)"
+      "value": "var(--vkui--color_accent_blue--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_accent_blue--active",
-      "value": "var(--vkui--color_accent_blue--active, #2A86EF)"
+      "value": "var(--vkui--color_accent_blue--active, #1D7DEA)"
     }
   },
   "colorAccentGray": {
@@ -96656,14 +96656,14 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "light",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "rgba(38, 136, 235, 0.2)",
@@ -96791,14 +96791,14 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
     "active": "#EBECEF"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextPrimary": {
     "normal": "#3b3b3b",
@@ -96886,14 +96886,14 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
     "active": "#EBECEF"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconPrimary": {
     "normal": "#3b3b3b",
@@ -96966,14 +96966,14 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
     "active": "#E24F5D"
   },
   "colorStrokeAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorStrokeAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorSeparatorPrimary": {
     "normal": "#ebebeb",
@@ -97031,9 +97031,9 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
     "active": "#3333333d"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -98285,14 +98285,14 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
   "vkontakteGradientWomensDay": "var(--vkui--vkontakte_gradient_womens_day, rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%)",
   "colorsScheme": "var(--vkui--colors_scheme, light)",
   "colorBackgroundAccent": {
-    "normal": "var(--vkui--color_background_accent, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_background_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_background_accent, #2086f9)",
+    "hover": "var(--vkui--color_background_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_background_accent--active, #1D7DEA)"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "var(--vkui--color_background_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_background_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_background_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_background_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_background_accent_themed--active, #1D7DEA)"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "var(--vkui--color_background_accent_themed_alpha, rgba(38, 136, 235, 0.2))",
@@ -98420,14 +98420,14 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_header_background--active, #EBECEF)"
   },
   "colorTextAccent": {
-    "normal": "var(--vkui--color_text_accent, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_text_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_text_accent, #2086f9)",
+    "hover": "var(--vkui--color_text_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_text_accent--active, #1D7DEA)"
   },
   "colorTextAccentThemed": {
-    "normal": "var(--vkui--color_text_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_text_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_text_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_text_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_text_accent_themed--active, #1D7DEA)"
   },
   "colorTextPrimary": {
     "normal": "var(--vkui--color_text_primary, #3b3b3b)",
@@ -98515,14 +98515,14 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_link_contrast--active, #EBECEF)"
   },
   "colorIconAccent": {
-    "normal": "var(--vkui--color_icon_accent, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_icon_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_icon_accent, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_icon_accent--active, #1D7DEA)"
   },
   "colorIconAccentThemed": {
-    "normal": "var(--vkui--color_icon_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_icon_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_icon_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_icon_accent_themed--active, #1D7DEA)"
   },
   "colorIconPrimary": {
     "normal": "var(--vkui--color_icon_primary, #3b3b3b)",
@@ -98595,14 +98595,14 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_icon_negative--active, #E24F5D)"
   },
   "colorStrokeAccent": {
-    "normal": "var(--vkui--color_stroke_accent, #2e90ff)",
-    "hover": "var(--vkui--color_stroke_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_stroke_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_stroke_accent, #2086f9)",
+    "hover": "var(--vkui--color_stroke_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_stroke_accent--active, #1D7DEA)"
   },
   "colorStrokeAccentThemed": {
-    "normal": "var(--vkui--color_stroke_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_stroke_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_stroke_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_stroke_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_stroke_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_stroke_accent_themed--active, #1D7DEA)"
   },
   "colorSeparatorPrimary": {
     "normal": "var(--vkui--color_separator_primary, #ebebeb)",
@@ -98660,9 +98660,9 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_field_border_alpha--active, #3333333d)"
   },
   "colorAccentBlue": {
-    "normal": "var(--vkui--color_accent_blue, #2e90ff)",
-    "hover": "var(--vkui--color_accent_blue--hover, #2C8BF7)",
-    "active": "var(--vkui--color_accent_blue--active, #2A86EF)"
+    "normal": "var(--vkui--color_accent_blue, #2086f9)",
+    "hover": "var(--vkui--color_accent_blue--hover, #1F81F1)",
+    "active": "var(--vkui--color_accent_blue--active, #1D7DEA)"
   },
   "colorAccentGray": {
     "normal": "var(--vkui--color_accent_gray, #a3adb8)",
@@ -99914,14 +99914,14 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "light",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "rgba(38, 136, 235, 0.2)",
@@ -100049,14 +100049,14 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
     "active": "#EBECEF"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextPrimary": {
     "normal": "#3b3b3b",
@@ -100144,14 +100144,14 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
     "active": "#EBECEF"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconPrimary": {
     "normal": "#3b3b3b",
@@ -100224,14 +100224,14 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
     "active": "#E24F5D"
   },
   "colorStrokeAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorStrokeAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorSeparatorPrimary": {
     "normal": "#ebebeb",
@@ -100289,9 +100289,9 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
     "active": "#3333333d"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -103300,15 +103300,15 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   "colorBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_background_accent",
-      "value": "var(--vkui--color_background_accent, #2e90ff)"
+      "value": "var(--vkui--color_background_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent--hover",
-      "value": "var(--vkui--color_background_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_background_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_background_accent--active",
-      "value": "var(--vkui--color_background_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_background_accent--active, #3290F9)"
     }
   },
   "colorBackgroundAccentThemed": {
@@ -103678,15 +103678,15 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   "colorTextAccent": {
     "normal": {
       "name": "--vkui--color_text_accent",
-      "value": "var(--vkui--color_text_accent, #2e90ff)"
+      "value": "var(--vkui--color_text_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent--hover",
-      "value": "var(--vkui--color_text_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_text_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_text_accent--active",
-      "value": "var(--vkui--color_text_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_text_accent--active, #3290F9)"
     }
   },
   "colorTextAccentThemed": {
@@ -103944,15 +103944,15 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   "colorIconAccent": {
     "normal": {
       "name": "--vkui--color_icon_accent",
-      "value": "var(--vkui--color_icon_accent, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent--hover",
-      "value": "var(--vkui--color_icon_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_icon_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_icon_accent--active",
-      "value": "var(--vkui--color_icon_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_icon_accent--active, #3290F9)"
     }
   },
   "colorIconAccentThemed": {
@@ -104350,15 +104350,15 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   "colorAccentBlue": {
     "normal": {
       "name": "--vkui--color_accent_blue",
-      "value": "var(--vkui--color_accent_blue, #2e90ff)"
+      "value": "var(--vkui--color_accent_blue, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_accent_blue--hover",
-      "value": "var(--vkui--color_accent_blue--hover, #3694FF)"
+      "value": "var(--vkui--color_accent_blue--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_accent_blue--active",
-      "value": "var(--vkui--color_accent_blue--active, #3F99FF)"
+      "value": "var(--vkui--color_accent_blue--active, #3290F9)"
     }
   },
   "colorAccentGray": {
@@ -106781,9 +106781,9 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "dark",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#FFFFFF",
@@ -106916,9 +106916,9 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
     "active": "#2B2B2C"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorTextAccentThemed": {
     "normal": "#FFFFFF",
@@ -107011,9 +107011,9 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
     "active": "#D7D8DB"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorIconAccentThemed": {
     "normal": "#FFFFFF",
@@ -107156,9 +107156,9 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
     "active": "#ffffff28"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -108410,9 +108410,9 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
   "vkontakteGradientWomensDay": "var(--vkui--vkontakte_gradient_womens_day, rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%)",
   "colorsScheme": "var(--vkui--colors_scheme, dark)",
   "colorBackgroundAccent": {
-    "normal": "var(--vkui--color_background_accent, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_background_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_background_accent, #2086f9)",
+    "hover": "var(--vkui--color_background_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_background_accent--active, #3290F9)"
   },
   "colorBackgroundAccentThemed": {
     "normal": "var(--vkui--color_background_accent_themed, #FFFFFF)",
@@ -108545,9 +108545,9 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
     "active": "var(--vkui--color_header_background--active, #2B2B2C)"
   },
   "colorTextAccent": {
-    "normal": "var(--vkui--color_text_accent, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_text_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_text_accent, #2086f9)",
+    "hover": "var(--vkui--color_text_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_text_accent--active, #3290F9)"
   },
   "colorTextAccentThemed": {
     "normal": "var(--vkui--color_text_accent_themed, #FFFFFF)",
@@ -108640,9 +108640,9 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
     "active": "var(--vkui--color_link_contrast--active, #D7D8DB)"
   },
   "colorIconAccent": {
-    "normal": "var(--vkui--color_icon_accent, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_icon_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_icon_accent, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_icon_accent--active, #3290F9)"
   },
   "colorIconAccentThemed": {
     "normal": "var(--vkui--color_icon_accent_themed, #FFFFFF)",
@@ -108785,9 +108785,9 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
     "active": "var(--vkui--color_field_border_alpha--active, #ffffff28)"
   },
   "colorAccentBlue": {
-    "normal": "var(--vkui--color_accent_blue, #2e90ff)",
-    "hover": "var(--vkui--color_accent_blue--hover, #3694FF)",
-    "active": "var(--vkui--color_accent_blue--active, #3F99FF)"
+    "normal": "var(--vkui--color_accent_blue, #2086f9)",
+    "hover": "var(--vkui--color_accent_blue--hover, #298BF9)",
+    "active": "var(--vkui--color_accent_blue--active, #3290F9)"
   },
   "colorAccentGray": {
     "normal": "var(--vkui--color_accent_gray, #a3adb8)",
@@ -110039,9 +110039,9 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "dark",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#FFFFFF",
@@ -110174,9 +110174,9 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
     "active": "#2B2B2C"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorTextAccentThemed": {
     "normal": "#FFFFFF",
@@ -110269,9 +110269,9 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
     "active": "#D7D8DB"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorIconAccentThemed": {
     "normal": "#FFFFFF",
@@ -110414,9 +110414,9 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
     "active": "#ffffff28"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -113325,29 +113325,29 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
   "colorBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_background_accent",
-      "value": "var(--vkui--color_background_accent, #2e90ff)"
+      "value": "var(--vkui--color_background_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent--hover",
-      "value": "var(--vkui--color_background_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_background_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_background_accent--active",
-      "value": "var(--vkui--color_background_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_background_accent--active, #1D7DEA)"
     }
   },
   "colorBackgroundAccentThemed": {
     "normal": {
       "name": "--vkui--color_background_accent_themed",
-      "value": "var(--vkui--color_background_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_background_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent_themed--hover",
-      "value": "var(--vkui--color_background_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_background_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_background_accent_themed--active",
-      "value": "var(--vkui--color_background_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_background_accent_themed--active, #1D7DEA)"
     }
   },
   "colorBackgroundAccentThemedAlpha": {
@@ -113703,29 +113703,29 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
   "colorTextAccent": {
     "normal": {
       "name": "--vkui--color_text_accent",
-      "value": "var(--vkui--color_text_accent, #2e90ff)"
+      "value": "var(--vkui--color_text_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent--hover",
-      "value": "var(--vkui--color_text_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_text_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_text_accent--active",
-      "value": "var(--vkui--color_text_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_text_accent--active, #1D7DEA)"
     }
   },
   "colorTextAccentThemed": {
     "normal": {
       "name": "--vkui--color_text_accent_themed",
-      "value": "var(--vkui--color_text_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_text_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent_themed--hover",
-      "value": "var(--vkui--color_text_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_text_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_text_accent_themed--active",
-      "value": "var(--vkui--color_text_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_text_accent_themed--active, #1D7DEA)"
     }
   },
   "colorTextPrimary": {
@@ -113969,29 +113969,29 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
   "colorIconAccent": {
     "normal": {
       "name": "--vkui--color_icon_accent",
-      "value": "var(--vkui--color_icon_accent, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent--hover",
-      "value": "var(--vkui--color_icon_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_icon_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_icon_accent--active",
-      "value": "var(--vkui--color_icon_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_icon_accent--active, #1D7DEA)"
     }
   },
   "colorIconAccentThemed": {
     "normal": {
       "name": "--vkui--color_icon_accent_themed",
-      "value": "var(--vkui--color_icon_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent_themed--hover",
-      "value": "var(--vkui--color_icon_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_icon_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_icon_accent_themed--active",
-      "value": "var(--vkui--color_icon_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_icon_accent_themed--active, #1D7DEA)"
     }
   },
   "colorIconPrimary": {
@@ -114193,29 +114193,29 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
   "colorStrokeAccent": {
     "normal": {
       "name": "--vkui--color_stroke_accent",
-      "value": "var(--vkui--color_stroke_accent, #2e90ff)"
+      "value": "var(--vkui--color_stroke_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_stroke_accent--hover",
-      "value": "var(--vkui--color_stroke_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_stroke_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_stroke_accent--active",
-      "value": "var(--vkui--color_stroke_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_stroke_accent--active, #1D7DEA)"
     }
   },
   "colorStrokeAccentThemed": {
     "normal": {
       "name": "--vkui--color_stroke_accent_themed",
-      "value": "var(--vkui--color_stroke_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_stroke_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_stroke_accent_themed--hover",
-      "value": "var(--vkui--color_stroke_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_stroke_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_stroke_accent_themed--active",
-      "value": "var(--vkui--color_stroke_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_stroke_accent_themed--active, #1D7DEA)"
     }
   },
   "colorSeparatorPrimary": {
@@ -114375,15 +114375,15 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
   "colorAccentBlue": {
     "normal": {
       "name": "--vkui--color_accent_blue",
-      "value": "var(--vkui--color_accent_blue, #2e90ff)"
+      "value": "var(--vkui--color_accent_blue, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_accent_blue--hover",
-      "value": "var(--vkui--color_accent_blue--hover, #2C8BF7)"
+      "value": "var(--vkui--color_accent_blue--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_accent_blue--active",
-      "value": "var(--vkui--color_accent_blue--active, #2A86EF)"
+      "value": "var(--vkui--color_accent_blue--active, #1D7DEA)"
     }
   },
   "colorAccentGray": {
@@ -115630,14 +115630,14 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
   },
   "colorsScheme": "light",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "rgba(38, 136, 235, 0.2)",
@@ -115765,14 +115765,14 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
     "active": "#EBECEF"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextPrimary": {
     "normal": "#3b3b3b",
@@ -115860,14 +115860,14 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
     "active": "#EBECEF"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconPrimary": {
     "normal": "#3b3b3b",
@@ -115940,14 +115940,14 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
     "active": "#E24F5D"
   },
   "colorStrokeAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorStrokeAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorSeparatorPrimary": {
     "normal": "#ebebeb",
@@ -116005,9 +116005,9 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
     "active": "#3333333d"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -116821,14 +116821,14 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
   },
   "colorsScheme": "var(--vkui--colors_scheme, light)",
   "colorBackgroundAccent": {
-    "normal": "var(--vkui--color_background_accent, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_background_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_background_accent, #2086f9)",
+    "hover": "var(--vkui--color_background_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_background_accent--active, #1D7DEA)"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "var(--vkui--color_background_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_background_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_background_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_background_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_background_accent_themed--active, #1D7DEA)"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "var(--vkui--color_background_accent_themed_alpha, rgba(38, 136, 235, 0.2))",
@@ -116956,14 +116956,14 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
     "active": "var(--vkui--color_header_background--active, #EBECEF)"
   },
   "colorTextAccent": {
-    "normal": "var(--vkui--color_text_accent, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_text_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_text_accent, #2086f9)",
+    "hover": "var(--vkui--color_text_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_text_accent--active, #1D7DEA)"
   },
   "colorTextAccentThemed": {
-    "normal": "var(--vkui--color_text_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_text_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_text_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_text_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_text_accent_themed--active, #1D7DEA)"
   },
   "colorTextPrimary": {
     "normal": "var(--vkui--color_text_primary, #3b3b3b)",
@@ -117051,14 +117051,14 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
     "active": "var(--vkui--color_link_contrast--active, #EBECEF)"
   },
   "colorIconAccent": {
-    "normal": "var(--vkui--color_icon_accent, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_icon_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_icon_accent, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_icon_accent--active, #1D7DEA)"
   },
   "colorIconAccentThemed": {
-    "normal": "var(--vkui--color_icon_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_icon_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_icon_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_icon_accent_themed--active, #1D7DEA)"
   },
   "colorIconPrimary": {
     "normal": "var(--vkui--color_icon_primary, #3b3b3b)",
@@ -117131,14 +117131,14 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
     "active": "var(--vkui--color_icon_negative--active, #E24F5D)"
   },
   "colorStrokeAccent": {
-    "normal": "var(--vkui--color_stroke_accent, #2e90ff)",
-    "hover": "var(--vkui--color_stroke_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_stroke_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_stroke_accent, #2086f9)",
+    "hover": "var(--vkui--color_stroke_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_stroke_accent--active, #1D7DEA)"
   },
   "colorStrokeAccentThemed": {
-    "normal": "var(--vkui--color_stroke_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_stroke_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_stroke_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_stroke_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_stroke_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_stroke_accent_themed--active, #1D7DEA)"
   },
   "colorSeparatorPrimary": {
     "normal": "var(--vkui--color_separator_primary, #ebebeb)",
@@ -117196,9 +117196,9 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
     "active": "var(--vkui--color_field_border_alpha--active, #3333333d)"
   },
   "colorAccentBlue": {
-    "normal": "var(--vkui--color_accent_blue, #2e90ff)",
-    "hover": "var(--vkui--color_accent_blue--hover, #2C8BF7)",
-    "active": "var(--vkui--color_accent_blue--active, #2A86EF)"
+    "normal": "var(--vkui--color_accent_blue, #2086f9)",
+    "hover": "var(--vkui--color_accent_blue--hover, #1F81F1)",
+    "active": "var(--vkui--color_accent_blue--active, #1D7DEA)"
   },
   "colorAccentGray": {
     "normal": "var(--vkui--color_accent_gray, #a3adb8)",
@@ -118012,14 +118012,14 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
   },
   "colorsScheme": "light",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "rgba(38, 136, 235, 0.2)",
@@ -118147,14 +118147,14 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
     "active": "#EBECEF"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextPrimary": {
     "normal": "#3b3b3b",
@@ -118242,14 +118242,14 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
     "active": "#EBECEF"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconPrimary": {
     "normal": "#3b3b3b",
@@ -118322,14 +118322,14 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
     "active": "#E24F5D"
   },
   "colorStrokeAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorStrokeAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorSeparatorPrimary": {
     "normal": "#ebebeb",
@@ -118387,9 +118387,9 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
     "active": "#3333333d"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -120888,15 +120888,15 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
   "colorBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_background_accent",
-      "value": "var(--vkui--color_background_accent, #2e90ff)"
+      "value": "var(--vkui--color_background_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent--hover",
-      "value": "var(--vkui--color_background_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_background_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_background_accent--active",
-      "value": "var(--vkui--color_background_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_background_accent--active, #3290F9)"
     }
   },
   "colorBackgroundAccentThemed": {
@@ -121266,15 +121266,15 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
   "colorTextAccent": {
     "normal": {
       "name": "--vkui--color_text_accent",
-      "value": "var(--vkui--color_text_accent, #2e90ff)"
+      "value": "var(--vkui--color_text_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent--hover",
-      "value": "var(--vkui--color_text_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_text_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_text_accent--active",
-      "value": "var(--vkui--color_text_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_text_accent--active, #3290F9)"
     }
   },
   "colorTextAccentThemed": {
@@ -121532,15 +121532,15 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
   "colorIconAccent": {
     "normal": {
       "name": "--vkui--color_icon_accent",
-      "value": "var(--vkui--color_icon_accent, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent--hover",
-      "value": "var(--vkui--color_icon_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_icon_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_icon_accent--active",
-      "value": "var(--vkui--color_icon_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_icon_accent--active, #3290F9)"
     }
   },
   "colorIconAccentThemed": {
@@ -121938,15 +121938,15 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
   "colorAccentBlue": {
     "normal": {
       "name": "--vkui--color_accent_blue",
-      "value": "var(--vkui--color_accent_blue, #2e90ff)"
+      "value": "var(--vkui--color_accent_blue, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_accent_blue--hover",
-      "value": "var(--vkui--color_accent_blue--hover, #3694FF)"
+      "value": "var(--vkui--color_accent_blue--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_accent_blue--active",
-      "value": "var(--vkui--color_accent_blue--active, #3F99FF)"
+      "value": "var(--vkui--color_accent_blue--active, #3290F9)"
     }
   },
   "colorAccentGray": {
@@ -123193,9 +123193,9 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
   },
   "colorsScheme": "dark",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#FFFFFF",
@@ -123328,9 +123328,9 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
     "active": "#2B2B2C"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorTextAccentThemed": {
     "normal": "#FFFFFF",
@@ -123423,9 +123423,9 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
     "active": "#D7D8DB"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorIconAccentThemed": {
     "normal": "#FFFFFF",
@@ -123568,9 +123568,9 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
     "active": "#ffffff28"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -124384,9 +124384,9 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
   },
   "colorsScheme": "var(--vkui--colors_scheme, dark)",
   "colorBackgroundAccent": {
-    "normal": "var(--vkui--color_background_accent, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_background_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_background_accent, #2086f9)",
+    "hover": "var(--vkui--color_background_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_background_accent--active, #3290F9)"
   },
   "colorBackgroundAccentThemed": {
     "normal": "var(--vkui--color_background_accent_themed, #FFFFFF)",
@@ -124519,9 +124519,9 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_header_background--active, #2B2B2C)"
   },
   "colorTextAccent": {
-    "normal": "var(--vkui--color_text_accent, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_text_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_text_accent, #2086f9)",
+    "hover": "var(--vkui--color_text_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_text_accent--active, #3290F9)"
   },
   "colorTextAccentThemed": {
     "normal": "var(--vkui--color_text_accent_themed, #FFFFFF)",
@@ -124614,9 +124614,9 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_link_contrast--active, #D7D8DB)"
   },
   "colorIconAccent": {
-    "normal": "var(--vkui--color_icon_accent, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_icon_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_icon_accent, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_icon_accent--active, #3290F9)"
   },
   "colorIconAccentThemed": {
     "normal": "var(--vkui--color_icon_accent_themed, #FFFFFF)",
@@ -124759,9 +124759,9 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
     "active": "var(--vkui--color_field_border_alpha--active, #ffffff28)"
   },
   "colorAccentBlue": {
-    "normal": "var(--vkui--color_accent_blue, #2e90ff)",
-    "hover": "var(--vkui--color_accent_blue--hover, #3694FF)",
-    "active": "var(--vkui--color_accent_blue--active, #3F99FF)"
+    "normal": "var(--vkui--color_accent_blue, #2086f9)",
+    "hover": "var(--vkui--color_accent_blue--hover, #298BF9)",
+    "active": "var(--vkui--color_accent_blue--active, #3290F9)"
   },
   "colorAccentGray": {
     "normal": "var(--vkui--color_accent_gray, #a3adb8)",
@@ -125575,9 +125575,9 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
   },
   "colorsScheme": "dark",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#FFFFFF",
@@ -125710,9 +125710,9 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
     "active": "#2B2B2C"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorTextAccentThemed": {
     "normal": "#FFFFFF",
@@ -125805,9 +125805,9 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
     "active": "#D7D8DB"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorIconAccentThemed": {
     "normal": "#FFFFFF",
@@ -125950,9 +125950,9 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
     "active": "#ffffff28"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -128483,29 +128483,29 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
   "colorBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_background_accent",
-      "value": "var(--vkui--color_background_accent, #2e90ff)"
+      "value": "var(--vkui--color_background_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent--hover",
-      "value": "var(--vkui--color_background_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_background_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_background_accent--active",
-      "value": "var(--vkui--color_background_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_background_accent--active, #1D7DEA)"
     }
   },
   "colorBackgroundAccentThemed": {
     "normal": {
       "name": "--vkui--color_background_accent_themed",
-      "value": "var(--vkui--color_background_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_background_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent_themed--hover",
-      "value": "var(--vkui--color_background_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_background_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_background_accent_themed--active",
-      "value": "var(--vkui--color_background_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_background_accent_themed--active, #1D7DEA)"
     }
   },
   "colorBackgroundAccentThemedAlpha": {
@@ -128861,29 +128861,29 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
   "colorTextAccent": {
     "normal": {
       "name": "--vkui--color_text_accent",
-      "value": "var(--vkui--color_text_accent, #2e90ff)"
+      "value": "var(--vkui--color_text_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent--hover",
-      "value": "var(--vkui--color_text_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_text_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_text_accent--active",
-      "value": "var(--vkui--color_text_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_text_accent--active, #1D7DEA)"
     }
   },
   "colorTextAccentThemed": {
     "normal": {
       "name": "--vkui--color_text_accent_themed",
-      "value": "var(--vkui--color_text_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_text_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent_themed--hover",
-      "value": "var(--vkui--color_text_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_text_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_text_accent_themed--active",
-      "value": "var(--vkui--color_text_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_text_accent_themed--active, #1D7DEA)"
     }
   },
   "colorTextPrimary": {
@@ -129127,29 +129127,29 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
   "colorIconAccent": {
     "normal": {
       "name": "--vkui--color_icon_accent",
-      "value": "var(--vkui--color_icon_accent, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent--hover",
-      "value": "var(--vkui--color_icon_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_icon_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_icon_accent--active",
-      "value": "var(--vkui--color_icon_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_icon_accent--active, #1D7DEA)"
     }
   },
   "colorIconAccentThemed": {
     "normal": {
       "name": "--vkui--color_icon_accent_themed",
-      "value": "var(--vkui--color_icon_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent_themed--hover",
-      "value": "var(--vkui--color_icon_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_icon_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_icon_accent_themed--active",
-      "value": "var(--vkui--color_icon_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_icon_accent_themed--active, #1D7DEA)"
     }
   },
   "colorIconPrimary": {
@@ -129351,29 +129351,29 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
   "colorStrokeAccent": {
     "normal": {
       "name": "--vkui--color_stroke_accent",
-      "value": "var(--vkui--color_stroke_accent, #2e90ff)"
+      "value": "var(--vkui--color_stroke_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_stroke_accent--hover",
-      "value": "var(--vkui--color_stroke_accent--hover, #2C8BF7)"
+      "value": "var(--vkui--color_stroke_accent--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_stroke_accent--active",
-      "value": "var(--vkui--color_stroke_accent--active, #2A86EF)"
+      "value": "var(--vkui--color_stroke_accent--active, #1D7DEA)"
     }
   },
   "colorStrokeAccentThemed": {
     "normal": {
       "name": "--vkui--color_stroke_accent_themed",
-      "value": "var(--vkui--color_stroke_accent_themed, #2e90ff)"
+      "value": "var(--vkui--color_stroke_accent_themed, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_stroke_accent_themed--hover",
-      "value": "var(--vkui--color_stroke_accent_themed--hover, #2C8BF7)"
+      "value": "var(--vkui--color_stroke_accent_themed--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_stroke_accent_themed--active",
-      "value": "var(--vkui--color_stroke_accent_themed--active, #2A86EF)"
+      "value": "var(--vkui--color_stroke_accent_themed--active, #1D7DEA)"
     }
   },
   "colorSeparatorPrimary": {
@@ -129533,15 +129533,15 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
   "colorAccentBlue": {
     "normal": {
       "name": "--vkui--color_accent_blue",
-      "value": "var(--vkui--color_accent_blue, #2e90ff)"
+      "value": "var(--vkui--color_accent_blue, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_accent_blue--hover",
-      "value": "var(--vkui--color_accent_blue--hover, #2C8BF7)"
+      "value": "var(--vkui--color_accent_blue--hover, #1F81F1)"
     },
     "active": {
       "name": "--vkui--color_accent_blue--active",
-      "value": "var(--vkui--color_accent_blue--active, #2A86EF)"
+      "value": "var(--vkui--color_accent_blue--active, #1D7DEA)"
     }
   },
   "colorAccentGray": {
@@ -131933,14 +131933,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "light",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "rgba(38, 136, 235, 0.2)",
@@ -132068,14 +132068,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
     "active": "#EBECEF"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextPrimary": {
     "normal": "#3b3b3b",
@@ -132163,14 +132163,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
     "active": "#EBECEF"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconPrimary": {
     "normal": "#3b3b3b",
@@ -132243,14 +132243,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
     "active": "#E24F5D"
   },
   "colorStrokeAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorStrokeAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorSeparatorPrimary": {
     "normal": "#ebebeb",
@@ -132308,9 +132308,9 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
     "active": "#3333333d"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -133531,14 +133531,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
   "vkontakteGradientWomensDay": "var(--vkui--vkontakte_gradient_womens_day, rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%)",
   "colorsScheme": "var(--vkui--colors_scheme, light)",
   "colorBackgroundAccent": {
-    "normal": "var(--vkui--color_background_accent, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_background_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_background_accent, #2086f9)",
+    "hover": "var(--vkui--color_background_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_background_accent--active, #1D7DEA)"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "var(--vkui--color_background_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_background_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_background_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_background_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_background_accent_themed--active, #1D7DEA)"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "var(--vkui--color_background_accent_themed_alpha, rgba(38, 136, 235, 0.2))",
@@ -133666,14 +133666,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
     "active": "var(--vkui--color_header_background--active, #EBECEF)"
   },
   "colorTextAccent": {
-    "normal": "var(--vkui--color_text_accent, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_text_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_text_accent, #2086f9)",
+    "hover": "var(--vkui--color_text_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_text_accent--active, #1D7DEA)"
   },
   "colorTextAccentThemed": {
-    "normal": "var(--vkui--color_text_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_text_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_text_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_text_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_text_accent_themed--active, #1D7DEA)"
   },
   "colorTextPrimary": {
     "normal": "var(--vkui--color_text_primary, #3b3b3b)",
@@ -133761,14 +133761,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
     "active": "var(--vkui--color_link_contrast--active, #EBECEF)"
   },
   "colorIconAccent": {
-    "normal": "var(--vkui--color_icon_accent, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_icon_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_icon_accent, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_icon_accent--active, #1D7DEA)"
   },
   "colorIconAccentThemed": {
-    "normal": "var(--vkui--color_icon_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_icon_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_icon_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_icon_accent_themed--active, #1D7DEA)"
   },
   "colorIconPrimary": {
     "normal": "var(--vkui--color_icon_primary, #3b3b3b)",
@@ -133841,14 +133841,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
     "active": "var(--vkui--color_icon_negative--active, #E24F5D)"
   },
   "colorStrokeAccent": {
-    "normal": "var(--vkui--color_stroke_accent, #2e90ff)",
-    "hover": "var(--vkui--color_stroke_accent--hover, #2C8BF7)",
-    "active": "var(--vkui--color_stroke_accent--active, #2A86EF)"
+    "normal": "var(--vkui--color_stroke_accent, #2086f9)",
+    "hover": "var(--vkui--color_stroke_accent--hover, #1F81F1)",
+    "active": "var(--vkui--color_stroke_accent--active, #1D7DEA)"
   },
   "colorStrokeAccentThemed": {
-    "normal": "var(--vkui--color_stroke_accent_themed, #2e90ff)",
-    "hover": "var(--vkui--color_stroke_accent_themed--hover, #2C8BF7)",
-    "active": "var(--vkui--color_stroke_accent_themed--active, #2A86EF)"
+    "normal": "var(--vkui--color_stroke_accent_themed, #2086f9)",
+    "hover": "var(--vkui--color_stroke_accent_themed--hover, #1F81F1)",
+    "active": "var(--vkui--color_stroke_accent_themed--active, #1D7DEA)"
   },
   "colorSeparatorPrimary": {
     "normal": "var(--vkui--color_separator_primary, #ebebeb)",
@@ -133906,9 +133906,9 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
     "active": "var(--vkui--color_field_border_alpha--active, #3333333d)"
   },
   "colorAccentBlue": {
-    "normal": "var(--vkui--color_accent_blue, #2e90ff)",
-    "hover": "var(--vkui--color_accent_blue--hover, #2C8BF7)",
-    "active": "var(--vkui--color_accent_blue--active, #2A86EF)"
+    "normal": "var(--vkui--color_accent_blue, #2086f9)",
+    "hover": "var(--vkui--color_accent_blue--hover, #1F81F1)",
+    "active": "var(--vkui--color_accent_blue--active, #1D7DEA)"
   },
   "colorAccentGray": {
     "normal": "var(--vkui--color_accent_gray, #a3adb8)",
@@ -135129,14 +135129,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "light",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorBackgroundAccentThemedAlpha": {
     "normal": "rgba(38, 136, 235, 0.2)",
@@ -135264,14 +135264,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
     "active": "#EBECEF"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorTextPrimary": {
     "normal": "#3b3b3b",
@@ -135359,14 +135359,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
     "active": "#EBECEF"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorIconPrimary": {
     "normal": "#3b3b3b",
@@ -135439,14 +135439,14 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
     "active": "#E24F5D"
   },
   "colorStrokeAccent": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorStrokeAccentThemed": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorSeparatorPrimary": {
     "normal": "#ebebeb",
@@ -135504,9 +135504,9 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
     "active": "#3333333d"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#2C8BF7",
-    "active": "#2A86EF"
+    "normal": "#2086f9",
+    "hover": "#1F81F1",
+    "active": "#1D7DEA"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -138447,15 +138447,15 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   "colorBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_background_accent",
-      "value": "var(--vkui--color_background_accent, #2e90ff)"
+      "value": "var(--vkui--color_background_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_background_accent--hover",
-      "value": "var(--vkui--color_background_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_background_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_background_accent--active",
-      "value": "var(--vkui--color_background_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_background_accent--active, #3290F9)"
     }
   },
   "colorBackgroundAccentThemed": {
@@ -138825,15 +138825,15 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   "colorTextAccent": {
     "normal": {
       "name": "--vkui--color_text_accent",
-      "value": "var(--vkui--color_text_accent, #2e90ff)"
+      "value": "var(--vkui--color_text_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_text_accent--hover",
-      "value": "var(--vkui--color_text_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_text_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_text_accent--active",
-      "value": "var(--vkui--color_text_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_text_accent--active, #3290F9)"
     }
   },
   "colorTextAccentThemed": {
@@ -139091,15 +139091,15 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   "colorIconAccent": {
     "normal": {
       "name": "--vkui--color_icon_accent",
-      "value": "var(--vkui--color_icon_accent, #2e90ff)"
+      "value": "var(--vkui--color_icon_accent, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_icon_accent--hover",
-      "value": "var(--vkui--color_icon_accent--hover, #3694FF)"
+      "value": "var(--vkui--color_icon_accent--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_icon_accent--active",
-      "value": "var(--vkui--color_icon_accent--active, #3F99FF)"
+      "value": "var(--vkui--color_icon_accent--active, #3290F9)"
     }
   },
   "colorIconAccentThemed": {
@@ -139497,15 +139497,15 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   "colorAccentBlue": {
     "normal": {
       "name": "--vkui--color_accent_blue",
-      "value": "var(--vkui--color_accent_blue, #2e90ff)"
+      "value": "var(--vkui--color_accent_blue, #2086f9)"
     },
     "hover": {
       "name": "--vkui--color_accent_blue--hover",
-      "value": "var(--vkui--color_accent_blue--hover, #3694FF)"
+      "value": "var(--vkui--color_accent_blue--hover, #298BF9)"
     },
     "active": {
       "name": "--vkui--color_accent_blue--active",
-      "value": "var(--vkui--color_accent_blue--active, #3F99FF)"
+      "value": "var(--vkui--color_accent_blue--active, #3290F9)"
     }
   },
   "colorAccentGray": {
@@ -141897,9 +141897,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "dark",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#FFFFFF",
@@ -142032,9 +142032,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
     "active": "#2B2B2C"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorTextAccentThemed": {
     "normal": "#FFFFFF",
@@ -142127,9 +142127,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
     "active": "#D7D8DB"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorIconAccentThemed": {
     "normal": "#FFFFFF",
@@ -142272,9 +142272,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
     "active": "#ffffff28"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
@@ -143495,9 +143495,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
   "vkontakteGradientWomensDay": "var(--vkui--vkontakte_gradient_womens_day, rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%)",
   "colorsScheme": "var(--vkui--colors_scheme, dark)",
   "colorBackgroundAccent": {
-    "normal": "var(--vkui--color_background_accent, #2e90ff)",
-    "hover": "var(--vkui--color_background_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_background_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_background_accent, #2086f9)",
+    "hover": "var(--vkui--color_background_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_background_accent--active, #3290F9)"
   },
   "colorBackgroundAccentThemed": {
     "normal": "var(--vkui--color_background_accent_themed, #FFFFFF)",
@@ -143630,9 +143630,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
     "active": "var(--vkui--color_header_background--active, #2B2B2C)"
   },
   "colorTextAccent": {
-    "normal": "var(--vkui--color_text_accent, #2e90ff)",
-    "hover": "var(--vkui--color_text_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_text_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_text_accent, #2086f9)",
+    "hover": "var(--vkui--color_text_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_text_accent--active, #3290F9)"
   },
   "colorTextAccentThemed": {
     "normal": "var(--vkui--color_text_accent_themed, #FFFFFF)",
@@ -143725,9 +143725,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
     "active": "var(--vkui--color_link_contrast--active, #D7D8DB)"
   },
   "colorIconAccent": {
-    "normal": "var(--vkui--color_icon_accent, #2e90ff)",
-    "hover": "var(--vkui--color_icon_accent--hover, #3694FF)",
-    "active": "var(--vkui--color_icon_accent--active, #3F99FF)"
+    "normal": "var(--vkui--color_icon_accent, #2086f9)",
+    "hover": "var(--vkui--color_icon_accent--hover, #298BF9)",
+    "active": "var(--vkui--color_icon_accent--active, #3290F9)"
   },
   "colorIconAccentThemed": {
     "normal": "var(--vkui--color_icon_accent_themed, #FFFFFF)",
@@ -143870,9 +143870,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
     "active": "var(--vkui--color_field_border_alpha--active, #ffffff28)"
   },
   "colorAccentBlue": {
-    "normal": "var(--vkui--color_accent_blue, #2e90ff)",
-    "hover": "var(--vkui--color_accent_blue--hover, #3694FF)",
-    "active": "var(--vkui--color_accent_blue--active, #3F99FF)"
+    "normal": "var(--vkui--color_accent_blue, #2086f9)",
+    "hover": "var(--vkui--color_accent_blue--hover, #298BF9)",
+    "active": "var(--vkui--color_accent_blue--active, #3290F9)"
   },
   "colorAccentGray": {
     "normal": "var(--vkui--color_accent_gray, #a3adb8)",
@@ -145093,9 +145093,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
   "vkontakteGradientWomensDay": "rgba(255, 153, 204, 1) 0%, rgba(229, 46, 106, 1) 100%",
   "colorsScheme": "dark",
   "colorBackgroundAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#FFFFFF",
@@ -145228,9 +145228,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
     "active": "#2B2B2C"
   },
   "colorTextAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorTextAccentThemed": {
     "normal": "#FFFFFF",
@@ -145323,9 +145323,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
     "active": "#D7D8DB"
   },
   "colorIconAccent": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorIconAccentThemed": {
     "normal": "#FFFFFF",
@@ -145468,9 +145468,9 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
     "active": "#ffffff28"
   },
   "colorAccentBlue": {
-    "normal": "#2e90ff",
-    "hover": "#3694FF",
-    "active": "#3F99FF"
+    "normal": "#2086f9",
+    "hover": "#298BF9",
+    "active": "#3290F9"
   },
   "colorAccentGray": {
     "normal": "#a3adb8",
