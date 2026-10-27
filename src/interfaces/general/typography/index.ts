@@ -180,6 +180,12 @@ export interface TypographyBaseProps {
 	fontFamilyBase: Property.FontFamily;
 
 	/**
+	 * @desc Семейство шрифтов для моноширинного текста
+	 * @tags font
+	 */
+	fontFamilyMono: Property.FontFamily;
+
+	/**
 	 * @desc Размер веса шрифта акцентного семейства. Самый большой
 	 * @tags font
 	 */

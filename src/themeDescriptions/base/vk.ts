@@ -12,6 +12,7 @@ import figma from '../base/figma/vk.json' with { type: 'json' };
 const fontFamilyFallbacks = '-apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const fontFamilyAccent = fontFamilyFallbacks;
 const fontFamilyBase = fontFamilyFallbacks;
+const fontFamilyMono = '"JetBrains Mono", Monaco, Consolas, monospace';
 const fontWeightAccent1 = 600;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -332,6 +333,7 @@ export const fonts: BaseFonts = {
 	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
+	fontFamilyMono,
 	fontWeightAccent1,
 	fontWeightAccent2,
 	fontWeightAccent3,

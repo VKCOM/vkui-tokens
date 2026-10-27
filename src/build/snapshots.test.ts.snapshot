@@ -16,6 +16,10 @@ exports[`snapshots > calendar theme > should match cssVars snapshot 1`] = `
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, VKSansDisplay, MailSans, Helvetica, Arial, sans-serif)"
   },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
+  },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
     "value": "var(--vkui--font_weight_accent1, 500)"
@@ -6766,6 +6770,7 @@ exports[`snapshots > calendar theme > should match pixelify theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -8907,6 +8912,7 @@ exports[`snapshots > calendar theme > should match pseudo theme from CssVars 1`]
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, VKSansDisplay, MailSans, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -11048,6 +11054,7 @@ exports[`snapshots > calendar theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -13200,6 +13207,10 @@ exports[`snapshots > calendarDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, VKSansDisplay, MailSans, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -19951,6 +19962,7 @@ exports[`snapshots > calendarDark theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -22092,6 +22104,7 @@ exports[`snapshots > calendarDark theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, VKSansDisplay, MailSans, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -24233,6 +24246,7 @@ exports[`snapshots > calendarDark theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansDisplay, MailSans, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -26385,6 +26399,10 @@ exports[`snapshots > calls theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, MailSans, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -31056,6 +31074,7 @@ exports[`snapshots > calls theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "MailSans, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "MailSans, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -32479,6 +32498,7 @@ exports[`snapshots > calls theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, MailSans, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, MailSans, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -33902,6 +33922,7 @@ exports[`snapshots > calls theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "MailSans, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "MailSans, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -35336,6 +35357,10 @@ exports[`snapshots > cloud theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -41515,6 +41540,7 @@ exports[`snapshots > cloud theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -43432,6 +43458,7 @@ exports[`snapshots > cloud theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -45349,6 +45376,7 @@ exports[`snapshots > cloud theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -47277,6 +47305,10 @@ exports[`snapshots > cloudDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -53330,6 +53362,7 @@ exports[`snapshots > cloudDark theme > should match pixelify theme snapshot 1`] 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -55208,6 +55241,7 @@ exports[`snapshots > cloudDark theme > should match pseudo theme from CssVars 1`
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -57086,6 +57120,7 @@ exports[`snapshots > cloudDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -59031,6 +59066,10 @@ exports[`snapshots > dobro theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -62494,6 +62533,7 @@ exports[`snapshots > dobro theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -63569,6 +63609,7 @@ exports[`snapshots > dobro theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -64644,6 +64685,7 @@ exports[`snapshots > dobro theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -65772,6 +65814,10 @@ exports[`snapshots > dobroDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -69239,6 +69285,7 @@ exports[`snapshots > dobroDark theme > should match pixelify theme snapshot 1`] 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -70315,6 +70362,7 @@ exports[`snapshots > dobroDark theme > should match pseudo theme from CssVars 1`
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -71391,6 +71439,7 @@ exports[`snapshots > dobroDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -72464,6 +72513,10 @@ exports[`snapshots > home theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -77249,6 +77302,7 @@ exports[`snapshots > home theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -78714,6 +78768,7 @@ exports[`snapshots > home theme > should match pseudo theme from CssVars 1`] = `
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -80179,6 +80234,7 @@ exports[`snapshots > home theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -81655,6 +81711,10 @@ exports[`snapshots > homeDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -86436,6 +86496,7 @@ exports[`snapshots > homeDark theme > should match pixelify theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -87900,6 +87961,7 @@ exports[`snapshots > homeDark theme > should match pseudo theme from CssVars 1`]
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -89364,6 +89426,7 @@ exports[`snapshots > homeDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -90879,6 +90942,10 @@ exports[`snapshots > legoAndroid theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -96076,6 +96143,7 @@ exports[`snapshots > legoAndroid theme > should match pixelify theme snapshot 1`
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -97705,6 +97773,7 @@ exports[`snapshots > legoAndroid theme > should match pseudo theme from CssVars 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -99334,6 +99403,7 @@ exports[`snapshots > legoAndroid theme > should match root theme snapshot 1`] = 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -101004,6 +101074,10 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -106201,6 +106275,7 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -107830,6 +107905,7 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -109459,6 +109535,7 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -111145,6 +111222,10 @@ exports[`snapshots > legoIOS theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -115082,6 +115163,7 @@ exports[`snapshots > legoIOS theme > should match pixelify theme snapshot 1`] = 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -116273,6 +116355,7 @@ exports[`snapshots > legoIOS theme > should match pseudo theme from CssVars 1`] 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -117464,6 +117547,7 @@ exports[`snapshots > legoIOS theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -118708,6 +118792,10 @@ exports[`snapshots > legoIOSDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -122645,6 +122733,7 @@ exports[`snapshots > legoIOSDark theme > should match pixelify theme snapshot 1`
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -123836,6 +123925,7 @@ exports[`snapshots > legoIOSDark theme > should match pseudo theme from CssVars 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -125027,6 +125117,7 @@ exports[`snapshots > legoIOSDark theme > should match root theme snapshot 1`] = 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -126255,6 +126346,10 @@ exports[`snapshots > legoSimpleAndroid theme > should match cssVars snapshot 1`]
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -131384,6 +131479,7 @@ exports[`snapshots > legoSimpleAndroid theme > should match pixelify theme snaps
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -132982,6 +133078,7 @@ exports[`snapshots > legoSimpleAndroid theme > should match pseudo theme from Cs
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -134580,6 +134677,7 @@ exports[`snapshots > legoSimpleAndroid theme > should match root theme snapshot 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -136219,6 +136317,10 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -141348,6 +141450,7 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -142946,6 +143049,7 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -144544,6 +144648,7 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -146143,6 +146248,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -152698,6 +152807,7 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -154622,6 +154732,7 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -156546,6 +156657,7 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -158481,6 +158593,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -165036,6 +165152,7 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -166960,6 +167077,7 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -168884,6 +169002,7 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -170875,6 +170994,10 @@ exports[`snapshots > milkshakeIOS theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -174656,6 +174779,7 @@ exports[`snapshots > milkshakeIOS theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -175806,6 +175930,7 @@ exports[`snapshots > milkshakeIOS theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -176956,6 +177081,7 @@ exports[`snapshots > milkshakeIOS theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -178159,6 +178285,10 @@ exports[`snapshots > milkshakeIOSDark theme > should match cssVars snapshot 1`] 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -181940,6 +182070,7 @@ exports[`snapshots > milkshakeIOSDark theme > should match pixelify theme snapsh
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -183090,6 +183221,7 @@ exports[`snapshots > milkshakeIOSDark theme > should match pseudo theme from Css
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -184240,6 +184372,7 @@ exports[`snapshots > milkshakeIOSDark theme > should match root theme snapshot 1
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -185387,6 +185520,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -191948,6 +192085,7 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -193875,6 +194013,7 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -195802,6 +195941,7 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -197740,6 +197880,10 @@ exports[`snapshots > octavius theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -205441,6 +205585,7 @@ exports[`snapshots > octavius theme > should match pixelify theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -207938,6 +208083,7 @@ exports[`snapshots > octavius theme > should match pseudo theme from CssVars 1`]
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -210435,6 +210581,7 @@ exports[`snapshots > octavius theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -212943,6 +213090,10 @@ exports[`snapshots > octaviusCompact theme > should match cssVars snapshot 1`] =
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -220648,6 +220799,7 @@ exports[`snapshots > octaviusCompact theme > should match pixelify theme snapsho
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -223146,6 +223298,7 @@ exports[`snapshots > octaviusCompact theme > should match pseudo theme from CssV
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -225644,6 +225797,7 @@ exports[`snapshots > octaviusCompact theme > should match root theme snapshot 1`
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -228153,6 +228307,10 @@ exports[`snapshots > octaviusCompactDark theme > should match cssVars snapshot 1
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -235858,6 +236016,7 @@ exports[`snapshots > octaviusCompactDark theme > should match pixelify theme sna
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -238356,6 +238515,7 @@ exports[`snapshots > octaviusCompactDark theme > should match pseudo theme from 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -240854,6 +241014,7 @@ exports[`snapshots > octaviusCompactDark theme > should match root theme snapsho
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -243363,6 +243524,10 @@ exports[`snapshots > octaviusDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -251064,6 +251229,7 @@ exports[`snapshots > octaviusDark theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -253561,6 +253727,7 @@ exports[`snapshots > octaviusDark theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -256058,6 +256225,7 @@ exports[`snapshots > octaviusDark theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -258566,6 +258734,10 @@ exports[`snapshots > octaviusVK theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, VKSansText, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -266219,6 +266391,7 @@ exports[`snapshots > octaviusVK theme > should match pixelify theme snapshot 1`]
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansText, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -268699,6 +268872,7 @@ exports[`snapshots > octaviusVK theme > should match pseudo theme from CssVars 1
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, VKSansText, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -271179,6 +271353,7 @@ exports[`snapshots > octaviusVK theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansText, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -273670,6 +273845,10 @@ exports[`snapshots > octaviusVKDark theme > should match cssVars snapshot 1`] = 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, VKSansText, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -281323,6 +281502,7 @@ exports[`snapshots > octaviusVKDark theme > should match pixelify theme snapshot
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansText, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -283803,6 +283983,7 @@ exports[`snapshots > octaviusVKDark theme > should match pseudo theme from CssVa
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, VKSansText, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -286283,6 +286464,7 @@ exports[`snapshots > octaviusVKDark theme > should match root theme snapshot 1`]
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "VKSansText, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -288774,6 +288956,10 @@ exports[`snapshots > octaviusWhite theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -296475,6 +296661,7 @@ exports[`snapshots > octaviusWhite theme > should match pixelify theme snapshot 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -298972,6 +299159,7 @@ exports[`snapshots > octaviusWhite theme > should match pseudo theme from CssVar
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -301469,6 +301657,7 @@ exports[`snapshots > octaviusWhite theme > should match root theme snapshot 1`] 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -303977,6 +304166,10 @@ exports[`snapshots > octaviusWhiteDark theme > should match cssVars snapshot 1`]
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -311678,6 +311871,7 @@ exports[`snapshots > octaviusWhiteDark theme > should match pixelify theme snaps
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -314175,6 +314369,7 @@ exports[`snapshots > octaviusWhiteDark theme > should match pseudo theme from Cs
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -316672,6 +316867,7 @@ exports[`snapshots > octaviusWhiteDark theme > should match root theme snapshot 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -319180,6 +319376,10 @@ exports[`snapshots > otvet theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -324681,6 +324881,7 @@ exports[`snapshots > otvet theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -326340,6 +326541,7 @@ exports[`snapshots > otvet theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -327999,6 +328201,7 @@ exports[`snapshots > otvet theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -329669,6 +329872,10 @@ exports[`snapshots > otvetDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -335170,6 +335377,7 @@ exports[`snapshots > otvetDark theme > should match pixelify theme snapshot 1`] 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -336829,6 +337037,7 @@ exports[`snapshots > otvetDark theme > should match pseudo theme from CssVars 1`
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -338488,6 +338697,7 @@ exports[`snapshots > otvetDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -340158,6 +340368,10 @@ exports[`snapshots > paradigmBase theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -344857,6 +345071,7 @@ exports[`snapshots > paradigmBase theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -346293,6 +346508,7 @@ exports[`snapshots > paradigmBase theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -347729,6 +347945,7 @@ exports[`snapshots > paradigmBase theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -349176,6 +349393,10 @@ exports[`snapshots > paradigmBaseDark theme > should match cssVars snapshot 1`] 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -353879,6 +354100,7 @@ exports[`snapshots > paradigmBaseDark theme > should match pixelify theme snapsh
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -355316,6 +355538,7 @@ exports[`snapshots > paradigmBaseDark theme > should match pseudo theme from Css
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -356753,6 +356976,7 @@ exports[`snapshots > paradigmBaseDark theme > should match root theme snapshot 1
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -358201,6 +358425,10 @@ exports[`snapshots > paradigmTech theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -366140,6 +366368,7 @@ exports[`snapshots > paradigmTech theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -368722,6 +368951,7 @@ exports[`snapshots > paradigmTech theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -371304,6 +371534,7 @@ exports[`snapshots > paradigmTech theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -373897,6 +374128,10 @@ exports[`snapshots > paradigmTechDark theme > should match cssVars snapshot 1`] 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -381836,6 +382071,7 @@ exports[`snapshots > paradigmTechDark theme > should match pixelify theme snapsh
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -384418,6 +384654,7 @@ exports[`snapshots > paradigmTechDark theme > should match pseudo theme from Css
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -387000,6 +387237,7 @@ exports[`snapshots > paradigmTechDark theme > should match root theme snapshot 1
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -389593,6 +389831,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -396162,6 +396404,7 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -398091,6 +398334,7 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Inter, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -400020,6 +400264,7 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "Inter, Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Inter, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -401960,6 +402205,10 @@ exports[`snapshots > portalUI theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -406979,6 +407228,7 @@ exports[`snapshots > portalUI theme > should match pixelify theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -408522,6 +408772,7 @@ exports[`snapshots > portalUI theme > should match pseudo theme from CssVars 1`]
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -410065,6 +410316,7 @@ exports[`snapshots > portalUI theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -411619,6 +411871,10 @@ exports[`snapshots > portalUIDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -416634,6 +416890,7 @@ exports[`snapshots > portalUIDark theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -418176,6 +418433,7 @@ exports[`snapshots > portalUIDark theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -419718,6 +419976,7 @@ exports[`snapshots > portalUIDark theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -421271,6 +421530,10 @@ exports[`snapshots > promo theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -426770,6 +427033,7 @@ exports[`snapshots > promo theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -428446,6 +428710,7 @@ exports[`snapshots > promo theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -430122,6 +430387,7 @@ exports[`snapshots > promo theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -441848,6 +442114,10 @@ exports[`snapshots > search theme > should match cssVars snapshot 1`] = `
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Arial, sans-serif)"
   },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
+  },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
     "value": "var(--vkui--font_weight_accent1, 500)"
@@ -447552,6 +447822,7 @@ exports[`snapshots > search theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -449244,6 +449515,7 @@ exports[`snapshots > search theme > should match pseudo theme from CssVars 1`] =
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -450936,6 +451208,7 @@ exports[`snapshots > search theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -452639,6 +452912,10 @@ exports[`snapshots > todo theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -457342,6 +457619,7 @@ exports[`snapshots > todo theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -458779,6 +459057,7 @@ exports[`snapshots > todo theme > should match pseudo theme from CssVars 1`] = `
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -460216,6 +460495,7 @@ exports[`snapshots > todo theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -461720,6 +462000,10 @@ exports[`snapshots > tutoria theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Roboto, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -465703,6 +465987,7 @@ exports[`snapshots > tutoria theme > should match pixelify theme snapshot 1`] = 
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -466936,6 +467221,7 @@ exports[`snapshots > tutoria theme > should match pseudo theme from CssVars 1`] 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Roboto, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -468169,6 +468455,7 @@ exports[`snapshots > tutoria theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -469455,6 +469742,10 @@ exports[`snapshots > tutoriaDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, Roboto, Helvetica, Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -473442,6 +473733,7 @@ exports[`snapshots > tutoriaDark theme > should match pixelify theme snapshot 1`
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -474676,6 +474968,7 @@ exports[`snapshots > tutoriaDark theme > should match pseudo theme from CssVars 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, Helvetica, Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, Helvetica, Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, Roboto, Helvetica, Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -475910,6 +476203,7 @@ exports[`snapshots > tutoriaDark theme > should match root theme snapshot 1`] = 
   "fontFamilyFallbacks": "Helvetica, Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, Helvetica, Arial, sans-serif",
   "fontFamilyBase": "Roboto, Helvetica, Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -477197,6 +477491,10 @@ exports[`snapshots > vkAccessibility theme > should match cssVars snapshot 1`] =
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -480578,6 +480876,7 @@ exports[`snapshots > vkAccessibility theme > should match pixelify theme snapsho
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -481619,6 +481918,7 @@ exports[`snapshots > vkAccessibility theme > should match pseudo theme from CssV
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -482660,6 +482960,7 @@ exports[`snapshots > vkAccessibility theme > should match root theme snapshot 1`
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -483754,6 +484055,10 @@ exports[`snapshots > vkAccessibilityDark theme > should match cssVars snapshot 1
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -487135,6 +487440,7 @@ exports[`snapshots > vkAccessibilityDark theme > should match pixelify theme sna
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -488176,6 +488482,7 @@ exports[`snapshots > vkAccessibilityDark theme > should match pseudo theme from 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -489217,6 +489524,7 @@ exports[`snapshots > vkAccessibilityDark theme > should match root theme snapsho
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -490311,6 +490619,10 @@ exports[`snapshots > vkAccessibilityIOS theme > should match cssVars snapshot 1`
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -493692,6 +494004,7 @@ exports[`snapshots > vkAccessibilityIOS theme > should match pixelify theme snap
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -494733,6 +495046,7 @@ exports[`snapshots > vkAccessibilityIOS theme > should match pseudo theme from C
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -495774,6 +496088,7 @@ exports[`snapshots > vkAccessibilityIOS theme > should match root theme snapshot
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -496868,6 +497183,10 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match cssVars snapsho
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -500249,6 +500568,7 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match pixelify theme 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -501290,6 +501610,7 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match pseudo theme fr
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -502331,6 +502652,7 @@ exports[`snapshots > vkAccessibilityIOSDark theme > should match root theme snap
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -503425,6 +503747,10 @@ exports[`snapshots > vkBase theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -506802,6 +507128,7 @@ exports[`snapshots > vkBase theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -507842,6 +508169,7 @@ exports[`snapshots > vkBase theme > should match pseudo theme from CssVars 1`] =
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -508882,6 +509210,7 @@ exports[`snapshots > vkBase theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -509975,6 +510304,10 @@ exports[`snapshots > vkBaseDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -513356,6 +513689,7 @@ exports[`snapshots > vkBaseDark theme > should match pixelify theme snapshot 1`]
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -514397,6 +514731,7 @@ exports[`snapshots > vkBaseDark theme > should match pseudo theme from CssVars 1
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -515438,6 +515773,7 @@ exports[`snapshots > vkBaseDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -516532,6 +516868,10 @@ exports[`snapshots > vkCom theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -519913,6 +520253,7 @@ exports[`snapshots > vkCom theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -520954,6 +521295,7 @@ exports[`snapshots > vkCom theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -521995,6 +522337,7 @@ exports[`snapshots > vkCom theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -523089,6 +523432,10 @@ exports[`snapshots > vkComDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -526470,6 +526817,7 @@ exports[`snapshots > vkComDark theme > should match pixelify theme snapshot 1`] 
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -527511,6 +527859,7 @@ exports[`snapshots > vkComDark theme > should match pseudo theme from CssVars 1`
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -528552,6 +528901,7 @@ exports[`snapshots > vkComDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", \\"VK Sans Display Faux\\", -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -529646,6 +529996,10 @@ exports[`snapshots > vkIOS theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -533027,6 +533381,7 @@ exports[`snapshots > vkIOS theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -534068,6 +534423,7 @@ exports[`snapshots > vkIOS theme > should match pseudo theme from CssVars 1`] = 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -535109,6 +535465,7 @@ exports[`snapshots > vkIOS theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -536203,6 +536560,10 @@ exports[`snapshots > vkIOSDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -539584,6 +539945,7 @@ exports[`snapshots > vkIOSDark theme > should match pixelify theme snapshot 1`] 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -540625,6 +540987,7 @@ exports[`snapshots > vkIOSDark theme > should match pseudo theme from CssVars 1`
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -541666,6 +542029,7 @@ exports[`snapshots > vkIOSDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -542760,6 +543124,10 @@ exports[`snapshots > vkIdOk theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -546137,6 +546505,7 @@ exports[`snapshots > vkIdOk theme > should match pixelify theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -547177,6 +547546,7 @@ exports[`snapshots > vkIdOk theme > should match pseudo theme from CssVars 1`] =
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -548217,6 +548587,7 @@ exports[`snapshots > vkIdOk theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -549310,6 +549681,10 @@ exports[`snapshots > vkIdOkDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -552691,6 +553066,7 @@ exports[`snapshots > vkIdOkDark theme > should match pixelify theme snapshot 1`]
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -553732,6 +554108,7 @@ exports[`snapshots > vkIdOkDark theme > should match pseudo theme from CssVars 1
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -554773,6 +555150,7 @@ exports[`snapshots > vkIdOkDark theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -555867,6 +556245,10 @@ exports[`snapshots > vkIdOkIOS theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -559248,6 +559630,7 @@ exports[`snapshots > vkIdOkIOS theme > should match pixelify theme snapshot 1`] 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -560289,6 +560672,7 @@ exports[`snapshots > vkIdOkIOS theme > should match pseudo theme from CssVars 1`
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -561330,6 +561714,7 @@ exports[`snapshots > vkIdOkIOS theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -562424,6 +562809,10 @@ exports[`snapshots > vkIdOkIOSDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -565805,6 +566194,7 @@ exports[`snapshots > vkIdOkIOSDark theme > should match pixelify theme snapshot 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -566846,6 +567236,7 @@ exports[`snapshots > vkIdOkIOSDark theme > should match pseudo theme from CssVar
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -567887,6 +568278,7 @@ exports[`snapshots > vkIdOkIOSDark theme > should match root theme snapshot 1`] 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -568965,6 +569357,10 @@ exports[`snapshots > vkontakteAndroid theme > should match cssVars snapshot 1`] 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -573964,6 +574360,7 @@ exports[`snapshots > vkontakteAndroid theme > should match pixelify theme snapsh
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -575534,6 +575931,7 @@ exports[`snapshots > vkontakteAndroid theme > should match pseudo theme from Css
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -577104,6 +577502,7 @@ exports[`snapshots > vkontakteAndroid theme > should match root theme snapshot 1
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -578715,6 +579114,10 @@ exports[`snapshots > vkontakteAndroidDark theme > should match cssVars snapshot 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -583682,6 +584085,7 @@ exports[`snapshots > vkontakteAndroidDark theme > should match pixelify theme sn
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -585244,6 +585648,7 @@ exports[`snapshots > vkontakteAndroidDark theme > should match pseudo theme from
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -586806,6 +587211,7 @@ exports[`snapshots > vkontakteAndroidDark theme > should match root theme snapsh
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -588425,6 +588831,10 @@ exports[`snapshots > vkontakteCom theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -593090,6 +593500,7 @@ exports[`snapshots > vkontakteCom theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -594575,6 +594986,7 @@ exports[`snapshots > vkontakteCom theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -596060,6 +596472,7 @@ exports[`snapshots > vkontakteCom theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -597598,6 +598011,10 @@ exports[`snapshots > vkontakteComDark theme > should match cssVars snapshot 1`] 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -602263,6 +602680,7 @@ exports[`snapshots > vkontakteComDark theme > should match pixelify theme snapsh
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -603748,6 +604166,7 @@ exports[`snapshots > vkontakteComDark theme > should match pseudo theme from Css
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -605233,6 +605652,7 @@ exports[`snapshots > vkontakteComDark theme > should match root theme snapshot 1
   "fontFamilyFallbacks": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, BlinkMacSystemFont, \\"Roboto\\", \\"Helvetica Neue\\", Geneva, \\"Noto Sans Armenian\\", \\"Noto Sans Bengali\\", \\"Noto Sans Cherokee\\", \\"Noto Sans Devanagari\\", \\"Noto Sans Ethiopic\\", \\"Noto Sans Georgian\\", \\"Noto Sans Hebrew\\", \\"Noto Sans Kannada\\", \\"Noto Sans Khmer\\", \\"Noto Sans Lao\\", \\"Noto Sans Osmanya\\", \\"Noto Sans Tamil\\", \\"Noto Sans Telugu\\", \\"Noto Sans Thai\\", arial, Tahoma, verdana, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -606771,6 +607191,10 @@ exports[`snapshots > vkontakteIOS theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -611590,6 +612014,7 @@ exports[`snapshots > vkontakteIOS theme > should match pixelify theme snapshot 1
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -613130,6 +613555,7 @@ exports[`snapshots > vkontakteIOS theme > should match pseudo theme from CssVars
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -614670,6 +615096,7 @@ exports[`snapshots > vkontakteIOS theme > should match root theme snapshot 1`] =
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -616263,6 +616690,10 @@ exports[`snapshots > vkontakteIOSDark theme > should match cssVars snapshot 1`] 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -621082,6 +621513,7 @@ exports[`snapshots > vkontakteIOSDark theme > should match pixelify theme snapsh
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -622622,6 +623054,7 @@ exports[`snapshots > vkontakteIOSDark theme > should match pseudo theme from Css
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, \\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -624162,6 +624595,7 @@ exports[`snapshots > vkontakteIOSDark theme > should match root theme snapshot 1
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "\\"VK Sans Display\\", -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyBase": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -625699,6 +626133,10 @@ exports[`snapshots > widgets theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -630402,6 +630840,7 @@ exports[`snapshots > widgets theme > should match pixelify theme snapshot 1`] = 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -631839,6 +632278,7 @@ exports[`snapshots > widgets theme > should match pseudo theme from CssVars 1`] 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -633276,6 +633716,7 @@ exports[`snapshots > widgets theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -634724,6 +635165,10 @@ exports[`snapshots > widgetsDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -639427,6 +639872,7 @@ exports[`snapshots > widgetsDark theme > should match pixelify theme snapshot 1`
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -640864,6 +641310,7 @@ exports[`snapshots > widgetsDark theme > should match pseudo theme from CssVars 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -642301,6 +642748,7 @@ exports[`snapshots > widgetsDark theme > should match root theme snapshot 1`] = 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -643749,6 +644197,10 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -648990,6 +649442,7 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -650608,6 +651061,7 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -652226,6 +652680,7 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -653855,6 +654310,10 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -659096,6 +659555,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -660714,6 +661174,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -662332,6 +662793,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -663961,6 +664423,10 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -668962,6 +669428,7 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -670498,6 +670965,7 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -672034,6 +672502,7 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -673581,6 +674050,10 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -678582,6 +679055,7 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -680118,6 +680592,7 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -681654,6 +682129,7 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -683201,6 +683677,10 @@ exports[`snapshots > workspaceLandings theme > should match cssVars snapshot 1`]
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -687974,6 +688454,7 @@ exports[`snapshots > workspaceLandings theme > should match pixelify theme snaps
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -689436,6 +689917,7 @@ exports[`snapshots > workspaceLandings theme > should match pseudo theme from Cs
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 500)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -690898,6 +691380,7 @@ exports[`snapshots > workspaceLandings theme > should match root theme snapshot 
   "fontFamilyFallbacks": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyAccent": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
   "fontFamilyBase": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 500,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
