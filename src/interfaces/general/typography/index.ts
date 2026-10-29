@@ -8,6 +8,12 @@ export type Font = {
 	fontWeight: Property.FontWeight;
 	fontFamily?: Property.FontFamily;
 	letterSpacing?: Property.LetterSpacing<TLength>;
+	/**
+	 * Перенос строк: `balance` для заголовков, `pretty` для наборного текста.
+	 * Не задан — поведение браузера по умолчанию; `auto` — явное отключение
+	 * (аналог `AUTO` в Figma), `wrap` — обычный перенос.
+	 */
+	textWrap?: Property.TextWrap;
 	textTransform?: Property.TextTransform;
 	fontStyle?: Property.FontStyle;
 	margin?: string;

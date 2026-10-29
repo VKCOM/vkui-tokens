@@ -98,6 +98,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 32,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -105,6 +106,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 48,
 			lineHeight: 56,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaDisplay1Bold: {
@@ -114,6 +116,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 32,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -121,6 +124,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 48,
 			lineHeight: 56,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle1: {
@@ -130,6 +134,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 30,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -137,6 +142,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 40,
 			lineHeight: 48,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle1Bold: {
@@ -146,6 +152,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 30,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -153,6 +160,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 40,
 			lineHeight: 48,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle2: {
@@ -162,6 +170,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 34,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -169,6 +178,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 36,
 			lineHeight: 44,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle2Bold: {
@@ -178,6 +188,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 34,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -185,6 +196,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 36,
 			lineHeight: 44,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle3: {
@@ -194,6 +206,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 26,
 			lineHeight: 32,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -201,6 +214,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 32,
 			lineHeight: 40,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle3Bold: {
@@ -210,6 +224,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 26,
 			lineHeight: 32,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -217,6 +232,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 32,
 			lineHeight: 40,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle4: {
@@ -226,6 +242,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 24,
 			lineHeight: 30,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -233,6 +250,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle4Bold: {
@@ -242,6 +260,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 24,
 			lineHeight: 30,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -249,6 +268,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle5: {
@@ -258,6 +278,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 22,
 			lineHeight: 28,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -265,6 +286,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 24,
 			lineHeight: 32,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle6: {
@@ -274,6 +296,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 20,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -281,6 +304,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 22,
 			lineHeight: 28,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle6Light: {
@@ -290,6 +314,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 20,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -297,6 +322,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 22,
 			lineHeight: 28,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle6Bold: {
@@ -306,6 +332,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 20,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -313,6 +340,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 22,
 			lineHeight: 28,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaLead: {
@@ -322,6 +350,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -329,6 +358,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 24,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaQuote: {
@@ -338,6 +368,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -345,6 +376,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 24,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaQuotePerson: {
@@ -354,6 +386,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 24,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -361,6 +394,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 24,
 			lineHeight: 32,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaParagraph: {
@@ -370,6 +404,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 16,
 			lineHeight: 28,
 			letterSpacing: '0.003em',
+			textWrap: 'pretty',
 		},
 		compact: {
 			fontFamily: fontFamilyArticle,
@@ -377,6 +412,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 32,
 			letterSpacing: '0.003em',
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaNumbering: {
@@ -402,6 +438,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 16,
 			lineHeight: 24,
 			letterSpacing: '0.002em',
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaSubtitle1: {
@@ -410,6 +447,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia4,
 			fontSize: 20,
 			lineHeight: 26,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaSubtitle3Regular: {
@@ -418,6 +456,16 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia4,
 			fontSize: 15,
 			lineHeight: 20,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle3Medium: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMedia3,
+			fontSize: 15,
+			lineHeight: 20,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaSubtitle2Medium: {
@@ -426,6 +474,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia3,
 			fontSize: 16,
 			lineHeight: 20,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaSubtitle3DemiBold: {
@@ -434,6 +483,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia2,
 			fontSize: 15,
 			lineHeight: 20,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaSubtitle3Bold: {
@@ -442,6 +492,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia1,
 			fontSize: 15,
 			lineHeight: 20,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaCaption: {
@@ -450,12 +501,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 14,
 			lineHeight: 22,
+			textWrap: 'pretty',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
 			lineHeight: 24,
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaCaptionCaps: {
@@ -531,6 +584,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -538,6 +592,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaCardTitle1Bold: {
@@ -547,6 +602,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -554,6 +610,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaCardTitle2Light: {
@@ -563,6 +620,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaCardTitle2Bold: {
@@ -572,6 +630,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaFitcherTitle: {
@@ -581,6 +640,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 20,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -588,6 +648,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaFitcherTitleCaps: {
@@ -598,6 +659,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 26,
 			letterSpacing: '0.005em',
 			textTransform: 'uppercase',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
@@ -606,6 +668,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 36,
 			letterSpacing: '0.005em',
 			textTransform: 'uppercase',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaPTitle1Bold: {
@@ -614,6 +677,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia1,
 			fontSize: 24,
 			lineHeight: 28,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaPTitle2Bold: {
@@ -622,6 +686,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia1,
 			fontSize: 20,
 			lineHeight: 26,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaPTitle3Bold: {
@@ -630,6 +695,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia1,
 			fontSize: 17,
 			lineHeight: 22,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaPTitle1Adaptive: {
@@ -638,12 +704,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia3,
 			fontSize: 20,
 			lineHeight: 26,
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
 			fontSize: 24,
 			lineHeight: 28,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaPTitle2Adaptive: {
@@ -652,12 +720,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia3,
 			fontSize: 17,
 			lineHeight: 22,
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
 			fontSize: 20,
 			lineHeight: 26,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaPTitle3Adaptive: {
@@ -666,12 +736,14 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia3,
 			fontSize: 16,
 			lineHeight: 20,
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
 			fontSize: 17,
 			lineHeight: 22,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaSubtitle4Medium: {
@@ -680,6 +752,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia3,
 			fontSize: 14,
 			lineHeight: 18,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaSubtitle4Regular: {
@@ -688,6 +761,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: fontWeightMedia4,
 			fontSize: 14,
 			lineHeight: 18,
+			textWrap: 'balance',
 		},
 	},
 

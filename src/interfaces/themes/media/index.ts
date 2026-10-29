@@ -204,27 +204,32 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaText: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовок, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 20/26, compact 20/26.
+	 * @desc Подзаголовок, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 20/26, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle1: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовок, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 15/20, compact 15/20.
+	 * @desc Подзаголовок, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle3Regular: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовок Medium, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 16/20, compact 16/20.
+	 * @desc Подзаголовок Medium, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 15/20, compact 15/20.
+	 * @tags font
+	 */
+	mediaFontMediaSubtitle3Medium: Adaptive<Font>;
+	/**
+	 * @desc Подзаголовок Medium, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 16/20, compact 16/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle2Medium: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовок DemiBold, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 15/20, compact 15/20.
+	 * @desc Подзаголовок DemiBold, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle3DemiBold: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовок Bold, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 15/20, compact 15/20.
+	 * @desc Подзаголовок Bold, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle3Bold: Adaptive<Font>;
@@ -294,17 +299,17 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaFitcherTitleCaps: Adaptive<Font>;
 	/**
-	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Size: regular 24/28, compact 24/28.
+	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Desk & touch: 1 size. Size: regular 24/28, compact 24/28.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle1Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Size: regular 20/26, compact 20/26.
+	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Desk & touch: 1 size. Size: regular 20/26, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle2Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Size: regular 17/22, compact 17/22.
+	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Desk & touch: 1 size. Size: regular 17/22, compact 17/22.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle3Bold: Adaptive<Font>;
