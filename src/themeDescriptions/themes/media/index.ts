@@ -445,11 +445,13 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 	mediaFontMediaCaption: {
 		regular: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 14,
 			lineHeight: 22,
 		},
 		compact: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
 			lineHeight: 24,
@@ -457,6 +459,7 @@ export const mediaTheme: ThemeMediaDescription = {
 	},
 	mediaFontMediaCaptionCaps: {
 		regular: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 13,
 			lineHeight: 16,
@@ -464,6 +467,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			textTransform: 'uppercase',
 		},
 		compact: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 15,
 			lineHeight: 20,

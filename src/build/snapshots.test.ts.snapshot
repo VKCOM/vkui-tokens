@@ -150350,6 +150350,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family",
+        "value": "var(--vkui--media_font_media_caption--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight",
         "value": "var(--vkui--media_font_media_caption--font_weight)"
@@ -150364,6 +150368,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption--font_family--regular, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption--font_weight--regular, 400)"
@@ -150378,6 +150386,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption--font_family--compact, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption--font_weight--compact, 400)"
@@ -150394,6 +150406,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight)"
@@ -150416,6 +150432,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--regular, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)"
@@ -150438,6 +150458,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--compact, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)"
@@ -155515,11 +155539,13 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "14px",
       "lineHeight": "22px"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
       "lineHeight": "24px"
@@ -155527,6 +155553,7 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "13px",
       "lineHeight": "16px",
@@ -155534,6 +155561,7 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "15px",
       "lineHeight": "20px",
@@ -157828,11 +157856,13 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--regular, 14px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--regular, 22px)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--compact, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--compact, 16px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--compact, 24px)"
@@ -157840,6 +157870,7 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--regular, 13px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--regular, 16px)",
@@ -157847,6 +157878,7 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
       "textTransform": "var(--vkui--media_font_media_caption_caps--text_transform--regular, uppercase)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--compact, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--compact, 15px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--compact, 20px)",
@@ -160141,11 +160173,13 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 14,
       "lineHeight": 22
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
       "lineHeight": 24
@@ -160153,6 +160187,7 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 13,
       "lineHeight": 16,
@@ -160160,6 +160195,7 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 15,
       "lineHeight": 20,
@@ -165603,6 +165639,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family",
+        "value": "var(--vkui--media_font_media_caption--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight",
         "value": "var(--vkui--media_font_media_caption--font_weight)"
@@ -165617,6 +165657,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption--font_family--regular, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption--font_weight--regular, 400)"
@@ -165631,6 +165675,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption--font_family--compact, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption--font_weight--compact, 400)"
@@ -165647,6 +165695,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight)"
@@ -165669,6 +165721,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--regular, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)"
@@ -165691,6 +165747,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--compact, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)"
@@ -170768,11 +170828,13 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "14px",
       "lineHeight": "22px"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
       "lineHeight": "24px"
@@ -170780,6 +170842,7 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "13px",
       "lineHeight": "16px",
@@ -170787,6 +170850,7 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "15px",
       "lineHeight": "20px",
@@ -173081,11 +173145,13 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--regular, 14px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--regular, 22px)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--compact, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--compact, 16px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--compact, 24px)"
@@ -173093,6 +173159,7 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--regular, 13px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--regular, 16px)",
@@ -173100,6 +173167,7 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
       "textTransform": "var(--vkui--media_font_media_caption_caps--text_transform--regular, uppercase)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--compact, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--compact, 15px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--compact, 20px)",
@@ -175394,11 +175462,13 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 14,
       "lineHeight": 22
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
       "lineHeight": 24
@@ -175406,6 +175476,7 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 13,
       "lineHeight": 16,
@@ -175413,6 +175484,7 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 15,
       "lineHeight": 20,
@@ -195412,6 +195484,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family",
+        "value": "var(--vkui--media_font_media_caption--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight",
         "value": "var(--vkui--media_font_media_caption--font_weight)"
@@ -195426,6 +195502,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption--font_family--regular, Proxima Nova, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption--font_weight--regular, 400)"
@@ -195440,6 +195520,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption--font_family--compact, Proxima Nova, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption--font_weight--compact, 400)"
@@ -195456,6 +195540,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight)"
@@ -195478,6 +195566,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--regular, Proxima Nova, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)"
@@ -195500,6 +195592,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--compact, Proxima Nova, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)"
@@ -200592,11 +200688,13 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "14px",
       "lineHeight": "22px"
     },
     "compact": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
       "lineHeight": "24px"
@@ -200604,6 +200702,7 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "13px",
       "lineHeight": "16px",
@@ -200611,6 +200710,7 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "15px",
       "lineHeight": "20px",
@@ -202908,11 +203008,13 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--regular, Proxima Nova, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--regular, 14px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--regular, 22px)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--compact, Proxima Nova, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--compact, 16px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--compact, 24px)"
@@ -202920,6 +203022,7 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--regular, Proxima Nova, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--regular, 13px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--regular, 16px)",
@@ -202927,6 +203030,7 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
       "textTransform": "var(--vkui--media_font_media_caption_caps--text_transform--regular, uppercase)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--compact, Proxima Nova, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--compact, 15px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--compact, 20px)",
@@ -205224,11 +205328,13 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 14,
       "lineHeight": 22
     },
     "compact": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
       "lineHeight": 24
@@ -205236,6 +205342,7 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 13,
       "lineHeight": 16,
@@ -205243,6 +205350,7 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 15,
       "lineHeight": 20,
@@ -402545,6 +402653,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family",
+        "value": "var(--vkui--media_font_media_caption--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight",
         "value": "var(--vkui--media_font_media_caption--font_weight)"
@@ -402559,6 +402671,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption--font_family--regular, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption--font_weight--regular, 400)"
@@ -402573,6 +402689,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption--font_family--compact, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption--font_weight--compact, 400)"
@@ -402589,6 +402709,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight)"
@@ -402611,6 +402735,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       }
     },
     "regular": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--regular",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--regular, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--regular",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)"
@@ -402633,6 +402761,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       }
     },
     "compact": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_caption_caps--font_family--compact",
+        "value": "var(--vkui--media_font_media_caption_caps--font_family--compact, Inter, Helvetica, Arial, sans-serif)"
+      },
       "fontWeight": {
         "name": "--vkui--media_font_media_caption_caps--font_weight--compact",
         "value": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)"
@@ -407724,11 +407856,13 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "14px",
       "lineHeight": "22px"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
       "lineHeight": "24px"
@@ -407736,6 +407870,7 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "13px",
       "lineHeight": "16px",
@@ -407743,6 +407878,7 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "15px",
       "lineHeight": "20px",
@@ -410042,11 +410178,13 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--regular, 14px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--regular, 22px)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption--font_family--compact, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption--font_size--compact, 16px)",
       "lineHeight": "var(--vkui--media_font_media_caption--line_height--compact, 24px)"
@@ -410054,6 +410192,7 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--regular, 13px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--regular, 16px)",
@@ -410061,6 +410200,7 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
       "textTransform": "var(--vkui--media_font_media_caption_caps--text_transform--regular, uppercase)"
     },
     "compact": {
+      "fontFamily": "var(--vkui--media_font_media_caption_caps--font_family--compact, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_caption_caps--font_weight--compact, 400)",
       "fontSize": "var(--vkui--media_font_media_caption_caps--font_size--compact, 15px)",
       "lineHeight": "var(--vkui--media_font_media_caption_caps--line_height--compact, 20px)",
@@ -412360,11 +412500,13 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaption": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 14,
       "lineHeight": 22
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
       "lineHeight": 24
@@ -412372,6 +412514,7 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
   },
   "mediaFontMediaCaptionCaps": {
     "regular": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 13,
       "lineHeight": 16,
@@ -412379,6 +412522,7 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "textTransform": "uppercase"
     },
     "compact": {
+      "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 15,
       "lineHeight": 20,
