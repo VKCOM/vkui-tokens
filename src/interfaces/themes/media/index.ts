@@ -104,227 +104,227 @@ type SocialColorsDescriptions = {
 
 interface MediaUniqTokens {
 	/**
-	 * @desc Сверхкрупный заголовок 1 уровня. Component Title. Tag: Article
+	 * @desc Большой заголовок 1 уровня. Component Title. For Article. Size: regular 32/36, compact 48/56.
 	 * @tags font
 	 */
 	mediaFontMediaDisplay1: Adaptive<Font>;
 	/**
-	 * @desc Сверхкрупный заголовок 1 уровня, вес Bold (700). Component Title. Tag: card
+	 * @desc Большой заголовок 1 уровня Bold. Component Title. For Card. Size: regular 32/36, compact 48/56.
 	 * @tags font
 	 */
 	mediaFontMediaDisplay1Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 1 уровня. Component Title. Tag: Article
+	 * @desc Заголовок 1 уровня. Component Title. For Article. Size: regular 30/36, compact 40/48.
 	 * @tags font
 	 */
 	mediaFontMediaTitle1: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 1 уровня, вес Bold (700). Component Title
+	 * @desc Заголовок 1 уровня Bold. Component Title. For Accent. Size: regular 30/36, compact 40/48.
 	 * @tags font
 	 */
 	mediaFontMediaTitle1Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 2 уровня. Component Title. Tag: Article
+	 * @desc Заголовок 2 уровня. Component Title. For Article. Size: regular 28/34, compact 36/44.
 	 * @tags font
 	 */
 	mediaFontMediaTitle2: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 2 уровня, вес Bold (700). Component Title
+	 * @desc Заголовок 2 уровня Bold. Component Title. For Accent. Size: regular 28/34, compact 36/44.
 	 * @tags font
 	 */
 	mediaFontMediaTitle2Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 3 уровня. Component Title. Tag: Article
+	 * @desc Заголовок 3 уровня. Component Title. For Article. Size: regular 26/32, compact 32/40.
 	 * @tags font
 	 */
 	mediaFontMediaTitle3: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 3 уровня, вес Bold (700). Component Title. Tag: Card
+	 * @desc Заголовок 3 уровня Bold. Component Title. For Card. Size: regular 26/32, compact 32/40.
 	 * @tags font
 	 */
 	mediaFontMediaTitle3Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 4 уровня. Component Title. Tag: Article
+	 * @desc Заголовок 4 уровня. Component Title. For Article. Size: regular 24/30, compact 28/36.
 	 * @tags font
 	 */
 	mediaFontMediaTitle4: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 4 уровня, вес Bold (700). Component Title
+	 * @desc Заголовок 4 уровня Bold. Component Title. For Accent. Size: regular 24/30, compact 28/36.
 	 * @tags font
 	 */
 	mediaFontMediaTitle4Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 5 уровня. Component Title. Tag: Article
+	 * @desc Заголовок 5 уровня. Component Title. For Article. Size: regular 22/28, compact 24/32.
 	 * @tags font
 	 */
 	mediaFontMediaTitle5: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 6 уровня. Component Title. Tag: Article
+	 * @desc Заголовок 6 уровня. Component Title. For Article. Size: regular 20/26, compact 22/28.
 	 * @tags font
 	 */
 	mediaFontMediaTitle6: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 6 уровня, вес Light (300). Component Title. Tag: Card
+	 * @desc Заголовок 6 уровня Light. Component Title. For Card. Size: regular 20/26, compact 22/28.
 	 * @tags font
 	 */
 	mediaFontMediaTitle6Light: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 6 уровня, вес Bold (700). Component Title. Tag: Card
+	 * @desc Заголовок 6 уровня Bold. Component Title. For Card. Size: regular 20/26, compact 22/28.
 	 * @tags font
 	 */
 	mediaFontMediaTitle6Bold: Adaptive<Font>;
 	/**
-	 * @desc Лид (преамбула) статьи. Component Text. Tag: Article
+	 * @desc Лид статьи. Component Text. For Article. Size: regular 18/26, compact 24/36.
 	 * @tags font
 	 */
 	mediaFontMediaLead: Adaptive<Font>;
 	/**
-	 * @desc Цитаты, врезы в статьях, акценты текста на медиа-страницах. Component Text. Tag: Article
+	 * @desc Цитата. Component Text. For Article. Size: regular 18/26, compact 24/36.
 	 * @tags font
 	 */
 	mediaFontMediaQuote: Adaptive<Font>;
 	/**
-	 * @desc Автор цитаты. Component Text. Tag: Article
+	 * @desc Автор цитаты. Component Text. For Article. Size: regular 18/24, compact 24/32.
 	 * @tags font
 	 */
 	mediaFontMediaQuotePerson: Adaptive<Font>;
 	/**
-	 * @desc Основной наборный текст статьи. Component Text. Tag: Article
+	 * @desc Основной текст статьи. Component Text. For Article. Size: regular 16/28, compact 18/32.
 	 * @tags font
 	 */
 	mediaFontMediaParagraph: Adaptive<Font>;
 	/**
-	 * @desc Цифры в нумерованных списках, чтобы списки выглядели акцентными. Component Text. Tag: Article
+	 * @desc Нумерация. Component Text. For Article. Size: regular 16/28, compact 18/32.
 	 * @tags font
 	 */
 	mediaFontMediaNumbering: Adaptive<Font>;
 	/**
-	 * @desc Компактный наборный текст. Меньше основного, без адаптива (размер одинаков на всех устройствах). Component Text. Tag: Card, widget
+	 * @desc Компактный наборный текст. Component Text. For Card, Widget. Desk & touch: 1 size. Size: regular 16/24, compact 16/24.
 	 * @tags font
 	 */
 	mediaFontMediaText: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовки, отдельные строки с учётом визуальной иерархии. Component Title. Tag: Accent
+	 * @desc Подзаголовки, отдельные строки, визуальная иерархия. Component Title. For Accent. Size: regular 20/26, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle1: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, вес Regular (400). Component Title. Tag: Accent
+	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия. Component Title. For Accent. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle2Regular: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, вес Medium (500). Component Title. Tag: Accent
+	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия Medium. Component Title. For Accent. Size: regular 16/20, compact 16/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle2Medium: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, вес DemiBold (600). Component Title. Tag: Accent
+	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия DemiBold. Component Title. For Accent. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle2DemiBold: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, вес Bold (700). Component Title. Tag: Accent
+	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия Bold. Component Title. For Accent. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle2Bold: Adaptive<Font>;
 	/**
-	 * @desc Подписи под изображениями, видео или другими блоками и врезами в статьях и на других медиа-страницах. Component Text. Tag: Article
+	 * @desc Подпись под иллюстрацией, таблицей или блоком. Component Text. For Article. Size: regular 14/22, compact 16/24.
 	 * @tags font
 	 */
 	mediaFontMediaCaption: Adaptive<Font>;
 	/**
-	 * @desc Подпись капсом для лейблов типа «Продолжение после рекламы». Component Text. Tag: Article
+	 * @desc CAPS подпись «Продолжение после рекламы». Component Text. For Article. Size: regular 13/16, compact 15/20.
 	 * @tags font
 	 */
 	mediaFontMediaCaptionCaps: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, теги, отдельные подписи в карточках, декоративных блоках, теглайнах. Вес Light (300), капс. Component Text. Tag: Card
+	 * @desc Лейблы, бейджи, акцентные теги, подписи Light. Component Text. For Card. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
 	 * @tags font
 	 */
 	mediaFontMediaLabelLight: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, теги, отдельные подписи в карточках, декоративных блоках, теглайнах. Вес Regular (400). Component Text. Tag: Card
+	 * @desc Лейблы, бейджи, акцентные теги, подписи. Component Text. For Card. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
 	 * @tags font
 	 */
 	mediaFontMediaLabelRegular: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, теги, отдельные подписи в карточках, декоративных блоках, теглайнах. Вес Regular (400), капс. Component Text. Tag: Card
+	 * @desc Лейблы, бейджи, акцентные теги, подписи CAPS. Component Text. For Card. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
 	 * @tags font
 	 */
 	mediaFontMediaLabelCaps: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, теги, отдельные подписи в карточках, декоративных блоках, теглайнах. Вес Bold (700), капс. Component Text. Tag: Card
+	 * @desc Лейблы, бейджи, акцентные теги, подписи Bold. Component Text. For Card. Desk & touch: 1 size. Size: regular 13/18, compact 13/18.
 	 * @tags font
 	 */
 	mediaFontMediaLabelBold: Adaptive<Font>;
 	/**
-	 * @desc Лейблы-плашки (strip). Вес Bold (700), капс, подчёркивание задаётся в вёрстке — в токене не хранится. Component Text. Tag: Card
+	 * @desc Лейблы, бейджи, акцентные теги, подписи Bold CAPS, подчёркнутые. Component Text. For Card. Desk & touch: 1 size. Size: regular 13/18, compact 13/18. Подчёркивание только в Figma: в токене не выражается.
 	 * @tags font
 	 */
 	mediaFontMediaLabelStrip: Adaptive<Font>;
 	/**
-	 * @desc Адаптивный заголовок 1 уровня для карточек, вес Light (300). Component Title. Tag: Card
+	 * @desc Адаптивный заголовок 1 уровня для карточек Light. Component Title. For Card. Size: regular 18/26, compact 28/36.
 	 * @tags font
 	 */
 	mediaFontMediaCardTitle1Light: Adaptive<Font>;
 	/**
-	 * @desc Адаптивный заголовок 1 уровня для карточек, вес Bold (700). Component Title. Tag: Card
+	 * @desc Адаптивный заголовок 1 уровня для карточек Bold. Component Title. For Card. Size: regular 18/26, compact 28/36.
 	 * @tags font
 	 */
 	mediaFontMediaCardTitle1Bold: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 2 уровня для карточек, вес Light (300), одинаковый размер на десктопе и мобайле. Component Title. Tag: Card
+	 * @desc Заголовок 2 уровня для карточек Light. Component Title. For Card. Desk & touch: 1 size. Size: regular 18/26, compact 18/26.
 	 * @tags font
 	 */
 	mediaFontMediaCardTitle2Light: Adaptive<Font>;
 	/**
-	 * @desc Заголовок 2 уровня для карточек, вес Bold (700), одинаковый размер на десктопе и мобайле. Component Title. Tag: Card
+	 * @desc Заголовок 2 уровня для карточек Bold. Component Title. For Card. Desk & touch: 1 size. Size: regular 18/26, compact 18/26.
 	 * @tags font
 	 */
 	mediaFontMediaCardTitle2Bold: Adaptive<Font>;
 	/**
-	 * @desc Главный заголовок фичера. Component Title. Tag: Fitcher
+	 * @desc Заголовок фичера. Component Title. For Fitcher. Size: regular 20/26, compact 28/36.
 	 * @tags font
 	 */
 	mediaFontMediaFitcherTitle: Adaptive<Font>;
 	/**
-	 * @desc Главный заголовок фичера капсом. Component Title. Tag: Fitcher
+	 * @desc Заголовок фичера CAPS. Component Title. For Fitcher. Size: regular 20/26, compact 28/36.
 	 * @tags font
 	 */
 	mediaFontMediaFitcherTitleCaps: Adaptive<Font>;
 	/**
-	 * @desc Bold (700) версия Paradigm Title 1. Component Title. Tag: Paradigm Base
+	 * @desc Paradigm Title 1 с весом Bold. Component Title. For Paradigm. Size: regular 24/28, compact 24/28.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle1Bold: Adaptive<Font>;
 	/**
-	 * @desc Bold (700) версия Paradigm Title 2. Component Title. Tag: Paradigm Base
+	 * @desc Paradigm Title 2 с весом Bold. Component Title. For Paradigm. Size: regular 20/26, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle2Bold: Adaptive<Font>;
 	/**
-	 * @desc Bold (700) версия Paradigm Title 3. Component Title. Tag: Paradigm Base
+	 * @desc Paradigm Title 3 с весом Bold. Component Title. For Paradigm. Size: regular 17/22, compact 17/22.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle3Bold: Adaptive<Font>;
 	/**
-	 * @desc Адаптивная версия Paradigm Title 1 для длинных заголовков — снижает количество переносов на мобильных. Component Title. Tag: Paradigm Base
+	 * @desc Адаптив длинных заголовков Paradigm Title 1: меньше переносов. Component Title. For Paradigm. Size: regular 20/26, compact 24/28.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle1Adaptive: Adaptive<Font>;
 	/**
-	 * @desc Адаптивная версия Paradigm Title 2 для длинных заголовков — снижает количество переносов на мобильных. Component Title. Tag: Paradigm Base
+	 * @desc Адаптив длинных заголовков Paradigm Title 2: меньше переносов. Component Title. For Paradigm. Size: regular 17/22, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle2Adaptive: Adaptive<Font>;
 	/**
-	 * @desc Адаптивная версия Paradigm Title 3 для длинных заголовков — снижает количество переносов на мобильных. Component Title. Tag: Paradigm Base
+	 * @desc Адаптив длинных заголовков Paradigm Title 3: меньше переносов. Component Title. For Paradigm. Size: regular 16/20, compact 17/22.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle3Adaptive: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовок с весом Medium (500); тот же размер, что Subhead, но акцентный вес
+	 * @desc Подзаголовок Medium, размер как у Subhead. Component Title. For Accent. Size: regular 14/18, compact 13/18.
 	 * @tags font
 	 */
 	mediaFontMediaPSubhead500: Adaptive<Font>;
