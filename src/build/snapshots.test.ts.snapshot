@@ -666587,20 +666587,16 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
       "fontWeight": {
         "name": "--vkui--font_headline3--font_weight",
         "value": "var(--vkui--font_headline3--font_weight)"
-      },
-      "fontStyle": {
-        "name": "--vkui--font_headline3--font_style",
-        "value": "var(--vkui--font_headline3--font_style)"
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_headline3--font_size--regular",
-        "value": "var(--vkui--font_headline3--font_size--regular, 13px)"
+        "value": "var(--vkui--font_headline3--font_size--regular, 14px)"
       },
       "lineHeight": {
         "name": "--vkui--font_headline3--line_height--regular",
-        "value": "var(--vkui--font_headline3--line_height--regular, 16px)"
+        "value": "var(--vkui--font_headline3--line_height--regular, 18px)"
       },
       "fontFamily": {
         "name": "--vkui--font_headline3--font_family--regular",
@@ -666609,10 +666605,136 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
       "fontWeight": {
         "name": "--vkui--font_headline3--font_weight--regular",
         "value": "var(--vkui--font_headline3--font_weight--regular, 500)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_headline3--font_size--compact",
+        "value": "var(--vkui--font_headline3--font_size--compact, 13px)"
       },
-      "fontStyle": {
-        "name": "--vkui--font_headline3--font_style--regular",
-        "value": "var(--vkui--font_headline3--font_style--regular, normal)"
+      "lineHeight": {
+        "name": "--vkui--font_headline3--line_height--compact",
+        "value": "var(--vkui--font_headline3--line_height--compact, 16px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_headline3--font_family--compact",
+        "value": "var(--vkui--font_headline3--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_headline3--font_weight--compact",
+        "value": "var(--vkui--font_headline3--font_weight--compact, 500)"
+      }
+    }
+  },
+  "fontSubhead500": {
+    "auto": {
+      "fontSize": {
+        "name": "--vkui--font_subhead500--font_size",
+        "value": "var(--vkui--font_subhead500--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_subhead500--line_height",
+        "value": "var(--vkui--font_subhead500--line_height)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_subhead500--font_family",
+        "value": "var(--vkui--font_subhead500--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_subhead500--font_weight",
+        "value": "var(--vkui--font_subhead500--font_weight)"
+      }
+    },
+    "regular": {
+      "fontSize": {
+        "name": "--vkui--font_subhead500--font_size--regular",
+        "value": "var(--vkui--font_subhead500--font_size--regular, 14px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_subhead500--line_height--regular",
+        "value": "var(--vkui--font_subhead500--line_height--regular, 18px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_subhead500--font_family--regular",
+        "value": "var(--vkui--font_subhead500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_subhead500--font_weight--regular",
+        "value": "var(--vkui--font_subhead500--font_weight--regular, 500)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_subhead500--font_size--compact",
+        "value": "var(--vkui--font_subhead500--font_size--compact, 13px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_subhead500--line_height--compact",
+        "value": "var(--vkui--font_subhead500--line_height--compact, 18px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_subhead500--font_family--compact",
+        "value": "var(--vkui--font_subhead500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_subhead500--font_weight--compact",
+        "value": "var(--vkui--font_subhead500--font_weight--compact, 500)"
+      }
+    }
+  },
+  "fontCaption1500": {
+    "auto": {
+      "fontSize": {
+        "name": "--vkui--font_caption1500--font_size",
+        "value": "var(--vkui--font_caption1500--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_caption1500--line_height",
+        "value": "var(--vkui--font_caption1500--line_height)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_caption1500--font_family",
+        "value": "var(--vkui--font_caption1500--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_caption1500--font_weight",
+        "value": "var(--vkui--font_caption1500--font_weight)"
+      }
+    },
+    "regular": {
+      "fontSize": {
+        "name": "--vkui--font_caption1500--font_size--regular",
+        "value": "var(--vkui--font_caption1500--font_size--regular, 14px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_caption1500--line_height--regular",
+        "value": "var(--vkui--font_caption1500--line_height--regular, 19px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_caption1500--font_family--regular",
+        "value": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_caption1500--font_weight--regular",
+        "value": "var(--vkui--font_caption1500--font_weight--regular, 500)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_caption1500--font_size--compact",
+        "value": "var(--vkui--font_caption1500--font_size--compact, 12px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_caption1500--line_height--compact",
+        "value": "var(--vkui--font_caption1500--line_height--compact, 16px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_caption1500--font_family--compact",
+        "value": "var(--vkui--font_caption1500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_caption1500--font_weight--compact",
+        "value": "var(--vkui--font_caption1500--font_weight--compact, 500)"
       }
     }
   },
@@ -666675,11 +666797,11 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
     },
     "hover": {
       "name": "--vkui--color_background_accent--hover",
-      "value": "var(--vkui--color_background_accent--hover, #0073F7)"
+      "value": "var(--vkui--color_background_accent--hover, #0070f0)"
     },
     "active": {
       "name": "--vkui--color_background_accent--active",
-      "value": "var(--vkui--color_background_accent--active, #006FEF)"
+      "value": "var(--vkui--color_background_accent--active, #0062d0)"
     }
   },
   "colorBackgroundAccentThemed": {
@@ -666839,29 +666961,29 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorBackgroundWarning": {
     "normal": {
       "name": "--vkui--color_background_warning",
-      "value": "var(--vkui--color_background_warning, #F98923)"
+      "value": "var(--vkui--color_background_warning, #FFF1AD)"
     },
     "hover": {
       "name": "--vkui--color_background_warning--hover",
-      "value": "var(--vkui--color_background_warning--hover, #EF8424)"
+      "value": "var(--vkui--color_background_warning--hover, #F5E8A9)"
     },
     "active": {
       "name": "--vkui--color_background_warning--active",
-      "value": "var(--vkui--color_background_warning--active, #E57F25)"
+      "value": "var(--vkui--color_background_warning--active, #EBDFA4)"
     }
   },
   "colorBackgroundNegative": {
     "normal": {
       "name": "--vkui--color_background_negative",
-      "value": "var(--vkui--color_background_negative, #ED0A34)"
+      "value": "var(--vkui--color_background_negative, #F23741)"
     },
     "hover": {
       "name": "--vkui--color_background_negative--hover",
-      "value": "var(--vkui--color_background_negative--hover, #E40A34)"
+      "value": "var(--vkui--color_background_negative--hover, #e9223a)"
     },
     "active": {
       "name": "--vkui--color_background_negative--active",
-      "value": "var(--vkui--color_background_negative--active, #DA0A35)"
+      "value": "var(--vkui--color_background_negative--active, #db1a2c)"
     }
   },
   "colorBackgroundTertiary": {
@@ -666881,15 +667003,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorBackgroundTertiaryAlpha": {
     "normal": {
       "name": "--vkui--color_background_tertiary_alpha",
-      "value": "var(--vkui--color_background_tertiary_alpha, rgba(58, 58, 90, 0.04))"
+      "value": "var(--vkui--color_background_tertiary_alpha, rgba(0, 16, 61, 0.03))"
     },
     "hover": {
       "name": "--vkui--color_background_tertiary_alpha--hover",
-      "value": "var(--vkui--color_background_tertiary_alpha--hover, rgba(58, 58, 90, 0.08))"
+      "value": "var(--vkui--color_background_tertiary_alpha--hover, rgba(0, 16, 61, 0.06))"
     },
     "active": {
       "name": "--vkui--color_background_tertiary_alpha--active",
-      "value": "var(--vkui--color_background_tertiary_alpha--active, rgba(58, 58, 90, 0.12))"
+      "value": "var(--vkui--color_background_tertiary_alpha--active, rgba(0, 16, 61, 0.1))"
     }
   },
   "colorBackgroundModal": {
@@ -666923,15 +667045,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorBackgroundNegativeTint": {
     "normal": {
       "name": "--vkui--color_background_negative_tint",
-      "value": "var(--vkui--color_background_negative_tint, #FAEBEB)"
+      "value": "var(--vkui--color_background_negative_tint, #FEEFF0)"
     },
     "hover": {
       "name": "--vkui--color_background_negative_tint--hover",
-      "value": "var(--vkui--color_background_negative_tint--hover, #FDE2E7)"
+      "value": "var(--vkui--color_background_negative_tint--hover, #F4E6E9)"
     },
     "active": {
       "name": "--vkui--color_background_negative_tint--active",
-      "value": "var(--vkui--color_background_negative_tint--active, #FCD8DF)"
+      "value": "var(--vkui--color_background_negative_tint--active, #EADDE2)"
     }
   },
   "colorBackgroundPositiveTint": {
@@ -667063,15 +667185,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorTextNegative": {
     "normal": {
       "name": "--vkui--color_text_negative",
-      "value": "var(--vkui--color_text_negative, #ED0A34)"
+      "value": "var(--vkui--color_text_negative, #F23741)"
     },
     "hover": {
       "name": "--vkui--color_text_negative--hover",
-      "value": "var(--vkui--color_text_negative--hover, #E40A34)"
+      "value": "var(--vkui--color_text_negative--hover, #E83541)"
     },
     "active": {
       "name": "--vkui--color_text_negative--active",
-      "value": "var(--vkui--color_text_negative--active, #DA0A35)"
+      "value": "var(--vkui--color_text_negative--active, #DF3441)"
     }
   },
   "colorTextLink": {
@@ -667175,15 +667297,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorTextSecondary": {
     "normal": {
       "name": "--vkui--color_text_secondary",
-      "value": "var(--vkui--color_text_secondary, #797A80)"
+      "value": "var(--vkui--color_text_secondary, #697481)"
     },
     "hover": {
       "name": "--vkui--color_text_secondary--hover",
-      "value": "var(--vkui--color_text_secondary--hover, #74767D)"
+      "value": "var(--vkui--color_text_secondary--hover, #65707E)"
     },
     "active": {
       "name": "--vkui--color_text_secondary--active",
-      "value": "var(--vkui--color_text_secondary--active, #6F727B)"
+      "value": "var(--vkui--color_text_secondary--active, #616C7C)"
     }
   },
   "colorTextSecondaryAlpha": {
@@ -667497,15 +667619,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorIconNegative": {
     "normal": {
       "name": "--vkui--color_icon_negative",
-      "value": "var(--vkui--color_icon_negative, #ED033A)"
+      "value": "var(--vkui--color_icon_negative, #F23741)"
     },
     "hover": {
       "name": "--vkui--color_icon_negative--hover",
-      "value": "var(--vkui--color_icon_negative--hover, #E4043A)"
+      "value": "var(--vkui--color_icon_negative--hover, #E83541)"
     },
     "active": {
       "name": "--vkui--color_icon_negative--active",
-      "value": "var(--vkui--color_icon_negative--active, #DA043A)"
+      "value": "var(--vkui--color_icon_negative--active, #DF3441)"
     }
   },
   "colorIconContrastSecondary": {
@@ -667567,15 +667689,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorStrokeNegative": {
     "normal": {
       "name": "--vkui--color_stroke_negative",
-      "value": "var(--vkui--color_stroke_negative, #ED0A34)"
+      "value": "var(--vkui--color_stroke_negative, #F23741)"
     },
     "hover": {
       "name": "--vkui--color_stroke_negative--hover",
-      "value": "var(--vkui--color_stroke_negative--hover, #E40A34)"
+      "value": "var(--vkui--color_stroke_negative--hover, #E83541)"
     },
     "active": {
       "name": "--vkui--color_stroke_negative--active",
-      "value": "var(--vkui--color_stroke_negative--active, #DA0A35)"
+      "value": "var(--vkui--color_stroke_negative--active, #DF3441)"
     }
   },
   "colorStrokePrimary": {
@@ -668337,15 +668459,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorBackgroundAccentTintThemed": {
     "normal": {
       "name": "--vkui--color_background_accent_tint_themed",
-      "value": "var(--vkui--color_background_accent_tint_themed, #F0F7FF)"
+      "value": "var(--vkui--color_background_accent_tint_themed, #f0f7ff)"
     },
     "hover": {
       "name": "--vkui--color_background_accent_tint_themed--hover",
-      "value": "var(--vkui--color_background_accent_tint_themed--hover, #E5F1FF)"
+      "value": "var(--vkui--color_background_accent_tint_themed--hover, #E6EEF7)"
     },
     "active": {
       "name": "--vkui--color_background_accent_tint_themed--active",
-      "value": "var(--vkui--color_background_accent_tint_themed--active, #DBECFF)"
+      "value": "var(--vkui--color_background_accent_tint_themed--active, #DDE5EF)"
     }
   },
   "colorBackgroundWarningTintThemedAlpha": {
@@ -668365,15 +668487,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorBackgroundWarningTintAlpha": {
     "normal": {
       "name": "--vkui--color_background_warning_tint_alpha",
-      "value": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 241, 173, 0.64))"
+      "value": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 241, 173, 0.48))"
     },
     "hover": {
       "name": "--vkui--color_background_warning_tint_alpha--hover",
-      "value": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 241, 173, 0.72))"
+      "value": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 241, 173, 0.52))"
     },
     "active": {
       "name": "--vkui--color_background_warning_tint_alpha--active",
-      "value": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 241, 173, 0.76))"
+      "value": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 241, 173, 0.56))"
     }
   },
   "colorBackgroundWarningTintThemed": {
@@ -668407,43 +668529,43 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorBackgroundNegativeTintThemedAlpha": {
     "normal": {
       "name": "--vkui--color_background_negative_tint_themed_alpha",
-      "value": "var(--vkui--color_background_negative_tint_themed_alpha, rgba(237, 10, 52, 0.1))"
+      "value": "var(--vkui--color_background_negative_tint_themed_alpha, rgba(242, 55, 65, 0.08))"
     },
     "hover": {
       "name": "--vkui--color_background_negative_tint_themed_alpha--hover",
-      "value": "var(--vkui--color_background_negative_tint_themed_alpha--hover, rgba(237, 10, 52, 0.14))"
+      "value": "var(--vkui--color_background_negative_tint_themed_alpha--hover, rgba(242, 55, 65, 0.12))"
     },
     "active": {
       "name": "--vkui--color_background_negative_tint_themed_alpha--active",
-      "value": "var(--vkui--color_background_negative_tint_themed_alpha--active, rgba(237, 10, 52, 0.16))"
+      "value": "var(--vkui--color_background_negative_tint_themed_alpha--active, rgba(242, 55, 65, 0.16))"
     }
   },
   "colorBackgroundNegativeTintAlpha": {
     "normal": {
       "name": "--vkui--color_background_negative_tint_alpha",
-      "value": "var(--vkui--color_background_negative_tint_alpha, rgba(237, 10, 52, 0.1))"
+      "value": "var(--vkui--color_background_negative_tint_alpha, rgba(242, 55, 65, 0.08))"
     },
     "hover": {
       "name": "--vkui--color_background_negative_tint_alpha--hover",
-      "value": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(237, 10, 52, 0.14))"
+      "value": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(242, 55, 65, 0.12))"
     },
     "active": {
       "name": "--vkui--color_background_negative_tint_alpha--active",
-      "value": "var(--vkui--color_background_negative_tint_alpha--active, rgba(237, 10, 52, 0.18))"
+      "value": "var(--vkui--color_background_negative_tint_alpha--active, rgba(242, 55, 65, 0.16))"
     }
   },
   "colorBackgroundNegativeTintThemed": {
     "normal": {
       "name": "--vkui--color_background_negative_tint_themed",
-      "value": "var(--vkui--color_background_negative_tint_themed, #FAEBEB)"
+      "value": "var(--vkui--color_background_negative_tint_themed, #ffeae7)"
     },
     "hover": {
       "name": "--vkui--color_background_negative_tint_themed--hover",
-      "value": "var(--vkui--color_background_negative_tint_themed--hover, #FDE2E7)"
+      "value": "var(--vkui--color_background_negative_tint_themed--hover, #F5E1E0)"
     },
     "active": {
       "name": "--vkui--color_background_negative_tint_themed--active",
-      "value": "var(--vkui--color_background_negative_tint_themed--active, #FCD8DF)"
+      "value": "var(--vkui--color_background_negative_tint_themed--active, #EBD9D9)"
     }
   },
   "colorBackgroundPositiveTintThemedAlpha": {
@@ -668463,15 +668585,15 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
   "colorBackgroundPositiveTintAlpha": {
     "normal": {
       "name": "--vkui--color_background_positive_tint_alpha",
-      "value": "var(--vkui--color_background_positive_tint_alpha, rgba(13, 194, 104, 0.12))"
+      "value": "var(--vkui--color_background_positive_tint_alpha, rgba(0, 172, 91, 0.08))"
     },
     "hover": {
       "name": "--vkui--color_background_positive_tint_alpha--hover",
-      "value": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(13, 194, 104, 0.14))"
+      "value": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(0, 172, 91, 0.12))"
     },
     "active": {
       "name": "--vkui--color_background_positive_tint_alpha--active",
-      "value": "var(--vkui--color_background_positive_tint_alpha--active, rgba(13, 194, 104, 0.18))"
+      "value": "var(--vkui--color_background_positive_tint_alpha--active, rgba(0, 172, 91, 0.16))"
     }
   },
   "colorBackgroundPositiveTintThemed": {
@@ -668908,32 +669030,396 @@ exports[`snapshots > workspaceAdmin theme > should match cssVars snapshot 1`] = 
       "value": "var(--vkui--color_icon_negative_snackbar--active, #EB565A)"
     }
   },
-  "colorOnboarding": {
+  "wsadminColorAvatarTextRed": {
     "normal": {
-      "name": "--vkui--color_onboarding",
-      "value": "var(--vkui--color_onboarding, #2979FA)"
+      "name": "--vkui--wsadmin_color_avatar_text_red",
+      "value": "var(--vkui--wsadmin_color_avatar_text_red, #FFE4E0)"
     },
     "hover": {
-      "name": "--vkui--color_onboarding--hover",
-      "value": "var(--vkui--color_onboarding--hover, #2775F2)"
+      "name": "--vkui--wsadmin_color_avatar_text_red--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_red--hover, #F5DCD9)"
     },
     "active": {
-      "name": "--vkui--color_onboarding--active",
-      "value": "var(--vkui--color_onboarding--active, #2671EB)"
+      "name": "--vkui--wsadmin_color_avatar_text_red--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_red--active, #EBD3D3)"
     }
   },
-  "colorSearchResultsAlpha": {
+  "wsadminColorAvatarTextOrange": {
     "normal": {
-      "name": "--vkui--color_search_results_alpha",
-      "value": "var(--vkui--color_search_results_alpha, rgba(255, 241, 173, 0.48))"
+      "name": "--vkui--wsadmin_color_avatar_text_orange",
+      "value": "var(--vkui--wsadmin_color_avatar_text_orange, #FFF0E5)"
     },
     "hover": {
-      "name": "--vkui--color_search_results_alpha--hover",
-      "value": "var(--vkui--color_search_results_alpha--hover, rgba(255, 241, 173, 0.52))"
+      "name": "--vkui--wsadmin_color_avatar_text_orange--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_orange--hover, #F5E7DE)"
     },
     "active": {
-      "name": "--vkui--color_search_results_alpha--active",
-      "value": "var(--vkui--color_search_results_alpha--active, rgba(255, 241, 173, 0.56))"
+      "name": "--vkui--wsadmin_color_avatar_text_orange--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_orange--active, #EBDED8)"
+    }
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_peach",
+      "value": "var(--vkui--wsadmin_color_avatar_text_peach, #C25B21)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_peach--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_peach--hover, #BA5822)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_peach--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_peach--active, #B25523)"
+    }
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_yellow",
+      "value": "var(--vkui--wsadmin_color_avatar_text_yellow, #C76722)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_yellow--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_yellow--hover, #BF6423)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_yellow--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_yellow--active, #B76024)"
+    }
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_lime",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lime, #2A9231)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_lime--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lime--hover, #288D31)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_lime--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lime--active, #278832)"
+    }
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_green",
+      "value": "var(--vkui--wsadmin_color_avatar_text_green, #ECFEDF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_green--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_green--hover, #E3F4D9)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_green--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_green--active, #D9EBD2)"
+    }
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_cyan",
+      "value": "var(--vkui--wsadmin_color_avatar_text_cyan, #F0FDFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_cyan--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_cyan--hover, #E6F4F7)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_cyan--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_cyan--active, #DDEAEF)"
+    }
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_mint",
+      "value": "var(--vkui--wsadmin_color_avatar_text_mint, #189686)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_mint--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_mint--hover, #179183)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_mint--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_mint--active, #168B80)"
+    }
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_seagreen",
+      "value": "var(--vkui--wsadmin_color_avatar_text_seagreen, #EBFFF8)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_seagreen--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_seagreen--hover, #E2F5F1)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_seagreen--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_seagreen--active, #D8ECE9)"
+    }
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_sky",
+      "value": "var(--vkui--wsadmin_color_avatar_text_sky, #0088D6)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_sky--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_sky--hover, #0083D0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_sky--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_sky--active, #007ECA)"
+    }
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_blue",
+      "value": "var(--vkui--wsadmin_color_avatar_text_blue, #E0ECFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_blue--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_blue--hover, #D7E3F7)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_blue--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_blue--active, #CEDAEF)"
+    }
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_indigo",
+      "value": "var(--vkui--wsadmin_color_avatar_text_indigo, #E6E5FF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_indigo--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_indigo--hover, #DDDCF7)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_indigo--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_indigo--active, #D4D4EF)"
+    }
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_violet",
+      "value": "var(--vkui--wsadmin_color_avatar_text_violet, #F2EAFE)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_violet--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_violet--hover, #E8E1F6)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_violet--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_violet--active, #DFD9EF)"
+    }
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_lavender",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lavender, #874DD6)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_lavender--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lavender--hover, #824BD0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_lavender--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lavender--active, #7C48CA)"
+    }
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_coral",
+      "value": "var(--vkui--wsadmin_color_avatar_text_coral, #CD3D50)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_coral--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_coral--hover, #C53B4F)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_coral--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_coral--active, #BD394E)"
+    }
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_pink",
+      "value": "var(--vkui--wsadmin_color_avatar_text_pink, #C2345C)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_pink--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_pink--hover, #BA335B)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_pink--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_pink--active, #B2315A)"
+    }
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_yellow",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_yellow, #F8F8BC)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_yellow--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_yellow--hover, #EEEFB7)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_yellow--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_yellow--active, #E4E5B2)"
+    }
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_grass",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_grass, #DBFFE2)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_grass--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_grass--hover, #D2F5DB)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_grass--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_grass--active, #C9ECD5)"
+    }
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_mint",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_mint, #C3FBFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_mint--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_mint--hover, #BBF2F7)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_mint--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_mint--active, #B3E8EF)"
+    }
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_purple",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_purple, #E4CFFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_purple--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_purple--hover, #DBC7F7)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_purple--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_purple--active, #D2C0EF)"
+    }
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_magenta",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_magenta, #FFDBFB)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_magenta--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_magenta--hover, #F5D3F3)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_magenta--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_magenta--active, #EBCBEC)"
+    }
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_midnightsky",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_midnightsky, #C2DEFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_midnightsky--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--hover, #BAD6F7)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_midnightsky--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--active, #B2CEEF)"
+    }
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_yellow",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_yellow, #695A1E)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_yellow--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_yellow--hover, #65571F)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_yellow--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_yellow--active, #615420)"
+    }
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_grass",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_grass, #155E55)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_grass--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_grass--hover, #145B54)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_grass--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_grass--active, #135853)"
+    }
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_mint",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_mint, #236066)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_mint--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_mint--hover, #225D64)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_mint--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_mint--active, #205A63)"
+    }
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_purple",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_purple, #5E3394)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_purple--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_purple--hover, #5A3291)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_purple--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_purple--active, #56308D)"
+    }
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_magenta",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_magenta, #9E3678)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_magenta--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_magenta--hover, #983476)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_magenta--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_magenta--active, #913373)"
+    }
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_midnightsky",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_midnightsky, #104D7E)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_midnightsky--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--hover, #0F4B7B)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_midnightsky--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--active, #0F4879)"
     }
   },
   "widthTouch": {
@@ -669654,11 +670140,44 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
   "themeNameBase": "workspaceAdmin",
   "fontHeadline3": {
     "regular": {
+      "fontSize": "14px",
+      "lineHeight": "18px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
       "fontSize": "13px",
       "lineHeight": "16px",
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
-      "fontWeight": 500,
-      "fontStyle": "normal"
+      "fontWeight": 500
+    }
+  },
+  "fontSubhead500": {
+    "regular": {
+      "fontSize": "14px",
+      "lineHeight": "18px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": "13px",
+      "lineHeight": "18px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    }
+  },
+  "fontCaption1500": {
+    "regular": {
+      "fontSize": "14px",
+      "lineHeight": "19px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
     }
   },
   "fontHeadline": {
@@ -669676,8 +670195,8 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
   "colorsScheme": "light",
   "colorBackgroundAccent": {
     "normal": "#0077FF",
-    "hover": "#0073F7",
-    "active": "#006FEF"
+    "hover": "#0070f0",
+    "active": "#0062d0"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#0077FF",
@@ -669735,14 +670254,14 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "rgba(255, 255, 255, 0.28)"
   },
   "colorBackgroundWarning": {
-    "normal": "#F98923",
-    "hover": "#EF8424",
-    "active": "#E57F25"
+    "normal": "#FFF1AD",
+    "hover": "#F5E8A9",
+    "active": "#EBDFA4"
   },
   "colorBackgroundNegative": {
-    "normal": "#ED0A34",
-    "hover": "#E40A34",
-    "active": "#DA0A35"
+    "normal": "#F23741",
+    "hover": "#e9223a",
+    "active": "#db1a2c"
   },
   "colorBackgroundTertiary": {
     "normal": "#F6F7F8",
@@ -669750,9 +670269,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "#E2E5E9"
   },
   "colorBackgroundTertiaryAlpha": {
-    "normal": "rgba(58, 58, 90, 0.04)",
-    "hover": "rgba(58, 58, 90, 0.08)",
-    "active": "rgba(58, 58, 90, 0.12)"
+    "normal": "rgba(0, 16, 61, 0.03)",
+    "hover": "rgba(0, 16, 61, 0.06)",
+    "active": "rgba(0, 16, 61, 0.1)"
   },
   "colorBackgroundModal": {
     "normal": "#FFFFFF",
@@ -669765,9 +670284,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "#00954e"
   },
   "colorBackgroundNegativeTint": {
-    "normal": "#FAEBEB",
-    "hover": "#FDE2E7",
-    "active": "#FCD8DF"
+    "normal": "#FEEFF0",
+    "hover": "#F4E6E9",
+    "active": "#EADDE2"
   },
   "colorBackgroundPositiveTint": {
     "normal": "#EBF8F2",
@@ -669815,9 +670334,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "#0068E2"
   },
   "colorTextNegative": {
-    "normal": "#ED0A34",
-    "hover": "#E40A34",
-    "active": "#DA0A35"
+    "normal": "#F23741",
+    "hover": "#E83541",
+    "active": "#DF3441"
   },
   "colorTextLink": {
     "normal": "#0070f0",
@@ -669855,9 +670374,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "#282B2F"
   },
   "colorTextSecondary": {
-    "normal": "#797A80",
-    "hover": "#74767D",
-    "active": "#6F727B"
+    "normal": "#697481",
+    "hover": "#65707E",
+    "active": "#616C7C"
   },
   "colorTextSecondaryAlpha": {
     "normal": "rgba(37, 41, 46, 0.55)",
@@ -669970,9 +670489,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "#DF791F"
   },
   "colorIconNegative": {
-    "normal": "#ED033A",
-    "hover": "#E4043A",
-    "active": "#DA043A"
+    "normal": "#F23741",
+    "hover": "#E83541",
+    "active": "#DF3441"
   },
   "colorIconContrastSecondary": {
     "normal": "#F2F3F5",
@@ -669995,9 +670514,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "#EBECEF"
   },
   "colorStrokeNegative": {
-    "normal": "#ED0A34",
-    "hover": "#E40A34",
-    "active": "#DA0A35"
+    "normal": "#F23741",
+    "hover": "#E83541",
+    "active": "#DF3441"
   },
   "colorStrokePrimary": {
     "normal": "#2C2D2E",
@@ -670270,9 +670789,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "rgba(0, 119, 255, 0.14)"
   },
   "colorBackgroundAccentTintThemed": {
-    "normal": "#F0F7FF",
-    "hover": "#E5F1FF",
-    "active": "#DBECFF"
+    "normal": "#f0f7ff",
+    "hover": "#E6EEF7",
+    "active": "#DDE5EF"
   },
   "colorBackgroundWarningTintThemedAlpha": {
     "normal": "rgba(255, 241, 173, 0.48)",
@@ -670280,9 +670799,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "rgba(255, 241, 173, 0.56)"
   },
   "colorBackgroundWarningTintAlpha": {
-    "normal": "rgba(255, 241, 173, 0.64)",
-    "hover": "rgba(255, 241, 173, 0.72)",
-    "active": "rgba(255, 241, 173, 0.76)"
+    "normal": "rgba(255, 241, 173, 0.48)",
+    "hover": "rgba(255, 241, 173, 0.52)",
+    "active": "rgba(255, 241, 173, 0.56)"
   },
   "colorBackgroundWarningTintThemed": {
     "normal": "#fff8d8",
@@ -670295,19 +670814,19 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "#EBE5CC"
   },
   "colorBackgroundNegativeTintThemedAlpha": {
-    "normal": "rgba(237, 10, 52, 0.1)",
-    "hover": "rgba(237, 10, 52, 0.14)",
-    "active": "rgba(237, 10, 52, 0.16)"
+    "normal": "rgba(242, 55, 65, 0.08)",
+    "hover": "rgba(242, 55, 65, 0.12)",
+    "active": "rgba(242, 55, 65, 0.16)"
   },
   "colorBackgroundNegativeTintAlpha": {
-    "normal": "rgba(237, 10, 52, 0.1)",
-    "hover": "rgba(237, 10, 52, 0.14)",
-    "active": "rgba(237, 10, 52, 0.18)"
+    "normal": "rgba(242, 55, 65, 0.08)",
+    "hover": "rgba(242, 55, 65, 0.12)",
+    "active": "rgba(242, 55, 65, 0.16)"
   },
   "colorBackgroundNegativeTintThemed": {
-    "normal": "#FAEBEB",
-    "hover": "#FDE2E7",
-    "active": "#FCD8DF"
+    "normal": "#ffeae7",
+    "hover": "#F5E1E0",
+    "active": "#EBD9D9"
   },
   "colorBackgroundPositiveTintThemedAlpha": {
     "normal": "rgba(0, 172, 91, 0.08)",
@@ -670315,9 +670834,9 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "active": "rgba(0, 172, 91, 0.16)"
   },
   "colorBackgroundPositiveTintAlpha": {
-    "normal": "rgba(13, 194, 104, 0.12)",
-    "hover": "rgba(13, 194, 104, 0.14)",
-    "active": "rgba(13, 194, 104, 0.18)"
+    "normal": "rgba(0, 172, 91, 0.08)",
+    "hover": "rgba(0, 172, 91, 0.12)",
+    "active": "rgba(0, 172, 91, 0.16)"
   },
   "colorBackgroundPositiveTintThemed": {
     "normal": "#EBF8F2",
@@ -670474,15 +670993,145 @@ exports[`snapshots > workspaceAdmin theme > should match pixelify theme snapshot
     "hover": "#F5595B",
     "active": "#EB565A"
   },
-  "colorOnboarding": {
-    "normal": "#2979FA",
-    "hover": "#2775F2",
-    "active": "#2671EB"
+  "wsadminColorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#F5DCD9",
+    "active": "#EBD3D3"
   },
-  "colorSearchResultsAlpha": {
-    "normal": "rgba(255, 241, 173, 0.48)",
-    "hover": "rgba(255, 241, 173, 0.52)",
-    "active": "rgba(255, 241, 173, 0.56)"
+  "wsadminColorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#F5E7DE",
+    "active": "#EBDED8"
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#BA5822",
+    "active": "#B25523"
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#BF6423",
+    "active": "#B76024"
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#288D31",
+    "active": "#278832"
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#E3F4D9",
+    "active": "#D9EBD2"
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#E6F4F7",
+    "active": "#DDEAEF"
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#179183",
+    "active": "#168B80"
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#E2F5F1",
+    "active": "#D8ECE9"
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0083D0",
+    "active": "#007ECA"
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#D7E3F7",
+    "active": "#CEDAEF"
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#DDDCF7",
+    "active": "#D4D4EF"
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#E8E1F6",
+    "active": "#DFD9EF"
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#824BD0",
+    "active": "#7C48CA"
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#C53B4F",
+    "active": "#BD394E"
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#BA335B",
+    "active": "#B2315A"
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": "#F8F8BC",
+    "hover": "#EEEFB7",
+    "active": "#E4E5B2"
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": "#DBFFE2",
+    "hover": "#D2F5DB",
+    "active": "#C9ECD5"
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": "#C3FBFF",
+    "hover": "#BBF2F7",
+    "active": "#B3E8EF"
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": "#E4CFFF",
+    "hover": "#DBC7F7",
+    "active": "#D2C0EF"
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": "#FFDBFB",
+    "hover": "#F5D3F3",
+    "active": "#EBCBEC"
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": "#C2DEFF",
+    "hover": "#BAD6F7",
+    "active": "#B2CEEF"
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": "#695A1E",
+    "hover": "#65571F",
+    "active": "#615420"
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": "#155E55",
+    "hover": "#145B54",
+    "active": "#135853"
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": "#236066",
+    "hover": "#225D64",
+    "active": "#205A63"
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": "#5E3394",
+    "hover": "#5A3291",
+    "active": "#56308D"
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": "#9E3678",
+    "hover": "#983476",
+    "active": "#913373"
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": "#104D7E",
+    "hover": "#0F4B7B",
+    "active": "#0F4879"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",
@@ -671190,11 +671839,44 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
   "themeNameBase": "var(--vkui--theme_name_base, workspaceAdmin)",
   "fontHeadline3": {
     "regular": {
-      "fontSize": "var(--vkui--font_headline3--font_size--regular, 13px)",
-      "lineHeight": "var(--vkui--font_headline3--line_height--regular, 16px)",
+      "fontSize": "var(--vkui--font_headline3--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--font_headline3--line_height--regular, 18px)",
       "fontFamily": "var(--vkui--font_headline3--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
-      "fontWeight": "var(--vkui--font_headline3--font_weight--regular, 500)",
-      "fontStyle": "var(--vkui--font_headline3--font_style--regular, normal)"
+      "fontWeight": "var(--vkui--font_headline3--font_weight--regular, 500)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_headline3--font_size--compact, 13px)",
+      "lineHeight": "var(--vkui--font_headline3--line_height--compact, 16px)",
+      "fontFamily": "var(--vkui--font_headline3--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_headline3--font_weight--compact, 500)"
+    }
+  },
+  "fontSubhead500": {
+    "regular": {
+      "fontSize": "var(--vkui--font_subhead500--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--font_subhead500--line_height--regular, 18px)",
+      "fontFamily": "var(--vkui--font_subhead500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_subhead500--font_weight--regular, 500)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_subhead500--font_size--compact, 13px)",
+      "lineHeight": "var(--vkui--font_subhead500--line_height--compact, 18px)",
+      "fontFamily": "var(--vkui--font_subhead500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_subhead500--font_weight--compact, 500)"
+    }
+  },
+  "fontCaption1500": {
+    "regular": {
+      "fontSize": "var(--vkui--font_caption1500--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--font_caption1500--line_height--regular, 19px)",
+      "fontFamily": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_caption1500--font_weight--regular, 500)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_caption1500--font_size--compact, 12px)",
+      "lineHeight": "var(--vkui--font_caption1500--line_height--compact, 16px)",
+      "fontFamily": "var(--vkui--font_caption1500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_caption1500--font_weight--compact, 500)"
     }
   },
   "fontHeadline": {
@@ -671212,8 +671894,8 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
   "colorsScheme": "var(--vkui--colors_scheme, light)",
   "colorBackgroundAccent": {
     "normal": "var(--vkui--color_background_accent, #0077FF)",
-    "hover": "var(--vkui--color_background_accent--hover, #0073F7)",
-    "active": "var(--vkui--color_background_accent--active, #006FEF)"
+    "hover": "var(--vkui--color_background_accent--hover, #0070f0)",
+    "active": "var(--vkui--color_background_accent--active, #0062d0)"
   },
   "colorBackgroundAccentThemed": {
     "normal": "var(--vkui--color_background_accent_themed, #0077FF)",
@@ -671271,14 +671953,14 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_contrast_secondary_alpha--active, rgba(255, 255, 255, 0.28))"
   },
   "colorBackgroundWarning": {
-    "normal": "var(--vkui--color_background_warning, #F98923)",
-    "hover": "var(--vkui--color_background_warning--hover, #EF8424)",
-    "active": "var(--vkui--color_background_warning--active, #E57F25)"
+    "normal": "var(--vkui--color_background_warning, #FFF1AD)",
+    "hover": "var(--vkui--color_background_warning--hover, #F5E8A9)",
+    "active": "var(--vkui--color_background_warning--active, #EBDFA4)"
   },
   "colorBackgroundNegative": {
-    "normal": "var(--vkui--color_background_negative, #ED0A34)",
-    "hover": "var(--vkui--color_background_negative--hover, #E40A34)",
-    "active": "var(--vkui--color_background_negative--active, #DA0A35)"
+    "normal": "var(--vkui--color_background_negative, #F23741)",
+    "hover": "var(--vkui--color_background_negative--hover, #e9223a)",
+    "active": "var(--vkui--color_background_negative--active, #db1a2c)"
   },
   "colorBackgroundTertiary": {
     "normal": "var(--vkui--color_background_tertiary, #F6F7F8)",
@@ -671286,9 +671968,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_tertiary--active, #E2E5E9)"
   },
   "colorBackgroundTertiaryAlpha": {
-    "normal": "var(--vkui--color_background_tertiary_alpha, rgba(58, 58, 90, 0.04))",
-    "hover": "var(--vkui--color_background_tertiary_alpha--hover, rgba(58, 58, 90, 0.08))",
-    "active": "var(--vkui--color_background_tertiary_alpha--active, rgba(58, 58, 90, 0.12))"
+    "normal": "var(--vkui--color_background_tertiary_alpha, rgba(0, 16, 61, 0.03))",
+    "hover": "var(--vkui--color_background_tertiary_alpha--hover, rgba(0, 16, 61, 0.06))",
+    "active": "var(--vkui--color_background_tertiary_alpha--active, rgba(0, 16, 61, 0.1))"
   },
   "colorBackgroundModal": {
     "normal": "var(--vkui--color_background_modal, #FFFFFF)",
@@ -671301,9 +671983,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_positive--active, #00954e)"
   },
   "colorBackgroundNegativeTint": {
-    "normal": "var(--vkui--color_background_negative_tint, #FAEBEB)",
-    "hover": "var(--vkui--color_background_negative_tint--hover, #FDE2E7)",
-    "active": "var(--vkui--color_background_negative_tint--active, #FCD8DF)"
+    "normal": "var(--vkui--color_background_negative_tint, #FEEFF0)",
+    "hover": "var(--vkui--color_background_negative_tint--hover, #F4E6E9)",
+    "active": "var(--vkui--color_background_negative_tint--active, #EADDE2)"
   },
   "colorBackgroundPositiveTint": {
     "normal": "var(--vkui--color_background_positive_tint, #EBF8F2)",
@@ -671351,9 +672033,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_text_accent_themed--active, #0068E2)"
   },
   "colorTextNegative": {
-    "normal": "var(--vkui--color_text_negative, #ED0A34)",
-    "hover": "var(--vkui--color_text_negative--hover, #E40A34)",
-    "active": "var(--vkui--color_text_negative--active, #DA0A35)"
+    "normal": "var(--vkui--color_text_negative, #F23741)",
+    "hover": "var(--vkui--color_text_negative--hover, #E83541)",
+    "active": "var(--vkui--color_text_negative--active, #DF3441)"
   },
   "colorTextLink": {
     "normal": "var(--vkui--color_text_link, #0070f0)",
@@ -671391,9 +672073,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_text_primary_invariably--active, #282B2F)"
   },
   "colorTextSecondary": {
-    "normal": "var(--vkui--color_text_secondary, #797A80)",
-    "hover": "var(--vkui--color_text_secondary--hover, #74767D)",
-    "active": "var(--vkui--color_text_secondary--active, #6F727B)"
+    "normal": "var(--vkui--color_text_secondary, #697481)",
+    "hover": "var(--vkui--color_text_secondary--hover, #65707E)",
+    "active": "var(--vkui--color_text_secondary--active, #616C7C)"
   },
   "colorTextSecondaryAlpha": {
     "normal": "var(--vkui--color_text_secondary_alpha, rgba(37, 41, 46, 0.55))",
@@ -671506,9 +672188,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_icon_warning--active, #DF791F)"
   },
   "colorIconNegative": {
-    "normal": "var(--vkui--color_icon_negative, #ED033A)",
-    "hover": "var(--vkui--color_icon_negative--hover, #E4043A)",
-    "active": "var(--vkui--color_icon_negative--active, #DA043A)"
+    "normal": "var(--vkui--color_icon_negative, #F23741)",
+    "hover": "var(--vkui--color_icon_negative--hover, #E83541)",
+    "active": "var(--vkui--color_icon_negative--active, #DF3441)"
   },
   "colorIconContrastSecondary": {
     "normal": "var(--vkui--color_icon_contrast_secondary, #F2F3F5)",
@@ -671531,9 +672213,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_stroke_contrast--active, #EBECEF)"
   },
   "colorStrokeNegative": {
-    "normal": "var(--vkui--color_stroke_negative, #ED0A34)",
-    "hover": "var(--vkui--color_stroke_negative--hover, #E40A34)",
-    "active": "var(--vkui--color_stroke_negative--active, #DA0A35)"
+    "normal": "var(--vkui--color_stroke_negative, #F23741)",
+    "hover": "var(--vkui--color_stroke_negative--hover, #E83541)",
+    "active": "var(--vkui--color_stroke_negative--active, #DF3441)"
   },
   "colorStrokePrimary": {
     "normal": "var(--vkui--color_stroke_primary, #2C2D2E)",
@@ -671806,9 +672488,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_accent_tint_alpha--active, rgba(0, 119, 255, 0.14))"
   },
   "colorBackgroundAccentTintThemed": {
-    "normal": "var(--vkui--color_background_accent_tint_themed, #F0F7FF)",
-    "hover": "var(--vkui--color_background_accent_tint_themed--hover, #E5F1FF)",
-    "active": "var(--vkui--color_background_accent_tint_themed--active, #DBECFF)"
+    "normal": "var(--vkui--color_background_accent_tint_themed, #f0f7ff)",
+    "hover": "var(--vkui--color_background_accent_tint_themed--hover, #E6EEF7)",
+    "active": "var(--vkui--color_background_accent_tint_themed--active, #DDE5EF)"
   },
   "colorBackgroundWarningTintThemedAlpha": {
     "normal": "var(--vkui--color_background_warning_tint_themed_alpha, rgba(255, 241, 173, 0.48))",
@@ -671816,9 +672498,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_warning_tint_themed_alpha--active, rgba(255, 241, 173, 0.56))"
   },
   "colorBackgroundWarningTintAlpha": {
-    "normal": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 241, 173, 0.64))",
-    "hover": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 241, 173, 0.72))",
-    "active": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 241, 173, 0.76))"
+    "normal": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 241, 173, 0.48))",
+    "hover": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 241, 173, 0.52))",
+    "active": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 241, 173, 0.56))"
   },
   "colorBackgroundWarningTintThemed": {
     "normal": "var(--vkui--color_background_warning_tint_themed, #fff8d8)",
@@ -671831,19 +672513,19 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_warning_tint--active, #EBE5CC)"
   },
   "colorBackgroundNegativeTintThemedAlpha": {
-    "normal": "var(--vkui--color_background_negative_tint_themed_alpha, rgba(237, 10, 52, 0.1))",
-    "hover": "var(--vkui--color_background_negative_tint_themed_alpha--hover, rgba(237, 10, 52, 0.14))",
-    "active": "var(--vkui--color_background_negative_tint_themed_alpha--active, rgba(237, 10, 52, 0.16))"
+    "normal": "var(--vkui--color_background_negative_tint_themed_alpha, rgba(242, 55, 65, 0.08))",
+    "hover": "var(--vkui--color_background_negative_tint_themed_alpha--hover, rgba(242, 55, 65, 0.12))",
+    "active": "var(--vkui--color_background_negative_tint_themed_alpha--active, rgba(242, 55, 65, 0.16))"
   },
   "colorBackgroundNegativeTintAlpha": {
-    "normal": "var(--vkui--color_background_negative_tint_alpha, rgba(237, 10, 52, 0.1))",
-    "hover": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(237, 10, 52, 0.14))",
-    "active": "var(--vkui--color_background_negative_tint_alpha--active, rgba(237, 10, 52, 0.18))"
+    "normal": "var(--vkui--color_background_negative_tint_alpha, rgba(242, 55, 65, 0.08))",
+    "hover": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(242, 55, 65, 0.12))",
+    "active": "var(--vkui--color_background_negative_tint_alpha--active, rgba(242, 55, 65, 0.16))"
   },
   "colorBackgroundNegativeTintThemed": {
-    "normal": "var(--vkui--color_background_negative_tint_themed, #FAEBEB)",
-    "hover": "var(--vkui--color_background_negative_tint_themed--hover, #FDE2E7)",
-    "active": "var(--vkui--color_background_negative_tint_themed--active, #FCD8DF)"
+    "normal": "var(--vkui--color_background_negative_tint_themed, #ffeae7)",
+    "hover": "var(--vkui--color_background_negative_tint_themed--hover, #F5E1E0)",
+    "active": "var(--vkui--color_background_negative_tint_themed--active, #EBD9D9)"
   },
   "colorBackgroundPositiveTintThemedAlpha": {
     "normal": "var(--vkui--color_background_positive_tint_themed_alpha, rgba(0, 172, 91, 0.08))",
@@ -671851,9 +672533,9 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_positive_tint_themed_alpha--active, rgba(0, 172, 91, 0.16))"
   },
   "colorBackgroundPositiveTintAlpha": {
-    "normal": "var(--vkui--color_background_positive_tint_alpha, rgba(13, 194, 104, 0.12))",
-    "hover": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(13, 194, 104, 0.14))",
-    "active": "var(--vkui--color_background_positive_tint_alpha--active, rgba(13, 194, 104, 0.18))"
+    "normal": "var(--vkui--color_background_positive_tint_alpha, rgba(0, 172, 91, 0.08))",
+    "hover": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(0, 172, 91, 0.12))",
+    "active": "var(--vkui--color_background_positive_tint_alpha--active, rgba(0, 172, 91, 0.16))"
   },
   "colorBackgroundPositiveTintThemed": {
     "normal": "var(--vkui--color_background_positive_tint_themed, #EBF8F2)",
@@ -672010,15 +672692,145 @@ exports[`snapshots > workspaceAdmin theme > should match pseudo theme from CssVa
     "hover": "var(--vkui--color_icon_negative_snackbar--hover, #F5595B)",
     "active": "var(--vkui--color_icon_negative_snackbar--active, #EB565A)"
   },
-  "colorOnboarding": {
-    "normal": "var(--vkui--color_onboarding, #2979FA)",
-    "hover": "var(--vkui--color_onboarding--hover, #2775F2)",
-    "active": "var(--vkui--color_onboarding--active, #2671EB)"
+  "wsadminColorAvatarTextRed": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_red, #FFE4E0)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_red--hover, #F5DCD9)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_red--active, #EBD3D3)"
   },
-  "colorSearchResultsAlpha": {
-    "normal": "var(--vkui--color_search_results_alpha, rgba(255, 241, 173, 0.48))",
-    "hover": "var(--vkui--color_search_results_alpha--hover, rgba(255, 241, 173, 0.52))",
-    "active": "var(--vkui--color_search_results_alpha--active, rgba(255, 241, 173, 0.56))"
+  "wsadminColorAvatarTextOrange": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_orange, #FFF0E5)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_orange--hover, #F5E7DE)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_orange--active, #EBDED8)"
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_peach, #C25B21)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_peach--hover, #BA5822)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_peach--active, #B25523)"
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_yellow, #C76722)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_yellow--hover, #BF6423)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_yellow--active, #B76024)"
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_lime, #2A9231)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_lime--hover, #288D31)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_lime--active, #278832)"
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_green, #ECFEDF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_green--hover, #E3F4D9)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_green--active, #D9EBD2)"
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_cyan, #F0FDFF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_cyan--hover, #E6F4F7)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_cyan--active, #DDEAEF)"
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_mint, #189686)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_mint--hover, #179183)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_mint--active, #168B80)"
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_seagreen, #EBFFF8)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_seagreen--hover, #E2F5F1)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_seagreen--active, #D8ECE9)"
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_sky, #0088D6)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_sky--hover, #0083D0)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_sky--active, #007ECA)"
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_blue, #E0ECFF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_blue--hover, #D7E3F7)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_blue--active, #CEDAEF)"
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_indigo, #E6E5FF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_indigo--hover, #DDDCF7)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_indigo--active, #D4D4EF)"
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_violet, #F2EAFE)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_violet--hover, #E8E1F6)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_violet--active, #DFD9EF)"
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_lavender, #874DD6)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_lavender--hover, #824BD0)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_lavender--active, #7C48CA)"
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_coral, #CD3D50)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_coral--hover, #C53B4F)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_coral--active, #BD394E)"
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_pink, #C2345C)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_pink--hover, #BA335B)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_pink--active, #B2315A)"
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_yellow, #F8F8BC)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_yellow--hover, #EEEFB7)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_yellow--active, #E4E5B2)"
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_grass, #DBFFE2)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_grass--hover, #D2F5DB)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_grass--active, #C9ECD5)"
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_mint, #C3FBFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_mint--hover, #BBF2F7)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_mint--active, #B3E8EF)"
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_purple, #E4CFFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_purple--hover, #DBC7F7)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_purple--active, #D2C0EF)"
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_magenta, #FFDBFB)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_magenta--hover, #F5D3F3)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_magenta--active, #EBCBEC)"
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_midnightsky, #C2DEFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--hover, #BAD6F7)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--active, #B2CEEF)"
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_yellow, #695A1E)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_yellow--hover, #65571F)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_yellow--active, #615420)"
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_grass, #155E55)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_grass--hover, #145B54)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_grass--active, #135853)"
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_mint, #236066)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_mint--hover, #225D64)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_mint--active, #205A63)"
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_purple, #5E3394)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_purple--hover, #5A3291)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_purple--active, #56308D)"
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_magenta, #9E3678)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_magenta--hover, #983476)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_magenta--active, #913373)"
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_midnightsky, #104D7E)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--hover, #0F4B7B)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--active, #0F4879)"
   },
   "widthTouch": "var(--vkui--width_touch, \\"(max-width: 767px)\\")",
   "widthToTouch": "var(--vkui--width_to_touch, \\"(max-width: 767px)\\")",
@@ -672726,11 +673538,44 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
   "themeNameBase": "workspaceAdmin",
   "fontHeadline3": {
     "regular": {
+      "fontSize": 14,
+      "lineHeight": 18,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
       "fontSize": 13,
       "lineHeight": 16,
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
-      "fontWeight": 500,
-      "fontStyle": "normal"
+      "fontWeight": 500
+    }
+  },
+  "fontSubhead500": {
+    "regular": {
+      "fontSize": 14,
+      "lineHeight": 18,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": 13,
+      "lineHeight": 18,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    }
+  },
+  "fontCaption1500": {
+    "regular": {
+      "fontSize": 14,
+      "lineHeight": 19,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": 12,
+      "lineHeight": 16,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
     }
   },
   "fontHeadline": {
@@ -672748,8 +673593,8 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
   "colorsScheme": "light",
   "colorBackgroundAccent": {
     "normal": "#0077FF",
-    "hover": "#0073F7",
-    "active": "#006FEF"
+    "hover": "#0070f0",
+    "active": "#0062d0"
   },
   "colorBackgroundAccentThemed": {
     "normal": "#0077FF",
@@ -672807,14 +673652,14 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "rgba(255, 255, 255, 0.28)"
   },
   "colorBackgroundWarning": {
-    "normal": "#F98923",
-    "hover": "#EF8424",
-    "active": "#E57F25"
+    "normal": "#FFF1AD",
+    "hover": "#F5E8A9",
+    "active": "#EBDFA4"
   },
   "colorBackgroundNegative": {
-    "normal": "#ED0A34",
-    "hover": "#E40A34",
-    "active": "#DA0A35"
+    "normal": "#F23741",
+    "hover": "#e9223a",
+    "active": "#db1a2c"
   },
   "colorBackgroundTertiary": {
     "normal": "#F6F7F8",
@@ -672822,9 +673667,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "#E2E5E9"
   },
   "colorBackgroundTertiaryAlpha": {
-    "normal": "rgba(58, 58, 90, 0.04)",
-    "hover": "rgba(58, 58, 90, 0.08)",
-    "active": "rgba(58, 58, 90, 0.12)"
+    "normal": "rgba(0, 16, 61, 0.03)",
+    "hover": "rgba(0, 16, 61, 0.06)",
+    "active": "rgba(0, 16, 61, 0.1)"
   },
   "colorBackgroundModal": {
     "normal": "#FFFFFF",
@@ -672837,9 +673682,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "#00954e"
   },
   "colorBackgroundNegativeTint": {
-    "normal": "#FAEBEB",
-    "hover": "#FDE2E7",
-    "active": "#FCD8DF"
+    "normal": "#FEEFF0",
+    "hover": "#F4E6E9",
+    "active": "#EADDE2"
   },
   "colorBackgroundPositiveTint": {
     "normal": "#EBF8F2",
@@ -672887,9 +673732,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "#0068E2"
   },
   "colorTextNegative": {
-    "normal": "#ED0A34",
-    "hover": "#E40A34",
-    "active": "#DA0A35"
+    "normal": "#F23741",
+    "hover": "#E83541",
+    "active": "#DF3441"
   },
   "colorTextLink": {
     "normal": "#0070f0",
@@ -672927,9 +673772,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "#282B2F"
   },
   "colorTextSecondary": {
-    "normal": "#797A80",
-    "hover": "#74767D",
-    "active": "#6F727B"
+    "normal": "#697481",
+    "hover": "#65707E",
+    "active": "#616C7C"
   },
   "colorTextSecondaryAlpha": {
     "normal": "rgba(37, 41, 46, 0.55)",
@@ -673042,9 +673887,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "#DF791F"
   },
   "colorIconNegative": {
-    "normal": "#ED033A",
-    "hover": "#E4043A",
-    "active": "#DA043A"
+    "normal": "#F23741",
+    "hover": "#E83541",
+    "active": "#DF3441"
   },
   "colorIconContrastSecondary": {
     "normal": "#F2F3F5",
@@ -673067,9 +673912,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "#EBECEF"
   },
   "colorStrokeNegative": {
-    "normal": "#ED0A34",
-    "hover": "#E40A34",
-    "active": "#DA0A35"
+    "normal": "#F23741",
+    "hover": "#E83541",
+    "active": "#DF3441"
   },
   "colorStrokePrimary": {
     "normal": "#2C2D2E",
@@ -673342,9 +674187,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "rgba(0, 119, 255, 0.14)"
   },
   "colorBackgroundAccentTintThemed": {
-    "normal": "#F0F7FF",
-    "hover": "#E5F1FF",
-    "active": "#DBECFF"
+    "normal": "#f0f7ff",
+    "hover": "#E6EEF7",
+    "active": "#DDE5EF"
   },
   "colorBackgroundWarningTintThemedAlpha": {
     "normal": "rgba(255, 241, 173, 0.48)",
@@ -673352,9 +674197,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "rgba(255, 241, 173, 0.56)"
   },
   "colorBackgroundWarningTintAlpha": {
-    "normal": "rgba(255, 241, 173, 0.64)",
-    "hover": "rgba(255, 241, 173, 0.72)",
-    "active": "rgba(255, 241, 173, 0.76)"
+    "normal": "rgba(255, 241, 173, 0.48)",
+    "hover": "rgba(255, 241, 173, 0.52)",
+    "active": "rgba(255, 241, 173, 0.56)"
   },
   "colorBackgroundWarningTintThemed": {
     "normal": "#fff8d8",
@@ -673367,19 +674212,19 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "#EBE5CC"
   },
   "colorBackgroundNegativeTintThemedAlpha": {
-    "normal": "rgba(237, 10, 52, 0.1)",
-    "hover": "rgba(237, 10, 52, 0.14)",
-    "active": "rgba(237, 10, 52, 0.16)"
+    "normal": "rgba(242, 55, 65, 0.08)",
+    "hover": "rgba(242, 55, 65, 0.12)",
+    "active": "rgba(242, 55, 65, 0.16)"
   },
   "colorBackgroundNegativeTintAlpha": {
-    "normal": "rgba(237, 10, 52, 0.1)",
-    "hover": "rgba(237, 10, 52, 0.14)",
-    "active": "rgba(237, 10, 52, 0.18)"
+    "normal": "rgba(242, 55, 65, 0.08)",
+    "hover": "rgba(242, 55, 65, 0.12)",
+    "active": "rgba(242, 55, 65, 0.16)"
   },
   "colorBackgroundNegativeTintThemed": {
-    "normal": "#FAEBEB",
-    "hover": "#FDE2E7",
-    "active": "#FCD8DF"
+    "normal": "#ffeae7",
+    "hover": "#F5E1E0",
+    "active": "#EBD9D9"
   },
   "colorBackgroundPositiveTintThemedAlpha": {
     "normal": "rgba(0, 172, 91, 0.08)",
@@ -673387,9 +674232,9 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "active": "rgba(0, 172, 91, 0.16)"
   },
   "colorBackgroundPositiveTintAlpha": {
-    "normal": "rgba(13, 194, 104, 0.12)",
-    "hover": "rgba(13, 194, 104, 0.14)",
-    "active": "rgba(13, 194, 104, 0.18)"
+    "normal": "rgba(0, 172, 91, 0.08)",
+    "hover": "rgba(0, 172, 91, 0.12)",
+    "active": "rgba(0, 172, 91, 0.16)"
   },
   "colorBackgroundPositiveTintThemed": {
     "normal": "#EBF8F2",
@@ -673546,15 +674391,145 @@ exports[`snapshots > workspaceAdmin theme > should match root theme snapshot 1`]
     "hover": "#F5595B",
     "active": "#EB565A"
   },
-  "colorOnboarding": {
-    "normal": "#2979FA",
-    "hover": "#2775F2",
-    "active": "#2671EB"
+  "wsadminColorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#F5DCD9",
+    "active": "#EBD3D3"
   },
-  "colorSearchResultsAlpha": {
-    "normal": "rgba(255, 241, 173, 0.48)",
-    "hover": "rgba(255, 241, 173, 0.52)",
-    "active": "rgba(255, 241, 173, 0.56)"
+  "wsadminColorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#F5E7DE",
+    "active": "#EBDED8"
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#BA5822",
+    "active": "#B25523"
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#BF6423",
+    "active": "#B76024"
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#288D31",
+    "active": "#278832"
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#E3F4D9",
+    "active": "#D9EBD2"
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#E6F4F7",
+    "active": "#DDEAEF"
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#179183",
+    "active": "#168B80"
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#E2F5F1",
+    "active": "#D8ECE9"
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0083D0",
+    "active": "#007ECA"
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#D7E3F7",
+    "active": "#CEDAEF"
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#DDDCF7",
+    "active": "#D4D4EF"
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#E8E1F6",
+    "active": "#DFD9EF"
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#824BD0",
+    "active": "#7C48CA"
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#C53B4F",
+    "active": "#BD394E"
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#BA335B",
+    "active": "#B2315A"
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": "#F8F8BC",
+    "hover": "#EEEFB7",
+    "active": "#E4E5B2"
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": "#DBFFE2",
+    "hover": "#D2F5DB",
+    "active": "#C9ECD5"
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": "#C3FBFF",
+    "hover": "#BBF2F7",
+    "active": "#B3E8EF"
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": "#E4CFFF",
+    "hover": "#DBC7F7",
+    "active": "#D2C0EF"
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": "#FFDBFB",
+    "hover": "#F5D3F3",
+    "active": "#EBCBEC"
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": "#C2DEFF",
+    "hover": "#BAD6F7",
+    "active": "#B2CEEF"
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": "#695A1E",
+    "hover": "#65571F",
+    "active": "#615420"
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": "#155E55",
+    "hover": "#145B54",
+    "active": "#135853"
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": "#236066",
+    "hover": "#225D64",
+    "active": "#205A63"
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": "#5E3394",
+    "hover": "#5A3291",
+    "active": "#56308D"
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": "#9E3678",
+    "hover": "#983476",
+    "active": "#913373"
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": "#104D7E",
+    "hover": "#0F4B7B",
+    "active": "#0F4879"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",
@@ -676207,20 +677182,16 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
       "fontWeight": {
         "name": "--vkui--font_headline3--font_weight",
         "value": "var(--vkui--font_headline3--font_weight)"
-      },
-      "fontStyle": {
-        "name": "--vkui--font_headline3--font_style",
-        "value": "var(--vkui--font_headline3--font_style)"
       }
     },
     "regular": {
       "fontSize": {
         "name": "--vkui--font_headline3--font_size--regular",
-        "value": "var(--vkui--font_headline3--font_size--regular, 13px)"
+        "value": "var(--vkui--font_headline3--font_size--regular, 14px)"
       },
       "lineHeight": {
         "name": "--vkui--font_headline3--line_height--regular",
-        "value": "var(--vkui--font_headline3--line_height--regular, 16px)"
+        "value": "var(--vkui--font_headline3--line_height--regular, 18px)"
       },
       "fontFamily": {
         "name": "--vkui--font_headline3--font_family--regular",
@@ -676229,10 +677200,136 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
       "fontWeight": {
         "name": "--vkui--font_headline3--font_weight--regular",
         "value": "var(--vkui--font_headline3--font_weight--regular, 500)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_headline3--font_size--compact",
+        "value": "var(--vkui--font_headline3--font_size--compact, 13px)"
       },
-      "fontStyle": {
-        "name": "--vkui--font_headline3--font_style--regular",
-        "value": "var(--vkui--font_headline3--font_style--regular, normal)"
+      "lineHeight": {
+        "name": "--vkui--font_headline3--line_height--compact",
+        "value": "var(--vkui--font_headline3--line_height--compact, 16px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_headline3--font_family--compact",
+        "value": "var(--vkui--font_headline3--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_headline3--font_weight--compact",
+        "value": "var(--vkui--font_headline3--font_weight--compact, 500)"
+      }
+    }
+  },
+  "fontSubhead500": {
+    "auto": {
+      "fontSize": {
+        "name": "--vkui--font_subhead500--font_size",
+        "value": "var(--vkui--font_subhead500--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_subhead500--line_height",
+        "value": "var(--vkui--font_subhead500--line_height)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_subhead500--font_family",
+        "value": "var(--vkui--font_subhead500--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_subhead500--font_weight",
+        "value": "var(--vkui--font_subhead500--font_weight)"
+      }
+    },
+    "regular": {
+      "fontSize": {
+        "name": "--vkui--font_subhead500--font_size--regular",
+        "value": "var(--vkui--font_subhead500--font_size--regular, 14px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_subhead500--line_height--regular",
+        "value": "var(--vkui--font_subhead500--line_height--regular, 18px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_subhead500--font_family--regular",
+        "value": "var(--vkui--font_subhead500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_subhead500--font_weight--regular",
+        "value": "var(--vkui--font_subhead500--font_weight--regular, 500)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_subhead500--font_size--compact",
+        "value": "var(--vkui--font_subhead500--font_size--compact, 13px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_subhead500--line_height--compact",
+        "value": "var(--vkui--font_subhead500--line_height--compact, 18px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_subhead500--font_family--compact",
+        "value": "var(--vkui--font_subhead500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_subhead500--font_weight--compact",
+        "value": "var(--vkui--font_subhead500--font_weight--compact, 500)"
+      }
+    }
+  },
+  "fontCaption1500": {
+    "auto": {
+      "fontSize": {
+        "name": "--vkui--font_caption1500--font_size",
+        "value": "var(--vkui--font_caption1500--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_caption1500--line_height",
+        "value": "var(--vkui--font_caption1500--line_height)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_caption1500--font_family",
+        "value": "var(--vkui--font_caption1500--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_caption1500--font_weight",
+        "value": "var(--vkui--font_caption1500--font_weight)"
+      }
+    },
+    "regular": {
+      "fontSize": {
+        "name": "--vkui--font_caption1500--font_size--regular",
+        "value": "var(--vkui--font_caption1500--font_size--regular, 14px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_caption1500--line_height--regular",
+        "value": "var(--vkui--font_caption1500--line_height--regular, 19px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_caption1500--font_family--regular",
+        "value": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_caption1500--font_weight--regular",
+        "value": "var(--vkui--font_caption1500--font_weight--regular, 500)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_caption1500--font_size--compact",
+        "value": "var(--vkui--font_caption1500--font_size--compact, 12px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_caption1500--line_height--compact",
+        "value": "var(--vkui--font_caption1500--line_height--compact, 16px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_caption1500--font_family--compact",
+        "value": "var(--vkui--font_caption1500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_caption1500--font_weight--compact",
+        "value": "var(--vkui--font_caption1500--font_weight--compact, 500)"
       }
     }
   },
@@ -676459,57 +677556,57 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorBackgroundWarning": {
     "normal": {
       "name": "--vkui--color_background_warning",
-      "value": "var(--vkui--color_background_warning, #FA9900)"
+      "value": "var(--vkui--color_background_warning, #6C4E00)"
     },
     "hover": {
       "name": "--vkui--color_background_warning--hover",
-      "value": "var(--vkui--color_background_warning--hover, #FA9D0A)"
+      "value": "var(--vkui--color_background_warning--hover, #72550A)"
     },
     "active": {
       "name": "--vkui--color_background_warning--active",
-      "value": "var(--vkui--color_background_warning--active, #FAA114)"
+      "value": "var(--vkui--color_background_warning--active, #785C14)"
     }
   },
   "colorBackgroundNegative": {
     "normal": {
       "name": "--vkui--color_background_negative",
-      "value": "var(--vkui--color_background_negative, #FF5C5C)"
+      "value": "var(--vkui--color_background_negative, #F85050)"
     },
     "hover": {
       "name": "--vkui--color_background_negative--hover",
-      "value": "var(--vkui--color_background_negative--hover, #FF6363)"
+      "value": "var(--vkui--color_background_negative--hover, #fc6664)"
     },
     "active": {
       "name": "--vkui--color_background_negative--active",
-      "value": "var(--vkui--color_background_negative--active, #FF6969)"
+      "value": "var(--vkui--color_background_negative--active, #ff7973)"
     }
   },
   "colorBackgroundTertiary": {
     "normal": {
       "name": "--vkui--color_background_tertiary",
-      "value": "var(--vkui--color_background_tertiary, #19191A)"
+      "value": "var(--vkui--color_background_tertiary, #252525)"
     },
     "hover": {
       "name": "--vkui--color_background_tertiary--hover",
-      "value": "var(--vkui--color_background_tertiary--hover, #222223)"
+      "value": "var(--vkui--color_background_tertiary--hover, #2E2E2E)"
     },
     "active": {
       "name": "--vkui--color_background_tertiary--active",
-      "value": "var(--vkui--color_background_tertiary--active, #2B2B2C)"
+      "value": "var(--vkui--color_background_tertiary--active, #363636)"
     }
   },
   "colorBackgroundTertiaryAlpha": {
     "normal": {
       "name": "--vkui--color_background_tertiary_alpha",
-      "value": "var(--vkui--color_background_tertiary_alpha, rgba(255, 255, 255, 0.04))"
+      "value": "var(--vkui--color_background_tertiary_alpha, rgba(255, 255, 255, 0.08))"
     },
     "hover": {
       "name": "--vkui--color_background_tertiary_alpha--hover",
-      "value": "var(--vkui--color_background_tertiary_alpha--hover, rgba(255, 255, 255, 0.1))"
+      "value": "var(--vkui--color_background_tertiary_alpha--hover, rgba(255, 255, 255, 0.12))"
     },
     "active": {
       "name": "--vkui--color_background_tertiary_alpha--active",
-      "value": "var(--vkui--color_background_tertiary_alpha--active, rgba(255, 255, 255, 0.14))"
+      "value": "var(--vkui--color_background_tertiary_alpha--active, rgba(255, 255, 255, 0.16))"
     }
   },
   "colorBackgroundModal": {
@@ -676683,15 +677780,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorTextNegative": {
     "normal": {
       "name": "--vkui--color_text_negative",
-      "value": "var(--vkui--color_text_negative, #FF5C5C)"
+      "value": "var(--vkui--color_text_negative, #F85050)"
     },
     "hover": {
       "name": "--vkui--color_text_negative--hover",
-      "value": "var(--vkui--color_text_negative--hover, #FF6363)"
+      "value": "var(--vkui--color_text_negative--hover, #F85757)"
     },
     "active": {
       "name": "--vkui--color_text_negative--active",
-      "value": "var(--vkui--color_text_negative--active, #FF6969)"
+      "value": "var(--vkui--color_text_negative--active, #F95E5E)"
     }
   },
   "colorTextLink": {
@@ -676795,15 +677892,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorTextSecondary": {
     "normal": {
       "name": "--vkui--color_text_secondary",
-      "value": "var(--vkui--color_text_secondary, #BFC1C5)"
+      "value": "var(--vkui--color_text_secondary, #C5C6C9)"
     },
     "hover": {
       "name": "--vkui--color_text_secondary--hover",
-      "value": "var(--vkui--color_text_secondary--hover, #C2C3C7)"
+      "value": "var(--vkui--color_text_secondary--hover, #C7C8CB)"
     },
     "active": {
       "name": "--vkui--color_text_secondary--active",
-      "value": "var(--vkui--color_text_secondary--active, #C4C6CA)"
+      "value": "var(--vkui--color_text_secondary--active, #CACBCD)"
     }
   },
   "colorTextSecondaryAlpha": {
@@ -677117,15 +678214,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorIconNegative": {
     "normal": {
       "name": "--vkui--color_icon_negative",
-      "value": "var(--vkui--color_icon_negative, #FF5C5C)"
+      "value": "var(--vkui--color_icon_negative, #F85050)"
     },
     "hover": {
       "name": "--vkui--color_icon_negative--hover",
-      "value": "var(--vkui--color_icon_negative--hover, #FF6363)"
+      "value": "var(--vkui--color_icon_negative--hover, #F85757)"
     },
     "active": {
       "name": "--vkui--color_icon_negative--active",
-      "value": "var(--vkui--color_icon_negative--active, #FF6969)"
+      "value": "var(--vkui--color_icon_negative--active, #F95E5E)"
     }
   },
   "colorIconContrastSecondary": {
@@ -677187,15 +678284,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorStrokeNegative": {
     "normal": {
       "name": "--vkui--color_stroke_negative",
-      "value": "var(--vkui--color_stroke_negative, #FF5C5C)"
+      "value": "var(--vkui--color_stroke_negative, #F85050)"
     },
     "hover": {
       "name": "--vkui--color_stroke_negative--hover",
-      "value": "var(--vkui--color_stroke_negative--hover, #FF6363)"
+      "value": "var(--vkui--color_stroke_negative--hover, #F85757)"
     },
     "active": {
       "name": "--vkui--color_stroke_negative--active",
-      "value": "var(--vkui--color_stroke_negative--active, #FF6969)"
+      "value": "var(--vkui--color_stroke_negative--active, #F95E5E)"
     }
   },
   "colorStrokePrimary": {
@@ -677789,15 +678886,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorSegmentedControl": {
     "normal": {
       "name": "--vkui--color_segmented_control",
-      "value": "var(--vkui--color_segmented_control, #454546)"
+      "value": "var(--vkui--color_segmented_control, #626364)"
     },
     "hover": {
       "name": "--vkui--color_segmented_control--hover",
-      "value": "var(--vkui--color_segmented_control--hover, #4E4E4F)"
+      "value": "var(--vkui--color_segmented_control--hover, #68696A)"
     },
     "active": {
       "name": "--vkui--color_segmented_control--active",
-      "value": "var(--vkui--color_segmented_control--active, #3D3D3E)"
+      "value": "var(--vkui--color_segmented_control--active, #6F6F70)"
     }
   },
   "colorTabbarTextInactive": {
@@ -677943,15 +679040,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorBackgroundAccentTintAlpha": {
     "normal": {
       "name": "--vkui--color_background_accent_tint_alpha",
-      "value": "var(--vkui--color_background_accent_tint_alpha, rgba(0, 119, 255, 0.2))"
+      "value": "var(--vkui--color_background_accent_tint_alpha, rgba(0, 119, 255, 0.1))"
     },
     "hover": {
       "name": "--vkui--color_background_accent_tint_alpha--hover",
-      "value": "var(--vkui--color_background_accent_tint_alpha--hover, rgba(39, 117, 252, 0.24))"
+      "value": "var(--vkui--color_background_accent_tint_alpha--hover, rgba(0, 119, 255, 0.14))"
     },
     "active": {
       "name": "--vkui--color_background_accent_tint_alpha--active",
-      "value": "var(--vkui--color_background_accent_tint_alpha--active, rgba(39, 117, 252, 0.28))"
+      "value": "var(--vkui--color_background_accent_tint_alpha--active, rgba(0, 119, 255, 0.18))"
     }
   },
   "colorBackgroundAccentTintThemed": {
@@ -677985,15 +679082,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorBackgroundWarningTintAlpha": {
     "normal": {
       "name": "--vkui--color_background_warning_tint_alpha",
-      "value": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 158, 0, 0.16))"
+      "value": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 158, 0, 0.1))"
     },
     "hover": {
       "name": "--vkui--color_background_warning_tint_alpha--hover",
-      "value": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 158, 0, 0.24))"
+      "value": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 158, 0, 0.14))"
     },
     "active": {
       "name": "--vkui--color_background_warning_tint_alpha--active",
-      "value": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 158, 0, 0.28))"
+      "value": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 158, 0, 0.18))"
     }
   },
   "colorBackgroundWarningTintThemed": {
@@ -678041,15 +679138,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorBackgroundNegativeTintAlpha": {
     "normal": {
       "name": "--vkui--color_background_negative_tint_alpha",
-      "value": "var(--vkui--color_background_negative_tint_alpha, rgba(255, 58, 58, 0.24))"
+      "value": "var(--vkui--color_background_negative_tint_alpha, rgba(242, 55, 65, 0.2))"
     },
     "hover": {
       "name": "--vkui--color_background_negative_tint_alpha--hover",
-      "value": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(255, 58, 58, 0.28))"
+      "value": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(242, 55, 65, 0.24))"
     },
     "active": {
       "name": "--vkui--color_background_negative_tint_alpha--active",
-      "value": "var(--vkui--color_background_negative_tint_alpha--active, rgba(255, 58, 58, 0.32))"
+      "value": "var(--vkui--color_background_negative_tint_alpha--active, rgba(242, 55, 65, 0.28))"
     }
   },
   "colorBackgroundNegativeTintThemed": {
@@ -678083,15 +679180,15 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
   "colorBackgroundPositiveTintAlpha": {
     "normal": {
       "name": "--vkui--color_background_positive_tint_alpha",
-      "value": "var(--vkui--color_background_positive_tint_alpha, rgba(13, 194, 104, 0.16))"
+      "value": "var(--vkui--color_background_positive_tint_alpha, rgba(0, 172, 91, 0.1))"
     },
     "hover": {
       "name": "--vkui--color_background_positive_tint_alpha--hover",
-      "value": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(13, 194, 104, 0.18))"
+      "value": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(0, 172, 91, 0.14))"
     },
     "active": {
       "name": "--vkui--color_background_positive_tint_alpha--active",
-      "value": "var(--vkui--color_background_positive_tint_alpha--active, rgba(13, 194, 104, 0.2))"
+      "value": "var(--vkui--color_background_positive_tint_alpha--active, rgba(0, 172, 91, 0.18))"
     }
   },
   "colorBackgroundPositiveTintThemed": {
@@ -678528,32 +679625,396 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
       "value": "var(--vkui--color_icon_negative_snackbar--active, #FF6969)"
     }
   },
-  "colorOnboarding": {
+  "wsadminColorAvatarTextRed": {
     "normal": {
-      "name": "--vkui--color_onboarding",
-      "value": "var(--vkui--color_onboarding, #2979FA)"
+      "name": "--vkui--wsadmin_color_avatar_text_red",
+      "value": "var(--vkui--wsadmin_color_avatar_text_red, #FFE4E0)"
     },
     "hover": {
-      "name": "--vkui--color_onboarding--hover",
-      "value": "var(--vkui--color_onboarding--hover, #327EFA)"
+      "name": "--vkui--wsadmin_color_avatar_text_red--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_red--hover, #FFE5E1)"
     },
     "active": {
-      "name": "--vkui--color_onboarding--active",
-      "value": "var(--vkui--color_onboarding--active, #3A84FA)"
+      "name": "--vkui--wsadmin_color_avatar_text_red--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_red--active, #FFE6E2)"
     }
   },
-  "colorSearchResultsAlpha": {
+  "wsadminColorAvatarTextOrange": {
     "normal": {
-      "name": "--vkui--color_search_results_alpha",
-      "value": "var(--vkui--color_search_results_alpha, rgba(255, 158, 0, 0.2))"
+      "name": "--vkui--wsadmin_color_avatar_text_orange",
+      "value": "var(--vkui--wsadmin_color_avatar_text_orange, #FFF0E5)"
     },
     "hover": {
-      "name": "--vkui--color_search_results_alpha--hover",
-      "value": "var(--vkui--color_search_results_alpha--hover, rgba(255, 158, 0, 0.24))"
+      "name": "--vkui--wsadmin_color_avatar_text_orange--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_orange--hover, #FFF1E6)"
     },
     "active": {
-      "name": "--vkui--color_search_results_alpha--active",
-      "value": "var(--vkui--color_search_results_alpha--active, rgba(255, 158, 0, 0.28))"
+      "name": "--vkui--wsadmin_color_avatar_text_orange--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_orange--active, #FFF1E7)"
+    }
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_peach",
+      "value": "var(--vkui--wsadmin_color_avatar_text_peach, #C25B21)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_peach--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_peach--hover, #C4622A)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_peach--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_peach--active, #C76833)"
+    }
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_yellow",
+      "value": "var(--vkui--wsadmin_color_avatar_text_yellow, #C76722)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_yellow--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_yellow--hover, #C96D2B)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_yellow--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_yellow--active, #CB7334)"
+    }
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_lime",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lime, #2A9231)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_lime--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lime--hover, #339639)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_lime--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lime--active, #3B9B41)"
+    }
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_green",
+      "value": "var(--vkui--wsadmin_color_avatar_text_green, #ECFEDF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_green--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_green--hover, #EDFEE0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_green--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_green--active, #EEFEE2)"
+    }
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_cyan",
+      "value": "var(--vkui--wsadmin_color_avatar_text_cyan, #F0FDFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_cyan--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_cyan--hover, #F1FDFF)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_cyan--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_cyan--active, #F1FDFF)"
+    }
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_mint",
+      "value": "var(--vkui--wsadmin_color_avatar_text_mint, #189686)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_mint--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_mint--hover, #219A8B)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_mint--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_mint--active, #2A9E90)"
+    }
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_seagreen",
+      "value": "var(--vkui--wsadmin_color_avatar_text_seagreen, #EBFFF8)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_seagreen--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_seagreen--hover, #ECFFF8)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_seagreen--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_seagreen--active, #EDFFF9)"
+    }
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_sky",
+      "value": "var(--vkui--wsadmin_color_avatar_text_sky, #0088D6)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_sky--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_sky--hover, #0A8DD8)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_sky--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_sky--active, #1492D9)"
+    }
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_blue",
+      "value": "var(--vkui--wsadmin_color_avatar_text_blue, #E0ECFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_blue--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_blue--hover, #E1EDFF)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_blue--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_blue--active, #E2EEFF)"
+    }
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_indigo",
+      "value": "var(--vkui--wsadmin_color_avatar_text_indigo, #E6E5FF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_indigo--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_indigo--hover, #E7E6FF)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_indigo--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_indigo--active, #E8E7FF)"
+    }
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_violet",
+      "value": "var(--vkui--wsadmin_color_avatar_text_violet, #F2EAFE)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_violet--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_violet--hover, #F3EBFE)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_violet--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_violet--active, #F3ECFE)"
+    }
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_lavender",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lavender, #874DD6)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_lavender--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lavender--hover, #8C54D8)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_lavender--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_lavender--active, #915BD9)"
+    }
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_coral",
+      "value": "var(--vkui--wsadmin_color_avatar_text_coral, #CD3D50)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_coral--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_coral--hover, #CF4557)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_coral--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_coral--active, #D14D5E)"
+    }
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_avatar_text_pink",
+      "value": "var(--vkui--wsadmin_color_avatar_text_pink, #C2345C)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_avatar_text_pink--hover",
+      "value": "var(--vkui--wsadmin_color_avatar_text_pink--hover, #C43C63)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_avatar_text_pink--active",
+      "value": "var(--vkui--wsadmin_color_avatar_text_pink--active, #C74469)"
+    }
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_yellow",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_yellow, #745D00)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_yellow--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_yellow--hover, #7A630A)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_yellow--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_yellow--active, #7F6A14)"
+    }
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_grass",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_grass, #237D61)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_grass--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_grass--hover, #2C8267)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_grass--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_grass--active, #35876E)"
+    }
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_mint",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_mint, #0A7680)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_mint--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_mint--hover, #147B85)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_mint--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_mint--active, #1E818A)"
+    }
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_purple",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_purple, #73519F)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_purple--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_purple--hover, #7958A3)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_purple--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_purple--active, #7E5FA7)"
+    }
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_magenta",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_magenta, #A2377B)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_magenta--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_magenta--hover, #A63F80)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_magenta--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_magenta--active, #A94786)"
+    }
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_background_midnightsky",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_midnightsky, #1C4479)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_background_midnightsky--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--hover, #254B7E)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_background_midnightsky--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--active, #2E5384)"
+    }
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_yellow",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_yellow, #FFFFFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_yellow--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_yellow--hover, #EBEDF0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_yellow--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_yellow--active, #D7D8DB)"
+    }
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_grass",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_grass, #FFFFFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_grass--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_grass--hover, #EBEDF0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_grass--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_grass--active, #D7D8DB)"
+    }
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_mint",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_mint, #FFFFFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_mint--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_mint--hover, #EBEDF0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_mint--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_mint--active, #D7D8DB)"
+    }
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_purple",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_purple, #FFFFFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_purple--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_purple--hover, #EBEDF0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_purple--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_purple--active, #D7D8DB)"
+    }
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_magenta",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_magenta, #FFFFFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_magenta--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_magenta--hover, #EBEDF0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_magenta--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_magenta--active, #D7D8DB)"
+    }
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": {
+      "name": "--vkui--wsadmin_color_tooltip_text_midnightsky",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_midnightsky, #FFFFFF)"
+    },
+    "hover": {
+      "name": "--vkui--wsadmin_color_tooltip_text_midnightsky--hover",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--hover, #EBEDF0)"
+    },
+    "active": {
+      "name": "--vkui--wsadmin_color_tooltip_text_midnightsky--active",
+      "value": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--active, #D7D8DB)"
     }
   },
   "widthTouch": {
@@ -679274,11 +680735,44 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
   "themeNameBase": "workspaceAdminDark",
   "fontHeadline3": {
     "regular": {
+      "fontSize": "14px",
+      "lineHeight": "18px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
       "fontSize": "13px",
       "lineHeight": "16px",
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
-      "fontWeight": 500,
-      "fontStyle": "normal"
+      "fontWeight": 500
+    }
+  },
+  "fontSubhead500": {
+    "regular": {
+      "fontSize": "14px",
+      "lineHeight": "18px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": "13px",
+      "lineHeight": "18px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    }
+  },
+  "fontCaption1500": {
+    "regular": {
+      "fontSize": "14px",
+      "lineHeight": "19px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
     }
   },
   "fontHeadline": {
@@ -679355,24 +680849,24 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "rgba(255, 255, 255, 0.28)"
   },
   "colorBackgroundWarning": {
-    "normal": "#FA9900",
-    "hover": "#FA9D0A",
-    "active": "#FAA114"
+    "normal": "#6C4E00",
+    "hover": "#72550A",
+    "active": "#785C14"
   },
   "colorBackgroundNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#fc6664",
+    "active": "#ff7973"
   },
   "colorBackgroundTertiary": {
-    "normal": "#19191A",
-    "hover": "#222223",
-    "active": "#2B2B2C"
+    "normal": "#252525",
+    "hover": "#2E2E2E",
+    "active": "#363636"
   },
   "colorBackgroundTertiaryAlpha": {
-    "normal": "rgba(255, 255, 255, 0.04)",
-    "hover": "rgba(255, 255, 255, 0.1)",
-    "active": "rgba(255, 255, 255, 0.14)"
+    "normal": "rgba(255, 255, 255, 0.08)",
+    "hover": "rgba(255, 255, 255, 0.12)",
+    "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundModal": {
     "normal": "#303030",
@@ -679435,9 +680929,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "#D7D8DB"
   },
   "colorTextNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#F85757",
+    "active": "#F95E5E"
   },
   "colorTextLink": {
     "normal": "#1A85FF",
@@ -679475,9 +680969,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "#3D3E3F"
   },
   "colorTextSecondary": {
-    "normal": "#BFC1C5",
-    "hover": "#C2C3C7",
-    "active": "#C4C6CA"
+    "normal": "#C5C6C9",
+    "hover": "#C7C8CB",
+    "active": "#CACBCD"
   },
   "colorTextSecondaryAlpha": {
     "normal": "rgba(247, 251, 255, 0.42)",
@@ -679590,9 +681084,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "#FFA614"
   },
   "colorIconNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#F85757",
+    "active": "#F95E5E"
   },
   "colorIconContrastSecondary": {
     "normal": "#F2F3F5",
@@ -679615,9 +681109,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "#D7D8DB"
   },
   "colorStrokeNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#F85757",
+    "active": "#F95E5E"
   },
   "colorStrokePrimary": {
     "normal": "#D9DADD",
@@ -679830,9 +681324,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "rgba(55, 56, 57, 0.58)"
   },
   "colorSegmentedControl": {
-    "normal": "#454546",
-    "hover": "#4E4E4F",
-    "active": "#3D3D3E"
+    "normal": "#626364",
+    "hover": "#68696A",
+    "active": "#6F6F70"
   },
   "colorTabbarTextInactive": {
     "normal": "#76787A",
@@ -679885,9 +681379,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundAccentTintAlpha": {
-    "normal": "rgba(0, 119, 255, 0.2)",
-    "hover": "rgba(39, 117, 252, 0.24)",
-    "active": "rgba(39, 117, 252, 0.28)"
+    "normal": "rgba(0, 119, 255, 0.1)",
+    "hover": "rgba(0, 119, 255, 0.14)",
+    "active": "rgba(0, 119, 255, 0.18)"
   },
   "colorBackgroundAccentTintThemed": {
     "normal": "#2b2b2c",
@@ -679900,9 +681394,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundWarningTintAlpha": {
-    "normal": "rgba(255, 158, 0, 0.16)",
-    "hover": "rgba(255, 158, 0, 0.24)",
-    "active": "rgba(255, 158, 0, 0.28)"
+    "normal": "rgba(255, 158, 0, 0.1)",
+    "hover": "rgba(255, 158, 0, 0.14)",
+    "active": "rgba(255, 158, 0, 0.18)"
   },
   "colorBackgroundWarningTintThemed": {
     "normal": "#2b2b2c",
@@ -679920,9 +681414,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundNegativeTintAlpha": {
-    "normal": "rgba(255, 58, 58, 0.24)",
-    "hover": "rgba(255, 58, 58, 0.28)",
-    "active": "rgba(255, 58, 58, 0.32)"
+    "normal": "rgba(242, 55, 65, 0.2)",
+    "hover": "rgba(242, 55, 65, 0.24)",
+    "active": "rgba(242, 55, 65, 0.28)"
   },
   "colorBackgroundNegativeTintThemed": {
     "normal": "#2b2b2c",
@@ -679935,9 +681429,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundPositiveTintAlpha": {
-    "normal": "rgba(13, 194, 104, 0.16)",
-    "hover": "rgba(13, 194, 104, 0.18)",
-    "active": "rgba(13, 194, 104, 0.2)"
+    "normal": "rgba(0, 172, 91, 0.1)",
+    "hover": "rgba(0, 172, 91, 0.14)",
+    "active": "rgba(0, 172, 91, 0.18)"
   },
   "colorBackgroundPositiveTintThemed": {
     "normal": "#2b2b2c",
@@ -680094,15 +681588,145 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
     "hover": "#FF6363",
     "active": "#FF6969"
   },
-  "colorOnboarding": {
-    "normal": "#2979FA",
-    "hover": "#327EFA",
-    "active": "#3A84FA"
+  "wsadminColorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#FFE5E1",
+    "active": "#FFE6E2"
   },
-  "colorSearchResultsAlpha": {
-    "normal": "rgba(255, 158, 0, 0.2)",
-    "hover": "rgba(255, 158, 0, 0.24)",
-    "active": "rgba(255, 158, 0, 0.28)"
+  "wsadminColorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#FFF1E6",
+    "active": "#FFF1E7"
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#C4622A",
+    "active": "#C76833"
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#C96D2B",
+    "active": "#CB7334"
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#339639",
+    "active": "#3B9B41"
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#EDFEE0",
+    "active": "#EEFEE2"
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#F1FDFF",
+    "active": "#F1FDFF"
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#219A8B",
+    "active": "#2A9E90"
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#ECFFF8",
+    "active": "#EDFFF9"
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0A8DD8",
+    "active": "#1492D9"
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#E1EDFF",
+    "active": "#E2EEFF"
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#E7E6FF",
+    "active": "#E8E7FF"
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#F3EBFE",
+    "active": "#F3ECFE"
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#8C54D8",
+    "active": "#915BD9"
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#CF4557",
+    "active": "#D14D5E"
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#C43C63",
+    "active": "#C74469"
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": "#745D00",
+    "hover": "#7A630A",
+    "active": "#7F6A14"
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": "#237D61",
+    "hover": "#2C8267",
+    "active": "#35876E"
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": "#0A7680",
+    "hover": "#147B85",
+    "active": "#1E818A"
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": "#73519F",
+    "hover": "#7958A3",
+    "active": "#7E5FA7"
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": "#A2377B",
+    "hover": "#A63F80",
+    "active": "#A94786"
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": "#1C4479",
+    "hover": "#254B7E",
+    "active": "#2E5384"
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",
@@ -680810,11 +682434,44 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
   "themeNameBase": "var(--vkui--theme_name_base, workspaceAdminDark)",
   "fontHeadline3": {
     "regular": {
-      "fontSize": "var(--vkui--font_headline3--font_size--regular, 13px)",
-      "lineHeight": "var(--vkui--font_headline3--line_height--regular, 16px)",
+      "fontSize": "var(--vkui--font_headline3--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--font_headline3--line_height--regular, 18px)",
       "fontFamily": "var(--vkui--font_headline3--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
-      "fontWeight": "var(--vkui--font_headline3--font_weight--regular, 500)",
-      "fontStyle": "var(--vkui--font_headline3--font_style--regular, normal)"
+      "fontWeight": "var(--vkui--font_headline3--font_weight--regular, 500)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_headline3--font_size--compact, 13px)",
+      "lineHeight": "var(--vkui--font_headline3--line_height--compact, 16px)",
+      "fontFamily": "var(--vkui--font_headline3--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_headline3--font_weight--compact, 500)"
+    }
+  },
+  "fontSubhead500": {
+    "regular": {
+      "fontSize": "var(--vkui--font_subhead500--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--font_subhead500--line_height--regular, 18px)",
+      "fontFamily": "var(--vkui--font_subhead500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_subhead500--font_weight--regular, 500)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_subhead500--font_size--compact, 13px)",
+      "lineHeight": "var(--vkui--font_subhead500--line_height--compact, 18px)",
+      "fontFamily": "var(--vkui--font_subhead500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_subhead500--font_weight--compact, 500)"
+    }
+  },
+  "fontCaption1500": {
+    "regular": {
+      "fontSize": "var(--vkui--font_caption1500--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--font_caption1500--line_height--regular, 19px)",
+      "fontFamily": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_caption1500--font_weight--regular, 500)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_caption1500--font_size--compact, 12px)",
+      "lineHeight": "var(--vkui--font_caption1500--line_height--compact, 16px)",
+      "fontFamily": "var(--vkui--font_caption1500--font_family--compact, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_caption1500--font_weight--compact, 500)"
     }
   },
   "fontHeadline": {
@@ -680891,24 +682548,24 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_background_contrast_secondary_alpha--active, rgba(255, 255, 255, 0.28))"
   },
   "colorBackgroundWarning": {
-    "normal": "var(--vkui--color_background_warning, #FA9900)",
-    "hover": "var(--vkui--color_background_warning--hover, #FA9D0A)",
-    "active": "var(--vkui--color_background_warning--active, #FAA114)"
+    "normal": "var(--vkui--color_background_warning, #6C4E00)",
+    "hover": "var(--vkui--color_background_warning--hover, #72550A)",
+    "active": "var(--vkui--color_background_warning--active, #785C14)"
   },
   "colorBackgroundNegative": {
-    "normal": "var(--vkui--color_background_negative, #FF5C5C)",
-    "hover": "var(--vkui--color_background_negative--hover, #FF6363)",
-    "active": "var(--vkui--color_background_negative--active, #FF6969)"
+    "normal": "var(--vkui--color_background_negative, #F85050)",
+    "hover": "var(--vkui--color_background_negative--hover, #fc6664)",
+    "active": "var(--vkui--color_background_negative--active, #ff7973)"
   },
   "colorBackgroundTertiary": {
-    "normal": "var(--vkui--color_background_tertiary, #19191A)",
-    "hover": "var(--vkui--color_background_tertiary--hover, #222223)",
-    "active": "var(--vkui--color_background_tertiary--active, #2B2B2C)"
+    "normal": "var(--vkui--color_background_tertiary, #252525)",
+    "hover": "var(--vkui--color_background_tertiary--hover, #2E2E2E)",
+    "active": "var(--vkui--color_background_tertiary--active, #363636)"
   },
   "colorBackgroundTertiaryAlpha": {
-    "normal": "var(--vkui--color_background_tertiary_alpha, rgba(255, 255, 255, 0.04))",
-    "hover": "var(--vkui--color_background_tertiary_alpha--hover, rgba(255, 255, 255, 0.1))",
-    "active": "var(--vkui--color_background_tertiary_alpha--active, rgba(255, 255, 255, 0.14))"
+    "normal": "var(--vkui--color_background_tertiary_alpha, rgba(255, 255, 255, 0.08))",
+    "hover": "var(--vkui--color_background_tertiary_alpha--hover, rgba(255, 255, 255, 0.12))",
+    "active": "var(--vkui--color_background_tertiary_alpha--active, rgba(255, 255, 255, 0.16))"
   },
   "colorBackgroundModal": {
     "normal": "var(--vkui--color_background_modal, #303030)",
@@ -680971,9 +682628,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_text_accent_themed--active, #D7D8DB)"
   },
   "colorTextNegative": {
-    "normal": "var(--vkui--color_text_negative, #FF5C5C)",
-    "hover": "var(--vkui--color_text_negative--hover, #FF6363)",
-    "active": "var(--vkui--color_text_negative--active, #FF6969)"
+    "normal": "var(--vkui--color_text_negative, #F85050)",
+    "hover": "var(--vkui--color_text_negative--hover, #F85757)",
+    "active": "var(--vkui--color_text_negative--active, #F95E5E)"
   },
   "colorTextLink": {
     "normal": "var(--vkui--color_text_link, #1A85FF)",
@@ -681011,9 +682668,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_text_primary_invariably--active, #3D3E3F)"
   },
   "colorTextSecondary": {
-    "normal": "var(--vkui--color_text_secondary, #BFC1C5)",
-    "hover": "var(--vkui--color_text_secondary--hover, #C2C3C7)",
-    "active": "var(--vkui--color_text_secondary--active, #C4C6CA)"
+    "normal": "var(--vkui--color_text_secondary, #C5C6C9)",
+    "hover": "var(--vkui--color_text_secondary--hover, #C7C8CB)",
+    "active": "var(--vkui--color_text_secondary--active, #CACBCD)"
   },
   "colorTextSecondaryAlpha": {
     "normal": "var(--vkui--color_text_secondary_alpha, rgba(247, 251, 255, 0.42))",
@@ -681126,9 +682783,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_icon_warning--active, #FFA614)"
   },
   "colorIconNegative": {
-    "normal": "var(--vkui--color_icon_negative, #FF5C5C)",
-    "hover": "var(--vkui--color_icon_negative--hover, #FF6363)",
-    "active": "var(--vkui--color_icon_negative--active, #FF6969)"
+    "normal": "var(--vkui--color_icon_negative, #F85050)",
+    "hover": "var(--vkui--color_icon_negative--hover, #F85757)",
+    "active": "var(--vkui--color_icon_negative--active, #F95E5E)"
   },
   "colorIconContrastSecondary": {
     "normal": "var(--vkui--color_icon_contrast_secondary, #F2F3F5)",
@@ -681151,9 +682808,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_stroke_contrast--active, #D7D8DB)"
   },
   "colorStrokeNegative": {
-    "normal": "var(--vkui--color_stroke_negative, #FF5C5C)",
-    "hover": "var(--vkui--color_stroke_negative--hover, #FF6363)",
-    "active": "var(--vkui--color_stroke_negative--active, #FF6969)"
+    "normal": "var(--vkui--color_stroke_negative, #F85050)",
+    "hover": "var(--vkui--color_stroke_negative--hover, #F85757)",
+    "active": "var(--vkui--color_stroke_negative--active, #F95E5E)"
   },
   "colorStrokePrimary": {
     "normal": "var(--vkui--color_stroke_primary, #D9DADD)",
@@ -681366,9 +683023,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_overlay_secondary--active, rgba(55, 56, 57, 0.58))"
   },
   "colorSegmentedControl": {
-    "normal": "var(--vkui--color_segmented_control, #454546)",
-    "hover": "var(--vkui--color_segmented_control--hover, #4E4E4F)",
-    "active": "var(--vkui--color_segmented_control--active, #3D3D3E)"
+    "normal": "var(--vkui--color_segmented_control, #626364)",
+    "hover": "var(--vkui--color_segmented_control--hover, #68696A)",
+    "active": "var(--vkui--color_segmented_control--active, #6F6F70)"
   },
   "colorTabbarTextInactive": {
     "normal": "var(--vkui--color_tabbar_text_inactive, #76787A)",
@@ -681421,9 +683078,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_background_accent_tint_themed_alpha--active, rgba(255, 255, 255, 0.16))"
   },
   "colorBackgroundAccentTintAlpha": {
-    "normal": "var(--vkui--color_background_accent_tint_alpha, rgba(0, 119, 255, 0.2))",
-    "hover": "var(--vkui--color_background_accent_tint_alpha--hover, rgba(39, 117, 252, 0.24))",
-    "active": "var(--vkui--color_background_accent_tint_alpha--active, rgba(39, 117, 252, 0.28))"
+    "normal": "var(--vkui--color_background_accent_tint_alpha, rgba(0, 119, 255, 0.1))",
+    "hover": "var(--vkui--color_background_accent_tint_alpha--hover, rgba(0, 119, 255, 0.14))",
+    "active": "var(--vkui--color_background_accent_tint_alpha--active, rgba(0, 119, 255, 0.18))"
   },
   "colorBackgroundAccentTintThemed": {
     "normal": "var(--vkui--color_background_accent_tint_themed, #2b2b2c)",
@@ -681436,9 +683093,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_background_warning_tint_themed_alpha--active, rgba(255, 255, 255, 0.16))"
   },
   "colorBackgroundWarningTintAlpha": {
-    "normal": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 158, 0, 0.16))",
-    "hover": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 158, 0, 0.24))",
-    "active": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 158, 0, 0.28))"
+    "normal": "var(--vkui--color_background_warning_tint_alpha, rgba(255, 158, 0, 0.1))",
+    "hover": "var(--vkui--color_background_warning_tint_alpha--hover, rgba(255, 158, 0, 0.14))",
+    "active": "var(--vkui--color_background_warning_tint_alpha--active, rgba(255, 158, 0, 0.18))"
   },
   "colorBackgroundWarningTintThemed": {
     "normal": "var(--vkui--color_background_warning_tint_themed, #2b2b2c)",
@@ -681456,9 +683113,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_background_negative_tint_themed_alpha--active, rgba(255, 255, 255, 0.16))"
   },
   "colorBackgroundNegativeTintAlpha": {
-    "normal": "var(--vkui--color_background_negative_tint_alpha, rgba(255, 58, 58, 0.24))",
-    "hover": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(255, 58, 58, 0.28))",
-    "active": "var(--vkui--color_background_negative_tint_alpha--active, rgba(255, 58, 58, 0.32))"
+    "normal": "var(--vkui--color_background_negative_tint_alpha, rgba(242, 55, 65, 0.2))",
+    "hover": "var(--vkui--color_background_negative_tint_alpha--hover, rgba(242, 55, 65, 0.24))",
+    "active": "var(--vkui--color_background_negative_tint_alpha--active, rgba(242, 55, 65, 0.28))"
   },
   "colorBackgroundNegativeTintThemed": {
     "normal": "var(--vkui--color_background_negative_tint_themed, #2b2b2c)",
@@ -681471,9 +683128,9 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_background_positive_tint_themed_alpha--active, rgba(255, 255, 255, 0.16))"
   },
   "colorBackgroundPositiveTintAlpha": {
-    "normal": "var(--vkui--color_background_positive_tint_alpha, rgba(13, 194, 104, 0.16))",
-    "hover": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(13, 194, 104, 0.18))",
-    "active": "var(--vkui--color_background_positive_tint_alpha--active, rgba(13, 194, 104, 0.2))"
+    "normal": "var(--vkui--color_background_positive_tint_alpha, rgba(0, 172, 91, 0.1))",
+    "hover": "var(--vkui--color_background_positive_tint_alpha--hover, rgba(0, 172, 91, 0.14))",
+    "active": "var(--vkui--color_background_positive_tint_alpha--active, rgba(0, 172, 91, 0.18))"
   },
   "colorBackgroundPositiveTintThemed": {
     "normal": "var(--vkui--color_background_positive_tint_themed, #2b2b2c)",
@@ -681630,15 +683287,145 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
     "hover": "var(--vkui--color_icon_negative_snackbar--hover, #FF6363)",
     "active": "var(--vkui--color_icon_negative_snackbar--active, #FF6969)"
   },
-  "colorOnboarding": {
-    "normal": "var(--vkui--color_onboarding, #2979FA)",
-    "hover": "var(--vkui--color_onboarding--hover, #327EFA)",
-    "active": "var(--vkui--color_onboarding--active, #3A84FA)"
+  "wsadminColorAvatarTextRed": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_red, #FFE4E0)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_red--hover, #FFE5E1)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_red--active, #FFE6E2)"
   },
-  "colorSearchResultsAlpha": {
-    "normal": "var(--vkui--color_search_results_alpha, rgba(255, 158, 0, 0.2))",
-    "hover": "var(--vkui--color_search_results_alpha--hover, rgba(255, 158, 0, 0.24))",
-    "active": "var(--vkui--color_search_results_alpha--active, rgba(255, 158, 0, 0.28))"
+  "wsadminColorAvatarTextOrange": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_orange, #FFF0E5)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_orange--hover, #FFF1E6)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_orange--active, #FFF1E7)"
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_peach, #C25B21)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_peach--hover, #C4622A)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_peach--active, #C76833)"
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_yellow, #C76722)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_yellow--hover, #C96D2B)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_yellow--active, #CB7334)"
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_lime, #2A9231)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_lime--hover, #339639)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_lime--active, #3B9B41)"
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_green, #ECFEDF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_green--hover, #EDFEE0)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_green--active, #EEFEE2)"
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_cyan, #F0FDFF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_cyan--hover, #F1FDFF)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_cyan--active, #F1FDFF)"
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_mint, #189686)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_mint--hover, #219A8B)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_mint--active, #2A9E90)"
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_seagreen, #EBFFF8)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_seagreen--hover, #ECFFF8)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_seagreen--active, #EDFFF9)"
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_sky, #0088D6)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_sky--hover, #0A8DD8)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_sky--active, #1492D9)"
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_blue, #E0ECFF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_blue--hover, #E1EDFF)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_blue--active, #E2EEFF)"
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_indigo, #E6E5FF)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_indigo--hover, #E7E6FF)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_indigo--active, #E8E7FF)"
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_violet, #F2EAFE)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_violet--hover, #F3EBFE)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_violet--active, #F3ECFE)"
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_lavender, #874DD6)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_lavender--hover, #8C54D8)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_lavender--active, #915BD9)"
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_coral, #CD3D50)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_coral--hover, #CF4557)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_coral--active, #D14D5E)"
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": "var(--vkui--wsadmin_color_avatar_text_pink, #C2345C)",
+    "hover": "var(--vkui--wsadmin_color_avatar_text_pink--hover, #C43C63)",
+    "active": "var(--vkui--wsadmin_color_avatar_text_pink--active, #C74469)"
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_yellow, #745D00)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_yellow--hover, #7A630A)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_yellow--active, #7F6A14)"
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_grass, #237D61)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_grass--hover, #2C8267)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_grass--active, #35876E)"
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_mint, #0A7680)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_mint--hover, #147B85)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_mint--active, #1E818A)"
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_purple, #73519F)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_purple--hover, #7958A3)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_purple--active, #7E5FA7)"
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_magenta, #A2377B)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_magenta--hover, #A63F80)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_magenta--active, #A94786)"
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_background_midnightsky, #1C4479)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--hover, #254B7E)",
+    "active": "var(--vkui--wsadmin_color_tooltip_background_midnightsky--active, #2E5384)"
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_yellow, #FFFFFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_yellow--hover, #EBEDF0)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_yellow--active, #D7D8DB)"
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_grass, #FFFFFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_grass--hover, #EBEDF0)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_grass--active, #D7D8DB)"
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_mint, #FFFFFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_mint--hover, #EBEDF0)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_mint--active, #D7D8DB)"
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_purple, #FFFFFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_purple--hover, #EBEDF0)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_purple--active, #D7D8DB)"
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_magenta, #FFFFFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_magenta--hover, #EBEDF0)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_magenta--active, #D7D8DB)"
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": "var(--vkui--wsadmin_color_tooltip_text_midnightsky, #FFFFFF)",
+    "hover": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--hover, #EBEDF0)",
+    "active": "var(--vkui--wsadmin_color_tooltip_text_midnightsky--active, #D7D8DB)"
   },
   "widthTouch": "var(--vkui--width_touch, \\"(max-width: 767px)\\")",
   "widthToTouch": "var(--vkui--width_to_touch, \\"(max-width: 767px)\\")",
@@ -682346,11 +684133,44 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
   "themeNameBase": "workspaceAdminDark",
   "fontHeadline3": {
     "regular": {
+      "fontSize": 14,
+      "lineHeight": 18,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
       "fontSize": 13,
       "lineHeight": 16,
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
-      "fontWeight": 500,
-      "fontStyle": "normal"
+      "fontWeight": 500
+    }
+  },
+  "fontSubhead500": {
+    "regular": {
+      "fontSize": 14,
+      "lineHeight": 18,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": 13,
+      "lineHeight": 18,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    }
+  },
+  "fontCaption1500": {
+    "regular": {
+      "fontSize": 14,
+      "lineHeight": 19,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
+    },
+    "compact": {
+      "fontSize": 12,
+      "lineHeight": 16,
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 500
     }
   },
   "fontHeadline": {
@@ -682427,24 +684247,24 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "rgba(255, 255, 255, 0.28)"
   },
   "colorBackgroundWarning": {
-    "normal": "#FA9900",
-    "hover": "#FA9D0A",
-    "active": "#FAA114"
+    "normal": "#6C4E00",
+    "hover": "#72550A",
+    "active": "#785C14"
   },
   "colorBackgroundNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#fc6664",
+    "active": "#ff7973"
   },
   "colorBackgroundTertiary": {
-    "normal": "#19191A",
-    "hover": "#222223",
-    "active": "#2B2B2C"
+    "normal": "#252525",
+    "hover": "#2E2E2E",
+    "active": "#363636"
   },
   "colorBackgroundTertiaryAlpha": {
-    "normal": "rgba(255, 255, 255, 0.04)",
-    "hover": "rgba(255, 255, 255, 0.1)",
-    "active": "rgba(255, 255, 255, 0.14)"
+    "normal": "rgba(255, 255, 255, 0.08)",
+    "hover": "rgba(255, 255, 255, 0.12)",
+    "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundModal": {
     "normal": "#303030",
@@ -682507,9 +684327,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "#D7D8DB"
   },
   "colorTextNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#F85757",
+    "active": "#F95E5E"
   },
   "colorTextLink": {
     "normal": "#1A85FF",
@@ -682547,9 +684367,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "#3D3E3F"
   },
   "colorTextSecondary": {
-    "normal": "#BFC1C5",
-    "hover": "#C2C3C7",
-    "active": "#C4C6CA"
+    "normal": "#C5C6C9",
+    "hover": "#C7C8CB",
+    "active": "#CACBCD"
   },
   "colorTextSecondaryAlpha": {
     "normal": "rgba(247, 251, 255, 0.42)",
@@ -682662,9 +684482,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "#FFA614"
   },
   "colorIconNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#F85757",
+    "active": "#F95E5E"
   },
   "colorIconContrastSecondary": {
     "normal": "#F2F3F5",
@@ -682687,9 +684507,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "#D7D8DB"
   },
   "colorStrokeNegative": {
-    "normal": "#FF5C5C",
-    "hover": "#FF6363",
-    "active": "#FF6969"
+    "normal": "#F85050",
+    "hover": "#F85757",
+    "active": "#F95E5E"
   },
   "colorStrokePrimary": {
     "normal": "#D9DADD",
@@ -682902,9 +684722,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "rgba(55, 56, 57, 0.58)"
   },
   "colorSegmentedControl": {
-    "normal": "#454546",
-    "hover": "#4E4E4F",
-    "active": "#3D3D3E"
+    "normal": "#626364",
+    "hover": "#68696A",
+    "active": "#6F6F70"
   },
   "colorTabbarTextInactive": {
     "normal": "#76787A",
@@ -682957,9 +684777,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundAccentTintAlpha": {
-    "normal": "rgba(0, 119, 255, 0.2)",
-    "hover": "rgba(39, 117, 252, 0.24)",
-    "active": "rgba(39, 117, 252, 0.28)"
+    "normal": "rgba(0, 119, 255, 0.1)",
+    "hover": "rgba(0, 119, 255, 0.14)",
+    "active": "rgba(0, 119, 255, 0.18)"
   },
   "colorBackgroundAccentTintThemed": {
     "normal": "#2b2b2c",
@@ -682972,9 +684792,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundWarningTintAlpha": {
-    "normal": "rgba(255, 158, 0, 0.16)",
-    "hover": "rgba(255, 158, 0, 0.24)",
-    "active": "rgba(255, 158, 0, 0.28)"
+    "normal": "rgba(255, 158, 0, 0.1)",
+    "hover": "rgba(255, 158, 0, 0.14)",
+    "active": "rgba(255, 158, 0, 0.18)"
   },
   "colorBackgroundWarningTintThemed": {
     "normal": "#2b2b2c",
@@ -682992,9 +684812,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundNegativeTintAlpha": {
-    "normal": "rgba(255, 58, 58, 0.24)",
-    "hover": "rgba(255, 58, 58, 0.28)",
-    "active": "rgba(255, 58, 58, 0.32)"
+    "normal": "rgba(242, 55, 65, 0.2)",
+    "hover": "rgba(242, 55, 65, 0.24)",
+    "active": "rgba(242, 55, 65, 0.28)"
   },
   "colorBackgroundNegativeTintThemed": {
     "normal": "#2b2b2c",
@@ -683007,9 +684827,9 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "active": "rgba(255, 255, 255, 0.16)"
   },
   "colorBackgroundPositiveTintAlpha": {
-    "normal": "rgba(13, 194, 104, 0.16)",
-    "hover": "rgba(13, 194, 104, 0.18)",
-    "active": "rgba(13, 194, 104, 0.2)"
+    "normal": "rgba(0, 172, 91, 0.1)",
+    "hover": "rgba(0, 172, 91, 0.14)",
+    "active": "rgba(0, 172, 91, 0.18)"
   },
   "colorBackgroundPositiveTintThemed": {
     "normal": "#2b2b2c",
@@ -683166,15 +684986,145 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
     "hover": "#FF6363",
     "active": "#FF6969"
   },
-  "colorOnboarding": {
-    "normal": "#2979FA",
-    "hover": "#327EFA",
-    "active": "#3A84FA"
+  "wsadminColorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#FFE5E1",
+    "active": "#FFE6E2"
   },
-  "colorSearchResultsAlpha": {
-    "normal": "rgba(255, 158, 0, 0.2)",
-    "hover": "rgba(255, 158, 0, 0.24)",
-    "active": "rgba(255, 158, 0, 0.28)"
+  "wsadminColorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#FFF1E6",
+    "active": "#FFF1E7"
+  },
+  "wsadminColorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#C4622A",
+    "active": "#C76833"
+  },
+  "wsadminColorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#C96D2B",
+    "active": "#CB7334"
+  },
+  "wsadminColorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#339639",
+    "active": "#3B9B41"
+  },
+  "wsadminColorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#EDFEE0",
+    "active": "#EEFEE2"
+  },
+  "wsadminColorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#F1FDFF",
+    "active": "#F1FDFF"
+  },
+  "wsadminColorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#219A8B",
+    "active": "#2A9E90"
+  },
+  "wsadminColorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#ECFFF8",
+    "active": "#EDFFF9"
+  },
+  "wsadminColorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0A8DD8",
+    "active": "#1492D9"
+  },
+  "wsadminColorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#E1EDFF",
+    "active": "#E2EEFF"
+  },
+  "wsadminColorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#E7E6FF",
+    "active": "#E8E7FF"
+  },
+  "wsadminColorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#F3EBFE",
+    "active": "#F3ECFE"
+  },
+  "wsadminColorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#8C54D8",
+    "active": "#915BD9"
+  },
+  "wsadminColorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#CF4557",
+    "active": "#D14D5E"
+  },
+  "wsadminColorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#C43C63",
+    "active": "#C74469"
+  },
+  "wsadminColorTooltipBackgroundYellow": {
+    "normal": "#745D00",
+    "hover": "#7A630A",
+    "active": "#7F6A14"
+  },
+  "wsadminColorTooltipBackgroundGrass": {
+    "normal": "#237D61",
+    "hover": "#2C8267",
+    "active": "#35876E"
+  },
+  "wsadminColorTooltipBackgroundMint": {
+    "normal": "#0A7680",
+    "hover": "#147B85",
+    "active": "#1E818A"
+  },
+  "wsadminColorTooltipBackgroundPurple": {
+    "normal": "#73519F",
+    "hover": "#7958A3",
+    "active": "#7E5FA7"
+  },
+  "wsadminColorTooltipBackgroundMagenta": {
+    "normal": "#A2377B",
+    "hover": "#A63F80",
+    "active": "#A94786"
+  },
+  "wsadminColorTooltipBackgroundMidnightsky": {
+    "normal": "#1C4479",
+    "hover": "#254B7E",
+    "active": "#2E5384"
+  },
+  "wsadminColorTooltipTextYellow": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextGrass": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextMint": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextPurple": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextMagenta": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
+  },
+  "wsadminColorTooltipTextMidnightsky": {
+    "normal": "#FFFFFF",
+    "hover": "#EBEDF0",
+    "active": "#D7D8DB"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",

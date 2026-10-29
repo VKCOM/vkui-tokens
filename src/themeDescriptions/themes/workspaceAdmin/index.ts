@@ -1,3 +1,4 @@
+import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
 import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
 import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeWorkspaceAdminDescription } from '../../../interfaces/themes/workspaceAdmin/index.ts';
@@ -10,87 +11,20 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 	themeNameBase: 'workspaceAdmin',
 	colors: {
 		...lightTheme.colors,
-
-		colorBackground: '#F6F7F8',
-		colorBackgroundAccent: {
-			normal: '#0077FF',
-			hover: '#0073F7',
-			active: '#006FEF',
+		colorBackground: {
+			normal: '#F6F7F8',
+			hover: '#ECEEF1',
+			active: '#E2E5E9',
 		},
-		colorBackgroundAccentTintAlpha: {
-			normal: 'rgba(0, 119, 255, 0.06)',
-			hover: 'rgba(0, 119, 255, 0.1)',
-			active: 'rgba(0, 119, 255, 0.14)',
+		colorBackgroundWarning: {
+			normal: '#FFF1AD',
+			hover: '#F5E8A9',
+			active: '#EBDFA4',
 		},
-		colorBackgroundAccentTintThemed: {
-			normal: '#F0F7FF',
-			hover: '#E5F1FF',
-			active: '#DBECFF',
-		},
-		colorBackgroundAccentTintThemedAlpha: {
-			normal: 'rgba(0, 119, 255, 0.06)',
-			hover: 'rgba(0, 119, 255, 0.1)',
-			active: 'rgba(0, 119, 255, 0.14)',
-		},
-		colorBackgroundNegative: {
-			normal: '#ED0A34',
-			hover: '#E40A34',
-			active: '#DA0A35',
-		},
-		colorBackgroundNegativeTint: {
-			normal: '#FAEBEB',
-			hover: '#FDE2E7',
-			active: '#FCD8DF',
-		},
-		colorBackgroundNegativeTintAlpha: {
-			normal: 'rgba(237, 10, 52, 0.1)',
-			hover: 'rgba(237, 10, 52, 0.14)',
-			active: 'rgba(237, 10, 52, 0.18)',
-		},
-		colorBackgroundNegativeTintThemed: {
-			normal: '#FAEBEB',
-			hover: '#FDE2E7',
-			active: '#FCD8DF',
-		},
-		colorBackgroundNegativeTintThemedAlpha: {
-			normal: 'rgba(237, 10, 52, 0.1)',
-			hover: 'rgba(237, 10, 52, 0.14)',
-			active: 'rgba(237, 10, 52, 0.16)',
-		},
-		colorBackgroundPositiveTintAlpha: {
-			normal: 'rgba(13, 194, 104, 0.12)',
-			hover: 'rgba(13, 194, 104, 0.14)',
-			active: 'rgba(13, 194, 104, 0.18)',
-		},
-		colorBackgroundTertiaryAlpha: {
-			normal: 'rgba(58, 58, 90, 0.04)',
-			hover: 'rgba(58, 58, 90, 0.08)',
-			active: 'rgba(58, 58, 90, 0.12)',
-		},
-		colorBackgroundWarningTintAlpha: {
-			normal: 'rgba(255, 241, 173, 0.64)',
-			hover: 'rgba(255, 241, 173, 0.72)',
-			active: 'rgba(255, 241, 173, 0.76)',
-		},
-		colorIconNegative: {
-			normal: '#ED033A',
-			hover: '#E4043A',
-			active: '#DA043A',
-		},
-		colorSegmentedControl: {
-			normal: '#FFFFFF',
-			hover: '#F5F5F7',
-			active: '#EBECEF',
-		},
-		colorStrokeNegative: {
-			normal: '#ED0A34',
-			hover: '#E40A34',
-			active: '#DA0A35',
-		},
-		colorTextNegative: {
-			normal: '#ED0A34',
-			hover: '#E40A34',
-			active: '#DA0A35',
+		colorBackgroundTertiary: {
+			normal: '#F6F7F8',
+			hover: '#ECEEF1',
+			active: '#E2E5E9',
 		},
 		colorAvatarsBlue: '#4C91FF',
 		colorAvatarsCoral: '#FEA4A4',
@@ -108,9 +42,34 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 		colorAvatarsViolet: '#B884FF',
 		colorAvatarsYellow: '#FFD65C',
 		colorIconNegativeSnackbar: '#FF5C5C',
-		colorOnboarding: '#2979FA',
-		colorSearchResultsAlpha: 'rgba(255, 241, 173, 0.48)',
-		colorTextSecondary: '#797A80',
+		wsadminColorAvatarTextRed: '#FFE4E0',
+		wsadminColorAvatarTextOrange: '#FFF0E5',
+		wsadminColorAvatarTextPeach: '#C25B21',
+		wsadminColorAvatarTextYellow: '#C76722',
+		wsadminColorAvatarTextLime: '#2A9231',
+		wsadminColorAvatarTextGreen: '#ECFEDF',
+		wsadminColorAvatarTextCyan: '#F0FDFF',
+		wsadminColorAvatarTextMint: '#189686',
+		wsadminColorAvatarTextSeagreen: '#EBFFF8',
+		wsadminColorAvatarTextSky: '#0088D6',
+		wsadminColorAvatarTextBlue: '#E0ECFF',
+		wsadminColorAvatarTextIndigo: '#E6E5FF',
+		wsadminColorAvatarTextViolet: '#F2EAFE',
+		wsadminColorAvatarTextLavender: '#874DD6',
+		wsadminColorAvatarTextCoral: '#CD3D50',
+		wsadminColorAvatarTextPink: '#C2345C',
+		wsadminColorTooltipBackgroundYellow: '#F8F8BC',
+		wsadminColorTooltipBackgroundGrass: '#DBFFE2',
+		wsadminColorTooltipBackgroundMint: '#C3FBFF',
+		wsadminColorTooltipBackgroundPurple: '#E4CFFF',
+		wsadminColorTooltipBackgroundMagenta: '#FFDBFB',
+		wsadminColorTooltipBackgroundMidnightsky: '#C2DEFF',
+		wsadminColorTooltipTextYellow: '#695A1E',
+		wsadminColorTooltipTextGrass: '#155E55',
+		wsadminColorTooltipTextMint: '#236066',
+		wsadminColorTooltipTextPurple: '#5E3394',
+		wsadminColorTooltipTextMagenta: '#9E3678',
+		wsadminColorTooltipTextMidnightsky: '#104D7E',
 	},
 
 	fontTitle2: {
@@ -129,9 +88,43 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 	fontHeadline3: {
 		regular: {
 			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
+			fontSize: 14,
+			lineHeight: 18,
+		},
+		compact: {
+			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
 			fontSize: 13,
 			lineHeight: 16,
-			fontStyle: 'normal',
+		},
+	},
+
+	fontSubhead500: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
+		},
+	},
+
+	fontCaption1500: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 19,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
+		},
+		compact: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
 		},
 	},
 };
@@ -145,56 +138,17 @@ export const workspaceAdminDarkTheme: ThemeWorkspaceAdminDarkDescription = {
 	colors: {
 		...darkTheme.colors,
 
-		colorBackgroundAccentTintAlpha: {
-			normal: 'rgba(0, 119, 255, 0.2)',
-			hover: 'rgba(39, 117, 252, 0.24)',
-			active: 'rgba(39, 117, 252, 0.28)',
+		colorBackgroundWarning: {
+			normal: '#6C4E00',
+			hover: '#72550A',
+			active: '#785C14',
 		},
-		colorBackgroundNegative: {
-			normal: '#FF5C5C',
-			hover: '#FF6363',
-			active: '#FF6969',
+		colorBackgroundTertiary: {
+			normal: '#252525',
+			hover: '#2E2E2E',
+			active: '#363636',
 		},
-		colorBackgroundNegativeTintAlpha: {
-			normal: 'rgba(255, 58, 58, 0.24)',
-			hover: 'rgba(255, 58, 58, 0.28)',
-			active: 'rgba(255, 58, 58, 0.32)',
-		},
-		colorBackgroundPositiveTintAlpha: {
-			normal: 'rgba(13, 194, 104, 0.16)',
-			hover: 'rgba(13, 194, 104, 0.18)',
-			active: 'rgba(13, 194, 104, 0.2)',
-		},
-		colorBackgroundTertiaryAlpha: {
-			normal: 'rgba(255, 255, 255, 0.04)',
-			hover: 'rgba(255, 255, 255, 0.1)',
-			active: 'rgba(255, 255, 255, 0.14)',
-		},
-		colorBackgroundWarningTintAlpha: {
-			normal: 'rgba(255, 158, 0, 0.16)',
-			hover: 'rgba(255, 158, 0, 0.24)',
-			active: 'rgba(255, 158, 0, 0.28)',
-		},
-		colorIconNegative: {
-			normal: '#FF5C5C',
-			hover: '#FF6363',
-			active: '#FF6969',
-		},
-		colorSegmentedControl: {
-			normal: '#454546',
-			hover: '#4E4E4F',
-			active: '#3D3D3E',
-		},
-		colorStrokeNegative: {
-			normal: '#FF5C5C',
-			hover: '#FF6363',
-			active: '#FF6969',
-		},
-		colorTextNegative: {
-			normal: '#FF5C5C',
-			hover: '#FF6363',
-			active: '#FF6969',
-		},
+
 		colorAvatarsBlue: '#4C91FF',
 		colorAvatarsCoral: '#FEA4A4',
 		colorAvatarsGreen: '#43CC4C',
@@ -211,8 +165,33 @@ export const workspaceAdminDarkTheme: ThemeWorkspaceAdminDarkDescription = {
 		colorAvatarsViolet: '#B884FF',
 		colorAvatarsYellow: '#FFD65C',
 		colorIconNegativeSnackbar: '#FF5C5C',
-		colorOnboarding: '#2979FA',
-		colorSearchResultsAlpha: 'rgba(255, 158, 0, 0.2)',
-		colorTextSecondary: '#BFC1C5',
+		wsadminColorAvatarTextRed: '#FFE4E0',
+		wsadminColorAvatarTextOrange: '#FFF0E5',
+		wsadminColorAvatarTextPeach: '#C25B21',
+		wsadminColorAvatarTextYellow: '#C76722',
+		wsadminColorAvatarTextLime: '#2A9231',
+		wsadminColorAvatarTextGreen: '#ECFEDF',
+		wsadminColorAvatarTextCyan: '#F0FDFF',
+		wsadminColorAvatarTextMint: '#189686',
+		wsadminColorAvatarTextSeagreen: '#EBFFF8',
+		wsadminColorAvatarTextSky: '#0088D6',
+		wsadminColorAvatarTextBlue: '#E0ECFF',
+		wsadminColorAvatarTextIndigo: '#E6E5FF',
+		wsadminColorAvatarTextViolet: '#F2EAFE',
+		wsadminColorAvatarTextLavender: '#874DD6',
+		wsadminColorAvatarTextCoral: '#CD3D50',
+		wsadminColorAvatarTextPink: '#C2345C',
+		wsadminColorTooltipBackgroundYellow: '#745D00',
+		wsadminColorTooltipBackgroundGrass: '#237D61',
+		wsadminColorTooltipBackgroundMint: '#0A7680',
+		wsadminColorTooltipBackgroundPurple: '#73519F',
+		wsadminColorTooltipBackgroundMagenta: '#A2377B',
+		wsadminColorTooltipBackgroundMidnightsky: '#1C4479',
+		wsadminColorTooltipTextYellow: '#FFFFFF',
+		wsadminColorTooltipTextGrass: '#FFFFFF',
+		wsadminColorTooltipTextMint: '#FFFFFF',
+		wsadminColorTooltipTextPurple: '#FFFFFF',
+		wsadminColorTooltipTextMagenta: '#FFFFFF',
+		wsadminColorTooltipTextMidnightsky: '#FFFFFF',
 	},
 };
