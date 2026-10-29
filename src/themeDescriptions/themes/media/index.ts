@@ -401,6 +401,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
 			lineHeight: 24,
+			letterSpacing: '0.002em',
 		},
 	},
 	mediaFontMediaSubtitle1: {
@@ -411,7 +412,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 26,
 		},
 	},
-	mediaFontMediaSubtitle2Regular: {
+	mediaFontMediaSubtitle3Regular: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia4,
@@ -427,7 +428,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 20,
 		},
 	},
-	mediaFontMediaSubtitle2DemiBold: {
+	mediaFontMediaSubtitle3DemiBold: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia2,
@@ -435,7 +436,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 20,
 		},
 	},
-	mediaFontMediaSubtitle2Bold: {
+	mediaFontMediaSubtitle3Bold: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia1,
@@ -673,17 +674,19 @@ export const mediaTheme: ThemeMediaDescription = {
 			lineHeight: 22,
 		},
 	},
-	mediaFontMediaPSubhead500: {
+	mediaFontMediaSubtitle4Medium: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
 			fontWeight: fontWeightMedia3,
 			fontSize: 14,
 			lineHeight: 18,
 		},
-		compact: {
+	},
+	mediaFontMediaSubtitle4Regular: {
+		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
-			fontSize: 13,
+			fontWeight: fontWeightMedia4,
+			fontSize: 14,
 			lineHeight: 18,
 		},
 	},
@@ -702,8 +705,8 @@ export const mediaTheme: ThemeMediaDescription = {
 	mediaFontMediaParagraphSecondary: alias('mediaFontMediaText'),
 	/** @deprecated Используйте mediaFontMediaSubtitle1 */
 	mediaFontMediaSubtitleLight: alias('mediaFontMediaSubtitle1'),
-	/** @deprecated Используйте mediaFontMediaSubtitle2Regular */
-	mediaFontMediaTextSecondaryLight: alias('mediaFontMediaSubtitle2Regular'),
+	/** @deprecated Используйте mediaFontMediaSubtitle3Regular */
+	mediaFontMediaTextSecondaryLight: alias('mediaFontMediaSubtitle3Regular'),
 	fontTitle1: {
 		regular: {
 			...staticRef(lightTheme.fontTitle1).regular,

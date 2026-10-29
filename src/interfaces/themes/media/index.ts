@@ -204,30 +204,30 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaText: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовки, отдельные строки, визуальная иерархия. Component Title. For Accent. Size: regular 20/26, compact 20/26.
+	 * @desc Подзаголовок, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 20/26, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle1: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия. Component Title. For Accent. Size: regular 15/20, compact 15/20.
+	 * @desc Подзаголовок, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
-	mediaFontMediaSubtitle2Regular: Adaptive<Font>;
+	mediaFontMediaSubtitle3Regular: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия Medium. Component Title. For Accent. Size: regular 16/20, compact 16/20.
+	 * @desc Подзаголовок Medium, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 16/20, compact 16/20.
 	 * @tags font
 	 */
 	mediaFontMediaSubtitle2Medium: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия DemiBold. Component Title. For Accent. Size: regular 15/20, compact 15/20.
+	 * @desc Подзаголовок DemiBold, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
-	mediaFontMediaSubtitle2DemiBold: Adaptive<Font>;
+	mediaFontMediaSubtitle3DemiBold: Adaptive<Font>;
 	/**
-	 * @desc Уменьшенные подзаголовки, отдельные строки, визуальная иерархия Bold. Component Title. For Accent. Size: regular 15/20, compact 15/20.
+	 * @desc Подзаголовок Bold, отдельные строки, визуальная иерархия. Component Title. For Subtitle. Size: regular 15/20, compact 15/20.
 	 * @tags font
 	 */
-	mediaFontMediaSubtitle2Bold: Adaptive<Font>;
+	mediaFontMediaSubtitle3Bold: Adaptive<Font>;
 	/**
 	 * @desc Подпись под иллюстрацией, таблицей или блоком. Component Text. For Article. Size: regular 14/22, compact 16/24.
 	 * @tags font
@@ -239,7 +239,7 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaCaptionCaps: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, акцентные теги, подписи Light. Component Text. For Card. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
+	 * @desc Лейблы Light, бейджи, акцентные теги, подписи. Component Text. For Card. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
 	 * @tags font
 	 */
 	mediaFontMediaLabelLight: Adaptive<Font>;
@@ -249,17 +249,17 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaLabelRegular: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, акцентные теги, подписи CAPS. Component Text. For Card. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
+	 * @desc Лейблы CAPS, бейджи, акцентные теги, подписи. Component Text. For Card. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
 	 * @tags font
 	 */
 	mediaFontMediaLabelCaps: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, акцентные теги, подписи Bold. Component Text. For Card. Desk & touch: 1 size. Size: regular 13/18, compact 13/18.
+	 * @desc Лейблы Bold, бейджи, акцентные теги, подписи. Component Text. For Card. Desk & touch: 1 size. Size: regular 13/18, compact 13/18.
 	 * @tags font
 	 */
 	mediaFontMediaLabelBold: Adaptive<Font>;
 	/**
-	 * @desc Лейблы, бейджи, акцентные теги, подписи Bold CAPS, подчёркнутые. Component Text. For Card. Desk & touch: 1 size. Size: regular 13/18, compact 13/18. Подчёркивание только в Figma: в токене не выражается.
+	 * @desc Лейблы Bold CAPS, бейджи, акцентные теги, подписи. Component Text. For Card. Desk & touch: 1 size. Size: regular 13/18, compact 13/18. Подчёркивание только в Figma: в токене не выражается.
 	 * @tags font
 	 */
 	mediaFontMediaLabelStrip: Adaptive<Font>;
@@ -294,40 +294,45 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaFitcherTitleCaps: Adaptive<Font>;
 	/**
-	 * @desc Paradigm Title 1 с весом Bold. Component Title. For Paradigm. Size: regular 24/28, compact 24/28.
+	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Size: regular 24/28, compact 24/28.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle1Bold: Adaptive<Font>;
 	/**
-	 * @desc Paradigm Title 2 с весом Bold. Component Title. For Paradigm. Size: regular 20/26, compact 20/26.
+	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Size: regular 20/26, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle2Bold: Adaptive<Font>;
 	/**
-	 * @desc Paradigm Title 3 с весом Bold. Component Title. For Paradigm. Size: regular 17/22, compact 17/22.
+	 * @desc Заголовок Paradigm Bold. Component Title. For Paradigm. Size: regular 17/22, compact 17/22.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle3Bold: Adaptive<Font>;
 	/**
-	 * @desc Адаптив длинных заголовков Paradigm Title 1: меньше переносов. Component Title. For Paradigm. Size: regular 20/26, compact 24/28.
+	 * @desc Адаптив длинных заголовков, меньше переносов. Component Title. For Paradigm. Size: regular 20/26, compact 24/28.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle1Adaptive: Adaptive<Font>;
 	/**
-	 * @desc Адаптив длинных заголовков Paradigm Title 2: меньше переносов. Component Title. For Paradigm. Size: regular 17/22, compact 20/26.
+	 * @desc Адаптив длинных заголовков, меньше переносов. Component Title. For Paradigm. Size: regular 17/22, compact 20/26.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle2Adaptive: Adaptive<Font>;
 	/**
-	 * @desc Адаптив длинных заголовков Paradigm Title 3: меньше переносов. Component Title. For Paradigm. Size: regular 16/20, compact 17/22.
+	 * @desc Адаптив длинных заголовков, меньше переносов. Component Title. For Paradigm. Size: regular 16/20, compact 17/22.
 	 * @tags font
 	 */
 	mediaFontMediaPTitle3Adaptive: Adaptive<Font>;
 	/**
-	 * @desc Подзаголовок Medium, размер как у Subhead. Component Title. For Accent. Size: regular 14/18, compact 13/18.
+	 * @desc Подзаголовок Medium. Использовать вместо Subhead Paradigm. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
 	 * @tags font
 	 */
-	mediaFontMediaPSubhead500: Adaptive<Font>;
+	mediaFontMediaSubtitle4Medium: Adaptive<Font>;
+	/**
+	 * @desc Подзаголовок. Использовать вместо Subhead Paradigm. Component Title. For Subtitle. Desk & touch: 1 size. Size: regular 14/18, compact 14/18.
+	 * @tags font
+	 */
+	mediaFontMediaSubtitle4Regular: Adaptive<Font>;
 
 	/**
 	 * Устаревшие имена токенов, оставлены как алиасы для обратной совместимости
@@ -366,7 +371,7 @@ interface MediaUniqTokens {
 	/**
 	 * @desc Второстепенный не-наборный текст для поддержания визуальной иерархии
 	 * @tags font
-	 * @deprecated Используйте mediaFontMediaSubtitle2Regular
+	 * @deprecated Используйте mediaFontMediaSubtitle3Regular
 	 */
 	mediaFontMediaTextSecondaryLight: Token<Adaptive<Font>, ThemeMediaDescription>;
 	/**

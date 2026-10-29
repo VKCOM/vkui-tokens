@@ -150137,6 +150137,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height",
         "value": "var(--vkui--media_font_media_text--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing",
+        "value": "var(--vkui--media_font_media_text--letter_spacing)"
       }
     },
     "regular": {
@@ -150155,6 +150159,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height--regular",
         "value": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -150196,41 +150204,41 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
       }
     }
   },
@@ -150272,79 +150280,79 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
       }
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
       }
     }
   },
@@ -151396,59 +151404,79 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+      }
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight)"
+      },
+      "fontSize": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height)"
       }
     },
-    "compact": {
+    "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--compact, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
       }
     }
   },
@@ -151981,6 +152009,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing)"
       }
     },
     "regular": {
@@ -151999,6 +152031,10 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height--regular",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -155494,7 +155530,8 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -155505,7 +155542,7 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "26px"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
@@ -155521,7 +155558,7 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 600,
@@ -155529,7 +155566,7 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
@@ -155767,17 +155804,19 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "22px"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "14px",
       "lineHeight": "18px"
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": "13px",
+      "fontWeight": 400,
+      "fontSize": "14px",
       "lineHeight": "18px"
     }
   },
@@ -155912,7 +155951,8 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -157811,7 +157851,8 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
       "fontFamily": "var(--vkui--media_font_media_text--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_text--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_text--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -157822,12 +157863,12 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--media_font_media_subtitle1--line_height--regular, 26px)"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaSubtitle2Medium": {
@@ -157838,20 +157879,20 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--media_font_media_subtitle2_medium--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaCaption": {
@@ -158084,18 +158125,20 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--media_font_media_p_title3_adaptive--line_height--compact, 22px)"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
-    },
-    "compact": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--compact, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
     }
   },
   "fontH3": {
@@ -158229,7 +158272,8 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
       "fontFamily": "var(--vkui--media_font_media_paragraph_secondary--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_paragraph_secondary--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_paragraph_secondary--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -160128,7 +160172,8 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -160139,7 +160184,7 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "lineHeight": 26
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
@@ -160155,7 +160200,7 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 600,
@@ -160163,7 +160208,7 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
@@ -160401,17 +160446,19 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "lineHeight": 22
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": 14,
       "lineHeight": 18
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": 13,
+      "fontWeight": 400,
+      "fontSize": 14,
       "lineHeight": 18
     }
   },
@@ -160546,7 +160593,8 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -165426,6 +165474,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height",
         "value": "var(--vkui--media_font_media_text--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing",
+        "value": "var(--vkui--media_font_media_text--letter_spacing)"
       }
     },
     "regular": {
@@ -165444,6 +165496,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height--regular",
         "value": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -165485,41 +165541,41 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
       }
     }
   },
@@ -165561,79 +165617,79 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
       }
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
       }
     }
   },
@@ -166685,59 +166741,79 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+      }
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight)"
+      },
+      "fontSize": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height)"
       }
     },
-    "compact": {
+    "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--compact, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
       }
     }
   },
@@ -167270,6 +167346,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing)"
       }
     },
     "regular": {
@@ -167288,6 +167368,10 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height--regular",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -170783,7 +170867,8 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -170794,7 +170879,7 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "lineHeight": "26px"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
@@ -170810,7 +170895,7 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 600,
@@ -170818,7 +170903,7 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
@@ -171056,17 +171141,19 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "lineHeight": "22px"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "14px",
       "lineHeight": "18px"
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": "13px",
+      "fontWeight": 400,
+      "fontSize": "14px",
       "lineHeight": "18px"
     }
   },
@@ -171201,7 +171288,8 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -173100,7 +173188,8 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
       "fontFamily": "var(--vkui--media_font_media_text--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_text--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_text--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -173111,12 +173200,12 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
       "lineHeight": "var(--vkui--media_font_media_subtitle1--line_height--regular, 26px)"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaSubtitle2Medium": {
@@ -173127,20 +173216,20 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
       "lineHeight": "var(--vkui--media_font_media_subtitle2_medium--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaCaption": {
@@ -173373,18 +173462,20 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
       "lineHeight": "var(--vkui--media_font_media_p_title3_adaptive--line_height--compact, 22px)"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
-    },
-    "compact": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--compact, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
     }
   },
   "fontH3": {
@@ -173518,7 +173609,8 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
       "fontFamily": "var(--vkui--media_font_media_paragraph_secondary--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_paragraph_secondary--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_paragraph_secondary--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -175417,7 +175509,8 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -175428,7 +175521,7 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "lineHeight": 26
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
@@ -175444,7 +175537,7 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 600,
@@ -175452,7 +175545,7 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
@@ -175690,17 +175783,19 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "lineHeight": 22
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": 14,
       "lineHeight": 18
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": 13,
+      "fontWeight": 400,
+      "fontSize": 14,
       "lineHeight": 18
     }
   },
@@ -175835,7 +175930,8 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -195271,6 +195367,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height",
         "value": "var(--vkui--media_font_media_text--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing",
+        "value": "var(--vkui--media_font_media_text--letter_spacing)"
       }
     },
     "regular": {
@@ -195289,6 +195389,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height--regular",
         "value": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -195330,41 +195434,41 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, Proxima Nova, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, Proxima Nova, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
       }
     }
   },
@@ -195406,79 +195510,79 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, Proxima Nova, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, Proxima Nova, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
       }
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, Proxima Nova, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, Proxima Nova, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
       }
     }
   },
@@ -196530,59 +196634,79 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--regular, Proxima Nova, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, Proxima Nova, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+      }
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight)"
+      },
+      "fontSize": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height)"
       }
     },
-    "compact": {
+    "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--compact, Proxima Nova, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, Proxima Nova, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
       }
     }
   },
@@ -197119,6 +197243,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing)"
       }
     },
     "regular": {
@@ -197137,6 +197265,10 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height--regular",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -200643,7 +200775,8 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -200654,7 +200787,7 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "26px"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
@@ -200670,7 +200803,7 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 600,
@@ -200678,7 +200811,7 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 700,
@@ -200916,17 +201049,19 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "22px"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "14px",
       "lineHeight": "18px"
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": "13px",
+      "fontWeight": 400,
+      "fontSize": "14px",
       "lineHeight": "18px"
     }
   },
@@ -201062,7 +201197,8 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -202963,7 +203099,8 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
       "fontFamily": "var(--vkui--media_font_media_text--font_family--regular, Proxima Nova, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_text--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_text--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -202974,12 +203111,12 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--media_font_media_subtitle1--line_height--regular, 26px)"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, Proxima Nova, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, Proxima Nova, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaSubtitle2Medium": {
@@ -202990,20 +203127,20 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--media_font_media_subtitle2_medium--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, Proxima Nova, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, Proxima Nova, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, Proxima Nova, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, Proxima Nova, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaCaption": {
@@ -203236,18 +203373,20 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--media_font_media_p_title3_adaptive--line_height--compact, 22px)"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--regular, Proxima Nova, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
-    },
-    "compact": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--compact, Proxima Nova, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, Proxima Nova, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, Proxima Nova, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
     }
   },
   "fontH3": {
@@ -203382,7 +203521,8 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
       "fontFamily": "var(--vkui--media_font_media_paragraph_secondary--font_family--regular, Proxima Nova, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_paragraph_secondary--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_paragraph_secondary--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -205283,7 +205423,8 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -205294,7 +205435,7 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "lineHeight": 26
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
@@ -205310,7 +205451,7 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 600,
@@ -205318,7 +205459,7 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 700,
@@ -205556,17 +205697,19 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "lineHeight": 22
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": 14,
       "lineHeight": 18
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": 13,
+      "fontWeight": 400,
+      "fontSize": 14,
       "lineHeight": 18
     }
   },
@@ -205702,7 +205845,8 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "fontFamily": "Proxima Nova, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -402440,6 +402584,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height",
         "value": "var(--vkui--media_font_media_text--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing",
+        "value": "var(--vkui--media_font_media_text--letter_spacing)"
       }
     },
     "regular": {
@@ -402458,6 +402606,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_text--line_height--regular",
         "value": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_text--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -402499,41 +402651,41 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_regular--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_regular--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
       }
     }
   },
@@ -402575,79 +402727,79 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_demi_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_demi_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
       }
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_family--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_weight--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_subtitle2_bold--font_size--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_subtitle2_bold--line_height--regular",
-        "value": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+        "name": "--vkui--media_font_media_subtitle3_bold--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
       }
     }
   },
@@ -403699,59 +403851,79 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       }
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "auto": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height)"
       }
     },
     "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--regular",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_medium--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+      }
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "auto": {
+      "fontFamily": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight)"
+      },
+      "fontSize": {
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height)"
       }
     },
-    "compact": {
+    "regular": {
       "fontFamily": {
-        "name": "--vkui--media_font_media_p_subhead500--font_family--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_family--compact, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_family--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)"
       },
       "fontWeight": {
-        "name": "--vkui--media_font_media_p_subhead500--font_weight--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_weight--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)"
       },
       "fontSize": {
-        "name": "--vkui--media_font_media_p_subhead500--font_size--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--font_size--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)"
       },
       "lineHeight": {
-        "name": "--vkui--media_font_media_p_subhead500--line_height--compact",
-        "value": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+        "name": "--vkui--media_font_media_subtitle4_regular--line_height--regular",
+        "value": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
       }
     }
   },
@@ -404284,6 +404456,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing)"
       }
     },
     "regular": {
@@ -404302,6 +404478,10 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
       "lineHeight": {
         "name": "--vkui--media_font_media_paragraph_secondary--line_height--regular",
         "value": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      },
+      "letterSpacing": {
+        "name": "--vkui--media_font_media_paragraph_secondary--letter_spacing--regular",
+        "value": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
       }
     }
   },
@@ -407811,7 +407991,8 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -407822,7 +408003,7 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "26px"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
@@ -407838,7 +408019,7 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 600,
@@ -407846,7 +408027,7 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
@@ -408084,17 +408265,19 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "22px"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": "14px",
       "lineHeight": "18px"
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": "13px",
+      "fontWeight": 400,
+      "fontSize": "14px",
       "lineHeight": "18px"
     }
   },
@@ -408229,7 +408412,8 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": "16px",
-      "lineHeight": "24px"
+      "lineHeight": "24px",
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -410133,7 +410317,8 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
       "fontFamily": "var(--vkui--media_font_media_text--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_text--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_text--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_text--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_text--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -410144,12 +410329,12 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
       "lineHeight": "var(--vkui--media_font_media_subtitle1--line_height--regular, 26px)"
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_regular--font_weight--regular, 400)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_regular--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_regular--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_regular--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_regular--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaSubtitle2Medium": {
@@ -410160,20 +410345,20 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
       "lineHeight": "var(--vkui--media_font_media_subtitle2_medium--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_demi_bold--font_weight--regular, 600)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_demi_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_demi_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_demi_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_demi_bold--font_weight--regular, 600)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_demi_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_demi_bold--line_height--regular, 20px)"
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_subtitle2_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_subtitle2_bold--font_weight--regular, 700)",
-      "fontSize": "var(--vkui--media_font_media_subtitle2_bold--font_size--regular, 15px)",
-      "lineHeight": "var(--vkui--media_font_media_subtitle2_bold--line_height--regular, 20px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle3_bold--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle3_bold--font_weight--regular, 700)",
+      "fontSize": "var(--vkui--media_font_media_subtitle3_bold--font_size--regular, 15px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle3_bold--line_height--regular, 20px)"
     }
   },
   "mediaFontMediaCaption": {
@@ -410406,18 +410591,20 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
       "lineHeight": "var(--vkui--media_font_media_p_title3_adaptive--line_height--compact, 22px)"
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--regular, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--regular, 14px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--regular, 18px)"
-    },
-    "compact": {
-      "fontFamily": "var(--vkui--media_font_media_p_subhead500--font_family--compact, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
-      "fontWeight": "var(--vkui--media_font_media_p_subhead500--font_weight--compact, 500)",
-      "fontSize": "var(--vkui--media_font_media_p_subhead500--font_size--compact, 13px)",
-      "lineHeight": "var(--vkui--media_font_media_p_subhead500--line_height--compact, 18px)"
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_medium--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_medium--font_weight--regular, 500)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_medium--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_medium--line_height--regular, 18px)"
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
+      "fontFamily": "var(--vkui--media_font_media_subtitle4_regular--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
+      "fontWeight": "var(--vkui--media_font_media_subtitle4_regular--font_weight--regular, 400)",
+      "fontSize": "var(--vkui--media_font_media_subtitle4_regular--font_size--regular, 14px)",
+      "lineHeight": "var(--vkui--media_font_media_subtitle4_regular--line_height--regular, 18px)"
     }
   },
   "fontH3": {
@@ -410551,7 +410738,8 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
       "fontFamily": "var(--vkui--media_font_media_paragraph_secondary--font_family--regular, Inter, Helvetica, Arial, sans-serif)",
       "fontWeight": "var(--vkui--media_font_media_paragraph_secondary--font_weight--regular, 400)",
       "fontSize": "var(--vkui--media_font_media_paragraph_secondary--font_size--regular, 16px)",
-      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)"
+      "lineHeight": "var(--vkui--media_font_media_paragraph_secondary--line_height--regular, 24px)",
+      "letterSpacing": "var(--vkui--media_font_media_paragraph_secondary--letter_spacing--regular, 0.002em)"
     }
   },
   "mediaFontMediaSubtitleLight": {
@@ -412455,7 +412643,8 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitle1": {
@@ -412466,7 +412655,7 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "lineHeight": 26
     }
   },
-  "mediaFontMediaSubtitle2Regular": {
+  "mediaFontMediaSubtitle3Regular": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
@@ -412482,7 +412671,7 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2DemiBold": {
+  "mediaFontMediaSubtitle3DemiBold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 600,
@@ -412490,7 +412679,7 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
-  "mediaFontMediaSubtitle2Bold": {
+  "mediaFontMediaSubtitle3Bold": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 700,
@@ -412728,17 +412917,19 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "lineHeight": 22
     }
   },
-  "mediaFontMediaPSubhead500": {
+  "mediaFontMediaSubtitle4Medium": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 500,
       "fontSize": 14,
       "lineHeight": 18
-    },
-    "compact": {
+    }
+  },
+  "mediaFontMediaSubtitle4Regular": {
+    "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
-      "fontWeight": 500,
-      "fontSize": 13,
+      "fontWeight": 400,
+      "fontSize": 14,
       "lineHeight": 18
     }
   },
@@ -412873,7 +413064,8 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "fontFamily": "Inter, Helvetica, Arial, sans-serif",
       "fontWeight": 400,
       "fontSize": 16,
-      "lineHeight": 24
+      "lineHeight": 24,
+      "letterSpacing": "0.002em"
     }
   },
   "mediaFontMediaSubtitleLight": {
