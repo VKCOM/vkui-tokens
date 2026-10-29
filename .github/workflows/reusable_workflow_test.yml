@@ -1,10 +1,10 @@
-name: 'Reusable workflow / Unit tests'
+name: "Reusable workflow / Unit tests"
 
 on:
   workflow_call:
     inputs:
       ref:
-        description: 'The branch, tag or SHA to checkout'
+        description: "The branch, tag or SHA to checkout"
         default: ${{ github.ref }}
         required: false
         type: string
