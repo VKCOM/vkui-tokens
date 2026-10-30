@@ -148812,21 +148812,25 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
     "name": "--vkui--font_family_article",
     "value": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)"
   },
-  "fontWeightMedia1": {
-    "name": "--vkui--font_weight_media1",
-    "value": "var(--vkui--font_weight_media1, 700)"
+  "fontWeightMediaLight": {
+    "name": "--vkui--font_weight_media_light",
+    "value": "var(--vkui--font_weight_media_light, 300)"
   },
-  "fontWeightMedia2": {
-    "name": "--vkui--font_weight_media2",
-    "value": "var(--vkui--font_weight_media2, 600)"
+  "fontWeightMediaRegular": {
+    "name": "--vkui--font_weight_media_regular",
+    "value": "var(--vkui--font_weight_media_regular, 400)"
   },
-  "fontWeightMedia3": {
-    "name": "--vkui--font_weight_media3",
-    "value": "var(--vkui--font_weight_media3, 500)"
+  "fontWeightMediaMedium": {
+    "name": "--vkui--font_weight_media_medium",
+    "value": "var(--vkui--font_weight_media_medium, 500)"
   },
-  "fontWeightMedia4": {
-    "name": "--vkui--font_weight_media4",
-    "value": "var(--vkui--font_weight_media4, 400)"
+  "fontWeightMediaSemiBold": {
+    "name": "--vkui--font_weight_media_semi_bold",
+    "value": "var(--vkui--font_weight_media_semi_bold, 600)"
+  },
+  "fontWeightMediaBold": {
+    "name": "--vkui--font_weight_media_bold",
+    "value": "var(--vkui--font_weight_media_bold, 700)"
   },
   "mediaFontMediaDisplay1": {
     "auto": {
@@ -152249,6 +152253,22 @@ exports[`snapshots > media theme > should match cssVars snapshot 1`] = `
         "value": "var(--vkui--font_headline--line_height--compact, 20px)"
       }
     }
+  },
+  "fontWeightMedia1": {
+    "name": "--vkui--font_weight_media1",
+    "value": "var(--vkui--font_weight_media1, 700)"
+  },
+  "fontWeightMedia2": {
+    "name": "--vkui--font_weight_media2",
+    "value": "var(--vkui--font_weight_media2, 600)"
+  },
+  "fontWeightMedia3": {
+    "name": "--vkui--font_weight_media3",
+    "value": "var(--vkui--font_weight_media3, 500)"
+  },
+  "fontWeightMedia4": {
+    "name": "--vkui--font_weight_media4",
+    "value": "var(--vkui--font_weight_media4, 400)"
   },
   "mediaFontMediaTitle1Tiny": {
     "auto": {
@@ -155727,10 +155747,11 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
   "themeNameBase": "media",
   "prefix": "vkui",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -156482,6 +156503,10 @@ exports[`snapshots > media theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -158129,10 +158154,11 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
   "themeNameBase": "var(--vkui--theme_name_base, media)",
   "prefix": "var(--vkui--prefix, vkui)",
   "fontFamilyArticle": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)",
-  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
-  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
-  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
-  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
+  "fontWeightMediaLight": "var(--vkui--font_weight_media_light, 300)",
+  "fontWeightMediaRegular": "var(--vkui--font_weight_media_regular, 400)",
+  "fontWeightMediaMedium": "var(--vkui--font_weight_media_medium, 500)",
+  "fontWeightMediaSemiBold": "var(--vkui--font_weight_media_semi_bold, 600)",
+  "fontWeightMediaBold": "var(--vkui--font_weight_media_bold, 700)",
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_display1--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
@@ -158884,6 +158910,10 @@ exports[`snapshots > media theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--font_headline--line_height--compact, 20px)"
     }
   },
+  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
+  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
+  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
+  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_title1_tiny--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
@@ -160531,10 +160561,11 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
   "themeNameBase": "media",
   "prefix": "vkui",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -161286,6 +161317,10 @@ exports[`snapshots > media theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -164902,21 +164937,25 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
     "name": "--vkui--font_family_article",
     "value": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)"
   },
-  "fontWeightMedia1": {
-    "name": "--vkui--font_weight_media1",
-    "value": "var(--vkui--font_weight_media1, 700)"
+  "fontWeightMediaLight": {
+    "name": "--vkui--font_weight_media_light",
+    "value": "var(--vkui--font_weight_media_light, 300)"
   },
-  "fontWeightMedia2": {
-    "name": "--vkui--font_weight_media2",
-    "value": "var(--vkui--font_weight_media2, 600)"
+  "fontWeightMediaRegular": {
+    "name": "--vkui--font_weight_media_regular",
+    "value": "var(--vkui--font_weight_media_regular, 400)"
   },
-  "fontWeightMedia3": {
-    "name": "--vkui--font_weight_media3",
-    "value": "var(--vkui--font_weight_media3, 500)"
+  "fontWeightMediaMedium": {
+    "name": "--vkui--font_weight_media_medium",
+    "value": "var(--vkui--font_weight_media_medium, 500)"
   },
-  "fontWeightMedia4": {
-    "name": "--vkui--font_weight_media4",
-    "value": "var(--vkui--font_weight_media4, 400)"
+  "fontWeightMediaSemiBold": {
+    "name": "--vkui--font_weight_media_semi_bold",
+    "value": "var(--vkui--font_weight_media_semi_bold, 600)"
+  },
+  "fontWeightMediaBold": {
+    "name": "--vkui--font_weight_media_bold",
+    "value": "var(--vkui--font_weight_media_bold, 700)"
   },
   "mediaFontMediaDisplay1": {
     "auto": {
@@ -168339,6 +168378,22 @@ exports[`snapshots > mediaDark theme > should match cssVars snapshot 1`] = `
         "value": "var(--vkui--font_headline--line_height--compact, 20px)"
       }
     }
+  },
+  "fontWeightMedia1": {
+    "name": "--vkui--font_weight_media1",
+    "value": "var(--vkui--font_weight_media1, 700)"
+  },
+  "fontWeightMedia2": {
+    "name": "--vkui--font_weight_media2",
+    "value": "var(--vkui--font_weight_media2, 600)"
+  },
+  "fontWeightMedia3": {
+    "name": "--vkui--font_weight_media3",
+    "value": "var(--vkui--font_weight_media3, 500)"
+  },
+  "fontWeightMedia4": {
+    "name": "--vkui--font_weight_media4",
+    "value": "var(--vkui--font_weight_media4, 400)"
   },
   "mediaFontMediaTitle1Tiny": {
     "auto": {
@@ -171817,10 +171872,11 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
   "themeNameBase": "media",
   "prefix": "vkui",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -172572,6 +172628,10 @@ exports[`snapshots > mediaDark theme > should match pixelify theme snapshot 1`] 
       "lineHeight": "20px"
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -174219,10 +174279,11 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
   "themeNameBase": "var(--vkui--theme_name_base, media)",
   "prefix": "var(--vkui--prefix, vkui)",
   "fontFamilyArticle": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)",
-  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
-  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
-  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
-  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
+  "fontWeightMediaLight": "var(--vkui--font_weight_media_light, 300)",
+  "fontWeightMediaRegular": "var(--vkui--font_weight_media_regular, 400)",
+  "fontWeightMediaMedium": "var(--vkui--font_weight_media_medium, 500)",
+  "fontWeightMediaSemiBold": "var(--vkui--font_weight_media_semi_bold, 600)",
+  "fontWeightMediaBold": "var(--vkui--font_weight_media_bold, 700)",
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_display1--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
@@ -174974,6 +175035,10 @@ exports[`snapshots > mediaDark theme > should match pseudo theme from CssVars 1`
       "lineHeight": "var(--vkui--font_headline--line_height--compact, 20px)"
     }
   },
+  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
+  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
+  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
+  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_title1_tiny--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
@@ -176621,10 +176686,11 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
   "themeNameBase": "media",
   "prefix": "vkui",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -177376,6 +177442,10 @@ exports[`snapshots > mediaDark theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -195548,21 +195618,25 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
     "name": "--vkui--font_family_article",
     "value": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)"
   },
-  "fontWeightMedia1": {
-    "name": "--vkui--font_weight_media1",
-    "value": "var(--vkui--font_weight_media1, 700)"
+  "fontWeightMediaLight": {
+    "name": "--vkui--font_weight_media_light",
+    "value": "var(--vkui--font_weight_media_light, 300)"
   },
-  "fontWeightMedia2": {
-    "name": "--vkui--font_weight_media2",
-    "value": "var(--vkui--font_weight_media2, 600)"
+  "fontWeightMediaRegular": {
+    "name": "--vkui--font_weight_media_regular",
+    "value": "var(--vkui--font_weight_media_regular, 400)"
   },
-  "fontWeightMedia3": {
-    "name": "--vkui--font_weight_media3",
-    "value": "var(--vkui--font_weight_media3, 500)"
+  "fontWeightMediaMedium": {
+    "name": "--vkui--font_weight_media_medium",
+    "value": "var(--vkui--font_weight_media_medium, 500)"
   },
-  "fontWeightMedia4": {
-    "name": "--vkui--font_weight_media4",
-    "value": "var(--vkui--font_weight_media4, 400)"
+  "fontWeightMediaSemiBold": {
+    "name": "--vkui--font_weight_media_semi_bold",
+    "value": "var(--vkui--font_weight_media_semi_bold, 600)"
+  },
+  "fontWeightMediaBold": {
+    "name": "--vkui--font_weight_media_bold",
+    "value": "var(--vkui--font_weight_media_bold, 700)"
   },
   "mediaFontMediaDisplay1": {
     "auto": {
@@ -198989,6 +199063,22 @@ exports[`snapshots > mycom theme > should match cssVars snapshot 1`] = `
         "value": "var(--vkui--font_headline--line_height--compact, 20px)"
       }
     }
+  },
+  "fontWeightMedia1": {
+    "name": "--vkui--font_weight_media1",
+    "value": "var(--vkui--font_weight_media1, 700)"
+  },
+  "fontWeightMedia2": {
+    "name": "--vkui--font_weight_media2",
+    "value": "var(--vkui--font_weight_media2, 600)"
+  },
+  "fontWeightMedia3": {
+    "name": "--vkui--font_weight_media3",
+    "value": "var(--vkui--font_weight_media3, 500)"
+  },
+  "fontWeightMedia4": {
+    "name": "--vkui--font_weight_media4",
+    "value": "var(--vkui--font_weight_media4, 400)"
   },
   "mediaFontMediaTitle1Tiny": {
     "auto": {
@@ -202478,10 +202568,11 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
   "typeBorderPosition": "inset",
   "themeNameBase": "mycom",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
@@ -203234,6 +203325,10 @@ exports[`snapshots > mycom theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
@@ -204883,10 +204978,11 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
   "typeBorderPosition": "var(--vkui--type_border_position, inset)",
   "themeNameBase": "var(--vkui--theme_name_base, mycom)",
   "fontFamilyArticle": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)",
-  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
-  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
-  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
-  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
+  "fontWeightMediaLight": "var(--vkui--font_weight_media_light, 300)",
+  "fontWeightMediaRegular": "var(--vkui--font_weight_media_regular, 400)",
+  "fontWeightMediaMedium": "var(--vkui--font_weight_media_medium, 500)",
+  "fontWeightMediaSemiBold": "var(--vkui--font_weight_media_semi_bold, 600)",
+  "fontWeightMediaBold": "var(--vkui--font_weight_media_bold, 700)",
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_display1--font_family--regular, Proxima Nova, Arial, sans-serif)",
@@ -205639,6 +205735,10 @@ exports[`snapshots > mycom theme > should match pseudo theme from CssVars 1`] = 
       "lineHeight": "var(--vkui--font_headline--line_height--compact, 20px)"
     }
   },
+  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
+  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
+  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
+  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_title1_tiny--font_family--regular, Proxima Nova, Arial, sans-serif)",
@@ -207288,10 +207388,11 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
   "typeBorderPosition": "inset",
   "themeNameBase": "mycom",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
@@ -208044,6 +208145,10 @@ exports[`snapshots > mycom theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "Proxima Nova, Arial, sans-serif",
@@ -403518,21 +403623,25 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
     "name": "--vkui--font_family_article",
     "value": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)"
   },
-  "fontWeightMedia1": {
-    "name": "--vkui--font_weight_media1",
-    "value": "var(--vkui--font_weight_media1, 700)"
+  "fontWeightMediaLight": {
+    "name": "--vkui--font_weight_media_light",
+    "value": "var(--vkui--font_weight_media_light, 300)"
   },
-  "fontWeightMedia2": {
-    "name": "--vkui--font_weight_media2",
-    "value": "var(--vkui--font_weight_media2, 600)"
+  "fontWeightMediaRegular": {
+    "name": "--vkui--font_weight_media_regular",
+    "value": "var(--vkui--font_weight_media_regular, 400)"
   },
-  "fontWeightMedia3": {
-    "name": "--vkui--font_weight_media3",
-    "value": "var(--vkui--font_weight_media3, 500)"
+  "fontWeightMediaMedium": {
+    "name": "--vkui--font_weight_media_medium",
+    "value": "var(--vkui--font_weight_media_medium, 500)"
   },
-  "fontWeightMedia4": {
-    "name": "--vkui--font_weight_media4",
-    "value": "var(--vkui--font_weight_media4, 400)"
+  "fontWeightMediaSemiBold": {
+    "name": "--vkui--font_weight_media_semi_bold",
+    "value": "var(--vkui--font_weight_media_semi_bold, 600)"
+  },
+  "fontWeightMediaBold": {
+    "name": "--vkui--font_weight_media_bold",
+    "value": "var(--vkui--font_weight_media_bold, 700)"
   },
   "mediaFontMediaDisplay1": {
     "auto": {
@@ -406955,6 +407064,22 @@ exports[`snapshots > pharma theme > should match cssVars snapshot 1`] = `
         "value": "var(--vkui--font_headline--line_height--compact, 20px)"
       }
     }
+  },
+  "fontWeightMedia1": {
+    "name": "--vkui--font_weight_media1",
+    "value": "var(--vkui--font_weight_media1, 700)"
+  },
+  "fontWeightMedia2": {
+    "name": "--vkui--font_weight_media2",
+    "value": "var(--vkui--font_weight_media2, 600)"
+  },
+  "fontWeightMedia3": {
+    "name": "--vkui--font_weight_media3",
+    "value": "var(--vkui--font_weight_media3, 500)"
+  },
+  "fontWeightMedia4": {
+    "name": "--vkui--font_weight_media4",
+    "value": "var(--vkui--font_weight_media4, 400)"
   },
   "mediaFontMediaTitle1Tiny": {
     "auto": {
@@ -410447,10 +410572,11 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
   "themeNameBase": "pharma",
   "prefix": "vkui",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -411202,6 +411328,10 @@ exports[`snapshots > pharma theme > should match pixelify theme snapshot 1`] = `
       "lineHeight": "20px"
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -412854,10 +412984,11 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
   "themeNameBase": "var(--vkui--theme_name_base, pharma)",
   "prefix": "var(--vkui--prefix, vkui)",
   "fontFamilyArticle": "var(--vkui--font_family_article, Inter, Helvetica, Arial, sans-serif)",
-  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
-  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
-  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
-  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
+  "fontWeightMediaLight": "var(--vkui--font_weight_media_light, 300)",
+  "fontWeightMediaRegular": "var(--vkui--font_weight_media_regular, 400)",
+  "fontWeightMediaMedium": "var(--vkui--font_weight_media_medium, 500)",
+  "fontWeightMediaSemiBold": "var(--vkui--font_weight_media_semi_bold, 600)",
+  "fontWeightMediaBold": "var(--vkui--font_weight_media_bold, 700)",
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_display1--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
@@ -413609,6 +413740,10 @@ exports[`snapshots > pharma theme > should match pseudo theme from CssVars 1`] =
       "lineHeight": "var(--vkui--font_headline--line_height--compact, 20px)"
     }
   },
+  "fontWeightMedia1": "var(--vkui--font_weight_media1, 700)",
+  "fontWeightMedia2": "var(--vkui--font_weight_media2, 600)",
+  "fontWeightMedia3": "var(--vkui--font_weight_media3, 500)",
+  "fontWeightMedia4": "var(--vkui--font_weight_media4, 400)",
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "var(--vkui--media_font_media_title1_tiny--font_family--regular, VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif)",
@@ -415261,10 +415396,11 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
   "themeNameBase": "pharma",
   "prefix": "vkui",
   "fontFamilyArticle": "Inter, Helvetica, Arial, sans-serif",
-  "fontWeightMedia1": 700,
-  "fontWeightMedia2": 600,
-  "fontWeightMedia3": 500,
-  "fontWeightMedia4": 400,
+  "fontWeightMediaLight": 300,
+  "fontWeightMediaRegular": 400,
+  "fontWeightMediaMedium": 500,
+  "fontWeightMediaSemiBold": 600,
+  "fontWeightMediaBold": 700,
   "mediaFontMediaDisplay1": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",
@@ -416016,6 +416152,10 @@ exports[`snapshots > pharma theme > should match root theme snapshot 1`] = `
       "lineHeight": 20
     }
   },
+  "fontWeightMedia1": 700,
+  "fontWeightMedia2": 600,
+  "fontWeightMedia3": 500,
+  "fontWeightMedia4": 400,
   "mediaFontMediaTitle1Tiny": {
     "regular": {
       "fontFamily": "VKSansDisplay, MailSans, Inter, Helvetica, Arial, sans-serif",

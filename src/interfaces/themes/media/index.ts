@@ -380,14 +380,59 @@ interface MediaUniqTokens {
 	 */
 	mediaFontMediaTextSecondaryLight: Token<Adaptive<Font>, ThemeMediaDescription>;
 	/**
+	 * @desc Числовой вес текста
+	 * @tags font
+	 * @deprecated Используйте fontWeightMediaBold
+	 */
+	fontWeightMedia1: Token<Property.FontWeight, ThemeMediaDescription>;
+	/**
+	 * @desc Числовой вес текста
+	 * @tags font
+	 * @deprecated Используйте fontWeightMediaSemiBold
+	 */
+	fontWeightMedia2: Token<Property.FontWeight, ThemeMediaDescription>;
+	/**
+	 * @desc Числовой вес текста
+	 * @tags font
+	 * @deprecated Используйте fontWeightMediaMedium
+	 */
+	fontWeightMedia3: Token<Property.FontWeight, ThemeMediaDescription>;
+	/**
+	 * @desc Числовой вес текста
+	 * @tags font
+	 * @deprecated Используйте fontWeightMediaRegular
+	 */
+	fontWeightMedia4: Token<Property.FontWeight, ThemeMediaDescription>;
+	/**
 	 * @desc Семейство шрифтов статьи
 	 * @tags font
 	 */
 	fontFamilyArticle: Property.FontFamily;
-	fontWeightMedia1: Property.FontWeight;
-	fontWeightMedia2: Property.FontWeight;
-	fontWeightMedia3: Property.FontWeight;
-	fontWeightMedia4: Property.FontWeight;
+	/**
+	 * @desc Вес Light
+	 * @tags font
+	 */
+	fontWeightMediaLight: Property.FontWeight;
+	/**
+	 * @desc Вес Regular
+	 * @tags font
+	 */
+	fontWeightMediaRegular: Property.FontWeight;
+	/**
+	 * @desc Вес Medium
+	 * @tags font
+	 */
+	fontWeightMediaMedium: Property.FontWeight;
+	/**
+	 * @desc Вес SemiBold
+	 * @tags font
+	 */
+	fontWeightMediaSemiBold: Property.FontWeight;
+	/**
+	 * @desc Вес Bold
+	 * @tags font
+	 */
+	fontWeightMediaBold: Property.FontWeight;
 	fontH1: Adaptive<Font>;
 	fontH2: Adaptive<Font>;
 	fontH3: Adaptive<Font>;
