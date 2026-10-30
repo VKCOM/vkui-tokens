@@ -11,6 +11,7 @@ import { helpers } from '../common/index.ts';
 const fontFamilyFallbacks = 'apple-system, system-ui, "Helvetica Neue", Arial, sans-serif';
 const fontFamilyAccent = `VKSansDisplay, MailSans, ${fontFamilyFallbacks}`;
 const fontFamilyBase = fontFamilyFallbacks;
+const fontFamilyMono = '"JetBrains Mono", Monaco, Consolas, monospace';
 const fontWeightAccent1 = 500;
 const fontWeightAccent2 = 500;
 const fontWeightAccent3 = 400;
@@ -362,6 +363,7 @@ export const lightThemeBase: ThemeDescription = {
 	fontFamilyFallbacks,
 	fontFamilyAccent,
 	fontFamilyBase,
+	fontFamilyMono,
 	fontWeightAccent1,
 	fontWeightAccent2,
 	fontWeightAccent3,
