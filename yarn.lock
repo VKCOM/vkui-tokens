@@ -1816,18 +1816,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rspack/cli@npm:^2.2.9":
-  version: 2.2.9
-  resolution: "@rspack/cli@npm:2.2.9"
+"@rspack/cli@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@rspack/cli@npm:2.3.0"
   peerDependencies:
-    "@rspack/core": ^2.0.0-0
+    "@rspack/core": ^2.3.0-0
     "@rspack/dev-server": ^2.0.0-0
   peerDependenciesMeta:
     "@rspack/dev-server":
       optional: true
   bin:
     rspack: ./bin/rspack.js
-  checksum: 10c0/85849f9da8156f8fbae528708bc4c37fcef0d1f9582a8b693d405a5b3c8326ec8641f26fefc8cfcc3e888b91879f682b48580582d339e6722a57a47d87a83d31
+  checksum: 10c0/d26ce0765ce68076b5daf6c50a39cb8112576351f61773e736196b484d47cdc75a868a98dd7eea87e5156c7924e194757ea2f0ec22f7f21311171aa19494b243
   languageName: node
   linkType: hard
 
@@ -2617,7 +2617,7 @@ __metadata:
   resolution: "@vkontakte/vkui-tokens@workspace:."
   dependencies:
     "@biomejs/biome": "npm:2.5.15"
-    "@rspack/cli": "npm:^2.2.9"
+    "@rspack/cli": "npm:^2.3.0"
     "@rspack/core": "npm:^2.3.0"
     "@svgr/webpack": "npm:^8.1.0"
     "@swc/cli": "npm:^0.8.2"
