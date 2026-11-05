@@ -1,6 +1,6 @@
 import type { Property } from 'csstype';
 
-import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
+import { alias, staticRef } from '../../../build/helpers/tokenHelpers.ts';
 import type { ThemeMediaDescription } from '../../../interfaces/themes/media/index.ts';
 import { darkTheme, lightTheme } from '../../base/paradigm.ts';
 import { helpers, projectColors, socialColors } from '../../common/index.ts';
@@ -13,10 +13,11 @@ const fontFamilyAccent: Property.FontFamily = `VKSansDisplay, MailSans, ${fontFa
 const fontFamilyArticle: Property.FontFamily = fontFamilyBase;
 const fontFamilyFallbacks: Property.FontFamily = fontFamilyBase;
 
-const fontWeightMedia1 = 700;
-const fontWeightMedia2 = 600;
-const fontWeightMedia3 = 500;
-const fontWeightMedia4 = 400;
+const fontWeightMediaLight = 300;
+const fontWeightMediaRegular = 400;
+const fontWeightMediaMedium = 500;
+const fontWeightMediaSemiBold = 600;
+const fontWeightMediaBold = 700;
 
 export const mediaTheme: ThemeMediaDescription = {
 	...lightTheme,
@@ -28,10 +29,20 @@ export const mediaTheme: ThemeMediaDescription = {
 	fontFamilyBase,
 	fontFamilyFallbacks,
 
-	fontWeightMedia1,
-	fontWeightMedia2,
-	fontWeightMedia3,
-	fontWeightMedia4,
+	fontWeightMediaLight,
+	fontWeightMediaRegular,
+	fontWeightMediaMedium,
+	fontWeightMediaSemiBold,
+	fontWeightMediaBold,
+
+	/** @deprecated Используйте fontWeightMediaBold */
+	fontWeightMedia1: alias('fontWeightMediaBold'),
+	/** @deprecated Используйте fontWeightMediaSemiBold */
+	fontWeightMedia2: alias('fontWeightMediaSemiBold'),
+	/** @deprecated Используйте fontWeightMediaMedium */
+	fontWeightMedia3: alias('fontWeightMediaMedium'),
+	/** @deprecated Используйте fontWeightMediaRegular */
+	fontWeightMedia4: alias('fontWeightMediaRegular'),
 
 	colors: {
 		...lightTheme.colors,
@@ -90,204 +101,310 @@ export const mediaTheme: ThemeMediaDescription = {
 	/**
 	 * ТИПОГРАФИКА
 	 */
-	mediaFontMediaFeatureTitle: {
+	mediaFontMediaDisplay1: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia1,
-			fontSize: 20,
-			lineHeight: 26,
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 32,
+			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia1,
-			fontSize: 28,
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 48,
+			lineHeight: 56,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaDisplay1Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 32,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 48,
+			lineHeight: 56,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle1: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 30,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
-			fontSize: 48,
-			lineHeight: 56,
-			letterSpacing: '-0.005em',
-		},
-	},
-	mediaFontMediaTitle1Tiny: {
-		regular: {
-			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
-			fontSize: 30,
-			lineHeight: 36,
-			letterSpacing: '-0.005em',
-		},
-		compact: {
-			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 40,
 			lineHeight: 48,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaTitle1Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 30,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 40,
+			lineHeight: 48,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle2: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 28,
 			lineHeight: 34,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 36,
 			lineHeight: 44,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
-	mediaFontMediaTitle2Tiny: {
+	mediaFontMediaTitle2Bold: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
-			fontSize: 26,
-			lineHeight: 32,
+			fontWeight: fontWeightMediaBold,
+			fontSize: 28,
+			lineHeight: 34,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
-			fontSize: 32,
-			lineHeight: 40,
+			fontWeight: fontWeightMediaBold,
+			fontSize: 36,
+			lineHeight: 44,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle3: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 26,
 			lineHeight: 32,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 32,
 			lineHeight: 40,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaTitle3Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 26,
+			lineHeight: 32,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 32,
+			lineHeight: 40,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle4: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 24,
 			lineHeight: 30,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 28,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaTitle4Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 24,
+			lineHeight: 30,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 28,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle5: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 22,
 			lineHeight: 28,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 24,
 			lineHeight: 32,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaTitle6: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 20,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 22,
 			lineHeight: 28,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
-	mediaFontMediaSubtitleLight: {
+	mediaFontMediaTitle6Light: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia4,
+			fontWeight: fontWeightMediaLight,
 			fontSize: 20,
 			lineHeight: 26,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaLight,
+			fontSize: 22,
+			lineHeight: 28,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaTitle6Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 20,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 22,
+			lineHeight: 28,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaLead: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 24,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaQuote: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 18,
 			lineHeight: 26,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 			fontSize: 24,
 			lineHeight: 36,
 			letterSpacing: '-0.005em',
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaQuotePerson: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia2,
+			fontWeight: fontWeightMediaSemiBold,
 			fontSize: 18,
 			lineHeight: 24,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 		compact: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia2,
+			fontWeight: fontWeightMediaSemiBold,
 			fontSize: 24,
 			lineHeight: 32,
 			letterSpacing: '-0.005em',
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaParagraph: {
@@ -297,6 +414,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 16,
 			lineHeight: 28,
 			letterSpacing: '0.003em',
+			textWrap: 'pretty',
 		},
 		compact: {
 			fontFamily: fontFamilyArticle,
@@ -304,67 +422,375 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 18,
 			lineHeight: 32,
 			letterSpacing: '0.003em',
+			textWrap: 'pretty',
 		},
 	},
-	mediaFontMediaParagraphSecondary: {
+	mediaFontMediaNumbering: {
 		regular: {
+			fontFamily: fontFamilyArticle,
+			fontWeight: fontWeightMediaSemiBold,
+			fontSize: 16,
+			lineHeight: 28,
+			letterSpacing: '0.003em',
+		},
+		compact: {
+			fontFamily: fontFamilyArticle,
+			fontWeight: fontWeightMediaSemiBold,
+			fontSize: 18,
+			lineHeight: 32,
+			letterSpacing: '0.003em',
+		},
+	},
+	mediaFontMediaText: {
+		regular: {
+			fontFamily: fontFamilyArticle,
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
 			lineHeight: 24,
+			letterSpacing: '0.002em',
+			textWrap: 'pretty',
 		},
 	},
-	mediaFontMediaParagraphNumbering: {
-		regular: {
-			fontFamily: fontFamilyArticle,
-			fontWeight: staticRef(fontWeightMedia1),
-			fontSize: 16,
-			lineHeight: 28,
-			fontStyle: 'italic',
-			letterSpacing: '0.003em',
-		},
-		compact: {
-			fontFamily: fontFamilyArticle,
-			fontWeight: staticRef(fontWeightMedia1),
-			fontSize: 18,
-			lineHeight: 32,
-			fontStyle: 'italic',
-			letterSpacing: '0.003em',
-		},
-	},
-	mediaFontMediaTextSecondaryLight: {
+	mediaFontMediaSubtitle1: {
 		regular: {
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia4,
+			fontWeight: fontWeightMediaRegular,
+			fontSize: 20,
+			lineHeight: 26,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle3Regular: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaRegular,
 			fontSize: 15,
 			lineHeight: 20,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle3Medium: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 15,
+			lineHeight: 20,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle2Medium: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 16,
+			lineHeight: 20,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle3DemiBold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaSemiBold,
+			fontSize: 15,
+			lineHeight: 20,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle3Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 15,
+			lineHeight: 20,
+			textWrap: 'balance',
 		},
 	},
 	mediaFontMediaCaption: {
 		regular: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 14,
 			lineHeight: 22,
+			textWrap: 'pretty',
 		},
 		compact: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 16,
-			lineHeight: 26,
+			lineHeight: 24,
+			textWrap: 'pretty',
 		},
 	},
 	mediaFontMediaCaptionCaps: {
 		regular: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 13,
 			lineHeight: 16,
 			letterSpacing: '0.05em',
+			textTransform: 'uppercase',
 		},
 		compact: {
+			fontFamily: staticRef(fontFamilyBase),
 			fontWeight: staticRef(fontWeightBase3),
 			fontSize: 15,
 			lineHeight: 20,
 			letterSpacing: '0.05em',
+			textTransform: 'uppercase',
 		},
 	},
+	mediaFontMediaLabelLight: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaLight,
+			fontSize: 14,
+			lineHeight: 18,
+			letterSpacing: '0.02em',
+			textTransform: 'uppercase',
+		},
+	},
+	mediaFontMediaLabelRegular: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaRegular,
+			fontSize: 14,
+			lineHeight: 18,
+		},
+	},
+	mediaFontMediaLabelCaps: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaRegular,
+			fontSize: 14,
+			lineHeight: 18,
+			letterSpacing: '0.04em',
+			textTransform: 'uppercase',
+		},
+	},
+	mediaFontMediaLabelBold: {
+		regular: {
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightMediaBold,
+			fontSize: 13,
+			lineHeight: 18,
+			letterSpacing: '0.02em',
+			textTransform: 'uppercase',
+		},
+	},
+	mediaFontMediaLabelStrip: {
+		regular: {
+			fontFamily: fontFamilyBase,
+			fontWeight: fontWeightMediaBold,
+			fontSize: 13,
+			lineHeight: 18,
+			letterSpacing: '0.02em',
+			textTransform: 'uppercase',
+		},
+	},
+	mediaFontMediaCardTitle1Light: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaLight,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaLight,
+			fontSize: 28,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaCardTitle1Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 28,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaCardTitle2Light: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaLight,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaCardTitle2Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 18,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaFitcherTitle: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 20,
+			lineHeight: 26,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 28,
+			lineHeight: 36,
+			letterSpacing: '-0.005em',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaFitcherTitleCaps: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 20,
+			lineHeight: 26,
+			letterSpacing: '0.005em',
+			textTransform: 'uppercase',
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 28,
+			lineHeight: 36,
+			letterSpacing: '0.005em',
+			textTransform: 'uppercase',
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaPTitle1Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 24,
+			lineHeight: 28,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaPTitle2Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 20,
+			lineHeight: 26,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaPTitle3Bold: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaBold,
+			fontSize: 17,
+			lineHeight: 22,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaPTitle1Adaptive: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 20,
+			lineHeight: 26,
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 24,
+			lineHeight: 28,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaPTitle2Adaptive: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 17,
+			lineHeight: 22,
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 20,
+			lineHeight: 26,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaPTitle3Adaptive: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 16,
+			lineHeight: 20,
+			textWrap: 'balance',
+		},
+		compact: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 17,
+			lineHeight: 22,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle4Medium: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaMedium,
+			fontSize: 14,
+			lineHeight: 18,
+			textWrap: 'balance',
+		},
+	},
+	mediaFontMediaSubtitle4Regular: {
+		regular: {
+			fontFamily: staticRef(fontFamilyAccent),
+			fontWeight: fontWeightMediaRegular,
+			fontSize: 14,
+			lineHeight: 18,
+			textWrap: 'balance',
+		},
+	},
+
+	/**
+	 * Устаревшие имена токенов, оставлены как алиасы для обратной совместимости
+	 */
+
+	/** @deprecated Используйте mediaFontMediaTitle1 */
+	mediaFontMediaTitle1Tiny: alias('mediaFontMediaTitle1'),
+	/** @deprecated Используйте mediaFontMediaFitcherTitle */
+	mediaFontMediaFeatureTitle: alias('mediaFontMediaFitcherTitle'),
+	/** @deprecated Используйте mediaFontMediaNumbering */
+	mediaFontMediaParagraphNumbering: alias('mediaFontMediaNumbering'),
+	/** @deprecated Используйте mediaFontMediaText */
+	mediaFontMediaParagraphSecondary: alias('mediaFontMediaText'),
+	/** @deprecated Используйте mediaFontMediaSubtitle1 */
+	mediaFontMediaSubtitleLight: alias('mediaFontMediaSubtitle1'),
+	/** @deprecated Используйте mediaFontMediaSubtitle3Regular */
+	mediaFontMediaTextSecondaryLight: alias('mediaFontMediaSubtitle3Regular'),
 	fontTitle1: {
 		regular: {
 			...staticRef(lightTheme.fontTitle1).regular,
@@ -478,13 +904,13 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 36,
 			lineHeight: 48,
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 		},
 		compact: {
 			fontSize: 28,
 			lineHeight: 36,
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 		},
 	},
 	fontH2: {
@@ -492,13 +918,13 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 28,
 			lineHeight: 34,
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 		},
 		compact: {
 			fontSize: 24,
 			lineHeight: 32,
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 		},
 	},
 	fontH3: {
@@ -506,7 +932,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 20,
 			lineHeight: 26,
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 		},
 	},
 	fontH4: {
@@ -514,7 +940,7 @@ export const mediaTheme: ThemeMediaDescription = {
 			fontSize: 15,
 			lineHeight: 22,
 			fontFamily: staticRef(fontFamilyAccent),
-			fontWeight: fontWeightMedia3,
+			fontWeight: fontWeightMediaMedium,
 		},
 	},
 
