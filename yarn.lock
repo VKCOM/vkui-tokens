@@ -2025,9 +2025,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/cli@npm:^0.8.1":
-  version: 0.8.1
-  resolution: "@swc/cli@npm:0.8.1"
+"@swc/cli@npm:^0.8.2":
+  version: 0.8.2
+  resolution: "@swc/cli@npm:0.8.2"
   dependencies:
     "@swc/counter": "npm:^0.1.3"
     "@xhmikosr/bin-wrapper": "npm:^14.0.0"
@@ -2038,6 +2038,7 @@ __metadata:
     slash: "npm:3.0.0"
     source-map: "npm:^0.7.3"
     tinyglobby: "npm:^0.2.13"
+    write-file-atomic: "npm:^7.0.1"
   peerDependencies:
     "@swc/core": ^1.2.66
     chokidar: ^5.0.0
@@ -2048,7 +2049,7 @@ __metadata:
     spack: bin/spack.js
     swc: bin/swc.js
     swcx: bin/swcx.js
-  checksum: 10c0/7d9e69ed200401673cef050369db429ec86481f71563d3f6464da1d9769a34cf992059671e4465ffb2e05e52c0aae8e286a6736fed5c9ba882635689095190c7
+  checksum: 10c0/6509f11b23387c392770adec0d868e7701ae219d339bbd655be937631e35dad8ba0e1d7c1be6bae35475f3fe2c5db258d0bbefe3a358273ae1ca4651aae2284f
   languageName: node
   linkType: hard
 
@@ -2619,7 +2620,7 @@ __metadata:
     "@rspack/cli": "npm:^2.2.9"
     "@rspack/core": "npm:^2.3.0"
     "@svgr/webpack": "npm:^8.1.0"
-    "@swc/cli": "npm:^0.8.1"
+    "@swc/cli": "npm:^0.8.2"
     "@swc/core": "npm:^1.16.20"
     "@swc/helpers": "npm:^0.5.19"
     "@swc/plugin-transform-imports": "npm:^18.0.1"
@@ -4977,7 +4978,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"signal-exit@npm:^4.1.0":
+"signal-exit@npm:^4.0.1, signal-exit@npm:^4.1.0":
   version: 4.1.0
   resolution: "signal-exit@npm:4.1.0"
   checksum: 10c0/41602dce540e46d599edba9d9860193398d135f7ff72cab629db5171516cfae628d21e7bfccde1bbfdf11c48726bc2a6d1a8fb8701125852fbfda7cf19c6aa83
@@ -5613,6 +5614,15 @@ __metadata:
   bin:
     node-which: ./bin/node-which
   checksum: 10c0/66522872a768b60c2a65a57e8ad184e5372f5b6a9ca6d5f033d4b0dc98aff63995655a7503b9c0a2598936f532120e81dd8cc155e2e92ed662a2b9377cc4374f
+  languageName: node
+  linkType: hard
+
+"write-file-atomic@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "write-file-atomic@npm:7.0.1"
+  dependencies:
+    signal-exit: "npm:^4.0.1"
+  checksum: 10c0/69cebb64945e22928a24ae7e2a55bf54438c92d6f657c1fa5e96b7c7a50f6c022e7454ab5c259079bb35f60296242f3a21234c79320d64a8ad57675b56a2098d
   languageName: node
   linkType: hard
 
