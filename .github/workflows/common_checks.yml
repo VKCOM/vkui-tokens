@@ -1,4 +1,4 @@
-name: 'Common Checks'
+name: "Common Checks"
 
 on:
   push:

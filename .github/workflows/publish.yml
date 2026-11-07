@@ -1,14 +1,14 @@
-name: 'Publish release'
+name: "Publish release"
 run-name: Publish release ${{ inputs.custom_version || inputs.new_version }} (tag ${{ inputs.npm_tag_aka_pre_id || 'none' }})
 
 on:
   workflow_dispatch:
     inputs:
       new_version:
-        description: 'version type:'
+        description: "version type:"
         required: true
         type: choice
-        default: 'minor'
+        default: "minor"
         options:
           - patch
           - minor
@@ -28,7 +28,7 @@ on:
           - alpha
           - none
       publish_release_notes:
-        description: 'publish release notes'
+        description: "publish release notes"
         type: boolean
         default: true
 
