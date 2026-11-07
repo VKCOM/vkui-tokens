@@ -14,8 +14,9 @@ import type {
 
 export interface ThemeWorkspaceOverValues {
 	fontHeadline3: Adaptive<Font>;
+	fontCaption1500: Adaptive<Font>;
+	fontSubhead500: Adaptive<Font>;
 }
-
 export interface LocalWorkspaceAdminColorsDescriptionStruct {
 	colorAvatarsBlue: ColorDescription;
 	colorAvatarsCoral: ColorDescription;
@@ -33,8 +34,34 @@ export interface LocalWorkspaceAdminColorsDescriptionStruct {
 	colorAvatarsViolet: ColorDescription;
 	colorAvatarsYellow: ColorDescription;
 	colorIconNegativeSnackbar: ColorDescription;
-	colorOnboarding: ColorDescription;
-	colorSearchResultsAlpha: ColorDescription;
+	wsadminColorAvatarTextRed: ColorDescription;
+	wsadminColorAvatarTextOrange: ColorDescription;
+	wsadminColorAvatarTextPeach: ColorDescription;
+	wsadminColorAvatarTextYellow: ColorDescription;
+	wsadminColorAvatarTextLime: ColorDescription;
+	wsadminColorAvatarTextGreen: ColorDescription;
+	wsadminColorAvatarTextCyan: ColorDescription;
+	wsadminColorAvatarTextMint: ColorDescription;
+	wsadminColorAvatarTextSeagreen: ColorDescription;
+	wsadminColorAvatarTextSky: ColorDescription;
+	wsadminColorAvatarTextBlue: ColorDescription;
+	wsadminColorAvatarTextIndigo: ColorDescription;
+	wsadminColorAvatarTextViolet: ColorDescription;
+	wsadminColorAvatarTextLavender: ColorDescription;
+	wsadminColorAvatarTextCoral: ColorDescription;
+	wsadminColorAvatarTextPink: ColorDescription;
+	wsadminColorTooltipBackgroundYellow: ColorDescription;
+	wsadminColorTooltipBackgroundGrass: ColorDescription;
+	wsadminColorTooltipBackgroundMint: ColorDescription;
+	wsadminColorTooltipBackgroundPurple: ColorDescription;
+	wsadminColorTooltipBackgroundMagenta: ColorDescription;
+	wsadminColorTooltipBackgroundMidnightsky: ColorDescription;
+	wsadminColorTooltipTextYellow: ColorDescription;
+	wsadminColorTooltipTextGrass: ColorDescription;
+	wsadminColorTooltipTextMint: ColorDescription;
+	wsadminColorTooltipTextPurple: ColorDescription;
+	wsadminColorTooltipTextMagenta: ColorDescription;
+	wsadminColorTooltipTextMidnightsky: ColorDescription;
 }
 
 export type WorkspaceAdminLocalColors = {
