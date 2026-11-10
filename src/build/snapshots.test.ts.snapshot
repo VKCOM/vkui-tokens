@@ -674815,7 +674815,7 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
       },
       "lineHeight": {
         "name": "--vkui--font_title2--line_height--regular",
-        "value": "var(--vkui--font_title2--line_height--regular, 26px)"
+        "value": "var(--vkui--font_title2--line_height--regular, 24px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title2--font_family--regular",
@@ -674853,7 +674853,7 @@ exports[`snapshots > workspaceAdminDark theme > should match cssVars snapshot 1`
       },
       "lineHeight": {
         "name": "--vkui--font_title3--line_height--regular",
-        "value": "var(--vkui--font_title3--line_height--regular, 22px)"
+        "value": "var(--vkui--font_title3--line_height--regular, 24px)"
       },
       "fontFamily": {
         "name": "--vkui--font_title3--font_family--regular",
@@ -680098,7 +680098,7 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
   "fontTitle2": {
     "regular": {
       "fontSize": "20px",
-      "lineHeight": "26px",
+      "lineHeight": "24px",
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 500
     }
@@ -680106,7 +680106,7 @@ exports[`snapshots > workspaceAdminDark theme > should match pixelify theme snap
   "fontTitle3": {
     "regular": {
       "fontSize": "17px",
-      "lineHeight": "22px",
+      "lineHeight": "24px",
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 500
     }
@@ -681797,7 +681797,7 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
   "fontTitle2": {
     "regular": {
       "fontSize": "var(--vkui--font_title2--font_size--regular, 20px)",
-      "lineHeight": "var(--vkui--font_title2--line_height--regular, 26px)",
+      "lineHeight": "var(--vkui--font_title2--line_height--regular, 24px)",
       "fontFamily": "var(--vkui--font_title2--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
       "fontWeight": "var(--vkui--font_title2--font_weight--regular, 500)"
     }
@@ -681805,7 +681805,7 @@ exports[`snapshots > workspaceAdminDark theme > should match pseudo theme from C
   "fontTitle3": {
     "regular": {
       "fontSize": "var(--vkui--font_title3--font_size--regular, 17px)",
-      "lineHeight": "var(--vkui--font_title3--line_height--regular, 22px)",
+      "lineHeight": "var(--vkui--font_title3--line_height--regular, 24px)",
       "fontFamily": "var(--vkui--font_title3--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
       "fontWeight": "var(--vkui--font_title3--font_weight--regular, 500)"
     }
@@ -683496,7 +683496,7 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
   "fontTitle2": {
     "regular": {
       "fontSize": 20,
-      "lineHeight": 26,
+      "lineHeight": 24,
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 500
     }
@@ -683504,7 +683504,7 @@ exports[`snapshots > workspaceAdminDark theme > should match root theme snapshot
   "fontTitle3": {
     "regular": {
       "fontSize": 17,
-      "lineHeight": 22,
+      "lineHeight": 24,
       "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 500
     }

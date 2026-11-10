@@ -5,6 +5,64 @@ import type { ThemeWorkspaceAdminDescription } from '../../../interfaces/themes/
 import type { ThemeWorkspaceAdminDarkDescription } from '../../../interfaces/themes/workspaceAdminDark/index.ts';
 import { darkTheme, lightTheme } from '../../base/paradigm.ts';
 
+const workspaceAdminFonts = {
+	fontTitle2: {
+		regular: {
+			...(lightTheme.fontTitle2 as Adaptive<Font>).regular,
+			lineHeight: 24,
+		},
+	},
+	fontTitle3: {
+		regular: {
+			...(lightTheme.fontTitle3 as Adaptive<Font>).regular,
+			lineHeight: 24,
+		},
+	},
+
+	fontHeadline3: {
+		regular: {
+			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
+			fontSize: 14,
+			lineHeight: 18,
+		},
+		compact: {
+			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
+			fontSize: 13,
+			lineHeight: 16,
+		},
+	},
+
+	fontSubhead500: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 18,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
+		},
+		compact: {
+			fontSize: 13,
+			lineHeight: 18,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
+		},
+	},
+
+	fontCaption1500: {
+		regular: {
+			fontSize: 14,
+			lineHeight: 19,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
+		},
+		compact: {
+			fontSize: 12,
+			lineHeight: 16,
+			fontFamily: staticRef(lightTheme.fontFamilyAccent),
+			fontWeight: 500,
+		},
+	},
+};
+
 export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 	...lightTheme,
 	themeName: 'workspaceAdmin',
@@ -71,62 +129,7 @@ export const workspaceAdminTheme: ThemeWorkspaceAdminDescription = {
 		wsadminColorTooltipTextMagenta: '#9E3678',
 		wsadminColorTooltipTextMidnightsky: '#104D7E',
 	},
-
-	fontTitle2: {
-		regular: {
-			...(lightTheme.fontTitle2 as Adaptive<Font>).regular,
-			lineHeight: 24,
-		},
-	},
-	fontTitle3: {
-		regular: {
-			...(lightTheme.fontTitle3 as Adaptive<Font>).regular,
-			lineHeight: 24,
-		},
-	},
-
-	fontHeadline3: {
-		regular: {
-			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
-			fontSize: 14,
-			lineHeight: 18,
-		},
-		compact: {
-			...(lightTheme.fontHeadline2 as Adaptive<Font>).regular,
-			fontSize: 13,
-			lineHeight: 16,
-		},
-	},
-
-	fontSubhead500: {
-		regular: {
-			fontSize: 14,
-			lineHeight: 18,
-			fontFamily: staticRef(lightTheme.fontFamilyAccent),
-			fontWeight: 500,
-		},
-		compact: {
-			fontSize: 13,
-			lineHeight: 18,
-			fontFamily: staticRef(lightTheme.fontFamilyAccent),
-			fontWeight: 500,
-		},
-	},
-
-	fontCaption1500: {
-		regular: {
-			fontSize: 14,
-			lineHeight: 19,
-			fontFamily: staticRef(lightTheme.fontFamilyAccent),
-			fontWeight: 500,
-		},
-		compact: {
-			fontSize: 12,
-			lineHeight: 16,
-			fontFamily: staticRef(lightTheme.fontFamilyAccent),
-			fontWeight: 500,
-		},
-	},
+	...workspaceAdminFonts,
 };
 
 export const workspaceAdminDarkTheme: ThemeWorkspaceAdminDarkDescription = {
@@ -194,4 +197,5 @@ export const workspaceAdminDarkTheme: ThemeWorkspaceAdminDarkDescription = {
 		wsadminColorTooltipTextMagenta: '#FFFFFF',
 		wsadminColorTooltipTextMidnightsky: '#FFFFFF',
 	},
+	...workspaceAdminFonts,
 };
