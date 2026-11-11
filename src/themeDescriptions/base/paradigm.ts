@@ -1148,11 +1148,14 @@ export const lightTheme: ParadigmThemeDescription = {
 };
 
 export const darkThemeElevation: Elevation = {
-	elevation1: '0 2px 0 0 rgba(0, 0, 0, 0.04)',
-	elevation1InvertY: '0 -2px 0 0 rgba(0, 0, 0, 0.04)',
-	elevation2: '0 4px 48px 0 rgba(0, 0, 0, 0.72)',
-	elevation3: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
-	elevation4: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
+	elevation1: '0 2px 6px 0 rgba(0, 0, 0, 0.48), 0 1px 2px 0 rgba(0, 0, 0, 0.48)',
+	elevation1InvertY: '0 -2px 6px 0 rgba(0, 0, 0, 0.48), 0 -1px 2px 0 rgba(0, 0, 0, 0.48)',
+	elevation2:
+		'0 0 2px 0 rgba(0, 0, 0, 0.32), 0 0 6px 0 rgba(0, 0, 0, 0.32), 0 6px 12px 0 rgba(0, 0, 0, 0.32)',
+	elevation3:
+		'0 0 6px 0 rgba(0, 0, 0, 0.32), 0 6px 12px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.32), 0 10px 36px 0 rgba(0, 0, 0, 0.48)',
+	elevation4:
+		'0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 16px 48px 0 rgba(0, 0, 0, 0.36), 0 24px 68px 0 rgba(0, 0, 0, 0.72)',
 };
 
 export const darkThemeBase: ThemeDescription = {
