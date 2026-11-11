@@ -147,6 +147,62 @@ export interface LocalParadigmColorsDescriptionStruct {
 	 * @tags color, background, alpha
 	 */
 	colorButtonBackgroundAlpha: ColorDescription;
+
+	// Портальный фон и инвариантные цвета фонов
+	/**
+	 * @desc Основной фон для десктопного веба. В мобильной версии используется colorBackground
+	 * @tags color, background
+	 */
+	colorBackgroundPortal: ColorDescription;
+	colorBackgroundMustardInvariably: ColorDescription;
+	colorBackgroundBerryRedInvariably: ColorDescription;
+	colorBackgroundIcyBlueThemed: ColorDescription;
+	colorBackgroundFrostedGreenThemed: ColorDescription;
+	colorBackgroundPeachBrownThemed: ColorDescription;
+	colorBackgroundRoseWineThemed: ColorDescription;
+
+	// Цвета иконок
+	colorIconGoldInvariably: ColorDescription;
+	colorIconDeepBlue: ColorDescription;
+	colorIconOceanBlue: ColorDescription;
+	colorIconDeepBrown: ColorDescription;
+	colorIconAmberBrown: ColorDescription;
+	colorIconDeepGreen: ColorDescription;
+	colorIconFreshGreen: ColorDescription;
+	colorIconWine: ColorDescription;
+
+	// Цвета аватаров
+	colorAvatarRed: ColorDescription;
+	colorAvatarOrange: ColorDescription;
+	colorAvatarPeach: ColorDescription;
+	colorAvatarYellow: ColorDescription;
+	colorAvatarLime: ColorDescription;
+	colorAvatarGreen: ColorDescription;
+	colorAvatarCyan: ColorDescription;
+	colorAvatarMint: ColorDescription;
+	colorAvatarSeagreen: ColorDescription;
+	colorAvatarSky: ColorDescription;
+	colorAvatarBlue: ColorDescription;
+	colorAvatarIndigo: ColorDescription;
+	colorAvatarViolet: ColorDescription;
+	colorAvatarLavender: ColorDescription;
+	colorAvatarCoral: ColorDescription;
+	colorAvatarPink: ColorDescription;
+
+	// Прочее
+	colorAccentLimeTintAlpha: ColorDescription;
+
+	/**
+	 * @desc Полупрозрачный фон вкладки (таба) портала
+	 * @tags color, component, background, alpha
+	 */
+	colorPortalTabBackgroundAlpha: ColorDescription;
+
+	/**
+	 * @desc Цвет текста вкладки (таба) портала
+	 * @tags color, component, text
+	 */
+	colorPortalTabText: ColorDescription;
 }
 
 export type ParadigmLocalColors = {
