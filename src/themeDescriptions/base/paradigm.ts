@@ -19,7 +19,7 @@ const fontWeightBase2 = 700;
 const fontWeightBase3 = 400;
 
 const colorBackgroundTertiaryLight: Property.Color = '#F6F7F8';
-const colorBackgroundTertiaryDark: Property.Color = '#19191A';
+const colorBackgroundTertiaryDark: Property.Color = '#2A2A2B';
 const colorBackgroundContentDark: Property.Color = '#232324';
 
 export const lightColors: ColorsDescription = {
@@ -41,14 +41,22 @@ export const lightColors: ColorsDescription = {
 		colorBackgroundContent: '#FFFFFF',
 		colorBackgroundContentAlpha: 'rgba(255, 255, 255, 0.8)',
 		colorBackgroundContentInverse: colorBackgroundContentDark,
-		colorBackgroundSecondary: '#F0F1F3',
+		colorBackgroundSecondary: {
+			normal: '#F0F1F3',
+			hover: '#E6E8EC',
+			active: '#DDDFE4',
+		},
 		colorBackgroundSecondaryAlpha: {
 			normal: 'rgba(0, 16, 61, 0.06)',
 			hover: 'rgba(0, 16, 61, 0.1)',
 			active: 'rgba(0, 16, 61, 0.14)',
 		},
 		colorBackground: '#FFFFFF',
-		colorBackgroundContrast: '#FFFFFF',
+		colorBackgroundContrast: {
+			normal: '#FFFFFF',
+			hover: '#F5F5F7',
+			active: '#EBECEF',
+		},
 		colorBackgroundContrastSecondaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.2)',
 			hover: 'rgba(255, 255, 255, 0.24)',
@@ -115,7 +123,11 @@ export const lightColors: ColorsDescription = {
 		colorIconMediumAlpha: 'rgba(2, 18, 45, 0.6)',
 		colorIconSecondary: '#697481',
 		colorIconSecondaryAlpha: 'rgba(2, 18, 45, 0.4)',
-		colorIconTertiary: '#939EAC',
+		colorIconTertiary: {
+			normal: '#939EAC',
+			hover: '#C7C9D0',
+			active: '#BEC2CA',
+		},
 		colorIconTertiaryAlpha: 'rgba(2, 18, 45, 0.2)',
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#FFFFFF',
@@ -207,20 +219,28 @@ export const darkColors: ColorsDescription = {
 		colorBackgroundContent: colorBackgroundContentDark,
 		colorBackgroundContentAlpha: 'rgba(35, 35, 36, 0.8)',
 		colorBackgroundContentInverse: '#FFFFFF',
-		colorBackgroundSecondary: '#323234',
+		colorBackgroundSecondary: {
+			normal: '#323234',
+			hover: '#333333',
+			active: '#3B3B3C',
+		},
 		colorBackgroundSecondaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.12)',
 			hover: 'rgba(255, 255, 255, 0.16)',
 			active: 'rgba(255, 255, 255, 0.2)',
 		},
-		colorBackgroundTertiary: '#19191A',
+		colorBackgroundTertiary: colorBackgroundTertiaryDark,
 		colorBackgroundTertiaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.08)',
 			hover: 'rgba(255, 255, 255, 0.12)',
 			active: 'rgba(255, 255, 255, 0.16)',
 		},
 		colorBackground: '#19191A',
-		colorBackgroundContrast: '#FFFFFF',
+		colorBackgroundContrast: {
+			normal: '#FFFFFF',
+			hover: '#EBEDF0',
+			active: '#D7D8DB',
+		},
 		colorBackgroundContrastSecondaryAlpha: {
 			normal: 'rgba(255, 255, 255, 0.2)',
 			hover: 'rgba(255, 255, 255, 0.24)',
@@ -281,7 +301,11 @@ export const darkColors: ColorsDescription = {
 		colorIconMediumAlpha: 'rgba(245, 246, 255, 0.7)',
 		colorIconSecondary: '#C5C6C9',
 		colorIconSecondaryAlpha: 'rgba(245, 246, 255, 0.6)',
-		colorIconTertiary: '#8F9094',
+		colorIconTertiary: {
+			normal: '#8F9094',
+			hover: '#88898F',
+			active: '#8D8E93',
+		},
 		colorIconTertiaryAlpha: 'rgba(245, 246, 255, 0.5)',
 		colorIconContrast: '#FFFFFF',
 		colorIconContrastThemed: '#2C2D2E',
@@ -885,7 +909,11 @@ export const lightTheme: ParadigmThemeDescription = {
 		colorBackgroundWarningTint: '#fff8d8',
 
 		colorBackgroundNegativeTintThemedAlpha: 'rgba(242, 55, 65, 0.08)',
-		colorBackgroundNegativeTintAlpha: 'rgba(242, 55, 65, 0.08)',
+		colorBackgroundNegativeTintAlpha: {
+			normal: 'rgba(242, 55, 65, 0.08)',
+			hover: 'rgba(242, 55, 65, 0.12)',
+			active: 'rgba(242, 55, 65, 0.16)',
+		},
 		colorBackgroundNegativeTintThemed: '#ffeae7',
 
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(0, 172, 91, 0.08)',
@@ -915,6 +943,48 @@ export const lightTheme: ParadigmThemeDescription = {
 			hover: 'rgba(255, 255, 255, 0.96)',
 			active: 'rgba(255, 255, 255, 0.92)',
 		},
+
+		// Портальный фон и инвариантные цвета фонов
+		colorBackgroundPortal: '#F6F7F8',
+		colorBackgroundMustardInvariably: '#FFD65C',
+		colorBackgroundBerryRedInvariably: '#E64646',
+		colorBackgroundIcyBlueThemed: '#C5DCF8',
+		colorBackgroundFrostedGreenThemed: '#B8E5DE',
+		colorBackgroundPeachBrownThemed: '#FFDCC7',
+		colorBackgroundRoseWineThemed: '#FBCECE',
+
+		// Цвета иконок
+		colorIconGoldInvariably: '#BC8801',
+		colorIconDeepBlue: '#1C4479',
+		colorIconOceanBlue: '#1B6EC6',
+		colorIconDeepBrown: '#79431C',
+		colorIconAmberBrown: '#E77E31',
+		colorIconDeepGreen: '#087C6D',
+		colorIconFreshGreen: '#0CAD6A',
+		colorIconWine: '#791C1E',
+
+		// Цвета аватаров
+		colorAvatarRed: '#F55252',
+		colorAvatarOrange: '#F68E42',
+		colorAvatarPeach: '#FFB980',
+		colorAvatarYellow: '#FFD65C',
+		colorAvatarLime: '#C3F07F',
+		colorAvatarGreen: '#43CC4C',
+		colorAvatarCyan: '#22CEEC',
+		colorAvatarMint: '#7BEADB',
+		colorAvatarSeagreen: '#42D7A5',
+		colorAvatarSky: '#9EDBFF',
+		colorAvatarBlue: '#4C91FF',
+		colorAvatarIndigo: '#7772F8',
+		colorAvatarViolet: '#B884FF',
+		colorAvatarLavender: '#D3B2FF',
+		colorAvatarCoral: '#FEA4A4',
+		colorAvatarPink: '#FFBFDC',
+
+		// Прочее
+		colorAccentLimeTintAlpha: 'rgba(184, 252, 117, 0.55)',
+		colorPortalTabBackgroundAlpha: 'rgba(0, 119, 255, 0.1)',
+		colorPortalTabText: '#0070F0',
 	},
 
 	breakpoints: {
@@ -1148,11 +1218,14 @@ export const lightTheme: ParadigmThemeDescription = {
 };
 
 export const darkThemeElevation: Elevation = {
-	elevation1: '0 2px 0 0 rgba(0, 0, 0, 0.04)',
-	elevation1InvertY: '0 -2px 0 0 rgba(0, 0, 0, 0.04)',
-	elevation2: '0 4px 48px 0 rgba(0, 0, 0, 0.72)',
-	elevation3: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
-	elevation4: '0 4px 32px 0 rgba(0, 0, 0, 0.48)',
+	elevation1: '0 2px 6px 0 rgba(0, 0, 0, 0.48), 0 1px 2px 0 rgba(0, 0, 0, 0.48)',
+	elevation1InvertY: '0 -2px 6px 0 rgba(0, 0, 0, 0.48), 0 -1px 2px 0 rgba(0, 0, 0, 0.48)',
+	elevation2:
+		'0 0 2px 0 rgba(0, 0, 0, 0.32), 0 0 6px 0 rgba(0, 0, 0, 0.32), 0 6px 12px 0 rgba(0, 0, 0, 0.32)',
+	elevation3:
+		'0 0 6px 0 rgba(0, 0, 0, 0.32), 0 6px 12px 0 rgba(0, 0, 0, 0.32), 0 6px 20px 0 rgba(0, 0, 0, 0.32), 0 10px 36px 0 rgba(0, 0, 0, 0.48)',
+	elevation4:
+		'0 2px 6px 0 rgba(0, 0, 0, 0.16), 0 16px 48px 0 rgba(0, 0, 0, 0.36), 0 24px 68px 0 rgba(0, 0, 0, 0.72)',
 };
 
 export const darkThemeBase: ThemeDescription = {
@@ -1190,7 +1263,11 @@ export const darkTheme: ParadigmThemeDescription = {
 		colorBackgroundWarningTint: '#392F20',
 
 		colorBackgroundNegativeTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
-		colorBackgroundNegativeTintAlpha: 'rgba(242, 55, 65, 0.2)',
+		colorBackgroundNegativeTintAlpha: {
+			normal: 'rgba(242, 55, 65, 0.2)',
+			hover: 'rgba(242, 55, 65, 0.24)',
+			active: 'rgba(242, 55, 65, 0.28)',
+		},
 		colorBackgroundNegativeTintThemed: '#2b2b2c',
 
 		colorBackgroundPositiveTintThemedAlpha: 'rgba(255, 255, 255, 0.08)',
@@ -1220,6 +1297,48 @@ export const darkTheme: ParadigmThemeDescription = {
 			hover: 'rgba(255, 255, 255, 0.12)',
 			active: 'rgba(255, 255, 255, 0.16)',
 		},
+
+		// Портальный фон и инвариантные цвета фонов
+		colorBackgroundPortal: '#19191A',
+		colorBackgroundMustardInvariably: '#FFD65C',
+		colorBackgroundBerryRedInvariably: '#E64646',
+		colorBackgroundIcyBlueThemed: '#3E3F40',
+		colorBackgroundFrostedGreenThemed: '#3E3F40',
+		colorBackgroundPeachBrownThemed: '#3E3F40',
+		colorBackgroundRoseWineThemed: '#3E3F40',
+
+		// Цвета иконок
+		colorIconGoldInvariably: '#BC8801',
+		colorIconDeepBlue: '#018BF2',
+		colorIconOceanBlue: '#4C91FF',
+		colorIconDeepBrown: '#F28440',
+		colorIconAmberBrown: '#E77E31',
+		colorIconDeepGreen: '#019784',
+		colorIconFreshGreen: '#0CAD6A',
+		colorIconWine: '#DA4C4E',
+
+		// Цвета аватаров
+		colorAvatarRed: '#F55252',
+		colorAvatarOrange: '#F68E42',
+		colorAvatarPeach: '#FFB980',
+		colorAvatarYellow: '#FFD65C',
+		colorAvatarLime: '#C3F07F',
+		colorAvatarGreen: '#43CC4C',
+		colorAvatarCyan: '#22CEEC',
+		colorAvatarMint: '#7BEADB',
+		colorAvatarSeagreen: '#42D7A5',
+		colorAvatarSky: '#9EDBFF',
+		colorAvatarBlue: '#4C91FF',
+		colorAvatarIndigo: '#7772F8',
+		colorAvatarViolet: '#B884FF',
+		colorAvatarLavender: '#D3B2FF',
+		colorAvatarCoral: '#FEA4A4',
+		colorAvatarPink: '#FFBFDC',
+
+		// Прочее
+		colorAccentLimeTintAlpha: 'rgba(129, 255, 5, 0.2)',
+		colorPortalTabBackgroundAlpha: 'rgba(255, 255, 255, 0.12)',
+		colorPortalTabText: '#E7E8EA',
 	},
 };
 
