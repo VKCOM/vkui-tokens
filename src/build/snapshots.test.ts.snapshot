@@ -153207,6 +153207,10 @@ exports[`snapshots > legoWeb theme > should match cssVars snapshot 1`] = `
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif)"
   },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
+  },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
     "value": "var(--vkui--font_weight_accent1, 600)"
@@ -158363,6 +158367,7 @@ exports[`snapshots > legoWeb theme > should match pixelify theme snapshot 1`] = 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
   "fontFamilyBase": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -159971,6 +159976,7 @@ exports[`snapshots > legoWeb theme > should match pseudo theme from CssVars 1`] 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -161579,6 +161585,7 @@ exports[`snapshots > legoWeb theme > should match root theme snapshot 1`] = `
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
   "fontFamilyBase": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -163240,6 +163247,10 @@ exports[`snapshots > legoWebDark theme > should match cssVars snapshot 1`] = `
   "fontFamilyBase": {
     "name": "--vkui--font_family_base",
     "value": "var(--vkui--font_family_base, -apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif)"
+  },
+  "fontFamilyMono": {
+    "name": "--vkui--font_family_mono",
+    "value": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)"
   },
   "fontWeightAccent1": {
     "name": "--vkui--font_weight_accent1",
@@ -168397,6 +168408,7 @@ exports[`snapshots > legoWebDark theme > should match pixelify theme snapshot 1`
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
   "fontFamilyBase": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
@@ -170005,6 +170017,7 @@ exports[`snapshots > legoWebDark theme > should match pseudo theme from CssVars 
   "fontFamilyFallbacks": "var(--vkui--font_family_fallbacks, -apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif)",
   "fontFamilyAccent": "var(--vkui--font_family_accent, -apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif)",
   "fontFamilyBase": "var(--vkui--font_family_base, -apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif)",
+  "fontFamilyMono": "var(--vkui--font_family_mono, \\"JetBrains Mono\\", Monaco, Consolas, monospace)",
   "fontWeightAccent1": "var(--vkui--font_weight_accent1, 600)",
   "fontWeightAccent2": "var(--vkui--font_weight_accent2, 500)",
   "fontWeightAccent3": "var(--vkui--font_weight_accent3, 400)",
@@ -171613,6 +171626,7 @@ exports[`snapshots > legoWebDark theme > should match root theme snapshot 1`] = 
   "fontFamilyFallbacks": "-apple-system, system-ui, \\"Helvetica Neue\\", Roboto, sans-serif",
   "fontFamilyAccent": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
   "fontFamilyBase": "-apple-system, \\"Roboto Flex\\", Roboto, Inter, sans-serif",
+  "fontFamilyMono": "\\"JetBrains Mono\\", Monaco, Consolas, monospace",
   "fontWeightAccent1": 600,
   "fontWeightAccent2": 500,
   "fontWeightAccent3": 400,
