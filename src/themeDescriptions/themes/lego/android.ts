@@ -6,7 +6,12 @@ import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
 import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid/index.ts';
 import type { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark/index.ts';
-import { type BaseFonts, fonts } from '../../../themeDescriptions/base/vk.ts';
+import {
+	type BaseFonts,
+	darkElevation,
+	darkGradient,
+	fonts,
+} from '../../../themeDescriptions/base/vk.ts';
 import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,
@@ -14,8 +19,6 @@ import {
 import figma from './figma.json' with { type: 'json' };
 import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
 
-const fontFamilyAccent =
-	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const medium = 520;
 const semiboldish = 530;
 const semibold = 600;
@@ -43,7 +46,6 @@ export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFont
 			regular: {
 				fontSize: 31.5,
 				lineHeight: 31.5,
-				fontFamily: fontFamilyAccent,
 				fontWeight: 660,
 				fontVariationSettings: {
 					opticalSize: 31.5,
@@ -271,6 +273,7 @@ export const legoAndroidTheme: ThemeLegoAndroidDescription = {
 export const legoAndroidThemeDark: ThemeLegoAndroidDarkDescription = {
 	...vkontakteAndroidThemeDark, // Импорт тёмной базовой темы
 	...legoAndroidTheme, // Импорт светлой версии текущей темы,
+	...darkElevation, // переключаем наследованные тени на тёмную тему
 
 	themeName: 'legoAndroidDark', // название текущей темы
 	themeNameBase: 'legoAndroid', // название светлой (базовой) темы

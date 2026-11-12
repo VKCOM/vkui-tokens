@@ -18,8 +18,6 @@ import { vkontakteIOSTheme, vkontakteIOSThemeDark } from '../../themes/vkontakte
 import figma from './figma.json' with { type: 'json' };
 import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
 
-const fontFamilyAccent =
-	'"VK Sans Display", -apple-system, system-ui, "Helvetica Neue", Roboto, sans-serif';
 const medium = 540;
 const semibold = 600;
 const bold = 700;
@@ -34,7 +32,6 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 			regular: {
 				fontSize: 31.5,
 				lineHeight: 31.5,
-				fontFamily: fontFamilyAccent,
 				fontWeight: 720,
 				letterSpacing: '-0.3px',
 				fontVariationSettings: {
@@ -46,7 +43,6 @@ const legoFonts = lodash.merge<BaseFonts, DeepPartial<BaseFonts & LocalLegoIOSFo
 			regular: {
 				fontSize: 31.5,
 				lineHeight: 31.5,
-				fontFamily: fontFamilyAccent,
 				fontWeight: 720,
 				letterSpacing: '-0.3px',
 				fontVariationSettings: {
