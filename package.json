@@ -30,7 +30,7 @@
   },
   "repository": "https://github.com/VKCOM/vkui-tokens.git",
   "dependencies": {
-    "@swc/helpers": "^0.5.19",
+    "@swc/helpers": "^0.5.24",
     "csstype": "^3.1.1"
   },
   "devDependencies": {
