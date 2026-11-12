@@ -107931,23 +107931,23 @@ exports[`snapshots > legoAndroidDark theme > should match cssVars snapshot 1`] =
   },
   "elevation1": {
     "name": "--vkui--elevation1",
-    "value": "var(--vkui--elevation1, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation1, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation1InvertY": {
     "name": "--vkui--elevation1_invert_y",
-    "value": "var(--vkui--elevation1_invert_y, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation1_invert_y, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation2": {
     "name": "--vkui--elevation2",
-    "value": "var(--vkui--elevation2, 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation2, 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation3": {
     "name": "--vkui--elevation3",
-    "value": "var(--vkui--elevation3, 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08))"
+    "value": "var(--vkui--elevation3, 0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30))"
   },
   "elevation4": {
     "name": "--vkui--elevation4",
-    "value": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))"
+    "value": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))"
   },
   "blurS": {
     "name": "--vkui--blur_s",
@@ -113165,11 +113165,11 @@ exports[`snapshots > legoAndroidDark theme > should match pixelify theme snapsho
 {
   "themeName": "legoAndroidDark",
   "themeNameBase": "legoAndroid",
-  "elevation1": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation1InvertY": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation2": "0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)",
-  "elevation3": "0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)",
-  "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
+  "elevation1": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation1InvertY": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation2": "0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)",
+  "elevation3": "0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)",
+  "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
   "blurL": "32px",
@@ -114795,11 +114795,11 @@ exports[`snapshots > legoAndroidDark theme > should match pseudo theme from CssV
 {
   "themeName": "var(--vkui--theme_name, legoAndroidDark)",
   "themeNameBase": "var(--vkui--theme_name_base, legoAndroid)",
-  "elevation1": "var(--vkui--elevation1, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06))",
-  "elevation1InvertY": "var(--vkui--elevation1_invert_y, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06))",
-  "elevation2": "var(--vkui--elevation2, 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06))",
-  "elevation3": "var(--vkui--elevation3, 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08))",
-  "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
+  "elevation1": "var(--vkui--elevation1, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20))",
+  "elevation1InvertY": "var(--vkui--elevation1_invert_y, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20))",
+  "elevation2": "var(--vkui--elevation2, 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20))",
+  "elevation3": "var(--vkui--elevation3, 0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30))",
+  "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
   "blurL": "var(--vkui--blur_l, 32px)",
@@ -116425,11 +116425,11 @@ exports[`snapshots > legoAndroidDark theme > should match root theme snapshot 1`
 {
   "themeName": "legoAndroidDark",
   "themeNameBase": "legoAndroid",
-  "elevation1": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation1InvertY": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation2": "0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)",
-  "elevation3": "0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)",
-  "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
+  "elevation1": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation1InvertY": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation2": "0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)",
+  "elevation3": "0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)",
+  "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
   "blurL": 32,
@@ -143174,23 +143174,23 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match cssVars snapshot
   },
   "elevation1": {
     "name": "--vkui--elevation1",
-    "value": "var(--vkui--elevation1, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation1, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation1InvertY": {
     "name": "--vkui--elevation1_invert_y",
-    "value": "var(--vkui--elevation1_invert_y, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation1_invert_y, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation2": {
     "name": "--vkui--elevation2",
-    "value": "var(--vkui--elevation2, 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation2, 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation3": {
     "name": "--vkui--elevation3",
-    "value": "var(--vkui--elevation3, 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08))"
+    "value": "var(--vkui--elevation3, 0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30))"
   },
   "elevation4": {
     "name": "--vkui--elevation4",
-    "value": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))"
+    "value": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))"
   },
   "blurS": {
     "name": "--vkui--blur_s",
@@ -148340,11 +148340,11 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pixelify theme s
 {
   "themeName": "legoSimpleAndroidDark",
   "themeNameBase": "legoSimpleAndroid",
-  "elevation1": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation1InvertY": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation2": "0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)",
-  "elevation3": "0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)",
-  "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
+  "elevation1": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation1InvertY": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation2": "0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)",
+  "elevation3": "0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)",
+  "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
   "blurL": "32px",
@@ -149939,11 +149939,11 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match pseudo theme fro
 {
   "themeName": "var(--vkui--theme_name, legoSimpleAndroidDark)",
   "themeNameBase": "var(--vkui--theme_name_base, legoSimpleAndroid)",
-  "elevation1": "var(--vkui--elevation1, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06))",
-  "elevation1InvertY": "var(--vkui--elevation1_invert_y, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06))",
-  "elevation2": "var(--vkui--elevation2, 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06))",
-  "elevation3": "var(--vkui--elevation3, 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08))",
-  "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
+  "elevation1": "var(--vkui--elevation1, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20))",
+  "elevation1InvertY": "var(--vkui--elevation1_invert_y, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20))",
+  "elevation2": "var(--vkui--elevation2, 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20))",
+  "elevation3": "var(--vkui--elevation3, 0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30))",
+  "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
   "blurL": "var(--vkui--blur_l, 32px)",
@@ -151538,11 +151538,11 @@ exports[`snapshots > legoSimpleAndroidDark theme > should match root theme snaps
 {
   "themeName": "legoSimpleAndroidDark",
   "themeNameBase": "legoSimpleAndroid",
-  "elevation1": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation1InvertY": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation2": "0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)",
-  "elevation3": "0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)",
-  "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
+  "elevation1": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation1InvertY": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation2": "0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)",
+  "elevation3": "0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)",
+  "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
   "blurL": 32,
@@ -163187,31 +163187,31 @@ exports[`snapshots > legoWebDark theme > should match cssVars snapshot 1`] = `
   },
   "gradientTint": {
     "name": "--vkui--gradient_tint",
-    "value": "var(--vkui--gradient_tint, rgba(249, 249, 249, 0) 0%, rgba(249, 249, 249, 0.05) 15%, rgba(249, 249, 249, 0.2) 30%, rgba(249, 249, 249, 0.8) 70%, rgba(249, 249, 249, 0.95) 85%, rgba(249, 249, 249, 1) 100%)"
+    "value": "var(--vkui--gradient_tint, rgba(41, 41, 41, 0) 0%, rgba(41, 41, 41, 0.05) 15%, rgba(41, 41, 41, 0.2) 30%, rgba(41, 41, 41, 0.8) 70%, rgba(41, 41, 41, 0.95) 85%, rgba(41, 41, 41, 1) 100%)"
   },
   "gradient": {
     "name": "--vkui--gradient",
-    "value": "var(--vkui--gradient, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0.95) 85%, rgba(255, 255, 255, 1) 100%)"
+    "value": "var(--vkui--gradient, rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.05) 15%, rgba(34, 34, 34, 0.2) 30%, rgba(34, 34, 34, 0.8) 70%, rgba(34, 34, 34, 0.95) 85%, rgba(34, 34, 34, 1) 100%)"
   },
   "elevation1": {
     "name": "--vkui--elevation1",
-    "value": "var(--vkui--elevation1, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation1, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation1InvertY": {
     "name": "--vkui--elevation1_invert_y",
-    "value": "var(--vkui--elevation1_invert_y, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation1_invert_y, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation2": {
     "name": "--vkui--elevation2",
-    "value": "var(--vkui--elevation2, 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06))"
+    "value": "var(--vkui--elevation2, 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20))"
   },
   "elevation3": {
     "name": "--vkui--elevation3",
-    "value": "var(--vkui--elevation3, 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08))"
+    "value": "var(--vkui--elevation3, 0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30))"
   },
   "elevation4": {
     "name": "--vkui--elevation4",
-    "value": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))"
+    "value": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))"
   },
   "blurS": {
     "name": "--vkui--blur_s",
@@ -168383,13 +168383,13 @@ exports[`snapshots > legoWebDark theme > should match pixelify theme snapshot 1`
   "themeNameBase": "legoWeb",
   "gradientBlack": "rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 15%, rgba(0, 0, 0, 0.08) 30%, rgba(0, 0, 0, 0.32) 70%, rgba(0, 0, 0, 0.38) 85%, rgba(0, 0, 0, 0.4) 100%",
   "gradientWhite": "rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0.95) 85%, rgba(255, 255, 255, 1) 100%",
-  "gradientTint": "rgba(249, 249, 249, 0) 0%, rgba(249, 249, 249, 0.05) 15%, rgba(249, 249, 249, 0.2) 30%, rgba(249, 249, 249, 0.8) 70%, rgba(249, 249, 249, 0.95) 85%, rgba(249, 249, 249, 1) 100%",
-  "gradient": "rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0.95) 85%, rgba(255, 255, 255, 1) 100%",
-  "elevation1": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation1InvertY": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation2": "0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)",
-  "elevation3": "0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)",
-  "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
+  "gradientTint": "rgba(41, 41, 41, 0) 0%, rgba(41, 41, 41, 0.05) 15%, rgba(41, 41, 41, 0.2) 30%, rgba(41, 41, 41, 0.8) 70%, rgba(41, 41, 41, 0.95) 85%, rgba(41, 41, 41, 1) 100%",
+  "gradient": "rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.05) 15%, rgba(34, 34, 34, 0.2) 30%, rgba(34, 34, 34, 0.8) 70%, rgba(34, 34, 34, 0.95) 85%, rgba(34, 34, 34, 1) 100%",
+  "elevation1": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation1InvertY": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation2": "0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)",
+  "elevation3": "0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)",
+  "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": "8px",
   "blurM": "16px",
   "blurL": "32px",
@@ -169991,13 +169991,13 @@ exports[`snapshots > legoWebDark theme > should match pseudo theme from CssVars 
   "themeNameBase": "var(--vkui--theme_name_base, legoWeb)",
   "gradientBlack": "var(--vkui--gradient_black, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 15%, rgba(0, 0, 0, 0.08) 30%, rgba(0, 0, 0, 0.32) 70%, rgba(0, 0, 0, 0.38) 85%, rgba(0, 0, 0, 0.4) 100%)",
   "gradientWhite": "var(--vkui--gradient_white, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0.95) 85%, rgba(255, 255, 255, 1) 100%)",
-  "gradientTint": "var(--vkui--gradient_tint, rgba(249, 249, 249, 0) 0%, rgba(249, 249, 249, 0.05) 15%, rgba(249, 249, 249, 0.2) 30%, rgba(249, 249, 249, 0.8) 70%, rgba(249, 249, 249, 0.95) 85%, rgba(249, 249, 249, 1) 100%)",
-  "gradient": "var(--vkui--gradient, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0.95) 85%, rgba(255, 255, 255, 1) 100%)",
-  "elevation1": "var(--vkui--elevation1, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06))",
-  "elevation1InvertY": "var(--vkui--elevation1_invert_y, 0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06))",
-  "elevation2": "var(--vkui--elevation2, 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06))",
-  "elevation3": "var(--vkui--elevation3, 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08))",
-  "elevation4": "var(--vkui--elevation4, 0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16))",
+  "gradientTint": "var(--vkui--gradient_tint, rgba(41, 41, 41, 0) 0%, rgba(41, 41, 41, 0.05) 15%, rgba(41, 41, 41, 0.2) 30%, rgba(41, 41, 41, 0.8) 70%, rgba(41, 41, 41, 0.95) 85%, rgba(41, 41, 41, 1) 100%)",
+  "gradient": "var(--vkui--gradient, rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.05) 15%, rgba(34, 34, 34, 0.2) 30%, rgba(34, 34, 34, 0.8) 70%, rgba(34, 34, 34, 0.95) 85%, rgba(34, 34, 34, 1) 100%)",
+  "elevation1": "var(--vkui--elevation1, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20))",
+  "elevation1InvertY": "var(--vkui--elevation1_invert_y, 0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20))",
+  "elevation2": "var(--vkui--elevation2, 0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20))",
+  "elevation3": "var(--vkui--elevation3, 0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30))",
+  "elevation4": "var(--vkui--elevation4, 0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20))",
   "blurS": "var(--vkui--blur_s, 8px)",
   "blurM": "var(--vkui--blur_m, 16px)",
   "blurL": "var(--vkui--blur_l, 32px)",
@@ -171599,13 +171599,13 @@ exports[`snapshots > legoWebDark theme > should match root theme snapshot 1`] = 
   "themeNameBase": "legoWeb",
   "gradientBlack": "rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.02) 15%, rgba(0, 0, 0, 0.08) 30%, rgba(0, 0, 0, 0.32) 70%, rgba(0, 0, 0, 0.38) 85%, rgba(0, 0, 0, 0.4) 100%",
   "gradientWhite": "rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0.95) 85%, rgba(255, 255, 255, 1) 100%",
-  "gradientTint": "rgba(249, 249, 249, 0) 0%, rgba(249, 249, 249, 0.05) 15%, rgba(249, 249, 249, 0.2) 30%, rgba(249, 249, 249, 0.8) 70%, rgba(249, 249, 249, 0.95) 85%, rgba(249, 249, 249, 1) 100%",
-  "gradient": "rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.8) 70%, rgba(255, 255, 255, 0.95) 85%, rgba(255, 255, 255, 1) 100%",
-  "elevation1": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px 2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation1InvertY": "0px 0px 2px rgba(0, 0, 0, 0.03), 0px -2px 2px rgba(0, 0, 0, 0.06)",
-  "elevation2": "0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 4px rgba(0, 0, 0, 0.06)",
-  "elevation3": "0px 0px 2px rgba(0, 0, 0, 0.08), 0px 4px 16px rgba(0, 0, 0, 0.08)",
-  "elevation4": "0px 0px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.16)",
+  "gradientTint": "rgba(41, 41, 41, 0) 0%, rgba(41, 41, 41, 0.05) 15%, rgba(41, 41, 41, 0.2) 30%, rgba(41, 41, 41, 0.8) 70%, rgba(41, 41, 41, 0.95) 85%, rgba(41, 41, 41, 1) 100%",
+  "gradient": "rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.05) 15%, rgba(34, 34, 34, 0.2) 30%, rgba(34, 34, 34, 0.8) 70%, rgba(34, 34, 34, 0.95) 85%, rgba(34, 34, 34, 1) 100%",
+  "elevation1": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px 2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation1InvertY": "0px 0px 2px 0px rgba(0, 0, 0, 0.10), 0px -2px 2px 0px rgba(0, 0, 0, 0.20)",
+  "elevation2": "0px 4px 8px 0px rgba(0, 0, 0, 0.15), 0px 0px 4px 0px rgba(0, 0, 0, 0.20)",
+  "elevation3": "0px 0px 2px 0px rgba(0, 0, 0, 0.30), 0px 4px 16px 0px rgba(0, 0, 0, 0.30)",
+  "elevation4": "0px 0px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 16px 0px rgba(0, 0, 0, 0.20)",
   "blurS": 8,
   "blurM": 16,
   "blurL": 32,

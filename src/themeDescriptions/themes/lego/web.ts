@@ -6,10 +6,11 @@ import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
 import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeLegoWebDescription } from '../../../interfaces/themes/legoWeb/index.ts';
 import type { ThemeLegoWebDarkDescription } from '../../../interfaces/themes/legoWebDark/index.ts';
-import { type BaseFonts, fonts } from '../../base/vk.ts';
+import { type BaseFonts, darkElevation, fonts } from '../../base/vk.ts';
 import { vkontakteComTheme, vkontakteComThemeDark } from '../vkontakteCom/index.ts';
 import figma from './figma.json' with { type: 'json' };
 import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
+import { vkComDarkGradient } from '../vkCom/index.ts';
 
 const fontFamilyBase = '-apple-system, "Roboto Flex", Roboto, Inter, sans-serif';
 
@@ -307,6 +308,8 @@ export const legoWebTheme: ThemeLegoWebDescription = {
 export const legoWebThemeDark: ThemeLegoWebDarkDescription = {
 	...vkontakteComThemeDark, // Импорт тёмной базовой темы
 	...legoWebTheme, // Импорт светлой версии текущей темы,
+	...vkComDarkGradient, // переключаем наследованные градиенты на тёмную тему
+	...darkElevation, // переключаем наследованные тени на тёмную тему
 
 	themeName: 'legoWebDark', // название текущей темы
 	themeNameBase: 'legoWeb', // название светлой (базовой) темы
