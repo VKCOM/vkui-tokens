@@ -75,6 +75,7 @@ import {
 	lightTheme as paradigmBase,
 } from './base/paradigm.ts';
 import { darkTheme as vkBaseDark, lightTheme as vkBase } from './base/vk.ts';
+import { legoWebTheme, legoWebThemeDark } from './themes/lego/web.ts';
 import { milkshakeIOSTheme, milkshakeIOSThemeDark } from './themes/milkshake/ios.ts';
 import { workSpaceChatsDarkTheme, workSpaceChatsTheme } from './themes/workSpaceChats/index.ts';
 
@@ -114,6 +115,8 @@ export const themes: unknown[] = [
 	legoSimpleAndroidThemeDark,
 	legoIOSTheme,
 	legoIOSThemeDark,
+	legoWebTheme,
+	legoWebThemeDark,
 
 	// ==== Темы, наследуемые от базовой темы Paradigm ====
 	// Темы, наследуемые от Octavius

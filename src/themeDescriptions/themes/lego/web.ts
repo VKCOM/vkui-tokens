@@ -1,0 +1,357 @@
+import type { Radii } from 'interfaces/general/radii/index.ts';
+import lodash from 'lodash';
+
+import type { Adaptive } from '../../../interfaces/general/tools/index.ts';
+import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
+import type { Font } from '../../../interfaces/general/typography/index.ts';
+import type { ThemeLegoWebDescription } from '../../../interfaces/themes/legoWeb/index.ts';
+import type { ThemeLegoWebDarkDescription } from '../../../interfaces/themes/legoWebDark/index.ts';
+import { type BaseFonts, fonts } from '../../base/vk.ts';
+import { vkontakteComTheme, vkontakteComThemeDark } from '../vkontakteCom/index.ts';
+import figma from './figma.json' with { type: 'json' };
+import { overwriteFromFigmaJSON } from './helpers/overwriteFromFigmaJSON.ts';
+
+const fontFamilyBase = '-apple-system, "Roboto Flex", Roboto, Inter, sans-serif';
+
+const medium = 520;
+const semiboldish = 530;
+const semibold = 600;
+const bold = 670;
+
+// Расширение типа новыми переменными в лего
+type LegoFonts =
+	| BaseFonts
+	| {
+			fontLabel1: Adaptive<Font>;
+			fontLabel2: Adaptive<Font>;
+			fontBody: Adaptive<Font>;
+			fontHeadline: Adaptive<Font>;
+			fontTextBold: Adaptive<Font>;
+			fontFootnoteBold: Adaptive<Font>;
+	  };
+
+// Наследование стандартных шрифтов из базовой темы
+export const legoFonts: LegoFonts = lodash.merge<BaseFonts, DeepPartial<LegoFonts>>(
+	lodash.cloneDeep(fonts),
+	// Значения переменных не такие же, как в фигме,
+	// а подобраны эмпирически для визуального совпадения
+	{
+		fontFamilyBase,
+		fontFamilyAccent: fontFamilyBase,
+		fontTitle1: {
+			regular: {
+				fontSize: 31.5,
+				lineHeight: 31.5,
+				fontWeight: 660,
+				fontVariationSettings: {
+					opticalSize: 31.5,
+				},
+			},
+		},
+		fontTitle2: {
+			regular: {
+				fontSize: 24,
+				lineHeight: 26,
+				fontWeight: bold,
+				fontVariationSettings: {
+					opticalSize: 27.2,
+				},
+			},
+		},
+		fontTitle3: {
+			regular: {
+				fontSize: 21.5,
+				lineHeight: 23,
+				fontWeight: bold,
+				fontVariationSettings: {
+					opticalSize: 28,
+				},
+			},
+		},
+		fontLabel1: {
+			regular: {
+				fontSize: 19,
+				lineHeight: 20,
+				fontWeight: bold,
+				fontVariationSettings: {
+					opticalSize: 24,
+				},
+			},
+		},
+		fontLabel2: {
+			regular: {
+				fontSize: 18,
+				lineHeight: 21,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 26,
+				},
+			},
+		},
+		fontHeadline1: {
+			regular: {
+				fontSize: 17,
+				lineHeight: 20,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 24,
+				},
+			},
+		},
+		fontBody: {
+			regular: {
+				fontSize: 16.5,
+				lineHeight: 19.5,
+				fontWeight: medium,
+				fontVariationSettings: {
+					opticalSize: 24,
+				},
+			},
+		},
+		fontText: {
+			regular: {
+				fontSize: 16,
+				lineHeight: 18.5,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 24,
+				},
+			},
+		},
+		fontTextBold: {
+			regular: {
+				fontSize: 16,
+				lineHeight: 18.5,
+				fontWeight: bold,
+				fontVariationSettings: {
+					opticalSize: 24,
+				},
+			},
+		},
+		fontParagraph: {
+			regular: {
+				fontSize: 15,
+				lineHeight: 17.8,
+				fontWeight: semiboldish,
+				fontVariationSettings: {
+					opticalSize: 17,
+				},
+			},
+		},
+		fontFootnote: {
+			regular: {
+				fontSize: 13.5,
+				lineHeight: 15,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 20,
+				},
+			},
+		},
+		fontFootnoteBold: {
+			regular: {
+				fontSize: 13.5,
+				lineHeight: 15,
+				fontWeight: bold,
+				fontVariationSettings: {
+					opticalSize: 20,
+				},
+			},
+		},
+		fontCaption1: {
+			regular: {
+				fontSize: 11.5,
+				lineHeight: 12,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 11,
+				},
+			},
+		},
+		fontCaption2: {
+			regular: {
+				fontSize: 8,
+				lineHeight: 10,
+				fontWeight: semibold,
+				fontVariationSettings: {
+					opticalSize: 11,
+				},
+			},
+		},
+	},
+);
+
+// Один шрифт для всех токенов типографики, удаление Compact-версии
+for (const value of Object.values(legoFonts)) {
+	if (typeof value !== 'object') {
+		continue;
+	}
+
+	const adaptiveFont = value as Adaptive<Font>;
+
+	for (const font of Object.values(adaptiveFont)) {
+		font.fontFamily = fontFamilyBase;
+	}
+
+	delete adaptiveFont.compact;
+}
+
+const legoRadii: Radii = {
+	radius2XS: figma.tokens.radiusRadius2XS.android,
+	radiusXS: figma.tokens.radiusRadiusXS.android,
+	radiusS: figma.tokens.radiusRadiusS.android,
+	radiusM: figma.tokens.radiusRadiusM.android,
+	radiusL: figma.tokens.radiusRadiusL.android,
+	radiusXL: figma.tokens.radiusRadiusXL.android,
+	radius2XL: figma.tokens.radiusRadius2XL.android,
+	radius3XL: figma.tokens.radiusRadius3XL.android,
+};
+
+const legoEasings = {
+	animationEasingLinear: 'cubic-bezier(0, 0, 1, 1)',
+	animationEasingInSmooth: 'cubic-bezier(1, 0, 0.7, 1)',
+	animationEasingOutSmooth: 'cubic-bezier(0.3, 0, 0, 1)',
+	animationEasingInOutSmooth: 'cubic-bezier(0.3, 0, 0.7, 1)',
+	animationEasingOutSharp: 'cubic-bezier(0.2, 0, 0, 1)',
+	animationEasingInOutSharp: 'cubic-bezier(0.7, 0, 0.3, 1)',
+};
+
+export const legoWebTheme: ThemeLegoWebDescription = {
+	...vkontakteComTheme, // импорт светлой базовой темы
+	...legoFonts, // шрифты
+	...legoRadii, // скругления
+	...legoEasings, // кривые анимации
+
+	themeName: 'legoWeb', // название текущей темы
+	themeNameBase: 'legoWeb', // название светлой (базовой) темы
+	themeInheritsFrom: 'vkontakteCom', // название родительской темы
+
+	colors: {
+		// Импорт изначальных токенов
+		...vkontakteComTheme.colors,
+		// Переопределение токенов, которые есть в figma.json
+		...overwriteFromFigmaJSON(vkontakteComTheme.colors, 'appearance', 'light', figma),
+		// Здесь нужно прописать другие цвета с особыми различиями нейминга
+		// А также локальные цвета, используемые только в этой теме
+		// Или цвета, которые не выгружаются из фигмы, но переопределяются в этой теме
+		colorBackgroundInverse: figma.appearance.backgroundInverse.light,
+		colorBackgroundContent: figma.appearance.backgroundBackground.light,
+		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.light,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.light,
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.light,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.light,
+		colorAccentMint: figma.appearance.paletteAccentMint.light,
+		colorFieldBorderAlpha: {
+			normal: figma.appearance.strokeFieldBorderAlpha.light,
+			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.light,
+			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.light,
+		},
+		colorOverlaySecondaryThemed: figma.appearance.otherOverlaySecondaryThemed.light,
+
+		// Замена акцентных цвеов
+		colorBackgroundAccent: figma.appearance.backgroundInverse.light,
+		colorBackgroundAccentTint: figma.appearance.backgroundInverse.light,
+		colorBackgroundAccentThemed: figma.appearance.backgroundInverse.light,
+		colorBackgroundAccentAlternative: figma.appearance.backgroundInverse.light,
+
+		colorIconAccent: figma.appearance.iconPrimary.light,
+		colorIconAccentThemed: figma.appearance.iconPrimary.light,
+
+		colorTextAccent: figma.appearance.textPrimary.light,
+		colorTextAccentThemed: figma.appearance.textPrimary.light,
+
+		colorStrokeAccent: figma.appearance.strokePrimary.light,
+		colorStrokeAccentThemed: figma.appearance.strokePrimary.light,
+
+		colorBackgroundAccentThemedAlpha: figma.appearance.backgroundSecondary.light,
+		colorPanelHeaderIcon: figma.appearance.iconPrimary.light,
+		colorWriteBarIcon: figma.appearance.iconPrimary.light,
+
+		colorButtonIcon: figma.appearance.iconPrimary.light,
+		colorButtonStroke: figma.appearance.strokePrimary.light,
+		colorButtonText: figma.appearance.textPrimary.light,
+	},
+
+	// Изменённые не-цвета
+	blurS: figma.tokens.blurSmall.android,
+	blurM: figma.tokens.blurMedium.android,
+	blurL: figma.tokens.blurLarge.android,
+	blurXL: figma.tokens.blurExtraLarge.android,
+
+	sizeBasePaddingHorizontal: {
+		regular: figma.tokens.sizeBasePaddingHorizontal.android,
+	},
+	sizeCellHeight: {
+		regular: figma.tokens.sizeCellHeight.android,
+	},
+	sizeButtonExtraSmallHeight: {
+		regular: figma.tokens.sizeButtonExtraSmallHeight.android,
+	},
+	sizeButtonSmallHeight: {
+		regular: figma.tokens.sizeButtonSmallHeight.android,
+	},
+	sizeButtonMediumHeight: {
+		regular: figma.tokens.sizeButtonMediumHeight.android,
+	},
+	sizeButtonLargeHeight: {
+		regular: figma.tokens.sizeButtonLargeHeight.android,
+	},
+
+	// Фигма использует целые проценты, а не сотые единицы
+	// Поэтому здесь нужно поделить на 100
+	// Округление пока не стал писать
+	opacityDisable: figma.tokens.opacityDisabled.android / 100,
+	opacityDisableAccessibility: figma.tokens.opacityDisabled.android / 100,
+};
+
+export const legoWebThemeDark: ThemeLegoWebDarkDescription = {
+	...vkontakteComThemeDark, // Импорт тёмной базовой темы
+	...legoWebTheme, // Импорт светлой версии текущей темы,
+
+	themeName: 'legoWebDark', // название текущей темы
+	themeNameBase: 'legoWeb', // название светлой (базовой) темы
+	themeInheritsFrom: 'vkontakteComDark', // название родительской темы
+	colorsScheme: 'dark', // название схемы (светлая — по умолчанию)
+
+	colors: {
+		...vkontakteComThemeDark.colors,
+		// То же самое, что в светлой теме, но ссылаемся на figmaToken.dark вместо light
+		...overwriteFromFigmaJSON(vkontakteComTheme.colors, 'appearance', 'dark', figma),
+		colorBackgroundInverse: figma.appearance.backgroundInverse.dark,
+		colorBackgroundContent: figma.appearance.backgroundBackground.dark,
+		colorTextTertiaryAlpha: figma.appearance.textTertiaryAlpha.dark,
+		colorTextContrastSecondaryAlpha: figma.appearance.textContrastSecondaryAlpha.dark,
+		colorIconContrastSecondaryAlpha: figma.appearance.iconContrastSecondaryAlpha.dark,
+		colorStrokeContrastSecondaryAlpha: figma.appearance.strokeContrastSecondaryAlpha.dark,
+		colorAccentMint: figma.appearance.paletteAccentMint.dark,
+		colorFieldBorderAlpha: {
+			normal: figma.appearance.strokeFieldBorderAlpha.dark,
+			hover: figma.appearance.statesHoverStrokeFieldBorderAlpha.dark,
+			active: figma.appearance.statesActiveStrokeFieldBorderAlpha.dark,
+		},
+		colorOverlaySecondaryThemed: figma.appearance.otherOverlaySecondaryThemed.dark,
+
+		// Замена акцентных цвеов
+		colorBackgroundAccent: figma.appearance.backgroundInverse.dark,
+		colorBackgroundAccentTint: figma.appearance.backgroundInverse.dark,
+		colorBackgroundAccentThemed: figma.appearance.backgroundInverse.dark,
+		colorBackgroundAccentAlternative: figma.appearance.backgroundInverse.dark,
+
+		colorIconAccent: figma.appearance.iconPrimary.dark,
+		colorIconAccentThemed: figma.appearance.iconPrimary.dark,
+
+		colorTextAccent: figma.appearance.textPrimary.dark,
+		colorTextAccentThemed: figma.appearance.textPrimary.dark,
+
+		colorStrokeAccent: figma.appearance.strokePrimary.dark,
+		colorStrokeAccentThemed: figma.appearance.strokePrimary.dark,
+
+		colorBackgroundAccentThemedAlpha: figma.appearance.backgroundSecondary.dark,
+		colorPanelHeaderIcon: figma.appearance.iconPrimary.dark,
+		colorWriteBarIcon: figma.appearance.iconPrimary.dark,
+
+		colorButtonIcon: figma.appearance.iconPrimary.dark,
+		colorButtonStroke: figma.appearance.strokePrimary.dark,
+		colorButtonText: figma.appearance.textPrimary.dark,
+	},
+};

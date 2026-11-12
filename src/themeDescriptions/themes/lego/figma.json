@@ -113,8 +113,8 @@
       "dark": "#4b2727"
     },
     "backgroundFieldBackground": {
-      "light": "#ddff00",
-      "dark": "#ddff00"
+      "light": "#f2f2f2",
+      "dark": "#1e1e1c"
     },
     "textAccent": {
       "light": "#2086f9",
