@@ -2216,12 +2216,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/helpers@npm:^0.5.0, @swc/helpers@npm:^0.5.19, @swc/helpers@npm:^0.5.23":
+"@swc/helpers@npm:^0.5.0, @swc/helpers@npm:^0.5.23":
   version: 0.5.23
   resolution: "@swc/helpers@npm:0.5.23"
   dependencies:
     tslib: "npm:^2.8.0"
   checksum: 10c0/02da7b4df465693933ecd4851cc193ec729c309939c8a84eccae5ec0010aafc3894e713b8ef8d13a6ba401759f0e900c88e2dcfef5872c27bb91e70f73275cce
+  languageName: node
+  linkType: hard
+
+"@swc/helpers@npm:^0.5.24":
+  version: 0.5.24
+  resolution: "@swc/helpers@npm:0.5.24"
+  checksum: 10c0/f982741dae2aa3bf0aad07d547d57bfca31beb2dae34c0008317c08ddf4e0e61fc6778d78b5e0f675e8be9a66520254aedadba75aede0953d720208b9b25e76c
   languageName: node
   linkType: hard
 
@@ -2642,7 +2649,7 @@ __metadata:
     "@svgr/webpack": "npm:^8.1.0"
     "@swc/cli": "npm:^0.8.2"
     "@swc/core": "npm:^1.16.21"
-    "@swc/helpers": "npm:^0.5.19"
+    "@swc/helpers": "npm:^0.5.24"
     "@swc/plugin-transform-imports": "npm:^18.0.2"
     "@types/color": "npm:^4.2.1"
     "@types/common-tags": "npm:^1.8.4"
