@@ -1,10 +1,6 @@
-import type { Property } from 'csstype';
-
+import { staticRef } from '../../../build/helpers/tokenHelpers.ts';
 import type { ThemeWorkSpaceChatsDescription } from '../../../interfaces/themes/workSpaceChats/index.ts';
 import { darkTheme as paradigmBaseDark, lightTheme as paradigmBase } from '../../base/paradigm.ts';
-
-const fontFamilyAccent: Property.FontFamily = 'VK Sans Display';
-const fontFamilyBase: Property.FontFamily = 'Arial';
 
 export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 	...paradigmBase,
@@ -17,7 +13,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 			fontSize: 17,
 			lineHeight: 24,
 			fontWeight: 400,
-			fontFamily: fontFamilyBase,
+			fontFamily: staticRef(paradigmBase.fontFamilyBase),
 		},
 	},
 	fontCaption1500: {
@@ -25,7 +21,7 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 			fontSize: 14,
 			lineHeight: 19,
 			fontWeight: 500,
-			fontFamily: fontFamilyAccent,
+			fontFamily: staticRef(paradigmBase.fontFamilyAccent),
 		},
 	},
 

@@ -699116,7 +699116,7 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
       },
       "fontFamily": {
         "name": "--vkui--font_title3400--font_family--regular",
-        "value": "var(--vkui--font_title3400--font_family--regular, Arial)"
+        "value": "var(--vkui--font_title3400--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
       }
     }
   },
@@ -699154,7 +699154,7 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
       },
       "fontFamily": {
         "name": "--vkui--font_caption1500--font_family--regular",
-        "value": "var(--vkui--font_caption1500--font_family--regular, VK Sans Display)"
+        "value": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
       }
     }
   },
@@ -703138,7 +703138,7 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
       "fontSize": "17px",
       "lineHeight": "24px",
       "fontWeight": 400,
-      "fontFamily": "Arial"
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontCaption1500": {
@@ -703146,7 +703146,7 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
       "fontSize": "14px",
       "lineHeight": "19px",
       "fontWeight": 500,
-      "fontFamily": "VK Sans Display"
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontHeadline": {
@@ -705017,7 +705017,7 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
       "fontSize": "var(--vkui--font_title3400--font_size--regular, 17px)",
       "lineHeight": "var(--vkui--font_title3400--line_height--regular, 24px)",
       "fontWeight": "var(--vkui--font_title3400--font_weight--regular, 400)",
-      "fontFamily": "var(--vkui--font_title3400--font_family--regular, Arial)"
+      "fontFamily": "var(--vkui--font_title3400--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
     }
   },
   "fontCaption1500": {
@@ -705025,7 +705025,7 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
       "fontSize": "var(--vkui--font_caption1500--font_size--regular, 14px)",
       "lineHeight": "var(--vkui--font_caption1500--line_height--regular, 19px)",
       "fontWeight": "var(--vkui--font_caption1500--font_weight--regular, 500)",
-      "fontFamily": "var(--vkui--font_caption1500--font_family--regular, VK Sans Display)"
+      "fontFamily": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
     }
   },
   "fontHeadline": {
@@ -706896,7 +706896,7 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
       "fontSize": 17,
       "lineHeight": 24,
       "fontWeight": 400,
-      "fontFamily": "Arial"
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontCaption1500": {
@@ -706904,7 +706904,7 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
       "fontSize": 14,
       "lineHeight": 19,
       "fontWeight": 500,
-      "fontFamily": "VK Sans Display"
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontHeadline": {
@@ -710737,7 +710737,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
       },
       "fontFamily": {
         "name": "--vkui--font_title3400--font_family--regular",
-        "value": "var(--vkui--font_title3400--font_family--regular, Arial)"
+        "value": "var(--vkui--font_title3400--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
       }
     }
   },
@@ -710775,7 +710775,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
       },
       "fontFamily": {
         "name": "--vkui--font_caption1500--font_family--regular",
-        "value": "var(--vkui--font_caption1500--font_family--regular, VK Sans Display)"
+        "value": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
       }
     }
   },
@@ -714759,7 +714759,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
       "fontSize": "17px",
       "lineHeight": "24px",
       "fontWeight": 400,
-      "fontFamily": "Arial"
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontCaption1500": {
@@ -714767,7 +714767,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
       "fontSize": "14px",
       "lineHeight": "19px",
       "fontWeight": 500,
-      "fontFamily": "VK Sans Display"
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontHeadline": {
@@ -716638,7 +716638,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
       "fontSize": "var(--vkui--font_title3400--font_size--regular, 17px)",
       "lineHeight": "var(--vkui--font_title3400--line_height--regular, 24px)",
       "fontWeight": "var(--vkui--font_title3400--font_weight--regular, 400)",
-      "fontFamily": "var(--vkui--font_title3400--font_family--regular, Arial)"
+      "fontFamily": "var(--vkui--font_title3400--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
     }
   },
   "fontCaption1500": {
@@ -716646,7 +716646,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
       "fontSize": "var(--vkui--font_caption1500--font_size--regular, 14px)",
       "lineHeight": "var(--vkui--font_caption1500--line_height--regular, 19px)",
       "fontWeight": "var(--vkui--font_caption1500--font_weight--regular, 500)",
-      "fontFamily": "var(--vkui--font_caption1500--font_family--regular, VK Sans Display)"
+      "fontFamily": "var(--vkui--font_caption1500--font_family--regular, VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
     }
   },
   "fontHeadline": {
@@ -718517,7 +718517,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
       "fontSize": 17,
       "lineHeight": 24,
       "fontWeight": 400,
-      "fontFamily": "Arial"
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontCaption1500": {
@@ -718525,7 +718525,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
       "fontSize": 14,
       "lineHeight": 19,
       "fontWeight": 500,
-      "fontFamily": "VK Sans Display"
+      "fontFamily": "VKSansDisplay, MailSans, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif"
     }
   },
   "fontHeadline": {
