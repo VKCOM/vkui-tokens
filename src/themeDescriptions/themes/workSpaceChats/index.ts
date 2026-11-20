@@ -34,14 +34,18 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 
 		// Text
 		colorTextMediumAlpha: 'rgba(17, 35, 55, 0.56)',
+		colorTextLink: '#0467D8',
 
 		// Icon
 		colorIconNotificationNeutralAlpha: 'rgba(67, 83, 103, 0.28)',
 		colorIconNotificationRed: '#FF5C5C',
 		colorIconNotificationAccent: '#0077FF',
 
+		// Background
+		colorBackground: '#F1F2F4',
+
 		// Bubble
-		colorBubbleBackgroundAccent: '#DEECFF',
+		colorBubbleBackgroundAccent: '#D2E5FB',
 		colorBubbleBackgroundNeutral: '#FFFFFF',
 		colorBubbleHighlightAccentAlpha: 'rgba(0, 119, 255, 0.16)',
 		colorBubbleHighlightAccentThemedAlpha: 'rgba(0, 119, 255, 0.24)',
@@ -63,6 +67,11 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextPink: '#A22A60',
 
 		// Other
+		colorOtherTertiaryAlpha: {
+			normal: 'rgba(0, 16, 61, 0.03)',
+			hover: 'rgba(0, 16, 61, 0.06)',
+			active: 'rgba(0, 16, 61, 0.08)',
+		},
 		colorOtherPullBackgroundAccentAlpha: 'rgba(0, 119, 255, 0.06)',
 		colorOtherPullProgressAccentAlpha: 'rgba(0, 119, 255, 0.08)',
 		colorOtherBackgroundBlurAlpha: 'rgba(255, 255, 255, 0.01)',
@@ -70,10 +79,29 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 		colorOtherHighlight: '#FFF1AD',
 		colorOtherThreadsBackgroundAlpha: 'rgba(17, 35, 55, 0.03)',
 		colorOtherViewerOverlay: 'rgba(25, 25, 26, 0.9)',
+		colorMediaOverlay: 'rgba(0, 0, 0, 0.4)',
 
 		// States
 		colorBubbleTransparentHover: 'rgba(0, 16, 61, 0.08)',
 		colorBubbleTransparentActive: 'rgba(0, 16, 61, 0.12)',
+
+		// Avatar (same values in both modes)
+		colorAvatarTextRed: '#FFE4E0',
+		colorAvatarTextOrange: '#FFF0E5',
+		colorAvatarTextPeach: '#C25B21',
+		colorAvatarTextYellow: '#C76722',
+		colorAvatarTextLime: '#2A9231',
+		colorAvatarTextGreen: '#ECFEDF',
+		colorAvatarTextCyan: '#F0FDFF',
+		colorAvatarTextMint: '#189686',
+		colorAvatarTextSeagreen: '#EBFFF8',
+		colorAvatarTextSky: '#0088D6',
+		colorAvatarTextBlue: '#E0ECFF',
+		colorAvatarTextIndigo: '#E6E5FF',
+		colorAvatarTextViolet: '#F2EAFE',
+		colorAvatarTextLavender: '#874DD6',
+		colorAvatarTextCoral: '#CD3D50',
+		colorAvatarTextPink: '#C2345C',
 	},
 };
 
@@ -89,14 +117,18 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 
 		// Text
 		colorTextMediumAlpha: 'rgba(255, 255, 255, 0.64)',
+		colorTextLink: '#5CA8FF',
 
 		// Icon
 		colorIconNotificationNeutralAlpha: 'rgba(250, 252, 255, 0.28)',
 		colorIconNotificationRed: '#FF5C5C',
 		colorIconNotificationAccent: '#5A9EFF',
 
+		// Background
+		colorBackground: '#19191A',
+
 		// Bubble
-		colorBubbleBackgroundAccent: '#12335A',
+		colorBubbleBackgroundAccent: '#1C3450',
 		colorBubbleBackgroundNeutral: '#303030',
 		colorBubbleHighlightAccentAlpha: 'rgba(0, 119, 255, 0.32)',
 		colorBubbleHighlightAccentThemedAlpha: 'rgba(255, 255, 255, 0.12)',
@@ -118,12 +150,17 @@ export const workSpaceChatsDarkTheme: ThemeWorkSpaceChatsDescription = {
 		colorBubbleTextPink: '#FFBFDC',
 
 		// Other
+		colorOtherTertiaryAlpha: {
+			normal: 'rgba(255, 255, 255, 0.04)',
+			hover: 'rgba(255, 255, 255, 0.08)',
+			active: 'rgba(255, 255, 255, 0.12)',
+		},
 		colorOtherPullBackgroundAccentAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorOtherPullProgressAccentAlpha: 'rgba(0, 119, 255, 0.24)',
 		colorOtherBackgroundBlurAlpha: 'rgba(255, 255, 255, 0.01)',
 		colorOtherBackgroundMediaAlpha: 'rgba(255, 255, 255, 0.08)',
 		colorOtherHighlight: '#6C4E00',
-		colorOtherThreadsBackgroundAlpha: 'rgba(255, 255, 255, 0.01)',
+		colorOtherThreadsBackgroundAlpha: 'rgba(255, 255, 255, 0.02)',
 		colorOtherViewerOverlay: 'rgba(25, 25, 26, 0.9)',
 
 		// States

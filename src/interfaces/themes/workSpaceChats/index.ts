@@ -184,6 +184,12 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 
 	// Other
 	/**
+	 * @desc Третичный полупрозрачный фон чатов
+	 * @tags color, other, background, alpha
+	 */
+	colorOtherTertiaryAlpha: ColorDescription;
+
+	/**
 	 * @desc Фон pull-to-refresh с акцентом
 	 * @tags color, other, alpha
 	 */
@@ -225,6 +231,12 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	 */
 	colorOtherViewerOverlay: ColorDescription;
 
+	/**
+	 * @desc Затемнение поверх медиа
+	 * @tags color, other, overlay, alpha
+	 */
+	colorMediaOverlay: ColorDescription;
+
 	// States
 	/**
 	 * @desc Прозрачный фон пузыря — Hover
@@ -237,6 +249,103 @@ export interface LocalWorkSpaceChatsColorsDescriptionStruct {
 	 * @tags color, bubble, alpha
 	 */
 	colorBubbleTransparentActive: ColorDescription;
+
+	// Avatar
+	/**
+	 * @desc Цвет текста аватара — красный
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextRed: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — оранжевый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextOrange: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — персиковый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextPeach: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — жёлтый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextYellow: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — лаймовый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextLime: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — зелёный
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextGreen: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — циановый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextCyan: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — мятный
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextMint: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — цвет морской волны
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextSeagreen: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — небесный
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextSky: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — синий
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextBlue: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — индиго
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextIndigo: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — фиолетовый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextViolet: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — лавандовый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextLavender: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — коралловый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextCoral: ColorDescription;
+
+	/**
+	 * @desc Цвет текста аватара — розовый
+	 * @tags color, avatar, text
+	 */
+	colorAvatarTextPink: ColorDescription;
 }
 
 type WorkSpaceChatsLocalColors = {

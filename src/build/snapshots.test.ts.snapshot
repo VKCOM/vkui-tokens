@@ -699339,15 +699339,15 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
   "colorBackground": {
     "normal": {
       "name": "--vkui--color_background",
-      "value": "var(--vkui--color_background, #FFFFFF)"
+      "value": "var(--vkui--color_background, #F1F2F4)"
     },
     "hover": {
       "name": "--vkui--color_background--hover",
-      "value": "var(--vkui--color_background--hover, #F5F5F7)"
+      "value": "var(--vkui--color_background--hover, #E7E9ED)"
     },
     "active": {
       "name": "--vkui--color_background--active",
-      "value": "var(--vkui--color_background--active, #EBECEF)"
+      "value": "var(--vkui--color_background--active, #DEE0E5)"
     }
   },
   "colorBackgroundContrast": {
@@ -699619,15 +699619,15 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
   "colorTextLink": {
     "normal": {
       "name": "--vkui--color_text_link",
-      "value": "var(--vkui--color_text_link, #0070f0)"
+      "value": "var(--vkui--color_text_link, #0467D8)"
     },
     "hover": {
       "name": "--vkui--color_text_link--hover",
-      "value": "var(--vkui--color_text_link--hover, #006CE9)"
+      "value": "var(--vkui--color_text_link--hover, #0464D2)"
     },
     "active": {
       "name": "--vkui--color_text_link--active",
-      "value": "var(--vkui--color_text_link--active, #0068E2)"
+      "value": "var(--vkui--color_text_link--active, #0460CC)"
     }
   },
   "colorTextLinkTint": {
@@ -701761,15 +701761,15 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
   "colorBubbleBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_bubble_background_accent",
-      "value": "var(--vkui--color_bubble_background_accent, #DEECFF)"
+      "value": "var(--vkui--color_bubble_background_accent, #D2E5FB)"
     },
     "hover": {
       "name": "--vkui--color_bubble_background_accent--hover",
-      "value": "var(--vkui--color_bubble_background_accent--hover, #D5E3F7)"
+      "value": "var(--vkui--color_bubble_background_accent--hover, #CADCF3)"
     },
     "active": {
       "name": "--vkui--color_bubble_background_accent--active",
-      "value": "var(--vkui--color_bubble_background_accent--active, #CCDAEF)"
+      "value": "var(--vkui--color_bubble_background_accent--active, #C1D4EC)"
     }
   },
   "colorBubbleBackgroundNeutral": {
@@ -702038,6 +702038,20 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
       "value": "var(--vkui--color_bubble_text_pink--active, #95285D)"
     }
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": {
+      "name": "--vkui--color_other_tertiary_alpha",
+      "value": "var(--vkui--color_other_tertiary_alpha, rgba(0, 16, 61, 0.03))"
+    },
+    "hover": {
+      "name": "--vkui--color_other_tertiary_alpha--hover",
+      "value": "var(--vkui--color_other_tertiary_alpha--hover, rgba(0, 16, 61, 0.06))"
+    },
+    "active": {
+      "name": "--vkui--color_other_tertiary_alpha--active",
+      "value": "var(--vkui--color_other_tertiary_alpha--active, rgba(0, 16, 61, 0.08))"
+    }
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": {
       "name": "--vkui--color_other_pull_background_accent_alpha",
@@ -702136,6 +702150,20 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
       "value": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
     }
   },
+  "colorMediaOverlay": {
+    "normal": {
+      "name": "--vkui--color_media_overlay",
+      "value": "var(--vkui--color_media_overlay, rgba(0, 0, 0, 0.4))"
+    },
+    "hover": {
+      "name": "--vkui--color_media_overlay--hover",
+      "value": "var(--vkui--color_media_overlay--hover, rgba(0, 0, 0, 0.44))"
+    },
+    "active": {
+      "name": "--vkui--color_media_overlay--active",
+      "value": "var(--vkui--color_media_overlay--active, rgba(0, 0, 0, 0.48))"
+    }
+  },
   "colorBubbleTransparentHover": {
     "normal": {
       "name": "--vkui--color_bubble_transparent_hover",
@@ -702162,6 +702190,230 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
     "active": {
       "name": "--vkui--color_bubble_transparent_active--active",
       "value": "var(--vkui--color_bubble_transparent_active--active, rgba(0, 16, 61, 0.2))"
+    }
+  },
+  "colorAvatarTextRed": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_red",
+      "value": "var(--vkui--color_avatar_text_red, #FFE4E0)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_red--hover",
+      "value": "var(--vkui--color_avatar_text_red--hover, #F5DCD9)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_red--active",
+      "value": "var(--vkui--color_avatar_text_red--active, #EBD3D3)"
+    }
+  },
+  "colorAvatarTextOrange": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_orange",
+      "value": "var(--vkui--color_avatar_text_orange, #FFF0E5)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_orange--hover",
+      "value": "var(--vkui--color_avatar_text_orange--hover, #F5E7DE)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_orange--active",
+      "value": "var(--vkui--color_avatar_text_orange--active, #EBDED8)"
+    }
+  },
+  "colorAvatarTextPeach": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_peach",
+      "value": "var(--vkui--color_avatar_text_peach, #C25B21)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_peach--hover",
+      "value": "var(--vkui--color_avatar_text_peach--hover, #BA5822)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_peach--active",
+      "value": "var(--vkui--color_avatar_text_peach--active, #B25523)"
+    }
+  },
+  "colorAvatarTextYellow": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_yellow",
+      "value": "var(--vkui--color_avatar_text_yellow, #C76722)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_yellow--hover",
+      "value": "var(--vkui--color_avatar_text_yellow--hover, #BF6423)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_yellow--active",
+      "value": "var(--vkui--color_avatar_text_yellow--active, #B76024)"
+    }
+  },
+  "colorAvatarTextLime": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_lime",
+      "value": "var(--vkui--color_avatar_text_lime, #2A9231)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_lime--hover",
+      "value": "var(--vkui--color_avatar_text_lime--hover, #288D31)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_lime--active",
+      "value": "var(--vkui--color_avatar_text_lime--active, #278832)"
+    }
+  },
+  "colorAvatarTextGreen": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_green",
+      "value": "var(--vkui--color_avatar_text_green, #ECFEDF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_green--hover",
+      "value": "var(--vkui--color_avatar_text_green--hover, #E3F4D9)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_green--active",
+      "value": "var(--vkui--color_avatar_text_green--active, #D9EBD2)"
+    }
+  },
+  "colorAvatarTextCyan": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_cyan",
+      "value": "var(--vkui--color_avatar_text_cyan, #F0FDFF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_cyan--hover",
+      "value": "var(--vkui--color_avatar_text_cyan--hover, #E6F4F7)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_cyan--active",
+      "value": "var(--vkui--color_avatar_text_cyan--active, #DDEAEF)"
+    }
+  },
+  "colorAvatarTextMint": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_mint",
+      "value": "var(--vkui--color_avatar_text_mint, #189686)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_mint--hover",
+      "value": "var(--vkui--color_avatar_text_mint--hover, #179183)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_mint--active",
+      "value": "var(--vkui--color_avatar_text_mint--active, #168B80)"
+    }
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_seagreen",
+      "value": "var(--vkui--color_avatar_text_seagreen, #EBFFF8)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_seagreen--hover",
+      "value": "var(--vkui--color_avatar_text_seagreen--hover, #E2F5F1)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_seagreen--active",
+      "value": "var(--vkui--color_avatar_text_seagreen--active, #D8ECE9)"
+    }
+  },
+  "colorAvatarTextSky": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_sky",
+      "value": "var(--vkui--color_avatar_text_sky, #0088D6)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_sky--hover",
+      "value": "var(--vkui--color_avatar_text_sky--hover, #0083D0)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_sky--active",
+      "value": "var(--vkui--color_avatar_text_sky--active, #007ECA)"
+    }
+  },
+  "colorAvatarTextBlue": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_blue",
+      "value": "var(--vkui--color_avatar_text_blue, #E0ECFF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_blue--hover",
+      "value": "var(--vkui--color_avatar_text_blue--hover, #D7E3F7)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_blue--active",
+      "value": "var(--vkui--color_avatar_text_blue--active, #CEDAEF)"
+    }
+  },
+  "colorAvatarTextIndigo": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_indigo",
+      "value": "var(--vkui--color_avatar_text_indigo, #E6E5FF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_indigo--hover",
+      "value": "var(--vkui--color_avatar_text_indigo--hover, #DDDCF7)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_indigo--active",
+      "value": "var(--vkui--color_avatar_text_indigo--active, #D4D4EF)"
+    }
+  },
+  "colorAvatarTextViolet": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_violet",
+      "value": "var(--vkui--color_avatar_text_violet, #F2EAFE)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_violet--hover",
+      "value": "var(--vkui--color_avatar_text_violet--hover, #E8E1F6)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_violet--active",
+      "value": "var(--vkui--color_avatar_text_violet--active, #DFD9EF)"
+    }
+  },
+  "colorAvatarTextLavender": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_lavender",
+      "value": "var(--vkui--color_avatar_text_lavender, #874DD6)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_lavender--hover",
+      "value": "var(--vkui--color_avatar_text_lavender--hover, #824BD0)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_lavender--active",
+      "value": "var(--vkui--color_avatar_text_lavender--active, #7C48CA)"
+    }
+  },
+  "colorAvatarTextCoral": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_coral",
+      "value": "var(--vkui--color_avatar_text_coral, #CD3D50)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_coral--hover",
+      "value": "var(--vkui--color_avatar_text_coral--hover, #C53B4F)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_coral--active",
+      "value": "var(--vkui--color_avatar_text_coral--active, #BD394E)"
+    }
+  },
+  "colorAvatarTextPink": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_pink",
+      "value": "var(--vkui--color_avatar_text_pink, #C2345C)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_pink--hover",
+      "value": "var(--vkui--color_avatar_text_pink--hover, #BA335B)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_pink--active",
+      "value": "var(--vkui--color_avatar_text_pink--active, #B2315A)"
     }
   },
   "widthTouch": {
@@ -702956,9 +703208,9 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "active": "rgba(0, 16, 61, 0.14)"
   },
   "colorBackground": {
-    "normal": "#FFFFFF",
-    "hover": "#F5F5F7",
-    "active": "#EBECEF"
+    "normal": "#F1F2F4",
+    "hover": "#E7E9ED",
+    "active": "#DEE0E5"
   },
   "colorBackgroundContrast": {
     "normal": "#FFFFFF",
@@ -703056,9 +703308,9 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "active": "#DF3441"
   },
   "colorTextLink": {
-    "normal": "#0070f0",
-    "hover": "#006CE9",
-    "active": "#0068E2"
+    "normal": "#0467D8",
+    "hover": "#0464D2",
+    "active": "#0460CC"
   },
   "colorTextLinkTint": {
     "normal": "#71AAEB",
@@ -703821,9 +704073,9 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "active": "#006FEF"
   },
   "colorBubbleBackgroundAccent": {
-    "normal": "#DEECFF",
-    "hover": "#D5E3F7",
-    "active": "#CCDAEF"
+    "normal": "#D2E5FB",
+    "hover": "#CADCF3",
+    "active": "#C1D4EC"
   },
   "colorBubbleBackgroundNeutral": {
     "normal": "#FFFFFF",
@@ -703920,6 +704172,11 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "hover": "#9C295F",
     "active": "#95285D"
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": "rgba(0, 16, 61, 0.03)",
+    "hover": "rgba(0, 16, 61, 0.06)",
+    "active": "rgba(0, 16, 61, 0.08)"
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": "rgba(0, 119, 255, 0.06)",
     "hover": "rgba(0, 119, 255, 0.1)",
@@ -703955,6 +704212,11 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "hover": "rgba(25, 25, 26, 0.9400000000000001)",
     "active": "rgba(25, 25, 26, 0.98)"
   },
+  "colorMediaOverlay": {
+    "normal": "rgba(0, 0, 0, 0.4)",
+    "hover": "rgba(0, 0, 0, 0.44)",
+    "active": "rgba(0, 0, 0, 0.48)"
+  },
   "colorBubbleTransparentHover": {
     "normal": "rgba(0, 16, 61, 0.08)",
     "hover": "rgba(0, 16, 61, 0.12)",
@@ -703964,6 +704226,86 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
     "normal": "rgba(0, 16, 61, 0.12)",
     "hover": "rgba(0, 16, 61, 0.16)",
     "active": "rgba(0, 16, 61, 0.2)"
+  },
+  "colorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#F5DCD9",
+    "active": "#EBD3D3"
+  },
+  "colorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#F5E7DE",
+    "active": "#EBDED8"
+  },
+  "colorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#BA5822",
+    "active": "#B25523"
+  },
+  "colorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#BF6423",
+    "active": "#B76024"
+  },
+  "colorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#288D31",
+    "active": "#278832"
+  },
+  "colorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#E3F4D9",
+    "active": "#D9EBD2"
+  },
+  "colorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#E6F4F7",
+    "active": "#DDEAEF"
+  },
+  "colorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#179183",
+    "active": "#168B80"
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#E2F5F1",
+    "active": "#D8ECE9"
+  },
+  "colorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0083D0",
+    "active": "#007ECA"
+  },
+  "colorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#D7E3F7",
+    "active": "#CEDAEF"
+  },
+  "colorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#DDDCF7",
+    "active": "#D4D4EF"
+  },
+  "colorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#E8E1F6",
+    "active": "#DFD9EF"
+  },
+  "colorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#824BD0",
+    "active": "#7C48CA"
+  },
+  "colorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#C53B4F",
+    "active": "#BD394E"
+  },
+  "colorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#BA335B",
+    "active": "#B2315A"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",
@@ -704745,9 +705087,9 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_background_secondary_alpha--active, rgba(0, 16, 61, 0.14))"
   },
   "colorBackground": {
-    "normal": "var(--vkui--color_background, #FFFFFF)",
-    "hover": "var(--vkui--color_background--hover, #F5F5F7)",
-    "active": "var(--vkui--color_background--active, #EBECEF)"
+    "normal": "var(--vkui--color_background, #F1F2F4)",
+    "hover": "var(--vkui--color_background--hover, #E7E9ED)",
+    "active": "var(--vkui--color_background--active, #DEE0E5)"
   },
   "colorBackgroundContrast": {
     "normal": "var(--vkui--color_background_contrast, #FFFFFF)",
@@ -704845,9 +705187,9 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_text_negative--active, #DF3441)"
   },
   "colorTextLink": {
-    "normal": "var(--vkui--color_text_link, #0070f0)",
-    "hover": "var(--vkui--color_text_link--hover, #006CE9)",
-    "active": "var(--vkui--color_text_link--active, #0068E2)"
+    "normal": "var(--vkui--color_text_link, #0467D8)",
+    "hover": "var(--vkui--color_text_link--hover, #0464D2)",
+    "active": "var(--vkui--color_text_link--active, #0460CC)"
   },
   "colorTextLinkTint": {
     "normal": "var(--vkui--color_text_link_tint, #71AAEB)",
@@ -705610,9 +705952,9 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "active": "var(--vkui--color_icon_notification_accent--active, #006FEF)"
   },
   "colorBubbleBackgroundAccent": {
-    "normal": "var(--vkui--color_bubble_background_accent, #DEECFF)",
-    "hover": "var(--vkui--color_bubble_background_accent--hover, #D5E3F7)",
-    "active": "var(--vkui--color_bubble_background_accent--active, #CCDAEF)"
+    "normal": "var(--vkui--color_bubble_background_accent, #D2E5FB)",
+    "hover": "var(--vkui--color_bubble_background_accent--hover, #CADCF3)",
+    "active": "var(--vkui--color_bubble_background_accent--active, #C1D4EC)"
   },
   "colorBubbleBackgroundNeutral": {
     "normal": "var(--vkui--color_bubble_background_neutral, #FFFFFF)",
@@ -705709,6 +706051,11 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "hover": "var(--vkui--color_bubble_text_pink--hover, #9C295F)",
     "active": "var(--vkui--color_bubble_text_pink--active, #95285D)"
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": "var(--vkui--color_other_tertiary_alpha, rgba(0, 16, 61, 0.03))",
+    "hover": "var(--vkui--color_other_tertiary_alpha--hover, rgba(0, 16, 61, 0.06))",
+    "active": "var(--vkui--color_other_tertiary_alpha--active, rgba(0, 16, 61, 0.08))"
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": "var(--vkui--color_other_pull_background_accent_alpha, rgba(0, 119, 255, 0.06))",
     "hover": "var(--vkui--color_other_pull_background_accent_alpha--hover, rgba(0, 119, 255, 0.1))",
@@ -705744,6 +706091,11 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "hover": "var(--vkui--color_other_viewer_overlay--hover, rgba(25, 25, 26, 0.9400000000000001))",
     "active": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
   },
+  "colorMediaOverlay": {
+    "normal": "var(--vkui--color_media_overlay, rgba(0, 0, 0, 0.4))",
+    "hover": "var(--vkui--color_media_overlay--hover, rgba(0, 0, 0, 0.44))",
+    "active": "var(--vkui--color_media_overlay--active, rgba(0, 0, 0, 0.48))"
+  },
   "colorBubbleTransparentHover": {
     "normal": "var(--vkui--color_bubble_transparent_hover, rgba(0, 16, 61, 0.08))",
     "hover": "var(--vkui--color_bubble_transparent_hover--hover, rgba(0, 16, 61, 0.12))",
@@ -705753,6 +706105,86 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
     "normal": "var(--vkui--color_bubble_transparent_active, rgba(0, 16, 61, 0.12))",
     "hover": "var(--vkui--color_bubble_transparent_active--hover, rgba(0, 16, 61, 0.16))",
     "active": "var(--vkui--color_bubble_transparent_active--active, rgba(0, 16, 61, 0.2))"
+  },
+  "colorAvatarTextRed": {
+    "normal": "var(--vkui--color_avatar_text_red, #FFE4E0)",
+    "hover": "var(--vkui--color_avatar_text_red--hover, #F5DCD9)",
+    "active": "var(--vkui--color_avatar_text_red--active, #EBD3D3)"
+  },
+  "colorAvatarTextOrange": {
+    "normal": "var(--vkui--color_avatar_text_orange, #FFF0E5)",
+    "hover": "var(--vkui--color_avatar_text_orange--hover, #F5E7DE)",
+    "active": "var(--vkui--color_avatar_text_orange--active, #EBDED8)"
+  },
+  "colorAvatarTextPeach": {
+    "normal": "var(--vkui--color_avatar_text_peach, #C25B21)",
+    "hover": "var(--vkui--color_avatar_text_peach--hover, #BA5822)",
+    "active": "var(--vkui--color_avatar_text_peach--active, #B25523)"
+  },
+  "colorAvatarTextYellow": {
+    "normal": "var(--vkui--color_avatar_text_yellow, #C76722)",
+    "hover": "var(--vkui--color_avatar_text_yellow--hover, #BF6423)",
+    "active": "var(--vkui--color_avatar_text_yellow--active, #B76024)"
+  },
+  "colorAvatarTextLime": {
+    "normal": "var(--vkui--color_avatar_text_lime, #2A9231)",
+    "hover": "var(--vkui--color_avatar_text_lime--hover, #288D31)",
+    "active": "var(--vkui--color_avatar_text_lime--active, #278832)"
+  },
+  "colorAvatarTextGreen": {
+    "normal": "var(--vkui--color_avatar_text_green, #ECFEDF)",
+    "hover": "var(--vkui--color_avatar_text_green--hover, #E3F4D9)",
+    "active": "var(--vkui--color_avatar_text_green--active, #D9EBD2)"
+  },
+  "colorAvatarTextCyan": {
+    "normal": "var(--vkui--color_avatar_text_cyan, #F0FDFF)",
+    "hover": "var(--vkui--color_avatar_text_cyan--hover, #E6F4F7)",
+    "active": "var(--vkui--color_avatar_text_cyan--active, #DDEAEF)"
+  },
+  "colorAvatarTextMint": {
+    "normal": "var(--vkui--color_avatar_text_mint, #189686)",
+    "hover": "var(--vkui--color_avatar_text_mint--hover, #179183)",
+    "active": "var(--vkui--color_avatar_text_mint--active, #168B80)"
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": "var(--vkui--color_avatar_text_seagreen, #EBFFF8)",
+    "hover": "var(--vkui--color_avatar_text_seagreen--hover, #E2F5F1)",
+    "active": "var(--vkui--color_avatar_text_seagreen--active, #D8ECE9)"
+  },
+  "colorAvatarTextSky": {
+    "normal": "var(--vkui--color_avatar_text_sky, #0088D6)",
+    "hover": "var(--vkui--color_avatar_text_sky--hover, #0083D0)",
+    "active": "var(--vkui--color_avatar_text_sky--active, #007ECA)"
+  },
+  "colorAvatarTextBlue": {
+    "normal": "var(--vkui--color_avatar_text_blue, #E0ECFF)",
+    "hover": "var(--vkui--color_avatar_text_blue--hover, #D7E3F7)",
+    "active": "var(--vkui--color_avatar_text_blue--active, #CEDAEF)"
+  },
+  "colorAvatarTextIndigo": {
+    "normal": "var(--vkui--color_avatar_text_indigo, #E6E5FF)",
+    "hover": "var(--vkui--color_avatar_text_indigo--hover, #DDDCF7)",
+    "active": "var(--vkui--color_avatar_text_indigo--active, #D4D4EF)"
+  },
+  "colorAvatarTextViolet": {
+    "normal": "var(--vkui--color_avatar_text_violet, #F2EAFE)",
+    "hover": "var(--vkui--color_avatar_text_violet--hover, #E8E1F6)",
+    "active": "var(--vkui--color_avatar_text_violet--active, #DFD9EF)"
+  },
+  "colorAvatarTextLavender": {
+    "normal": "var(--vkui--color_avatar_text_lavender, #874DD6)",
+    "hover": "var(--vkui--color_avatar_text_lavender--hover, #824BD0)",
+    "active": "var(--vkui--color_avatar_text_lavender--active, #7C48CA)"
+  },
+  "colorAvatarTextCoral": {
+    "normal": "var(--vkui--color_avatar_text_coral, #CD3D50)",
+    "hover": "var(--vkui--color_avatar_text_coral--hover, #C53B4F)",
+    "active": "var(--vkui--color_avatar_text_coral--active, #BD394E)"
+  },
+  "colorAvatarTextPink": {
+    "normal": "var(--vkui--color_avatar_text_pink, #C2345C)",
+    "hover": "var(--vkui--color_avatar_text_pink--hover, #BA335B)",
+    "active": "var(--vkui--color_avatar_text_pink--active, #B2315A)"
   },
   "widthTouch": "var(--vkui--width_touch, \\"(max-width: 767px)\\")",
   "widthToTouch": "var(--vkui--width_to_touch, \\"(max-width: 767px)\\")",
@@ -706534,9 +706966,9 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "active": "rgba(0, 16, 61, 0.14)"
   },
   "colorBackground": {
-    "normal": "#FFFFFF",
-    "hover": "#F5F5F7",
-    "active": "#EBECEF"
+    "normal": "#F1F2F4",
+    "hover": "#E7E9ED",
+    "active": "#DEE0E5"
   },
   "colorBackgroundContrast": {
     "normal": "#FFFFFF",
@@ -706634,9 +707066,9 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "active": "#DF3441"
   },
   "colorTextLink": {
-    "normal": "#0070f0",
-    "hover": "#006CE9",
-    "active": "#0068E2"
+    "normal": "#0467D8",
+    "hover": "#0464D2",
+    "active": "#0460CC"
   },
   "colorTextLinkTint": {
     "normal": "#71AAEB",
@@ -707399,9 +707831,9 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "active": "#006FEF"
   },
   "colorBubbleBackgroundAccent": {
-    "normal": "#DEECFF",
-    "hover": "#D5E3F7",
-    "active": "#CCDAEF"
+    "normal": "#D2E5FB",
+    "hover": "#CADCF3",
+    "active": "#C1D4EC"
   },
   "colorBubbleBackgroundNeutral": {
     "normal": "#FFFFFF",
@@ -707498,6 +707930,11 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "hover": "#9C295F",
     "active": "#95285D"
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": "rgba(0, 16, 61, 0.03)",
+    "hover": "rgba(0, 16, 61, 0.06)",
+    "active": "rgba(0, 16, 61, 0.08)"
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": "rgba(0, 119, 255, 0.06)",
     "hover": "rgba(0, 119, 255, 0.1)",
@@ -707533,6 +707970,11 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "hover": "rgba(25, 25, 26, 0.9400000000000001)",
     "active": "rgba(25, 25, 26, 0.98)"
   },
+  "colorMediaOverlay": {
+    "normal": "rgba(0, 0, 0, 0.4)",
+    "hover": "rgba(0, 0, 0, 0.44)",
+    "active": "rgba(0, 0, 0, 0.48)"
+  },
   "colorBubbleTransparentHover": {
     "normal": "rgba(0, 16, 61, 0.08)",
     "hover": "rgba(0, 16, 61, 0.12)",
@@ -707542,6 +707984,86 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
     "normal": "rgba(0, 16, 61, 0.12)",
     "hover": "rgba(0, 16, 61, 0.16)",
     "active": "rgba(0, 16, 61, 0.2)"
+  },
+  "colorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#F5DCD9",
+    "active": "#EBD3D3"
+  },
+  "colorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#F5E7DE",
+    "active": "#EBDED8"
+  },
+  "colorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#BA5822",
+    "active": "#B25523"
+  },
+  "colorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#BF6423",
+    "active": "#B76024"
+  },
+  "colorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#288D31",
+    "active": "#278832"
+  },
+  "colorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#E3F4D9",
+    "active": "#D9EBD2"
+  },
+  "colorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#E6F4F7",
+    "active": "#DDEAEF"
+  },
+  "colorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#179183",
+    "active": "#168B80"
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#E2F5F1",
+    "active": "#D8ECE9"
+  },
+  "colorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0083D0",
+    "active": "#007ECA"
+  },
+  "colorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#D7E3F7",
+    "active": "#CEDAEF"
+  },
+  "colorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#DDDCF7",
+    "active": "#D4D4EF"
+  },
+  "colorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#E8E1F6",
+    "active": "#DFD9EF"
+  },
+  "colorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#824BD0",
+    "active": "#7C48CA"
+  },
+  "colorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#C53B4F",
+    "active": "#BD394E"
+  },
+  "colorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#BA335B",
+    "active": "#B2315A"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",
@@ -710718,15 +711240,15 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
   "colorTextLink": {
     "normal": {
       "name": "--vkui--color_text_link",
-      "value": "var(--vkui--color_text_link, #1A85FF)"
+      "value": "var(--vkui--color_text_link, #5CA8FF)"
     },
     "hover": {
       "name": "--vkui--color_text_link--hover",
-      "value": "var(--vkui--color_text_link--hover, #238AFF)"
+      "value": "var(--vkui--color_text_link--hover, #63ABFF)"
     },
     "active": {
       "name": "--vkui--color_text_link--active",
-      "value": "var(--vkui--color_text_link--active, #2C8FFF)"
+      "value": "var(--vkui--color_text_link--active, #69AFFF)"
     }
   },
   "colorTextLinkTint": {
@@ -712860,15 +713382,15 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
   "colorBubbleBackgroundAccent": {
     "normal": {
       "name": "--vkui--color_bubble_background_accent",
-      "value": "var(--vkui--color_bubble_background_accent, #12335A)"
+      "value": "var(--vkui--color_bubble_background_accent, #1C3450)"
     },
     "hover": {
       "name": "--vkui--color_bubble_background_accent--hover",
-      "value": "var(--vkui--color_bubble_background_accent--hover, #1B3B61)"
+      "value": "var(--vkui--color_bubble_background_accent--hover, #253C57)"
     },
     "active": {
       "name": "--vkui--color_bubble_background_accent--active",
-      "value": "var(--vkui--color_bubble_background_accent--active, #254367)"
+      "value": "var(--vkui--color_bubble_background_accent--active, #2E445E)"
     }
   },
   "colorBubbleBackgroundNeutral": {
@@ -713137,6 +713659,20 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
       "value": "var(--vkui--color_bubble_text_pink--active, #FFC4DF)"
     }
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": {
+      "name": "--vkui--color_other_tertiary_alpha",
+      "value": "var(--vkui--color_other_tertiary_alpha, rgba(255, 255, 255, 0.04))"
+    },
+    "hover": {
+      "name": "--vkui--color_other_tertiary_alpha--hover",
+      "value": "var(--vkui--color_other_tertiary_alpha--hover, rgba(255, 255, 255, 0.08))"
+    },
+    "active": {
+      "name": "--vkui--color_other_tertiary_alpha--active",
+      "value": "var(--vkui--color_other_tertiary_alpha--active, rgba(255, 255, 255, 0.12))"
+    }
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": {
       "name": "--vkui--color_other_pull_background_accent_alpha",
@@ -713210,15 +713746,15 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
   "colorOtherThreadsBackgroundAlpha": {
     "normal": {
       "name": "--vkui--color_other_threads_background_alpha",
-      "value": "var(--vkui--color_other_threads_background_alpha, rgba(255, 255, 255, 0.01))"
+      "value": "var(--vkui--color_other_threads_background_alpha, rgba(255, 255, 255, 0.02))"
     },
     "hover": {
       "name": "--vkui--color_other_threads_background_alpha--hover",
-      "value": "var(--vkui--color_other_threads_background_alpha--hover, rgba(255, 255, 255, 0.05))"
+      "value": "var(--vkui--color_other_threads_background_alpha--hover, rgba(255, 255, 255, 0.06))"
     },
     "active": {
       "name": "--vkui--color_other_threads_background_alpha--active",
-      "value": "var(--vkui--color_other_threads_background_alpha--active, rgba(255, 255, 255, 0.09))"
+      "value": "var(--vkui--color_other_threads_background_alpha--active, rgba(255, 255, 255, 0.1))"
     }
   },
   "colorOtherViewerOverlay": {
@@ -713233,6 +713769,20 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
     "active": {
       "name": "--vkui--color_other_viewer_overlay--active",
       "value": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
+    }
+  },
+  "colorMediaOverlay": {
+    "normal": {
+      "name": "--vkui--color_media_overlay",
+      "value": "var(--vkui--color_media_overlay, rgba(0, 0, 0, 0.4))"
+    },
+    "hover": {
+      "name": "--vkui--color_media_overlay--hover",
+      "value": "var(--vkui--color_media_overlay--hover, rgba(0, 0, 0, 0.44))"
+    },
+    "active": {
+      "name": "--vkui--color_media_overlay--active",
+      "value": "var(--vkui--color_media_overlay--active, rgba(0, 0, 0, 0.48))"
     }
   },
   "colorBubbleTransparentHover": {
@@ -713261,6 +713811,230 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
     "active": {
       "name": "--vkui--color_bubble_transparent_active--active",
       "value": "var(--vkui--color_bubble_transparent_active--active, rgba(255, 255, 255, 0.2))"
+    }
+  },
+  "colorAvatarTextRed": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_red",
+      "value": "var(--vkui--color_avatar_text_red, #FFE4E0)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_red--hover",
+      "value": "var(--vkui--color_avatar_text_red--hover, #FFE5E1)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_red--active",
+      "value": "var(--vkui--color_avatar_text_red--active, #FFE6E2)"
+    }
+  },
+  "colorAvatarTextOrange": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_orange",
+      "value": "var(--vkui--color_avatar_text_orange, #FFF0E5)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_orange--hover",
+      "value": "var(--vkui--color_avatar_text_orange--hover, #FFF1E6)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_orange--active",
+      "value": "var(--vkui--color_avatar_text_orange--active, #FFF1E7)"
+    }
+  },
+  "colorAvatarTextPeach": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_peach",
+      "value": "var(--vkui--color_avatar_text_peach, #C25B21)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_peach--hover",
+      "value": "var(--vkui--color_avatar_text_peach--hover, #C4622A)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_peach--active",
+      "value": "var(--vkui--color_avatar_text_peach--active, #C76833)"
+    }
+  },
+  "colorAvatarTextYellow": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_yellow",
+      "value": "var(--vkui--color_avatar_text_yellow, #C76722)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_yellow--hover",
+      "value": "var(--vkui--color_avatar_text_yellow--hover, #C96D2B)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_yellow--active",
+      "value": "var(--vkui--color_avatar_text_yellow--active, #CB7334)"
+    }
+  },
+  "colorAvatarTextLime": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_lime",
+      "value": "var(--vkui--color_avatar_text_lime, #2A9231)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_lime--hover",
+      "value": "var(--vkui--color_avatar_text_lime--hover, #339639)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_lime--active",
+      "value": "var(--vkui--color_avatar_text_lime--active, #3B9B41)"
+    }
+  },
+  "colorAvatarTextGreen": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_green",
+      "value": "var(--vkui--color_avatar_text_green, #ECFEDF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_green--hover",
+      "value": "var(--vkui--color_avatar_text_green--hover, #EDFEE0)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_green--active",
+      "value": "var(--vkui--color_avatar_text_green--active, #EEFEE2)"
+    }
+  },
+  "colorAvatarTextCyan": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_cyan",
+      "value": "var(--vkui--color_avatar_text_cyan, #F0FDFF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_cyan--hover",
+      "value": "var(--vkui--color_avatar_text_cyan--hover, #F1FDFF)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_cyan--active",
+      "value": "var(--vkui--color_avatar_text_cyan--active, #F1FDFF)"
+    }
+  },
+  "colorAvatarTextMint": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_mint",
+      "value": "var(--vkui--color_avatar_text_mint, #189686)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_mint--hover",
+      "value": "var(--vkui--color_avatar_text_mint--hover, #219A8B)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_mint--active",
+      "value": "var(--vkui--color_avatar_text_mint--active, #2A9E90)"
+    }
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_seagreen",
+      "value": "var(--vkui--color_avatar_text_seagreen, #EBFFF8)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_seagreen--hover",
+      "value": "var(--vkui--color_avatar_text_seagreen--hover, #ECFFF8)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_seagreen--active",
+      "value": "var(--vkui--color_avatar_text_seagreen--active, #EDFFF9)"
+    }
+  },
+  "colorAvatarTextSky": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_sky",
+      "value": "var(--vkui--color_avatar_text_sky, #0088D6)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_sky--hover",
+      "value": "var(--vkui--color_avatar_text_sky--hover, #0A8DD8)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_sky--active",
+      "value": "var(--vkui--color_avatar_text_sky--active, #1492D9)"
+    }
+  },
+  "colorAvatarTextBlue": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_blue",
+      "value": "var(--vkui--color_avatar_text_blue, #E0ECFF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_blue--hover",
+      "value": "var(--vkui--color_avatar_text_blue--hover, #E1EDFF)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_blue--active",
+      "value": "var(--vkui--color_avatar_text_blue--active, #E2EEFF)"
+    }
+  },
+  "colorAvatarTextIndigo": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_indigo",
+      "value": "var(--vkui--color_avatar_text_indigo, #E6E5FF)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_indigo--hover",
+      "value": "var(--vkui--color_avatar_text_indigo--hover, #E7E6FF)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_indigo--active",
+      "value": "var(--vkui--color_avatar_text_indigo--active, #E8E7FF)"
+    }
+  },
+  "colorAvatarTextViolet": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_violet",
+      "value": "var(--vkui--color_avatar_text_violet, #F2EAFE)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_violet--hover",
+      "value": "var(--vkui--color_avatar_text_violet--hover, #F3EBFE)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_violet--active",
+      "value": "var(--vkui--color_avatar_text_violet--active, #F3ECFE)"
+    }
+  },
+  "colorAvatarTextLavender": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_lavender",
+      "value": "var(--vkui--color_avatar_text_lavender, #874DD6)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_lavender--hover",
+      "value": "var(--vkui--color_avatar_text_lavender--hover, #8C54D8)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_lavender--active",
+      "value": "var(--vkui--color_avatar_text_lavender--active, #915BD9)"
+    }
+  },
+  "colorAvatarTextCoral": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_coral",
+      "value": "var(--vkui--color_avatar_text_coral, #CD3D50)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_coral--hover",
+      "value": "var(--vkui--color_avatar_text_coral--hover, #CF4557)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_coral--active",
+      "value": "var(--vkui--color_avatar_text_coral--active, #D14D5E)"
+    }
+  },
+  "colorAvatarTextPink": {
+    "normal": {
+      "name": "--vkui--color_avatar_text_pink",
+      "value": "var(--vkui--color_avatar_text_pink, #C2345C)"
+    },
+    "hover": {
+      "name": "--vkui--color_avatar_text_pink--hover",
+      "value": "var(--vkui--color_avatar_text_pink--hover, #C43C63)"
+    },
+    "active": {
+      "name": "--vkui--color_avatar_text_pink--active",
+      "value": "var(--vkui--color_avatar_text_pink--active, #C74469)"
     }
   },
   "widthTouch": {
@@ -714155,9 +714929,9 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
     "active": "#F95E5E"
   },
   "colorTextLink": {
-    "normal": "#1A85FF",
-    "hover": "#238AFF",
-    "active": "#2C8FFF"
+    "normal": "#5CA8FF",
+    "hover": "#63ABFF",
+    "active": "#69AFFF"
   },
   "colorTextLinkTint": {
     "normal": "#71AAEB",
@@ -714920,9 +715694,9 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
     "active": "#67A6FF"
   },
   "colorBubbleBackgroundAccent": {
-    "normal": "#12335A",
-    "hover": "#1B3B61",
-    "active": "#254367"
+    "normal": "#1C3450",
+    "hover": "#253C57",
+    "active": "#2E445E"
   },
   "colorBubbleBackgroundNeutral": {
     "normal": "#303030",
@@ -715019,6 +715793,11 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
     "hover": "#FFC2DD",
     "active": "#FFC4DF"
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": "rgba(255, 255, 255, 0.04)",
+    "hover": "rgba(255, 255, 255, 0.08)",
+    "active": "rgba(255, 255, 255, 0.12)"
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": "rgba(255, 255, 255, 0.08)",
     "hover": "rgba(255, 255, 255, 0.12)",
@@ -715045,14 +715824,19 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
     "active": "#785C14"
   },
   "colorOtherThreadsBackgroundAlpha": {
-    "normal": "rgba(255, 255, 255, 0.01)",
-    "hover": "rgba(255, 255, 255, 0.05)",
-    "active": "rgba(255, 255, 255, 0.09)"
+    "normal": "rgba(255, 255, 255, 0.02)",
+    "hover": "rgba(255, 255, 255, 0.06)",
+    "active": "rgba(255, 255, 255, 0.1)"
   },
   "colorOtherViewerOverlay": {
     "normal": "rgba(25, 25, 26, 0.9)",
     "hover": "rgba(25, 25, 26, 0.9400000000000001)",
     "active": "rgba(25, 25, 26, 0.98)"
+  },
+  "colorMediaOverlay": {
+    "normal": "rgba(0, 0, 0, 0.4)",
+    "hover": "rgba(0, 0, 0, 0.44)",
+    "active": "rgba(0, 0, 0, 0.48)"
   },
   "colorBubbleTransparentHover": {
     "normal": "rgba(255, 255, 255, 0.08)",
@@ -715063,6 +715847,86 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
     "normal": "rgba(255, 255, 255, 0.12)",
     "hover": "rgba(255, 255, 255, 0.16)",
     "active": "rgba(255, 255, 255, 0.2)"
+  },
+  "colorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#FFE5E1",
+    "active": "#FFE6E2"
+  },
+  "colorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#FFF1E6",
+    "active": "#FFF1E7"
+  },
+  "colorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#C4622A",
+    "active": "#C76833"
+  },
+  "colorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#C96D2B",
+    "active": "#CB7334"
+  },
+  "colorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#339639",
+    "active": "#3B9B41"
+  },
+  "colorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#EDFEE0",
+    "active": "#EEFEE2"
+  },
+  "colorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#F1FDFF",
+    "active": "#F1FDFF"
+  },
+  "colorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#219A8B",
+    "active": "#2A9E90"
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#ECFFF8",
+    "active": "#EDFFF9"
+  },
+  "colorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0A8DD8",
+    "active": "#1492D9"
+  },
+  "colorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#E1EDFF",
+    "active": "#E2EEFF"
+  },
+  "colorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#E7E6FF",
+    "active": "#E8E7FF"
+  },
+  "colorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#F3EBFE",
+    "active": "#F3ECFE"
+  },
+  "colorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#8C54D8",
+    "active": "#915BD9"
+  },
+  "colorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#CF4557",
+    "active": "#D14D5E"
+  },
+  "colorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#C43C63",
+    "active": "#C74469"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",
@@ -715944,9 +716808,9 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_text_negative--active, #F95E5E)"
   },
   "colorTextLink": {
-    "normal": "var(--vkui--color_text_link, #1A85FF)",
-    "hover": "var(--vkui--color_text_link--hover, #238AFF)",
-    "active": "var(--vkui--color_text_link--active, #2C8FFF)"
+    "normal": "var(--vkui--color_text_link, #5CA8FF)",
+    "hover": "var(--vkui--color_text_link--hover, #63ABFF)",
+    "active": "var(--vkui--color_text_link--active, #69AFFF)"
   },
   "colorTextLinkTint": {
     "normal": "var(--vkui--color_text_link_tint, #71AAEB)",
@@ -716709,9 +717573,9 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_icon_notification_accent--active, #67A6FF)"
   },
   "colorBubbleBackgroundAccent": {
-    "normal": "var(--vkui--color_bubble_background_accent, #12335A)",
-    "hover": "var(--vkui--color_bubble_background_accent--hover, #1B3B61)",
-    "active": "var(--vkui--color_bubble_background_accent--active, #254367)"
+    "normal": "var(--vkui--color_bubble_background_accent, #1C3450)",
+    "hover": "var(--vkui--color_bubble_background_accent--hover, #253C57)",
+    "active": "var(--vkui--color_bubble_background_accent--active, #2E445E)"
   },
   "colorBubbleBackgroundNeutral": {
     "normal": "var(--vkui--color_bubble_background_neutral, #303030)",
@@ -716808,6 +717672,11 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
     "hover": "var(--vkui--color_bubble_text_pink--hover, #FFC2DD)",
     "active": "var(--vkui--color_bubble_text_pink--active, #FFC4DF)"
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": "var(--vkui--color_other_tertiary_alpha, rgba(255, 255, 255, 0.04))",
+    "hover": "var(--vkui--color_other_tertiary_alpha--hover, rgba(255, 255, 255, 0.08))",
+    "active": "var(--vkui--color_other_tertiary_alpha--active, rgba(255, 255, 255, 0.12))"
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": "var(--vkui--color_other_pull_background_accent_alpha, rgba(255, 255, 255, 0.08))",
     "hover": "var(--vkui--color_other_pull_background_accent_alpha--hover, rgba(255, 255, 255, 0.12))",
@@ -716834,14 +717703,19 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
     "active": "var(--vkui--color_other_highlight--active, #785C14)"
   },
   "colorOtherThreadsBackgroundAlpha": {
-    "normal": "var(--vkui--color_other_threads_background_alpha, rgba(255, 255, 255, 0.01))",
-    "hover": "var(--vkui--color_other_threads_background_alpha--hover, rgba(255, 255, 255, 0.05))",
-    "active": "var(--vkui--color_other_threads_background_alpha--active, rgba(255, 255, 255, 0.09))"
+    "normal": "var(--vkui--color_other_threads_background_alpha, rgba(255, 255, 255, 0.02))",
+    "hover": "var(--vkui--color_other_threads_background_alpha--hover, rgba(255, 255, 255, 0.06))",
+    "active": "var(--vkui--color_other_threads_background_alpha--active, rgba(255, 255, 255, 0.1))"
   },
   "colorOtherViewerOverlay": {
     "normal": "var(--vkui--color_other_viewer_overlay, rgba(25, 25, 26, 0.9))",
     "hover": "var(--vkui--color_other_viewer_overlay--hover, rgba(25, 25, 26, 0.9400000000000001))",
     "active": "var(--vkui--color_other_viewer_overlay--active, rgba(25, 25, 26, 0.98))"
+  },
+  "colorMediaOverlay": {
+    "normal": "var(--vkui--color_media_overlay, rgba(0, 0, 0, 0.4))",
+    "hover": "var(--vkui--color_media_overlay--hover, rgba(0, 0, 0, 0.44))",
+    "active": "var(--vkui--color_media_overlay--active, rgba(0, 0, 0, 0.48))"
   },
   "colorBubbleTransparentHover": {
     "normal": "var(--vkui--color_bubble_transparent_hover, rgba(255, 255, 255, 0.08))",
@@ -716852,6 +717726,86 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
     "normal": "var(--vkui--color_bubble_transparent_active, rgba(255, 255, 255, 0.12))",
     "hover": "var(--vkui--color_bubble_transparent_active--hover, rgba(255, 255, 255, 0.16))",
     "active": "var(--vkui--color_bubble_transparent_active--active, rgba(255, 255, 255, 0.2))"
+  },
+  "colorAvatarTextRed": {
+    "normal": "var(--vkui--color_avatar_text_red, #FFE4E0)",
+    "hover": "var(--vkui--color_avatar_text_red--hover, #FFE5E1)",
+    "active": "var(--vkui--color_avatar_text_red--active, #FFE6E2)"
+  },
+  "colorAvatarTextOrange": {
+    "normal": "var(--vkui--color_avatar_text_orange, #FFF0E5)",
+    "hover": "var(--vkui--color_avatar_text_orange--hover, #FFF1E6)",
+    "active": "var(--vkui--color_avatar_text_orange--active, #FFF1E7)"
+  },
+  "colorAvatarTextPeach": {
+    "normal": "var(--vkui--color_avatar_text_peach, #C25B21)",
+    "hover": "var(--vkui--color_avatar_text_peach--hover, #C4622A)",
+    "active": "var(--vkui--color_avatar_text_peach--active, #C76833)"
+  },
+  "colorAvatarTextYellow": {
+    "normal": "var(--vkui--color_avatar_text_yellow, #C76722)",
+    "hover": "var(--vkui--color_avatar_text_yellow--hover, #C96D2B)",
+    "active": "var(--vkui--color_avatar_text_yellow--active, #CB7334)"
+  },
+  "colorAvatarTextLime": {
+    "normal": "var(--vkui--color_avatar_text_lime, #2A9231)",
+    "hover": "var(--vkui--color_avatar_text_lime--hover, #339639)",
+    "active": "var(--vkui--color_avatar_text_lime--active, #3B9B41)"
+  },
+  "colorAvatarTextGreen": {
+    "normal": "var(--vkui--color_avatar_text_green, #ECFEDF)",
+    "hover": "var(--vkui--color_avatar_text_green--hover, #EDFEE0)",
+    "active": "var(--vkui--color_avatar_text_green--active, #EEFEE2)"
+  },
+  "colorAvatarTextCyan": {
+    "normal": "var(--vkui--color_avatar_text_cyan, #F0FDFF)",
+    "hover": "var(--vkui--color_avatar_text_cyan--hover, #F1FDFF)",
+    "active": "var(--vkui--color_avatar_text_cyan--active, #F1FDFF)"
+  },
+  "colorAvatarTextMint": {
+    "normal": "var(--vkui--color_avatar_text_mint, #189686)",
+    "hover": "var(--vkui--color_avatar_text_mint--hover, #219A8B)",
+    "active": "var(--vkui--color_avatar_text_mint--active, #2A9E90)"
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": "var(--vkui--color_avatar_text_seagreen, #EBFFF8)",
+    "hover": "var(--vkui--color_avatar_text_seagreen--hover, #ECFFF8)",
+    "active": "var(--vkui--color_avatar_text_seagreen--active, #EDFFF9)"
+  },
+  "colorAvatarTextSky": {
+    "normal": "var(--vkui--color_avatar_text_sky, #0088D6)",
+    "hover": "var(--vkui--color_avatar_text_sky--hover, #0A8DD8)",
+    "active": "var(--vkui--color_avatar_text_sky--active, #1492D9)"
+  },
+  "colorAvatarTextBlue": {
+    "normal": "var(--vkui--color_avatar_text_blue, #E0ECFF)",
+    "hover": "var(--vkui--color_avatar_text_blue--hover, #E1EDFF)",
+    "active": "var(--vkui--color_avatar_text_blue--active, #E2EEFF)"
+  },
+  "colorAvatarTextIndigo": {
+    "normal": "var(--vkui--color_avatar_text_indigo, #E6E5FF)",
+    "hover": "var(--vkui--color_avatar_text_indigo--hover, #E7E6FF)",
+    "active": "var(--vkui--color_avatar_text_indigo--active, #E8E7FF)"
+  },
+  "colorAvatarTextViolet": {
+    "normal": "var(--vkui--color_avatar_text_violet, #F2EAFE)",
+    "hover": "var(--vkui--color_avatar_text_violet--hover, #F3EBFE)",
+    "active": "var(--vkui--color_avatar_text_violet--active, #F3ECFE)"
+  },
+  "colorAvatarTextLavender": {
+    "normal": "var(--vkui--color_avatar_text_lavender, #874DD6)",
+    "hover": "var(--vkui--color_avatar_text_lavender--hover, #8C54D8)",
+    "active": "var(--vkui--color_avatar_text_lavender--active, #915BD9)"
+  },
+  "colorAvatarTextCoral": {
+    "normal": "var(--vkui--color_avatar_text_coral, #CD3D50)",
+    "hover": "var(--vkui--color_avatar_text_coral--hover, #CF4557)",
+    "active": "var(--vkui--color_avatar_text_coral--active, #D14D5E)"
+  },
+  "colorAvatarTextPink": {
+    "normal": "var(--vkui--color_avatar_text_pink, #C2345C)",
+    "hover": "var(--vkui--color_avatar_text_pink--hover, #C43C63)",
+    "active": "var(--vkui--color_avatar_text_pink--active, #C74469)"
   },
   "widthTouch": "var(--vkui--width_touch, \\"(max-width: 767px)\\")",
   "widthToTouch": "var(--vkui--width_to_touch, \\"(max-width: 767px)\\")",
@@ -717733,9 +718687,9 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
     "active": "#F95E5E"
   },
   "colorTextLink": {
-    "normal": "#1A85FF",
-    "hover": "#238AFF",
-    "active": "#2C8FFF"
+    "normal": "#5CA8FF",
+    "hover": "#63ABFF",
+    "active": "#69AFFF"
   },
   "colorTextLinkTint": {
     "normal": "#71AAEB",
@@ -718498,9 +719452,9 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
     "active": "#67A6FF"
   },
   "colorBubbleBackgroundAccent": {
-    "normal": "#12335A",
-    "hover": "#1B3B61",
-    "active": "#254367"
+    "normal": "#1C3450",
+    "hover": "#253C57",
+    "active": "#2E445E"
   },
   "colorBubbleBackgroundNeutral": {
     "normal": "#303030",
@@ -718597,6 +719551,11 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
     "hover": "#FFC2DD",
     "active": "#FFC4DF"
   },
+  "colorOtherTertiaryAlpha": {
+    "normal": "rgba(255, 255, 255, 0.04)",
+    "hover": "rgba(255, 255, 255, 0.08)",
+    "active": "rgba(255, 255, 255, 0.12)"
+  },
   "colorOtherPullBackgroundAccentAlpha": {
     "normal": "rgba(255, 255, 255, 0.08)",
     "hover": "rgba(255, 255, 255, 0.12)",
@@ -718623,14 +719582,19 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
     "active": "#785C14"
   },
   "colorOtherThreadsBackgroundAlpha": {
-    "normal": "rgba(255, 255, 255, 0.01)",
-    "hover": "rgba(255, 255, 255, 0.05)",
-    "active": "rgba(255, 255, 255, 0.09)"
+    "normal": "rgba(255, 255, 255, 0.02)",
+    "hover": "rgba(255, 255, 255, 0.06)",
+    "active": "rgba(255, 255, 255, 0.1)"
   },
   "colorOtherViewerOverlay": {
     "normal": "rgba(25, 25, 26, 0.9)",
     "hover": "rgba(25, 25, 26, 0.9400000000000001)",
     "active": "rgba(25, 25, 26, 0.98)"
+  },
+  "colorMediaOverlay": {
+    "normal": "rgba(0, 0, 0, 0.4)",
+    "hover": "rgba(0, 0, 0, 0.44)",
+    "active": "rgba(0, 0, 0, 0.48)"
   },
   "colorBubbleTransparentHover": {
     "normal": "rgba(255, 255, 255, 0.08)",
@@ -718641,6 +719605,86 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
     "normal": "rgba(255, 255, 255, 0.12)",
     "hover": "rgba(255, 255, 255, 0.16)",
     "active": "rgba(255, 255, 255, 0.2)"
+  },
+  "colorAvatarTextRed": {
+    "normal": "#FFE4E0",
+    "hover": "#FFE5E1",
+    "active": "#FFE6E2"
+  },
+  "colorAvatarTextOrange": {
+    "normal": "#FFF0E5",
+    "hover": "#FFF1E6",
+    "active": "#FFF1E7"
+  },
+  "colorAvatarTextPeach": {
+    "normal": "#C25B21",
+    "hover": "#C4622A",
+    "active": "#C76833"
+  },
+  "colorAvatarTextYellow": {
+    "normal": "#C76722",
+    "hover": "#C96D2B",
+    "active": "#CB7334"
+  },
+  "colorAvatarTextLime": {
+    "normal": "#2A9231",
+    "hover": "#339639",
+    "active": "#3B9B41"
+  },
+  "colorAvatarTextGreen": {
+    "normal": "#ECFEDF",
+    "hover": "#EDFEE0",
+    "active": "#EEFEE2"
+  },
+  "colorAvatarTextCyan": {
+    "normal": "#F0FDFF",
+    "hover": "#F1FDFF",
+    "active": "#F1FDFF"
+  },
+  "colorAvatarTextMint": {
+    "normal": "#189686",
+    "hover": "#219A8B",
+    "active": "#2A9E90"
+  },
+  "colorAvatarTextSeagreen": {
+    "normal": "#EBFFF8",
+    "hover": "#ECFFF8",
+    "active": "#EDFFF9"
+  },
+  "colorAvatarTextSky": {
+    "normal": "#0088D6",
+    "hover": "#0A8DD8",
+    "active": "#1492D9"
+  },
+  "colorAvatarTextBlue": {
+    "normal": "#E0ECFF",
+    "hover": "#E1EDFF",
+    "active": "#E2EEFF"
+  },
+  "colorAvatarTextIndigo": {
+    "normal": "#E6E5FF",
+    "hover": "#E7E6FF",
+    "active": "#E8E7FF"
+  },
+  "colorAvatarTextViolet": {
+    "normal": "#F2EAFE",
+    "hover": "#F3EBFE",
+    "active": "#F3ECFE"
+  },
+  "colorAvatarTextLavender": {
+    "normal": "#874DD6",
+    "hover": "#8C54D8",
+    "active": "#915BD9"
+  },
+  "colorAvatarTextCoral": {
+    "normal": "#CD3D50",
+    "hover": "#CF4557",
+    "active": "#D14D5E"
+  },
+  "colorAvatarTextPink": {
+    "normal": "#C2345C",
+    "hover": "#C43C63",
+    "active": "#C74469"
   },
   "widthTouch": "(max-width: 767px)",
   "widthToTouch": "(max-width: 767px)",
