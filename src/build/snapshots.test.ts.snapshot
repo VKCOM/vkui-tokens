@@ -699082,6 +699082,54 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
     "name": "--vkui--theme_name_base",
     "value": "var(--vkui--theme_name_base, workSpaceChats)"
   },
+  "fontText2": {
+    "auto": {
+      "fontSize": {
+        "name": "--vkui--font_text2--font_size",
+        "value": "var(--vkui--font_text2--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_text2--line_height",
+        "value": "var(--vkui--font_text2--line_height)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_text2--font_family",
+        "value": "var(--vkui--font_text2--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_text2--font_weight",
+        "value": "var(--vkui--font_text2--font_weight)"
+      }
+    },
+    "regular": {
+      "fontSize": {
+        "name": "--vkui--font_text2--font_size--regular",
+        "value": "var(--vkui--font_text2--font_size--regular, 16px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_text2--line_height--regular",
+        "value": "var(--vkui--font_text2--line_height--regular, 20px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_text2--font_family--regular",
+        "value": "var(--vkui--font_text2--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_text2--font_weight--regular",
+        "value": "var(--vkui--font_text2--font_weight--regular, 400)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_text2--font_size--compact",
+        "value": "var(--vkui--font_text2--font_size--compact, 14px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_text2--line_height--compact",
+        "value": "var(--vkui--font_text2--line_height--compact, 18px)"
+      }
+    }
+  },
   "fontTitle3400": {
     "auto": {
       "fontSize": {
@@ -703133,6 +703181,18 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
   "typeBorderButton": "solid",
   "typeBorderPosition": "inset",
   "themeNameBase": "workSpaceChats",
+  "fontText2": {
+    "regular": {
+      "fontSize": "16px",
+      "lineHeight": "20px",
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 400
+    },
+    "compact": {
+      "fontSize": "14px",
+      "lineHeight": "18px"
+    }
+  },
   "fontTitle3400": {
     "regular": {
       "fontSize": "17px",
@@ -705012,6 +705072,18 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
   "typeBorderButton": "var(--vkui--type_border_button, solid)",
   "typeBorderPosition": "var(--vkui--type_border_position, inset)",
   "themeNameBase": "var(--vkui--theme_name_base, workSpaceChats)",
+  "fontText2": {
+    "regular": {
+      "fontSize": "var(--vkui--font_text2--font_size--regular, 16px)",
+      "lineHeight": "var(--vkui--font_text2--line_height--regular, 20px)",
+      "fontFamily": "var(--vkui--font_text2--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_text2--font_weight--regular, 400)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_text2--font_size--compact, 14px)",
+      "lineHeight": "var(--vkui--font_text2--line_height--compact, 18px)"
+    }
+  },
   "fontTitle3400": {
     "regular": {
       "fontSize": "var(--vkui--font_title3400--font_size--regular, 17px)",
@@ -706891,6 +706963,18 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
   "typeBorderButton": "solid",
   "typeBorderPosition": "inset",
   "themeNameBase": "workSpaceChats",
+  "fontText2": {
+    "regular": {
+      "fontSize": 16,
+      "lineHeight": 20,
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 400
+    },
+    "compact": {
+      "fontSize": 14,
+      "lineHeight": 18
+    }
+  },
   "fontTitle3400": {
     "regular": {
       "fontSize": 17,
@@ -710702,6 +710786,54 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
   "themeNameBase": {
     "name": "--vkui--theme_name_base",
     "value": "var(--vkui--theme_name_base, workSpaceChats)"
+  },
+  "fontText2": {
+    "auto": {
+      "fontSize": {
+        "name": "--vkui--font_text2--font_size",
+        "value": "var(--vkui--font_text2--font_size)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_text2--line_height",
+        "value": "var(--vkui--font_text2--line_height)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_text2--font_family",
+        "value": "var(--vkui--font_text2--font_family)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_text2--font_weight",
+        "value": "var(--vkui--font_text2--font_weight)"
+      }
+    },
+    "regular": {
+      "fontSize": {
+        "name": "--vkui--font_text2--font_size--regular",
+        "value": "var(--vkui--font_text2--font_size--regular, 16px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_text2--line_height--regular",
+        "value": "var(--vkui--font_text2--line_height--regular, 20px)"
+      },
+      "fontFamily": {
+        "name": "--vkui--font_text2--font_family--regular",
+        "value": "var(--vkui--font_text2--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)"
+      },
+      "fontWeight": {
+        "name": "--vkui--font_text2--font_weight--regular",
+        "value": "var(--vkui--font_text2--font_weight--regular, 400)"
+      }
+    },
+    "compact": {
+      "fontSize": {
+        "name": "--vkui--font_text2--font_size--compact",
+        "value": "var(--vkui--font_text2--font_size--compact, 14px)"
+      },
+      "lineHeight": {
+        "name": "--vkui--font_text2--line_height--compact",
+        "value": "var(--vkui--font_text2--line_height--compact, 18px)"
+      }
+    }
   },
   "fontTitle3400": {
     "auto": {
@@ -714754,6 +714886,18 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
   "typeBorderButton": "solid",
   "typeBorderPosition": "inset",
   "themeNameBase": "workSpaceChats",
+  "fontText2": {
+    "regular": {
+      "fontSize": "16px",
+      "lineHeight": "20px",
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 400
+    },
+    "compact": {
+      "fontSize": "14px",
+      "lineHeight": "18px"
+    }
+  },
   "fontTitle3400": {
     "regular": {
       "fontSize": "17px",
@@ -716633,6 +716777,18 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
   "typeBorderButton": "var(--vkui--type_border_button, solid)",
   "typeBorderPosition": "var(--vkui--type_border_position, inset)",
   "themeNameBase": "var(--vkui--theme_name_base, workSpaceChats)",
+  "fontText2": {
+    "regular": {
+      "fontSize": "var(--vkui--font_text2--font_size--regular, 16px)",
+      "lineHeight": "var(--vkui--font_text2--line_height--regular, 20px)",
+      "fontFamily": "var(--vkui--font_text2--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
+      "fontWeight": "var(--vkui--font_text2--font_weight--regular, 400)"
+    },
+    "compact": {
+      "fontSize": "var(--vkui--font_text2--font_size--compact, 14px)",
+      "lineHeight": "var(--vkui--font_text2--line_height--compact, 18px)"
+    }
+  },
   "fontTitle3400": {
     "regular": {
       "fontSize": "var(--vkui--font_title3400--font_size--regular, 17px)",
@@ -718512,6 +718668,18 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
   "typeBorderButton": "solid",
   "typeBorderPosition": "inset",
   "themeNameBase": "workSpaceChats",
+  "fontText2": {
+    "regular": {
+      "fontSize": 16,
+      "lineHeight": 20,
+      "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
+      "fontWeight": 400
+    },
+    "compact": {
+      "fontSize": 14,
+      "lineHeight": 18
+    }
+  },
   "fontTitle3400": {
     "regular": {
       "fontSize": 17,

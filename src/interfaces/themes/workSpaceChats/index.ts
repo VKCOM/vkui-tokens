@@ -18,6 +18,12 @@ import type {
  */
 export interface LocalWorkSpaceChatsTypography {
 	/**
+	 * @desc Text 2. Compact (desktop): 14 px, line-height 18 px, weight 400.
+	 * @tags font
+	 */
+	fontText2: Adaptive<Font>;
+
+	/**
 	 * @desc Title 3 • 400. Regular (mobile)
 	 * @tags font
 	 */
