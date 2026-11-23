@@ -9,7 +9,10 @@ export const workSpaceChatsTheme: ThemeWorkSpaceChatsDescription = {
 	colorsScheme: 'light',
 
 	fontText2: {
-		regular: staticRef(paradigmBase.fontText).regular,
+		regular: {
+			...staticRef(paradigmBase.fontText).regular,
+			fontSize: 15,
+		},
 		compact: {
 			fontSize: 14,
 			lineHeight: 18,

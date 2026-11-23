@@ -699104,7 +699104,7 @@ exports[`snapshots > workSpaceChats theme > should match cssVars snapshot 1`] = 
     "regular": {
       "fontSize": {
         "name": "--vkui--font_text2--font_size--regular",
-        "value": "var(--vkui--font_text2--font_size--regular, 16px)"
+        "value": "var(--vkui--font_text2--font_size--regular, 15px)"
       },
       "lineHeight": {
         "name": "--vkui--font_text2--line_height--regular",
@@ -703183,7 +703183,7 @@ exports[`snapshots > workSpaceChats theme > should match pixelify theme snapshot
   "themeNameBase": "workSpaceChats",
   "fontText2": {
     "regular": {
-      "fontSize": "16px",
+      "fontSize": "15px",
       "lineHeight": "20px",
       "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 400
@@ -705074,7 +705074,7 @@ exports[`snapshots > workSpaceChats theme > should match pseudo theme from CssVa
   "themeNameBase": "var(--vkui--theme_name_base, workSpaceChats)",
   "fontText2": {
     "regular": {
-      "fontSize": "var(--vkui--font_text2--font_size--regular, 16px)",
+      "fontSize": "var(--vkui--font_text2--font_size--regular, 15px)",
       "lineHeight": "var(--vkui--font_text2--line_height--regular, 20px)",
       "fontFamily": "var(--vkui--font_text2--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
       "fontWeight": "var(--vkui--font_text2--font_weight--regular, 400)"
@@ -706965,7 +706965,7 @@ exports[`snapshots > workSpaceChats theme > should match root theme snapshot 1`]
   "themeNameBase": "workSpaceChats",
   "fontText2": {
     "regular": {
-      "fontSize": 16,
+      "fontSize": 15,
       "lineHeight": 20,
       "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 400
@@ -710809,7 +710809,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match cssVars snapshot 1`
     "regular": {
       "fontSize": {
         "name": "--vkui--font_text2--font_size--regular",
-        "value": "var(--vkui--font_text2--font_size--regular, 16px)"
+        "value": "var(--vkui--font_text2--font_size--regular, 15px)"
       },
       "lineHeight": {
         "name": "--vkui--font_text2--line_height--regular",
@@ -714888,7 +714888,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pixelify theme snap
   "themeNameBase": "workSpaceChats",
   "fontText2": {
     "regular": {
-      "fontSize": "16px",
+      "fontSize": "15px",
       "lineHeight": "20px",
       "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 400
@@ -716779,7 +716779,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match pseudo theme from C
   "themeNameBase": "var(--vkui--theme_name_base, workSpaceChats)",
   "fontText2": {
     "regular": {
-      "fontSize": "var(--vkui--font_text2--font_size--regular, 16px)",
+      "fontSize": "var(--vkui--font_text2--font_size--regular, 15px)",
       "lineHeight": "var(--vkui--font_text2--line_height--regular, 20px)",
       "fontFamily": "var(--vkui--font_text2--font_family--regular, apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif)",
       "fontWeight": "var(--vkui--font_text2--font_weight--regular, 400)"
@@ -718670,7 +718670,7 @@ exports[`snapshots > workSpaceChatsDark theme > should match root theme snapshot
   "themeNameBase": "workSpaceChats",
   "fontText2": {
     "regular": {
-      "fontSize": 16,
+      "fontSize": 15,
       "lineHeight": 20,
       "fontFamily": "apple-system, system-ui, \\"Helvetica Neue\\", Arial, sans-serif",
       "fontWeight": 400
