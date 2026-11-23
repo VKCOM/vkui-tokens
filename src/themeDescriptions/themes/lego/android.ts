@@ -6,12 +6,7 @@ import type { DeepPartial } from '../../../interfaces/general/tools/utils.ts';
 import type { Font } from '../../../interfaces/general/typography/index.ts';
 import type { ThemeLegoAndroidDescription } from '../../../interfaces/themes/legoAndroid/index.ts';
 import type { ThemeLegoAndroidDarkDescription } from '../../../interfaces/themes/legoAndroidDark/index.ts';
-import {
-	type BaseFonts,
-	darkElevation,
-	darkGradient,
-	fonts,
-} from '../../../themeDescriptions/base/vk.ts';
+import { type BaseFonts, darkElevation, fonts } from '../../../themeDescriptions/base/vk.ts';
 import {
 	vkontakteAndroidTheme,
 	vkontakteAndroidThemeDark,
