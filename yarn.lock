@@ -2654,7 +2654,7 @@ __metadata:
     color: "npm:^5.0.3"
     common-tags: "npm:^1.8.2"
     css.escape: "npm:^1.5.1"
-    csstype: "npm:^3.1.1"
+    csstype: "npm:^3.2.4"
     fs-extra: "npm:^11.4.1"
     highlight.js: "npm:^11.12.0"
     html-loader: "npm:^5.1.0"
@@ -3314,10 +3314,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.1.1, csstype@npm:^3.2.2":
+"csstype@npm:^3.2.2":
   version: 3.2.3
   resolution: "csstype@npm:3.2.3"
   checksum: 10c0/cd29c51e70fa822f1cecd8641a1445bed7063697469d35633b516e60fe8c1bde04b08f6c5b6022136bb669b64c63d4173af54864510fbb4ee23281801841a3ce
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "csstype@npm:3.2.4"
+  checksum: 10c0/29568f520e1e47b2e6e88e2cffe3b5369f08c1245c73e69595623cafb38816bd353387e0d665ce4330cfe2c9244f2a4671abe761cbd0b535bc27fab12b6b8a25
   languageName: node
   linkType: hard
 
