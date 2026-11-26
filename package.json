@@ -36,7 +36,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.6.8",
     "@rspack/cli": "^2.3.2",
-    "@rspack/core": "^2.3.2",
+    "@rspack/core": "^2.3.3",
     "@svgr/webpack": "^8.1.0",
     "@swc/cli": "^0.8.2",
     "@swc/core": "^1.16.22",
